@@ -4,7 +4,7 @@ import sys
 from setuptools import setup, find_packages
 
 NAME = "br.com.conductor.caas"
-VERSION = "0.0.1-SNAPSHOT"
+VERSION = "0.0.1"
 
 
 
