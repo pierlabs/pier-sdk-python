@@ -45,7 +45,7 @@ class ContaApi(object):
                 config.api_client = ApiClient()
             self.api_client = config.api_client
 
-    def consultar_conta_using_get1(self, id_emissor, id_conta, **kwargs):
+    def consultar_conta_using_get(self, id_emissor, id_conta, **kwargs):
         """
         /contas/{idConta}
         Consulte informaÃ§Ãµes de uma determinada conta
@@ -56,7 +56,7 @@ class ContaApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_conta_using_get1(id_emissor, id_conta, callback=callback_function)
+        >>> thread = api.consultar_conta_using_get(id_emissor, id_conta, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -75,17 +75,17 @@ class ContaApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_conta_using_get1" % key
+                    " to method consultar_conta_using_get" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id_emissor' is set
         if ('id_emissor' not in params) or (params['id_emissor'] is None):
-            raise ValueError("Missing the required parameter `id_emissor` when calling `consultar_conta_using_get1`")
+            raise ValueError("Missing the required parameter `id_emissor` when calling `consultar_conta_using_get`")
         # verify the required parameter 'id_conta' is set
         if ('id_conta' not in params) or (params['id_conta'] is None):
-            raise ValueError("Missing the required parameter `id_conta` when calling `consultar_conta_using_get1`")
+            raise ValueError("Missing the required parameter `id_conta` when calling `consultar_conta_using_get`")
 
         resource_path = '/api/v1/contas/{idConta}'.replace('{format}', 'json')
         method = 'GET'
