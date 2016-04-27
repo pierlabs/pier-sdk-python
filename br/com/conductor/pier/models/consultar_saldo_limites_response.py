@@ -1,7 +1,7 @@
 # coding: utf-8
 
 """
-Copyright 2015 SmartBear Software
+Copyright 2016 SmartBear Software
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -37,8 +37,8 @@ class ConsultarSaldoLimitesResponse(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
+            'cod_retorno': 'int',
             'codigo_retorno': 'int',
-            'data_vencimento': 'str',
             'descricao_retorno': 'str',
             'disponib_compra_nac': 'float',
             'disponib_global_credito': 'float',
@@ -50,14 +50,14 @@ class ConsultarSaldoLimitesResponse(object):
             'limite_parcelado_nac': 'float',
             'limite_parcelas_nac': 'float',
             'limite_saque_nac_global': 'float',
-            'saldo_atual_final': 'float',
-            'saldo_devedor': 'float',
-            'saldo_futuro': 'float'
+            'limite_saque_nac_periodo': 'float',
+            'renda_comprovada': 'float',
+            'solicitacao_pendente': 'bool'
         }
 
         self.attribute_map = {
+            'cod_retorno': 'codRetorno',
             'codigo_retorno': 'codigoRetorno',
-            'data_vencimento': 'dataVencimento',
             'descricao_retorno': 'descricaoRetorno',
             'disponib_compra_nac': 'disponibCompraNac',
             'disponib_global_credito': 'disponibGlobalCredito',
@@ -69,13 +69,13 @@ class ConsultarSaldoLimitesResponse(object):
             'limite_parcelado_nac': 'limiteParceladoNac',
             'limite_parcelas_nac': 'limiteParcelasNac',
             'limite_saque_nac_global': 'limiteSaqueNacGlobal',
-            'saldo_atual_final': 'saldoAtualFinal',
-            'saldo_devedor': 'saldoDevedor',
-            'saldo_futuro': 'saldoFuturo'
+            'limite_saque_nac_periodo': 'limiteSaqueNacPeriodo',
+            'renda_comprovada': 'rendaComprovada',
+            'solicitacao_pendente': 'solicitacaoPendente'
         }
 
+        self._cod_retorno = None
         self._codigo_retorno = None
-        self._data_vencimento = None
         self._descricao_retorno = None
         self._disponib_compra_nac = None
         self._disponib_global_credito = None
@@ -87,9 +87,31 @@ class ConsultarSaldoLimitesResponse(object):
         self._limite_parcelado_nac = None
         self._limite_parcelas_nac = None
         self._limite_saque_nac_global = None
-        self._saldo_atual_final = None
-        self._saldo_devedor = None
-        self._saldo_futuro = None
+        self._limite_saque_nac_periodo = None
+        self._renda_comprovada = None
+        self._solicitacao_pendente = None
+
+    @property
+    def cod_retorno(self):
+        """
+        Gets the cod_retorno of this ConsultarSaldoLimitesResponse.
+
+
+        :return: The cod_retorno of this ConsultarSaldoLimitesResponse.
+        :rtype: int
+        """
+        return self._cod_retorno
+
+    @cod_retorno.setter
+    def cod_retorno(self, cod_retorno):
+        """
+        Sets the cod_retorno of this ConsultarSaldoLimitesResponse.
+
+
+        :param cod_retorno: The cod_retorno of this ConsultarSaldoLimitesResponse.
+        :type: int
+        """
+        self._cod_retorno = cod_retorno
 
     @property
     def codigo_retorno(self):
@@ -112,28 +134,6 @@ class ConsultarSaldoLimitesResponse(object):
         :type: int
         """
         self._codigo_retorno = codigo_retorno
-
-    @property
-    def data_vencimento(self):
-        """
-        Gets the data_vencimento of this ConsultarSaldoLimitesResponse.
-
-
-        :return: The data_vencimento of this ConsultarSaldoLimitesResponse.
-        :rtype: str
-        """
-        return self._data_vencimento
-
-    @data_vencimento.setter
-    def data_vencimento(self, data_vencimento):
-        """
-        Sets the data_vencimento of this ConsultarSaldoLimitesResponse.
-
-
-        :param data_vencimento: The data_vencimento of this ConsultarSaldoLimitesResponse.
-        :type: str
-        """
-        self._data_vencimento = data_vencimento
 
     @property
     def descricao_retorno(self):
@@ -378,70 +378,70 @@ class ConsultarSaldoLimitesResponse(object):
         self._limite_saque_nac_global = limite_saque_nac_global
 
     @property
-    def saldo_atual_final(self):
+    def limite_saque_nac_periodo(self):
         """
-        Gets the saldo_atual_final of this ConsultarSaldoLimitesResponse.
+        Gets the limite_saque_nac_periodo of this ConsultarSaldoLimitesResponse.
 
 
-        :return: The saldo_atual_final of this ConsultarSaldoLimitesResponse.
+        :return: The limite_saque_nac_periodo of this ConsultarSaldoLimitesResponse.
         :rtype: float
         """
-        return self._saldo_atual_final
+        return self._limite_saque_nac_periodo
 
-    @saldo_atual_final.setter
-    def saldo_atual_final(self, saldo_atual_final):
+    @limite_saque_nac_periodo.setter
+    def limite_saque_nac_periodo(self, limite_saque_nac_periodo):
         """
-        Sets the saldo_atual_final of this ConsultarSaldoLimitesResponse.
+        Sets the limite_saque_nac_periodo of this ConsultarSaldoLimitesResponse.
 
 
-        :param saldo_atual_final: The saldo_atual_final of this ConsultarSaldoLimitesResponse.
+        :param limite_saque_nac_periodo: The limite_saque_nac_periodo of this ConsultarSaldoLimitesResponse.
         :type: float
         """
-        self._saldo_atual_final = saldo_atual_final
+        self._limite_saque_nac_periodo = limite_saque_nac_periodo
 
     @property
-    def saldo_devedor(self):
+    def renda_comprovada(self):
         """
-        Gets the saldo_devedor of this ConsultarSaldoLimitesResponse.
+        Gets the renda_comprovada of this ConsultarSaldoLimitesResponse.
 
 
-        :return: The saldo_devedor of this ConsultarSaldoLimitesResponse.
+        :return: The renda_comprovada of this ConsultarSaldoLimitesResponse.
         :rtype: float
         """
-        return self._saldo_devedor
+        return self._renda_comprovada
 
-    @saldo_devedor.setter
-    def saldo_devedor(self, saldo_devedor):
+    @renda_comprovada.setter
+    def renda_comprovada(self, renda_comprovada):
         """
-        Sets the saldo_devedor of this ConsultarSaldoLimitesResponse.
+        Sets the renda_comprovada of this ConsultarSaldoLimitesResponse.
 
 
-        :param saldo_devedor: The saldo_devedor of this ConsultarSaldoLimitesResponse.
+        :param renda_comprovada: The renda_comprovada of this ConsultarSaldoLimitesResponse.
         :type: float
         """
-        self._saldo_devedor = saldo_devedor
+        self._renda_comprovada = renda_comprovada
 
     @property
-    def saldo_futuro(self):
+    def solicitacao_pendente(self):
         """
-        Gets the saldo_futuro of this ConsultarSaldoLimitesResponse.
+        Gets the solicitacao_pendente of this ConsultarSaldoLimitesResponse.
 
 
-        :return: The saldo_futuro of this ConsultarSaldoLimitesResponse.
-        :rtype: float
+        :return: The solicitacao_pendente of this ConsultarSaldoLimitesResponse.
+        :rtype: bool
         """
-        return self._saldo_futuro
+        return self._solicitacao_pendente
 
-    @saldo_futuro.setter
-    def saldo_futuro(self, saldo_futuro):
+    @solicitacao_pendente.setter
+    def solicitacao_pendente(self, solicitacao_pendente):
         """
-        Sets the saldo_futuro of this ConsultarSaldoLimitesResponse.
+        Sets the solicitacao_pendente of this ConsultarSaldoLimitesResponse.
 
 
-        :param saldo_futuro: The saldo_futuro of this ConsultarSaldoLimitesResponse.
-        :type: float
+        :param solicitacao_pendente: The solicitacao_pendente of this ConsultarSaldoLimitesResponse.
+        :type: bool
         """
-        self._saldo_futuro = saldo_futuro
+        self._solicitacao_pendente = solicitacao_pendente
 
     def to_dict(self):
         """
@@ -458,6 +458,12 @@ class ConsultarSaldoLimitesResponse(object):
                 ))
             elif hasattr(value, "to_dict"):
                 result[attr] = value.to_dict()
+            elif isinstance(value, dict):
+                result[attr] = dict(map(
+                    lambda item: (item[0], item[1].to_dict())
+                    if hasattr(item[1], "to_dict") else item,
+                    value.items()
+                ))
             else:
                 result[attr] = value
 
@@ -475,14 +481,14 @@ class ConsultarSaldoLimitesResponse(object):
         """
         return self.to_str()
 
-    def __eq__(self, other): 
+    def __eq__(self, other):
         """
         Returns true if both objects are equal
         """
         return self.__dict__ == other.__dict__
 
     def __ne__(self, other):
-        """ 
+        """
         Returns true if both objects are not equal
         """
         return not self == other

@@ -3,7 +3,7 @@
 import sys
 from setuptools import setup, find_packages
 
-NAME = "br.com.conductor.caas"
+NAME = "br.com.conductor.pier"
 VERSION = "0.0.1"
 
 
@@ -28,7 +28,7 @@ setup(
     packages=find_packages(),
     include_package_data=True,
     long_description="""\
-    GestÃ£o de pagamento eletrÃ´nicos como serviÃ§o
+    Gest\u00C3\u00A3o de pagamento eletr\u00C3\u00B4nicos como servi\u00C3\u00A7o
     """
 )
 
