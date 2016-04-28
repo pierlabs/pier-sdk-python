@@ -1,6 +1,9 @@
 from __future__ import absolute_import
 
 # import models into model package
+from .auth_token import AuthToken
+from .body import Body
+from .body_access_token import BodyAccessToken
 from .cancelar_cartao_response import CancelarCartaoResponse
 from .cartao_response import CartaoResponse
 from .consultar_cartao_response import ConsultarCartaoResponse
@@ -11,6 +14,7 @@ from .consultar_saldo_limites_response import ConsultarSaldoLimitesResponse
 from .conta_cartao_response import ContaCartaoResponse
 from .conta_response import ContaResponse
 from .desbloquear_cartao_response import DesbloquearCartaoResponse
+from .extra_info import ExtraInfo
 from .extrato_response import ExtratoResponse
 from .pessoa_fisica_response import PessoaFisicaResponse
 from .saldo_limite_response import SaldoLimiteResponse

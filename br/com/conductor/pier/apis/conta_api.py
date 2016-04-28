@@ -45,7 +45,7 @@ class ContaApi(object):
                 config.api_client = ApiClient()
             self.api_client = config.api_client
 
-    def buscar_conta_using_get(self, id_emissor, **kwargs):
+    def buscar_conta_using_get(self, **kwargs):
         """
         /contas/buscar
         Consulte contas filtrando pelos campos id do emissor, n\u00C3\u00BAmero do cart\u00C3\u00A3o, nome ou CPF/CNPJ 
@@ -56,11 +56,10 @@ class ContaApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.buscar_conta_using_get(id_emissor, callback=callback_function)
+        >>> thread = api.buscar_conta_using_get(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param int id_emissor: ID do Emissor (required)
         :param str nome: Nome
         :param str cpf: CPF (opcional caso nao informe o n\u00C3\u00BAmero do cart\u00C3\u00A3o ou id da conta)
         :param str numero_cartao: N\u00C3\u00BAmero do cart\u00C3\u00A3o (opcional caso n\u00C3\u00A3o informa o cpf ou id da conta)
@@ -70,7 +69,7 @@ class ContaApi(object):
                  returns the request thread.
         """
 
-        all_params = ['id_emissor', 'nome', 'cpf', 'numero_cartao', 'id_conta']
+        all_params = ['nome', 'cpf', 'numero_cartao', 'id_conta']
         all_params.append('callback')
 
         params = locals()
@@ -83,9 +82,6 @@ class ContaApi(object):
             params[key] = val
         del params['kwargs']
 
-        # verify the required parameter 'id_emissor' is set
-        if ('id_emissor' not in params) or (params['id_emissor'] is None):
-            raise ValueError("Missing the required parameter `id_emissor` when calling `buscar_conta_using_get`")
 
         resource_path = '/api/v1/contas/buscar'.replace('{format}', 'json')
         path_params = {}
@@ -101,8 +97,6 @@ class ContaApi(object):
             query_params['idConta'] = params['id_conta']
 
         header_params = {}
-        if 'id_emissor' in params:
-            header_params['idEmissor'] = params['id_emissor']
 
         form_params = []
         local_var_files = {}
@@ -134,7 +128,7 @@ class ContaApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_conta_using_get(self, id_emissor, id_conta, **kwargs):
+    def consultar_conta_using_get(self, id_conta, **kwargs):
         """
         /contas/{idConta}
         Consulte informa\u00C3\u00A7\u00C3\u00B5es de uma determinada conta
@@ -145,18 +139,17 @@ class ContaApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_conta_using_get(id_emissor, id_conta, callback=callback_function)
+        >>> thread = api.consultar_conta_using_get(id_conta, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param int id_emissor: ID do Emissor (required)
         :param int id_conta: ID da Conta (required)
         :return: ContaResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['id_emissor', 'id_conta']
+        all_params = ['id_conta']
         all_params.append('callback')
 
         params = locals()
@@ -169,9 +162,6 @@ class ContaApi(object):
             params[key] = val
         del params['kwargs']
 
-        # verify the required parameter 'id_emissor' is set
-        if ('id_emissor' not in params) or (params['id_emissor'] is None):
-            raise ValueError("Missing the required parameter `id_emissor` when calling `consultar_conta_using_get`")
         # verify the required parameter 'id_conta' is set
         if ('id_conta' not in params) or (params['id_conta'] is None):
             raise ValueError("Missing the required parameter `id_conta` when calling `consultar_conta_using_get`")
@@ -184,8 +174,6 @@ class ContaApi(object):
         query_params = {}
 
         header_params = {}
-        if 'id_emissor' in params:
-            header_params['idEmissor'] = params['id_emissor']
 
         form_params = []
         local_var_files = {}
