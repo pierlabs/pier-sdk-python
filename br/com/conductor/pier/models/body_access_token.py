@@ -37,36 +37,92 @@ class BodyAccessToken(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'body': 'Body'
+            'auth_token': 'AuthToken',
+            'action': 'str',
+            'user': 'str'
         }
 
         self.attribute_map = {
-            'body': 'body'
+            'auth_token': 'AuthToken',
+            'action': 'action',
+            'user': 'user'
         }
 
-        self._body = None
+        self._auth_token = None
+        self._action = None
+        self._user = None
 
     @property
-    def body(self):
+    def auth_token(self):
         """
-        Gets the body of this BodyAccessToken.
+        Gets the auth_token of this BodyAccessToken.
 
 
-        :return: The body of this BodyAccessToken.
-        :rtype: Body
+        :return: The auth_token of this BodyAccessToken.
+        :rtype: AuthToken
         """
-        return self._body
+        return self._auth_token
 
-    @body.setter
-    def body(self, body):
+    @auth_token.setter
+    def auth_token(self, auth_token):
         """
-        Sets the body of this BodyAccessToken.
+        Sets the auth_token of this BodyAccessToken.
 
 
-        :param body: The body of this BodyAccessToken.
-        :type: Body
+        :param auth_token: The auth_token of this BodyAccessToken.
+        :type: AuthToken
         """
-        self._body = body
+        self._auth_token = auth_token
+
+    @property
+    def action(self):
+        """
+        Gets the action of this BodyAccessToken.
+
+
+        :return: The action of this BodyAccessToken.
+        :rtype: str
+        """
+        return self._action
+
+    @action.setter
+    def action(self, action):
+        """
+        Sets the action of this BodyAccessToken.
+
+
+        :param action: The action of this BodyAccessToken.
+        :type: str
+        """
+        allowed_values = ["CREATED", "UPDATED", "DELETED"]
+        if action not in allowed_values:
+            raise ValueError(
+                "Invalid value for `action`, must be one of {0}"
+                .format(allowed_values)
+            )
+        self._action = action
+
+    @property
+    def user(self):
+        """
+        Gets the user of this BodyAccessToken.
+
+
+        :return: The user of this BodyAccessToken.
+        :rtype: str
+        """
+        return self._user
+
+    @user.setter
+    def user(self, user):
+        """
+        Sets the user of this BodyAccessToken.
+
+
+        :param user: The user of this BodyAccessToken.
+        :type: str
+        """
+        self._user = user
 
     def to_dict(self):
         """

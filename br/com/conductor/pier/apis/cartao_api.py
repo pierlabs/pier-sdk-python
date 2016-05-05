@@ -95,7 +95,7 @@ class CartaoApi(object):
         if ('observacao' not in params) or (params['observacao'] is None):
             raise ValueError("Missing the required parameter `observacao` when calling `cancelar_cartao_using_post`")
 
-        resource_path = '/api/v1/contas/{idConta}/cartoes/{idCartao}/cancelar'.replace('{format}', 'json')
+        resource_path = '/v1/contas/{idConta}/cartoes/{idCartao}/cancelar'.replace('{format}', 'json')
         path_params = {}
         if 'id_conta' in params:
             path_params['idConta'] = params['id_conta']
@@ -183,7 +183,7 @@ class CartaoApi(object):
         if ('id_cartao' not in params) or (params['id_cartao'] is None):
             raise ValueError("Missing the required parameter `id_cartao` when calling `consultar_cartao_using_get`")
 
-        resource_path = '/api/v1/contas/{idConta}/cartoes/{idCartao}'.replace('{format}', 'json')
+        resource_path = '/v1/contas/{idConta}/cartoes/{idCartao}'.replace('{format}', 'json')
         path_params = {}
         if 'id_conta' in params:
             path_params['idConta'] = params['id_conta']
@@ -264,7 +264,7 @@ class CartaoApi(object):
         if ('id_conta' not in params) or (params['id_conta'] is None):
             raise ValueError("Missing the required parameter `id_conta` when calling `consultar_cartoes_using_get`")
 
-        resource_path = '/api/v1/contas/{idConta}/cartoes'.replace('{format}', 'json')
+        resource_path = '/v1/contas/{idConta}/cartoes'.replace('{format}', 'json')
         path_params = {}
         if 'id_conta' in params:
             path_params['idConta'] = params['id_conta']
@@ -349,7 +349,7 @@ class CartaoApi(object):
         if ('data_vencimento' not in params) or (params['data_vencimento'] is None):
             raise ValueError("Missing the required parameter `data_vencimento` when calling `consultar_extrato_faturas_using_get`")
 
-        resource_path = '/api/v1/contas/{idConta}/cartoes/{idCartao}/faturas'.replace('{format}', 'json')
+        resource_path = '/v1/contas/{idConta}/cartoes/{idCartao}/faturas'.replace('{format}', 'json')
         path_params = {}
         if 'id_conta' in params:
             path_params['idConta'] = params['id_conta']
@@ -434,7 +434,7 @@ class CartaoApi(object):
         if ('id_cartao' not in params) or (params['id_cartao'] is None):
             raise ValueError("Missing the required parameter `id_cartao` when calling `consultar_saldos_limites_using_get`")
 
-        resource_path = '/api/v1/contas/{idConta}/cartoes/{idCartao}/limites'.replace('{format}', 'json')
+        resource_path = '/v1/contas/{idConta}/cartoes/{idCartao}/limites'.replace('{format}', 'json')
         path_params = {}
         if 'id_conta' in params:
             path_params['idConta'] = params['id_conta']
@@ -521,7 +521,7 @@ class CartaoApi(object):
         if ('codigo_segurancao' not in params) or (params['codigo_segurancao'] is None):
             raise ValueError("Missing the required parameter `codigo_segurancao` when calling `desbloquear_cartao_using_post`")
 
-        resource_path = '/api/v1/contas/{idConta}/cartoes/{idCartao}/desbloquear'.replace('{format}', 'json')
+        resource_path = '/v1/contas/{idConta}/cartoes/{idCartao}/desbloquear'.replace('{format}', 'json')
         path_params = {}
         if 'id_conta' in params:
             path_params['idConta'] = params['id_conta']

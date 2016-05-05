@@ -83,7 +83,7 @@ class ContaApi(object):
         del params['kwargs']
 
 
-        resource_path = '/api/v1/contas/buscar'.replace('{format}', 'json')
+        resource_path = '/v1/contas/buscar'.replace('{format}', 'json')
         path_params = {}
 
         query_params = {}
@@ -166,7 +166,7 @@ class ContaApi(object):
         if ('id_conta' not in params) or (params['id_conta'] is None):
             raise ValueError("Missing the required parameter `id_conta` when calling `consultar_conta_using_get`")
 
-        resource_path = '/api/v1/contas/{idConta}'.replace('{format}', 'json')
+        resource_path = '/v1/contas/{idConta}'.replace('{format}', 'json')
         path_params = {}
         if 'id_conta' in params:
             path_params['idConta'] = params['id_conta']

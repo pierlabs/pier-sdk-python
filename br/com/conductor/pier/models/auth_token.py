@@ -166,7 +166,7 @@ class AuthToken(object):
         :param status: The status of this AuthToken.
         :type: str
         """
-        allowed_values = ["ACTIVE", "REVOKE", "DELETED"]
+        allowed_values = ["ACTIVE", "REVOKED", "DELETED"]
         if status not in allowed_values:
             raise ValueError(
                 "Invalid value for `status`, must be one of {0}"

@@ -221,6 +221,13 @@ class Configuration(object):
                     'key': 'access_token',
                     'value': self.get_api_key_with_prefix('access_token')
                 },
+            'client_id':
+                {
+                    'type': 'api_key',
+                    'in': 'header',
+                    'key': 'client_id',
+                    'value': self.get_api_key_with_prefix('client_id')
+                },
 
         }
 

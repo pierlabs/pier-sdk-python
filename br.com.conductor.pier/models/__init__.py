@@ -2,7 +2,6 @@ from __future__ import absolute_import
 
 # import models into model package
 from .auth_token import AuthToken
-from .body import Body
 from .body_access_token import BodyAccessToken
 from .cancelar_cartao_response import CancelarCartaoResponse
 from .cartao_response import CartaoResponse
