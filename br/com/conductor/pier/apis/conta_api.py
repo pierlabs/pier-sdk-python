@@ -204,3 +204,163 @@ class ContaApi(object):
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
+
+    def consultar_extrato_faturas_using_get(self, id_conta, data_vencimento, **kwargs):
+        """
+        /contas/{idConta}/faturas
+        Consulte os extratos/faturas de uma determinada conta
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.consultar_extrato_faturas_using_get(id_conta, data_vencimento, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param int id_conta: ID da Conta (required)
+        :param str data_vencimento: Data limite para o vencimento das transa\u00C3\u00A7\u00C3\u00B5es (required)
+        :return: ConsultarExtratoContaResponse
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id_conta', 'data_vencimento']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method consultar_extrato_faturas_using_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        # verify the required parameter 'id_conta' is set
+        if ('id_conta' not in params) or (params['id_conta'] is None):
+            raise ValueError("Missing the required parameter `id_conta` when calling `consultar_extrato_faturas_using_get`")
+        # verify the required parameter 'data_vencimento' is set
+        if ('data_vencimento' not in params) or (params['data_vencimento'] is None):
+            raise ValueError("Missing the required parameter `data_vencimento` when calling `consultar_extrato_faturas_using_get`")
+
+        resource_path = '/v1/contas/{idConta}/faturas'.replace('{format}', 'json')
+        path_params = {}
+        if 'id_conta' in params:
+            path_params['idConta'] = params['id_conta']
+
+        query_params = {}
+        if 'data_vencimento' in params:
+            query_params['dataVencimento'] = params['data_vencimento']
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        response = self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='ConsultarExtratoContaResponse',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
+    def consultar_saldos_limites_using_get(self, id_conta, **kwargs):
+        """
+        /contas/{idConta}/limites
+        Consulte os limites de uma determinada conta
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.consultar_saldos_limites_using_get(id_conta, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param int id_conta: ID da Conta (required)
+        :return: ConsultarSaldoLimitesResponse
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id_conta']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method consultar_saldos_limites_using_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        # verify the required parameter 'id_conta' is set
+        if ('id_conta' not in params) or (params['id_conta'] is None):
+            raise ValueError("Missing the required parameter `id_conta` when calling `consultar_saldos_limites_using_get`")
+
+        resource_path = '/v1/contas/{idConta}/limites'.replace('{format}', 'json')
+        path_params = {}
+        if 'id_conta' in params:
+            path_params['idConta'] = params['id_conta']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        response = self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='ConsultarSaldoLimitesResponse',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response

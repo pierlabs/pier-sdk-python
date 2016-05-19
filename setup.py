@@ -4,7 +4,7 @@ import sys
 from setuptools import setup, find_packages
 
 NAME = "br.com.conductor.pier"
-VERSION = "0.0.1"
+VERSION = "1.0.0"
 
 
 

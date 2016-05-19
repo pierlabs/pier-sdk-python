@@ -45,10 +45,10 @@ class CartaoApi(object):
                 config.api_client = ApiClient()
             self.api_client = config.api_client
 
-    def cancelar_cartao_using_post(self, id_conta, id_cartao, motivo, observacao, **kwargs):
+    def bloquear_cartao_using_post(self, id_conta, id_cartao, motivo, **kwargs):
         """
-        /contas/{idConta}/cartoes/{idCartao}/cancelar
-        Cancelar um determinado cart\u00C3\u00A3o
+        /contas/{idConta}/cartoes/{idCartao}/bloquear
+        Bloquear um determinado cart\u00C3\u00A3o
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -56,14 +56,14 @@ class CartaoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.cancelar_cartao_using_post(id_conta, id_cartao, motivo, observacao, callback=callback_function)
+        >>> thread = api.bloquear_cartao_using_post(id_conta, id_cartao, motivo, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int id_conta: ID da Conta (required)
         :param int id_cartao: ID do Cart\u00C3\u00A3o que deseja cancelar (required)
-        :param int motivo: Motivo do cancelamento (required)
-        :param str observacao: Alguma observa\u00C3\u00A7\u00C3\u00A3o para o cancelamento (required)
+        :param int motivo: Motivo do bloqueio (required)
+        :param str observacao: Alguma observa\u00C3\u00A7\u00C3\u00A3o para o bloqueio
         :return: CancelarCartaoResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -77,25 +77,22 @@ class CartaoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method cancelar_cartao_using_post" % key
+                    " to method bloquear_cartao_using_post" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id_conta' is set
         if ('id_conta' not in params) or (params['id_conta'] is None):
-            raise ValueError("Missing the required parameter `id_conta` when calling `cancelar_cartao_using_post`")
+            raise ValueError("Missing the required parameter `id_conta` when calling `bloquear_cartao_using_post`")
         # verify the required parameter 'id_cartao' is set
         if ('id_cartao' not in params) or (params['id_cartao'] is None):
-            raise ValueError("Missing the required parameter `id_cartao` when calling `cancelar_cartao_using_post`")
+            raise ValueError("Missing the required parameter `id_cartao` when calling `bloquear_cartao_using_post`")
         # verify the required parameter 'motivo' is set
         if ('motivo' not in params) or (params['motivo'] is None):
-            raise ValueError("Missing the required parameter `motivo` when calling `cancelar_cartao_using_post`")
-        # verify the required parameter 'observacao' is set
-        if ('observacao' not in params) or (params['observacao'] is None):
-            raise ValueError("Missing the required parameter `observacao` when calling `cancelar_cartao_using_post`")
+            raise ValueError("Missing the required parameter `motivo` when calling `bloquear_cartao_using_post`")
 
-        resource_path = '/v1/contas/{idConta}/cartoes/{idCartao}/cancelar'.replace('{format}', 'json')
+        resource_path = '/v1/contas/{idConta}/cartoes/{idCartao}/bloquear'.replace('{format}', 'json')
         path_params = {}
         if 'id_conta' in params:
             path_params['idConta'] = params['id_conta']
@@ -303,179 +300,7 @@ class CartaoApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_extrato_faturas_using_get(self, id_conta, id_cartao, data_vencimento, **kwargs):
-        """
-        /contas/{idConta}/cartoes/{idCartao}/faturas
-        Consulte os extratos/faturas do cart\u00C3\u00A3o de uma determinada conta
-
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
-        >>> thread = api.consultar_extrato_faturas_using_get(id_conta, id_cartao, data_vencimento, callback=callback_function)
-
-        :param callback function: The callback function
-            for asynchronous request. (optional)
-        :param int id_conta: ID da Conta (required)
-        :param int id_cartao: ID do Cart\u00C3\u00A3o que deseja consultar o extrato (required)
-        :param str data_vencimento: Data limite para o vencimento das transa\u00C3\u00A7\u00C3\u00B5es (required)
-        :return: ConsultarExtratoContaResponse
-                 If the method is called asynchronously,
-                 returns the request thread.
-        """
-
-        all_params = ['id_conta', 'id_cartao', 'data_vencimento']
-        all_params.append('callback')
-
-        params = locals()
-        for key, val in iteritems(params['kwargs']):
-            if key not in all_params:
-                raise TypeError(
-                    "Got an unexpected keyword argument '%s'"
-                    " to method consultar_extrato_faturas_using_get" % key
-                )
-            params[key] = val
-        del params['kwargs']
-
-        # verify the required parameter 'id_conta' is set
-        if ('id_conta' not in params) or (params['id_conta'] is None):
-            raise ValueError("Missing the required parameter `id_conta` when calling `consultar_extrato_faturas_using_get`")
-        # verify the required parameter 'id_cartao' is set
-        if ('id_cartao' not in params) or (params['id_cartao'] is None):
-            raise ValueError("Missing the required parameter `id_cartao` when calling `consultar_extrato_faturas_using_get`")
-        # verify the required parameter 'data_vencimento' is set
-        if ('data_vencimento' not in params) or (params['data_vencimento'] is None):
-            raise ValueError("Missing the required parameter `data_vencimento` when calling `consultar_extrato_faturas_using_get`")
-
-        resource_path = '/v1/contas/{idConta}/cartoes/{idCartao}/faturas'.replace('{format}', 'json')
-        path_params = {}
-        if 'id_conta' in params:
-            path_params['idConta'] = params['id_conta']
-        if 'id_cartao' in params:
-            path_params['idCartao'] = params['id_cartao']
-
-        query_params = {}
-        if 'data_vencimento' in params:
-            query_params['dataVencimento'] = params['data_vencimento']
-
-        header_params = {}
-
-        form_params = []
-        local_var_files = {}
-
-        body_params = None
-
-        # HTTP header `Accept`
-        header_params['Accept'] = self.api_client.\
-            select_header_accept(['application/json'])
-        if not header_params['Accept']:
-            del header_params['Accept']
-
-        # HTTP header `Content-Type`
-        header_params['Content-Type'] = self.api_client.\
-            select_header_content_type(['application/json'])
-
-        # Authentication setting
-        auth_settings = ['access_token']
-
-        response = self.api_client.call_api(resource_path, 'GET',
-                                            path_params,
-                                            query_params,
-                                            header_params,
-                                            body=body_params,
-                                            post_params=form_params,
-                                            files=local_var_files,
-                                            response_type='ConsultarExtratoContaResponse',
-                                            auth_settings=auth_settings,
-                                            callback=params.get('callback'))
-        return response
-
-    def consultar_saldos_limites_using_get(self, id_conta, id_cartao, **kwargs):
-        """
-        /contas/{idConta}/cartoes/{idCartao}/limites
-        Consulte os limites de um determinado cart\u00C3\u00A3o
-
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
-        >>> thread = api.consultar_saldos_limites_using_get(id_conta, id_cartao, callback=callback_function)
-
-        :param callback function: The callback function
-            for asynchronous request. (optional)
-        :param int id_conta: ID da Conta (required)
-        :param int id_cartao: ID do Cart\u00C3\u00A3o que deseja consultar o saldo/limite (required)
-        :return: ConsultarSaldoLimitesResponse
-                 If the method is called asynchronously,
-                 returns the request thread.
-        """
-
-        all_params = ['id_conta', 'id_cartao']
-        all_params.append('callback')
-
-        params = locals()
-        for key, val in iteritems(params['kwargs']):
-            if key not in all_params:
-                raise TypeError(
-                    "Got an unexpected keyword argument '%s'"
-                    " to method consultar_saldos_limites_using_get" % key
-                )
-            params[key] = val
-        del params['kwargs']
-
-        # verify the required parameter 'id_conta' is set
-        if ('id_conta' not in params) or (params['id_conta'] is None):
-            raise ValueError("Missing the required parameter `id_conta` when calling `consultar_saldos_limites_using_get`")
-        # verify the required parameter 'id_cartao' is set
-        if ('id_cartao' not in params) or (params['id_cartao'] is None):
-            raise ValueError("Missing the required parameter `id_cartao` when calling `consultar_saldos_limites_using_get`")
-
-        resource_path = '/v1/contas/{idConta}/cartoes/{idCartao}/limites'.replace('{format}', 'json')
-        path_params = {}
-        if 'id_conta' in params:
-            path_params['idConta'] = params['id_conta']
-        if 'id_cartao' in params:
-            path_params['idCartao'] = params['id_cartao']
-
-        query_params = {}
-
-        header_params = {}
-
-        form_params = []
-        local_var_files = {}
-
-        body_params = None
-
-        # HTTP header `Accept`
-        header_params['Accept'] = self.api_client.\
-            select_header_accept(['application/json'])
-        if not header_params['Accept']:
-            del header_params['Accept']
-
-        # HTTP header `Content-Type`
-        header_params['Content-Type'] = self.api_client.\
-            select_header_content_type(['application/json'])
-
-        # Authentication setting
-        auth_settings = ['access_token']
-
-        response = self.api_client.call_api(resource_path, 'GET',
-                                            path_params,
-                                            query_params,
-                                            header_params,
-                                            body=body_params,
-                                            post_params=form_params,
-                                            files=local_var_files,
-                                            response_type='ConsultarSaldoLimitesResponse',
-                                            auth_settings=auth_settings,
-                                            callback=params.get('callback'))
-        return response
-
-    def desbloquear_cartao_using_post(self, id_conta, id_cartao, codigo_segurancao, **kwargs):
+    def desbloquear_cartao_using_post(self, id_conta, id_cartao, **kwargs):
         """
         /contas/{idConta}/cartoes/{idCartao}/desbloquear
         Desbloquear cart\u00C3\u00A3o de uma determinada conta
@@ -486,13 +311,13 @@ class CartaoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.desbloquear_cartao_using_post(id_conta, id_cartao, codigo_segurancao, callback=callback_function)
+        >>> thread = api.desbloquear_cartao_using_post(id_conta, id_cartao, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int id_conta: ID da Conta (required)
         :param int id_cartao: ID do Cart\u00C3\u00A3o que deseja consultar o saldo/limite (required)
-        :param str codigo_segurancao: C\u00C3\u00B3digo seguran\u00C3\u00A7a do cart\u00C3\u00A3o (required)
+        :param str codigo_segurancao: C\u00C3\u00B3digo seguran\u00C3\u00A7a do cart\u00C3\u00A3o
         :return: DesbloquearCartaoResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -517,9 +342,6 @@ class CartaoApi(object):
         # verify the required parameter 'id_cartao' is set
         if ('id_cartao' not in params) or (params['id_cartao'] is None):
             raise ValueError("Missing the required parameter `id_cartao` when calling `desbloquear_cartao_using_post`")
-        # verify the required parameter 'codigo_segurancao' is set
-        if ('codigo_segurancao' not in params) or (params['codigo_segurancao'] is None):
-            raise ValueError("Missing the required parameter `codigo_segurancao` when calling `desbloquear_cartao_using_post`")
 
         resource_path = '/v1/contas/{idConta}/cartoes/{idCartao}/desbloquear'.replace('{format}', 'json')
         path_params = {}
