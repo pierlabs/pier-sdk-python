@@ -13,6 +13,7 @@ from .models.consultar_saldo_limites_response import ConsultarSaldoLimitesRespon
 from .models.conta_cartao_response import ContaCartaoResponse
 from .models.conta_response import ContaResponse
 from .models.desbloquear_cartao_response import DesbloquearCartaoResponse
+from .models.embossado_cartao_response import EmbossadoCartaoResponse
 from .models.extra_info import ExtraInfo
 from .models.extrato_response import ExtratoResponse
 from .models.pessoa_fisica_response import PessoaFisicaResponse

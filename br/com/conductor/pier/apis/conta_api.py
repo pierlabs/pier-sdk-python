@@ -47,7 +47,7 @@ class ContaApi(object):
 
     def buscar_conta_using_get(self, **kwargs):
         """
-        /contas/buscar
+        Buscar contas
         Consulte contas filtrando pelos campos id do emissor, n\u00C3\u00BAmero do cart\u00C3\u00A3o, nome ou CPF/CNPJ 
 
         This method makes a synchronous HTTP request by default. To make an
@@ -83,7 +83,7 @@ class ContaApi(object):
         del params['kwargs']
 
 
-        resource_path = '/v1/contas/buscar'.replace('{format}', 'json')
+        resource_path = '/v1.1/contas/buscar'.replace('{format}', 'json')
         path_params = {}
 
         query_params = {}
@@ -130,7 +130,7 @@ class ContaApi(object):
 
     def consultar_conta_using_get(self, id_conta, **kwargs):
         """
-        /contas/{idConta}
+        Retorna uma conta
         Consulte informa\u00C3\u00A7\u00C3\u00B5es de uma determinada conta
 
         This method makes a synchronous HTTP request by default. To make an
@@ -166,7 +166,7 @@ class ContaApi(object):
         if ('id_conta' not in params) or (params['id_conta'] is None):
             raise ValueError("Missing the required parameter `id_conta` when calling `consultar_conta_using_get`")
 
-        resource_path = '/v1/contas/{idConta}'.replace('{format}', 'json')
+        resource_path = '/v1.1/contas/{idConta}'.replace('{format}', 'json')
         path_params = {}
         if 'id_conta' in params:
             path_params['idConta'] = params['id_conta']
@@ -207,8 +207,8 @@ class ContaApi(object):
 
     def consultar_extrato_faturas_using_get(self, id_conta, data_vencimento, **kwargs):
         """
-        /contas/{idConta}/faturas
-        Consulte os extratos/faturas de uma determinada conta
+        Retorna os extratos
+        Consulte os extratos de uma determinada conta
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -247,7 +247,7 @@ class ContaApi(object):
         if ('data_vencimento' not in params) or (params['data_vencimento'] is None):
             raise ValueError("Missing the required parameter `data_vencimento` when calling `consultar_extrato_faturas_using_get`")
 
-        resource_path = '/v1/contas/{idConta}/faturas'.replace('{format}', 'json')
+        resource_path = '/v1.1/contas/{idConta}/faturas'.replace('{format}', 'json')
         path_params = {}
         if 'id_conta' in params:
             path_params['idConta'] = params['id_conta']
@@ -290,7 +290,7 @@ class ContaApi(object):
 
     def consultar_saldos_limites_using_get(self, id_conta, **kwargs):
         """
-        /contas/{idConta}/limites
+        Retorna o limite
         Consulte os limites de uma determinada conta
 
         This method makes a synchronous HTTP request by default. To make an
@@ -326,7 +326,7 @@ class ContaApi(object):
         if ('id_conta' not in params) or (params['id_conta'] is None):
             raise ValueError("Missing the required parameter `id_conta` when calling `consultar_saldos_limites_using_get`")
 
-        resource_path = '/v1/contas/{idConta}/limites'.replace('{format}', 'json')
+        resource_path = '/v1.1/contas/{idConta}/limites'.replace('{format}', 'json')
         path_params = {}
         if 'id_conta' in params:
             path_params['idConta'] = params['id_conta']

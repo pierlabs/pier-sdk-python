@@ -4,7 +4,7 @@ import sys
 from setuptools import setup, find_packages
 
 NAME = "br.com.conductor.pier"
-VERSION = "1.0.0"
+VERSION = "1.1.0"
 
 
 
@@ -20,10 +20,10 @@ REQUIRES = ["urllib3 >= 1.10", "six >= 1.9", "certifi", "python-dateutil"]
 setup(
     name=NAME,
     version=VERSION,
-    description="CaaS - Conductor as a Service",
-    author_email="contato@conductor.com.br",
-    url="http://www.conductor.com.br",
-    keywords=["Swagger", "CaaS - Conductor as a Service"],
+    description="PIER Labs",
+    author_email="pierlabs@conductor.com.br",
+    url="http://pierlabs.io",
+    keywords=["Swagger", "PIER Labs"],
     install_requires=REQUIRES,
     packages=find_packages(),
     include_package_data=True,

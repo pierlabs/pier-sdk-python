@@ -13,6 +13,7 @@ from .consultar_saldo_limites_response import ConsultarSaldoLimitesResponse
 from .conta_cartao_response import ContaCartaoResponse
 from .conta_response import ContaResponse
 from .desbloquear_cartao_response import DesbloquearCartaoResponse
+from .embossado_cartao_response import EmbossadoCartaoResponse
 from .extra_info import ExtraInfo
 from .extrato_response import ExtratoResponse
 from .pessoa_fisica_response import PessoaFisicaResponse
