@@ -83,7 +83,7 @@ class ContaApi(object):
         del params['kwargs']
 
 
-        resource_path = '/v1.1/contas/buscar'.replace('{format}', 'json')
+        resource_path = '/api/contas/buscar'.replace('{format}', 'json')
         path_params = {}
 
         query_params = {}
@@ -166,7 +166,7 @@ class ContaApi(object):
         if ('id_conta' not in params) or (params['id_conta'] is None):
             raise ValueError("Missing the required parameter `id_conta` when calling `consultar_conta_using_get`")
 
-        resource_path = '/v1.1/contas/{idConta}'.replace('{format}', 'json')
+        resource_path = '/api/contas/{idConta}'.replace('{format}', 'json')
         path_params = {}
         if 'id_conta' in params:
             path_params['idConta'] = params['id_conta']
@@ -247,7 +247,7 @@ class ContaApi(object):
         if ('data_vencimento' not in params) or (params['data_vencimento'] is None):
             raise ValueError("Missing the required parameter `data_vencimento` when calling `consultar_extrato_faturas_using_get`")
 
-        resource_path = '/v1.1/contas/{idConta}/faturas'.replace('{format}', 'json')
+        resource_path = '/api/contas/{idConta}/faturas'.replace('{format}', 'json')
         path_params = {}
         if 'id_conta' in params:
             path_params['idConta'] = params['id_conta']
@@ -326,7 +326,7 @@ class ContaApi(object):
         if ('id_conta' not in params) or (params['id_conta'] is None):
             raise ValueError("Missing the required parameter `id_conta` when calling `consultar_saldos_limites_using_get`")
 
-        resource_path = '/v1.1/contas/{idConta}/limites'.replace('{format}', 'json')
+        resource_path = '/api/contas/{idConta}/limites'.replace('{format}', 'json')
         path_params = {}
         if 'id_conta' in params:
             path_params['idConta'] = params['id_conta']

@@ -83,7 +83,7 @@ class TokenApi(object):
         if ('body_access_token' not in params) or (params['body_access_token'] is None):
             raise ValueError("Missing the required parameter `body_access_token` when calling `callback_using_post`")
 
-        resource_path = '/v1.1/tokens/callback'.replace('{format}', 'json')
+        resource_path = '/api/tokens/callback'.replace('{format}', 'json')
         path_params = {}
 
         query_params = {}
@@ -160,7 +160,7 @@ class TokenApi(object):
         if ('body_access_token' not in params) or (params['body_access_token'] is None):
             raise ValueError("Missing the required parameter `body_access_token` when calling `validar_using_post`")
 
-        resource_path = '/v1.1/tokens/validar'.replace('{format}', 'json')
+        resource_path = '/api/tokens/validar'.replace('{format}', 'json')
         path_params = {}
 
         query_params = {}

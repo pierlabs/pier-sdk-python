@@ -92,7 +92,7 @@ class CartaoApi(object):
         if ('motivo' not in params) or (params['motivo'] is None):
             raise ValueError("Missing the required parameter `motivo` when calling `bloquear_cartao_using_post`")
 
-        resource_path = '/v1.1/contas/{idConta}/cartoes/{idCartao}/bloquear'.replace('{format}', 'json')
+        resource_path = '/api/contas/{idConta}/cartoes/{idCartao}/bloquear'.replace('{format}', 'json')
         path_params = {}
         if 'id_conta' in params:
             path_params['idConta'] = params['id_conta']
@@ -180,7 +180,7 @@ class CartaoApi(object):
         if ('id_cartao' not in params) or (params['id_cartao'] is None):
             raise ValueError("Missing the required parameter `id_cartao` when calling `consultar_cartao_using_get`")
 
-        resource_path = '/v1.1/contas/{idConta}/cartoes/{idCartao}'.replace('{format}', 'json')
+        resource_path = '/api/contas/{idConta}/cartoes/{idCartao}'.replace('{format}', 'json')
         path_params = {}
         if 'id_conta' in params:
             path_params['idConta'] = params['id_conta']
@@ -261,7 +261,7 @@ class CartaoApi(object):
         if ('id_conta' not in params) or (params['id_conta'] is None):
             raise ValueError("Missing the required parameter `id_conta` when calling `consultar_cartoes_using_get`")
 
-        resource_path = '/v1.1/contas/{idConta}/cartoes'.replace('{format}', 'json')
+        resource_path = '/api/contas/{idConta}/cartoes'.replace('{format}', 'json')
         path_params = {}
         if 'id_conta' in params:
             path_params['idConta'] = params['id_conta']
@@ -343,7 +343,7 @@ class CartaoApi(object):
         if ('id_cartao' not in params) or (params['id_cartao'] is None):
             raise ValueError("Missing the required parameter `id_cartao` when calling `desbloquear_cartao_using_post`")
 
-        resource_path = '/v1.1/contas/{idConta}/cartoes/{idCartao}/desbloquear'.replace('{format}', 'json')
+        resource_path = '/api/contas/{idConta}/cartoes/{idCartao}/desbloquear'.replace('{format}', 'json')
         path_params = {}
         if 'id_conta' in params:
             path_params['idConta'] = params['id_conta']
@@ -428,7 +428,7 @@ class CartaoApi(object):
         if ('id_cartao' not in params) or (params['id_cartao'] is None):
             raise ValueError("Missing the required parameter `id_cartao` when calling `embossado_cartao_using_put`")
 
-        resource_path = '/v1.1/contas/{idConta}/cartoes/{idCartao}/embossado'.replace('{format}', 'json')
+        resource_path = '/api/contas/{idConta}/cartoes/{idCartao}/embossado'.replace('{format}', 'json')
         path_params = {}
         if 'id_conta' in params:
             path_params['idConta'] = params['id_conta']
