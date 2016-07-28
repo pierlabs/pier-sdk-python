@@ -20,6 +20,7 @@ from .models.pessoa_fisica_response import PessoaFisicaResponse
 from .models.saldo_limite_response import SaldoLimiteResponse
 
 # import apis into sdk package
+from .apis.base_api import BaseApi
 from .apis.cartao_api import CartaoApi
 from .apis.conta_api import ContaApi
 from .apis.token_api import TokenApi

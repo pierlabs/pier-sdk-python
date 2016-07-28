@@ -55,6 +55,7 @@ class CartaoResponse(object):
             'id_log': 'str',
             'id_pessoa_fisica': 'int',
             'id_produto': 'int',
+            'nome_plastico': 'str',
             'numero_cartao': 'str',
             'numero_cartao_real': 'str',
             'status_cartao': 'int',
@@ -80,6 +81,7 @@ class CartaoResponse(object):
             'id_log': 'idLog',
             'id_pessoa_fisica': 'idPessoaFisica',
             'id_produto': 'idProduto',
+            'nome_plastico': 'nomePlastico',
             'numero_cartao': 'numeroCartao',
             'numero_cartao_real': 'numeroCartaoReal',
             'status_cartao': 'statusCartao',
@@ -104,6 +106,7 @@ class CartaoResponse(object):
         self._id_log = None
         self._id_pessoa_fisica = None
         self._id_produto = None
+        self._nome_plastico = None
         self._numero_cartao = None
         self._numero_cartao_real = None
         self._status_cartao = None
@@ -504,6 +507,28 @@ class CartaoResponse(object):
         :type: int
         """
         self._id_produto = id_produto
+
+    @property
+    def nome_plastico(self):
+        """
+        Gets the nome_plastico of this CartaoResponse.
+
+
+        :return: The nome_plastico of this CartaoResponse.
+        :rtype: str
+        """
+        return self._nome_plastico
+
+    @nome_plastico.setter
+    def nome_plastico(self, nome_plastico):
+        """
+        Sets the nome_plastico of this CartaoResponse.
+
+
+        :param nome_plastico: The nome_plastico of this CartaoResponse.
+        :type: str
+        """
+        self._nome_plastico = nome_plastico
 
     @property
     def numero_cartao(self):
