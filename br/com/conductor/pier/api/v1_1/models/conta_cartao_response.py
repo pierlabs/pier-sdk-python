@@ -39,9 +39,9 @@ class ContaCartaoResponse(object):
         self.swagger_types = {
             'cnpj_loja': 'str',
             'cpf': 'str',
-            'data_cadastro_conta': 'str',
-            'data_emissao_identidade': 'str',
-            'data_nascimento': 'str',
+            'data_cadastro_conta': 'datetime',
+            'data_emissao_identidade': 'datetime',
+            'data_nascimento': 'datetime',
             'ddd_celular': 'str',
             'id_conta': 'int',
             'nome': 'str',
@@ -136,7 +136,7 @@ class ContaCartaoResponse(object):
 
 
         :return: The data_cadastro_conta of this ContaCartaoResponse.
-        :rtype: str
+        :rtype: datetime
         """
         return self._data_cadastro_conta
 
@@ -147,7 +147,7 @@ class ContaCartaoResponse(object):
 
 
         :param data_cadastro_conta: The data_cadastro_conta of this ContaCartaoResponse.
-        :type: str
+        :type: datetime
         """
         self._data_cadastro_conta = data_cadastro_conta
 
@@ -158,7 +158,7 @@ class ContaCartaoResponse(object):
 
 
         :return: The data_emissao_identidade of this ContaCartaoResponse.
-        :rtype: str
+        :rtype: datetime
         """
         return self._data_emissao_identidade
 
@@ -169,7 +169,7 @@ class ContaCartaoResponse(object):
 
 
         :param data_emissao_identidade: The data_emissao_identidade of this ContaCartaoResponse.
-        :type: str
+        :type: datetime
         """
         self._data_emissao_identidade = data_emissao_identidade
 
@@ -180,7 +180,7 @@ class ContaCartaoResponse(object):
 
 
         :return: The data_nascimento of this ContaCartaoResponse.
-        :rtype: str
+        :rtype: datetime
         """
         return self._data_nascimento
 
@@ -191,7 +191,7 @@ class ContaCartaoResponse(object):
 
 
         :param data_nascimento: The data_nascimento of this ContaCartaoResponse.
-        :type: str
+        :type: datetime
         """
         self._data_nascimento = data_nascimento
 
