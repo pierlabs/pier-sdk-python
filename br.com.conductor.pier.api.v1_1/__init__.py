@@ -14,8 +14,13 @@ from .models.conta_cartao_response import ContaCartaoResponse
 from .models.conta_response import ContaResponse
 from .models.desbloquear_cartao_response import DesbloquearCartaoResponse
 from .models.embossado_cartao_response import EmbossadoCartaoResponse
+from .models.estgio_carto import EstgioCarto
 from .models.extra_info import ExtraInfo
 from .models.extrato_response import ExtratoResponse
+from .models.lista_de_estgios_cartes import ListaDeEstgiosCartes
+from .models.lista_de_origens_comerciais import ListaDeOrigensComerciais
+from .models.lista_de_status_cartes import ListaDeStatusCartes
+from .models.origem_comercial import OrigemComercial
 from .models.pessoa_fisica_response import PessoaFisicaResponse
 from .models.saldo_limite_response import SaldoLimiteResponse
 
@@ -23,6 +28,9 @@ from .models.saldo_limite_response import SaldoLimiteResponse
 from .apis.base_api import BaseApi
 from .apis.cartao_api import CartaoApi
 from .apis.conta_api import ContaApi
+from .apis.estgio_carto_api import EstgioCartoApi
+from .apis.origem_comercial_api import OrigemComercialApi
+from .apis.status_carto_api import StatusCartoApi
 from .apis.token_api import TokenApi
 
 # import ApiClient

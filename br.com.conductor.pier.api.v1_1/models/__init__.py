@@ -14,7 +14,12 @@ from .conta_cartao_response import ContaCartaoResponse
 from .conta_response import ContaResponse
 from .desbloquear_cartao_response import DesbloquearCartaoResponse
 from .embossado_cartao_response import EmbossadoCartaoResponse
+from .estgio_carto import EstgioCarto
 from .extra_info import ExtraInfo
 from .extrato_response import ExtratoResponse
+from .lista_de_estgios_cartes import ListaDeEstgiosCartes
+from .lista_de_origens_comerciais import ListaDeOrigensComerciais
+from .lista_de_status_cartes import ListaDeStatusCartes
+from .origem_comercial import OrigemComercial
 from .pessoa_fisica_response import PessoaFisicaResponse
 from .saldo_limite_response import SaldoLimiteResponse
