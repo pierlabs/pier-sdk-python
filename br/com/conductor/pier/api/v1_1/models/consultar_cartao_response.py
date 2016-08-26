@@ -37,7 +37,7 @@ class ConsultarCartaoResponse(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'cartoes': 'list[CartaoResponse]',
+            'cartoes': 'list[CartaoResponseOld]',
             'codigo_retorno': 'int',
             'descricao_retorno': 'str'
         }
@@ -59,7 +59,7 @@ class ConsultarCartaoResponse(object):
 
 
         :return: The cartoes of this ConsultarCartaoResponse.
-        :rtype: list[CartaoResponse]
+        :rtype: list[CartaoResponseOld]
         """
         return self._cartoes
 
@@ -70,7 +70,7 @@ class ConsultarCartaoResponse(object):
 
 
         :param cartoes: The cartoes of this ConsultarCartaoResponse.
-        :type: list[CartaoResponse]
+        :type: list[CartaoResponseOld]
         """
         self._cartoes = cartoes
 

@@ -61,7 +61,7 @@ class StatusCartoApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int id_status_cartao: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Est\u00C3\u00A1gio de Entrega do Cart\u00C3\u00A3o (id). (required)
-        :return: EstgioCarto
+        :return: StatusCarto
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -117,7 +117,7 @@ class StatusCartoApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='EstgioCarto',
+                                            response_type='StatusCarto',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
@@ -139,9 +139,22 @@ class StatusCartoApi(object):
             for asynchronous request. (optional)
         :param int id_status_cartao: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Status do Cart\u00C3\u00A3o (id).
         :param str nome: Nome atribu\u00C3\u00ADdo ao Status de Entrega do Cart\u00C3\u00A3o.
+        :param str flag_altera_status: Quanto ativa, indica que Cart\u00C3\u00B5es que tiverem este idStatusCartao atribu\u00C3\u00ADdo n\u00C3\u00A3o ter\u00C3\u00A3o seu idStatusCartao Alterado, fazendo com que o Cart\u00C3\u00A3o atual possa continuar sendo utilizado at\u00C3\u00A9 o desbloqueio de um novo cart\u00C3\u00A3o.
+        :param str flag_desbloqueio: Quando ativa, indica que Cart\u00C3\u00B5es com este idStatusCartao poder\u00C3\u00A3o ser Desbloqueados.
+        :param str flag_reversao_desbloqueio: Quando ativa, indica que o cart\u00C3\u00A3o, mesmo tendo sido bloqueado, poder\u00C3\u00A1 ter o processo desfeito.
         :param int id_status_destino_desbloqueio: Indica qual o idStatusCartao que deve ser atribu\u00C3\u00ADdo a um idCartao quando ele for desbloqueado.
-        :param str cancela_conta: Indica que Cart\u00C3\u00B5es com este idStatusCartao podem ter a sua conta Cancelada.
-        :param str permite_desbloqueio: Indica que Cart\u00C3\u00B5es com este idStatusCartao podem ser Desbloqueados.
+        :param str flag_cancela_cartao: Quando ativa, indica que Cart\u00C3\u00B5es que tiverem este idStatusCartao atribu\u00C3\u00ADdo ter\u00C3\u00A3o o cart\u00C3\u00A3o Cancelado. 
+        :param str flag_reversao_cancelamento: Quando ativa, indica que o cart\u00C3\u00A3o, mesmo tendo sido cancelado, poder\u00C3\u00A1 ter o processo desfeito.
+        :param str flag_emite_provisorio: Quando ativa, indica que os portadores que tiverem seus cart\u00C3\u00B5es associados a idStatusCartao com esta flag poder\u00C3\u00A3o solicitar a emiss\u00C3\u00A3o de um cart\u00C3\u00A3o provis\u00C3\u00B3rio at\u00C3\u00A9 que um novo cart\u00C3\u00A3o definitivo seja recebido. 
+        :param str flag_cancela_conta: Quando ativa, indica que Cart\u00C3\u00B5es que tiverem este idStatusCartao atribu\u00C3\u00ADdo ter\u00C3\u00A3o a conta Cancelada.
+        :param int id_status_destino_conta: Indica qual o idStatusConta que ser\u00C3\u00A1 atribu\u00C3\u00ADdo ao idConta que tiver o Cartao do titular da mesma cancelado por um idStatusCartao que recomenda o cancelamento da conta.
+        :param str flag_reemite_cartao: Quando ativa, indica que Cart\u00C3\u00B5es que tiverem este idStatusCartao atribu\u00C3\u00ADdo ter\u00C3\u00A3o um novo cart\u00C3\u00A3o automaticamente gerado.
+        :param str flag_cobra_tarifa: Quando ativa, indica que Cart\u00C3\u00B5es que tiverem este idStatusCartao atribu\u00C3\u00ADdo ter\u00C3\u00A3o a cobran\u00C3\u00A7a de tarifa lan\u00C3\u00A7ada junto a gera\u00C3\u00A7\u00C3\u00A3o do novo cart\u00C3\u00A3o, desde que o Produto ao qual o cart\u00C3\u00A3o pertence possua o respectivo par\u00C3\u00A2metro configurado.
+        :param str flag_origem_transferencia: Quando ativa, indica que Cart\u00C3\u00B5es com este idStatusCartao podem realizar a transfer\u00C3\u00AAncia de cr\u00C3\u00A9ditos/d\u00C3\u00A9bitos para outros cart\u00C3\u00B5es.
+        :param str flag_destino_transferencia: Quando ativa, indica que Cart\u00C3\u00B5es com este idStatusCartao podem receber transfer\u00C3\u00AAncias de cr\u00C3\u00A9ditos/d\u00C3\u00A9bitos oriundos de outros cart\u00C3\u00B5es.
+        :param str flag_cadastro_senha: Quando ativa, indica se poder\u00C3\u00A1 ser realizado o cadastro de uma senha para o Cart\u00C3\u00A3o.
+        :param str flag_cadastro_nova_senha: Quando ativa, indica que os Cart\u00C3\u00B5es que tiverem este idStatusCartao atribu\u00C3\u00ADdo ter\u00C3\u00A3o a senha atual exclu\u00C3\u00ADda.
+        :param str flag_excecao_bandeira: Quando ativa, indica que os Cart\u00C3\u00B5es que tiverem este idStatusCartao atribu\u00C3\u00ADdo dever\u00C3\u00A3o ter a respectiva informa\u00C3\u00A7\u00C3\u00A3o de mudan\u00C3\u00A7a de status inclu\u00C3\u00ADda no arquivo de exce\u00C3\u00A7\u00C3\u00A3o da Bandeira, a fim de manter atualizado o cadastro do cart\u00C3\u00A3o nela para nortear o que fazer com as transa\u00C3\u00A7\u00C3\u00B5es quando o autorizador estiver indispon\u00C3\u00ADvel.
         :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
         :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 100, Max = 100)
         :return: ListaDeStatusCartes
@@ -149,7 +162,7 @@ class StatusCartoApi(object):
                  returns the request thread.
         """
 
-        all_params = ['id_status_cartao', 'nome', 'id_status_destino_desbloqueio', 'cancela_conta', 'permite_desbloqueio', 'page', 'limit']
+        all_params = ['id_status_cartao', 'nome', 'flag_altera_status', 'flag_desbloqueio', 'flag_reversao_desbloqueio', 'id_status_destino_desbloqueio', 'flag_cancela_cartao', 'flag_reversao_cancelamento', 'flag_emite_provisorio', 'flag_cancela_conta', 'id_status_destino_conta', 'flag_reemite_cartao', 'flag_cobra_tarifa', 'flag_origem_transferencia', 'flag_destino_transferencia', 'flag_cadastro_senha', 'flag_cadastro_nova_senha', 'flag_excecao_bandeira', 'page', 'limit']
         all_params.append('callback')
 
         params = locals()
@@ -171,12 +184,38 @@ class StatusCartoApi(object):
             query_params['id_status_cartao'] = params['id_status_cartao']
         if 'nome' in params:
             query_params['nome'] = params['nome']
+        if 'flag_altera_status' in params:
+            query_params['flag_altera_status'] = params['flag_altera_status']
+        if 'flag_desbloqueio' in params:
+            query_params['flag_desbloqueio'] = params['flag_desbloqueio']
+        if 'flag_reversao_desbloqueio' in params:
+            query_params['flag_reversao_desbloqueio'] = params['flag_reversao_desbloqueio']
         if 'id_status_destino_desbloqueio' in params:
             query_params['id_status_destino_desbloqueio'] = params['id_status_destino_desbloqueio']
-        if 'cancela_conta' in params:
-            query_params['cancela_conta'] = params['cancela_conta']
-        if 'permite_desbloqueio' in params:
-            query_params['permite_desbloqueio'] = params['permite_desbloqueio']
+        if 'flag_cancela_cartao' in params:
+            query_params['flag_cancela_cartao'] = params['flag_cancela_cartao']
+        if 'flag_reversao_cancelamento' in params:
+            query_params['flag_reversao_cancelamento'] = params['flag_reversao_cancelamento']
+        if 'flag_emite_provisorio' in params:
+            query_params['flag_emite_provisorio'] = params['flag_emite_provisorio']
+        if 'flag_cancela_conta' in params:
+            query_params['flag_cancela_conta'] = params['flag_cancela_conta']
+        if 'id_status_destino_conta' in params:
+            query_params['id_status_destino_conta'] = params['id_status_destino_conta']
+        if 'flag_reemite_cartao' in params:
+            query_params['flag_reemite_cartao'] = params['flag_reemite_cartao']
+        if 'flag_cobra_tarifa' in params:
+            query_params['flag_cobra_tarifa'] = params['flag_cobra_tarifa']
+        if 'flag_origem_transferencia' in params:
+            query_params['flag_origem_transferencia'] = params['flag_origem_transferencia']
+        if 'flag_destino_transferencia' in params:
+            query_params['flag_destino_transferencia'] = params['flag_destino_transferencia']
+        if 'flag_cadastro_senha' in params:
+            query_params['flag_cadastro_senha'] = params['flag_cadastro_senha']
+        if 'flag_cadastro_nova_senha' in params:
+            query_params['flag_cadastro_nova_senha'] = params['flag_cadastro_nova_senha']
+        if 'flag_excecao_bandeira' in params:
+            query_params['flag_excecao_bandeira'] = params['flag_excecao_bandeira']
         if 'page' in params:
             query_params['page'] = params['page']
         if 'limit' in params:

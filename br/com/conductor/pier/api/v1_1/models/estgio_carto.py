@@ -37,54 +37,23 @@ class EstgioCarto(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'cancela_conta': 'str',
             'id': 'int',
-            'id_status_destino_desbloqueio': 'int',
-            'nome': 'str',
-            'permite_desbloqueio': 'str'
+            'nome': 'str'
         }
 
         self.attribute_map = {
-            'cancela_conta': 'cancelaConta',
             'id': 'id',
-            'id_status_destino_desbloqueio': 'idStatusDestinoDesbloqueio',
-            'nome': 'nome',
-            'permite_desbloqueio': 'permiteDesbloqueio'
+            'nome': 'nome'
         }
 
-        self._cancela_conta = None
         self._id = None
-        self._id_status_destino_desbloqueio = None
         self._nome = None
-        self._permite_desbloqueio = None
-
-    @property
-    def cancela_conta(self):
-        """
-        Gets the cancela_conta of this EstgioCarto.
-        Indica que Cart\u00C3\u00B5es com este idStatusCartao devem ter a sua conta Cancelada, sendo: (0 = N\u00C3\u00A3o Cancelar) e  (1 = Cancelar Conta).
-
-        :return: The cancela_conta of this EstgioCarto.
-        :rtype: str
-        """
-        return self._cancela_conta
-
-    @cancela_conta.setter
-    def cancela_conta(self, cancela_conta):
-        """
-        Sets the cancela_conta of this EstgioCarto.
-        Indica que Cart\u00C3\u00B5es com este idStatusCartao devem ter a sua conta Cancelada, sendo: (0 = N\u00C3\u00A3o Cancelar) e  (1 = Cancelar Conta).
-
-        :param cancela_conta: The cancela_conta of this EstgioCarto.
-        :type: str
-        """
-        self._cancela_conta = cancela_conta
 
     @property
     def id(self):
         """
         Gets the id of this EstgioCarto.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Status do Cart\u00C3\u00A3o (id).
+        Id do est\u00C3\u00A1gio cart\u00C3\u00A3o
 
         :return: The id of this EstgioCarto.
         :rtype: int
@@ -95,7 +64,7 @@ class EstgioCarto(object):
     def id(self, id):
         """
         Sets the id of this EstgioCarto.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Status do Cart\u00C3\u00A3o (id).
+        Id do est\u00C3\u00A1gio cart\u00C3\u00A3o
 
         :param id: The id of this EstgioCarto.
         :type: int
@@ -103,32 +72,10 @@ class EstgioCarto(object):
         self._id = id
 
     @property
-    def id_status_destino_desbloqueio(self):
-        """
-        Gets the id_status_destino_desbloqueio of this EstgioCarto.
-        Indica qual o idStatusCartao que deve ser atribu\u00C3\u00ADdo a um idCartao quando ele for desbloqueado.
-
-        :return: The id_status_destino_desbloqueio of this EstgioCarto.
-        :rtype: int
-        """
-        return self._id_status_destino_desbloqueio
-
-    @id_status_destino_desbloqueio.setter
-    def id_status_destino_desbloqueio(self, id_status_destino_desbloqueio):
-        """
-        Sets the id_status_destino_desbloqueio of this EstgioCarto.
-        Indica qual o idStatusCartao que deve ser atribu\u00C3\u00ADdo a um idCartao quando ele for desbloqueado.
-
-        :param id_status_destino_desbloqueio: The id_status_destino_desbloqueio of this EstgioCarto.
-        :type: int
-        """
-        self._id_status_destino_desbloqueio = id_status_destino_desbloqueio
-
-    @property
     def nome(self):
         """
         Gets the nome of this EstgioCarto.
-        Nome atribu\u00C3\u00ADdo ao Status de Entrega do Cart\u00C3\u00A3o.
+        Nome do est\u00C3\u00A1gio cart\u00C3\u00A3o
 
         :return: The nome of this EstgioCarto.
         :rtype: str
@@ -139,34 +86,12 @@ class EstgioCarto(object):
     def nome(self, nome):
         """
         Sets the nome of this EstgioCarto.
-        Nome atribu\u00C3\u00ADdo ao Status de Entrega do Cart\u00C3\u00A3o.
+        Nome do est\u00C3\u00A1gio cart\u00C3\u00A3o
 
         :param nome: The nome of this EstgioCarto.
         :type: str
         """
         self._nome = nome
-
-    @property
-    def permite_desbloqueio(self):
-        """
-        Gets the permite_desbloqueio of this EstgioCarto.
-        Indica que Cart\u00C3\u00B5es com este idStatusCartao podem ser Desbloqueados, sendo: (0 = N\u00C3\u00A3o Permitido) e  (1 = Permitido).
-
-        :return: The permite_desbloqueio of this EstgioCarto.
-        :rtype: str
-        """
-        return self._permite_desbloqueio
-
-    @permite_desbloqueio.setter
-    def permite_desbloqueio(self, permite_desbloqueio):
-        """
-        Sets the permite_desbloqueio of this EstgioCarto.
-        Indica que Cart\u00C3\u00B5es com este idStatusCartao podem ser Desbloqueados, sendo: (0 = N\u00C3\u00A3o Permitido) e  (1 = Permitido).
-
-        :param permite_desbloqueio: The permite_desbloqueio of this EstgioCarto.
-        :type: str
-        """
-        self._permite_desbloqueio = permite_desbloqueio
 
     def to_dict(self):
         """

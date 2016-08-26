@@ -37,130 +37,87 @@ class CartaoResponse(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'bin': 'int',
-            'cod_retorno': 'int',
+            'arquivo_impressao': 'str',
             'codigo_desbloqueio': 'str',
-            'criptografia_hsm': 'str',
-            'data_emissao': 'datetime',
-            'data_validade': 'datetime',
-            'data_vencimento_padrao': 'str',
-            'descricao_retorno': 'str',
-            'estagio_cartao': 'int',
-            'estagio_data': 'datetime',
-            'flag_reversao': 'bool',
-            'flag_senha': 'bool',
-            'id_cartao': 'int',
+            'data_estagio_cartao': 'LocalDateTime',
+            'data_geracao': 'LocalDateTime',
+            'data_impressao': 'LocalDateTime',
+            'data_status_cartao': 'LocalDateTime',
+            'data_validade': 'LocalDateTime',
+            'flag_impressao_origem_comercial': 'int',
+            'flag_provisorio': 'int',
+            'id': 'int',
             'id_conta': 'int',
-            'id_emissor': 'int',
-            'id_log': 'str',
-            'id_pessoa_fisica': 'int',
-            'id_produto': 'int',
-            'nome_plastico': 'str',
+            'id_estagio_cartao': 'int',
+            'id_pessoa': 'int',
+            'id_status_cartao': 'int',
             'numero_cartao': 'str',
-            'numero_cartao_real': 'str',
-            'status_cartao': 'int',
-            'status_data': 'datetime'
+            'portador': 'int'
         }
 
         self.attribute_map = {
-            'bin': 'bin',
-            'cod_retorno': 'codRetorno',
+            'arquivo_impressao': 'arquivoImpressao',
             'codigo_desbloqueio': 'codigoDesbloqueio',
-            'criptografia_hsm': 'criptografiaHSM',
-            'data_emissao': 'dataEmissao',
+            'data_estagio_cartao': 'dataEstagioCartao',
+            'data_geracao': 'dataGeracao',
+            'data_impressao': 'dataImpressao',
+            'data_status_cartao': 'dataStatusCartao',
             'data_validade': 'dataValidade',
-            'data_vencimento_padrao': 'dataVencimentoPadrao',
-            'descricao_retorno': 'descricaoRetorno',
-            'estagio_cartao': 'estagioCartao',
-            'estagio_data': 'estagioData',
-            'flag_reversao': 'flagReversao',
-            'flag_senha': 'flagSenha',
-            'id_cartao': 'idCartao',
+            'flag_impressao_origem_comercial': 'flagImpressaoOrigemComercial',
+            'flag_provisorio': 'flagProvisorio',
+            'id': 'id',
             'id_conta': 'idConta',
-            'id_emissor': 'idEmissor',
-            'id_log': 'idLog',
-            'id_pessoa_fisica': 'idPessoaFisica',
-            'id_produto': 'idProduto',
-            'nome_plastico': 'nomePlastico',
+            'id_estagio_cartao': 'idEstagioCartao',
+            'id_pessoa': 'idPessoa',
+            'id_status_cartao': 'idStatusCartao',
             'numero_cartao': 'numeroCartao',
-            'numero_cartao_real': 'numeroCartaoReal',
-            'status_cartao': 'statusCartao',
-            'status_data': 'statusData'
+            'portador': 'portador'
         }
 
-        self._bin = None
-        self._cod_retorno = None
+        self._arquivo_impressao = None
         self._codigo_desbloqueio = None
-        self._criptografia_hsm = None
-        self._data_emissao = None
+        self._data_estagio_cartao = None
+        self._data_geracao = None
+        self._data_impressao = None
+        self._data_status_cartao = None
         self._data_validade = None
-        self._data_vencimento_padrao = None
-        self._descricao_retorno = None
-        self._estagio_cartao = None
-        self._estagio_data = None
-        self._flag_reversao = None
-        self._flag_senha = None
-        self._id_cartao = None
+        self._flag_impressao_origem_comercial = None
+        self._flag_provisorio = None
+        self._id = None
         self._id_conta = None
-        self._id_emissor = None
-        self._id_log = None
-        self._id_pessoa_fisica = None
-        self._id_produto = None
-        self._nome_plastico = None
+        self._id_estagio_cartao = None
+        self._id_pessoa = None
+        self._id_status_cartao = None
         self._numero_cartao = None
-        self._numero_cartao_real = None
-        self._status_cartao = None
-        self._status_data = None
+        self._portador = None
 
     @property
-    def bin(self):
+    def arquivo_impressao(self):
         """
-        Gets the bin of this CartaoResponse.
+        Gets the arquivo_impressao of this CartaoResponse.
+        Apresenta o nome do arquivo onde o cart\u00C3\u00A3o fora inclu\u00C3\u00ADdo para impress\u00C3\u00A3o por uma gr\u00C3\u00A1fica, quando houver.
 
-
-        :return: The bin of this CartaoResponse.
-        :rtype: int
+        :return: The arquivo_impressao of this CartaoResponse.
+        :rtype: str
         """
-        return self._bin
+        return self._arquivo_impressao
 
-    @bin.setter
-    def bin(self, bin):
+    @arquivo_impressao.setter
+    def arquivo_impressao(self, arquivo_impressao):
         """
-        Sets the bin of this CartaoResponse.
+        Sets the arquivo_impressao of this CartaoResponse.
+        Apresenta o nome do arquivo onde o cart\u00C3\u00A3o fora inclu\u00C3\u00ADdo para impress\u00C3\u00A3o por uma gr\u00C3\u00A1fica, quando houver.
 
-
-        :param bin: The bin of this CartaoResponse.
-        :type: int
+        :param arquivo_impressao: The arquivo_impressao of this CartaoResponse.
+        :type: str
         """
-        self._bin = bin
-
-    @property
-    def cod_retorno(self):
-        """
-        Gets the cod_retorno of this CartaoResponse.
-
-
-        :return: The cod_retorno of this CartaoResponse.
-        :rtype: int
-        """
-        return self._cod_retorno
-
-    @cod_retorno.setter
-    def cod_retorno(self, cod_retorno):
-        """
-        Sets the cod_retorno of this CartaoResponse.
-
-
-        :param cod_retorno: The cod_retorno of this CartaoResponse.
-        :type: int
-        """
-        self._cod_retorno = cod_retorno
+        self._arquivo_impressao = arquivo_impressao
 
     @property
     def codigo_desbloqueio(self):
         """
         Gets the codigo_desbloqueio of this CartaoResponse.
-
+        Apresenta um c\u00C3\u00B3digo espec\u00C3\u00ADfico para ser utilizado como vari\u00C3\u00A1vel no processo de desbloqueio do cart\u00C3\u00A3o para emissores que querem usar esta funcionalidade.
 
         :return: The codigo_desbloqueio of this CartaoResponse.
         :rtype: str
@@ -171,7 +128,7 @@ class CartaoResponse(object):
     def codigo_desbloqueio(self, codigo_desbloqueio):
         """
         Sets the codigo_desbloqueio of this CartaoResponse.
-
+        Apresenta um c\u00C3\u00B3digo espec\u00C3\u00ADfico para ser utilizado como vari\u00C3\u00A1vel no processo de desbloqueio do cart\u00C3\u00A3o para emissores que querem usar esta funcionalidade.
 
         :param codigo_desbloqueio: The codigo_desbloqueio of this CartaoResponse.
         :type: str
@@ -179,57 +136,101 @@ class CartaoResponse(object):
         self._codigo_desbloqueio = codigo_desbloqueio
 
     @property
-    def criptografia_hsm(self):
+    def data_estagio_cartao(self):
         """
-        Gets the criptografia_hsm of this CartaoResponse.
+        Gets the data_estagio_cartao of this CartaoResponse.
+        Apresenta a data em que o idEstagioCartao atual do cart\u00C3\u00A3o fora aplicado, quando houver.
 
-
-        :return: The criptografia_hsm of this CartaoResponse.
-        :rtype: str
+        :return: The data_estagio_cartao of this CartaoResponse.
+        :rtype: LocalDateTime
         """
-        return self._criptografia_hsm
+        return self._data_estagio_cartao
 
-    @criptografia_hsm.setter
-    def criptografia_hsm(self, criptografia_hsm):
+    @data_estagio_cartao.setter
+    def data_estagio_cartao(self, data_estagio_cartao):
         """
-        Sets the criptografia_hsm of this CartaoResponse.
+        Sets the data_estagio_cartao of this CartaoResponse.
+        Apresenta a data em que o idEstagioCartao atual do cart\u00C3\u00A3o fora aplicado, quando houver.
 
-
-        :param criptografia_hsm: The criptografia_hsm of this CartaoResponse.
-        :type: str
+        :param data_estagio_cartao: The data_estagio_cartao of this CartaoResponse.
+        :type: LocalDateTime
         """
-        self._criptografia_hsm = criptografia_hsm
+        self._data_estagio_cartao = data_estagio_cartao
 
     @property
-    def data_emissao(self):
+    def data_geracao(self):
         """
-        Gets the data_emissao of this CartaoResponse.
+        Gets the data_geracao of this CartaoResponse.
+        Apresenta a data em que o cart\u00C3\u00A3o foi gerado.
 
-
-        :return: The data_emissao of this CartaoResponse.
-        :rtype: datetime
+        :return: The data_geracao of this CartaoResponse.
+        :rtype: LocalDateTime
         """
-        return self._data_emissao
+        return self._data_geracao
 
-    @data_emissao.setter
-    def data_emissao(self, data_emissao):
+    @data_geracao.setter
+    def data_geracao(self, data_geracao):
         """
-        Sets the data_emissao of this CartaoResponse.
+        Sets the data_geracao of this CartaoResponse.
+        Apresenta a data em que o cart\u00C3\u00A3o foi gerado.
 
-
-        :param data_emissao: The data_emissao of this CartaoResponse.
-        :type: datetime
+        :param data_geracao: The data_geracao of this CartaoResponse.
+        :type: LocalDateTime
         """
-        self._data_emissao = data_emissao
+        self._data_geracao = data_geracao
+
+    @property
+    def data_impressao(self):
+        """
+        Gets the data_impressao of this CartaoResponse.
+        Apresenta a data em que o cart\u00C3\u00A3o fora impresso, caso impress\u00C3\u00A3o em loja, ou a data em que ele fora inclu\u00C3\u00ADdo no arquivo para impress\u00C3\u00A3o via gr\u00C3\u00A1fica.
+
+        :return: The data_impressao of this CartaoResponse.
+        :rtype: LocalDateTime
+        """
+        return self._data_impressao
+
+    @data_impressao.setter
+    def data_impressao(self, data_impressao):
+        """
+        Sets the data_impressao of this CartaoResponse.
+        Apresenta a data em que o cart\u00C3\u00A3o fora impresso, caso impress\u00C3\u00A3o em loja, ou a data em que ele fora inclu\u00C3\u00ADdo no arquivo para impress\u00C3\u00A3o via gr\u00C3\u00A1fica.
+
+        :param data_impressao: The data_impressao of this CartaoResponse.
+        :type: LocalDateTime
+        """
+        self._data_impressao = data_impressao
+
+    @property
+    def data_status_cartao(self):
+        """
+        Gets the data_status_cartao of this CartaoResponse.
+        Apresenta a data em que o idStatusCartao atual do cart\u00C3\u00A3o fora aplicado, quando houver.
+
+        :return: The data_status_cartao of this CartaoResponse.
+        :rtype: LocalDateTime
+        """
+        return self._data_status_cartao
+
+    @data_status_cartao.setter
+    def data_status_cartao(self, data_status_cartao):
+        """
+        Sets the data_status_cartao of this CartaoResponse.
+        Apresenta a data em que o idStatusCartao atual do cart\u00C3\u00A3o fora aplicado, quando houver.
+
+        :param data_status_cartao: The data_status_cartao of this CartaoResponse.
+        :type: LocalDateTime
+        """
+        self._data_status_cartao = data_status_cartao
 
     @property
     def data_validade(self):
         """
         Gets the data_validade of this CartaoResponse.
-
+        Apresenta a data de validade do cart\u00C3\u00A3o em formato MMAAAA, quando houver.
 
         :return: The data_validade of this CartaoResponse.
-        :rtype: datetime
+        :rtype: LocalDateTime
         """
         return self._data_validade
 
@@ -237,172 +238,84 @@ class CartaoResponse(object):
     def data_validade(self, data_validade):
         """
         Sets the data_validade of this CartaoResponse.
-
+        Apresenta a data de validade do cart\u00C3\u00A3o em formato MMAAAA, quando houver.
 
         :param data_validade: The data_validade of this CartaoResponse.
-        :type: datetime
+        :type: LocalDateTime
         """
         self._data_validade = data_validade
 
     @property
-    def data_vencimento_padrao(self):
+    def flag_impressao_origem_comercial(self):
         """
-        Gets the data_vencimento_padrao of this CartaoResponse.
+        Gets the flag_impressao_origem_comercial of this CartaoResponse.
+        Quando ativa, indica que o cart\u00C3\u00A3o fora impresso na Origem Comercial.
 
-
-        :return: The data_vencimento_padrao of this CartaoResponse.
-        :rtype: str
-        """
-        return self._data_vencimento_padrao
-
-    @data_vencimento_padrao.setter
-    def data_vencimento_padrao(self, data_vencimento_padrao):
-        """
-        Sets the data_vencimento_padrao of this CartaoResponse.
-
-
-        :param data_vencimento_padrao: The data_vencimento_padrao of this CartaoResponse.
-        :type: str
-        """
-        self._data_vencimento_padrao = data_vencimento_padrao
-
-    @property
-    def descricao_retorno(self):
-        """
-        Gets the descricao_retorno of this CartaoResponse.
-
-
-        :return: The descricao_retorno of this CartaoResponse.
-        :rtype: str
-        """
-        return self._descricao_retorno
-
-    @descricao_retorno.setter
-    def descricao_retorno(self, descricao_retorno):
-        """
-        Sets the descricao_retorno of this CartaoResponse.
-
-
-        :param descricao_retorno: The descricao_retorno of this CartaoResponse.
-        :type: str
-        """
-        self._descricao_retorno = descricao_retorno
-
-    @property
-    def estagio_cartao(self):
-        """
-        Gets the estagio_cartao of this CartaoResponse.
-
-
-        :return: The estagio_cartao of this CartaoResponse.
+        :return: The flag_impressao_origem_comercial of this CartaoResponse.
         :rtype: int
         """
-        return self._estagio_cartao
+        return self._flag_impressao_origem_comercial
 
-    @estagio_cartao.setter
-    def estagio_cartao(self, estagio_cartao):
+    @flag_impressao_origem_comercial.setter
+    def flag_impressao_origem_comercial(self, flag_impressao_origem_comercial):
         """
-        Sets the estagio_cartao of this CartaoResponse.
+        Sets the flag_impressao_origem_comercial of this CartaoResponse.
+        Quando ativa, indica que o cart\u00C3\u00A3o fora impresso na Origem Comercial.
 
-
-        :param estagio_cartao: The estagio_cartao of this CartaoResponse.
+        :param flag_impressao_origem_comercial: The flag_impressao_origem_comercial of this CartaoResponse.
         :type: int
         """
-        self._estagio_cartao = estagio_cartao
+        self._flag_impressao_origem_comercial = flag_impressao_origem_comercial
 
     @property
-    def estagio_data(self):
+    def flag_provisorio(self):
         """
-        Gets the estagio_data of this CartaoResponse.
+        Gets the flag_provisorio of this CartaoResponse.
+        Quando ativa, indica que o cart\u00C3\u00A3o \u00C3\u00A9 provis\u00C3\u00B3rio. Ou seja, \u00C3\u00A9 um cart\u00C3\u00A3o para uso tempor\u00C3\u00A1rio quando se deseja permitir que o cliente transacione sem que ele tenha recebido um cart\u00C3\u00A3o definitivo.
 
-
-        :return: The estagio_data of this CartaoResponse.
-        :rtype: datetime
-        """
-        return self._estagio_data
-
-    @estagio_data.setter
-    def estagio_data(self, estagio_data):
-        """
-        Sets the estagio_data of this CartaoResponse.
-
-
-        :param estagio_data: The estagio_data of this CartaoResponse.
-        :type: datetime
-        """
-        self._estagio_data = estagio_data
-
-    @property
-    def flag_reversao(self):
-        """
-        Gets the flag_reversao of this CartaoResponse.
-
-
-        :return: The flag_reversao of this CartaoResponse.
-        :rtype: bool
-        """
-        return self._flag_reversao
-
-    @flag_reversao.setter
-    def flag_reversao(self, flag_reversao):
-        """
-        Sets the flag_reversao of this CartaoResponse.
-
-
-        :param flag_reversao: The flag_reversao of this CartaoResponse.
-        :type: bool
-        """
-        self._flag_reversao = flag_reversao
-
-    @property
-    def flag_senha(self):
-        """
-        Gets the flag_senha of this CartaoResponse.
-
-
-        :return: The flag_senha of this CartaoResponse.
-        :rtype: bool
-        """
-        return self._flag_senha
-
-    @flag_senha.setter
-    def flag_senha(self, flag_senha):
-        """
-        Sets the flag_senha of this CartaoResponse.
-
-
-        :param flag_senha: The flag_senha of this CartaoResponse.
-        :type: bool
-        """
-        self._flag_senha = flag_senha
-
-    @property
-    def id_cartao(self):
-        """
-        Gets the id_cartao of this CartaoResponse.
-
-
-        :return: The id_cartao of this CartaoResponse.
+        :return: The flag_provisorio of this CartaoResponse.
         :rtype: int
         """
-        return self._id_cartao
+        return self._flag_provisorio
 
-    @id_cartao.setter
-    def id_cartao(self, id_cartao):
+    @flag_provisorio.setter
+    def flag_provisorio(self, flag_provisorio):
         """
-        Sets the id_cartao of this CartaoResponse.
+        Sets the flag_provisorio of this CartaoResponse.
+        Quando ativa, indica que o cart\u00C3\u00A3o \u00C3\u00A9 provis\u00C3\u00B3rio. Ou seja, \u00C3\u00A9 um cart\u00C3\u00A3o para uso tempor\u00C3\u00A1rio quando se deseja permitir que o cliente transacione sem que ele tenha recebido um cart\u00C3\u00A3o definitivo.
 
-
-        :param id_cartao: The id_cartao of this CartaoResponse.
+        :param flag_provisorio: The flag_provisorio of this CartaoResponse.
         :type: int
         """
-        self._id_cartao = id_cartao
+        self._flag_provisorio = flag_provisorio
+
+    @property
+    def id(self):
+        """
+        Gets the id of this CartaoResponse.
+        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Cart\u00C3\u00A3o (id).
+
+        :return: The id of this CartaoResponse.
+        :rtype: int
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """
+        Sets the id of this CartaoResponse.
+        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Cart\u00C3\u00A3o (id).
+
+        :param id: The id of this CartaoResponse.
+        :type: int
+        """
+        self._id = id
 
     @property
     def id_conta(self):
         """
         Gets the id_conta of this CartaoResponse.
-
+        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Conta a qual o cart\u00C3\u00A3o pertence (id).
 
         :return: The id_conta of this CartaoResponse.
         :rtype: int
@@ -413,7 +326,7 @@ class CartaoResponse(object):
     def id_conta(self, id_conta):
         """
         Sets the id_conta of this CartaoResponse.
-
+        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Conta a qual o cart\u00C3\u00A3o pertence (id).
 
         :param id_conta: The id_conta of this CartaoResponse.
         :type: int
@@ -421,120 +334,76 @@ class CartaoResponse(object):
         self._id_conta = id_conta
 
     @property
-    def id_emissor(self):
+    def id_estagio_cartao(self):
         """
-        Gets the id_emissor of this CartaoResponse.
+        Gets the id_estagio_cartao of this CartaoResponse.
+        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Est\u00C3\u00A1gio de Impress\u00C3\u00A3o do Cart\u00C3\u00A3o (id).
 
-
-        :return: The id_emissor of this CartaoResponse.
+        :return: The id_estagio_cartao of this CartaoResponse.
         :rtype: int
         """
-        return self._id_emissor
+        return self._id_estagio_cartao
 
-    @id_emissor.setter
-    def id_emissor(self, id_emissor):
+    @id_estagio_cartao.setter
+    def id_estagio_cartao(self, id_estagio_cartao):
         """
-        Sets the id_emissor of this CartaoResponse.
+        Sets the id_estagio_cartao of this CartaoResponse.
+        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Est\u00C3\u00A1gio de Impress\u00C3\u00A3o do Cart\u00C3\u00A3o (id).
 
-
-        :param id_emissor: The id_emissor of this CartaoResponse.
+        :param id_estagio_cartao: The id_estagio_cartao of this CartaoResponse.
         :type: int
         """
-        self._id_emissor = id_emissor
+        self._id_estagio_cartao = id_estagio_cartao
 
     @property
-    def id_log(self):
+    def id_pessoa(self):
         """
-        Gets the id_log of this CartaoResponse.
+        Gets the id_pessoa of this CartaoResponse.
+        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Pessoa a qual o cart\u00C3\u00A3o pertence (id)
 
-
-        :return: The id_log of this CartaoResponse.
-        :rtype: str
-        """
-        return self._id_log
-
-    @id_log.setter
-    def id_log(self, id_log):
-        """
-        Sets the id_log of this CartaoResponse.
-
-
-        :param id_log: The id_log of this CartaoResponse.
-        :type: str
-        """
-        self._id_log = id_log
-
-    @property
-    def id_pessoa_fisica(self):
-        """
-        Gets the id_pessoa_fisica of this CartaoResponse.
-
-
-        :return: The id_pessoa_fisica of this CartaoResponse.
+        :return: The id_pessoa of this CartaoResponse.
         :rtype: int
         """
-        return self._id_pessoa_fisica
+        return self._id_pessoa
 
-    @id_pessoa_fisica.setter
-    def id_pessoa_fisica(self, id_pessoa_fisica):
+    @id_pessoa.setter
+    def id_pessoa(self, id_pessoa):
         """
-        Sets the id_pessoa_fisica of this CartaoResponse.
+        Sets the id_pessoa of this CartaoResponse.
+        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Pessoa a qual o cart\u00C3\u00A3o pertence (id)
 
-
-        :param id_pessoa_fisica: The id_pessoa_fisica of this CartaoResponse.
+        :param id_pessoa: The id_pessoa of this CartaoResponse.
         :type: int
         """
-        self._id_pessoa_fisica = id_pessoa_fisica
+        self._id_pessoa = id_pessoa
 
     @property
-    def id_produto(self):
+    def id_status_cartao(self):
         """
-        Gets the id_produto of this CartaoResponse.
+        Gets the id_status_cartao of this CartaoResponse.
+        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Status do Cart\u00C3\u00A3o (id).
 
-
-        :return: The id_produto of this CartaoResponse.
+        :return: The id_status_cartao of this CartaoResponse.
         :rtype: int
         """
-        return self._id_produto
+        return self._id_status_cartao
 
-    @id_produto.setter
-    def id_produto(self, id_produto):
+    @id_status_cartao.setter
+    def id_status_cartao(self, id_status_cartao):
         """
-        Sets the id_produto of this CartaoResponse.
+        Sets the id_status_cartao of this CartaoResponse.
+        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Status do Cart\u00C3\u00A3o (id).
 
-
-        :param id_produto: The id_produto of this CartaoResponse.
+        :param id_status_cartao: The id_status_cartao of this CartaoResponse.
         :type: int
         """
-        self._id_produto = id_produto
-
-    @property
-    def nome_plastico(self):
-        """
-        Gets the nome_plastico of this CartaoResponse.
-
-
-        :return: The nome_plastico of this CartaoResponse.
-        :rtype: str
-        """
-        return self._nome_plastico
-
-    @nome_plastico.setter
-    def nome_plastico(self, nome_plastico):
-        """
-        Sets the nome_plastico of this CartaoResponse.
-
-
-        :param nome_plastico: The nome_plastico of this CartaoResponse.
-        :type: str
-        """
-        self._nome_plastico = nome_plastico
+        self._id_status_cartao = id_status_cartao
 
     @property
     def numero_cartao(self):
         """
         Gets the numero_cartao of this CartaoResponse.
-
+        Apresenta o n\u00C3\u00BAmero do cart\u00C3\u00A3o.
 
         :return: The numero_cartao of this CartaoResponse.
         :rtype: str
@@ -545,7 +414,7 @@ class CartaoResponse(object):
     def numero_cartao(self, numero_cartao):
         """
         Sets the numero_cartao of this CartaoResponse.
-
+        Apresenta o n\u00C3\u00BAmero do cart\u00C3\u00A3o.
 
         :param numero_cartao: The numero_cartao of this CartaoResponse.
         :type: str
@@ -553,70 +422,26 @@ class CartaoResponse(object):
         self._numero_cartao = numero_cartao
 
     @property
-    def numero_cartao_real(self):
+    def portador(self):
         """
-        Gets the numero_cartao_real of this CartaoResponse.
+        Gets the portador of this CartaoResponse.
+        Indica qual \u00C3\u00A9 a rela\u00C3\u00A7\u00C3\u00A3o do portador do cart\u00C3\u00A3o com a conta. Quando \u00E2\u0080\u00981\u00E2\u0080\u0099, corresponde ao seu titular. Quando diferente disso, corresponde a um cart\u00C3\u00A3o adicional.
 
-
-        :return: The numero_cartao_real of this CartaoResponse.
-        :rtype: str
-        """
-        return self._numero_cartao_real
-
-    @numero_cartao_real.setter
-    def numero_cartao_real(self, numero_cartao_real):
-        """
-        Sets the numero_cartao_real of this CartaoResponse.
-
-
-        :param numero_cartao_real: The numero_cartao_real of this CartaoResponse.
-        :type: str
-        """
-        self._numero_cartao_real = numero_cartao_real
-
-    @property
-    def status_cartao(self):
-        """
-        Gets the status_cartao of this CartaoResponse.
-
-
-        :return: The status_cartao of this CartaoResponse.
+        :return: The portador of this CartaoResponse.
         :rtype: int
         """
-        return self._status_cartao
+        return self._portador
 
-    @status_cartao.setter
-    def status_cartao(self, status_cartao):
+    @portador.setter
+    def portador(self, portador):
         """
-        Sets the status_cartao of this CartaoResponse.
+        Sets the portador of this CartaoResponse.
+        Indica qual \u00C3\u00A9 a rela\u00C3\u00A7\u00C3\u00A3o do portador do cart\u00C3\u00A3o com a conta. Quando \u00E2\u0080\u00981\u00E2\u0080\u0099, corresponde ao seu titular. Quando diferente disso, corresponde a um cart\u00C3\u00A3o adicional.
 
-
-        :param status_cartao: The status_cartao of this CartaoResponse.
+        :param portador: The portador of this CartaoResponse.
         :type: int
         """
-        self._status_cartao = status_cartao
-
-    @property
-    def status_data(self):
-        """
-        Gets the status_data of this CartaoResponse.
-
-
-        :return: The status_data of this CartaoResponse.
-        :rtype: datetime
-        """
-        return self._status_data
-
-    @status_data.setter
-    def status_data(self, status_data):
-        """
-        Sets the status_data of this CartaoResponse.
-
-
-        :param status_data: The status_data of this CartaoResponse.
-        :type: datetime
-        """
-        self._status_data = status_data
+        self._portador = portador
 
     def to_dict(self):
         """

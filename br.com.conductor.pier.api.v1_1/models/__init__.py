@@ -5,6 +5,8 @@ from .auth_token import AuthToken
 from .body_access_token import BodyAccessToken
 from .cancelar_cartao_response import CancelarCartaoResponse
 from .cartao_response import CartaoResponse
+from .cartao_response_old import CartaoResponseOld
+from .chronology import Chronology
 from .consultar_cartao_response import ConsultarCartaoResponse
 from .consultar_conta_cartao_response import ConsultarContaCartaoResponse
 from .consultar_conta_response import ConsultarContaResponse
@@ -17,9 +19,13 @@ from .embossado_cartao_response import EmbossadoCartaoResponse
 from .estgio_carto import EstgioCarto
 from .extra_info import ExtraInfo
 from .extrato_response import ExtratoResponse
+from .lista_de_cartes import ListaDeCartes
 from .lista_de_estgios_cartes import ListaDeEstgiosCartes
 from .lista_de_origens_comerciais import ListaDeOrigensComerciais
+from .lista_de_pessoas import ListaDePessoas
 from .lista_de_status_cartes import ListaDeStatusCartes
 from .origem_comercial import OrigemComercial
+from .pessoa import Pessoa
 from .pessoa_fisica_response import PessoaFisicaResponse
 from .saldo_limite_response import SaldoLimiteResponse
+from .status_carto import StatusCarto
