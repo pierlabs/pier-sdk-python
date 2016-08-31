@@ -37,7 +37,7 @@ class PageEstagiosCartoes(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'estagio_cartoes': 'PageImplOfEstagioCartao'
+            'estagio_cartoes': 'PageApiOfEstagioCartao'
         }
 
         self.attribute_map = {
@@ -53,7 +53,7 @@ class PageEstagiosCartoes(object):
 
 
         :return: The estagio_cartoes of this PageEstagiosCartoes.
-        :rtype: PageImplOfEstagioCartao
+        :rtype: PageApiOfEstagioCartao
         """
         return self._estagio_cartoes
 
@@ -64,7 +64,7 @@ class PageEstagiosCartoes(object):
 
 
         :param estagio_cartoes: The estagio_cartoes of this PageEstagiosCartoes.
-        :type: PageImplOfEstagioCartao
+        :type: PageApiOfEstagioCartao
         """
         self._estagio_cartoes = estagio_cartoes
 
