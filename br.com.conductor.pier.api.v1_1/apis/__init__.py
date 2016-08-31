@@ -9,5 +9,5 @@ from .estagio_cartao_api import EstagioCartaoApi
 from .origem_comercial_api import OrigemComercialApi
 from .pessoa_api import PessoaApi
 from .produto_api import ProdutoApi
-from .status_carto_api import StatusCartoApi
+from .status_cartao_api import StatusCartaoApi
 from .token_api import TokenApi

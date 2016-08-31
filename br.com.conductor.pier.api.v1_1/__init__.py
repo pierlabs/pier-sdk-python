@@ -38,7 +38,7 @@ from .apis.estagio_cartao_api import EstagioCartaoApi
 from .apis.origem_comercial_api import OrigemComercialApi
 from .apis.pessoa_api import PessoaApi
 from .apis.produto_api import ProdutoApi
-from .apis.status_carto_api import StatusCartoApi
+from .apis.status_cartao_api import StatusCartaoApi
 from .apis.token_api import TokenApi
 
 # import ApiClient
