@@ -37,20 +37,16 @@ class StatusCarto(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'flag_altera_status': 'str',
-            'flag_cadastro_nova_senha': 'str',
-            'flag_cadastro_senha': 'str',
-            'flag_cancela_cartao': 'str',
-            'flag_cancela_conta': 'str',
-            'flag_cobra_tarifa': 'str',
-            'flag_desbloqueio': 'str',
-            'flag_destino_transferencia': 'str',
-            'flag_emite_provisorio': 'str',
-            'flag_excecao_bandeira': 'str',
-            'flag_origem_transferencia': 'str',
-            'flag_reemite_cartao': 'str',
-            'flag_reversao_cancelamento': 'str',
-            'flag_reversao_desbloqueio': 'str',
+            'flag_altera_status': 'int',
+            'flag_cadastro_nova_senha': 'int',
+            'flag_cancela_conta': 'int',
+            'flag_cancela_no_desbloqueio': 'int',
+            'flag_cobra_tarifa': 'int',
+            'flag_destino_transferencia': 'int',
+            'flag_emite_provisorio': 'int',
+            'flag_excecao_bandeira': 'int',
+            'flag_origem_transferencia': 'int',
+            'flag_reemite_cartao': 'int',
             'id': 'int',
             'id_status_destino_conta': 'int',
             'id_status_destino_desbloqueio': 'int',
@@ -60,18 +56,14 @@ class StatusCarto(object):
         self.attribute_map = {
             'flag_altera_status': 'flagAlteraStatus',
             'flag_cadastro_nova_senha': 'flagCadastroNovaSenha',
-            'flag_cadastro_senha': 'flagCadastroSenha',
-            'flag_cancela_cartao': 'flagCancelaCartao',
             'flag_cancela_conta': 'flagCancelaConta',
+            'flag_cancela_no_desbloqueio': 'flagCancelaNoDesbloqueio',
             'flag_cobra_tarifa': 'flagCobraTarifa',
-            'flag_desbloqueio': 'flagDesbloqueio',
             'flag_destino_transferencia': 'flagDestinoTransferencia',
             'flag_emite_provisorio': 'flagEmiteProvisorio',
             'flag_excecao_bandeira': 'flagExcecaoBandeira',
             'flag_origem_transferencia': 'flagOrigemTransferencia',
             'flag_reemite_cartao': 'flagReemiteCartao',
-            'flag_reversao_cancelamento': 'flagReversaoCancelamento',
-            'flag_reversao_desbloqueio': 'flagReversaoDesbloqueio',
             'id': 'id',
             'id_status_destino_conta': 'idStatusDestinoConta',
             'id_status_destino_desbloqueio': 'idStatusDestinoDesbloqueio',
@@ -80,18 +72,14 @@ class StatusCarto(object):
 
         self._flag_altera_status = None
         self._flag_cadastro_nova_senha = None
-        self._flag_cadastro_senha = None
-        self._flag_cancela_cartao = None
         self._flag_cancela_conta = None
+        self._flag_cancela_no_desbloqueio = None
         self._flag_cobra_tarifa = None
-        self._flag_desbloqueio = None
         self._flag_destino_transferencia = None
         self._flag_emite_provisorio = None
         self._flag_excecao_bandeira = None
         self._flag_origem_transferencia = None
         self._flag_reemite_cartao = None
-        self._flag_reversao_cancelamento = None
-        self._flag_reversao_desbloqueio = None
         self._id = None
         self._id_status_destino_conta = None
         self._id_status_destino_desbloqueio = None
@@ -101,10 +89,10 @@ class StatusCarto(object):
     def flag_altera_status(self):
         """
         Gets the flag_altera_status of this StatusCarto.
-        Quanto ativa, indica que Cart\u00C3\u00B5es que tiverem este idStatusCartao atribu\u00C3\u00ADdo n\u00C3\u00A3o ter\u00C3\u00A3o seu idStatusCartao Alterado, fazendo com que o Cart\u00C3\u00A3o atual possa continuar sendo utilizado at\u00C3\u00A9 o desbloqueio de um novo cart\u00C3\u00A3o.
+        Quando ativa, indica que ao ser atribu\u00C3\u00ADdo um idStatusCartao com essa caracter\u00C3\u00ADstica, o cart\u00C3\u00A3o ter\u00C3\u00A1 o seu idStatusCartao alterado para o que fora escolhido. Caso contr\u00C3\u00A1rio, o idStatusCartao s\u00C3\u00B3 ser\u00C3\u00A1 alterado ap\u00C3\u00B3s o desbloqueio de um novo cart\u00C3\u00A3o do mesmo Portador e Conta.
 
         :return: The flag_altera_status of this StatusCarto.
-        :rtype: str
+        :rtype: int
         """
         return self._flag_altera_status
 
@@ -112,10 +100,10 @@ class StatusCarto(object):
     def flag_altera_status(self, flag_altera_status):
         """
         Sets the flag_altera_status of this StatusCarto.
-        Quanto ativa, indica que Cart\u00C3\u00B5es que tiverem este idStatusCartao atribu\u00C3\u00ADdo n\u00C3\u00A3o ter\u00C3\u00A3o seu idStatusCartao Alterado, fazendo com que o Cart\u00C3\u00A3o atual possa continuar sendo utilizado at\u00C3\u00A9 o desbloqueio de um novo cart\u00C3\u00A3o.
+        Quando ativa, indica que ao ser atribu\u00C3\u00ADdo um idStatusCartao com essa caracter\u00C3\u00ADstica, o cart\u00C3\u00A3o ter\u00C3\u00A1 o seu idStatusCartao alterado para o que fora escolhido. Caso contr\u00C3\u00A1rio, o idStatusCartao s\u00C3\u00B3 ser\u00C3\u00A1 alterado ap\u00C3\u00B3s o desbloqueio de um novo cart\u00C3\u00A3o do mesmo Portador e Conta.
 
         :param flag_altera_status: The flag_altera_status of this StatusCarto.
-        :type: str
+        :type: int
         """
         self._flag_altera_status = flag_altera_status
 
@@ -123,10 +111,10 @@ class StatusCarto(object):
     def flag_cadastro_nova_senha(self):
         """
         Gets the flag_cadastro_nova_senha of this StatusCarto.
-        Quando ativa, indica que os Cart\u00C3\u00B5es que tiverem este idStatusCartao atribu\u00C3\u00ADdo ter\u00C3\u00A3o a senha atual exclu\u00C3\u00ADda.
+        Quando ativa, indica que a senha cadastrada ser\u00C3\u00A1 exclu\u00C3\u00ADda no momento do Bloqueio do cart\u00C3\u00A3o com um idStatusCartao que possua essa caracter\u00C3\u00ADstica, sendo ent\u00C3\u00A3o necess\u00C3\u00A1rio o cadastro de uma nova senha.
 
         :return: The flag_cadastro_nova_senha of this StatusCarto.
-        :rtype: str
+        :rtype: int
         """
         return self._flag_cadastro_nova_senha
 
@@ -134,65 +122,21 @@ class StatusCarto(object):
     def flag_cadastro_nova_senha(self, flag_cadastro_nova_senha):
         """
         Sets the flag_cadastro_nova_senha of this StatusCarto.
-        Quando ativa, indica que os Cart\u00C3\u00B5es que tiverem este idStatusCartao atribu\u00C3\u00ADdo ter\u00C3\u00A3o a senha atual exclu\u00C3\u00ADda.
+        Quando ativa, indica que a senha cadastrada ser\u00C3\u00A1 exclu\u00C3\u00ADda no momento do Bloqueio do cart\u00C3\u00A3o com um idStatusCartao que possua essa caracter\u00C3\u00ADstica, sendo ent\u00C3\u00A3o necess\u00C3\u00A1rio o cadastro de uma nova senha.
 
         :param flag_cadastro_nova_senha: The flag_cadastro_nova_senha of this StatusCarto.
-        :type: str
+        :type: int
         """
         self._flag_cadastro_nova_senha = flag_cadastro_nova_senha
-
-    @property
-    def flag_cadastro_senha(self):
-        """
-        Gets the flag_cadastro_senha of this StatusCarto.
-        Quando ativa, indica se poder\u00C3\u00A1 ser realizado o cadastro de uma senha para o Cart\u00C3\u00A3o.
-
-        :return: The flag_cadastro_senha of this StatusCarto.
-        :rtype: str
-        """
-        return self._flag_cadastro_senha
-
-    @flag_cadastro_senha.setter
-    def flag_cadastro_senha(self, flag_cadastro_senha):
-        """
-        Sets the flag_cadastro_senha of this StatusCarto.
-        Quando ativa, indica se poder\u00C3\u00A1 ser realizado o cadastro de uma senha para o Cart\u00C3\u00A3o.
-
-        :param flag_cadastro_senha: The flag_cadastro_senha of this StatusCarto.
-        :type: str
-        """
-        self._flag_cadastro_senha = flag_cadastro_senha
-
-    @property
-    def flag_cancela_cartao(self):
-        """
-        Gets the flag_cancela_cartao of this StatusCarto.
-        Quando ativa, indica que Cart\u00C3\u00B5es que tiverem este idStatusCartao atribu\u00C3\u00ADdo ter\u00C3\u00A3o o cart\u00C3\u00A3o Cancelado.
-
-        :return: The flag_cancela_cartao of this StatusCarto.
-        :rtype: str
-        """
-        return self._flag_cancela_cartao
-
-    @flag_cancela_cartao.setter
-    def flag_cancela_cartao(self, flag_cancela_cartao):
-        """
-        Sets the flag_cancela_cartao of this StatusCarto.
-        Quando ativa, indica que Cart\u00C3\u00B5es que tiverem este idStatusCartao atribu\u00C3\u00ADdo ter\u00C3\u00A3o o cart\u00C3\u00A3o Cancelado.
-
-        :param flag_cancela_cartao: The flag_cancela_cartao of this StatusCarto.
-        :type: str
-        """
-        self._flag_cancela_cartao = flag_cancela_cartao
 
     @property
     def flag_cancela_conta(self):
         """
         Gets the flag_cancela_conta of this StatusCarto.
-        Quando ativa, indica que Cart\u00C3\u00B5es que tiverem este idStatusCartao atribu\u00C3\u00ADdo ter\u00C3\u00A3o a conta Cancelada.
+        Quando ativa, indica que cart\u00C3\u00B5es que tiverem um idStatusCartao atribu\u00C3\u00ADdo com essa caracter\u00C3\u00ADstica, e tal cart\u00C3\u00A3o seja de um titular (portador = 1), ter\u00C3\u00A3o a conta a qual o cart\u00C3\u00A3o pertence cancelada.
 
         :return: The flag_cancela_conta of this StatusCarto.
-        :rtype: str
+        :rtype: int
         """
         return self._flag_cancela_conta
 
@@ -200,21 +144,43 @@ class StatusCarto(object):
     def flag_cancela_conta(self, flag_cancela_conta):
         """
         Sets the flag_cancela_conta of this StatusCarto.
-        Quando ativa, indica que Cart\u00C3\u00B5es que tiverem este idStatusCartao atribu\u00C3\u00ADdo ter\u00C3\u00A3o a conta Cancelada.
+        Quando ativa, indica que cart\u00C3\u00B5es que tiverem um idStatusCartao atribu\u00C3\u00ADdo com essa caracter\u00C3\u00ADstica, e tal cart\u00C3\u00A3o seja de um titular (portador = 1), ter\u00C3\u00A3o a conta a qual o cart\u00C3\u00A3o pertence cancelada.
 
         :param flag_cancela_conta: The flag_cancela_conta of this StatusCarto.
-        :type: str
+        :type: int
         """
         self._flag_cancela_conta = flag_cancela_conta
+
+    @property
+    def flag_cancela_no_desbloqueio(self):
+        """
+        Gets the flag_cancela_no_desbloqueio of this StatusCarto.
+        Quando ativa, indica que o cart\u00C3\u00A3o ativo que o portador possuir na mesma conta do cart\u00C3\u00A3o a ser desbloqueado, e que o status dele possua essa caracter\u00C3\u00ADstica, dever\u00C3\u00A1 ser cancelado quando um novo cart\u00C3\u00A3o for desbloqueado.
+
+        :return: The flag_cancela_no_desbloqueio of this StatusCarto.
+        :rtype: int
+        """
+        return self._flag_cancela_no_desbloqueio
+
+    @flag_cancela_no_desbloqueio.setter
+    def flag_cancela_no_desbloqueio(self, flag_cancela_no_desbloqueio):
+        """
+        Sets the flag_cancela_no_desbloqueio of this StatusCarto.
+        Quando ativa, indica que o cart\u00C3\u00A3o ativo que o portador possuir na mesma conta do cart\u00C3\u00A3o a ser desbloqueado, e que o status dele possua essa caracter\u00C3\u00ADstica, dever\u00C3\u00A1 ser cancelado quando um novo cart\u00C3\u00A3o for desbloqueado.
+
+        :param flag_cancela_no_desbloqueio: The flag_cancela_no_desbloqueio of this StatusCarto.
+        :type: int
+        """
+        self._flag_cancela_no_desbloqueio = flag_cancela_no_desbloqueio
 
     @property
     def flag_cobra_tarifa(self):
         """
         Gets the flag_cobra_tarifa of this StatusCarto.
-        Quando ativa, indica que Cart\u00C3\u00B5es que tiverem este idStatusCartao atribu\u00C3\u00ADdo ter\u00C3\u00A3o a cobran\u00C3\u00A7a de tarifa lan\u00C3\u00A7ada junto a gera\u00C3\u00A7\u00C3\u00A3o do novo cart\u00C3\u00A3o, desde que o Produto ao qual o cart\u00C3\u00A3o pertence possua o respectivo par\u00C3\u00A2metro configurado.
+        Quando ativa, indica que cart\u00C3\u00B5es que tiverem um idStatusCartao atribu\u00C3\u00ADdo com essa caracter\u00C3\u00ADstica, incluir\u00C3\u00A3o a cobran\u00C3\u00A7a de uma tarifa para a conta de acordo com os valores definidos nos par\u00C3\u00A2metros do emissor.
 
         :return: The flag_cobra_tarifa of this StatusCarto.
-        :rtype: str
+        :rtype: int
         """
         return self._flag_cobra_tarifa
 
@@ -222,34 +188,12 @@ class StatusCarto(object):
     def flag_cobra_tarifa(self, flag_cobra_tarifa):
         """
         Sets the flag_cobra_tarifa of this StatusCarto.
-        Quando ativa, indica que Cart\u00C3\u00B5es que tiverem este idStatusCartao atribu\u00C3\u00ADdo ter\u00C3\u00A3o a cobran\u00C3\u00A7a de tarifa lan\u00C3\u00A7ada junto a gera\u00C3\u00A7\u00C3\u00A3o do novo cart\u00C3\u00A3o, desde que o Produto ao qual o cart\u00C3\u00A3o pertence possua o respectivo par\u00C3\u00A2metro configurado.
+        Quando ativa, indica que cart\u00C3\u00B5es que tiverem um idStatusCartao atribu\u00C3\u00ADdo com essa caracter\u00C3\u00ADstica, incluir\u00C3\u00A3o a cobran\u00C3\u00A7a de uma tarifa para a conta de acordo com os valores definidos nos par\u00C3\u00A2metros do emissor.
 
         :param flag_cobra_tarifa: The flag_cobra_tarifa of this StatusCarto.
-        :type: str
+        :type: int
         """
         self._flag_cobra_tarifa = flag_cobra_tarifa
-
-    @property
-    def flag_desbloqueio(self):
-        """
-        Gets the flag_desbloqueio of this StatusCarto.
-        Quando ativa, indica que Cart\u00C3\u00B5es com este idStatusCartao poder\u00C3\u00A3o ser Desbloqueados.
-
-        :return: The flag_desbloqueio of this StatusCarto.
-        :rtype: str
-        """
-        return self._flag_desbloqueio
-
-    @flag_desbloqueio.setter
-    def flag_desbloqueio(self, flag_desbloqueio):
-        """
-        Sets the flag_desbloqueio of this StatusCarto.
-        Quando ativa, indica que Cart\u00C3\u00B5es com este idStatusCartao poder\u00C3\u00A3o ser Desbloqueados.
-
-        :param flag_desbloqueio: The flag_desbloqueio of this StatusCarto.
-        :type: str
-        """
-        self._flag_desbloqueio = flag_desbloqueio
 
     @property
     def flag_destino_transferencia(self):
@@ -258,7 +202,7 @@ class StatusCarto(object):
         Quando ativa, indica que Cart\u00C3\u00B5es com este idStatusCartao podem receber transfer\u00C3\u00AAncias de cr\u00C3\u00A9ditos/d\u00C3\u00A9bitos oriundos de outros cart\u00C3\u00B5es.
 
         :return: The flag_destino_transferencia of this StatusCarto.
-        :rtype: str
+        :rtype: int
         """
         return self._flag_destino_transferencia
 
@@ -269,7 +213,7 @@ class StatusCarto(object):
         Quando ativa, indica que Cart\u00C3\u00B5es com este idStatusCartao podem receber transfer\u00C3\u00AAncias de cr\u00C3\u00A9ditos/d\u00C3\u00A9bitos oriundos de outros cart\u00C3\u00B5es.
 
         :param flag_destino_transferencia: The flag_destino_transferencia of this StatusCarto.
-        :type: str
+        :type: int
         """
         self._flag_destino_transferencia = flag_destino_transferencia
 
@@ -277,10 +221,10 @@ class StatusCarto(object):
     def flag_emite_provisorio(self):
         """
         Gets the flag_emite_provisorio of this StatusCarto.
-        Quando ativa, indica que os portadores que tiverem seus cart\u00C3\u00B5es associados a idStatusCartao com esta flag poder\u00C3\u00A3o solicitar a emiss\u00C3\u00A3o de um cart\u00C3\u00A3o provis\u00C3\u00B3rio at\u00C3\u00A9 que um novo cart\u00C3\u00A3o definitivo seja recebido. 
+        Quando ativa, indica que poder\u00C3\u00A1 ser criado um novo cart\u00C3\u00A3o provis\u00C3\u00B3rio para o portador.
 
         :return: The flag_emite_provisorio of this StatusCarto.
-        :rtype: str
+        :rtype: int
         """
         return self._flag_emite_provisorio
 
@@ -288,10 +232,10 @@ class StatusCarto(object):
     def flag_emite_provisorio(self, flag_emite_provisorio):
         """
         Sets the flag_emite_provisorio of this StatusCarto.
-        Quando ativa, indica que os portadores que tiverem seus cart\u00C3\u00B5es associados a idStatusCartao com esta flag poder\u00C3\u00A3o solicitar a emiss\u00C3\u00A3o de um cart\u00C3\u00A3o provis\u00C3\u00B3rio at\u00C3\u00A9 que um novo cart\u00C3\u00A3o definitivo seja recebido. 
+        Quando ativa, indica que poder\u00C3\u00A1 ser criado um novo cart\u00C3\u00A3o provis\u00C3\u00B3rio para o portador.
 
         :param flag_emite_provisorio: The flag_emite_provisorio of this StatusCarto.
-        :type: str
+        :type: int
         """
         self._flag_emite_provisorio = flag_emite_provisorio
 
@@ -302,7 +246,7 @@ class StatusCarto(object):
         Quando ativa, indica que os Cart\u00C3\u00B5es que tiverem este idStatusCartao atribu\u00C3\u00ADdo dever\u00C3\u00A3o ter a respectiva informa\u00C3\u00A7\u00C3\u00A3o de mudan\u00C3\u00A7a de status inclu\u00C3\u00ADda no arquivo de exce\u00C3\u00A7\u00C3\u00A3o da Bandeira, a fim de manter atualizado o cadastro do cart\u00C3\u00A3o nela para nortear o que fazer com as transa\u00C3\u00A7\u00C3\u00B5es quando o autorizador estiver indispon\u00C3\u00ADvel.
 
         :return: The flag_excecao_bandeira of this StatusCarto.
-        :rtype: str
+        :rtype: int
         """
         return self._flag_excecao_bandeira
 
@@ -313,7 +257,7 @@ class StatusCarto(object):
         Quando ativa, indica que os Cart\u00C3\u00B5es que tiverem este idStatusCartao atribu\u00C3\u00ADdo dever\u00C3\u00A3o ter a respectiva informa\u00C3\u00A7\u00C3\u00A3o de mudan\u00C3\u00A7a de status inclu\u00C3\u00ADda no arquivo de exce\u00C3\u00A7\u00C3\u00A3o da Bandeira, a fim de manter atualizado o cadastro do cart\u00C3\u00A3o nela para nortear o que fazer com as transa\u00C3\u00A7\u00C3\u00B5es quando o autorizador estiver indispon\u00C3\u00ADvel.
 
         :param flag_excecao_bandeira: The flag_excecao_bandeira of this StatusCarto.
-        :type: str
+        :type: int
         """
         self._flag_excecao_bandeira = flag_excecao_bandeira
 
@@ -324,7 +268,7 @@ class StatusCarto(object):
         Quando ativa, indica que Cart\u00C3\u00B5es com este idStatusCartao podem realizar a transfer\u00C3\u00AAncia de cr\u00C3\u00A9ditos/d\u00C3\u00A9bitos para outros cart\u00C3\u00B5es.
 
         :return: The flag_origem_transferencia of this StatusCarto.
-        :rtype: str
+        :rtype: int
         """
         return self._flag_origem_transferencia
 
@@ -335,7 +279,7 @@ class StatusCarto(object):
         Quando ativa, indica que Cart\u00C3\u00B5es com este idStatusCartao podem realizar a transfer\u00C3\u00AAncia de cr\u00C3\u00A9ditos/d\u00C3\u00A9bitos para outros cart\u00C3\u00B5es.
 
         :param flag_origem_transferencia: The flag_origem_transferencia of this StatusCarto.
-        :type: str
+        :type: int
         """
         self._flag_origem_transferencia = flag_origem_transferencia
 
@@ -343,10 +287,10 @@ class StatusCarto(object):
     def flag_reemite_cartao(self):
         """
         Gets the flag_reemite_cartao of this StatusCarto.
-        Quando ativa, indica que Cart\u00C3\u00B5es que tiverem este idStatusCartao atribu\u00C3\u00ADdo ter\u00C3\u00A3o um novo cart\u00C3\u00A3o automaticamente gerado.
+        Quando ativa, indica que cart\u00C3\u00B5es que tiverem este status atribu\u00C3\u00ADdo ter\u00C3\u00A3o um novo cart\u00C3\u00A3o gerado para o portador, para a mesma conta, automaticamente.
 
         :return: The flag_reemite_cartao of this StatusCarto.
-        :rtype: str
+        :rtype: int
         """
         return self._flag_reemite_cartao
 
@@ -354,56 +298,12 @@ class StatusCarto(object):
     def flag_reemite_cartao(self, flag_reemite_cartao):
         """
         Sets the flag_reemite_cartao of this StatusCarto.
-        Quando ativa, indica que Cart\u00C3\u00B5es que tiverem este idStatusCartao atribu\u00C3\u00ADdo ter\u00C3\u00A3o um novo cart\u00C3\u00A3o automaticamente gerado.
+        Quando ativa, indica que cart\u00C3\u00B5es que tiverem este status atribu\u00C3\u00ADdo ter\u00C3\u00A3o um novo cart\u00C3\u00A3o gerado para o portador, para a mesma conta, automaticamente.
 
         :param flag_reemite_cartao: The flag_reemite_cartao of this StatusCarto.
-        :type: str
+        :type: int
         """
         self._flag_reemite_cartao = flag_reemite_cartao
-
-    @property
-    def flag_reversao_cancelamento(self):
-        """
-        Gets the flag_reversao_cancelamento of this StatusCarto.
-        Quando ativa, indica que o cart\u00C3\u00A3o, mesmo tendo sido cancelado, poder\u00C3\u00A1 ter o processo desfeito.
-
-        :return: The flag_reversao_cancelamento of this StatusCarto.
-        :rtype: str
-        """
-        return self._flag_reversao_cancelamento
-
-    @flag_reversao_cancelamento.setter
-    def flag_reversao_cancelamento(self, flag_reversao_cancelamento):
-        """
-        Sets the flag_reversao_cancelamento of this StatusCarto.
-        Quando ativa, indica que o cart\u00C3\u00A3o, mesmo tendo sido cancelado, poder\u00C3\u00A1 ter o processo desfeito.
-
-        :param flag_reversao_cancelamento: The flag_reversao_cancelamento of this StatusCarto.
-        :type: str
-        """
-        self._flag_reversao_cancelamento = flag_reversao_cancelamento
-
-    @property
-    def flag_reversao_desbloqueio(self):
-        """
-        Gets the flag_reversao_desbloqueio of this StatusCarto.
-        Quando ativa, indica que o cart\u00C3\u00A3o, mesmo tendo sido bloqueado, poder\u00C3\u00A1 ter o processo desfeito.
-
-        :return: The flag_reversao_desbloqueio of this StatusCarto.
-        :rtype: str
-        """
-        return self._flag_reversao_desbloqueio
-
-    @flag_reversao_desbloqueio.setter
-    def flag_reversao_desbloqueio(self, flag_reversao_desbloqueio):
-        """
-        Sets the flag_reversao_desbloqueio of this StatusCarto.
-        Quando ativa, indica que o cart\u00C3\u00A3o, mesmo tendo sido bloqueado, poder\u00C3\u00A1 ter o processo desfeito.
-
-        :param flag_reversao_desbloqueio: The flag_reversao_desbloqueio of this StatusCarto.
-        :type: str
-        """
-        self._flag_reversao_desbloqueio = flag_reversao_desbloqueio
 
     @property
     def id(self):
@@ -431,7 +331,7 @@ class StatusCarto(object):
     def id_status_destino_conta(self):
         """
         Gets the id_status_destino_conta of this StatusCarto.
-        Indica qual o idStatusConta que ser\u00C3\u00A1 atribu\u00C3\u00ADdo ao idConta que tiver o Cartao do titular da mesma cancelado por um idStatusCartao que recomenda o cancelamento da conta.
+        Indica qual o idStatusCartao que ser\u00C3\u00A1 atribu\u00C3\u00ADdo a conta, caso ela seja cancelada devido ao bloqueio de um cart\u00C3\u00A3o quando for utilizado um idStatusCartao no processo de Bloqueio que possua essa caracter\u00C3\u00ADstica.
 
         :return: The id_status_destino_conta of this StatusCarto.
         :rtype: int
@@ -442,7 +342,7 @@ class StatusCarto(object):
     def id_status_destino_conta(self, id_status_destino_conta):
         """
         Sets the id_status_destino_conta of this StatusCarto.
-        Indica qual o idStatusConta que ser\u00C3\u00A1 atribu\u00C3\u00ADdo ao idConta que tiver o Cartao do titular da mesma cancelado por um idStatusCartao que recomenda o cancelamento da conta.
+        Indica qual o idStatusCartao que ser\u00C3\u00A1 atribu\u00C3\u00ADdo a conta, caso ela seja cancelada devido ao bloqueio de um cart\u00C3\u00A3o quando for utilizado um idStatusCartao no processo de Bloqueio que possua essa caracter\u00C3\u00ADstica.
 
         :param id_status_destino_conta: The id_status_destino_conta of this StatusCarto.
         :type: int
@@ -453,7 +353,7 @@ class StatusCarto(object):
     def id_status_destino_desbloqueio(self):
         """
         Gets the id_status_destino_desbloqueio of this StatusCarto.
-        Indica qual o idStatusCartao que deve ser atribu\u00C3\u00ADdo a um idCartao quando ele for desbloqueado.
+        Indica qual o idStatusCartao que que ser\u00C3\u00A1 atribu\u00C3\u00ADdo aos cart\u00C3\u00B5es que forem cancelados devido ao desbloqueio de um novo cart\u00C3\u00A3o.
 
         :return: The id_status_destino_desbloqueio of this StatusCarto.
         :rtype: int
@@ -464,7 +364,7 @@ class StatusCarto(object):
     def id_status_destino_desbloqueio(self, id_status_destino_desbloqueio):
         """
         Sets the id_status_destino_desbloqueio of this StatusCarto.
-        Indica qual o idStatusCartao que deve ser atribu\u00C3\u00ADdo a um idCartao quando ele for desbloqueado.
+        Indica qual o idStatusCartao que que ser\u00C3\u00A1 atribu\u00C3\u00ADdo aos cart\u00C3\u00B5es que forem cancelados devido ao desbloqueio de um novo cart\u00C3\u00A3o.
 
         :param id_status_destino_desbloqueio: The id_status_destino_desbloqueio of this StatusCarto.
         :type: int

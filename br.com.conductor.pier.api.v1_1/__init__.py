@@ -4,9 +4,8 @@ from __future__ import absolute_import
 from .models.auth_token import AuthToken
 from .models.body_access_token import BodyAccessToken
 from .models.cancelar_cartao_response import CancelarCartaoResponse
-from .models.cartao_response import CartaoResponse
 from .models.cartao_response_old import CartaoResponseOld
-from .models.chronology import Chronology
+from .models.carto import Carto
 from .models.consultar_cartao_response import ConsultarCartaoResponse
 from .models.consultar_conta_cartao_response import ConsultarContaCartaoResponse
 from .models.consultar_conta_response import ConsultarContaResponse

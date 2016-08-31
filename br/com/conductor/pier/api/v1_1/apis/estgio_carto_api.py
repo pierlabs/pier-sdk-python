@@ -122,7 +122,7 @@ class EstgioCartoApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_estagios_cartoes_using_get(self, **kwargs):
+    def listar_estagios_cartoes_using_get(self, id, nome, **kwargs):
         """
         Lista as op\u00C3\u00A7\u00C3\u00B5es de Est\u00C3\u00A1gios do Cart\u00C3\u00A3o 
         Este m\u00C3\u00A9todo permite que sejam listadas as op\u00C3\u00A7\u00C3\u00B5es de Est\u00C3\u00A1gio de Entrega que podem ser atribu\u00C3\u00ADdas aos Cart\u00C3\u00B5es.
@@ -133,12 +133,12 @@ class EstgioCartoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_estagios_cartoes_using_get(callback=callback_function)
+        >>> thread = api.listar_estagios_cartoes_using_get(id, nome, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param int id_estagio_cartao: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Est\u00C3\u00A1gio de Entrega do Cart\u00C3\u00A3o (id).
-        :param str nome: Nome atribu\u00C3\u00ADdo ao Est\u00C3\u00A1gio de Entrega do Cart\u00C3\u00A3o.
+        :param int id: Id do est\u00C3\u00A1gio cart\u00C3\u00A3o (required)
+        :param str nome: Nome do est\u00C3\u00A1gio cart\u00C3\u00A3o (required)
         :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
         :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 100, Max = 100)
         :return: ListaDeEstgiosCartes
@@ -146,7 +146,7 @@ class EstgioCartoApi(object):
                  returns the request thread.
         """
 
-        all_params = ['id_estagio_cartao', 'nome', 'page', 'limit']
+        all_params = ['id', 'nome', 'page', 'limit']
         all_params.append('callback')
 
         params = locals()
@@ -159,13 +159,19 @@ class EstgioCartoApi(object):
             params[key] = val
         del params['kwargs']
 
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `listar_estagios_cartoes_using_get`")
+        # verify the required parameter 'nome' is set
+        if ('nome' not in params) or (params['nome'] is None):
+            raise ValueError("Missing the required parameter `nome` when calling `listar_estagios_cartoes_using_get`")
 
         resource_path = '/api/estagios-cartoes'.replace('{format}', 'json')
         path_params = {}
 
         query_params = {}
-        if 'id_estagio_cartao' in params:
-            query_params['id_estagio_cartao'] = params['id_estagio_cartao']
+        if 'id' in params:
+            query_params['id'] = params['id']
         if 'nome' in params:
             query_params['nome'] = params['nome']
         if 'page' in params:

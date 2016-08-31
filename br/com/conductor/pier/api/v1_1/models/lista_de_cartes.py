@@ -37,7 +37,7 @@ class ListaDeCartes(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'cartoes': 'list[CartaoResponse]'
+            'cartoes': 'list[Carto]'
         }
 
         self.attribute_map = {
@@ -53,7 +53,7 @@ class ListaDeCartes(object):
         Lista de cart\u00C3\u00B5es
 
         :return: The cartoes of this ListaDeCartes.
-        :rtype: list[CartaoResponse]
+        :rtype: list[Carto]
         """
         return self._cartoes
 
@@ -64,7 +64,7 @@ class ListaDeCartes(object):
         Lista de cart\u00C3\u00B5es
 
         :param cartoes: The cartoes of this ListaDeCartes.
-        :type: list[CartaoResponse]
+        :type: list[Carto]
         """
         self._cartoes = cartoes
 

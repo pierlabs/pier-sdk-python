@@ -137,18 +137,20 @@ class CartoApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param int id_cartao: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Cart\u00C3\u00A3o (id).
+        :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Cart\u00C3\u00A3o (id).
         :param int id_status_cartao: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Status do Cart\u00C3\u00A3o (id).
         :param int id_estagio_cartao: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Est\u00C3\u00A1gio de Impress\u00C3\u00A3o do Cart\u00C3\u00A3o (id).
         :param int id_conta: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Conta a qual o cart\u00C3\u00A3o pertence (id).
-        :param int id_pessoa: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Pessoa a qual o cart\u00C3\u00A3o pertence (id).
-        :param int portador: Indica qual \u00C3\u00A9 a rela\u00C3\u00A7\u00C3\u00A3o do portador do cart\u00C3\u00A3o com a conta. Quando \u00E2\u0080\u00981\u00E2\u0080\u0099, corresponde ao seu titular. Quando diferente disso, corresponde a um cart\u00C3\u00A3o adicional.
+        :param int id_pessoa: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Pessoa a qual o cart\u00C3\u00A3o pertence (id)
+        :param int id_produto: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Produto a qual o cart\u00C3\u00A3o pertence (id).
+        :param int portador: Indica qual \u00C3\u00A9 a rela\u00C3\u00A7\u00C3\u00A3o do portador do cart\u00C3\u00A3o com a conta. Quando '1', corresponde ao seu titular. Quando diferente disso, corresponde a um cart\u00C3\u00A3o adicional.
         :param str numero_cartao: Apresenta o n\u00C3\u00BAmero do cart\u00C3\u00A3o.
-        :param str data_geracao: Apresenta a data em que o cart\u00C3\u00A3o foi gerado.
-        :param str data_status_cartao: Apresenta a data em que o idStatusCartao atual do cart\u00C3\u00A3o fora aplicado, quando houver.
-        :param str data_estagio_cartao: Apresenta a data em que o idEstagioCartao atual do cart\u00C3\u00A3o fora aplicado, quando houver.
-        :param str data_validade: Apresenta a data de validade do cart\u00C3\u00A3o em formato AAAA-MM, quando houver.
-        :param str data_impressao: Apresenta a data em que o cart\u00C3\u00A3o fora impresso, caso impress\u00C3\u00A3o em loja, ou a data em que ele fora inclu\u00C3\u00ADdo no arquivo para impress\u00C3\u00A3o via gr\u00C3\u00A1fica.
+        :param str nome_impresso: Apresenta o nome impresso no cart\u00C3\u00A3o.
+        :param date data_geracao: Apresenta a data em que o cart\u00C3\u00A3o foi gerado.
+        :param date data_status_cartao: Apresenta a data em que o idStatusCartao atual do cart\u00C3\u00A3o fora aplicado, quando houver.
+        :param date data_estagio_cartao: Apresenta a data em que o idEstagioCartao atual do cart\u00C3\u00A3o fora aplicado, quando houver.
+        :param str data_validade: Apresenta a data de validade do cart\u00C3\u00A3o em formato MMAAAA, quando houver.
+        :param date data_impressao: Apresenta a data em que o cart\u00C3\u00A3o fora impresso, caso impress\u00C3\u00A3o em loja, ou a data em que ele fora inclu\u00C3\u00ADdo no arquivo para impress\u00C3\u00A3o via gr\u00C3\u00A1fica.
         :param str arquivo_impressao: Apresenta o nome do arquivo onde o cart\u00C3\u00A3o fora inclu\u00C3\u00ADdo para impress\u00C3\u00A3o por uma gr\u00C3\u00A1fica, quando houver.
         :param int flag_impressao_origem_comercial: Quando ativa, indica que o cart\u00C3\u00A3o fora impresso na Origem Comercial.
         :param int flag_provisorio: Quando ativa, indica que o cart\u00C3\u00A3o \u00C3\u00A9 provis\u00C3\u00B3rio. Ou seja, \u00C3\u00A9 um cart\u00C3\u00A3o para uso tempor\u00C3\u00A1rio quando se deseja permitir que o cliente transacione sem que ele tenha recebido um cart\u00C3\u00A3o definitivo.
@@ -160,7 +162,7 @@ class CartoApi(object):
                  returns the request thread.
         """
 
-        all_params = ['id_cartao', 'id_status_cartao', 'id_estagio_cartao', 'id_conta', 'id_pessoa', 'portador', 'numero_cartao', 'data_geracao', 'data_status_cartao', 'data_estagio_cartao', 'data_validade', 'data_impressao', 'arquivo_impressao', 'flag_impressao_origem_comercial', 'flag_provisorio', 'codigo_desbloqueio', 'page', 'limit']
+        all_params = ['id', 'id_status_cartao', 'id_estagio_cartao', 'id_conta', 'id_pessoa', 'id_produto', 'portador', 'numero_cartao', 'nome_impresso', 'data_geracao', 'data_status_cartao', 'data_estagio_cartao', 'data_validade', 'data_impressao', 'arquivo_impressao', 'flag_impressao_origem_comercial', 'flag_provisorio', 'codigo_desbloqueio', 'page', 'limit']
         all_params.append('callback')
 
         params = locals()
@@ -178,38 +180,42 @@ class CartoApi(object):
         path_params = {}
 
         query_params = {}
-        if 'id_cartao' in params:
-            query_params['id_cartao'] = params['id_cartao']
+        if 'id' in params:
+            query_params['id'] = params['id']
         if 'id_status_cartao' in params:
-            query_params['id_status_cartao'] = params['id_status_cartao']
+            query_params['idStatusCartao'] = params['id_status_cartao']
         if 'id_estagio_cartao' in params:
-            query_params['id_estagio_cartao'] = params['id_estagio_cartao']
+            query_params['idEstagioCartao'] = params['id_estagio_cartao']
         if 'id_conta' in params:
-            query_params['id_conta'] = params['id_conta']
+            query_params['idConta'] = params['id_conta']
         if 'id_pessoa' in params:
-            query_params['id_pessoa'] = params['id_pessoa']
+            query_params['idPessoa'] = params['id_pessoa']
+        if 'id_produto' in params:
+            query_params['idProduto'] = params['id_produto']
         if 'portador' in params:
             query_params['portador'] = params['portador']
         if 'numero_cartao' in params:
-            query_params['numero_cartao'] = params['numero_cartao']
+            query_params['numeroCartao'] = params['numero_cartao']
+        if 'nome_impresso' in params:
+            query_params['nomeImpresso'] = params['nome_impresso']
         if 'data_geracao' in params:
-            query_params['data_geracao'] = params['data_geracao']
+            query_params['dataGeracao'] = params['data_geracao']
         if 'data_status_cartao' in params:
-            query_params['data_status_cartao'] = params['data_status_cartao']
+            query_params['dataStatusCartao'] = params['data_status_cartao']
         if 'data_estagio_cartao' in params:
-            query_params['data_estagio_cartao'] = params['data_estagio_cartao']
+            query_params['dataEstagioCartao'] = params['data_estagio_cartao']
         if 'data_validade' in params:
-            query_params['data_validade'] = params['data_validade']
+            query_params['dataValidade'] = params['data_validade']
         if 'data_impressao' in params:
-            query_params['data_impressao'] = params['data_impressao']
+            query_params['dataImpressao'] = params['data_impressao']
         if 'arquivo_impressao' in params:
-            query_params['arquivo_impressao'] = params['arquivo_impressao']
+            query_params['arquivoImpressao'] = params['arquivo_impressao']
         if 'flag_impressao_origem_comercial' in params:
-            query_params['flag_impressao_origem_comercial'] = params['flag_impressao_origem_comercial']
+            query_params['flagImpressaoOrigemComercial'] = params['flag_impressao_origem_comercial']
         if 'flag_provisorio' in params:
-            query_params['flag_provisorio'] = params['flag_provisorio']
+            query_params['flagProvisorio'] = params['flag_provisorio']
         if 'codigo_desbloqueio' in params:
-            query_params['codigo_desbloqueio'] = params['codigo_desbloqueio']
+            query_params['codigoDesbloqueio'] = params['codigo_desbloqueio']
         if 'page' in params:
             query_params['page'] = params['page']
         if 'limit' in params:
