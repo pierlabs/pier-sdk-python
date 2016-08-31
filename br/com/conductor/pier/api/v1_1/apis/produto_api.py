@@ -142,7 +142,7 @@ class ProdutoApi(object):
         :param str status: Status do Produto, onde: (\"0\": Inativo), (\"1\": Ativo).
         :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
         :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 100, Max = 100)
-        :return: ListaDePessoas
+        :return: ListaProdutos
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -203,7 +203,7 @@ class ProdutoApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='ListaDePessoas',
+                                            response_type='ListaProdutos',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response

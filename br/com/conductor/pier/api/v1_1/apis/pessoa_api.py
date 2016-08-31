@@ -146,7 +146,7 @@ class PessoaApi(object):
         :param str cnpj2: N\u00C3\u00BAmero do CNPJ, quando PJ.
         :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
         :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 100, Max = 100)
-        :return: ListaDeOrigensComerciais
+        :return: ListaOrigensComerciais
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -215,7 +215,7 @@ class PessoaApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='ListaDeOrigensComerciais',
+                                            response_type='ListaOrigensComerciais',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response

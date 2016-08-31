@@ -61,7 +61,7 @@ class StatusCartoApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int id_status_cartao: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Est\u00C3\u00A1gio de Entrega do Cart\u00C3\u00A3o (id). (required)
-        :return: StatusCarto
+        :return: StatusCartao
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -117,7 +117,7 @@ class StatusCartoApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='StatusCarto',
+                                            response_type='StatusCartao',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
@@ -153,7 +153,7 @@ class StatusCartoApi(object):
         :param int flag_excecao_bandeira: Quando ativa, indica que os Cart\u00C3\u00B5es que tiverem este idStatusCartao atribu\u00C3\u00ADdo dever\u00C3\u00A3o ter a respectiva informa\u00C3\u00A7\u00C3\u00A3o de mudan\u00C3\u00A7a de status inclu\u00C3\u00ADda no arquivo de exce\u00C3\u00A7\u00C3\u00A3o da Bandeira, a fim de manter atualizado o cadastro do cart\u00C3\u00A3o nela para nortear o que fazer com as transa\u00C3\u00A7\u00C3\u00B5es quando o autorizador estiver indispon\u00C3\u00ADvel.
         :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
         :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 100, Max = 100)
-        :return: ListaDeStatusCartes
+        :return: ListaStatusCartoes
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -236,7 +236,7 @@ class StatusCartoApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='ListaDeStatusCartes',
+                                            response_type='ListaStatusCartoes',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response

@@ -45,10 +45,10 @@ class CartaoApi(object):
                 config.api_client = ApiClient()
             self.api_client = config.api_client
 
-    def bloquear_cartao_using_post(self, id_conta, id_cartao, motivo, **kwargs):
+    def consultar_using_get(self, id_cartao, **kwargs):
         """
-        Bloqueia um cart\u00C3\u00A3o
-        Bloquear um determinado cart\u00C3\u00A3o
+        Apresenta os dados de um determinado Cart\u00C3\u00A3o
+        Este m\u00C3\u00A9todo permite consultar as informa\u00C3\u00A7\u00C3\u00B5es b\u00C3\u00A1sicas de um determinado Cart\u00C3\u00A3o a partir do seu c\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o (id).
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -56,20 +56,17 @@ class CartaoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.bloquear_cartao_using_post(id_conta, id_cartao, motivo, callback=callback_function)
+        >>> thread = api.consultar_using_get(id_cartao, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param int id_conta: ID da Conta (required)
-        :param int id_cartao: ID do Cart\u00C3\u00A3o que deseja cancelar (required)
-        :param int motivo: Motivo do bloqueio (required)
-        :param str observacao: Alguma observa\u00C3\u00A7\u00C3\u00A3o para o bloqueio
-        :return: CancelarCartaoResponse
+        :param int id_cartao: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Cart\u00C3\u00A3o (id). (required)
+        :return: OrigemComercial
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['id_conta', 'id_cartao', 'motivo', 'observacao']
+        all_params = ['id_cartao']
         all_params.append('callback')
 
         params = locals()
@@ -77,33 +74,21 @@ class CartaoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method bloquear_cartao_using_post" % key
+                    " to method consultar_using_get" % key
                 )
             params[key] = val
         del params['kwargs']
 
-        # verify the required parameter 'id_conta' is set
-        if ('id_conta' not in params) or (params['id_conta'] is None):
-            raise ValueError("Missing the required parameter `id_conta` when calling `bloquear_cartao_using_post`")
         # verify the required parameter 'id_cartao' is set
         if ('id_cartao' not in params) or (params['id_cartao'] is None):
-            raise ValueError("Missing the required parameter `id_cartao` when calling `bloquear_cartao_using_post`")
-        # verify the required parameter 'motivo' is set
-        if ('motivo' not in params) or (params['motivo'] is None):
-            raise ValueError("Missing the required parameter `motivo` when calling `bloquear_cartao_using_post`")
+            raise ValueError("Missing the required parameter `id_cartao` when calling `consultar_using_get`")
 
-        resource_path = '/api/contas/{idConta}/cartoes/{idCartao}/bloquear'.replace('{format}', 'json')
+        resource_path = '/api/cartoes/{id_cartao}'.replace('{format}', 'json')
         path_params = {}
-        if 'id_conta' in params:
-            path_params['idConta'] = params['id_conta']
         if 'id_cartao' in params:
-            path_params['idCartao'] = params['id_cartao']
+            path_params['id_cartao'] = params['id_cartao']
 
         query_params = {}
-        if 'motivo' in params:
-            query_params['motivo'] = params['motivo']
-        if 'observacao' in params:
-            query_params['observacao'] = params['observacao']
 
         header_params = {}
 
@@ -125,22 +110,22 @@ class CartaoApi(object):
         # Authentication setting
         auth_settings = ['access_token']
 
-        response = self.api_client.call_api(resource_path, 'POST',
+        response = self.api_client.call_api(resource_path, 'GET',
                                             path_params,
                                             query_params,
                                             header_params,
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='CancelarCartaoResponse',
+                                            response_type='OrigemComercial',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
 
-    def consultar_cartao_using_get(self, id_conta, id_cartao, **kwargs):
+    def listar_using_get(self, **kwargs):
         """
-        Retorna um cart\u00C3\u00A3o
-        Consultar as informa\u00C3\u00A7\u00C3\u00B5es de um determinado cart\u00C3\u00A3o de uma conta
+        Lista os Cart\u00C3\u00B5es gerados pelo Emissor
+        Este m\u00C3\u00A9todo permite que sejam listados os cart\u00C3\u00B5es existentes na base do emissor.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -148,19 +133,36 @@ class CartaoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_cartao_using_get(id_conta, id_cartao, callback=callback_function)
+        >>> thread = api.listar_using_get(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param int id_conta: ID da Conta que pertence o cart\u00C3\u00A3o (required)
-        :param int id_cartao: ID do Cart\u00C3\u00A3o que deseja consultar (required)
-        :param str numero_cartao: N\u00C3\u00BAmero do Cart\u00C3\u00A3o que deseja consultar (opcional)
-        :return: ConsultarCartaoResponse
+        :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Cart\u00C3\u00A3o (id).
+        :param int id_status_cartao: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Status do Cart\u00C3\u00A3o (id).
+        :param int id_estagio_cartao: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Est\u00C3\u00A1gio de Impress\u00C3\u00A3o do Cart\u00C3\u00A3o (id).
+        :param int id_conta: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Conta a qual o cart\u00C3\u00A3o pertence (id).
+        :param int id_pessoa: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Pessoa a qual o cart\u00C3\u00A3o pertence (id)
+        :param int id_produto: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Produto a qual o cart\u00C3\u00A3o pertence (id).
+        :param int portador: Indica qual \u00C3\u00A9 a rela\u00C3\u00A7\u00C3\u00A3o do portador do cart\u00C3\u00A3o com a conta. Quando '1', corresponde ao seu titular. Quando diferente disso, corresponde a um cart\u00C3\u00A3o adicional.
+        :param str numero_cartao: Apresenta o n\u00C3\u00BAmero do cart\u00C3\u00A3o.
+        :param str nome_impresso: Apresenta o nome impresso no cart\u00C3\u00A3o.
+        :param date data_geracao: Apresenta a data em que o cart\u00C3\u00A3o foi gerado.
+        :param date data_status_cartao: Apresenta a data em que o idStatusCartao atual do cart\u00C3\u00A3o fora aplicado, quando houver.
+        :param date data_estagio_cartao: Apresenta a data em que o idEstagioCartao atual do cart\u00C3\u00A3o fora aplicado, quando houver.
+        :param str data_validade: Apresenta a data de validade do cart\u00C3\u00A3o em formato MMAAAA, quando houver.
+        :param date data_impressao: Apresenta a data em que o cart\u00C3\u00A3o fora impresso, caso impress\u00C3\u00A3o em loja, ou a data em que ele fora inclu\u00C3\u00ADdo no arquivo para impress\u00C3\u00A3o via gr\u00C3\u00A1fica.
+        :param str arquivo_impressao: Apresenta o nome do arquivo onde o cart\u00C3\u00A3o fora inclu\u00C3\u00ADdo para impress\u00C3\u00A3o por uma gr\u00C3\u00A1fica, quando houver.
+        :param int flag_impressao_origem_comercial: Quando ativa, indica que o cart\u00C3\u00A3o fora impresso na Origem Comercial.
+        :param int flag_provisorio: Quando ativa, indica que o cart\u00C3\u00A3o \u00C3\u00A9 provis\u00C3\u00B3rio. Ou seja, \u00C3\u00A9 um cart\u00C3\u00A3o para uso tempor\u00C3\u00A1rio quando se deseja permitir que o cliente transacione sem que ele tenha recebido um cart\u00C3\u00A3o definitivo.
+        :param str codigo_desbloqueio: Apresenta um c\u00C3\u00B3digo espec\u00C3\u00ADfico para ser utilizado como vari\u00C3\u00A1vel no processo de desbloqueio do cart\u00C3\u00A3o para emissores que querem usar esta funcionalidade.
+        :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
+        :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 100, Max = 100)
+        :return: ListaCartoes
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['id_conta', 'id_cartao', 'numero_cartao']
+        all_params = ['id', 'id_status_cartao', 'id_estagio_cartao', 'id_conta', 'id_pessoa', 'id_produto', 'portador', 'numero_cartao', 'nome_impresso', 'data_geracao', 'data_status_cartao', 'data_estagio_cartao', 'data_validade', 'data_impressao', 'arquivo_impressao', 'flag_impressao_origem_comercial', 'flag_provisorio', 'codigo_desbloqueio', 'page', 'limit']
         all_params.append('callback')
 
         params = locals()
@@ -168,105 +170,56 @@ class CartaoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_cartao_using_get" % key
+                    " to method listar_using_get" % key
                 )
             params[key] = val
         del params['kwargs']
 
-        # verify the required parameter 'id_conta' is set
-        if ('id_conta' not in params) or (params['id_conta'] is None):
-            raise ValueError("Missing the required parameter `id_conta` when calling `consultar_cartao_using_get`")
-        # verify the required parameter 'id_cartao' is set
-        if ('id_cartao' not in params) or (params['id_cartao'] is None):
-            raise ValueError("Missing the required parameter `id_cartao` when calling `consultar_cartao_using_get`")
 
-        resource_path = '/api/contas/{idConta}/cartoes/{idCartao}'.replace('{format}', 'json')
+        resource_path = '/api/cartoes'.replace('{format}', 'json')
         path_params = {}
-        if 'id_conta' in params:
-            path_params['idConta'] = params['id_conta']
-        if 'id_cartao' in params:
-            path_params['idCartao'] = params['id_cartao']
 
         query_params = {}
-
-        header_params = {}
+        if 'id' in params:
+            query_params['id'] = params['id']
+        if 'id_status_cartao' in params:
+            query_params['idStatusCartao'] = params['id_status_cartao']
+        if 'id_estagio_cartao' in params:
+            query_params['idEstagioCartao'] = params['id_estagio_cartao']
+        if 'id_conta' in params:
+            query_params['idConta'] = params['id_conta']
+        if 'id_pessoa' in params:
+            query_params['idPessoa'] = params['id_pessoa']
+        if 'id_produto' in params:
+            query_params['idProduto'] = params['id_produto']
+        if 'portador' in params:
+            query_params['portador'] = params['portador']
         if 'numero_cartao' in params:
-            header_params['numeroCartao'] = params['numero_cartao']
-
-        form_params = []
-        local_var_files = {}
-
-        body_params = None
-
-        # HTTP header `Accept`
-        header_params['Accept'] = self.api_client.\
-            select_header_accept(['application/json'])
-        if not header_params['Accept']:
-            del header_params['Accept']
-
-        # HTTP header `Content-Type`
-        header_params['Content-Type'] = self.api_client.\
-            select_header_content_type(['application/json'])
-
-        # Authentication setting
-        auth_settings = ['access_token']
-
-        response = self.api_client.call_api(resource_path, 'GET',
-                                            path_params,
-                                            query_params,
-                                            header_params,
-                                            body=body_params,
-                                            post_params=form_params,
-                                            files=local_var_files,
-                                            response_type='ConsultarCartaoResponse',
-                                            auth_settings=auth_settings,
-                                            callback=params.get('callback'))
-        return response
-
-    def consultar_cartoes_using_get(self, id_conta, **kwargs):
-        """
-        Retorna todos os cart\u00C3\u00B5es
-        Consultar todos os cart\u00C3\u00B5es de uma determinada conta
-
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
-        >>> thread = api.consultar_cartoes_using_get(id_conta, callback=callback_function)
-
-        :param callback function: The callback function
-            for asynchronous request. (optional)
-        :param int id_conta: ID da Conta (required)
-        :return: ConsultarCartaoResponse
-                 If the method is called asynchronously,
-                 returns the request thread.
-        """
-
-        all_params = ['id_conta']
-        all_params.append('callback')
-
-        params = locals()
-        for key, val in iteritems(params['kwargs']):
-            if key not in all_params:
-                raise TypeError(
-                    "Got an unexpected keyword argument '%s'"
-                    " to method consultar_cartoes_using_get" % key
-                )
-            params[key] = val
-        del params['kwargs']
-
-        # verify the required parameter 'id_conta' is set
-        if ('id_conta' not in params) or (params['id_conta'] is None):
-            raise ValueError("Missing the required parameter `id_conta` when calling `consultar_cartoes_using_get`")
-
-        resource_path = '/api/contas/{idConta}/cartoes'.replace('{format}', 'json')
-        path_params = {}
-        if 'id_conta' in params:
-            path_params['idConta'] = params['id_conta']
-
-        query_params = {}
+            query_params['numeroCartao'] = params['numero_cartao']
+        if 'nome_impresso' in params:
+            query_params['nomeImpresso'] = params['nome_impresso']
+        if 'data_geracao' in params:
+            query_params['dataGeracao'] = params['data_geracao']
+        if 'data_status_cartao' in params:
+            query_params['dataStatusCartao'] = params['data_status_cartao']
+        if 'data_estagio_cartao' in params:
+            query_params['dataEstagioCartao'] = params['data_estagio_cartao']
+        if 'data_validade' in params:
+            query_params['dataValidade'] = params['data_validade']
+        if 'data_impressao' in params:
+            query_params['dataImpressao'] = params['data_impressao']
+        if 'arquivo_impressao' in params:
+            query_params['arquivoImpressao'] = params['arquivo_impressao']
+        if 'flag_impressao_origem_comercial' in params:
+            query_params['flagImpressaoOrigemComercial'] = params['flag_impressao_origem_comercial']
+        if 'flag_provisorio' in params:
+            query_params['flagProvisorio'] = params['flag_provisorio']
+        if 'codigo_desbloqueio' in params:
+            query_params['codigoDesbloqueio'] = params['codigo_desbloqueio']
+        if 'page' in params:
+            query_params['page'] = params['page']
+        if 'limit' in params:
+            query_params['limit'] = params['limit']
 
         header_params = {}
 
@@ -295,176 +248,7 @@ class CartaoApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='ConsultarCartaoResponse',
-                                            auth_settings=auth_settings,
-                                            callback=params.get('callback'))
-        return response
-
-    def desbloquear_cartao_using_post(self, id_conta, id_cartao, **kwargs):
-        """
-        Desbloqueia um cart\u00C3\u00A3o
-        Desbloquear cart\u00C3\u00A3o de uma determinada conta
-
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
-        >>> thread = api.desbloquear_cartao_using_post(id_conta, id_cartao, callback=callback_function)
-
-        :param callback function: The callback function
-            for asynchronous request. (optional)
-        :param int id_conta: ID da Conta (required)
-        :param int id_cartao: ID do Cart\u00C3\u00A3o que deseja consultar o saldo/limite (required)
-        :param str codigo_segurancao: C\u00C3\u00B3digo seguran\u00C3\u00A7a do cart\u00C3\u00A3o
-        :return: DesbloquearCartaoResponse
-                 If the method is called asynchronously,
-                 returns the request thread.
-        """
-
-        all_params = ['id_conta', 'id_cartao', 'codigo_segurancao']
-        all_params.append('callback')
-
-        params = locals()
-        for key, val in iteritems(params['kwargs']):
-            if key not in all_params:
-                raise TypeError(
-                    "Got an unexpected keyword argument '%s'"
-                    " to method desbloquear_cartao_using_post" % key
-                )
-            params[key] = val
-        del params['kwargs']
-
-        # verify the required parameter 'id_conta' is set
-        if ('id_conta' not in params) or (params['id_conta'] is None):
-            raise ValueError("Missing the required parameter `id_conta` when calling `desbloquear_cartao_using_post`")
-        # verify the required parameter 'id_cartao' is set
-        if ('id_cartao' not in params) or (params['id_cartao'] is None):
-            raise ValueError("Missing the required parameter `id_cartao` when calling `desbloquear_cartao_using_post`")
-
-        resource_path = '/api/contas/{idConta}/cartoes/{idCartao}/desbloquear'.replace('{format}', 'json')
-        path_params = {}
-        if 'id_conta' in params:
-            path_params['idConta'] = params['id_conta']
-        if 'id_cartao' in params:
-            path_params['idCartao'] = params['id_cartao']
-
-        query_params = {}
-
-        header_params = {}
-        if 'codigo_segurancao' in params:
-            header_params['codigoSegurancao'] = params['codigo_segurancao']
-
-        form_params = []
-        local_var_files = {}
-
-        body_params = None
-
-        # HTTP header `Accept`
-        header_params['Accept'] = self.api_client.\
-            select_header_accept(['application/json'])
-        if not header_params['Accept']:
-            del header_params['Accept']
-
-        # HTTP header `Content-Type`
-        header_params['Content-Type'] = self.api_client.\
-            select_header_content_type(['application/json'])
-
-        # Authentication setting
-        auth_settings = ['access_token']
-
-        response = self.api_client.call_api(resource_path, 'POST',
-                                            path_params,
-                                            query_params,
-                                            header_params,
-                                            body=body_params,
-                                            post_params=form_params,
-                                            files=local_var_files,
-                                            response_type='DesbloquearCartaoResponse',
-                                            auth_settings=auth_settings,
-                                            callback=params.get('callback'))
-        return response
-
-    def embossado_cartao_using_put(self, id_conta, id_cartao, **kwargs):
-        """
-        Embossado
-        N\u00C3\u00B3s informe caso tenha embossado algum cart\u00C3\u00A3o.
-
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
-        >>> thread = api.embossado_cartao_using_put(id_conta, id_cartao, callback=callback_function)
-
-        :param callback function: The callback function
-            for asynchronous request. (optional)
-        :param int id_conta: ID da Conta (required)
-        :param int id_cartao: ID do Cart\u00C3\u00A3o que deseja cancelar (required)
-        :return: EmbossadoCartaoResponse
-                 If the method is called asynchronously,
-                 returns the request thread.
-        """
-
-        all_params = ['id_conta', 'id_cartao']
-        all_params.append('callback')
-
-        params = locals()
-        for key, val in iteritems(params['kwargs']):
-            if key not in all_params:
-                raise TypeError(
-                    "Got an unexpected keyword argument '%s'"
-                    " to method embossado_cartao_using_put" % key
-                )
-            params[key] = val
-        del params['kwargs']
-
-        # verify the required parameter 'id_conta' is set
-        if ('id_conta' not in params) or (params['id_conta'] is None):
-            raise ValueError("Missing the required parameter `id_conta` when calling `embossado_cartao_using_put`")
-        # verify the required parameter 'id_cartao' is set
-        if ('id_cartao' not in params) or (params['id_cartao'] is None):
-            raise ValueError("Missing the required parameter `id_cartao` when calling `embossado_cartao_using_put`")
-
-        resource_path = '/api/contas/{idConta}/cartoes/{idCartao}/embossado'.replace('{format}', 'json')
-        path_params = {}
-        if 'id_conta' in params:
-            path_params['idConta'] = params['id_conta']
-        if 'id_cartao' in params:
-            path_params['idCartao'] = params['id_cartao']
-
-        query_params = {}
-
-        header_params = {}
-
-        form_params = []
-        local_var_files = {}
-
-        body_params = None
-
-        # HTTP header `Accept`
-        header_params['Accept'] = self.api_client.\
-            select_header_accept(['application/json'])
-        if not header_params['Accept']:
-            del header_params['Accept']
-
-        # HTTP header `Content-Type`
-        header_params['Content-Type'] = self.api_client.\
-            select_header_content_type(['application/json'])
-
-        # Authentication setting
-        auth_settings = ['access_token']
-
-        response = self.api_client.call_api(resource_path, 'PUT',
-                                            path_params,
-                                            query_params,
-                                            header_params,
-                                            body=body_params,
-                                            post_params=form_params,
-                                            files=local_var_files,
-                                            response_type='EmbossadoCartaoResponse',
+                                            response_type='ListaCartoes',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
