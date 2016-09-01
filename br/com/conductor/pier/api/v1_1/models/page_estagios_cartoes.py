@@ -37,36 +37,361 @@ class PageEstagiosCartoes(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'estagio_cartoes': 'PageApiOfEstagioCartao'
+            'content': 'list[EstagioCartao]',
+            'first': 'bool',
+            'first_page': 'bool',
+            'has_content': 'bool',
+            'has_next_page': 'bool',
+            'has_previous_page': 'bool',
+            'last': 'bool',
+            'next_page': 'int',
+            'number': 'int',
+            'number_of_elements': 'int',
+            'previous_page': 'int',
+            'size': 'int',
+            'total_elements': 'int',
+            'total_pages': 'int'
         }
 
         self.attribute_map = {
-            'estagio_cartoes': 'estagioCartoes'
+            'content': 'content',
+            'first': 'first',
+            'first_page': 'firstPage',
+            'has_content': 'hasContent',
+            'has_next_page': 'hasNextPage',
+            'has_previous_page': 'hasPreviousPage',
+            'last': 'last',
+            'next_page': 'nextPage',
+            'number': 'number',
+            'number_of_elements': 'numberOfElements',
+            'previous_page': 'previousPage',
+            'size': 'size',
+            'total_elements': 'totalElements',
+            'total_pages': 'totalPages'
         }
 
-        self._estagio_cartoes = None
+        self._content = None
+        self._first = None
+        self._first_page = None
+        self._has_content = None
+        self._has_next_page = None
+        self._has_previous_page = None
+        self._last = None
+        self._next_page = None
+        self._number = None
+        self._number_of_elements = None
+        self._previous_page = None
+        self._size = None
+        self._total_elements = None
+        self._total_pages = None
 
     @property
-    def estagio_cartoes(self):
+    def content(self):
         """
-        Gets the estagio_cartoes of this PageEstagiosCartoes.
+        Gets the content of this PageEstagiosCartoes.
 
 
-        :return: The estagio_cartoes of this PageEstagiosCartoes.
-        :rtype: PageApiOfEstagioCartao
+        :return: The content of this PageEstagiosCartoes.
+        :rtype: list[EstagioCartao]
         """
-        return self._estagio_cartoes
+        return self._content
 
-    @estagio_cartoes.setter
-    def estagio_cartoes(self, estagio_cartoes):
+    @content.setter
+    def content(self, content):
         """
-        Sets the estagio_cartoes of this PageEstagiosCartoes.
+        Sets the content of this PageEstagiosCartoes.
 
 
-        :param estagio_cartoes: The estagio_cartoes of this PageEstagiosCartoes.
-        :type: PageApiOfEstagioCartao
+        :param content: The content of this PageEstagiosCartoes.
+        :type: list[EstagioCartao]
         """
-        self._estagio_cartoes = estagio_cartoes
+        self._content = content
+
+    @property
+    def first(self):
+        """
+        Gets the first of this PageEstagiosCartoes.
+
+
+        :return: The first of this PageEstagiosCartoes.
+        :rtype: bool
+        """
+        return self._first
+
+    @first.setter
+    def first(self, first):
+        """
+        Sets the first of this PageEstagiosCartoes.
+
+
+        :param first: The first of this PageEstagiosCartoes.
+        :type: bool
+        """
+        self._first = first
+
+    @property
+    def first_page(self):
+        """
+        Gets the first_page of this PageEstagiosCartoes.
+
+
+        :return: The first_page of this PageEstagiosCartoes.
+        :rtype: bool
+        """
+        return self._first_page
+
+    @first_page.setter
+    def first_page(self, first_page):
+        """
+        Sets the first_page of this PageEstagiosCartoes.
+
+
+        :param first_page: The first_page of this PageEstagiosCartoes.
+        :type: bool
+        """
+        self._first_page = first_page
+
+    @property
+    def has_content(self):
+        """
+        Gets the has_content of this PageEstagiosCartoes.
+
+
+        :return: The has_content of this PageEstagiosCartoes.
+        :rtype: bool
+        """
+        return self._has_content
+
+    @has_content.setter
+    def has_content(self, has_content):
+        """
+        Sets the has_content of this PageEstagiosCartoes.
+
+
+        :param has_content: The has_content of this PageEstagiosCartoes.
+        :type: bool
+        """
+        self._has_content = has_content
+
+    @property
+    def has_next_page(self):
+        """
+        Gets the has_next_page of this PageEstagiosCartoes.
+
+
+        :return: The has_next_page of this PageEstagiosCartoes.
+        :rtype: bool
+        """
+        return self._has_next_page
+
+    @has_next_page.setter
+    def has_next_page(self, has_next_page):
+        """
+        Sets the has_next_page of this PageEstagiosCartoes.
+
+
+        :param has_next_page: The has_next_page of this PageEstagiosCartoes.
+        :type: bool
+        """
+        self._has_next_page = has_next_page
+
+    @property
+    def has_previous_page(self):
+        """
+        Gets the has_previous_page of this PageEstagiosCartoes.
+
+
+        :return: The has_previous_page of this PageEstagiosCartoes.
+        :rtype: bool
+        """
+        return self._has_previous_page
+
+    @has_previous_page.setter
+    def has_previous_page(self, has_previous_page):
+        """
+        Sets the has_previous_page of this PageEstagiosCartoes.
+
+
+        :param has_previous_page: The has_previous_page of this PageEstagiosCartoes.
+        :type: bool
+        """
+        self._has_previous_page = has_previous_page
+
+    @property
+    def last(self):
+        """
+        Gets the last of this PageEstagiosCartoes.
+
+
+        :return: The last of this PageEstagiosCartoes.
+        :rtype: bool
+        """
+        return self._last
+
+    @last.setter
+    def last(self, last):
+        """
+        Sets the last of this PageEstagiosCartoes.
+
+
+        :param last: The last of this PageEstagiosCartoes.
+        :type: bool
+        """
+        self._last = last
+
+    @property
+    def next_page(self):
+        """
+        Gets the next_page of this PageEstagiosCartoes.
+
+
+        :return: The next_page of this PageEstagiosCartoes.
+        :rtype: int
+        """
+        return self._next_page
+
+    @next_page.setter
+    def next_page(self, next_page):
+        """
+        Sets the next_page of this PageEstagiosCartoes.
+
+
+        :param next_page: The next_page of this PageEstagiosCartoes.
+        :type: int
+        """
+        self._next_page = next_page
+
+    @property
+    def number(self):
+        """
+        Gets the number of this PageEstagiosCartoes.
+
+
+        :return: The number of this PageEstagiosCartoes.
+        :rtype: int
+        """
+        return self._number
+
+    @number.setter
+    def number(self, number):
+        """
+        Sets the number of this PageEstagiosCartoes.
+
+
+        :param number: The number of this PageEstagiosCartoes.
+        :type: int
+        """
+        self._number = number
+
+    @property
+    def number_of_elements(self):
+        """
+        Gets the number_of_elements of this PageEstagiosCartoes.
+
+
+        :return: The number_of_elements of this PageEstagiosCartoes.
+        :rtype: int
+        """
+        return self._number_of_elements
+
+    @number_of_elements.setter
+    def number_of_elements(self, number_of_elements):
+        """
+        Sets the number_of_elements of this PageEstagiosCartoes.
+
+
+        :param number_of_elements: The number_of_elements of this PageEstagiosCartoes.
+        :type: int
+        """
+        self._number_of_elements = number_of_elements
+
+    @property
+    def previous_page(self):
+        """
+        Gets the previous_page of this PageEstagiosCartoes.
+
+
+        :return: The previous_page of this PageEstagiosCartoes.
+        :rtype: int
+        """
+        return self._previous_page
+
+    @previous_page.setter
+    def previous_page(self, previous_page):
+        """
+        Sets the previous_page of this PageEstagiosCartoes.
+
+
+        :param previous_page: The previous_page of this PageEstagiosCartoes.
+        :type: int
+        """
+        self._previous_page = previous_page
+
+    @property
+    def size(self):
+        """
+        Gets the size of this PageEstagiosCartoes.
+
+
+        :return: The size of this PageEstagiosCartoes.
+        :rtype: int
+        """
+        return self._size
+
+    @size.setter
+    def size(self, size):
+        """
+        Sets the size of this PageEstagiosCartoes.
+
+
+        :param size: The size of this PageEstagiosCartoes.
+        :type: int
+        """
+        self._size = size
+
+    @property
+    def total_elements(self):
+        """
+        Gets the total_elements of this PageEstagiosCartoes.
+
+
+        :return: The total_elements of this PageEstagiosCartoes.
+        :rtype: int
+        """
+        return self._total_elements
+
+    @total_elements.setter
+    def total_elements(self, total_elements):
+        """
+        Sets the total_elements of this PageEstagiosCartoes.
+
+
+        :param total_elements: The total_elements of this PageEstagiosCartoes.
+        :type: int
+        """
+        self._total_elements = total_elements
+
+    @property
+    def total_pages(self):
+        """
+        Gets the total_pages of this PageEstagiosCartoes.
+
+
+        :return: The total_pages of this PageEstagiosCartoes.
+        :rtype: int
+        """
+        return self._total_pages
+
+    @total_pages.setter
+    def total_pages(self, total_pages):
+        """
+        Sets the total_pages of this PageEstagiosCartoes.
+
+
+        :param total_pages: The total_pages of this PageEstagiosCartoes.
+        :type: int
+        """
+        self._total_pages = total_pages
 
     def to_dict(self):
         """

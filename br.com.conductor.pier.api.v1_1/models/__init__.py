@@ -23,7 +23,6 @@ from .lista_origens_comerciais import ListaOrigensComerciais
 from .lista_produtos import ListaProdutos
 from .lista_status_cartoes import ListaStatusCartoes
 from .origem_comercial import OrigemComercial
-from .page_api_of_estagio_cartao import PageApiOfEstagioCartao
 from .page_estagios_cartoes import PageEstagiosCartoes
 from .pessoa_fisica_response import PessoaFisicaResponse
 from .produto import Produto
