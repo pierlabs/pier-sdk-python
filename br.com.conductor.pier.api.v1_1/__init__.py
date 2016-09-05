@@ -18,12 +18,14 @@ from .models.embossado_cartao_response import EmbossadoCartaoResponse
 from .models.estagio_cartao import EstagioCartao
 from .models.extra_info import ExtraInfo
 from .models.extrato_response import ExtratoResponse
-from .models.lista_cartoes import ListaCartoes
-from .models.lista_origens_comerciais import ListaOrigensComerciais
 from .models.lista_produtos import ListaProdutos
-from .models.lista_status_cartoes import ListaStatusCartoes
 from .models.origem_comercial import OrigemComercial
+from .models.page_cartoes import PageCartoes
 from .models.page_estagios_cartoes import PageEstagiosCartoes
+from .models.page_origens_comerciais import PageOrigensComerciais
+from .models.page_pessoas import PagePessoas
+from .models.page_status_cartoes import PageStatusCartoes
+from .models.pessoa import Pessoa
 from .models.pessoa_fisica_response import PessoaFisicaResponse
 from .models.produto import Produto
 from .models.saldo_limite_response import SaldoLimiteResponse

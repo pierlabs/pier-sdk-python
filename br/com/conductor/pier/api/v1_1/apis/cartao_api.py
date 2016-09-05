@@ -61,7 +61,7 @@ class CartaoApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int id_cartao: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Cart\u00C3\u00A3o (id). (required)
-        :return: OrigemComercial
+        :return: Cartao
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -117,7 +117,84 @@ class CartaoApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='OrigemComercial',
+                                            response_type='Cartao',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
+    def debloquear_using_get(self, id_cartao, **kwargs):
+        """
+        Realiza o desbloqueio de um determinado Cart\u00C3\u00A3o
+        Este m\u00C3\u00A9todo permite que seja desbloqueado um determinado cart\u00C3\u00A3o a partir do seu c\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o (id).
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.debloquear_using_get(id_cartao, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param int id_cartao: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Cart\u00C3\u00A3o (id). (required)
+        :return: Cartao
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id_cartao']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method debloquear_using_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        # verify the required parameter 'id_cartao' is set
+        if ('id_cartao' not in params) or (params['id_cartao'] is None):
+            raise ValueError("Missing the required parameter `id_cartao` when calling `debloquear_using_get`")
+
+        resource_path = '/api/cartoes/{id_cartao}/desbloqueio'.replace('{format}', 'json')
+        path_params = {}
+        if 'id_cartao' in params:
+            path_params['id_cartao'] = params['id_cartao']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        response = self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='Cartao',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
@@ -157,7 +234,7 @@ class CartaoApi(object):
         :param str codigo_desbloqueio: Apresenta um c\u00C3\u00B3digo espec\u00C3\u00ADfico para ser utilizado como vari\u00C3\u00A1vel no processo de desbloqueio do cart\u00C3\u00A3o para emissores que querem usar esta funcionalidade.
         :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
         :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 100, Max = 100)
-        :return: ListaCartoes
+        :return: PageCartoes
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -248,7 +325,7 @@ class CartaoApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='ListaCartoes',
+                                            response_type='PageCartoes',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response

@@ -142,7 +142,7 @@ class OrigemComercialApi(object):
         :param str status: Status da Origem Comercial
         :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
         :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 100, Max = 100)
-        :return: ListaOrigensComerciais
+        :return: PageOrigensComerciais
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -203,7 +203,7 @@ class OrigemComercialApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='ListaOrigensComerciais',
+                                            response_type='PageOrigensComerciais',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
