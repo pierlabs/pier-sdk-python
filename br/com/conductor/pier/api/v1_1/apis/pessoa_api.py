@@ -137,13 +137,13 @@ class PessoaApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param int id_pessoa: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Pessoa (id).
+        :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Pessoa (id).
         :param str nome: Apresenta o 'Nome Completo da PF' ou o 'Nome Completo da Raz\u00C3\u00A3o Social (Nome Empresarial)'.
         :param str tipo: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do tipo da Pessoa, sendo: (\"PF\": Pessoa F\u00C3\u00ADsica), (\"PJ\": Pessoa Jur\u00C3\u00ADdica).
         :param str cpf: N\u00C3\u00BAmero do CPF, quando PF.
         :param str cnpj: N\u00C3\u00BAmero do CNPJ, quando PJ.
-        :param datetime data_nascimento: Data de Nascimento da Pessoa, quando PF, ou a Data de Abertura da Empresa, quando PJ.
-        :param str cnpj2: N\u00C3\u00BAmero do CNPJ, quando PJ.
+        :param date data_nascimento: Data de Nascimento da Pessoa, quando PF, ou a Data de Abertura da Empresa, quando PJ.
+        :param str sexo: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do sexo da Pessoa, quando PF, sendo: (\"M\": Masculino), (\"F\": Feminino), (\"O\": Outro), (\"N\": N\u00C3\u00A3o Especificado).
         :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
         :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 100, Max = 100)
         :return: PagePessoas
@@ -151,7 +151,7 @@ class PessoaApi(object):
                  returns the request thread.
         """
 
-        all_params = ['id_pessoa', 'nome', 'tipo', 'cpf', 'cnpj', 'data_nascimento', 'cnpj2', 'page', 'limit']
+        all_params = ['id', 'nome', 'tipo', 'cpf', 'cnpj', 'data_nascimento', 'sexo', 'page', 'limit']
         all_params.append('callback')
 
         params = locals()
@@ -169,8 +169,8 @@ class PessoaApi(object):
         path_params = {}
 
         query_params = {}
-        if 'id_pessoa' in params:
-            query_params['id_pessoa'] = params['id_pessoa']
+        if 'id' in params:
+            query_params['id'] = params['id']
         if 'nome' in params:
             query_params['nome'] = params['nome']
         if 'tipo' in params:
@@ -180,9 +180,9 @@ class PessoaApi(object):
         if 'cnpj' in params:
             query_params['cnpj'] = params['cnpj']
         if 'data_nascimento' in params:
-            query_params['data_nascimento'] = params['data_nascimento']
-        if 'cnpj2' in params:
-            query_params['cnpj'] = params['cnpj2']
+            query_params['dataNascimento'] = params['data_nascimento']
+        if 'sexo' in params:
+            query_params['sexo'] = params['sexo']
         if 'page' in params:
             query_params['page'] = params['page']
         if 'limit' in params:

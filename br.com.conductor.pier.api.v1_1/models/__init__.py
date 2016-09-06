@@ -18,6 +18,7 @@ from .embossado_cartao_response import EmbossadoCartaoResponse
 from .estagio_cartao import EstagioCartao
 from .extra_info import ExtraInfo
 from .extrato_response import ExtratoResponse
+from .limite_disponibilidade import LimiteDisponibilidade
 from .lista_produtos import ListaProdutos
 from .origem_comercial import OrigemComercial
 from .page_cartoes import PageCartoes

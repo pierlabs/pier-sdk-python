@@ -137,9 +137,9 @@ class ProdutoApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param int id_produto: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Produto (id)
-        :param str nome: Descri\u00C3\u00A7\u00C3\u00A3o do Nome do Produto
-        :param str status: Status do Produto, onde: (\"0\": Inativo), (\"1\": Ativo).
+        :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Produto (id).
+        :param str nome: Descri\u00C3\u00A7\u00C3\u00A3o do Nome do Produto.
+        :param str status: Representa o Status do Produto, onde: (\"0\": Inativo), (\"1\": Ativo).
         :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
         :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 100, Max = 100)
         :return: ListaProdutos
@@ -147,7 +147,7 @@ class ProdutoApi(object):
                  returns the request thread.
         """
 
-        all_params = ['id_produto', 'nome', 'status', 'page', 'limit']
+        all_params = ['id', 'nome', 'status', 'page', 'limit']
         all_params.append('callback')
 
         params = locals()
@@ -165,8 +165,8 @@ class ProdutoApi(object):
         path_params = {}
 
         query_params = {}
-        if 'id_produto' in params:
-            query_params['id_produto'] = params['id_produto']
+        if 'id' in params:
+            query_params['id'] = params['id']
         if 'nome' in params:
             query_params['nome'] = params['nome']
         if 'status' in params:

@@ -45,6 +45,83 @@ class CartaoApi(object):
                 config.api_client = ApiClient()
             self.api_client = config.api_client
 
+    def consultar_limite_using_get(self, id_cartao, **kwargs):
+        """
+        Apresenta os limites do Portador do Cart\u00C3\u00A3o
+        Este m\u00C3\u00A9todo permite consultar os Limites configurados para o Portador de um determinado Cart\u00C3\u00A3o, seja ele o titular da conta ou um adicional, a partir do c\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do Cart\u00C3\u00A3o (id).
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.consultar_limite_using_get(id_cartao, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param int id_cartao: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Cart\u00C3\u00A3o (id). (required)
+        :return: LimiteDisponibilidade
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id_cartao']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method consultar_limite_using_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        # verify the required parameter 'id_cartao' is set
+        if ('id_cartao' not in params) or (params['id_cartao'] is None):
+            raise ValueError("Missing the required parameter `id_cartao` when calling `consultar_limite_using_get`")
+
+        resource_path = '/api/cartoes/{id_cartao}/limites'.replace('{format}', 'json')
+        path_params = {}
+        if 'id_cartao' in params:
+            path_params['id_cartao'] = params['id_cartao']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        response = self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='LimiteDisponibilidade',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
     def consultar_using_get(self, id_cartao, **kwargs):
         """
         Apresenta os dados de um determinado Cart\u00C3\u00A3o
@@ -226,7 +303,7 @@ class CartaoApi(object):
         :param date data_geracao: Apresenta a data em que o cart\u00C3\u00A3o foi gerado.
         :param date data_status_cartao: Apresenta a data em que o idStatusCartao atual do cart\u00C3\u00A3o fora aplicado, quando houver.
         :param date data_estagio_cartao: Apresenta a data em que o idEstagioCartao atual do cart\u00C3\u00A3o fora aplicado, quando houver.
-        :param str data_validade: Apresenta a data de validade do cart\u00C3\u00A3o em formato MMAAAA, quando houver.
+        :param str data_validade: Apresenta a data de validade do cart\u00C3\u00A3o em formato aaaa-MM, quando houver.
         :param date data_impressao: Apresenta a data em que o cart\u00C3\u00A3o fora impresso, caso impress\u00C3\u00A3o em loja, ou a data em que ele fora inclu\u00C3\u00ADdo no arquivo para impress\u00C3\u00A3o via gr\u00C3\u00A1fica.
         :param str arquivo_impressao: Apresenta o nome do arquivo onde o cart\u00C3\u00A3o fora inclu\u00C3\u00ADdo para impress\u00C3\u00A3o por uma gr\u00C3\u00A1fica, quando houver.
         :param int flag_impressao_origem_comercial: Quando ativa, indica que o cart\u00C3\u00A3o fora impresso na Origem Comercial.

@@ -137,9 +137,9 @@ class OrigemComercialApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param int id_origem_comercial: ID da Origem Comercial
-        :param str nome: Nome da Origem Comercial
-        :param str status: Status da Origem Comercial
+        :param int id: Id da origem comercial
+        :param str nome: Nome da origem comercial
+        :param str status: Status da origem comercial
         :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
         :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 100, Max = 100)
         :return: PageOrigensComerciais
@@ -147,7 +147,7 @@ class OrigemComercialApi(object):
                  returns the request thread.
         """
 
-        all_params = ['id_origem_comercial', 'nome', 'status', 'page', 'limit']
+        all_params = ['id', 'nome', 'status', 'page', 'limit']
         all_params.append('callback')
 
         params = locals()
@@ -165,8 +165,8 @@ class OrigemComercialApi(object):
         path_params = {}
 
         query_params = {}
-        if 'id_origem_comercial' in params:
-            query_params['id_origem_comercial'] = params['id_origem_comercial']
+        if 'id' in params:
+            query_params['id'] = params['id']
         if 'nome' in params:
             query_params['nome'] = params['nome']
         if 'status' in params:
