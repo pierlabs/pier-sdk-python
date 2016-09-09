@@ -18,7 +18,7 @@ from .models.embossado_cartao_response import EmbossadoCartaoResponse
 from .models.estagio_cartao import EstagioCartao
 from .models.extra_info import ExtraInfo
 from .models.extrato_response import ExtratoResponse
-from .models.limite_disponibilidade import LimiteDisponibilidade
+from .models.limites import Limites
 from .models.lista_produtos import ListaProdutos
 from .models.origem_comercial import OrigemComercial
 from .models.page_cartoes import PageCartoes
@@ -28,8 +28,10 @@ from .models.page_pessoas import PagePessoas
 from .models.page_status_cartoes import PageStatusCartoes
 from .models.pessoa import Pessoa
 from .models.pessoa_fisica_response import PessoaFisicaResponse
+from .models.portador import Portador
 from .models.produto import Produto
 from .models.saldo_limite_response import SaldoLimiteResponse
+from .models.saldos import Saldos
 from .models.status_cartao import StatusCartao
 
 # import apis into sdk package

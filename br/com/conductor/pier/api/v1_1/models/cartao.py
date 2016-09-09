@@ -54,7 +54,7 @@ class Cartao(object):
             'id_status_cartao': 'int',
             'nome_impresso': 'str',
             'numero_cartao': 'str',
-            'portador': 'int'
+            'tipo_portador': 'str'
         }
 
         self.attribute_map = {
@@ -75,7 +75,7 @@ class Cartao(object):
             'id_status_cartao': 'idStatusCartao',
             'nome_impresso': 'nomeImpresso',
             'numero_cartao': 'numeroCartao',
-            'portador': 'portador'
+            'tipo_portador': 'tipoPortador'
         }
 
         self._arquivo_impressao = None
@@ -95,7 +95,7 @@ class Cartao(object):
         self._id_status_cartao = None
         self._nome_impresso = None
         self._numero_cartao = None
-        self._portador = None
+        self._tipo_portador = None
 
     @property
     def arquivo_impressao(self):
@@ -472,26 +472,26 @@ class Cartao(object):
         self._numero_cartao = numero_cartao
 
     @property
-    def portador(self):
+    def tipo_portador(self):
         """
-        Gets the portador of this Cartao.
+        Gets the tipo_portador of this Cartao.
         Indica qual \u00C3\u00A9 a rela\u00C3\u00A7\u00C3\u00A3o do portador do cart\u00C3\u00A3o com a conta. Quando \u00E2\u0080\u00981\u00E2\u0080\u0099, corresponde ao seu titular. Quando diferente disso, corresponde a um cart\u00C3\u00A3o adicional.
 
-        :return: The portador of this Cartao.
-        :rtype: int
+        :return: The tipo_portador of this Cartao.
+        :rtype: str
         """
-        return self._portador
+        return self._tipo_portador
 
-    @portador.setter
-    def portador(self, portador):
+    @tipo_portador.setter
+    def tipo_portador(self, tipo_portador):
         """
-        Sets the portador of this Cartao.
+        Sets the tipo_portador of this Cartao.
         Indica qual \u00C3\u00A9 a rela\u00C3\u00A7\u00C3\u00A3o do portador do cart\u00C3\u00A3o com a conta. Quando \u00E2\u0080\u00981\u00E2\u0080\u0099, corresponde ao seu titular. Quando diferente disso, corresponde a um cart\u00C3\u00A3o adicional.
 
-        :param portador: The portador of this Cartao.
-        :type: int
+        :param tipo_portador: The tipo_portador of this Cartao.
+        :type: str
         """
-        self._portador = portador
+        self._tipo_portador = tipo_portador
 
     def to_dict(self):
         """

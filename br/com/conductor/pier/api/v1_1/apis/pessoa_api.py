@@ -45,10 +45,10 @@ class PessoaApi(object):
                 config.api_client = ApiClient()
             self.api_client = config.api_client
 
-    def consultar_using_get1(self, id_origem_comercial, **kwargs):
+    def consultar_using_get1(self, id_pessoa, **kwargs):
         """
-        Opera\u00C3\u00A7\u00C3\u00A3o utilizada para consultar uma determinada Origem Comercial 
-        Este m\u00C3\u00A9todo permite que sejam listados os registros de uma determinada Origem Comercial existente na base do emissor. Para isso, \u00C3\u00A9 preciso informar o seu respectivo c\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o (id). 
+        Apresenta os dados de uma determinada Pessoa.
+        Este m\u00C3\u00A9todo permite que sejam listadas as Pessoas existentes na base de dados do Emissor.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -56,17 +56,17 @@ class PessoaApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get1(id_origem_comercial, callback=callback_function)
+        >>> thread = api.consultar_using_get1(id_pessoa, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param int id_origem_comercial: ID da Origem Comercial (required)
-        :return: OrigemComercial
+        :param int id_pessoa: ID da Origem Comercial (required)
+        :return: Pessoa
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['id_origem_comercial']
+        all_params = ['id_pessoa']
         all_params.append('callback')
 
         params = locals()
@@ -79,14 +79,14 @@ class PessoaApi(object):
             params[key] = val
         del params['kwargs']
 
-        # verify the required parameter 'id_origem_comercial' is set
-        if ('id_origem_comercial' not in params) or (params['id_origem_comercial'] is None):
-            raise ValueError("Missing the required parameter `id_origem_comercial` when calling `consultar_using_get1`")
+        # verify the required parameter 'id_pessoa' is set
+        if ('id_pessoa' not in params) or (params['id_pessoa'] is None):
+            raise ValueError("Missing the required parameter `id_pessoa` when calling `consultar_using_get1`")
 
-        resource_path = '/api/pessoas/{id_origem_comercial}'.replace('{format}', 'json')
+        resource_path = '/api/pessoas/{id_pessoa}'.replace('{format}', 'json')
         path_params = {}
-        if 'id_origem_comercial' in params:
-            path_params['id_origem_comercial'] = params['id_origem_comercial']
+        if 'id_pessoa' in params:
+            path_params['id_pessoa'] = params['id_pessoa']
 
         query_params = {}
 
@@ -117,7 +117,7 @@ class PessoaApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='OrigemComercial',
+                                            response_type='Pessoa',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response

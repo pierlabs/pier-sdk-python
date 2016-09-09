@@ -47,8 +47,8 @@ class ProdutoApi(object):
 
     def consultar_produto_using_get(self, id_produto, **kwargs):
         """
-        Opera\u00C3\u00A7\u00C3\u00A3o utilizada para consultar uma determinada Origem Comercial 
-        Este m\u00C3\u00A9todo permite que sejam listados os registros de uma determinada Origem Comercial existente na base do emissor. Para isso, \u00C3\u00A9 preciso informar o seu respectivo c\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o (id). 
+        Apresenta os dados de um determinado Produto.
+        Este m\u00C3\u00A9todo permite consultar um determinado Produto a partir do seu c\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o (id).
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -61,7 +61,7 @@ class ProdutoApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int id_produto: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Produto (id) (required)
-        :return: OrigemComercial
+        :return: Produto
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -83,7 +83,7 @@ class ProdutoApi(object):
         if ('id_produto' not in params) or (params['id_produto'] is None):
             raise ValueError("Missing the required parameter `id_produto` when calling `consultar_produto_using_get`")
 
-        resource_path = '/api/produtos/{id_origem_comercial}'.replace('{format}', 'json')
+        resource_path = '/api/produtos/{id_produto}'.replace('{format}', 'json')
         path_params = {}
         if 'id_produto' in params:
             path_params['id_produto'] = params['id_produto']
@@ -117,7 +117,7 @@ class ProdutoApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='OrigemComercial',
+                                            response_type='Produto',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
@@ -139,7 +139,7 @@ class ProdutoApi(object):
             for asynchronous request. (optional)
         :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Produto (id).
         :param str nome: Descri\u00C3\u00A7\u00C3\u00A3o do Nome do Produto.
-        :param str status: Representa o Status do Produto, onde: (\"0\": Inativo), (\"1\": Ativo).
+        :param int status: Representa o Status do Produto, onde: (\"0\": Inativo), (\"1\": Ativo).
         :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
         :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 100, Max = 100)
         :return: ListaProdutos

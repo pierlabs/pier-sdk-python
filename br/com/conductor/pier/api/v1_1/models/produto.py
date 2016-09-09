@@ -39,7 +39,7 @@ class Produto(object):
         self.swagger_types = {
             'id': 'int',
             'nome': 'str',
-            'status': 'str'
+            'status': 'int'
         }
 
         self.attribute_map = {
@@ -103,7 +103,7 @@ class Produto(object):
         Representa o Status do Produto, onde: (\"0\": Inativo), (\"1\": Ativo).
 
         :return: The status of this Produto.
-        :rtype: str
+        :rtype: int
         """
         return self._status
 
@@ -114,7 +114,7 @@ class Produto(object):
         Representa o Status do Produto, onde: (\"0\": Inativo), (\"1\": Ativo).
 
         :param status: The status of this Produto.
-        :type: str
+        :type: int
         """
         self._status = status
 
