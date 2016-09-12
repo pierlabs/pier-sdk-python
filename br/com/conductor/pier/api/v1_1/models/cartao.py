@@ -233,7 +233,7 @@ class Cartao(object):
     def data_validade(self):
         """
         Gets the data_validade of this Cartao.
-        Apresenta a data de validade do cart\u00C3\u00A3o em formato MMAAAA, quando houver.
+        Apresenta a data de validade do cart\u00C3\u00A3o em formato yyyy-MM, quando houver.
 
         :return: The data_validade of this Cartao.
         :rtype: datetime
@@ -244,7 +244,7 @@ class Cartao(object):
     def data_validade(self, data_validade):
         """
         Sets the data_validade of this Cartao.
-        Apresenta a data de validade do cart\u00C3\u00A3o em formato MMAAAA, quando houver.
+        Apresenta a data de validade do cart\u00C3\u00A3o em formato yyyy-MM, quando houver.
 
         :param data_validade: The data_validade of this Cartao.
         :type: datetime

@@ -139,7 +139,7 @@ class OrigemComercialApi(object):
             for asynchronous request. (optional)
         :param int id: Id da origem comercial
         :param str nome: Nome da origem comercial
-        :param str status: Status da origem comercial
+        :param int status: Status da origem comercial
         :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
         :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 100, Max = 100)
         :return: PageOrigensComerciais

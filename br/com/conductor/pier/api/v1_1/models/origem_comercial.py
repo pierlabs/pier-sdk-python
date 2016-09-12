@@ -39,7 +39,7 @@ class OrigemComercial(object):
         self.swagger_types = {
             'id': 'int',
             'nome': 'str',
-            'status': 'str'
+            'status': 'int'
         }
 
         self.attribute_map = {
@@ -103,7 +103,7 @@ class OrigemComercial(object):
         Status da origem comercial
 
         :return: The status of this OrigemComercial.
-        :rtype: str
+        :rtype: int
         """
         return self._status
 
@@ -114,7 +114,7 @@ class OrigemComercial(object):
         Status da origem comercial
 
         :param status: The status of this OrigemComercial.
-        :type: str
+        :type: int
         """
         self._status = status
 
