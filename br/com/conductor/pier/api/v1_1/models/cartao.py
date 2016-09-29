@@ -475,7 +475,7 @@ class Cartao(object):
     def tipo_portador(self):
         """
         Gets the tipo_portador of this Cartao.
-        Indica qual \u00C3\u00A9 a rela\u00C3\u00A7\u00C3\u00A3o do portador do cart\u00C3\u00A3o com a conta. Quando \u00E2\u0080\u00981\u00E2\u0080\u0099, corresponde ao seu titular. Quando diferente disso, corresponde a um cart\u00C3\u00A3o adicional.
+        Apresenta o tipo do Portador do cart\u00C3\u00A3o, sendo: ('T': Titular, 'A': Adicional).
 
         :return: The tipo_portador of this Cartao.
         :rtype: str
@@ -486,7 +486,7 @@ class Cartao(object):
     def tipo_portador(self, tipo_portador):
         """
         Sets the tipo_portador of this Cartao.
-        Indica qual \u00C3\u00A9 a rela\u00C3\u00A7\u00C3\u00A3o do portador do cart\u00C3\u00A3o com a conta. Quando \u00E2\u0080\u00981\u00E2\u0080\u0099, corresponde ao seu titular. Quando diferente disso, corresponde a um cart\u00C3\u00A3o adicional.
+        Apresenta o tipo do Portador do cart\u00C3\u00A3o, sendo: ('T': Titular, 'A': Adicional).
 
         :param tipo_portador: The tipo_portador of this Cartao.
         :type: str

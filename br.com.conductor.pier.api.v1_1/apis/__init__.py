@@ -10,4 +10,5 @@ from .origem_comercial_api import OrigemComercialApi
 from .pessoa_api import PessoaApi
 from .produto_api import ProdutoApi
 from .status_cartao_api import StatusCartaoApi
+from .status_conta_api import StatusContaApi
 from .token_api import TokenApi

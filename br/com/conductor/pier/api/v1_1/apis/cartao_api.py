@@ -45,7 +45,7 @@ class CartaoApi(object):
                 config.api_client = ApiClient()
             self.api_client = config.api_client
 
-    def consultar_limite_using_get(self, id_cartao, **kwargs):
+    def consultar_limite_disponibilidade_using_get(self, id_cartao, **kwargs):
         """
         Apresenta os limites do Portador do Cart\u00C3\u00A3o
         Este m\u00C3\u00A9todo permite consultar os Limites configurados para o Portador de um determinado Cart\u00C3\u00A3o, seja ele o titular da conta ou um adicional, a partir do c\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do Cart\u00C3\u00A3o (id).
@@ -56,12 +56,12 @@ class CartaoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_limite_using_get(id_cartao, callback=callback_function)
+        >>> thread = api.consultar_limite_disponibilidade_using_get(id_cartao, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int id_cartao: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Cart\u00C3\u00A3o (id). (required)
-        :return: Limites
+        :return: LimiteDisponibilidade
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -74,16 +74,16 @@ class CartaoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_limite_using_get" % key
+                    " to method consultar_limite_disponibilidade_using_get" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id_cartao' is set
         if ('id_cartao' not in params) or (params['id_cartao'] is None):
-            raise ValueError("Missing the required parameter `id_cartao` when calling `consultar_limite_using_get`")
+            raise ValueError("Missing the required parameter `id_cartao` when calling `consultar_limite_disponibilidade_using_get`")
 
-        resource_path = '/api/cartoes/{id_cartao}/limites'.replace('{format}', 'json')
+        resource_path = '/api/cartoes/{id_cartao}/limites-disponibilidades'.replace('{format}', 'json')
         path_params = {}
         if 'id_cartao' in params:
             path_params['id_cartao'] = params['id_cartao']
@@ -117,7 +117,7 @@ class CartaoApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='Limites',
+                                            response_type='LimiteDisponibilidade',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
@@ -195,83 +195,6 @@ class CartaoApi(object):
                                             post_params=form_params,
                                             files=local_var_files,
                                             response_type='Portador',
-                                            auth_settings=auth_settings,
-                                            callback=params.get('callback'))
-        return response
-
-    def consultar_saldo_using_get(self, id_cartao, **kwargs):
-        """
-        Apresenta os saldos dispon\u00C3\u00ADveis para o Portador do Cart\u00C3\u00A3o
-        Este m\u00C3\u00A9todo permite consultar os saldos dispon\u00C3\u00ADveis para uso pelo Portador de um determinado Cart\u00C3\u00A3o, seja ele o titular da conta ou um adicional, a partir do c\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do Cart\u00C3\u00A3o (id).
-
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
-        >>> thread = api.consultar_saldo_using_get(id_cartao, callback=callback_function)
-
-        :param callback function: The callback function
-            for asynchronous request. (optional)
-        :param int id_cartao: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Cart\u00C3\u00A3o (id). (required)
-        :return: Saldos
-                 If the method is called asynchronously,
-                 returns the request thread.
-        """
-
-        all_params = ['id_cartao']
-        all_params.append('callback')
-
-        params = locals()
-        for key, val in iteritems(params['kwargs']):
-            if key not in all_params:
-                raise TypeError(
-                    "Got an unexpected keyword argument '%s'"
-                    " to method consultar_saldo_using_get" % key
-                )
-            params[key] = val
-        del params['kwargs']
-
-        # verify the required parameter 'id_cartao' is set
-        if ('id_cartao' not in params) or (params['id_cartao'] is None):
-            raise ValueError("Missing the required parameter `id_cartao` when calling `consultar_saldo_using_get`")
-
-        resource_path = '/api/cartoes/{id_cartao}/saldos-disponiveis'.replace('{format}', 'json')
-        path_params = {}
-        if 'id_cartao' in params:
-            path_params['id_cartao'] = params['id_cartao']
-
-        query_params = {}
-
-        header_params = {}
-
-        form_params = []
-        local_var_files = {}
-
-        body_params = None
-
-        # HTTP header `Accept`
-        header_params['Accept'] = self.api_client.\
-            select_header_accept(['application/json'])
-        if not header_params['Accept']:
-            del header_params['Accept']
-
-        # HTTP header `Content-Type`
-        header_params['Content-Type'] = self.api_client.\
-            select_header_content_type(['application/json'])
-
-        # Authentication setting
-        auth_settings = ['access_token']
-
-        response = self.api_client.call_api(resource_path, 'GET',
-                                            path_params,
-                                            query_params,
-                                            header_params,
-                                            body=body_params,
-                                            post_params=form_params,
-                                            files=local_var_files,
-                                            response_type='Saldos',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
@@ -451,7 +374,7 @@ class CartaoApi(object):
         :param int id_conta: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Conta a qual o cart\u00C3\u00A3o pertence (id).
         :param int id_pessoa: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Pessoa a qual o cart\u00C3\u00A3o pertence (id)
         :param int id_produto: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Produto a qual o cart\u00C3\u00A3o pertence (id).
-        :param str tipo_portador: Indica qual \u00C3\u00A9 a rela\u00C3\u00A7\u00C3\u00A3o do portador do cart\u00C3\u00A3o com a conta. Quando '1', corresponde ao seu titular. Quando diferente disso, corresponde a um cart\u00C3\u00A3o adicional.
+        :param str tipo_portador: Apresenta o tipo do Portador do cart\u00C3\u00A3o, sendo: ('T': Titular, 'A': Adicional).
         :param str numero_cartao: Apresenta o n\u00C3\u00BAmero do cart\u00C3\u00A3o.
         :param str nome_impresso: Apresenta o nome impresso no cart\u00C3\u00A3o.
         :param date data_geracao: Apresenta a data em que o cart\u00C3\u00A3o foi gerado.
