@@ -11,4 +11,5 @@ from .pessoa_api import PessoaApi
 from .produto_api import ProdutoApi
 from .status_cartao_api import StatusCartaoApi
 from .status_conta_api import StatusContaApi
+from .status_impressao_api import StatusImpressaoApi
 from .token_api import TokenApi

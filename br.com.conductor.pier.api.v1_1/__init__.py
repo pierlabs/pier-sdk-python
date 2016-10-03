@@ -27,6 +27,7 @@ from .models.page_origens_comerciais import PageOrigensComerciais
 from .models.page_pessoas import PagePessoas
 from .models.page_status_cartoes import PageStatusCartoes
 from .models.page_status_contas import PageStatusContas
+from .models.page_status_impressao import PageStatusImpressao
 from .models.pessoa import Pessoa
 from .models.pessoa_fisica_response import PessoaFisicaResponse
 from .models.portador import Portador
@@ -34,6 +35,7 @@ from .models.produto import Produto
 from .models.saldo_limite_response import SaldoLimiteResponse
 from .models.status_cartao import StatusCartao
 from .models.status_conta import StatusConta
+from .models.status_impressao import StatusImpressao
 
 # import apis into sdk package
 from .apis.base_api import BaseApi
@@ -46,6 +48,7 @@ from .apis.pessoa_api import PessoaApi
 from .apis.produto_api import ProdutoApi
 from .apis.status_cartao_api import StatusCartaoApi
 from .apis.status_conta_api import StatusContaApi
+from .apis.status_impressao_api import StatusImpressaoApi
 from .apis.token_api import TokenApi
 
 # import ApiClient

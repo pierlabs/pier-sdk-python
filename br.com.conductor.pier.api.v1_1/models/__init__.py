@@ -27,6 +27,7 @@ from .page_origens_comerciais import PageOrigensComerciais
 from .page_pessoas import PagePessoas
 from .page_status_cartoes import PageStatusCartoes
 from .page_status_contas import PageStatusContas
+from .page_status_impressao import PageStatusImpressao
 from .pessoa import Pessoa
 from .pessoa_fisica_response import PessoaFisicaResponse
 from .portador import Portador
@@ -34,3 +35,4 @@ from .produto import Produto
 from .saldo_limite_response import SaldoLimiteResponse
 from .status_cartao import StatusCartao
 from .status_conta import StatusConta
+from .status_impressao import StatusImpressao
