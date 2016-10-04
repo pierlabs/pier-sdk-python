@@ -45,6 +45,89 @@ class CartaoApi(object):
                 config.api_client = ApiClient()
             self.api_client = config.api_client
 
+    def alterar_status_impressao_using_put(self, id_cartao, id_status_impressao, **kwargs):
+        """
+        Realiza a altera\u00C3\u00A7\u00C3\u00A3o do Status de Impress\u00C3\u00A3o do Cart\u00C3\u00A3o.
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.alterar_status_impressao_using_put(id_cartao, id_status_impressao, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param int id_cartao: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Cart\u00C3\u00A3o (id). (required)
+        :param int id_status_impressao: Id . (required)
+        :return: HistoricoImpressaoCartao
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id_cartao', 'id_status_impressao']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method alterar_status_impressao_using_put" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        # verify the required parameter 'id_cartao' is set
+        if ('id_cartao' not in params) or (params['id_cartao'] is None):
+            raise ValueError("Missing the required parameter `id_cartao` when calling `alterar_status_impressao_using_put`")
+        # verify the required parameter 'id_status_impressao' is set
+        if ('id_status_impressao' not in params) or (params['id_status_impressao'] is None):
+            raise ValueError("Missing the required parameter `id_status_impressao` when calling `alterar_status_impressao_using_put`")
+
+        resource_path = '/api/cartoes/{id_cartao}/impressao/{id_status_impressao} '.replace('{format}', 'json')
+        path_params = {}
+        if 'id_cartao' in params:
+            path_params['id_cartao'] = params['id_cartao']
+        if 'id_status_impressao' in params:
+            path_params['id_status_impressao'] = params['id_status_impressao']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        response = self.api_client.call_api(resource_path, 'PUT',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='HistoricoImpressaoCartao',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
     def consultar_limite_disponibilidade_using_get(self, id_cartao, **kwargs):
         """
         Apresenta os limites do Portador do Cart\u00C3\u00A3o
