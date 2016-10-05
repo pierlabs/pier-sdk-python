@@ -3,18 +3,13 @@ from __future__ import absolute_import
 # import models into model package
 from .auth_token import AuthToken
 from .body_access_token import BodyAccessToken
-from .cancelar_cartao_response import CancelarCartaoResponse
 from .cartao import Cartao
-from .cartao_response_old import CartaoResponseOld
-from .consultar_cartao_response import ConsultarCartaoResponse
 from .consultar_conta_cartao_response import ConsultarContaCartaoResponse
 from .consultar_conta_response import ConsultarContaResponse
 from .consultar_extrato_conta_response import ConsultarExtratoContaResponse
 from .consultar_saldo_limites_response import ConsultarSaldoLimitesResponse
 from .conta_cartao_response import ContaCartaoResponse
 from .conta_response import ContaResponse
-from .desbloquear_cartao_response import DesbloquearCartaoResponse
-from .embossado_cartao_response import EmbossadoCartaoResponse
 from .estagio_cartao import EstagioCartao
 from .extra_info import ExtraInfo
 from .extrato_response import ExtratoResponse
