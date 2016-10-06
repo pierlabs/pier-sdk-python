@@ -4,15 +4,8 @@ from __future__ import absolute_import
 from .models.auth_token import AuthToken
 from .models.body_access_token import BodyAccessToken
 from .models.cartao import Cartao
-from .models.consultar_conta_cartao_response import ConsultarContaCartaoResponse
-from .models.consultar_conta_response import ConsultarContaResponse
-from .models.consultar_extrato_conta_response import ConsultarExtratoContaResponse
-from .models.consultar_saldo_limites_response import ConsultarSaldoLimitesResponse
-from .models.conta_cartao_response import ContaCartaoResponse
-from .models.conta_response import ContaResponse
 from .models.estagio_cartao import EstagioCartao
 from .models.extra_info import ExtraInfo
-from .models.extrato_response import ExtratoResponse
 from .models.historico_impressao_cartao import HistoricoImpressaoCartao
 from .models.limite_disponibilidade import LimiteDisponibilidade
 from .models.lista_produtos import ListaProdutos
@@ -25,10 +18,8 @@ from .models.page_status_cartoes import PageStatusCartoes
 from .models.page_status_contas import PageStatusContas
 from .models.page_status_impressao import PageStatusImpressao
 from .models.pessoa import Pessoa
-from .models.pessoa_fisica_response import PessoaFisicaResponse
 from .models.portador import Portador
 from .models.produto import Produto
-from .models.saldo_limite_response import SaldoLimiteResponse
 from .models.status_cartao import StatusCartao
 from .models.status_conta import StatusConta
 from .models.status_impressao import StatusImpressao
@@ -36,7 +27,6 @@ from .models.status_impressao import StatusImpressao
 # import apis into sdk package
 from .apis.base_api import BaseApi
 from .apis.cartao_api import CartaoApi
-from .apis.conta_api import ContaApi
 from .apis.estagio_cartao_api import EstagioCartaoApi
 from .apis.origem_comercial_api import OrigemComercialApi
 from .apis.pessoa_api import PessoaApi

@@ -3,8 +3,8 @@
 import sys
 from setuptools import setup, find_packages
 
-NAME = "br.com.conductor.pier.api.v1_1"
-VERSION = "1.1.0"
+NAME = "br.com.conductor.pier.api.v2"
+VERSION = "2.0.0"
 
 
 

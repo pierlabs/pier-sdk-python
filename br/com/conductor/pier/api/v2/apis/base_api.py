@@ -47,7 +47,7 @@ class BaseApi(object):
 
     def clear_using_get(self, **kwargs):
         """
-        /bases/clear
+        /api/bases/clear
         
 
         This method makes a synchronous HTTP request by default. To make an

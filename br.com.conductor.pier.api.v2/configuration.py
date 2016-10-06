@@ -75,7 +75,7 @@ class Configuration(object):
 
         # Logging Settings
         self.logger = {}
-        self.logger["package_logger"] = logging.getLogger("br.com.conductor.pier.api.v1_1")
+        self.logger["package_logger"] = logging.getLogger("br.com.conductor.pier.api.v2")
         self.logger["urllib3_logger"] = logging.getLogger("urllib3")
         # Log format
         self.logger_format = '%(asctime)s %(levelname)s %(message)s'
@@ -241,5 +241,5 @@ class Configuration(object):
                "OS: {env}\n"\
                "Python Version: {pyversion}\n"\
                "Version of the API: 0.0.1\n"\
-               "SDK Package Version: 1.1.0".\
+               "SDK Package Version: 2.0.0".\
                format(env=sys.platform, pyversion=sys.version)

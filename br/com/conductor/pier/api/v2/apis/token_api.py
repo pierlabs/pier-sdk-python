@@ -47,7 +47,7 @@ class TokenApi(object):
 
     def callback_using_post(self, body_access_token, **kwargs):
         """
-        /tokens/callback
+        /api/tokens/callback
         
 
         This method makes a synchronous HTTP request by default. To make an
@@ -124,7 +124,7 @@ class TokenApi(object):
 
     def validar_using_post(self, body_access_token, **kwargs):
         """
-        /tokens/validar
+        /api/tokens/validar
         
 
         This method makes a synchronous HTTP request by default. To make an
