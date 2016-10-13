@@ -47,8 +47,8 @@ class EstagioCartaoApi(object):
 
     def consultar_estagio_cartao_using_get(self, id_estagio_cartao, **kwargs):
         """
-        Apresenta os dados de um determinado Estagio Cart\u00C3\u00A3o 
-        Este m\u00C3\u00A9todo permite consultar os par\u00C3\u00A2metros de um determinado Est\u00C3\u00A1gio de Entrega do Cart\u00C3\u00A3o a partir do seu c\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o (id).  
+        Apresenta os dados de um determinado Estagio Cart\u00C3\u00A3o
+        Este m\u00C3\u00A9todo permite consultar os par\u00C3\u00A2metros de um determinado Est\u00C3\u00A1gio de Entrega do Cart\u00C3\u00A3o a partir do seu c\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o (id).
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -124,7 +124,7 @@ class EstagioCartaoApi(object):
 
     def listar_estagios_cartoes_using_get(self, **kwargs):
         """
-        Lista as op\u00C3\u00A7\u00C3\u00B5es de Est\u00C3\u00A1gios do Cart\u00C3\u00A3o 
+        Lista as op\u00C3\u00A7\u00C3\u00B5es de Est\u00C3\u00A1gios do Cart\u00C3\u00A3o
         Este m\u00C3\u00A9todo permite que sejam listadas as op\u00C3\u00A7\u00C3\u00B5es de Est\u00C3\u00A1gio de Entrega que podem ser atribu\u00C3\u00ADdas aos Cart\u00C3\u00B5es.
 
         This method makes a synchronous HTTP request by default. To make an

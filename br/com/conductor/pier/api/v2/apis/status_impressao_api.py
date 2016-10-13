@@ -47,8 +47,8 @@ class StatusImpressaoApi(object):
 
     def consultar_using_get3(self, id_status_impressao, **kwargs):
         """
-        Apresenta os dados de um determinado Status Impress\u00C3\u00A3o 
-        Este m\u00C3\u00A9todo permite consultar os par\u00C3\u00A2metros de um determinado Status de Impress\u00C3\u00A3o do Cart\u00C3\u00A3o a partir do seu c\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o (id).  
+        Apresenta os dados de um determinado Status Impress\u00C3\u00A3o
+        Este m\u00C3\u00A9todo permite consultar os par\u00C3\u00A2metros de um determinado Status de Impress\u00C3\u00A3o do Cart\u00C3\u00A3o a partir do seu c\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o (id).
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -124,7 +124,7 @@ class StatusImpressaoApi(object):
 
     def listar_using_get3(self, **kwargs):
         """
-        Lista as op\u00C3\u00A7\u00C3\u00B5es de Status Impress\u00C3\u00A3o 
+        Lista as op\u00C3\u00A7\u00C3\u00B5es de Status Impress\u00C3\u00A3o
         Este m\u00C3\u00A9todo permite que sejam listadas as op\u00C3\u00A7\u00C3\u00B5es de Status Impress\u00C3\u00A3o que podem ser atribu\u00C3\u00ADdas aos Cart\u00C3\u00B5es.
 
         This method makes a synchronous HTTP request by default. To make an

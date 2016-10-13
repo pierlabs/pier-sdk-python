@@ -47,7 +47,7 @@ class PessoaApi(object):
 
     def consultar_using_get1(self, id_pessoa, **kwargs):
         """
-        Apresenta os dados de uma determinada Pessoa.
+        Apresenta os dados de uma determinada Pessoa
         Este m\u00C3\u00A9todo permite que sejam listadas as Pessoas existentes na base de dados do Emissor.
 
         This method makes a synchronous HTTP request by default. To make an

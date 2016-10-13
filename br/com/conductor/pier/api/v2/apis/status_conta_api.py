@@ -124,7 +124,7 @@ class StatusContaApi(object):
 
     def listar_using_get2(self, **kwargs):
         """
-        Lista os Status Contas cadastrados para o Emissor 
+        Lista os Status Contas cadastrados para o Emissor
         Este m\u00C3\u00A9todo permite que sejam listados os Status Contas existentes na base de dados do Emissor.
 
         This method makes a synchronous HTTP request by default. To make an

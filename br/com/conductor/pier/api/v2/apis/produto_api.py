@@ -47,7 +47,7 @@ class ProdutoApi(object):
 
     def consultar_produto_using_get(self, id_produto, **kwargs):
         """
-        Apresenta os dados de um determinado Produto.
+        Apresenta os dados de um determinado Produto
         Este m\u00C3\u00A9todo permite consultar um determinado Produto a partir do seu c\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o (id).
 
         This method makes a synchronous HTTP request by default. To make an
@@ -125,7 +125,7 @@ class ProdutoApi(object):
     def listar_produtos_using_get(self, **kwargs):
         """
         Lista os Produtos do Emissor
-        Este m\u00C3\u00A9todo permite que sejam listados os Produtos existentes na base de dados do Emissor. 
+        Este m\u00C3\u00A9todo permite que sejam listados os Produtos existentes na base de dados do Emissor.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function

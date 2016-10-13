@@ -47,8 +47,8 @@ class CartaoApi(object):
 
     def alterar_status_impressao_using_put(self, id_cartao, id_status_impressao, **kwargs):
         """
-        Realiza a altera\u00C3\u00A7\u00C3\u00A3o do Status de Impress\u00C3\u00A3o do Cart\u00C3\u00A3o.
-        
+        Realiza a altera\u00C3\u00A7\u00C3\u00A3o do Status de Impress\u00C3\u00A3o do Cart\u00C3\u00A3o
+        Este m\u00C3\u00A9todo permite que uma Aplica\u00C3\u00A7\u00C3\u00A3o que realize a impress\u00C3\u00A3o de cart\u00C3\u00B5es possa indicar que um determinado idCartao fora impresso ou est\u00C3\u00A1 em processo de impress\u00C3\u00A3o. Para isso, basta informar o respectivo c\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do cart\u00C3\u00A3o (id) que deseja ter seu um determinado id_status_impressao atribu\u00C3\u00ADdo a ele. Por padr\u00C3\u00A3o, cart\u00C3\u00B5es provis\u00C3\u00B3rios ou que j\u00C3\u00A1 tenham sido inclu\u00C3\u00ADdos em um arquivo para impress\u00C3\u00A3o via gr\u00C3\u00A1fica ter\u00C3\u00A3o esta requisi\u00C3\u00A7\u00C3\u00A3o negada, se utilizada.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -207,7 +207,7 @@ class CartaoApi(object):
 
     def consultar_portador_using_get(self, id_cartao, **kwargs):
         """
-        Apresenta os dados do Portador do Cart\u00C3\u00A3o 
+        Apresenta os dados do Portador do Cart\u00C3\u00A3o
         Este m\u00C3\u00A9todo permite consultar as informa\u00C3\u00A7\u00C3\u00B5es do Portador de um determinado Cart\u00C3\u00A3o a partir do c\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do Cart\u00C3\u00A3o (id).
 
         This method makes a synchronous HTTP request by default. To make an
@@ -359,7 +359,7 @@ class CartaoApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def debloquear_using_get(self, id_cartao, **kwargs):
+    def desbloquear_using_put(self, id_cartao, **kwargs):
         """
         Realiza o desbloqueio de um determinado Cart\u00C3\u00A3o
         Este m\u00C3\u00A9todo permite que seja desbloqueado um determinado cart\u00C3\u00A3o a partir do seu c\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o (id).
@@ -370,7 +370,7 @@ class CartaoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.debloquear_using_get(id_cartao, callback=callback_function)
+        >>> thread = api.desbloquear_using_put(id_cartao, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -388,14 +388,14 @@ class CartaoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method debloquear_using_get" % key
+                    " to method desbloquear_using_put" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id_cartao' is set
         if ('id_cartao' not in params) or (params['id_cartao'] is None):
-            raise ValueError("Missing the required parameter `id_cartao` when calling `debloquear_using_get`")
+            raise ValueError("Missing the required parameter `id_cartao` when calling `desbloquear_using_put`")
 
         resource_path = '/api/cartoes/{id_cartao}/desbloqueio'.replace('{format}', 'json')
         path_params = {}
@@ -424,7 +424,7 @@ class CartaoApi(object):
         # Authentication setting
         auth_settings = ['access_token']
 
-        response = self.api_client.call_api(resource_path, 'GET',
+        response = self.api_client.call_api(resource_path, 'PUT',
                                             path_params,
                                             query_params,
                                             header_params,
