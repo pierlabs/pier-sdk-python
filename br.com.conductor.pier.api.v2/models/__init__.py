@@ -4,6 +4,7 @@ from __future__ import absolute_import
 from .auth_token import AuthToken
 from .body_access_token import BodyAccessToken
 from .cartao import Cartao
+from .endereco import Endereco
 from .estagio_cartao import EstagioCartao
 from .extra_info import ExtraInfo
 from .historico_impressao_cartao import HistoricoImpressaoCartao
@@ -11,6 +12,7 @@ from .limite_disponibilidade import LimiteDisponibilidade
 from .lista_produtos import ListaProdutos
 from .origem_comercial import OrigemComercial
 from .page_cartoes import PageCartoes
+from .page_enderecos import PageEnderecos
 from .page_estagios_cartoes import PageEstagiosCartoes
 from .page_origens_comerciais import PageOrigensComerciais
 from .page_pessoas import PagePessoas

@@ -47,7 +47,7 @@ class BaseApi(object):
 
     def clear_using_get(self, **kwargs):
         """
-        /api/bases/clear
+        Limpar mapa de bases
         
 
         This method makes a synchronous HTTP request by default. To make an

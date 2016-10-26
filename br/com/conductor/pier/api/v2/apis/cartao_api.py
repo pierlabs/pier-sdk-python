@@ -61,7 +61,7 @@ class CartaoApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int id_cartao: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Cart\u00C3\u00A3o (id). (required)
-        :param int id_status_impressao: Id . (required)
+        :param int id_status_impressao: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Status Impress\u00C3\u00A3o (Id). (required)
         :return: HistoricoImpressaoCartao
                  If the method is called asynchronously,
                  returns the request thread.
