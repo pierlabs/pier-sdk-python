@@ -47,8 +47,8 @@ class EnderecoApi(object):
 
     def alterar_using_put(self, id, **kwargs):
         """
-        Realiza o cadastro de um novo Endere\u00C3\u00A7o
-        Este m\u00C3\u00A9todo permite que seja cadastrado um novo Endere\u00C3\u00A7o na base de dados do Emissor.
+        Atualiza os dados de um determinado Endere\u00C3\u00A7o
+        Este m\u00C3\u00A9todo permite que seja alterado na base do emissor um ou mais registros ligados a um determinado Endere\u00C3\u00A7o.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -63,9 +63,9 @@ class EnderecoApi(object):
         :param int id: id (required)
         :param int id_pessoa: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Pessoa a qual o endere\u00C3\u00A7o pertence (id)
         :param int id_tipo_endereco: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Tipo Endere\u00C3\u00A7o (id)
-        :param str cep: Apresenta o C\u00C3\u00B3digo de Endere\u00C3\u00A7amento Postal (CEP)
+        :param str cep: Apresenta o C\u00C3\u00B3digo de Endere\u00C3\u00A7amento Postal (CEP) no formaro '58800000'
         :param str logradouro: Apresenta o nome do Logradouro
-        :param str numero: Apresenta o n\u00C3\u00BAmero do endere\u00C3\u00A7o
+        :param int numero: Apresenta o n\u00C3\u00BAmero do endere\u00C3\u00A7o
         :param str complemento: Apresenta descri\u00C3\u00A7oes complementares referente ao endere\u00C3\u00A7o
         :param str ponto_referencia: Apresenta a descri\u00C3\u00A7\u00C3\u00A3o de ponto de refer\u00C3\u00AAncia do endere\u00C3\u00A7o
         :param str bairro: Apresenta nome do bairro
@@ -155,7 +155,7 @@ class EnderecoApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_estagio_cartao_using_get(self, id_endereco, **kwargs):
+    def consultar_using_get2(self, id_endereco, **kwargs):
         """
         Apresenta os dados de um determinado Endere\u00C3\u00A7o
         Este m\u00C3\u00A9todo permite consultar um determinado Endere\u00C3\u00A7o a partir do seu c\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o (id).
@@ -166,7 +166,7 @@ class EnderecoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_estagio_cartao_using_get(id_endereco, callback=callback_function)
+        >>> thread = api.consultar_using_get2(id_endereco, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -184,14 +184,14 @@ class EnderecoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_estagio_cartao_using_get" % key
+                    " to method consultar_using_get2" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id_endereco' is set
         if ('id_endereco' not in params) or (params['id_endereco'] is None):
-            raise ValueError("Missing the required parameter `id_endereco` when calling `consultar_estagio_cartao_using_get`")
+            raise ValueError("Missing the required parameter `id_endereco` when calling `consultar_using_get2`")
 
         resource_path = '/api/enderecos/{id_endereco}'.replace('{format}', 'json')
         path_params = {}
@@ -232,7 +232,7 @@ class EnderecoApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get1(self, **kwargs):
+    def listar_using_get2(self, **kwargs):
         """
         Lista os Endere\u00C3\u00A7os cadastrados para o Emissor
         Este m\u00C3\u00A9todo permite que sejam listados os Endere\u00C3\u00A7os existentes na base de dados do Emissor.
@@ -243,7 +243,7 @@ class EnderecoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get1(callback=callback_function)
+        >>> thread = api.listar_using_get2(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -252,7 +252,7 @@ class EnderecoApi(object):
         :param int id_tipo_endereco: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Tipo Endere\u00C3\u00A7o (id)
         :param str cep: Apresenta o C\u00C3\u00B3digo de Endere\u00C3\u00A7amento Postal (CEP)
         :param str logradouro: Apresenta o nome do Logradouro
-        :param str numero: Apresenta o n\u00C3\u00BAmero do endere\u00C3\u00A7o
+        :param int numero: Apresenta o n\u00C3\u00BAmero do endere\u00C3\u00A7o
         :param str complemento: Apresenta descri\u00C3\u00A7oes complementares referente ao endere\u00C3\u00A7o
         :param str ponto_referencia: Apresenta a descri\u00C3\u00A7\u00C3\u00A3o de ponto de refer\u00C3\u00AAncia do endere\u00C3\u00A7o
         :param str bairro: Apresenta nome do bairro
@@ -276,7 +276,7 @@ class EnderecoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get1" % key
+                    " to method listar_using_get2" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -368,9 +368,9 @@ class EnderecoApi(object):
             for asynchronous request. (optional)
         :param int id_pessoa: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Pessoa a qual o endere\u00C3\u00A7o pertence (id)
         :param int id_tipo_endereco: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Tipo Endere\u00C3\u00A7o (id)
-        :param str cep: Apresenta o C\u00C3\u00B3digo de Endere\u00C3\u00A7amento Postal (CEP)
+        :param str cep: Apresenta o C\u00C3\u00B3digo de Endere\u00C3\u00A7amento Postal (CEP) no formaro '58800000'
         :param str logradouro: Apresenta o nome do Logradouro
-        :param str numero: Apresenta o n\u00C3\u00BAmero do endere\u00C3\u00A7o
+        :param int numero: Apresenta o n\u00C3\u00BAmero do endere\u00C3\u00A7o
         :param str complemento: Apresenta descri\u00C3\u00A7oes complementares referente ao endere\u00C3\u00A7o
         :param str ponto_referencia: Apresenta a descri\u00C3\u00A7\u00C3\u00A3o de ponto de refer\u00C3\u00AAncia do endere\u00C3\u00A7o
         :param str bairro: Apresenta nome do bairro

@@ -47,7 +47,7 @@ class Endereco(object):
             'id_pessoa': 'int',
             'id_tipo_endereco': 'int',
             'logradouro': 'str',
-            'numero': 'str',
+            'numero': 'int',
             'pais': 'str',
             'ponto_referencia': 'str',
             'uf': 'str'
@@ -111,7 +111,7 @@ class Endereco(object):
     def cep(self):
         """
         Gets the cep of this Endereco.
-        Apresenta o C\u00C3\u00B3digo de Endere\u00C3\u00A7amento Postal (CEP)
+        Apresenta o C\u00C3\u00B3digo de Endere\u00C3\u00A7amento Postal (CEP) no formaro '58800000'
 
         :return: The cep of this Endereco.
         :rtype: str
@@ -122,7 +122,7 @@ class Endereco(object):
     def cep(self, cep):
         """
         Sets the cep of this Endereco.
-        Apresenta o C\u00C3\u00B3digo de Endere\u00C3\u00A7amento Postal (CEP)
+        Apresenta o C\u00C3\u00B3digo de Endere\u00C3\u00A7amento Postal (CEP) no formaro '58800000'
 
         :param cep: The cep of this Endereco.
         :type: str
@@ -312,7 +312,7 @@ class Endereco(object):
         Apresenta o n\u00C3\u00BAmero do endere\u00C3\u00A7o
 
         :return: The numero of this Endereco.
-        :rtype: str
+        :rtype: int
         """
         return self._numero
 
@@ -323,7 +323,7 @@ class Endereco(object):
         Apresenta o n\u00C3\u00BAmero do endere\u00C3\u00A7o
 
         :param numero: The numero of this Endereco.
-        :type: str
+        :type: int
         """
         self._numero = numero
 

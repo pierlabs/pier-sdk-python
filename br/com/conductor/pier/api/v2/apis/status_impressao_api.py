@@ -45,7 +45,7 @@ class StatusImpressaoApi(object):
                 config.api_client = ApiClient()
             self.api_client = config.api_client
 
-    def consultar_using_get3(self, id_status_impressao, **kwargs):
+    def consultar_using_get5(self, id_status_impressao, **kwargs):
         """
         Apresenta os dados de um determinado Status Impress\u00C3\u00A3o
         Este m\u00C3\u00A9todo permite consultar os par\u00C3\u00A2metros de um determinado Status de Impress\u00C3\u00A3o do Cart\u00C3\u00A3o a partir do seu c\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o (id).
@@ -56,7 +56,7 @@ class StatusImpressaoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get3(id_status_impressao, callback=callback_function)
+        >>> thread = api.consultar_using_get5(id_status_impressao, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -74,14 +74,14 @@ class StatusImpressaoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get3" % key
+                    " to method consultar_using_get5" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id_status_impressao' is set
         if ('id_status_impressao' not in params) or (params['id_status_impressao'] is None):
-            raise ValueError("Missing the required parameter `id_status_impressao` when calling `consultar_using_get3`")
+            raise ValueError("Missing the required parameter `id_status_impressao` when calling `consultar_using_get5`")
 
         resource_path = '/api/status-impressoes/{id_status_impressao}'.replace('{format}', 'json')
         path_params = {}
@@ -122,7 +122,7 @@ class StatusImpressaoApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get4(self, **kwargs):
+    def listar_using_get5(self, **kwargs):
         """
         Lista as op\u00C3\u00A7\u00C3\u00B5es de Status Impress\u00C3\u00A3o
         Este m\u00C3\u00A9todo permite que sejam listadas as op\u00C3\u00A7\u00C3\u00B5es de Status Impress\u00C3\u00A3o que podem ser atribu\u00C3\u00ADdas aos Cart\u00C3\u00B5es.
@@ -133,7 +133,7 @@ class StatusImpressaoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get4(callback=callback_function)
+        >>> thread = api.listar_using_get5(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -154,7 +154,7 @@ class StatusImpressaoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get4" % key
+                    " to method listar_using_get5" % key
                 )
             params[key] = val
         del params['kwargs']

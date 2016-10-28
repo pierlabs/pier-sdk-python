@@ -45,7 +45,7 @@ class EstagioCartaoApi(object):
                 config.api_client = ApiClient()
             self.api_client = config.api_client
 
-    def consultar_estagio_cartao_using_get1(self, id_estagio_cartao, **kwargs):
+    def consultar_estagio_cartao_using_get(self, id_estagio_cartao, **kwargs):
         """
         Apresenta os dados de um determinado Estagio Cart\u00C3\u00A3o
         Este m\u00C3\u00A9todo permite consultar os par\u00C3\u00A2metros de um determinado Est\u00C3\u00A1gio de Entrega do Cart\u00C3\u00A3o a partir do seu c\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o (id).
@@ -56,7 +56,7 @@ class EstagioCartaoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_estagio_cartao_using_get1(id_estagio_cartao, callback=callback_function)
+        >>> thread = api.consultar_estagio_cartao_using_get(id_estagio_cartao, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -74,14 +74,14 @@ class EstagioCartaoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_estagio_cartao_using_get1" % key
+                    " to method consultar_estagio_cartao_using_get" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id_estagio_cartao' is set
         if ('id_estagio_cartao' not in params) or (params['id_estagio_cartao'] is None):
-            raise ValueError("Missing the required parameter `id_estagio_cartao` when calling `consultar_estagio_cartao_using_get1`")
+            raise ValueError("Missing the required parameter `id_estagio_cartao` when calling `consultar_estagio_cartao_using_get`")
 
         resource_path = '/api/estagios-cartoes/{id_estagio_cartao}'.replace('{format}', 'json')
         path_params = {}

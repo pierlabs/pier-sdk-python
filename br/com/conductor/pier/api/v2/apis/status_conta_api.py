@@ -45,7 +45,7 @@ class StatusContaApi(object):
                 config.api_client = ApiClient()
             self.api_client = config.api_client
 
-    def consultar_using_get2(self, id_status_conta, **kwargs):
+    def consultar_using_get4(self, id_status_conta, **kwargs):
         """
         Apresenta os dados de um determinado Status Conta
         Este m\u00C3\u00A9todo permite consultar os par\u00C3\u00A2metros de um determinado Status Conta a partir do seu c\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o (id).
@@ -56,7 +56,7 @@ class StatusContaApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get2(id_status_conta, callback=callback_function)
+        >>> thread = api.consultar_using_get4(id_status_conta, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -74,14 +74,14 @@ class StatusContaApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get2" % key
+                    " to method consultar_using_get4" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id_status_conta' is set
         if ('id_status_conta' not in params) or (params['id_status_conta'] is None):
-            raise ValueError("Missing the required parameter `id_status_conta` when calling `consultar_using_get2`")
+            raise ValueError("Missing the required parameter `id_status_conta` when calling `consultar_using_get4`")
 
         resource_path = '/api/status-contas/{id_status_conta}'.replace('{format}', 'json')
         path_params = {}
@@ -122,7 +122,7 @@ class StatusContaApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get3(self, **kwargs):
+    def listar_using_get4(self, **kwargs):
         """
         Lista os Status Contas cadastrados para o Emissor
         Este m\u00C3\u00A9todo permite que sejam listados os Status Contas existentes na base de dados do Emissor.
@@ -133,7 +133,7 @@ class StatusContaApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get3(callback=callback_function)
+        >>> thread = api.listar_using_get4(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -156,7 +156,7 @@ class StatusContaApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get3" % key
+                    " to method listar_using_get4" % key
                 )
             params[key] = val
         del params['kwargs']

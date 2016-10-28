@@ -45,7 +45,7 @@ class PessoaApi(object):
                 config.api_client = ApiClient()
             self.api_client = config.api_client
 
-    def consultar_using_get1(self, id_pessoa, **kwargs):
+    def consultar_using_get3(self, id_pessoa, **kwargs):
         """
         Apresenta os dados de uma determinada Pessoa
         Este m\u00C3\u00A9todo permite que sejam listadas as Pessoas existentes na base de dados do Emissor.
@@ -56,7 +56,7 @@ class PessoaApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get1(id_pessoa, callback=callback_function)
+        >>> thread = api.consultar_using_get3(id_pessoa, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -74,14 +74,14 @@ class PessoaApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get1" % key
+                    " to method consultar_using_get3" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id_pessoa' is set
         if ('id_pessoa' not in params) or (params['id_pessoa'] is None):
-            raise ValueError("Missing the required parameter `id_pessoa` when calling `consultar_using_get1`")
+            raise ValueError("Missing the required parameter `id_pessoa` when calling `consultar_using_get3`")
 
         resource_path = '/api/pessoas/{id_pessoa}'.replace('{format}', 'json')
         path_params = {}
@@ -122,7 +122,7 @@ class PessoaApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get2(self, **kwargs):
+    def listar_using_get3(self, **kwargs):
         """
         Lista as Pessoas cadastradas no Emissor
         Este m\u00C3\u00A9todo permite que sejam listadas as Pessoas existentes na base de dados do Emissor.
@@ -133,7 +133,7 @@ class PessoaApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get2(callback=callback_function)
+        >>> thread = api.listar_using_get3(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -159,7 +159,7 @@ class PessoaApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get2" % key
+                    " to method listar_using_get3" % key
                 )
             params[key] = val
         del params['kwargs']

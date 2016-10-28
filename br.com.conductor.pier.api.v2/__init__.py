@@ -4,6 +4,7 @@ from __future__ import absolute_import
 from .models.auth_token import AuthToken
 from .models.body_access_token import BodyAccessToken
 from .models.cartao import Cartao
+from .models.conta import Conta
 from .models.endereco import Endereco
 from .models.estagio_cartao import EstagioCartao
 from .models.extra_info import ExtraInfo
@@ -29,6 +30,7 @@ from .models.status_impressao import StatusImpressao
 # import apis into sdk package
 from .apis.base_api import BaseApi
 from .apis.cartao_api import CartaoApi
+from .apis.conta_api import ContaApi
 from .apis.endereco_api import EnderecoApi
 from .apis.estagio_cartao_api import EstagioCartaoApi
 from .apis.origem_comercial_api import OrigemComercialApi
