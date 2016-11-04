@@ -39,6 +39,7 @@ class Conta(object):
         self.swagger_types = {
             'data_cadastro': 'datetime',
             'data_status_conta': 'datetime',
+            'data_ultima_alteracao_vencimento': 'datetime',
             'dia_vencimento': 'int',
             'id': 'int',
             'id_origem_comercial': 'int',
@@ -51,6 +52,7 @@ class Conta(object):
         self.attribute_map = {
             'data_cadastro': 'dataCadastro',
             'data_status_conta': 'dataStatusConta',
+            'data_ultima_alteracao_vencimento': 'dataUltimaAlteracaoVencimento',
             'dia_vencimento': 'diaVencimento',
             'id': 'id',
             'id_origem_comercial': 'idOrigemComercial',
@@ -62,6 +64,7 @@ class Conta(object):
 
         self._data_cadastro = None
         self._data_status_conta = None
+        self._data_ultima_alteracao_vencimento = None
         self._dia_vencimento = None
         self._id = None
         self._id_origem_comercial = None
@@ -113,6 +116,28 @@ class Conta(object):
         :type: datetime
         """
         self._data_status_conta = data_status_conta
+
+    @property
+    def data_ultima_alteracao_vencimento(self):
+        """
+        Gets the data_ultima_alteracao_vencimento of this Conta.
+        Apresenta a data da ultima altera\u00C3\u00A7\u00C3\u00A3o de vencimento.
+
+        :return: The data_ultima_alteracao_vencimento of this Conta.
+        :rtype: datetime
+        """
+        return self._data_ultima_alteracao_vencimento
+
+    @data_ultima_alteracao_vencimento.setter
+    def data_ultima_alteracao_vencimento(self, data_ultima_alteracao_vencimento):
+        """
+        Sets the data_ultima_alteracao_vencimento of this Conta.
+        Apresenta a data da ultima altera\u00C3\u00A7\u00C3\u00A3o de vencimento.
+
+        :param data_ultima_alteracao_vencimento: The data_ultima_alteracao_vencimento of this Conta.
+        :type: datetime
+        """
+        self._data_ultima_alteracao_vencimento = data_ultima_alteracao_vencimento
 
     @property
     def dia_vencimento(self):
