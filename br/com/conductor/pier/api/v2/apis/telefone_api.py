@@ -220,7 +220,7 @@ class TelefoneApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def salvar_using_post1(self, **kwargs):
+    def salvar_using_post2(self, **kwargs):
         """
         Realiza o cadastro de um novo Telefone
         Este m\u00C3\u00A9todo permite que seja cadastrado um novo Telefone na base de dados do Emissor.
@@ -231,7 +231,7 @@ class TelefoneApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.salvar_using_post1(callback=callback_function)
+        >>> thread = api.salvar_using_post2(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -253,7 +253,7 @@ class TelefoneApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method salvar_using_post1" % key
+                    " to method salvar_using_post2" % key
                 )
             params[key] = val
         del params['kwargs']
