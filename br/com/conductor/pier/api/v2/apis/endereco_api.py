@@ -259,8 +259,8 @@ class EnderecoApi(object):
         :param str cidade: Apresenta nome da cidade
         :param str uf: Apresenta sigla da Unidade Federativa
         :param str pais: Apresenta nome do Pais
-        :param datetime data_inclusao: Apresenta a data em que fora cadastrado o Endere\u00C3\u00A7o
-        :param datetime data_ultima_atualizacao: Data em que fora realizada a \u00C3\u00BAltima mudan\u00C3\u00A7a neste registro de endere\u00C3\u00A7o. Quando n\u00C3\u00A3o tiver ocorrido mudan\u00C3\u00A7a, conter\u00C3\u00A1 a mesma informa\u00C3\u00A7\u00C3\u00A3o que o campo dataInclusao
+        :param date data_inclusao: Apresenta a data em que fora cadastrado o Endere\u00C3\u00A7o
+        :param date data_ultima_atualizacao: Data em que fora realizada a \u00C3\u00BAltima mudan\u00C3\u00A7a neste registro de endere\u00C3\u00A7o. Quando n\u00C3\u00A3o tiver ocorrido mudan\u00C3\u00A7a, conter\u00C3\u00A1 a mesma informa\u00C3\u00A7\u00C3\u00A3o que o campo dataInclusao
         :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
         :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 100, Max = 100)
         :return: PageEnderecos

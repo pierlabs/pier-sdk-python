@@ -178,7 +178,7 @@ class StatusCartao(object):
     def id_status_destino_desbloqueio(self):
         """
         Gets the id_status_destino_desbloqueio of this StatusCartao.
-        Indica qual o idStatusCartao que que ser\u00C3\u00A1 atribu\u00C3\u00ADdo aos cart\u00C3\u00B5es que forem cancelados devido ao desbloqueio de um novo cart\u00C3\u00A3o.
+        Indica qual o idStatusCartao que ser\u00C3\u00A1 atribu\u00C3\u00ADdo aos cart\u00C3\u00B5es que forem cancelados devido ao desbloqueio de um novo cart\u00C3\u00A3o.
 
         :return: The id_status_destino_desbloqueio of this StatusCartao.
         :rtype: int
@@ -189,7 +189,7 @@ class StatusCartao(object):
     def id_status_destino_desbloqueio(self, id_status_destino_desbloqueio):
         """
         Sets the id_status_destino_desbloqueio of this StatusCartao.
-        Indica qual o idStatusCartao que que ser\u00C3\u00A1 atribu\u00C3\u00ADdo aos cart\u00C3\u00B5es que forem cancelados devido ao desbloqueio de um novo cart\u00C3\u00A3o.
+        Indica qual o idStatusCartao que ser\u00C3\u00A1 atribu\u00C3\u00ADdo aos cart\u00C3\u00B5es que forem cancelados devido ao desbloqueio de um novo cart\u00C3\u00A3o.
 
         :param id_status_destino_desbloqueio: The id_status_destino_desbloqueio of this StatusCartao.
         :type: int

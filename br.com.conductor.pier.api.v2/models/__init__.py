@@ -4,6 +4,7 @@ from __future__ import absolute_import
 from .auth_token import AuthToken
 from .body_access_token import BodyAccessToken
 from .cartao import Cartao
+from .cartao_impressao import CartaoImpressao
 from .conta import Conta
 from .endereco import Endereco
 from .estagio_cartao import EstagioCartao

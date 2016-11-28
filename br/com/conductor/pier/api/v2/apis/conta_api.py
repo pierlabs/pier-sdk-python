@@ -205,6 +205,89 @@ class ContaApi(object):
                                             callback=params.get('callback'))
         return response
 
+    def gerar_cartao_using_put(self, id_conta, id_pessoa, **kwargs):
+        """
+        Realiza a gera\u00C3\u00A7\u00C3\u00A3o de um novo cart\u00C3\u00A3o para impress\u00C3\u00A3o avulsa
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.gerar_cartao_using_put(id_conta, id_pessoa, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param int id_conta: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da conta (id). (required)
+        :param int id_pessoa: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da pessoa (id). (required)
+        :return: CartaoImpressao
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id_conta', 'id_pessoa']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method gerar_cartao_using_put" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        # verify the required parameter 'id_conta' is set
+        if ('id_conta' not in params) or (params['id_conta'] is None):
+            raise ValueError("Missing the required parameter `id_conta` when calling `gerar_cartao_using_put`")
+        # verify the required parameter 'id_pessoa' is set
+        if ('id_pessoa' not in params) or (params['id_pessoa'] is None):
+            raise ValueError("Missing the required parameter `id_pessoa` when calling `gerar_cartao_using_put`")
+
+        resource_path = '/api/contas/{id_conta}/pessoas/{id_pessoa}/gerar-cartao'.replace('{format}', 'json')
+        path_params = {}
+        if 'id_conta' in params:
+            path_params['id_conta'] = params['id_conta']
+        if 'id_pessoa' in params:
+            path_params['id_pessoa'] = params['id_pessoa']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        response = self.api_client.call_api(resource_path, 'PUT',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='CartaoImpressao',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
     def listar_using_get1(self, **kwargs):
         """
         Lista contas existentes na base de dados do Emissor
