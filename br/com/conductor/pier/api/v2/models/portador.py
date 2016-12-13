@@ -41,6 +41,7 @@ class Portador(object):
             'data_cancelamento_portador': 'datetime',
             'flag_ativo': 'int',
             'id_conta': 'int',
+            'id_imagem': 'int',
             'id_parentesco': 'int',
             'id_pessoa': 'int',
             'id_produto': 'int',
@@ -54,6 +55,7 @@ class Portador(object):
             'data_cancelamento_portador': 'dataCancelamentoPortador',
             'flag_ativo': 'flagAtivo',
             'id_conta': 'idConta',
+            'id_imagem': 'idImagem',
             'id_parentesco': 'idParentesco',
             'id_pessoa': 'idPessoa',
             'id_produto': 'idProduto',
@@ -66,6 +68,7 @@ class Portador(object):
         self._data_cancelamento_portador = None
         self._flag_ativo = None
         self._id_conta = None
+        self._id_imagem = None
         self._id_parentesco = None
         self._id_pessoa = None
         self._id_produto = None
@@ -160,6 +163,28 @@ class Portador(object):
         :type: int
         """
         self._id_conta = id_conta
+
+    @property
+    def id_imagem(self):
+        """
+        Gets the id_imagem of this Portador.
+        Apresenta o c\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da imagem do cart\u00C3\u00A3o.
+
+        :return: The id_imagem of this Portador.
+        :rtype: int
+        """
+        return self._id_imagem
+
+    @id_imagem.setter
+    def id_imagem(self, id_imagem):
+        """
+        Sets the id_imagem of this Portador.
+        Apresenta o c\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da imagem do cart\u00C3\u00A3o.
+
+        :param id_imagem: The id_imagem of this Portador.
+        :type: int
+        """
+        self._id_imagem = id_imagem
 
     @property
     def id_parentesco(self):
