@@ -17,3 +17,4 @@ from .telefone_api import TelefoneApi
 from .tipo_endereco_api import TipoEnderecoApi
 from .tipo_telefone_api import TipoTelefoneApi
 from .token_api import TokenApi
+from .webhooks_api import WebhooksApi

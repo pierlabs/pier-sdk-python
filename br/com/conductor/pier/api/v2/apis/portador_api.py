@@ -66,7 +66,6 @@ class PortadorApi(object):
         :param int id_parentesco: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Parentesco (id)
         :param str tipo_portador: Apresenta o tipo do Portador do cart\u00C3\u00A3o, sendo: ('T': Titular, 'A': Adicional).
         :param str nome_impresso: Apresenta o nome a ser impresso no cart\u00C3\u00A3o.
-        :param int id_imagem: Apresenta o c\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da imagem do cart\u00C3\u00A3o.
         :param int id_tipo_cartao: Apresenta o c\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do tipo do cart\u00C3\u00A3o (id), que ser\u00C3\u00A1 utilizado para gerar os cart\u00C3\u00B5es deste portador, vinculados a sua respectiva conta atrav\u00C3\u00A9s do campo idConta.
         :param int flag_ativo: Quanto ativa, indica que o cadastro do Portador est\u00C3\u00A1 ativo, em emissores que realizam este tipo de gest\u00C3\u00A3o.
         :param date data_cadastro_portador: Apresenta a data em que o Portador fora cadastrado, quando possuir esta informa\u00C3\u00A7\u00C3\u00A3o.
@@ -78,7 +77,7 @@ class PortadorApi(object):
                  returns the request thread.
         """
 
-        all_params = ['id_conta', 'id_produto', 'id_pessoa', 'id_parentesco', 'tipo_portador', 'nome_impresso', 'id_imagem', 'id_tipo_cartao', 'flag_ativo', 'data_cadastro_portador', 'data_cancelamento_portador', 'page', 'limit']
+        all_params = ['id_conta', 'id_produto', 'id_pessoa', 'id_parentesco', 'tipo_portador', 'nome_impresso', 'id_tipo_cartao', 'flag_ativo', 'data_cadastro_portador', 'data_cancelamento_portador', 'page', 'limit']
         all_params.append('callback')
 
         params = locals()
@@ -108,8 +107,6 @@ class PortadorApi(object):
             query_params['tipoPortador'] = params['tipo_portador']
         if 'nome_impresso' in params:
             query_params['nomeImpresso'] = params['nome_impresso']
-        if 'id_imagem' in params:
-            query_params['idImagem'] = params['id_imagem']
         if 'id_tipo_cartao' in params:
             query_params['idTipoCartao'] = params['id_tipo_cartao']
         if 'flag_ativo' in params:

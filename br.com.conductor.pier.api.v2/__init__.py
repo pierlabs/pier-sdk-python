@@ -25,6 +25,7 @@ from .models.page_status_impressao import PageStatusImpressao
 from .models.page_telefones import PageTelefones
 from .models.page_tipo_telefones import PageTipoTelefones
 from .models.page_tipos_endereco import PageTiposEndereco
+from .models.page_web_hooks import PageWebHooks
 from .models.pessoa import Pessoa
 from .models.portador import Portador
 from .models.produto import Produto
@@ -34,6 +35,7 @@ from .models.status_impressao import StatusImpressao
 from .models.telefone import Telefone
 from .models.tipo_endereco import TipoEndereco
 from .models.tipo_telefone import TipoTelefone
+from .models.web_hook import WebHook
 
 # import apis into sdk package
 from .apis.base_api import BaseApi
@@ -52,6 +54,7 @@ from .apis.telefone_api import TelefoneApi
 from .apis.tipo_endereco_api import TipoEnderecoApi
 from .apis.tipo_telefone_api import TipoTelefoneApi
 from .apis.token_api import TokenApi
+from .apis.webhooks_api import WebhooksApi
 
 # import ApiClient
 from .api_client import ApiClient

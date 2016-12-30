@@ -25,6 +25,7 @@ from .page_status_impressao import PageStatusImpressao
 from .page_telefones import PageTelefones
 from .page_tipo_telefones import PageTipoTelefones
 from .page_tipos_endereco import PageTiposEndereco
+from .page_web_hooks import PageWebHooks
 from .pessoa import Pessoa
 from .portador import Portador
 from .produto import Produto
@@ -34,3 +35,4 @@ from .status_impressao import StatusImpressao
 from .telefone import Telefone
 from .tipo_endereco import TipoEndereco
 from .tipo_telefone import TipoTelefone
+from .web_hook import WebHook
