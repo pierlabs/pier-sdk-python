@@ -140,7 +140,7 @@ class WebhooksApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get9(self, id_webhook, **kwargs):
+    def consultar_using_get9(self, id, **kwargs):
         """
         Consultar Webhook
         Este m\u00C3\u00A9todo permite que sejam consultado um webhook do emissor atrav\u00C3\u00A9s de um id especifico
@@ -151,17 +151,17 @@ class WebhooksApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get9(id_webhook, callback=callback_function)
+        >>> thread = api.consultar_using_get9(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param int id_webhook: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Webhook (id). (required)
+        :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Webhook (id). (required)
         :return: WebHook
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['id_webhook']
+        all_params = ['id']
         all_params.append('callback')
 
         params = locals()
@@ -174,14 +174,14 @@ class WebhooksApi(object):
             params[key] = val
         del params['kwargs']
 
-        # verify the required parameter 'id_webhook' is set
-        if ('id_webhook' not in params) or (params['id_webhook'] is None):
-            raise ValueError("Missing the required parameter `id_webhook` when calling `consultar_using_get9`")
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get9`")
 
-        resource_path = '/api/webhooks/{id_webhook}'.replace('{format}', 'json')
+        resource_path = '/api/webhooks/{id}'.replace('{format}', 'json')
         path_params = {}
-        if 'id_webhook' in params:
-            path_params['id_webhook'] = params['id_webhook']
+        if 'id' in params:
+            path_params['id'] = params['id']
 
         query_params = {}
 
