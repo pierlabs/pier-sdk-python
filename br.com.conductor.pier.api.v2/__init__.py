@@ -39,20 +39,10 @@ from .models.web_hook import WebHook
 
 # import apis into sdk package
 from .apis.base_api import BaseApi
+from .apis.cadastros_gerais_api import CadastrosGeraisApi
 from .apis.cartao_api import CartaoApi
 from .apis.conta_api import ContaApi
-from .apis.endereco_api import EnderecoApi
-from .apis.estagio_cartao_api import EstagioCartaoApi
-from .apis.origem_comercial_api import OrigemComercialApi
-from .apis.pessoa_api import PessoaApi
-from .apis.portador_api import PortadorApi
-from .apis.produto_api import ProdutoApi
-from .apis.status_cartao_api import StatusCartaoApi
-from .apis.status_conta_api import StatusContaApi
-from .apis.status_impressao_api import StatusImpressaoApi
-from .apis.telefone_api import TelefoneApi
-from .apis.tipo_endereco_api import TipoEnderecoApi
-from .apis.tipo_telefone_api import TipoTelefoneApi
+from .apis.status_parametros_api import StatusParametrosApi
 from .apis.token_api import TokenApi
 from .apis.webhooks_api import WebhooksApi
 

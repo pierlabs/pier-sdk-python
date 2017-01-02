@@ -45,7 +45,7 @@ class WebhooksApi(object):
                 config.api_client = ApiClient()
             self.api_client = config.api_client
 
-    def alterar_using_put2(self, id, evento, metodo, url, **kwargs):
+    def alterar_using_put3(self, id, evento, metodo, url, **kwargs):
         """
         Alterar Webhook
         Este m\u00C3\u00A9todo permite que seja modificado um webhooks j\u00C3\u00A1 cadastrado
@@ -56,7 +56,7 @@ class WebhooksApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.alterar_using_put2(id, evento, metodo, url, callback=callback_function)
+        >>> thread = api.alterar_using_put3(id, evento, metodo, url, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -77,23 +77,23 @@ class WebhooksApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method alterar_using_put2" % key
+                    " to method alterar_using_put3" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `alterar_using_put2`")
+            raise ValueError("Missing the required parameter `id` when calling `alterar_using_put3`")
         # verify the required parameter 'evento' is set
         if ('evento' not in params) or (params['evento'] is None):
-            raise ValueError("Missing the required parameter `evento` when calling `alterar_using_put2`")
+            raise ValueError("Missing the required parameter `evento` when calling `alterar_using_put3`")
         # verify the required parameter 'metodo' is set
         if ('metodo' not in params) or (params['metodo'] is None):
-            raise ValueError("Missing the required parameter `metodo` when calling `alterar_using_put2`")
+            raise ValueError("Missing the required parameter `metodo` when calling `alterar_using_put3`")
         # verify the required parameter 'url' is set
         if ('url' not in params) or (params['url'] is None):
-            raise ValueError("Missing the required parameter `url` when calling `alterar_using_put2`")
+            raise ValueError("Missing the required parameter `url` when calling `alterar_using_put3`")
 
         resource_path = '/api/webhooks'.replace('{format}', 'json')
         path_params = {}
