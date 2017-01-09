@@ -303,7 +303,7 @@ class CartaoApi(object):
     def cadastrar_alterar_senha_using_put(self, id_cartao, senha, **kwargs):
         """
         Realiza o cadastro ou altera\u00C3\u00A7\u00C3\u00A3o da senha de um Cart\u00C3\u00A3o
-        Esta opera\u00C3\u00A7\u00C3\u00A3o tem como objetivo permitir que o portador de um determinado cart\u00C3\u00A3o possa definir uma senha, a sua escolha
+        Esta opera\u00C3\u00A7\u00C3\u00A3o tem como objetivo permitir que o portador de um determinado cart\u00C3\u00A3o possa definir uma senha a sua escolha.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -824,8 +824,8 @@ class CartaoApi(object):
 
     def validar_cartao_chip_bandeirado_using_get(self, numero_cartao, criptograma, **kwargs):
         """
-        Permite validar um Cart\u00C3\u00A3o Bandeirado a partir do chip
-        Esta opera\u00C3\u00A7\u00C3\u00A3o tem como objetivo permitir que os Emissores validem a autenticidade de um determinado Cart\u00C3\u00A3o a partir do envio dos dados sens\u00C3\u00ADveis impressos nele.
+        Permite validar um Cart\u00C3\u00A3o Mastercard a partir do chip
+        Esta opera\u00C3\u00A7\u00C3\u00A3o tem como objetivo permitir que os Emissores validem o criptograma gerado a partir da leitura de um chip EMV de um Cart\u00C3\u00A3o Mastercard a fim de verificar a sua autenticidade.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -1098,7 +1098,7 @@ class CartaoApi(object):
     def validar_cartao_tarja_bandeirado_using_get(self, numero_cartao, trilha1, trilha2, **kwargs):
         """
         Permite validar um Cart\u00C3\u00A3o Bandeirado a partir da Tarja
-        Esta opera\u00C3\u00A7\u00C3\u00A3o tem como objetivo permitir que os Emissores validem a autenticidade de um determinado Cart\u00C3\u00A3o a partir do envio dos dados sens\u00C3\u00ADveis impressos nele.
+        Esta opera\u00C3\u00A7\u00C3\u00A3o tem como objetivo permitir que os Emissores validem a autenticidade de um determinado Cart\u00C3\u00A3o a partir da leitura da tarja magn\u00C3\u00A9tica do mesmo.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
