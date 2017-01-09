@@ -35,4 +35,5 @@ from .status_impressao import StatusImpressao
 from .telefone import Telefone
 from .tipo_endereco import TipoEndereco
 from .tipo_telefone import TipoTelefone
+from .valida_cartao import ValidaCartao
 from .web_hook import WebHook

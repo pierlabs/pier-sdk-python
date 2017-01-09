@@ -35,6 +35,7 @@ from .models.status_impressao import StatusImpressao
 from .models.telefone import Telefone
 from .models.tipo_endereco import TipoEndereco
 from .models.tipo_telefone import TipoTelefone
+from .models.valida_cartao import ValidaCartao
 from .models.web_hook import WebHook
 
 # import apis into sdk package
