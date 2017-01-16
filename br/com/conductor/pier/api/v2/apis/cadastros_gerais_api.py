@@ -345,7 +345,7 @@ class CadastrosGeraisApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_origem_comercial_using_get(self, id_origem_comercial, **kwargs):
+    def consultar_origem_comercial_using_get(self, id, **kwargs):
         """
         Opera\u00C3\u00A7\u00C3\u00A3o utilizada para consultar uma determinada Origem Comercial
         Este m\u00C3\u00A9todo permite que sejam listados os registros de uma determinada Origem Comercial existente na base do emissor. Para isso, \u00C3\u00A9 preciso informar o seu respectivo c\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o (id).
@@ -356,17 +356,17 @@ class CadastrosGeraisApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_origem_comercial_using_get(id_origem_comercial, callback=callback_function)
+        >>> thread = api.consultar_origem_comercial_using_get(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param int id_origem_comercial: ID da Origem Comercial (required)
+        :param int id: ID da Origem Comercial (required)
         :return: OrigemComercial
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['id_origem_comercial']
+        all_params = ['id']
         all_params.append('callback')
 
         params = locals()
@@ -379,14 +379,14 @@ class CadastrosGeraisApi(object):
             params[key] = val
         del params['kwargs']
 
-        # verify the required parameter 'id_origem_comercial' is set
-        if ('id_origem_comercial' not in params) or (params['id_origem_comercial'] is None):
-            raise ValueError("Missing the required parameter `id_origem_comercial` when calling `consultar_origem_comercial_using_get`")
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `consultar_origem_comercial_using_get`")
 
-        resource_path = '/api/origens-comerciais/{id_origem_comercial}'.replace('{format}', 'json')
+        resource_path = '/api/origens-comerciais/{id}'.replace('{format}', 'json')
         path_params = {}
-        if 'id_origem_comercial' in params:
-            path_params['id_origem_comercial'] = params['id_origem_comercial']
+        if 'id' in params:
+            path_params['id'] = params['id']
 
         query_params = {}
 
@@ -422,7 +422,7 @@ class CadastrosGeraisApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_produto_using_get(self, id_produto, **kwargs):
+    def consultar_produto_using_get(self, id, **kwargs):
         """
         Apresenta os dados de um determinado Produto
         Este m\u00C3\u00A9todo permite consultar um determinado Produto a partir do seu c\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o (id).
@@ -433,17 +433,17 @@ class CadastrosGeraisApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_produto_using_get(id_produto, callback=callback_function)
+        >>> thread = api.consultar_produto_using_get(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param int id_produto: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Produto (id) (required)
+        :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Produto (id) (required)
         :return: Produto
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['id_produto']
+        all_params = ['id']
         all_params.append('callback')
 
         params = locals()
@@ -456,14 +456,14 @@ class CadastrosGeraisApi(object):
             params[key] = val
         del params['kwargs']
 
-        # verify the required parameter 'id_produto' is set
-        if ('id_produto' not in params) or (params['id_produto'] is None):
-            raise ValueError("Missing the required parameter `id_produto` when calling `consultar_produto_using_get`")
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `consultar_produto_using_get`")
 
-        resource_path = '/api/produtos/{id_produto}'.replace('{format}', 'json')
+        resource_path = '/api/produtos/{id}'.replace('{format}', 'json')
         path_params = {}
-        if 'id_produto' in params:
-            path_params['id_produto'] = params['id_produto']
+        if 'id' in params:
+            path_params['id'] = params['id']
 
         query_params = {}
 
@@ -499,7 +499,7 @@ class CadastrosGeraisApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get2(self, id_endereco, **kwargs):
+    def consultar_using_get2(self, id, **kwargs):
         """
         Apresenta os dados de um determinado Endere\u00C3\u00A7o
         Este m\u00C3\u00A9todo permite consultar um determinado Endere\u00C3\u00A7o a partir do seu c\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o (id).
@@ -510,17 +510,17 @@ class CadastrosGeraisApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get2(id_endereco, callback=callback_function)
+        >>> thread = api.consultar_using_get2(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param int id_endereco: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Endere\u00C3\u00A7o (id). (required)
+        :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Endere\u00C3\u00A7o (id). (required)
         :return: Endereco
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['id_endereco']
+        all_params = ['id']
         all_params.append('callback')
 
         params = locals()
@@ -533,14 +533,14 @@ class CadastrosGeraisApi(object):
             params[key] = val
         del params['kwargs']
 
-        # verify the required parameter 'id_endereco' is set
-        if ('id_endereco' not in params) or (params['id_endereco'] is None):
-            raise ValueError("Missing the required parameter `id_endereco` when calling `consultar_using_get2`")
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get2`")
 
-        resource_path = '/api/enderecos/{id_endereco}'.replace('{format}', 'json')
+        resource_path = '/api/enderecos/{id}'.replace('{format}', 'json')
         path_params = {}
-        if 'id_endereco' in params:
-            path_params['id_endereco'] = params['id_endereco']
+        if 'id' in params:
+            path_params['id'] = params['id']
 
         query_params = {}
 
@@ -576,7 +576,7 @@ class CadastrosGeraisApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get3(self, id_pessoa, **kwargs):
+    def consultar_using_get3(self, id, **kwargs):
         """
         Apresenta os dados de uma determinada Pessoa
         Este m\u00C3\u00A9todo permite que sejam listadas as Pessoas existentes na base de dados do Emissor.
@@ -587,17 +587,17 @@ class CadastrosGeraisApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get3(id_pessoa, callback=callback_function)
+        >>> thread = api.consultar_using_get3(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param int id_pessoa: ID da Pessoa (required)
+        :param int id: ID da Pessoa (required)
         :return: Pessoa
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['id_pessoa']
+        all_params = ['id']
         all_params.append('callback')
 
         params = locals()
@@ -610,14 +610,14 @@ class CadastrosGeraisApi(object):
             params[key] = val
         del params['kwargs']
 
-        # verify the required parameter 'id_pessoa' is set
-        if ('id_pessoa' not in params) or (params['id_pessoa'] is None):
-            raise ValueError("Missing the required parameter `id_pessoa` when calling `consultar_using_get3`")
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get3`")
 
-        resource_path = '/api/pessoas/{id_pessoa}'.replace('{format}', 'json')
+        resource_path = '/api/pessoas/{id}'.replace('{format}', 'json')
         path_params = {}
-        if 'id_pessoa' in params:
-            path_params['id_pessoa'] = params['id_pessoa']
+        if 'id' in params:
+            path_params['id'] = params['id']
 
         query_params = {}
 
@@ -653,7 +653,7 @@ class CadastrosGeraisApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get6(self, id_telefone, **kwargs):
+    def consultar_using_get6(self, id, **kwargs):
         """
         Apresenta os dados de um determinado Telefone
         Este m\u00C3\u00A9todo permite consultar um determinado Telefone a partir do seu c\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o (id).
@@ -664,17 +664,17 @@ class CadastrosGeraisApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get6(id_telefone, callback=callback_function)
+        >>> thread = api.consultar_using_get6(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param int id_telefone: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Telefone (id). (required)
+        :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Telefone (id). (required)
         :return: Telefone
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['id_telefone']
+        all_params = ['id']
         all_params.append('callback')
 
         params = locals()
@@ -687,14 +687,14 @@ class CadastrosGeraisApi(object):
             params[key] = val
         del params['kwargs']
 
-        # verify the required parameter 'id_telefone' is set
-        if ('id_telefone' not in params) or (params['id_telefone'] is None):
-            raise ValueError("Missing the required parameter `id_telefone` when calling `consultar_using_get6`")
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get6`")
 
-        resource_path = '/api/telefones/{id_telefone}'.replace('{format}', 'json')
+        resource_path = '/api/telefones/{id}'.replace('{format}', 'json')
         path_params = {}
-        if 'id_telefone' in params:
-            path_params['id_telefone'] = params['id_telefone']
+        if 'id' in params:
+            path_params['id'] = params['id']
 
         query_params = {}
 
@@ -730,7 +730,7 @@ class CadastrosGeraisApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get7(self, id_tipo_endereco, **kwargs):
+    def consultar_using_get7(self, id, **kwargs):
         """
         Apresenta os dados de um determinado Tipo de Endere\u00C3\u00A7o
         Este m\u00C3\u00A9todo permite consultar um determinado Tipo de Endere\u00C3\u00A7o a partir do seu c\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o (id).
@@ -741,17 +741,17 @@ class CadastrosGeraisApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get7(id_tipo_endereco, callback=callback_function)
+        >>> thread = api.consultar_using_get7(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param int id_tipo_endereco: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Tipo do Endere\u00C3\u00A7o (id) (required)
+        :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Tipo do Endere\u00C3\u00A7o (id) (required)
         :return: TipoEndereco
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['id_tipo_endereco']
+        all_params = ['id']
         all_params.append('callback')
 
         params = locals()
@@ -764,14 +764,14 @@ class CadastrosGeraisApi(object):
             params[key] = val
         del params['kwargs']
 
-        # verify the required parameter 'id_tipo_endereco' is set
-        if ('id_tipo_endereco' not in params) or (params['id_tipo_endereco'] is None):
-            raise ValueError("Missing the required parameter `id_tipo_endereco` when calling `consultar_using_get7`")
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get7`")
 
-        resource_path = '/api/tipos-endereco/{id_tipo_endereco}'.replace('{format}', 'json')
+        resource_path = '/api/tipos-enderecos/{id}'.replace('{format}', 'json')
         path_params = {}
-        if 'id_tipo_endereco' in params:
-            path_params['id_tipo_endereco'] = params['id_tipo_endereco']
+        if 'id' in params:
+            path_params['id'] = params['id']
 
         query_params = {}
 
@@ -807,7 +807,7 @@ class CadastrosGeraisApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get8(self, id_tipo_telefone, **kwargs):
+    def consultar_using_get8(self, id, **kwargs):
         """
         Apresenta os dados de um determinado Tipo de Telefone
         Este m\u00C3\u00A9todo permite consultar um determinado Tipo de Telefone a partir do seu c\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o (id).
@@ -818,17 +818,17 @@ class CadastrosGeraisApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get8(id_tipo_telefone, callback=callback_function)
+        >>> thread = api.consultar_using_get8(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param int id_tipo_telefone: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Tipo do Telefone (id) (required)
+        :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Tipo do Telefone (id) (required)
         :return: TipoTelefone
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['id_tipo_telefone']
+        all_params = ['id']
         all_params.append('callback')
 
         params = locals()
@@ -841,14 +841,14 @@ class CadastrosGeraisApi(object):
             params[key] = val
         del params['kwargs']
 
-        # verify the required parameter 'id_tipo_telefone' is set
-        if ('id_tipo_telefone' not in params) or (params['id_tipo_telefone'] is None):
-            raise ValueError("Missing the required parameter `id_tipo_telefone` when calling `consultar_using_get8`")
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get8`")
 
-        resource_path = '/api/tipos-telefones/{id_tipo_telefone}'.replace('{format}', 'json')
+        resource_path = '/api/tipos-telefones/{id}'.replace('{format}', 'json')
         path_params = {}
-        if 'id_tipo_telefone' in params:
-            path_params['id_tipo_telefone'] = params['id_tipo_telefone']
+        if 'id' in params:
+            path_params['id'] = params['id']
 
         query_params = {}
 
@@ -899,17 +899,17 @@ class CadastrosGeraisApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
+        :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
+        :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 100, Max = 100)
         :param int id: Id da origem comercial
         :param str nome: Nome da origem comercial
         :param int status: Status da origem comercial
-        :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
-        :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 100, Max = 100)
         :return: PageOrigensComerciais
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['id', 'nome', 'status', 'page', 'limit']
+        all_params = ['page', 'limit', 'id', 'nome', 'status']
         all_params.append('callback')
 
         params = locals()
@@ -927,16 +927,16 @@ class CadastrosGeraisApi(object):
         path_params = {}
 
         query_params = {}
+        if 'page' in params:
+            query_params['page'] = params['page']
+        if 'limit' in params:
+            query_params['limit'] = params['limit']
         if 'id' in params:
             query_params['id'] = params['id']
         if 'nome' in params:
             query_params['nome'] = params['nome']
         if 'status' in params:
             query_params['status'] = params['status']
-        if 'page' in params:
-            query_params['page'] = params['page']
-        if 'limit' in params:
-            query_params['limit'] = params['limit']
 
         header_params = {}
 
@@ -985,17 +985,17 @@ class CadastrosGeraisApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
+        :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
+        :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 100, Max = 100)
         :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Produto (id).
         :param str nome: Descri\u00C3\u00A7\u00C3\u00A3o do Nome do Produto.
         :param int status: Representa o Status do Produto, onde: (\"0\": Inativo), (\"1\": Ativo).
-        :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
-        :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 100, Max = 100)
         :return: ListaProdutos
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['id', 'nome', 'status', 'page', 'limit']
+        all_params = ['page', 'limit', 'id', 'nome', 'status']
         all_params.append('callback')
 
         params = locals()
@@ -1013,16 +1013,16 @@ class CadastrosGeraisApi(object):
         path_params = {}
 
         query_params = {}
+        if 'page' in params:
+            query_params['page'] = params['page']
+        if 'limit' in params:
+            query_params['limit'] = params['limit']
         if 'id' in params:
             query_params['id'] = params['id']
         if 'nome' in params:
             query_params['nome'] = params['nome']
         if 'status' in params:
             query_params['status'] = params['status']
-        if 'page' in params:
-            query_params['page'] = params['page']
-        if 'limit' in params:
-            query_params['limit'] = params['limit']
 
         header_params = {}
 
@@ -1071,6 +1071,8 @@ class CadastrosGeraisApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
+        :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
+        :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 100, Max = 100)
         :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Endere\u00C3\u00A7o (id).
         :param int id_pessoa: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Pessoa a qual o endere\u00C3\u00A7o pertence (id)
         :param int id_tipo_endereco: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Tipo Endere\u00C3\u00A7o (id)
@@ -1085,14 +1087,12 @@ class CadastrosGeraisApi(object):
         :param str pais: Apresenta nome do Pais
         :param date data_inclusao: Apresenta a data em que fora cadastrado o Endere\u00C3\u00A7o
         :param date data_ultima_atualizacao: Data em que fora realizada a \u00C3\u00BAltima mudan\u00C3\u00A7a neste registro de endere\u00C3\u00A7o. Quando n\u00C3\u00A3o tiver ocorrido mudan\u00C3\u00A7a, conter\u00C3\u00A1 a mesma informa\u00C3\u00A7\u00C3\u00A3o que o campo dataInclusao
-        :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
-        :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 100, Max = 100)
         :return: PageEnderecos
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['id', 'id_pessoa', 'id_tipo_endereco', 'cep', 'logradouro', 'numero', 'complemento', 'ponto_referencia', 'bairro', 'cidade', 'uf', 'pais', 'data_inclusao', 'data_ultima_atualizacao', 'page', 'limit']
+        all_params = ['page', 'limit', 'id', 'id_pessoa', 'id_tipo_endereco', 'cep', 'logradouro', 'numero', 'complemento', 'ponto_referencia', 'bairro', 'cidade', 'uf', 'pais', 'data_inclusao', 'data_ultima_atualizacao']
         all_params.append('callback')
 
         params = locals()
@@ -1110,6 +1110,10 @@ class CadastrosGeraisApi(object):
         path_params = {}
 
         query_params = {}
+        if 'page' in params:
+            query_params['page'] = params['page']
+        if 'limit' in params:
+            query_params['limit'] = params['limit']
         if 'id' in params:
             query_params['id'] = params['id']
         if 'id_pessoa' in params:
@@ -1138,10 +1142,6 @@ class CadastrosGeraisApi(object):
             query_params['dataInclusao'] = params['data_inclusao']
         if 'data_ultima_atualizacao' in params:
             query_params['dataUltimaAtualizacao'] = params['data_ultima_atualizacao']
-        if 'page' in params:
-            query_params['page'] = params['page']
-        if 'limit' in params:
-            query_params['limit'] = params['limit']
 
         header_params = {}
 
@@ -1190,6 +1190,8 @@ class CadastrosGeraisApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
+        :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
+        :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 100, Max = 100)
         :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Pessoa (id).
         :param str nome: Apresenta o 'Nome Completo da PF' ou o 'Nome Completo da Raz\u00C3\u00A3o Social (Nome Empresarial)'.
         :param str tipo: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do tipo da Pessoa, sendo: (\"PF\": Pessoa F\u00C3\u00ADsica), (\"PJ\": Pessoa Jur\u00C3\u00ADdica).
@@ -1197,14 +1199,12 @@ class CadastrosGeraisApi(object):
         :param str cnpj: N\u00C3\u00BAmero do CNPJ, quando PJ.
         :param date data_nascimento: Data de Nascimento da Pessoa, quando PF, ou a Data de Abertura da Empresa, quando PJ.
         :param str sexo: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do sexo da Pessoa, quando PF, sendo: (\"M\": Masculino), (\"F\": Feminino), (\"O\": Outro), (\"N\": N\u00C3\u00A3o Especificado).
-        :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
-        :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 100, Max = 100)
         :return: PagePessoas
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['id', 'nome', 'tipo', 'cpf', 'cnpj', 'data_nascimento', 'sexo', 'page', 'limit']
+        all_params = ['page', 'limit', 'id', 'nome', 'tipo', 'cpf', 'cnpj', 'data_nascimento', 'sexo']
         all_params.append('callback')
 
         params = locals()
@@ -1222,6 +1222,10 @@ class CadastrosGeraisApi(object):
         path_params = {}
 
         query_params = {}
+        if 'page' in params:
+            query_params['page'] = params['page']
+        if 'limit' in params:
+            query_params['limit'] = params['limit']
         if 'id' in params:
             query_params['id'] = params['id']
         if 'nome' in params:
@@ -1236,10 +1240,6 @@ class CadastrosGeraisApi(object):
             query_params['dataNascimento'] = params['data_nascimento']
         if 'sexo' in params:
             query_params['sexo'] = params['sexo']
-        if 'page' in params:
-            query_params['page'] = params['page']
-        if 'limit' in params:
-            query_params['limit'] = params['limit']
 
         header_params = {}
 
@@ -1288,6 +1288,8 @@ class CadastrosGeraisApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
+        :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
+        :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 100, Max = 100)
         :param int id_conta: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Conta (id).
         :param int id_produto: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Produto (id).
         :param int id_pessoa: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Pessoa (id).
@@ -1299,14 +1301,12 @@ class CadastrosGeraisApi(object):
         :param int flag_ativo: Quanto ativa, indica que o cadastro do Portador est\u00C3\u00A1 ativo, em emissores que realizam este tipo de gest\u00C3\u00A3o.
         :param date data_cadastro_portador: Apresenta a data em que o Portador fora cadastrado, quando possuir esta informa\u00C3\u00A7\u00C3\u00A3o.
         :param date data_cancelamento_portador: Apresenta a data em que o Portador fora cancelado, quando possuir esta informa\u00C3\u00A7\u00C3\u00A3o.
-        :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
-        :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 100, Max = 100)
         :return: PagePortador
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['id_conta', 'id_produto', 'id_pessoa', 'id_parentesco', 'tipo_portador', 'nome_impresso', 'id_imagem', 'id_tipo_cartao', 'flag_ativo', 'data_cadastro_portador', 'data_cancelamento_portador', 'page', 'limit']
+        all_params = ['page', 'limit', 'id_conta', 'id_produto', 'id_pessoa', 'id_parentesco', 'tipo_portador', 'nome_impresso', 'id_imagem', 'id_tipo_cartao', 'flag_ativo', 'data_cadastro_portador', 'data_cancelamento_portador']
         all_params.append('callback')
 
         params = locals()
@@ -1324,6 +1324,10 @@ class CadastrosGeraisApi(object):
         path_params = {}
 
         query_params = {}
+        if 'page' in params:
+            query_params['page'] = params['page']
+        if 'limit' in params:
+            query_params['limit'] = params['limit']
         if 'id_conta' in params:
             query_params['idConta'] = params['id_conta']
         if 'id_produto' in params:
@@ -1346,10 +1350,6 @@ class CadastrosGeraisApi(object):
             query_params['dataCadastroPortador'] = params['data_cadastro_portador']
         if 'data_cancelamento_portador' in params:
             query_params['dataCancelamentoPortador'] = params['data_cancelamento_portador']
-        if 'page' in params:
-            query_params['page'] = params['page']
-        if 'limit' in params:
-            query_params['limit'] = params['limit']
 
         header_params = {}
 
@@ -1398,6 +1398,8 @@ class CadastrosGeraisApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
+        :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
+        :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 100, Max = 100)
         :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Telefone (id).
         :param int id_tipo_telefone: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Tipo do Telefone (id).
         :param int id_pessoa: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Pessoa (id) a qual o telefone pertence.
@@ -1405,14 +1407,12 @@ class CadastrosGeraisApi(object):
         :param str telefone: N\u00C3\u00BAmero do telefone.
         :param str ramal: N\u00C3\u00BAmero do ramal.
         :param int status: Apresenta o Status do Telefone, onde: '0': Inativo e '1': Ativo
-        :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
-        :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 100, Max = 100)
         :return: PageTelefones
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['id', 'id_tipo_telefone', 'id_pessoa', 'ddd', 'telefone', 'ramal', 'status', 'page', 'limit']
+        all_params = ['page', 'limit', 'id', 'id_tipo_telefone', 'id_pessoa', 'ddd', 'telefone', 'ramal', 'status']
         all_params.append('callback')
 
         params = locals()
@@ -1430,6 +1430,10 @@ class CadastrosGeraisApi(object):
         path_params = {}
 
         query_params = {}
+        if 'page' in params:
+            query_params['page'] = params['page']
+        if 'limit' in params:
+            query_params['limit'] = params['limit']
         if 'id' in params:
             query_params['id'] = params['id']
         if 'id_tipo_telefone' in params:
@@ -1444,10 +1448,6 @@ class CadastrosGeraisApi(object):
             query_params['ramal'] = params['ramal']
         if 'status' in params:
             query_params['status'] = params['status']
-        if 'page' in params:
-            query_params['page'] = params['page']
-        if 'limit' in params:
-            query_params['limit'] = params['limit']
 
         header_params = {}
 
@@ -1496,16 +1496,16 @@ class CadastrosGeraisApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Tipo do Endere\u00C3\u00A7o (id)
-        :param str nome: Nome do Tipo do Endere\u00C3\u00A7o
         :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
         :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 100, Max = 100)
+        :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Tipo do Endere\u00C3\u00A7o (id)
+        :param str nome: Nome do Tipo do Endere\u00C3\u00A7o
         :return: PageTiposEndereco
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['id', 'nome', 'page', 'limit']
+        all_params = ['page', 'limit', 'id', 'nome']
         all_params.append('callback')
 
         params = locals()
@@ -1519,18 +1519,18 @@ class CadastrosGeraisApi(object):
         del params['kwargs']
 
 
-        resource_path = '/api/tipos-endereco'.replace('{format}', 'json')
+        resource_path = '/api/tipos-enderecos'.replace('{format}', 'json')
         path_params = {}
 
         query_params = {}
-        if 'id' in params:
-            query_params['id'] = params['id']
-        if 'nome' in params:
-            query_params['nome'] = params['nome']
         if 'page' in params:
             query_params['page'] = params['page']
         if 'limit' in params:
             query_params['limit'] = params['limit']
+        if 'id' in params:
+            query_params['id'] = params['id']
+        if 'nome' in params:
+            query_params['nome'] = params['nome']
 
         header_params = {}
 
@@ -1579,16 +1579,16 @@ class CadastrosGeraisApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Tipo do Telefone (id).
-        :param str nome: Nome do Tipo do Telefone
         :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
         :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 100, Max = 100)
+        :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Tipo do Telefone (id).
+        :param str nome: Nome do Tipo do Telefone
         :return: PageTipoTelefones
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['id', 'nome', 'page', 'limit']
+        all_params = ['page', 'limit', 'id', 'nome']
         all_params.append('callback')
 
         params = locals()
@@ -1606,14 +1606,14 @@ class CadastrosGeraisApi(object):
         path_params = {}
 
         query_params = {}
-        if 'id' in params:
-            query_params['id'] = params['id']
-        if 'nome' in params:
-            query_params['nome'] = params['nome']
         if 'page' in params:
             query_params['page'] = params['page']
         if 'limit' in params:
             query_params['limit'] = params['limit']
+        if 'id' in params:
+            query_params['id'] = params['id']
+        if 'nome' in params:
+            query_params['nome'] = params['nome']
 
         header_params = {}
 

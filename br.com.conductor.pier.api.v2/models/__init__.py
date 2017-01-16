@@ -29,6 +29,7 @@ from .page_web_hooks import PageWebHooks
 from .pessoa import Pessoa
 from .portador import Portador
 from .produto import Produto
+from .sms import SMS
 from .status_cartao import StatusCartao
 from .status_conta import StatusConta
 from .status_impressao import StatusImpressao

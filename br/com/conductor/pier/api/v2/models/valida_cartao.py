@@ -37,42 +37,20 @@ class ValidaCartao(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'criptograma_resposta': 'str',
             'status_cartao': 'str',
-            'status_conta': 'str'
+            'status_conta': 'str',
+            'criptograma_resposta': 'str'
         }
 
         self.attribute_map = {
-            'criptograma_resposta': 'criptogramaResposta',
             'status_cartao': 'statusCartao',
-            'status_conta': 'statusConta'
+            'status_conta': 'statusConta',
+            'criptograma_resposta': 'criptogramaResposta'
         }
 
-        self._criptograma_resposta = None
         self._status_cartao = None
         self._status_conta = None
-
-    @property
-    def criptograma_resposta(self):
-        """
-        Gets the criptograma_resposta of this ValidaCartao.
-        Criptograma de resposta
-
-        :return: The criptograma_resposta of this ValidaCartao.
-        :rtype: str
-        """
-        return self._criptograma_resposta
-
-    @criptograma_resposta.setter
-    def criptograma_resposta(self, criptograma_resposta):
-        """
-        Sets the criptograma_resposta of this ValidaCartao.
-        Criptograma de resposta
-
-        :param criptograma_resposta: The criptograma_resposta of this ValidaCartao.
-        :type: str
-        """
-        self._criptograma_resposta = criptograma_resposta
+        self._criptograma_resposta = None
 
     @property
     def status_cartao(self):
@@ -117,6 +95,28 @@ class ValidaCartao(object):
         :type: str
         """
         self._status_conta = status_conta
+
+    @property
+    def criptograma_resposta(self):
+        """
+        Gets the criptograma_resposta of this ValidaCartao.
+        Criptograma de resposta
+
+        :return: The criptograma_resposta of this ValidaCartao.
+        :rtype: str
+        """
+        return self._criptograma_resposta
+
+    @criptograma_resposta.setter
+    def criptograma_resposta(self, criptograma_resposta):
+        """
+        Sets the criptograma_resposta of this ValidaCartao.
+        Criptograma de resposta
+
+        :param criptograma_resposta: The criptograma_resposta of this ValidaCartao.
+        :type: str
+        """
+        self._criptograma_resposta = criptograma_resposta
 
     def to_dict(self):
         """

@@ -37,129 +37,41 @@ class Conta(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'data_cadastro': 'datetime',
-            'data_status_conta': 'datetime',
-            'data_ultima_alteracao_vencimento': 'datetime',
-            'dia_vencimento': 'int',
             'id': 'int',
+            'id_produto': 'int',
             'id_origem_comercial': 'int',
             'id_pessoa': 'int',
-            'id_produto': 'int',
             'id_status_conta': 'int',
-            'melhor_dia_compra': 'int'
+            'dia_vencimento': 'int',
+            'melhor_dia_compra': 'int',
+            'data_status_conta': 'datetime',
+            'data_cadastro': 'datetime',
+            'data_ultima_alteracao_vencimento': 'datetime'
         }
 
         self.attribute_map = {
-            'data_cadastro': 'dataCadastro',
-            'data_status_conta': 'dataStatusConta',
-            'data_ultima_alteracao_vencimento': 'dataUltimaAlteracaoVencimento',
-            'dia_vencimento': 'diaVencimento',
             'id': 'id',
+            'id_produto': 'idProduto',
             'id_origem_comercial': 'idOrigemComercial',
             'id_pessoa': 'idPessoa',
-            'id_produto': 'idProduto',
             'id_status_conta': 'idStatusConta',
-            'melhor_dia_compra': 'melhorDiaCompra'
+            'dia_vencimento': 'diaVencimento',
+            'melhor_dia_compra': 'melhorDiaCompra',
+            'data_status_conta': 'dataStatusConta',
+            'data_cadastro': 'dataCadastro',
+            'data_ultima_alteracao_vencimento': 'dataUltimaAlteracaoVencimento'
         }
 
-        self._data_cadastro = None
-        self._data_status_conta = None
-        self._data_ultima_alteracao_vencimento = None
-        self._dia_vencimento = None
         self._id = None
+        self._id_produto = None
         self._id_origem_comercial = None
         self._id_pessoa = None
-        self._id_produto = None
         self._id_status_conta = None
+        self._dia_vencimento = None
         self._melhor_dia_compra = None
-
-    @property
-    def data_cadastro(self):
-        """
-        Gets the data_cadastro of this Conta.
-        Apresenta a data em que o cart\u00C3\u00A3o foi gerado.
-
-        :return: The data_cadastro of this Conta.
-        :rtype: datetime
-        """
-        return self._data_cadastro
-
-    @data_cadastro.setter
-    def data_cadastro(self, data_cadastro):
-        """
-        Sets the data_cadastro of this Conta.
-        Apresenta a data em que o cart\u00C3\u00A3o foi gerado.
-
-        :param data_cadastro: The data_cadastro of this Conta.
-        :type: datetime
-        """
-        self._data_cadastro = data_cadastro
-
-    @property
-    def data_status_conta(self):
-        """
-        Gets the data_status_conta of this Conta.
-        Apresenta a data em que o idStatusConta atual fora atribu\u00C3\u00ADdo para ela.
-
-        :return: The data_status_conta of this Conta.
-        :rtype: datetime
-        """
-        return self._data_status_conta
-
-    @data_status_conta.setter
-    def data_status_conta(self, data_status_conta):
-        """
-        Sets the data_status_conta of this Conta.
-        Apresenta a data em que o idStatusConta atual fora atribu\u00C3\u00ADdo para ela.
-
-        :param data_status_conta: The data_status_conta of this Conta.
-        :type: datetime
-        """
-        self._data_status_conta = data_status_conta
-
-    @property
-    def data_ultima_alteracao_vencimento(self):
-        """
-        Gets the data_ultima_alteracao_vencimento of this Conta.
-        Apresenta a data da ultima altera\u00C3\u00A7\u00C3\u00A3o de vencimento.
-
-        :return: The data_ultima_alteracao_vencimento of this Conta.
-        :rtype: datetime
-        """
-        return self._data_ultima_alteracao_vencimento
-
-    @data_ultima_alteracao_vencimento.setter
-    def data_ultima_alteracao_vencimento(self, data_ultima_alteracao_vencimento):
-        """
-        Sets the data_ultima_alteracao_vencimento of this Conta.
-        Apresenta a data da ultima altera\u00C3\u00A7\u00C3\u00A3o de vencimento.
-
-        :param data_ultima_alteracao_vencimento: The data_ultima_alteracao_vencimento of this Conta.
-        :type: datetime
-        """
-        self._data_ultima_alteracao_vencimento = data_ultima_alteracao_vencimento
-
-    @property
-    def dia_vencimento(self):
-        """
-        Gets the dia_vencimento of this Conta.
-        Apresenta o dia de vencimento.
-
-        :return: The dia_vencimento of this Conta.
-        :rtype: int
-        """
-        return self._dia_vencimento
-
-    @dia_vencimento.setter
-    def dia_vencimento(self, dia_vencimento):
-        """
-        Sets the dia_vencimento of this Conta.
-        Apresenta o dia de vencimento.
-
-        :param dia_vencimento: The dia_vencimento of this Conta.
-        :type: int
-        """
-        self._dia_vencimento = dia_vencimento
+        self._data_status_conta = None
+        self._data_cadastro = None
+        self._data_ultima_alteracao_vencimento = None
 
     @property
     def id(self):
@@ -182,6 +94,28 @@ class Conta(object):
         :type: int
         """
         self._id = id
+
+    @property
+    def id_produto(self):
+        """
+        Gets the id_produto of this Conta.
+        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do produto ao qual a conta faz parte. (id).
+
+        :return: The id_produto of this Conta.
+        :rtype: int
+        """
+        return self._id_produto
+
+    @id_produto.setter
+    def id_produto(self, id_produto):
+        """
+        Sets the id_produto of this Conta.
+        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do produto ao qual a conta faz parte. (id).
+
+        :param id_produto: The id_produto of this Conta.
+        :type: int
+        """
+        self._id_produto = id_produto
 
     @property
     def id_origem_comercial(self):
@@ -228,28 +162,6 @@ class Conta(object):
         self._id_pessoa = id_pessoa
 
     @property
-    def id_produto(self):
-        """
-        Gets the id_produto of this Conta.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do produto ao qual a conta faz parte. (id).
-
-        :return: The id_produto of this Conta.
-        :rtype: int
-        """
-        return self._id_produto
-
-    @id_produto.setter
-    def id_produto(self, id_produto):
-        """
-        Sets the id_produto of this Conta.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do produto ao qual a conta faz parte. (id).
-
-        :param id_produto: The id_produto of this Conta.
-        :type: int
-        """
-        self._id_produto = id_produto
-
-    @property
     def id_status_conta(self):
         """
         Gets the id_status_conta of this Conta.
@@ -272,6 +184,28 @@ class Conta(object):
         self._id_status_conta = id_status_conta
 
     @property
+    def dia_vencimento(self):
+        """
+        Gets the dia_vencimento of this Conta.
+        Apresenta o dia de vencimento.
+
+        :return: The dia_vencimento of this Conta.
+        :rtype: int
+        """
+        return self._dia_vencimento
+
+    @dia_vencimento.setter
+    def dia_vencimento(self, dia_vencimento):
+        """
+        Sets the dia_vencimento of this Conta.
+        Apresenta o dia de vencimento.
+
+        :param dia_vencimento: The dia_vencimento of this Conta.
+        :type: int
+        """
+        self._dia_vencimento = dia_vencimento
+
+    @property
     def melhor_dia_compra(self):
         """
         Gets the melhor_dia_compra of this Conta.
@@ -292,6 +226,72 @@ class Conta(object):
         :type: int
         """
         self._melhor_dia_compra = melhor_dia_compra
+
+    @property
+    def data_status_conta(self):
+        """
+        Gets the data_status_conta of this Conta.
+        Apresenta a data em que o idStatusConta atual fora atribu\u00C3\u00ADdo para ela.
+
+        :return: The data_status_conta of this Conta.
+        :rtype: datetime
+        """
+        return self._data_status_conta
+
+    @data_status_conta.setter
+    def data_status_conta(self, data_status_conta):
+        """
+        Sets the data_status_conta of this Conta.
+        Apresenta a data em que o idStatusConta atual fora atribu\u00C3\u00ADdo para ela.
+
+        :param data_status_conta: The data_status_conta of this Conta.
+        :type: datetime
+        """
+        self._data_status_conta = data_status_conta
+
+    @property
+    def data_cadastro(self):
+        """
+        Gets the data_cadastro of this Conta.
+        Apresenta a data em que o cart\u00C3\u00A3o foi gerado.
+
+        :return: The data_cadastro of this Conta.
+        :rtype: datetime
+        """
+        return self._data_cadastro
+
+    @data_cadastro.setter
+    def data_cadastro(self, data_cadastro):
+        """
+        Sets the data_cadastro of this Conta.
+        Apresenta a data em que o cart\u00C3\u00A3o foi gerado.
+
+        :param data_cadastro: The data_cadastro of this Conta.
+        :type: datetime
+        """
+        self._data_cadastro = data_cadastro
+
+    @property
+    def data_ultima_alteracao_vencimento(self):
+        """
+        Gets the data_ultima_alteracao_vencimento of this Conta.
+        Apresenta a data da ultima altera\u00C3\u00A7\u00C3\u00A3o de vencimento.
+
+        :return: The data_ultima_alteracao_vencimento of this Conta.
+        :rtype: datetime
+        """
+        return self._data_ultima_alteracao_vencimento
+
+    @data_ultima_alteracao_vencimento.setter
+    def data_ultima_alteracao_vencimento(self, data_ultima_alteracao_vencimento):
+        """
+        Sets the data_ultima_alteracao_vencimento of this Conta.
+        Apresenta a data da ultima altera\u00C3\u00A7\u00C3\u00A3o de vencimento.
+
+        :param data_ultima_alteracao_vencimento: The data_ultima_alteracao_vencimento of this Conta.
+        :type: datetime
+        """
+        self._data_ultima_alteracao_vencimento = data_ultima_alteracao_vencimento
 
     def to_dict(self):
         """

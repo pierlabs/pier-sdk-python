@@ -37,54 +37,32 @@ class Telefone(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'ddd': 'str',
             'id': 'int',
-            'id_pessoa': 'int',
             'id_tipo_telefone': 'int',
+            'id_pessoa': 'int',
+            'ddd': 'str',
+            'telefone': 'str',
             'ramal': 'str',
-            'status': 'int',
-            'telefone': 'str'
+            'status': 'int'
         }
 
         self.attribute_map = {
-            'ddd': 'ddd',
             'id': 'id',
-            'id_pessoa': 'idPessoa',
             'id_tipo_telefone': 'idTipoTelefone',
+            'id_pessoa': 'idPessoa',
+            'ddd': 'ddd',
+            'telefone': 'telefone',
             'ramal': 'ramal',
-            'status': 'status',
-            'telefone': 'telefone'
+            'status': 'status'
         }
 
-        self._ddd = None
         self._id = None
-        self._id_pessoa = None
         self._id_tipo_telefone = None
+        self._id_pessoa = None
+        self._ddd = None
+        self._telefone = None
         self._ramal = None
         self._status = None
-        self._telefone = None
-
-    @property
-    def ddd(self):
-        """
-        Gets the ddd of this Telefone.
-        C\u00C3\u00B3digo DDD do telefone (id).
-
-        :return: The ddd of this Telefone.
-        :rtype: str
-        """
-        return self._ddd
-
-    @ddd.setter
-    def ddd(self, ddd):
-        """
-        Sets the ddd of this Telefone.
-        C\u00C3\u00B3digo DDD do telefone (id).
-
-        :param ddd: The ddd of this Telefone.
-        :type: str
-        """
-        self._ddd = ddd
 
     @property
     def id(self):
@@ -109,6 +87,28 @@ class Telefone(object):
         self._id = id
 
     @property
+    def id_tipo_telefone(self):
+        """
+        Gets the id_tipo_telefone of this Telefone.
+        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Tipo do Telefone (id).
+
+        :return: The id_tipo_telefone of this Telefone.
+        :rtype: int
+        """
+        return self._id_tipo_telefone
+
+    @id_tipo_telefone.setter
+    def id_tipo_telefone(self, id_tipo_telefone):
+        """
+        Sets the id_tipo_telefone of this Telefone.
+        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Tipo do Telefone (id).
+
+        :param id_tipo_telefone: The id_tipo_telefone of this Telefone.
+        :type: int
+        """
+        self._id_tipo_telefone = id_tipo_telefone
+
+    @property
     def id_pessoa(self):
         """
         Gets the id_pessoa of this Telefone.
@@ -131,26 +131,48 @@ class Telefone(object):
         self._id_pessoa = id_pessoa
 
     @property
-    def id_tipo_telefone(self):
+    def ddd(self):
         """
-        Gets the id_tipo_telefone of this Telefone.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Tipo do Telefone (id).
+        Gets the ddd of this Telefone.
+        C\u00C3\u00B3digo DDD do telefone (id).
 
-        :return: The id_tipo_telefone of this Telefone.
-        :rtype: int
+        :return: The ddd of this Telefone.
+        :rtype: str
         """
-        return self._id_tipo_telefone
+        return self._ddd
 
-    @id_tipo_telefone.setter
-    def id_tipo_telefone(self, id_tipo_telefone):
+    @ddd.setter
+    def ddd(self, ddd):
         """
-        Sets the id_tipo_telefone of this Telefone.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Tipo do Telefone (id).
+        Sets the ddd of this Telefone.
+        C\u00C3\u00B3digo DDD do telefone (id).
 
-        :param id_tipo_telefone: The id_tipo_telefone of this Telefone.
-        :type: int
+        :param ddd: The ddd of this Telefone.
+        :type: str
         """
-        self._id_tipo_telefone = id_tipo_telefone
+        self._ddd = ddd
+
+    @property
+    def telefone(self):
+        """
+        Gets the telefone of this Telefone.
+        N\u00C3\u00BAmero do telefone.
+
+        :return: The telefone of this Telefone.
+        :rtype: str
+        """
+        return self._telefone
+
+    @telefone.setter
+    def telefone(self, telefone):
+        """
+        Sets the telefone of this Telefone.
+        N\u00C3\u00BAmero do telefone.
+
+        :param telefone: The telefone of this Telefone.
+        :type: str
+        """
+        self._telefone = telefone
 
     @property
     def ramal(self):
@@ -195,28 +217,6 @@ class Telefone(object):
         :type: int
         """
         self._status = status
-
-    @property
-    def telefone(self):
-        """
-        Gets the telefone of this Telefone.
-        N\u00C3\u00BAmero do telefone.
-
-        :return: The telefone of this Telefone.
-        :rtype: str
-        """
-        return self._telefone
-
-    @telefone.setter
-    def telefone(self, telefone):
-        """
-        Sets the telefone of this Telefone.
-        N\u00C3\u00BAmero do telefone.
-
-        :param telefone: The telefone of this Telefone.
-        :type: str
-        """
-        self._telefone = telefone
 
     def to_dict(self):
         """

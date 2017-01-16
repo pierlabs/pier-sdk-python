@@ -37,48 +37,26 @@ class HistoricoImpressaoCartao(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'data_historico': 'datetime',
             'id': 'int',
             'id_cartao': 'int',
             'id_status_impressao_cartao': 'int',
-            'mensagem_historico': 'str'
+            'mensagem_historico': 'str',
+            'data_historico': 'datetime'
         }
 
         self.attribute_map = {
-            'data_historico': 'dataHistorico',
             'id': 'id',
             'id_cartao': 'idCartao',
             'id_status_impressao_cartao': 'idStatusImpressaoCartao',
-            'mensagem_historico': 'mensagemHistorico'
+            'mensagem_historico': 'mensagemHistorico',
+            'data_historico': 'dataHistorico'
         }
 
-        self._data_historico = None
         self._id = None
         self._id_cartao = None
         self._id_status_impressao_cartao = None
         self._mensagem_historico = None
-
-    @property
-    def data_historico(self):
-        """
-        Gets the data_historico of this HistoricoImpressaoCartao.
-        Apresenta a data que o registro de Hist\u00C3\u00B3rico de Impress\u00C3\u00A3o de um Cart\u00C3\u00A3o fora inserido.
-
-        :return: The data_historico of this HistoricoImpressaoCartao.
-        :rtype: datetime
-        """
-        return self._data_historico
-
-    @data_historico.setter
-    def data_historico(self, data_historico):
-        """
-        Sets the data_historico of this HistoricoImpressaoCartao.
-        Apresenta a data que o registro de Hist\u00C3\u00B3rico de Impress\u00C3\u00A3o de um Cart\u00C3\u00A3o fora inserido.
-
-        :param data_historico: The data_historico of this HistoricoImpressaoCartao.
-        :type: datetime
-        """
-        self._data_historico = data_historico
+        self._data_historico = None
 
     @property
     def id(self):
@@ -167,6 +145,28 @@ class HistoricoImpressaoCartao(object):
         :type: str
         """
         self._mensagem_historico = mensagem_historico
+
+    @property
+    def data_historico(self):
+        """
+        Gets the data_historico of this HistoricoImpressaoCartao.
+        Apresenta a data que o registro de Hist\u00C3\u00B3rico de Impress\u00C3\u00A3o de um Cart\u00C3\u00A3o fora inserido.
+
+        :return: The data_historico of this HistoricoImpressaoCartao.
+        :rtype: datetime
+        """
+        return self._data_historico
+
+    @data_historico.setter
+    def data_historico(self, data_historico):
+        """
+        Sets the data_historico of this HistoricoImpressaoCartao.
+        Apresenta a data que o registro de Hist\u00C3\u00B3rico de Impress\u00C3\u00A3o de um Cart\u00C3\u00A3o fora inserido.
+
+        :param data_historico: The data_historico of this HistoricoImpressaoCartao.
+        :type: datetime
+        """
+        self._data_historico = data_historico
 
     def to_dict(self):
         """

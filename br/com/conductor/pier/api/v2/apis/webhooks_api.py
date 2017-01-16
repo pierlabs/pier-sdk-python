@@ -61,8 +61,8 @@ class WebhooksApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int id: C\u00C3\u00B3digo identificador do Webhook (required)
-        :param Object evento: Evento a ser chamado pelo WebHook (required)
-        :param Object metodo: M\u00C3\u00A9todo que a ser chamado pelo WebHook (required)
+        :param str evento: Evento a ser chamado pelo WebHook (required)
+        :param str metodo: M\u00C3\u00A9todo que a ser chamado pelo WebHook (required)
         :param str url: URL que a ser consumida pelo WebHook (required)
         :return: WebHook
                  If the method is called asynchronously,
@@ -232,18 +232,18 @@ class WebhooksApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param int id: Id do WebHook
-        :param Object evento: Evento a ser chamado pelo WebHook
-        :param Object metodo: M\u00C3\u00A9todo que a ser chamado pelo WebHook
-        :param str url: URL que a ser consumida pelo WebHook
         :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
         :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 100, Max = 100)
+        :param int id: Id do WebHook
+        :param str evento: Evento a ser chamado pelo WebHook
+        :param str metodo: M\u00C3\u00A9todo que a ser chamado pelo WebHook
+        :param str url: URL que a ser consumida pelo WebHook
         :return: PageWebHooks
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['id', 'evento', 'metodo', 'url', 'page', 'limit']
+        all_params = ['page', 'limit', 'id', 'evento', 'metodo', 'url']
         all_params.append('callback')
 
         params = locals()
@@ -261,6 +261,10 @@ class WebhooksApi(object):
         path_params = {}
 
         query_params = {}
+        if 'page' in params:
+            query_params['page'] = params['page']
+        if 'limit' in params:
+            query_params['limit'] = params['limit']
         if 'id' in params:
             query_params['id'] = params['id']
         if 'evento' in params:
@@ -269,10 +273,6 @@ class WebhooksApi(object):
             query_params['metodo'] = params['metodo']
         if 'url' in params:
             query_params['url'] = params['url']
-        if 'page' in params:
-            query_params['page'] = params['page']
-        if 'limit' in params:
-            query_params['limit'] = params['limit']
 
         header_params = {}
 
@@ -321,8 +321,8 @@ class WebhooksApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param Object evento: Evento a ser chamado pelo WebHook (required)
-        :param Object metodo: M\u00C3\u00A9todo que a ser chamado pelo WebHook (required)
+        :param str evento: Evento a ser chamado pelo WebHook (required)
+        :param str metodo: M\u00C3\u00A9todo que a ser chamado pelo WebHook (required)
         :param str url: URL que a ser consumida pelo WebHook (required)
         :return: WebHook
                  If the method is called asynchronously,

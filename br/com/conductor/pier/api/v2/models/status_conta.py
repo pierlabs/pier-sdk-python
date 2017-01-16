@@ -37,45 +37,23 @@ class StatusConta(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'flag_altera_limite': 'int',
             'id': 'int',
-            'mensagem_consulta_negada': 'str',
-            'nome': 'str'
+            'nome': 'str',
+            'flag_altera_limite': 'int',
+            'mensagem_consulta_negada': 'str'
         }
 
         self.attribute_map = {
-            'flag_altera_limite': 'flagAlteraLimite',
             'id': 'id',
-            'mensagem_consulta_negada': 'mensagemConsultaNegada',
-            'nome': 'nome'
+            'nome': 'nome',
+            'flag_altera_limite': 'flagAlteraLimite',
+            'mensagem_consulta_negada': 'mensagemConsultaNegada'
         }
 
-        self._flag_altera_limite = None
         self._id = None
-        self._mensagem_consulta_negada = None
         self._nome = None
-
-    @property
-    def flag_altera_limite(self):
-        """
-        Gets the flag_altera_limite of this StatusConta.
-        Par\u00C3\u00A2metro que define se o Status da Conta permite realizar a Altera\u00C3\u00A7\u00C3\u00A3o de Limites do Portador, sendo: 0: Inativo e 1: Ativo.
-
-        :return: The flag_altera_limite of this StatusConta.
-        :rtype: int
-        """
-        return self._flag_altera_limite
-
-    @flag_altera_limite.setter
-    def flag_altera_limite(self, flag_altera_limite):
-        """
-        Sets the flag_altera_limite of this StatusConta.
-        Par\u00C3\u00A2metro que define se o Status da Conta permite realizar a Altera\u00C3\u00A7\u00C3\u00A3o de Limites do Portador, sendo: 0: Inativo e 1: Ativo.
-
-        :param flag_altera_limite: The flag_altera_limite of this StatusConta.
-        :type: int
-        """
-        self._flag_altera_limite = flag_altera_limite
+        self._flag_altera_limite = None
+        self._mensagem_consulta_negada = None
 
     @property
     def id(self):
@@ -100,28 +78,6 @@ class StatusConta(object):
         self._id = id
 
     @property
-    def mensagem_consulta_negada(self):
-        """
-        Gets the mensagem_consulta_negada of this StatusConta.
-        Apresenta o texto com o motivo que ser\u00C3\u00A1 apresentado na resposta as opera\u00C3\u00A7\u00C3\u00B5es de Listar e Consultar LimitesDisponibilidades.
-
-        :return: The mensagem_consulta_negada of this StatusConta.
-        :rtype: str
-        """
-        return self._mensagem_consulta_negada
-
-    @mensagem_consulta_negada.setter
-    def mensagem_consulta_negada(self, mensagem_consulta_negada):
-        """
-        Sets the mensagem_consulta_negada of this StatusConta.
-        Apresenta o texto com o motivo que ser\u00C3\u00A1 apresentado na resposta as opera\u00C3\u00A7\u00C3\u00B5es de Listar e Consultar LimitesDisponibilidades.
-
-        :param mensagem_consulta_negada: The mensagem_consulta_negada of this StatusConta.
-        :type: str
-        """
-        self._mensagem_consulta_negada = mensagem_consulta_negada
-
-    @property
     def nome(self):
         """
         Gets the nome of this StatusConta.
@@ -142,6 +98,50 @@ class StatusConta(object):
         :type: str
         """
         self._nome = nome
+
+    @property
+    def flag_altera_limite(self):
+        """
+        Gets the flag_altera_limite of this StatusConta.
+        Par\u00C3\u00A2metro que define se o Status da Conta permite realizar a Altera\u00C3\u00A7\u00C3\u00A3o de Limites do Portador, sendo: 0: Inativo e 1: Ativo.
+
+        :return: The flag_altera_limite of this StatusConta.
+        :rtype: int
+        """
+        return self._flag_altera_limite
+
+    @flag_altera_limite.setter
+    def flag_altera_limite(self, flag_altera_limite):
+        """
+        Sets the flag_altera_limite of this StatusConta.
+        Par\u00C3\u00A2metro que define se o Status da Conta permite realizar a Altera\u00C3\u00A7\u00C3\u00A3o de Limites do Portador, sendo: 0: Inativo e 1: Ativo.
+
+        :param flag_altera_limite: The flag_altera_limite of this StatusConta.
+        :type: int
+        """
+        self._flag_altera_limite = flag_altera_limite
+
+    @property
+    def mensagem_consulta_negada(self):
+        """
+        Gets the mensagem_consulta_negada of this StatusConta.
+        Apresenta o texto com o motivo que ser\u00C3\u00A1 apresentado na resposta as opera\u00C3\u00A7\u00C3\u00B5es de Listar e Consultar LimitesDisponibilidades.
+
+        :return: The mensagem_consulta_negada of this StatusConta.
+        :rtype: str
+        """
+        return self._mensagem_consulta_negada
+
+    @mensagem_consulta_negada.setter
+    def mensagem_consulta_negada(self, mensagem_consulta_negada):
+        """
+        Sets the mensagem_consulta_negada of this StatusConta.
+        Apresenta o texto com o motivo que ser\u00C3\u00A1 apresentado na resposta as opera\u00C3\u00A7\u00C3\u00B5es de Listar e Consultar LimitesDisponibilidades.
+
+        :param mensagem_consulta_negada: The mensagem_consulta_negada of this StatusConta.
+        :type: str
+        """
+        self._mensagem_consulta_negada = mensagem_consulta_negada
 
     def to_dict(self):
         """

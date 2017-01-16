@@ -37,24 +37,24 @@ class CartaoImpressao(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'cpf': 'str',
+            'id_conta': 'int',
+            'id_pessoa': 'int',
+            'id_cartao': 'int',
+            'id_bandeira': 'int',
+            'id_tipo_cartao': 'int',
+            'numero_cartao': 'str',
+            'nome_plastico': 'str',
             'cvv2': 'str',
             'data_geracao': 'datetime',
             'data_validade': 'datetime',
-            'id_bandeira': 'int',
-            'id_cartao': 'int',
-            'id_conta': 'int',
-            'id_pessoa': 'int',
-            'id_tipo_cartao': 'int',
-            'nome_empregador': 'str',
-            'nome_empresa': 'str',
-            'nome_empresa_beneficio': 'str',
             'nome_origem_comercial': 'str',
-            'nome_plastico': 'str',
+            'nome_empresa': 'str',
             'numero_agencia': 'int',
-            'numero_cartao': 'str',
             'numero_conta_corente': 'str',
+            'nome_empresa_beneficio': 'str',
+            'cpf': 'str',
             'tipo_portador': 'str',
+            'nome_empregador': 'str',
             'trilha1': 'str',
             'trilha2': 'str',
             'trilha_cvv1': 'str',
@@ -62,74 +62,206 @@ class CartaoImpressao(object):
         }
 
         self.attribute_map = {
-            'cpf': 'cpf',
+            'id_conta': 'idConta',
+            'id_pessoa': 'idPessoa',
+            'id_cartao': 'idCartao',
+            'id_bandeira': 'idBandeira',
+            'id_tipo_cartao': 'idTipoCartao',
+            'numero_cartao': 'numeroCartao',
+            'nome_plastico': 'nomePlastico',
             'cvv2': 'cvv2',
             'data_geracao': 'dataGeracao',
             'data_validade': 'dataValidade',
-            'id_bandeira': 'idBandeira',
-            'id_cartao': 'idCartao',
-            'id_conta': 'idConta',
-            'id_pessoa': 'idPessoa',
-            'id_tipo_cartao': 'idTipoCartao',
-            'nome_empregador': 'nomeEmpregador',
-            'nome_empresa': 'nomeEmpresa',
-            'nome_empresa_beneficio': 'nomeEmpresaBeneficio',
             'nome_origem_comercial': 'nomeOrigemComercial',
-            'nome_plastico': 'nomePlastico',
+            'nome_empresa': 'nomeEmpresa',
             'numero_agencia': 'numeroAgencia',
-            'numero_cartao': 'numeroCartao',
             'numero_conta_corente': 'numeroContaCorente',
+            'nome_empresa_beneficio': 'nomeEmpresaBeneficio',
+            'cpf': 'cpf',
             'tipo_portador': 'tipoPortador',
+            'nome_empregador': 'nomeEmpregador',
             'trilha1': 'trilha1',
             'trilha2': 'trilha2',
             'trilha_cvv1': 'trilhaCVV1',
             'trilha_cvv2': 'trilhaCVV2'
         }
 
-        self._cpf = None
+        self._id_conta = None
+        self._id_pessoa = None
+        self._id_cartao = None
+        self._id_bandeira = None
+        self._id_tipo_cartao = None
+        self._numero_cartao = None
+        self._nome_plastico = None
         self._cvv2 = None
         self._data_geracao = None
         self._data_validade = None
-        self._id_bandeira = None
-        self._id_cartao = None
-        self._id_conta = None
-        self._id_pessoa = None
-        self._id_tipo_cartao = None
-        self._nome_empregador = None
-        self._nome_empresa = None
-        self._nome_empresa_beneficio = None
         self._nome_origem_comercial = None
-        self._nome_plastico = None
+        self._nome_empresa = None
         self._numero_agencia = None
-        self._numero_cartao = None
         self._numero_conta_corente = None
+        self._nome_empresa_beneficio = None
+        self._cpf = None
         self._tipo_portador = None
+        self._nome_empregador = None
         self._trilha1 = None
         self._trilha2 = None
         self._trilha_cvv1 = None
         self._trilha_cvv2 = None
 
     @property
-    def cpf(self):
+    def id_conta(self):
         """
-        Gets the cpf of this CartaoImpressao.
-        Apresenta o CPF do Portador do Cart\u00C3\u00A3o.
+        Gets the id_conta of this CartaoImpressao.
+        Apresenta o C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Conta (id) a qual o cart\u00C3\u00A3o gerado pertence.
 
-        :return: The cpf of this CartaoImpressao.
+        :return: The id_conta of this CartaoImpressao.
+        :rtype: int
+        """
+        return self._id_conta
+
+    @id_conta.setter
+    def id_conta(self, id_conta):
+        """
+        Sets the id_conta of this CartaoImpressao.
+        Apresenta o C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Conta (id) a qual o cart\u00C3\u00A3o gerado pertence.
+
+        :param id_conta: The id_conta of this CartaoImpressao.
+        :type: int
+        """
+        self._id_conta = id_conta
+
+    @property
+    def id_pessoa(self):
+        """
+        Gets the id_pessoa of this CartaoImpressao.
+        Apresenta o C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Pessoa (id) portadora do cart\u00C3\u00A3o gerado.
+
+        :return: The id_pessoa of this CartaoImpressao.
+        :rtype: int
+        """
+        return self._id_pessoa
+
+    @id_pessoa.setter
+    def id_pessoa(self, id_pessoa):
+        """
+        Sets the id_pessoa of this CartaoImpressao.
+        Apresenta o C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Pessoa (id) portadora do cart\u00C3\u00A3o gerado.
+
+        :param id_pessoa: The id_pessoa of this CartaoImpressao.
+        :type: int
+        """
+        self._id_pessoa = id_pessoa
+
+    @property
+    def id_cartao(self):
+        """
+        Gets the id_cartao of this CartaoImpressao.
+        Apresenta o C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Cart\u00C3\u00A3o (id) que foi gerado.
+
+        :return: The id_cartao of this CartaoImpressao.
+        :rtype: int
+        """
+        return self._id_cartao
+
+    @id_cartao.setter
+    def id_cartao(self, id_cartao):
+        """
+        Sets the id_cartao of this CartaoImpressao.
+        Apresenta o C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Cart\u00C3\u00A3o (id) que foi gerado.
+
+        :param id_cartao: The id_cartao of this CartaoImpressao.
+        :type: int
+        """
+        self._id_cartao = id_cartao
+
+    @property
+    def id_bandeira(self):
+        """
+        Gets the id_bandeira of this CartaoImpressao.
+        Apresenta o C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Bandeira (id) a qual o Cart\u00C3\u00A3o pertence, quando bandeirado.
+
+        :return: The id_bandeira of this CartaoImpressao.
+        :rtype: int
+        """
+        return self._id_bandeira
+
+    @id_bandeira.setter
+    def id_bandeira(self, id_bandeira):
+        """
+        Sets the id_bandeira of this CartaoImpressao.
+        Apresenta o C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Bandeira (id) a qual o Cart\u00C3\u00A3o pertence, quando bandeirado.
+
+        :param id_bandeira: The id_bandeira of this CartaoImpressao.
+        :type: int
+        """
+        self._id_bandeira = id_bandeira
+
+    @property
+    def id_tipo_cartao(self):
+        """
+        Gets the id_tipo_cartao of this CartaoImpressao.
+        Apresenta o C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Tipo do Cart\u00C3\u00A3o (id) atribu\u00C3\u00ADdo ao Cart\u00C3\u00A3o.
+
+        :return: The id_tipo_cartao of this CartaoImpressao.
+        :rtype: int
+        """
+        return self._id_tipo_cartao
+
+    @id_tipo_cartao.setter
+    def id_tipo_cartao(self, id_tipo_cartao):
+        """
+        Sets the id_tipo_cartao of this CartaoImpressao.
+        Apresenta o C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Tipo do Cart\u00C3\u00A3o (id) atribu\u00C3\u00ADdo ao Cart\u00C3\u00A3o.
+
+        :param id_tipo_cartao: The id_tipo_cartao of this CartaoImpressao.
+        :type: int
+        """
+        self._id_tipo_cartao = id_tipo_cartao
+
+    @property
+    def numero_cartao(self):
+        """
+        Gets the numero_cartao of this CartaoImpressao.
+        Apresenta o n\u00C3\u00BAmero do cart\u00C3\u00A3o.
+
+        :return: The numero_cartao of this CartaoImpressao.
         :rtype: str
         """
-        return self._cpf
+        return self._numero_cartao
 
-    @cpf.setter
-    def cpf(self, cpf):
+    @numero_cartao.setter
+    def numero_cartao(self, numero_cartao):
         """
-        Sets the cpf of this CartaoImpressao.
-        Apresenta o CPF do Portador do Cart\u00C3\u00A3o.
+        Sets the numero_cartao of this CartaoImpressao.
+        Apresenta o n\u00C3\u00BAmero do cart\u00C3\u00A3o.
 
-        :param cpf: The cpf of this CartaoImpressao.
+        :param numero_cartao: The numero_cartao of this CartaoImpressao.
         :type: str
         """
-        self._cpf = cpf
+        self._numero_cartao = numero_cartao
+
+    @property
+    def nome_plastico(self):
+        """
+        Gets the nome_plastico of this CartaoImpressao.
+        Apresenta o nome do Portador do Cart\u00C3\u00A3o.
+
+        :return: The nome_plastico of this CartaoImpressao.
+        :rtype: str
+        """
+        return self._nome_plastico
+
+    @nome_plastico.setter
+    def nome_plastico(self, nome_plastico):
+        """
+        Sets the nome_plastico of this CartaoImpressao.
+        Apresenta o nome do Portador do Cart\u00C3\u00A3o.
+
+        :param nome_plastico: The nome_plastico of this CartaoImpressao.
+        :type: str
+        """
+        self._nome_plastico = nome_plastico
 
     @property
     def cvv2(self):
@@ -198,136 +330,26 @@ class CartaoImpressao(object):
         self._data_validade = data_validade
 
     @property
-    def id_bandeira(self):
+    def nome_origem_comercial(self):
         """
-        Gets the id_bandeira of this CartaoImpressao.
-        Apresenta o C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Bandeira (id) a qual o Cart\u00C3\u00A3o pertence, quando bandeirado.
+        Gets the nome_origem_comercial of this CartaoImpressao.
+        Apresenta o nome da Origem Comercial que realizou o cadastro do Titular da Conta a qual o Cart\u00C3\u00A3o pertence.
 
-        :return: The id_bandeira of this CartaoImpressao.
-        :rtype: int
-        """
-        return self._id_bandeira
-
-    @id_bandeira.setter
-    def id_bandeira(self, id_bandeira):
-        """
-        Sets the id_bandeira of this CartaoImpressao.
-        Apresenta o C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Bandeira (id) a qual o Cart\u00C3\u00A3o pertence, quando bandeirado.
-
-        :param id_bandeira: The id_bandeira of this CartaoImpressao.
-        :type: int
-        """
-        self._id_bandeira = id_bandeira
-
-    @property
-    def id_cartao(self):
-        """
-        Gets the id_cartao of this CartaoImpressao.
-        Apresenta o C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Cart\u00C3\u00A3o (id) que foi gerado.
-
-        :return: The id_cartao of this CartaoImpressao.
-        :rtype: int
-        """
-        return self._id_cartao
-
-    @id_cartao.setter
-    def id_cartao(self, id_cartao):
-        """
-        Sets the id_cartao of this CartaoImpressao.
-        Apresenta o C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Cart\u00C3\u00A3o (id) que foi gerado.
-
-        :param id_cartao: The id_cartao of this CartaoImpressao.
-        :type: int
-        """
-        self._id_cartao = id_cartao
-
-    @property
-    def id_conta(self):
-        """
-        Gets the id_conta of this CartaoImpressao.
-        Apresenta o C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Conta (id) a qual o cart\u00C3\u00A3o gerado pertence.
-
-        :return: The id_conta of this CartaoImpressao.
-        :rtype: int
-        """
-        return self._id_conta
-
-    @id_conta.setter
-    def id_conta(self, id_conta):
-        """
-        Sets the id_conta of this CartaoImpressao.
-        Apresenta o C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Conta (id) a qual o cart\u00C3\u00A3o gerado pertence.
-
-        :param id_conta: The id_conta of this CartaoImpressao.
-        :type: int
-        """
-        self._id_conta = id_conta
-
-    @property
-    def id_pessoa(self):
-        """
-        Gets the id_pessoa of this CartaoImpressao.
-        Apresenta o C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Pessoa (id) portadora do cart\u00C3\u00A3o gerado.
-
-        :return: The id_pessoa of this CartaoImpressao.
-        :rtype: int
-        """
-        return self._id_pessoa
-
-    @id_pessoa.setter
-    def id_pessoa(self, id_pessoa):
-        """
-        Sets the id_pessoa of this CartaoImpressao.
-        Apresenta o C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Pessoa (id) portadora do cart\u00C3\u00A3o gerado.
-
-        :param id_pessoa: The id_pessoa of this CartaoImpressao.
-        :type: int
-        """
-        self._id_pessoa = id_pessoa
-
-    @property
-    def id_tipo_cartao(self):
-        """
-        Gets the id_tipo_cartao of this CartaoImpressao.
-        Apresenta o C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Tipo do Cart\u00C3\u00A3o (id) atribu\u00C3\u00ADdo ao Cart\u00C3\u00A3o.
-
-        :return: The id_tipo_cartao of this CartaoImpressao.
-        :rtype: int
-        """
-        return self._id_tipo_cartao
-
-    @id_tipo_cartao.setter
-    def id_tipo_cartao(self, id_tipo_cartao):
-        """
-        Sets the id_tipo_cartao of this CartaoImpressao.
-        Apresenta o C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Tipo do Cart\u00C3\u00A3o (id) atribu\u00C3\u00ADdo ao Cart\u00C3\u00A3o.
-
-        :param id_tipo_cartao: The id_tipo_cartao of this CartaoImpressao.
-        :type: int
-        """
-        self._id_tipo_cartao = id_tipo_cartao
-
-    @property
-    def nome_empregador(self):
-        """
-        Gets the nome_empregador of this CartaoImpressao.
-        Apresenta o nome da Pessoa F\u00C3\u00ADsica ou Jur\u00C3\u00ADdica a ser impresso no cart\u00C3\u00A3o, quando aplic\u00C3\u00A1vel.
-
-        :return: The nome_empregador of this CartaoImpressao.
+        :return: The nome_origem_comercial of this CartaoImpressao.
         :rtype: str
         """
-        return self._nome_empregador
+        return self._nome_origem_comercial
 
-    @nome_empregador.setter
-    def nome_empregador(self, nome_empregador):
+    @nome_origem_comercial.setter
+    def nome_origem_comercial(self, nome_origem_comercial):
         """
-        Sets the nome_empregador of this CartaoImpressao.
-        Apresenta o nome da Pessoa F\u00C3\u00ADsica ou Jur\u00C3\u00ADdica a ser impresso no cart\u00C3\u00A3o, quando aplic\u00C3\u00A1vel.
+        Sets the nome_origem_comercial of this CartaoImpressao.
+        Apresenta o nome da Origem Comercial que realizou o cadastro do Titular da Conta a qual o Cart\u00C3\u00A3o pertence.
 
-        :param nome_empregador: The nome_empregador of this CartaoImpressao.
+        :param nome_origem_comercial: The nome_origem_comercial of this CartaoImpressao.
         :type: str
         """
-        self._nome_empregador = nome_empregador
+        self._nome_origem_comercial = nome_origem_comercial
 
     @property
     def nome_empresa(self):
@@ -352,72 +374,6 @@ class CartaoImpressao(object):
         self._nome_empresa = nome_empresa
 
     @property
-    def nome_empresa_beneficio(self):
-        """
-        Gets the nome_empresa_beneficio of this CartaoImpressao.
-        Apresenta o nome da Pessoa F\u00C3\u00ADsica ou Jur\u00C3\u00ADdica que contratou servi\u00C3\u00A7os de benef\u00C3\u00ADcio para o portador do cart\u00C3\u00A3o, quando aplic\u00C3\u00A1vel.
-
-        :return: The nome_empresa_beneficio of this CartaoImpressao.
-        :rtype: str
-        """
-        return self._nome_empresa_beneficio
-
-    @nome_empresa_beneficio.setter
-    def nome_empresa_beneficio(self, nome_empresa_beneficio):
-        """
-        Sets the nome_empresa_beneficio of this CartaoImpressao.
-        Apresenta o nome da Pessoa F\u00C3\u00ADsica ou Jur\u00C3\u00ADdica que contratou servi\u00C3\u00A7os de benef\u00C3\u00ADcio para o portador do cart\u00C3\u00A3o, quando aplic\u00C3\u00A1vel.
-
-        :param nome_empresa_beneficio: The nome_empresa_beneficio of this CartaoImpressao.
-        :type: str
-        """
-        self._nome_empresa_beneficio = nome_empresa_beneficio
-
-    @property
-    def nome_origem_comercial(self):
-        """
-        Gets the nome_origem_comercial of this CartaoImpressao.
-        Apresenta o nome da Origem Comercial que realizou o cadastro do Titular da Conta a qual o Cart\u00C3\u00A3o pertence.
-
-        :return: The nome_origem_comercial of this CartaoImpressao.
-        :rtype: str
-        """
-        return self._nome_origem_comercial
-
-    @nome_origem_comercial.setter
-    def nome_origem_comercial(self, nome_origem_comercial):
-        """
-        Sets the nome_origem_comercial of this CartaoImpressao.
-        Apresenta o nome da Origem Comercial que realizou o cadastro do Titular da Conta a qual o Cart\u00C3\u00A3o pertence.
-
-        :param nome_origem_comercial: The nome_origem_comercial of this CartaoImpressao.
-        :type: str
-        """
-        self._nome_origem_comercial = nome_origem_comercial
-
-    @property
-    def nome_plastico(self):
-        """
-        Gets the nome_plastico of this CartaoImpressao.
-        Apresenta o nome do Portador do Cart\u00C3\u00A3o.
-
-        :return: The nome_plastico of this CartaoImpressao.
-        :rtype: str
-        """
-        return self._nome_plastico
-
-    @nome_plastico.setter
-    def nome_plastico(self, nome_plastico):
-        """
-        Sets the nome_plastico of this CartaoImpressao.
-        Apresenta o nome do Portador do Cart\u00C3\u00A3o.
-
-        :param nome_plastico: The nome_plastico of this CartaoImpressao.
-        :type: str
-        """
-        self._nome_plastico = nome_plastico
-
-    @property
     def numero_agencia(self):
         """
         Gets the numero_agencia of this CartaoImpressao.
@@ -438,28 +394,6 @@ class CartaoImpressao(object):
         :type: int
         """
         self._numero_agencia = numero_agencia
-
-    @property
-    def numero_cartao(self):
-        """
-        Gets the numero_cartao of this CartaoImpressao.
-        Apresenta o n\u00C3\u00BAmero do cart\u00C3\u00A3o.
-
-        :return: The numero_cartao of this CartaoImpressao.
-        :rtype: str
-        """
-        return self._numero_cartao
-
-    @numero_cartao.setter
-    def numero_cartao(self, numero_cartao):
-        """
-        Sets the numero_cartao of this CartaoImpressao.
-        Apresenta o n\u00C3\u00BAmero do cart\u00C3\u00A3o.
-
-        :param numero_cartao: The numero_cartao of this CartaoImpressao.
-        :type: str
-        """
-        self._numero_cartao = numero_cartao
 
     @property
     def numero_conta_corente(self):
@@ -484,6 +418,50 @@ class CartaoImpressao(object):
         self._numero_conta_corente = numero_conta_corente
 
     @property
+    def nome_empresa_beneficio(self):
+        """
+        Gets the nome_empresa_beneficio of this CartaoImpressao.
+        Apresenta o nome da Pessoa F\u00C3\u00ADsica ou Jur\u00C3\u00ADdica que contratou servi\u00C3\u00A7os de benef\u00C3\u00ADcio para o portador do cart\u00C3\u00A3o, quando aplic\u00C3\u00A1vel.
+
+        :return: The nome_empresa_beneficio of this CartaoImpressao.
+        :rtype: str
+        """
+        return self._nome_empresa_beneficio
+
+    @nome_empresa_beneficio.setter
+    def nome_empresa_beneficio(self, nome_empresa_beneficio):
+        """
+        Sets the nome_empresa_beneficio of this CartaoImpressao.
+        Apresenta o nome da Pessoa F\u00C3\u00ADsica ou Jur\u00C3\u00ADdica que contratou servi\u00C3\u00A7os de benef\u00C3\u00ADcio para o portador do cart\u00C3\u00A3o, quando aplic\u00C3\u00A1vel.
+
+        :param nome_empresa_beneficio: The nome_empresa_beneficio of this CartaoImpressao.
+        :type: str
+        """
+        self._nome_empresa_beneficio = nome_empresa_beneficio
+
+    @property
+    def cpf(self):
+        """
+        Gets the cpf of this CartaoImpressao.
+        Apresenta o CPF do Portador do Cart\u00C3\u00A3o.
+
+        :return: The cpf of this CartaoImpressao.
+        :rtype: str
+        """
+        return self._cpf
+
+    @cpf.setter
+    def cpf(self, cpf):
+        """
+        Sets the cpf of this CartaoImpressao.
+        Apresenta o CPF do Portador do Cart\u00C3\u00A3o.
+
+        :param cpf: The cpf of this CartaoImpressao.
+        :type: str
+        """
+        self._cpf = cpf
+
+    @property
     def tipo_portador(self):
         """
         Gets the tipo_portador of this CartaoImpressao.
@@ -504,6 +482,28 @@ class CartaoImpressao(object):
         :type: str
         """
         self._tipo_portador = tipo_portador
+
+    @property
+    def nome_empregador(self):
+        """
+        Gets the nome_empregador of this CartaoImpressao.
+        Apresenta o nome da Pessoa F\u00C3\u00ADsica ou Jur\u00C3\u00ADdica a ser impresso no cart\u00C3\u00A3o, quando aplic\u00C3\u00A1vel.
+
+        :return: The nome_empregador of this CartaoImpressao.
+        :rtype: str
+        """
+        return self._nome_empregador
+
+    @nome_empregador.setter
+    def nome_empregador(self, nome_empregador):
+        """
+        Sets the nome_empregador of this CartaoImpressao.
+        Apresenta o nome da Pessoa F\u00C3\u00ADsica ou Jur\u00C3\u00ADdica a ser impresso no cart\u00C3\u00A3o, quando aplic\u00C3\u00A1vel.
+
+        :param nome_empregador: The nome_empregador of this CartaoImpressao.
+        :type: str
+        """
+        self._nome_empregador = nome_empregador
 
     @property
     def trilha1(self):

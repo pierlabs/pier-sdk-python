@@ -38,73 +38,73 @@ class LimiteDisponibilidade(object):
         """
         self.swagger_types = {
             'id': 'int',
-            'limite_compra': 'float',
-            'limite_consignado': 'float',
             'limite_global': 'float',
+            'limite_compra': 'float',
+            'limite_parcelado': 'float',
+            'limite_parcelas': 'float',
+            'limite_saque_global': 'float',
+            'limite_saque_periodo': 'float',
+            'limite_consignado': 'float',
             'limite_internacional_compra': 'float',
             'limite_internacional_parcelado': 'float',
             'limite_internacional_parcelas': 'float',
             'limite_internacional_saque_global': 'float',
             'limite_internacional_saque_periodo': 'float',
-            'limite_parcelado': 'float',
-            'limite_parcelas': 'float',
-            'limite_saque_global': 'float',
-            'limite_saque_periodo': 'float',
-            'saldo_disponivel_compra': 'float',
-            'saldo_disponivel_compra_internacional': 'float',
             'saldo_disponivel_global': 'float',
+            'saldo_disponivel_compra': 'float',
             'saldo_disponivel_parcelado': 'float',
             'saldo_disponivel_parcelas': 'float',
             'saldo_disponivel_saque': 'float',
-            'saldo_disponivel_saque_internacional': 'float',
-            'saldo_pontos_fidelidade': 'float'
+            'saldo_pontos_fidelidade': 'float',
+            'saldo_disponivel_compra_internacional': 'float',
+            'saldo_disponivel_saque_internacional': 'float'
         }
 
         self.attribute_map = {
             'id': 'id',
-            'limite_compra': 'limiteCompra',
-            'limite_consignado': 'limiteConsignado',
             'limite_global': 'limiteGlobal',
+            'limite_compra': 'limiteCompra',
+            'limite_parcelado': 'limiteParcelado',
+            'limite_parcelas': 'limiteParcelas',
+            'limite_saque_global': 'limiteSaqueGlobal',
+            'limite_saque_periodo': 'limiteSaquePeriodo',
+            'limite_consignado': 'limiteConsignado',
             'limite_internacional_compra': 'limiteInternacionalCompra',
             'limite_internacional_parcelado': 'limiteInternacionalParcelado',
             'limite_internacional_parcelas': 'limiteInternacionalParcelas',
             'limite_internacional_saque_global': 'limiteInternacionalSaqueGlobal',
             'limite_internacional_saque_periodo': 'limiteInternacionalSaquePeriodo',
-            'limite_parcelado': 'limiteParcelado',
-            'limite_parcelas': 'limiteParcelas',
-            'limite_saque_global': 'limiteSaqueGlobal',
-            'limite_saque_periodo': 'limiteSaquePeriodo',
-            'saldo_disponivel_compra': 'saldoDisponivelCompra',
-            'saldo_disponivel_compra_internacional': 'saldoDisponivelCompraInternacional',
             'saldo_disponivel_global': 'saldoDisponivelGlobal',
+            'saldo_disponivel_compra': 'saldoDisponivelCompra',
             'saldo_disponivel_parcelado': 'saldoDisponivelParcelado',
             'saldo_disponivel_parcelas': 'saldoDisponivelParcelas',
             'saldo_disponivel_saque': 'saldoDisponivelSaque',
-            'saldo_disponivel_saque_internacional': 'saldoDisponivelSaqueInternacional',
-            'saldo_pontos_fidelidade': 'saldoPontosFidelidade'
+            'saldo_pontos_fidelidade': 'saldoPontosFidelidade',
+            'saldo_disponivel_compra_internacional': 'saldoDisponivelCompraInternacional',
+            'saldo_disponivel_saque_internacional': 'saldoDisponivelSaqueInternacional'
         }
 
         self._id = None
-        self._limite_compra = None
-        self._limite_consignado = None
         self._limite_global = None
+        self._limite_compra = None
+        self._limite_parcelado = None
+        self._limite_parcelas = None
+        self._limite_saque_global = None
+        self._limite_saque_periodo = None
+        self._limite_consignado = None
         self._limite_internacional_compra = None
         self._limite_internacional_parcelado = None
         self._limite_internacional_parcelas = None
         self._limite_internacional_saque_global = None
         self._limite_internacional_saque_periodo = None
-        self._limite_parcelado = None
-        self._limite_parcelas = None
-        self._limite_saque_global = None
-        self._limite_saque_periodo = None
-        self._saldo_disponivel_compra = None
-        self._saldo_disponivel_compra_internacional = None
         self._saldo_disponivel_global = None
+        self._saldo_disponivel_compra = None
         self._saldo_disponivel_parcelado = None
         self._saldo_disponivel_parcelas = None
         self._saldo_disponivel_saque = None
-        self._saldo_disponivel_saque_internacional = None
         self._saldo_pontos_fidelidade = None
+        self._saldo_disponivel_compra_internacional = None
+        self._saldo_disponivel_saque_internacional = None
 
     @property
     def id(self):
@@ -129,6 +129,28 @@ class LimiteDisponibilidade(object):
         self._id = id
 
     @property
+    def limite_global(self):
+        """
+        Gets the limite_global of this LimiteDisponibilidade.
+        Apresenta o valor do limite de cr\u00C3\u00A9dito que o portador do cart\u00C3\u00A3o possui.
+
+        :return: The limite_global of this LimiteDisponibilidade.
+        :rtype: float
+        """
+        return self._limite_global
+
+    @limite_global.setter
+    def limite_global(self, limite_global):
+        """
+        Sets the limite_global of this LimiteDisponibilidade.
+        Apresenta o valor do limite de cr\u00C3\u00A9dito que o portador do cart\u00C3\u00A3o possui.
+
+        :param limite_global: The limite_global of this LimiteDisponibilidade.
+        :type: float
+        """
+        self._limite_global = limite_global
+
+    @property
     def limite_compra(self):
         """
         Gets the limite_compra of this LimiteDisponibilidade.
@@ -151,6 +173,94 @@ class LimiteDisponibilidade(object):
         self._limite_compra = limite_compra
 
     @property
+    def limite_parcelado(self):
+        """
+        Gets the limite_parcelado of this LimiteDisponibilidade.
+        Quando utilizado pelo emissor, este campo apresenta o valor do limite de cr\u00C3\u00A9dito que o portador possui para realizar transa\u00C3\u00A7\u00C3\u00B5es de compras parceladas.
+
+        :return: The limite_parcelado of this LimiteDisponibilidade.
+        :rtype: float
+        """
+        return self._limite_parcelado
+
+    @limite_parcelado.setter
+    def limite_parcelado(self, limite_parcelado):
+        """
+        Sets the limite_parcelado of this LimiteDisponibilidade.
+        Quando utilizado pelo emissor, este campo apresenta o valor do limite de cr\u00C3\u00A9dito que o portador possui para realizar transa\u00C3\u00A7\u00C3\u00B5es de compras parceladas.
+
+        :param limite_parcelado: The limite_parcelado of this LimiteDisponibilidade.
+        :type: float
+        """
+        self._limite_parcelado = limite_parcelado
+
+    @property
+    def limite_parcelas(self):
+        """
+        Gets the limite_parcelas of this LimiteDisponibilidade.
+        Quando utilizado pelo emissor, este campo apresenta o valor do limite de cr\u00C3\u00A9dito que portador pode acumular a partir da soma das parcelas das compras que forem realizadas nesta modalidade.
+
+        :return: The limite_parcelas of this LimiteDisponibilidade.
+        :rtype: float
+        """
+        return self._limite_parcelas
+
+    @limite_parcelas.setter
+    def limite_parcelas(self, limite_parcelas):
+        """
+        Sets the limite_parcelas of this LimiteDisponibilidade.
+        Quando utilizado pelo emissor, este campo apresenta o valor do limite de cr\u00C3\u00A9dito que portador pode acumular a partir da soma das parcelas das compras que forem realizadas nesta modalidade.
+
+        :param limite_parcelas: The limite_parcelas of this LimiteDisponibilidade.
+        :type: float
+        """
+        self._limite_parcelas = limite_parcelas
+
+    @property
+    def limite_saque_global(self):
+        """
+        Gets the limite_saque_global of this LimiteDisponibilidade.
+        Quando utilizado pelo emissor, este campo apresenta o valor do limite de cr\u00C3\u00A9dito que o portador pode utilizar para realizar transa\u00C3\u00A7\u00C3\u00B5es de Saque Nacional.
+
+        :return: The limite_saque_global of this LimiteDisponibilidade.
+        :rtype: float
+        """
+        return self._limite_saque_global
+
+    @limite_saque_global.setter
+    def limite_saque_global(self, limite_saque_global):
+        """
+        Sets the limite_saque_global of this LimiteDisponibilidade.
+        Quando utilizado pelo emissor, este campo apresenta o valor do limite de cr\u00C3\u00A9dito que o portador pode utilizar para realizar transa\u00C3\u00A7\u00C3\u00B5es de Saque Nacional.
+
+        :param limite_saque_global: The limite_saque_global of this LimiteDisponibilidade.
+        :type: float
+        """
+        self._limite_saque_global = limite_saque_global
+
+    @property
+    def limite_saque_periodo(self):
+        """
+        Gets the limite_saque_periodo of this LimiteDisponibilidade.
+        Quando utilizado pelo emissor, este campo apresenta o valor do limite de cr\u00C3\u00A9dito que o portador pode utilizar para realizar transa\u00C3\u00A7\u00C3\u00B5es de Saque Nacional dentro de cada ciclo de faturamento.
+
+        :return: The limite_saque_periodo of this LimiteDisponibilidade.
+        :rtype: float
+        """
+        return self._limite_saque_periodo
+
+    @limite_saque_periodo.setter
+    def limite_saque_periodo(self, limite_saque_periodo):
+        """
+        Sets the limite_saque_periodo of this LimiteDisponibilidade.
+        Quando utilizado pelo emissor, este campo apresenta o valor do limite de cr\u00C3\u00A9dito que o portador pode utilizar para realizar transa\u00C3\u00A7\u00C3\u00B5es de Saque Nacional dentro de cada ciclo de faturamento.
+
+        :param limite_saque_periodo: The limite_saque_periodo of this LimiteDisponibilidade.
+        :type: float
+        """
+        self._limite_saque_periodo = limite_saque_periodo
+
+    @property
     def limite_consignado(self):
         """
         Gets the limite_consignado of this LimiteDisponibilidade.
@@ -171,28 +281,6 @@ class LimiteDisponibilidade(object):
         :type: float
         """
         self._limite_consignado = limite_consignado
-
-    @property
-    def limite_global(self):
-        """
-        Gets the limite_global of this LimiteDisponibilidade.
-        Apresenta o valor do limite de cr\u00C3\u00A9dito que o portador do cart\u00C3\u00A3o possui.
-
-        :return: The limite_global of this LimiteDisponibilidade.
-        :rtype: float
-        """
-        return self._limite_global
-
-    @limite_global.setter
-    def limite_global(self, limite_global):
-        """
-        Sets the limite_global of this LimiteDisponibilidade.
-        Apresenta o valor do limite de cr\u00C3\u00A9dito que o portador do cart\u00C3\u00A3o possui.
-
-        :param limite_global: The limite_global of this LimiteDisponibilidade.
-        :type: float
-        """
-        self._limite_global = limite_global
 
     @property
     def limite_internacional_compra(self):
@@ -305,92 +393,26 @@ class LimiteDisponibilidade(object):
         self._limite_internacional_saque_periodo = limite_internacional_saque_periodo
 
     @property
-    def limite_parcelado(self):
+    def saldo_disponivel_global(self):
         """
-        Gets the limite_parcelado of this LimiteDisponibilidade.
-        Quando utilizado pelo emissor, este campo apresenta o valor do limite de cr\u00C3\u00A9dito que o portador possui para realizar transa\u00C3\u00A7\u00C3\u00B5es de compras parceladas.
+        Gets the saldo_disponivel_global of this LimiteDisponibilidade.
+        Apresenta o valor de cr\u00C3\u00A9dito que o portador possui dispon\u00C3\u00ADvel para realizar transa\u00C3\u00A7\u00C3\u00B5es.
 
-        :return: The limite_parcelado of this LimiteDisponibilidade.
+        :return: The saldo_disponivel_global of this LimiteDisponibilidade.
         :rtype: float
         """
-        return self._limite_parcelado
+        return self._saldo_disponivel_global
 
-    @limite_parcelado.setter
-    def limite_parcelado(self, limite_parcelado):
+    @saldo_disponivel_global.setter
+    def saldo_disponivel_global(self, saldo_disponivel_global):
         """
-        Sets the limite_parcelado of this LimiteDisponibilidade.
-        Quando utilizado pelo emissor, este campo apresenta o valor do limite de cr\u00C3\u00A9dito que o portador possui para realizar transa\u00C3\u00A7\u00C3\u00B5es de compras parceladas.
+        Sets the saldo_disponivel_global of this LimiteDisponibilidade.
+        Apresenta o valor de cr\u00C3\u00A9dito que o portador possui dispon\u00C3\u00ADvel para realizar transa\u00C3\u00A7\u00C3\u00B5es.
 
-        :param limite_parcelado: The limite_parcelado of this LimiteDisponibilidade.
+        :param saldo_disponivel_global: The saldo_disponivel_global of this LimiteDisponibilidade.
         :type: float
         """
-        self._limite_parcelado = limite_parcelado
-
-    @property
-    def limite_parcelas(self):
-        """
-        Gets the limite_parcelas of this LimiteDisponibilidade.
-        Quando utilizado pelo emissor, este campo apresenta o valor do limite de cr\u00C3\u00A9dito que portador pode acumular a partir da soma das parcelas das compras que forem realizadas nesta modalidade.
-
-        :return: The limite_parcelas of this LimiteDisponibilidade.
-        :rtype: float
-        """
-        return self._limite_parcelas
-
-    @limite_parcelas.setter
-    def limite_parcelas(self, limite_parcelas):
-        """
-        Sets the limite_parcelas of this LimiteDisponibilidade.
-        Quando utilizado pelo emissor, este campo apresenta o valor do limite de cr\u00C3\u00A9dito que portador pode acumular a partir da soma das parcelas das compras que forem realizadas nesta modalidade.
-
-        :param limite_parcelas: The limite_parcelas of this LimiteDisponibilidade.
-        :type: float
-        """
-        self._limite_parcelas = limite_parcelas
-
-    @property
-    def limite_saque_global(self):
-        """
-        Gets the limite_saque_global of this LimiteDisponibilidade.
-        Quando utilizado pelo emissor, este campo apresenta o valor do limite de cr\u00C3\u00A9dito que o portador pode utilizar para realizar transa\u00C3\u00A7\u00C3\u00B5es de Saque Nacional.
-
-        :return: The limite_saque_global of this LimiteDisponibilidade.
-        :rtype: float
-        """
-        return self._limite_saque_global
-
-    @limite_saque_global.setter
-    def limite_saque_global(self, limite_saque_global):
-        """
-        Sets the limite_saque_global of this LimiteDisponibilidade.
-        Quando utilizado pelo emissor, este campo apresenta o valor do limite de cr\u00C3\u00A9dito que o portador pode utilizar para realizar transa\u00C3\u00A7\u00C3\u00B5es de Saque Nacional.
-
-        :param limite_saque_global: The limite_saque_global of this LimiteDisponibilidade.
-        :type: float
-        """
-        self._limite_saque_global = limite_saque_global
-
-    @property
-    def limite_saque_periodo(self):
-        """
-        Gets the limite_saque_periodo of this LimiteDisponibilidade.
-        Quando utilizado pelo emissor, este campo apresenta o valor do limite de cr\u00C3\u00A9dito que o portador pode utilizar para realizar transa\u00C3\u00A7\u00C3\u00B5es de Saque Nacional dentro de cada ciclo de faturamento.
-
-        :return: The limite_saque_periodo of this LimiteDisponibilidade.
-        :rtype: float
-        """
-        return self._limite_saque_periodo
-
-    @limite_saque_periodo.setter
-    def limite_saque_periodo(self, limite_saque_periodo):
-        """
-        Sets the limite_saque_periodo of this LimiteDisponibilidade.
-        Quando utilizado pelo emissor, este campo apresenta o valor do limite de cr\u00C3\u00A9dito que o portador pode utilizar para realizar transa\u00C3\u00A7\u00C3\u00B5es de Saque Nacional dentro de cada ciclo de faturamento.
-
-        :param limite_saque_periodo: The limite_saque_periodo of this LimiteDisponibilidade.
-        :type: float
-        """
-        self._limite_saque_periodo = limite_saque_periodo
+        self._saldo_disponivel_global = saldo_disponivel_global
 
     @property
     def saldo_disponivel_compra(self):
@@ -413,50 +435,6 @@ class LimiteDisponibilidade(object):
         :type: float
         """
         self._saldo_disponivel_compra = saldo_disponivel_compra
-
-    @property
-    def saldo_disponivel_compra_internacional(self):
-        """
-        Gets the saldo_disponivel_compra_internacional of this LimiteDisponibilidade.
-        Quando utilizado pelo emissor a modalidade limiteCompraInternacional, este campo apresentar\u00C3\u00A1 o valor de cr\u00C3\u00A9dito que o portador possui dispon\u00C3\u00ADvel para realizar transa\u00C3\u00A7\u00C3\u00B5es de Compra Internacional.
-
-        :return: The saldo_disponivel_compra_internacional of this LimiteDisponibilidade.
-        :rtype: float
-        """
-        return self._saldo_disponivel_compra_internacional
-
-    @saldo_disponivel_compra_internacional.setter
-    def saldo_disponivel_compra_internacional(self, saldo_disponivel_compra_internacional):
-        """
-        Sets the saldo_disponivel_compra_internacional of this LimiteDisponibilidade.
-        Quando utilizado pelo emissor a modalidade limiteCompraInternacional, este campo apresentar\u00C3\u00A1 o valor de cr\u00C3\u00A9dito que o portador possui dispon\u00C3\u00ADvel para realizar transa\u00C3\u00A7\u00C3\u00B5es de Compra Internacional.
-
-        :param saldo_disponivel_compra_internacional: The saldo_disponivel_compra_internacional of this LimiteDisponibilidade.
-        :type: float
-        """
-        self._saldo_disponivel_compra_internacional = saldo_disponivel_compra_internacional
-
-    @property
-    def saldo_disponivel_global(self):
-        """
-        Gets the saldo_disponivel_global of this LimiteDisponibilidade.
-        Apresenta o valor de cr\u00C3\u00A9dito que o portador possui dispon\u00C3\u00ADvel para realizar transa\u00C3\u00A7\u00C3\u00B5es.
-
-        :return: The saldo_disponivel_global of this LimiteDisponibilidade.
-        :rtype: float
-        """
-        return self._saldo_disponivel_global
-
-    @saldo_disponivel_global.setter
-    def saldo_disponivel_global(self, saldo_disponivel_global):
-        """
-        Sets the saldo_disponivel_global of this LimiteDisponibilidade.
-        Apresenta o valor de cr\u00C3\u00A9dito que o portador possui dispon\u00C3\u00ADvel para realizar transa\u00C3\u00A7\u00C3\u00B5es.
-
-        :param saldo_disponivel_global: The saldo_disponivel_global of this LimiteDisponibilidade.
-        :type: float
-        """
-        self._saldo_disponivel_global = saldo_disponivel_global
 
     @property
     def saldo_disponivel_parcelado(self):
@@ -525,28 +503,6 @@ class LimiteDisponibilidade(object):
         self._saldo_disponivel_saque = saldo_disponivel_saque
 
     @property
-    def saldo_disponivel_saque_internacional(self):
-        """
-        Gets the saldo_disponivel_saque_internacional of this LimiteDisponibilidade.
-        Quando utilizado pelo emissor a modalidade limiteSaqueInternacional, este campo apresentar\u00C3\u00A1 o valor de cr\u00C3\u00A9dito que o portador possui dispon\u00C3\u00ADvel para realizar transa\u00C3\u00A7\u00C3\u00B5es de Saque Internacional.
-
-        :return: The saldo_disponivel_saque_internacional of this LimiteDisponibilidade.
-        :rtype: float
-        """
-        return self._saldo_disponivel_saque_internacional
-
-    @saldo_disponivel_saque_internacional.setter
-    def saldo_disponivel_saque_internacional(self, saldo_disponivel_saque_internacional):
-        """
-        Sets the saldo_disponivel_saque_internacional of this LimiteDisponibilidade.
-        Quando utilizado pelo emissor a modalidade limiteSaqueInternacional, este campo apresentar\u00C3\u00A1 o valor de cr\u00C3\u00A9dito que o portador possui dispon\u00C3\u00ADvel para realizar transa\u00C3\u00A7\u00C3\u00B5es de Saque Internacional.
-
-        :param saldo_disponivel_saque_internacional: The saldo_disponivel_saque_internacional of this LimiteDisponibilidade.
-        :type: float
-        """
-        self._saldo_disponivel_saque_internacional = saldo_disponivel_saque_internacional
-
-    @property
     def saldo_pontos_fidelidade(self):
         """
         Gets the saldo_pontos_fidelidade of this LimiteDisponibilidade.
@@ -567,6 +523,50 @@ class LimiteDisponibilidade(object):
         :type: float
         """
         self._saldo_pontos_fidelidade = saldo_pontos_fidelidade
+
+    @property
+    def saldo_disponivel_compra_internacional(self):
+        """
+        Gets the saldo_disponivel_compra_internacional of this LimiteDisponibilidade.
+        Quando utilizado pelo emissor a modalidade limiteCompraInternacional, este campo apresentar\u00C3\u00A1 o valor de cr\u00C3\u00A9dito que o portador possui dispon\u00C3\u00ADvel para realizar transa\u00C3\u00A7\u00C3\u00B5es de Compra Internacional.
+
+        :return: The saldo_disponivel_compra_internacional of this LimiteDisponibilidade.
+        :rtype: float
+        """
+        return self._saldo_disponivel_compra_internacional
+
+    @saldo_disponivel_compra_internacional.setter
+    def saldo_disponivel_compra_internacional(self, saldo_disponivel_compra_internacional):
+        """
+        Sets the saldo_disponivel_compra_internacional of this LimiteDisponibilidade.
+        Quando utilizado pelo emissor a modalidade limiteCompraInternacional, este campo apresentar\u00C3\u00A1 o valor de cr\u00C3\u00A9dito que o portador possui dispon\u00C3\u00ADvel para realizar transa\u00C3\u00A7\u00C3\u00B5es de Compra Internacional.
+
+        :param saldo_disponivel_compra_internacional: The saldo_disponivel_compra_internacional of this LimiteDisponibilidade.
+        :type: float
+        """
+        self._saldo_disponivel_compra_internacional = saldo_disponivel_compra_internacional
+
+    @property
+    def saldo_disponivel_saque_internacional(self):
+        """
+        Gets the saldo_disponivel_saque_internacional of this LimiteDisponibilidade.
+        Quando utilizado pelo emissor a modalidade limiteSaqueInternacional, este campo apresentar\u00C3\u00A1 o valor de cr\u00C3\u00A9dito que o portador possui dispon\u00C3\u00ADvel para realizar transa\u00C3\u00A7\u00C3\u00B5es de Saque Internacional.
+
+        :return: The saldo_disponivel_saque_internacional of this LimiteDisponibilidade.
+        :rtype: float
+        """
+        return self._saldo_disponivel_saque_internacional
+
+    @saldo_disponivel_saque_internacional.setter
+    def saldo_disponivel_saque_internacional(self, saldo_disponivel_saque_internacional):
+        """
+        Sets the saldo_disponivel_saque_internacional of this LimiteDisponibilidade.
+        Quando utilizado pelo emissor a modalidade limiteSaqueInternacional, este campo apresentar\u00C3\u00A1 o valor de cr\u00C3\u00A9dito que o portador possui dispon\u00C3\u00ADvel para realizar transa\u00C3\u00A7\u00C3\u00B5es de Saque Internacional.
+
+        :param saldo_disponivel_saque_internacional: The saldo_disponivel_saque_internacional of this LimiteDisponibilidade.
+        :type: float
+        """
+        self._saldo_disponivel_saque_internacional = saldo_disponivel_saque_internacional
 
     def to_dict(self):
         """

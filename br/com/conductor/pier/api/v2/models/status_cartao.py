@@ -37,32 +37,76 @@ class StatusCartao(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
+            'id': 'int',
+            'nome': 'str',
             'flag_cancela_cartao': 'int',
             'flag_cancela_no_desbloqueio': 'int',
-            'flag_cobra_tarifa': 'int',
-            'id': 'int',
-            'id_status_destino_conta': 'int',
             'id_status_destino_desbloqueio': 'int',
-            'nome': 'str'
+            'id_status_destino_conta': 'int',
+            'flag_cobra_tarifa': 'int'
         }
 
         self.attribute_map = {
+            'id': 'id',
+            'nome': 'nome',
             'flag_cancela_cartao': 'flagCancelaCartao',
             'flag_cancela_no_desbloqueio': 'flagCancelaNoDesbloqueio',
-            'flag_cobra_tarifa': 'flagCobraTarifa',
-            'id': 'id',
-            'id_status_destino_conta': 'idStatusDestinoConta',
             'id_status_destino_desbloqueio': 'idStatusDestinoDesbloqueio',
-            'nome': 'nome'
+            'id_status_destino_conta': 'idStatusDestinoConta',
+            'flag_cobra_tarifa': 'flagCobraTarifa'
         }
 
+        self._id = None
+        self._nome = None
         self._flag_cancela_cartao = None
         self._flag_cancela_no_desbloqueio = None
-        self._flag_cobra_tarifa = None
-        self._id = None
-        self._id_status_destino_conta = None
         self._id_status_destino_desbloqueio = None
-        self._nome = None
+        self._id_status_destino_conta = None
+        self._flag_cobra_tarifa = None
+
+    @property
+    def id(self):
+        """
+        Gets the id of this StatusCartao.
+        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Status do Cart\u00C3\u00A3o (id) 
+
+        :return: The id of this StatusCartao.
+        :rtype: int
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """
+        Sets the id of this StatusCartao.
+        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Status do Cart\u00C3\u00A3o (id) 
+
+        :param id: The id of this StatusCartao.
+        :type: int
+        """
+        self._id = id
+
+    @property
+    def nome(self):
+        """
+        Gets the nome of this StatusCartao.
+        Nome atribu\u00C3\u00ADdo ao Status de Entrega do Cart\u00C3\u00A3o.
+
+        :return: The nome of this StatusCartao.
+        :rtype: str
+        """
+        return self._nome
+
+    @nome.setter
+    def nome(self, nome):
+        """
+        Sets the nome of this StatusCartao.
+        Nome atribu\u00C3\u00ADdo ao Status de Entrega do Cart\u00C3\u00A3o.
+
+        :param nome: The nome of this StatusCartao.
+        :type: str
+        """
+        self._nome = nome
 
     @property
     def flag_cancela_cartao(self):
@@ -109,48 +153,26 @@ class StatusCartao(object):
         self._flag_cancela_no_desbloqueio = flag_cancela_no_desbloqueio
 
     @property
-    def flag_cobra_tarifa(self):
+    def id_status_destino_desbloqueio(self):
         """
-        Gets the flag_cobra_tarifa of this StatusCartao.
-        Quando ativa, indica que cart\u00C3\u00B5es que tiverem um idStatusCartao atribu\u00C3\u00ADdo com essa caracter\u00C3\u00ADstica, incluir\u00C3\u00A3o a cobran\u00C3\u00A7a de uma tarifa para a conta de acordo com os valores definidos nos par\u00C3\u00A2metros do emissor.
+        Gets the id_status_destino_desbloqueio of this StatusCartao.
+        Indica qual o idStatusCartao que ser\u00C3\u00A1 atribu\u00C3\u00ADdo aos cart\u00C3\u00B5es que forem cancelados devido ao desbloqueio de um novo cart\u00C3\u00A3o.
 
-        :return: The flag_cobra_tarifa of this StatusCartao.
+        :return: The id_status_destino_desbloqueio of this StatusCartao.
         :rtype: int
         """
-        return self._flag_cobra_tarifa
+        return self._id_status_destino_desbloqueio
 
-    @flag_cobra_tarifa.setter
-    def flag_cobra_tarifa(self, flag_cobra_tarifa):
+    @id_status_destino_desbloqueio.setter
+    def id_status_destino_desbloqueio(self, id_status_destino_desbloqueio):
         """
-        Sets the flag_cobra_tarifa of this StatusCartao.
-        Quando ativa, indica que cart\u00C3\u00B5es que tiverem um idStatusCartao atribu\u00C3\u00ADdo com essa caracter\u00C3\u00ADstica, incluir\u00C3\u00A3o a cobran\u00C3\u00A7a de uma tarifa para a conta de acordo com os valores definidos nos par\u00C3\u00A2metros do emissor.
+        Sets the id_status_destino_desbloqueio of this StatusCartao.
+        Indica qual o idStatusCartao que ser\u00C3\u00A1 atribu\u00C3\u00ADdo aos cart\u00C3\u00B5es que forem cancelados devido ao desbloqueio de um novo cart\u00C3\u00A3o.
 
-        :param flag_cobra_tarifa: The flag_cobra_tarifa of this StatusCartao.
+        :param id_status_destino_desbloqueio: The id_status_destino_desbloqueio of this StatusCartao.
         :type: int
         """
-        self._flag_cobra_tarifa = flag_cobra_tarifa
-
-    @property
-    def id(self):
-        """
-        Gets the id of this StatusCartao.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Status do Cart\u00C3\u00A3o (id) 
-
-        :return: The id of this StatusCartao.
-        :rtype: int
-        """
-        return self._id
-
-    @id.setter
-    def id(self, id):
-        """
-        Sets the id of this StatusCartao.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Status do Cart\u00C3\u00A3o (id) 
-
-        :param id: The id of this StatusCartao.
-        :type: int
-        """
-        self._id = id
+        self._id_status_destino_desbloqueio = id_status_destino_desbloqueio
 
     @property
     def id_status_destino_conta(self):
@@ -175,48 +197,26 @@ class StatusCartao(object):
         self._id_status_destino_conta = id_status_destino_conta
 
     @property
-    def id_status_destino_desbloqueio(self):
+    def flag_cobra_tarifa(self):
         """
-        Gets the id_status_destino_desbloqueio of this StatusCartao.
-        Indica qual o idStatusCartao que ser\u00C3\u00A1 atribu\u00C3\u00ADdo aos cart\u00C3\u00B5es que forem cancelados devido ao desbloqueio de um novo cart\u00C3\u00A3o.
+        Gets the flag_cobra_tarifa of this StatusCartao.
+        Quando ativa, indica que cart\u00C3\u00B5es que tiverem um idStatusCartao atribu\u00C3\u00ADdo com essa caracter\u00C3\u00ADstica, incluir\u00C3\u00A3o a cobran\u00C3\u00A7a de uma tarifa para a conta de acordo com os valores definidos nos par\u00C3\u00A2metros do emissor.
 
-        :return: The id_status_destino_desbloqueio of this StatusCartao.
+        :return: The flag_cobra_tarifa of this StatusCartao.
         :rtype: int
         """
-        return self._id_status_destino_desbloqueio
+        return self._flag_cobra_tarifa
 
-    @id_status_destino_desbloqueio.setter
-    def id_status_destino_desbloqueio(self, id_status_destino_desbloqueio):
+    @flag_cobra_tarifa.setter
+    def flag_cobra_tarifa(self, flag_cobra_tarifa):
         """
-        Sets the id_status_destino_desbloqueio of this StatusCartao.
-        Indica qual o idStatusCartao que ser\u00C3\u00A1 atribu\u00C3\u00ADdo aos cart\u00C3\u00B5es que forem cancelados devido ao desbloqueio de um novo cart\u00C3\u00A3o.
+        Sets the flag_cobra_tarifa of this StatusCartao.
+        Quando ativa, indica que cart\u00C3\u00B5es que tiverem um idStatusCartao atribu\u00C3\u00ADdo com essa caracter\u00C3\u00ADstica, incluir\u00C3\u00A3o a cobran\u00C3\u00A7a de uma tarifa para a conta de acordo com os valores definidos nos par\u00C3\u00A2metros do emissor.
 
-        :param id_status_destino_desbloqueio: The id_status_destino_desbloqueio of this StatusCartao.
+        :param flag_cobra_tarifa: The flag_cobra_tarifa of this StatusCartao.
         :type: int
         """
-        self._id_status_destino_desbloqueio = id_status_destino_desbloqueio
-
-    @property
-    def nome(self):
-        """
-        Gets the nome of this StatusCartao.
-        Nome atribu\u00C3\u00ADdo ao Status de Entrega do Cart\u00C3\u00A3o.
-
-        :return: The nome of this StatusCartao.
-        :rtype: str
-        """
-        return self._nome
-
-    @nome.setter
-    def nome(self, nome):
-        """
-        Sets the nome of this StatusCartao.
-        Nome atribu\u00C3\u00ADdo ao Status de Entrega do Cart\u00C3\u00A3o.
-
-        :param nome: The nome of this StatusCartao.
-        :type: str
-        """
-        self._nome = nome
+        self._flag_cobra_tarifa = flag_cobra_tarifa
 
     def to_dict(self):
         """

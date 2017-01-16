@@ -37,98 +37,32 @@ class Pessoa(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'cnpj': 'str',
-            'cpf': 'str',
-            'data_nascimento': 'datetime',
             'id': 'int',
             'nome': 'str',
-            'sexo': 'str',
-            'tipo': 'str'
+            'tipo': 'str',
+            'cpf': 'str',
+            'cnpj': 'str',
+            'data_nascimento': 'datetime',
+            'sexo': 'str'
         }
 
         self.attribute_map = {
-            'cnpj': 'cnpj',
-            'cpf': 'cpf',
-            'data_nascimento': 'dataNascimento',
             'id': 'id',
             'nome': 'nome',
-            'sexo': 'sexo',
-            'tipo': 'tipo'
+            'tipo': 'tipo',
+            'cpf': 'cpf',
+            'cnpj': 'cnpj',
+            'data_nascimento': 'dataNascimento',
+            'sexo': 'sexo'
         }
 
-        self._cnpj = None
-        self._cpf = None
-        self._data_nascimento = None
         self._id = None
         self._nome = None
-        self._sexo = None
         self._tipo = None
-
-    @property
-    def cnpj(self):
-        """
-        Gets the cnpj of this Pessoa.
-        N\u00C3\u00BAmero do CNPJ, quando PJ.
-
-        :return: The cnpj of this Pessoa.
-        :rtype: str
-        """
-        return self._cnpj
-
-    @cnpj.setter
-    def cnpj(self, cnpj):
-        """
-        Sets the cnpj of this Pessoa.
-        N\u00C3\u00BAmero do CNPJ, quando PJ.
-
-        :param cnpj: The cnpj of this Pessoa.
-        :type: str
-        """
-        self._cnpj = cnpj
-
-    @property
-    def cpf(self):
-        """
-        Gets the cpf of this Pessoa.
-        N\u00C3\u00BAmero do CPF, quando PF.
-
-        :return: The cpf of this Pessoa.
-        :rtype: str
-        """
-        return self._cpf
-
-    @cpf.setter
-    def cpf(self, cpf):
-        """
-        Sets the cpf of this Pessoa.
-        N\u00C3\u00BAmero do CPF, quando PF.
-
-        :param cpf: The cpf of this Pessoa.
-        :type: str
-        """
-        self._cpf = cpf
-
-    @property
-    def data_nascimento(self):
-        """
-        Gets the data_nascimento of this Pessoa.
-        Data de Nascimento da Pessoa, quando PF, ou a Data de Abertura da Empresa, quando PJ.
-
-        :return: The data_nascimento of this Pessoa.
-        :rtype: datetime
-        """
-        return self._data_nascimento
-
-    @data_nascimento.setter
-    def data_nascimento(self, data_nascimento):
-        """
-        Sets the data_nascimento of this Pessoa.
-        Data de Nascimento da Pessoa, quando PF, ou a Data de Abertura da Empresa, quando PJ.
-
-        :param data_nascimento: The data_nascimento of this Pessoa.
-        :type: datetime
-        """
-        self._data_nascimento = data_nascimento
+        self._cpf = None
+        self._cnpj = None
+        self._data_nascimento = None
+        self._sexo = None
 
     @property
     def id(self):
@@ -175,28 +109,6 @@ class Pessoa(object):
         self._nome = nome
 
     @property
-    def sexo(self):
-        """
-        Gets the sexo of this Pessoa.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do sexo da Pessoa, quando PF, sendo: (\"M\": Masculino), (\"F\": Feminino), (\"O\": Outro), (\"N\": N\u00C3\u00A3o Especificado).
-
-        :return: The sexo of this Pessoa.
-        :rtype: str
-        """
-        return self._sexo
-
-    @sexo.setter
-    def sexo(self, sexo):
-        """
-        Sets the sexo of this Pessoa.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do sexo da Pessoa, quando PF, sendo: (\"M\": Masculino), (\"F\": Feminino), (\"O\": Outro), (\"N\": N\u00C3\u00A3o Especificado).
-
-        :param sexo: The sexo of this Pessoa.
-        :type: str
-        """
-        self._sexo = sexo
-
-    @property
     def tipo(self):
         """
         Gets the tipo of this Pessoa.
@@ -217,6 +129,94 @@ class Pessoa(object):
         :type: str
         """
         self._tipo = tipo
+
+    @property
+    def cpf(self):
+        """
+        Gets the cpf of this Pessoa.
+        N\u00C3\u00BAmero do CPF, quando PF.
+
+        :return: The cpf of this Pessoa.
+        :rtype: str
+        """
+        return self._cpf
+
+    @cpf.setter
+    def cpf(self, cpf):
+        """
+        Sets the cpf of this Pessoa.
+        N\u00C3\u00BAmero do CPF, quando PF.
+
+        :param cpf: The cpf of this Pessoa.
+        :type: str
+        """
+        self._cpf = cpf
+
+    @property
+    def cnpj(self):
+        """
+        Gets the cnpj of this Pessoa.
+        N\u00C3\u00BAmero do CNPJ, quando PJ.
+
+        :return: The cnpj of this Pessoa.
+        :rtype: str
+        """
+        return self._cnpj
+
+    @cnpj.setter
+    def cnpj(self, cnpj):
+        """
+        Sets the cnpj of this Pessoa.
+        N\u00C3\u00BAmero do CNPJ, quando PJ.
+
+        :param cnpj: The cnpj of this Pessoa.
+        :type: str
+        """
+        self._cnpj = cnpj
+
+    @property
+    def data_nascimento(self):
+        """
+        Gets the data_nascimento of this Pessoa.
+        Data de Nascimento da Pessoa, quando PF, ou a Data de Abertura da Empresa, quando PJ.
+
+        :return: The data_nascimento of this Pessoa.
+        :rtype: datetime
+        """
+        return self._data_nascimento
+
+    @data_nascimento.setter
+    def data_nascimento(self, data_nascimento):
+        """
+        Sets the data_nascimento of this Pessoa.
+        Data de Nascimento da Pessoa, quando PF, ou a Data de Abertura da Empresa, quando PJ.
+
+        :param data_nascimento: The data_nascimento of this Pessoa.
+        :type: datetime
+        """
+        self._data_nascimento = data_nascimento
+
+    @property
+    def sexo(self):
+        """
+        Gets the sexo of this Pessoa.
+        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do sexo da Pessoa, quando PF, sendo: (\"M\": Masculino), (\"F\": Feminino), (\"O\": Outro), (\"N\": N\u00C3\u00A3o Especificado).
+
+        :return: The sexo of this Pessoa.
+        :rtype: str
+        """
+        return self._sexo
+
+    @sexo.setter
+    def sexo(self, sexo):
+        """
+        Sets the sexo of this Pessoa.
+        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do sexo da Pessoa, quando PF, sendo: (\"M\": Masculino), (\"F\": Feminino), (\"O\": Outro), (\"N\": N\u00C3\u00A3o Especificado).
+
+        :param sexo: The sexo of this Pessoa.
+        :type: str
+        """
+        self._sexo = sexo
 
     def to_dict(self):
         """

@@ -29,6 +29,7 @@ from .models.page_web_hooks import PageWebHooks
 from .models.pessoa import Pessoa
 from .models.portador import Portador
 from .models.produto import Produto
+from .models.sms import SMS
 from .models.status_cartao import StatusCartao
 from .models.status_conta import StatusConta
 from .models.status_impressao import StatusImpressao
@@ -43,6 +44,7 @@ from .apis.base_api import BaseApi
 from .apis.cadastros_gerais_api import CadastrosGeraisApi
 from .apis.cartao_api import CartaoApi
 from .apis.conta_api import ContaApi
+from .apis.notificacoes_api import NotificacoesApi
 from .apis.status_parametros_api import StatusParametrosApi
 from .apis.token_api import TokenApi
 from .apis.webhooks_api import WebhooksApi

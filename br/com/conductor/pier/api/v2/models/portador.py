@@ -37,44 +37,242 @@ class Portador(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'data_cadastro_portador': 'datetime',
-            'data_cancelamento_portador': 'datetime',
-            'flag_ativo': 'int',
             'id_conta': 'int',
-            'id_imagem': 'int',
-            'id_parentesco': 'int',
-            'id_pessoa': 'int',
             'id_produto': 'int',
-            'id_tipo_cartao': 'int',
+            'id_pessoa': 'int',
+            'id_parentesco': 'int',
+            'tipo_portador': 'str',
             'nome_impresso': 'str',
-            'tipo_portador': 'str'
+            'id_imagem': 'int',
+            'id_tipo_cartao': 'int',
+            'flag_ativo': 'int',
+            'data_cadastro_portador': 'datetime',
+            'data_cancelamento_portador': 'datetime'
         }
 
         self.attribute_map = {
-            'data_cadastro_portador': 'dataCadastroPortador',
-            'data_cancelamento_portador': 'dataCancelamentoPortador',
-            'flag_ativo': 'flagAtivo',
             'id_conta': 'idConta',
-            'id_imagem': 'idImagem',
-            'id_parentesco': 'idParentesco',
-            'id_pessoa': 'idPessoa',
             'id_produto': 'idProduto',
-            'id_tipo_cartao': 'idTipoCartao',
+            'id_pessoa': 'idPessoa',
+            'id_parentesco': 'idParentesco',
+            'tipo_portador': 'tipoPortador',
             'nome_impresso': 'nomeImpresso',
-            'tipo_portador': 'tipoPortador'
+            'id_imagem': 'idImagem',
+            'id_tipo_cartao': 'idTipoCartao',
+            'flag_ativo': 'flagAtivo',
+            'data_cadastro_portador': 'dataCadastroPortador',
+            'data_cancelamento_portador': 'dataCancelamentoPortador'
         }
 
+        self._id_conta = None
+        self._id_produto = None
+        self._id_pessoa = None
+        self._id_parentesco = None
+        self._tipo_portador = None
+        self._nome_impresso = None
+        self._id_imagem = None
+        self._id_tipo_cartao = None
+        self._flag_ativo = None
         self._data_cadastro_portador = None
         self._data_cancelamento_portador = None
-        self._flag_ativo = None
-        self._id_conta = None
-        self._id_imagem = None
-        self._id_parentesco = None
-        self._id_pessoa = None
-        self._id_produto = None
-        self._id_tipo_cartao = None
-        self._nome_impresso = None
-        self._tipo_portador = None
+
+    @property
+    def id_conta(self):
+        """
+        Gets the id_conta of this Portador.
+        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Conta (id).
+
+        :return: The id_conta of this Portador.
+        :rtype: int
+        """
+        return self._id_conta
+
+    @id_conta.setter
+    def id_conta(self, id_conta):
+        """
+        Sets the id_conta of this Portador.
+        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Conta (id).
+
+        :param id_conta: The id_conta of this Portador.
+        :type: int
+        """
+        self._id_conta = id_conta
+
+    @property
+    def id_produto(self):
+        """
+        Gets the id_produto of this Portador.
+        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Produto (id).
+
+        :return: The id_produto of this Portador.
+        :rtype: int
+        """
+        return self._id_produto
+
+    @id_produto.setter
+    def id_produto(self, id_produto):
+        """
+        Sets the id_produto of this Portador.
+        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Produto (id).
+
+        :param id_produto: The id_produto of this Portador.
+        :type: int
+        """
+        self._id_produto = id_produto
+
+    @property
+    def id_pessoa(self):
+        """
+        Gets the id_pessoa of this Portador.
+        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Pessoa (id).
+
+        :return: The id_pessoa of this Portador.
+        :rtype: int
+        """
+        return self._id_pessoa
+
+    @id_pessoa.setter
+    def id_pessoa(self, id_pessoa):
+        """
+        Sets the id_pessoa of this Portador.
+        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Pessoa (id).
+
+        :param id_pessoa: The id_pessoa of this Portador.
+        :type: int
+        """
+        self._id_pessoa = id_pessoa
+
+    @property
+    def id_parentesco(self):
+        """
+        Gets the id_parentesco of this Portador.
+        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Parentesco (id)
+
+        :return: The id_parentesco of this Portador.
+        :rtype: int
+        """
+        return self._id_parentesco
+
+    @id_parentesco.setter
+    def id_parentesco(self, id_parentesco):
+        """
+        Sets the id_parentesco of this Portador.
+        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Parentesco (id)
+
+        :param id_parentesco: The id_parentesco of this Portador.
+        :type: int
+        """
+        self._id_parentesco = id_parentesco
+
+    @property
+    def tipo_portador(self):
+        """
+        Gets the tipo_portador of this Portador.
+        Apresenta o tipo do Portador do cart\u00C3\u00A3o, sendo: ('T': Titular, 'A': Adicional).
+
+        :return: The tipo_portador of this Portador.
+        :rtype: str
+        """
+        return self._tipo_portador
+
+    @tipo_portador.setter
+    def tipo_portador(self, tipo_portador):
+        """
+        Sets the tipo_portador of this Portador.
+        Apresenta o tipo do Portador do cart\u00C3\u00A3o, sendo: ('T': Titular, 'A': Adicional).
+
+        :param tipo_portador: The tipo_portador of this Portador.
+        :type: str
+        """
+        self._tipo_portador = tipo_portador
+
+    @property
+    def nome_impresso(self):
+        """
+        Gets the nome_impresso of this Portador.
+        Apresenta o nome a ser impresso no cart\u00C3\u00A3o.
+
+        :return: The nome_impresso of this Portador.
+        :rtype: str
+        """
+        return self._nome_impresso
+
+    @nome_impresso.setter
+    def nome_impresso(self, nome_impresso):
+        """
+        Sets the nome_impresso of this Portador.
+        Apresenta o nome a ser impresso no cart\u00C3\u00A3o.
+
+        :param nome_impresso: The nome_impresso of this Portador.
+        :type: str
+        """
+        self._nome_impresso = nome_impresso
+
+    @property
+    def id_imagem(self):
+        """
+        Gets the id_imagem of this Portador.
+        Apresenta o c\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da imagem do cart\u00C3\u00A3o.
+
+        :return: The id_imagem of this Portador.
+        :rtype: int
+        """
+        return self._id_imagem
+
+    @id_imagem.setter
+    def id_imagem(self, id_imagem):
+        """
+        Sets the id_imagem of this Portador.
+        Apresenta o c\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da imagem do cart\u00C3\u00A3o.
+
+        :param id_imagem: The id_imagem of this Portador.
+        :type: int
+        """
+        self._id_imagem = id_imagem
+
+    @property
+    def id_tipo_cartao(self):
+        """
+        Gets the id_tipo_cartao of this Portador.
+        Apresenta o c\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do tipo do cart\u00C3\u00A3o (id), que ser\u00C3\u00A1 utilizado para gerar os cart\u00C3\u00B5es deste portador, vinculados a sua respectiva conta atrav\u00C3\u00A9s do campo idConta.
+
+        :return: The id_tipo_cartao of this Portador.
+        :rtype: int
+        """
+        return self._id_tipo_cartao
+
+    @id_tipo_cartao.setter
+    def id_tipo_cartao(self, id_tipo_cartao):
+        """
+        Sets the id_tipo_cartao of this Portador.
+        Apresenta o c\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do tipo do cart\u00C3\u00A3o (id), que ser\u00C3\u00A1 utilizado para gerar os cart\u00C3\u00B5es deste portador, vinculados a sua respectiva conta atrav\u00C3\u00A9s do campo idConta.
+
+        :param id_tipo_cartao: The id_tipo_cartao of this Portador.
+        :type: int
+        """
+        self._id_tipo_cartao = id_tipo_cartao
+
+    @property
+    def flag_ativo(self):
+        """
+        Gets the flag_ativo of this Portador.
+        Quanto ativa, indica que o cadastro do Portador est\u00C3\u00A1 ativo, em emissores que realizam este tipo de gest\u00C3\u00A3o.
+
+        :return: The flag_ativo of this Portador.
+        :rtype: int
+        """
+        return self._flag_ativo
+
+    @flag_ativo.setter
+    def flag_ativo(self, flag_ativo):
+        """
+        Sets the flag_ativo of this Portador.
+        Quanto ativa, indica que o cadastro do Portador est\u00C3\u00A1 ativo, em emissores que realizam este tipo de gest\u00C3\u00A3o.
+
+        :param flag_ativo: The flag_ativo of this Portador.
+        :type: int
+        """
+        self._flag_ativo = flag_ativo
 
     @property
     def data_cadastro_portador(self):
@@ -119,204 +317,6 @@ class Portador(object):
         :type: datetime
         """
         self._data_cancelamento_portador = data_cancelamento_portador
-
-    @property
-    def flag_ativo(self):
-        """
-        Gets the flag_ativo of this Portador.
-        Quanto ativa, indica que o cadastro do Portador est\u00C3\u00A1 ativo, em emissores que realizam este tipo de gest\u00C3\u00A3o.
-
-        :return: The flag_ativo of this Portador.
-        :rtype: int
-        """
-        return self._flag_ativo
-
-    @flag_ativo.setter
-    def flag_ativo(self, flag_ativo):
-        """
-        Sets the flag_ativo of this Portador.
-        Quanto ativa, indica que o cadastro do Portador est\u00C3\u00A1 ativo, em emissores que realizam este tipo de gest\u00C3\u00A3o.
-
-        :param flag_ativo: The flag_ativo of this Portador.
-        :type: int
-        """
-        self._flag_ativo = flag_ativo
-
-    @property
-    def id_conta(self):
-        """
-        Gets the id_conta of this Portador.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Conta (id).
-
-        :return: The id_conta of this Portador.
-        :rtype: int
-        """
-        return self._id_conta
-
-    @id_conta.setter
-    def id_conta(self, id_conta):
-        """
-        Sets the id_conta of this Portador.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Conta (id).
-
-        :param id_conta: The id_conta of this Portador.
-        :type: int
-        """
-        self._id_conta = id_conta
-
-    @property
-    def id_imagem(self):
-        """
-        Gets the id_imagem of this Portador.
-        Apresenta o c\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da imagem do cart\u00C3\u00A3o.
-
-        :return: The id_imagem of this Portador.
-        :rtype: int
-        """
-        return self._id_imagem
-
-    @id_imagem.setter
-    def id_imagem(self, id_imagem):
-        """
-        Sets the id_imagem of this Portador.
-        Apresenta o c\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da imagem do cart\u00C3\u00A3o.
-
-        :param id_imagem: The id_imagem of this Portador.
-        :type: int
-        """
-        self._id_imagem = id_imagem
-
-    @property
-    def id_parentesco(self):
-        """
-        Gets the id_parentesco of this Portador.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Parentesco (id)
-
-        :return: The id_parentesco of this Portador.
-        :rtype: int
-        """
-        return self._id_parentesco
-
-    @id_parentesco.setter
-    def id_parentesco(self, id_parentesco):
-        """
-        Sets the id_parentesco of this Portador.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Parentesco (id)
-
-        :param id_parentesco: The id_parentesco of this Portador.
-        :type: int
-        """
-        self._id_parentesco = id_parentesco
-
-    @property
-    def id_pessoa(self):
-        """
-        Gets the id_pessoa of this Portador.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Pessoa (id).
-
-        :return: The id_pessoa of this Portador.
-        :rtype: int
-        """
-        return self._id_pessoa
-
-    @id_pessoa.setter
-    def id_pessoa(self, id_pessoa):
-        """
-        Sets the id_pessoa of this Portador.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Pessoa (id).
-
-        :param id_pessoa: The id_pessoa of this Portador.
-        :type: int
-        """
-        self._id_pessoa = id_pessoa
-
-    @property
-    def id_produto(self):
-        """
-        Gets the id_produto of this Portador.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Produto (id).
-
-        :return: The id_produto of this Portador.
-        :rtype: int
-        """
-        return self._id_produto
-
-    @id_produto.setter
-    def id_produto(self, id_produto):
-        """
-        Sets the id_produto of this Portador.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Produto (id).
-
-        :param id_produto: The id_produto of this Portador.
-        :type: int
-        """
-        self._id_produto = id_produto
-
-    @property
-    def id_tipo_cartao(self):
-        """
-        Gets the id_tipo_cartao of this Portador.
-        Apresenta o c\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do tipo do cart\u00C3\u00A3o (id), que ser\u00C3\u00A1 utilizado para gerar os cart\u00C3\u00B5es deste portador, vinculados a sua respectiva conta atrav\u00C3\u00A9s do campo idConta.
-
-        :return: The id_tipo_cartao of this Portador.
-        :rtype: int
-        """
-        return self._id_tipo_cartao
-
-    @id_tipo_cartao.setter
-    def id_tipo_cartao(self, id_tipo_cartao):
-        """
-        Sets the id_tipo_cartao of this Portador.
-        Apresenta o c\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do tipo do cart\u00C3\u00A3o (id), que ser\u00C3\u00A1 utilizado para gerar os cart\u00C3\u00B5es deste portador, vinculados a sua respectiva conta atrav\u00C3\u00A9s do campo idConta.
-
-        :param id_tipo_cartao: The id_tipo_cartao of this Portador.
-        :type: int
-        """
-        self._id_tipo_cartao = id_tipo_cartao
-
-    @property
-    def nome_impresso(self):
-        """
-        Gets the nome_impresso of this Portador.
-        Apresenta o nome a ser impresso no cart\u00C3\u00A3o.
-
-        :return: The nome_impresso of this Portador.
-        :rtype: str
-        """
-        return self._nome_impresso
-
-    @nome_impresso.setter
-    def nome_impresso(self, nome_impresso):
-        """
-        Sets the nome_impresso of this Portador.
-        Apresenta o nome a ser impresso no cart\u00C3\u00A3o.
-
-        :param nome_impresso: The nome_impresso of this Portador.
-        :type: str
-        """
-        self._nome_impresso = nome_impresso
-
-    @property
-    def tipo_portador(self):
-        """
-        Gets the tipo_portador of this Portador.
-        Apresenta o tipo do Portador do cart\u00C3\u00A3o, sendo: ('T': Titular, 'A': Adicional).
-
-        :return: The tipo_portador of this Portador.
-        :rtype: str
-        """
-        return self._tipo_portador
-
-    @tipo_portador.setter
-    def tipo_portador(self, tipo_portador):
-        """
-        Sets the tipo_portador of this Portador.
-        Apresenta o tipo do Portador do cart\u00C3\u00A3o, sendo: ('T': Titular, 'A': Adicional).
-
-        :param tipo_portador: The tipo_portador of this Portador.
-        :type: str
-        """
-        self._tipo_portador = tipo_portador
 
     def to_dict(self):
         """

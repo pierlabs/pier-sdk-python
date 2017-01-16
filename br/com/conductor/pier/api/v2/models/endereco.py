@@ -37,185 +37,53 @@ class Endereco(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'bairro': 'str',
-            'cep': 'str',
-            'cidade': 'str',
-            'complemento': 'str',
-            'data_inclusao': 'datetime',
-            'data_ultima_atualizacao': 'datetime',
             'id': 'int',
             'id_pessoa': 'int',
             'id_tipo_endereco': 'int',
+            'cep': 'str',
             'logradouro': 'str',
             'numero': 'int',
-            'pais': 'str',
+            'complemento': 'str',
             'ponto_referencia': 'str',
-            'uf': 'str'
+            'bairro': 'str',
+            'cidade': 'str',
+            'uf': 'str',
+            'pais': 'str',
+            'data_inclusao': 'datetime',
+            'data_ultima_atualizacao': 'datetime'
         }
 
         self.attribute_map = {
-            'bairro': 'bairro',
-            'cep': 'cep',
-            'cidade': 'cidade',
-            'complemento': 'complemento',
-            'data_inclusao': 'dataInclusao',
-            'data_ultima_atualizacao': 'dataUltimaAtualizacao',
             'id': 'id',
             'id_pessoa': 'idPessoa',
             'id_tipo_endereco': 'idTipoEndereco',
+            'cep': 'cep',
             'logradouro': 'logradouro',
             'numero': 'numero',
-            'pais': 'pais',
+            'complemento': 'complemento',
             'ponto_referencia': 'pontoReferencia',
-            'uf': 'uf'
+            'bairro': 'bairro',
+            'cidade': 'cidade',
+            'uf': 'uf',
+            'pais': 'pais',
+            'data_inclusao': 'dataInclusao',
+            'data_ultima_atualizacao': 'dataUltimaAtualizacao'
         }
 
-        self._bairro = None
-        self._cep = None
-        self._cidade = None
-        self._complemento = None
-        self._data_inclusao = None
-        self._data_ultima_atualizacao = None
         self._id = None
         self._id_pessoa = None
         self._id_tipo_endereco = None
+        self._cep = None
         self._logradouro = None
         self._numero = None
-        self._pais = None
+        self._complemento = None
         self._ponto_referencia = None
+        self._bairro = None
+        self._cidade = None
         self._uf = None
-
-    @property
-    def bairro(self):
-        """
-        Gets the bairro of this Endereco.
-        Apresenta nome do bairro
-
-        :return: The bairro of this Endereco.
-        :rtype: str
-        """
-        return self._bairro
-
-    @bairro.setter
-    def bairro(self, bairro):
-        """
-        Sets the bairro of this Endereco.
-        Apresenta nome do bairro
-
-        :param bairro: The bairro of this Endereco.
-        :type: str
-        """
-        self._bairro = bairro
-
-    @property
-    def cep(self):
-        """
-        Gets the cep of this Endereco.
-        Apresenta o C\u00C3\u00B3digo de Endere\u00C3\u00A7amento Postal (CEP) no formaro '58800000'
-
-        :return: The cep of this Endereco.
-        :rtype: str
-        """
-        return self._cep
-
-    @cep.setter
-    def cep(self, cep):
-        """
-        Sets the cep of this Endereco.
-        Apresenta o C\u00C3\u00B3digo de Endere\u00C3\u00A7amento Postal (CEP) no formaro '58800000'
-
-        :param cep: The cep of this Endereco.
-        :type: str
-        """
-        self._cep = cep
-
-    @property
-    def cidade(self):
-        """
-        Gets the cidade of this Endereco.
-        Apresenta nome da cidade
-
-        :return: The cidade of this Endereco.
-        :rtype: str
-        """
-        return self._cidade
-
-    @cidade.setter
-    def cidade(self, cidade):
-        """
-        Sets the cidade of this Endereco.
-        Apresenta nome da cidade
-
-        :param cidade: The cidade of this Endereco.
-        :type: str
-        """
-        self._cidade = cidade
-
-    @property
-    def complemento(self):
-        """
-        Gets the complemento of this Endereco.
-        Apresenta descri\u00C3\u00A7oes complementares referente ao endere\u00C3\u00A7o
-
-        :return: The complemento of this Endereco.
-        :rtype: str
-        """
-        return self._complemento
-
-    @complemento.setter
-    def complemento(self, complemento):
-        """
-        Sets the complemento of this Endereco.
-        Apresenta descri\u00C3\u00A7oes complementares referente ao endere\u00C3\u00A7o
-
-        :param complemento: The complemento of this Endereco.
-        :type: str
-        """
-        self._complemento = complemento
-
-    @property
-    def data_inclusao(self):
-        """
-        Gets the data_inclusao of this Endereco.
-        Apresenta a data em que fora cadastrado o Endere\u00C3\u00A7o
-
-        :return: The data_inclusao of this Endereco.
-        :rtype: datetime
-        """
-        return self._data_inclusao
-
-    @data_inclusao.setter
-    def data_inclusao(self, data_inclusao):
-        """
-        Sets the data_inclusao of this Endereco.
-        Apresenta a data em que fora cadastrado o Endere\u00C3\u00A7o
-
-        :param data_inclusao: The data_inclusao of this Endereco.
-        :type: datetime
-        """
-        self._data_inclusao = data_inclusao
-
-    @property
-    def data_ultima_atualizacao(self):
-        """
-        Gets the data_ultima_atualizacao of this Endereco.
-        Data em que fora realizada a \u00C3\u00BAltima mudan\u00C3\u00A7a neste registro de endere\u00C3\u00A7o. Quando n\u00C3\u00A3o tiver ocorrido mudan\u00C3\u00A7a, conter\u00C3\u00A1 a mesma informa\u00C3\u00A7\u00C3\u00A3o que o campo dataInclusao
-
-        :return: The data_ultima_atualizacao of this Endereco.
-        :rtype: datetime
-        """
-        return self._data_ultima_atualizacao
-
-    @data_ultima_atualizacao.setter
-    def data_ultima_atualizacao(self, data_ultima_atualizacao):
-        """
-        Sets the data_ultima_atualizacao of this Endereco.
-        Data em que fora realizada a \u00C3\u00BAltima mudan\u00C3\u00A7a neste registro de endere\u00C3\u00A7o. Quando n\u00C3\u00A3o tiver ocorrido mudan\u00C3\u00A7a, conter\u00C3\u00A1 a mesma informa\u00C3\u00A7\u00C3\u00A3o que o campo dataInclusao
-
-        :param data_ultima_atualizacao: The data_ultima_atualizacao of this Endereco.
-        :type: datetime
-        """
-        self._data_ultima_atualizacao = data_ultima_atualizacao
+        self._pais = None
+        self._data_inclusao = None
+        self._data_ultima_atualizacao = None
 
     @property
     def id(self):
@@ -284,6 +152,28 @@ class Endereco(object):
         self._id_tipo_endereco = id_tipo_endereco
 
     @property
+    def cep(self):
+        """
+        Gets the cep of this Endereco.
+        Apresenta o C\u00C3\u00B3digo de Endere\u00C3\u00A7amento Postal (CEP) no formaro '58800000'
+
+        :return: The cep of this Endereco.
+        :rtype: str
+        """
+        return self._cep
+
+    @cep.setter
+    def cep(self, cep):
+        """
+        Sets the cep of this Endereco.
+        Apresenta o C\u00C3\u00B3digo de Endere\u00C3\u00A7amento Postal (CEP) no formaro '58800000'
+
+        :param cep: The cep of this Endereco.
+        :type: str
+        """
+        self._cep = cep
+
+    @property
     def logradouro(self):
         """
         Gets the logradouro of this Endereco.
@@ -328,26 +218,26 @@ class Endereco(object):
         self._numero = numero
 
     @property
-    def pais(self):
+    def complemento(self):
         """
-        Gets the pais of this Endereco.
-        Apresenta nome do Pais
+        Gets the complemento of this Endereco.
+        Apresenta descri\u00C3\u00A7oes complementares referente ao endere\u00C3\u00A7o
 
-        :return: The pais of this Endereco.
+        :return: The complemento of this Endereco.
         :rtype: str
         """
-        return self._pais
+        return self._complemento
 
-    @pais.setter
-    def pais(self, pais):
+    @complemento.setter
+    def complemento(self, complemento):
         """
-        Sets the pais of this Endereco.
-        Apresenta nome do Pais
+        Sets the complemento of this Endereco.
+        Apresenta descri\u00C3\u00A7oes complementares referente ao endere\u00C3\u00A7o
 
-        :param pais: The pais of this Endereco.
+        :param complemento: The complemento of this Endereco.
         :type: str
         """
-        self._pais = pais
+        self._complemento = complemento
 
     @property
     def ponto_referencia(self):
@@ -372,6 +262,50 @@ class Endereco(object):
         self._ponto_referencia = ponto_referencia
 
     @property
+    def bairro(self):
+        """
+        Gets the bairro of this Endereco.
+        Apresenta nome do bairro
+
+        :return: The bairro of this Endereco.
+        :rtype: str
+        """
+        return self._bairro
+
+    @bairro.setter
+    def bairro(self, bairro):
+        """
+        Sets the bairro of this Endereco.
+        Apresenta nome do bairro
+
+        :param bairro: The bairro of this Endereco.
+        :type: str
+        """
+        self._bairro = bairro
+
+    @property
+    def cidade(self):
+        """
+        Gets the cidade of this Endereco.
+        Apresenta nome da cidade
+
+        :return: The cidade of this Endereco.
+        :rtype: str
+        """
+        return self._cidade
+
+    @cidade.setter
+    def cidade(self, cidade):
+        """
+        Sets the cidade of this Endereco.
+        Apresenta nome da cidade
+
+        :param cidade: The cidade of this Endereco.
+        :type: str
+        """
+        self._cidade = cidade
+
+    @property
     def uf(self):
         """
         Gets the uf of this Endereco.
@@ -392,6 +326,72 @@ class Endereco(object):
         :type: str
         """
         self._uf = uf
+
+    @property
+    def pais(self):
+        """
+        Gets the pais of this Endereco.
+        Apresenta nome do Pais
+
+        :return: The pais of this Endereco.
+        :rtype: str
+        """
+        return self._pais
+
+    @pais.setter
+    def pais(self, pais):
+        """
+        Sets the pais of this Endereco.
+        Apresenta nome do Pais
+
+        :param pais: The pais of this Endereco.
+        :type: str
+        """
+        self._pais = pais
+
+    @property
+    def data_inclusao(self):
+        """
+        Gets the data_inclusao of this Endereco.
+        Apresenta a data em que fora cadastrado o Endere\u00C3\u00A7o
+
+        :return: The data_inclusao of this Endereco.
+        :rtype: datetime
+        """
+        return self._data_inclusao
+
+    @data_inclusao.setter
+    def data_inclusao(self, data_inclusao):
+        """
+        Sets the data_inclusao of this Endereco.
+        Apresenta a data em que fora cadastrado o Endere\u00C3\u00A7o
+
+        :param data_inclusao: The data_inclusao of this Endereco.
+        :type: datetime
+        """
+        self._data_inclusao = data_inclusao
+
+    @property
+    def data_ultima_atualizacao(self):
+        """
+        Gets the data_ultima_atualizacao of this Endereco.
+        Data em que fora realizada a \u00C3\u00BAltima mudan\u00C3\u00A7a neste registro de endere\u00C3\u00A7o. Quando n\u00C3\u00A3o tiver ocorrido mudan\u00C3\u00A7a, conter\u00C3\u00A1 a mesma informa\u00C3\u00A7\u00C3\u00A3o que o campo dataInclusao
+
+        :return: The data_ultima_atualizacao of this Endereco.
+        :rtype: datetime
+        """
+        return self._data_ultima_atualizacao
+
+    @data_ultima_atualizacao.setter
+    def data_ultima_atualizacao(self, data_ultima_atualizacao):
+        """
+        Sets the data_ultima_atualizacao of this Endereco.
+        Data em que fora realizada a \u00C3\u00BAltima mudan\u00C3\u00A7a neste registro de endere\u00C3\u00A7o. Quando n\u00C3\u00A3o tiver ocorrido mudan\u00C3\u00A7a, conter\u00C3\u00A1 a mesma informa\u00C3\u00A7\u00C3\u00A3o que o campo dataInclusao
+
+        :param data_ultima_atualizacao: The data_ultima_atualizacao of this Endereco.
+        :type: datetime
+        """
+        self._data_ultima_atualizacao = data_ultima_atualizacao
 
     def to_dict(self):
         """

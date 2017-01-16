@@ -37,23 +37,45 @@ class WebHook(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'evento': 'str',
             'id': 'int',
+            'evento': 'str',
             'metodo': 'str',
             'url': 'str'
         }
 
         self.attribute_map = {
-            'evento': 'evento',
             'id': 'id',
+            'evento': 'evento',
             'metodo': 'metodo',
             'url': 'url'
         }
 
-        self._evento = None
         self._id = None
+        self._evento = None
         self._metodo = None
         self._url = None
+
+    @property
+    def id(self):
+        """
+        Gets the id of this WebHook.
+        Id do WebHook
+
+        :return: The id of this WebHook.
+        :rtype: int
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """
+        Sets the id of this WebHook.
+        Id do WebHook
+
+        :param id: The id of this WebHook.
+        :type: int
+        """
+        self._id = id
 
     @property
     def evento(self):
@@ -82,28 +104,6 @@ class WebHook(object):
                 .format(allowed_values)
             )
         self._evento = evento
-
-    @property
-    def id(self):
-        """
-        Gets the id of this WebHook.
-        Id do WebHook
-
-        :return: The id of this WebHook.
-        :rtype: int
-        """
-        return self._id
-
-    @id.setter
-    def id(self, id):
-        """
-        Sets the id of this WebHook.
-        Id do WebHook
-
-        :param id: The id of this WebHook.
-        :type: int
-        """
-        self._id = id
 
     @property
     def metodo(self):
