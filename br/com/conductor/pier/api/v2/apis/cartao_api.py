@@ -45,7 +45,7 @@ class CartaoApi(object):
                 config.api_client = ApiClient()
             self.api_client = config.api_client
 
-    def alterar_status_impressao_using_put(self, id, **kwargs):
+    def alterar_status_impressao_using_put(self, id, id_status_impressao, **kwargs):
         """
         Realiza a altera\u00C3\u00A7\u00C3\u00A3o do Status de Impress\u00C3\u00A3o do Cart\u00C3\u00A3o
         Este m\u00C3\u00A9todo permite que uma Aplica\u00C3\u00A7\u00C3\u00A3o que realize a impress\u00C3\u00A3o de cart\u00C3\u00B5es possa indicar que um determinado idCartao fora impresso ou est\u00C3\u00A1 em processo de impress\u00C3\u00A3o. Para isso, basta informar o respectivo c\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do cart\u00C3\u00A3o (id) que deseja ter seu um determinado id_status_impressao atribu\u00C3\u00ADdo a ele. Por padr\u00C3\u00A3o, cart\u00C3\u00B5es provis\u00C3\u00B3rios ou que j\u00C3\u00A1 tenham sido inclu\u00C3\u00ADdos em um arquivo para impress\u00C3\u00A3o via gr\u00C3\u00A1fica ter\u00C3\u00A3o esta requisi\u00C3\u00A7\u00C3\u00A3o negada, se utilizada.
@@ -56,12 +56,12 @@ class CartaoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.alterar_status_impressao_using_put(id, callback=callback_function)
+        >>> thread = api.alterar_status_impressao_using_put(id, id_status_impressao, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Cart\u00C3\u00A3o (id). (required)
-        :param int id_status_impressao: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Status Impress\u00C3\u00A3o (Id).
+        :param int id_status_impressao: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Status Impress\u00C3\u00A3o (Id). (required)
         :return: HistoricoImpressaoCartao
                  If the method is called asynchronously,
                  returns the request thread.
@@ -83,6 +83,9 @@ class CartaoApi(object):
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
             raise ValueError("Missing the required parameter `id` when calling `alterar_status_impressao_using_put`")
+        # verify the required parameter 'id_status_impressao' is set
+        if ('id_status_impressao' not in params) or (params['id_status_impressao'] is None):
+            raise ValueError("Missing the required parameter `id_status_impressao` when calling `alterar_status_impressao_using_put`")
 
         resource_path = '/api/cartoes/{id}/alterar-status-impressao'.replace('{format}', 'json')
         path_params = {}
@@ -341,10 +344,10 @@ class CartaoApi(object):
 
         resource_path = '/api/cartoes/{id}/alterar-senha'.replace('{format}', 'json')
         path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
 
         query_params = {}
-        if 'id' in params:
-            query_params['id'] = params['id']
 
         header_params = {}
         if 'senha' in params:
@@ -1332,10 +1335,10 @@ class CartaoApi(object):
 
         resource_path = '/api/cartoes/{id}/validar-senha'.replace('{format}', 'json')
         path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
 
         query_params = {}
-        if 'id' in params:
-            query_params['id'] = params['id']
 
         header_params = {}
         if 'senha' in params:
