@@ -9,9 +9,11 @@ from .models.conta import Conta
 from .models.endereco import Endereco
 from .models.estagio_cartao import EstagioCartao
 from .models.extra_info import ExtraInfo
+from .models.fatura import Fatura
 from .models.historico_impressao_cartao import HistoricoImpressaoCartao
 from .models.limite_disponibilidade import LimiteDisponibilidade
 from .models.lista_produtos import ListaProdutos
+from .models.lote_cartoes_pre_pagos import LoteCartoesPrePagos
 from .models.origem_comercial import OrigemComercial
 from .models.page_cartoes import PageCartoes
 from .models.page_enderecos import PageEnderecos
@@ -25,6 +27,7 @@ from .models.page_status_impressao import PageStatusImpressao
 from .models.page_telefones import PageTelefones
 from .models.page_tipo_telefones import PageTipoTelefones
 from .models.page_tipos_endereco import PageTiposEndereco
+from .models.page_transacao_response import PageTransacaoResponse
 from .models.page_web_hooks import PageWebHooks
 from .models.pessoa import Pessoa
 from .models.portador import Portador
@@ -36,6 +39,7 @@ from .models.status_impressao import StatusImpressao
 from .models.telefone import Telefone
 from .models.tipo_endereco import TipoEndereco
 from .models.tipo_telefone import TipoTelefone
+from .models.transacao_response import TransacaoResponse
 from .models.valida_cartao import ValidaCartao
 from .models.web_hook import WebHook
 

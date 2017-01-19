@@ -691,6 +691,172 @@ class CartaoApi(object):
                                             callback=params.get('callback'))
         return response
 
+    def gerar_lotes_cartoes_pre_pagos_using_post(self, **kwargs):
+        """
+        Permite gerar um novo Lote de Cart\u00C3\u00B5es Pr\u00C3\u00A9-Pago
+        Esta opera\u00C3\u00A7\u00C3\u00A3o tem como objetivo permitir que os Emissores gerem uma determinada quantidade de Cart\u00C3\u00B5es Pr\u00C3\u00A9-Pagos, de forma n\u00C3\u00A3o nominal, os quais poder\u00C3\u00A3o ser comercializados e posteriormente vinculados a um cliente que o adquirir. Para isso, al\u00C3\u00A9m de definir quantos cart\u00C3\u00B5es dever\u00C3\u00A3o ser gerados, ser\u00C3\u00A1 poss\u00C3\u00ADvel definir qual a Origem Comercial, o Produto, o Tipo do Cart\u00C3\u00A3o, a Imagem e o Endere\u00C3\u00A7o para entrega dos Cart\u00C3\u00B5es presentes no lote gerado. Por padr\u00C3\u00A3o, todos os cart\u00C3\u00B5es ser\u00C3\u00A3o associados a um idPessoa fict\u00C3\u00ADcio e receber\u00C3\u00A1 um idConta \u00C3\u00BAnico para cada um deles. Feito isso, os Cart\u00C3\u00B5es gerados por esta opera\u00C3\u00A7\u00C3\u00A3o seguir\u00C3\u00A3o os mesmos processos de impress\u00C3\u00A3o via gr\u00C3\u00A1fica previamente definidos entre o Emissor e a Conductor.
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.gerar_lotes_cartoes_pre_pagos_using_post(callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param int id_origem_comercial: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Origem Comercial (id).
+        :param int id_produto: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Produto (id).
+        :param int id_tipo_cartao: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Tipo do Cart\u00C3\u00A3o (id).
+        :param int id_imagem: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Imagem (id).
+        :param int id_endereco: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Endere\u00C3\u00A7o (id).
+        :param int quantidade_cartoes: N\u00C3\u00BAmero de cart\u00C3\u00B5es existentes no Lote.
+        :return: LoteCartoesPrePagos
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id_origem_comercial', 'id_produto', 'id_tipo_cartao', 'id_imagem', 'id_endereco', 'quantidade_cartoes']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method gerar_lotes_cartoes_pre_pagos_using_post" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+
+        resource_path = '/api/cartoes/pre-pagos/lotes'.replace('{format}', 'json')
+        path_params = {}
+
+        query_params = {}
+        if 'id_origem_comercial' in params:
+            query_params['idOrigemComercial'] = params['id_origem_comercial']
+        if 'id_produto' in params:
+            query_params['idProduto'] = params['id_produto']
+        if 'id_tipo_cartao' in params:
+            query_params['idTipoCartao'] = params['id_tipo_cartao']
+        if 'id_imagem' in params:
+            query_params['idImagem'] = params['id_imagem']
+        if 'id_endereco' in params:
+            query_params['idEndereco'] = params['id_endereco']
+        if 'quantidade_cartoes' in params:
+            query_params['quantidadeCartoes'] = params['quantidade_cartoes']
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        response = self.api_client.call_api(resource_path, 'POST',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='LoteCartoesPrePagos',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
+    def gerar_nova_via_using_post(self, id_cartao, **kwargs):
+        """
+        Gerar uma nova via de Cart\u00C3\u00A3o
+        Esta opera\u00C3\u00A7\u00C3\u00A3o tem como objetivo permitir que os Emissores ou seus clientes possam solicitar a gera\u00C3\u00A7\u00C3\u00A3o de uma nova via de Cart\u00C3\u00A3o que ser\u00C3\u00A1 encaminhando para impress\u00C3\u00A3o e postagem de acordo com os fluxos padr\u00C3\u00B5es j\u00C3\u00A1 definidos pelo emissor. Para isso, \u00C3\u00A9 preciso que o cliente j\u00C3\u00A1 possua um cart\u00C3\u00A3o gerado e informar o C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o deste (idCartao) para que ele possa utilizar esta opera\u00C3\u00A7\u00C3\u00A3o. Assim, esta funcionalidade se aplica apenas para a gera\u00C3\u00A7\u00C3\u00A3o de cart\u00C3\u00B5es f\u00C3\u00ADsicos.
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.gerar_nova_via_using_post(id_cartao, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param int id_cartao: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Cart\u00C3\u00A3o (id) (required)
+        :return: Cartao
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id_cartao']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method gerar_nova_via_using_post" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        # verify the required parameter 'id_cartao' is set
+        if ('id_cartao' not in params) or (params['id_cartao'] is None):
+            raise ValueError("Missing the required parameter `id_cartao` when calling `gerar_nova_via_using_post`")
+
+        resource_path = '/api/cartoes/{id_cartao}/gerar-nova-via'.replace('{format}', 'json')
+        path_params = {}
+        if 'id_cartao' in params:
+            path_params['id_cartao'] = params['id_cartao']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        response = self.api_client.call_api(resource_path, 'POST',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='Cartao',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
     def listar_lotes_cartoes_pre_pagos_using_get(self, **kwargs):
         """
         Permite listar os Lotes de Cart\u00C3\u00B5es Pr\u00C3\u00A9-Pago
@@ -715,15 +881,15 @@ class CartaoApi(object):
         :param int id_imagem: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Imagem (id).
         :param int id_endereco: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Endere\u00C3\u00A7o (id).
         :param int quantidade_cartoes: N\u00C3\u00BAmero de cart\u00C3\u00B5es existentes no Lote.
-        :param datetime data_cadastro_lote: Data de Cadastro do Lote de Cart\u00C3\u00B5es N\u00C3\u00A3o Nominais.
+        :param datetime data_cadastro: Data de Cadastro do Lote de Cart\u00C3\u00B5es N\u00C3\u00A3o Nominais.
         :param str usuario_cadastro: Nome do Usu\u00C3\u00A1rio que criou o Lote.
-        :param int flag_processado: Indica o Status de Processamento do Lote.
+        :param int status_processamento: Indica o Status de Processamento do Lote.
         :return: PageCartoes
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['page', 'limit', 'id', 'id_origem_comercial', 'id_produto', 'id_tipo_cartao', 'id_imagem', 'id_endereco', 'quantidade_cartoes', 'data_cadastro_lote', 'usuario_cadastro', 'flag_processado']
+        all_params = ['page', 'limit', 'id', 'id_origem_comercial', 'id_produto', 'id_tipo_cartao', 'id_imagem', 'id_endereco', 'quantidade_cartoes', 'data_cadastro', 'usuario_cadastro', 'status_processamento']
         all_params.append('callback')
 
         params = locals()
@@ -759,12 +925,12 @@ class CartaoApi(object):
             query_params['idEndereco'] = params['id_endereco']
         if 'quantidade_cartoes' in params:
             query_params['quantidadeCartoes'] = params['quantidade_cartoes']
-        if 'data_cadastro_lote' in params:
-            query_params['dataCadastroLote'] = params['data_cadastro_lote']
+        if 'data_cadastro' in params:
+            query_params['dataCadastro'] = params['data_cadastro']
         if 'usuario_cadastro' in params:
             query_params['usuarioCadastro'] = params['usuario_cadastro']
-        if 'flag_processado' in params:
-            query_params['flagProcessado'] = params['flag_processado']
+        if 'status_processamento' in params:
+            query_params['statusProcessamento'] = params['status_processamento']
 
         header_params = {}
 

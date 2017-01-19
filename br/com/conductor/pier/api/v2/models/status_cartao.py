@@ -43,7 +43,8 @@ class StatusCartao(object):
             'flag_cancela_no_desbloqueio': 'int',
             'id_status_destino_desbloqueio': 'int',
             'id_status_destino_conta': 'int',
-            'flag_cobra_tarifa': 'int'
+            'flag_cobra_tarifa': 'int',
+            'flag_permite_nova_via_cartao': 'int'
         }
 
         self.attribute_map = {
@@ -53,7 +54,8 @@ class StatusCartao(object):
             'flag_cancela_no_desbloqueio': 'flagCancelaNoDesbloqueio',
             'id_status_destino_desbloqueio': 'idStatusDestinoDesbloqueio',
             'id_status_destino_conta': 'idStatusDestinoConta',
-            'flag_cobra_tarifa': 'flagCobraTarifa'
+            'flag_cobra_tarifa': 'flagCobraTarifa',
+            'flag_permite_nova_via_cartao': 'flagPermiteNovaViaCartao'
         }
 
         self._id = None
@@ -63,6 +65,7 @@ class StatusCartao(object):
         self._id_status_destino_desbloqueio = None
         self._id_status_destino_conta = None
         self._flag_cobra_tarifa = None
+        self._flag_permite_nova_via_cartao = None
 
     @property
     def id(self):
@@ -217,6 +220,28 @@ class StatusCartao(object):
         :type: int
         """
         self._flag_cobra_tarifa = flag_cobra_tarifa
+
+    @property
+    def flag_permite_nova_via_cartao(self):
+        """
+        Gets the flag_permite_nova_via_cartao of this StatusCartao.
+        Par\u00C3\u00A2metro que define se o status do cart\u00C3\u00A3o permite a solicita\u00C3\u00A7\u00C3\u00A3o de uma nova via, sendo: 0: Inativo e 1: Ativo.
+
+        :return: The flag_permite_nova_via_cartao of this StatusCartao.
+        :rtype: int
+        """
+        return self._flag_permite_nova_via_cartao
+
+    @flag_permite_nova_via_cartao.setter
+    def flag_permite_nova_via_cartao(self, flag_permite_nova_via_cartao):
+        """
+        Sets the flag_permite_nova_via_cartao of this StatusCartao.
+        Par\u00C3\u00A2metro que define se o status do cart\u00C3\u00A3o permite a solicita\u00C3\u00A7\u00C3\u00A3o de uma nova via, sendo: 0: Inativo e 1: Ativo.
+
+        :param flag_permite_nova_via_cartao: The flag_permite_nova_via_cartao of this StatusCartao.
+        :type: int
+        """
+        self._flag_permite_nova_via_cartao = flag_permite_nova_via_cartao
 
     def to_dict(self):
         """

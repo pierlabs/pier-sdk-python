@@ -40,20 +40,23 @@ class StatusConta(object):
             'id': 'int',
             'nome': 'str',
             'flag_altera_limite': 'int',
-            'mensagem_consulta_negada': 'str'
+            'mensagem_consulta_negada': 'str',
+            'flag_permite_nova_via_cartao': 'int'
         }
 
         self.attribute_map = {
             'id': 'id',
             'nome': 'nome',
             'flag_altera_limite': 'flagAlteraLimite',
-            'mensagem_consulta_negada': 'mensagemConsultaNegada'
+            'mensagem_consulta_negada': 'mensagemConsultaNegada',
+            'flag_permite_nova_via_cartao': 'flagPermiteNovaViaCartao'
         }
 
         self._id = None
         self._nome = None
         self._flag_altera_limite = None
         self._mensagem_consulta_negada = None
+        self._flag_permite_nova_via_cartao = None
 
     @property
     def id(self):
@@ -142,6 +145,28 @@ class StatusConta(object):
         :type: str
         """
         self._mensagem_consulta_negada = mensagem_consulta_negada
+
+    @property
+    def flag_permite_nova_via_cartao(self):
+        """
+        Gets the flag_permite_nova_via_cartao of this StatusConta.
+        Par\u00C3\u00A2metro que define se o Status da conta permite a solicita\u00C3\u00A7\u00C3\u00A3o de um novo cart\u00C3\u00A3o, sendo: 0: Inativo e 1: Ativo.
+
+        :return: The flag_permite_nova_via_cartao of this StatusConta.
+        :rtype: int
+        """
+        return self._flag_permite_nova_via_cartao
+
+    @flag_permite_nova_via_cartao.setter
+    def flag_permite_nova_via_cartao(self, flag_permite_nova_via_cartao):
+        """
+        Sets the flag_permite_nova_via_cartao of this StatusConta.
+        Par\u00C3\u00A2metro que define se o Status da conta permite a solicita\u00C3\u00A7\u00C3\u00A3o de um novo cart\u00C3\u00A3o, sendo: 0: Inativo e 1: Ativo.
+
+        :param flag_permite_nova_via_cartao: The flag_permite_nova_via_cartao of this StatusConta.
+        :type: int
+        """
+        self._flag_permite_nova_via_cartao = flag_permite_nova_via_cartao
 
     def to_dict(self):
         """
