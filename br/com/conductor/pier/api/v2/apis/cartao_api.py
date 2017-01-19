@@ -780,7 +780,7 @@ class CartaoApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def gerar_nova_via_using_post(self, id_cartao, **kwargs):
+    def gerar_nova_via_using_post(self, id, **kwargs):
         """
         Gerar uma nova via de Cart\u00C3\u00A3o
         Esta opera\u00C3\u00A7\u00C3\u00A3o tem como objetivo permitir que os Emissores ou seus clientes possam solicitar a gera\u00C3\u00A7\u00C3\u00A3o de uma nova via de Cart\u00C3\u00A3o que ser\u00C3\u00A1 encaminhando para impress\u00C3\u00A3o e postagem de acordo com os fluxos padr\u00C3\u00B5es j\u00C3\u00A1 definidos pelo emissor. Para isso, \u00C3\u00A9 preciso que o cliente j\u00C3\u00A1 possua um cart\u00C3\u00A3o gerado e informar o C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o deste (idCartao) para que ele possa utilizar esta opera\u00C3\u00A7\u00C3\u00A3o. Assim, esta funcionalidade se aplica apenas para a gera\u00C3\u00A7\u00C3\u00A3o de cart\u00C3\u00B5es f\u00C3\u00ADsicos.
@@ -791,17 +791,17 @@ class CartaoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.gerar_nova_via_using_post(id_cartao, callback=callback_function)
+        >>> thread = api.gerar_nova_via_using_post(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param int id_cartao: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Cart\u00C3\u00A3o (id) (required)
+        :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Cart\u00C3\u00A3o (id) (required)
         :return: Cartao
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['id_cartao']
+        all_params = ['id']
         all_params.append('callback')
 
         params = locals()
@@ -814,14 +814,14 @@ class CartaoApi(object):
             params[key] = val
         del params['kwargs']
 
-        # verify the required parameter 'id_cartao' is set
-        if ('id_cartao' not in params) or (params['id_cartao'] is None):
-            raise ValueError("Missing the required parameter `id_cartao` when calling `gerar_nova_via_using_post`")
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `gerar_nova_via_using_post`")
 
-        resource_path = '/api/cartoes/{id_cartao}/gerar-nova-via'.replace('{format}', 'json')
+        resource_path = '/api/cartoes/{id}/gerar-nova-via'.replace('{format}', 'json')
         path_params = {}
-        if 'id_cartao' in params:
-            path_params['id_cartao'] = params['id_cartao']
+        if 'id' in params:
+            path_params['id'] = params['id']
 
         query_params = {}
 

@@ -514,7 +514,7 @@ class ContaApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_faturas_using_get(self, **kwargs):
+    def listar_faturas_using_get(self, id, **kwargs):
         """
         Listar Faturas da Conta
         Atrav\u00C3\u00A9s desta opera\u00C3\u00A7\u00C3\u00A3o os Emissores ou Portadores poder\u00C3\u00A3o consultar todo o Hist\u00C3\u00B3rico de Faturas vinculados a uma determinada Conta, independentemente do valor delas.
@@ -525,20 +525,20 @@ class ContaApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_faturas_using_get(callback=callback_function)
+        >>> thread = api.listar_faturas_using_get(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
+        :param int id: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da conta (id). (required)
         :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
         :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 100, Max = 100)
-        :param int id: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o de conta (id).
         :param date data_vencimento: Data de Vencimento da Fatura.
         :return: Fatura
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['page', 'limit', 'id', 'data_vencimento']
+        all_params = ['id', 'page', 'limit', 'data_vencimento']
         all_params.append('callback')
 
         params = locals()
@@ -551,17 +551,20 @@ class ContaApi(object):
             params[key] = val
         del params['kwargs']
 
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `listar_faturas_using_get`")
 
-        resource_path = '/api/contas/{id_conta}/faturas'.replace('{format}', 'json')
+        resource_path = '/api/contas/{id}/faturas'.replace('{format}', 'json')
         path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
 
         query_params = {}
         if 'page' in params:
             query_params['page'] = params['page']
         if 'limit' in params:
             query_params['limit'] = params['limit']
-        if 'id' in params:
-            query_params['id'] = params['id']
         if 'data_vencimento' in params:
             query_params['dataVencimento'] = params['data_vencimento']
 
@@ -704,7 +707,7 @@ class ContaApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def transacoes_using_post(self, **kwargs):
+    def transacoes_using_get(self, **kwargs):
         """
         Permite listar uma linha do tempo com os eventos da conta
         Esta opera\u00C3\u00A7\u00C3\u00A3o tem como objetivo permitir a listagem, em formato de timeline, dos eventos vinculados a uma detemrinada conta. Transa\u00C3\u00A7\u00C3\u00B5es, fechamento da fatura, pagamentos, gera\u00C3\u00A7\u00C3\u00A3o de cart\u00C3\u00B5es e altera\u00C3\u00A7\u00C3\u00A3o de limite s\u00C3\u00A3o exemplos de eventos contemplados por esta funcionalidade. Neste m\u00C3\u00A9todo, as opera\u00C3\u00A7\u00C3\u00B5es s\u00C3\u00A3o ordenadas de forma decrescente.
@@ -715,7 +718,7 @@ class ContaApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.transacoes_using_post(callback=callback_function)
+        >>> thread = api.transacoes_using_get(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -735,13 +738,13 @@ class ContaApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method transacoes_using_post" % key
+                    " to method transacoes_using_get" % key
                 )
             params[key] = val
         del params['kwargs']
 
 
-        resource_path = '/api/contas/{id_conta}/timeline'.replace('{format}', 'json')
+        resource_path = '/api/contas/{id}/timeline'.replace('{format}', 'json')
         path_params = {}
 
         query_params = {}
@@ -772,7 +775,7 @@ class ContaApi(object):
         # Authentication setting
         auth_settings = ['access_token']
 
-        response = self.api_client.call_api(resource_path, 'POST',
+        response = self.api_client.call_api(resource_path, 'GET',
                                             path_params,
                                             query_params,
                                             header_params,
