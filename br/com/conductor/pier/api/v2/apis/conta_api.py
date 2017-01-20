@@ -707,7 +707,7 @@ class ContaApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def transacoes_using_get(self, **kwargs):
+    def transacoes_using_get(self, id, **kwargs):
         """
         Permite listar uma linha do tempo com os eventos da conta
         Esta opera\u00C3\u00A7\u00C3\u00A3o tem como objetivo permitir a listagem, em formato de timeline, dos eventos vinculados a uma detemrinada conta. Transa\u00C3\u00A7\u00C3\u00B5es, fechamento da fatura, pagamentos, gera\u00C3\u00A7\u00C3\u00A3o de cart\u00C3\u00B5es e altera\u00C3\u00A7\u00C3\u00A3o de limite s\u00C3\u00A3o exemplos de eventos contemplados por esta funcionalidade. Neste m\u00C3\u00A9todo, as opera\u00C3\u00A7\u00C3\u00B5es s\u00C3\u00A3o ordenadas de forma decrescente.
@@ -718,19 +718,19 @@ class ContaApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.transacoes_using_get(callback=callback_function)
+        >>> thread = api.transacoes_using_get(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
+        :param int id: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da conta (id). (required)
         :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
         :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 100, Max = 100)
-        :param int id_conta: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da conta (id).
         :return: PageTransacaoResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['page', 'limit', 'id_conta']
+        all_params = ['id', 'page', 'limit']
         all_params.append('callback')
 
         params = locals()
@@ -743,17 +743,20 @@ class ContaApi(object):
             params[key] = val
         del params['kwargs']
 
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `transacoes_using_get`")
 
         resource_path = '/api/contas/{id}/timeline'.replace('{format}', 'json')
         path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
 
         query_params = {}
         if 'page' in params:
             query_params['page'] = params['page']
         if 'limit' in params:
             query_params['limit'] = params['limit']
-        if 'id_conta' in params:
-            query_params['idConta'] = params['id_conta']
 
         header_params = {}
 
