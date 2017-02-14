@@ -43,7 +43,6 @@ class Portador(object):
             'id_parentesco': 'int',
             'tipo_portador': 'str',
             'nome_impresso': 'str',
-            'id_imagem': 'int',
             'id_tipo_cartao': 'int',
             'flag_ativo': 'int',
             'data_cadastro_portador': 'datetime',
@@ -57,7 +56,6 @@ class Portador(object):
             'id_parentesco': 'idParentesco',
             'tipo_portador': 'tipoPortador',
             'nome_impresso': 'nomeImpresso',
-            'id_imagem': 'idImagem',
             'id_tipo_cartao': 'idTipoCartao',
             'flag_ativo': 'flagAtivo',
             'data_cadastro_portador': 'dataCadastroPortador',
@@ -70,7 +68,6 @@ class Portador(object):
         self._id_parentesco = None
         self._tipo_portador = None
         self._nome_impresso = None
-        self._id_imagem = None
         self._id_tipo_cartao = None
         self._flag_ativo = None
         self._data_cadastro_portador = None
@@ -207,28 +204,6 @@ class Portador(object):
         :type: str
         """
         self._nome_impresso = nome_impresso
-
-    @property
-    def id_imagem(self):
-        """
-        Gets the id_imagem of this Portador.
-        Apresenta o c\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da imagem do cart\u00C3\u00A3o.
-
-        :return: The id_imagem of this Portador.
-        :rtype: int
-        """
-        return self._id_imagem
-
-    @id_imagem.setter
-    def id_imagem(self, id_imagem):
-        """
-        Sets the id_imagem of this Portador.
-        Apresenta o c\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da imagem do cart\u00C3\u00A3o.
-
-        :param id_imagem: The id_imagem of this Portador.
-        :type: int
-        """
-        self._id_imagem = id_imagem
 
     @property
     def id_tipo_cartao(self):

@@ -37,20 +37,57 @@ class ValidaCartao(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
+            'id_status_cartao': 'int',
             'status_cartao': 'str',
+            'id_status_conta': 'int',
             'status_conta': 'str',
+            'id_conta': 'int',
+            'numero_agencia': 'int',
+            'numero_conta_corrente': 'str',
             'criptograma_resposta': 'str'
         }
 
         self.attribute_map = {
+            'id_status_cartao': 'idStatusCartao',
             'status_cartao': 'statusCartao',
+            'id_status_conta': 'idStatusConta',
             'status_conta': 'statusConta',
+            'id_conta': 'idConta',
+            'numero_agencia': 'numeroAgencia',
+            'numero_conta_corrente': 'numeroContaCorrente',
             'criptograma_resposta': 'criptogramaResposta'
         }
 
+        self._id_status_cartao = None
         self._status_cartao = None
+        self._id_status_conta = None
         self._status_conta = None
+        self._id_conta = None
+        self._numero_agencia = None
+        self._numero_conta_corrente = None
         self._criptograma_resposta = None
+
+    @property
+    def id_status_cartao(self):
+        """
+        Gets the id_status_cartao of this ValidaCartao.
+        Descri\u00C3\u00A7\u00C3\u00A3o do status do cart\u00C3\u00A3o
+
+        :return: The id_status_cartao of this ValidaCartao.
+        :rtype: int
+        """
+        return self._id_status_cartao
+
+    @id_status_cartao.setter
+    def id_status_cartao(self, id_status_cartao):
+        """
+        Sets the id_status_cartao of this ValidaCartao.
+        Descri\u00C3\u00A7\u00C3\u00A3o do status do cart\u00C3\u00A3o
+
+        :param id_status_cartao: The id_status_cartao of this ValidaCartao.
+        :type: int
+        """
+        self._id_status_cartao = id_status_cartao
 
     @property
     def status_cartao(self):
@@ -75,6 +112,28 @@ class ValidaCartao(object):
         self._status_cartao = status_cartao
 
     @property
+    def id_status_conta(self):
+        """
+        Gets the id_status_conta of this ValidaCartao.
+        Descri\u00C3\u00A7\u00C3\u00A3o do status da conta
+
+        :return: The id_status_conta of this ValidaCartao.
+        :rtype: int
+        """
+        return self._id_status_conta
+
+    @id_status_conta.setter
+    def id_status_conta(self, id_status_conta):
+        """
+        Sets the id_status_conta of this ValidaCartao.
+        Descri\u00C3\u00A7\u00C3\u00A3o do status da conta
+
+        :param id_status_conta: The id_status_conta of this ValidaCartao.
+        :type: int
+        """
+        self._id_status_conta = id_status_conta
+
+    @property
     def status_conta(self):
         """
         Gets the status_conta of this ValidaCartao.
@@ -95,6 +154,72 @@ class ValidaCartao(object):
         :type: str
         """
         self._status_conta = status_conta
+
+    @property
+    def id_conta(self):
+        """
+        Gets the id_conta of this ValidaCartao.
+        C\u00C3\u00B3digo identificador da conta.
+
+        :return: The id_conta of this ValidaCartao.
+        :rtype: int
+        """
+        return self._id_conta
+
+    @id_conta.setter
+    def id_conta(self, id_conta):
+        """
+        Sets the id_conta of this ValidaCartao.
+        C\u00C3\u00B3digo identificador da conta.
+
+        :param id_conta: The id_conta of this ValidaCartao.
+        :type: int
+        """
+        self._id_conta = id_conta
+
+    @property
+    def numero_agencia(self):
+        """
+        Gets the numero_agencia of this ValidaCartao.
+        N\u00C3\u00BAmero da ag\u00C3\u00AAncia.
+
+        :return: The numero_agencia of this ValidaCartao.
+        :rtype: int
+        """
+        return self._numero_agencia
+
+    @numero_agencia.setter
+    def numero_agencia(self, numero_agencia):
+        """
+        Sets the numero_agencia of this ValidaCartao.
+        N\u00C3\u00BAmero da ag\u00C3\u00AAncia.
+
+        :param numero_agencia: The numero_agencia of this ValidaCartao.
+        :type: int
+        """
+        self._numero_agencia = numero_agencia
+
+    @property
+    def numero_conta_corrente(self):
+        """
+        Gets the numero_conta_corrente of this ValidaCartao.
+        N\u00C3\u00BAmero da conta corrente.
+
+        :return: The numero_conta_corrente of this ValidaCartao.
+        :rtype: str
+        """
+        return self._numero_conta_corrente
+
+    @numero_conta_corrente.setter
+    def numero_conta_corrente(self, numero_conta_corrente):
+        """
+        Sets the numero_conta_corrente of this ValidaCartao.
+        N\u00C3\u00BAmero da conta corrente.
+
+        :param numero_conta_corrente: The numero_conta_corrente of this ValidaCartao.
+        :type: str
+        """
+        self._numero_conta_corrente = numero_conta_corrente
 
     @property
     def criptograma_resposta(self):

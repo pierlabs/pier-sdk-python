@@ -45,7 +45,7 @@ class NotificacoesApi(object):
                 config.api_client = ApiClient()
             self.api_client = config.api_client
 
-    def atualizar_sms_using_put(self, seu_num, status, data, texto_status, operadora, **kwargs):
+    def atualizar_sms_using_post(self, nsu, status, data, texto_status, operadora, **kwargs):
         """
         Atualizar SMS
         Esse recurso permite atualizar o status do SMS do emissor
@@ -56,11 +56,11 @@ class NotificacoesApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.atualizar_sms_using_put(seu_num, status, data, texto_status, operadora, callback=callback_function)
+        >>> thread = api.atualizar_sms_using_post(nsu, status, data, texto_status, operadora, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param str seu_num: Seu n\u00C3\u00BAmero (required)
+        :param str nsu: Seu n\u00C3\u00BAmero (required)
         :param str status: Status (required)
         :param str data: Data (required)
         :param str texto_status: TextoStatus (required)
@@ -70,7 +70,7 @@ class NotificacoesApi(object):
                  returns the request thread.
         """
 
-        all_params = ['seu_num', 'status', 'data', 'texto_status', 'operadora']
+        all_params = ['nsu', 'status', 'data', 'texto_status', 'operadora']
         all_params.append('callback')
 
         params = locals()
@@ -78,41 +78,41 @@ class NotificacoesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method atualizar_sms_using_put" % key
+                    " to method atualizar_sms_using_post" % key
                 )
             params[key] = val
         del params['kwargs']
 
-        # verify the required parameter 'seu_num' is set
-        if ('seu_num' not in params) or (params['seu_num'] is None):
-            raise ValueError("Missing the required parameter `seu_num` when calling `atualizar_sms_using_put`")
+        # verify the required parameter 'nsu' is set
+        if ('nsu' not in params) or (params['nsu'] is None):
+            raise ValueError("Missing the required parameter `nsu` when calling `atualizar_sms_using_post`")
         # verify the required parameter 'status' is set
         if ('status' not in params) or (params['status'] is None):
-            raise ValueError("Missing the required parameter `status` when calling `atualizar_sms_using_put`")
+            raise ValueError("Missing the required parameter `status` when calling `atualizar_sms_using_post`")
         # verify the required parameter 'data' is set
         if ('data' not in params) or (params['data'] is None):
-            raise ValueError("Missing the required parameter `data` when calling `atualizar_sms_using_put`")
+            raise ValueError("Missing the required parameter `data` when calling `atualizar_sms_using_post`")
         # verify the required parameter 'texto_status' is set
         if ('texto_status' not in params) or (params['texto_status'] is None):
-            raise ValueError("Missing the required parameter `texto_status` when calling `atualizar_sms_using_put`")
+            raise ValueError("Missing the required parameter `texto_status` when calling `atualizar_sms_using_post`")
         # verify the required parameter 'operadora' is set
         if ('operadora' not in params) or (params['operadora'] is None):
-            raise ValueError("Missing the required parameter `operadora` when calling `atualizar_sms_using_put`")
+            raise ValueError("Missing the required parameter `operadora` when calling `atualizar_sms_using_post`")
 
         resource_path = '/api/notificacoes/sms/atualizar-status'.replace('{format}', 'json')
         path_params = {}
 
         query_params = {}
-        if 'seu_num' in params:
-            query_params['SeuNum'] = params['seu_num']
+        if 'nsu' in params:
+            query_params['nsu'] = params['nsu']
         if 'status' in params:
-            query_params['Status'] = params['status']
+            query_params['status'] = params['status']
         if 'data' in params:
-            query_params['Data'] = params['data']
+            query_params['data'] = params['data']
         if 'texto_status' in params:
-            query_params['TextoStatus'] = params['texto_status']
+            query_params['texto_status'] = params['texto_status']
         if 'operadora' in params:
-            query_params['Operadora'] = params['operadora']
+            query_params['operadora'] = params['operadora']
 
         header_params = {}
 
@@ -134,7 +134,7 @@ class NotificacoesApi(object):
         # Authentication setting
         auth_settings = ['access_token']
 
-        response = self.api_client.call_api(resource_path, 'PUT',
+        response = self.api_client.call_api(resource_path, 'POST',
                                             path_params,
                                             query_params,
                                             header_params,
@@ -146,10 +146,10 @@ class NotificacoesApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def responder_sms_using_put(self, seunum, data, texto_sms_mo, **kwargs):
+    def limpar_acesso_tww_using_get(self, **kwargs):
         """
-        Responder SMS
-        Esse recurso permite atualizar a resposta do SMS, fornecida pedo usu\u00C3\u00A1rio
+        Limpar Acessos
+        Esse recurso permite limpar a lista de emissores que possuem acesso a envio de SMS pela TWW.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -157,19 +157,16 @@ class NotificacoesApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.responder_sms_using_put(seunum, data, texto_sms_mo, callback=callback_function)
+        >>> thread = api.limpar_acesso_tww_using_get(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param str seunum: Seu n\u00C3\u00BAmero (required)
-        :param str data: Data (required)
-        :param str texto_sms_mo: TextoStatus (required)
-        :return: SMS
+        :return: str
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['seunum', 'data', 'texto_sms_mo']
+        all_params = []
         all_params.append('callback')
 
         params = locals()
@@ -177,31 +174,16 @@ class NotificacoesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method responder_sms_using_put" % key
+                    " to method limpar_acesso_tww_using_get" % key
                 )
             params[key] = val
         del params['kwargs']
 
-        # verify the required parameter 'seunum' is set
-        if ('seunum' not in params) or (params['seunum'] is None):
-            raise ValueError("Missing the required parameter `seunum` when calling `responder_sms_using_put`")
-        # verify the required parameter 'data' is set
-        if ('data' not in params) or (params['data'] is None):
-            raise ValueError("Missing the required parameter `data` when calling `responder_sms_using_put`")
-        # verify the required parameter 'texto_sms_mo' is set
-        if ('texto_sms_mo' not in params) or (params['texto_sms_mo'] is None):
-            raise ValueError("Missing the required parameter `texto_sms_mo` when calling `responder_sms_using_put`")
 
-        resource_path = '/api/notificacoes/sms/responder'.replace('{format}', 'json')
+        resource_path = '/api/notificacoes/sms/limpar'.replace('{format}', 'json')
         path_params = {}
 
         query_params = {}
-        if 'seunum' in params:
-            query_params['Seunum'] = params['seunum']
-        if 'data' in params:
-            query_params['Data'] = params['data']
-        if 'texto_sms_mo' in params:
-            query_params['TextoSmsMo'] = params['texto_sms_mo']
 
         header_params = {}
 
@@ -223,7 +205,280 @@ class NotificacoesApi(object):
         # Authentication setting
         auth_settings = ['access_token']
 
-        response = self.api_client.call_api(resource_path, 'PUT',
+        response = self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='str',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
+    def listar_push_using_get(self, **kwargs):
+        """
+        Listar Push
+        Esse recurso permite listar os Pushes do emissor
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.listar_push_using_get(callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
+        :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 100, Max = 100)
+        :param date data_envio: Apresenta a data e em que o registro foi enviado para o dispositivo.
+        :param str evento: Nome do evento da notifica\u00C3\u00A7\u00C3\u00A3o
+        :param str status: Status de envio da notifica\u00C3\u00A7\u00C3\u00A3o
+        :param str plataforma: Plataforma de Push notifications.
+        :param str protocolo: N\u00C3\u00BAmero do protocolo de envio de notifica\u00C3\u00A7\u00C3\u00B5es
+        :return: PagePush
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['page', 'limit', 'data_envio', 'evento', 'status', 'plataforma', 'protocolo']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method listar_push_using_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+
+        resource_path = '/api/notificacoes/push'.replace('{format}', 'json')
+        path_params = {}
+
+        query_params = {}
+        if 'page' in params:
+            query_params['page'] = params['page']
+        if 'limit' in params:
+            query_params['limit'] = params['limit']
+        if 'data_envio' in params:
+            query_params['dataEnvio'] = params['data_envio']
+        if 'evento' in params:
+            query_params['evento'] = params['evento']
+        if 'status' in params:
+            query_params['status'] = params['status']
+        if 'plataforma' in params:
+            query_params['plataforma'] = params['plataforma']
+        if 'protocolo' in params:
+            query_params['protocolo'] = params['protocolo']
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        response = self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='PagePush',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
+    def listar_sms_using_get(self, **kwargs):
+        """
+        Listar SMS
+        Esse recurso permite listar os SMS do emissor
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.listar_sms_using_get(callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
+        :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 100, Max = 100)
+        :param datetime data_inclusao: Apresenta a data e em que o registro foi inclu\u00C3\u00ADdo na base para ser enviado
+        :param str evento: Nome do evento da notifica\u00C3\u00A7\u00C3\u00A3o
+        :param str status: Status de envio da notifica\u00C3\u00A7\u00C3\u00A3o
+        :param str operadora: Nome da operadora a qual a notifica\u00C3\u00A7\u00C3\u00A3o foi enviada.
+        :param str protocolo: N\u00C3\u00BAmero do protocolo de envio de notifica\u00C3\u00A7\u00C3\u00B5es
+        :return: PageSMS
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['page', 'limit', 'data_inclusao', 'evento', 'status', 'operadora', 'protocolo']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method listar_sms_using_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+
+        resource_path = '/api/notificacoes/sms'.replace('{format}', 'json')
+        path_params = {}
+
+        query_params = {}
+        if 'page' in params:
+            query_params['page'] = params['page']
+        if 'limit' in params:
+            query_params['limit'] = params['limit']
+        if 'data_inclusao' in params:
+            query_params['dataInclusao'] = params['data_inclusao']
+        if 'evento' in params:
+            query_params['evento'] = params['evento']
+        if 'status' in params:
+            query_params['status'] = params['status']
+        if 'operadora' in params:
+            query_params['operadora'] = params['operadora']
+        if 'protocolo' in params:
+            query_params['protocolo'] = params['protocolo']
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        response = self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='PageSMS',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
+    def responder_sms_using_post(self, nsu, data, resposta, **kwargs):
+        """
+        Responder SMS
+        Esse recurso permite atualizar a resposta do SMS, fornecida pedo usu\u00C3\u00A1rio
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.responder_sms_using_post(nsu, data, resposta, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str nsu: Seu n\u00C3\u00BAmero (required)
+        :param str data: Data (required)
+        :param str resposta: TextoStatus (required)
+        :return: SMS
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['nsu', 'data', 'resposta']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method responder_sms_using_post" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        # verify the required parameter 'nsu' is set
+        if ('nsu' not in params) or (params['nsu'] is None):
+            raise ValueError("Missing the required parameter `nsu` when calling `responder_sms_using_post`")
+        # verify the required parameter 'data' is set
+        if ('data' not in params) or (params['data'] is None):
+            raise ValueError("Missing the required parameter `data` when calling `responder_sms_using_post`")
+        # verify the required parameter 'resposta' is set
+        if ('resposta' not in params) or (params['resposta'] is None):
+            raise ValueError("Missing the required parameter `resposta` when calling `responder_sms_using_post`")
+
+        resource_path = '/api/notificacoes/sms/responder'.replace('{format}', 'json')
+        path_params = {}
+
+        query_params = {}
+        if 'nsu' in params:
+            query_params['nsu'] = params['nsu']
+        if 'data' in params:
+            query_params['data'] = params['data']
+        if 'resposta' in params:
+            query_params['resposta'] = params['resposta']
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        response = self.api_client.call_api(resource_path, 'POST',
                                             path_params,
                                             query_params,
                                             header_params,
@@ -231,6 +486,314 @@ class NotificacoesApi(object):
                                             post_params=form_params,
                                             files=local_var_files,
                                             response_type='SMS',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
+    def salvar_push_fcm_using_post(self, push_persists, **kwargs):
+        """
+        Enviar Push FCM
+        Esse recurso permite enviar Push para um determinado dipositivo movel atrav\u00C3\u00A9s da plataforma FCM (Firebase Cloud Messaging).
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.salvar_push_fcm_using_post(push_persists, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param list[PushFCMEGCM] push_persists: pushPersists (required)
+        :return: NotificacaoSMSResponse
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['push_persists']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method salvar_push_fcm_using_post" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        # verify the required parameter 'push_persists' is set
+        if ('push_persists' not in params) or (params['push_persists'] is None):
+            raise ValueError("Missing the required parameter `push_persists` when calling `salvar_push_fcm_using_post`")
+
+        resource_path = '/api/notificacoes/push/fcm'.replace('{format}', 'json')
+        path_params = {}
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        if 'push_persists' in params:
+            body_params = params['push_persists']
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        response = self.api_client.call_api(resource_path, 'POST',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='NotificacaoSMSResponse',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
+    def salvar_push_gcm_using_post(self, push_persists, **kwargs):
+        """
+        Enviar Push GCM
+        Esse recurso permite enviar Push para um determinado dipositivo movel atrav\u00C3\u00A9s da plataforma GCM (Google Cloud Messaging).
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.salvar_push_gcm_using_post(push_persists, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param list[PushFCMEGCM] push_persists: pushPersists (required)
+        :return: NotificacaoSMSResponse
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['push_persists']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method salvar_push_gcm_using_post" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        # verify the required parameter 'push_persists' is set
+        if ('push_persists' not in params) or (params['push_persists'] is None):
+            raise ValueError("Missing the required parameter `push_persists` when calling `salvar_push_gcm_using_post`")
+
+        resource_path = '/api/notificacoes/push/gcm'.replace('{format}', 'json')
+        path_params = {}
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        if 'push_persists' in params:
+            body_params = params['push_persists']
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        response = self.api_client.call_api(resource_path, 'POST',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='NotificacaoSMSResponse',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
+    def salvar_push_using_post(self, push_persists, **kwargs):
+        """
+        Enviar Push APNS
+        Esse recurso permite enviar Push para um determinado dipositivo movel atrav\u00C3\u00A9s da plataforma APNS (Apple Push Notification Service).
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.salvar_push_using_post(push_persists, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param list[PushAPNS] push_persists: pushPersists (required)
+        :return: NotificacaoSMSResponse
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['push_persists']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method salvar_push_using_post" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        # verify the required parameter 'push_persists' is set
+        if ('push_persists' not in params) or (params['push_persists'] is None):
+            raise ValueError("Missing the required parameter `push_persists` when calling `salvar_push_using_post`")
+
+        resource_path = '/api/notificacoes/push/apns'.replace('{format}', 'json')
+        path_params = {}
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        if 'push_persists' in params:
+            body_params = params['push_persists']
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        response = self.api_client.call_api(resource_path, 'POST',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='NotificacaoSMSResponse',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
+    def salvar_sms_using_post(self, lista_sms, **kwargs):
+        """
+        Enviar SMS
+        Esse recurso permite enviar uma lista de SMS.
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.salvar_sms_using_post(lista_sms, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param list[NotificacaoSMSBody] lista_sms: listaSMS (required)
+        :return: NotificacaoSMSResponse
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['lista_sms']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method salvar_sms_using_post" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        # verify the required parameter 'lista_sms' is set
+        if ('lista_sms' not in params) or (params['lista_sms'] is None):
+            raise ValueError("Missing the required parameter `lista_sms` when calling `salvar_sms_using_post`")
+
+        resource_path = '/api/notificacoes/sms'.replace('{format}', 'json')
+        path_params = {}
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        if 'lista_sms' in params:
+            body_params = params['lista_sms']
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        response = self.api_client.call_api(resource_path, 'POST',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='NotificacaoSMSResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response

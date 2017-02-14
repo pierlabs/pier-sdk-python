@@ -354,7 +354,7 @@ class ContaApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get1(self, id, **kwargs):
+    def consultar_using_get2(self, id, **kwargs):
         """
         Apresenta dados de uma determinada conta
         Este m\u00C3\u00A9todo permite consultar dados de uma determinada conta a partir de seu codigo de identifica\u00C3\u00A7\u00C3\u00A3o (id).
@@ -365,7 +365,7 @@ class ContaApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get1(id, callback=callback_function)
+        >>> thread = api.consultar_using_get2(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -383,14 +383,14 @@ class ContaApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get1" % key
+                    " to method consultar_using_get2" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get1`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get2`")
 
         resource_path = '/api/contas/{id}'.replace('{format}', 'json')
         path_params = {}
@@ -434,7 +434,7 @@ class ContaApi(object):
     def gerar_cartao_using_post(self, id, id_pessoa, **kwargs):
         """
         Realiza a gera\u00C3\u00A7\u00C3\u00A3o de um novo cart\u00C3\u00A3o para impress\u00C3\u00A3o avulsa
-        
+        Este recurso permite que seja gerado um novo Cart\u00C3\u00A3o para um determinado Portador que esteja vinculado a uma Conta. Para isso, ser\u00C3\u00A1 preciso informar o c\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da Conta (id), o idPessoa do Portador e o idTipoPlastico do Cart\u00C3\u00A3o que dever\u00C3\u00A1 ser gerado para impress\u00C3\u00A3o. Esta funcionalidade poder\u00C3\u00A1 ser utilizada para realizar a impress\u00C3\u00A3o de cart\u00C3\u00B5es em Lojas, Quiosques, Escrit\u00C3\u00B3rios, Terminais de Auto Atendimento, ou outro local que o Emissor escolher, desde que se possua uma impressora de Cart\u00C3\u00B5es habilidade para o fazer, no local.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -448,12 +448,13 @@ class ContaApi(object):
             for asynchronous request. (optional)
         :param int id: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da conta (id). (required)
         :param int id_pessoa: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da pessoa (id). (required)
+        :param int id_tipo_plastico: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do TipoPlastico (id).
         :return: CartaoImpressao
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['id', 'id_pessoa']
+        all_params = ['id', 'id_pessoa', 'id_tipo_plastico']
         all_params.append('callback')
 
         params = locals()
@@ -481,6 +482,8 @@ class ContaApi(object):
             path_params['id_pessoa'] = params['id_pessoa']
 
         query_params = {}
+        if 'id_tipo_plastico' in params:
+            query_params['id_tipo_plastico'] = params['id_tipo_plastico']
 
         header_params = {}
 
@@ -533,7 +536,7 @@ class ContaApi(object):
         :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
         :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 100, Max = 100)
         :param date data_vencimento: Data de Vencimento da Fatura.
-        :return: Fatura
+        :return: FaturaResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -595,12 +598,12 @@ class ContaApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='Fatura',
+                                            response_type='FaturaResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get1(self, **kwargs):
+    def listar_using_get2(self, **kwargs):
         """
         Lista contas existentes na base de dados do Emissor
         Este recurso permite listar contas existentes na base de dados do Emissor.
@@ -611,7 +614,7 @@ class ContaApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get1(callback=callback_function)
+        >>> thread = api.listar_using_get2(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -640,7 +643,7 @@ class ContaApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get1" % key
+                    " to method listar_using_get2" % key
                 )
             params[key] = val
         del params['kwargs']
