@@ -23,6 +23,7 @@ from .origem_comercial import OrigemComercial
 from .page_cartoes import PageCartoes
 from .page_enderecos import PageEnderecos
 from .page_estagios_cartoes import PageEstagiosCartoes
+from .page_faturas import PageFaturas
 from .page_origens_comerciais import PageOrigensComerciais
 from .page_pessoas import PagePessoas
 from .page_portador import PagePortador
