@@ -46,7 +46,9 @@ class Conta(object):
             'melhor_dia_compra': 'int',
             'data_status_conta': 'datetime',
             'data_cadastro': 'datetime',
-            'data_ultima_alteracao_vencimento': 'datetime'
+            'data_ultima_alteracao_vencimento': 'datetime',
+            'numero_agencia': 'int',
+            'numero_conta_corrente': 'str'
         }
 
         self.attribute_map = {
@@ -59,7 +61,9 @@ class Conta(object):
             'melhor_dia_compra': 'melhorDiaCompra',
             'data_status_conta': 'dataStatusConta',
             'data_cadastro': 'dataCadastro',
-            'data_ultima_alteracao_vencimento': 'dataUltimaAlteracaoVencimento'
+            'data_ultima_alteracao_vencimento': 'dataUltimaAlteracaoVencimento',
+            'numero_agencia': 'numeroAgencia',
+            'numero_conta_corrente': 'numeroContaCorrente'
         }
 
         self._id = None
@@ -72,6 +76,8 @@ class Conta(object):
         self._data_status_conta = None
         self._data_cadastro = None
         self._data_ultima_alteracao_vencimento = None
+        self._numero_agencia = None
+        self._numero_conta_corrente = None
 
     @property
     def id(self):
@@ -292,6 +298,50 @@ class Conta(object):
         :type: datetime
         """
         self._data_ultima_alteracao_vencimento = data_ultima_alteracao_vencimento
+
+    @property
+    def numero_agencia(self):
+        """
+        Gets the numero_agencia of this Conta.
+        N\u00C3\u00BAmero da ag\u00C3\u00AAncia.
+
+        :return: The numero_agencia of this Conta.
+        :rtype: int
+        """
+        return self._numero_agencia
+
+    @numero_agencia.setter
+    def numero_agencia(self, numero_agencia):
+        """
+        Sets the numero_agencia of this Conta.
+        N\u00C3\u00BAmero da ag\u00C3\u00AAncia.
+
+        :param numero_agencia: The numero_agencia of this Conta.
+        :type: int
+        """
+        self._numero_agencia = numero_agencia
+
+    @property
+    def numero_conta_corrente(self):
+        """
+        Gets the numero_conta_corrente of this Conta.
+        N\u00C3\u00BAmero da conta corrente.
+
+        :return: The numero_conta_corrente of this Conta.
+        :rtype: str
+        """
+        return self._numero_conta_corrente
+
+    @numero_conta_corrente.setter
+    def numero_conta_corrente(self, numero_conta_corrente):
+        """
+        Sets the numero_conta_corrente of this Conta.
+        N\u00C3\u00BAmero da conta corrente.
+
+        :param numero_conta_corrente: The numero_conta_corrente of this Conta.
+        :type: str
+        """
+        self._numero_conta_corrente = numero_conta_corrente
 
     def to_dict(self):
         """

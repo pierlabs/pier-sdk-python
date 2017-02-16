@@ -144,7 +144,7 @@ class FraudesApi(object):
         :param int id_conta: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o de conta (id).
         :param str nome_atendente: Apresenta o nome do Atendente que registrou o Atendimento.
         :param datetime data_atendimento: Apresenta a data em que o Atendimento foi realizado.
-        :return: AtendimentoCliente
+        :return: PageAtendimentoClientes
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -209,7 +209,7 @@ class FraudesApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='AtendimentoCliente',
+                                            response_type='PageAtendimentoClientes',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response

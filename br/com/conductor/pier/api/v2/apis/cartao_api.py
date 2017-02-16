@@ -45,6 +45,89 @@ class CartaoApi(object):
                 config.api_client = ApiClient()
             self.api_client = config.api_client
 
+    def alterar_alterar_senha_using_put(self, id, senha, **kwargs):
+        """
+        Realiza a altera\u00C3\u00A7\u00C3\u00A3o da senha de um Cart\u00C3\u00A3o
+        Esta opera\u00C3\u00A7\u00C3\u00A3o tem como objetivo permitir que o portador de um determinado cart\u00C3\u00A3o possa definir uma senha a sua escolha.
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.alterar_alterar_senha_using_put(id, senha, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Cart\u00C3\u00A3o (id). (required)
+        :param str senha: Senha para ser cadastrada ou alterada. (required)
+        :return: str
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'senha']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method alterar_alterar_senha_using_put" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `alterar_alterar_senha_using_put`")
+        # verify the required parameter 'senha' is set
+        if ('senha' not in params) or (params['senha'] is None):
+            raise ValueError("Missing the required parameter `senha` when calling `alterar_alterar_senha_using_put`")
+
+        resource_path = '/api/cartoes/{id}/alterar-senha'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+
+        query_params = {}
+
+        header_params = {}
+        if 'senha' in params:
+            header_params['senha'] = params['senha']
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        response = self.api_client.call_api(resource_path, 'PUT',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='str',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
     def alterar_status_impressao_using_put(self, id, id_status_impressao, **kwargs):
         """
         Realiza a altera\u00C3\u00A7\u00C3\u00A3o do Status de Impress\u00C3\u00A3o do Cart\u00C3\u00A3o
@@ -300,9 +383,9 @@ class CartaoApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def cadastrar_alterar_senha_using_put(self, id, senha, **kwargs):
+    def cadastrar_alterar_senha_using_post(self, id, senha, **kwargs):
         """
-        Realiza o cadastro ou altera\u00C3\u00A7\u00C3\u00A3o da senha de um Cart\u00C3\u00A3o
+        Realiza o cadastro da senha de um Cart\u00C3\u00A3o
         Esta opera\u00C3\u00A7\u00C3\u00A3o tem como objetivo permitir que o portador de um determinado cart\u00C3\u00A3o possa definir uma senha a sua escolha.
 
         This method makes a synchronous HTTP request by default. To make an
@@ -311,7 +394,7 @@ class CartaoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.cadastrar_alterar_senha_using_put(id, senha, callback=callback_function)
+        >>> thread = api.cadastrar_alterar_senha_using_post(id, senha, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -330,19 +413,19 @@ class CartaoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method cadastrar_alterar_senha_using_put" % key
+                    " to method cadastrar_alterar_senha_using_post" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `cadastrar_alterar_senha_using_put`")
+            raise ValueError("Missing the required parameter `id` when calling `cadastrar_alterar_senha_using_post`")
         # verify the required parameter 'senha' is set
         if ('senha' not in params) or (params['senha'] is None):
-            raise ValueError("Missing the required parameter `senha` when calling `cadastrar_alterar_senha_using_put`")
+            raise ValueError("Missing the required parameter `senha` when calling `cadastrar_alterar_senha_using_post`")
 
-        resource_path = '/api/cartoes/{id}/alterar-senha'.replace('{format}', 'json')
+        resource_path = '/api/cartoes/{id}/cadastrar-senha'.replace('{format}', 'json')
         path_params = {}
         if 'id' in params:
             path_params['id'] = params['id']
@@ -371,7 +454,7 @@ class CartaoApi(object):
         # Authentication setting
         auth_settings = ['access_token']
 
-        response = self.api_client.call_api(resource_path, 'PUT',
+        response = self.api_client.call_api(resource_path, 'POST',
                                             path_params,
                                             query_params,
                                             header_params,

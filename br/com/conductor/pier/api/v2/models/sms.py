@@ -37,14 +37,18 @@ class SMS(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
+            'id': 'int',
             'nsu': 'int',
             'id_emissor': 'int',
             'evento': 'str',
             'status': 'str',
+            'descricao_status': 'str',
             'id_pessoa': 'int',
             'id_conta': 'int',
             'celular': 'str',
+            'operadora': 'str',
             'conteudo': 'str',
+            'resposta': 'str',
             'data_agendamento': 'datetime',
             'quantidade_tentativas_envio': 'int',
             'data_inclusao': 'datetime',
@@ -53,14 +57,18 @@ class SMS(object):
         }
 
         self.attribute_map = {
+            'id': 'id',
             'nsu': 'nsu',
             'id_emissor': 'idEmissor',
             'evento': 'evento',
             'status': 'status',
+            'descricao_status': 'descricaoStatus',
             'id_pessoa': 'idPessoa',
             'id_conta': 'idConta',
             'celular': 'celular',
+            'operadora': 'operadora',
             'conteudo': 'conteudo',
+            'resposta': 'resposta',
             'data_agendamento': 'dataAgendamento',
             'quantidade_tentativas_envio': 'quantidadeTentativasEnvio',
             'data_inclusao': 'dataInclusao',
@@ -68,19 +76,45 @@ class SMS(object):
             'protocolo': 'protocolo'
         }
 
+        self._id = None
         self._nsu = None
         self._id_emissor = None
         self._evento = None
         self._status = None
+        self._descricao_status = None
         self._id_pessoa = None
         self._id_conta = None
         self._celular = None
+        self._operadora = None
         self._conteudo = None
+        self._resposta = None
         self._data_agendamento = None
         self._quantidade_tentativas_envio = None
         self._data_inclusao = None
         self._data_alteracao_status = None
         self._protocolo = None
+
+    @property
+    def id(self):
+        """
+        Gets the id of this SMS.
+        C\u00C3\u00B3digo Identificador.
+
+        :return: The id of this SMS.
+        :rtype: int
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """
+        Sets the id of this SMS.
+        C\u00C3\u00B3digo Identificador.
+
+        :param id: The id of this SMS.
+        :type: int
+        """
+        self._id = id
 
     @property
     def nsu(self):
@@ -183,6 +217,28 @@ class SMS(object):
         self._status = status
 
     @property
+    def descricao_status(self):
+        """
+        Gets the descricao_status of this SMS.
+        Descri\u00C3\u00A7\u00C3\u00A3o do status de envio da notifica\u00C3\u00A7\u00C3\u00A3o
+
+        :return: The descricao_status of this SMS.
+        :rtype: str
+        """
+        return self._descricao_status
+
+    @descricao_status.setter
+    def descricao_status(self, descricao_status):
+        """
+        Sets the descricao_status of this SMS.
+        Descri\u00C3\u00A7\u00C3\u00A3o do status de envio da notifica\u00C3\u00A7\u00C3\u00A3o
+
+        :param descricao_status: The descricao_status of this SMS.
+        :type: str
+        """
+        self._descricao_status = descricao_status
+
+    @property
     def id_pessoa(self):
         """
         Gets the id_pessoa of this SMS.
@@ -249,6 +305,28 @@ class SMS(object):
         self._celular = celular
 
     @property
+    def operadora(self):
+        """
+        Gets the operadora of this SMS.
+        Apresenta a operadora do celular a ser eviado o SMS
+
+        :return: The operadora of this SMS.
+        :rtype: str
+        """
+        return self._operadora
+
+    @operadora.setter
+    def operadora(self, operadora):
+        """
+        Sets the operadora of this SMS.
+        Apresenta a operadora do celular a ser eviado o SMS
+
+        :param operadora: The operadora of this SMS.
+        :type: str
+        """
+        self._operadora = operadora
+
+    @property
     def conteudo(self):
         """
         Gets the conteudo of this SMS.
@@ -269,6 +347,28 @@ class SMS(object):
         :type: str
         """
         self._conteudo = conteudo
+
+    @property
+    def resposta(self):
+        """
+        Gets the resposta of this SMS.
+        Apresenta o texto da resposta da notifica\u00C3\u00A7\u00C3\u00A3o que foi enviada
+
+        :return: The resposta of this SMS.
+        :rtype: str
+        """
+        return self._resposta
+
+    @resposta.setter
+    def resposta(self, resposta):
+        """
+        Sets the resposta of this SMS.
+        Apresenta o texto da resposta da notifica\u00C3\u00A7\u00C3\u00A3o que foi enviada
+
+        :param resposta: The resposta of this SMS.
+        :type: str
+        """
+        self._resposta = resposta
 
     @property
     def data_agendamento(self):

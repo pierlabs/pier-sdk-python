@@ -45,7 +45,7 @@ class NotificacoesApi(object):
                 config.api_client = ApiClient()
             self.api_client = config.api_client
 
-    def atualizar_sms_using_post(self, nsu, status, data, texto_status, operadora, **kwargs):
+    def atualizar_sms_using_post(self, **kwargs):
         """
         Atualizar SMS
         Esse recurso permite atualizar o status do SMS do emissor
@@ -56,15 +56,15 @@ class NotificacoesApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.atualizar_sms_using_post(nsu, status, data, texto_status, operadora, callback=callback_function)
+        >>> thread = api.atualizar_sms_using_post(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param str nsu: Seu n\u00C3\u00BAmero (required)
-        :param str status: Status (required)
-        :param str data: Data (required)
-        :param str texto_status: TextoStatus (required)
-        :param str operadora: Operadora (required)
+        :param str nsu: Seu n\u00C3\u00BAmero
+        :param str status: Status
+        :param str data: Data
+        :param str texto_status: TextoStatus
+        :param str operadora: Operadora
         :return: SMS
                  If the method is called asynchronously,
                  returns the request thread.
@@ -83,21 +83,6 @@ class NotificacoesApi(object):
             params[key] = val
         del params['kwargs']
 
-        # verify the required parameter 'nsu' is set
-        if ('nsu' not in params) or (params['nsu'] is None):
-            raise ValueError("Missing the required parameter `nsu` when calling `atualizar_sms_using_post`")
-        # verify the required parameter 'status' is set
-        if ('status' not in params) or (params['status'] is None):
-            raise ValueError("Missing the required parameter `status` when calling `atualizar_sms_using_post`")
-        # verify the required parameter 'data' is set
-        if ('data' not in params) or (params['data'] is None):
-            raise ValueError("Missing the required parameter `data` when calling `atualizar_sms_using_post`")
-        # verify the required parameter 'texto_status' is set
-        if ('texto_status' not in params) or (params['texto_status'] is None):
-            raise ValueError("Missing the required parameter `texto_status` when calling `atualizar_sms_using_post`")
-        # verify the required parameter 'operadora' is set
-        if ('operadora' not in params) or (params['operadora'] is None):
-            raise ValueError("Missing the required parameter `operadora` when calling `atualizar_sms_using_post`")
 
         resource_path = '/api/notificacoes/sms/atualizar-status'.replace('{format}', 'json')
         path_params = {}
@@ -142,77 +127,6 @@ class NotificacoesApi(object):
                                             post_params=form_params,
                                             files=local_var_files,
                                             response_type='SMS',
-                                            auth_settings=auth_settings,
-                                            callback=params.get('callback'))
-        return response
-
-    def limpar_acesso_tww_using_get(self, **kwargs):
-        """
-        Limpar Acessos
-        Esse recurso permite limpar a lista de emissores que possuem acesso a envio de SMS pela TWW.
-
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
-        >>> thread = api.limpar_acesso_tww_using_get(callback=callback_function)
-
-        :param callback function: The callback function
-            for asynchronous request. (optional)
-        :return: str
-                 If the method is called asynchronously,
-                 returns the request thread.
-        """
-
-        all_params = []
-        all_params.append('callback')
-
-        params = locals()
-        for key, val in iteritems(params['kwargs']):
-            if key not in all_params:
-                raise TypeError(
-                    "Got an unexpected keyword argument '%s'"
-                    " to method limpar_acesso_tww_using_get" % key
-                )
-            params[key] = val
-        del params['kwargs']
-
-
-        resource_path = '/api/notificacoes/sms/limpar'.replace('{format}', 'json')
-        path_params = {}
-
-        query_params = {}
-
-        header_params = {}
-
-        form_params = []
-        local_var_files = {}
-
-        body_params = None
-
-        # HTTP header `Accept`
-        header_params['Accept'] = self.api_client.\
-            select_header_accept(['application/json'])
-        if not header_params['Accept']:
-            del header_params['Accept']
-
-        # HTTP header `Content-Type`
-        header_params['Content-Type'] = self.api_client.\
-            select_header_content_type(['application/json'])
-
-        # Authentication setting
-        auth_settings = ['access_token']
-
-        response = self.api_client.call_api(resource_path, 'GET',
-                                            path_params,
-                                            query_params,
-                                            header_params,
-                                            body=body_params,
-                                            post_params=form_params,
-                                            files=local_var_files,
-                                            response_type='str',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
@@ -401,7 +315,7 @@ class NotificacoesApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def responder_sms_using_post(self, nsu, data, resposta, **kwargs):
+    def responder_sms_using_post(self, **kwargs):
         """
         Responder SMS
         Esse recurso permite atualizar a resposta do SMS, fornecida pedo usu\u00C3\u00A1rio
@@ -412,13 +326,13 @@ class NotificacoesApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.responder_sms_using_post(nsu, data, resposta, callback=callback_function)
+        >>> thread = api.responder_sms_using_post(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param str nsu: Seu n\u00C3\u00BAmero (required)
-        :param str data: Data (required)
-        :param str resposta: TextoStatus (required)
+        :param str nsu: Seu n\u00C3\u00BAmero
+        :param str data: Data
+        :param str resposta: TextoStatus
         :return: SMS
                  If the method is called asynchronously,
                  returns the request thread.
@@ -437,15 +351,6 @@ class NotificacoesApi(object):
             params[key] = val
         del params['kwargs']
 
-        # verify the required parameter 'nsu' is set
-        if ('nsu' not in params) or (params['nsu'] is None):
-            raise ValueError("Missing the required parameter `nsu` when calling `responder_sms_using_post`")
-        # verify the required parameter 'data' is set
-        if ('data' not in params) or (params['data'] is None):
-            raise ValueError("Missing the required parameter `data` when calling `responder_sms_using_post`")
-        # verify the required parameter 'resposta' is set
-        if ('resposta' not in params) or (params['resposta'] is None):
-            raise ValueError("Missing the required parameter `resposta` when calling `responder_sms_using_post`")
 
         resource_path = '/api/notificacoes/sms/responder'.replace('{format}', 'json')
         path_params = {}

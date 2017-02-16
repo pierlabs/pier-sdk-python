@@ -20,6 +20,7 @@ from .models.notificacao_push_response import NotificacaoPushResponse
 from .models.notificacao_sms_body import NotificacaoSMSBody
 from .models.notificacao_sms_response import NotificacaoSMSResponse
 from .models.origem_comercial import OrigemComercial
+from .models.page_atendimento_clientes import PageAtendimentoClientes
 from .models.page_cartoes import PageCartoes
 from .models.page_enderecos import PageEnderecos
 from .models.page_estagios_cartoes import PageEstagiosCartoes
@@ -36,6 +37,7 @@ from .models.page_telefones import PageTelefones
 from .models.page_tipo_telefones import PageTipoTelefones
 from .models.page_tipos_endereco import PageTiposEndereco
 from .models.page_transacao_response import PageTransacaoResponse
+from .models.page_transferencias import PageTransferencias
 from .models.page_web_hooks import PageWebHooks
 from .models.pessoa import Pessoa
 from .models.portador import Portador
@@ -50,6 +52,7 @@ from .models.telefone import Telefone
 from .models.tipo_endereco import TipoEndereco
 from .models.tipo_telefone import TipoTelefone
 from .models.transacao_response import TransacaoResponse
+from .models.transferencia import Transferencia
 from .models.valida_cartao import ValidaCartao
 from .models.web_hook import WebHook
 
