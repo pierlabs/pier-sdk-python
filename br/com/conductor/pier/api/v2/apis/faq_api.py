@@ -47,8 +47,8 @@ class FAQApi(object):
 
     def adicionar_using_post(self, pergunta, resposta, **kwargs):
         """
-        Adiciona uma nova FAQ para um determinado Emissor.
-        
+        Adiciona uma nova FAQ
+        Adiciona uma nova FAQ
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -142,8 +142,8 @@ class FAQApi(object):
 
     def alterar_using_put2(self, id, pergunta, resposta, **kwargs):
         """
-        Altera os par\u00C3\u00A2metros de uma FAQ existente.
-        
+        Alterar FAQ
+        Alterar FAQ
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -243,8 +243,8 @@ class FAQApi(object):
 
     def consultar_using_get5(self, id, **kwargs):
         """
-        Consulta os detalhes de uma determinada FAQ relacionada a um Emissor.
-        
+        Consultar FAQ por id
+        Consulta os detalhes de uma determinada FAQ
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -320,8 +320,8 @@ class FAQApi(object):
 
     def listar_using_get5(self, **kwargs):
         """
-        Lista todas as FAQs de um determinado emissor.
-        
+        Lista FAQs
+        Lista todas as FAQs
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function

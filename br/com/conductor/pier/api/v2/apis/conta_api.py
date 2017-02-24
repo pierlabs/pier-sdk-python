@@ -943,8 +943,8 @@ class ContaApi(object):
 
     def listar_using_get15(self, id, **kwargs):
         """
-        Lista as transfer\u00C3\u00AAncias de cr\u00C3\u00A9dito realizadas pela conta
-        Este m\u00C3\u00A9todo permite que sejam listadas as transfer\u00C3\u00AAncias de cr\u00C3\u00A9dito realizadas pela conta existentes na base do emissor.
+        Lista as transfer\u00C3\u00AAncias realizadas pela conta
+        Este m\u00C3\u00A9todo permite que sejam listadas as transfer\u00C3\u00AAncias realizadas pela conta existentes na base do emissor.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function

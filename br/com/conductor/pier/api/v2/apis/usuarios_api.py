@@ -136,7 +136,7 @@ class UsuariosApi(object):
 
     def alterar_using_put6(self, id, update, **kwargs):
         """
-        Alterar os usu\u00C3\u00A1rios cadastrados na base do PIER
+        Alterar os usu\u00C3\u00A1rios cadastrados
         Este m\u00C3\u00A9todo realiza a altera\u00C3\u00A7\u00C3\u00A3o dos usu\u00C3\u00A1rios.
 
         This method makes a synchronous HTTP request by default. To make an
@@ -296,7 +296,7 @@ class UsuariosApi(object):
 
     def listar_using_get16(self, **kwargs):
         """
-        Lista os Usu\u00C3\u00A1rios cadastrados na base do PIER
+        Lista os Usu\u00C3\u00A1rios cadastrados
         Este m\u00C3\u00A9todo permite que sejam listados os usu\u00C3\u00A1rios existentes na base do PIER.
 
         This method makes a synchronous HTTP request by default. To make an
@@ -465,8 +465,8 @@ class UsuariosApi(object):
 
     def salvar_using_post6(self, persist, **kwargs):
         """
-        Cadastrar Usu\u00C3\u00A1rio na base do PIER
-        Esse recurso permite cadastrar usu\u00C3\u00A1rios na base do PIER.
+        Cadastrar Usu\u00C3\u00A1rio
+        Esse recurso permite cadastrar usu\u00C3\u00A1rios.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
