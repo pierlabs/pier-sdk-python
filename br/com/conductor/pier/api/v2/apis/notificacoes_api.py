@@ -149,7 +149,7 @@ class NotificacoesApi(object):
         :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
         :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 100, Max = 100)
         :param date data_envio: Apresenta a data e em que o registro foi enviado para o dispositivo.
-        :param str evento: Nome do evento da notifica\u00C3\u00A7\u00C3\u00A3o
+        :param str tipo_evento: Nome do tipoEvento da notifica\u00C3\u00A7\u00C3\u00A3o
         :param str status: Status de envio da notifica\u00C3\u00A7\u00C3\u00A3o
         :param str plataforma: Plataforma de Push notifications.
         :param str protocolo: N\u00C3\u00BAmero do protocolo de envio de notifica\u00C3\u00A7\u00C3\u00B5es
@@ -158,7 +158,7 @@ class NotificacoesApi(object):
                  returns the request thread.
         """
 
-        all_params = ['page', 'limit', 'data_envio', 'evento', 'status', 'plataforma', 'protocolo']
+        all_params = ['page', 'limit', 'data_envio', 'tipo_evento', 'status', 'plataforma', 'protocolo']
         all_params.append('callback')
 
         params = locals()
@@ -182,8 +182,8 @@ class NotificacoesApi(object):
             query_params['limit'] = params['limit']
         if 'data_envio' in params:
             query_params['dataEnvio'] = params['data_envio']
-        if 'evento' in params:
-            query_params['evento'] = params['evento']
+        if 'tipo_evento' in params:
+            query_params['tipoEvento'] = params['tipo_evento']
         if 'status' in params:
             query_params['status'] = params['status']
         if 'plataforma' in params:
@@ -241,7 +241,7 @@ class NotificacoesApi(object):
         :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
         :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 100, Max = 100)
         :param datetime data_inclusao: Apresenta a data e em que o registro foi inclu\u00C3\u00ADdo na base para ser enviado
-        :param str evento: Nome do evento da notifica\u00C3\u00A7\u00C3\u00A3o
+        :param str tipo_evento: Nome do tipoEvento da notifica\u00C3\u00A7\u00C3\u00A3o
         :param str status: Status de envio da notifica\u00C3\u00A7\u00C3\u00A3o
         :param str operadora: Nome da operadora a qual a notifica\u00C3\u00A7\u00C3\u00A3o foi enviada.
         :param str protocolo: N\u00C3\u00BAmero do protocolo de envio de notifica\u00C3\u00A7\u00C3\u00B5es
@@ -250,7 +250,7 @@ class NotificacoesApi(object):
                  returns the request thread.
         """
 
-        all_params = ['page', 'limit', 'data_inclusao', 'evento', 'status', 'operadora', 'protocolo']
+        all_params = ['page', 'limit', 'data_inclusao', 'tipo_evento', 'status', 'operadora', 'protocolo']
         all_params.append('callback')
 
         params = locals()
@@ -274,8 +274,8 @@ class NotificacoesApi(object):
             query_params['limit'] = params['limit']
         if 'data_inclusao' in params:
             query_params['dataInclusao'] = params['data_inclusao']
-        if 'evento' in params:
-            query_params['evento'] = params['evento']
+        if 'tipo_evento' in params:
+            query_params['tipoEvento'] = params['tipo_evento']
         if 'status' in params:
             query_params['status'] = params['status']
         if 'operadora' in params:

@@ -45,6 +45,101 @@ class TokenApi(object):
                 config.api_client = ApiClient()
             self.api_client = config.api_client
 
+    def alterar_using_put5(self, id, **kwargs):
+        """
+        Alterar token
+        Este recurso permite que seja modificado um token j\u00C3\u00A1 cadastrado
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.alterar_using_put5(id, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param int id: C\u00C3\u00B3digo identificador do token (required)
+        :param str token: Token
+        :param int base: C\u00C3\u00B3digo identificador da base
+        :param str owner: Owner do token
+        :param str status: Status do token
+        :param str criado_por: Descri\u00C3\u00A7\u00C3\u00A3o de quem criou o token
+        :param str alterado_por: Descri\u00C3\u00A7\u00C3\u00A3o de quem alterou o token
+        :return: Token
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'token', 'base', 'owner', 'status', 'criado_por', 'alterado_por']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method alterar_using_put5" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `alterar_using_put5`")
+
+        resource_path = '/api/tokens'.replace('{format}', 'json')
+        path_params = {}
+
+        query_params = {}
+        if 'id' in params:
+            query_params['id'] = params['id']
+        if 'token' in params:
+            query_params['token'] = params['token']
+        if 'base' in params:
+            query_params['base'] = params['base']
+        if 'owner' in params:
+            query_params['owner'] = params['owner']
+        if 'status' in params:
+            query_params['status'] = params['status']
+        if 'criado_por' in params:
+            query_params['criadoPor'] = params['criado_por']
+        if 'alterado_por' in params:
+            query_params['alteradoPor'] = params['alterado_por']
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        response = self.api_client.call_api(resource_path, 'PUT',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='Token',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
     def callback_using_post(self, body_access_token, **kwargs):
         """
         /api/tokens/callback
@@ -118,6 +213,276 @@ class TokenApi(object):
                                             post_params=form_params,
                                             files=local_var_files,
                                             response_type='BodyAccessToken',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
+    def consultar_using_get14(self, id, **kwargs):
+        """
+        Consultar token
+        Este recurso permite que seja consultado um token do emissor atrav\u00C3\u00A9s de um id especifico
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.consultar_using_get14(id, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do token (id). (required)
+        :return: Token
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method consultar_using_get14" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get14`")
+
+        resource_path = '/api/tokens/{id}'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        response = self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='Token',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
+    def listar_using_get14(self, **kwargs):
+        """
+        Listar tokens
+        Este recurso permite que sejam listados os tokens existentes
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.listar_using_get14(callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
+        :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 100, Max = 100)
+        :param int id: C\u00C3\u00B3digo identificador do token
+        :param str token: Token
+        :param int base: C\u00C3\u00B3digo identificador da base
+        :param str owner: Owner do token
+        :param str status: Status do token
+        :param str criado_por: Descri\u00C3\u00A7\u00C3\u00A3o de quem criou o token
+        :param datetime data_criacao: Data de cria\u00C3\u00A7\u00C3\u00A3o do token
+        :param str alterado_por: Descri\u00C3\u00A7\u00C3\u00A3o de quem alterou o token
+        :param datetime data_modificacao: Data de modifica\u00C3\u00A7\u00C3\u00A3o do token
+        :return: PageBases
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['page', 'limit', 'id', 'token', 'base', 'owner', 'status', 'criado_por', 'data_criacao', 'alterado_por', 'data_modificacao']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method listar_using_get14" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+
+        resource_path = '/api/tokens'.replace('{format}', 'json')
+        path_params = {}
+
+        query_params = {}
+        if 'page' in params:
+            query_params['page'] = params['page']
+        if 'limit' in params:
+            query_params['limit'] = params['limit']
+        if 'id' in params:
+            query_params['id'] = params['id']
+        if 'token' in params:
+            query_params['token'] = params['token']
+        if 'base' in params:
+            query_params['base'] = params['base']
+        if 'owner' in params:
+            query_params['owner'] = params['owner']
+        if 'status' in params:
+            query_params['status'] = params['status']
+        if 'criado_por' in params:
+            query_params['criadoPor'] = params['criado_por']
+        if 'data_criacao' in params:
+            query_params['dataCriacao'] = params['data_criacao']
+        if 'alterado_por' in params:
+            query_params['alteradoPor'] = params['alterado_por']
+        if 'data_modificacao' in params:
+            query_params['dataModificacao'] = params['data_modificacao']
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        response = self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='PageBases',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
+    def salvar_using_post5(self, **kwargs):
+        """
+        Salvar token
+        Este recurso permite que seja adicionado um novo token
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.salvar_using_post5(callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str token: Token
+        :param int base: C\u00C3\u00B3digo identificador da base
+        :param str owner: Owner do token
+        :param str status: Status do token
+        :param str criado_por: Descri\u00C3\u00A7\u00C3\u00A3o de quem criou o token
+        :param str alterado_por: Descri\u00C3\u00A7\u00C3\u00A3o de quem alterou o token
+        :return: Token
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['token', 'base', 'owner', 'status', 'criado_por', 'alterado_por']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method salvar_using_post5" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+
+        resource_path = '/api/tokens'.replace('{format}', 'json')
+        path_params = {}
+
+        query_params = {}
+        if 'token' in params:
+            query_params['token'] = params['token']
+        if 'base' in params:
+            query_params['base'] = params['base']
+        if 'owner' in params:
+            query_params['owner'] = params['owner']
+        if 'status' in params:
+            query_params['status'] = params['status']
+        if 'criado_por' in params:
+            query_params['criadoPor'] = params['criado_por']
+        if 'alterado_por' in params:
+            query_params['alteradoPor'] = params['alterado_por']
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        response = self.api_client.call_api(resource_path, 'POST',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='Token',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response

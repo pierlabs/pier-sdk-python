@@ -43,7 +43,7 @@ class NotificacaoSMSBody(object):
             'celular': 'str',
             'conteudo': 'str',
             'data_agendamento': 'datetime',
-            'evento': 'str'
+            'tipo_evento': 'str'
         }
 
         self.attribute_map = {
@@ -53,7 +53,7 @@ class NotificacaoSMSBody(object):
             'celular': 'celular',
             'conteudo': 'conteudo',
             'data_agendamento': 'dataAgendamento',
-            'evento': 'evento'
+            'tipo_evento': 'tipoEvento'
         }
 
         self._nsu = None
@@ -62,7 +62,7 @@ class NotificacaoSMSBody(object):
         self._celular = None
         self._conteudo = None
         self._data_agendamento = None
-        self._evento = None
+        self._tipo_evento = None
 
     @property
     def nsu(self):
@@ -197,32 +197,32 @@ class NotificacaoSMSBody(object):
         self._data_agendamento = data_agendamento
 
     @property
-    def evento(self):
+    def tipo_evento(self):
         """
-        Gets the evento of this NotificacaoSMSBody.
-        Apresenta o evento a qual pertence a notifica\u00C3\u00A7\u00C3\u00A3o
+        Gets the tipo_evento of this NotificacaoSMSBody.
+        Apresenta o tipoEvento a qual pertence a notifica\u00C3\u00A7\u00C3\u00A3o
 
-        :return: The evento of this NotificacaoSMSBody.
+        :return: The tipo_evento of this NotificacaoSMSBody.
         :rtype: str
         """
-        return self._evento
+        return self._tipo_evento
 
-    @evento.setter
-    def evento(self, evento):
+    @tipo_evento.setter
+    def tipo_evento(self, tipo_evento):
         """
-        Sets the evento of this NotificacaoSMSBody.
-        Apresenta o evento a qual pertence a notifica\u00C3\u00A7\u00C3\u00A3o
+        Sets the tipo_evento of this NotificacaoSMSBody.
+        Apresenta o tipoEvento a qual pertence a notifica\u00C3\u00A7\u00C3\u00A3o
 
-        :param evento: The evento of this NotificacaoSMSBody.
+        :param tipo_evento: The tipo_evento of this NotificacaoSMSBody.
         :type: str
         """
         allowed_values = ["RISCO_FRAUDE", "OUTROS"]
-        if evento not in allowed_values:
+        if tipo_evento not in allowed_values:
             raise ValueError(
-                "Invalid value for `evento`, must be one of {0}"
+                "Invalid value for `tipo_evento`, must be one of {0}"
                 .format(allowed_values)
             )
-        self._evento = evento
+        self._tipo_evento = tipo_evento
 
     def to_dict(self):
         """

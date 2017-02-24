@@ -40,7 +40,7 @@ class SMS(object):
             'id': 'int',
             'nsu': 'int',
             'id_emissor': 'int',
-            'evento': 'str',
+            'tipo_evento': 'str',
             'status': 'str',
             'descricao_status': 'str',
             'id_pessoa': 'int',
@@ -60,7 +60,7 @@ class SMS(object):
             'id': 'id',
             'nsu': 'nsu',
             'id_emissor': 'idEmissor',
-            'evento': 'evento',
+            'tipo_evento': 'tipoEvento',
             'status': 'status',
             'descricao_status': 'descricaoStatus',
             'id_pessoa': 'idPessoa',
@@ -79,7 +79,7 @@ class SMS(object):
         self._id = None
         self._nsu = None
         self._id_emissor = None
-        self._evento = None
+        self._tipo_evento = None
         self._status = None
         self._descricao_status = None
         self._id_pessoa = None
@@ -161,32 +161,32 @@ class SMS(object):
         self._id_emissor = id_emissor
 
     @property
-    def evento(self):
+    def tipo_evento(self):
         """
-        Gets the evento of this SMS.
-        Evento de notifica\u00C3\u00A7\u00C3\u00A3o
+        Gets the tipo_evento of this SMS.
+        TipoEvento de notifica\u00C3\u00A7\u00C3\u00A3o
 
-        :return: The evento of this SMS.
+        :return: The tipo_evento of this SMS.
         :rtype: str
         """
-        return self._evento
+        return self._tipo_evento
 
-    @evento.setter
-    def evento(self, evento):
+    @tipo_evento.setter
+    def tipo_evento(self, tipo_evento):
         """
-        Sets the evento of this SMS.
-        Evento de notifica\u00C3\u00A7\u00C3\u00A3o
+        Sets the tipo_evento of this SMS.
+        TipoEvento de notifica\u00C3\u00A7\u00C3\u00A3o
 
-        :param evento: The evento of this SMS.
+        :param tipo_evento: The tipo_evento of this SMS.
         :type: str
         """
         allowed_values = ["RISCO_FRAUDE", "OUTROS"]
-        if evento not in allowed_values:
+        if tipo_evento not in allowed_values:
             raise ValueError(
-                "Invalid value for `evento`, must be one of {0}"
+                "Invalid value for `tipo_evento`, must be one of {0}"
                 .format(allowed_values)
             )
-        self._evento = evento
+        self._tipo_evento = tipo_evento
 
     @property
     def status(self):

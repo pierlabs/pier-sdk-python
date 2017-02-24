@@ -38,20 +38,20 @@ class WebHook(object):
         """
         self.swagger_types = {
             'id': 'int',
-            'evento': 'str',
+            'tipo_evento': 'str',
             'metodo': 'str',
             'url': 'str'
         }
 
         self.attribute_map = {
             'id': 'id',
-            'evento': 'evento',
+            'tipo_evento': 'tipoEvento',
             'metodo': 'metodo',
             'url': 'url'
         }
 
         self._id = None
-        self._evento = None
+        self._tipo_evento = None
         self._metodo = None
         self._url = None
 
@@ -78,32 +78,32 @@ class WebHook(object):
         self._id = id
 
     @property
-    def evento(self):
+    def tipo_evento(self):
         """
-        Gets the evento of this WebHook.
-        Evento a ser chamado pelo WebHook
+        Gets the tipo_evento of this WebHook.
+        TipoEvento a ser chamado pelo WebHook
 
-        :return: The evento of this WebHook.
+        :return: The tipo_evento of this WebHook.
         :rtype: str
         """
-        return self._evento
+        return self._tipo_evento
 
-    @evento.setter
-    def evento(self, evento):
+    @tipo_evento.setter
+    def tipo_evento(self, tipo_evento):
         """
-        Sets the evento of this WebHook.
-        Evento a ser chamado pelo WebHook
+        Sets the tipo_evento of this WebHook.
+        TipoEvento a ser chamado pelo WebHook
 
-        :param evento: The evento of this WebHook.
+        :param tipo_evento: The tipo_evento of this WebHook.
         :type: str
         """
         allowed_values = ["RISCO_FRAUDE", "OUTROS"]
-        if evento not in allowed_values:
+        if tipo_evento not in allowed_values:
             raise ValueError(
-                "Invalid value for `evento`, must be one of {0}"
+                "Invalid value for `tipo_evento`, must be one of {0}"
                 .format(allowed_values)
             )
-        self._evento = evento
+        self._tipo_evento = tipo_evento
 
     @property
     def metodo(self):

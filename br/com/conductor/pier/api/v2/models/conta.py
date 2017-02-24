@@ -48,6 +48,7 @@ class Conta(object):
             'data_cadastro': 'datetime',
             'data_ultima_alteracao_vencimento': 'datetime',
             'numero_agencia': 'int',
+            'valor_renda': 'float',
             'numero_conta_corrente': 'str'
         }
 
@@ -63,6 +64,7 @@ class Conta(object):
             'data_cadastro': 'dataCadastro',
             'data_ultima_alteracao_vencimento': 'dataUltimaAlteracaoVencimento',
             'numero_agencia': 'numeroAgencia',
+            'valor_renda': 'valorRenda',
             'numero_conta_corrente': 'numeroContaCorrente'
         }
 
@@ -77,6 +79,7 @@ class Conta(object):
         self._data_cadastro = None
         self._data_ultima_alteracao_vencimento = None
         self._numero_agencia = None
+        self._valor_renda = None
         self._numero_conta_corrente = None
 
     @property
@@ -320,6 +323,28 @@ class Conta(object):
         :type: int
         """
         self._numero_agencia = numero_agencia
+
+    @property
+    def valor_renda(self):
+        """
+        Gets the valor_renda of this Conta.
+        Apresenta o valor da renda comprovada
+
+        :return: The valor_renda of this Conta.
+        :rtype: float
+        """
+        return self._valor_renda
+
+    @valor_renda.setter
+    def valor_renda(self, valor_renda):
+        """
+        Sets the valor_renda of this Conta.
+        Apresenta o valor da renda comprovada
+
+        :param valor_renda: The valor_renda of this Conta.
+        :type: float
+        """
+        self._valor_renda = valor_renda
 
     @property
     def numero_conta_corrente(self):

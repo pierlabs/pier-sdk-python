@@ -45,7 +45,7 @@ class CadastrosGeraisApi(object):
                 config.api_client = ApiClient()
             self.api_client = config.api_client
 
-    def alterar_using_put(self, id, **kwargs):
+    def alterar_using_put1(self, id, **kwargs):
         """
         Atualiza os dados de um determinado Endere\u00C3\u00A7o
         Este m\u00C3\u00A9todo permite que seja alterado na base do emissor um ou mais registros ligados a um determinado Endere\u00C3\u00A7o.
@@ -56,7 +56,7 @@ class CadastrosGeraisApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.alterar_using_put(id, callback=callback_function)
+        >>> thread = api.alterar_using_put1(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -85,14 +85,14 @@ class CadastrosGeraisApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method alterar_using_put" % key
+                    " to method alterar_using_put1" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `alterar_using_put`")
+            raise ValueError("Missing the required parameter `id` when calling `alterar_using_put1`")
 
         resource_path = '/api/enderecos'.replace('{format}', 'json')
         path_params = {}
@@ -155,7 +155,7 @@ class CadastrosGeraisApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def alterar_using_put1(self, id, nome, tipo, **kwargs):
+    def alterar_using_put3(self, id, nome, tipo, **kwargs):
         """
         Atualiza os dados de uma determinada Pessoa
         Este m\u00C3\u00A9todo permite que seja alterado na base do emissor um registro de determinada Pessoa.
@@ -166,7 +166,7 @@ class CadastrosGeraisApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.alterar_using_put1(id, nome, tipo, callback=callback_function)
+        >>> thread = api.alterar_using_put3(id, nome, tipo, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -190,20 +190,20 @@ class CadastrosGeraisApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method alterar_using_put1" % key
+                    " to method alterar_using_put3" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `alterar_using_put1`")
+            raise ValueError("Missing the required parameter `id` when calling `alterar_using_put3`")
         # verify the required parameter 'nome' is set
         if ('nome' not in params) or (params['nome'] is None):
-            raise ValueError("Missing the required parameter `nome` when calling `alterar_using_put1`")
+            raise ValueError("Missing the required parameter `nome` when calling `alterar_using_put3`")
         # verify the required parameter 'tipo' is set
         if ('tipo' not in params) or (params['tipo'] is None):
-            raise ValueError("Missing the required parameter `tipo` when calling `alterar_using_put1`")
+            raise ValueError("Missing the required parameter `tipo` when calling `alterar_using_put3`")
 
         resource_path = '/api/pessoas'.replace('{format}', 'json')
         path_params = {}
@@ -256,7 +256,7 @@ class CadastrosGeraisApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def alterar_using_put2(self, id, **kwargs):
+    def alterar_using_put4(self, id, **kwargs):
         """
         Realiza a altera\u00C3\u00A7\u00C3\u00A3o de um determinado Telefone
         Este m\u00C3\u00A9todo permite que seja alterado um determinado Telefone na base de dados do Emissor.
@@ -267,7 +267,7 @@ class CadastrosGeraisApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.alterar_using_put2(id, callback=callback_function)
+        >>> thread = api.alterar_using_put4(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -289,14 +289,14 @@ class CadastrosGeraisApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method alterar_using_put2" % key
+                    " to method alterar_using_put4" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `alterar_using_put2`")
+            raise ValueError("Missing the required parameter `id` when calling `alterar_using_put4`")
 
         resource_path = '/api/telefones'.replace('{format}', 'json')
         path_params = {}
@@ -499,161 +499,7 @@ class CadastrosGeraisApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get3(self, id, **kwargs):
-        """
-        Apresenta os dados de um determinado Endere\u00C3\u00A7o
-        Este m\u00C3\u00A9todo permite consultar um determinado Endere\u00C3\u00A7o a partir do seu c\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o (id).
-
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
-        >>> thread = api.consultar_using_get3(id, callback=callback_function)
-
-        :param callback function: The callback function
-            for asynchronous request. (optional)
-        :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Endere\u00C3\u00A7o (id). (required)
-        :return: Endereco
-                 If the method is called asynchronously,
-                 returns the request thread.
-        """
-
-        all_params = ['id']
-        all_params.append('callback')
-
-        params = locals()
-        for key, val in iteritems(params['kwargs']):
-            if key not in all_params:
-                raise TypeError(
-                    "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get3" % key
-                )
-            params[key] = val
-        del params['kwargs']
-
-        # verify the required parameter 'id' is set
-        if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get3`")
-
-        resource_path = '/api/enderecos/{id}'.replace('{format}', 'json')
-        path_params = {}
-        if 'id' in params:
-            path_params['id'] = params['id']
-
-        query_params = {}
-
-        header_params = {}
-
-        form_params = []
-        local_var_files = {}
-
-        body_params = None
-
-        # HTTP header `Accept`
-        header_params['Accept'] = self.api_client.\
-            select_header_accept(['application/json'])
-        if not header_params['Accept']:
-            del header_params['Accept']
-
-        # HTTP header `Content-Type`
-        header_params['Content-Type'] = self.api_client.\
-            select_header_content_type(['application/json'])
-
-        # Authentication setting
-        auth_settings = ['access_token']
-
-        response = self.api_client.call_api(resource_path, 'GET',
-                                            path_params,
-                                            query_params,
-                                            header_params,
-                                            body=body_params,
-                                            post_params=form_params,
-                                            files=local_var_files,
-                                            response_type='Endereco',
-                                            auth_settings=auth_settings,
-                                            callback=params.get('callback'))
-        return response
-
-    def consultar_using_get4(self, id, **kwargs):
-        """
-        Apresenta os dados de uma determinada Pessoa
-        Este m\u00C3\u00A9todo permite que sejam listadas as Pessoas existentes na base de dados do Emissor.
-
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
-        >>> thread = api.consultar_using_get4(id, callback=callback_function)
-
-        :param callback function: The callback function
-            for asynchronous request. (optional)
-        :param int id: ID da Pessoa (required)
-        :return: Pessoa
-                 If the method is called asynchronously,
-                 returns the request thread.
-        """
-
-        all_params = ['id']
-        all_params.append('callback')
-
-        params = locals()
-        for key, val in iteritems(params['kwargs']):
-            if key not in all_params:
-                raise TypeError(
-                    "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get4" % key
-                )
-            params[key] = val
-        del params['kwargs']
-
-        # verify the required parameter 'id' is set
-        if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get4`")
-
-        resource_path = '/api/pessoas/{id}'.replace('{format}', 'json')
-        path_params = {}
-        if 'id' in params:
-            path_params['id'] = params['id']
-
-        query_params = {}
-
-        header_params = {}
-
-        form_params = []
-        local_var_files = {}
-
-        body_params = None
-
-        # HTTP header `Accept`
-        header_params['Accept'] = self.api_client.\
-            select_header_accept(['application/json'])
-        if not header_params['Accept']:
-            del header_params['Accept']
-
-        # HTTP header `Content-Type`
-        header_params['Content-Type'] = self.api_client.\
-            select_header_content_type(['application/json'])
-
-        # Authentication setting
-        auth_settings = ['access_token']
-
-        response = self.api_client.call_api(resource_path, 'GET',
-                                            path_params,
-                                            query_params,
-                                            header_params,
-                                            body=body_params,
-                                            post_params=form_params,
-                                            files=local_var_files,
-                                            response_type='Pessoa',
-                                            auth_settings=auth_settings,
-                                            callback=params.get('callback'))
-        return response
-
-    def consultar_using_get7(self, id, **kwargs):
+    def consultar_using_get10(self, id, **kwargs):
         """
         Apresenta os dados de um determinado Telefone
         Este m\u00C3\u00A9todo permite consultar um determinado Telefone a partir do seu c\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o (id).
@@ -664,7 +510,7 @@ class CadastrosGeraisApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get7(id, callback=callback_function)
+        >>> thread = api.consultar_using_get10(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -682,14 +528,14 @@ class CadastrosGeraisApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get7" % key
+                    " to method consultar_using_get10" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get7`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get10`")
 
         resource_path = '/api/telefones/{id}'.replace('{format}', 'json')
         path_params = {}
@@ -730,7 +576,93 @@ class CadastrosGeraisApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get8(self, id, **kwargs):
+    def consultar_using_get11(self, **kwargs):
+        """
+        Lista os tipos de boletos do emissor 
+        Este recurso permite que sejam listados os tipos de boletos existentes na base de dados do emissor.
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.consultar_using_get11(callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
+        :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 100, Max = 100)
+        :param int id: C\u00C3\u00B3digo identificador do tipo de boleto.
+        :param str descricao: Descri\u00C3\u00A7\u00C3\u00A3o do tipo de boleto.
+        :param int banco: C\u00C3\u00B3digo identificador do banco.
+        :return: PageTipoBoleto
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['page', 'limit', 'id', 'descricao', 'banco']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method consultar_using_get11" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+
+        resource_path = '/api/tipos-boletos'.replace('{format}', 'json')
+        path_params = {}
+
+        query_params = {}
+        if 'page' in params:
+            query_params['page'] = params['page']
+        if 'limit' in params:
+            query_params['limit'] = params['limit']
+        if 'id' in params:
+            query_params['id'] = params['id']
+        if 'descricao' in params:
+            query_params['descricao'] = params['descricao']
+        if 'banco' in params:
+            query_params['banco'] = params['banco']
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        response = self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='PageTipoBoleto',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
+    def consultar_using_get12(self, id, **kwargs):
         """
         Apresenta os dados de um determinado Tipo de Endere\u00C3\u00A7o
         Este m\u00C3\u00A9todo permite consultar um determinado Tipo de Endere\u00C3\u00A7o a partir do seu c\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o (id).
@@ -741,7 +673,7 @@ class CadastrosGeraisApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get8(id, callback=callback_function)
+        >>> thread = api.consultar_using_get12(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -759,14 +691,14 @@ class CadastrosGeraisApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get8" % key
+                    " to method consultar_using_get12" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get8`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get12`")
 
         resource_path = '/api/tipos-enderecos/{id}'.replace('{format}', 'json')
         path_params = {}
@@ -807,7 +739,7 @@ class CadastrosGeraisApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get9(self, id, **kwargs):
+    def consultar_using_get13(self, id, **kwargs):
         """
         Apresenta os dados de um determinado Tipo de Telefone
         Este m\u00C3\u00A9todo permite consultar um determinado Tipo de Telefone a partir do seu c\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o (id).
@@ -818,7 +750,7 @@ class CadastrosGeraisApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get9(id, callback=callback_function)
+        >>> thread = api.consultar_using_get13(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -836,14 +768,14 @@ class CadastrosGeraisApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get9" % key
+                    " to method consultar_using_get13" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get9`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get13`")
 
         resource_path = '/api/tipos-telefones/{id}'.replace('{format}', 'json')
         path_params = {}
@@ -880,6 +812,160 @@ class CadastrosGeraisApi(object):
                                             post_params=form_params,
                                             files=local_var_files,
                                             response_type='TipoTelefone',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
+    def consultar_using_get4(self, id, **kwargs):
+        """
+        Apresenta os dados de um determinado Endere\u00C3\u00A7o
+        Este m\u00C3\u00A9todo permite consultar um determinado Endere\u00C3\u00A7o a partir do seu c\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o (id).
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.consultar_using_get4(id, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Endere\u00C3\u00A7o (id). (required)
+        :return: Endereco
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method consultar_using_get4" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get4`")
+
+        resource_path = '/api/enderecos/{id}'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        response = self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='Endereco',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
+    def consultar_using_get6(self, id, **kwargs):
+        """
+        Apresenta os dados de uma determinada Pessoa
+        Este m\u00C3\u00A9todo permite que sejam listadas as Pessoas existentes na base de dados do Emissor.
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.consultar_using_get6(id, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param int id: ID da Pessoa (required)
+        :return: Pessoa
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method consultar_using_get6" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get6`")
+
+        resource_path = '/api/pessoas/{id}'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        response = self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='Pessoa',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
@@ -1133,7 +1219,188 @@ class CadastrosGeraisApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get10(self, **kwargs):
+    def listar_using_get11(self, **kwargs):
+        """
+        Lista os Telefones cadastrados no Emissor
+        Este m\u00C3\u00A9todo permite que sejam listados os Telefones existentes na base de dados do Emissor.
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.listar_using_get11(callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
+        :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 100, Max = 100)
+        :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Telefone (id).
+        :param int id_tipo_telefone: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Tipo do Telefone (id).
+        :param int id_pessoa: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Pessoa (id) a qual o telefone pertence.
+        :param str ddd: C\u00C3\u00B3digo DDD do telefone (id).
+        :param str telefone: N\u00C3\u00BAmero do telefone.
+        :param str ramal: N\u00C3\u00BAmero do ramal.
+        :param int status: Apresenta o Status do Telefone, onde: '0': Inativo e '1': Ativo
+        :return: PageTelefones
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['page', 'limit', 'id', 'id_tipo_telefone', 'id_pessoa', 'ddd', 'telefone', 'ramal', 'status']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method listar_using_get11" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+
+        resource_path = '/api/telefones'.replace('{format}', 'json')
+        path_params = {}
+
+        query_params = {}
+        if 'page' in params:
+            query_params['page'] = params['page']
+        if 'limit' in params:
+            query_params['limit'] = params['limit']
+        if 'id' in params:
+            query_params['id'] = params['id']
+        if 'id_tipo_telefone' in params:
+            query_params['idTipoTelefone'] = params['id_tipo_telefone']
+        if 'id_pessoa' in params:
+            query_params['idPessoa'] = params['id_pessoa']
+        if 'ddd' in params:
+            query_params['ddd'] = params['ddd']
+        if 'telefone' in params:
+            query_params['telefone'] = params['telefone']
+        if 'ramal' in params:
+            query_params['ramal'] = params['ramal']
+        if 'status' in params:
+            query_params['status'] = params['status']
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        response = self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='PageTelefones',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
+    def listar_using_get12(self, **kwargs):
+        """
+        Lista as op\u00C3\u00B5es de Tipos de Endere\u00C3\u00A7os do Emissor 
+        Este m\u00C3\u00A9todo permite que sejam listados os Tipos de Endere\u00C3\u00A7os existentes na base de dados do Emissor.
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.listar_using_get12(callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
+        :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 100, Max = 100)
+        :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Tipo do Endere\u00C3\u00A7o (id)
+        :param str nome: Nome do Tipo do Endere\u00C3\u00A7o
+        :return: PageTiposEndereco
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['page', 'limit', 'id', 'nome']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method listar_using_get12" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+
+        resource_path = '/api/tipos-enderecos'.replace('{format}', 'json')
+        path_params = {}
+
+        query_params = {}
+        if 'page' in params:
+            query_params['page'] = params['page']
+        if 'limit' in params:
+            query_params['limit'] = params['limit']
+        if 'id' in params:
+            query_params['id'] = params['id']
+        if 'nome' in params:
+            query_params['nome'] = params['nome']
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        response = self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='PageTiposEndereco',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
+    def listar_using_get13(self, **kwargs):
         """
         Lista os Tipos de Telefones
         Este m\u00C3\u00A9todo permite que sejam listados os Tipos de Telefones existentes na base de dados do Emissor.
@@ -1144,7 +1411,7 @@ class CadastrosGeraisApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get10(callback=callback_function)
+        >>> thread = api.listar_using_get13(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -1165,7 +1432,7 @@ class CadastrosGeraisApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get10" % key
+                    " to method listar_using_get13" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -1216,7 +1483,7 @@ class CadastrosGeraisApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get3(self, **kwargs):
+    def listar_using_get4(self, **kwargs):
         """
         Lista os Endere\u00C3\u00A7os cadastrados para o Emissor
         Este m\u00C3\u00A9todo permite que sejam listados os Endere\u00C3\u00A7os existentes na base de dados do Emissor.
@@ -1227,7 +1494,7 @@ class CadastrosGeraisApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get3(callback=callback_function)
+        >>> thread = api.listar_using_get4(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -1260,7 +1527,7 @@ class CadastrosGeraisApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get3" % key
+                    " to method listar_using_get4" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -1335,7 +1602,7 @@ class CadastrosGeraisApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get4(self, **kwargs):
+    def listar_using_get6(self, **kwargs):
         """
         Lista as Pessoas cadastradas no Emissor
         Este m\u00C3\u00A9todo permite que sejam listadas as Pessoas existentes na base de dados do Emissor.
@@ -1346,7 +1613,7 @@ class CadastrosGeraisApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get4(callback=callback_function)
+        >>> thread = api.listar_using_get6(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -1372,7 +1639,7 @@ class CadastrosGeraisApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get4" % key
+                    " to method listar_using_get6" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -1433,7 +1700,7 @@ class CadastrosGeraisApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get5(self, **kwargs):
+    def listar_using_get7(self, **kwargs):
         """
         Lista os Portadores existentes
         Este m\u00C3\u00A9todo permite que sejam listados os portadores cadastrados na base do emissor.
@@ -1444,7 +1711,7 @@ class CadastrosGeraisApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get5(callback=callback_function)
+        >>> thread = api.listar_using_get7(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -1473,7 +1740,7 @@ class CadastrosGeraisApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get5" % key
+                    " to method listar_using_get7" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -1540,188 +1807,7 @@ class CadastrosGeraisApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get8(self, **kwargs):
-        """
-        Lista os Telefones cadastrados no Emissor
-        Este m\u00C3\u00A9todo permite que sejam listados os Telefones existentes na base de dados do Emissor.
-
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
-        >>> thread = api.listar_using_get8(callback=callback_function)
-
-        :param callback function: The callback function
-            for asynchronous request. (optional)
-        :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
-        :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 100, Max = 100)
-        :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Telefone (id).
-        :param int id_tipo_telefone: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Tipo do Telefone (id).
-        :param int id_pessoa: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Pessoa (id) a qual o telefone pertence.
-        :param str ddd: C\u00C3\u00B3digo DDD do telefone (id).
-        :param str telefone: N\u00C3\u00BAmero do telefone.
-        :param str ramal: N\u00C3\u00BAmero do ramal.
-        :param int status: Apresenta o Status do Telefone, onde: '0': Inativo e '1': Ativo
-        :return: PageTelefones
-                 If the method is called asynchronously,
-                 returns the request thread.
-        """
-
-        all_params = ['page', 'limit', 'id', 'id_tipo_telefone', 'id_pessoa', 'ddd', 'telefone', 'ramal', 'status']
-        all_params.append('callback')
-
-        params = locals()
-        for key, val in iteritems(params['kwargs']):
-            if key not in all_params:
-                raise TypeError(
-                    "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get8" % key
-                )
-            params[key] = val
-        del params['kwargs']
-
-
-        resource_path = '/api/telefones'.replace('{format}', 'json')
-        path_params = {}
-
-        query_params = {}
-        if 'page' in params:
-            query_params['page'] = params['page']
-        if 'limit' in params:
-            query_params['limit'] = params['limit']
-        if 'id' in params:
-            query_params['id'] = params['id']
-        if 'id_tipo_telefone' in params:
-            query_params['idTipoTelefone'] = params['id_tipo_telefone']
-        if 'id_pessoa' in params:
-            query_params['idPessoa'] = params['id_pessoa']
-        if 'ddd' in params:
-            query_params['ddd'] = params['ddd']
-        if 'telefone' in params:
-            query_params['telefone'] = params['telefone']
-        if 'ramal' in params:
-            query_params['ramal'] = params['ramal']
-        if 'status' in params:
-            query_params['status'] = params['status']
-
-        header_params = {}
-
-        form_params = []
-        local_var_files = {}
-
-        body_params = None
-
-        # HTTP header `Accept`
-        header_params['Accept'] = self.api_client.\
-            select_header_accept(['application/json'])
-        if not header_params['Accept']:
-            del header_params['Accept']
-
-        # HTTP header `Content-Type`
-        header_params['Content-Type'] = self.api_client.\
-            select_header_content_type(['application/json'])
-
-        # Authentication setting
-        auth_settings = ['access_token']
-
-        response = self.api_client.call_api(resource_path, 'GET',
-                                            path_params,
-                                            query_params,
-                                            header_params,
-                                            body=body_params,
-                                            post_params=form_params,
-                                            files=local_var_files,
-                                            response_type='PageTelefones',
-                                            auth_settings=auth_settings,
-                                            callback=params.get('callback'))
-        return response
-
-    def listar_using_get9(self, **kwargs):
-        """
-        Lista as op\u00C3\u00B5es de Tipos de Endere\u00C3\u00A7os do Emissor 
-        Este m\u00C3\u00A9todo permite que sejam listados os Tipos de Endere\u00C3\u00A7os existentes na base de dados do Emissor.
-
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
-        >>> thread = api.listar_using_get9(callback=callback_function)
-
-        :param callback function: The callback function
-            for asynchronous request. (optional)
-        :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
-        :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 100, Max = 100)
-        :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Tipo do Endere\u00C3\u00A7o (id)
-        :param str nome: Nome do Tipo do Endere\u00C3\u00A7o
-        :return: PageTiposEndereco
-                 If the method is called asynchronously,
-                 returns the request thread.
-        """
-
-        all_params = ['page', 'limit', 'id', 'nome']
-        all_params.append('callback')
-
-        params = locals()
-        for key, val in iteritems(params['kwargs']):
-            if key not in all_params:
-                raise TypeError(
-                    "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get9" % key
-                )
-            params[key] = val
-        del params['kwargs']
-
-
-        resource_path = '/api/tipos-enderecos'.replace('{format}', 'json')
-        path_params = {}
-
-        query_params = {}
-        if 'page' in params:
-            query_params['page'] = params['page']
-        if 'limit' in params:
-            query_params['limit'] = params['limit']
-        if 'id' in params:
-            query_params['id'] = params['id']
-        if 'nome' in params:
-            query_params['nome'] = params['nome']
-
-        header_params = {}
-
-        form_params = []
-        local_var_files = {}
-
-        body_params = None
-
-        # HTTP header `Accept`
-        header_params['Accept'] = self.api_client.\
-            select_header_accept(['application/json'])
-        if not header_params['Accept']:
-            del header_params['Accept']
-
-        # HTTP header `Content-Type`
-        header_params['Content-Type'] = self.api_client.\
-            select_header_content_type(['application/json'])
-
-        # Authentication setting
-        auth_settings = ['access_token']
-
-        response = self.api_client.call_api(resource_path, 'GET',
-                                            path_params,
-                                            query_params,
-                                            header_params,
-                                            body=body_params,
-                                            post_params=form_params,
-                                            files=local_var_files,
-                                            response_type='PageTiposEndereco',
-                                            auth_settings=auth_settings,
-                                            callback=params.get('callback'))
-        return response
-
-    def salvar_using_post1(self, **kwargs):
+    def salvar_using_post2(self, **kwargs):
         """
         Realiza o cadastro de um novo Endere\u00C3\u00A7o
         Este m\u00C3\u00A9todo permite que seja cadastrado um novo Endere\u00C3\u00A7o na base de dados do Emissor.
@@ -1732,7 +1818,7 @@ class CadastrosGeraisApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.salvar_using_post1(callback=callback_function)
+        >>> thread = api.salvar_using_post2(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -1760,7 +1846,7 @@ class CadastrosGeraisApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method salvar_using_post1" % key
+                    " to method salvar_using_post2" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -1825,7 +1911,7 @@ class CadastrosGeraisApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def salvar_using_post2(self, nome, tipo, **kwargs):
+    def salvar_using_post3(self, nome, tipo, **kwargs):
         """
         Realiza o cadastro de um nova Pessoa
         Este m\u00C3\u00A9todo permite que seja cadastrado uma nova Pessoa na base de dados do Emissor.
@@ -1836,7 +1922,7 @@ class CadastrosGeraisApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.salvar_using_post2(nome, tipo, callback=callback_function)
+        >>> thread = api.salvar_using_post3(nome, tipo, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -1859,17 +1945,17 @@ class CadastrosGeraisApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method salvar_using_post2" % key
+                    " to method salvar_using_post3" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'nome' is set
         if ('nome' not in params) or (params['nome'] is None):
-            raise ValueError("Missing the required parameter `nome` when calling `salvar_using_post2`")
+            raise ValueError("Missing the required parameter `nome` when calling `salvar_using_post3`")
         # verify the required parameter 'tipo' is set
         if ('tipo' not in params) or (params['tipo'] is None):
-            raise ValueError("Missing the required parameter `tipo` when calling `salvar_using_post2`")
+            raise ValueError("Missing the required parameter `tipo` when calling `salvar_using_post3`")
 
         resource_path = '/api/pessoas'.replace('{format}', 'json')
         path_params = {}
@@ -1920,7 +2006,7 @@ class CadastrosGeraisApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def salvar_using_post3(self, **kwargs):
+    def salvar_using_post4(self, **kwargs):
         """
         Realiza o cadastro de um novo Telefone
         Este m\u00C3\u00A9todo permite que seja cadastrado um novo Telefone na base de dados do Emissor.
@@ -1931,7 +2017,7 @@ class CadastrosGeraisApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.salvar_using_post3(callback=callback_function)
+        >>> thread = api.salvar_using_post4(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -1953,7 +2039,7 @@ class CadastrosGeraisApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method salvar_using_post3" % key
+                    " to method salvar_using_post4" % key
                 )
             params[key] = val
         del params['kwargs']

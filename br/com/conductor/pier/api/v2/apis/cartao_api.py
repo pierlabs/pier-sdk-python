@@ -620,7 +620,7 @@ class CartaoApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get1(self, id, **kwargs):
+    def consultar_using_get2(self, id, **kwargs):
         """
         Apresenta os dados de um determinado Cart\u00C3\u00A3o
         Este m\u00C3\u00A9todo permite consultar as informa\u00C3\u00A7\u00C3\u00B5es b\u00C3\u00A1sicas de um determinado Cart\u00C3\u00A3o a partir do seu c\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o (id).
@@ -631,7 +631,7 @@ class CartaoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get1(id, callback=callback_function)
+        >>> thread = api.consultar_using_get2(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -649,14 +649,14 @@ class CartaoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get1" % key
+                    " to method consultar_using_get2" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get1`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get2`")
 
         resource_path = '/api/cartoes/{id}'.replace('{format}', 'json')
         path_params = {}
@@ -964,7 +964,7 @@ class CartaoApi(object):
         :param int id_imagem: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Imagem (id).
         :param int id_endereco: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Endere\u00C3\u00A7o (id).
         :param int quantidade_cartoes: N\u00C3\u00BAmero de cart\u00C3\u00B5es existentes no Lote.
-        :param datetime data_cadastro: Data de Cadastro do Lote de Cart\u00C3\u00B5es N\u00C3\u00A3o Nominais.
+        :param date data_cadastro: Data de Cadastro do Lote de Cart\u00C3\u00B5es N\u00C3\u00A3o Nominais.
         :param str usuario_cadastro: Nome do Usu\u00C3\u00A1rio que criou o Lote.
         :param int status_processamento: Indica o Status de Processamento do Lote.
         :return: PageCartoes
@@ -1047,7 +1047,7 @@ class CartaoApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get1(self, **kwargs):
+    def listar_using_get2(self, **kwargs):
         """
         Lista os Cart\u00C3\u00B5es gerados pelo Emissor
         Este m\u00C3\u00A9todo permite que sejam listados os cart\u00C3\u00B5es existentes na base do emissor.
@@ -1058,7 +1058,7 @@ class CartaoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get1(callback=callback_function)
+        >>> thread = api.listar_using_get2(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -1095,7 +1095,7 @@ class CartaoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get1" % key
+                    " to method listar_using_get2" % key
                 )
             params[key] = val
         del params['kwargs']

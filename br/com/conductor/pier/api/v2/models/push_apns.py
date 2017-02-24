@@ -44,7 +44,7 @@ class PushAPNS(object):
             'senha': 'str',
             'titulo': 'str',
             'conteudo': 'str',
-            'evento': 'str',
+            'tipo_evento': 'str',
             'icone': 'str',
             'som': 'str'
         }
@@ -57,7 +57,7 @@ class PushAPNS(object):
             'senha': 'senha',
             'titulo': 'titulo',
             'conteudo': 'conteudo',
-            'evento': 'evento',
+            'tipo_evento': 'tipoEvento',
             'icone': 'icone',
             'som': 'som'
         }
@@ -69,7 +69,7 @@ class PushAPNS(object):
         self._senha = None
         self._titulo = None
         self._conteudo = None
-        self._evento = None
+        self._tipo_evento = None
         self._icone = None
         self._som = None
 
@@ -228,32 +228,32 @@ class PushAPNS(object):
         self._conteudo = conteudo
 
     @property
-    def evento(self):
+    def tipo_evento(self):
         """
-        Gets the evento of this PushAPNS.
-        Apresenta o evento a qual pertence a notifica\u00C3\u00A7\u00C3\u00A3o
+        Gets the tipo_evento of this PushAPNS.
+        Apresenta o tipoEvento a qual pertence a notifica\u00C3\u00A7\u00C3\u00A3o
 
-        :return: The evento of this PushAPNS.
+        :return: The tipo_evento of this PushAPNS.
         :rtype: str
         """
-        return self._evento
+        return self._tipo_evento
 
-    @evento.setter
-    def evento(self, evento):
+    @tipo_evento.setter
+    def tipo_evento(self, tipo_evento):
         """
-        Sets the evento of this PushAPNS.
-        Apresenta o evento a qual pertence a notifica\u00C3\u00A7\u00C3\u00A3o
+        Sets the tipo_evento of this PushAPNS.
+        Apresenta o tipoEvento a qual pertence a notifica\u00C3\u00A7\u00C3\u00A3o
 
-        :param evento: The evento of this PushAPNS.
+        :param tipo_evento: The tipo_evento of this PushAPNS.
         :type: str
         """
         allowed_values = ["RISCO_FRAUDE", "OUTROS"]
-        if evento not in allowed_values:
+        if tipo_evento not in allowed_values:
             raise ValueError(
-                "Invalid value for `evento`, must be one of {0}"
+                "Invalid value for `tipo_evento`, must be one of {0}"
                 .format(allowed_values)
             )
-        self._evento = evento
+        self._tipo_evento = tipo_evento
 
     @property
     def icone(self):

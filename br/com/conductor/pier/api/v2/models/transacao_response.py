@@ -54,8 +54,6 @@ class TransacaoResponse(object):
             'estabelecimento': 'str',
             'flag_credito': 'int',
             'tipo_estabelecimento': 'str',
-            'latitude': 'str',
-            'longetude': 'str',
             'id_grupo_mcc': 'int',
             'flag_solicitou_contestacao': 'int'
         }
@@ -78,8 +76,6 @@ class TransacaoResponse(object):
             'estabelecimento': 'estabelecimento',
             'flag_credito': 'flagCredito',
             'tipo_estabelecimento': 'tipoEstabelecimento',
-            'latitude': 'latitude',
-            'longetude': 'longetude',
             'id_grupo_mcc': 'idGrupoMCC',
             'flag_solicitou_contestacao': 'flagSolicitouContestacao'
         }
@@ -101,8 +97,6 @@ class TransacaoResponse(object):
         self._estabelecimento = None
         self._flag_credito = None
         self._tipo_estabelecimento = None
-        self._latitude = None
-        self._longetude = None
         self._id_grupo_mcc = None
         self._flag_solicitou_contestacao = None
 
@@ -479,50 +473,6 @@ class TransacaoResponse(object):
         :type: str
         """
         self._tipo_estabelecimento = tipo_estabelecimento
-
-    @property
-    def latitude(self):
-        """
-        Gets the latitude of this TransacaoResponse.
-
-
-        :return: The latitude of this TransacaoResponse.
-        :rtype: str
-        """
-        return self._latitude
-
-    @latitude.setter
-    def latitude(self, latitude):
-        """
-        Sets the latitude of this TransacaoResponse.
-
-
-        :param latitude: The latitude of this TransacaoResponse.
-        :type: str
-        """
-        self._latitude = latitude
-
-    @property
-    def longetude(self):
-        """
-        Gets the longetude of this TransacaoResponse.
-
-
-        :return: The longetude of this TransacaoResponse.
-        :rtype: str
-        """
-        return self._longetude
-
-    @longetude.setter
-    def longetude(self, longetude):
-        """
-        Sets the longetude of this TransacaoResponse.
-
-
-        :param longetude: The longetude of this TransacaoResponse.
-        :type: str
-        """
-        self._longetude = longetude
 
     @property
     def id_grupo_mcc(self):

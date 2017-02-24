@@ -39,7 +39,7 @@ class NotificacaoPushResponse(object):
         self.swagger_types = {
             'data_envio': 'datetime',
             'id_emissor': 'int',
-            'evento': 'str',
+            'tipo_evento': 'str',
             'status': 'str',
             'id_pessoa': 'int',
             'id_conta': 'int',
@@ -53,7 +53,7 @@ class NotificacaoPushResponse(object):
         self.attribute_map = {
             'data_envio': 'dataEnvio',
             'id_emissor': 'idEmissor',
-            'evento': 'evento',
+            'tipo_evento': 'tipoEvento',
             'status': 'status',
             'id_pessoa': 'idPessoa',
             'id_conta': 'idConta',
@@ -66,7 +66,7 @@ class NotificacaoPushResponse(object):
 
         self._data_envio = None
         self._id_emissor = None
-        self._evento = None
+        self._tipo_evento = None
         self._status = None
         self._id_pessoa = None
         self._id_conta = None
@@ -121,32 +121,32 @@ class NotificacaoPushResponse(object):
         self._id_emissor = id_emissor
 
     @property
-    def evento(self):
+    def tipo_evento(self):
         """
-        Gets the evento of this NotificacaoPushResponse.
-        Nome do evento da notifica\u00C3\u00A7\u00C3\u00A3o
+        Gets the tipo_evento of this NotificacaoPushResponse.
+        Nome do tipoEvento da notifica\u00C3\u00A7\u00C3\u00A3o
 
-        :return: The evento of this NotificacaoPushResponse.
+        :return: The tipo_evento of this NotificacaoPushResponse.
         :rtype: str
         """
-        return self._evento
+        return self._tipo_evento
 
-    @evento.setter
-    def evento(self, evento):
+    @tipo_evento.setter
+    def tipo_evento(self, tipo_evento):
         """
-        Sets the evento of this NotificacaoPushResponse.
-        Nome do evento da notifica\u00C3\u00A7\u00C3\u00A3o
+        Sets the tipo_evento of this NotificacaoPushResponse.
+        Nome do tipoEvento da notifica\u00C3\u00A7\u00C3\u00A3o
 
-        :param evento: The evento of this NotificacaoPushResponse.
+        :param tipo_evento: The tipo_evento of this NotificacaoPushResponse.
         :type: str
         """
         allowed_values = ["RISCO_FRAUDE", "OUTROS"]
-        if evento not in allowed_values:
+        if tipo_evento not in allowed_values:
             raise ValueError(
-                "Invalid value for `evento`, must be one of {0}"
+                "Invalid value for `tipo_evento`, must be one of {0}"
                 .format(allowed_values)
             )
-        self._evento = evento
+        self._tipo_evento = tipo_evento
 
     @property
     def status(self):
