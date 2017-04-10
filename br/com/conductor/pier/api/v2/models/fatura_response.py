@@ -38,40 +38,58 @@ class FaturaResponse(object):
         """
         self.swagger_types = {
             'id': 'int',
-            'descricao': 'str',
-            'banco': 'int',
-            'faixa_nosso_numero': 'int',
-            'min_nosso_numero': 'float',
-            'max_nosso_numero': 'float',
-            'tam_nosso_numero': 'int',
-            'ultimo_nosso_numero': 'float'
+            'id_conta': 'int',
+            'id_produto': 'int',
+            'data_vencimento': 'datetime',
+            'saldo_fatura_anterior': 'float',
+            'saldo_multa': 'float',
+            'saldo_compras': 'float',
+            'saldo_pagamentos': 'float',
+            'saldo_tarifas': 'float',
+            'saldo_debitos': 'float',
+            'saldo_creditos': 'float',
+            'saldo_atual_final': 'float',
+            'valor_minimo_fatura': 'float',
+            'flag_emite_fatura': 'int'
         }
 
         self.attribute_map = {
             'id': 'id',
-            'descricao': 'descricao',
-            'banco': 'banco',
-            'faixa_nosso_numero': 'faixaNossoNumero',
-            'min_nosso_numero': 'minNossoNumero',
-            'max_nosso_numero': 'maxNossoNumero',
-            'tam_nosso_numero': 'tamNossoNumero',
-            'ultimo_nosso_numero': 'ultimoNossoNumero'
+            'id_conta': 'idConta',
+            'id_produto': 'idProduto',
+            'data_vencimento': 'dataVencimento',
+            'saldo_fatura_anterior': 'saldoFaturaAnterior',
+            'saldo_multa': 'saldoMulta',
+            'saldo_compras': 'saldoCompras',
+            'saldo_pagamentos': 'saldoPagamentos',
+            'saldo_tarifas': 'saldoTarifas',
+            'saldo_debitos': 'saldoDebitos',
+            'saldo_creditos': 'saldoCreditos',
+            'saldo_atual_final': 'saldoAtualFinal',
+            'valor_minimo_fatura': 'valorMinimoFatura',
+            'flag_emite_fatura': 'flagEmiteFatura'
         }
 
         self._id = None
-        self._descricao = None
-        self._banco = None
-        self._faixa_nosso_numero = None
-        self._min_nosso_numero = None
-        self._max_nosso_numero = None
-        self._tam_nosso_numero = None
-        self._ultimo_nosso_numero = None
+        self._id_conta = None
+        self._id_produto = None
+        self._data_vencimento = None
+        self._saldo_fatura_anterior = None
+        self._saldo_multa = None
+        self._saldo_compras = None
+        self._saldo_pagamentos = None
+        self._saldo_tarifas = None
+        self._saldo_debitos = None
+        self._saldo_creditos = None
+        self._saldo_atual_final = None
+        self._valor_minimo_fatura = None
+        self._flag_emite_fatura = None
 
     @property
     def id(self):
         """
         Gets the id of this FaturaResponse.
-        C\u00C3\u00B3digo identificador do tipo de boleto.
+        C\u00C3\u00B3digo identificador da fatura.
 
         :return: The id of this FaturaResponse.
         :rtype: int
@@ -82,7 +100,7 @@ class FaturaResponse(object):
     def id(self, id):
         """
         Sets the id of this FaturaResponse.
-        C\u00C3\u00B3digo identificador do tipo de boleto.
+        C\u00C3\u00B3digo identificador da fatura.
 
         :param id: The id of this FaturaResponse.
         :type: int
@@ -90,158 +108,290 @@ class FaturaResponse(object):
         self._id = id
 
     @property
-    def descricao(self):
+    def id_conta(self):
         """
-        Gets the descricao of this FaturaResponse.
-        Descri\u00C3\u00A7\u00C3\u00A3o do tipo de boleto.
+        Gets the id_conta of this FaturaResponse.
+        C\u00C3\u00B3digo identificador da conta.
 
-        :return: The descricao of this FaturaResponse.
-        :rtype: str
-        """
-        return self._descricao
-
-    @descricao.setter
-    def descricao(self, descricao):
-        """
-        Sets the descricao of this FaturaResponse.
-        Descri\u00C3\u00A7\u00C3\u00A3o do tipo de boleto.
-
-        :param descricao: The descricao of this FaturaResponse.
-        :type: str
-        """
-        self._descricao = descricao
-
-    @property
-    def banco(self):
-        """
-        Gets the banco of this FaturaResponse.
-        C\u00C3\u00B3digo identificador do banco.
-
-        :return: The banco of this FaturaResponse.
+        :return: The id_conta of this FaturaResponse.
         :rtype: int
         """
-        return self._banco
+        return self._id_conta
 
-    @banco.setter
-    def banco(self, banco):
+    @id_conta.setter
+    def id_conta(self, id_conta):
         """
-        Sets the banco of this FaturaResponse.
-        C\u00C3\u00B3digo identificador do banco.
+        Sets the id_conta of this FaturaResponse.
+        C\u00C3\u00B3digo identificador da conta.
 
-        :param banco: The banco of this FaturaResponse.
+        :param id_conta: The id_conta of this FaturaResponse.
         :type: int
         """
-        self._banco = banco
+        self._id_conta = id_conta
 
     @property
-    def faixa_nosso_numero(self):
+    def id_produto(self):
         """
-        Gets the faixa_nosso_numero of this FaturaResponse.
-        Faixa permitida para cria\u00C3\u00A7\u00C3\u00A3o do nosso n\u00C3\u00BAmero.
+        Gets the id_produto of this FaturaResponse.
+        C\u00C3\u00B3digo identificador do produto.
 
-        :return: The faixa_nosso_numero of this FaturaResponse.
+        :return: The id_produto of this FaturaResponse.
         :rtype: int
         """
-        return self._faixa_nosso_numero
+        return self._id_produto
 
-    @faixa_nosso_numero.setter
-    def faixa_nosso_numero(self, faixa_nosso_numero):
+    @id_produto.setter
+    def id_produto(self, id_produto):
         """
-        Sets the faixa_nosso_numero of this FaturaResponse.
-        Faixa permitida para cria\u00C3\u00A7\u00C3\u00A3o do nosso n\u00C3\u00BAmero.
+        Sets the id_produto of this FaturaResponse.
+        C\u00C3\u00B3digo identificador do produto.
 
-        :param faixa_nosso_numero: The faixa_nosso_numero of this FaturaResponse.
+        :param id_produto: The id_produto of this FaturaResponse.
         :type: int
         """
-        self._faixa_nosso_numero = faixa_nosso_numero
+        self._id_produto = id_produto
 
     @property
-    def min_nosso_numero(self):
+    def data_vencimento(self):
         """
-        Gets the min_nosso_numero of this FaturaResponse.
-        N\u00C3\u00BAmero minimo para o nosso n\u00C3\u00BAmero.
+        Gets the data_vencimento of this FaturaResponse.
+        Data de vencimento da fatura.
 
-        :return: The min_nosso_numero of this FaturaResponse.
+        :return: The data_vencimento of this FaturaResponse.
+        :rtype: datetime
+        """
+        return self._data_vencimento
+
+    @data_vencimento.setter
+    def data_vencimento(self, data_vencimento):
+        """
+        Sets the data_vencimento of this FaturaResponse.
+        Data de vencimento da fatura.
+
+        :param data_vencimento: The data_vencimento of this FaturaResponse.
+        :type: datetime
+        """
+        self._data_vencimento = data_vencimento
+
+    @property
+    def saldo_fatura_anterior(self):
+        """
+        Gets the saldo_fatura_anterior of this FaturaResponse.
+        Saldo da fatura anterior.
+
+        :return: The saldo_fatura_anterior of this FaturaResponse.
         :rtype: float
         """
-        return self._min_nosso_numero
+        return self._saldo_fatura_anterior
 
-    @min_nosso_numero.setter
-    def min_nosso_numero(self, min_nosso_numero):
+    @saldo_fatura_anterior.setter
+    def saldo_fatura_anterior(self, saldo_fatura_anterior):
         """
-        Sets the min_nosso_numero of this FaturaResponse.
-        N\u00C3\u00BAmero minimo para o nosso n\u00C3\u00BAmero.
+        Sets the saldo_fatura_anterior of this FaturaResponse.
+        Saldo da fatura anterior.
 
-        :param min_nosso_numero: The min_nosso_numero of this FaturaResponse.
+        :param saldo_fatura_anterior: The saldo_fatura_anterior of this FaturaResponse.
         :type: float
         """
-        self._min_nosso_numero = min_nosso_numero
+        self._saldo_fatura_anterior = saldo_fatura_anterior
 
     @property
-    def max_nosso_numero(self):
+    def saldo_multa(self):
         """
-        Gets the max_nosso_numero of this FaturaResponse.
-        N\u00C3\u00BAmero m\u00C3\u00A1ximo para o nosso n\u00C3\u00BAmero.
+        Gets the saldo_multa of this FaturaResponse.
+        Saldo total da Multa lan\u00C3\u00A7ada na Fatura atual.
 
-        :return: The max_nosso_numero of this FaturaResponse.
+        :return: The saldo_multa of this FaturaResponse.
         :rtype: float
         """
-        return self._max_nosso_numero
+        return self._saldo_multa
 
-    @max_nosso_numero.setter
-    def max_nosso_numero(self, max_nosso_numero):
+    @saldo_multa.setter
+    def saldo_multa(self, saldo_multa):
         """
-        Sets the max_nosso_numero of this FaturaResponse.
-        N\u00C3\u00BAmero m\u00C3\u00A1ximo para o nosso n\u00C3\u00BAmero.
+        Sets the saldo_multa of this FaturaResponse.
+        Saldo total da Multa lan\u00C3\u00A7ada na Fatura atual.
 
-        :param max_nosso_numero: The max_nosso_numero of this FaturaResponse.
+        :param saldo_multa: The saldo_multa of this FaturaResponse.
         :type: float
         """
-        self._max_nosso_numero = max_nosso_numero
+        self._saldo_multa = saldo_multa
 
     @property
-    def tam_nosso_numero(self):
+    def saldo_compras(self):
         """
-        Gets the tam_nosso_numero of this FaturaResponse.
-        Tamanho do nosso n\u00C3\u00BAmero.
+        Gets the saldo_compras of this FaturaResponse.
+        Saldo total das compras lan\u00C3\u00A7adas na fatura atual.
 
-        :return: The tam_nosso_numero of this FaturaResponse.
+        :return: The saldo_compras of this FaturaResponse.
+        :rtype: float
+        """
+        return self._saldo_compras
+
+    @saldo_compras.setter
+    def saldo_compras(self, saldo_compras):
+        """
+        Sets the saldo_compras of this FaturaResponse.
+        Saldo total das compras lan\u00C3\u00A7adas na fatura atual.
+
+        :param saldo_compras: The saldo_compras of this FaturaResponse.
+        :type: float
+        """
+        self._saldo_compras = saldo_compras
+
+    @property
+    def saldo_pagamentos(self):
+        """
+        Gets the saldo_pagamentos of this FaturaResponse.
+        Saldo total dos pagamentos lan\u00C3\u00A7ados na fatura atual.
+
+        :return: The saldo_pagamentos of this FaturaResponse.
+        :rtype: float
+        """
+        return self._saldo_pagamentos
+
+    @saldo_pagamentos.setter
+    def saldo_pagamentos(self, saldo_pagamentos):
+        """
+        Sets the saldo_pagamentos of this FaturaResponse.
+        Saldo total dos pagamentos lan\u00C3\u00A7ados na fatura atual.
+
+        :param saldo_pagamentos: The saldo_pagamentos of this FaturaResponse.
+        :type: float
+        """
+        self._saldo_pagamentos = saldo_pagamentos
+
+    @property
+    def saldo_tarifas(self):
+        """
+        Gets the saldo_tarifas of this FaturaResponse.
+        Saldo total das tarifas lan\u00C3\u00A7adas na fatura atual.
+
+        :return: The saldo_tarifas of this FaturaResponse.
+        :rtype: float
+        """
+        return self._saldo_tarifas
+
+    @saldo_tarifas.setter
+    def saldo_tarifas(self, saldo_tarifas):
+        """
+        Sets the saldo_tarifas of this FaturaResponse.
+        Saldo total das tarifas lan\u00C3\u00A7adas na fatura atual.
+
+        :param saldo_tarifas: The saldo_tarifas of this FaturaResponse.
+        :type: float
+        """
+        self._saldo_tarifas = saldo_tarifas
+
+    @property
+    def saldo_debitos(self):
+        """
+        Gets the saldo_debitos of this FaturaResponse.
+        Saldo total dos d\u00C3\u00A9bitos lan\u00C3\u00A7ados na fatura atual.
+
+        :return: The saldo_debitos of this FaturaResponse.
+        :rtype: float
+        """
+        return self._saldo_debitos
+
+    @saldo_debitos.setter
+    def saldo_debitos(self, saldo_debitos):
+        """
+        Sets the saldo_debitos of this FaturaResponse.
+        Saldo total dos d\u00C3\u00A9bitos lan\u00C3\u00A7ados na fatura atual.
+
+        :param saldo_debitos: The saldo_debitos of this FaturaResponse.
+        :type: float
+        """
+        self._saldo_debitos = saldo_debitos
+
+    @property
+    def saldo_creditos(self):
+        """
+        Gets the saldo_creditos of this FaturaResponse.
+        Saldo total dos cr\u00C3\u00A9dito lan\u00C3\u00A7ados na fatura atual.
+
+        :return: The saldo_creditos of this FaturaResponse.
+        :rtype: float
+        """
+        return self._saldo_creditos
+
+    @saldo_creditos.setter
+    def saldo_creditos(self, saldo_creditos):
+        """
+        Sets the saldo_creditos of this FaturaResponse.
+        Saldo total dos cr\u00C3\u00A9dito lan\u00C3\u00A7ados na fatura atual.
+
+        :param saldo_creditos: The saldo_creditos of this FaturaResponse.
+        :type: float
+        """
+        self._saldo_creditos = saldo_creditos
+
+    @property
+    def saldo_atual_final(self):
+        """
+        Gets the saldo_atual_final of this FaturaResponse.
+        Salto total devedor da fatura atual.
+
+        :return: The saldo_atual_final of this FaturaResponse.
+        :rtype: float
+        """
+        return self._saldo_atual_final
+
+    @saldo_atual_final.setter
+    def saldo_atual_final(self, saldo_atual_final):
+        """
+        Sets the saldo_atual_final of this FaturaResponse.
+        Salto total devedor da fatura atual.
+
+        :param saldo_atual_final: The saldo_atual_final of this FaturaResponse.
+        :type: float
+        """
+        self._saldo_atual_final = saldo_atual_final
+
+    @property
+    def valor_minimo_fatura(self):
+        """
+        Gets the valor_minimo_fatura of this FaturaResponse.
+        Valor m\u00C3\u00ADnimo para pagamento da fatura.
+
+        :return: The valor_minimo_fatura of this FaturaResponse.
+        :rtype: float
+        """
+        return self._valor_minimo_fatura
+
+    @valor_minimo_fatura.setter
+    def valor_minimo_fatura(self, valor_minimo_fatura):
+        """
+        Sets the valor_minimo_fatura of this FaturaResponse.
+        Valor m\u00C3\u00ADnimo para pagamento da fatura.
+
+        :param valor_minimo_fatura: The valor_minimo_fatura of this FaturaResponse.
+        :type: float
+        """
+        self._valor_minimo_fatura = valor_minimo_fatura
+
+    @property
+    def flag_emite_fatura(self):
+        """
+        Gets the flag_emite_fatura of this FaturaResponse.
+        Quando ativa, indica que fora emitida uma fatura.
+
+        :return: The flag_emite_fatura of this FaturaResponse.
         :rtype: int
         """
-        return self._tam_nosso_numero
+        return self._flag_emite_fatura
 
-    @tam_nosso_numero.setter
-    def tam_nosso_numero(self, tam_nosso_numero):
+    @flag_emite_fatura.setter
+    def flag_emite_fatura(self, flag_emite_fatura):
         """
-        Sets the tam_nosso_numero of this FaturaResponse.
-        Tamanho do nosso n\u00C3\u00BAmero.
+        Sets the flag_emite_fatura of this FaturaResponse.
+        Quando ativa, indica que fora emitida uma fatura.
 
-        :param tam_nosso_numero: The tam_nosso_numero of this FaturaResponse.
+        :param flag_emite_fatura: The flag_emite_fatura of this FaturaResponse.
         :type: int
         """
-        self._tam_nosso_numero = tam_nosso_numero
-
-    @property
-    def ultimo_nosso_numero(self):
-        """
-        Gets the ultimo_nosso_numero of this FaturaResponse.
-        \u00C3\u009Altimo nosso n\u00C3\u00BAmero utilizado.
-
-        :return: The ultimo_nosso_numero of this FaturaResponse.
-        :rtype: float
-        """
-        return self._ultimo_nosso_numero
-
-    @ultimo_nosso_numero.setter
-    def ultimo_nosso_numero(self, ultimo_nosso_numero):
-        """
-        Sets the ultimo_nosso_numero of this FaturaResponse.
-        \u00C3\u009Altimo nosso n\u00C3\u00BAmero utilizado.
-
-        :param ultimo_nosso_numero: The ultimo_nosso_numero of this FaturaResponse.
-        :type: float
-        """
-        self._ultimo_nosso_numero = ultimo_nosso_numero
+        self._flag_emite_fatura = flag_emite_fatura
 
     def to_dict(self):
         """

@@ -43,7 +43,11 @@ class Pessoa(object):
             'cpf': 'str',
             'cnpj': 'str',
             'data_nascimento': 'datetime',
-            'sexo': 'str'
+            'numero_identidade': 'str',
+            'orgao_expedidor_identidade': 'str',
+            'sexo': 'str',
+            'unidade_federativa_identidade': 'str',
+            'data_emissao_identidade': 'date'
         }
 
         self.attribute_map = {
@@ -53,7 +57,11 @@ class Pessoa(object):
             'cpf': 'cpf',
             'cnpj': 'cnpj',
             'data_nascimento': 'dataNascimento',
-            'sexo': 'sexo'
+            'numero_identidade': 'numeroIdentidade',
+            'orgao_expedidor_identidade': 'orgaoExpedidorIdentidade',
+            'sexo': 'sexo',
+            'unidade_federativa_identidade': 'unidadeFederativaIdentidade',
+            'data_emissao_identidade': 'dataEmissaoIdentidade'
         }
 
         self._id = None
@@ -62,7 +70,11 @@ class Pessoa(object):
         self._cpf = None
         self._cnpj = None
         self._data_nascimento = None
+        self._numero_identidade = None
+        self._orgao_expedidor_identidade = None
         self._sexo = None
+        self._unidade_federativa_identidade = None
+        self._data_emissao_identidade = None
 
     @property
     def id(self):
@@ -197,6 +209,50 @@ class Pessoa(object):
         self._data_nascimento = data_nascimento
 
     @property
+    def numero_identidade(self):
+        """
+        Gets the numero_identidade of this Pessoa.
+        N\u00C3\u00BAmero da Identidade
+
+        :return: The numero_identidade of this Pessoa.
+        :rtype: str
+        """
+        return self._numero_identidade
+
+    @numero_identidade.setter
+    def numero_identidade(self, numero_identidade):
+        """
+        Sets the numero_identidade of this Pessoa.
+        N\u00C3\u00BAmero da Identidade
+
+        :param numero_identidade: The numero_identidade of this Pessoa.
+        :type: str
+        """
+        self._numero_identidade = numero_identidade
+
+    @property
+    def orgao_expedidor_identidade(self):
+        """
+        Gets the orgao_expedidor_identidade of this Pessoa.
+        Org\u00C3\u00A3o expedidor do RG.
+
+        :return: The orgao_expedidor_identidade of this Pessoa.
+        :rtype: str
+        """
+        return self._orgao_expedidor_identidade
+
+    @orgao_expedidor_identidade.setter
+    def orgao_expedidor_identidade(self, orgao_expedidor_identidade):
+        """
+        Sets the orgao_expedidor_identidade of this Pessoa.
+        Org\u00C3\u00A3o expedidor do RG.
+
+        :param orgao_expedidor_identidade: The orgao_expedidor_identidade of this Pessoa.
+        :type: str
+        """
+        self._orgao_expedidor_identidade = orgao_expedidor_identidade
+
+    @property
     def sexo(self):
         """
         Gets the sexo of this Pessoa.
@@ -217,6 +273,50 @@ class Pessoa(object):
         :type: str
         """
         self._sexo = sexo
+
+    @property
+    def unidade_federativa_identidade(self):
+        """
+        Gets the unidade_federativa_identidade of this Pessoa.
+        Sigla da Unidade Federativa de onde foi expedido a Identidade
+
+        :return: The unidade_federativa_identidade of this Pessoa.
+        :rtype: str
+        """
+        return self._unidade_federativa_identidade
+
+    @unidade_federativa_identidade.setter
+    def unidade_federativa_identidade(self, unidade_federativa_identidade):
+        """
+        Sets the unidade_federativa_identidade of this Pessoa.
+        Sigla da Unidade Federativa de onde foi expedido a Identidade
+
+        :param unidade_federativa_identidade: The unidade_federativa_identidade of this Pessoa.
+        :type: str
+        """
+        self._unidade_federativa_identidade = unidade_federativa_identidade
+
+    @property
+    def data_emissao_identidade(self):
+        """
+        Gets the data_emissao_identidade of this Pessoa.
+        Data emiss\u00C3\u00A3o da identidade no formato aaaa-MM-dd
+
+        :return: The data_emissao_identidade of this Pessoa.
+        :rtype: date
+        """
+        return self._data_emissao_identidade
+
+    @data_emissao_identidade.setter
+    def data_emissao_identidade(self, data_emissao_identidade):
+        """
+        Sets the data_emissao_identidade of this Pessoa.
+        Data emiss\u00C3\u00A3o da identidade no formato aaaa-MM-dd
+
+        :param data_emissao_identidade: The data_emissao_identidade of this Pessoa.
+        :type: date
+        """
+        self._data_emissao_identidade = data_emissao_identidade
 
     def to_dict(self):
         """

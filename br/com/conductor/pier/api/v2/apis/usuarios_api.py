@@ -134,9 +134,9 @@ class UsuariosApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def alterar_using_put6(self, id, update, **kwargs):
+    def alterar_using_put9(self, id, update, **kwargs):
         """
-        Alterar os usu\u00C3\u00A1rios cadastrados
+        Altera os usu\u00C3\u00A1rios cadastrados
         Este m\u00C3\u00A9todo realiza a altera\u00C3\u00A7\u00C3\u00A3o dos usu\u00C3\u00A1rios.
 
         This method makes a synchronous HTTP request by default. To make an
@@ -145,13 +145,13 @@ class UsuariosApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.alterar_using_put6(id, update, callback=callback_function)
+        >>> thread = api.alterar_using_put9(id, update, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Usu\u00C3\u00A1rio (id). (required)
-        :param Usuario update: update (required)
-        :return: Usuario
+        :param UsuarioUpdate update: update (required)
+        :return: UsuarioResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -164,17 +164,17 @@ class UsuariosApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method alterar_using_put6" % key
+                    " to method alterar_using_put9" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `alterar_using_put6`")
+            raise ValueError("Missing the required parameter `id` when calling `alterar_using_put9`")
         # verify the required parameter 'update' is set
         if ('update' not in params) or (params['update'] is None):
-            raise ValueError("Missing the required parameter `update` when calling `alterar_using_put6`")
+            raise ValueError("Missing the required parameter `update` when calling `alterar_using_put9`")
 
         resource_path = '/api/usuarios/{id}'.replace('{format}', 'json')
         path_params = {}
@@ -212,12 +212,12 @@ class UsuariosApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='Usuario',
+                                            response_type='UsuarioResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get16(self, id, **kwargs):
+    def consultar_using_get22(self, id, **kwargs):
         """
         Apresenta os dados de um determinado Usu\u00C3\u00A1rio
         Este m\u00C3\u00A9todo permite consultar as informa\u00C3\u00A7\u00C3\u00B5es de um determinado Usu\u00C3\u00A1rio a partir do seu c\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o (id).
@@ -228,12 +228,12 @@ class UsuariosApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get16(id, callback=callback_function)
+        >>> thread = api.consultar_using_get22(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Usu\u00C3\u00A1rio (id). (required)
-        :return: Usuario
+        :return: UsuarioResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -246,14 +246,14 @@ class UsuariosApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get16" % key
+                    " to method consultar_using_get22" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get16`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get22`")
 
         resource_path = '/api/usuarios/{id}'.replace('{format}', 'json')
         path_params = {}
@@ -289,12 +289,12 @@ class UsuariosApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='Usuario',
+                                            response_type='UsuarioResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get16(self, **kwargs):
+    def listar_using_get21(self, **kwargs):
         """
         Lista os Usu\u00C3\u00A1rios cadastrados
         Este m\u00C3\u00A9todo permite que sejam listados os usu\u00C3\u00A1rios existentes na base do PIER.
@@ -305,13 +305,12 @@ class UsuariosApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get16(callback=callback_function)
+        >>> thread = api.listar_using_get21(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
         :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 100, Max = 100)
-        :param int id: Id do Usuario
         :param str nome: Nome do Usuario
         :param str cpf: CPF do Usuario
         :param str email: Email do Usuario
@@ -321,7 +320,7 @@ class UsuariosApi(object):
                  returns the request thread.
         """
 
-        all_params = ['page', 'limit', 'id', 'nome', 'cpf', 'email', 'status']
+        all_params = ['page', 'limit', 'nome', 'cpf', 'email', 'status']
         all_params.append('callback')
 
         params = locals()
@@ -329,7 +328,7 @@ class UsuariosApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get16" % key
+                    " to method listar_using_get21" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -343,8 +342,6 @@ class UsuariosApi(object):
             query_params['page'] = params['page']
         if 'limit' in params:
             query_params['limit'] = params['limit']
-        if 'id' in params:
-            query_params['id'] = params['id']
         if 'nome' in params:
             query_params['nome'] = params['nome']
         if 'cpf' in params:
@@ -463,9 +460,9 @@ class UsuariosApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def salvar_using_post6(self, persist, **kwargs):
+    def salvar_using_post8(self, persist, **kwargs):
         """
-        Cadastrar Usu\u00C3\u00A1rio
+        Cadastra Usu\u00C3\u00A1rio
         Esse recurso permite cadastrar usu\u00C3\u00A1rios.
 
         This method makes a synchronous HTTP request by default. To make an
@@ -474,12 +471,12 @@ class UsuariosApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.salvar_using_post6(persist, callback=callback_function)
+        >>> thread = api.salvar_using_post8(persist, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param Usuario persist: persist (required)
-        :return: Usuario
+        :param UsuarioPersist persist: persist (required)
+        :return: UsuarioResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -492,14 +489,14 @@ class UsuariosApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method salvar_using_post6" % key
+                    " to method salvar_using_post8" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'persist' is set
         if ('persist' not in params) or (params['persist'] is None):
-            raise ValueError("Missing the required parameter `persist` when calling `salvar_using_post6`")
+            raise ValueError("Missing the required parameter `persist` when calling `salvar_using_post8`")
 
         resource_path = '/api/usuarios'.replace('{format}', 'json')
         path_params = {}
@@ -535,7 +532,7 @@ class UsuariosApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='Usuario',
+                                            response_type='UsuarioResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response

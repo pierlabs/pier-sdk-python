@@ -37,7 +37,7 @@ class FAQ(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'id_faq': 'int',
+            'id': 'int',
             'id_emissor': 'int',
             'pergunta': 'str',
             'resposta': 'str',
@@ -48,7 +48,7 @@ class FAQ(object):
         }
 
         self.attribute_map = {
-            'id_faq': 'idFaq',
+            'id': 'id',
             'id_emissor': 'idEmissor',
             'pergunta': 'pergunta',
             'resposta': 'resposta',
@@ -58,7 +58,7 @@ class FAQ(object):
             'status': 'status'
         }
 
-        self._id_faq = None
+        self._id = None
         self._id_emissor = None
         self._pergunta = None
         self._resposta = None
@@ -68,26 +68,26 @@ class FAQ(object):
         self._status = None
 
     @property
-    def id_faq(self):
+    def id(self):
         """
-        Gets the id_faq of this FAQ.
+        Gets the id of this FAQ.
         C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da FAQ (id).
 
-        :return: The id_faq of this FAQ.
+        :return: The id of this FAQ.
         :rtype: int
         """
-        return self._id_faq
+        return self._id
 
-    @id_faq.setter
-    def id_faq(self, id_faq):
+    @id.setter
+    def id(self, id):
         """
-        Sets the id_faq of this FAQ.
+        Sets the id of this FAQ.
         C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da FAQ (id).
 
-        :param id_faq: The id_faq of this FAQ.
+        :param id: The id of this FAQ.
         :type: int
         """
-        self._id_faq = id_faq
+        self._id = id
 
     @property
     def id_emissor(self):

@@ -309,7 +309,7 @@ class AtendimentoCliente(object):
     def data_atendimento(self):
         """
         Gets the data_atendimento of this AtendimentoCliente.
-        Apresenta a data em que o Atendimento foi realizado.
+        Apresenta a data e hora em que o Atendimento foi realizado.
 
         :return: The data_atendimento of this AtendimentoCliente.
         :rtype: datetime
@@ -320,7 +320,7 @@ class AtendimentoCliente(object):
     def data_atendimento(self, data_atendimento):
         """
         Sets the data_atendimento of this AtendimentoCliente.
-        Apresenta a data em que o Atendimento foi realizado.
+        Apresenta a data e hora em que o Atendimento foi realizado.
 
         :param data_atendimento: The data_atendimento of this AtendimentoCliente.
         :type: datetime
@@ -331,7 +331,7 @@ class AtendimentoCliente(object):
     def data_agendamento(self):
         """
         Gets the data_agendamento of this AtendimentoCliente.
-        Quando utilizado, de acordo com o Tipo de Atendimento, apresenta a data para processamento ou a data para retorno do Atendimento.
+        Quando utilizado, de acordo com o Tipo de Atendimento, apresenta a data e hora para processamento ou a data para retorno do Atendimento.
 
         :return: The data_agendamento of this AtendimentoCliente.
         :rtype: datetime
@@ -342,7 +342,7 @@ class AtendimentoCliente(object):
     def data_agendamento(self, data_agendamento):
         """
         Sets the data_agendamento of this AtendimentoCliente.
-        Quando utilizado, de acordo com o Tipo de Atendimento, apresenta a data para processamento ou a data para retorno do Atendimento.
+        Quando utilizado, de acordo com o Tipo de Atendimento, apresenta a data e hora para processamento ou a data para retorno do Atendimento.
 
         :param data_agendamento: The data_agendamento of this AtendimentoCliente.
         :type: datetime
@@ -353,7 +353,7 @@ class AtendimentoCliente(object):
     def data_processamento(self):
         """
         Gets the data_processamento of this AtendimentoCliente.
-        Quando utilizado, apresenta a data em que a solicita\u00C3\u00A7\u00C3\u00A3o registrada no Atendimento fora processada.
+        Quando utilizado, apresenta a data e hora em que a solicita\u00C3\u00A7\u00C3\u00A3o registrada no Atendimento fora processada.
 
         :return: The data_processamento of this AtendimentoCliente.
         :rtype: datetime
@@ -364,7 +364,7 @@ class AtendimentoCliente(object):
     def data_processamento(self, data_processamento):
         """
         Sets the data_processamento of this AtendimentoCliente.
-        Quando utilizado, apresenta a data em que a solicita\u00C3\u00A7\u00C3\u00A3o registrada no Atendimento fora processada.
+        Quando utilizado, apresenta a data e hora em que a solicita\u00C3\u00A7\u00C3\u00A3o registrada no Atendimento fora processada.
 
         :param data_processamento: The data_processamento of this AtendimentoCliente.
         :type: datetime

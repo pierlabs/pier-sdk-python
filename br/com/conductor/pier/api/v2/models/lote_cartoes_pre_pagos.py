@@ -43,7 +43,7 @@ class LoteCartoesPrePagos(object):
             'id_tipo_cartao': 'int',
             'id_imagem': 'int',
             'id_endereco': 'int',
-            'quantidade_cartoes': 'int',
+            'quantidade': 'int',
             'data_cadastro': 'datetime',
             'usuario_cadastro': 'str',
             'status_processamento': 'int'
@@ -56,7 +56,7 @@ class LoteCartoesPrePagos(object):
             'id_tipo_cartao': 'idTipoCartao',
             'id_imagem': 'idImagem',
             'id_endereco': 'idEndereco',
-            'quantidade_cartoes': 'quantidadeCartoes',
+            'quantidade': 'quantidade',
             'data_cadastro': 'dataCadastro',
             'usuario_cadastro': 'usuarioCadastro',
             'status_processamento': 'statusProcessamento'
@@ -68,7 +68,7 @@ class LoteCartoesPrePagos(object):
         self._id_tipo_cartao = None
         self._id_imagem = None
         self._id_endereco = None
-        self._quantidade_cartoes = None
+        self._quantidade = None
         self._data_cadastro = None
         self._usuario_cadastro = None
         self._status_processamento = None
@@ -206,26 +206,26 @@ class LoteCartoesPrePagos(object):
         self._id_endereco = id_endereco
 
     @property
-    def quantidade_cartoes(self):
+    def quantidade(self):
         """
-        Gets the quantidade_cartoes of this LoteCartoesPrePagos.
+        Gets the quantidade of this LoteCartoesPrePagos.
         N\u00C3\u00BAmero de cart\u00C3\u00B5es existentes no Lote.
 
-        :return: The quantidade_cartoes of this LoteCartoesPrePagos.
+        :return: The quantidade of this LoteCartoesPrePagos.
         :rtype: int
         """
-        return self._quantidade_cartoes
+        return self._quantidade
 
-    @quantidade_cartoes.setter
-    def quantidade_cartoes(self, quantidade_cartoes):
+    @quantidade.setter
+    def quantidade(self, quantidade):
         """
-        Sets the quantidade_cartoes of this LoteCartoesPrePagos.
+        Sets the quantidade of this LoteCartoesPrePagos.
         N\u00C3\u00BAmero de cart\u00C3\u00B5es existentes no Lote.
 
-        :param quantidade_cartoes: The quantidade_cartoes of this LoteCartoesPrePagos.
+        :param quantidade: The quantidade of this LoteCartoesPrePagos.
         :type: int
         """
-        self._quantidade_cartoes = quantidade_cartoes
+        self._quantidade = quantidade
 
     @property
     def data_cadastro(self):

@@ -59,7 +59,11 @@ class RiscoFraudeDetalhadoResponse(object):
             'descricao_resposta_fraude': 'str',
             'origem_transacao': 'str',
             'codigo_modo_entrada_terminal': 'str',
-            'descricao_modo_entrada_terminal': 'str'
+            'descricao_modo_entrada_terminal': 'str',
+            'cpf': 'str',
+            'cnpj': 'str',
+            'email': 'str',
+            'tefefones': 'list[Telefone]'
         }
 
         self.attribute_map = {
@@ -85,7 +89,11 @@ class RiscoFraudeDetalhadoResponse(object):
             'descricao_resposta_fraude': 'descricaoRespostaFraude',
             'origem_transacao': 'origemTransacao',
             'codigo_modo_entrada_terminal': 'codigoModoEntradaTerminal',
-            'descricao_modo_entrada_terminal': 'descricaoModoEntradaTerminal'
+            'descricao_modo_entrada_terminal': 'descricaoModoEntradaTerminal',
+            'cpf': 'cpf',
+            'cnpj': 'cnpj',
+            'email': 'email',
+            'tefefones': 'tefefones'
         }
 
         self._id = None
@@ -111,6 +119,10 @@ class RiscoFraudeDetalhadoResponse(object):
         self._origem_transacao = None
         self._codigo_modo_entrada_terminal = None
         self._descricao_modo_entrada_terminal = None
+        self._cpf = None
+        self._cnpj = None
+        self._email = None
+        self._tefefones = None
 
     @property
     def id(self):
@@ -617,6 +629,94 @@ class RiscoFraudeDetalhadoResponse(object):
         :type: str
         """
         self._descricao_modo_entrada_terminal = descricao_modo_entrada_terminal
+
+    @property
+    def cpf(self):
+        """
+        Gets the cpf of this RiscoFraudeDetalhadoResponse.
+        N\u00C3\u00BAmero do CPF da Pessoa portadora do Cart\u00C3\u00A3o, quando for do tipo Pessoa F\u00C3\u00ADsica
+
+        :return: The cpf of this RiscoFraudeDetalhadoResponse.
+        :rtype: str
+        """
+        return self._cpf
+
+    @cpf.setter
+    def cpf(self, cpf):
+        """
+        Sets the cpf of this RiscoFraudeDetalhadoResponse.
+        N\u00C3\u00BAmero do CPF da Pessoa portadora do Cart\u00C3\u00A3o, quando for do tipo Pessoa F\u00C3\u00ADsica
+
+        :param cpf: The cpf of this RiscoFraudeDetalhadoResponse.
+        :type: str
+        """
+        self._cpf = cpf
+
+    @property
+    def cnpj(self):
+        """
+        Gets the cnpj of this RiscoFraudeDetalhadoResponse.
+        N\u00C3\u00BAmero do CNPJ da Pessoa portadora do Cart\u00C3\u00A3o, quanto for do tipo Pessoa Jur\u00C3\u00ADdica
+
+        :return: The cnpj of this RiscoFraudeDetalhadoResponse.
+        :rtype: str
+        """
+        return self._cnpj
+
+    @cnpj.setter
+    def cnpj(self, cnpj):
+        """
+        Sets the cnpj of this RiscoFraudeDetalhadoResponse.
+        N\u00C3\u00BAmero do CNPJ da Pessoa portadora do Cart\u00C3\u00A3o, quanto for do tipo Pessoa Jur\u00C3\u00ADdica
+
+        :param cnpj: The cnpj of this RiscoFraudeDetalhadoResponse.
+        :type: str
+        """
+        self._cnpj = cnpj
+
+    @property
+    def email(self):
+        """
+        Gets the email of this RiscoFraudeDetalhadoResponse.
+        Endere\u00C3\u00A7o de email da Pessoa portadora do Cart\u00C3\u00A3o
+
+        :return: The email of this RiscoFraudeDetalhadoResponse.
+        :rtype: str
+        """
+        return self._email
+
+    @email.setter
+    def email(self, email):
+        """
+        Sets the email of this RiscoFraudeDetalhadoResponse.
+        Endere\u00C3\u00A7o de email da Pessoa portadora do Cart\u00C3\u00A3o
+
+        :param email: The email of this RiscoFraudeDetalhadoResponse.
+        :type: str
+        """
+        self._email = email
+
+    @property
+    def tefefones(self):
+        """
+        Gets the tefefones of this RiscoFraudeDetalhadoResponse.
+        Lista contendo idTipoTelefone, tipoTelefone (Descricao), DDD, Numero, Ramal associados a Pessoa portadora do Cart\u00C3\u00A3o
+
+        :return: The tefefones of this RiscoFraudeDetalhadoResponse.
+        :rtype: list[Telefone]
+        """
+        return self._tefefones
+
+    @tefefones.setter
+    def tefefones(self, tefefones):
+        """
+        Sets the tefefones of this RiscoFraudeDetalhadoResponse.
+        Lista contendo idTipoTelefone, tipoTelefone (Descricao), DDD, Numero, Ramal associados a Pessoa portadora do Cart\u00C3\u00A3o
+
+        :param tefefones: The tefefones of this RiscoFraudeDetalhadoResponse.
+        :type: list[Telefone]
+        """
+        self._tefefones = tefefones
 
     def to_dict(self):
         """

@@ -37,7 +37,7 @@ class ListaProdutos(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'content': 'list[Produto]',
+            'content': 'list[ProdutoResponse]',
             'first': 'bool',
             'first_page': 'bool',
             'has_content': 'bool',
@@ -92,7 +92,7 @@ class ListaProdutos(object):
 
 
         :return: The content of this ListaProdutos.
-        :rtype: list[Produto]
+        :rtype: list[ProdutoResponse]
         """
         return self._content
 
@@ -103,7 +103,7 @@ class ListaProdutos(object):
 
 
         :param content: The content of this ListaProdutos.
-        :type: list[Produto]
+        :type: list[ProdutoResponse]
         """
         self._content = content
 

@@ -122,7 +122,7 @@ class RiscoFraudeApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get7(self, id, **kwargs):
+    def consultar_using_get10(self, id, **kwargs):
         """
         Consultar uma transa\u00C3\u00A7\u00C3\u00A3o classificada com risco de fraude
         Consulta os detalhes de uma transa\u00C3\u00A7\u00C3\u00A3o classificada com risco de fraude.
@@ -133,7 +133,7 @@ class RiscoFraudeApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get7(id, callback=callback_function)
+        >>> thread = api.consultar_using_get10(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -151,14 +151,14 @@ class RiscoFraudeApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get7" % key
+                    " to method consultar_using_get10" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get7`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get10`")
 
         resource_path = '/api/riscos-fraudes/{id}'.replace('{format}', 'json')
         path_params = {}
@@ -293,7 +293,6 @@ class RiscoFraudeApi(object):
             for asynchronous request. (optional)
         :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
         :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 100, Max = 100)
-        :param int id_atendimento: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Atendimento (id)
         :param int id_tipo_atendimento: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Tipo de Atendimento (id)
         :param int id_conta: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o de conta (id).
         :param str nome_atendente: Apresenta o nome do Atendente que registrou o Atendimento.
@@ -303,7 +302,7 @@ class RiscoFraudeApi(object):
                  returns the request thread.
         """
 
-        all_params = ['page', 'limit', 'id_atendimento', 'id_tipo_atendimento', 'id_conta', 'nome_atendente', 'data_atendimento']
+        all_params = ['page', 'limit', 'id_tipo_atendimento', 'id_conta', 'nome_atendente', 'data_atendimento']
         all_params.append('callback')
 
         params = locals()
@@ -325,8 +324,6 @@ class RiscoFraudeApi(object):
             query_params['page'] = params['page']
         if 'limit' in params:
             query_params['limit'] = params['limit']
-        if 'id_atendimento' in params:
-            query_params['idAtendimento'] = params['id_atendimento']
         if 'id_tipo_atendimento' in params:
             query_params['idTipoAtendimento'] = params['id_tipo_atendimento']
         if 'id_conta' in params:
@@ -368,7 +365,7 @@ class RiscoFraudeApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get8(self, id_conta, confirmacao_fraude, **kwargs):
+    def listar_using_get11(self, id_conta, confirmacao_fraude, **kwargs):
         """
         Listar as transa\u00C3\u00A7\u00C3\u00B5es com resolu\u00C3\u00A7\u00C3\u00A3o de risco fraude pendente
         Este recurso permite que sejam listados os riscos de fraudes existentes
@@ -379,7 +376,7 @@ class RiscoFraudeApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get8(id_conta, confirmacao_fraude, callback=callback_function)
+        >>> thread = api.listar_using_get11(id_conta, confirmacao_fraude, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -400,17 +397,17 @@ class RiscoFraudeApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get8" % key
+                    " to method listar_using_get11" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id_conta' is set
         if ('id_conta' not in params) or (params['id_conta'] is None):
-            raise ValueError("Missing the required parameter `id_conta` when calling `listar_using_get8`")
+            raise ValueError("Missing the required parameter `id_conta` when calling `listar_using_get11`")
         # verify the required parameter 'confirmacao_fraude' is set
         if ('confirmacao_fraude' not in params) or (params['confirmacao_fraude'] is None):
-            raise ValueError("Missing the required parameter `confirmacao_fraude` when calling `listar_using_get8`")
+            raise ValueError("Missing the required parameter `confirmacao_fraude` when calling `listar_using_get11`")
 
         resource_path = '/api/riscos-fraudes'.replace('{format}', 'json')
         path_params = {}
@@ -630,16 +627,17 @@ class RiscoFraudeApi(object):
         :param str conteudo_atendimento: Apresenta as informa\u00C3\u00A7\u00C3\u00B5es que foram utilizadas para consultar, cadastrar ou alterar informa\u00C3\u00A7\u00C3\u00B5es relacionadas ao Atendimento.
         :param str detalhes_atendimento: Apresenta os detalhes lan\u00C3\u00A7ados pelo sistema ou pelo Atendente durante relacionados ao Atendimento.
         :param str nome_atendente: Apresenta o nome do Atendente que registrou o Atendimento.
-        :param date data_atendimento: Apresenta a data em que o Atendimento foi realizado.
-        :param date data_agendamento: Quando utilizado, de acordo com o Tipo de Atendimento, apresenta a data para processamento ou a data para retorno do Atendimento.
-        :param datetime data_hora_inicio_atendimento: Apresenta a data e hora em que o Atendimento foi iniciado. Quando utilizado, serve para medir a performance dos Atendimentos.
-        :param datetime data_hora_fim_atendimento: Apresenta a data e hora em que o Atendimento foi iniciado. Quando utilizado, serve para medir a performance dos Atendimentos.
+        :param datetime data_atendimento: Apresenta a data e hora em que o Atendimento foi realizado no formato yyyy-MM-dd'T'HH:mm:ss.SSS'Z'.
+        :param datetime data_agendamento: Quando utilizado, de acordo com o Tipo de Atendimento, apresenta a data e hora para processamento ou a data e hora para retorno do Atendimento no formato yyyy-MM-dd'T'HH:mm:ss.SSS'Z'.
+        :param datetime data_hora_inicio_atendimento: Apresenta a data e hora em que o Atendimento foi iniciado. Quando utilizado, serve para medir a performance dos Atendimentos no formato yyyy-MM-dd'T'HH:mm:ss.SSS'Z'.
+        :param datetime data_hora_fim_atendimento: Apresenta a data e hora em que o Atendimento foi iniciado. Quando utilizado, serve para medir a performance dos Atendimentos no formato yyyy-MM-dd'T'HH:mm:ss.SSS'Z'.
+        :param int flag_fila_fraude: Flag fila fraude
         :return: AtendimentoCliente
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['id_conta', 'conteudo_atendimento', 'detalhes_atendimento', 'nome_atendente', 'data_atendimento', 'data_agendamento', 'data_hora_inicio_atendimento', 'data_hora_fim_atendimento']
+        all_params = ['id_conta', 'conteudo_atendimento', 'detalhes_atendimento', 'nome_atendente', 'data_atendimento', 'data_agendamento', 'data_hora_inicio_atendimento', 'data_hora_fim_atendimento', 'flag_fila_fraude']
         all_params.append('callback')
 
         params = locals()
@@ -673,6 +671,8 @@ class RiscoFraudeApi(object):
             query_params['dataHoraInicioAtendimento'] = params['data_hora_inicio_atendimento']
         if 'data_hora_fim_atendimento' in params:
             query_params['dataHoraFimAtendimento'] = params['data_hora_fim_atendimento']
+        if 'flag_fila_fraude' in params:
+            query_params['flagFilaFraude'] = params['flag_fila_fraude']
 
         header_params = {}
 

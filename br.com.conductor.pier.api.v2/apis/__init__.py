@@ -7,6 +7,7 @@ from .cartao_api import CartaoApi
 from .conta_api import ContaApi
 from .faq_api import FAQApi
 from .notificacoes_api import NotificacoesApi
+from .oportunidades_api import OportunidadesApi
 from .risco_fraude_api import RiscoFraudeApi
 from .status_parametros_api import StatusParametrosApi
 from .token_api import TokenApi

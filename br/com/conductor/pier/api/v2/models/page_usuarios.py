@@ -37,7 +37,7 @@ class PageUsuarios(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'content': 'list[Usuario]',
+            'content': 'list[UsuarioResponse]',
             'first': 'bool',
             'first_page': 'bool',
             'has_content': 'bool',
@@ -92,7 +92,7 @@ class PageUsuarios(object):
 
 
         :return: The content of this PageUsuarios.
-        :rtype: list[Usuario]
+        :rtype: list[UsuarioResponse]
         """
         return self._content
 
@@ -103,7 +103,7 @@ class PageUsuarios(object):
 
 
         :param content: The content of this PageUsuarios.
-        :type: list[Usuario]
+        :type: list[UsuarioResponse]
         """
         self._content = content
 

@@ -49,7 +49,8 @@ class Conta(object):
             'data_ultima_alteracao_vencimento': 'datetime',
             'numero_agencia': 'int',
             'valor_renda': 'float',
-            'numero_conta_corrente': 'str'
+            'numero_conta_corrente': 'str',
+            'forma_envio_fatura': 'str'
         }
 
         self.attribute_map = {
@@ -65,7 +66,8 @@ class Conta(object):
             'data_ultima_alteracao_vencimento': 'dataUltimaAlteracaoVencimento',
             'numero_agencia': 'numeroAgencia',
             'valor_renda': 'valorRenda',
-            'numero_conta_corrente': 'numeroContaCorrente'
+            'numero_conta_corrente': 'numeroContaCorrente',
+            'forma_envio_fatura': 'formaEnvioFatura'
         }
 
         self._id = None
@@ -81,6 +83,7 @@ class Conta(object):
         self._numero_agencia = None
         self._valor_renda = None
         self._numero_conta_corrente = None
+        self._forma_envio_fatura = None
 
     @property
     def id(self):
@@ -367,6 +370,28 @@ class Conta(object):
         :type: str
         """
         self._numero_conta_corrente = numero_conta_corrente
+
+    @property
+    def forma_envio_fatura(self):
+        """
+        Gets the forma_envio_fatura of this Conta.
+        Forma de envio da fatura.
+
+        :return: The forma_envio_fatura of this Conta.
+        :rtype: str
+        """
+        return self._forma_envio_fatura
+
+    @forma_envio_fatura.setter
+    def forma_envio_fatura(self, forma_envio_fatura):
+        """
+        Sets the forma_envio_fatura of this Conta.
+        Forma de envio da fatura.
+
+        :param forma_envio_fatura: The forma_envio_fatura of this Conta.
+        :type: str
+        """
+        self._forma_envio_fatura = forma_envio_fatura
 
     def to_dict(self):
         """

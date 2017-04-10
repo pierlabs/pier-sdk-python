@@ -543,6 +543,83 @@ class CartaoApi(object):
                                             callback=params.get('callback'))
         return response
 
+    def consultar_lotes_cartoes_pre_pagos_using_get(self, id, **kwargs):
+        """
+        Permite consultar um determinado Lote de Cart\u00C3\u00B5es Pr\u00C3\u00A9-Pago
+        Este m\u00C3\u00A9todo permite consultar os cart\u00C3\u00B5es pr\u00C3\u00A9-pagos existentes na base do emissor atrav\u00C3\u00A9s do id do lote.
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.consultar_lotes_cartoes_pre_pagos_using_get(id, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do lote de cart\u00C3\u00B5es (id) (required)
+        :return: LoteCartoesPrePagos
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method consultar_lotes_cartoes_pre_pagos_using_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `consultar_lotes_cartoes_pre_pagos_using_get`")
+
+        resource_path = '/api/cartoes/lotes-cartoes-pre-pagos/{id}'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        response = self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='LoteCartoesPrePagos',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
     def consultar_portador_using_get(self, id, **kwargs):
         """
         Apresenta os dados do Portador do Cart\u00C3\u00A3o
@@ -697,6 +774,92 @@ class CartaoApi(object):
                                             callback=params.get('callback'))
         return response
 
+    def consultar_using_get20(self, id, id_transferencia, **kwargs):
+        """
+        Consultar uma transfer\u00C3\u00AAncia banc\u00C3\u00A1ria
+        Este recurso permite consultar os detalhes de uma determinada transfer\u00C3\u00AAncia de cr\u00C3\u00A9dito realizada entre contas. De modo geral, esta opera\u00C3\u00A7\u00C3\u00A3o poder\u00C3\u00A1 ser utilizada para uma consulta simples destes detalhes ou para realizar a montagem de um comprovante de 2\u00C2\u00AA via de transfer\u00C3\u00AAncia entre contas.
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.consultar_using_get20(id, id_transferencia, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param int id: Id Cart\u00C3\u00A3o (required)
+        :param int id_transferencia: Id Transfer\u00C3\u00AAncia (required)
+        :param int id_conta_bancaria_destino: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da conta banc\u00C3\u00A1ria de destino (id)
+        :return: LinkTransferenciaBancariaResponse
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'id_transferencia', 'id_conta_bancaria_destino']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method consultar_using_get20" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get20`")
+        # verify the required parameter 'id_transferencia' is set
+        if ('id_transferencia' not in params) or (params['id_transferencia'] is None):
+            raise ValueError("Missing the required parameter `id_transferencia` when calling `consultar_using_get20`")
+
+        resource_path = '/api/cartoes/{id}/transferencias-creditos-contas-bancarias/{id_transferencia}'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+        if 'id_transferencia' in params:
+            path_params['id_transferencia'] = params['id_transferencia']
+
+        query_params = {}
+        if 'id_conta_bancaria_destino' in params:
+            query_params['id_conta_bancaria_destino'] = params['id_conta_bancaria_destino']
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        response = self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='LinkTransferenciaBancariaResponse',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
     def desbloquear_using_put(self, id, **kwargs):
         """
         Realiza o desbloqueio de um determinado Cart\u00C3\u00A3o
@@ -814,7 +977,7 @@ class CartaoApi(object):
         del params['kwargs']
 
 
-        resource_path = '/api/cartoes/pre-pagos/lotes'.replace('{format}', 'json')
+        resource_path = '/api/cartoes/lotes-cartoes-pre-pagos'.replace('{format}', 'json')
         path_params = {}
 
         query_params = {}
@@ -957,7 +1120,6 @@ class CartaoApi(object):
             for asynchronous request. (optional)
         :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
         :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 100, Max = 100)
-        :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Lote de Cart\u00C3\u00B5es N\u00C3\u00A3o Nominais (id).
         :param int id_origem_comercial: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Origem Comercial (id).
         :param int id_produto: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Produto (id).
         :param int id_tipo_cartao: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Tipo do Cart\u00C3\u00A3o (id).
@@ -967,12 +1129,12 @@ class CartaoApi(object):
         :param date data_cadastro: Data de Cadastro do Lote de Cart\u00C3\u00B5es N\u00C3\u00A3o Nominais.
         :param str usuario_cadastro: Nome do Usu\u00C3\u00A1rio que criou o Lote.
         :param int status_processamento: Indica o Status de Processamento do Lote.
-        :return: PageCartoes
+        :return: PageLoteCartoesPrePagosResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['page', 'limit', 'id', 'id_origem_comercial', 'id_produto', 'id_tipo_cartao', 'id_imagem', 'id_endereco', 'quantidade_cartoes', 'data_cadastro', 'usuario_cadastro', 'status_processamento']
+        all_params = ['page', 'limit', 'id_origem_comercial', 'id_produto', 'id_tipo_cartao', 'id_imagem', 'id_endereco', 'quantidade_cartoes', 'data_cadastro', 'usuario_cadastro', 'status_processamento']
         all_params.append('callback')
 
         params = locals()
@@ -986,7 +1148,7 @@ class CartaoApi(object):
         del params['kwargs']
 
 
-        resource_path = '/api/cartoes/pre-pagos/lotes'.replace('{format}', 'json')
+        resource_path = '/api/cartoes/lotes-cartoes-pre-pagos'.replace('{format}', 'json')
         path_params = {}
 
         query_params = {}
@@ -994,8 +1156,6 @@ class CartaoApi(object):
             query_params['page'] = params['page']
         if 'limit' in params:
             query_params['limit'] = params['limit']
-        if 'id' in params:
-            query_params['id'] = params['id']
         if 'id_origem_comercial' in params:
             query_params['idOrigemComercial'] = params['id_origem_comercial']
         if 'id_produto' in params:
@@ -1042,7 +1202,93 @@ class CartaoApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='PageCartoes',
+                                            response_type='PageLoteCartoesPrePagosResponse',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
+    def listar_using_get19(self, id, **kwargs):
+        """
+        Listar as transfer\u00C3\u00AAncias banc\u00C3\u00A1rias realizadas
+        Este recurso tem como objetivo permitir que o portador de um Cart\u00C3\u00A3o possa consultar uma lista das Transfer\u00C3\u00AAncias Banc\u00C3\u00A1rias para os Favorecidos cadastrados.
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.listar_using_get19(id, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param int id: Id Cart\u00C3\u00A3o (required)
+        :param int id_conta_bancaria_destino: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da conta banc\u00C3\u00A1ria de destino (id)
+        :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
+        :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 100, Max = 100)
+        :return: LinkPageTransferenciaBancariaResponse
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'id_conta_bancaria_destino', 'page', 'limit']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method listar_using_get19" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `listar_using_get19`")
+
+        resource_path = '/api/cartoes/{id}/transferencias-creditos-contas-bancarias'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+
+        query_params = {}
+        if 'id_conta_bancaria_destino' in params:
+            query_params['id_conta_bancaria_destino'] = params['id_conta_bancaria_destino']
+        if 'page' in params:
+            query_params['page'] = params['page']
+        if 'limit' in params:
+            query_params['limit'] = params['limit']
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        response = self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='LinkPageTransferenciaBancariaResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
@@ -1064,7 +1310,6 @@ class CartaoApi(object):
             for asynchronous request. (optional)
         :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
         :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 100, Max = 100)
-        :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Cart\u00C3\u00A3o (id).
         :param int id_status_cartao: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Status do Cart\u00C3\u00A3o (id).
         :param int id_estagio_cartao: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Est\u00C3\u00A1gio de Impress\u00C3\u00A3o do Cart\u00C3\u00A3o (id).
         :param int id_conta: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Conta a qual o cart\u00C3\u00A3o pertence (id).
@@ -1087,7 +1332,7 @@ class CartaoApi(object):
                  returns the request thread.
         """
 
-        all_params = ['page', 'limit', 'id', 'id_status_cartao', 'id_estagio_cartao', 'id_conta', 'id_pessoa', 'id_produto', 'tipo_portador', 'numero_cartao', 'nome_impresso', 'data_geracao', 'data_status_cartao', 'data_estagio_cartao', 'data_validade', 'data_impressao', 'arquivo_impressao', 'flag_impressao_origem_comercial', 'flag_provisorio', 'codigo_desbloqueio']
+        all_params = ['page', 'limit', 'id_status_cartao', 'id_estagio_cartao', 'id_conta', 'id_pessoa', 'id_produto', 'tipo_portador', 'numero_cartao', 'nome_impresso', 'data_geracao', 'data_status_cartao', 'data_estagio_cartao', 'data_validade', 'data_impressao', 'arquivo_impressao', 'flag_impressao_origem_comercial', 'flag_provisorio', 'codigo_desbloqueio']
         all_params.append('callback')
 
         params = locals()
@@ -1109,8 +1354,6 @@ class CartaoApi(object):
             query_params['page'] = params['page']
         if 'limit' in params:
             query_params['limit'] = params['limit']
-        if 'id' in params:
-            query_params['id'] = params['id']
         if 'id_status_cartao' in params:
             query_params['idStatusCartao'] = params['id_status_cartao']
         if 'id_estagio_cartao' in params:
@@ -1174,6 +1417,155 @@ class CartaoApi(object):
                                             post_params=form_params,
                                             files=local_var_files,
                                             response_type='PageCartoes',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
+    def transferir_using_post(self, id, data_compra, proximo_vencimento_padrao, proximo_vencimento_real, valor_compra, nome_favorecido, documento_favorecido, banco, numero_agencia, numero_conta, flag_conta_poupanca, **kwargs):
+        """
+        Realizar transfer\u00C3\u00AAncia banc\u00C3\u00A1ria entre bancos / contas
+        Este recurso tem como objetivo permitir que o portador de um cart\u00C3\u00A3o possa realizar a transfer\u00C3\u00AAncia de cr\u00C3\u00A9dito para outro cliente do mesmo emissor. Assim, o valor do cr\u00C3\u00A9dito somado a tarifa para transfer\u00C3\u00AAncia, quando praticada pelo emissor, ser\u00C3\u00A1 debitado da conta de origem, se houver saldo suficiente, e ser\u00C3\u00A1 creditado na conta de destino.
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.transferir_using_post(id, data_compra, proximo_vencimento_padrao, proximo_vencimento_real, valor_compra, nome_favorecido, documento_favorecido, banco, numero_agencia, numero_conta, flag_conta_poupanca, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param int id: Id Cart\u00C3\u00A3o (required)
+        :param date data_compra: Data da transfer\u00C3\u00AAncia (required)
+        :param date proximo_vencimento_padrao: Dia do vencimento padr\u00C3\u00A3o da fatura (required)
+        :param date proximo_vencimento_real: Data do vencimento real da fatura (required)
+        :param float valor_compra: Valor da transfer\u00C3\u00AAncia (required)
+        :param str nome_favorecido: Apresenta o 'Nome Completo da PF' ou o 'Nome Completo da Raz\u00C3\u00A3o Social (Nome Empresarial)'. (required)
+        :param str documento_favorecido: N\u00C3\u00BAmero do CPF ou CNPJ. (required)
+        :param int banco: C\u00C3\u00B3digo do banco (required)
+        :param str numero_agencia: N\u00C3\u00BAmero da ag\u00C3\u00AAncia (required)
+        :param str numero_conta: N\u00C3\u00BAmero da conta (required)
+        :param int flag_conta_poupanca: Sinaliza se conta banc\u00C3\u00A1ria \u00C3\u00A9 poupan\u00C3\u00A7a (1: Poupan\u00C3\u00A7a, 0: Conta corrente) (required)
+        :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
+        :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 100, Max = 100)
+        :param str digito_agencia: D\u00C3\u00ADgito da ag\u00C3\u00AAncia
+        :param str digito_conta: D\u00C3\u00ADgito da conta
+        :return: LinkTransferenciaBancariaResponse
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'data_compra', 'proximo_vencimento_padrao', 'proximo_vencimento_real', 'valor_compra', 'nome_favorecido', 'documento_favorecido', 'banco', 'numero_agencia', 'numero_conta', 'flag_conta_poupanca', 'page', 'limit', 'digito_agencia', 'digito_conta']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method transferir_using_post" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `transferir_using_post`")
+        # verify the required parameter 'data_compra' is set
+        if ('data_compra' not in params) or (params['data_compra'] is None):
+            raise ValueError("Missing the required parameter `data_compra` when calling `transferir_using_post`")
+        # verify the required parameter 'proximo_vencimento_padrao' is set
+        if ('proximo_vencimento_padrao' not in params) or (params['proximo_vencimento_padrao'] is None):
+            raise ValueError("Missing the required parameter `proximo_vencimento_padrao` when calling `transferir_using_post`")
+        # verify the required parameter 'proximo_vencimento_real' is set
+        if ('proximo_vencimento_real' not in params) or (params['proximo_vencimento_real'] is None):
+            raise ValueError("Missing the required parameter `proximo_vencimento_real` when calling `transferir_using_post`")
+        # verify the required parameter 'valor_compra' is set
+        if ('valor_compra' not in params) or (params['valor_compra'] is None):
+            raise ValueError("Missing the required parameter `valor_compra` when calling `transferir_using_post`")
+        # verify the required parameter 'nome_favorecido' is set
+        if ('nome_favorecido' not in params) or (params['nome_favorecido'] is None):
+            raise ValueError("Missing the required parameter `nome_favorecido` when calling `transferir_using_post`")
+        # verify the required parameter 'documento_favorecido' is set
+        if ('documento_favorecido' not in params) or (params['documento_favorecido'] is None):
+            raise ValueError("Missing the required parameter `documento_favorecido` when calling `transferir_using_post`")
+        # verify the required parameter 'banco' is set
+        if ('banco' not in params) or (params['banco'] is None):
+            raise ValueError("Missing the required parameter `banco` when calling `transferir_using_post`")
+        # verify the required parameter 'numero_agencia' is set
+        if ('numero_agencia' not in params) or (params['numero_agencia'] is None):
+            raise ValueError("Missing the required parameter `numero_agencia` when calling `transferir_using_post`")
+        # verify the required parameter 'numero_conta' is set
+        if ('numero_conta' not in params) or (params['numero_conta'] is None):
+            raise ValueError("Missing the required parameter `numero_conta` when calling `transferir_using_post`")
+        # verify the required parameter 'flag_conta_poupanca' is set
+        if ('flag_conta_poupanca' not in params) or (params['flag_conta_poupanca'] is None):
+            raise ValueError("Missing the required parameter `flag_conta_poupanca` when calling `transferir_using_post`")
+
+        resource_path = '/api/cartoes/{id}/transferencias-creditos-contas-bancarias'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+
+        query_params = {}
+        if 'page' in params:
+            query_params['page'] = params['page']
+        if 'limit' in params:
+            query_params['limit'] = params['limit']
+        if 'data_compra' in params:
+            query_params['dataCompra'] = params['data_compra']
+        if 'proximo_vencimento_padrao' in params:
+            query_params['proximoVencimentoPadrao'] = params['proximo_vencimento_padrao']
+        if 'proximo_vencimento_real' in params:
+            query_params['proximoVencimentoReal'] = params['proximo_vencimento_real']
+        if 'valor_compra' in params:
+            query_params['valorCompra'] = params['valor_compra']
+        if 'nome_favorecido' in params:
+            query_params['nomeFavorecido'] = params['nome_favorecido']
+        if 'documento_favorecido' in params:
+            query_params['documentoFavorecido'] = params['documento_favorecido']
+        if 'banco' in params:
+            query_params['banco'] = params['banco']
+        if 'numero_agencia' in params:
+            query_params['numeroAgencia'] = params['numero_agencia']
+        if 'digito_agencia' in params:
+            query_params['digitoAgencia'] = params['digito_agencia']
+        if 'numero_conta' in params:
+            query_params['numeroConta'] = params['numero_conta']
+        if 'digito_conta' in params:
+            query_params['digitoConta'] = params['digito_conta']
+        if 'flag_conta_poupanca' in params:
+            query_params['flagContaPoupanca'] = params['flag_conta_poupanca']
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = ['access_token']
+
+        response = self.api_client.call_api(resource_path, 'POST',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='LinkTransferenciaBancariaResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
