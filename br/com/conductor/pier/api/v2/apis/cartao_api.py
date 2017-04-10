@@ -1327,12 +1327,13 @@ class CartaoApi(object):
         :param int flag_impressao_origem_comercial: Quando ativa, indica que o cart\u00C3\u00A3o fora impresso na Origem Comercial.
         :param int flag_provisorio: Quando ativa, indica que o cart\u00C3\u00A3o \u00C3\u00A9 provis\u00C3\u00B3rio. Ou seja, \u00C3\u00A9 um cart\u00C3\u00A3o para uso tempor\u00C3\u00A1rio quando se deseja permitir que o cliente transacione sem que ele tenha recebido um cart\u00C3\u00A3o definitivo.
         :param str codigo_desbloqueio: Apresenta um c\u00C3\u00B3digo espec\u00C3\u00ADfico para ser utilizado como vari\u00C3\u00A1vel no processo de desbloqueio do cart\u00C3\u00A3o para emissores que querem usar esta funcionalidade.
+        :param int sequencial_cartao: N\u00C3\u00BAmero sequencial do cart\u00C3\u00A3o
         :return: PageCartoes
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['page', 'limit', 'id_status_cartao', 'id_estagio_cartao', 'id_conta', 'id_pessoa', 'id_produto', 'tipo_portador', 'numero_cartao', 'nome_impresso', 'data_geracao', 'data_status_cartao', 'data_estagio_cartao', 'data_validade', 'data_impressao', 'arquivo_impressao', 'flag_impressao_origem_comercial', 'flag_provisorio', 'codigo_desbloqueio']
+        all_params = ['page', 'limit', 'id_status_cartao', 'id_estagio_cartao', 'id_conta', 'id_pessoa', 'id_produto', 'tipo_portador', 'numero_cartao', 'nome_impresso', 'data_geracao', 'data_status_cartao', 'data_estagio_cartao', 'data_validade', 'data_impressao', 'arquivo_impressao', 'flag_impressao_origem_comercial', 'flag_provisorio', 'codigo_desbloqueio', 'sequencial_cartao']
         all_params.append('callback')
 
         params = locals()
@@ -1388,6 +1389,8 @@ class CartaoApi(object):
             query_params['flagProvisorio'] = params['flag_provisorio']
         if 'codigo_desbloqueio' in params:
             query_params['codigoDesbloqueio'] = params['codigo_desbloqueio']
+        if 'sequencial_cartao' in params:
+            query_params['sequencialCartao'] = params['sequencial_cartao']
 
         header_params = {}
 

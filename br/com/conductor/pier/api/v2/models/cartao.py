@@ -54,7 +54,8 @@ class Cartao(object):
             'arquivo_impressao': 'str',
             'flag_impressao_origem_comercial': 'int',
             'flag_provisorio': 'int',
-            'codigo_desbloqueio': 'str'
+            'codigo_desbloqueio': 'str',
+            'sequencial_cartao': 'int'
         }
 
         self.attribute_map = {
@@ -75,7 +76,8 @@ class Cartao(object):
             'arquivo_impressao': 'arquivoImpressao',
             'flag_impressao_origem_comercial': 'flagImpressaoOrigemComercial',
             'flag_provisorio': 'flagProvisorio',
-            'codigo_desbloqueio': 'codigoDesbloqueio'
+            'codigo_desbloqueio': 'codigoDesbloqueio',
+            'sequencial_cartao': 'sequencialCartao'
         }
 
         self._id = None
@@ -96,6 +98,7 @@ class Cartao(object):
         self._flag_impressao_origem_comercial = None
         self._flag_provisorio = None
         self._codigo_desbloqueio = None
+        self._sequencial_cartao = None
 
     @property
     def id(self):
@@ -492,6 +495,28 @@ class Cartao(object):
         :type: str
         """
         self._codigo_desbloqueio = codigo_desbloqueio
+
+    @property
+    def sequencial_cartao(self):
+        """
+        Gets the sequencial_cartao of this Cartao.
+        N\u00C3\u00BAmero sequencial do cart\u00C3\u00A3o
+
+        :return: The sequencial_cartao of this Cartao.
+        :rtype: int
+        """
+        return self._sequencial_cartao
+
+    @sequencial_cartao.setter
+    def sequencial_cartao(self, sequencial_cartao):
+        """
+        Sets the sequencial_cartao of this Cartao.
+        N\u00C3\u00BAmero sequencial do cart\u00C3\u00A3o
+
+        :param sequencial_cartao: The sequencial_cartao of this Cartao.
+        :type: int
+        """
+        self._sequencial_cartao = sequencial_cartao
 
     def to_dict(self):
         """
