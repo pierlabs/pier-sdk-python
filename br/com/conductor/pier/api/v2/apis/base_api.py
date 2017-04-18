@@ -45,7 +45,7 @@ class BaseApi(object):
                 config.api_client = ApiClient()
             self.api_client = config.api_client
 
-    def clear_using_post(self, **kwargs):
+    def limpar_using_post(self, **kwargs):
         """
         Limpar mapa de bases
         
@@ -56,7 +56,7 @@ class BaseApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.clear_using_post(callback=callback_function)
+        >>> thread = api.limpar_using_post(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -73,7 +73,7 @@ class BaseApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method clear_using_post" % key
+                    " to method limpar_using_post" % key
                 )
             params[key] = val
         del params['kwargs']

@@ -15,6 +15,7 @@ from .conta import Conta
 from .detalhe_oportunidade_persist import DetalheOportunidadePersist
 from .detalhe_oportunidade_response import DetalheOportunidadeResponse
 from .detalhe_oportunidade_update import DetalheOportunidadeUpdate
+from .detalhes_fatura_consignada_response import DetalhesFaturaConsignadaResponse
 from .detalhes_fatura_response import DetalhesFaturaResponse
 from .divida_cliente_response import DividaClienteResponse
 from .endereco import Endereco

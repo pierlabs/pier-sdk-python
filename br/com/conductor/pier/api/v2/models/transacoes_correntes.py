@@ -45,15 +45,15 @@ class TransacoesCorrentes(object):
             'id_conta': 'int',
             'cartao_mascarado': 'str',
             'nome_portador': 'str',
-            'data_transacao_utc': 'str',
+            'data_transacao_utc': 'datetime',
             'data_faturamento': 'datetime',
-            'data_vencimento': 'str',
+            'data_vencimento': 'date',
             'modo_entrada_transacao': 'str',
             'valor_taxa_embarque': 'float',
             'valor_entrada': 'float',
             'valor_brl': 'float',
-            'cotacao_usd': 'float',
             'valor_usd': 'float',
+            'cotacao_usd': 'float',
             'data_cotacao_usd': 'datetime',
             'codigo_moeda_origem': 'str',
             'codigo_moeda_destino': 'str',
@@ -89,8 +89,8 @@ class TransacoesCorrentes(object):
             'valor_taxa_embarque': 'valorTaxaEmbarque',
             'valor_entrada': 'valorEntrada',
             'valor_brl': 'valorBRL',
-            'cotacao_usd': 'cotacaoUSD',
             'valor_usd': 'valorUSD',
+            'cotacao_usd': 'cotacaoUSD',
             'data_cotacao_usd': 'dataCotacaoUSD',
             'codigo_moeda_origem': 'codigoMoedaOrigem',
             'codigo_moeda_destino': 'codigoMoedaDestino',
@@ -125,8 +125,8 @@ class TransacoesCorrentes(object):
         self._valor_taxa_embarque = None
         self._valor_entrada = None
         self._valor_brl = None
-        self._cotacao_usd = None
         self._valor_usd = None
+        self._cotacao_usd = None
         self._data_cotacao_usd = None
         self._codigo_moeda_origem = None
         self._codigo_moeda_destino = None
@@ -328,7 +328,7 @@ class TransacoesCorrentes(object):
         Data em que a Transa\u00C3\u00A7\u00C3\u00A3o foi realizada sob o padr\u00C3\u00A3o de Tempo Universal Coordenado (UTC).
 
         :return: The data_transacao_utc of this TransacoesCorrentes.
-        :rtype: str
+        :rtype: datetime
         """
         return self._data_transacao_utc
 
@@ -339,7 +339,7 @@ class TransacoesCorrentes(object):
         Data em que a Transa\u00C3\u00A7\u00C3\u00A3o foi realizada sob o padr\u00C3\u00A3o de Tempo Universal Coordenado (UTC).
 
         :param data_transacao_utc: The data_transacao_utc of this TransacoesCorrentes.
-        :type: str
+        :type: datetime
         """
         self._data_transacao_utc = data_transacao_utc
 
@@ -372,7 +372,7 @@ class TransacoesCorrentes(object):
         Data de Vencimento da Fatura.
 
         :return: The data_vencimento of this TransacoesCorrentes.
-        :rtype: str
+        :rtype: date
         """
         return self._data_vencimento
 
@@ -383,7 +383,7 @@ class TransacoesCorrentes(object):
         Data de Vencimento da Fatura.
 
         :param data_vencimento: The data_vencimento of this TransacoesCorrentes.
-        :type: str
+        :type: date
         """
         self._data_vencimento = data_vencimento
 
@@ -476,28 +476,6 @@ class TransacoesCorrentes(object):
         self._valor_brl = valor_brl
 
     @property
-    def cotacao_usd(self):
-        """
-        Gets the cotacao_usd of this TransacoesCorrentes.
-        Valor do D\u00C3\u00B3lar Americano (USD) convertido em Real (BRL).
-
-        :return: The cotacao_usd of this TransacoesCorrentes.
-        :rtype: float
-        """
-        return self._cotacao_usd
-
-    @cotacao_usd.setter
-    def cotacao_usd(self, cotacao_usd):
-        """
-        Sets the cotacao_usd of this TransacoesCorrentes.
-        Valor do D\u00C3\u00B3lar Americano (USD) convertido em Real (BRL).
-
-        :param cotacao_usd: The cotacao_usd of this TransacoesCorrentes.
-        :type: float
-        """
-        self._cotacao_usd = cotacao_usd
-
-    @property
     def valor_usd(self):
         """
         Gets the valor_usd of this TransacoesCorrentes.
@@ -518,6 +496,28 @@ class TransacoesCorrentes(object):
         :type: float
         """
         self._valor_usd = valor_usd
+
+    @property
+    def cotacao_usd(self):
+        """
+        Gets the cotacao_usd of this TransacoesCorrentes.
+        Valor do D\u00C3\u00B3lar Americano (USD) convertido em Real (BRL).
+
+        :return: The cotacao_usd of this TransacoesCorrentes.
+        :rtype: float
+        """
+        return self._cotacao_usd
+
+    @cotacao_usd.setter
+    def cotacao_usd(self, cotacao_usd):
+        """
+        Sets the cotacao_usd of this TransacoesCorrentes.
+        Valor do D\u00C3\u00B3lar Americano (USD) convertido em Real (BRL).
+
+        :param cotacao_usd: The cotacao_usd of this TransacoesCorrentes.
+        :type: float
+        """
+        self._cotacao_usd = cotacao_usd
 
     @property
     def data_cotacao_usd(self):
