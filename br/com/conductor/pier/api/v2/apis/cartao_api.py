@@ -114,7 +114,7 @@ class CartaoApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = ['access_token']
+        auth_settings = []
 
         response = self.api_client.call_api(resource_path, 'PUT',
                                             path_params,
@@ -197,7 +197,7 @@ class CartaoApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = ['access_token']
+        auth_settings = []
 
         response = self.api_client.call_api(resource_path, 'PUT',
                                             path_params,
@@ -253,7 +253,7 @@ class CartaoApi(object):
         if ('id_pessoa' not in params) or (params['id_pessoa'] is None):
             raise ValueError("Missing the required parameter `id_pessoa` when calling `atribuir_pessoa_using_put`")
 
-        resource_path = '/api/cartoes/{id}/atribuir-pessoa'.replace('{format}', 'json')
+        resource_path = '/api/cartoes/{id}/atribuir-titular'.replace('{format}', 'json')
         path_params = {}
         if 'id' in params:
             path_params['id'] = params['id']
@@ -280,7 +280,7 @@ class CartaoApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = ['access_token']
+        auth_settings = []
 
         response = self.api_client.call_api(resource_path, 'PUT',
                                             path_params,
@@ -369,7 +369,7 @@ class CartaoApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = ['access_token']
+        auth_settings = []
 
         response = self.api_client.call_api(resource_path, 'PUT',
                                             path_params,
@@ -452,7 +452,7 @@ class CartaoApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = ['access_token']
+        auth_settings = []
 
         response = self.api_client.call_api(resource_path, 'POST',
                                             path_params,
@@ -462,6 +462,83 @@ class CartaoApi(object):
                                             post_params=form_params,
                                             files=local_var_files,
                                             response_type='str',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
+    def consultar_dados_cartao_using_get(self, id, **kwargs):
+        """
+        Consultar Detalhes do Cart\u00C3\u00A3o
+        Este m\u00C3\u00A9todo permite que seja consultado os dados necessarios de um cart\u00C3\u00A3o para executar servi\u00C3\u00A7os de autoriza\u00C3\u00A7\u00C3\u00A3o.
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.consultar_dados_cartao_using_get(id, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param int id: id (required)
+        :return: TransacaoOnUsResponse
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method consultar_dados_cartao_using_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `consultar_dados_cartao_using_get`")
+
+        resource_path = '/api/cartoes/{id}/consultar-dados-reais'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = []
+
+        response = self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='TransacaoOnUsResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
@@ -529,7 +606,7 @@ class CartaoApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = ['access_token']
+        auth_settings = []
 
         response = self.api_client.call_api(resource_path, 'GET',
                                             path_params,
@@ -606,7 +683,7 @@ class CartaoApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = ['access_token']
+        auth_settings = []
 
         response = self.api_client.call_api(resource_path, 'GET',
                                             path_params,
@@ -683,7 +760,7 @@ class CartaoApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = ['access_token']
+        auth_settings = []
 
         response = self.api_client.call_api(resource_path, 'GET',
                                             path_params,
@@ -760,9 +837,86 @@ class CartaoApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = ['access_token']
+        auth_settings = []
 
         response = self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='Cartao',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
+    def desbloquear_senha_incorreta_using_post(self, id, **kwargs):
+        """
+        Realiza o desbloqueio de um cart\u00C3\u00A3o bloqueado por tentativas de senha incorretas
+        Este m\u00C3\u00A9todo permite que seja desbloqueado um determinado cart\u00C3\u00A3o que foi bloqueado por tentativas de senha incorretas, a partir do seu c\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o (id).
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.desbloquear_senha_incorreta_using_post(id, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Cart\u00C3\u00A3o (id). (required)
+        :return: Cartao
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method desbloquear_senha_incorreta_using_post" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `desbloquear_senha_incorreta_using_post`")
+
+        resource_path = '/api/cartoes/{id}/desbloquear-senha-incorreta'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = []
+
+        response = self.api_client.call_api(resource_path, 'POST',
                                             path_params,
                                             query_params,
                                             header_params,
@@ -837,7 +991,7 @@ class CartaoApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = ['access_token']
+        auth_settings = []
 
         response = self.api_client.call_api(resource_path, 'PUT',
                                             path_params,
@@ -926,7 +1080,7 @@ class CartaoApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = ['access_token']
+        auth_settings = []
 
         response = self.api_client.call_api(resource_path, 'POST',
                                             path_params,
@@ -1003,7 +1157,7 @@ class CartaoApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = ['access_token']
+        auth_settings = []
 
         response = self.api_client.call_api(resource_path, 'POST',
                                             path_params,
@@ -1107,7 +1261,7 @@ class CartaoApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = ['access_token']
+        auth_settings = []
 
         response = self.api_client.call_api(resource_path, 'GET',
                                             path_params,
@@ -1121,7 +1275,7 @@ class CartaoApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get2(self, **kwargs):
+    def listar_using_get3(self, **kwargs):
         """
         Lista os Cart\u00C3\u00B5es gerados pelo Emissor
         Este m\u00C3\u00A9todo permite que sejam listados os cart\u00C3\u00B5es existentes na base do emissor.
@@ -1132,7 +1286,7 @@ class CartaoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get2(callback=callback_function)
+        >>> thread = api.listar_using_get3(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -1169,7 +1323,7 @@ class CartaoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get2" % key
+                    " to method listar_using_get3" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -1238,7 +1392,7 @@ class CartaoApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = ['access_token']
+        auth_settings = []
 
         response = self.api_client.call_api(resource_path, 'GET',
                                             path_params,
@@ -1252,10 +1406,10 @@ class CartaoApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def validar_cartao_chip_bandeirado_using_get(self, numero_cartao, criptograma, **kwargs):
+    def validar_dados_impressos_bandeirado_using_get(self, numero_cartao, nome_portador, data_validade, codigo_seguranca, **kwargs):
         """
-        Permite validar um Cart\u00C3\u00A3o com bandeira Mastercard a partir do chip
-        Esta opera\u00C3\u00A7\u00C3\u00A3o tem como objetivo permitir que os Emissores validem o criptograma gerado a partir da leitura de um chip EMV de um Cart\u00C3\u00A3o com bandeira Mastercard a fim de verificar a sua autenticidade. A utiliza\u00C3\u00A7\u00C3\u00A3o desde m\u00C3\u00A9todo tem diversas aplica\u00C3\u00A7\u00C3\u00B5es, sendo a principal delas a de Identifica\u00C3\u00A7\u00C3\u00A3o Positiva do Cart\u00C3\u00A3o antes de permitir que o portador realize transa\u00C3\u00A7\u00C3\u00B5es diversas, como as de compra e saque na modalidade d\u00C3\u00A9bito em conta corrente, dentre outras.
+        Permite validar os dados impressos em um cart\u00C3\u00A3o bandeirado
+        Esta opera\u00C3\u00A7\u00C3\u00A3o tem como objetivo permitir que os Emissores validem a autenticidade de um determinado Cart\u00C3\u00A3o a partir do envio dos dados sens\u00C3\u00ADveis impressos nele. A utiliza\u00C3\u00A7\u00C3\u00A3o desde m\u00C3\u00A9todo tem diversas aplica\u00C3\u00A7\u00C3\u00B5es, sendo a principal delas a de Identifica\u00C3\u00A7\u00C3\u00A3o Positiva do Cart\u00C3\u00A3o para a realiza\u00C3\u00A7\u00C3\u00A3o de transa\u00C3\u00A7\u00C3\u00B5es e-commerce ou por meio de Centrais de Atendimento Eletr\u00C3\u00B4nico (URA), dentre outras.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -1263,7 +1417,197 @@ class CartaoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.validar_cartao_chip_bandeirado_using_get(numero_cartao, criptograma, callback=callback_function)
+        >>> thread = api.validar_dados_impressos_bandeirado_using_get(numero_cartao, nome_portador, data_validade, codigo_seguranca, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str numero_cartao: N\u00C3\u00BAmero do cart\u00C3\u00A3o a ser validado. (required)
+        :param str nome_portador: Nome do portador do cart\u00C3\u00A3o (required)
+        :param str data_validade: Data de validade do cart\u00C3\u00A3o no formato yyyy-MM (required)
+        :param str codigo_seguranca: C\u00C3\u00B3digo de seguran\u00C3\u00A7a do cart\u00C3\u00A3o com tr\u00C3\u00AAs n\u00C3\u00BAmeros (required)
+        :return: ValidaCartao
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['numero_cartao', 'nome_portador', 'data_validade', 'codigo_seguranca']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method validar_dados_impressos_bandeirado_using_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        # verify the required parameter 'numero_cartao' is set
+        if ('numero_cartao' not in params) or (params['numero_cartao'] is None):
+            raise ValueError("Missing the required parameter `numero_cartao` when calling `validar_dados_impressos_bandeirado_using_get`")
+        # verify the required parameter 'nome_portador' is set
+        if ('nome_portador' not in params) or (params['nome_portador'] is None):
+            raise ValueError("Missing the required parameter `nome_portador` when calling `validar_dados_impressos_bandeirado_using_get`")
+        # verify the required parameter 'data_validade' is set
+        if ('data_validade' not in params) or (params['data_validade'] is None):
+            raise ValueError("Missing the required parameter `data_validade` when calling `validar_dados_impressos_bandeirado_using_get`")
+        # verify the required parameter 'codigo_seguranca' is set
+        if ('codigo_seguranca' not in params) or (params['codigo_seguranca'] is None):
+            raise ValueError("Missing the required parameter `codigo_seguranca` when calling `validar_dados_impressos_bandeirado_using_get`")
+
+        resource_path = '/api/cartoes/validar-dados-impressos-bandeirados'.replace('{format}', 'json')
+        path_params = {}
+
+        query_params = {}
+        if 'numero_cartao' in params:
+            query_params['numero_cartao'] = params['numero_cartao']
+        if 'nome_portador' in params:
+            query_params['nome_portador'] = params['nome_portador']
+        if 'data_validade' in params:
+            query_params['data_validade'] = params['data_validade']
+        if 'codigo_seguranca' in params:
+            query_params['codigo_seguranca'] = params['codigo_seguranca']
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = []
+
+        response = self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='ValidaCartao',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
+    def validar_dados_impressos_nao_bandeirado_using_get(self, numero_cartao, nome_portador, data_validade, codigo_seguranca, **kwargs):
+        """
+        Permite validar os dados impressos de um cartao n\u00C3\u00A3o bandeirado
+        Esta opera\u00C3\u00A7\u00C3\u00A3o tem como objetivo permitir que os Emissores validem a autenticidade de um determinado Cart\u00C3\u00A3o a partir do envio dos dados sens\u00C3\u00ADveis impressos nele. A utiliza\u00C3\u00A7\u00C3\u00A3o desde m\u00C3\u00A9todo tem diversas aplica\u00C3\u00A7\u00C3\u00B5es, sendo a principal delas a de Identifica\u00C3\u00A7\u00C3\u00A3o Positiva do Cart\u00C3\u00A3o para a realiza\u00C3\u00A7\u00C3\u00A3o de transa\u00C3\u00A7\u00C3\u00B5es e-commerce ou por meio de Centrais de Atendimento Eletr\u00C3\u00B4nico (URA), dentre outras.
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.validar_dados_impressos_nao_bandeirado_using_get(numero_cartao, nome_portador, data_validade, codigo_seguranca, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str numero_cartao: N\u00C3\u00BAmero do cart\u00C3\u00A3o a ser validado. (required)
+        :param str nome_portador: Nome do portador do cart\u00C3\u00A3o (required)
+        :param str data_validade: Data de validade do cart\u00C3\u00A3o no formato yyyy-MM (required)
+        :param str codigo_seguranca: C\u00C3\u00B3digo de seguran\u00C3\u00A7a do cart\u00C3\u00A3o com tr\u00C3\u00AAs n\u00C3\u00BAmeros (required)
+        :return: ValidaCartao
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['numero_cartao', 'nome_portador', 'data_validade', 'codigo_seguranca']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method validar_dados_impressos_nao_bandeirado_using_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        # verify the required parameter 'numero_cartao' is set
+        if ('numero_cartao' not in params) or (params['numero_cartao'] is None):
+            raise ValueError("Missing the required parameter `numero_cartao` when calling `validar_dados_impressos_nao_bandeirado_using_get`")
+        # verify the required parameter 'nome_portador' is set
+        if ('nome_portador' not in params) or (params['nome_portador'] is None):
+            raise ValueError("Missing the required parameter `nome_portador` when calling `validar_dados_impressos_nao_bandeirado_using_get`")
+        # verify the required parameter 'data_validade' is set
+        if ('data_validade' not in params) or (params['data_validade'] is None):
+            raise ValueError("Missing the required parameter `data_validade` when calling `validar_dados_impressos_nao_bandeirado_using_get`")
+        # verify the required parameter 'codigo_seguranca' is set
+        if ('codigo_seguranca' not in params) or (params['codigo_seguranca'] is None):
+            raise ValueError("Missing the required parameter `codigo_seguranca` when calling `validar_dados_impressos_nao_bandeirado_using_get`")
+
+        resource_path = '/api/cartoes/validar-dados-impressos-nao-bandeirados'.replace('{format}', 'json')
+        path_params = {}
+
+        query_params = {}
+        if 'numero_cartao' in params:
+            query_params['numero_cartao'] = params['numero_cartao']
+        if 'nome_portador' in params:
+            query_params['nome_portador'] = params['nome_portador']
+        if 'data_validade' in params:
+            query_params['data_validade'] = params['data_validade']
+        if 'codigo_seguranca' in params:
+            query_params['codigo_seguranca'] = params['codigo_seguranca']
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = []
+
+        response = self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='ValidaCartao',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
+    def validar_de55_cartao_mastercard_using_get(self, numero_cartao, criptograma, **kwargs):
+        """
+        Permite validar um Cart\u00C3\u00A3o com bandeira Mastercard a partir do de55
+        Esta opera\u00C3\u00A7\u00C3\u00A3o tem como objetivo permitir que os Emissores validem o DE55 gerado a partir da leitura de um chip EMV de um Cart\u00C3\u00A3o com bandeira Mastercard a fim de verificar a sua autenticidade. A utiliza\u00C3\u00A7\u00C3\u00A3o desde m\u00C3\u00A9todo tem diversas aplica\u00C3\u00A7\u00C3\u00B5es, sendo a principal delas a de Identifica\u00C3\u00A7\u00C3\u00A3o Positiva do Cart\u00C3\u00A3o antes de permitir que o portador realize transa\u00C3\u00A7\u00C3\u00B5es diversas, como as de compra e saque na modalidade d\u00C3\u00A9bito em conta corrente, dentre outras.
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.validar_de55_cartao_mastercard_using_get(numero_cartao, criptograma, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -1282,19 +1626,19 @@ class CartaoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method validar_cartao_chip_bandeirado_using_get" % key
+                    " to method validar_de55_cartao_mastercard_using_get" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'numero_cartao' is set
         if ('numero_cartao' not in params) or (params['numero_cartao'] is None):
-            raise ValueError("Missing the required parameter `numero_cartao` when calling `validar_cartao_chip_bandeirado_using_get`")
+            raise ValueError("Missing the required parameter `numero_cartao` when calling `validar_de55_cartao_mastercard_using_get`")
         # verify the required parameter 'criptograma' is set
         if ('criptograma' not in params) or (params['criptograma'] is None):
-            raise ValueError("Missing the required parameter `criptograma` when calling `validar_cartao_chip_bandeirado_using_get`")
+            raise ValueError("Missing the required parameter `criptograma` when calling `validar_de55_cartao_mastercard_using_get`")
 
-        resource_path = '/api/cartoes/bandeirados/validar-chip'.replace('{format}', 'json')
+        resource_path = '/api/cartoes/validar-de55-mastercard'.replace('{format}', 'json')
         path_params = {}
 
         query_params = {}
@@ -1321,286 +1665,7 @@ class CartaoApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = ['access_token']
-
-        response = self.api_client.call_api(resource_path, 'GET',
-                                            path_params,
-                                            query_params,
-                                            header_params,
-                                            body=body_params,
-                                            post_params=form_params,
-                                            files=local_var_files,
-                                            response_type='ValidaCartao',
-                                            auth_settings=auth_settings,
-                                            callback=params.get('callback'))
-        return response
-
-    def validar_cartao_digitado_bandeirado_using_get(self, numero_cartao, nome_portador, data_validade, codigo_seguranca, **kwargs):
-        """
-        Permite validar um Cart\u00C3\u00A3o bandeirado a partir dos dados Impressos
-        Esta opera\u00C3\u00A7\u00C3\u00A3o tem como objetivo permitir que os Emissores validem a autenticidade de um determinado Cart\u00C3\u00A3o a partir do envio dos dados sens\u00C3\u00ADveis impressos nele. A utiliza\u00C3\u00A7\u00C3\u00A3o desde m\u00C3\u00A9todo tem diversas aplica\u00C3\u00A7\u00C3\u00B5es, sendo a principal delas a de Identifica\u00C3\u00A7\u00C3\u00A3o Positiva do Cart\u00C3\u00A3o para a realiza\u00C3\u00A7\u00C3\u00A3o de transa\u00C3\u00A7\u00C3\u00B5es e-commerce ou por meio de Centrais de Atendimento Eletr\u00C3\u00B4nico (URA), dentre outras.
-
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
-        >>> thread = api.validar_cartao_digitado_bandeirado_using_get(numero_cartao, nome_portador, data_validade, codigo_seguranca, callback=callback_function)
-
-        :param callback function: The callback function
-            for asynchronous request. (optional)
-        :param str numero_cartao: N\u00C3\u00BAmero do cart\u00C3\u00A3o a ser validado. (required)
-        :param str nome_portador: Nome do portador do cart\u00C3\u00A3o (required)
-        :param str data_validade: Data de validade do cart\u00C3\u00A3o no formato yyyy-MM (required)
-        :param str codigo_seguranca: C\u00C3\u00B3digo de seguran\u00C3\u00A7a do cart\u00C3\u00A3o com tr\u00C3\u00AAs n\u00C3\u00BAmeros (required)
-        :return: ValidaCartao
-                 If the method is called asynchronously,
-                 returns the request thread.
-        """
-
-        all_params = ['numero_cartao', 'nome_portador', 'data_validade', 'codigo_seguranca']
-        all_params.append('callback')
-
-        params = locals()
-        for key, val in iteritems(params['kwargs']):
-            if key not in all_params:
-                raise TypeError(
-                    "Got an unexpected keyword argument '%s'"
-                    " to method validar_cartao_digitado_bandeirado_using_get" % key
-                )
-            params[key] = val
-        del params['kwargs']
-
-        # verify the required parameter 'numero_cartao' is set
-        if ('numero_cartao' not in params) or (params['numero_cartao'] is None):
-            raise ValueError("Missing the required parameter `numero_cartao` when calling `validar_cartao_digitado_bandeirado_using_get`")
-        # verify the required parameter 'nome_portador' is set
-        if ('nome_portador' not in params) or (params['nome_portador'] is None):
-            raise ValueError("Missing the required parameter `nome_portador` when calling `validar_cartao_digitado_bandeirado_using_get`")
-        # verify the required parameter 'data_validade' is set
-        if ('data_validade' not in params) or (params['data_validade'] is None):
-            raise ValueError("Missing the required parameter `data_validade` when calling `validar_cartao_digitado_bandeirado_using_get`")
-        # verify the required parameter 'codigo_seguranca' is set
-        if ('codigo_seguranca' not in params) or (params['codigo_seguranca'] is None):
-            raise ValueError("Missing the required parameter `codigo_seguranca` when calling `validar_cartao_digitado_bandeirado_using_get`")
-
-        resource_path = '/api/cartoes/bandeirados/validar-digitado'.replace('{format}', 'json')
-        path_params = {}
-
-        query_params = {}
-        if 'numero_cartao' in params:
-            query_params['numero_cartao'] = params['numero_cartao']
-        if 'nome_portador' in params:
-            query_params['nome_portador'] = params['nome_portador']
-        if 'data_validade' in params:
-            query_params['data_validade'] = params['data_validade']
-        if 'codigo_seguranca' in params:
-            query_params['codigo_seguranca'] = params['codigo_seguranca']
-
-        header_params = {}
-
-        form_params = []
-        local_var_files = {}
-
-        body_params = None
-
-        # HTTP header `Accept`
-        header_params['Accept'] = self.api_client.\
-            select_header_accept(['application/json'])
-        if not header_params['Accept']:
-            del header_params['Accept']
-
-        # HTTP header `Content-Type`
-        header_params['Content-Type'] = self.api_client.\
-            select_header_content_type(['application/json'])
-
-        # Authentication setting
-        auth_settings = ['access_token']
-
-        response = self.api_client.call_api(resource_path, 'GET',
-                                            path_params,
-                                            query_params,
-                                            header_params,
-                                            body=body_params,
-                                            post_params=form_params,
-                                            files=local_var_files,
-                                            response_type='ValidaCartao',
-                                            auth_settings=auth_settings,
-                                            callback=params.get('callback'))
-        return response
-
-    def validar_cartao_digitado_nao_bandeirado_using_get(self, numero_cartao, nome_portador, data_validade, codigo_seguranca, **kwargs):
-        """
-        Permite validar um Cart\u00C3\u00A3o a partir dos dados Impressos
-        Esta opera\u00C3\u00A7\u00C3\u00A3o tem como objetivo permitir que os Emissores validem a autenticidade de um determinado Cart\u00C3\u00A3o a partir do envio dos dados sens\u00C3\u00ADveis impressos nele. A utiliza\u00C3\u00A7\u00C3\u00A3o desde m\u00C3\u00A9todo tem diversas aplica\u00C3\u00A7\u00C3\u00B5es, sendo a principal delas a de Identifica\u00C3\u00A7\u00C3\u00A3o Positiva do Cart\u00C3\u00A3o para a realiza\u00C3\u00A7\u00C3\u00A3o de transa\u00C3\u00A7\u00C3\u00B5es e-commerce ou por meio de Centrais de Atendimento Eletr\u00C3\u00B4nico (URA), dentre outras.
-
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
-        >>> thread = api.validar_cartao_digitado_nao_bandeirado_using_get(numero_cartao, nome_portador, data_validade, codigo_seguranca, callback=callback_function)
-
-        :param callback function: The callback function
-            for asynchronous request. (optional)
-        :param str numero_cartao: N\u00C3\u00BAmero do cart\u00C3\u00A3o a ser validado. (required)
-        :param str nome_portador: Nome do portador do cart\u00C3\u00A3o (required)
-        :param str data_validade: Data de validade do cart\u00C3\u00A3o no formato yyyy-MM (required)
-        :param str codigo_seguranca: C\u00C3\u00B3digo de seguran\u00C3\u00A7a do cart\u00C3\u00A3o com tr\u00C3\u00AAs n\u00C3\u00BAmeros (required)
-        :return: ValidaCartao
-                 If the method is called asynchronously,
-                 returns the request thread.
-        """
-
-        all_params = ['numero_cartao', 'nome_portador', 'data_validade', 'codigo_seguranca']
-        all_params.append('callback')
-
-        params = locals()
-        for key, val in iteritems(params['kwargs']):
-            if key not in all_params:
-                raise TypeError(
-                    "Got an unexpected keyword argument '%s'"
-                    " to method validar_cartao_digitado_nao_bandeirado_using_get" % key
-                )
-            params[key] = val
-        del params['kwargs']
-
-        # verify the required parameter 'numero_cartao' is set
-        if ('numero_cartao' not in params) or (params['numero_cartao'] is None):
-            raise ValueError("Missing the required parameter `numero_cartao` when calling `validar_cartao_digitado_nao_bandeirado_using_get`")
-        # verify the required parameter 'nome_portador' is set
-        if ('nome_portador' not in params) or (params['nome_portador'] is None):
-            raise ValueError("Missing the required parameter `nome_portador` when calling `validar_cartao_digitado_nao_bandeirado_using_get`")
-        # verify the required parameter 'data_validade' is set
-        if ('data_validade' not in params) or (params['data_validade'] is None):
-            raise ValueError("Missing the required parameter `data_validade` when calling `validar_cartao_digitado_nao_bandeirado_using_get`")
-        # verify the required parameter 'codigo_seguranca' is set
-        if ('codigo_seguranca' not in params) or (params['codigo_seguranca'] is None):
-            raise ValueError("Missing the required parameter `codigo_seguranca` when calling `validar_cartao_digitado_nao_bandeirado_using_get`")
-
-        resource_path = '/api/cartoes/nao-bandeirados/validar-digitado'.replace('{format}', 'json')
-        path_params = {}
-
-        query_params = {}
-        if 'numero_cartao' in params:
-            query_params['numero_cartao'] = params['numero_cartao']
-        if 'nome_portador' in params:
-            query_params['nome_portador'] = params['nome_portador']
-        if 'data_validade' in params:
-            query_params['data_validade'] = params['data_validade']
-        if 'codigo_seguranca' in params:
-            query_params['codigo_seguranca'] = params['codigo_seguranca']
-
-        header_params = {}
-
-        form_params = []
-        local_var_files = {}
-
-        body_params = None
-
-        # HTTP header `Accept`
-        header_params['Accept'] = self.api_client.\
-            select_header_accept(['application/json'])
-        if not header_params['Accept']:
-            del header_params['Accept']
-
-        # HTTP header `Content-Type`
-        header_params['Content-Type'] = self.api_client.\
-            select_header_content_type(['application/json'])
-
-        # Authentication setting
-        auth_settings = ['access_token']
-
-        response = self.api_client.call_api(resource_path, 'GET',
-                                            path_params,
-                                            query_params,
-                                            header_params,
-                                            body=body_params,
-                                            post_params=form_params,
-                                            files=local_var_files,
-                                            response_type='ValidaCartao',
-                                            auth_settings=auth_settings,
-                                            callback=params.get('callback'))
-        return response
-
-    def validar_cartao_tarja_bandeirado_using_get(self, numero_cartao, trilha1, trilha2, **kwargs):
-        """
-        Permite validar um Cart\u00C3\u00A3o Bandeirado a partir da Tarja
-        Esta opera\u00C3\u00A7\u00C3\u00A3o tem como objetivo permitir que os Emissores validem a autenticidade de um determinado Cart\u00C3\u00A3o a partir da leitura da tarja magn\u00C3\u00A9tica do mesmo. A utiliza\u00C3\u00A7\u00C3\u00A3o desde m\u00C3\u00A9todo tem diversas aplica\u00C3\u00A7\u00C3\u00B5es, sendo a principal delas a de Identifica\u00C3\u00A7\u00C3\u00A3o Positiva do Cart\u00C3\u00A3o antes de permitir que o portador realize transa\u00C3\u00A7\u00C3\u00B5es diversas, como as de compra e saque na modalidade d\u00C3\u00A9bito em conta corrente, dentre outras.
-
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
-        >>> thread = api.validar_cartao_tarja_bandeirado_using_get(numero_cartao, trilha1, trilha2, callback=callback_function)
-
-        :param callback function: The callback function
-            for asynchronous request. (optional)
-        :param str numero_cartao: N\u00C3\u00BAmero do cart\u00C3\u00A3o a ser validado. (required)
-        :param str trilha1: Trilha 1 do cart\u00C3\u00A3o a ser validado (required)
-        :param str trilha2: Trilha 2 do cart\u00C3\u00A3o a ser validado (required)
-        :return: ValidaCartao
-                 If the method is called asynchronously,
-                 returns the request thread.
-        """
-
-        all_params = ['numero_cartao', 'trilha1', 'trilha2']
-        all_params.append('callback')
-
-        params = locals()
-        for key, val in iteritems(params['kwargs']):
-            if key not in all_params:
-                raise TypeError(
-                    "Got an unexpected keyword argument '%s'"
-                    " to method validar_cartao_tarja_bandeirado_using_get" % key
-                )
-            params[key] = val
-        del params['kwargs']
-
-        # verify the required parameter 'numero_cartao' is set
-        if ('numero_cartao' not in params) or (params['numero_cartao'] is None):
-            raise ValueError("Missing the required parameter `numero_cartao` when calling `validar_cartao_tarja_bandeirado_using_get`")
-        # verify the required parameter 'trilha1' is set
-        if ('trilha1' not in params) or (params['trilha1'] is None):
-            raise ValueError("Missing the required parameter `trilha1` when calling `validar_cartao_tarja_bandeirado_using_get`")
-        # verify the required parameter 'trilha2' is set
-        if ('trilha2' not in params) or (params['trilha2'] is None):
-            raise ValueError("Missing the required parameter `trilha2` when calling `validar_cartao_tarja_bandeirado_using_get`")
-
-        resource_path = '/api/cartoes/bandeirados/validar-tarja'.replace('{format}', 'json')
-        path_params = {}
-
-        query_params = {}
-        if 'numero_cartao' in params:
-            query_params['numero_cartao'] = params['numero_cartao']
-        if 'trilha1' in params:
-            query_params['trilha1'] = params['trilha1']
-        if 'trilha2' in params:
-            query_params['trilha2'] = params['trilha2']
-
-        header_params = {}
-
-        form_params = []
-        local_var_files = {}
-
-        body_params = None
-
-        # HTTP header `Accept`
-        header_params['Accept'] = self.api_client.\
-            select_header_accept(['application/json'])
-        if not header_params['Accept']:
-            del header_params['Accept']
-
-        # HTTP header `Content-Type`
-        header_params['Content-Type'] = self.api_client.\
-            select_header_content_type(['application/json'])
-
-        # Authentication setting
-        auth_settings = ['access_token']
+        auth_settings = []
 
         response = self.api_client.call_api(resource_path, 'GET',
                                             path_params,
@@ -1631,7 +1696,7 @@ class CartaoApi(object):
             for asynchronous request. (optional)
         :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Cart\u00C3\u00A3o (id). (required)
         :param str senha: Senha para ser validada. (required)
-        :return: str
+        :return: ValidaSenhaCartao
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1683,7 +1748,7 @@ class CartaoApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = ['access_token']
+        auth_settings = []
 
         response = self.api_client.call_api(resource_path, 'GET',
                                             path_params,
@@ -1692,7 +1757,96 @@ class CartaoApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='str',
+                                            response_type='ValidaSenhaCartao',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
+    def validar_tarja_using_get(self, numero_cartao, trilha1, trilha2, **kwargs):
+        """
+        Permite validar um Cart\u00C3\u00A3o Bandeirado a partir da Tarja
+        Esta opera\u00C3\u00A7\u00C3\u00A3o tem como objetivo permitir que os Emissores validem a autenticidade de um determinado Cart\u00C3\u00A3o a partir da leitura da tarja magn\u00C3\u00A9tica do mesmo. A utiliza\u00C3\u00A7\u00C3\u00A3o desde m\u00C3\u00A9todo tem diversas aplica\u00C3\u00A7\u00C3\u00B5es, sendo a principal delas a de Identifica\u00C3\u00A7\u00C3\u00A3o Positiva do Cart\u00C3\u00A3o antes de permitir que o portador realize transa\u00C3\u00A7\u00C3\u00B5es diversas, como as de compra e saque na modalidade d\u00C3\u00A9bito em conta corrente, dentre outras.
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.validar_tarja_using_get(numero_cartao, trilha1, trilha2, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str numero_cartao: N\u00C3\u00BAmero do cart\u00C3\u00A3o a ser validado. (required)
+        :param str trilha1: Trilha 1 do cart\u00C3\u00A3o a ser validado (required)
+        :param str trilha2: Trilha 2 do cart\u00C3\u00A3o a ser validado (required)
+        :return: ValidaCartao
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['numero_cartao', 'trilha1', 'trilha2']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method validar_tarja_using_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        # verify the required parameter 'numero_cartao' is set
+        if ('numero_cartao' not in params) or (params['numero_cartao'] is None):
+            raise ValueError("Missing the required parameter `numero_cartao` when calling `validar_tarja_using_get`")
+        # verify the required parameter 'trilha1' is set
+        if ('trilha1' not in params) or (params['trilha1'] is None):
+            raise ValueError("Missing the required parameter `trilha1` when calling `validar_tarja_using_get`")
+        # verify the required parameter 'trilha2' is set
+        if ('trilha2' not in params) or (params['trilha2'] is None):
+            raise ValueError("Missing the required parameter `trilha2` when calling `validar_tarja_using_get`")
+
+        resource_path = '/api/cartoes/validar-tarja'.replace('{format}', 'json')
+        path_params = {}
+
+        query_params = {}
+        if 'numero_cartao' in params:
+            query_params['numero_cartao'] = params['numero_cartao']
+        if 'trilha1' in params:
+            query_params['trilha1'] = params['trilha1']
+        if 'trilha2' in params:
+            query_params['trilha2'] = params['trilha2']
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = []
+
+        response = self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='ValidaCartao',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response

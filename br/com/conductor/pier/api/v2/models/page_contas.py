@@ -37,7 +37,7 @@ class PageContas(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'content': 'list[Conta]',
+            'content': 'list[ContaResponse]',
             'first': 'bool',
             'first_page': 'bool',
             'has_content': 'bool',
@@ -92,7 +92,7 @@ class PageContas(object):
 
 
         :return: The content of this PageContas.
-        :rtype: list[Conta]
+        :rtype: list[ContaResponse]
         """
         return self._content
 
@@ -103,7 +103,7 @@ class PageContas(object):
 
 
         :param content: The content of this PageContas.
-        :type: list[Conta]
+        :type: list[ContaResponse]
         """
         self._content = content
 

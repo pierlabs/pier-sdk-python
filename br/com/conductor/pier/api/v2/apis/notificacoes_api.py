@@ -117,7 +117,7 @@ class NotificacoesApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = ['access_token']
+        auth_settings = []
 
         response = self.api_client.call_api(resource_path, 'POST',
                                             path_params,
@@ -209,7 +209,7 @@ class NotificacoesApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = ['access_token']
+        auth_settings = []
 
         response = self.api_client.call_api(resource_path, 'GET',
                                             path_params,
@@ -245,12 +245,13 @@ class NotificacoesApi(object):
         :param str status: Status de envio da notifica\u00C3\u00A7\u00C3\u00A3o
         :param str operadora: Nome da operadora a qual a notifica\u00C3\u00A7\u00C3\u00A3o foi enviada.
         :param str protocolo: N\u00C3\u00BAmero do protocolo de envio de notifica\u00C3\u00A7\u00C3\u00B5es
+        :param int nsu: Apresenta o nsu da notifica\u00C3\u00A7\u00C3\u00A3o
         :return: PageSMS
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['page', 'limit', 'data_inclusao', 'tipo_evento', 'status', 'operadora', 'protocolo']
+        all_params = ['page', 'limit', 'data_inclusao', 'tipo_evento', 'status', 'operadora', 'protocolo', 'nsu']
         all_params.append('callback')
 
         params = locals()
@@ -282,6 +283,8 @@ class NotificacoesApi(object):
             query_params['operadora'] = params['operadora']
         if 'protocolo' in params:
             query_params['protocolo'] = params['protocolo']
+        if 'nsu' in params:
+            query_params['nsu'] = params['nsu']
 
         header_params = {}
 
@@ -301,7 +304,7 @@ class NotificacoesApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = ['access_token']
+        auth_settings = []
 
         response = self.api_client.call_api(resource_path, 'GET',
                                             path_params,
@@ -381,7 +384,7 @@ class NotificacoesApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = ['access_token']
+        auth_settings = []
 
         response = self.api_client.call_api(resource_path, 'POST',
                                             path_params,
@@ -458,7 +461,7 @@ class NotificacoesApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = ['access_token']
+        auth_settings = []
 
         response = self.api_client.call_api(resource_path, 'POST',
                                             path_params,
@@ -535,7 +538,7 @@ class NotificacoesApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = ['access_token']
+        auth_settings = []
 
         response = self.api_client.call_api(resource_path, 'POST',
                                             path_params,
@@ -612,7 +615,7 @@ class NotificacoesApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = ['access_token']
+        auth_settings = []
 
         response = self.api_client.call_api(resource_path, 'POST',
                                             path_params,
@@ -689,7 +692,7 @@ class NotificacoesApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = ['access_token']
+        auth_settings = []
 
         response = self.api_client.call_api(resource_path, 'POST',
                                             path_params,

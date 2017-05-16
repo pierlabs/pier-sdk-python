@@ -108,7 +108,7 @@ class StatusParametrosApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = ['access_token']
+        auth_settings = []
 
         response = self.api_client.call_api(resource_path, 'GET',
                                             path_params,
@@ -185,7 +185,7 @@ class StatusParametrosApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = ['access_token']
+        auth_settings = []
 
         response = self.api_client.call_api(resource_path, 'GET',
                                             path_params,
@@ -262,7 +262,7 @@ class StatusParametrosApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = ['access_token']
+        auth_settings = []
 
         response = self.api_client.call_api(resource_path, 'GET',
                                             path_params,
@@ -339,7 +339,7 @@ class StatusParametrosApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = ['access_token']
+        auth_settings = []
 
         response = self.api_client.call_api(resource_path, 'GET',
                                             path_params,
@@ -422,7 +422,7 @@ class StatusParametrosApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = ['access_token']
+        auth_settings = []
 
         response = self.api_client.call_api(resource_path, 'GET',
                                             path_params,
@@ -523,7 +523,7 @@ class StatusParametrosApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = ['access_token']
+        auth_settings = []
 
         response = self.api_client.call_api(resource_path, 'GET',
                                             path_params,
@@ -537,7 +537,7 @@ class StatusParametrosApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get12(self, **kwargs):
+    def listar_using_get15(self, **kwargs):
         """
         Lista os Status Contas cadastrados para o Emissor
         Este m\u00C3\u00A9todo permite que sejam listados os Status Contas existentes na base de dados do Emissor.
@@ -548,7 +548,7 @@ class StatusParametrosApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get12(callback=callback_function)
+        >>> thread = api.listar_using_get15(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -572,7 +572,7 @@ class StatusParametrosApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get12" % key
+                    " to method listar_using_get15" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -615,7 +615,7 @@ class StatusParametrosApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = ['access_token']
+        auth_settings = []
 
         response = self.api_client.call_api(resource_path, 'GET',
                                             path_params,
@@ -629,7 +629,7 @@ class StatusParametrosApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get13(self, **kwargs):
+    def listar_using_get16(self, **kwargs):
         """
         Lista as op\u00C3\u00A7\u00C3\u00B5es de Status Impress\u00C3\u00A3o
         Este m\u00C3\u00A9todo permite que sejam listadas as op\u00C3\u00A7\u00C3\u00B5es de Status Impress\u00C3\u00A3o que podem ser atribu\u00C3\u00ADdas aos Cart\u00C3\u00B5es.
@@ -640,7 +640,7 @@ class StatusParametrosApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get13(callback=callback_function)
+        >>> thread = api.listar_using_get16(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -661,7 +661,7 @@ class StatusParametrosApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get13" % key
+                    " to method listar_using_get16" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -698,7 +698,7 @@ class StatusParametrosApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = ['access_token']
+        auth_settings = []
 
         response = self.api_client.call_api(resource_path, 'GET',
                                             path_params,

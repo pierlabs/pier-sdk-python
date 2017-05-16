@@ -64,14 +64,12 @@ class ContaApi(object):
         :param int id_tipo_ajuste: C\u00C3\u00B3digo identificador do tipo de ajuste. (required)
         :param datetime data_ajuste: Data do ajuste. (required)
         :param float valor_ajuste: Valor do ajuste (required)
-        :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
-        :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 100, Max = 100)
         :return: AjusteResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['id', 'id_tipo_ajuste', 'data_ajuste', 'valor_ajuste', 'page', 'limit']
+        all_params = ['id', 'id_tipo_ajuste', 'data_ajuste', 'valor_ajuste']
         all_params.append('callback')
 
         params = locals()
@@ -103,10 +101,6 @@ class ContaApi(object):
             path_params['id'] = params['id']
 
         query_params = {}
-        if 'page' in params:
-            query_params['page'] = params['page']
-        if 'limit' in params:
-            query_params['limit'] = params['limit']
         if 'id_tipo_ajuste' in params:
             query_params['idTipoAjuste'] = params['id_tipo_ajuste']
         if 'data_ajuste' in params:
@@ -132,7 +126,7 @@ class ContaApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = ['access_token']
+        auth_settings = []
 
         response = self.api_client.call_api(resource_path, 'POST',
                                             path_params,
@@ -281,7 +275,7 @@ class ContaApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = ['access_token']
+        auth_settings = []
 
         response = self.api_client.call_api(resource_path, 'PUT',
                                             path_params,
@@ -291,6 +285,89 @@ class ContaApi(object):
                                             post_params=form_params,
                                             files=local_var_files,
                                             response_type='LimiteDisponibilidade',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
+    def alterar_titular_using_post(self, id, id_pessoa, **kwargs):
+        """
+        Realiza a altera\u00C3\u00A7\u00C3\u00A3o de uma Pessoa tilular da conta
+        Esta m\u00C3\u00A9todo permite altera a pessoa de uma conta.
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.alterar_titular_using_post(id, id_pessoa, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Conta (id) (required)
+        :param int id_pessoa: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o de uma Pessoa (id). (required)
+        :return: ContaResponse
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'id_pessoa']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method alterar_titular_using_post" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `alterar_titular_using_post`")
+        # verify the required parameter 'id_pessoa' is set
+        if ('id_pessoa' not in params) or (params['id_pessoa'] is None):
+            raise ValueError("Missing the required parameter `id_pessoa` when calling `alterar_titular_using_post`")
+
+        resource_path = '/api/contas/{id}/alterar-titular'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+
+        query_params = {}
+        if 'id_pessoa' in params:
+            query_params['id_pessoa'] = params['id_pessoa']
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = []
+
+        response = self.api_client.call_api(resource_path, 'POST',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='ContaResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
@@ -312,7 +389,7 @@ class ContaApi(object):
             for asynchronous request. (optional)
         :param int id: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da conta (id). (required)
         :param int novo_dia_vencimento: Novo dia de vencimento. (required)
-        :return: Conta
+        :return: ContaResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -364,7 +441,7 @@ class ContaApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = ['access_token']
+        auth_settings = []
 
         response = self.api_client.call_api(resource_path, 'PUT',
                                             path_params,
@@ -373,7 +450,7 @@ class ContaApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='Conta',
+                                            response_type='ContaResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
@@ -441,7 +518,7 @@ class ContaApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = ['access_token']
+        auth_settings = []
 
         response = self.api_client.call_api(resource_path, 'POST',
                                             path_params,
@@ -518,7 +595,7 @@ class ContaApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = ['access_token']
+        auth_settings = []
 
         response = self.api_client.call_api(resource_path, 'GET',
                                             path_params,
@@ -607,7 +684,7 @@ class ContaApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = ['access_token']
+        auth_settings = []
 
         response = self.api_client.call_api(resource_path, 'GET',
                                             path_params,
@@ -621,7 +698,7 @@ class ContaApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_fatura_consignada_aberta_using_get(self, id, data_vencimento, **kwargs):
+    def consultar_fatura_consignada_aberta_using_get(self, id, **kwargs):
         """
         Consultar a fatura consignadas abertas da conta
         Atrav\u00C3\u00A9s desta opera\u00C3\u00A7\u00C3\u00A3o os Emissores ou Portadores poder\u00C3\u00A3o consultar a fatura consignada em aberto
@@ -632,12 +709,12 @@ class ContaApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_fatura_consignada_aberta_using_get(id, data_vencimento, callback=callback_function)
+        >>> thread = api.consultar_fatura_consignada_aberta_using_get(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int id: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da conta (id). (required)
-        :param date data_vencimento: Data Vencimento. (required)
+        :param date data_vencimento: Data Vencimento
         :return: DetalhesFaturaConsignadaResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -659,9 +736,6 @@ class ContaApi(object):
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
             raise ValueError("Missing the required parameter `id` when calling `consultar_fatura_consignada_aberta_using_get`")
-        # verify the required parameter 'data_vencimento' is set
-        if ('data_vencimento' not in params) or (params['data_vencimento'] is None):
-            raise ValueError("Missing the required parameter `data_vencimento` when calling `consultar_fatura_consignada_aberta_using_get`")
 
         resource_path = '/api/contas/{id}/faturas-consignadas/consultar-aberta'.replace('{format}', 'json')
         path_params = {}
@@ -690,7 +764,7 @@ class ContaApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = ['access_token']
+        auth_settings = []
 
         response = self.api_client.call_api(resource_path, 'GET',
                                             path_params,
@@ -773,7 +847,7 @@ class ContaApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = ['access_token']
+        auth_settings = []
 
         response = self.api_client.call_api(resource_path, 'GET',
                                             path_params,
@@ -856,7 +930,7 @@ class ContaApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = ['access_token']
+        auth_settings = []
 
         response = self.api_client.call_api(resource_path, 'GET',
                                             path_params,
@@ -870,7 +944,7 @@ class ContaApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_lancamentos_futuros_fatura_using_get(self, id, data_vencimento, **kwargs):
+    def consultar_lancamentos_futuros_fatura_using_get(self, id, **kwargs):
         """
         Consultar Lan\u00C3\u00A7amentos Futuros da Fatura de uma Conta
         Atrav\u00C3\u00A9s desta opera\u00C3\u00A7\u00C3\u00A3o os Emissores ou Portadores poder\u00C3\u00A3o consultar os detalhes dos lan\u00C3\u00A7amentos futuros de uma fatura vinculados a uma determinada conta.
@@ -881,12 +955,12 @@ class ContaApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_lancamentos_futuros_fatura_using_get(id, data_vencimento, callback=callback_function)
+        >>> thread = api.consultar_lancamentos_futuros_fatura_using_get(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int id: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da conta (id). (required)
-        :param date data_vencimento: Data Vencimento. (required)
+        :param date data_vencimento: Data Vencimento
         :return: DetalhesFaturaResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -908,9 +982,6 @@ class ContaApi(object):
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
             raise ValueError("Missing the required parameter `id` when calling `consultar_lancamentos_futuros_fatura_using_get`")
-        # verify the required parameter 'data_vencimento' is set
-        if ('data_vencimento' not in params) or (params['data_vencimento'] is None):
-            raise ValueError("Missing the required parameter `data_vencimento` when calling `consultar_lancamentos_futuros_fatura_using_get`")
 
         resource_path = '/api/contas/{id}/faturas/consultar-aberta'.replace('{format}', 'json')
         path_params = {}
@@ -939,7 +1010,7 @@ class ContaApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = ['access_token']
+        auth_settings = []
 
         response = self.api_client.call_api(resource_path, 'GET',
                                             path_params,
@@ -1016,7 +1087,7 @@ class ContaApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = ['access_token']
+        auth_settings = []
 
         response = self.api_client.call_api(resource_path, 'GET',
                                             path_params,
@@ -1032,8 +1103,8 @@ class ContaApi(object):
 
     def consultar_using_get20(self, id, id_transferencia, **kwargs):
         """
-        Consultar uma transfer\u00C3\u00AAncia banc\u00C3\u00A1ria
-        Este recurso permite consultar os detalhes de uma determinada transfer\u00C3\u00AAncia de cr\u00C3\u00A9dito realizada entre contas. De modo geral, esta opera\u00C3\u00A7\u00C3\u00A3o poder\u00C3\u00A1 ser utilizada para uma consulta simples destes detalhes ou para realizar a montagem de um comprovante de 2\u00C2\u00AA via de transfer\u00C3\u00AAncia entre contas.
+        Consultar uma transfer\u00C3\u00AAncia banc\u00C3\u00A1ria para um banco
+        Este recurso permite consultar os detalhes de uma determinada transfer\u00C3\u00AAncia de cr\u00C3\u00A9dito realizada para uma conta banc\u00C3\u00A1ria. De modo geral, esta opera\u00C3\u00A7\u00C3\u00A3o poder\u00C3\u00A1 ser utilizada para uma consulta simples destes detalhes ou para realizar a montagem de um comprovante de 2\u00C2\u00AA via de transfer\u00C3\u00AAncia entre contas.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -1102,7 +1173,7 @@ class ContaApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = ['access_token']
+        auth_settings = []
 
         response = self.api_client.call_api(resource_path, 'GET',
                                             path_params,
@@ -1185,7 +1256,7 @@ class ContaApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = ['access_token']
+        auth_settings = []
 
         response = self.api_client.call_api(resource_path, 'GET',
                                             path_params,
@@ -1215,7 +1286,7 @@ class ContaApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int id: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da conta (id). (required)
-        :return: Conta
+        :return: ContaDetalheResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1262,7 +1333,7 @@ class ContaApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = ['access_token']
+        auth_settings = []
 
         response = self.api_client.call_api(resource_path, 'GET',
                                             path_params,
@@ -1271,7 +1342,7 @@ class ContaApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='Conta',
+                                            response_type='ContaDetalheResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
@@ -1339,7 +1410,7 @@ class ContaApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = ['access_token']
+        auth_settings = []
 
         response = self.api_client.call_api(resource_path, 'POST',
                                             path_params,
@@ -1434,7 +1505,7 @@ class ContaApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = ['access_token']
+        auth_settings = []
 
         response = self.api_client.call_api(resource_path, 'POST',
                                             path_params,
@@ -1520,7 +1591,7 @@ class ContaApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = ['access_token']
+        auth_settings = []
 
         response = self.api_client.call_api(resource_path, 'POST',
                                             path_params,
@@ -1606,7 +1677,7 @@ class ContaApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = ['access_token']
+        auth_settings = []
 
         response = self.api_client.call_api(resource_path, 'GET',
                                             path_params,
@@ -1661,7 +1732,7 @@ class ContaApi(object):
         if ('id' not in params) or (params['id'] is None):
             raise ValueError("Missing the required parameter `id` when calling `listar_faturas_using_get`")
 
-        resource_path = '/api/contas/{id}/listar-faturas'.replace('{format}', 'json')
+        resource_path = '/api/contas/{id}/faturas'.replace('{format}', 'json')
         path_params = {}
         if 'id' in params:
             path_params['id'] = params['id']
@@ -1692,7 +1763,7 @@ class ContaApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = ['access_token']
+        auth_settings = []
 
         response = self.api_client.call_api(resource_path, 'GET',
                                             path_params,
@@ -1775,7 +1846,7 @@ class ContaApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = ['access_token']
+        auth_settings = []
 
         response = self.api_client.call_api(resource_path, 'GET',
                                             path_params,
@@ -1858,7 +1929,7 @@ class ContaApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = ['access_token']
+        auth_settings = []
 
         response = self.api_client.call_api(resource_path, 'GET',
                                             path_params,
@@ -1935,7 +2006,7 @@ class ContaApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = ['access_token']
+        auth_settings = []
 
         response = self.api_client.call_api(resource_path, 'GET',
                                             path_params,
@@ -2018,7 +2089,7 @@ class ContaApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = ['access_token']
+        auth_settings = []
 
         response = self.api_client.call_api(resource_path, 'GET',
                                             path_params,
@@ -2104,7 +2175,7 @@ class ContaApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = ['access_token']
+        auth_settings = []
 
         response = self.api_client.call_api(resource_path, 'GET',
                                             path_params,
@@ -2118,7 +2189,7 @@ class ContaApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get19(self, id, **kwargs):
+    def listar_using_get22(self, id, **kwargs):
         """
         Listar as transfer\u00C3\u00AAncias banc\u00C3\u00A1rias realizadas
         Este recurso tem como objetivo permitir que o portador de um Cart\u00C3\u00A3o possa consultar uma lista das Transfer\u00C3\u00AAncias Banc\u00C3\u00A1rias para os Favorecidos cadastrados.
@@ -2129,7 +2200,7 @@ class ContaApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get19(id, callback=callback_function)
+        >>> thread = api.listar_using_get22(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -2150,14 +2221,14 @@ class ContaApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get19" % key
+                    " to method listar_using_get22" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `listar_using_get19`")
+            raise ValueError("Missing the required parameter `id` when calling `listar_using_get22`")
 
         resource_path = '/api/contas/{id}/transferencias-creditos-contas-bancarias'.replace('{format}', 'json')
         path_params = {}
@@ -2190,7 +2261,7 @@ class ContaApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = ['access_token']
+        auth_settings = []
 
         response = self.api_client.call_api(resource_path, 'GET',
                                             path_params,
@@ -2204,7 +2275,7 @@ class ContaApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get20(self, id, **kwargs):
+    def listar_using_get23(self, id, **kwargs):
         """
         Lista as transfer\u00C3\u00AAncias realizadas pela conta
         Este m\u00C3\u00A9todo permite que sejam listadas as transfer\u00C3\u00AAncias realizadas pela conta existentes na base do emissor.
@@ -2215,7 +2286,7 @@ class ContaApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get20(id, callback=callback_function)
+        >>> thread = api.listar_using_get23(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -2240,14 +2311,14 @@ class ContaApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get20" % key
+                    " to method listar_using_get23" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `listar_using_get20`")
+            raise ValueError("Missing the required parameter `id` when calling `listar_using_get23`")
 
         resource_path = '/api/contas/{id}/transferencias-creditos-cartoes'.replace('{format}', 'json')
         path_params = {}
@@ -2288,7 +2359,7 @@ class ContaApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = ['access_token']
+        auth_settings = []
 
         response = self.api_client.call_api(resource_path, 'GET',
                                             path_params,
@@ -2302,7 +2373,7 @@ class ContaApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get3(self, **kwargs):
+    def listar_using_get4(self, **kwargs):
         """
         Lista contas existentes na base de dados do Emissor
         Este recurso permite listar contas existentes na base de dados do Emissor.
@@ -2313,7 +2384,7 @@ class ContaApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get3(callback=callback_function)
+        >>> thread = api.listar_using_get4(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -2341,7 +2412,7 @@ class ContaApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get3" % key
+                    " to method listar_using_get4" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -2392,7 +2463,7 @@ class ContaApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = ['access_token']
+        auth_settings = []
 
         response = self.api_client.call_api(resource_path, 'GET',
                                             path_params,
@@ -2469,7 +2540,7 @@ class ContaApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = ['access_token']
+        auth_settings = []
 
         response = self.api_client.call_api(resource_path, 'POST',
                                             path_params,
@@ -2552,7 +2623,7 @@ class ContaApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = ['access_token']
+        auth_settings = []
 
         response = self.api_client.call_api(resource_path, 'GET',
                                             path_params,
@@ -2566,10 +2637,10 @@ class ContaApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def transferir_using_post(self, id, data_compra, proximo_vencimento_padrao, proximo_vencimento_real, valor_compra, nome_favorecido, documento_favorecido, banco, numero_agencia, numero_conta, flag_conta_poupanca, **kwargs):
+    def transferir_using_post(self, id, transferencia_bancaria_persist, **kwargs):
         """
-        Realizar transfer\u00C3\u00AAncia banc\u00C3\u00A1ria entre bancos / contas
-        Este recurso tem como objetivo permitir que o portador de um cart\u00C3\u00A3o possa realizar a transfer\u00C3\u00AAncia de cr\u00C3\u00A9dito para outro cliente do mesmo emissor. Assim, o valor do cr\u00C3\u00A9dito somado a tarifa para transfer\u00C3\u00AAncia, quando praticada pelo emissor, ser\u00C3\u00A1 debitado da conta de origem, se houver saldo suficiente, e ser\u00C3\u00A1 creditado na conta de destino.
+        Realizar transfer\u00C3\u00AAncia banc\u00C3\u00A1ria do cart\u00C3\u00A3o para contas banc\u00C3\u00A1rias
+        Este recurso tem como objetivo permitir que o portador de um cart\u00C3\u00A3o possa realizar a transfer\u00C3\u00AAncia de cr\u00C3\u00A9dito para uma conta banc\u00C3\u00A1ria. Assim, o valor do cr\u00C3\u00A9dito somado a tarifa para transfer\u00C3\u00AAncia, quando praticada pelo emissor, ser\u00C3\u00A1 debitado da conta de origem, se houver saldo suficiente, e ser\u00C3\u00A1 creditado na conta banc\u00C3\u00A1ria de destino.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -2577,31 +2648,18 @@ class ContaApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.transferir_using_post(id, data_compra, proximo_vencimento_padrao, proximo_vencimento_real, valor_compra, nome_favorecido, documento_favorecido, banco, numero_agencia, numero_conta, flag_conta_poupanca, callback=callback_function)
+        >>> thread = api.transferir_using_post(id, transferencia_bancaria_persist, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int id: Id Conta (required)
-        :param date data_compra: Data da transfer\u00C3\u00AAncia (required)
-        :param date proximo_vencimento_padrao: Dia do vencimento padr\u00C3\u00A3o da fatura (required)
-        :param date proximo_vencimento_real: Data do vencimento real da fatura (required)
-        :param float valor_compra: Valor da transfer\u00C3\u00AAncia (required)
-        :param str nome_favorecido: Apresenta o 'Nome Completo da PF' ou o 'Nome Completo da Raz\u00C3\u00A3o Social (Nome Empresarial)'. (required)
-        :param str documento_favorecido: N\u00C3\u00BAmero do CPF ou CNPJ. (required)
-        :param int banco: C\u00C3\u00B3digo do banco (required)
-        :param str numero_agencia: N\u00C3\u00BAmero da ag\u00C3\u00AAncia (required)
-        :param str numero_conta: N\u00C3\u00BAmero da conta (required)
-        :param int flag_conta_poupanca: Sinaliza se conta banc\u00C3\u00A1ria \u00C3\u00A9 poupan\u00C3\u00A7a (1: Poupan\u00C3\u00A7a, 0: Conta corrente) (required)
-        :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
-        :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 100, Max = 100)
-        :param str digito_agencia: D\u00C3\u00ADgito da ag\u00C3\u00AAncia
-        :param str digito_conta: D\u00C3\u00ADgito da conta
+        :param TransferenciaBancariaPersist transferencia_bancaria_persist: transferenciaBancariaPersist (required)
         :return: LinkTransferenciaBancariaResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['id', 'data_compra', 'proximo_vencimento_padrao', 'proximo_vencimento_real', 'valor_compra', 'nome_favorecido', 'documento_favorecido', 'banco', 'numero_agencia', 'numero_conta', 'flag_conta_poupanca', 'page', 'limit', 'digito_agencia', 'digito_conta']
+        all_params = ['id', 'transferencia_bancaria_persist']
         all_params.append('callback')
 
         params = locals()
@@ -2617,36 +2675,9 @@ class ContaApi(object):
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
             raise ValueError("Missing the required parameter `id` when calling `transferir_using_post`")
-        # verify the required parameter 'data_compra' is set
-        if ('data_compra' not in params) or (params['data_compra'] is None):
-            raise ValueError("Missing the required parameter `data_compra` when calling `transferir_using_post`")
-        # verify the required parameter 'proximo_vencimento_padrao' is set
-        if ('proximo_vencimento_padrao' not in params) or (params['proximo_vencimento_padrao'] is None):
-            raise ValueError("Missing the required parameter `proximo_vencimento_padrao` when calling `transferir_using_post`")
-        # verify the required parameter 'proximo_vencimento_real' is set
-        if ('proximo_vencimento_real' not in params) or (params['proximo_vencimento_real'] is None):
-            raise ValueError("Missing the required parameter `proximo_vencimento_real` when calling `transferir_using_post`")
-        # verify the required parameter 'valor_compra' is set
-        if ('valor_compra' not in params) or (params['valor_compra'] is None):
-            raise ValueError("Missing the required parameter `valor_compra` when calling `transferir_using_post`")
-        # verify the required parameter 'nome_favorecido' is set
-        if ('nome_favorecido' not in params) or (params['nome_favorecido'] is None):
-            raise ValueError("Missing the required parameter `nome_favorecido` when calling `transferir_using_post`")
-        # verify the required parameter 'documento_favorecido' is set
-        if ('documento_favorecido' not in params) or (params['documento_favorecido'] is None):
-            raise ValueError("Missing the required parameter `documento_favorecido` when calling `transferir_using_post`")
-        # verify the required parameter 'banco' is set
-        if ('banco' not in params) or (params['banco'] is None):
-            raise ValueError("Missing the required parameter `banco` when calling `transferir_using_post`")
-        # verify the required parameter 'numero_agencia' is set
-        if ('numero_agencia' not in params) or (params['numero_agencia'] is None):
-            raise ValueError("Missing the required parameter `numero_agencia` when calling `transferir_using_post`")
-        # verify the required parameter 'numero_conta' is set
-        if ('numero_conta' not in params) or (params['numero_conta'] is None):
-            raise ValueError("Missing the required parameter `numero_conta` when calling `transferir_using_post`")
-        # verify the required parameter 'flag_conta_poupanca' is set
-        if ('flag_conta_poupanca' not in params) or (params['flag_conta_poupanca'] is None):
-            raise ValueError("Missing the required parameter `flag_conta_poupanca` when calling `transferir_using_post`")
+        # verify the required parameter 'transferencia_bancaria_persist' is set
+        if ('transferencia_bancaria_persist' not in params) or (params['transferencia_bancaria_persist'] is None):
+            raise ValueError("Missing the required parameter `transferencia_bancaria_persist` when calling `transferir_using_post`")
 
         resource_path = '/api/contas/{id}/transferencias-creditos-contas-bancarias'.replace('{format}', 'json')
         path_params = {}
@@ -2654,34 +2685,6 @@ class ContaApi(object):
             path_params['id'] = params['id']
 
         query_params = {}
-        if 'page' in params:
-            query_params['page'] = params['page']
-        if 'limit' in params:
-            query_params['limit'] = params['limit']
-        if 'data_compra' in params:
-            query_params['dataCompra'] = params['data_compra']
-        if 'proximo_vencimento_padrao' in params:
-            query_params['proximoVencimentoPadrao'] = params['proximo_vencimento_padrao']
-        if 'proximo_vencimento_real' in params:
-            query_params['proximoVencimentoReal'] = params['proximo_vencimento_real']
-        if 'valor_compra' in params:
-            query_params['valorCompra'] = params['valor_compra']
-        if 'nome_favorecido' in params:
-            query_params['nomeFavorecido'] = params['nome_favorecido']
-        if 'documento_favorecido' in params:
-            query_params['documentoFavorecido'] = params['documento_favorecido']
-        if 'banco' in params:
-            query_params['banco'] = params['banco']
-        if 'numero_agencia' in params:
-            query_params['numeroAgencia'] = params['numero_agencia']
-        if 'digito_agencia' in params:
-            query_params['digitoAgencia'] = params['digito_agencia']
-        if 'numero_conta' in params:
-            query_params['numeroConta'] = params['numero_conta']
-        if 'digito_conta' in params:
-            query_params['digitoConta'] = params['digito_conta']
-        if 'flag_conta_poupanca' in params:
-            query_params['flagContaPoupanca'] = params['flag_conta_poupanca']
 
         header_params = {}
 
@@ -2689,6 +2692,8 @@ class ContaApi(object):
         local_var_files = {}
 
         body_params = None
+        if 'transferencia_bancaria_persist' in params:
+            body_params = params['transferencia_bancaria_persist']
 
         # HTTP header `Accept`
         header_params['Accept'] = self.api_client.\
@@ -2701,7 +2706,7 @@ class ContaApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = ['access_token']
+        auth_settings = []
 
         response = self.api_client.call_api(resource_path, 'POST',
                                             path_params,
@@ -2730,7 +2735,7 @@ class ContaApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do cliente portador do cart\u00C3\u00A3o que ser\u00C3\u00A1 debitado (id). (required)
+        :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da conta do cliente portador do cart\u00C3\u00A3o que ser\u00C3\u00A1 debitado (id). (required)
         :param int id_conta_destino: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do cliente portador do cart\u00C3\u00A3o que ser\u00C3\u00A1 creditado (id). (required)
         :param float valor_transferencia: Valor da Transfer\u00C3\u00AAncia. (required)
         :return: PageTransferencias
@@ -2790,7 +2795,7 @@ class ContaApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = ['access_token']
+        auth_settings = []
 
         response = self.api_client.call_api(resource_path, 'POST',
                                             path_params,

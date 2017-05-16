@@ -2,21 +2,30 @@ from __future__ import absolute_import
 
 # import models into sdk package
 from .models.ajuste_response import AjusteResponse
+from .models.aplicacao_mobile import AplicacaoMobile
+from .models.aplicacao_mobile_persist import AplicacaoMobilePersist
+from .models.aplicacao_mobile_update import AplicacaoMobileUpdate
 from .models.atendimento_cliente import AtendimentoCliente
 from .models.auth_token import AuthToken
+from .models.autorizacao_on_us_request import AutorizacaoOnUsRequest
 from .models.base import Base
 from .models.body_access_token import BodyAccessToken
 from .models.boleto_de_fatura import BoletoDeFatura
 from .models.campo_codificado_descricao_response import CampoCodificadoDescricaoResponse
+from .models.cancelamento_transacao_on_us_request import CancelamentoTransacaoOnUsRequest
 from .models.cartao import Cartao
 from .models.cartao_impressao import CartaoImpressao
 from .models.cdt_detalhe_oportunidade_aud import CdtDetalheOportunidadeAUD
-from .models.conta import Conta
+from .models.conta_detalhe_response import ContaDetalheResponse
+from .models.conta_response import ContaResponse
+from .models.desfazimento_transacao_on_u_request import DesfazimentoTransacaoOnURequest
 from .models.detalhe_oportunidade_persist import DetalheOportunidadePersist
 from .models.detalhe_oportunidade_response import DetalheOportunidadeResponse
 from .models.detalhe_oportunidade_update import DetalheOportunidadeUpdate
 from .models.detalhes_fatura_consignada_response import DetalhesFaturaConsignadaResponse
 from .models.detalhes_fatura_response import DetalhesFaturaResponse
+from .models.dispositivo import Dispositivo
+from .models.dispositivo_persist import DispositivoPersist
 from .models.divida_cliente_response import DividaClienteResponse
 from .models.endereco import Endereco
 from .models.endereco_aprovado_persist import EnderecoAprovadoPersist
@@ -39,6 +48,7 @@ from .models.link_page_transferencia_bancaria_response import LinkPageTransferen
 from .models.link_transferencia_bancaria_response import LinkTransferenciaBancariaResponse
 from .models.lista_produtos import ListaProdutos
 from .models.lote_cartoes_pre_pagos import LoteCartoesPrePagos
+from .models.map_ofstring_andstring import MapOfstringAndstring
 from .models.notificacao_push_response import NotificacaoPushResponse
 from .models.notificacao_sms_body import NotificacaoSMSBody
 from .models.notificacao_sms_response import NotificacaoSMSResponse
@@ -47,11 +57,14 @@ from .models.oportunidade_persist import OportunidadePersist
 from .models.oportunidade_response import OportunidadeResponse
 from .models.oportunidade_update import OportunidadeUpdate
 from .models.origem_comercial import OrigemComercial
+from .models.page_aplicacoes_mobile import PageAplicacoesMobile
 from .models.page_atendimento_clientes import PageAtendimentoClientes
 from .models.page_bases import PageBases
 from .models.page_campo_codificado_descricao import PageCampoCodificadoDescricao
 from .models.page_cartoes import PageCartoes
 from .models.page_contas import PageContas
+from .models.page_contas_detalhe import PageContasDetalhe
+from .models.page_dispositivos import PageDispositivos
 from .models.page_enderecos import PageEnderecos
 from .models.page_estabelecimentos import PageEstabelecimentos
 from .models.page_estagios_cartoes import PageEstagiosCartoes
@@ -65,6 +78,7 @@ from .models.page_oprtunidade_aud import PageOprtunidadeAUD
 from .models.page_oprtunidades_response import PageOprtunidadesResponse
 from .models.page_origens_comerciais import PageOrigensComerciais
 from .models.page_pessoas import PagePessoas
+from .models.page_plataformas_mobile import PagePlataformasMobile
 from .models.page_portador import PagePortador
 from .models.page_push import PagePush
 from .models.page_sms import PageSMS
@@ -92,6 +106,9 @@ from .models.pessoa_fisica_aprovada_response import PessoaFisicaAprovadaResponse
 from .models.pessoa_juridica_aprovada_persist import PessoaJuridicaAprovadaPersist
 from .models.pessoa_juridica_aprovada_response import PessoaJuridicaAprovadaResponse
 from .models.pessoa_persist import PessoaPersist
+from .models.plataforma_mobile import PlataformaMobile
+from .models.plataforma_mobile_persist import PlataformaMobilePersist
+from .models.plataforma_mobile_update import PlataformaMobileUpdate
 from .models.portador import Portador
 from .models.produto_detalhes_response import ProdutoDetalhesResponse
 from .models.produto_response import ProdutoResponse
@@ -118,23 +135,31 @@ from .models.tipo_oportunidade_aud_response import TipoOportunidadeAUDResponse
 from .models.tipo_oportunidade_response import TipoOportunidadeResponse
 from .models.tipo_telefone import TipoTelefone
 from .models.token import Token
-from .models.transacao_response import TransacaoResponse
+from .models.transacao_corrente_response import TransacaoCorrenteResponse
+from .models.transacao_on_us_request import TransacaoOnUsRequest
+from .models.transacao_on_us_response import TransacaoOnUsResponse
 from .models.transacoes_correntes import TransacoesCorrentes
 from .models.transferencia import Transferencia
+from .models.transferencia_bancaria_persist import TransferenciaBancariaPersist
 from .models.usuario_persist import UsuarioPersist
 from .models.usuario_response import UsuarioResponse
 from .models.usuario_update import UsuarioUpdate
 from .models.valida_cartao import ValidaCartao
+from .models.valida_senha_cartao import ValidaSenhaCartao
 from .models.web_hook import WebHook
 
 # import apis into sdk package
+from .apis.aplicacoes_mobile_api import AplicacoesMobileApi
+from .apis.autorizacoes_api import AutorizacoesApi
 from .apis.base_api import BaseApi
 from .apis.cadastros_gerais_api import CadastrosGeraisApi
 from .apis.cartao_api import CartaoApi
 from .apis.conta_api import ContaApi
+from .apis.dispositivos_api import DispositivosApi
 from .apis.faq_api import FAQApi
 from .apis.notificacoes_api import NotificacoesApi
 from .apis.oportunidades_api import OportunidadesApi
+from .apis.plataformas_mobile_api import PlataformasMobileApi
 from .apis.risco_fraude_api import RiscoFraudeApi
 from .apis.status_parametros_api import StatusParametrosApi
 from .apis.token_api import TokenApi

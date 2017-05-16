@@ -237,7 +237,7 @@ class UsuarioResponse(object):
     def data_criacao(self):
         """
         Gets the data_criacao of this UsuarioResponse.
-        Status do Usu\u00C3\u00A1rio
+        Data de cria\u00C3\u00A7\u00C3\u00A3o do Usu\u00C3\u00A1rio
 
         :return: The data_criacao of this UsuarioResponse.
         :rtype: datetime
@@ -248,7 +248,7 @@ class UsuarioResponse(object):
     def data_criacao(self, data_criacao):
         """
         Sets the data_criacao of this UsuarioResponse.
-        Status do Usu\u00C3\u00A1rio
+        Data de cria\u00C3\u00A7\u00C3\u00A3o do Usu\u00C3\u00A1rio
 
         :param data_criacao: The data_criacao of this UsuarioResponse.
         :type: datetime
@@ -259,7 +259,7 @@ class UsuarioResponse(object):
     def data_modificacao(self):
         """
         Gets the data_modificacao of this UsuarioResponse.
-        Status do Usu\u00C3\u00A1rio
+        Data de modifica\u00C3\u00A7\u00C3\u00A3o do Usu\u00C3\u00A1rio
 
         :return: The data_modificacao of this UsuarioResponse.
         :rtype: datetime
@@ -270,7 +270,7 @@ class UsuarioResponse(object):
     def data_modificacao(self, data_modificacao):
         """
         Sets the data_modificacao of this UsuarioResponse.
-        Status do Usu\u00C3\u00A1rio
+        Data de modifica\u00C3\u00A7\u00C3\u00A3o do Usu\u00C3\u00A1rio
 
         :param data_modificacao: The data_modificacao of this UsuarioResponse.
         :type: datetime

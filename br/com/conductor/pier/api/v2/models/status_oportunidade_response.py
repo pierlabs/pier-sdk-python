@@ -39,6 +39,7 @@ class StatusOportunidadeResponse(object):
         self.swagger_types = {
             'id': 'int',
             'id_tipo_oportunidade': 'int',
+            'nome': 'str',
             'descricao': 'str',
             'flag_ativo': 'bool'
         }
@@ -46,12 +47,14 @@ class StatusOportunidadeResponse(object):
         self.attribute_map = {
             'id': 'id',
             'id_tipo_oportunidade': 'idTipoOportunidade',
+            'nome': 'nome',
             'descricao': 'descricao',
             'flag_ativo': 'flagAtivo'
         }
 
         self._id = None
         self._id_tipo_oportunidade = None
+        self._nome = None
         self._descricao = None
         self._flag_ativo = None
 
@@ -98,6 +101,28 @@ class StatusOportunidadeResponse(object):
         :type: int
         """
         self._id_tipo_oportunidade = id_tipo_oportunidade
+
+    @property
+    def nome(self):
+        """
+        Gets the nome of this StatusOportunidadeResponse.
+        Nome do status oportunidade
+
+        :return: The nome of this StatusOportunidadeResponse.
+        :rtype: str
+        """
+        return self._nome
+
+    @nome.setter
+    def nome(self, nome):
+        """
+        Sets the nome of this StatusOportunidadeResponse.
+        Nome do status oportunidade
+
+        :param nome: The nome of this StatusOportunidadeResponse.
+        :type: str
+        """
+        self._nome = nome
 
     @property
     def descricao(self):

@@ -108,7 +108,7 @@ class RiscoFraudeApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = ['access_token']
+        auth_settings = []
 
         response = self.api_client.call_api(resource_path, 'GET',
                                             path_params,
@@ -185,7 +185,7 @@ class RiscoFraudeApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = ['access_token']
+        auth_settings = []
 
         response = self.api_client.call_api(resource_path, 'GET',
                                             path_params,
@@ -262,7 +262,7 @@ class RiscoFraudeApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = ['access_token']
+        auth_settings = []
 
         response = self.api_client.call_api(resource_path, 'POST',
                                             path_params,
@@ -276,7 +276,7 @@ class RiscoFraudeApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get(self, **kwargs):
+    def listar_using_get1(self, **kwargs):
         """
         Lista todos os atendimentos
         Este m\u00C3\u00A9todo permite que sejam listados todos os Registro de Atendimento, independente do Tipo.
@@ -287,7 +287,7 @@ class RiscoFraudeApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get(callback=callback_function)
+        >>> thread = api.listar_using_get1(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -310,7 +310,7 @@ class RiscoFraudeApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get" % key
+                    " to method listar_using_get1" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -351,7 +351,7 @@ class RiscoFraudeApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = ['access_token']
+        auth_settings = []
 
         response = self.api_client.call_api(resource_path, 'GET',
                                             path_params,
@@ -365,7 +365,7 @@ class RiscoFraudeApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get11(self, id_conta, confirmacao_fraude, **kwargs):
+    def listar_using_get14(self, id_conta, confirmacao_fraude, **kwargs):
         """
         Listar as transa\u00C3\u00A7\u00C3\u00B5es com resolu\u00C3\u00A7\u00C3\u00A3o de risco fraude pendente
         Este recurso permite que sejam listados os riscos de fraudes existentes
@@ -376,7 +376,7 @@ class RiscoFraudeApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get11(id_conta, confirmacao_fraude, callback=callback_function)
+        >>> thread = api.listar_using_get14(id_conta, confirmacao_fraude, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -397,17 +397,17 @@ class RiscoFraudeApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get11" % key
+                    " to method listar_using_get14" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id_conta' is set
         if ('id_conta' not in params) or (params['id_conta'] is None):
-            raise ValueError("Missing the required parameter `id_conta` when calling `listar_using_get11`")
+            raise ValueError("Missing the required parameter `id_conta` when calling `listar_using_get14`")
         # verify the required parameter 'confirmacao_fraude' is set
         if ('confirmacao_fraude' not in params) or (params['confirmacao_fraude'] is None):
-            raise ValueError("Missing the required parameter `confirmacao_fraude` when calling `listar_using_get11`")
+            raise ValueError("Missing the required parameter `confirmacao_fraude` when calling `listar_using_get14`")
 
         resource_path = '/api/riscos-fraudes'.replace('{format}', 'json')
         path_params = {}
@@ -440,7 +440,7 @@ class RiscoFraudeApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = ['access_token']
+        auth_settings = []
 
         response = self.api_client.call_api(resource_path, 'GET',
                                             path_params,
@@ -454,7 +454,7 @@ class RiscoFraudeApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def negar_using_get(self, id, **kwargs):
+    def negar_using_post(self, id, **kwargs):
         """
         Negar autenticidade da transa\u00C3\u00A7\u00C3\u00A3o com risco de fraude
         Nega a realiza\u00C3\u00A7\u00C3\u00A3o da transa\u00C3\u00A7\u00C3\u00A3o classificada com risco de fraude.
@@ -465,7 +465,7 @@ class RiscoFraudeApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.negar_using_get(id, callback=callback_function)
+        >>> thread = api.negar_using_post(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -483,14 +483,14 @@ class RiscoFraudeApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method negar_using_get" % key
+                    " to method negar_using_post" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `negar_using_get`")
+            raise ValueError("Missing the required parameter `id` when calling `negar_using_post`")
 
         resource_path = '/api/riscos-fraudes/{id}/negar'.replace('{format}', 'json')
         path_params = {}
@@ -517,9 +517,9 @@ class RiscoFraudeApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = ['access_token']
+        auth_settings = []
 
-        response = self.api_client.call_api(resource_path, 'GET',
+        response = self.api_client.call_api(resource_path, 'POST',
                                             path_params,
                                             query_params,
                                             header_params,
@@ -531,7 +531,7 @@ class RiscoFraudeApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def reconhecer_using_get(self, id, **kwargs):
+    def reconhecer_using_post(self, id, **kwargs):
         """
         Reconhecer a transa\u00C3\u00A7\u00C3\u00A3o com risco de fraude
         Confirma a autenticidade da transa\u00C3\u00A7\u00C3\u00A3o classificada com risco de fraude.
@@ -542,7 +542,7 @@ class RiscoFraudeApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.reconhecer_using_get(id, callback=callback_function)
+        >>> thread = api.reconhecer_using_post(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -560,14 +560,14 @@ class RiscoFraudeApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method reconhecer_using_get" % key
+                    " to method reconhecer_using_post" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `reconhecer_using_get`")
+            raise ValueError("Missing the required parameter `id` when calling `reconhecer_using_post`")
 
         resource_path = '/api/riscos-fraudes/{id}/reconhecer'.replace('{format}', 'json')
         path_params = {}
@@ -594,9 +594,9 @@ class RiscoFraudeApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = ['access_token']
+        auth_settings = []
 
-        response = self.api_client.call_api(resource_path, 'GET',
+        response = self.api_client.call_api(resource_path, 'POST',
                                             path_params,
                                             query_params,
                                             header_params,
@@ -608,7 +608,7 @@ class RiscoFraudeApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def salvar_using_post(self, **kwargs):
+    def salvar_using_post1(self, **kwargs):
         """
         Cadastro um novo Atendimento do tipo Gen\u00C3\u00A9rico para uma Conta
         
@@ -619,7 +619,7 @@ class RiscoFraudeApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.salvar_using_post(callback=callback_function)
+        >>> thread = api.salvar_using_post1(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -645,7 +645,7 @@ class RiscoFraudeApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method salvar_using_post" % key
+                    " to method salvar_using_post1" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -692,7 +692,7 @@ class RiscoFraudeApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = ['access_token']
+        auth_settings = []
 
         response = self.api_client.call_api(resource_path, 'POST',
                                             path_params,

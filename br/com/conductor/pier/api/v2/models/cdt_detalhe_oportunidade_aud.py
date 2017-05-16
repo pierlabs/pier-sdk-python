@@ -44,7 +44,8 @@ class CdtDetalheOportunidadeAUD(object):
             'rev': 'int',
             'rev_date': 'datetime',
             'rev_oportunidade': 'int',
-            'rev_type': 'int'
+            'rev_type': 'int',
+            'rev_user': 'str'
         }
 
         self.attribute_map = {
@@ -55,7 +56,8 @@ class CdtDetalheOportunidadeAUD(object):
             'rev': 'rev',
             'rev_date': 'revDate',
             'rev_oportunidade': 'revOportunidade',
-            'rev_type': 'revType'
+            'rev_type': 'revType',
+            'rev_user': 'revUser'
         }
 
         self._conteudo = None
@@ -66,6 +68,7 @@ class CdtDetalheOportunidadeAUD(object):
         self._rev_date = None
         self._rev_oportunidade = None
         self._rev_type = None
+        self._rev_user = None
 
     @property
     def conteudo(self):
@@ -242,6 +245,28 @@ class CdtDetalheOportunidadeAUD(object):
         :type: int
         """
         self._rev_type = rev_type
+
+    @property
+    def rev_user(self):
+        """
+        Gets the rev_user of this CdtDetalheOportunidadeAUD.
+
+
+        :return: The rev_user of this CdtDetalheOportunidadeAUD.
+        :rtype: str
+        """
+        return self._rev_user
+
+    @rev_user.setter
+    def rev_user(self, rev_user):
+        """
+        Sets the rev_user of this CdtDetalheOportunidadeAUD.
+
+
+        :param rev_user: The rev_user of this CdtDetalheOportunidadeAUD.
+        :type: str
+        """
+        self._rev_user = rev_user
 
     def to_dict(self):
         """

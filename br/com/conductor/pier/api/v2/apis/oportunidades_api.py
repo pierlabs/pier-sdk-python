@@ -120,7 +120,7 @@ class OportunidadesApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = ['access_token']
+        auth_settings = []
 
         response = self.api_client.call_api(resource_path, 'PUT',
                                             path_params,
@@ -203,7 +203,7 @@ class OportunidadesApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = ['access_token']
+        auth_settings = []
 
         response = self.api_client.call_api(resource_path, 'PUT',
                                             path_params,
@@ -286,7 +286,7 @@ class OportunidadesApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = ['access_token']
+        auth_settings = []
 
         response = self.api_client.call_api(resource_path, 'PUT',
                                             path_params,
@@ -369,7 +369,7 @@ class OportunidadesApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = ['access_token']
+        auth_settings = []
 
         response = self.api_client.call_api(resource_path, 'GET',
                                             path_params,
@@ -446,7 +446,7 @@ class OportunidadesApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = ['access_token']
+        auth_settings = []
 
         response = self.api_client.call_api(resource_path, 'GET',
                                             path_params,
@@ -523,7 +523,7 @@ class OportunidadesApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = ['access_token']
+        auth_settings = []
 
         response = self.api_client.call_api(resource_path, 'GET',
                                             path_params,
@@ -558,14 +558,16 @@ class OportunidadesApi(object):
         :param datetime rev_date: Data da a\u00C3\u00A7\u00C3\u00A3o realizada no recurso de tipos oportunidades
         :param int id: C\u00C3\u00B3digo identificador do status oportunidade
         :param int id_tipo_oportunidade: C\u00C3\u00B3digo identificador do tipo oportunidade
+        :param str nome: Nome do status oportunidade
         :param str descricao: Descri\u00C3\u00A7\u00C3\u00A3o do status oportunidade
         :param bool flag_ativo: Flag de verifica\u00C3\u00A7\u00C3\u00A3o se o status oportunidade est\u00C3\u00A1 ativo
+        :param datetime rev_user: Usu\u00C3\u00A1rio da auditoria
         :return: PageStatusOprtunidadesAUD
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['page', 'limit', 'rev_type', 'rev_date', 'id', 'id_tipo_oportunidade', 'descricao', 'flag_ativo']
+        all_params = ['page', 'limit', 'rev_type', 'rev_date', 'id', 'id_tipo_oportunidade', 'nome', 'descricao', 'flag_ativo', 'rev_user']
         all_params.append('callback')
 
         params = locals()
@@ -595,10 +597,14 @@ class OportunidadesApi(object):
             query_params['id'] = params['id']
         if 'id_tipo_oportunidade' in params:
             query_params['idTipoOportunidade'] = params['id_tipo_oportunidade']
+        if 'nome' in params:
+            query_params['nome'] = params['nome']
         if 'descricao' in params:
             query_params['descricao'] = params['descricao']
         if 'flag_ativo' in params:
             query_params['flagAtivo'] = params['flag_ativo']
+        if 'rev_user' in params:
+            query_params['revUser'] = params['rev_user']
 
         header_params = {}
 
@@ -618,7 +624,7 @@ class OportunidadesApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = ['access_token']
+        auth_settings = []
 
         response = self.api_client.call_api(resource_path, 'GET',
                                             path_params,
@@ -658,12 +664,13 @@ class OportunidadesApi(object):
         :param bool flag_ativo: Flag de verifica\u00C3\u00A7\u00C3\u00A3o se a oportunidade est\u00C3\u00A1 ativa
         :param datetime rev_date: Data da auditoria
         :param datetime rev_type: Tipo da auditoria
+        :param datetime rev_user: Usu\u00C3\u00A1rio da auditoria
         :return: PageOprtunidadeAUD
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['page', 'limit', 'id_status_oportunidade', 'data_cadastro', 'data_atualizacao', 'numero_receita_federal', 'data_inicio_vigencia', 'datat_fim_vigencia', 'flag_ativo', 'rev_date', 'rev_type']
+        all_params = ['page', 'limit', 'id_status_oportunidade', 'data_cadastro', 'data_atualizacao', 'numero_receita_federal', 'data_inicio_vigencia', 'datat_fim_vigencia', 'flag_ativo', 'rev_date', 'rev_type', 'rev_user']
         all_params.append('callback')
 
         params = locals()
@@ -703,6 +710,8 @@ class OportunidadesApi(object):
             query_params['revDate'] = params['rev_date']
         if 'rev_type' in params:
             query_params['revType'] = params['rev_type']
+        if 'rev_user' in params:
+            query_params['revUser'] = params['rev_user']
 
         header_params = {}
 
@@ -722,7 +731,7 @@ class OportunidadesApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = ['access_token']
+        auth_settings = []
 
         response = self.api_client.call_api(resource_path, 'GET',
                                             path_params,
@@ -758,12 +767,13 @@ class OportunidadesApi(object):
         :param int id: C\u00C3\u00B3digo identificador do tipo oportunidade no qual foi realizado a a\u00C3\u00A7\u00C3\u00A3o
         :param str descricao: Descri\u00C3\u00A7\u00C3\u00A3o do tipo oportunidade no qual foi realizado a a\u00C3\u00A7\u00C3\u00A3o
         :param bool flag_ativo: Atributo que representa se o tipo oportunidade est\u00C3\u00A1 ativo
+        :param datetime rev_user: Usu\u00C3\u00A1rio da auditoria
         :return: PageTipoOprtunidadesAUD
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['page', 'limit', 'rev_type', 'rev_date', 'id', 'descricao', 'flag_ativo']
+        all_params = ['page', 'limit', 'rev_type', 'rev_date', 'id', 'descricao', 'flag_ativo', 'rev_user']
         all_params.append('callback')
 
         params = locals()
@@ -795,6 +805,8 @@ class OportunidadesApi(object):
             query_params['descricao'] = params['descricao']
         if 'flag_ativo' in params:
             query_params['flagAtivo'] = params['flag_ativo']
+        if 'rev_user' in params:
+            query_params['revUser'] = params['rev_user']
 
         header_params = {}
 
@@ -814,7 +826,7 @@ class OportunidadesApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = ['access_token']
+        auth_settings = []
 
         response = self.api_client.call_api(resource_path, 'GET',
                                             path_params,
@@ -846,6 +858,7 @@ class OportunidadesApi(object):
         :param int id: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do tipo oportunidade (id). (required)
         :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
         :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 100, Max = 100)
+        :param str nome: Nome do status oportunidade
         :param str descricao: Descri\u00C3\u00A7\u00C3\u00A3o do status oportunidade
         :param bool flag_ativo: Flag de verifica\u00C3\u00A7\u00C3\u00A3o se o status oportunidade est\u00C3\u00A1 ativo
         :return: PageStatusOprtunidades
@@ -853,7 +866,7 @@ class OportunidadesApi(object):
                  returns the request thread.
         """
 
-        all_params = ['id', 'page', 'limit', 'descricao', 'flag_ativo']
+        all_params = ['id', 'page', 'limit', 'nome', 'descricao', 'flag_ativo']
         all_params.append('callback')
 
         params = locals()
@@ -880,6 +893,8 @@ class OportunidadesApi(object):
             query_params['page'] = params['page']
         if 'limit' in params:
             query_params['limit'] = params['limit']
+        if 'nome' in params:
+            query_params['nome'] = params['nome']
         if 'descricao' in params:
             query_params['descricao'] = params['descricao']
         if 'flag_ativo' in params:
@@ -903,7 +918,7 @@ class OportunidadesApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = ['access_token']
+        auth_settings = []
 
         response = self.api_client.call_api(resource_path, 'GET',
                                             path_params,
@@ -917,7 +932,7 @@ class OportunidadesApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get16(self, **kwargs):
+    def listar_using_get19(self, **kwargs):
         """
         Lista os tipos oportunidades
         Este recurso permite listar os tipos oportunidades.
@@ -928,7 +943,7 @@ class OportunidadesApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get16(callback=callback_function)
+        >>> thread = api.listar_using_get19(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -949,7 +964,7 @@ class OportunidadesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get16" % key
+                    " to method listar_using_get19" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -986,7 +1001,7 @@ class OportunidadesApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = ['access_token']
+        auth_settings = []
 
         response = self.api_client.call_api(resource_path, 'GET',
                                             path_params,
@@ -1000,7 +1015,7 @@ class OportunidadesApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get7(self, **kwargs):
+    def listar_using_get9(self, **kwargs):
         """
         Lista as oportunidades
         Este recurso permite listar as oportunidades.
@@ -1011,7 +1026,7 @@ class OportunidadesApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get7(callback=callback_function)
+        >>> thread = api.listar_using_get9(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -1037,7 +1052,7 @@ class OportunidadesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get7" % key
+                    " to method listar_using_get9" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -1084,7 +1099,7 @@ class OportunidadesApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = ['access_token']
+        auth_settings = []
 
         response = self.api_client.call_api(resource_path, 'GET',
                                             path_params,
@@ -1167,7 +1182,7 @@ class OportunidadesApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = ['access_token']
+        auth_settings = []
 
         response = self.api_client.call_api(resource_path, 'POST',
                                             path_params,
@@ -1181,84 +1196,7 @@ class OportunidadesApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def salvar_using_post3(self, persist, **kwargs):
-        """
-        Cadastra as oportunidade
-        Esse recurso permite cadastrar oportunidades.
-
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
-        >>> thread = api.salvar_using_post3(persist, callback=callback_function)
-
-        :param callback function: The callback function
-            for asynchronous request. (optional)
-        :param OportunidadePersist persist: persist (required)
-        :return: OportunidadeResponse
-                 If the method is called asynchronously,
-                 returns the request thread.
-        """
-
-        all_params = ['persist']
-        all_params.append('callback')
-
-        params = locals()
-        for key, val in iteritems(params['kwargs']):
-            if key not in all_params:
-                raise TypeError(
-                    "Got an unexpected keyword argument '%s'"
-                    " to method salvar_using_post3" % key
-                )
-            params[key] = val
-        del params['kwargs']
-
-        # verify the required parameter 'persist' is set
-        if ('persist' not in params) or (params['persist'] is None):
-            raise ValueError("Missing the required parameter `persist` when calling `salvar_using_post3`")
-
-        resource_path = '/api/oportunidades'.replace('{format}', 'json')
-        path_params = {}
-
-        query_params = {}
-
-        header_params = {}
-
-        form_params = []
-        local_var_files = {}
-
-        body_params = None
-        if 'persist' in params:
-            body_params = params['persist']
-
-        # HTTP header `Accept`
-        header_params['Accept'] = self.api_client.\
-            select_header_accept(['application/json'])
-        if not header_params['Accept']:
-            del header_params['Accept']
-
-        # HTTP header `Content-Type`
-        header_params['Content-Type'] = self.api_client.\
-            select_header_content_type(['application/json'])
-
-        # Authentication setting
-        auth_settings = ['access_token']
-
-        response = self.api_client.call_api(resource_path, 'POST',
-                                            path_params,
-                                            query_params,
-                                            header_params,
-                                            body=body_params,
-                                            post_params=form_params,
-                                            files=local_var_files,
-                                            response_type='OportunidadeResponse',
-                                            auth_settings=auth_settings,
-                                            callback=params.get('callback'))
-        return response
-
-    def salvar_using_post6(self, persist, **kwargs):
+    def salvar_using_post10(self, persist, **kwargs):
         """
         Cadastra tipos oportunidades
         Esse recurso permite cadastrar tipos oportunidades.
@@ -1269,7 +1207,7 @@ class OportunidadesApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.salvar_using_post6(persist, callback=callback_function)
+        >>> thread = api.salvar_using_post10(persist, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -1287,14 +1225,14 @@ class OportunidadesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method salvar_using_post6" % key
+                    " to method salvar_using_post10" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'persist' is set
         if ('persist' not in params) or (params['persist'] is None):
-            raise ValueError("Missing the required parameter `persist` when calling `salvar_using_post6`")
+            raise ValueError("Missing the required parameter `persist` when calling `salvar_using_post10`")
 
         resource_path = '/api/tipos-oportunidades'.replace('{format}', 'json')
         path_params = {}
@@ -1321,7 +1259,7 @@ class OportunidadesApi(object):
             select_header_content_type(['application/json'])
 
         # Authentication setting
-        auth_settings = ['access_token']
+        auth_settings = []
 
         response = self.api_client.call_api(resource_path, 'POST',
                                             path_params,
@@ -1331,6 +1269,83 @@ class OportunidadesApi(object):
                                             post_params=form_params,
                                             files=local_var_files,
                                             response_type='TipoOportunidadeResponse',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
+    def salvar_using_post5(self, persist, **kwargs):
+        """
+        Cadastra as oportunidade
+        Esse recurso permite cadastrar oportunidades.
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.salvar_using_post5(persist, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param OportunidadePersist persist: persist (required)
+        :return: OportunidadeResponse
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['persist']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method salvar_using_post5" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        # verify the required parameter 'persist' is set
+        if ('persist' not in params) or (params['persist'] is None):
+            raise ValueError("Missing the required parameter `persist` when calling `salvar_using_post5`")
+
+        resource_path = '/api/oportunidades'.replace('{format}', 'json')
+        path_params = {}
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        if 'persist' in params:
+            body_params = params['persist']
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = []
+
+        response = self.api_client.call_api(resource_path, 'POST',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='OportunidadeResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response

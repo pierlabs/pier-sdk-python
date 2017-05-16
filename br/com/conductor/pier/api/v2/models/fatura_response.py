@@ -62,7 +62,9 @@ class FaturaResponse(object):
             'taxa_rotativo': 'float',
             'taxa_saque': 'float',
             'taxa_maxima_proximo_periodo': 'float',
-            'total_servicos': 'float'
+            'total_servicos': 'float',
+            'total_parcelado_nacionais': 'float',
+            'total_parcelado_internacionais': 'float'
         }
 
         self.attribute_map = {
@@ -91,7 +93,9 @@ class FaturaResponse(object):
             'taxa_rotativo': 'taxaRotativo',
             'taxa_saque': 'taxaSaque',
             'taxa_maxima_proximo_periodo': 'taxaMaximaProximoPeriodo',
-            'total_servicos': 'totalServicos'
+            'total_servicos': 'totalServicos',
+            'total_parcelado_nacionais': 'totalParceladoNacionais',
+            'total_parcelado_internacionais': 'totalParceladoInternacionais'
         }
 
         self._id = None
@@ -120,6 +124,8 @@ class FaturaResponse(object):
         self._taxa_saque = None
         self._taxa_maxima_proximo_periodo = None
         self._total_servicos = None
+        self._total_parcelado_nacionais = None
+        self._total_parcelado_internacionais = None
 
     @property
     def id(self):
@@ -692,6 +698,50 @@ class FaturaResponse(object):
         :type: float
         """
         self._total_servicos = total_servicos
+
+    @property
+    def total_parcelado_nacionais(self):
+        """
+        Gets the total_parcelado_nacionais of this FaturaResponse.
+        Apresenta a soma de todos os valores parcelados + compras nacionais.
+
+        :return: The total_parcelado_nacionais of this FaturaResponse.
+        :rtype: float
+        """
+        return self._total_parcelado_nacionais
+
+    @total_parcelado_nacionais.setter
+    def total_parcelado_nacionais(self, total_parcelado_nacionais):
+        """
+        Sets the total_parcelado_nacionais of this FaturaResponse.
+        Apresenta a soma de todos os valores parcelados + compras nacionais.
+
+        :param total_parcelado_nacionais: The total_parcelado_nacionais of this FaturaResponse.
+        :type: float
+        """
+        self._total_parcelado_nacionais = total_parcelado_nacionais
+
+    @property
+    def total_parcelado_internacionais(self):
+        """
+        Gets the total_parcelado_internacionais of this FaturaResponse.
+        Apresenta a soma de todos os valores parcelados + compras internacionais.
+
+        :return: The total_parcelado_internacionais of this FaturaResponse.
+        :rtype: float
+        """
+        return self._total_parcelado_internacionais
+
+    @total_parcelado_internacionais.setter
+    def total_parcelado_internacionais(self, total_parcelado_internacionais):
+        """
+        Sets the total_parcelado_internacionais of this FaturaResponse.
+        Apresenta a soma de todos os valores parcelados + compras internacionais.
+
+        :param total_parcelado_internacionais: The total_parcelado_internacionais of this FaturaResponse.
+        :type: float
+        """
+        self._total_parcelado_internacionais = total_parcelado_internacionais
 
     def to_dict(self):
         """

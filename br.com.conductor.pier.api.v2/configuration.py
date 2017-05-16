@@ -56,7 +56,7 @@ class Configuration(object):
         Constructor
         """
         # Default Base url
-        self.host = "https://localhost/"
+        self.host = "http://localhost/"
         # Default api client
         self.api_client = None
         # Temp file folder for downloading files
@@ -214,20 +214,6 @@ class Configuration(object):
         :return: The Auth Settings information dict.
         """
         return {
-            'access_token':
-                {
-                    'type': 'api_key',
-                    'in': 'header',
-                    'key': 'access_token',
-                    'value': self.get_api_key_with_prefix('access_token')
-                },
-            'client_id':
-                {
-                    'type': 'api_key',
-                    'in': 'header',
-                    'key': 'client_id',
-                    'value': self.get_api_key_with_prefix('client_id')
-                },
 
         }
 
@@ -241,5 +227,5 @@ class Configuration(object):
                "OS: {env}\n"\
                "Python Version: {pyversion}\n"\
                "Version of the API: 0.0.1\n"\
-               "SDK Package Version: 2.13.0".\
+               "SDK Package Version: 2.15.0".\
                format(env=sys.platform, pyversion=sys.version)
