@@ -62,7 +62,7 @@ class ContaDetalheResponse(object):
             'limite_saque_global': 'float',
             'saldo_disponivel_global': 'float',
             'saldo_disponivel_saque': 'float',
-            'data_inicio_atraso': 'datetime'
+            'dias_atraso': 'int'
         }
 
         self.attribute_map = {
@@ -91,7 +91,7 @@ class ContaDetalheResponse(object):
             'limite_saque_global': 'limiteSaqueGlobal',
             'saldo_disponivel_global': 'saldoDisponivelGlobal',
             'saldo_disponivel_saque': 'saldoDisponivelSaque',
-            'data_inicio_atraso': 'dataInicioAtraso'
+            'dias_atraso': 'diasAtraso'
         }
 
         self._id = None
@@ -119,7 +119,7 @@ class ContaDetalheResponse(object):
         self._limite_saque_global = None
         self._saldo_disponivel_global = None
         self._saldo_disponivel_saque = None
-        self._data_inicio_atraso = None
+        self._dias_atraso = None
 
     @property
     def id(self):
@@ -672,26 +672,26 @@ class ContaDetalheResponse(object):
         self._saldo_disponivel_saque = saldo_disponivel_saque
 
     @property
-    def data_inicio_atraso(self):
+    def dias_atraso(self):
         """
-        Gets the data_inicio_atraso of this ContaDetalheResponse.
-        Apresenta a data da ultima cobran\u00C3\u00A7a.
+        Gets the dias_atraso of this ContaDetalheResponse.
+        Apresenta a quantidade de dias que a conta esta em atraso
 
-        :return: The data_inicio_atraso of this ContaDetalheResponse.
-        :rtype: datetime
+        :return: The dias_atraso of this ContaDetalheResponse.
+        :rtype: int
         """
-        return self._data_inicio_atraso
+        return self._dias_atraso
 
-    @data_inicio_atraso.setter
-    def data_inicio_atraso(self, data_inicio_atraso):
+    @dias_atraso.setter
+    def dias_atraso(self, dias_atraso):
         """
-        Sets the data_inicio_atraso of this ContaDetalheResponse.
-        Apresenta a data da ultima cobran\u00C3\u00A7a.
+        Sets the dias_atraso of this ContaDetalheResponse.
+        Apresenta a quantidade de dias que a conta esta em atraso
 
-        :param data_inicio_atraso: The data_inicio_atraso of this ContaDetalheResponse.
-        :type: datetime
+        :param dias_atraso: The dias_atraso of this ContaDetalheResponse.
+        :type: int
         """
-        self._data_inicio_atraso = data_inicio_atraso
+        self._dias_atraso = dias_atraso
 
     def to_dict(self):
         """

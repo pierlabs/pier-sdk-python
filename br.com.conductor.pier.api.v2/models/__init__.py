@@ -18,6 +18,7 @@ from .cartao_impressao import CartaoImpressao
 from .cdt_detalhe_oportunidade_aud import CdtDetalheOportunidadeAUD
 from .conta_detalhe_response import ContaDetalheResponse
 from .conta_response import ContaResponse
+from .dados_carto import DadosCarto
 from .desfazimento_transacao_on_u_request import DesfazimentoTransacaoOnURequest
 from .detalhe_oportunidade_persist import DetalheOportunidadePersist
 from .detalhe_oportunidade_response import DetalheOportunidadeResponse

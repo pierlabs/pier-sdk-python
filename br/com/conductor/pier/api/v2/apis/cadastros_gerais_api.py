@@ -1338,7 +1338,7 @@ class CadastrosGeraisApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param str numero_receita_federal: Id Conta (required)
+        :param str numero_receita_federal: N\u00C3\u00BAmero de identifica\u00C3\u00A7\u00C3\u00A3o do cliente na Receita Federal (CPF ou CNPJ) (required)
         :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
         :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 100, Max = 100)
         :return: PageContasDetalhe
