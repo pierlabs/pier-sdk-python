@@ -43,7 +43,7 @@ class TransacaoOnUsRequest(object):
             'numero_real_cartao': 'str',
             'data_validade_cartao': 'str',
             'numero_estabelecimento': 'int',
-            'data_hora_terminal': 'datetime',
+            'data_hora_terminal': 'str',
             'terminal_requisitante': 'str'
         }
 
@@ -206,7 +206,7 @@ class TransacaoOnUsRequest(object):
         Apresenta a data e hora local da consulta yyyy-MM-dd'T'HH:mm:ss.SSSZ. Ex: 2000-10-31T01:30:00.000-05:00
 
         :return: The data_hora_terminal of this TransacaoOnUsRequest.
-        :rtype: datetime
+        :rtype: str
         """
         return self._data_hora_terminal
 
@@ -217,7 +217,7 @@ class TransacaoOnUsRequest(object):
         Apresenta a data e hora local da consulta yyyy-MM-dd'T'HH:mm:ss.SSSZ. Ex: 2000-10-31T01:30:00.000-05:00
 
         :param data_hora_terminal: The data_hora_terminal of this TransacaoOnUsRequest.
-        :type: datetime
+        :type: str
         """
         self._data_hora_terminal = data_hora_terminal
 

@@ -41,7 +41,7 @@ class HistoricoImpressaoCartao(object):
             'id_cartao': 'int',
             'id_status_impressao_cartao': 'int',
             'mensagem_historico': 'str',
-            'data_historico': 'datetime'
+            'data_historico': 'str'
         }
 
         self.attribute_map = {
@@ -153,7 +153,7 @@ class HistoricoImpressaoCartao(object):
         Apresenta a data que o registro de Hist\u00C3\u00B3rico de Impress\u00C3\u00A3o de um Cart\u00C3\u00A3o fora inserido.
 
         :return: The data_historico of this HistoricoImpressaoCartao.
-        :rtype: datetime
+        :rtype: str
         """
         return self._data_historico
 
@@ -164,7 +164,7 @@ class HistoricoImpressaoCartao(object):
         Apresenta a data que o registro de Hist\u00C3\u00B3rico de Impress\u00C3\u00A3o de um Cart\u00C3\u00A3o fora inserido.
 
         :param data_historico: The data_historico of this HistoricoImpressaoCartao.
-        :type: datetime
+        :type: str
         """
         self._data_historico = data_historico
 

@@ -38,7 +38,7 @@ class HistoricoEventos(object):
         """
         self.swagger_types = {
             'id_historico': 'int',
-            'data_historico': 'datetime',
+            'data_historico': 'str',
             'tipo_historico': 'str',
             'valor_anterior': 'str',
             'valor_atribuido': 'str'
@@ -87,7 +87,7 @@ class HistoricoEventos(object):
         Data do evento
 
         :return: The data_historico of this HistoricoEventos.
-        :rtype: datetime
+        :rtype: str
         """
         return self._data_historico
 
@@ -98,7 +98,7 @@ class HistoricoEventos(object):
         Data do evento
 
         :param data_historico: The data_historico of this HistoricoEventos.
-        :type: datetime
+        :type: str
         """
         self._data_historico = data_historico
 

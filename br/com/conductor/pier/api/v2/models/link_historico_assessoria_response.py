@@ -37,7 +37,7 @@ class LinkHistoricoAssessoriaResponse(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'data_hora_historico': 'datetime',
+            'data_hora_historico': 'str',
             'tipo_historico': 'str',
             'nome_assessoria': 'str'
         }
@@ -59,7 +59,7 @@ class LinkHistoricoAssessoriaResponse(object):
         Apresenta a data e hora do hist\u00C3\u00B3rico
 
         :return: The data_hora_historico of this LinkHistoricoAssessoriaResponse.
-        :rtype: datetime
+        :rtype: str
         """
         return self._data_hora_historico
 
@@ -70,7 +70,7 @@ class LinkHistoricoAssessoriaResponse(object):
         Apresenta a data e hora do hist\u00C3\u00B3rico
 
         :param data_hora_historico: The data_hora_historico of this LinkHistoricoAssessoriaResponse.
-        :type: datetime
+        :type: str
         """
         self._data_hora_historico = data_hora_historico
 

@@ -51,7 +51,7 @@ class Estabelecimento(object):
             'cidade': 'str',
             'uf': 'str',
             'pais': 'str',
-            'data_cadastramento': 'datetime',
+            'data_cadastramento': 'str',
             'obs': 'str',
             'contato': 'str',
             'email': 'str',
@@ -132,7 +132,7 @@ class Estabelecimento(object):
     def numero_estabelecimento(self):
         """
         Gets the numero_estabelecimento of this Estabelecimento.
-        N\u00C3\u00BAmero de identifica\u00C3\u00A7\u00C3\u00A3o do Estabelecimento na Conductor, com dois d\u00C3\u00ADgitos.
+        N\u00C3\u00BAmero de identifica\u00C3\u00A7\u00C3\u00A3o do Estabelecimento na Conductor.
 
         :return: The numero_estabelecimento of this Estabelecimento.
         :rtype: str
@@ -143,7 +143,7 @@ class Estabelecimento(object):
     def numero_estabelecimento(self, numero_estabelecimento):
         """
         Sets the numero_estabelecimento of this Estabelecimento.
-        N\u00C3\u00BAmero de identifica\u00C3\u00A7\u00C3\u00A3o do Estabelecimento na Conductor, com dois d\u00C3\u00ADgitos.
+        N\u00C3\u00BAmero de identifica\u00C3\u00A7\u00C3\u00A3o do Estabelecimento na Conductor.
 
         :param numero_estabelecimento: The numero_estabelecimento of this Estabelecimento.
         :type: str
@@ -421,7 +421,7 @@ class Estabelecimento(object):
         Data de Cadastro do Estabelecimento.
 
         :return: The data_cadastramento of this Estabelecimento.
-        :rtype: datetime
+        :rtype: str
         """
         return self._data_cadastramento
 
@@ -432,7 +432,7 @@ class Estabelecimento(object):
         Data de Cadastro do Estabelecimento.
 
         :param data_cadastramento: The data_cadastramento of this Estabelecimento.
-        :type: datetime
+        :type: str
         """
         self._data_cadastramento = data_cadastramento
 

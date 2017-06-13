@@ -37,38 +37,72 @@ class DadosCarto(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
+            'flag_virtual': 'int',
             'numero_cartao': 'str',
-            'data_validade': 'datetime',
+            'data_validade': 'str',
             'cvv2': 'str',
             'nome_plastico': 'str',
             'id_conta': 'int',
             'id_cartao': 'int',
-            'status': 'int',
-            'status_descricao': 'str',
-            'flag_provisorio': 'int'
+            'numero_agencia': 'int',
+            'numero_conta_corente': 'str',
+            'id_status_conta': 'int',
+            'status_conta': 'str',
+            'id_status_cartao': 'int',
+            'status_cartao': 'str'
         }
 
         self.attribute_map = {
+            'flag_virtual': 'flagVirtual',
             'numero_cartao': 'numeroCartao',
             'data_validade': 'dataValidade',
             'cvv2': 'cvv2',
             'nome_plastico': 'nomePlastico',
             'id_conta': 'idConta',
             'id_cartao': 'idCartao',
-            'status': 'status',
-            'status_descricao': 'statusDescricao',
-            'flag_provisorio': 'flagProvisorio'
+            'numero_agencia': 'numeroAgencia',
+            'numero_conta_corente': 'numeroContaCorente',
+            'id_status_conta': 'idStatusConta',
+            'status_conta': 'statusConta',
+            'id_status_cartao': 'idStatusCartao',
+            'status_cartao': 'statusCartao'
         }
 
+        self._flag_virtual = None
         self._numero_cartao = None
         self._data_validade = None
         self._cvv2 = None
         self._nome_plastico = None
         self._id_conta = None
         self._id_cartao = None
-        self._status = None
-        self._status_descricao = None
-        self._flag_provisorio = None
+        self._numero_agencia = None
+        self._numero_conta_corente = None
+        self._id_status_conta = None
+        self._status_conta = None
+        self._id_status_cartao = None
+        self._status_cartao = None
+
+    @property
+    def flag_virtual(self):
+        """
+        Gets the flag_virtual of this DadosCarto.
+
+
+        :return: The flag_virtual of this DadosCarto.
+        :rtype: int
+        """
+        return self._flag_virtual
+
+    @flag_virtual.setter
+    def flag_virtual(self, flag_virtual):
+        """
+        Sets the flag_virtual of this DadosCarto.
+
+
+        :param flag_virtual: The flag_virtual of this DadosCarto.
+        :type: int
+        """
+        self._flag_virtual = flag_virtual
 
     @property
     def numero_cartao(self):
@@ -99,7 +133,7 @@ class DadosCarto(object):
         Data de validade.
 
         :return: The data_validade of this DadosCarto.
-        :rtype: datetime
+        :rtype: str
         """
         return self._data_validade
 
@@ -110,7 +144,7 @@ class DadosCarto(object):
         Data de validade.
 
         :param data_validade: The data_validade of this DadosCarto.
-        :type: datetime
+        :type: str
         """
         self._data_validade = data_validade
 
@@ -203,70 +237,136 @@ class DadosCarto(object):
         self._id_cartao = id_cartao
 
     @property
-    def status(self):
+    def numero_agencia(self):
         """
-        Gets the status of this DadosCarto.
-        Status da conta do portador.
+        Gets the numero_agencia of this DadosCarto.
+        Apresenta o n\u00C3\u00BAmero da Ag\u00C3\u00AAncia a ser impresso no Cart\u00C3\u00A3o, quando aplic\u00C3\u00A1vel.
 
-        :return: The status of this DadosCarto.
+        :return: The numero_agencia of this DadosCarto.
         :rtype: int
         """
-        return self._status
+        return self._numero_agencia
 
-    @status.setter
-    def status(self, status):
+    @numero_agencia.setter
+    def numero_agencia(self, numero_agencia):
         """
-        Sets the status of this DadosCarto.
-        Status da conta do portador.
+        Sets the numero_agencia of this DadosCarto.
+        Apresenta o n\u00C3\u00BAmero da Ag\u00C3\u00AAncia a ser impresso no Cart\u00C3\u00A3o, quando aplic\u00C3\u00A1vel.
 
-        :param status: The status of this DadosCarto.
+        :param numero_agencia: The numero_agencia of this DadosCarto.
         :type: int
         """
-        self._status = status
+        self._numero_agencia = numero_agencia
 
     @property
-    def status_descricao(self):
+    def numero_conta_corente(self):
         """
-        Gets the status_descricao of this DadosCarto.
-        Descri\u00C3\u00A7\u00C3\u00A3o do status da conta do portador.
+        Gets the numero_conta_corente of this DadosCarto.
+        Apresenta o n\u00C3\u00BAmero da Conta Corrente a ser impresso no Cart\u00C3\u00A3o, quando aplic\u00C3\u00A1vel.
 
-        :return: The status_descricao of this DadosCarto.
+        :return: The numero_conta_corente of this DadosCarto.
         :rtype: str
         """
-        return self._status_descricao
+        return self._numero_conta_corente
 
-    @status_descricao.setter
-    def status_descricao(self, status_descricao):
+    @numero_conta_corente.setter
+    def numero_conta_corente(self, numero_conta_corente):
         """
-        Sets the status_descricao of this DadosCarto.
-        Descri\u00C3\u00A7\u00C3\u00A3o do status da conta do portador.
+        Sets the numero_conta_corente of this DadosCarto.
+        Apresenta o n\u00C3\u00BAmero da Conta Corrente a ser impresso no Cart\u00C3\u00A3o, quando aplic\u00C3\u00A1vel.
 
-        :param status_descricao: The status_descricao of this DadosCarto.
+        :param numero_conta_corente: The numero_conta_corente of this DadosCarto.
         :type: str
         """
-        self._status_descricao = status_descricao
+        self._numero_conta_corente = numero_conta_corente
 
     @property
-    def flag_provisorio(self):
+    def id_status_conta(self):
         """
-        Gets the flag_provisorio of this DadosCarto.
-        Flag de verifica\u00C3\u00A7\u00C3\u00A3o se o cart\u00C3\u00A3o \u00C3\u00A9 provis\u00C3\u00B3rio.
+        Gets the id_status_conta of this DadosCarto.
+        Status da conta do portador.
 
-        :return: The flag_provisorio of this DadosCarto.
+        :return: The id_status_conta of this DadosCarto.
         :rtype: int
         """
-        return self._flag_provisorio
+        return self._id_status_conta
 
-    @flag_provisorio.setter
-    def flag_provisorio(self, flag_provisorio):
+    @id_status_conta.setter
+    def id_status_conta(self, id_status_conta):
         """
-        Sets the flag_provisorio of this DadosCarto.
-        Flag de verifica\u00C3\u00A7\u00C3\u00A3o se o cart\u00C3\u00A3o \u00C3\u00A9 provis\u00C3\u00B3rio.
+        Sets the id_status_conta of this DadosCarto.
+        Status da conta do portador.
 
-        :param flag_provisorio: The flag_provisorio of this DadosCarto.
+        :param id_status_conta: The id_status_conta of this DadosCarto.
         :type: int
         """
-        self._flag_provisorio = flag_provisorio
+        self._id_status_conta = id_status_conta
+
+    @property
+    def status_conta(self):
+        """
+        Gets the status_conta of this DadosCarto.
+        Descri\u00C3\u00A7\u00C3\u00A3o do status da conta do portador.
+
+        :return: The status_conta of this DadosCarto.
+        :rtype: str
+        """
+        return self._status_conta
+
+    @status_conta.setter
+    def status_conta(self, status_conta):
+        """
+        Sets the status_conta of this DadosCarto.
+        Descri\u00C3\u00A7\u00C3\u00A3o do status da conta do portador.
+
+        :param status_conta: The status_conta of this DadosCarto.
+        :type: str
+        """
+        self._status_conta = status_conta
+
+    @property
+    def id_status_cartao(self):
+        """
+        Gets the id_status_cartao of this DadosCarto.
+        Status do cart\u00C3\u00A3o.
+
+        :return: The id_status_cartao of this DadosCarto.
+        :rtype: int
+        """
+        return self._id_status_cartao
+
+    @id_status_cartao.setter
+    def id_status_cartao(self, id_status_cartao):
+        """
+        Sets the id_status_cartao of this DadosCarto.
+        Status do cart\u00C3\u00A3o.
+
+        :param id_status_cartao: The id_status_cartao of this DadosCarto.
+        :type: int
+        """
+        self._id_status_cartao = id_status_cartao
+
+    @property
+    def status_cartao(self):
+        """
+        Gets the status_cartao of this DadosCarto.
+        Descri\u00C3\u00A7\u00C3\u00A3o do status do cart\u00C3\u00A3o.
+
+        :return: The status_cartao of this DadosCarto.
+        :rtype: str
+        """
+        return self._status_cartao
+
+    @status_cartao.setter
+    def status_cartao(self, status_cartao):
+        """
+        Sets the status_cartao of this DadosCarto.
+        Descri\u00C3\u00A7\u00C3\u00A3o do status do cart\u00C3\u00A3o.
+
+        :param status_cartao: The status_cartao of this DadosCarto.
+        :type: str
+        """
+        self._status_cartao = status_cartao
 
     def to_dict(self):
         """

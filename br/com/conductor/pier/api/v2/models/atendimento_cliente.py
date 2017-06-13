@@ -45,11 +45,11 @@ class AtendimentoCliente(object):
             'detalhes_atendimento': 'str',
             'nome_atendente': 'str',
             'nome_sistema': 'str',
-            'data_hora_inicio_atendimento': 'datetime',
-            'data_hora_fim_atendimento': 'datetime',
-            'data_atendimento': 'datetime',
-            'data_agendamento': 'datetime',
-            'data_processamento': 'datetime',
+            'data_hora_inicio_atendimento': 'str',
+            'data_hora_fim_atendimento': 'str',
+            'data_atendimento': 'str',
+            'data_agendamento': 'str',
+            'data_processamento': 'str',
             'flag_processamento': 'int'
         }
 
@@ -268,7 +268,7 @@ class AtendimentoCliente(object):
         Apresenta a data e hora em que o Atendimento foi iniciado. Quando utilizado, serve para medir a performance dos Atendimentos.
 
         :return: The data_hora_inicio_atendimento of this AtendimentoCliente.
-        :rtype: datetime
+        :rtype: str
         """
         return self._data_hora_inicio_atendimento
 
@@ -279,7 +279,7 @@ class AtendimentoCliente(object):
         Apresenta a data e hora em que o Atendimento foi iniciado. Quando utilizado, serve para medir a performance dos Atendimentos.
 
         :param data_hora_inicio_atendimento: The data_hora_inicio_atendimento of this AtendimentoCliente.
-        :type: datetime
+        :type: str
         """
         self._data_hora_inicio_atendimento = data_hora_inicio_atendimento
 
@@ -290,7 +290,7 @@ class AtendimentoCliente(object):
         Apresenta a data e hora em que o Atendimento foi iniciado. Quando utilizado, serve para medir a performance dos Atendimentos.
 
         :return: The data_hora_fim_atendimento of this AtendimentoCliente.
-        :rtype: datetime
+        :rtype: str
         """
         return self._data_hora_fim_atendimento
 
@@ -301,7 +301,7 @@ class AtendimentoCliente(object):
         Apresenta a data e hora em que o Atendimento foi iniciado. Quando utilizado, serve para medir a performance dos Atendimentos.
 
         :param data_hora_fim_atendimento: The data_hora_fim_atendimento of this AtendimentoCliente.
-        :type: datetime
+        :type: str
         """
         self._data_hora_fim_atendimento = data_hora_fim_atendimento
 
@@ -312,7 +312,7 @@ class AtendimentoCliente(object):
         Apresenta a data e hora em que o Atendimento foi realizado.
 
         :return: The data_atendimento of this AtendimentoCliente.
-        :rtype: datetime
+        :rtype: str
         """
         return self._data_atendimento
 
@@ -323,7 +323,7 @@ class AtendimentoCliente(object):
         Apresenta a data e hora em que o Atendimento foi realizado.
 
         :param data_atendimento: The data_atendimento of this AtendimentoCliente.
-        :type: datetime
+        :type: str
         """
         self._data_atendimento = data_atendimento
 
@@ -334,7 +334,7 @@ class AtendimentoCliente(object):
         Quando utilizado, de acordo com o Tipo de Atendimento, apresenta a data e hora para processamento ou a data para retorno do Atendimento.
 
         :return: The data_agendamento of this AtendimentoCliente.
-        :rtype: datetime
+        :rtype: str
         """
         return self._data_agendamento
 
@@ -345,7 +345,7 @@ class AtendimentoCliente(object):
         Quando utilizado, de acordo com o Tipo de Atendimento, apresenta a data e hora para processamento ou a data para retorno do Atendimento.
 
         :param data_agendamento: The data_agendamento of this AtendimentoCliente.
-        :type: datetime
+        :type: str
         """
         self._data_agendamento = data_agendamento
 
@@ -356,7 +356,7 @@ class AtendimentoCliente(object):
         Quando utilizado, apresenta a data e hora em que a solicita\u00C3\u00A7\u00C3\u00A3o registrada no Atendimento fora processada.
 
         :return: The data_processamento of this AtendimentoCliente.
-        :rtype: datetime
+        :rtype: str
         """
         return self._data_processamento
 
@@ -367,7 +367,7 @@ class AtendimentoCliente(object):
         Quando utilizado, apresenta a data e hora em que a solicita\u00C3\u00A7\u00C3\u00A3o registrada no Atendimento fora processada.
 
         :param data_processamento: The data_processamento of this AtendimentoCliente.
-        :type: datetime
+        :type: str
         """
         self._data_processamento = data_processamento
 

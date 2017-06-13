@@ -38,7 +38,6 @@ class AplicacaoMobilePersist(object):
         """
         self.swagger_types = {
             'id_plataforma_mobile': 'int',
-            'id_emissor': 'int',
             'token': 'str',
             'cor': 'str',
             'som': 'str',
@@ -49,7 +48,6 @@ class AplicacaoMobilePersist(object):
 
         self.attribute_map = {
             'id_plataforma_mobile': 'idPlataformaMobile',
-            'id_emissor': 'idEmissor',
             'token': 'token',
             'cor': 'cor',
             'som': 'som',
@@ -59,7 +57,6 @@ class AplicacaoMobilePersist(object):
         }
 
         self._id_plataforma_mobile = None
-        self._id_emissor = None
         self._token = None
         self._cor = None
         self._som = None
@@ -88,28 +85,6 @@ class AplicacaoMobilePersist(object):
         :type: int
         """
         self._id_plataforma_mobile = id_plataforma_mobile
-
-    @property
-    def id_emissor(self):
-        """
-        Gets the id_emissor of this AplicacaoMobilePersist.
-        Apresenta o identificador do emissor.
-
-        :return: The id_emissor of this AplicacaoMobilePersist.
-        :rtype: int
-        """
-        return self._id_emissor
-
-    @id_emissor.setter
-    def id_emissor(self, id_emissor):
-        """
-        Sets the id_emissor of this AplicacaoMobilePersist.
-        Apresenta o identificador do emissor.
-
-        :param id_emissor: The id_emissor of this AplicacaoMobilePersist.
-        :type: int
-        """
-        self._id_emissor = id_emissor
 
     @property
     def token(self):

@@ -38,7 +38,6 @@ class FAQ(object):
         """
         self.swagger_types = {
             'id': 'int',
-            'id_emissor': 'int',
             'pergunta': 'str',
             'resposta': 'str',
             'relevancia': 'int',
@@ -49,7 +48,6 @@ class FAQ(object):
 
         self.attribute_map = {
             'id': 'id',
-            'id_emissor': 'idEmissor',
             'pergunta': 'pergunta',
             'resposta': 'resposta',
             'relevancia': 'relevancia',
@@ -59,7 +57,6 @@ class FAQ(object):
         }
 
         self._id = None
-        self._id_emissor = None
         self._pergunta = None
         self._resposta = None
         self._relevancia = None
@@ -88,28 +85,6 @@ class FAQ(object):
         :type: int
         """
         self._id = id
-
-    @property
-    def id_emissor(self):
-        """
-        Gets the id_emissor of this FAQ.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Emissor de qual a FAQ \u00C3\u00A9 relacionada (id).
-
-        :return: The id_emissor of this FAQ.
-        :rtype: int
-        """
-        return self._id_emissor
-
-    @id_emissor.setter
-    def id_emissor(self, id_emissor):
-        """
-        Sets the id_emissor of this FAQ.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Emissor de qual a FAQ \u00C3\u00A9 relacionada (id).
-
-        :param id_emissor: The id_emissor of this FAQ.
-        :type: int
-        """
-        self._id_emissor = id_emissor
 
     @property
     def pergunta(self):

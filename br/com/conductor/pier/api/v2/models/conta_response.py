@@ -44,9 +44,9 @@ class ContaResponse(object):
             'id_status_conta': 'int',
             'dia_vencimento': 'int',
             'melhor_dia_compra': 'int',
-            'data_status_conta': 'datetime',
-            'data_cadastro': 'datetime',
-            'data_ultima_alteracao_vencimento': 'datetime',
+            'data_status_conta': 'str',
+            'data_cadastro': 'str',
+            'data_ultima_alteracao_vencimento': 'str',
             'valor_renda': 'float'
         }
 
@@ -237,7 +237,7 @@ class ContaResponse(object):
         Apresenta a data em que o idStatusConta atual fora atribu\u00C3\u00ADdo para ela.
 
         :return: The data_status_conta of this ContaResponse.
-        :rtype: datetime
+        :rtype: str
         """
         return self._data_status_conta
 
@@ -248,7 +248,7 @@ class ContaResponse(object):
         Apresenta a data em que o idStatusConta atual fora atribu\u00C3\u00ADdo para ela.
 
         :param data_status_conta: The data_status_conta of this ContaResponse.
-        :type: datetime
+        :type: str
         """
         self._data_status_conta = data_status_conta
 
@@ -259,7 +259,7 @@ class ContaResponse(object):
         Apresenta a data em que o cart\u00C3\u00A3o foi gerado.
 
         :return: The data_cadastro of this ContaResponse.
-        :rtype: datetime
+        :rtype: str
         """
         return self._data_cadastro
 
@@ -270,7 +270,7 @@ class ContaResponse(object):
         Apresenta a data em que o cart\u00C3\u00A3o foi gerado.
 
         :param data_cadastro: The data_cadastro of this ContaResponse.
-        :type: datetime
+        :type: str
         """
         self._data_cadastro = data_cadastro
 
@@ -281,7 +281,7 @@ class ContaResponse(object):
         Apresenta a data da ultima altera\u00C3\u00A7\u00C3\u00A3o de vencimento.
 
         :return: The data_ultima_alteracao_vencimento of this ContaResponse.
-        :rtype: datetime
+        :rtype: str
         """
         return self._data_ultima_alteracao_vencimento
 
@@ -292,7 +292,7 @@ class ContaResponse(object):
         Apresenta a data da ultima altera\u00C3\u00A7\u00C3\u00A3o de vencimento.
 
         :param data_ultima_alteracao_vencimento: The data_ultima_alteracao_vencimento of this ContaResponse.
-        :type: datetime
+        :type: str
         """
         self._data_ultima_alteracao_vencimento = data_ultima_alteracao_vencimento
 

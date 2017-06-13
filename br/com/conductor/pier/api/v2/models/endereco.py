@@ -49,8 +49,8 @@ class Endereco(object):
             'cidade': 'str',
             'uf': 'str',
             'pais': 'str',
-            'data_inclusao': 'datetime',
-            'data_ultima_atualizacao': 'datetime'
+            'data_inclusao': 'str',
+            'data_ultima_atualizacao': 'str'
         }
 
         self.attribute_map = {
@@ -356,7 +356,7 @@ class Endereco(object):
         Apresenta a data em que fora cadastrado o Endere\u00C3\u00A7o
 
         :return: The data_inclusao of this Endereco.
-        :rtype: datetime
+        :rtype: str
         """
         return self._data_inclusao
 
@@ -367,7 +367,7 @@ class Endereco(object):
         Apresenta a data em que fora cadastrado o Endere\u00C3\u00A7o
 
         :param data_inclusao: The data_inclusao of this Endereco.
-        :type: datetime
+        :type: str
         """
         self._data_inclusao = data_inclusao
 
@@ -378,7 +378,7 @@ class Endereco(object):
         Data em que fora realizada a \u00C3\u00BAltima mudan\u00C3\u00A7a neste registro de endere\u00C3\u00A7o. Quando n\u00C3\u00A3o tiver ocorrido mudan\u00C3\u00A7a, conter\u00C3\u00A1 a mesma informa\u00C3\u00A7\u00C3\u00A3o que o campo dataInclusao
 
         :return: The data_ultima_atualizacao of this Endereco.
-        :rtype: datetime
+        :rtype: str
         """
         return self._data_ultima_atualizacao
 
@@ -389,7 +389,7 @@ class Endereco(object):
         Data em que fora realizada a \u00C3\u00BAltima mudan\u00C3\u00A7a neste registro de endere\u00C3\u00A7o. Quando n\u00C3\u00A3o tiver ocorrido mudan\u00C3\u00A7a, conter\u00C3\u00A1 a mesma informa\u00C3\u00A7\u00C3\u00A3o que o campo dataInclusao
 
         :param data_ultima_atualizacao: The data_ultima_atualizacao of this Endereco.
-        :type: datetime
+        :type: str
         """
         self._data_ultima_atualizacao = data_ultima_atualizacao
 

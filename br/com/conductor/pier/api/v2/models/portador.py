@@ -45,8 +45,8 @@ class Portador(object):
             'nome_impresso': 'str',
             'id_tipo_cartao': 'int',
             'flag_ativo': 'int',
-            'data_cadastro_portador': 'datetime',
-            'data_cancelamento_portador': 'datetime'
+            'data_cadastro_portador': 'str',
+            'data_cancelamento_portador': 'str'
         }
 
         self.attribute_map = {
@@ -256,7 +256,7 @@ class Portador(object):
         Apresenta a data em que o Portador fora cadastrado, quando possuir esta informa\u00C3\u00A7\u00C3\u00A3o.
 
         :return: The data_cadastro_portador of this Portador.
-        :rtype: datetime
+        :rtype: str
         """
         return self._data_cadastro_portador
 
@@ -267,7 +267,7 @@ class Portador(object):
         Apresenta a data em que o Portador fora cadastrado, quando possuir esta informa\u00C3\u00A7\u00C3\u00A3o.
 
         :param data_cadastro_portador: The data_cadastro_portador of this Portador.
-        :type: datetime
+        :type: str
         """
         self._data_cadastro_portador = data_cadastro_portador
 
@@ -278,7 +278,7 @@ class Portador(object):
         Apresenta a data em que o Portador fora cancelado, quando possuir esta informa\u00C3\u00A7\u00C3\u00A3o.
 
         :return: The data_cancelamento_portador of this Portador.
-        :rtype: datetime
+        :rtype: str
         """
         return self._data_cancelamento_portador
 
@@ -289,7 +289,7 @@ class Portador(object):
         Apresenta a data em que o Portador fora cancelado, quando possuir esta informa\u00C3\u00A7\u00C3\u00A3o.
 
         :param data_cancelamento_portador: The data_cancelamento_portador of this Portador.
-        :type: datetime
+        :type: str
         """
         self._data_cancelamento_portador = data_cancelamento_portador
 

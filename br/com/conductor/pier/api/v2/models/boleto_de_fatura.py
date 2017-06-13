@@ -37,9 +37,9 @@ class BoletoDeFatura(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'data_processamento': 'datetime',
-            'data_documento': 'datetime',
-            'data_vencimento': 'date',
+            'data_processamento': 'str',
+            'data_documento': 'str',
+            'data_vencimento': 'str',
             'valor_boleto': 'float',
             'numero_do_documento': 'str',
             'nome_beneficiario': 'str',
@@ -137,7 +137,7 @@ class BoletoDeFatura(object):
         Data do processamento (emiss\u00C3\u00A3o ou faturamento) do boleto
 
         :return: The data_processamento of this BoletoDeFatura.
-        :rtype: datetime
+        :rtype: str
         """
         return self._data_processamento
 
@@ -148,7 +148,7 @@ class BoletoDeFatura(object):
         Data do processamento (emiss\u00C3\u00A3o ou faturamento) do boleto
 
         :param data_processamento: The data_processamento of this BoletoDeFatura.
-        :type: datetime
+        :type: str
         """
         self._data_processamento = data_processamento
 
@@ -159,7 +159,7 @@ class BoletoDeFatura(object):
         Data do documento (impress\u00C3\u00A3o)
 
         :return: The data_documento of this BoletoDeFatura.
-        :rtype: datetime
+        :rtype: str
         """
         return self._data_documento
 
@@ -170,7 +170,7 @@ class BoletoDeFatura(object):
         Data do documento (impress\u00C3\u00A3o)
 
         :param data_documento: The data_documento of this BoletoDeFatura.
-        :type: datetime
+        :type: str
         """
         self._data_documento = data_documento
 
@@ -181,7 +181,7 @@ class BoletoDeFatura(object):
         Data do vencimento
 
         :return: The data_vencimento of this BoletoDeFatura.
-        :rtype: date
+        :rtype: str
         """
         return self._data_vencimento
 
@@ -192,7 +192,7 @@ class BoletoDeFatura(object):
         Data do vencimento
 
         :param data_vencimento: The data_vencimento of this BoletoDeFatura.
-        :type: date
+        :type: str
         """
         self._data_vencimento = data_vencimento
 
@@ -200,7 +200,7 @@ class BoletoDeFatura(object):
     def valor_boleto(self):
         """
         Gets the valor_boleto of this BoletoDeFatura.
-
+        Valor do Boleto.
 
         :return: The valor_boleto of this BoletoDeFatura.
         :rtype: float
@@ -211,7 +211,7 @@ class BoletoDeFatura(object):
     def valor_boleto(self, valor_boleto):
         """
         Sets the valor_boleto of this BoletoDeFatura.
-
+        Valor do Boleto.
 
         :param valor_boleto: The valor_boleto of this BoletoDeFatura.
         :type: float
@@ -266,7 +266,7 @@ class BoletoDeFatura(object):
     def agencia(self):
         """
         Gets the agencia of this BoletoDeFatura.
-        Ag\u00C3\u00AAncia
+        Ag\u00C3\u00AAncia.
 
         :return: The agencia of this BoletoDeFatura.
         :rtype: str
@@ -277,7 +277,7 @@ class BoletoDeFatura(object):
     def agencia(self, agencia):
         """
         Sets the agencia of this BoletoDeFatura.
-        Ag\u00C3\u00AAncia
+        Ag\u00C3\u00AAncia.
 
         :param agencia: The agencia of this BoletoDeFatura.
         :type: str
@@ -574,7 +574,7 @@ class BoletoDeFatura(object):
     def documento_beneficiario(self):
         """
         Gets the documento_beneficiario of this BoletoDeFatura.
-
+        Documento do Beneficiario.
 
         :return: The documento_beneficiario of this BoletoDeFatura.
         :rtype: str
@@ -585,7 +585,7 @@ class BoletoDeFatura(object):
     def documento_beneficiario(self, documento_beneficiario):
         """
         Sets the documento_beneficiario of this BoletoDeFatura.
-
+        Documento do Beneficiario.
 
         :param documento_beneficiario: The documento_beneficiario of this BoletoDeFatura.
         :type: str

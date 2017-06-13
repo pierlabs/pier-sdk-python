@@ -2,20 +2,26 @@ from __future__ import absolute_import
 
 # import models into model package
 from .ajuste_response import AjusteResponse
+from .antecipacao_response import AntecipacaoResponse
+from .antecipacao_simulada_detalhes_response import AntecipacaoSimuladaDetalhesResponse
+from .antecipacao_simulada_response import AntecipacaoSimuladaResponse
 from .aplicacao_mobile import AplicacaoMobile
 from .aplicacao_mobile_persist import AplicacaoMobilePersist
 from .aplicacao_mobile_update import AplicacaoMobileUpdate
 from .atendimento_cliente import AtendimentoCliente
 from .auth_token import AuthToken
 from .autorizacao_on_us_request import AutorizacaoOnUsRequest
+from .banco import Banco
 from .base import Base
 from .body_access_token import BodyAccessToken
 from .boleto_de_fatura import BoletoDeFatura
 from .campo_codificado_descricao_response import CampoCodificadoDescricaoResponse
 from .cancelamento_transacao_on_us_request import CancelamentoTransacaoOnUsRequest
 from .cartao import Cartao
+from .cartao_detalhado import CartaoDetalhado
 from .cartao_impressao import CartaoImpressao
 from .cdt_detalhe_oportunidade_aud import CdtDetalheOportunidadeAUD
+from .compra_response import CompraResponse
 from .conta_detalhe_response import ContaDetalheResponse
 from .conta_response import ContaResponse
 from .dados_carto import DadosCarto
@@ -42,6 +48,7 @@ from .historico_atraso_fatura_response import HistoricoAtrasoFaturaResponse
 from .historico_eventos import HistoricoEventos
 from .historico_impressao_cartao import HistoricoImpressaoCartao
 from .historico_telefone import HistoricoTelefone
+from .job import Job
 from .limite_disponibilidade import LimiteDisponibilidade
 from .link_historico_assessoria_response import LinkHistoricoAssessoriaResponse
 from .link_page_historico_assessoria_response import LinkPageHistoricoAssessoriaResponse
@@ -60,9 +67,11 @@ from .oportunidade_update import OportunidadeUpdate
 from .origem_comercial import OrigemComercial
 from .page_aplicacoes_mobile import PageAplicacoesMobile
 from .page_atendimento_clientes import PageAtendimentoClientes
+from .page_bancos import PageBancos
 from .page_bases import PageBases
 from .page_campo_codificado_descricao import PageCampoCodificadoDescricao
 from .page_cartoes import PageCartoes
+from .page_compras import PageCompras
 from .page_contas import PageContas
 from .page_contas_detalhe import PageContasDetalhe
 from .page_dispositivos import PageDispositivos
@@ -74,10 +83,12 @@ from .page_faturas import PageFaturas
 from .page_faturas_consignadas import PageFaturasConsignadas
 from .page_historico_atraso import PageHistoricoAtraso
 from .page_historico_eventos import PageHistoricoEventos
+from .page_job import PageJob
 from .page_lote_cartoes_pre_pagos_response import PageLoteCartoesPrePagosResponse
 from .page_oprtunidade_aud import PageOprtunidadeAUD
 from .page_oprtunidades_response import PageOprtunidadesResponse
 from .page_origens_comerciais import PageOrigensComerciais
+from .page_pais_response import PagePaisResponse
 from .page_pessoas import PagePessoas
 from .page_plataformas_mobile import PagePlataformasMobile
 from .page_portador import PagePortador
@@ -88,7 +99,9 @@ from .page_status_contas import PageStatusContas
 from .page_status_impressao import PageStatusImpressao
 from .page_status_oprtunidades import PageStatusOprtunidades
 from .page_status_oprtunidades_aud import PageStatusOprtunidadesAUD
+from .page_taxas_refinanciamento import PageTaxasRefinanciamento
 from .page_telefones import PageTelefones
+from .page_terminal import PageTerminal
 from .page_tipo_ajuste import PageTipoAjuste
 from .page_tipo_boleto import PageTipoBoleto
 from .page_tipo_oprtunidades import PageTipoOprtunidades
@@ -100,6 +113,8 @@ from .page_transacoes_correntes import PageTransacoesCorrentes
 from .page_transferencias import PageTransferencias
 from .page_usuarios import PageUsuarios
 from .page_web_hooks import PageWebHooks
+from .pais_response import PaisResponse
+from .parametro_produto_response import ParametroProdutoResponse
 from .pessoa import Pessoa
 from .pessoa_detalhe_response import PessoaDetalheResponse
 from .pessoa_fisica_aprovada_persist import PessoaFisicaAprovadaPersist
@@ -126,9 +141,12 @@ from .status_impressao import StatusImpressao
 from .status_oportunidade import StatusOportunidade
 from .status_oportunidade_aud_response import StatusOportunidadeAUDResponse
 from .status_oportunidade_response import StatusOportunidadeResponse
+from .taxa_antecipacao_request import TaxaAntecipacaoRequest
+from .taxas_refinanciamento import TaxasRefinanciamento
 from .telefone import Telefone
 from .telefone_pessoa_aprovada_persist import TelefonePessoaAprovadaPersist
 from .telefone_pessoa_aprovada_response import TelefonePessoaAprovadaResponse
+from .terminal import Terminal
 from .tipo_ajuste_response import TipoAjusteResponse
 from .tipo_endereco import TipoEndereco
 from .tipo_oportunidade import TipoOportunidade

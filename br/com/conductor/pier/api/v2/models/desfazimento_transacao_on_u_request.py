@@ -38,43 +38,40 @@ class DesfazimentoTransacaoOnURequest(object):
         """
         self.swagger_types = {
             'nsu_origem': 'str',
+            'nsu_origem_transacao_cancelada': 'str',
             'codigo_processamento': 'str',
+            'data_hora_transacao_cancelada': 'str',
             'valor_transacao': 'float',
             'numero_real_cartao': 'str',
             'data_validade_cartao': 'str',
             'numero_estabelecimento': 'int',
-            'data_hora_terminal': 'datetime',
-            'terminal_requisitante': 'str',
-            'nsu_origem_transacao_cancelada': 'str',
-            'data_hora_transacao_cancelada': 'datetime',
-            'codigo_transacao_cancelada': 'str'
+            'data_hora_terminal': 'str',
+            'terminal_requisitante': 'str'
         }
 
         self.attribute_map = {
             'nsu_origem': 'nsuOrigem',
+            'nsu_origem_transacao_cancelada': 'nsuOrigemTransacaoCancelada',
             'codigo_processamento': 'codigoProcessamento',
+            'data_hora_transacao_cancelada': 'dataHoraTransacaoCancelada',
             'valor_transacao': 'valorTransacao',
             'numero_real_cartao': 'numeroRealCartao',
             'data_validade_cartao': 'dataValidadeCartao',
             'numero_estabelecimento': 'numeroEstabelecimento',
             'data_hora_terminal': 'dataHoraTerminal',
-            'terminal_requisitante': 'terminalRequisitante',
-            'nsu_origem_transacao_cancelada': 'nsuOrigemTransacaoCancelada',
-            'data_hora_transacao_cancelada': 'dataHoraTransacaoCancelada',
-            'codigo_transacao_cancelada': 'codigoTransacaoCancelada'
+            'terminal_requisitante': 'terminalRequisitante'
         }
 
         self._nsu_origem = None
+        self._nsu_origem_transacao_cancelada = None
         self._codigo_processamento = None
+        self._data_hora_transacao_cancelada = None
         self._valor_transacao = None
         self._numero_real_cartao = None
         self._data_validade_cartao = None
         self._numero_estabelecimento = None
         self._data_hora_terminal = None
         self._terminal_requisitante = None
-        self._nsu_origem_transacao_cancelada = None
-        self._data_hora_transacao_cancelada = None
-        self._codigo_transacao_cancelada = None
 
     @property
     def nsu_origem(self):
@@ -99,6 +96,28 @@ class DesfazimentoTransacaoOnURequest(object):
         self._nsu_origem = nsu_origem
 
     @property
+    def nsu_origem_transacao_cancelada(self):
+        """
+        Gets the nsu_origem_transacao_cancelada of this DesfazimentoTransacaoOnURequest.
+        N\u00C3\u00BAmero Sequencial \u00C3\u009Anico que identifica a transa\u00C3\u00A7\u00C3\u00A3o no sistema a ser cancelada.
+
+        :return: The nsu_origem_transacao_cancelada of this DesfazimentoTransacaoOnURequest.
+        :rtype: str
+        """
+        return self._nsu_origem_transacao_cancelada
+
+    @nsu_origem_transacao_cancelada.setter
+    def nsu_origem_transacao_cancelada(self, nsu_origem_transacao_cancelada):
+        """
+        Sets the nsu_origem_transacao_cancelada of this DesfazimentoTransacaoOnURequest.
+        N\u00C3\u00BAmero Sequencial \u00C3\u009Anico que identifica a transa\u00C3\u00A7\u00C3\u00A3o no sistema a ser cancelada.
+
+        :param nsu_origem_transacao_cancelada: The nsu_origem_transacao_cancelada of this DesfazimentoTransacaoOnURequest.
+        :type: str
+        """
+        self._nsu_origem_transacao_cancelada = nsu_origem_transacao_cancelada
+
+    @property
     def codigo_processamento(self):
         """
         Gets the codigo_processamento of this DesfazimentoTransacaoOnURequest.
@@ -119,6 +138,28 @@ class DesfazimentoTransacaoOnURequest(object):
         :type: str
         """
         self._codigo_processamento = codigo_processamento
+
+    @property
+    def data_hora_transacao_cancelada(self):
+        """
+        Gets the data_hora_transacao_cancelada of this DesfazimentoTransacaoOnURequest.
+        Apresenta a data e hora local da transa\u00C3\u00A7\u00C3\u00A3o a ser cancelada yyyy-MM-dd'T'HH:mm:ss.SSSZ. Ex: 2000-10-31T01:30:00.000-05:00
+
+        :return: The data_hora_transacao_cancelada of this DesfazimentoTransacaoOnURequest.
+        :rtype: str
+        """
+        return self._data_hora_transacao_cancelada
+
+    @data_hora_transacao_cancelada.setter
+    def data_hora_transacao_cancelada(self, data_hora_transacao_cancelada):
+        """
+        Sets the data_hora_transacao_cancelada of this DesfazimentoTransacaoOnURequest.
+        Apresenta a data e hora local da transa\u00C3\u00A7\u00C3\u00A3o a ser cancelada yyyy-MM-dd'T'HH:mm:ss.SSSZ. Ex: 2000-10-31T01:30:00.000-05:00
+
+        :param data_hora_transacao_cancelada: The data_hora_transacao_cancelada of this DesfazimentoTransacaoOnURequest.
+        :type: str
+        """
+        self._data_hora_transacao_cancelada = data_hora_transacao_cancelada
 
     @property
     def valor_transacao(self):
@@ -215,7 +256,7 @@ class DesfazimentoTransacaoOnURequest(object):
         Apresenta a data e hora local da consulta yyyy-MM-dd'T'HH:mm:ss.SSSZ. Ex: 2000-10-31T01:30:00.000-05:00
 
         :return: The data_hora_terminal of this DesfazimentoTransacaoOnURequest.
-        :rtype: datetime
+        :rtype: str
         """
         return self._data_hora_terminal
 
@@ -226,7 +267,7 @@ class DesfazimentoTransacaoOnURequest(object):
         Apresenta a data e hora local da consulta yyyy-MM-dd'T'HH:mm:ss.SSSZ. Ex: 2000-10-31T01:30:00.000-05:00
 
         :param data_hora_terminal: The data_hora_terminal of this DesfazimentoTransacaoOnURequest.
-        :type: datetime
+        :type: str
         """
         self._data_hora_terminal = data_hora_terminal
 
@@ -251,72 +292,6 @@ class DesfazimentoTransacaoOnURequest(object):
         :type: str
         """
         self._terminal_requisitante = terminal_requisitante
-
-    @property
-    def nsu_origem_transacao_cancelada(self):
-        """
-        Gets the nsu_origem_transacao_cancelada of this DesfazimentoTransacaoOnURequest.
-        N\u00C3\u00BAmero Sequencial \u00C3\u009Anico que identifica a transa\u00C3\u00A7\u00C3\u00A3o no sistema a ser cancelada.
-
-        :return: The nsu_origem_transacao_cancelada of this DesfazimentoTransacaoOnURequest.
-        :rtype: str
-        """
-        return self._nsu_origem_transacao_cancelada
-
-    @nsu_origem_transacao_cancelada.setter
-    def nsu_origem_transacao_cancelada(self, nsu_origem_transacao_cancelada):
-        """
-        Sets the nsu_origem_transacao_cancelada of this DesfazimentoTransacaoOnURequest.
-        N\u00C3\u00BAmero Sequencial \u00C3\u009Anico que identifica a transa\u00C3\u00A7\u00C3\u00A3o no sistema a ser cancelada.
-
-        :param nsu_origem_transacao_cancelada: The nsu_origem_transacao_cancelada of this DesfazimentoTransacaoOnURequest.
-        :type: str
-        """
-        self._nsu_origem_transacao_cancelada = nsu_origem_transacao_cancelada
-
-    @property
-    def data_hora_transacao_cancelada(self):
-        """
-        Gets the data_hora_transacao_cancelada of this DesfazimentoTransacaoOnURequest.
-        Apresenta a data e hora local da transa\u00C3\u00A7\u00C3\u00A3o a ser cancelada yyyy-MM-dd'T'HH:mm:ss.SSSZ. Ex: 2000-10-31T01:30:00.000-05:00
-
-        :return: The data_hora_transacao_cancelada of this DesfazimentoTransacaoOnURequest.
-        :rtype: datetime
-        """
-        return self._data_hora_transacao_cancelada
-
-    @data_hora_transacao_cancelada.setter
-    def data_hora_transacao_cancelada(self, data_hora_transacao_cancelada):
-        """
-        Sets the data_hora_transacao_cancelada of this DesfazimentoTransacaoOnURequest.
-        Apresenta a data e hora local da transa\u00C3\u00A7\u00C3\u00A3o a ser cancelada yyyy-MM-dd'T'HH:mm:ss.SSSZ. Ex: 2000-10-31T01:30:00.000-05:00
-
-        :param data_hora_transacao_cancelada: The data_hora_transacao_cancelada of this DesfazimentoTransacaoOnURequest.
-        :type: datetime
-        """
-        self._data_hora_transacao_cancelada = data_hora_transacao_cancelada
-
-    @property
-    def codigo_transacao_cancelada(self):
-        """
-        Gets the codigo_transacao_cancelada of this DesfazimentoTransacaoOnURequest.
-        C\u00C3\u00B3digo de Processamento da transa\u00C3\u00A7\u00C3\u00A3o cancelada.
-
-        :return: The codigo_transacao_cancelada of this DesfazimentoTransacaoOnURequest.
-        :rtype: str
-        """
-        return self._codigo_transacao_cancelada
-
-    @codigo_transacao_cancelada.setter
-    def codigo_transacao_cancelada(self, codigo_transacao_cancelada):
-        """
-        Sets the codigo_transacao_cancelada of this DesfazimentoTransacaoOnURequest.
-        C\u00C3\u00B3digo de Processamento da transa\u00C3\u00A7\u00C3\u00A3o cancelada.
-
-        :param codigo_transacao_cancelada: The codigo_transacao_cancelada of this DesfazimentoTransacaoOnURequest.
-        :type: str
-        """
-        self._codigo_transacao_cancelada = codigo_transacao_cancelada
 
     def to_dict(self):
         """

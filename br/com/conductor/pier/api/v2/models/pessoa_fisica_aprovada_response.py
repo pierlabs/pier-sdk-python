@@ -40,13 +40,13 @@ class PessoaFisicaAprovadaResponse(object):
             'id': 'int',
             'nome': 'str',
             'nome_mae': 'str',
-            'data_nascimento': 'date',
+            'data_nascimento': 'str',
             'sexo': 'str',
             'cpf': 'str',
             'numero_identidade': 'str',
             'orgao_expedidor_identidade': 'str',
             'unidade_federativa_identidade': 'str',
-            'data_emissao_identidade': 'date',
+            'data_emissao_identidade': 'str',
             'id_estado_civil': 'int',
             'profissao': 'str',
             'id_natureza_ocupacao': 'int',
@@ -188,7 +188,7 @@ class PessoaFisicaAprovadaResponse(object):
         Data de Nascimento da Pessoa. Essa data deve ser informada no formato aaaa-MM-dd.
 
         :return: The data_nascimento of this PessoaFisicaAprovadaResponse.
-        :rtype: date
+        :rtype: str
         """
         return self._data_nascimento
 
@@ -199,7 +199,7 @@ class PessoaFisicaAprovadaResponse(object):
         Data de Nascimento da Pessoa. Essa data deve ser informada no formato aaaa-MM-dd.
 
         :param data_nascimento: The data_nascimento of this PessoaFisicaAprovadaResponse.
-        :type: date
+        :type: str
         """
         self._data_nascimento = data_nascimento
 
@@ -320,7 +320,7 @@ class PessoaFisicaAprovadaResponse(object):
         Data emiss\u00C3\u00A3o da Identidade no formato aaaa-MM-dd
 
         :return: The data_emissao_identidade of this PessoaFisicaAprovadaResponse.
-        :rtype: date
+        :rtype: str
         """
         return self._data_emissao_identidade
 
@@ -331,7 +331,7 @@ class PessoaFisicaAprovadaResponse(object):
         Data emiss\u00C3\u00A3o da Identidade no formato aaaa-MM-dd
 
         :param data_emissao_identidade: The data_emissao_identidade of this PessoaFisicaAprovadaResponse.
-        :type: date
+        :type: str
         """
         self._data_emissao_identidade = data_emissao_identidade
 

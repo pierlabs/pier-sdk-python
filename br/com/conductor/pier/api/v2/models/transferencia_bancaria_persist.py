@@ -37,9 +37,9 @@ class TransferenciaBancariaPersist(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'data_compra': 'date',
-            'proximo_vencimento_padrao': 'date',
-            'proximo_vencimento_real': 'date',
+            'data_compra': 'str',
+            'proximo_vencimento_padrao': 'str',
+            'proximo_vencimento_real': 'str',
             'valor_compra': 'float',
             'nome_favorecido': 'str',
             'documento_favorecido': 'str',
@@ -86,7 +86,7 @@ class TransferenciaBancariaPersist(object):
         Data da transfer\u00C3\u00AAncia
 
         :return: The data_compra of this TransferenciaBancariaPersist.
-        :rtype: date
+        :rtype: str
         """
         return self._data_compra
 
@@ -97,7 +97,7 @@ class TransferenciaBancariaPersist(object):
         Data da transfer\u00C3\u00AAncia
 
         :param data_compra: The data_compra of this TransferenciaBancariaPersist.
-        :type: date
+        :type: str
         """
         self._data_compra = data_compra
 
@@ -108,7 +108,7 @@ class TransferenciaBancariaPersist(object):
         Dia do vencimento padr\u00C3\u00A3o da fatura
 
         :return: The proximo_vencimento_padrao of this TransferenciaBancariaPersist.
-        :rtype: date
+        :rtype: str
         """
         return self._proximo_vencimento_padrao
 
@@ -119,7 +119,7 @@ class TransferenciaBancariaPersist(object):
         Dia do vencimento padr\u00C3\u00A3o da fatura
 
         :param proximo_vencimento_padrao: The proximo_vencimento_padrao of this TransferenciaBancariaPersist.
-        :type: date
+        :type: str
         """
         self._proximo_vencimento_padrao = proximo_vencimento_padrao
 
@@ -130,7 +130,7 @@ class TransferenciaBancariaPersist(object):
         Data do vencimento real da fatura
 
         :return: The proximo_vencimento_real of this TransferenciaBancariaPersist.
-        :rtype: date
+        :rtype: str
         """
         return self._proximo_vencimento_real
 
@@ -141,7 +141,7 @@ class TransferenciaBancariaPersist(object):
         Data do vencimento real da fatura
 
         :param proximo_vencimento_real: The proximo_vencimento_real of this TransferenciaBancariaPersist.
-        :type: date
+        :type: str
         """
         self._proximo_vencimento_real = proximo_vencimento_real
 

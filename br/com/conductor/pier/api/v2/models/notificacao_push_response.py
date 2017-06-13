@@ -37,7 +37,7 @@ class NotificacaoPushResponse(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'data_envio': 'datetime',
+            'data_envio': 'str',
             'id_emissor': 'int',
             'tipo_evento': 'str',
             'status': 'str',
@@ -83,7 +83,7 @@ class NotificacaoPushResponse(object):
         Apresenta a data e em que o registro foi enviado para o dispositivo.
 
         :return: The data_envio of this NotificacaoPushResponse.
-        :rtype: datetime
+        :rtype: str
         """
         return self._data_envio
 
@@ -94,7 +94,7 @@ class NotificacaoPushResponse(object):
         Apresenta a data e em que o registro foi enviado para o dispositivo.
 
         :param data_envio: The data_envio of this NotificacaoPushResponse.
-        :type: datetime
+        :type: str
         """
         self._data_envio = data_envio
 

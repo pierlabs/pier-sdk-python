@@ -42,7 +42,7 @@ class PessoaJuridicaAprovadaResponse(object):
             'nome_fantasia': 'str',
             'cnpj': 'str',
             'inscricao_estadual': 'str',
-            'data_abertura_empresa': 'date',
+            'data_abertura_empresa': 'str',
             'id_origem_comercial': 'int',
             'id_produto': 'int',
             'numero_agencia': 'int',
@@ -208,7 +208,7 @@ class PessoaJuridicaAprovadaResponse(object):
         Data de abertura da empresa, essa data deve ser informada no formato: aaaa-MM-dd.
 
         :return: The data_abertura_empresa of this PessoaJuridicaAprovadaResponse.
-        :rtype: date
+        :rtype: str
         """
         return self._data_abertura_empresa
 
@@ -219,7 +219,7 @@ class PessoaJuridicaAprovadaResponse(object):
         Data de abertura da empresa, essa data deve ser informada no formato: aaaa-MM-dd.
 
         :param data_abertura_empresa: The data_abertura_empresa of this PessoaJuridicaAprovadaResponse.
-        :type: date
+        :type: str
         """
         self._data_abertura_empresa = data_abertura_empresa
 

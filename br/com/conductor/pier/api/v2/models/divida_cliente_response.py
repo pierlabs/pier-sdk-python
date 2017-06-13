@@ -38,9 +38,9 @@ class DividaClienteResponse(object):
         """
         self.swagger_types = {
             'id': 'int',
-            'data_vencimento_fatura_atraso': 'date',
+            'data_vencimento_fatura_atraso': 'str',
             'quantidade_dias_atraso': 'int',
-            'data_vencimento_acordo': 'date',
+            'data_vencimento_acordo': 'str',
             'quantidade_dias_atraso_corrigido': 'int',
             'valor_saldo_devedor': 'float',
             'taxa_correcao': 'float',
@@ -123,7 +123,7 @@ class DividaClienteResponse(object):
         Data de vencimento da cobran\u00C3\u00A7a
 
         :return: The data_vencimento_fatura_atraso of this DividaClienteResponse.
-        :rtype: date
+        :rtype: str
         """
         return self._data_vencimento_fatura_atraso
 
@@ -134,7 +134,7 @@ class DividaClienteResponse(object):
         Data de vencimento da cobran\u00C3\u00A7a
 
         :param data_vencimento_fatura_atraso: The data_vencimento_fatura_atraso of this DividaClienteResponse.
-        :type: date
+        :type: str
         """
         self._data_vencimento_fatura_atraso = data_vencimento_fatura_atraso
 
@@ -167,7 +167,7 @@ class DividaClienteResponse(object):
         Data de vencimento do acordo
 
         :return: The data_vencimento_acordo of this DividaClienteResponse.
-        :rtype: date
+        :rtype: str
         """
         return self._data_vencimento_acordo
 
@@ -178,7 +178,7 @@ class DividaClienteResponse(object):
         Data de vencimento do acordo
 
         :param data_vencimento_acordo: The data_vencimento_acordo of this DividaClienteResponse.
-        :type: date
+        :type: str
         """
         self._data_vencimento_acordo = data_vencimento_acordo
 

@@ -44,7 +44,7 @@ class LoteCartoesPrePagos(object):
             'id_imagem': 'int',
             'id_endereco': 'int',
             'quantidade': 'int',
-            'data_cadastro': 'datetime',
+            'data_cadastro': 'str',
             'usuario_cadastro': 'str',
             'status_processamento': 'int'
         }
@@ -234,7 +234,7 @@ class LoteCartoesPrePagos(object):
         Data de cadastro do lote de cart\u00C3\u00B5es pr\u00C3\u00A9-pagos.
 
         :return: The data_cadastro of this LoteCartoesPrePagos.
-        :rtype: datetime
+        :rtype: str
         """
         return self._data_cadastro
 
@@ -245,7 +245,7 @@ class LoteCartoesPrePagos(object):
         Data de cadastro do lote de cart\u00C3\u00B5es pr\u00C3\u00A9-pagos.
 
         :param data_cadastro: The data_cadastro of this LoteCartoesPrePagos.
-        :type: datetime
+        :type: str
         """
         self._data_cadastro = data_cadastro
 

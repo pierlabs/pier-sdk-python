@@ -45,7 +45,7 @@ class RiscoFraudeDetalhadoResponse(object):
             'id_cartao': 'int',
             'id_produto': 'int',
             'id_transacao': 'int',
-            'data_transacao': 'datetime',
+            'data_transacao': 'str',
             'valor_transacao': 'float',
             'codigo_moeda_origem': 'str',
             'valor_origem': 'float',
@@ -307,7 +307,7 @@ class RiscoFraudeDetalhadoResponse(object):
         Data que a transa\u00C3\u00A7\u00C3\u00A3o classificada com risco de fraude foi realizada
 
         :return: The data_transacao of this RiscoFraudeDetalhadoResponse.
-        :rtype: datetime
+        :rtype: str
         """
         return self._data_transacao
 
@@ -318,7 +318,7 @@ class RiscoFraudeDetalhadoResponse(object):
         Data que a transa\u00C3\u00A7\u00C3\u00A3o classificada com risco de fraude foi realizada
 
         :param data_transacao: The data_transacao of this RiscoFraudeDetalhadoResponse.
-        :type: datetime
+        :type: str
         """
         self._data_transacao = data_transacao
 

@@ -2,20 +2,26 @@ from __future__ import absolute_import
 
 # import models into sdk package
 from .models.ajuste_response import AjusteResponse
+from .models.antecipacao_response import AntecipacaoResponse
+from .models.antecipacao_simulada_detalhes_response import AntecipacaoSimuladaDetalhesResponse
+from .models.antecipacao_simulada_response import AntecipacaoSimuladaResponse
 from .models.aplicacao_mobile import AplicacaoMobile
 from .models.aplicacao_mobile_persist import AplicacaoMobilePersist
 from .models.aplicacao_mobile_update import AplicacaoMobileUpdate
 from .models.atendimento_cliente import AtendimentoCliente
 from .models.auth_token import AuthToken
 from .models.autorizacao_on_us_request import AutorizacaoOnUsRequest
+from .models.banco import Banco
 from .models.base import Base
 from .models.body_access_token import BodyAccessToken
 from .models.boleto_de_fatura import BoletoDeFatura
 from .models.campo_codificado_descricao_response import CampoCodificadoDescricaoResponse
 from .models.cancelamento_transacao_on_us_request import CancelamentoTransacaoOnUsRequest
 from .models.cartao import Cartao
+from .models.cartao_detalhado import CartaoDetalhado
 from .models.cartao_impressao import CartaoImpressao
 from .models.cdt_detalhe_oportunidade_aud import CdtDetalheOportunidadeAUD
+from .models.compra_response import CompraResponse
 from .models.conta_detalhe_response import ContaDetalheResponse
 from .models.conta_response import ContaResponse
 from .models.dados_carto import DadosCarto
@@ -42,6 +48,7 @@ from .models.historico_atraso_fatura_response import HistoricoAtrasoFaturaRespon
 from .models.historico_eventos import HistoricoEventos
 from .models.historico_impressao_cartao import HistoricoImpressaoCartao
 from .models.historico_telefone import HistoricoTelefone
+from .models.job import Job
 from .models.limite_disponibilidade import LimiteDisponibilidade
 from .models.link_historico_assessoria_response import LinkHistoricoAssessoriaResponse
 from .models.link_page_historico_assessoria_response import LinkPageHistoricoAssessoriaResponse
@@ -60,9 +67,11 @@ from .models.oportunidade_update import OportunidadeUpdate
 from .models.origem_comercial import OrigemComercial
 from .models.page_aplicacoes_mobile import PageAplicacoesMobile
 from .models.page_atendimento_clientes import PageAtendimentoClientes
+from .models.page_bancos import PageBancos
 from .models.page_bases import PageBases
 from .models.page_campo_codificado_descricao import PageCampoCodificadoDescricao
 from .models.page_cartoes import PageCartoes
+from .models.page_compras import PageCompras
 from .models.page_contas import PageContas
 from .models.page_contas_detalhe import PageContasDetalhe
 from .models.page_dispositivos import PageDispositivos
@@ -74,10 +83,12 @@ from .models.page_faturas import PageFaturas
 from .models.page_faturas_consignadas import PageFaturasConsignadas
 from .models.page_historico_atraso import PageHistoricoAtraso
 from .models.page_historico_eventos import PageHistoricoEventos
+from .models.page_job import PageJob
 from .models.page_lote_cartoes_pre_pagos_response import PageLoteCartoesPrePagosResponse
 from .models.page_oprtunidade_aud import PageOprtunidadeAUD
 from .models.page_oprtunidades_response import PageOprtunidadesResponse
 from .models.page_origens_comerciais import PageOrigensComerciais
+from .models.page_pais_response import PagePaisResponse
 from .models.page_pessoas import PagePessoas
 from .models.page_plataformas_mobile import PagePlataformasMobile
 from .models.page_portador import PagePortador
@@ -88,7 +99,9 @@ from .models.page_status_contas import PageStatusContas
 from .models.page_status_impressao import PageStatusImpressao
 from .models.page_status_oprtunidades import PageStatusOprtunidades
 from .models.page_status_oprtunidades_aud import PageStatusOprtunidadesAUD
+from .models.page_taxas_refinanciamento import PageTaxasRefinanciamento
 from .models.page_telefones import PageTelefones
+from .models.page_terminal import PageTerminal
 from .models.page_tipo_ajuste import PageTipoAjuste
 from .models.page_tipo_boleto import PageTipoBoleto
 from .models.page_tipo_oprtunidades import PageTipoOprtunidades
@@ -100,6 +113,8 @@ from .models.page_transacoes_correntes import PageTransacoesCorrentes
 from .models.page_transferencias import PageTransferencias
 from .models.page_usuarios import PageUsuarios
 from .models.page_web_hooks import PageWebHooks
+from .models.pais_response import PaisResponse
+from .models.parametro_produto_response import ParametroProdutoResponse
 from .models.pessoa import Pessoa
 from .models.pessoa_detalhe_response import PessoaDetalheResponse
 from .models.pessoa_fisica_aprovada_persist import PessoaFisicaAprovadaPersist
@@ -126,9 +141,12 @@ from .models.status_impressao import StatusImpressao
 from .models.status_oportunidade import StatusOportunidade
 from .models.status_oportunidade_aud_response import StatusOportunidadeAUDResponse
 from .models.status_oportunidade_response import StatusOportunidadeResponse
+from .models.taxa_antecipacao_request import TaxaAntecipacaoRequest
+from .models.taxas_refinanciamento import TaxasRefinanciamento
 from .models.telefone import Telefone
 from .models.telefone_pessoa_aprovada_persist import TelefonePessoaAprovadaPersist
 from .models.telefone_pessoa_aprovada_response import TelefonePessoaAprovadaResponse
+from .models.terminal import Terminal
 from .models.tipo_ajuste_response import TipoAjusteResponse
 from .models.tipo_endereco import TipoEndereco
 from .models.tipo_oportunidade import TipoOportunidade
@@ -155,11 +173,15 @@ from .apis.autorizacoes_api import AutorizacoesApi
 from .apis.base_api import BaseApi
 from .apis.cadastros_gerais_api import CadastrosGeraisApi
 from .apis.cartao_api import CartaoApi
+from .apis.compra_api import CompraApi
 from .apis.conta_api import ContaApi
 from .apis.dispositivos_api import DispositivosApi
+from .apis.estabelecimentos_api import EstabelecimentosApi
 from .apis.faq_api import FAQApi
+from .apis.jobs_api import JobsApi
 from .apis.notificacoes_api import NotificacoesApi
 from .apis.oportunidades_api import OportunidadesApi
+from .apis.permissao_paises_api import PermissaoPaisesApi
 from .apis.plataformas_mobile_api import PlataformasMobileApi
 from .apis.risco_fraude_api import RiscoFraudeApi
 from .apis.status_parametros_api import StatusParametrosApi

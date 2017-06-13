@@ -37,6 +37,7 @@ class CartaoImpressao(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
+            'flag_virtual': 'int',
             'id_conta': 'int',
             'id_pessoa': 'int',
             'id_cartao': 'int',
@@ -45,8 +46,8 @@ class CartaoImpressao(object):
             'numero_cartao': 'str',
             'nome_plastico': 'str',
             'cvv2': 'str',
-            'data_geracao': 'datetime',
-            'data_validade': 'datetime',
+            'data_geracao': 'str',
+            'data_validade': 'str',
             'nome_origem_comercial': 'str',
             'nome_empresa': 'str',
             'numero_agencia': 'int',
@@ -62,6 +63,7 @@ class CartaoImpressao(object):
         }
 
         self.attribute_map = {
+            'flag_virtual': 'flagVirtual',
             'id_conta': 'idConta',
             'id_pessoa': 'idPessoa',
             'id_cartao': 'idCartao',
@@ -86,6 +88,7 @@ class CartaoImpressao(object):
             'trilha_cvv2': 'trilhaCVV2'
         }
 
+        self._flag_virtual = None
         self._id_conta = None
         self._id_pessoa = None
         self._id_cartao = None
@@ -108,6 +111,28 @@ class CartaoImpressao(object):
         self._trilha2 = None
         self._trilha_cvv1 = None
         self._trilha_cvv2 = None
+
+    @property
+    def flag_virtual(self):
+        """
+        Gets the flag_virtual of this CartaoImpressao.
+
+
+        :return: The flag_virtual of this CartaoImpressao.
+        :rtype: int
+        """
+        return self._flag_virtual
+
+    @flag_virtual.setter
+    def flag_virtual(self, flag_virtual):
+        """
+        Sets the flag_virtual of this CartaoImpressao.
+
+
+        :param flag_virtual: The flag_virtual of this CartaoImpressao.
+        :type: int
+        """
+        self._flag_virtual = flag_virtual
 
     @property
     def id_conta(self):
@@ -292,7 +317,7 @@ class CartaoImpressao(object):
         Apresenta a data de emiss\u00C3\u00A3o do Cart\u00C3\u00A3o.
 
         :return: The data_geracao of this CartaoImpressao.
-        :rtype: datetime
+        :rtype: str
         """
         return self._data_geracao
 
@@ -303,7 +328,7 @@ class CartaoImpressao(object):
         Apresenta a data de emiss\u00C3\u00A3o do Cart\u00C3\u00A3o.
 
         :param data_geracao: The data_geracao of this CartaoImpressao.
-        :type: datetime
+        :type: str
         """
         self._data_geracao = data_geracao
 
@@ -314,7 +339,7 @@ class CartaoImpressao(object):
         Apresenta a data de Validade do Cart\u00C3\u00A3o.
 
         :return: The data_validade of this CartaoImpressao.
-        :rtype: datetime
+        :rtype: str
         """
         return self._data_validade
 
@@ -325,7 +350,7 @@ class CartaoImpressao(object):
         Apresenta a data de Validade do Cart\u00C3\u00A3o.
 
         :param data_validade: The data_validade of this CartaoImpressao.
-        :type: datetime
+        :type: str
         """
         self._data_validade = data_validade
 

@@ -49,10 +49,10 @@ class SMS(object):
             'operadora': 'str',
             'conteudo': 'str',
             'resposta': 'str',
-            'data_agendamento': 'datetime',
+            'data_agendamento': 'str',
             'quantidade_tentativas_envio': 'int',
-            'data_inclusao': 'datetime',
-            'data_alteracao_status': 'datetime',
+            'data_inclusao': 'str',
+            'data_alteracao_status': 'str',
             'protocolo': 'str'
         }
 
@@ -377,7 +377,7 @@ class SMS(object):
         Apresenta a data e hora em que ser\u00C3\u00A1 enviado a notifica\u00C3\u00A7\u00C3\u00A3o
 
         :return: The data_agendamento of this SMS.
-        :rtype: datetime
+        :rtype: str
         """
         return self._data_agendamento
 
@@ -388,7 +388,7 @@ class SMS(object):
         Apresenta a data e hora em que ser\u00C3\u00A1 enviado a notifica\u00C3\u00A7\u00C3\u00A3o
 
         :param data_agendamento: The data_agendamento of this SMS.
-        :type: datetime
+        :type: str
         """
         self._data_agendamento = data_agendamento
 
@@ -421,7 +421,7 @@ class SMS(object):
         Apresenta a data e em que o registro foi inclu\u00C3\u00ADdo na base para ser enviado
 
         :return: The data_inclusao of this SMS.
-        :rtype: datetime
+        :rtype: str
         """
         return self._data_inclusao
 
@@ -432,7 +432,7 @@ class SMS(object):
         Apresenta a data e em que o registro foi inclu\u00C3\u00ADdo na base para ser enviado
 
         :param data_inclusao: The data_inclusao of this SMS.
-        :type: datetime
+        :type: str
         """
         self._data_inclusao = data_inclusao
 
@@ -443,7 +443,7 @@ class SMS(object):
         Apresenta a data e em que o Stattjus do registro foi modificado
 
         :return: The data_alteracao_status of this SMS.
-        :rtype: datetime
+        :rtype: str
         """
         return self._data_alteracao_status
 
@@ -454,7 +454,7 @@ class SMS(object):
         Apresenta a data e em que o Stattjus do registro foi modificado
 
         :param data_alteracao_status: The data_alteracao_status of this SMS.
-        :type: datetime
+        :type: str
         """
         self._data_alteracao_status = data_alteracao_status
 

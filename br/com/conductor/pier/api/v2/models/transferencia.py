@@ -38,7 +38,7 @@ class Transferencia(object):
         """
         self.swagger_types = {
             'id': 'int',
-            'data_transferencia': 'datetime',
+            'data_transferencia': 'str',
             'id_conta_origem': 'int',
             'nome_pessoa_origem': 'str',
             'id_conta_destino': 'int',
@@ -96,7 +96,7 @@ class Transferencia(object):
         Data estabelecida para ocorrer a transfer\u00C3\u00AAncia.
 
         :return: The data_transferencia of this Transferencia.
-        :rtype: datetime
+        :rtype: str
         """
         return self._data_transferencia
 
@@ -107,7 +107,7 @@ class Transferencia(object):
         Data estabelecida para ocorrer a transfer\u00C3\u00AAncia.
 
         :param data_transferencia: The data_transferencia of this Transferencia.
-        :type: datetime
+        :type: str
         """
         self._data_transferencia = data_transferencia
 

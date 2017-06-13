@@ -38,40 +38,40 @@ class AutorizacaoOnUsRequest(object):
         """
         self.swagger_types = {
             'nsu_origem': 'str',
+            'numero_parcelas': 'int',
             'codigo_processamento': 'str',
+            'codigo_seguranca_cartao': 'str',
             'valor_transacao': 'float',
             'numero_real_cartao': 'str',
             'data_validade_cartao': 'str',
             'numero_estabelecimento': 'int',
-            'data_hora_terminal': 'datetime',
-            'terminal_requisitante': 'str',
-            'numero_parcelas': 'int',
-            'codigo_seguranca_cartao': 'int'
+            'data_hora_terminal': 'str',
+            'terminal_requisitante': 'str'
         }
 
         self.attribute_map = {
             'nsu_origem': 'nsuOrigem',
+            'numero_parcelas': 'numeroParcelas',
             'codigo_processamento': 'codigoProcessamento',
+            'codigo_seguranca_cartao': 'codigoSegurancaCartao',
             'valor_transacao': 'valorTransacao',
             'numero_real_cartao': 'numeroRealCartao',
             'data_validade_cartao': 'dataValidadeCartao',
             'numero_estabelecimento': 'numeroEstabelecimento',
             'data_hora_terminal': 'dataHoraTerminal',
-            'terminal_requisitante': 'terminalRequisitante',
-            'numero_parcelas': 'numeroParcelas',
-            'codigo_seguranca_cartao': 'codigoSegurancaCartao'
+            'terminal_requisitante': 'terminalRequisitante'
         }
 
         self._nsu_origem = None
+        self._numero_parcelas = None
         self._codigo_processamento = None
+        self._codigo_seguranca_cartao = None
         self._valor_transacao = None
         self._numero_real_cartao = None
         self._data_validade_cartao = None
         self._numero_estabelecimento = None
         self._data_hora_terminal = None
         self._terminal_requisitante = None
-        self._numero_parcelas = None
-        self._codigo_seguranca_cartao = None
 
     @property
     def nsu_origem(self):
@@ -96,6 +96,28 @@ class AutorizacaoOnUsRequest(object):
         self._nsu_origem = nsu_origem
 
     @property
+    def numero_parcelas(self):
+        """
+        Gets the numero_parcelas of this AutorizacaoOnUsRequest.
+        N\u00C3\u00BAmero de Parcelas.
+
+        :return: The numero_parcelas of this AutorizacaoOnUsRequest.
+        :rtype: int
+        """
+        return self._numero_parcelas
+
+    @numero_parcelas.setter
+    def numero_parcelas(self, numero_parcelas):
+        """
+        Sets the numero_parcelas of this AutorizacaoOnUsRequest.
+        N\u00C3\u00BAmero de Parcelas.
+
+        :param numero_parcelas: The numero_parcelas of this AutorizacaoOnUsRequest.
+        :type: int
+        """
+        self._numero_parcelas = numero_parcelas
+
+    @property
     def codigo_processamento(self):
         """
         Gets the codigo_processamento of this AutorizacaoOnUsRequest.
@@ -116,6 +138,28 @@ class AutorizacaoOnUsRequest(object):
         :type: str
         """
         self._codigo_processamento = codigo_processamento
+
+    @property
+    def codigo_seguranca_cartao(self):
+        """
+        Gets the codigo_seguranca_cartao of this AutorizacaoOnUsRequest.
+        C\u00C3\u00B3digo de Seguran\u00C3\u00A7a do Cart\u00C3\u00A3o.
+
+        :return: The codigo_seguranca_cartao of this AutorizacaoOnUsRequest.
+        :rtype: str
+        """
+        return self._codigo_seguranca_cartao
+
+    @codigo_seguranca_cartao.setter
+    def codigo_seguranca_cartao(self, codigo_seguranca_cartao):
+        """
+        Sets the codigo_seguranca_cartao of this AutorizacaoOnUsRequest.
+        C\u00C3\u00B3digo de Seguran\u00C3\u00A7a do Cart\u00C3\u00A3o.
+
+        :param codigo_seguranca_cartao: The codigo_seguranca_cartao of this AutorizacaoOnUsRequest.
+        :type: str
+        """
+        self._codigo_seguranca_cartao = codigo_seguranca_cartao
 
     @property
     def valor_transacao(self):
@@ -212,7 +256,7 @@ class AutorizacaoOnUsRequest(object):
         Apresenta a data e hora local da consulta yyyy-MM-dd'T'HH:mm:ss.SSSZ. Ex: 2000-10-31T01:30:00.000-05:00
 
         :return: The data_hora_terminal of this AutorizacaoOnUsRequest.
-        :rtype: datetime
+        :rtype: str
         """
         return self._data_hora_terminal
 
@@ -223,7 +267,7 @@ class AutorizacaoOnUsRequest(object):
         Apresenta a data e hora local da consulta yyyy-MM-dd'T'HH:mm:ss.SSSZ. Ex: 2000-10-31T01:30:00.000-05:00
 
         :param data_hora_terminal: The data_hora_terminal of this AutorizacaoOnUsRequest.
-        :type: datetime
+        :type: str
         """
         self._data_hora_terminal = data_hora_terminal
 
@@ -248,50 +292,6 @@ class AutorizacaoOnUsRequest(object):
         :type: str
         """
         self._terminal_requisitante = terminal_requisitante
-
-    @property
-    def numero_parcelas(self):
-        """
-        Gets the numero_parcelas of this AutorizacaoOnUsRequest.
-        N\u00C3\u00BAmero de Parcelas.
-
-        :return: The numero_parcelas of this AutorizacaoOnUsRequest.
-        :rtype: int
-        """
-        return self._numero_parcelas
-
-    @numero_parcelas.setter
-    def numero_parcelas(self, numero_parcelas):
-        """
-        Sets the numero_parcelas of this AutorizacaoOnUsRequest.
-        N\u00C3\u00BAmero de Parcelas.
-
-        :param numero_parcelas: The numero_parcelas of this AutorizacaoOnUsRequest.
-        :type: int
-        """
-        self._numero_parcelas = numero_parcelas
-
-    @property
-    def codigo_seguranca_cartao(self):
-        """
-        Gets the codigo_seguranca_cartao of this AutorizacaoOnUsRequest.
-        C\u00C3\u00B3digo de Seguran\u00C3\u00A7a do Cart\u00C3\u00A3o.
-
-        :return: The codigo_seguranca_cartao of this AutorizacaoOnUsRequest.
-        :rtype: int
-        """
-        return self._codigo_seguranca_cartao
-
-    @codigo_seguranca_cartao.setter
-    def codigo_seguranca_cartao(self, codigo_seguranca_cartao):
-        """
-        Sets the codigo_seguranca_cartao of this AutorizacaoOnUsRequest.
-        C\u00C3\u00B3digo de Seguran\u00C3\u00A7a do Cart\u00C3\u00A3o.
-
-        :param codigo_seguranca_cartao: The codigo_seguranca_cartao of this AutorizacaoOnUsRequest.
-        :type: int
-        """
-        self._codigo_seguranca_cartao = codigo_seguranca_cartao
 
     def to_dict(self):
         """

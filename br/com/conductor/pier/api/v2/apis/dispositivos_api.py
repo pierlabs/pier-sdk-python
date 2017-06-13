@@ -199,7 +199,7 @@ class DispositivosApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get5(self, **kwargs):
+    def listar_using_get7(self, **kwargs):
         """
         Lista os dispositivos cadastrados
         Este m\u00C3\u00A9todo permite que sejam listados os dispositivos existentes na base do PIER.
@@ -210,17 +210,17 @@ class DispositivosApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get5(callback=callback_function)
+        >>> thread = api.listar_using_get7(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
-        :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 100, Max = 100)
+        :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
         :param str token: Token do Dispositivo
         :param int id_usuario: Identificador do Usu\u00C3\u00A1rio
         :param int id_aplicacao_mobile: Identificador da aplica\u00C3\u00A7\u00C3\u00A3o
-        :param date data_criacao: Apresenta a data e em que o registro foi criado.
-        :param date data_desativacao: Apresenta a data e em que o registro foi desativado.
+        :param str data_criacao: Apresenta a data e em que o registro foi criado.
+        :param str data_desativacao: Apresenta a data e em que o registro foi desativado.
         :return: PageDispositivos
                  If the method is called asynchronously,
                  returns the request thread.
@@ -234,7 +234,7 @@ class DispositivosApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get5" % key
+                    " to method listar_using_get7" % key
                 )
             params[key] = val
         del params['kwargs']

@@ -37,7 +37,7 @@ class PageTipoBoleto(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'content': 'list[object]',
+            'content': 'list[FaturaResponse]',
             'first': 'bool',
             'first_page': 'bool',
             'has_content': 'bool',
@@ -92,7 +92,7 @@ class PageTipoBoleto(object):
 
 
         :return: The content of this PageTipoBoleto.
-        :rtype: list[object]
+        :rtype: list[FaturaResponse]
         """
         return self._content
 
@@ -103,7 +103,7 @@ class PageTipoBoleto(object):
 
 
         :param content: The content of this PageTipoBoleto.
-        :type: list[object]
+        :type: list[FaturaResponse]
         """
         self._content = content
 

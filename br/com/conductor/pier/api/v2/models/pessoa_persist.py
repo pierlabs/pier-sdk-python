@@ -38,8 +38,8 @@ class PessoaPersist(object):
         """
         self.swagger_types = {
             'cpf': 'str',
-            'data_emissao_identidade': 'date',
-            'data_nascimento': 'date',
+            'data_emissao_identidade': 'str',
+            'data_nascimento': 'str',
             'email': 'str',
             'estado_civil': 'str',
             'nacionalidade': 'str',
@@ -111,7 +111,7 @@ class PessoaPersist(object):
         Data emiss\u00C3\u00A3o da Identidade
 
         :return: The data_emissao_identidade of this PessoaPersist.
-        :rtype: date
+        :rtype: str
         """
         return self._data_emissao_identidade
 
@@ -122,7 +122,7 @@ class PessoaPersist(object):
         Data emiss\u00C3\u00A3o da Identidade
 
         :param data_emissao_identidade: The data_emissao_identidade of this PessoaPersist.
-        :type: date
+        :type: str
         """
         self._data_emissao_identidade = data_emissao_identidade
 
@@ -133,7 +133,7 @@ class PessoaPersist(object):
         Data de Nascimento da Pessoa, quando PF, ou a Data de Abertura da Empresa, quando PJ. Essa data deve ser informada no formato aaaa-MM-dd.
 
         :return: The data_nascimento of this PessoaPersist.
-        :rtype: date
+        :rtype: str
         """
         return self._data_nascimento
 
@@ -144,7 +144,7 @@ class PessoaPersist(object):
         Data de Nascimento da Pessoa, quando PF, ou a Data de Abertura da Empresa, quando PJ. Essa data deve ser informada no formato aaaa-MM-dd.
 
         :param data_nascimento: The data_nascimento of this PessoaPersist.
-        :type: date
+        :type: str
         """
         self._data_nascimento = data_nascimento
 

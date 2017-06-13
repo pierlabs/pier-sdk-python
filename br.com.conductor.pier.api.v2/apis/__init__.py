@@ -6,11 +6,15 @@ from .autorizacoes_api import AutorizacoesApi
 from .base_api import BaseApi
 from .cadastros_gerais_api import CadastrosGeraisApi
 from .cartao_api import CartaoApi
+from .compra_api import CompraApi
 from .conta_api import ContaApi
 from .dispositivos_api import DispositivosApi
+from .estabelecimentos_api import EstabelecimentosApi
 from .faq_api import FAQApi
+from .jobs_api import JobsApi
 from .notificacoes_api import NotificacoesApi
 from .oportunidades_api import OportunidadesApi
+from .permissao_paises_api import PermissaoPaisesApi
 from .plataformas_mobile_api import PlataformasMobileApi
 from .risco_fraude_api import RiscoFraudeApi
 from .status_parametros_api import StatusParametrosApi

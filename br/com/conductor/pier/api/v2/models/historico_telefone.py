@@ -41,7 +41,7 @@ class HistoricoTelefone(object):
             'telefone': 'str',
             'id_tipo_telefone': 'int',
             'tipo_telefone': 'str',
-            'data_modificacao': 'datetime'
+            'data_modificacao': 'str'
         }
 
         self.attribute_map = {
@@ -153,7 +153,7 @@ class HistoricoTelefone(object):
         Apresenta a data que o telefone fora alterado.
 
         :return: The data_modificacao of this HistoricoTelefone.
-        :rtype: datetime
+        :rtype: str
         """
         return self._data_modificacao
 
@@ -164,7 +164,7 @@ class HistoricoTelefone(object):
         Apresenta a data que o telefone fora alterado.
 
         :param data_modificacao: The data_modificacao of this HistoricoTelefone.
-        :type: datetime
+        :type: str
         """
         self._data_modificacao = data_modificacao
 

@@ -41,25 +41,25 @@ class LinkTransferenciaBancariaResponse(object):
             'id_autorizacao': 'int',
             'id_transferencia': 'int',
             'codigo_autorizacao': 'str',
-            'data_autorizacao': 'datetime',
+            'data_autorizacao': 'str',
             'origem': 'str',
             'valor': 'float',
             'id_operacao': 'int',
             'terminal': 'str',
             'id_cartao': 'int',
-            'data_compra': 'datetime',
+            'data_compra': 'str',
             'valor_compra': 'float',
             'numero_parcelas': 'int',
             'valor_parcela': 'float',
             'id_estabelecimento': 'int',
-            'data_movimento': 'datetime',
+            'data_movimento': 'str',
             'valor_contrato': 'float',
             'taxa_juros': 'float',
             'valor_iof': 'float',
             'valor_tac': 'float',
             'id_conta': 'int',
             'valor_entrada': 'float',
-            'data_vencimento_real': 'datetime',
+            'data_vencimento_real': 'str',
             'data_vencimento_padrao': 'str',
             'id_conta_portador': 'int',
             'numero_estabelecimento': 'int'
@@ -216,7 +216,7 @@ class LinkTransferenciaBancariaResponse(object):
         Data da autoriza\u00C3\u00A7\u00C3\u00A3o
 
         :return: The data_autorizacao of this LinkTransferenciaBancariaResponse.
-        :rtype: datetime
+        :rtype: str
         """
         return self._data_autorizacao
 
@@ -227,7 +227,7 @@ class LinkTransferenciaBancariaResponse(object):
         Data da autoriza\u00C3\u00A7\u00C3\u00A3o
 
         :param data_autorizacao: The data_autorizacao of this LinkTransferenciaBancariaResponse.
-        :type: datetime
+        :type: str
         """
         self._data_autorizacao = data_autorizacao
 
@@ -348,7 +348,7 @@ class LinkTransferenciaBancariaResponse(object):
         Data da transfer\u00C3\u00AAncia
 
         :return: The data_compra of this LinkTransferenciaBancariaResponse.
-        :rtype: datetime
+        :rtype: str
         """
         return self._data_compra
 
@@ -359,7 +359,7 @@ class LinkTransferenciaBancariaResponse(object):
         Data da transfer\u00C3\u00AAncia
 
         :param data_compra: The data_compra of this LinkTransferenciaBancariaResponse.
-        :type: datetime
+        :type: str
         """
         self._data_compra = data_compra
 
@@ -458,7 +458,7 @@ class LinkTransferenciaBancariaResponse(object):
         Data do movimento
 
         :return: The data_movimento of this LinkTransferenciaBancariaResponse.
-        :rtype: datetime
+        :rtype: str
         """
         return self._data_movimento
 
@@ -469,7 +469,7 @@ class LinkTransferenciaBancariaResponse(object):
         Data do movimento
 
         :param data_movimento: The data_movimento of this LinkTransferenciaBancariaResponse.
-        :type: datetime
+        :type: str
         """
         self._data_movimento = data_movimento
 
@@ -612,7 +612,7 @@ class LinkTransferenciaBancariaResponse(object):
         Data do vencimento real da fatura
 
         :return: The data_vencimento_real of this LinkTransferenciaBancariaResponse.
-        :rtype: datetime
+        :rtype: str
         """
         return self._data_vencimento_real
 
@@ -623,7 +623,7 @@ class LinkTransferenciaBancariaResponse(object):
         Data do vencimento real da fatura
 
         :param data_vencimento_real: The data_vencimento_real of this LinkTransferenciaBancariaResponse.
-        :type: datetime
+        :type: str
         """
         self._data_vencimento_real = data_vencimento_real
 
@@ -675,7 +675,7 @@ class LinkTransferenciaBancariaResponse(object):
     def numero_estabelecimento(self):
         """
         Gets the numero_estabelecimento of this LinkTransferenciaBancariaResponse.
-
+        Atributo que representa o numero do estabelecimento.
 
         :return: The numero_estabelecimento of this LinkTransferenciaBancariaResponse.
         :rtype: int
@@ -686,7 +686,7 @@ class LinkTransferenciaBancariaResponse(object):
     def numero_estabelecimento(self, numero_estabelecimento):
         """
         Sets the numero_estabelecimento of this LinkTransferenciaBancariaResponse.
-
+        Atributo que representa o numero do estabelecimento.
 
         :param numero_estabelecimento: The numero_estabelecimento of this LinkTransferenciaBancariaResponse.
         :type: int

@@ -39,7 +39,7 @@ class StatusOportunidadeAUDResponse(object):
         self.swagger_types = {
             'rev': 'int',
             'rev_type': 'int',
-            'rev_date': 'datetime',
+            'rev_date': 'str',
             'id': 'int',
             'id_tipo_oportunidade': 'int',
             'nome': 'str',
@@ -118,7 +118,7 @@ class StatusOportunidadeAUDResponse(object):
         Data da a\u00C3\u00A7\u00C3\u00A3o realizada no recurso de tipos oportunidades
 
         :return: The rev_date of this StatusOportunidadeAUDResponse.
-        :rtype: datetime
+        :rtype: str
         """
         return self._rev_date
 
@@ -129,7 +129,7 @@ class StatusOportunidadeAUDResponse(object):
         Data da a\u00C3\u00A7\u00C3\u00A3o realizada no recurso de tipos oportunidades
 
         :param rev_date: The rev_date of this StatusOportunidadeAUDResponse.
-        :type: datetime
+        :type: str
         """
         self._rev_date = rev_date
 

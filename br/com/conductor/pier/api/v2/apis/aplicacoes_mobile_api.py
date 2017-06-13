@@ -144,16 +144,15 @@ class AplicacoesMobileApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
-        :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 100, Max = 100)
+        :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
         :param str id: Identificador da Aplicacao Mobile
         :param int id_plataforma_mobile: Identificador da Plataforma Mobile
-        :param int id_emissor: Identificador do Emissor
         :return: PageAplicacoesMobile
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['page', 'limit', 'id', 'id_plataforma_mobile', 'id_emissor']
+        all_params = ['page', 'limit', 'id', 'id_plataforma_mobile']
         all_params.append('callback')
 
         params = locals()
@@ -179,8 +178,6 @@ class AplicacoesMobileApi(object):
             query_params['id'] = params['id']
         if 'id_plataforma_mobile' in params:
             query_params['idPlataformaMobile'] = params['id_plataforma_mobile']
-        if 'id_emissor' in params:
-            query_params['idEmissor'] = params['id_emissor']
 
         header_params = {}
 

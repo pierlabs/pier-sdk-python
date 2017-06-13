@@ -42,7 +42,7 @@ class NotificacaoSMSBody(object):
             'id_conta': 'int',
             'celular': 'str',
             'conteudo': 'str',
-            'data_agendamento': 'datetime',
+            'data_agendamento': 'str',
             'tipo_evento': 'str'
         }
 
@@ -181,7 +181,7 @@ class NotificacaoSMSBody(object):
         Apresenta a data e hora em que ser\u00C3\u00A1 enviado a notifica\u00C3\u00A7\u00C3\u00A3o
 
         :return: The data_agendamento of this NotificacaoSMSBody.
-        :rtype: datetime
+        :rtype: str
         """
         return self._data_agendamento
 
@@ -192,7 +192,7 @@ class NotificacaoSMSBody(object):
         Apresenta a data e hora em que ser\u00C3\u00A1 enviado a notifica\u00C3\u00A7\u00C3\u00A3o
 
         :param data_agendamento: The data_agendamento of this NotificacaoSMSBody.
-        :type: datetime
+        :type: str
         """
         self._data_agendamento = data_agendamento
 

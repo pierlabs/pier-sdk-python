@@ -45,9 +45,86 @@ class AutorizacoesApi(object):
                 config.api_client = ApiClient()
             self.api_client = config.api_client
 
+    def autorizar_using_post(self, autorizacao_on_us_request, **kwargs):
+        """
+        Autoriza transa\u00C3\u00A7\u00C3\u00A3o financeira
+        Este m\u00C3\u00A9todo faz uma autoriza\u00C3\u00A7\u00C3\u00A3o de transa\u00C3\u00A7\u00C3\u00A3o financeira.
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.autorizar_using_post(autorizacao_on_us_request, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param AutorizacaoOnUsRequest autorizacao_on_us_request: autorizacaoOnUsRequest (required)
+        :return: TransacaoOnUsResponse
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['autorizacao_on_us_request']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method autorizar_using_post" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        # verify the required parameter 'autorizacao_on_us_request' is set
+        if ('autorizacao_on_us_request' not in params) or (params['autorizacao_on_us_request'] is None):
+            raise ValueError("Missing the required parameter `autorizacao_on_us_request` when calling `autorizar_using_post`")
+
+        resource_path = '/api/autorizar-transacao'.replace('{format}', 'json')
+        path_params = {}
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        if 'autorizacao_on_us_request' in params:
+            body_params = params['autorizacao_on_us_request']
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = []
+
+        response = self.api_client.call_api(resource_path, 'POST',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='TransacaoOnUsResponse',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
     def cancelar_using_post(self, cancelamento_request, **kwargs):
         """
-        Cancela Transa\u00C3\u00A7\u00C3\u00A3o financeira
+        Cancela transa\u00C3\u00A7\u00C3\u00A3o financeira
         Este m\u00C3\u00A9todo permite que seja cancelada uma transa\u00C3\u00A7\u00C3\u00A3o.
 
         This method makes a synchronous HTTP request by default. To make an
@@ -122,10 +199,10 @@ class AutorizacoesApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def desfazer_using_post(self, autorizacao_on_us_request, **kwargs):
+    def listar_codigos_processamento_autorizacao_using_get(self, **kwargs):
         """
-        Autoriza transa\u00C3\u00A7\u00C3\u00A3o financeira
-        Este m\u00C3\u00A9todo faz uma autoriza\u00C3\u00A7\u00C3\u00A3o de transa\u00C3\u00A7\u00C3\u00A3o financeira.
+        Retorna c\u00C3\u00B3digos de processamento de autoriza\u00C3\u00A7\u00C3\u00A3o
+        Este m\u00C3\u00A9todo retorna a lista dos c\u00C3\u00B3digos de processamento para autoriza\u00C3\u00A7\u00C3\u00A3o de transa\u00C3\u00A7\u00C3\u00B5es financeiras.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -133,17 +210,16 @@ class AutorizacoesApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.desfazer_using_post(autorizacao_on_us_request, callback=callback_function)
+        >>> thread = api.listar_codigos_processamento_autorizacao_using_get(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param AutorizacaoOnUsRequest autorizacao_on_us_request: autorizacaoOnUsRequest (required)
-        :return: TransacaoOnUsResponse
+        :return: list[object]
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['autorizacao_on_us_request']
+        all_params = []
         all_params.append('callback')
 
         params = locals()
@@ -151,16 +227,13 @@ class AutorizacoesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method desfazer_using_post" % key
+                    " to method listar_codigos_processamento_autorizacao_using_get" % key
                 )
             params[key] = val
         del params['kwargs']
 
-        # verify the required parameter 'autorizacao_on_us_request' is set
-        if ('autorizacao_on_us_request' not in params) or (params['autorizacao_on_us_request'] is None):
-            raise ValueError("Missing the required parameter `autorizacao_on_us_request` when calling `desfazer_using_post`")
 
-        resource_path = '/api/autorizar-transacao'.replace('{format}', 'json')
+        resource_path = '/api/consultar-codigos-processamento-autorizacao'.replace('{format}', 'json')
         path_params = {}
 
         query_params = {}
@@ -171,8 +244,6 @@ class AutorizacoesApi(object):
         local_var_files = {}
 
         body_params = None
-        if 'autorizacao_on_us_request' in params:
-            body_params = params['autorizacao_on_us_request']
 
         # HTTP header `Accept`
         header_params['Accept'] = self.api_client.\
@@ -187,99 +258,22 @@ class AutorizacoesApi(object):
         # Authentication setting
         auth_settings = []
 
-        response = self.api_client.call_api(resource_path, 'POST',
+        response = self.api_client.call_api(resource_path, 'GET',
                                             path_params,
                                             query_params,
                                             header_params,
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='TransacaoOnUsResponse',
-                                            auth_settings=auth_settings,
-                                            callback=params.get('callback'))
-        return response
-
-    def desfazer_using_post1(self, desfazimento_request, **kwargs):
-        """
-        Desfazimento de Transa\u00C3\u00A7\u00C3\u00A3o
-        Este m\u00C3\u00A9todo permite que seja desfeita uma transa\u00C3\u00A7\u00C3\u00A3o.
-
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
-        >>> thread = api.desfazer_using_post1(desfazimento_request, callback=callback_function)
-
-        :param callback function: The callback function
-            for asynchronous request. (optional)
-        :param DesfazimentoTransacaoOnURequest desfazimento_request: desfazimentoRequest (required)
-        :return: TransacaoOnUsResponse
-                 If the method is called asynchronously,
-                 returns the request thread.
-        """
-
-        all_params = ['desfazimento_request']
-        all_params.append('callback')
-
-        params = locals()
-        for key, val in iteritems(params['kwargs']):
-            if key not in all_params:
-                raise TypeError(
-                    "Got an unexpected keyword argument '%s'"
-                    " to method desfazer_using_post1" % key
-                )
-            params[key] = val
-        del params['kwargs']
-
-        # verify the required parameter 'desfazimento_request' is set
-        if ('desfazimento_request' not in params) or (params['desfazimento_request'] is None):
-            raise ValueError("Missing the required parameter `desfazimento_request` when calling `desfazer_using_post1`")
-
-        resource_path = '/api/desfazer-transacao'.replace('{format}', 'json')
-        path_params = {}
-
-        query_params = {}
-
-        header_params = {}
-
-        form_params = []
-        local_var_files = {}
-
-        body_params = None
-        if 'desfazimento_request' in params:
-            body_params = params['desfazimento_request']
-
-        # HTTP header `Accept`
-        header_params['Accept'] = self.api_client.\
-            select_header_accept(['application/json'])
-        if not header_params['Accept']:
-            del header_params['Accept']
-
-        # HTTP header `Content-Type`
-        header_params['Content-Type'] = self.api_client.\
-            select_header_content_type(['application/json'])
-
-        # Authentication setting
-        auth_settings = []
-
-        response = self.api_client.call_api(resource_path, 'POST',
-                                            path_params,
-                                            query_params,
-                                            header_params,
-                                            body=body_params,
-                                            post_params=form_params,
-                                            files=local_var_files,
-                                            response_type='TransacaoOnUsResponse',
+                                            response_type='list[object]',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
 
     def simular_using_post(self, transacoes_request, **kwargs):
         """
-        Simula Compra Parcelada
-        Este m\u00C3\u00A9todo permite que seja simulada uma compra parcelada.
+        Simula planos de pagamento
+        Este m\u00C3\u00A9todo permite que seja simulada um plano de pagamento.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function

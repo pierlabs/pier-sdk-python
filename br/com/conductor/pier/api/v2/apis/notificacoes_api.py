@@ -147,8 +147,8 @@ class NotificacoesApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
-        :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 100, Max = 100)
-        :param date data_envio: Apresenta a data e em que o registro foi enviado para o dispositivo.
+        :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
+        :param str data_envio: Apresenta a data e em que o registro foi enviado para o dispositivo.
         :param str tipo_evento: Nome do tipoEvento da notifica\u00C3\u00A7\u00C3\u00A3o
         :param str status: Status de envio da notifica\u00C3\u00A7\u00C3\u00A3o
         :param str plataforma: Plataforma de Push notifications.
@@ -239,8 +239,8 @@ class NotificacoesApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
-        :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 100, Max = 100)
-        :param datetime data_inclusao: Apresenta a data e em que o registro foi inclu\u00C3\u00ADdo na base para ser enviado
+        :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
+        :param str data_inclusao: Apresenta a data e em que o registro foi inclu\u00C3\u00ADdo na base para ser enviado
         :param str tipo_evento: Nome do tipoEvento da notifica\u00C3\u00A7\u00C3\u00A3o
         :param str status: Status de envio da notifica\u00C3\u00A7\u00C3\u00A3o
         :param str operadora: Nome da operadora a qual a notifica\u00C3\u00A7\u00C3\u00A3o foi enviada.

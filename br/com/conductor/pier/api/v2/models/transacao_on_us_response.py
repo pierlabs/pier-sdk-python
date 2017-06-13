@@ -42,7 +42,8 @@ class TransacaoOnUsResponse(object):
             'plano_de_parcelamento': 'list[MapOfstringAndstring]',
             'codigo_autorizacao': 'str',
             'numero_mascarado_cartao': 'str',
-            'nome_portador_cartao': 'str'
+            'nome_portador_cartao': 'str',
+            'terminal_requisitante': 'str'
         }
 
         self.attribute_map = {
@@ -51,7 +52,8 @@ class TransacaoOnUsResponse(object):
             'plano_de_parcelamento': 'planoDeParcelamento',
             'codigo_autorizacao': 'codigoAutorizacao',
             'numero_mascarado_cartao': 'numeroMascaradoCartao',
-            'nome_portador_cartao': 'nomePortadorCartao'
+            'nome_portador_cartao': 'nomePortadorCartao',
+            'terminal_requisitante': 'terminalRequisitante'
         }
 
         self._nsu_origem = None
@@ -60,6 +62,7 @@ class TransacaoOnUsResponse(object):
         self._codigo_autorizacao = None
         self._numero_mascarado_cartao = None
         self._nome_portador_cartao = None
+        self._terminal_requisitante = None
 
     @property
     def nsu_origem(self):
@@ -192,6 +195,28 @@ class TransacaoOnUsResponse(object):
         :type: str
         """
         self._nome_portador_cartao = nome_portador_cartao
+
+    @property
+    def terminal_requisitante(self):
+        """
+        Gets the terminal_requisitante of this TransacaoOnUsResponse.
+        Apresenta a identifica\u00C3\u00A7\u00C3\u00A3o do terminal requisitante
+
+        :return: The terminal_requisitante of this TransacaoOnUsResponse.
+        :rtype: str
+        """
+        return self._terminal_requisitante
+
+    @terminal_requisitante.setter
+    def terminal_requisitante(self, terminal_requisitante):
+        """
+        Sets the terminal_requisitante of this TransacaoOnUsResponse.
+        Apresenta a identifica\u00C3\u00A7\u00C3\u00A3o do terminal requisitante
+
+        :param terminal_requisitante: The terminal_requisitante of this TransacaoOnUsResponse.
+        :type: str
+        """
+        self._terminal_requisitante = terminal_requisitante
 
     def to_dict(self):
         """

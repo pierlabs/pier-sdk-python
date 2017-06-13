@@ -45,22 +45,24 @@ class TransacoesCorrentes(object):
             'id_conta': 'int',
             'cartao_mascarado': 'str',
             'nome_portador': 'str',
-            'data_transacao_utc': 'datetime',
-            'data_faturamento': 'datetime',
-            'data_vencimento': 'date',
+            'data_transacao_utc': 'str',
+            'data_faturamento': 'str',
+            'data_vencimento': 'str',
             'modo_entrada_transacao': 'str',
             'valor_taxa_embarque': 'float',
             'valor_entrada': 'float',
             'valor_brl': 'float',
             'valor_usd': 'float',
             'cotacao_usd': 'float',
-            'data_cotacao_usd': 'datetime',
+            'data_cotacao_usd': 'str',
             'codigo_moeda_origem': 'str',
             'codigo_moeda_destino': 'str',
             'codigo_autorizacao': 'str',
             'codigo_referencia': 'str',
             'codigo_terminal': 'str',
             'codigo_mcc': 'int',
+            'grupo_mcc': 'int',
+            'grupo_descricao_mcc': 'str',
             'id_estabelecimento': 'int',
             'nome_estabelecimento': 'str',
             'localidade_estabelecimento': 'str',
@@ -98,6 +100,8 @@ class TransacoesCorrentes(object):
             'codigo_referencia': 'codigoReferencia',
             'codigo_terminal': 'codigoTerminal',
             'codigo_mcc': 'codigoMCC',
+            'grupo_mcc': 'grupoMCC',
+            'grupo_descricao_mcc': 'grupoDescricaoMCC',
             'id_estabelecimento': 'idEstabelecimento',
             'nome_estabelecimento': 'nomeEstabelecimento',
             'localidade_estabelecimento': 'localidadeEstabelecimento',
@@ -134,6 +138,8 @@ class TransacoesCorrentes(object):
         self._codigo_referencia = None
         self._codigo_terminal = None
         self._codigo_mcc = None
+        self._grupo_mcc = None
+        self._grupo_descricao_mcc = None
         self._id_estabelecimento = None
         self._nome_estabelecimento = None
         self._localidade_estabelecimento = None
@@ -328,7 +334,7 @@ class TransacoesCorrentes(object):
         Data em que a Transa\u00C3\u00A7\u00C3\u00A3o foi realizada sob o padr\u00C3\u00A3o de Tempo Universal Coordenado (UTC).
 
         :return: The data_transacao_utc of this TransacoesCorrentes.
-        :rtype: datetime
+        :rtype: str
         """
         return self._data_transacao_utc
 
@@ -339,7 +345,7 @@ class TransacoesCorrentes(object):
         Data em que a Transa\u00C3\u00A7\u00C3\u00A3o foi realizada sob o padr\u00C3\u00A3o de Tempo Universal Coordenado (UTC).
 
         :param data_transacao_utc: The data_transacao_utc of this TransacoesCorrentes.
-        :type: datetime
+        :type: str
         """
         self._data_transacao_utc = data_transacao_utc
 
@@ -350,7 +356,7 @@ class TransacoesCorrentes(object):
         Data de Faturamento da Transa\u00C3\u00A7\u00C3\u00A3o.
 
         :return: The data_faturamento of this TransacoesCorrentes.
-        :rtype: datetime
+        :rtype: str
         """
         return self._data_faturamento
 
@@ -361,7 +367,7 @@ class TransacoesCorrentes(object):
         Data de Faturamento da Transa\u00C3\u00A7\u00C3\u00A3o.
 
         :param data_faturamento: The data_faturamento of this TransacoesCorrentes.
-        :type: datetime
+        :type: str
         """
         self._data_faturamento = data_faturamento
 
@@ -372,7 +378,7 @@ class TransacoesCorrentes(object):
         Data de Vencimento da Fatura.
 
         :return: The data_vencimento of this TransacoesCorrentes.
-        :rtype: date
+        :rtype: str
         """
         return self._data_vencimento
 
@@ -383,7 +389,7 @@ class TransacoesCorrentes(object):
         Data de Vencimento da Fatura.
 
         :param data_vencimento: The data_vencimento of this TransacoesCorrentes.
-        :type: date
+        :type: str
         """
         self._data_vencimento = data_vencimento
 
@@ -526,7 +532,7 @@ class TransacoesCorrentes(object):
         Data de Fechamento da Cota\u00C3\u00A7\u00C3\u00A3o do D\u00C3\u00B3lar Americano (USD).
 
         :return: The data_cotacao_usd of this TransacoesCorrentes.
-        :rtype: datetime
+        :rtype: str
         """
         return self._data_cotacao_usd
 
@@ -537,7 +543,7 @@ class TransacoesCorrentes(object):
         Data de Fechamento da Cota\u00C3\u00A7\u00C3\u00A3o do D\u00C3\u00B3lar Americano (USD).
 
         :param data_cotacao_usd: The data_cotacao_usd of this TransacoesCorrentes.
-        :type: datetime
+        :type: str
         """
         self._data_cotacao_usd = data_cotacao_usd
 
@@ -672,6 +678,50 @@ class TransacoesCorrentes(object):
         :type: int
         """
         self._codigo_mcc = codigo_mcc
+
+    @property
+    def grupo_mcc(self):
+        """
+        Gets the grupo_mcc of this TransacoesCorrentes.
+        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do grupo do Estabelecimento.
+
+        :return: The grupo_mcc of this TransacoesCorrentes.
+        :rtype: int
+        """
+        return self._grupo_mcc
+
+    @grupo_mcc.setter
+    def grupo_mcc(self, grupo_mcc):
+        """
+        Sets the grupo_mcc of this TransacoesCorrentes.
+        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do grupo do Estabelecimento.
+
+        :param grupo_mcc: The grupo_mcc of this TransacoesCorrentes.
+        :type: int
+        """
+        self._grupo_mcc = grupo_mcc
+
+    @property
+    def grupo_descricao_mcc(self):
+        """
+        Gets the grupo_descricao_mcc of this TransacoesCorrentes.
+        Descri\u00C3\u00A7\u00C3\u00A3o do grupo do Estabelecimento.
+
+        :return: The grupo_descricao_mcc of this TransacoesCorrentes.
+        :rtype: str
+        """
+        return self._grupo_descricao_mcc
+
+    @grupo_descricao_mcc.setter
+    def grupo_descricao_mcc(self, grupo_descricao_mcc):
+        """
+        Sets the grupo_descricao_mcc of this TransacoesCorrentes.
+        Descri\u00C3\u00A7\u00C3\u00A3o do grupo do Estabelecimento.
+
+        :param grupo_descricao_mcc: The grupo_descricao_mcc of this TransacoesCorrentes.
+        :type: str
+        """
+        self._grupo_descricao_mcc = grupo_descricao_mcc
 
     @property
     def id_estabelecimento(self):

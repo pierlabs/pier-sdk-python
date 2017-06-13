@@ -40,12 +40,12 @@ class SocioAprovadoResponse(object):
             'id': 'int',
             'nome': 'str',
             'cpf': 'str',
-            'data_nascimento': 'date',
+            'data_nascimento': 'str',
             'sexo': 'str',
             'numero_identidade': 'str',
             'orgao_expedidor_identidade': 'str',
             'unidade_federativa_identidade': 'str',
-            'data_emissao_identidade': 'date',
+            'data_emissao_identidade': 'str',
             'estado_civil': 'str',
             'profissao': 'str',
             'nacionalidade': 'str',
@@ -158,7 +158,7 @@ class SocioAprovadoResponse(object):
         Data de Nascimento da Pessoa, quando PF, ou a Data de Abertura da Empresa, quando PJ. Essa data deve ser informada no formato aaaa-MM-dd.
 
         :return: The data_nascimento of this SocioAprovadoResponse.
-        :rtype: date
+        :rtype: str
         """
         return self._data_nascimento
 
@@ -169,7 +169,7 @@ class SocioAprovadoResponse(object):
         Data de Nascimento da Pessoa, quando PF, ou a Data de Abertura da Empresa, quando PJ. Essa data deve ser informada no formato aaaa-MM-dd.
 
         :param data_nascimento: The data_nascimento of this SocioAprovadoResponse.
-        :type: date
+        :type: str
         """
         self._data_nascimento = data_nascimento
 
@@ -268,7 +268,7 @@ class SocioAprovadoResponse(object):
         Data emiss\u00C3\u00A3o da Identidade
 
         :return: The data_emissao_identidade of this SocioAprovadoResponse.
-        :rtype: date
+        :rtype: str
         """
         return self._data_emissao_identidade
 
@@ -279,7 +279,7 @@ class SocioAprovadoResponse(object):
         Data emiss\u00C3\u00A3o da Identidade
 
         :param data_emissao_identidade: The data_emissao_identidade of this SocioAprovadoResponse.
-        :type: date
+        :type: str
         """
         self._data_emissao_identidade = data_emissao_identidade
 

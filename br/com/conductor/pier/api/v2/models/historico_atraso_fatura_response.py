@@ -37,7 +37,7 @@ class HistoricoAtrasoFaturaResponse(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'data_vencimento': 'datetime',
+            'data_vencimento': 'str',
             'dias_pagamento_apos_vencimento': 'int'
         }
 
@@ -56,7 +56,7 @@ class HistoricoAtrasoFaturaResponse(object):
         Data vencimento fatura.
 
         :return: The data_vencimento of this HistoricoAtrasoFaturaResponse.
-        :rtype: datetime
+        :rtype: str
         """
         return self._data_vencimento
 
@@ -67,7 +67,7 @@ class HistoricoAtrasoFaturaResponse(object):
         Data vencimento fatura.
 
         :param data_vencimento: The data_vencimento of this HistoricoAtrasoFaturaResponse.
-        :type: datetime
+        :type: str
         """
         self._data_vencimento = data_vencimento
 

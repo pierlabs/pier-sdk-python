@@ -44,8 +44,8 @@ class UsuarioResponse(object):
             'cpf': 'str',
             'email': 'str',
             'status': 'str',
-            'data_criacao': 'datetime',
-            'data_modificacao': 'datetime',
+            'data_criacao': 'str',
+            'data_modificacao': 'str',
             'tentativas_incorretas': 'int'
         }
 
@@ -240,7 +240,7 @@ class UsuarioResponse(object):
         Data de cria\u00C3\u00A7\u00C3\u00A3o do Usu\u00C3\u00A1rio
 
         :return: The data_criacao of this UsuarioResponse.
-        :rtype: datetime
+        :rtype: str
         """
         return self._data_criacao
 
@@ -251,7 +251,7 @@ class UsuarioResponse(object):
         Data de cria\u00C3\u00A7\u00C3\u00A3o do Usu\u00C3\u00A1rio
 
         :param data_criacao: The data_criacao of this UsuarioResponse.
-        :type: datetime
+        :type: str
         """
         self._data_criacao = data_criacao
 
@@ -262,7 +262,7 @@ class UsuarioResponse(object):
         Data de modifica\u00C3\u00A7\u00C3\u00A3o do Usu\u00C3\u00A1rio
 
         :return: The data_modificacao of this UsuarioResponse.
-        :rtype: datetime
+        :rtype: str
         """
         return self._data_modificacao
 
@@ -273,7 +273,7 @@ class UsuarioResponse(object):
         Data de modifica\u00C3\u00A7\u00C3\u00A3o do Usu\u00C3\u00A1rio
 
         :param data_modificacao: The data_modificacao of this UsuarioResponse.
-        :type: datetime
+        :type: str
         """
         self._data_modificacao = data_modificacao
 

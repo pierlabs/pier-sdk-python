@@ -46,14 +46,14 @@ class Cartao(object):
             'tipo_portador': 'str',
             'numero_cartao': 'str',
             'nome_impresso': 'str',
-            'data_geracao': 'datetime',
-            'data_status_cartao': 'datetime',
-            'data_estagio_cartao': 'datetime',
-            'data_validade': 'datetime',
-            'data_impressao': 'datetime',
+            'data_geracao': 'str',
+            'data_status_cartao': 'str',
+            'data_estagio_cartao': 'str',
+            'data_validade': 'str',
+            'data_impressao': 'str',
             'arquivo_impressao': 'str',
             'flag_impressao_origem_comercial': 'int',
-            'flag_provisorio': 'int',
+            'flag_virtual': 'int',
             'codigo_desbloqueio': 'str',
             'sequencial_cartao': 'int'
         }
@@ -75,7 +75,7 @@ class Cartao(object):
             'data_impressao': 'dataImpressao',
             'arquivo_impressao': 'arquivoImpressao',
             'flag_impressao_origem_comercial': 'flagImpressaoOrigemComercial',
-            'flag_provisorio': 'flagProvisorio',
+            'flag_virtual': 'flagVirtual',
             'codigo_desbloqueio': 'codigoDesbloqueio',
             'sequencial_cartao': 'sequencialCartao'
         }
@@ -96,7 +96,7 @@ class Cartao(object):
         self._data_impressao = None
         self._arquivo_impressao = None
         self._flag_impressao_origem_comercial = None
-        self._flag_provisorio = None
+        self._flag_virtual = None
         self._codigo_desbloqueio = None
         self._sequencial_cartao = None
 
@@ -305,7 +305,7 @@ class Cartao(object):
         Apresenta a data em que o cart\u00C3\u00A3o foi gerado.
 
         :return: The data_geracao of this Cartao.
-        :rtype: datetime
+        :rtype: str
         """
         return self._data_geracao
 
@@ -316,7 +316,7 @@ class Cartao(object):
         Apresenta a data em que o cart\u00C3\u00A3o foi gerado.
 
         :param data_geracao: The data_geracao of this Cartao.
-        :type: datetime
+        :type: str
         """
         self._data_geracao = data_geracao
 
@@ -327,7 +327,7 @@ class Cartao(object):
         Apresenta a data em que o idStatusCartao atual do cart\u00C3\u00A3o fora aplicado, quando houver.
 
         :return: The data_status_cartao of this Cartao.
-        :rtype: datetime
+        :rtype: str
         """
         return self._data_status_cartao
 
@@ -338,7 +338,7 @@ class Cartao(object):
         Apresenta a data em que o idStatusCartao atual do cart\u00C3\u00A3o fora aplicado, quando houver.
 
         :param data_status_cartao: The data_status_cartao of this Cartao.
-        :type: datetime
+        :type: str
         """
         self._data_status_cartao = data_status_cartao
 
@@ -349,7 +349,7 @@ class Cartao(object):
         Apresenta a data em que o idEstagioCartao atual do cart\u00C3\u00A3o fora aplicado, quando houver.
 
         :return: The data_estagio_cartao of this Cartao.
-        :rtype: datetime
+        :rtype: str
         """
         return self._data_estagio_cartao
 
@@ -360,7 +360,7 @@ class Cartao(object):
         Apresenta a data em que o idEstagioCartao atual do cart\u00C3\u00A3o fora aplicado, quando houver.
 
         :param data_estagio_cartao: The data_estagio_cartao of this Cartao.
-        :type: datetime
+        :type: str
         """
         self._data_estagio_cartao = data_estagio_cartao
 
@@ -371,7 +371,7 @@ class Cartao(object):
         Apresenta a data de validade do cart\u00C3\u00A3o em formato yyyy-MM, quando houver.
 
         :return: The data_validade of this Cartao.
-        :rtype: datetime
+        :rtype: str
         """
         return self._data_validade
 
@@ -382,7 +382,7 @@ class Cartao(object):
         Apresenta a data de validade do cart\u00C3\u00A3o em formato yyyy-MM, quando houver.
 
         :param data_validade: The data_validade of this Cartao.
-        :type: datetime
+        :type: str
         """
         self._data_validade = data_validade
 
@@ -393,7 +393,7 @@ class Cartao(object):
         Apresenta a data em que o cart\u00C3\u00A3o fora impresso, caso impress\u00C3\u00A3o em loja, ou a data em que ele fora inclu\u00C3\u00ADdo no arquivo para impress\u00C3\u00A3o via gr\u00C3\u00A1fica.
 
         :return: The data_impressao of this Cartao.
-        :rtype: datetime
+        :rtype: str
         """
         return self._data_impressao
 
@@ -404,7 +404,7 @@ class Cartao(object):
         Apresenta a data em que o cart\u00C3\u00A3o fora impresso, caso impress\u00C3\u00A3o em loja, ou a data em que ele fora inclu\u00C3\u00ADdo no arquivo para impress\u00C3\u00A3o via gr\u00C3\u00A1fica.
 
         :param data_impressao: The data_impressao of this Cartao.
-        :type: datetime
+        :type: str
         """
         self._data_impressao = data_impressao
 
@@ -453,26 +453,26 @@ class Cartao(object):
         self._flag_impressao_origem_comercial = flag_impressao_origem_comercial
 
     @property
-    def flag_provisorio(self):
+    def flag_virtual(self):
         """
-        Gets the flag_provisorio of this Cartao.
-        Quando ativa, indica que o cart\u00C3\u00A3o \u00C3\u00A9 provis\u00C3\u00B3rio. Ou seja, \u00C3\u00A9 um cart\u00C3\u00A3o para uso tempor\u00C3\u00A1rio quando se deseja permitir que o cliente transacione sem que ele tenha recebido um cart\u00C3\u00A3o definitivo.
+        Gets the flag_virtual of this Cartao.
+        Apresenta o status que informa se o cart\u00C3\u00A3o \u00C3\u00A9 virtual.
 
-        :return: The flag_provisorio of this Cartao.
+        :return: The flag_virtual of this Cartao.
         :rtype: int
         """
-        return self._flag_provisorio
+        return self._flag_virtual
 
-    @flag_provisorio.setter
-    def flag_provisorio(self, flag_provisorio):
+    @flag_virtual.setter
+    def flag_virtual(self, flag_virtual):
         """
-        Sets the flag_provisorio of this Cartao.
-        Quando ativa, indica que o cart\u00C3\u00A3o \u00C3\u00A9 provis\u00C3\u00B3rio. Ou seja, \u00C3\u00A9 um cart\u00C3\u00A3o para uso tempor\u00C3\u00A1rio quando se deseja permitir que o cliente transacione sem que ele tenha recebido um cart\u00C3\u00A3o definitivo.
+        Sets the flag_virtual of this Cartao.
+        Apresenta o status que informa se o cart\u00C3\u00A3o \u00C3\u00A9 virtual.
 
-        :param flag_provisorio: The flag_provisorio of this Cartao.
+        :param flag_virtual: The flag_virtual of this Cartao.
         :type: int
         """
-        self._flag_provisorio = flag_provisorio
+        self._flag_virtual = flag_virtual
 
     @property
     def codigo_desbloqueio(self):
