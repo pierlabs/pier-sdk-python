@@ -37,7 +37,6 @@ class AntecipacaoSimuladaDetalhesResponse(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'id_simulacao_detalhe': 'int',
             'quantidade_parcelas': 'int',
             'valor_parcelas': 'float',
             'valor_desconto': 'float',
@@ -45,40 +44,16 @@ class AntecipacaoSimuladaDetalhesResponse(object):
         }
 
         self.attribute_map = {
-            'id_simulacao_detalhe': 'idSimulacaoDetalhe',
             'quantidade_parcelas': 'quantidadeParcelas',
             'valor_parcelas': 'valorParcelas',
             'valor_desconto': 'valorDesconto',
             'valor_parcelas_desconto': 'valorParcelasDesconto'
         }
 
-        self._id_simulacao_detalhe = None
         self._quantidade_parcelas = None
         self._valor_parcelas = None
         self._valor_desconto = None
         self._valor_parcelas_desconto = None
-
-    @property
-    def id_simulacao_detalhe(self):
-        """
-        Gets the id_simulacao_detalhe of this AntecipacaoSimuladaDetalhesResponse.
-        C\u00C3\u00B3digo identificador do detalhe da simula\u00C3\u00A7\u00C3\u00A3o de antecipa\u00C3\u00A7\u00C3\u00A3o.
-
-        :return: The id_simulacao_detalhe of this AntecipacaoSimuladaDetalhesResponse.
-        :rtype: int
-        """
-        return self._id_simulacao_detalhe
-
-    @id_simulacao_detalhe.setter
-    def id_simulacao_detalhe(self, id_simulacao_detalhe):
-        """
-        Sets the id_simulacao_detalhe of this AntecipacaoSimuladaDetalhesResponse.
-        C\u00C3\u00B3digo identificador do detalhe da simula\u00C3\u00A7\u00C3\u00A3o de antecipa\u00C3\u00A7\u00C3\u00A3o.
-
-        :param id_simulacao_detalhe: The id_simulacao_detalhe of this AntecipacaoSimuladaDetalhesResponse.
-        :type: int
-        """
-        self._id_simulacao_detalhe = id_simulacao_detalhe
 
     @property
     def quantidade_parcelas(self):

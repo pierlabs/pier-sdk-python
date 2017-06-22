@@ -61,7 +61,7 @@ class StatusParametrosApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Est\u00C3\u00A1gio de Entrega do Cart\u00C3\u00A3o (id). (required)
-        :return: EstagioCartao
+        :return: EstagioCartaoResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -117,7 +117,7 @@ class StatusParametrosApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='EstagioCartao',
+                                            response_type='EstagioCartaoResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
@@ -138,7 +138,7 @@ class StatusParametrosApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Est\u00C3\u00A1gio de Entrega do Cart\u00C3\u00A3o (id). (required)
-        :return: StatusCartao
+        :return: StatusCartaoResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -194,7 +194,7 @@ class StatusParametrosApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='StatusCartao',
+                                            response_type='StatusCartaoResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
@@ -215,7 +215,7 @@ class StatusParametrosApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Status da Conta (id). (required)
-        :return: StatusConta
+        :return: StatusContaResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -271,7 +271,7 @@ class StatusParametrosApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='StatusConta',
+                                            response_type='StatusContaResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
@@ -292,7 +292,7 @@ class StatusParametrosApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Status de Impress\u00C3\u00A3o do Cart\u00C3\u00A3o (id). (required)
-        :return: StatusImpressao
+        :return: StatusImpressaoResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -348,7 +348,7 @@ class StatusParametrosApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='StatusImpressao',
+                                            response_type='StatusImpressaoResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
@@ -372,7 +372,7 @@ class StatusParametrosApi(object):
         :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
         :param int id: Id do est\u00C3\u00A1gio cart\u00C3\u00A3o
         :param str nome: Nome do est\u00C3\u00A1gio cart\u00C3\u00A3o
-        :return: PageEstagiosCartoes
+        :return: PageEstagioCartaoResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -431,7 +431,7 @@ class StatusParametrosApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='PageEstagiosCartoes',
+                                            response_type='PageEstagioCartaoResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
@@ -461,12 +461,13 @@ class StatusParametrosApi(object):
         :param int id_status_destino_conta: Indica qual o idStatusCartao que ser\u00C3\u00A1 atribu\u00C3\u00ADdo a conta, caso ela seja cancelada devido ao bloqueio de um cart\u00C3\u00A3o quando for utilizado um idStatusCartao no processo de Bloqueio que possua essa caracter\u00C3\u00ADstica.
         :param int flag_cobra_tarifa: Quando ativa, indica que cart\u00C3\u00B5es que tiverem um idStatusCartao atribu\u00C3\u00ADdo com essa caracter\u00C3\u00ADstica, incluir\u00C3\u00A3o a cobran\u00C3\u00A7a de uma tarifa para a conta de acordo com os valores definidos nos par\u00C3\u00A2metros do emissor.
         :param int flag_permite_nova_via_cartao: Par\u00C3\u00A2metro que define se o status do cart\u00C3\u00A3o permite a solicita\u00C3\u00A7\u00C3\u00A3o de uma nova via, sendo: 0: Inativo e 1: Ativo.
-        :return: PageStatusCartoes
+        :param int flag_permite_desbloqueio: Par\u00C3\u00A2metro que define se o status do cart\u00C3\u00A3o permite o desbloqueio, sendo: 0: Inativo e 1: Ativo.
+        :return: PageStatusCartaoResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['page', 'limit', 'id', 'nome', 'flag_cancela_cartao', 'flag_cancela_no_desbloqueio', 'id_status_destino_desbloqueio', 'id_status_destino_conta', 'flag_cobra_tarifa', 'flag_permite_nova_via_cartao']
+        all_params = ['page', 'limit', 'id', 'nome', 'flag_cancela_cartao', 'flag_cancela_no_desbloqueio', 'id_status_destino_desbloqueio', 'id_status_destino_conta', 'flag_cobra_tarifa', 'flag_permite_nova_via_cartao', 'flag_permite_desbloqueio']
         all_params.append('callback')
 
         params = locals()
@@ -504,6 +505,8 @@ class StatusParametrosApi(object):
             query_params['flagCobraTarifa'] = params['flag_cobra_tarifa']
         if 'flag_permite_nova_via_cartao' in params:
             query_params['flagPermiteNovaViaCartao'] = params['flag_permite_nova_via_cartao']
+        if 'flag_permite_desbloqueio' in params:
+            query_params['flagPermiteDesbloqueio'] = params['flag_permite_desbloqueio']
 
         header_params = {}
 
@@ -532,12 +535,12 @@ class StatusParametrosApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='PageStatusCartoes',
+                                            response_type='PageStatusCartaoResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get19(self, **kwargs):
+    def listar_using_get20(self, **kwargs):
         """
         Lista os Status Contas cadastrados para o Emissor
         Este m\u00C3\u00A9todo permite que sejam listados os Status Contas existentes na base de dados do Emissor.
@@ -548,7 +551,7 @@ class StatusParametrosApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get19(callback=callback_function)
+        >>> thread = api.listar_using_get20(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -559,12 +562,14 @@ class StatusParametrosApi(object):
         :param int flag_altera_limite: Par\u00C3\u00A2metro que define se o Status da Conta permite realizar a Altera\u00C3\u00A7\u00C3\u00A3o de Limites do Portador, sendo: 0: Inativo e 1: Ativo.
         :param str mensagem_consulta_negada: Apresenta o texto com o motivo que ser\u00C3\u00A1 apresentado na resposta as opera\u00C3\u00A7\u00C3\u00B5es de Listar e Consultar LimitesDisponibilidades.
         :param int flag_permite_nova_via_cartao: Par\u00C3\u00A2metro que define se o Status da conta permite a solicita\u00C3\u00A7\u00C3\u00A3o de um novo cart\u00C3\u00A3o, sendo: 0: Inativo e 1: Ativo.
-        :return: PageStatusContas
+        :param int flag_faz_transferencia: Par\u00C3\u00A2metro que define se o Status da conta permite fazer transferencia, sendo: 0: Inativo e 1: Ativo.
+        :param int flag_recebe_transferencia: Par\u00C3\u00A2metro que define se o Status da conta permite receber transferencia, sendo: 0: Inativo e 1: Ativo.
+        :return: PageStatusContaResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['page', 'limit', 'id', 'nome', 'flag_altera_limite', 'mensagem_consulta_negada', 'flag_permite_nova_via_cartao']
+        all_params = ['page', 'limit', 'id', 'nome', 'flag_altera_limite', 'mensagem_consulta_negada', 'flag_permite_nova_via_cartao', 'flag_faz_transferencia', 'flag_recebe_transferencia']
         all_params.append('callback')
 
         params = locals()
@@ -572,7 +577,7 @@ class StatusParametrosApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get19" % key
+                    " to method listar_using_get20" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -596,6 +601,10 @@ class StatusParametrosApi(object):
             query_params['mensagemConsultaNegada'] = params['mensagem_consulta_negada']
         if 'flag_permite_nova_via_cartao' in params:
             query_params['flagPermiteNovaViaCartao'] = params['flag_permite_nova_via_cartao']
+        if 'flag_faz_transferencia' in params:
+            query_params['flagFazTransferencia'] = params['flag_faz_transferencia']
+        if 'flag_recebe_transferencia' in params:
+            query_params['flagRecebeTransferencia'] = params['flag_recebe_transferencia']
 
         header_params = {}
 
@@ -624,12 +633,12 @@ class StatusParametrosApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='PageStatusContas',
+                                            response_type='PageStatusContaResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get20(self, **kwargs):
+    def listar_using_get21(self, **kwargs):
         """
         Lista as op\u00C3\u00A7\u00C3\u00B5es de Status Impress\u00C3\u00A3o
         Este m\u00C3\u00A9todo permite que sejam listadas as op\u00C3\u00A7\u00C3\u00B5es de Status Impress\u00C3\u00A3o que podem ser atribu\u00C3\u00ADdas aos Cart\u00C3\u00B5es.
@@ -640,7 +649,7 @@ class StatusParametrosApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get20(callback=callback_function)
+        >>> thread = api.listar_using_get21(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -648,7 +657,7 @@ class StatusParametrosApi(object):
         :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
         :param int id: Id do est\u00C3\u00A1gio cart\u00C3\u00A3o
         :param str nome: Nome do status impress\u00C3\u00A3o
-        :return: PageStatusImpressao
+        :return: PageStatusImpressaoResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -661,7 +670,7 @@ class StatusParametrosApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get20" % key
+                    " to method listar_using_get21" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -707,7 +716,7 @@ class StatusParametrosApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='PageStatusImpressao',
+                                            response_type='PageStatusImpressaoResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response

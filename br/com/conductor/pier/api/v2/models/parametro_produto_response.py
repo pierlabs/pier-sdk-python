@@ -38,7 +38,7 @@ class ParametroProdutoResponse(object):
         """
         self.swagger_types = {
             'id_produto': 'int',
-            'tipo_transacao': 'str',
+            'tipo_origem_transacao': 'str',
             'descricao': 'str',
             'valor_parametro': 'float',
             'data_validade': 'str'
@@ -46,14 +46,14 @@ class ParametroProdutoResponse(object):
 
         self.attribute_map = {
             'id_produto': 'idProduto',
-            'tipo_transacao': 'tipoTransacao',
+            'tipo_origem_transacao': 'tipoOrigemTransacao',
             'descricao': 'descricao',
             'valor_parametro': 'valorParametro',
             'data_validade': 'dataValidade'
         }
 
         self._id_produto = None
-        self._tipo_transacao = None
+        self._tipo_origem_transacao = None
         self._descricao = None
         self._valor_parametro = None
         self._data_validade = None
@@ -81,32 +81,32 @@ class ParametroProdutoResponse(object):
         self._id_produto = id_produto
 
     @property
-    def tipo_transacao(self):
+    def tipo_origem_transacao(self):
         """
-        Gets the tipo_transacao of this ParametroProdutoResponse.
+        Gets the tipo_origem_transacao of this ParametroProdutoResponse.
         Tipo da Transa\u00C3\u00A7\u00C3\u00A3o (ON_US ou OFF_US).
 
-        :return: The tipo_transacao of this ParametroProdutoResponse.
+        :return: The tipo_origem_transacao of this ParametroProdutoResponse.
         :rtype: str
         """
-        return self._tipo_transacao
+        return self._tipo_origem_transacao
 
-    @tipo_transacao.setter
-    def tipo_transacao(self, tipo_transacao):
+    @tipo_origem_transacao.setter
+    def tipo_origem_transacao(self, tipo_origem_transacao):
         """
-        Sets the tipo_transacao of this ParametroProdutoResponse.
+        Sets the tipo_origem_transacao of this ParametroProdutoResponse.
         Tipo da Transa\u00C3\u00A7\u00C3\u00A3o (ON_US ou OFF_US).
 
-        :param tipo_transacao: The tipo_transacao of this ParametroProdutoResponse.
+        :param tipo_origem_transacao: The tipo_origem_transacao of this ParametroProdutoResponse.
         :type: str
         """
         allowed_values = ["ON_US", "OFF_US"]
-        if tipo_transacao not in allowed_values:
+        if tipo_origem_transacao not in allowed_values:
             raise ValueError(
-                "Invalid value for `tipo_transacao`, must be one of {0}"
+                "Invalid value for `tipo_origem_transacao`, must be one of {0}"
                 .format(allowed_values)
             )
-        self._tipo_transacao = tipo_transacao
+        self._tipo_origem_transacao = tipo_origem_transacao
 
     @property
     def descricao(self):

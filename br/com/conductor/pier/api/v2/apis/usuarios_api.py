@@ -448,7 +448,7 @@ class UsuariosApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get29(self, **kwargs):
+    def listar_using_get30(self, **kwargs):
         """
         Lista os Usu\u00C3\u00A1rios cadastrados
         Este m\u00C3\u00A9todo permite que sejam listados os usu\u00C3\u00A1rios existentes na base do PIER.
@@ -459,7 +459,7 @@ class UsuariosApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get29(callback=callback_function)
+        >>> thread = api.listar_using_get30(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -469,7 +469,7 @@ class UsuariosApi(object):
         :param str cpf: CPF do Usuario
         :param str email: Email do Usuario
         :param str status: Status do Usuario
-        :return: PageUsuarios
+        :return: PageUsuarioResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -482,7 +482,7 @@ class UsuariosApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get29" % key
+                    " to method listar_using_get30" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -532,7 +532,7 @@ class UsuariosApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='PageUsuarios',
+                                            response_type='PageUsuarioResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response

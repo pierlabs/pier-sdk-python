@@ -63,7 +63,7 @@ class WebhooksApi(object):
         :param int id: C\u00C3\u00B3digo identificador do Webhook (required)
         :param str tipo_evento: TipoEvento a ser chamado pelo WebHook (required)
         :param str url: URL que a ser consumida pelo WebHook (required)
-        :return: WebHook
+        :return: WebHookResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -129,7 +129,7 @@ class WebhooksApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='WebHook',
+                                            response_type='WebHookResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
@@ -150,7 +150,7 @@ class WebhooksApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Webhook (id). (required)
-        :return: WebHook
+        :return: WebHookResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -206,12 +206,12 @@ class WebhooksApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='WebHook',
+                                            response_type='WebHookResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get30(self, **kwargs):
+    def listar_using_get31(self, **kwargs):
         """
         Lista os Webhooks
         Este m\u00C3\u00A9todo permite que sejam listados os webhooks existentes
@@ -222,7 +222,7 @@ class WebhooksApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get30(callback=callback_function)
+        >>> thread = api.listar_using_get31(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -232,7 +232,7 @@ class WebhooksApi(object):
         :param str tipo_evento: TipoEvento a ser chamado pelo WebHook
         :param str metodo: M\u00C3\u00A9todo que a ser chamado pelo WebHook
         :param str url: URL que a ser consumida pelo WebHook
-        :return: PageWebHooks
+        :return: PageWebHookResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -245,7 +245,7 @@ class WebhooksApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get30" % key
+                    " to method listar_using_get31" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -295,7 +295,7 @@ class WebhooksApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='PageWebHooks',
+                                            response_type='PageWebHookResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
@@ -317,7 +317,7 @@ class WebhooksApi(object):
             for asynchronous request. (optional)
         :param str tipo_evento: TipoEvento a ser chamado pelo WebHook (required)
         :param str url: URL que a ser consumida pelo WebHook (required)
-        :return: WebHook
+        :return: WebHookResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -378,7 +378,7 @@ class WebhooksApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='WebHook',
+                                            response_type='WebHookResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response

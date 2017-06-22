@@ -42,7 +42,10 @@ class AntecipacaoResponse(object):
             'id_compra': 'int',
             'quantidade_parcelas_total': 'int',
             'quantidade_parcelas_antecipadas': 'int',
-            'valor_parcelas': 'float'
+            'valor_parcela': 'float',
+            'valor_desconto_total': 'float',
+            'valor_total_com_desconto': 'float',
+            'taxa_desconto': 'float'
         }
 
         self.attribute_map = {
@@ -51,7 +54,10 @@ class AntecipacaoResponse(object):
             'id_compra': 'idCompra',
             'quantidade_parcelas_total': 'quantidadeParcelasTotal',
             'quantidade_parcelas_antecipadas': 'quantidadeParcelasAntecipadas',
-            'valor_parcelas': 'valorParcelas'
+            'valor_parcela': 'valorParcela',
+            'valor_desconto_total': 'valorDescontoTotal',
+            'valor_total_com_desconto': 'valorTotalComDesconto',
+            'taxa_desconto': 'taxaDesconto'
         }
 
         self._id = None
@@ -59,7 +65,10 @@ class AntecipacaoResponse(object):
         self._id_compra = None
         self._quantidade_parcelas_total = None
         self._quantidade_parcelas_antecipadas = None
-        self._valor_parcelas = None
+        self._valor_parcela = None
+        self._valor_desconto_total = None
+        self._valor_total_com_desconto = None
+        self._taxa_desconto = None
 
     @property
     def id(self):
@@ -131,7 +140,7 @@ class AntecipacaoResponse(object):
     def quantidade_parcelas_total(self):
         """
         Gets the quantidade_parcelas_total of this AntecipacaoResponse.
-        Apresenta o numero total de parcelas da comprae
+        Apresenta o numero total de parcelas da compra
 
         :return: The quantidade_parcelas_total of this AntecipacaoResponse.
         :rtype: int
@@ -142,7 +151,7 @@ class AntecipacaoResponse(object):
     def quantidade_parcelas_total(self, quantidade_parcelas_total):
         """
         Sets the quantidade_parcelas_total of this AntecipacaoResponse.
-        Apresenta o numero total de parcelas da comprae
+        Apresenta o numero total de parcelas da compra
 
         :param quantidade_parcelas_total: The quantidade_parcelas_total of this AntecipacaoResponse.
         :type: int
@@ -172,26 +181,92 @@ class AntecipacaoResponse(object):
         self._quantidade_parcelas_antecipadas = quantidade_parcelas_antecipadas
 
     @property
-    def valor_parcelas(self):
+    def valor_parcela(self):
         """
-        Gets the valor_parcelas of this AntecipacaoResponse.
-        Apresenta o valor das parcelas efetivadas
+        Gets the valor_parcela of this AntecipacaoResponse.
+        Apresenta o valor de cada parcela antecipadas
 
-        :return: The valor_parcelas of this AntecipacaoResponse.
+        :return: The valor_parcela of this AntecipacaoResponse.
         :rtype: float
         """
-        return self._valor_parcelas
+        return self._valor_parcela
 
-    @valor_parcelas.setter
-    def valor_parcelas(self, valor_parcelas):
+    @valor_parcela.setter
+    def valor_parcela(self, valor_parcela):
         """
-        Sets the valor_parcelas of this AntecipacaoResponse.
-        Apresenta o valor das parcelas efetivadas
+        Sets the valor_parcela of this AntecipacaoResponse.
+        Apresenta o valor de cada parcela antecipadas
 
-        :param valor_parcelas: The valor_parcelas of this AntecipacaoResponse.
+        :param valor_parcela: The valor_parcela of this AntecipacaoResponse.
         :type: float
         """
-        self._valor_parcelas = valor_parcelas
+        self._valor_parcela = valor_parcela
+
+    @property
+    def valor_desconto_total(self):
+        """
+        Gets the valor_desconto_total of this AntecipacaoResponse.
+        Apresenta o valor total do desconto
+
+        :return: The valor_desconto_total of this AntecipacaoResponse.
+        :rtype: float
+        """
+        return self._valor_desconto_total
+
+    @valor_desconto_total.setter
+    def valor_desconto_total(self, valor_desconto_total):
+        """
+        Sets the valor_desconto_total of this AntecipacaoResponse.
+        Apresenta o valor total do desconto
+
+        :param valor_desconto_total: The valor_desconto_total of this AntecipacaoResponse.
+        :type: float
+        """
+        self._valor_desconto_total = valor_desconto_total
+
+    @property
+    def valor_total_com_desconto(self):
+        """
+        Gets the valor_total_com_desconto of this AntecipacaoResponse.
+        Apresenta o valor total com desconto
+
+        :return: The valor_total_com_desconto of this AntecipacaoResponse.
+        :rtype: float
+        """
+        return self._valor_total_com_desconto
+
+    @valor_total_com_desconto.setter
+    def valor_total_com_desconto(self, valor_total_com_desconto):
+        """
+        Sets the valor_total_com_desconto of this AntecipacaoResponse.
+        Apresenta o valor total com desconto
+
+        :param valor_total_com_desconto: The valor_total_com_desconto of this AntecipacaoResponse.
+        :type: float
+        """
+        self._valor_total_com_desconto = valor_total_com_desconto
+
+    @property
+    def taxa_desconto(self):
+        """
+        Gets the taxa_desconto of this AntecipacaoResponse.
+        Apresenta a taxa de desconto
+
+        :return: The taxa_desconto of this AntecipacaoResponse.
+        :rtype: float
+        """
+        return self._taxa_desconto
+
+    @taxa_desconto.setter
+    def taxa_desconto(self, taxa_desconto):
+        """
+        Sets the taxa_desconto of this AntecipacaoResponse.
+        Apresenta a taxa de desconto
+
+        :param taxa_desconto: The taxa_desconto of this AntecipacaoResponse.
+        :type: float
+        """
+        self._taxa_desconto = taxa_desconto
 
     def to_dict(self):
         """

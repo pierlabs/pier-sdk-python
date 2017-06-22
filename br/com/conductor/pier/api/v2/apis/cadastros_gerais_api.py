@@ -72,7 +72,7 @@ class CadastrosGeraisApi(object):
         :param str cidade: Apresenta nome da cidade
         :param str uf: Apresenta sigla da Unidade Federativa
         :param str pais: Apresenta nome do Pais
-        :return: Endereco
+        :return: EnderecoResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -150,7 +150,7 @@ class CadastrosGeraisApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='Endereco',
+                                            response_type='EnderecoResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
@@ -285,7 +285,7 @@ class CadastrosGeraisApi(object):
         :param str orgao_expedidor_identidade: Org\u00C3\u00A3o expedidor do Identidade.
         :param str unidade_federativa_identidade: Sigla da Unidade Federativa de onde foi expedido a Identidade
         :param str data_emissao_identidade: Data emiss\u00C3\u00A3o da Identidade.
-        :return: Pessoa
+        :return: PessoaResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -367,7 +367,7 @@ class CadastrosGeraisApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='Pessoa',
+                                            response_type='PessoaResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
@@ -392,7 +392,7 @@ class CadastrosGeraisApi(object):
         :param str ddd: C\u00C3\u00B3digo DDD do telefone (id).
         :param str telefone: N\u00C3\u00BAmero do telefone.
         :param str ramal: N\u00C3\u00BAmero do ramal.
-        :return: Telefone
+        :return: TelefoneResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -456,7 +456,7 @@ class CadastrosGeraisApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='Telefone',
+                                            response_type='TelefoneResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
@@ -637,7 +637,7 @@ class CadastrosGeraisApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int id: ID da Origem Comercial (required)
-        :return: OrigemComercial
+        :return: OrigemComercialResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -693,7 +693,7 @@ class CadastrosGeraisApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='OrigemComercial',
+                                            response_type='OrigemComercialResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
@@ -781,6 +781,83 @@ class CadastrosGeraisApi(object):
                                             callback=params.get('callback'))
         return response
 
+    def consultar_using_get(self, id, **kwargs):
+        """
+        Apresenta os dados de um determinado Atendimento
+        Este m\u00C3\u00A9todo permite consultar os par\u00C3\u00A2metros de um determinado Atendimento a partir do seu c\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o (idAtendimento).
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.consultar_using_get(id, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param int id: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do atendimento cliente (id). (required)
+        :return: AtendimentoClienteResponse
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method consultar_using_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get`")
+
+        resource_path = '/api/atendimento-clientes/{id}'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = []
+
+        response = self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='AtendimentoClienteResponse',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
     def consultar_using_get1(self, id, **kwargs):
         """
         Apresenta os dados de um determinado Banco
@@ -797,7 +874,7 @@ class CadastrosGeraisApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Banco (id). (required)
-        :return: Banco
+        :return: BancoResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -853,7 +930,7 @@ class CadastrosGeraisApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='Banco',
+                                            response_type='BancoResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
@@ -874,7 +951,7 @@ class CadastrosGeraisApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int id: ID da Pessoa (required)
-        :return: Pessoa
+        :return: PessoaResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -930,7 +1007,7 @@ class CadastrosGeraisApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='Pessoa',
+                                            response_type='PessoaResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
@@ -1028,7 +1105,7 @@ class CadastrosGeraisApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Telefone (id). (required)
-        :return: Telefone
+        :return: TelefoneResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1084,7 +1161,7 @@ class CadastrosGeraisApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='Telefone',
+                                            response_type='TelefoneResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
@@ -1108,7 +1185,7 @@ class CadastrosGeraisApi(object):
         :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
         :param int id: C\u00C3\u00B3digo identificador do tipo de ajuste.
         :param str descricao: Descri\u00C3\u00A7\u00C3\u00A3o do tipo de ajuste.
-        :return: PageTipoAjuste
+        :return: PageTipoAjusteResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1167,7 +1244,7 @@ class CadastrosGeraisApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='PageTipoAjuste',
+                                            response_type='PageTipoAjusteResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
@@ -1192,7 +1269,7 @@ class CadastrosGeraisApi(object):
         :param int id: C\u00C3\u00B3digo identificador do tipo de boleto.
         :param str descricao: Descri\u00C3\u00A7\u00C3\u00A3o do tipo de boleto.
         :param int banco: C\u00C3\u00B3digo identificador do banco.
-        :return: PageTipoBoleto
+        :return: PageTipoBoletoResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1253,7 +1330,7 @@ class CadastrosGeraisApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='PageTipoBoleto',
+                                            response_type='PageTipoBoletoResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
@@ -1274,7 +1351,7 @@ class CadastrosGeraisApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Tipo do Endere\u00C3\u00A7o (id) (required)
-        :return: TipoEndereco
+        :return: TipoEnderecoResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1330,7 +1407,7 @@ class CadastrosGeraisApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='TipoEndereco',
+                                            response_type='TipoEnderecoResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
@@ -1351,7 +1428,7 @@ class CadastrosGeraisApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Tipo do Telefone (id) (required)
-        :return: TipoTelefone
+        :return: TipoTelefoneResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1407,7 +1484,7 @@ class CadastrosGeraisApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='TipoTelefone',
+                                            response_type='TipoTelefoneResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
@@ -1428,7 +1505,7 @@ class CadastrosGeraisApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Endere\u00C3\u00A7o (id). (required)
-        :return: Endereco
+        :return: EnderecoResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1484,7 +1561,7 @@ class CadastrosGeraisApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='Endereco',
+                                            response_type='EnderecoResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
@@ -1661,7 +1738,7 @@ class CadastrosGeraisApi(object):
         :param str numero_receita_federal: N\u00C3\u00BAmero de identifica\u00C3\u00A7\u00C3\u00A3o do cliente na Receita Federal (CPF ou CNPJ) (required)
         :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
         :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
-        :return: PageContasDetalhe
+        :return: PageContaDetalheResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1721,7 +1798,7 @@ class CadastrosGeraisApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='PageContasDetalhe',
+                                            response_type='PageContaDetalheResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
@@ -1743,7 +1820,7 @@ class CadastrosGeraisApi(object):
             for asynchronous request. (optional)
         :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
         :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
-        :return: PageCampoCodificadoDescricao
+        :return: PageCampoCodificadoDescricaoResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1798,7 +1875,7 @@ class CadastrosGeraisApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='PageCampoCodificadoDescricao',
+                                            response_type='PageCampoCodificadoDescricaoResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
@@ -1819,7 +1896,7 @@ class CadastrosGeraisApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da pessoa (id). (required)
-        :return: HistoricoTelefone
+        :return: HistoricoTelefoneResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1875,7 +1952,7 @@ class CadastrosGeraisApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='HistoricoTelefone',
+                                            response_type='HistoricoTelefoneResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
@@ -1897,7 +1974,7 @@ class CadastrosGeraisApi(object):
             for asynchronous request. (optional)
         :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
         :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
-        :return: PageCampoCodificadoDescricao
+        :return: PageCampoCodificadoDescricaoResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1952,7 +2029,7 @@ class CadastrosGeraisApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='PageCampoCodificadoDescricao',
+                                            response_type='PageCampoCodificadoDescricaoResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
@@ -1974,7 +2051,7 @@ class CadastrosGeraisApi(object):
             for asynchronous request. (optional)
         :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
         :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
-        :return: PageCampoCodificadoDescricao
+        :return: PageCampoCodificadoDescricaoResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -2029,7 +2106,7 @@ class CadastrosGeraisApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='PageCampoCodificadoDescricao',
+                                            response_type='PageCampoCodificadoDescricaoResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
@@ -2054,7 +2131,7 @@ class CadastrosGeraisApi(object):
         :param int id: Id da origem comercial
         :param str nome: Nome da origem comercial
         :param int status: Status da origem comercial
-        :return: PageOrigensComerciais
+        :return: PageOrigemComercialResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -2115,7 +2192,7 @@ class CadastrosGeraisApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='PageOrigensComerciais',
+                                            response_type='PageOrigemComercialResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
@@ -2137,7 +2214,7 @@ class CadastrosGeraisApi(object):
             for asynchronous request. (optional)
         :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
         :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
-        :return: PageCampoCodificadoDescricao
+        :return: PageCampoCodificadoDescricaoResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -2192,12 +2269,101 @@ class CadastrosGeraisApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='PageCampoCodificadoDescricao',
+                                            response_type='PageCampoCodificadoDescricaoResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get13(self, **kwargs):
+    def listar_using_get1(self, **kwargs):
+        """
+        Lista todos os atendimentos
+        Este m\u00C3\u00A9todo permite que sejam listados todos os Registro de Atendimento, independente do Tipo.
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.listar_using_get1(callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
+        :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
+        :param int id_tipo_atendimento: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Tipo de Atendimento (id)
+        :param int id_conta: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o de conta (id).
+        :param str nome_atendente: Apresenta o nome do Atendente que registrou o Atendimento.
+        :param str data_atendimento: Apresenta a data em que o Atendimento foi realizado.
+        :return: PageAtendimentoClienteResponse
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['page', 'limit', 'id_tipo_atendimento', 'id_conta', 'nome_atendente', 'data_atendimento']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method listar_using_get1" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+
+        resource_path = '/api/atendimento-clientes'.replace('{format}', 'json')
+        path_params = {}
+
+        query_params = {}
+        if 'page' in params:
+            query_params['page'] = params['page']
+        if 'limit' in params:
+            query_params['limit'] = params['limit']
+        if 'id_tipo_atendimento' in params:
+            query_params['idTipoAtendimento'] = params['id_tipo_atendimento']
+        if 'id_conta' in params:
+            query_params['idConta'] = params['id_conta']
+        if 'nome_atendente' in params:
+            query_params['nomeAtendente'] = params['nome_atendente']
+        if 'data_atendimento' in params:
+            query_params['dataAtendimento'] = params['data_atendimento']
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = []
+
+        response = self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='PageAtendimentoClienteResponse',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
+    def listar_using_get14(self, **kwargs):
         """
         Lista os Detalhes das Pessoas cadastradas no Emissor
         Este m\u00C3\u00A9todo permite que sejam listadas od detalhes das Pessoas existentes na base de dados do Emissor.
@@ -2208,7 +2374,7 @@ class CadastrosGeraisApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get13(callback=callback_function)
+        >>> thread = api.listar_using_get14(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -2224,7 +2390,7 @@ class CadastrosGeraisApi(object):
         :param str numero_conta_corrente: N\u00C3\u00BAmero da conta corrente.
         :param str email: Email da pessoa fisica
         :param str nome_empresa: Nome que deve ser impresso no cart\u00C3\u00A3o
-        :return: PessoaDetalheResponse
+        :return: PagePessoaDetalheResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -2237,7 +2403,7 @@ class CadastrosGeraisApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get13" % key
+                    " to method listar_using_get14" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -2299,12 +2465,12 @@ class CadastrosGeraisApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='PessoaDetalheResponse',
+                                            response_type='PagePessoaDetalheResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get14(self, **kwargs):
+    def listar_using_get15(self, **kwargs):
         """
         Lista as Pessoas cadastradas no Emissor
         Este m\u00C3\u00A9todo permite que sejam listadas as Pessoas existentes na base de dados do Emissor.
@@ -2315,7 +2481,7 @@ class CadastrosGeraisApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get14(callback=callback_function)
+        >>> thread = api.listar_using_get15(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -2332,7 +2498,7 @@ class CadastrosGeraisApi(object):
         :param str orgao_expedidor_identidade: Org\u00C3\u00A3o expedidor do RG.
         :param str unidade_federativa_identidade: Sigla da Unidade Federativa de onde foi expedido a Identidade
         :param str data_emissao_identidade: Data emiss\u00C3\u00A3o da identidade no formato aaaa-MM-dd
-        :return: PagePessoas
+        :return: PagePessoaResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -2345,7 +2511,7 @@ class CadastrosGeraisApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get14" % key
+                    " to method listar_using_get15" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -2409,12 +2575,12 @@ class CadastrosGeraisApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='PagePessoas',
+                                            response_type='PagePessoaResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get16(self, **kwargs):
+    def listar_using_get17(self, **kwargs):
         """
         Lista os Portadores existentes
         Este m\u00C3\u00A9todo permite que sejam listados os portadores cadastrados na base do emissor.
@@ -2425,7 +2591,7 @@ class CadastrosGeraisApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get16(callback=callback_function)
+        >>> thread = api.listar_using_get17(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -2441,7 +2607,7 @@ class CadastrosGeraisApi(object):
         :param int flag_ativo: Quanto ativa, indica que o cadastro do Portador est\u00C3\u00A1 ativo, em emissores que realizam este tipo de gest\u00C3\u00A3o.
         :param str data_cadastro_portador: Apresenta a data em que o Portador fora cadastrado, quando possuir esta informa\u00C3\u00A7\u00C3\u00A3o.
         :param str data_cancelamento_portador: Apresenta a data em que o Portador fora cancelado, quando possuir esta informa\u00C3\u00A7\u00C3\u00A3o.
-        :return: PagePortador
+        :return: PagePortadorResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -2454,7 +2620,7 @@ class CadastrosGeraisApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get16" % key
+                    " to method listar_using_get17" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -2516,12 +2682,12 @@ class CadastrosGeraisApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='PagePortador',
+                                            response_type='PagePortadorResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get17(self, **kwargs):
+    def listar_using_get18(self, **kwargs):
         """
         Lista os Produtos do Emissor
         Este m\u00C3\u00A9todo permite que sejam listados os Produtos existentes na base de dados do Emissor.
@@ -2532,7 +2698,7 @@ class CadastrosGeraisApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get17(callback=callback_function)
+        >>> thread = api.listar_using_get18(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -2541,7 +2707,7 @@ class CadastrosGeraisApi(object):
         :param str nome: Descri\u00C3\u00A7\u00C3\u00A3o do Nome do Produto.
         :param int status: Representa o Status do Produto, onde: (\"0\": Inativo), (\"1\": Ativo).
         :param int id_fantasia_basica: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Fantasia B\u00C3\u00A1sica (id) a qual o produto pertence.
-        :return: ListaProdutos
+        :return: PageProdutoResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -2554,7 +2720,7 @@ class CadastrosGeraisApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get17" % key
+                    " to method listar_using_get18" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -2602,7 +2768,7 @@ class CadastrosGeraisApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='ListaProdutos',
+                                            response_type='PageProdutoResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
@@ -2624,7 +2790,7 @@ class CadastrosGeraisApi(object):
             for asynchronous request. (optional)
         :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
         :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
-        :return: PageBancos
+        :return: PageBancoResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -2679,12 +2845,12 @@ class CadastrosGeraisApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='PageBancos',
+                                            response_type='PageBancoResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get21(self, **kwargs):
+    def listar_using_get22(self, **kwargs):
         """
         Lista os Telefones cadastrados no Emissor
         Este m\u00C3\u00A9todo permite que sejam listados os Telefones existentes na base de dados do Emissor.
@@ -2695,7 +2861,7 @@ class CadastrosGeraisApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get21(callback=callback_function)
+        >>> thread = api.listar_using_get22(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -2708,7 +2874,7 @@ class CadastrosGeraisApi(object):
         :param str telefone: N\u00C3\u00BAmero do telefone.
         :param str ramal: N\u00C3\u00BAmero do ramal.
         :param int status: Apresenta o Status do Telefone, onde: '0': Inativo e '1': Ativo
-        :return: PageTelefones
+        :return: PageTelefoneResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -2721,7 +2887,7 @@ class CadastrosGeraisApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get21" % key
+                    " to method listar_using_get22" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -2777,12 +2943,12 @@ class CadastrosGeraisApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='PageTelefones',
+                                            response_type='PageTelefoneResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get23(self, **kwargs):
+    def listar_using_get24(self, **kwargs):
         """
         Lista as op\u00C3\u00B5es de Tipos de Endere\u00C3\u00A7os do Emissor 
         Este m\u00C3\u00A9todo permite que sejam listados os Tipos de Endere\u00C3\u00A7os existentes na base de dados do Emissor.
@@ -2793,7 +2959,7 @@ class CadastrosGeraisApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get23(callback=callback_function)
+        >>> thread = api.listar_using_get24(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -2801,7 +2967,7 @@ class CadastrosGeraisApi(object):
         :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
         :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Tipo do Endere\u00C3\u00A7o (id)
         :param str nome: Nome do Tipo do Endere\u00C3\u00A7o
-        :return: PageTiposEndereco
+        :return: PageTipoEnderecoResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -2814,7 +2980,7 @@ class CadastrosGeraisApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get23" % key
+                    " to method listar_using_get24" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -2860,12 +3026,12 @@ class CadastrosGeraisApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='PageTiposEndereco',
+                                            response_type='PageTipoEnderecoResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get25(self, **kwargs):
+    def listar_using_get26(self, **kwargs):
         """
         Lista os Tipos de Telefones
         Este m\u00C3\u00A9todo permite que sejam listados os Tipos de Telefones existentes na base de dados do Emissor.
@@ -2876,7 +3042,7 @@ class CadastrosGeraisApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get25(callback=callback_function)
+        >>> thread = api.listar_using_get26(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -2884,7 +3050,7 @@ class CadastrosGeraisApi(object):
         :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
         :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Tipo do Telefone (id).
         :param str nome: Nome do Tipo do Telefone
-        :return: PageTipoTelefones
+        :return: PageTipoTelefoneResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -2897,7 +3063,7 @@ class CadastrosGeraisApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get25" % key
+                    " to method listar_using_get26" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -2943,12 +3109,12 @@ class CadastrosGeraisApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='PageTipoTelefones',
+                                            response_type='PageTipoTelefoneResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get8(self, **kwargs):
+    def listar_using_get9(self, **kwargs):
         """
         Lista os Endere\u00C3\u00A7os cadastrados para o Emissor
         Este m\u00C3\u00A9todo permite que sejam listados os Endere\u00C3\u00A7os existentes na base de dados do Emissor.
@@ -2959,7 +3125,7 @@ class CadastrosGeraisApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get8(callback=callback_function)
+        >>> thread = api.listar_using_get9(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -2979,7 +3145,7 @@ class CadastrosGeraisApi(object):
         :param str pais: Apresenta nome do Pais
         :param str data_inclusao: Apresenta a data em que fora cadastrado o Endere\u00C3\u00A7o
         :param str data_ultima_atualizacao: Data em que fora realizada a \u00C3\u00BAltima mudan\u00C3\u00A7a neste registro de endere\u00C3\u00A7o. Quando n\u00C3\u00A3o tiver ocorrido mudan\u00C3\u00A7a, conter\u00C3\u00A1 a mesma informa\u00C3\u00A7\u00C3\u00A3o que o campo dataInclusao
-        :return: PageEnderecos
+        :return: PageEnderecoResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -2992,7 +3158,7 @@ class CadastrosGeraisApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get8" % key
+                    " to method listar_using_get9" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -3062,7 +3228,7 @@ class CadastrosGeraisApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='PageEnderecos',
+                                            response_type='PageEnderecoResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
@@ -3221,6 +3387,104 @@ class CadastrosGeraisApi(object):
                                             callback=params.get('callback'))
         return response
 
+    def salvar_using_post1(self, **kwargs):
+        """
+        Cadastro um novo Atendimento do tipo Gen\u00C3\u00A9rico para uma Conta
+        
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.salvar_using_post1(callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param int id_conta: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Conta a qual o Atendimento est\u00C3\u00A1 associado
+        :param str conteudo_atendimento: Apresenta as informa\u00C3\u00A7\u00C3\u00B5es que foram utilizadas para consultar, cadastrar ou alterar informa\u00C3\u00A7\u00C3\u00B5es relacionadas ao Atendimento.
+        :param str detalhes_atendimento: Apresenta os detalhes lan\u00C3\u00A7ados pelo sistema ou pelo Atendente durante relacionados ao Atendimento.
+        :param str nome_atendente: Apresenta o nome do Atendente que registrou o Atendimento.
+        :param str data_atendimento: Apresenta a data e hora em que o Atendimento foi realizado no formato yyyy-MM-dd'T'HH:mm:ss.SSS'Z'.
+        :param str data_agendamento: Quando utilizado, de acordo com o Tipo de Atendimento, apresenta a data e hora para processamento ou a data e hora para retorno do Atendimento no formato yyyy-MM-dd'T'HH:mm:ss.SSS'Z'.
+        :param str data_hora_inicio_atendimento: Apresenta a data e hora em que o Atendimento foi iniciado. Quando utilizado, serve para medir a performance dos Atendimentos no formato yyyy-MM-dd'T'HH:mm:ss.SSS'Z'.
+        :param str data_hora_fim_atendimento: Apresenta a data e hora em que o Atendimento foi iniciado. Quando utilizado, serve para medir a performance dos Atendimentos no formato yyyy-MM-dd'T'HH:mm:ss.SSS'Z'.
+        :param int flag_fila_fraude: Flag fila fraude
+        :return: AtendimentoClienteResponse
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id_conta', 'conteudo_atendimento', 'detalhes_atendimento', 'nome_atendente', 'data_atendimento', 'data_agendamento', 'data_hora_inicio_atendimento', 'data_hora_fim_atendimento', 'flag_fila_fraude']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method salvar_using_post1" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+
+        resource_path = '/api/atendimento-clientes'.replace('{format}', 'json')
+        path_params = {}
+
+        query_params = {}
+        if 'id_conta' in params:
+            query_params['idConta'] = params['id_conta']
+        if 'conteudo_atendimento' in params:
+            query_params['conteudoAtendimento'] = params['conteudo_atendimento']
+        if 'detalhes_atendimento' in params:
+            query_params['detalhesAtendimento'] = params['detalhes_atendimento']
+        if 'nome_atendente' in params:
+            query_params['nomeAtendente'] = params['nome_atendente']
+        if 'data_atendimento' in params:
+            query_params['dataAtendimento'] = params['data_atendimento']
+        if 'data_agendamento' in params:
+            query_params['dataAgendamento'] = params['data_agendamento']
+        if 'data_hora_inicio_atendimento' in params:
+            query_params['dataHoraInicioAtendimento'] = params['data_hora_inicio_atendimento']
+        if 'data_hora_fim_atendimento' in params:
+            query_params['dataHoraFimAtendimento'] = params['data_hora_fim_atendimento']
+        if 'flag_fila_fraude' in params:
+            query_params['flagFilaFraude'] = params['flag_fila_fraude']
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = []
+
+        response = self.api_client.call_api(resource_path, 'POST',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='AtendimentoClienteResponse',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
     def salvar_using_post10(self, **kwargs):
         """
         Realiza o cadastro de um novo Telefone
@@ -3241,7 +3505,7 @@ class CadastrosGeraisApi(object):
         :param str ddd: C\u00C3\u00B3digo DDD do telefone (id).
         :param str telefone: N\u00C3\u00BAmero do telefone.
         :param str ramal: N\u00C3\u00BAmero do ramal.
-        :return: Telefone
+        :return: TelefoneResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -3302,7 +3566,7 @@ class CadastrosGeraisApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='Telefone',
+                                            response_type='TelefoneResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
@@ -3333,7 +3597,7 @@ class CadastrosGeraisApi(object):
         :param str cidade: Apresenta nome da cidade
         :param str uf: Apresenta sigla da Unidade Federativa
         :param str pais: Apresenta nome do Pais
-        :return: Endereco
+        :return: EnderecoResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -3406,7 +3670,7 @@ class CadastrosGeraisApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='Endereco',
+                                            response_type='EnderecoResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
@@ -3537,7 +3801,7 @@ class CadastrosGeraisApi(object):
         :param str orgao_expedidor_identidade: Org\u00C3\u00A3o expedidor do Identidade.
         :param str unidade_federativa_identidade: Sigla da Unidade Federativa de onde foi expedido a Identidade
         :param str data_emissao_identidade: Data emiss\u00C3\u00A3o da Identidade.
-        :return: Pessoa
+        :return: PessoaResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -3614,7 +3878,7 @@ class CadastrosGeraisApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='Pessoa',
+                                            response_type='PessoaResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response

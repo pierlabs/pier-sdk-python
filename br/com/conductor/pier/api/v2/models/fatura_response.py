@@ -38,40 +38,100 @@ class FaturaResponse(object):
         """
         self.swagger_types = {
             'id': 'int',
-            'descricao': 'str',
-            'banco': 'int',
-            'faixa_nosso_numero': 'int',
-            'min_nosso_numero': 'float',
-            'max_nosso_numero': 'float',
-            'tam_nosso_numero': 'int',
-            'ultimo_nosso_numero': 'float'
+            'id_conta': 'int',
+            'flag_emite_fatura': 'int',
+            'data_vencimento_fatura': 'str',
+            'valor_total_fatura': 'float',
+            'valor_fatura_anterior': 'float',
+            'valor_pagamento_minimo': 'float',
+            'total_compras_nacionais': 'float',
+            'total_compras_internacionas': 'float',
+            'total_saques_nacionais': 'float',
+            'total_saques_internacionais': 'float',
+            'total_debitos_nacionais': 'float',
+            'total_debitos_recorrentes': 'float',
+            'total_debitos_internacionais': 'float',
+            'total_debitos_diversos_nacionais': 'float',
+            'total_debitos_opcionais': 'float',
+            'total_pagamentos': 'float',
+            'total_creditos_nacionais': 'float',
+            'total_ajustes': 'float',
+            'total_tarifas': 'float',
+            'total_multa': 'float',
+            'total_juros': 'float',
+            'taxa_rotativo': 'float',
+            'taxa_saque': 'float',
+            'taxa_maxima_proximo_periodo': 'float',
+            'total_servicos': 'float',
+            'total_parcelado_nacionais': 'float',
+            'total_parcelado_internacionais': 'float'
         }
 
         self.attribute_map = {
             'id': 'id',
-            'descricao': 'descricao',
-            'banco': 'banco',
-            'faixa_nosso_numero': 'faixaNossoNumero',
-            'min_nosso_numero': 'minNossoNumero',
-            'max_nosso_numero': 'maxNossoNumero',
-            'tam_nosso_numero': 'tamNossoNumero',
-            'ultimo_nosso_numero': 'ultimoNossoNumero'
+            'id_conta': 'idConta',
+            'flag_emite_fatura': 'flagEmiteFatura',
+            'data_vencimento_fatura': 'dataVencimentoFatura',
+            'valor_total_fatura': 'valorTotalFatura',
+            'valor_fatura_anterior': 'valorFaturaAnterior',
+            'valor_pagamento_minimo': 'valorPagamentoMinimo',
+            'total_compras_nacionais': 'totalComprasNacionais',
+            'total_compras_internacionas': 'totalComprasInternacionas',
+            'total_saques_nacionais': 'totalSaquesNacionais',
+            'total_saques_internacionais': 'totalSaquesInternacionais',
+            'total_debitos_nacionais': 'totalDebitosNacionais',
+            'total_debitos_recorrentes': 'totalDebitosRecorrentes',
+            'total_debitos_internacionais': 'totalDebitosInternacionais',
+            'total_debitos_diversos_nacionais': 'totalDebitosDiversosNacionais',
+            'total_debitos_opcionais': 'totalDebitosOpcionais',
+            'total_pagamentos': 'totalPagamentos',
+            'total_creditos_nacionais': 'totalCreditosNacionais',
+            'total_ajustes': 'totalAjustes',
+            'total_tarifas': 'totalTarifas',
+            'total_multa': 'totalMulta',
+            'total_juros': 'totalJuros',
+            'taxa_rotativo': 'taxaRotativo',
+            'taxa_saque': 'taxaSaque',
+            'taxa_maxima_proximo_periodo': 'taxaMaximaProximoPeriodo',
+            'total_servicos': 'totalServicos',
+            'total_parcelado_nacionais': 'totalParceladoNacionais',
+            'total_parcelado_internacionais': 'totalParceladoInternacionais'
         }
 
         self._id = None
-        self._descricao = None
-        self._banco = None
-        self._faixa_nosso_numero = None
-        self._min_nosso_numero = None
-        self._max_nosso_numero = None
-        self._tam_nosso_numero = None
-        self._ultimo_nosso_numero = None
+        self._id_conta = None
+        self._flag_emite_fatura = None
+        self._data_vencimento_fatura = None
+        self._valor_total_fatura = None
+        self._valor_fatura_anterior = None
+        self._valor_pagamento_minimo = None
+        self._total_compras_nacionais = None
+        self._total_compras_internacionas = None
+        self._total_saques_nacionais = None
+        self._total_saques_internacionais = None
+        self._total_debitos_nacionais = None
+        self._total_debitos_recorrentes = None
+        self._total_debitos_internacionais = None
+        self._total_debitos_diversos_nacionais = None
+        self._total_debitos_opcionais = None
+        self._total_pagamentos = None
+        self._total_creditos_nacionais = None
+        self._total_ajustes = None
+        self._total_tarifas = None
+        self._total_multa = None
+        self._total_juros = None
+        self._taxa_rotativo = None
+        self._taxa_saque = None
+        self._taxa_maxima_proximo_periodo = None
+        self._total_servicos = None
+        self._total_parcelado_nacionais = None
+        self._total_parcelado_internacionais = None
 
     @property
     def id(self):
         """
         Gets the id of this FaturaResponse.
-        C\u00C3\u00B3digo identificador do tipo de boleto.
+        C\u00C3\u00B3digo identificador da fatura.
 
         :return: The id of this FaturaResponse.
         :rtype: int
@@ -82,7 +142,7 @@ class FaturaResponse(object):
     def id(self, id):
         """
         Sets the id of this FaturaResponse.
-        C\u00C3\u00B3digo identificador do tipo de boleto.
+        C\u00C3\u00B3digo identificador da fatura.
 
         :param id: The id of this FaturaResponse.
         :type: int
@@ -90,158 +150,598 @@ class FaturaResponse(object):
         self._id = id
 
     @property
-    def descricao(self):
+    def id_conta(self):
         """
-        Gets the descricao of this FaturaResponse.
-        Descri\u00C3\u00A7\u00C3\u00A3o do tipo de boleto.
+        Gets the id_conta of this FaturaResponse.
+        C\u00C3\u00B3digo identificador da conta.
 
-        :return: The descricao of this FaturaResponse.
+        :return: The id_conta of this FaturaResponse.
+        :rtype: int
+        """
+        return self._id_conta
+
+    @id_conta.setter
+    def id_conta(self, id_conta):
+        """
+        Sets the id_conta of this FaturaResponse.
+        C\u00C3\u00B3digo identificador da conta.
+
+        :param id_conta: The id_conta of this FaturaResponse.
+        :type: int
+        """
+        self._id_conta = id_conta
+
+    @property
+    def flag_emite_fatura(self):
+        """
+        Gets the flag_emite_fatura of this FaturaResponse.
+        C\u00C3\u00B3digo identificador da conta a qual a fatura se refere.
+
+        :return: The flag_emite_fatura of this FaturaResponse.
+        :rtype: int
+        """
+        return self._flag_emite_fatura
+
+    @flag_emite_fatura.setter
+    def flag_emite_fatura(self, flag_emite_fatura):
+        """
+        Sets the flag_emite_fatura of this FaturaResponse.
+        C\u00C3\u00B3digo identificador da conta a qual a fatura se refere.
+
+        :param flag_emite_fatura: The flag_emite_fatura of this FaturaResponse.
+        :type: int
+        """
+        self._flag_emite_fatura = flag_emite_fatura
+
+    @property
+    def data_vencimento_fatura(self):
+        """
+        Gets the data_vencimento_fatura of this FaturaResponse.
+        Data de vencimento da fatura.
+
+        :return: The data_vencimento_fatura of this FaturaResponse.
         :rtype: str
         """
-        return self._descricao
+        return self._data_vencimento_fatura
 
-    @descricao.setter
-    def descricao(self, descricao):
+    @data_vencimento_fatura.setter
+    def data_vencimento_fatura(self, data_vencimento_fatura):
         """
-        Sets the descricao of this FaturaResponse.
-        Descri\u00C3\u00A7\u00C3\u00A3o do tipo de boleto.
+        Sets the data_vencimento_fatura of this FaturaResponse.
+        Data de vencimento da fatura.
 
-        :param descricao: The descricao of this FaturaResponse.
+        :param data_vencimento_fatura: The data_vencimento_fatura of this FaturaResponse.
         :type: str
         """
-        self._descricao = descricao
+        self._data_vencimento_fatura = data_vencimento_fatura
 
     @property
-    def banco(self):
+    def valor_total_fatura(self):
         """
-        Gets the banco of this FaturaResponse.
-        C\u00C3\u00B3digo identificador do banco.
+        Gets the valor_total_fatura of this FaturaResponse.
+        Valor para pagamento total da fatura.
 
-        :return: The banco of this FaturaResponse.
-        :rtype: int
-        """
-        return self._banco
-
-    @banco.setter
-    def banco(self, banco):
-        """
-        Sets the banco of this FaturaResponse.
-        C\u00C3\u00B3digo identificador do banco.
-
-        :param banco: The banco of this FaturaResponse.
-        :type: int
-        """
-        self._banco = banco
-
-    @property
-    def faixa_nosso_numero(self):
-        """
-        Gets the faixa_nosso_numero of this FaturaResponse.
-        Faixa permitida para cria\u00C3\u00A7\u00C3\u00A3o do nosso n\u00C3\u00BAmero.
-
-        :return: The faixa_nosso_numero of this FaturaResponse.
-        :rtype: int
-        """
-        return self._faixa_nosso_numero
-
-    @faixa_nosso_numero.setter
-    def faixa_nosso_numero(self, faixa_nosso_numero):
-        """
-        Sets the faixa_nosso_numero of this FaturaResponse.
-        Faixa permitida para cria\u00C3\u00A7\u00C3\u00A3o do nosso n\u00C3\u00BAmero.
-
-        :param faixa_nosso_numero: The faixa_nosso_numero of this FaturaResponse.
-        :type: int
-        """
-        self._faixa_nosso_numero = faixa_nosso_numero
-
-    @property
-    def min_nosso_numero(self):
-        """
-        Gets the min_nosso_numero of this FaturaResponse.
-        N\u00C3\u00BAmero minimo para o nosso n\u00C3\u00BAmero.
-
-        :return: The min_nosso_numero of this FaturaResponse.
+        :return: The valor_total_fatura of this FaturaResponse.
         :rtype: float
         """
-        return self._min_nosso_numero
+        return self._valor_total_fatura
 
-    @min_nosso_numero.setter
-    def min_nosso_numero(self, min_nosso_numero):
+    @valor_total_fatura.setter
+    def valor_total_fatura(self, valor_total_fatura):
         """
-        Sets the min_nosso_numero of this FaturaResponse.
-        N\u00C3\u00BAmero minimo para o nosso n\u00C3\u00BAmero.
+        Sets the valor_total_fatura of this FaturaResponse.
+        Valor para pagamento total da fatura.
 
-        :param min_nosso_numero: The min_nosso_numero of this FaturaResponse.
+        :param valor_total_fatura: The valor_total_fatura of this FaturaResponse.
         :type: float
         """
-        self._min_nosso_numero = min_nosso_numero
+        self._valor_total_fatura = valor_total_fatura
 
     @property
-    def max_nosso_numero(self):
+    def valor_fatura_anterior(self):
         """
-        Gets the max_nosso_numero of this FaturaResponse.
-        N\u00C3\u00BAmero m\u00C3\u00A1ximo para o nosso n\u00C3\u00BAmero.
+        Gets the valor_fatura_anterior of this FaturaResponse.
+        Valor total da fatura anterior.
 
-        :return: The max_nosso_numero of this FaturaResponse.
+        :return: The valor_fatura_anterior of this FaturaResponse.
         :rtype: float
         """
-        return self._max_nosso_numero
+        return self._valor_fatura_anterior
 
-    @max_nosso_numero.setter
-    def max_nosso_numero(self, max_nosso_numero):
+    @valor_fatura_anterior.setter
+    def valor_fatura_anterior(self, valor_fatura_anterior):
         """
-        Sets the max_nosso_numero of this FaturaResponse.
-        N\u00C3\u00BAmero m\u00C3\u00A1ximo para o nosso n\u00C3\u00BAmero.
+        Sets the valor_fatura_anterior of this FaturaResponse.
+        Valor total da fatura anterior.
 
-        :param max_nosso_numero: The max_nosso_numero of this FaturaResponse.
+        :param valor_fatura_anterior: The valor_fatura_anterior of this FaturaResponse.
         :type: float
         """
-        self._max_nosso_numero = max_nosso_numero
+        self._valor_fatura_anterior = valor_fatura_anterior
 
     @property
-    def tam_nosso_numero(self):
+    def valor_pagamento_minimo(self):
         """
-        Gets the tam_nosso_numero of this FaturaResponse.
-        Tamanho do nosso n\u00C3\u00BAmero.
+        Gets the valor_pagamento_minimo of this FaturaResponse.
+        Valor m\u00C3\u00ADnimo para pagamento da fatura.
 
-        :return: The tam_nosso_numero of this FaturaResponse.
-        :rtype: int
-        """
-        return self._tam_nosso_numero
-
-    @tam_nosso_numero.setter
-    def tam_nosso_numero(self, tam_nosso_numero):
-        """
-        Sets the tam_nosso_numero of this FaturaResponse.
-        Tamanho do nosso n\u00C3\u00BAmero.
-
-        :param tam_nosso_numero: The tam_nosso_numero of this FaturaResponse.
-        :type: int
-        """
-        self._tam_nosso_numero = tam_nosso_numero
-
-    @property
-    def ultimo_nosso_numero(self):
-        """
-        Gets the ultimo_nosso_numero of this FaturaResponse.
-        \u00C3\u009Altimo nosso n\u00C3\u00BAmero utilizado.
-
-        :return: The ultimo_nosso_numero of this FaturaResponse.
+        :return: The valor_pagamento_minimo of this FaturaResponse.
         :rtype: float
         """
-        return self._ultimo_nosso_numero
+        return self._valor_pagamento_minimo
 
-    @ultimo_nosso_numero.setter
-    def ultimo_nosso_numero(self, ultimo_nosso_numero):
+    @valor_pagamento_minimo.setter
+    def valor_pagamento_minimo(self, valor_pagamento_minimo):
         """
-        Sets the ultimo_nosso_numero of this FaturaResponse.
-        \u00C3\u009Altimo nosso n\u00C3\u00BAmero utilizado.
+        Sets the valor_pagamento_minimo of this FaturaResponse.
+        Valor m\u00C3\u00ADnimo para pagamento da fatura.
 
-        :param ultimo_nosso_numero: The ultimo_nosso_numero of this FaturaResponse.
+        :param valor_pagamento_minimo: The valor_pagamento_minimo of this FaturaResponse.
         :type: float
         """
-        self._ultimo_nosso_numero = ultimo_nosso_numero
+        self._valor_pagamento_minimo = valor_pagamento_minimo
+
+    @property
+    def total_compras_nacionais(self):
+        """
+        Gets the total_compras_nacionais of this FaturaResponse.
+        Valor total das compras nacionais lan\u00C3\u00A7adas na fatura.
+
+        :return: The total_compras_nacionais of this FaturaResponse.
+        :rtype: float
+        """
+        return self._total_compras_nacionais
+
+    @total_compras_nacionais.setter
+    def total_compras_nacionais(self, total_compras_nacionais):
+        """
+        Sets the total_compras_nacionais of this FaturaResponse.
+        Valor total das compras nacionais lan\u00C3\u00A7adas na fatura.
+
+        :param total_compras_nacionais: The total_compras_nacionais of this FaturaResponse.
+        :type: float
+        """
+        self._total_compras_nacionais = total_compras_nacionais
+
+    @property
+    def total_compras_internacionas(self):
+        """
+        Gets the total_compras_internacionas of this FaturaResponse.
+        Valor total das compras internacionais lan\u00C3\u00A7adas na fatura.
+
+        :return: The total_compras_internacionas of this FaturaResponse.
+        :rtype: float
+        """
+        return self._total_compras_internacionas
+
+    @total_compras_internacionas.setter
+    def total_compras_internacionas(self, total_compras_internacionas):
+        """
+        Sets the total_compras_internacionas of this FaturaResponse.
+        Valor total das compras internacionais lan\u00C3\u00A7adas na fatura.
+
+        :param total_compras_internacionas: The total_compras_internacionas of this FaturaResponse.
+        :type: float
+        """
+        self._total_compras_internacionas = total_compras_internacionas
+
+    @property
+    def total_saques_nacionais(self):
+        """
+        Gets the total_saques_nacionais of this FaturaResponse.
+        Valor total dos saques nacionais lan\u00C3\u00A7ados na fatura.
+
+        :return: The total_saques_nacionais of this FaturaResponse.
+        :rtype: float
+        """
+        return self._total_saques_nacionais
+
+    @total_saques_nacionais.setter
+    def total_saques_nacionais(self, total_saques_nacionais):
+        """
+        Sets the total_saques_nacionais of this FaturaResponse.
+        Valor total dos saques nacionais lan\u00C3\u00A7ados na fatura.
+
+        :param total_saques_nacionais: The total_saques_nacionais of this FaturaResponse.
+        :type: float
+        """
+        self._total_saques_nacionais = total_saques_nacionais
+
+    @property
+    def total_saques_internacionais(self):
+        """
+        Gets the total_saques_internacionais of this FaturaResponse.
+        Valor total dos saques internacionais lan\u00C3\u00A7ados na fatura.
+
+        :return: The total_saques_internacionais of this FaturaResponse.
+        :rtype: float
+        """
+        return self._total_saques_internacionais
+
+    @total_saques_internacionais.setter
+    def total_saques_internacionais(self, total_saques_internacionais):
+        """
+        Sets the total_saques_internacionais of this FaturaResponse.
+        Valor total dos saques internacionais lan\u00C3\u00A7ados na fatura.
+
+        :param total_saques_internacionais: The total_saques_internacionais of this FaturaResponse.
+        :type: float
+        """
+        self._total_saques_internacionais = total_saques_internacionais
+
+    @property
+    def total_debitos_nacionais(self):
+        """
+        Gets the total_debitos_nacionais of this FaturaResponse.
+        Valor total dos d\u00C3\u00A9bitos nacionais lan\u00C3\u00A7ados na fatura.
+
+        :return: The total_debitos_nacionais of this FaturaResponse.
+        :rtype: float
+        """
+        return self._total_debitos_nacionais
+
+    @total_debitos_nacionais.setter
+    def total_debitos_nacionais(self, total_debitos_nacionais):
+        """
+        Sets the total_debitos_nacionais of this FaturaResponse.
+        Valor total dos d\u00C3\u00A9bitos nacionais lan\u00C3\u00A7ados na fatura.
+
+        :param total_debitos_nacionais: The total_debitos_nacionais of this FaturaResponse.
+        :type: float
+        """
+        self._total_debitos_nacionais = total_debitos_nacionais
+
+    @property
+    def total_debitos_recorrentes(self):
+        """
+        Gets the total_debitos_recorrentes of this FaturaResponse.
+        Valor total dos d\u00C3\u00A9bitos recorrentes lan\u00C3\u00A7ados na fatura.
+
+        :return: The total_debitos_recorrentes of this FaturaResponse.
+        :rtype: float
+        """
+        return self._total_debitos_recorrentes
+
+    @total_debitos_recorrentes.setter
+    def total_debitos_recorrentes(self, total_debitos_recorrentes):
+        """
+        Sets the total_debitos_recorrentes of this FaturaResponse.
+        Valor total dos d\u00C3\u00A9bitos recorrentes lan\u00C3\u00A7ados na fatura.
+
+        :param total_debitos_recorrentes: The total_debitos_recorrentes of this FaturaResponse.
+        :type: float
+        """
+        self._total_debitos_recorrentes = total_debitos_recorrentes
+
+    @property
+    def total_debitos_internacionais(self):
+        """
+        Gets the total_debitos_internacionais of this FaturaResponse.
+        Valor total dos d\u00C3\u00A9bitos internacionais lan\u00C3\u00A7ados na fatura.
+
+        :return: The total_debitos_internacionais of this FaturaResponse.
+        :rtype: float
+        """
+        return self._total_debitos_internacionais
+
+    @total_debitos_internacionais.setter
+    def total_debitos_internacionais(self, total_debitos_internacionais):
+        """
+        Sets the total_debitos_internacionais of this FaturaResponse.
+        Valor total dos d\u00C3\u00A9bitos internacionais lan\u00C3\u00A7ados na fatura.
+
+        :param total_debitos_internacionais: The total_debitos_internacionais of this FaturaResponse.
+        :type: float
+        """
+        self._total_debitos_internacionais = total_debitos_internacionais
+
+    @property
+    def total_debitos_diversos_nacionais(self):
+        """
+        Gets the total_debitos_diversos_nacionais of this FaturaResponse.
+        Valor total dos d\u00C3\u00A9bitos diversos nacionais lan\u00C3\u00A7ados na fatura.
+
+        :return: The total_debitos_diversos_nacionais of this FaturaResponse.
+        :rtype: float
+        """
+        return self._total_debitos_diversos_nacionais
+
+    @total_debitos_diversos_nacionais.setter
+    def total_debitos_diversos_nacionais(self, total_debitos_diversos_nacionais):
+        """
+        Sets the total_debitos_diversos_nacionais of this FaturaResponse.
+        Valor total dos d\u00C3\u00A9bitos diversos nacionais lan\u00C3\u00A7ados na fatura.
+
+        :param total_debitos_diversos_nacionais: The total_debitos_diversos_nacionais of this FaturaResponse.
+        :type: float
+        """
+        self._total_debitos_diversos_nacionais = total_debitos_diversos_nacionais
+
+    @property
+    def total_debitos_opcionais(self):
+        """
+        Gets the total_debitos_opcionais of this FaturaResponse.
+        Valor total dos d\u00C3\u00A9bitos diversos opcionais lan\u00C3\u00A7ados na fatura.
+
+        :return: The total_debitos_opcionais of this FaturaResponse.
+        :rtype: float
+        """
+        return self._total_debitos_opcionais
+
+    @total_debitos_opcionais.setter
+    def total_debitos_opcionais(self, total_debitos_opcionais):
+        """
+        Sets the total_debitos_opcionais of this FaturaResponse.
+        Valor total dos d\u00C3\u00A9bitos diversos opcionais lan\u00C3\u00A7ados na fatura.
+
+        :param total_debitos_opcionais: The total_debitos_opcionais of this FaturaResponse.
+        :type: float
+        """
+        self._total_debitos_opcionais = total_debitos_opcionais
+
+    @property
+    def total_pagamentos(self):
+        """
+        Gets the total_pagamentos of this FaturaResponse.
+        Valor total dos pagamentos lan\u00C3\u00A7ados na fatura.
+
+        :return: The total_pagamentos of this FaturaResponse.
+        :rtype: float
+        """
+        return self._total_pagamentos
+
+    @total_pagamentos.setter
+    def total_pagamentos(self, total_pagamentos):
+        """
+        Sets the total_pagamentos of this FaturaResponse.
+        Valor total dos pagamentos lan\u00C3\u00A7ados na fatura.
+
+        :param total_pagamentos: The total_pagamentos of this FaturaResponse.
+        :type: float
+        """
+        self._total_pagamentos = total_pagamentos
+
+    @property
+    def total_creditos_nacionais(self):
+        """
+        Gets the total_creditos_nacionais of this FaturaResponse.
+        Valor total dos cr\u00C3\u00A9ditos nacionais lan\u00C3\u00A7ados na fatura.
+
+        :return: The total_creditos_nacionais of this FaturaResponse.
+        :rtype: float
+        """
+        return self._total_creditos_nacionais
+
+    @total_creditos_nacionais.setter
+    def total_creditos_nacionais(self, total_creditos_nacionais):
+        """
+        Sets the total_creditos_nacionais of this FaturaResponse.
+        Valor total dos cr\u00C3\u00A9ditos nacionais lan\u00C3\u00A7ados na fatura.
+
+        :param total_creditos_nacionais: The total_creditos_nacionais of this FaturaResponse.
+        :type: float
+        """
+        self._total_creditos_nacionais = total_creditos_nacionais
+
+    @property
+    def total_ajustes(self):
+        """
+        Gets the total_ajustes of this FaturaResponse.
+        Valor total dos ajustes lan\u00C3\u00A7ados na fatura.
+
+        :return: The total_ajustes of this FaturaResponse.
+        :rtype: float
+        """
+        return self._total_ajustes
+
+    @total_ajustes.setter
+    def total_ajustes(self, total_ajustes):
+        """
+        Sets the total_ajustes of this FaturaResponse.
+        Valor total dos ajustes lan\u00C3\u00A7ados na fatura.
+
+        :param total_ajustes: The total_ajustes of this FaturaResponse.
+        :type: float
+        """
+        self._total_ajustes = total_ajustes
+
+    @property
+    def total_tarifas(self):
+        """
+        Gets the total_tarifas of this FaturaResponse.
+        Valor total das tarifas lan\u00C3\u00A7adas na fatura.
+
+        :return: The total_tarifas of this FaturaResponse.
+        :rtype: float
+        """
+        return self._total_tarifas
+
+    @total_tarifas.setter
+    def total_tarifas(self, total_tarifas):
+        """
+        Sets the total_tarifas of this FaturaResponse.
+        Valor total das tarifas lan\u00C3\u00A7adas na fatura.
+
+        :param total_tarifas: The total_tarifas of this FaturaResponse.
+        :type: float
+        """
+        self._total_tarifas = total_tarifas
+
+    @property
+    def total_multa(self):
+        """
+        Gets the total_multa of this FaturaResponse.
+        Valor total da multa lan\u00C3\u00A7ada na fatura.
+
+        :return: The total_multa of this FaturaResponse.
+        :rtype: float
+        """
+        return self._total_multa
+
+    @total_multa.setter
+    def total_multa(self, total_multa):
+        """
+        Sets the total_multa of this FaturaResponse.
+        Valor total da multa lan\u00C3\u00A7ada na fatura.
+
+        :param total_multa: The total_multa of this FaturaResponse.
+        :type: float
+        """
+        self._total_multa = total_multa
+
+    @property
+    def total_juros(self):
+        """
+        Gets the total_juros of this FaturaResponse.
+        Valor total dos juros de mora lan\u00C3\u00A7ados na fatura.
+
+        :return: The total_juros of this FaturaResponse.
+        :rtype: float
+        """
+        return self._total_juros
+
+    @total_juros.setter
+    def total_juros(self, total_juros):
+        """
+        Sets the total_juros of this FaturaResponse.
+        Valor total dos juros de mora lan\u00C3\u00A7ados na fatura.
+
+        :param total_juros: The total_juros of this FaturaResponse.
+        :type: float
+        """
+        self._total_juros = total_juros
+
+    @property
+    def taxa_rotativo(self):
+        """
+        Gets the taxa_rotativo of this FaturaResponse.
+        Valor percentual da taxa de juros rotativos.
+
+        :return: The taxa_rotativo of this FaturaResponse.
+        :rtype: float
+        """
+        return self._taxa_rotativo
+
+    @taxa_rotativo.setter
+    def taxa_rotativo(self, taxa_rotativo):
+        """
+        Sets the taxa_rotativo of this FaturaResponse.
+        Valor percentual da taxa de juros rotativos.
+
+        :param taxa_rotativo: The taxa_rotativo of this FaturaResponse.
+        :type: float
+        """
+        self._taxa_rotativo = taxa_rotativo
+
+    @property
+    def taxa_saque(self):
+        """
+        Gets the taxa_saque of this FaturaResponse.
+        Valor percentual da taxa de saque.
+
+        :return: The taxa_saque of this FaturaResponse.
+        :rtype: float
+        """
+        return self._taxa_saque
+
+    @taxa_saque.setter
+    def taxa_saque(self, taxa_saque):
+        """
+        Sets the taxa_saque of this FaturaResponse.
+        Valor percentual da taxa de saque.
+
+        :param taxa_saque: The taxa_saque of this FaturaResponse.
+        :type: float
+        """
+        self._taxa_saque = taxa_saque
+
+    @property
+    def taxa_maxima_proximo_periodo(self):
+        """
+        Gets the taxa_maxima_proximo_periodo of this FaturaResponse.
+        Valor m\u00C3\u00A1ximo percentual da taxa de encargos para o pr\u00C3\u00B3ximo per\u00C3\u00ADodo.
+
+        :return: The taxa_maxima_proximo_periodo of this FaturaResponse.
+        :rtype: float
+        """
+        return self._taxa_maxima_proximo_periodo
+
+    @taxa_maxima_proximo_periodo.setter
+    def taxa_maxima_proximo_periodo(self, taxa_maxima_proximo_periodo):
+        """
+        Sets the taxa_maxima_proximo_periodo of this FaturaResponse.
+        Valor m\u00C3\u00A1ximo percentual da taxa de encargos para o pr\u00C3\u00B3ximo per\u00C3\u00ADodo.
+
+        :param taxa_maxima_proximo_periodo: The taxa_maxima_proximo_periodo of this FaturaResponse.
+        :type: float
+        """
+        self._taxa_maxima_proximo_periodo = taxa_maxima_proximo_periodo
+
+    @property
+    def total_servicos(self):
+        """
+        Gets the total_servicos of this FaturaResponse.
+        Apresenta a soma de todos os seguros cobrados na fatura do cliente.
+
+        :return: The total_servicos of this FaturaResponse.
+        :rtype: float
+        """
+        return self._total_servicos
+
+    @total_servicos.setter
+    def total_servicos(self, total_servicos):
+        """
+        Sets the total_servicos of this FaturaResponse.
+        Apresenta a soma de todos os seguros cobrados na fatura do cliente.
+
+        :param total_servicos: The total_servicos of this FaturaResponse.
+        :type: float
+        """
+        self._total_servicos = total_servicos
+
+    @property
+    def total_parcelado_nacionais(self):
+        """
+        Gets the total_parcelado_nacionais of this FaturaResponse.
+        Apresenta a soma de todos os valores parcelados + compras nacionais.
+
+        :return: The total_parcelado_nacionais of this FaturaResponse.
+        :rtype: float
+        """
+        return self._total_parcelado_nacionais
+
+    @total_parcelado_nacionais.setter
+    def total_parcelado_nacionais(self, total_parcelado_nacionais):
+        """
+        Sets the total_parcelado_nacionais of this FaturaResponse.
+        Apresenta a soma de todos os valores parcelados + compras nacionais.
+
+        :param total_parcelado_nacionais: The total_parcelado_nacionais of this FaturaResponse.
+        :type: float
+        """
+        self._total_parcelado_nacionais = total_parcelado_nacionais
+
+    @property
+    def total_parcelado_internacionais(self):
+        """
+        Gets the total_parcelado_internacionais of this FaturaResponse.
+        Apresenta a soma de todos os valores parcelados + compras internacionais.
+
+        :return: The total_parcelado_internacionais of this FaturaResponse.
+        :rtype: float
+        """
+        return self._total_parcelado_internacionais
+
+    @total_parcelado_internacionais.setter
+    def total_parcelado_internacionais(self, total_parcelado_internacionais):
+        """
+        Sets the total_parcelado_internacionais of this FaturaResponse.
+        Apresenta a soma de todos os valores parcelados + compras internacionais.
+
+        :param total_parcelado_internacionais: The total_parcelado_internacionais of this FaturaResponse.
+        :type: float
+        """
+        self._total_parcelado_internacionais = total_parcelado_internacionais
 
     def to_dict(self):
         """

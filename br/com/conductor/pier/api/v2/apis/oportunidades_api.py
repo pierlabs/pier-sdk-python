@@ -562,7 +562,7 @@ class OportunidadesApi(object):
         :param str descricao: Descri\u00C3\u00A7\u00C3\u00A3o do status oportunidade
         :param bool flag_ativo: Flag de verifica\u00C3\u00A7\u00C3\u00A3o se o status oportunidade est\u00C3\u00A1 ativo
         :param str rev_user: Usu\u00C3\u00A1rio da auditoria
-        :return: PageStatusOprtunidadesAUD
+        :return: PageStatusOportunidadeAUDResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -633,7 +633,7 @@ class OportunidadesApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='PageStatusOprtunidadesAUD',
+                                            response_type='PageStatusOportunidadeAUDResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
@@ -665,7 +665,7 @@ class OportunidadesApi(object):
         :param str rev_date: Data da auditoria
         :param str rev_type: Tipo da auditoria
         :param str rev_user: Usu\u00C3\u00A1rio da auditoria
-        :return: PageOprtunidadeAUD
+        :return: PageOportunidadeAUDResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -740,7 +740,7 @@ class OportunidadesApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='PageOprtunidadeAUD',
+                                            response_type='PageOportunidadeAUDResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
@@ -768,7 +768,7 @@ class OportunidadesApi(object):
         :param str descricao: Descri\u00C3\u00A7\u00C3\u00A3o do tipo oportunidade no qual foi realizado a a\u00C3\u00A7\u00C3\u00A3o
         :param bool flag_ativo: Atributo que representa se o tipo oportunidade est\u00C3\u00A1 ativo
         :param str rev_user: Usu\u00C3\u00A1rio da auditoria
-        :return: PageTipoOprtunidadesAUD
+        :return: PageTipoOportunidadeAUDResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -835,7 +835,7 @@ class OportunidadesApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='PageTipoOprtunidadesAUD',
+                                            response_type='PageTipoOportunidadeAUDResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
@@ -861,7 +861,7 @@ class OportunidadesApi(object):
         :param str nome: Nome do status oportunidade
         :param str descricao: Descri\u00C3\u00A7\u00C3\u00A3o do status oportunidade
         :param bool flag_ativo: Flag de verifica\u00C3\u00A7\u00C3\u00A3o se o status oportunidade est\u00C3\u00A1 ativo
-        :return: PageStatusOprtunidades
+        :return: PageStatusOportunidadeResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -927,12 +927,12 @@ class OportunidadesApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='PageStatusOprtunidades',
+                                            response_type='PageStatusOportunidadeResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get12(self, **kwargs):
+    def listar_using_get13(self, **kwargs):
         """
         Lista as oportunidades
         Este recurso permite listar as oportunidades.
@@ -943,7 +943,7 @@ class OportunidadesApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get12(callback=callback_function)
+        >>> thread = api.listar_using_get13(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -956,7 +956,7 @@ class OportunidadesApi(object):
         :param str data_inicio_vigencia: Data de in\u00C3\u00ADcio da vig\u00C3\u00AAncia da oportunidade
         :param str data_fim_vigencia: Data do fim da vig\u00C3\u00AAncia da oportunidade
         :param bool flag_ativo: Flag de verifica\u00C3\u00A7\u00C3\u00A3o se a oportunidade est\u00C3\u00A1 ativa
-        :return: PageOprtunidadesResponse
+        :return: PageOportunidadeResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -969,7 +969,7 @@ class OportunidadesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get12" % key
+                    " to method listar_using_get13" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -1025,12 +1025,12 @@ class OportunidadesApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='PageOprtunidadesResponse',
+                                            response_type='PageOportunidadeResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get24(self, **kwargs):
+    def listar_using_get25(self, **kwargs):
         """
         Lista os tipos oportunidades
         Este recurso permite listar os tipos oportunidades.
@@ -1041,7 +1041,7 @@ class OportunidadesApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get24(callback=callback_function)
+        >>> thread = api.listar_using_get25(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -1049,7 +1049,7 @@ class OportunidadesApi(object):
         :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
         :param str descricao: Descri\u00C3\u00A7\u00C3\u00A3o do tipo oportunidade
         :param bool flag_ativo: Flag de verifica\u00C3\u00A7\u00C3\u00A3o se o tipo oportunidade est\u00C3\u00A1 ativo
-        :return: PageTipoOprtunidades
+        :return: PageTipoOportunidadeResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1062,7 +1062,7 @@ class OportunidadesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get24" % key
+                    " to method listar_using_get25" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -1108,7 +1108,7 @@ class OportunidadesApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='PageTipoOprtunidades',
+                                            response_type='PageTipoOportunidadeResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response

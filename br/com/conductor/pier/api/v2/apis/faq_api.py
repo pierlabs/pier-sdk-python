@@ -66,7 +66,7 @@ class FAQApi(object):
         :param str plataforma: Plataforma em que a FAQ se encaixa.
         :param str categoria: Categoria de assunto do qual a FAQ se trata.
         :param str status: Status descrevendo a situa\u00C3\u00A7\u00C3\u00A3o atual da FAQ.
-        :return: FAQ
+        :return: FaqResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -135,7 +135,7 @@ class FAQApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='FAQ',
+                                            response_type='FaqResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
@@ -162,7 +162,7 @@ class FAQApi(object):
         :param str plataforma: Plataforma em que a FAQ se encaixa.
         :param str categoria: Categoria de assunto do qual a FAQ se trata.
         :param str status: Status descrevendo a situa\u00C3\u00A7\u00C3\u00A3o atual da FAQ.
-        :return: FAQ
+        :return: FaqResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -236,7 +236,7 @@ class FAQApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='FAQ',
+                                            response_type='FaqResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
@@ -257,7 +257,7 @@ class FAQApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int id: Id (required)
-        :return: FAQ
+        :return: FaqResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -313,12 +313,12 @@ class FAQApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='FAQ',
+                                            response_type='FaqResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get10(self, **kwargs):
+    def listar_using_get11(self, **kwargs):
         """
         Lista FAQs
         Lista todas as FAQs
@@ -329,7 +329,7 @@ class FAQApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get10(callback=callback_function)
+        >>> thread = api.listar_using_get11(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -342,7 +342,7 @@ class FAQApi(object):
         :param str plataforma: Plataforma em que a FAQ se encaixa.
         :param str categoria: Categoria de assunto do qual a FAQ se trata.
         :param str status: Status descrevendo a situa\u00C3\u00A7\u00C3\u00A3o atual da FAQ.
-        :return: PageFaqs
+        :return: PageFaqResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -355,7 +355,7 @@ class FAQApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get10" % key
+                    " to method listar_using_get11" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -411,7 +411,7 @@ class FAQApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='PageFaqs',
+                                            response_type='PageFaqResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response

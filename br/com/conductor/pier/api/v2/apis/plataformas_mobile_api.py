@@ -62,7 +62,7 @@ class PlataformasMobileApi(object):
             for asynchronous request. (optional)
         :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Plataforma (id). (required)
         :param PlataformaMobileUpdate update: update (required)
-        :return: PlataformaMobile
+        :return: PlataformaMobileResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -123,12 +123,12 @@ class PlataformasMobileApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='PlataformaMobile',
+                                            response_type='PlataformaMobileResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get15(self, **kwargs):
+    def listar_using_get16(self, **kwargs):
         """
         Lista as plataformas mobile cadastradas
         Este m\u00C3\u00A9todo permite que sejam listadas as plataformas mobile existentes na base do PIER.
@@ -139,14 +139,14 @@ class PlataformasMobileApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get15(callback=callback_function)
+        >>> thread = api.listar_using_get16(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
         :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
         :param str nome: Nome da Plataforma Mobile
-        :return: PagePlataformasMobile
+        :return: PagePlataformaMobileResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -159,7 +159,7 @@ class PlataformasMobileApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get15" % key
+                    " to method listar_using_get16" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -203,7 +203,7 @@ class PlataformasMobileApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='PagePlataformasMobile',
+                                            response_type='PagePlataformaMobileResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
@@ -224,7 +224,7 @@ class PlataformasMobileApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param PlataformaMobilePersist persist: persist (required)
-        :return: PlataformaMobile
+        :return: PlataformaMobileResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -280,7 +280,7 @@ class PlataformasMobileApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='PlataformaMobile',
+                                            response_type='PlataformaMobileResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response

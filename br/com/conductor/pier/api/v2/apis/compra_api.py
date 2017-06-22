@@ -61,8 +61,8 @@ class CompraApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int id_conta: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Conta. (required)
-        :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da compra. (required)
-        :param int quantidade_parcelas: Quantidade de parcelas para serem antecipadas (quantidadeParcelas). (required)
+        :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do evento. (required)
+        :param int quantidade_parcelas: Quantidade de parcelas para serem antecipadas. (required)
         :return: AntecipacaoResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -134,7 +134,7 @@ class CompraApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get5(self, id_conta, **kwargs):
+    def listar_using_get6(self, id_conta, **kwargs):
         """
         Listar compras
         Lista as compras de uma conta.
@@ -145,7 +145,7 @@ class CompraApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get5(id_conta, callback=callback_function)
+        >>> thread = api.listar_using_get6(id_conta, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -155,13 +155,13 @@ class CompraApi(object):
         :param int id_compra: C\u00C3\u00B3digo identificador da Compra.
         :param bool parcelada: Indica se a compra \u00C3\u00A9 parcelada.
         :param bool juros: Indica se a compra \u00C3\u00A9 com ou sem juros.
-        :param str tipo_transacao: Indica se a compra \u00C3\u00A9 ON-US ou OFF-US
-        :return: PageCompras
+        :param str tipo_origem_transacao: Indica se a compra \u00C3\u00A9 ON-US ou OFF-US
+        :return: PageCompraResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['id_conta', 'page', 'limit', 'id_compra', 'parcelada', 'juros', 'tipo_transacao']
+        all_params = ['id_conta', 'page', 'limit', 'id_compra', 'parcelada', 'juros', 'tipo_origem_transacao']
         all_params.append('callback')
 
         params = locals()
@@ -169,14 +169,14 @@ class CompraApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get5" % key
+                    " to method listar_using_get6" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id_conta' is set
         if ('id_conta' not in params) or (params['id_conta'] is None):
-            raise ValueError("Missing the required parameter `id_conta` when calling `listar_using_get5`")
+            raise ValueError("Missing the required parameter `id_conta` when calling `listar_using_get6`")
 
         resource_path = '/api/compras'.replace('{format}', 'json')
         path_params = {}
@@ -194,8 +194,8 @@ class CompraApi(object):
             query_params['parcelada'] = params['parcelada']
         if 'juros' in params:
             query_params['juros'] = params['juros']
-        if 'tipo_transacao' in params:
-            query_params['tipoTransacao'] = params['tipo_transacao']
+        if 'tipo_origem_transacao' in params:
+            query_params['tipoOrigemTransacao'] = params['tipo_origem_transacao']
 
         header_params = {}
 
@@ -224,7 +224,7 @@ class CompraApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='PageCompras',
+                                            response_type='PageCompraResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
@@ -232,7 +232,7 @@ class CompraApi(object):
     def simular_antecipacao_using_get(self, id_conta, id, **kwargs):
         """
         Simular antecipa\u00C3\u00A7\u00C3\u00A3o de parcelas
-        Simula a antecipa\u00C3\u00A7\u00C3\u00A3o de parcelas de uma compra, listando todos os planos de parcelamento dispon\u00C3\u00ADveis.
+        Simula a antecipa\u00C3\u00A7\u00C3\u00A3o de parcelas de um evento, listando todos os planos de parcelamento dispon\u00C3\u00ADveis.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -244,8 +244,8 @@ class CompraApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param int id_conta: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da conta (id). (required)
-        :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da compra. (required)
+        :param int id_conta: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da conta. (required)
+        :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do evento. (required)
         :return: AntecipacaoSimuladaResponse
                  If the method is called asynchronously,
                  returns the request thread.

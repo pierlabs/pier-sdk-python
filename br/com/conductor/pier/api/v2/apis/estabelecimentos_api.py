@@ -61,7 +61,7 @@ class EstabelecimentosApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Terminal (id). (required)
-        :return: Terminal
+        :return: TerminalResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -117,7 +117,7 @@ class EstabelecimentosApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='Terminal',
+                                            response_type='TerminalResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
@@ -138,7 +138,7 @@ class EstabelecimentosApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int id: Id (required)
-        :return: Estabelecimento
+        :return: EstabelecimentoResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -194,101 +194,12 @@ class EstabelecimentosApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='Estabelecimento',
+                                            response_type='EstabelecimentoResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get22(self, **kwargs):
-        """
-        Lista os Terminais cadastrados no Emissor
-        Este m\u00C3\u00A9todo permite que sejam listados os terminais existentes na base de dados do Emissor.
-
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
-        >>> thread = api.listar_using_get22(callback=callback_function)
-
-        :param callback function: The callback function
-            for asynchronous request. (optional)
-        :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
-        :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
-        :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Terminal (id).
-        :param str terminal: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do terminal.
-        :param int numero_estabelecimento: N\u00C3\u00BAmero do estabelecimento a qual o terminal pertence.
-        :param int id_estabelecimento: N\u00C3\u00BAmero de identifica\u00C3\u00A7\u00C3\u00A3o do estabelecimento a qual o terminal pertence.
-        :return: PageTerminal
-                 If the method is called asynchronously,
-                 returns the request thread.
-        """
-
-        all_params = ['page', 'limit', 'id', 'terminal', 'numero_estabelecimento', 'id_estabelecimento']
-        all_params.append('callback')
-
-        params = locals()
-        for key, val in iteritems(params['kwargs']):
-            if key not in all_params:
-                raise TypeError(
-                    "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get22" % key
-                )
-            params[key] = val
-        del params['kwargs']
-
-
-        resource_path = '/api/terminais'.replace('{format}', 'json')
-        path_params = {}
-
-        query_params = {}
-        if 'page' in params:
-            query_params['page'] = params['page']
-        if 'limit' in params:
-            query_params['limit'] = params['limit']
-        if 'id' in params:
-            query_params['id'] = params['id']
-        if 'terminal' in params:
-            query_params['terminal'] = params['terminal']
-        if 'numero_estabelecimento' in params:
-            query_params['numeroEstabelecimento'] = params['numero_estabelecimento']
-        if 'id_estabelecimento' in params:
-            query_params['idEstabelecimento'] = params['id_estabelecimento']
-
-        header_params = {}
-
-        form_params = []
-        local_var_files = {}
-
-        body_params = None
-
-        # HTTP header `Accept`
-        header_params['Accept'] = self.api_client.\
-            select_header_accept(['application/json'])
-        if not header_params['Accept']:
-            del header_params['Accept']
-
-        # HTTP header `Content-Type`
-        header_params['Content-Type'] = self.api_client.\
-            select_header_content_type(['application/json'])
-
-        # Authentication setting
-        auth_settings = []
-
-        response = self.api_client.call_api(resource_path, 'GET',
-                                            path_params,
-                                            query_params,
-                                            header_params,
-                                            body=body_params,
-                                            post_params=form_params,
-                                            files=local_var_files,
-                                            response_type='PageTerminal',
-                                            auth_settings=auth_settings,
-                                            callback=params.get('callback'))
-        return response
-
-    def listar_using_get9(self, **kwargs):
+    def listar_using_get10(self, **kwargs):
         """
         Lista Estabelecimentos
         Lista todas os Estabelecimentos
@@ -299,7 +210,7 @@ class EstabelecimentosApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get9(callback=callback_function)
+        >>> thread = api.listar_using_get10(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -324,7 +235,7 @@ class EstabelecimentosApi(object):
         :param int flag_arquivo_secr_fazenda: Indica se o estabelecimento ser\u00C3\u00A1 inclu\u00C3\u00ADdo no arquivo de registro para a Secretaria da Fazenda Estadual.
         :param int flag_cartao_digitado: Indica se o estabelecimento poder\u00C3\u00A1 originar transa\u00C3\u00A7\u00C3\u00B5es sem a leitura da tarja ou do chip do cart\u00C3\u00A3o.
         :param int inativo: Indica se o estabelecimento est\u00C3\u00A1 inativo.
-        :return: PageEstabelecimentos
+        :return: PageEstabelecimentoResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -337,7 +248,7 @@ class EstabelecimentosApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get9" % key
+                    " to method listar_using_get10" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -417,7 +328,96 @@ class EstabelecimentosApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='PageEstabelecimentos',
+                                            response_type='PageEstabelecimentoResponse',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
+    def listar_using_get23(self, **kwargs):
+        """
+        Lista os Terminais cadastrados no Emissor
+        Este m\u00C3\u00A9todo permite que sejam listados os terminais existentes na base de dados do Emissor.
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.listar_using_get23(callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
+        :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
+        :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Terminal (id).
+        :param str terminal: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do terminal.
+        :param int numero_estabelecimento: N\u00C3\u00BAmero do estabelecimento a qual o terminal pertence.
+        :param int id_estabelecimento: N\u00C3\u00BAmero de identifica\u00C3\u00A7\u00C3\u00A3o do estabelecimento a qual o terminal pertence.
+        :return: PageTerminalResponse
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['page', 'limit', 'id', 'terminal', 'numero_estabelecimento', 'id_estabelecimento']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method listar_using_get23" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+
+        resource_path = '/api/terminais'.replace('{format}', 'json')
+        path_params = {}
+
+        query_params = {}
+        if 'page' in params:
+            query_params['page'] = params['page']
+        if 'limit' in params:
+            query_params['limit'] = params['limit']
+        if 'id' in params:
+            query_params['id'] = params['id']
+        if 'terminal' in params:
+            query_params['terminal'] = params['terminal']
+        if 'numero_estabelecimento' in params:
+            query_params['numeroEstabelecimento'] = params['numero_estabelecimento']
+        if 'id_estabelecimento' in params:
+            query_params['idEstabelecimento'] = params['id_estabelecimento']
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = []
+
+        response = self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='PageTerminalResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response

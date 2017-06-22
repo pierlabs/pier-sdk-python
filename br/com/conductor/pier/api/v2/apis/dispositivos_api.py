@@ -61,7 +61,7 @@ class DispositivosApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Plataforma (id). (required)
-        :return: Dispositivo
+        :return: DispositivoResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -117,7 +117,7 @@ class DispositivosApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='Dispositivo',
+                                            response_type='DispositivoResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
@@ -138,7 +138,7 @@ class DispositivosApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Plataforma (id). (required)
-        :return: Dispositivo
+        :return: DispositivoResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -194,12 +194,12 @@ class DispositivosApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='Dispositivo',
+                                            response_type='DispositivoResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get7(self, **kwargs):
+    def listar_using_get8(self, **kwargs):
         """
         Lista os dispositivos cadastrados
         Este m\u00C3\u00A9todo permite que sejam listados os dispositivos existentes na base do PIER.
@@ -210,7 +210,7 @@ class DispositivosApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get7(callback=callback_function)
+        >>> thread = api.listar_using_get8(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -221,7 +221,7 @@ class DispositivosApi(object):
         :param int id_aplicacao_mobile: Identificador da aplica\u00C3\u00A7\u00C3\u00A3o
         :param str data_criacao: Apresenta a data e em que o registro foi criado.
         :param str data_desativacao: Apresenta a data e em que o registro foi desativado.
-        :return: PageDispositivos
+        :return: PageDispositivoResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -234,7 +234,7 @@ class DispositivosApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get7" % key
+                    " to method listar_using_get8" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -286,7 +286,7 @@ class DispositivosApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='PageDispositivos',
+                                            response_type='PageDispositivoResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
@@ -307,7 +307,7 @@ class DispositivosApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param DispositivoPersist persist: persist (required)
-        :return: Dispositivo
+        :return: DispositivoResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -363,7 +363,7 @@ class DispositivosApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='Dispositivo',
+                                            response_type='DispositivoResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response

@@ -168,7 +168,7 @@ class ContaApi(object):
         :param float limite_internacional_parcelas: Quando utilizado pelo emissor, este campo apresenta o valor do limite de cr\u00C3\u00A9dito que portador pode acumular a partir da soma das parcelas das compras internacionais que forem realizadas nesta modalidade. (required)
         :param float limite_internacional_saque_global: Quando utilizado pelo emissor, este campo apresenta o valor do limite de cr\u00C3\u00A9dito que o portador pode utilizar para realizar transa\u00C3\u00A7\u00C3\u00B5es de Saque Internacional. (required)
         :param float limite_internacional_saque_periodo: Quando utilizado pelo emissor, este campo apresenta o valor do limite de cr\u00C3\u00A9dito que o portador pode utilizar para realizar transa\u00C3\u00A7\u00C3\u00B5es de Saque Internacional dentro de cada ciclo de faturamento. (required)
-        :return: LimiteDisponibilidade
+        :return: LimiteDisponibilidadeResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -284,7 +284,7 @@ class ContaApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='LimiteDisponibilidade',
+                                            response_type='LimiteDisponibilidadeResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
@@ -548,7 +548,7 @@ class ContaApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int id: Id Conta (required)
-        :return: BoletoDeFatura
+        :return: BoletoResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -604,7 +604,7 @@ class ContaApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='BoletoDeFatura',
+                                            response_type='BoletoResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
@@ -1040,7 +1040,7 @@ class ContaApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int id: Id Conta (required)
-        :return: LimiteDisponibilidade
+        :return: LimiteDisponibilidadeResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1096,7 +1096,7 @@ class ContaApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='LimiteDisponibilidade',
+                                            response_type='LimiteDisponibilidadeResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
@@ -1119,7 +1119,7 @@ class ContaApi(object):
         :param int id: ID da conta a ser consultada. (required)
         :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
         :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
-        :return: PageTaxasRefinanciamento
+        :return: PageTaxasRefinanciamentoResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1179,7 +1179,7 @@ class ContaApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='PageTaxasRefinanciamento',
+                                            response_type='PageTaxasRefinanciamentoResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
@@ -1202,7 +1202,7 @@ class ContaApi(object):
         :param int id: Id Conta (required)
         :param int id_transferencia: Id Transfer\u00C3\u00AAncia (required)
         :param int id_conta_bancaria_destino: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da conta banc\u00C3\u00A1ria de destino (id)
-        :return: LinkTransferenciaBancariaResponse
+        :return: TransferenciaBancariaResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1265,7 +1265,7 @@ class ContaApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='LinkTransferenciaBancariaResponse',
+                                            response_type='TransferenciaBancariaResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
@@ -1287,7 +1287,7 @@ class ContaApi(object):
             for asynchronous request. (optional)
         :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da conta (id). (required)
         :param int id_transferencia: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da transfer\u00C3\u00AAncia (id_transferencia). (required)
-        :return: PageTransferencias
+        :return: PageTransferenciaResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1348,7 +1348,7 @@ class ContaApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='PageTransferencias',
+                                            response_type='PageTransferenciaResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
@@ -1525,7 +1525,7 @@ class ContaApi(object):
         :param int id: Id Conta (required)
         :param float valor: Atributo que representa o valor do Boleto Emitido (required)
         :param str data_vencimento: Atributo que representa a data de vencimento do boleto (required)
-        :return: BoletoDeFatura
+        :return: BoletoResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1591,7 +1591,7 @@ class ContaApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='BoletoDeFatura',
+                                            response_type='BoletoResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
@@ -1614,7 +1614,7 @@ class ContaApi(object):
         :param int id: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da conta (id). (required)
         :param int id_pessoa: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da pessoa (id). (required)
         :param int id_tipo_plastico: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do TipoPlastico (id).
-        :return: CartaoImpressao
+        :return: CartaoImpressaoResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1677,7 +1677,7 @@ class ContaApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='CartaoImpressao',
+                                            response_type='CartaoImpressaoResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
@@ -1699,7 +1699,7 @@ class ContaApi(object):
             for asynchronous request. (optional)
         :param int id: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da conta (id). (required)
         :param str data_validade: Data de Validade (required)
-        :return: CartaoImpressao
+        :return: CartaoImpressaoResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1760,7 +1760,7 @@ class ContaApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='CartaoImpressao',
+                                            response_type='CartaoImpressaoResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
@@ -1784,7 +1784,7 @@ class ContaApi(object):
         :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
         :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
         :param str data_vencimento: Apresenta a data de vencimento da fatura.
-        :return: PageFaturasConsignadas
+        :return: PageFaturaConsignadaResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1846,7 +1846,7 @@ class ContaApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='PageFaturasConsignadas',
+                                            response_type='PageFaturaConsignadaResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
@@ -1870,7 +1870,7 @@ class ContaApi(object):
         :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
         :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
         :param str data_vencimento: Data de Vencimento da Fatura.
-        :return: PageFaturas
+        :return: PageFaturaResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1932,7 +1932,7 @@ class ContaApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='PageFaturas',
+                                            response_type='PageFaturaResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
@@ -1955,7 +1955,7 @@ class ContaApi(object):
         :param int id: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da conta (id). (required)
         :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
         :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
-        :return: PageHistoricoEventos
+        :return: PageHistoricoEventosResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -2015,7 +2015,7 @@ class ContaApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='PageHistoricoEventos',
+                                            response_type='PageHistoricoEventosResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
@@ -2038,7 +2038,7 @@ class ContaApi(object):
         :param int id: Id Conta (required)
         :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
         :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
-        :return: LinkPageHistoricoAssessoriaResponse
+        :return: PageHistoricoAssessoriaResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -2098,7 +2098,7 @@ class ContaApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='LinkPageHistoricoAssessoriaResponse',
+                                            response_type='PageHistoricoAssessoriaResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
@@ -2119,7 +2119,7 @@ class ContaApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int id: Id Conta (required)
-        :return: PageHistoricoAtraso
+        :return: PageHistoricoAtrasoFaturaResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -2175,7 +2175,7 @@ class ContaApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='PageHistoricoAtraso',
+                                            response_type='PageHistoricoAtrasoFaturaResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
@@ -2200,7 +2200,7 @@ class ContaApi(object):
         :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
         :param str data_inicio: Data de in\u00C3\u00ADcio da consulta do extrato no formato yyyy-MM-dd (Par\u00C3\u00A2mentro Ignorado se dataFim n\u00C3\u00A3o for definida).
         :param str data_fim: Data fim da consulta do extrato no formato yyyy-MM-dd  (Par\u00C3\u00A2mentro Ignorado se dataInicio n\u00C3\u00A3o for definida).
-        :return: PageTransacoesCorrentes
+        :return: PageTransacoesCorrentesResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -2264,7 +2264,7 @@ class ContaApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='PageTransacoesCorrentes',
+                                            response_type='PageTransacoesCorrentesResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
@@ -2290,7 +2290,7 @@ class ContaApi(object):
         :param str data_vencimento: Data de vencimento do extrato no formato yyyy-MM-dd.
         :param str data_inicio: Data de in\u00C3\u00ADcio da consulta do extrato no formato yyyy-MM-dd (Ignorado quando o par\u00C3\u00A2mentro dataVencimento \u00C3\u00A9 usado).
         :param str data_fim: Data fim da consulta do extrato no formato yyyy-MM-dd  (Ignorado quando o par\u00C3\u00A2mentro dataVencimento \u00C3\u00A9 usado).
-        :return: PageTransacoesCorrentes
+        :return: PageTransacoesCorrentesResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -2356,12 +2356,12 @@ class ContaApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='PageTransacoesCorrentes',
+                                            response_type='PageTransacoesCorrentesResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get27(self, id, **kwargs):
+    def listar_using_get28(self, id, **kwargs):
         """
         Listar as transfer\u00C3\u00AAncias banc\u00C3\u00A1rias realizadas
         Este recurso tem como objetivo permitir que o portador de um Cart\u00C3\u00A3o possa consultar uma lista das Transfer\u00C3\u00AAncias Banc\u00C3\u00A1rias para os Favorecidos cadastrados.
@@ -2372,7 +2372,7 @@ class ContaApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get27(id, callback=callback_function)
+        >>> thread = api.listar_using_get28(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -2380,7 +2380,7 @@ class ContaApi(object):
         :param int id_conta_bancaria_destino: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da conta banc\u00C3\u00A1ria de destino (id)
         :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
         :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
-        :return: LinkPageTransferenciaBancariaResponse
+        :return: PageTransferenciaBancariaResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -2393,14 +2393,14 @@ class ContaApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get27" % key
+                    " to method listar_using_get28" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `listar_using_get27`")
+            raise ValueError("Missing the required parameter `id` when calling `listar_using_get28`")
 
         resource_path = '/api/contas/{id}/transferencias-creditos-contas-bancarias'.replace('{format}', 'json')
         path_params = {}
@@ -2442,12 +2442,12 @@ class ContaApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='LinkPageTransferenciaBancariaResponse',
+                                            response_type='PageTransferenciaBancariaResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get28(self, id, **kwargs):
+    def listar_using_get29(self, id, **kwargs):
         """
         Lista as transfer\u00C3\u00AAncias realizadas pela conta
         Este m\u00C3\u00A9todo permite que sejam listadas as transfer\u00C3\u00AAncias realizadas pela conta existentes na base do emissor.
@@ -2458,7 +2458,7 @@ class ContaApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get28(id, callback=callback_function)
+        >>> thread = api.listar_using_get29(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -2470,7 +2470,7 @@ class ContaApi(object):
         :param int id_conta_destino: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da conta em que o valor ser\u00C3\u00A1 creditado para a transfer\u00C3\u00AAncia. (id).
         :param float valor_transferencia: Valor estabelecido para ser transferido.
         :param str data_transferencia: Data estabelecida para ocorrer a transfer\u00C3\u00AAncia.
-        :return: PageTransferencias
+        :return: PageTransferenciaResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -2483,14 +2483,14 @@ class ContaApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get28" % key
+                    " to method listar_using_get29" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `listar_using_get28`")
+            raise ValueError("Missing the required parameter `id` when calling `listar_using_get29`")
 
         resource_path = '/api/contas/{id}/transferencias-creditos-cartoes'.replace('{format}', 'json')
         path_params = {}
@@ -2540,12 +2540,12 @@ class ContaApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='PageTransferencias',
+                                            response_type='PageTransferenciaResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get6(self, **kwargs):
+    def listar_using_get7(self, **kwargs):
         """
         Lista contas existentes na base de dados do Emissor
         Este recurso permite listar contas existentes na base de dados do Emissor.
@@ -2556,7 +2556,7 @@ class ContaApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get6(callback=callback_function)
+        >>> thread = api.listar_using_get7(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -2571,7 +2571,7 @@ class ContaApi(object):
         :param str data_status_conta: Apresenta a data em que o idStatusConta atual fora atribu\u00C3\u00ADdo para ela.
         :param str data_cadastro: Apresenta a data em que o cart\u00C3\u00A3o foi gerado.
         :param str data_ultima_alteracao_vencimento: Apresenta a data da ultima altera\u00C3\u00A7\u00C3\u00A3o de vencimento.
-        :return: PageContas
+        :return: PageContaResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -2584,7 +2584,7 @@ class ContaApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get6" % key
+                    " to method listar_using_get7" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -2644,15 +2644,15 @@ class ContaApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='PageContas',
+                                            response_type='PageContaResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
 
     def reativar_using_post(self, id, **kwargs):
         """
-        Realiza a reativa\u00C3\u00A7\u00C3\u00A3o de contas que foram desativadas por inadimpl\u00C3\u00AAncia
-        Este recurso permite reativar contas que foram desativadas por inadimpl\u00C3\u00AAncia. Para isso, ser\u00C3\u00A1 preciso informar o c\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da Conta (id).
+        Realiza a reativa\u00C3\u00A7\u00C3\u00A3o de contas.
+        Este recurso permite reativar contas. Para isso, ser\u00C3\u00A1 preciso informar o c\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da Conta (id).
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -2826,7 +2826,7 @@ class ContaApi(object):
             for asynchronous request. (optional)
         :param int id: Id Conta (required)
         :param TransferenciaBancariaPersist transferencia_bancaria_persist: transferenciaBancariaPersist (required)
-        :return: LinkTransferenciaBancariaResponse
+        :return: TransferenciaBancariaResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -2887,7 +2887,7 @@ class ContaApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='LinkTransferenciaBancariaResponse',
+                                            response_type='TransferenciaBancariaResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
@@ -2910,7 +2910,7 @@ class ContaApi(object):
         :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da conta do cliente portador do cart\u00C3\u00A3o que ser\u00C3\u00A1 debitado (id). (required)
         :param int id_conta_destino: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do cliente portador do cart\u00C3\u00A3o que ser\u00C3\u00A1 creditado (id). (required)
         :param float valor_transferencia: Valor da Transfer\u00C3\u00AAncia. (required)
-        :return: PageTransferencias
+        :return: PageTransferenciaResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -2976,7 +2976,7 @@ class ContaApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='PageTransferencias',
+                                            response_type='PageTransferenciaResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response

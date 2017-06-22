@@ -48,7 +48,7 @@ class CompraResponse(object):
             'numero_parcelas': 'int',
             'numero_parcelas_antecipaveis': 'int',
             'nome_estabelecimento': 'str',
-            'tipo_transacao': 'str',
+            'tipo_origem_transacao': 'str',
             'cidade': 'str',
             'pais': 'str',
             'latitude': 'str',
@@ -74,7 +74,7 @@ class CompraResponse(object):
             'numero_parcelas': 'numeroParcelas',
             'numero_parcelas_antecipaveis': 'numeroParcelasAntecipaveis',
             'nome_estabelecimento': 'nomeEstabelecimento',
-            'tipo_transacao': 'tipoTransacao',
+            'tipo_origem_transacao': 'tipoOrigemTransacao',
             'cidade': 'cidade',
             'pais': 'pais',
             'latitude': 'latitude',
@@ -99,7 +99,7 @@ class CompraResponse(object):
         self._numero_parcelas = None
         self._numero_parcelas_antecipaveis = None
         self._nome_estabelecimento = None
-        self._tipo_transacao = None
+        self._tipo_origem_transacao = None
         self._cidade = None
         self._pais = None
         self._latitude = None
@@ -355,26 +355,26 @@ class CompraResponse(object):
         self._nome_estabelecimento = nome_estabelecimento
 
     @property
-    def tipo_transacao(self):
+    def tipo_origem_transacao(self):
         """
-        Gets the tipo_transacao of this CompraResponse.
+        Gets the tipo_origem_transacao of this CompraResponse.
         Tipo de transa\u00C3\u00A7\u00C3\u00A3o da compra.
 
-        :return: The tipo_transacao of this CompraResponse.
+        :return: The tipo_origem_transacao of this CompraResponse.
         :rtype: str
         """
-        return self._tipo_transacao
+        return self._tipo_origem_transacao
 
-    @tipo_transacao.setter
-    def tipo_transacao(self, tipo_transacao):
+    @tipo_origem_transacao.setter
+    def tipo_origem_transacao(self, tipo_origem_transacao):
         """
-        Sets the tipo_transacao of this CompraResponse.
+        Sets the tipo_origem_transacao of this CompraResponse.
         Tipo de transa\u00C3\u00A7\u00C3\u00A3o da compra.
 
-        :param tipo_transacao: The tipo_transacao of this CompraResponse.
+        :param tipo_origem_transacao: The tipo_origem_transacao of this CompraResponse.
         :type: str
         """
-        self._tipo_transacao = tipo_transacao
+        self._tipo_origem_transacao = tipo_origem_transacao
 
     @property
     def cidade(self):

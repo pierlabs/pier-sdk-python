@@ -65,7 +65,7 @@ class NotificacoesApi(object):
         :param str data: Data
         :param str texto_status: TextoStatus
         :param str operadora: Operadora
-        :return: SMS
+        :return: NotificacaoSMSResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -126,7 +126,7 @@ class NotificacoesApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='SMS',
+                                            response_type='NotificacaoSMSResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
@@ -153,7 +153,7 @@ class NotificacoesApi(object):
         :param str status: Status de envio da notifica\u00C3\u00A7\u00C3\u00A3o
         :param str plataforma: Plataforma de Push notifications.
         :param str protocolo: N\u00C3\u00BAmero do protocolo de envio de notifica\u00C3\u00A7\u00C3\u00B5es
-        :return: PagePush
+        :return: PagePushResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -218,7 +218,7 @@ class NotificacoesApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='PagePush',
+                                            response_type='PagePushResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
@@ -246,7 +246,7 @@ class NotificacoesApi(object):
         :param str operadora: Nome da operadora a qual a notifica\u00C3\u00A7\u00C3\u00A3o foi enviada.
         :param str protocolo: N\u00C3\u00BAmero do protocolo de envio de notifica\u00C3\u00A7\u00C3\u00B5es
         :param int nsu: Apresenta o nsu da notifica\u00C3\u00A7\u00C3\u00A3o
-        :return: PageSMS
+        :return: PageSMSResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -313,7 +313,7 @@ class NotificacoesApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='PageSMS',
+                                            response_type='PageSMSResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
@@ -336,7 +336,7 @@ class NotificacoesApi(object):
         :param str nsu: Seu n\u00C3\u00BAmero
         :param str data: Data
         :param str resposta: TextoStatus
-        :return: SMS
+        :return: NotificacaoSMSResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -393,7 +393,7 @@ class NotificacoesApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='SMS',
+                                            response_type='NotificacaoSMSResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
@@ -414,7 +414,7 @@ class NotificacoesApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param list[PushFCMEGCM] push_persists: pushPersists (required)
-        :return: NotificacaoSMSResponse
+        :return: NotificacaoResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -470,7 +470,7 @@ class NotificacoesApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='NotificacaoSMSResponse',
+                                            response_type='NotificacaoResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
@@ -491,7 +491,7 @@ class NotificacoesApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param list[PushFCMEGCM] push_persists: pushPersists (required)
-        :return: NotificacaoSMSResponse
+        :return: NotificacaoResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -547,7 +547,7 @@ class NotificacoesApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='NotificacaoSMSResponse',
+                                            response_type='NotificacaoResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
@@ -568,7 +568,7 @@ class NotificacoesApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param list[PushAPNS] push_persists: pushPersists (required)
-        :return: NotificacaoSMSResponse
+        :return: NotificacaoResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -624,7 +624,7 @@ class NotificacoesApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='NotificacaoSMSResponse',
+                                            response_type='NotificacaoResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
@@ -645,7 +645,7 @@ class NotificacoesApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param list[NotificacaoSMSBody] lista_sms: listaSMS (required)
-        :return: NotificacaoSMSResponse
+        :return: NotificacaoResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -701,7 +701,7 @@ class NotificacoesApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='NotificacaoSMSResponse',
+                                            response_type='NotificacaoResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response

@@ -62,7 +62,7 @@ class AplicacoesMobileApi(object):
             for asynchronous request. (optional)
         :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Aplicacao (id). (required)
         :param AplicacaoMobileUpdate update: update (required)
-        :return: AplicacaoMobile
+        :return: AplicacaoMobileResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -123,7 +123,7 @@ class AplicacoesMobileApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='AplicacaoMobile',
+                                            response_type='AplicacaoMobileResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
@@ -147,7 +147,7 @@ class AplicacoesMobileApi(object):
         :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
         :param str id: Identificador da Aplicacao Mobile
         :param int id_plataforma_mobile: Identificador da Plataforma Mobile
-        :return: PageAplicacoesMobile
+        :return: PageAplicacaoMobileResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -206,7 +206,7 @@ class AplicacoesMobileApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='PageAplicacoesMobile',
+                                            response_type='PageAplicacaoMobileResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
@@ -227,7 +227,7 @@ class AplicacoesMobileApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param AplicacaoMobilePersist persist: persist (required)
-        :return: AplicacaoMobile
+        :return: AplicacaoMobileResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -283,7 +283,7 @@ class AplicacoesMobileApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='AplicacaoMobile',
+                                            response_type='AplicacaoMobileResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response

@@ -63,7 +63,7 @@ class RiscoFraudeDetalhadoResponse(object):
             'cpf': 'str',
             'cnpj': 'str',
             'email': 'str',
-            'tefefones': 'list[Telefone]'
+            'tefefones': 'list[TelefoneResponse]'
         }
 
         self.attribute_map = {
@@ -703,7 +703,7 @@ class RiscoFraudeDetalhadoResponse(object):
         Lista contendo idTipoTelefone, tipoTelefone (Descricao), DDD, Numero, Ramal associados a Pessoa portadora do Cart\u00C3\u00A3o
 
         :return: The tefefones of this RiscoFraudeDetalhadoResponse.
-        :rtype: list[Telefone]
+        :rtype: list[TelefoneResponse]
         """
         return self._tefefones
 
@@ -714,7 +714,7 @@ class RiscoFraudeDetalhadoResponse(object):
         Lista contendo idTipoTelefone, tipoTelefone (Descricao), DDD, Numero, Ramal associados a Pessoa portadora do Cart\u00C3\u00A3o
 
         :param tefefones: The tefefones of this RiscoFraudeDetalhadoResponse.
-        :type: list[Telefone]
+        :type: list[TelefoneResponse]
         """
         self._tefefones = tefefones
 
