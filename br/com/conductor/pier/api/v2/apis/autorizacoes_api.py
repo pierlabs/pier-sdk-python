@@ -122,7 +122,7 @@ class AutorizacoesApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def cancelar_using_post(self, cancelamento_request, **kwargs):
+    def cancelar_using_post2(self, cancelamento_request, **kwargs):
         """
         Cancela transa\u00C3\u00A7\u00C3\u00A3o financeira
         Este m\u00C3\u00A9todo permite que seja cancelada uma transa\u00C3\u00A7\u00C3\u00A3o.
@@ -133,7 +133,7 @@ class AutorizacoesApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.cancelar_using_post(cancelamento_request, callback=callback_function)
+        >>> thread = api.cancelar_using_post2(cancelamento_request, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -151,14 +151,14 @@ class AutorizacoesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method cancelar_using_post" % key
+                    " to method cancelar_using_post2" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'cancelamento_request' is set
         if ('cancelamento_request' not in params) or (params['cancelamento_request'] is None):
-            raise ValueError("Missing the required parameter `cancelamento_request` when calling `cancelar_using_post`")
+            raise ValueError("Missing the required parameter `cancelamento_request` when calling `cancelar_using_post2`")
 
         resource_path = '/api/cancelar-transacao'.replace('{format}', 'json')
         path_params = {}
@@ -272,8 +272,8 @@ class AutorizacoesApi(object):
 
     def simular_using_post(self, transacoes_request, **kwargs):
         """
-        Simula planos de pagamento
-        Este m\u00C3\u00A9todo permite que seja simulada um plano de pagamento.
+        Simula planos de transa\u00C3\u00A7\u00C3\u00B5es
+        Este m\u00C3\u00A9todo permite que seja simulada um plano de transa\u00C3\u00A7\u00C3\u00B5es.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function

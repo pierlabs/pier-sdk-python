@@ -40,7 +40,7 @@ class PessoaDetalheResponse(object):
             'id_pessoa': 'int',
             'nome_mae': 'str',
             'id_estado_civil': 'int',
-            'profissao': 'str',
+            'id_profissao': 'int',
             'id_natureza_ocupacao': 'int',
             'id_nacionalidade': 'int',
             'numero_agencia': 'int',
@@ -53,7 +53,7 @@ class PessoaDetalheResponse(object):
             'id_pessoa': 'idPessoa',
             'nome_mae': 'nomeMae',
             'id_estado_civil': 'idEstadoCivil',
-            'profissao': 'profissao',
+            'id_profissao': 'idProfissao',
             'id_natureza_ocupacao': 'idNaturezaOcupacao',
             'id_nacionalidade': 'idNacionalidade',
             'numero_agencia': 'numeroAgencia',
@@ -65,7 +65,7 @@ class PessoaDetalheResponse(object):
         self._id_pessoa = None
         self._nome_mae = None
         self._id_estado_civil = None
-        self._profissao = None
+        self._id_profissao = None
         self._id_natureza_ocupacao = None
         self._id_nacionalidade = None
         self._numero_agencia = None
@@ -140,26 +140,26 @@ class PessoaDetalheResponse(object):
         self._id_estado_civil = id_estado_civil
 
     @property
-    def profissao(self):
+    def id_profissao(self):
         """
-        Gets the profissao of this PessoaDetalheResponse.
+        Gets the id_profissao of this PessoaDetalheResponse.
         Profiss\u00C3\u00A3o da pessoa fisica
 
-        :return: The profissao of this PessoaDetalheResponse.
-        :rtype: str
+        :return: The id_profissao of this PessoaDetalheResponse.
+        :rtype: int
         """
-        return self._profissao
+        return self._id_profissao
 
-    @profissao.setter
-    def profissao(self, profissao):
+    @id_profissao.setter
+    def id_profissao(self, id_profissao):
         """
-        Sets the profissao of this PessoaDetalheResponse.
+        Sets the id_profissao of this PessoaDetalheResponse.
         Profiss\u00C3\u00A3o da pessoa fisica
 
-        :param profissao: The profissao of this PessoaDetalheResponse.
-        :type: str
+        :param id_profissao: The id_profissao of this PessoaDetalheResponse.
+        :type: int
         """
-        self._profissao = profissao
+        self._id_profissao = id_profissao
 
     @property
     def id_natureza_ocupacao(self):

@@ -168,7 +168,7 @@ class ContaResponse(object):
     def id_status_conta(self):
         """
         Gets the id_status_conta of this ContaResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Produto a qual o cart\u00C3\u00A3o pertence (id).
+        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do status atribuido a conta.
 
         :return: The id_status_conta of this ContaResponse.
         :rtype: int
@@ -179,7 +179,7 @@ class ContaResponse(object):
     def id_status_conta(self, id_status_conta):
         """
         Sets the id_status_conta of this ContaResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Produto a qual o cart\u00C3\u00A3o pertence (id).
+        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do status atribuido a conta.
 
         :param id_status_conta: The id_status_conta of this ContaResponse.
         :type: int

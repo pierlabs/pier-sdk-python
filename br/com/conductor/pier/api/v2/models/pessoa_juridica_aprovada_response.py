@@ -50,6 +50,9 @@ class PessoaJuridicaAprovadaResponse(object):
             'email': 'str',
             'dia_vencimento': 'int',
             'nome_impresso': 'str',
+            'id_conta': 'int',
+            'id_proposta': 'int',
+            'canal_entrada': 'str',
             'telefones': 'list[TelefonePessoaAprovadaResponse]',
             'enderecos': 'list[EnderecoAprovadoResponse]',
             'socios': 'list[SocioAprovadoResponse]'
@@ -69,6 +72,9 @@ class PessoaJuridicaAprovadaResponse(object):
             'email': 'email',
             'dia_vencimento': 'diaVencimento',
             'nome_impresso': 'nomeImpresso',
+            'id_conta': 'idConta',
+            'id_proposta': 'idProposta',
+            'canal_entrada': 'canalEntrada',
             'telefones': 'telefones',
             'enderecos': 'enderecos',
             'socios': 'socios'
@@ -87,6 +93,9 @@ class PessoaJuridicaAprovadaResponse(object):
         self._email = None
         self._dia_vencimento = None
         self._nome_impresso = None
+        self._id_conta = None
+        self._id_proposta = None
+        self._canal_entrada = None
         self._telefones = None
         self._enderecos = None
         self._socios = None
@@ -95,7 +104,7 @@ class PessoaJuridicaAprovadaResponse(object):
     def id(self):
         """
         Gets the id of this PessoaJuridicaAprovadaResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Endere\u00C3\u00A7o (id)
+        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da pessoa jur\u00C3\u00ADdica (id)
 
         :return: The id of this PessoaJuridicaAprovadaResponse.
         :rtype: int
@@ -106,7 +115,7 @@ class PessoaJuridicaAprovadaResponse(object):
     def id(self, id):
         """
         Sets the id of this PessoaJuridicaAprovadaResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Endere\u00C3\u00A7o (id)
+        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da pessoa jur\u00C3\u00ADdica (id)
 
         :param id: The id of this PessoaJuridicaAprovadaResponse.
         :type: int
@@ -376,6 +385,72 @@ class PessoaJuridicaAprovadaResponse(object):
         :type: str
         """
         self._nome_impresso = nome_impresso
+
+    @property
+    def id_conta(self):
+        """
+        Gets the id_conta of this PessoaJuridicaAprovadaResponse.
+        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da conta cadastrada
+
+        :return: The id_conta of this PessoaJuridicaAprovadaResponse.
+        :rtype: int
+        """
+        return self._id_conta
+
+    @id_conta.setter
+    def id_conta(self, id_conta):
+        """
+        Sets the id_conta of this PessoaJuridicaAprovadaResponse.
+        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da conta cadastrada
+
+        :param id_conta: The id_conta of this PessoaJuridicaAprovadaResponse.
+        :type: int
+        """
+        self._id_conta = id_conta
+
+    @property
+    def id_proposta(self):
+        """
+        Gets the id_proposta of this PessoaJuridicaAprovadaResponse.
+        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da proposta
+
+        :return: The id_proposta of this PessoaJuridicaAprovadaResponse.
+        :rtype: int
+        """
+        return self._id_proposta
+
+    @id_proposta.setter
+    def id_proposta(self, id_proposta):
+        """
+        Sets the id_proposta of this PessoaJuridicaAprovadaResponse.
+        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da proposta
+
+        :param id_proposta: The id_proposta of this PessoaJuridicaAprovadaResponse.
+        :type: int
+        """
+        self._id_proposta = id_proposta
+
+    @property
+    def canal_entrada(self):
+        """
+        Gets the canal_entrada of this PessoaJuridicaAprovadaResponse.
+        Indica o canal pelo qual o cadastro do cliente foi realizado
+
+        :return: The canal_entrada of this PessoaJuridicaAprovadaResponse.
+        :rtype: str
+        """
+        return self._canal_entrada
+
+    @canal_entrada.setter
+    def canal_entrada(self, canal_entrada):
+        """
+        Sets the canal_entrada of this PessoaJuridicaAprovadaResponse.
+        Indica o canal pelo qual o cadastro do cliente foi realizado
+
+        :param canal_entrada: The canal_entrada of this PessoaJuridicaAprovadaResponse.
+        :type: str
+        """
+        self._canal_entrada = canal_entrada
 
     @property
     def telefones(self):

@@ -39,24 +39,45 @@ class OrigemComercialResponse(object):
         self.swagger_types = {
             'id': 'int',
             'nome': 'str',
-            'status': 'int'
+            'descricao': 'str',
+            'produtos_origem': 'list[ProdutoOrigemResponse]',
+            'id_estabelecimento': 'int',
+            'id_tipo_origem_comercial': 'int',
+            'nome_tipo_origem_comercial': 'str',
+            'id_grupo_origem_comercial': 'int',
+            'nome_grupo_origem_comercial': 'str',
+            'status': 'bool'
         }
 
         self.attribute_map = {
             'id': 'id',
             'nome': 'nome',
+            'descricao': 'descricao',
+            'produtos_origem': 'produtosOrigem',
+            'id_estabelecimento': 'idEstabelecimento',
+            'id_tipo_origem_comercial': 'idTipoOrigemComercial',
+            'nome_tipo_origem_comercial': 'nomeTipoOrigemComercial',
+            'id_grupo_origem_comercial': 'idGrupoOrigemComercial',
+            'nome_grupo_origem_comercial': 'nomeGrupoOrigemComercial',
             'status': 'status'
         }
 
         self._id = None
         self._nome = None
+        self._descricao = None
+        self._produtos_origem = None
+        self._id_estabelecimento = None
+        self._id_tipo_origem_comercial = None
+        self._nome_tipo_origem_comercial = None
+        self._id_grupo_origem_comercial = None
+        self._nome_grupo_origem_comercial = None
         self._status = None
 
     @property
     def id(self):
         """
         Gets the id of this OrigemComercialResponse.
-        Id da origem comercial
+        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da Origem Comercial
 
         :return: The id of this OrigemComercialResponse.
         :rtype: int
@@ -67,7 +88,7 @@ class OrigemComercialResponse(object):
     def id(self, id):
         """
         Sets the id of this OrigemComercialResponse.
-        Id da origem comercial
+        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da Origem Comercial
 
         :param id: The id of this OrigemComercialResponse.
         :type: int
@@ -97,13 +118,167 @@ class OrigemComercialResponse(object):
         self._nome = nome
 
     @property
+    def descricao(self):
+        """
+        Gets the descricao of this OrigemComercialResponse.
+        Descri\u00C3\u00A7\u00C3\u00A3o completa do nome da Origem Comercial
+
+        :return: The descricao of this OrigemComercialResponse.
+        :rtype: str
+        """
+        return self._descricao
+
+    @descricao.setter
+    def descricao(self, descricao):
+        """
+        Sets the descricao of this OrigemComercialResponse.
+        Descri\u00C3\u00A7\u00C3\u00A3o completa do nome da Origem Comercial
+
+        :param descricao: The descricao of this OrigemComercialResponse.
+        :type: str
+        """
+        self._descricao = descricao
+
+    @property
+    def produtos_origem(self):
+        """
+        Gets the produtos_origem of this OrigemComercialResponse.
+        Lista de  ProdutosOrigem associados \u00C3\u00A0 Origem comercial
+
+        :return: The produtos_origem of this OrigemComercialResponse.
+        :rtype: list[ProdutoOrigemResponse]
+        """
+        return self._produtos_origem
+
+    @produtos_origem.setter
+    def produtos_origem(self, produtos_origem):
+        """
+        Sets the produtos_origem of this OrigemComercialResponse.
+        Lista de  ProdutosOrigem associados \u00C3\u00A0 Origem comercial
+
+        :param produtos_origem: The produtos_origem of this OrigemComercialResponse.
+        :type: list[ProdutoOrigemResponse]
+        """
+        self._produtos_origem = produtos_origem
+
+    @property
+    def id_estabelecimento(self):
+        """
+        Gets the id_estabelecimento of this OrigemComercialResponse.
+        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do Estabelecimento
+
+        :return: The id_estabelecimento of this OrigemComercialResponse.
+        :rtype: int
+        """
+        return self._id_estabelecimento
+
+    @id_estabelecimento.setter
+    def id_estabelecimento(self, id_estabelecimento):
+        """
+        Sets the id_estabelecimento of this OrigemComercialResponse.
+        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do Estabelecimento
+
+        :param id_estabelecimento: The id_estabelecimento of this OrigemComercialResponse.
+        :type: int
+        """
+        self._id_estabelecimento = id_estabelecimento
+
+    @property
+    def id_tipo_origem_comercial(self):
+        """
+        Gets the id_tipo_origem_comercial of this OrigemComercialResponse.
+        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do Tipo da Origem Comercial
+
+        :return: The id_tipo_origem_comercial of this OrigemComercialResponse.
+        :rtype: int
+        """
+        return self._id_tipo_origem_comercial
+
+    @id_tipo_origem_comercial.setter
+    def id_tipo_origem_comercial(self, id_tipo_origem_comercial):
+        """
+        Sets the id_tipo_origem_comercial of this OrigemComercialResponse.
+        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do Tipo da Origem Comercial
+
+        :param id_tipo_origem_comercial: The id_tipo_origem_comercial of this OrigemComercialResponse.
+        :type: int
+        """
+        self._id_tipo_origem_comercial = id_tipo_origem_comercial
+
+    @property
+    def nome_tipo_origem_comercial(self):
+        """
+        Gets the nome_tipo_origem_comercial of this OrigemComercialResponse.
+        Nome do Tipo da Origem Comercial
+
+        :return: The nome_tipo_origem_comercial of this OrigemComercialResponse.
+        :rtype: str
+        """
+        return self._nome_tipo_origem_comercial
+
+    @nome_tipo_origem_comercial.setter
+    def nome_tipo_origem_comercial(self, nome_tipo_origem_comercial):
+        """
+        Sets the nome_tipo_origem_comercial of this OrigemComercialResponse.
+        Nome do Tipo da Origem Comercial
+
+        :param nome_tipo_origem_comercial: The nome_tipo_origem_comercial of this OrigemComercialResponse.
+        :type: str
+        """
+        self._nome_tipo_origem_comercial = nome_tipo_origem_comercial
+
+    @property
+    def id_grupo_origem_comercial(self):
+        """
+        Gets the id_grupo_origem_comercial of this OrigemComercialResponse.
+        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do Grupo a qual a Origem Comercial pertence
+
+        :return: The id_grupo_origem_comercial of this OrigemComercialResponse.
+        :rtype: int
+        """
+        return self._id_grupo_origem_comercial
+
+    @id_grupo_origem_comercial.setter
+    def id_grupo_origem_comercial(self, id_grupo_origem_comercial):
+        """
+        Sets the id_grupo_origem_comercial of this OrigemComercialResponse.
+        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do Grupo a qual a Origem Comercial pertence
+
+        :param id_grupo_origem_comercial: The id_grupo_origem_comercial of this OrigemComercialResponse.
+        :type: int
+        """
+        self._id_grupo_origem_comercial = id_grupo_origem_comercial
+
+    @property
+    def nome_grupo_origem_comercial(self):
+        """
+        Gets the nome_grupo_origem_comercial of this OrigemComercialResponse.
+        Nome do Grupo a qual a Origem Comercial pertence
+
+        :return: The nome_grupo_origem_comercial of this OrigemComercialResponse.
+        :rtype: str
+        """
+        return self._nome_grupo_origem_comercial
+
+    @nome_grupo_origem_comercial.setter
+    def nome_grupo_origem_comercial(self, nome_grupo_origem_comercial):
+        """
+        Sets the nome_grupo_origem_comercial of this OrigemComercialResponse.
+        Nome do Grupo a qual a Origem Comercial pertence
+
+        :param nome_grupo_origem_comercial: The nome_grupo_origem_comercial of this OrigemComercialResponse.
+        :type: str
+        """
+        self._nome_grupo_origem_comercial = nome_grupo_origem_comercial
+
+    @property
     def status(self):
         """
         Gets the status of this OrigemComercialResponse.
         Status da origem comercial
 
         :return: The status of this OrigemComercialResponse.
-        :rtype: int
+        :rtype: bool
         """
         return self._status
 
@@ -114,7 +289,7 @@ class OrigemComercialResponse(object):
         Status da origem comercial
 
         :param status: The status of this OrigemComercialResponse.
-        :type: int
+        :type: bool
         """
         self._status = status
 

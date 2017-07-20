@@ -128,7 +128,7 @@ class RiscoFraudeDetalhadoResponse(object):
     def id(self):
         """
         Gets the id of this RiscoFraudeDetalhadoResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do risco de fraude (id)
+        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do risco de fraude
 
         :return: The id of this RiscoFraudeDetalhadoResponse.
         :rtype: int
@@ -139,7 +139,7 @@ class RiscoFraudeDetalhadoResponse(object):
     def id(self, id):
         """
         Sets the id of this RiscoFraudeDetalhadoResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do risco de fraude (id)
+        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do risco de fraude
 
         :param id: The id of this RiscoFraudeDetalhadoResponse.
         :type: int
@@ -150,7 +150,7 @@ class RiscoFraudeDetalhadoResponse(object):
     def id_tipo_resolucao(self):
         """
         Gets the id_tipo_resolucao of this RiscoFraudeDetalhadoResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do tipo de resolu\u00C3\u00A7\u00C3\u00A3o atribu\u00C3\u00ADdo ao registro (id)
+        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do tipo de resolu\u00C3\u00A7\u00C3\u00A3o atribu\u00C3\u00ADdo ao registro
 
         :return: The id_tipo_resolucao of this RiscoFraudeDetalhadoResponse.
         :rtype: int
@@ -161,7 +161,7 @@ class RiscoFraudeDetalhadoResponse(object):
     def id_tipo_resolucao(self, id_tipo_resolucao):
         """
         Sets the id_tipo_resolucao of this RiscoFraudeDetalhadoResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do tipo de resolu\u00C3\u00A7\u00C3\u00A3o atribu\u00C3\u00ADdo ao registro (id)
+        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do tipo de resolu\u00C3\u00A7\u00C3\u00A3o atribu\u00C3\u00ADdo ao registro
 
         :param id_tipo_resolucao: The id_tipo_resolucao of this RiscoFraudeDetalhadoResponse.
         :type: int
@@ -194,7 +194,7 @@ class RiscoFraudeDetalhadoResponse(object):
     def flag_alto_risco(self):
         """
         Gets the flag_alto_risco of this RiscoFraudeDetalhadoResponse.
-        Quando ativa, indica que a transa\u00C3\u00A7\u00C3\u00A3o possui um alto risco de fraude e que todas as transa\u00C3\u00A7\u00C3\u00B5es seguintes a ela ser\u00C3\u00A3o negadas at\u00C3\u00A9 que todas as transa\u00C3\u00A7\u00C3\u00B5es classificadas com risco de fraude ser\u00C3\u00A3o analisadas
+        Indica que a transa\u00C3\u00A7\u00C3\u00A3o possui um alto risco de fraude e que todas as transa\u00C3\u00A7\u00C3\u00B5es seguintes a ela ser\u00C3\u00A3o negadas at\u00C3\u00A9 que todas as transa\u00C3\u00A7\u00C3\u00B5es classificadas com risco de fraude sejam analisadas
 
         :return: The flag_alto_risco of this RiscoFraudeDetalhadoResponse.
         :rtype: bool
@@ -205,7 +205,7 @@ class RiscoFraudeDetalhadoResponse(object):
     def flag_alto_risco(self, flag_alto_risco):
         """
         Sets the flag_alto_risco of this RiscoFraudeDetalhadoResponse.
-        Quando ativa, indica que a transa\u00C3\u00A7\u00C3\u00A3o possui um alto risco de fraude e que todas as transa\u00C3\u00A7\u00C3\u00B5es seguintes a ela ser\u00C3\u00A3o negadas at\u00C3\u00A9 que todas as transa\u00C3\u00A7\u00C3\u00B5es classificadas com risco de fraude ser\u00C3\u00A3o analisadas
+        Indica que a transa\u00C3\u00A7\u00C3\u00A3o possui um alto risco de fraude e que todas as transa\u00C3\u00A7\u00C3\u00B5es seguintes a ela ser\u00C3\u00A3o negadas at\u00C3\u00A9 que todas as transa\u00C3\u00A7\u00C3\u00B5es classificadas com risco de fraude sejam analisadas
 
         :param flag_alto_risco: The flag_alto_risco of this RiscoFraudeDetalhadoResponse.
         :type: bool
@@ -216,7 +216,7 @@ class RiscoFraudeDetalhadoResponse(object):
     def id_conta(self):
         """
         Gets the id_conta of this RiscoFraudeDetalhadoResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da conta (id)
+        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da conta
 
         :return: The id_conta of this RiscoFraudeDetalhadoResponse.
         :rtype: int
@@ -227,7 +227,7 @@ class RiscoFraudeDetalhadoResponse(object):
     def id_conta(self, id_conta):
         """
         Sets the id_conta of this RiscoFraudeDetalhadoResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da conta (id)
+        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da conta
 
         :param id_conta: The id_conta of this RiscoFraudeDetalhadoResponse.
         :type: int
@@ -238,7 +238,7 @@ class RiscoFraudeDetalhadoResponse(object):
     def id_cartao(self):
         """
         Gets the id_cartao of this RiscoFraudeDetalhadoResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do cart\u00C3\u00A3o (id)
+        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do cart\u00C3\u00A3o
 
         :return: The id_cartao of this RiscoFraudeDetalhadoResponse.
         :rtype: int
@@ -249,7 +249,7 @@ class RiscoFraudeDetalhadoResponse(object):
     def id_cartao(self, id_cartao):
         """
         Sets the id_cartao of this RiscoFraudeDetalhadoResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do cart\u00C3\u00A3o (id)
+        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do cart\u00C3\u00A3o
 
         :param id_cartao: The id_cartao of this RiscoFraudeDetalhadoResponse.
         :type: int
@@ -260,7 +260,7 @@ class RiscoFraudeDetalhadoResponse(object):
     def id_produto(self):
         """
         Gets the id_produto of this RiscoFraudeDetalhadoResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do produto (id)
+        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do produto
 
         :return: The id_produto of this RiscoFraudeDetalhadoResponse.
         :rtype: int
@@ -271,7 +271,7 @@ class RiscoFraudeDetalhadoResponse(object):
     def id_produto(self, id_produto):
         """
         Sets the id_produto of this RiscoFraudeDetalhadoResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do produto (id)
+        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do produto
 
         :param id_produto: The id_produto of this RiscoFraudeDetalhadoResponse.
         :type: int
@@ -282,7 +282,7 @@ class RiscoFraudeDetalhadoResponse(object):
     def id_transacao(self):
         """
         Gets the id_transacao of this RiscoFraudeDetalhadoResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da transa\u00C3\u00A7\u00C3\u00A3o (id)
+        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da transa\u00C3\u00A7\u00C3\u00A3o
 
         :return: The id_transacao of this RiscoFraudeDetalhadoResponse.
         :rtype: int
@@ -293,7 +293,7 @@ class RiscoFraudeDetalhadoResponse(object):
     def id_transacao(self, id_transacao):
         """
         Sets the id_transacao of this RiscoFraudeDetalhadoResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da transa\u00C3\u00A7\u00C3\u00A3o (id)
+        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da transa\u00C3\u00A7\u00C3\u00A3o
 
         :param id_transacao: The id_transacao of this RiscoFraudeDetalhadoResponse.
         :type: int
@@ -414,7 +414,7 @@ class RiscoFraudeDetalhadoResponse(object):
     def valor_destino(self):
         """
         Gets the valor_destino of this RiscoFraudeDetalhadoResponse.
-        Valor da transa\u00C3\u00A7\u00C3\u00A3o na moeda de origem
+        Valor da transa\u00C3\u00A7\u00C3\u00A3o na moeda de destino
 
         :return: The valor_destino of this RiscoFraudeDetalhadoResponse.
         :rtype: float
@@ -425,7 +425,7 @@ class RiscoFraudeDetalhadoResponse(object):
     def valor_destino(self, valor_destino):
         """
         Sets the valor_destino of this RiscoFraudeDetalhadoResponse.
-        Valor da transa\u00C3\u00A7\u00C3\u00A3o na moeda de origem
+        Valor da transa\u00C3\u00A7\u00C3\u00A3o na moeda de destino
 
         :param valor_destino: The valor_destino of this RiscoFraudeDetalhadoResponse.
         :type: float
@@ -700,7 +700,7 @@ class RiscoFraudeDetalhadoResponse(object):
     def tefefones(self):
         """
         Gets the tefefones of this RiscoFraudeDetalhadoResponse.
-        Lista contendo idTipoTelefone, tipoTelefone (Descricao), DDD, Numero, Ramal associados a Pessoa portadora do Cart\u00C3\u00A3o
+        Lista de telefones associados ao portador do Cart\u00C3\u00A3o
 
         :return: The tefefones of this RiscoFraudeDetalhadoResponse.
         :rtype: list[TelefoneResponse]
@@ -711,7 +711,7 @@ class RiscoFraudeDetalhadoResponse(object):
     def tefefones(self, tefefones):
         """
         Sets the tefefones of this RiscoFraudeDetalhadoResponse.
-        Lista contendo idTipoTelefone, tipoTelefone (Descricao), DDD, Numero, Ramal associados a Pessoa portadora do Cart\u00C3\u00A3o
+        Lista de telefones associados ao portador do Cart\u00C3\u00A3o
 
         :param tefefones: The tefefones of this RiscoFraudeDetalhadoResponse.
         :type: list[TelefoneResponse]

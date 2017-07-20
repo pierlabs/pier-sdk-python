@@ -383,7 +383,7 @@ class JobsApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def salvar_using_post5(self, descricao, cron, groovy, **kwargs):
+    def salvar_using_post7(self, descricao, cron, groovy, **kwargs):
         """
         Cadastrar Job
         Esse recurso permite cadastrar jobs.
@@ -394,7 +394,7 @@ class JobsApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.salvar_using_post5(descricao, cron, groovy, callback=callback_function)
+        >>> thread = api.salvar_using_post7(descricao, cron, groovy, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -414,20 +414,20 @@ class JobsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method salvar_using_post5" % key
+                    " to method salvar_using_post7" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'descricao' is set
         if ('descricao' not in params) or (params['descricao'] is None):
-            raise ValueError("Missing the required parameter `descricao` when calling `salvar_using_post5`")
+            raise ValueError("Missing the required parameter `descricao` when calling `salvar_using_post7`")
         # verify the required parameter 'cron' is set
         if ('cron' not in params) or (params['cron'] is None):
-            raise ValueError("Missing the required parameter `cron` when calling `salvar_using_post5`")
+            raise ValueError("Missing the required parameter `cron` when calling `salvar_using_post7`")
         # verify the required parameter 'groovy' is set
         if ('groovy' not in params) or (params['groovy'] is None):
-            raise ValueError("Missing the required parameter `groovy` when calling `salvar_using_post5`")
+            raise ValueError("Missing the required parameter `groovy` when calling `salvar_using_post7`")
 
         resource_path = '/api/jobs'.replace('{format}', 'json')
         path_params = {}

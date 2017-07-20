@@ -40,20 +40,23 @@ class WebHookResponse(object):
             'id': 'int',
             'tipo_evento': 'str',
             'metodo': 'str',
-            'url': 'str'
+            'url': 'str',
+            'status': 'str'
         }
 
         self.attribute_map = {
             'id': 'id',
             'tipo_evento': 'tipoEvento',
             'metodo': 'metodo',
-            'url': 'url'
+            'url': 'url',
+            'status': 'status'
         }
 
         self._id = None
         self._tipo_evento = None
         self._metodo = None
         self._url = None
+        self._status = None
 
     @property
     def id(self):
@@ -97,7 +100,7 @@ class WebHookResponse(object):
         :param tipo_evento: The tipo_evento of this WebHookResponse.
         :type: str
         """
-        allowed_values = ["RISCO_FRAUDE", "OUTROS"]
+        allowed_values = ["RISCO_FRAUDE", "TOKEN_SMS", "OUTROS"]
         if tipo_evento not in allowed_values:
             raise ValueError(
                 "Invalid value for `tipo_evento`, must be one of {0}"
@@ -154,6 +157,34 @@ class WebHookResponse(object):
         :type: str
         """
         self._url = url
+
+    @property
+    def status(self):
+        """
+        Gets the status of this WebHookResponse.
+        Status do WebHook
+
+        :return: The status of this WebHookResponse.
+        :rtype: str
+        """
+        return self._status
+
+    @status.setter
+    def status(self, status):
+        """
+        Sets the status of this WebHookResponse.
+        Status do WebHook
+
+        :param status: The status of this WebHookResponse.
+        :type: str
+        """
+        allowed_values = ["INATIVO", "ATIVO"]
+        if status not in allowed_values:
+            raise ValueError(
+                "Invalid value for `status`, must be one of {0}"
+                .format(allowed_values)
+            )
+        self._status = status
 
     def to_dict(self):
         """

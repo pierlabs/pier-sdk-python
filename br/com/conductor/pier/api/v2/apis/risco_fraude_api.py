@@ -45,10 +45,10 @@ class RiscoFraudeApi(object):
                 config.api_client = ApiClient()
             self.api_client = config.api_client
 
-    def consultar_using_get12(self, id, **kwargs):
+    def consultar_using_get13(self, id, **kwargs):
         """
         Consultar uma transa\u00C3\u00A7\u00C3\u00A3o classificada com risco de fraude
-        Consulta os detalhes de uma transa\u00C3\u00A7\u00C3\u00A3o classificada com risco de fraude.
+        Consulta os detalhes de uma transa\u00C3\u00A7\u00C3\u00A3o classificada como risco de fraude.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -56,7 +56,7 @@ class RiscoFraudeApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get12(id, callback=callback_function)
+        >>> thread = api.consultar_using_get13(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -74,14 +74,14 @@ class RiscoFraudeApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get12" % key
+                    " to method consultar_using_get13" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get12`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get13`")
 
         resource_path = '/api/riscos-fraudes/{id}'.replace('{format}', 'json')
         path_params = {}
@@ -122,10 +122,10 @@ class RiscoFraudeApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get19(self, id_conta, confirmacao_fraude, **kwargs):
+    def listar_tipos_resolucao_using_get(self, **kwargs):
         """
-        Listar as transa\u00C3\u00A7\u00C3\u00B5es com resolu\u00C3\u00A7\u00C3\u00A3o de risco fraude pendente
-        Este recurso permite que sejam listados os riscos de fraudes existentes
+        Listar os tipos de resolu\u00C3\u00A7\u00C3\u00A3o de fraude
+        Este recurso permite que sejam listados os tipos de resolu\u00C3\u00A7\u00C3\u00A3o de fraude, cadastrados para um emissor
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -133,20 +133,18 @@ class RiscoFraudeApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get19(id_conta, confirmacao_fraude, callback=callback_function)
+        >>> thread = api.listar_tipos_resolucao_using_get(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param int id_conta: Id Conta (required)
-        :param str confirmacao_fraude: Confirma\u00C3\u00A7\u00C3\u00A3o da fraude (required)
         :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
         :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
-        :return: RiscoFraudeResponsePage
+        :return: TipoResolucaoResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['id_conta', 'confirmacao_fraude', 'page', 'limit']
+        all_params = ['page', 'limit']
         all_params.append('callback')
 
         params = locals()
@@ -154,26 +152,16 @@ class RiscoFraudeApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get19" % key
+                    " to method listar_tipos_resolucao_using_get" % key
                 )
             params[key] = val
         del params['kwargs']
 
-        # verify the required parameter 'id_conta' is set
-        if ('id_conta' not in params) or (params['id_conta'] is None):
-            raise ValueError("Missing the required parameter `id_conta` when calling `listar_using_get19`")
-        # verify the required parameter 'confirmacao_fraude' is set
-        if ('confirmacao_fraude' not in params) or (params['confirmacao_fraude'] is None):
-            raise ValueError("Missing the required parameter `confirmacao_fraude` when calling `listar_using_get19`")
 
-        resource_path = '/api/riscos-fraudes'.replace('{format}', 'json')
+        resource_path = '/api/tipos-resolucao'.replace('{format}', 'json')
         path_params = {}
 
         query_params = {}
-        if 'id_conta' in params:
-            query_params['id_conta'] = params['id_conta']
-        if 'confirmacao_fraude' in params:
-            query_params['confirmacao_fraude'] = params['confirmacao_fraude']
         if 'page' in params:
             query_params['page'] = params['page']
         if 'limit' in params:
@@ -206,161 +194,7 @@ class RiscoFraudeApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='RiscoFraudeResponsePage',
-                                            auth_settings=auth_settings,
-                                            callback=params.get('callback'))
-        return response
-
-    def negar_using_post(self, id, **kwargs):
-        """
-        Negar autenticidade da transa\u00C3\u00A7\u00C3\u00A3o com risco de fraude
-        Nega a realiza\u00C3\u00A7\u00C3\u00A3o da transa\u00C3\u00A7\u00C3\u00A3o classificada com risco de fraude.
-
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
-        >>> thread = api.negar_using_post(id, callback=callback_function)
-
-        :param callback function: The callback function
-            for asynchronous request. (optional)
-        :param int id: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do risco de fraude (required)
-        :return: RiscoFraudeDetalhadoResponse
-                 If the method is called asynchronously,
-                 returns the request thread.
-        """
-
-        all_params = ['id']
-        all_params.append('callback')
-
-        params = locals()
-        for key, val in iteritems(params['kwargs']):
-            if key not in all_params:
-                raise TypeError(
-                    "Got an unexpected keyword argument '%s'"
-                    " to method negar_using_post" % key
-                )
-            params[key] = val
-        del params['kwargs']
-
-        # verify the required parameter 'id' is set
-        if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `negar_using_post`")
-
-        resource_path = '/api/riscos-fraudes/{id}/negar'.replace('{format}', 'json')
-        path_params = {}
-        if 'id' in params:
-            path_params['id'] = params['id']
-
-        query_params = {}
-
-        header_params = {}
-
-        form_params = []
-        local_var_files = {}
-
-        body_params = None
-
-        # HTTP header `Accept`
-        header_params['Accept'] = self.api_client.\
-            select_header_accept(['application/json'])
-        if not header_params['Accept']:
-            del header_params['Accept']
-
-        # HTTP header `Content-Type`
-        header_params['Content-Type'] = self.api_client.\
-            select_header_content_type(['application/json'])
-
-        # Authentication setting
-        auth_settings = []
-
-        response = self.api_client.call_api(resource_path, 'POST',
-                                            path_params,
-                                            query_params,
-                                            header_params,
-                                            body=body_params,
-                                            post_params=form_params,
-                                            files=local_var_files,
-                                            response_type='RiscoFraudeDetalhadoResponse',
-                                            auth_settings=auth_settings,
-                                            callback=params.get('callback'))
-        return response
-
-    def reconhecer_using_post(self, id, **kwargs):
-        """
-        Reconhecer a transa\u00C3\u00A7\u00C3\u00A3o com risco de fraude
-        Confirma a autenticidade da transa\u00C3\u00A7\u00C3\u00A3o classificada com risco de fraude.
-
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
-        >>> thread = api.reconhecer_using_post(id, callback=callback_function)
-
-        :param callback function: The callback function
-            for asynchronous request. (optional)
-        :param int id: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do risco de fraude (required)
-        :return: RiscoFraudeDetalhadoResponse
-                 If the method is called asynchronously,
-                 returns the request thread.
-        """
-
-        all_params = ['id']
-        all_params.append('callback')
-
-        params = locals()
-        for key, val in iteritems(params['kwargs']):
-            if key not in all_params:
-                raise TypeError(
-                    "Got an unexpected keyword argument '%s'"
-                    " to method reconhecer_using_post" % key
-                )
-            params[key] = val
-        del params['kwargs']
-
-        # verify the required parameter 'id' is set
-        if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `reconhecer_using_post`")
-
-        resource_path = '/api/riscos-fraudes/{id}/reconhecer'.replace('{format}', 'json')
-        path_params = {}
-        if 'id' in params:
-            path_params['id'] = params['id']
-
-        query_params = {}
-
-        header_params = {}
-
-        form_params = []
-        local_var_files = {}
-
-        body_params = None
-
-        # HTTP header `Accept`
-        header_params['Accept'] = self.api_client.\
-            select_header_accept(['application/json'])
-        if not header_params['Accept']:
-            del header_params['Accept']
-
-        # HTTP header `Content-Type`
-        header_params['Content-Type'] = self.api_client.\
-            select_header_content_type(['application/json'])
-
-        # Authentication setting
-        auth_settings = []
-
-        response = self.api_client.call_api(resource_path, 'POST',
-                                            path_params,
-                                            query_params,
-                                            header_params,
-                                            body=body_params,
-                                            post_params=form_params,
-                                            files=local_var_files,
-                                            response_type='RiscoFraudeDetalhadoResponse',
+                                            response_type='TipoResolucaoResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response

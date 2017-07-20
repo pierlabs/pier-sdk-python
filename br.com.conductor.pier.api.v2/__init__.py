@@ -1,14 +1,22 @@
 from __future__ import absolute_import
 
 # import models into sdk package
+from .models.adicional_persist import AdicionalPersist
+from .models.adicional_response import AdicionalResponse
 from .models.ajuste_response import AjusteResponse
 from .models.antecipacao_response import AntecipacaoResponse
 from .models.antecipacao_simulada_detalhes_response import AntecipacaoSimuladaDetalhesResponse
 from .models.antecipacao_simulada_response import AntecipacaoSimuladaResponse
+from .models.anuidade_response import AnuidadeResponse
 from .models.aplicacao_mobile_persist import AplicacaoMobilePersist
 from .models.aplicacao_mobile_response import AplicacaoMobileResponse
 from .models.aplicacao_mobile_update import AplicacaoMobileUpdate
+from .models.arquivo_detalhes_persist import ArquivoDetalhesPersist
+from .models.arquivo_parametro_response import ArquivoParametroResponse
+from .models.arquivo_persist import ArquivoPersist
+from .models.arquivo_response import ArquivoResponse
 from .models.atendimento_cliente_response import AtendimentoClienteResponse
+from .models.atribuir_assinatura_cliente_request import AtribuirAssinaturaClienteRequest
 from .models.auth_token import AuthToken
 from .models.autorizacao_on_us_request import AutorizacaoOnUsRequest
 from .models.banco_response import BancoResponse
@@ -21,7 +29,11 @@ from .models.cartao_detalhe_response import CartaoDetalheResponse
 from .models.cartao_impressao_response import CartaoImpressaoResponse
 from .models.cartao_response import CartaoResponse
 from .models.cdt_detalhe_oportunidade_aud import CdtDetalheOportunidadeAUD
+from .models.codigo_seguranca_sms_persist import CodigoSegurancaSMSPersist
+from .models.codigo_seguranca_sms_request import CodigoSegurancaSMSRequest
 from .models.compra_response import CompraResponse
+from .models.configuracao_email_persist import ConfiguracaoEmailPersist
+from .models.configuracao_email_response import ConfiguracaoEmailResponse
 from .models.conta_detalhe_response import ContaDetalheResponse
 from .models.conta_response import ContaResponse
 from .models.dados_cartao_response import DadosCartaoResponse
@@ -49,6 +61,7 @@ from .models.historico_atraso_fatura_response import HistoricoAtrasoFaturaRespon
 from .models.historico_eventos_response import HistoricoEventosResponse
 from .models.historico_impressao_cartao_response import HistoricoImpressaoCartaoResponse
 from .models.historico_telefone_response import HistoricoTelefoneResponse
+from .models.integracao_emissor_response import IntegracaoEmissorResponse
 from .models.job_response import JobResponse
 from .models.limite_disponibilidade_response import LimiteDisponibilidadeResponse
 from .models.lote_cartoes_pre_pagos_response import LoteCartoesPrePagosResponse
@@ -57,11 +70,13 @@ from .models.notificacao_push_response import NotificacaoPushResponse
 from .models.notificacao_response import NotificacaoResponse
 from .models.notificacao_sms_body import NotificacaoSMSBody
 from .models.notificacao_sms_response import NotificacaoSMSResponse
+from .models.operadora_response import OperadoraResponse
 from .models.oportunidade_aud_response import OportunidadeAUDResponse
 from .models.oportunidade_persist import OportunidadePersist
 from .models.oportunidade_response import OportunidadeResponse
 from .models.oportunidade_update import OportunidadeUpdate
 from .models.origem_comercial_response import OrigemComercialResponse
+from .models.page_anuidade_response import PageAnuidadeResponse
 from .models.page_aplicacao_mobile_response import PageAplicacaoMobileResponse
 from .models.page_atendimento_cliente_response import PageAtendimentoClienteResponse
 from .models.page_banco_response import PageBancoResponse
@@ -69,6 +84,7 @@ from .models.page_base_response import PageBaseResponse
 from .models.page_campo_codificado_descricao_response import PageCampoCodificadoDescricaoResponse
 from .models.page_cartao_response import PageCartaoResponse
 from .models.page_compra_response import PageCompraResponse
+from .models.page_configuracao_email_response import PageConfiguracaoEmailResponse
 from .models.page_conta_detalhe_response import PageContaDetalheResponse
 from .models.page_conta_response import PageContaResponse
 from .models.page_dispositivo_response import PageDispositivoResponse
@@ -83,6 +99,7 @@ from .models.page_historico_atraso_fatura_response import PageHistoricoAtrasoFat
 from .models.page_historico_eventos_response import PageHistoricoEventosResponse
 from .models.page_job_response import PageJobResponse
 from .models.page_lote_cartoes_pre_pagos_response import PageLoteCartoesPrePagosResponse
+from .models.page_operadora_response import PageOperadoraResponse
 from .models.page_oportunidade_aud_response import PageOportunidadeAUDResponse
 from .models.page_oportunidade_response import PageOportunidadeResponse
 from .models.page_origem_comercial_response import PageOrigemComercialResponse
@@ -93,6 +110,7 @@ from .models.page_plataforma_mobile_response import PagePlataformaMobileResponse
 from .models.page_portador_response import PagePortadorResponse
 from .models.page_produto_response import PageProdutoResponse
 from .models.page_push_response import PagePushResponse
+from .models.page_risco_fraude_response import PageRiscoFraudeResponse
 from .models.page_sms_response import PageSMSResponse
 from .models.page_status_cartao_response import PageStatusCartaoResponse
 from .models.page_status_conta_response import PageStatusContaResponse
@@ -101,6 +119,7 @@ from .models.page_status_oportunidade_aud_response import PageStatusOportunidade
 from .models.page_status_oportunidade_response import PageStatusOportunidadeResponse
 from .models.page_taxas_refinanciamento_response import PageTaxasRefinanciamentoResponse
 from .models.page_telefone_response import PageTelefoneResponse
+from .models.page_template_notificacao_response import PageTemplateNotificacaoResponse
 from .models.page_terminal_response import PageTerminalResponse
 from .models.page_tipo_ajuste_response import PageTipoAjusteResponse
 from .models.page_tipo_boleto_response import PageTipoBoletoResponse
@@ -128,12 +147,12 @@ from .models.plataforma_mobile_response import PlataformaMobileResponse
 from .models.plataforma_mobile_update import PlataformaMobileUpdate
 from .models.portador_response import PortadorResponse
 from .models.produto_detalhes_response import ProdutoDetalhesResponse
+from .models.produto_origem_response import ProdutoOrigemResponse
 from .models.produto_response import ProdutoResponse
 from .models.push_apns import PushAPNS
 from .models.push_fcm_e_gcm import PushFCMEGCM
 from .models.risco_fraude_detalhado_response import RiscoFraudeDetalhadoResponse
 from .models.risco_fraude_response import RiscoFraudeResponse
-from .models.risco_fraude_response_page import RiscoFraudeResponsePage
 from .models.socio_aprovado_response import SocioAprovadoResponse
 from .models.status_cartao_response import StatusCartaoResponse
 from .models.status_conta_response import StatusContaResponse
@@ -143,9 +162,11 @@ from .models.status_oportunidade_aud_response import StatusOportunidadeAUDRespon
 from .models.status_oportunidade_response import StatusOportunidadeResponse
 from .models.taxa_antecipacao_request import TaxaAntecipacaoRequest
 from .models.taxas_refinanciamento_response import TaxasRefinanciamentoResponse
+from .models.telefone_adicional_persist import TelefoneAdicionalPersist
 from .models.telefone_pessoa_aprovada_persist import TelefonePessoaAprovadaPersist
 from .models.telefone_pessoa_aprovada_response import TelefonePessoaAprovadaResponse
 from .models.telefone_response import TelefoneResponse
+from .models.template_notificacao_response import TemplateNotificacaoResponse
 from .models.terminal_response import TerminalResponse
 from .models.tipo_ajuste_response import TipoAjusteResponse
 from .models.tipo_boleto_response import TipoBoletoResponse
@@ -153,6 +174,7 @@ from .models.tipo_endereco_response import TipoEnderecoResponse
 from .models.tipo_oportunidade import TipoOportunidade
 from .models.tipo_oportunidade_aud_response import TipoOportunidadeAUDResponse
 from .models.tipo_oportunidade_response import TipoOportunidadeResponse
+from .models.tipo_resolucao_response import TipoResolucaoResponse
 from .models.tipo_telefone_response import TipoTelefoneResponse
 from .models.token_response import TokenResponse
 from .models.transacao_corrente_response import TransacaoCorrenteResponse
@@ -170,22 +192,27 @@ from .models.valida_senha_cartao_response import ValidaSenhaCartaoResponse
 from .models.web_hook_response import WebHookResponse
 
 # import apis into sdk package
+from .apis.antecipacoes_api import AntecipacoesApi
 from .apis.aplicacoes_mobile_api import AplicacoesMobileApi
+from .apis.arquivos_api import ArquivosApi
 from .apis.autorizacoes_api import AutorizacoesApi
 from .apis.base_api import BaseApi
+from .apis.cadastros_clientes_api import CadastrosClientesApi
 from .apis.cadastros_gerais_api import CadastrosGeraisApi
 from .apis.cartao_api import CartaoApi
-from .apis.compra_api import CompraApi
 from .apis.conta_api import ContaApi
 from .apis.dispositivos_api import DispositivosApi
+from .apis.enderecos_nacionais_api import EnderecosNacionaisApi
 from .apis.estabelecimentos_api import EstabelecimentosApi
 from .apis.faq_api import FAQApi
+from .apis.gestao_limites_api import GestaoLimitesApi
 from .apis.jobs_api import JobsApi
 from .apis.notificacoes_api import NotificacoesApi
 from .apis.oportunidades_api import OportunidadesApi
 from .apis.permissao_paises_api import PermissaoPaisesApi
 from .apis.plataformas_mobile_api import PlataformasMobileApi
 from .apis.risco_fraude_api import RiscoFraudeApi
+from .apis.servicos_conta_api import ServicosContaApi
 from .apis.status_parametros_api import StatusParametrosApi
 from .apis.token_api import TokenApi
 from .apis.usuarios_api import UsuariosApi

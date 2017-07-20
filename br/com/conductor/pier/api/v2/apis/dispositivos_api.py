@@ -291,7 +291,7 @@ class DispositivosApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def salvar_using_post3(self, persist, **kwargs):
+    def salvar_using_post4(self, persist, **kwargs):
         """
         Cadastra Dispositivo
         Esse recurso permite cadastrar dispositivos.
@@ -302,7 +302,7 @@ class DispositivosApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.salvar_using_post3(persist, callback=callback_function)
+        >>> thread = api.salvar_using_post4(persist, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -320,14 +320,14 @@ class DispositivosApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method salvar_using_post3" % key
+                    " to method salvar_using_post4" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'persist' is set
         if ('persist' not in params) or (params['persist'] is None):
-            raise ValueError("Missing the required parameter `persist` when calling `salvar_using_post3`")
+            raise ValueError("Missing the required parameter `persist` when calling `salvar_using_post4`")
 
         resource_path = '/api/dispositivos'.replace('{format}', 'json')
         path_params = {}

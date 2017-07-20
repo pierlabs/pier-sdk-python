@@ -39,9 +39,9 @@ class AntecipacaoSimuladaResponse(object):
         self.swagger_types = {
             'id_antecipacao_simulada': 'int',
             'id_conta': 'int',
-            'id_evento_externo': 'int',
+            'id_compra': 'int',
             'id_tipo_transacao': 'int',
-            'qtde_parcelas_antecipaveis': 'int',
+            'quantidade_parcelas_antecipaveis': 'int',
             'valor_parcela': 'float',
             'data_hora_simulacao': 'str',
             'taxa_antecipacao_ano': 'float',
@@ -51,9 +51,9 @@ class AntecipacaoSimuladaResponse(object):
         self.attribute_map = {
             'id_antecipacao_simulada': 'idAntecipacaoSimulada',
             'id_conta': 'idConta',
-            'id_evento_externo': 'idEventoExterno',
+            'id_compra': 'idCompra',
             'id_tipo_transacao': 'idTipoTransacao',
-            'qtde_parcelas_antecipaveis': 'qtdeParcelasAntecipaveis',
+            'quantidade_parcelas_antecipaveis': 'quantidadeParcelasAntecipaveis',
             'valor_parcela': 'valorParcela',
             'data_hora_simulacao': 'dataHoraSimulacao',
             'taxa_antecipacao_ano': 'taxaAntecipacaoAno',
@@ -62,9 +62,9 @@ class AntecipacaoSimuladaResponse(object):
 
         self._id_antecipacao_simulada = None
         self._id_conta = None
-        self._id_evento_externo = None
+        self._id_compra = None
         self._id_tipo_transacao = None
-        self._qtde_parcelas_antecipaveis = None
+        self._quantidade_parcelas_antecipaveis = None
         self._valor_parcela = None
         self._data_hora_simulacao = None
         self._taxa_antecipacao_ano = None
@@ -115,32 +115,32 @@ class AntecipacaoSimuladaResponse(object):
         self._id_conta = id_conta
 
     @property
-    def id_evento_externo(self):
+    def id_compra(self):
         """
-        Gets the id_evento_externo of this AntecipacaoSimuladaResponse.
-        C\u00C3\u00B3digo identificador do evento.
+        Gets the id_compra of this AntecipacaoSimuladaResponse.
+        C\u00C3\u00B3digo identificador do evento compra.
 
-        :return: The id_evento_externo of this AntecipacaoSimuladaResponse.
+        :return: The id_compra of this AntecipacaoSimuladaResponse.
         :rtype: int
         """
-        return self._id_evento_externo
+        return self._id_compra
 
-    @id_evento_externo.setter
-    def id_evento_externo(self, id_evento_externo):
+    @id_compra.setter
+    def id_compra(self, id_compra):
         """
-        Sets the id_evento_externo of this AntecipacaoSimuladaResponse.
-        C\u00C3\u00B3digo identificador do evento.
+        Sets the id_compra of this AntecipacaoSimuladaResponse.
+        C\u00C3\u00B3digo identificador do evento compra.
 
-        :param id_evento_externo: The id_evento_externo of this AntecipacaoSimuladaResponse.
+        :param id_compra: The id_compra of this AntecipacaoSimuladaResponse.
         :type: int
         """
-        self._id_evento_externo = id_evento_externo
+        self._id_compra = id_compra
 
     @property
     def id_tipo_transacao(self):
         """
         Gets the id_tipo_transacao of this AntecipacaoSimuladaResponse.
-        C\u00C3\u00B3digo identificador do tipo do evento.
+        C\u00C3\u00B3digo identificador do tipo do evento compra.
 
         :return: The id_tipo_transacao of this AntecipacaoSimuladaResponse.
         :rtype: int
@@ -151,7 +151,7 @@ class AntecipacaoSimuladaResponse(object):
     def id_tipo_transacao(self, id_tipo_transacao):
         """
         Sets the id_tipo_transacao of this AntecipacaoSimuladaResponse.
-        C\u00C3\u00B3digo identificador do tipo do evento.
+        C\u00C3\u00B3digo identificador do tipo do evento compra.
 
         :param id_tipo_transacao: The id_tipo_transacao of this AntecipacaoSimuladaResponse.
         :type: int
@@ -159,26 +159,26 @@ class AntecipacaoSimuladaResponse(object):
         self._id_tipo_transacao = id_tipo_transacao
 
     @property
-    def qtde_parcelas_antecipaveis(self):
+    def quantidade_parcelas_antecipaveis(self):
         """
-        Gets the qtde_parcelas_antecipaveis of this AntecipacaoSimuladaResponse.
+        Gets the quantidade_parcelas_antecipaveis of this AntecipacaoSimuladaResponse.
         Quantidade de parcelas antecip\u00C3\u00A1veis.
 
-        :return: The qtde_parcelas_antecipaveis of this AntecipacaoSimuladaResponse.
+        :return: The quantidade_parcelas_antecipaveis of this AntecipacaoSimuladaResponse.
         :rtype: int
         """
-        return self._qtde_parcelas_antecipaveis
+        return self._quantidade_parcelas_antecipaveis
 
-    @qtde_parcelas_antecipaveis.setter
-    def qtde_parcelas_antecipaveis(self, qtde_parcelas_antecipaveis):
+    @quantidade_parcelas_antecipaveis.setter
+    def quantidade_parcelas_antecipaveis(self, quantidade_parcelas_antecipaveis):
         """
-        Sets the qtde_parcelas_antecipaveis of this AntecipacaoSimuladaResponse.
+        Sets the quantidade_parcelas_antecipaveis of this AntecipacaoSimuladaResponse.
         Quantidade de parcelas antecip\u00C3\u00A1veis.
 
-        :param qtde_parcelas_antecipaveis: The qtde_parcelas_antecipaveis of this AntecipacaoSimuladaResponse.
+        :param quantidade_parcelas_antecipaveis: The quantidade_parcelas_antecipaveis of this AntecipacaoSimuladaResponse.
         :type: int
         """
-        self._qtde_parcelas_antecipaveis = qtde_parcelas_antecipaveis
+        self._quantidade_parcelas_antecipaveis = quantidade_parcelas_antecipaveis
 
     @property
     def valor_parcela(self):

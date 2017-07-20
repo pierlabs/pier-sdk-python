@@ -48,7 +48,7 @@ class PessoaFisicaAprovadaResponse(object):
             'unidade_federativa_identidade': 'str',
             'data_emissao_identidade': 'str',
             'id_estado_civil': 'int',
-            'profissao': 'str',
+            'id_profissao': 'int',
             'id_natureza_ocupacao': 'int',
             'id_nacionalidade': 'int',
             'id_origem_comercial': 'int',
@@ -59,6 +59,9 @@ class PessoaFisicaAprovadaResponse(object):
             'dia_vencimento': 'int',
             'nome_impresso': 'str',
             'nome_empresa': 'str',
+            'id_conta': 'int',
+            'id_proposta': 'int',
+            'canal_entrada': 'str',
             'telefones': 'list[TelefonePessoaAprovadaResponse]',
             'enderecos': 'list[EnderecoAprovadoResponse]'
         }
@@ -75,7 +78,7 @@ class PessoaFisicaAprovadaResponse(object):
             'unidade_federativa_identidade': 'unidadeFederativaIdentidade',
             'data_emissao_identidade': 'dataEmissaoIdentidade',
             'id_estado_civil': 'idEstadoCivil',
-            'profissao': 'profissao',
+            'id_profissao': 'idProfissao',
             'id_natureza_ocupacao': 'idNaturezaOcupacao',
             'id_nacionalidade': 'idNacionalidade',
             'id_origem_comercial': 'idOrigemComercial',
@@ -86,6 +89,9 @@ class PessoaFisicaAprovadaResponse(object):
             'dia_vencimento': 'diaVencimento',
             'nome_impresso': 'nomeImpresso',
             'nome_empresa': 'nomeEmpresa',
+            'id_conta': 'idConta',
+            'id_proposta': 'idProposta',
+            'canal_entrada': 'canalEntrada',
             'telefones': 'telefones',
             'enderecos': 'enderecos'
         }
@@ -101,7 +107,7 @@ class PessoaFisicaAprovadaResponse(object):
         self._unidade_federativa_identidade = None
         self._data_emissao_identidade = None
         self._id_estado_civil = None
-        self._profissao = None
+        self._id_profissao = None
         self._id_natureza_ocupacao = None
         self._id_nacionalidade = None
         self._id_origem_comercial = None
@@ -112,6 +118,9 @@ class PessoaFisicaAprovadaResponse(object):
         self._dia_vencimento = None
         self._nome_impresso = None
         self._nome_empresa = None
+        self._id_conta = None
+        self._id_proposta = None
+        self._canal_entrada = None
         self._telefones = None
         self._enderecos = None
 
@@ -119,7 +128,7 @@ class PessoaFisicaAprovadaResponse(object):
     def id(self):
         """
         Gets the id of this PessoaFisicaAprovadaResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Endere\u00C3\u00A7o (id)
+        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da pessoa fisica (id)
 
         :return: The id of this PessoaFisicaAprovadaResponse.
         :rtype: int
@@ -130,7 +139,7 @@ class PessoaFisicaAprovadaResponse(object):
     def id(self, id):
         """
         Sets the id of this PessoaFisicaAprovadaResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Endere\u00C3\u00A7o (id)
+        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da pessoa fisica (id)
 
         :param id: The id of this PessoaFisicaAprovadaResponse.
         :type: int
@@ -358,26 +367,26 @@ class PessoaFisicaAprovadaResponse(object):
         self._id_estado_civil = id_estado_civil
 
     @property
-    def profissao(self):
+    def id_profissao(self):
         """
-        Gets the profissao of this PessoaFisicaAprovadaResponse.
+        Gets the id_profissao of this PessoaFisicaAprovadaResponse.
         Profiss\u00C3\u00A3o da pessoa fisica
 
-        :return: The profissao of this PessoaFisicaAprovadaResponse.
-        :rtype: str
+        :return: The id_profissao of this PessoaFisicaAprovadaResponse.
+        :rtype: int
         """
-        return self._profissao
+        return self._id_profissao
 
-    @profissao.setter
-    def profissao(self, profissao):
+    @id_profissao.setter
+    def id_profissao(self, id_profissao):
         """
-        Sets the profissao of this PessoaFisicaAprovadaResponse.
+        Sets the id_profissao of this PessoaFisicaAprovadaResponse.
         Profiss\u00C3\u00A3o da pessoa fisica
 
-        :param profissao: The profissao of this PessoaFisicaAprovadaResponse.
-        :type: str
+        :param id_profissao: The id_profissao of this PessoaFisicaAprovadaResponse.
+        :type: int
         """
-        self._profissao = profissao
+        self._id_profissao = id_profissao
 
     @property
     def id_natureza_ocupacao(self):
@@ -581,7 +590,7 @@ class PessoaFisicaAprovadaResponse(object):
     def nome_empresa(self):
         """
         Gets the nome_empresa of this PessoaFisicaAprovadaResponse.
-        Nome que deve ser impresso no cart\u00C3\u00A3o
+        Nome da empresa
 
         :return: The nome_empresa of this PessoaFisicaAprovadaResponse.
         :rtype: str
@@ -592,12 +601,78 @@ class PessoaFisicaAprovadaResponse(object):
     def nome_empresa(self, nome_empresa):
         """
         Sets the nome_empresa of this PessoaFisicaAprovadaResponse.
-        Nome que deve ser impresso no cart\u00C3\u00A3o
+        Nome da empresa
 
         :param nome_empresa: The nome_empresa of this PessoaFisicaAprovadaResponse.
         :type: str
         """
         self._nome_empresa = nome_empresa
+
+    @property
+    def id_conta(self):
+        """
+        Gets the id_conta of this PessoaFisicaAprovadaResponse.
+        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da conta cadastrada
+
+        :return: The id_conta of this PessoaFisicaAprovadaResponse.
+        :rtype: int
+        """
+        return self._id_conta
+
+    @id_conta.setter
+    def id_conta(self, id_conta):
+        """
+        Sets the id_conta of this PessoaFisicaAprovadaResponse.
+        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da conta cadastrada
+
+        :param id_conta: The id_conta of this PessoaFisicaAprovadaResponse.
+        :type: int
+        """
+        self._id_conta = id_conta
+
+    @property
+    def id_proposta(self):
+        """
+        Gets the id_proposta of this PessoaFisicaAprovadaResponse.
+        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da proposta
+
+        :return: The id_proposta of this PessoaFisicaAprovadaResponse.
+        :rtype: int
+        """
+        return self._id_proposta
+
+    @id_proposta.setter
+    def id_proposta(self, id_proposta):
+        """
+        Sets the id_proposta of this PessoaFisicaAprovadaResponse.
+        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da proposta
+
+        :param id_proposta: The id_proposta of this PessoaFisicaAprovadaResponse.
+        :type: int
+        """
+        self._id_proposta = id_proposta
+
+    @property
+    def canal_entrada(self):
+        """
+        Gets the canal_entrada of this PessoaFisicaAprovadaResponse.
+        Indica o canal pelo qual o cadastro do cliente foi realizado
+
+        :return: The canal_entrada of this PessoaFisicaAprovadaResponse.
+        :rtype: str
+        """
+        return self._canal_entrada
+
+    @canal_entrada.setter
+    def canal_entrada(self, canal_entrada):
+        """
+        Sets the canal_entrada of this PessoaFisicaAprovadaResponse.
+        Indica o canal pelo qual o cadastro do cliente foi realizado
+
+        :param canal_entrada: The canal_entrada of this PessoaFisicaAprovadaResponse.
+        :type: str
+        """
+        self._canal_entrada = canal_entrada
 
     @property
     def telefones(self):

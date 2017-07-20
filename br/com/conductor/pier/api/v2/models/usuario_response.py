@@ -225,7 +225,7 @@ class UsuarioResponse(object):
         :param status: The status of this UsuarioResponse.
         :type: str
         """
-        allowed_values = ["ATIVO", "INATIVO"]
+        allowed_values = ["INATIVO", "ATIVO"]
         if status not in allowed_values:
             raise ValueError(
                 "Invalid value for `status`, must be one of {0}"

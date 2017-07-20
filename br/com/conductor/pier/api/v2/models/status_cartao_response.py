@@ -45,7 +45,10 @@ class StatusCartaoResponse(object):
             'id_status_destino_conta': 'int',
             'flag_cobra_tarifa': 'int',
             'flag_permite_nova_via_cartao': 'int',
-            'flag_permite_desbloqueio': 'int'
+            'flag_permite_desbloqueio': 'int',
+            'flag_cancelamento': 'int',
+            'flag_permite_bloqueio': 'int',
+            'flag_reativar': 'int'
         }
 
         self.attribute_map = {
@@ -57,7 +60,10 @@ class StatusCartaoResponse(object):
             'id_status_destino_conta': 'idStatusDestinoConta',
             'flag_cobra_tarifa': 'flagCobraTarifa',
             'flag_permite_nova_via_cartao': 'flagPermiteNovaViaCartao',
-            'flag_permite_desbloqueio': 'flagPermiteDesbloqueio'
+            'flag_permite_desbloqueio': 'flagPermiteDesbloqueio',
+            'flag_cancelamento': 'flagCancelamento',
+            'flag_permite_bloqueio': 'flagPermiteBloqueio',
+            'flag_reativar': 'flagReativar'
         }
 
         self._id = None
@@ -69,6 +75,9 @@ class StatusCartaoResponse(object):
         self._flag_cobra_tarifa = None
         self._flag_permite_nova_via_cartao = None
         self._flag_permite_desbloqueio = None
+        self._flag_cancelamento = None
+        self._flag_permite_bloqueio = None
+        self._flag_reativar = None
 
     @property
     def id(self):
@@ -267,6 +276,72 @@ class StatusCartaoResponse(object):
         :type: int
         """
         self._flag_permite_desbloqueio = flag_permite_desbloqueio
+
+    @property
+    def flag_cancelamento(self):
+        """
+        Gets the flag_cancelamento of this StatusCartaoResponse.
+        Par\u00C3\u00A2metro que define se o status do cart\u00C3\u00A3o permite o cancelamento, sendo: 0: Inativo e 1: Ativo.
+
+        :return: The flag_cancelamento of this StatusCartaoResponse.
+        :rtype: int
+        """
+        return self._flag_cancelamento
+
+    @flag_cancelamento.setter
+    def flag_cancelamento(self, flag_cancelamento):
+        """
+        Sets the flag_cancelamento of this StatusCartaoResponse.
+        Par\u00C3\u00A2metro que define se o status do cart\u00C3\u00A3o permite o cancelamento, sendo: 0: Inativo e 1: Ativo.
+
+        :param flag_cancelamento: The flag_cancelamento of this StatusCartaoResponse.
+        :type: int
+        """
+        self._flag_cancelamento = flag_cancelamento
+
+    @property
+    def flag_permite_bloqueio(self):
+        """
+        Gets the flag_permite_bloqueio of this StatusCartaoResponse.
+        Par\u00C3\u00A2metro que define se o status do cart\u00C3\u00A3o permite o bloqueio, sendo: 0: Inativo e 1: Ativo.
+
+        :return: The flag_permite_bloqueio of this StatusCartaoResponse.
+        :rtype: int
+        """
+        return self._flag_permite_bloqueio
+
+    @flag_permite_bloqueio.setter
+    def flag_permite_bloqueio(self, flag_permite_bloqueio):
+        """
+        Sets the flag_permite_bloqueio of this StatusCartaoResponse.
+        Par\u00C3\u00A2metro que define se o status do cart\u00C3\u00A3o permite o bloqueio, sendo: 0: Inativo e 1: Ativo.
+
+        :param flag_permite_bloqueio: The flag_permite_bloqueio of this StatusCartaoResponse.
+        :type: int
+        """
+        self._flag_permite_bloqueio = flag_permite_bloqueio
+
+    @property
+    def flag_reativar(self):
+        """
+        Gets the flag_reativar of this StatusCartaoResponse.
+        Par\u00C3\u00A2metro que define se o status do cart\u00C3\u00A3o permite a reativa\u00C3\u00A7\u00C3\u00A3o do cart\u00C3\u00A3o, sendo: 0: Inativo e 1: Ativo.
+
+        :return: The flag_reativar of this StatusCartaoResponse.
+        :rtype: int
+        """
+        return self._flag_reativar
+
+    @flag_reativar.setter
+    def flag_reativar(self, flag_reativar):
+        """
+        Sets the flag_reativar of this StatusCartaoResponse.
+        Par\u00C3\u00A2metro que define se o status do cart\u00C3\u00A3o permite a reativa\u00C3\u00A7\u00C3\u00A3o do cart\u00C3\u00A3o, sendo: 0: Inativo e 1: Ativo.
+
+        :param flag_reativar: The flag_reativar of this StatusCartaoResponse.
+        :type: int
+        """
+        self._flag_reativar = flag_reativar
 
     def to_dict(self):
         """

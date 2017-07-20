@@ -294,7 +294,7 @@ class CartaoApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def bloquear_using_put(self, id, id_status, observacao, **kwargs):
+    def bloquear_using_post(self, id, id_status, observacao, **kwargs):
         """
         Realiza o bloqueio de um determinado Cart\u00C3\u00A3o
         Este m\u00C3\u00A9todo permite a realiza\u00C3\u00A7\u00C3\u00A3o do bloqueio (tempor\u00C3\u00A1rio) ou do cancelamento (definitivo) de um determinado cart\u00C3\u00A3o a partir do seu c\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o (id). Para isso, \u00C3\u00A9 preciso informar qual o motivo deste bloqueio que nada mais \u00C3\u00A9 do que atribuir um novo StatusCartao para ele dentre as op\u00C3\u00A7\u00C3\u00B5es praticadas pelo emissor.
@@ -305,7 +305,7 @@ class CartaoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.bloquear_using_put(id, id_status, observacao, callback=callback_function)
+        >>> thread = api.bloquear_using_post(id, id_status, observacao, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -325,20 +325,20 @@ class CartaoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method bloquear_using_put" % key
+                    " to method bloquear_using_post" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `bloquear_using_put`")
+            raise ValueError("Missing the required parameter `id` when calling `bloquear_using_post`")
         # verify the required parameter 'id_status' is set
         if ('id_status' not in params) or (params['id_status'] is None):
-            raise ValueError("Missing the required parameter `id_status` when calling `bloquear_using_put`")
+            raise ValueError("Missing the required parameter `id_status` when calling `bloquear_using_post`")
         # verify the required parameter 'observacao' is set
         if ('observacao' not in params) or (params['observacao'] is None):
-            raise ValueError("Missing the required parameter `observacao` when calling `bloquear_using_put`")
+            raise ValueError("Missing the required parameter `observacao` when calling `bloquear_using_post`")
 
         resource_path = '/api/cartoes/{id}/bloquear'.replace('{format}', 'json')
         path_params = {}
@@ -371,7 +371,7 @@ class CartaoApi(object):
         # Authentication setting
         auth_settings = []
 
-        response = self.api_client.call_api(resource_path, 'PUT',
+        response = self.api_client.call_api(resource_path, 'POST',
                                             path_params,
                                             query_params,
                                             header_params,
@@ -462,6 +462,95 @@ class CartaoApi(object):
                                             post_params=form_params,
                                             files=local_var_files,
                                             response_type='str',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
+    def cancelar_using_post(self, id, id_status, observacao, **kwargs):
+        """
+        Realiza o cancelamento de um determinado Cart\u00C3\u00A3o
+        Este m\u00C3\u00A9todo permite a realiza\u00C3\u00A7\u00C3\u00A3o cancelamento de um determinado cart\u00C3\u00A3o a partir do seu c\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o (id). Para isso, \u00C3\u00A9 preciso informar qual o motivo deste bloqueio que nada mais \u00C3\u00A9 do que atribuir um novo StatusCartao para ele dentre as op\u00C3\u00A7\u00C3\u00B5es praticadas pelo emissor.
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.cancelar_using_post(id, id_status, observacao, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Cart\u00C3\u00A3o (id). (required)
+        :param int id_status: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Novo Status Cart\u00C3\u00A3o. (required)
+        :param str observacao: Texto informando uma observa\u00C3\u00A7\u00C3\u00A3o sobre o cancelamento. (required)
+        :return: CartaoResponse
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'id_status', 'observacao']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method cancelar_using_post" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `cancelar_using_post`")
+        # verify the required parameter 'id_status' is set
+        if ('id_status' not in params) or (params['id_status'] is None):
+            raise ValueError("Missing the required parameter `id_status` when calling `cancelar_using_post`")
+        # verify the required parameter 'observacao' is set
+        if ('observacao' not in params) or (params['observacao'] is None):
+            raise ValueError("Missing the required parameter `observacao` when calling `cancelar_using_post`")
+
+        resource_path = '/api/cartoes/{id}/cancelar'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+
+        query_params = {}
+        if 'id_status' in params:
+            query_params['id_status'] = params['id_status']
+        if 'observacao' in params:
+            query_params['observacao'] = params['observacao']
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = []
+
+        response = self.api_client.call_api(resource_path, 'POST',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='CartaoResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
@@ -774,7 +863,7 @@ class CartaoApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get3(self, id, **kwargs):
+    def consultar_using_get4(self, id, **kwargs):
         """
         Apresenta os dados de um determinado Cart\u00C3\u00A3o
         Este m\u00C3\u00A9todo permite consultar as informa\u00C3\u00A7\u00C3\u00B5es b\u00C3\u00A1sicas de um determinado Cart\u00C3\u00A3o a partir do seu c\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o (id).
@@ -785,7 +874,7 @@ class CartaoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get3(id, callback=callback_function)
+        >>> thread = api.consultar_using_get4(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -803,14 +892,14 @@ class CartaoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get3" % key
+                    " to method consultar_using_get4" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get3`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get4`")
 
         resource_path = '/api/cartoes/{id}'.replace('{format}', 'json')
         path_params = {}
@@ -928,7 +1017,7 @@ class CartaoApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def desbloquear_using_put(self, id, **kwargs):
+    def desbloquear_using_post(self, id, **kwargs):
         """
         Realiza o desbloqueio de um determinado Cart\u00C3\u00A3o
         Este m\u00C3\u00A9todo permite que seja desbloqueado um determinado cart\u00C3\u00A3o a partir do seu c\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o (id).
@@ -939,7 +1028,7 @@ class CartaoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.desbloquear_using_put(id, callback=callback_function)
+        >>> thread = api.desbloquear_using_post(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -957,14 +1046,14 @@ class CartaoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method desbloquear_using_put" % key
+                    " to method desbloquear_using_post" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `desbloquear_using_put`")
+            raise ValueError("Missing the required parameter `id` when calling `desbloquear_using_post`")
 
         resource_path = '/api/cartoes/{id}/desbloquear'.replace('{format}', 'json')
         path_params = {}
@@ -993,7 +1082,7 @@ class CartaoApi(object):
         # Authentication setting
         auth_settings = []
 
-        response = self.api_client.call_api(resource_path, 'PUT',
+        response = self.api_client.call_api(resource_path, 'POST',
                                             path_params,
                                             query_params,
                                             header_params,
@@ -1402,6 +1491,83 @@ class CartaoApi(object):
                                             post_params=form_params,
                                             files=local_var_files,
                                             response_type='PageCartaoResponse',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
+    def reativar_using_post(self, id, **kwargs):
+        """
+        Realiza a reativa\u00C3\u00A7\u00C3\u00A3o de um determinado Cart\u00C3\u00A3o
+        Este m\u00C3\u00A9todo permite a realiza\u00C3\u00A7\u00C3\u00A3o da reativa\u00C3\u00A7\u00C3\u00A3o de um determinado cart\u00C3\u00A3o a partir do seu c\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o (id).
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.reativar_using_post(id, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Cart\u00C3\u00A3o (id). (required)
+        :return: CartaoResponse
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method reativar_using_post" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `reativar_using_post`")
+
+        resource_path = '/api/cartoes/{id}/reativar'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = []
+
+        response = self.api_client.call_api(resource_path, 'POST',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='CartaoResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response

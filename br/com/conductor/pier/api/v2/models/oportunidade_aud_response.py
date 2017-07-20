@@ -48,7 +48,8 @@ class OportunidadeAUDResponse(object):
             'flag_ativo': 'bool',
             'detalhes': 'list[CdtDetalheOportunidadeAUD]',
             'rev_date': 'str',
-            'rev_type': 'int'
+            'rev_type': 'int',
+            'rev': 'int'
         }
 
         self.attribute_map = {
@@ -63,7 +64,8 @@ class OportunidadeAUDResponse(object):
             'flag_ativo': 'flagAtivo',
             'detalhes': 'detalhes',
             'rev_date': 'revDate',
-            'rev_type': 'revType'
+            'rev_type': 'revType',
+            'rev': 'rev'
         }
 
         self._id = None
@@ -78,6 +80,7 @@ class OportunidadeAUDResponse(object):
         self._detalhes = None
         self._rev_date = None
         self._rev_type = None
+        self._rev = None
 
     @property
     def id(self):
@@ -342,6 +345,28 @@ class OportunidadeAUDResponse(object):
         :type: int
         """
         self._rev_type = rev_type
+
+    @property
+    def rev(self):
+        """
+        Gets the rev of this OportunidadeAUDResponse.
+        Identificador da auditoria
+
+        :return: The rev of this OportunidadeAUDResponse.
+        :rtype: int
+        """
+        return self._rev
+
+    @rev.setter
+    def rev(self, rev):
+        """
+        Sets the rev of this OportunidadeAUDResponse.
+        Identificador da auditoria
+
+        :param rev: The rev of this OportunidadeAUDResponse.
+        :type: int
+        """
+        self._rev = rev
 
     def to_dict(self):
         """

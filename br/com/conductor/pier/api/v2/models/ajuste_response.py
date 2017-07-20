@@ -37,14 +37,26 @@ class AjusteResponse(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'id_ajuste': 'int'
+            'id_ajuste': 'int',
+            'id_tipo_ajuste': 'int',
+            'id_conta': 'int',
+            'data_ajuste': 'str',
+            'valor': 'float'
         }
 
         self.attribute_map = {
-            'id_ajuste': 'idAjuste'
+            'id_ajuste': 'idAjuste',
+            'id_tipo_ajuste': 'idTipoAjuste',
+            'id_conta': 'idConta',
+            'data_ajuste': 'dataAjuste',
+            'valor': 'valor'
         }
 
         self._id_ajuste = None
+        self._id_tipo_ajuste = None
+        self._id_conta = None
+        self._data_ajuste = None
+        self._valor = None
 
     @property
     def id_ajuste(self):
@@ -67,6 +79,94 @@ class AjusteResponse(object):
         :type: int
         """
         self._id_ajuste = id_ajuste
+
+    @property
+    def id_tipo_ajuste(self):
+        """
+        Gets the id_tipo_ajuste of this AjusteResponse.
+        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do tipo do ajuste
+
+        :return: The id_tipo_ajuste of this AjusteResponse.
+        :rtype: int
+        """
+        return self._id_tipo_ajuste
+
+    @id_tipo_ajuste.setter
+    def id_tipo_ajuste(self, id_tipo_ajuste):
+        """
+        Sets the id_tipo_ajuste of this AjusteResponse.
+        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do tipo do ajuste
+
+        :param id_tipo_ajuste: The id_tipo_ajuste of this AjusteResponse.
+        :type: int
+        """
+        self._id_tipo_ajuste = id_tipo_ajuste
+
+    @property
+    def id_conta(self):
+        """
+        Gets the id_conta of this AjusteResponse.
+        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da conta (idConta)
+
+        :return: The id_conta of this AjusteResponse.
+        :rtype: int
+        """
+        return self._id_conta
+
+    @id_conta.setter
+    def id_conta(self, id_conta):
+        """
+        Sets the id_conta of this AjusteResponse.
+        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da conta (idConta)
+
+        :param id_conta: The id_conta of this AjusteResponse.
+        :type: int
+        """
+        self._id_conta = id_conta
+
+    @property
+    def data_ajuste(self):
+        """
+        Gets the data_ajuste of this AjusteResponse.
+        Data do ajuste
+
+        :return: The data_ajuste of this AjusteResponse.
+        :rtype: str
+        """
+        return self._data_ajuste
+
+    @data_ajuste.setter
+    def data_ajuste(self, data_ajuste):
+        """
+        Sets the data_ajuste of this AjusteResponse.
+        Data do ajuste
+
+        :param data_ajuste: The data_ajuste of this AjusteResponse.
+        :type: str
+        """
+        self._data_ajuste = data_ajuste
+
+    @property
+    def valor(self):
+        """
+        Gets the valor of this AjusteResponse.
+        Valor do ajuste
+
+        :return: The valor of this AjusteResponse.
+        :rtype: float
+        """
+        return self._valor
+
+    @valor.setter
+    def valor(self, valor):
+        """
+        Sets the valor of this AjusteResponse.
+        Valor do ajuste
+
+        :param valor: The valor of this AjusteResponse.
+        :type: float
+        """
+        self._valor = valor
 
     def to_dict(self):
         """

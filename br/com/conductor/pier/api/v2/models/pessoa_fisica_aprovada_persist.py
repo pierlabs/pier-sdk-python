@@ -47,7 +47,7 @@ class PessoaFisicaAprovadaPersist(object):
             'unidade_federativa_identidade': 'str',
             'data_emissao_identidade': 'str',
             'id_estado_civil': 'int',
-            'profissao': 'str',
+            'id_profissao': 'int',
             'id_natureza_ocupacao': 'int',
             'id_nacionalidade': 'int',
             'id_origem_comercial': 'int',
@@ -58,6 +58,8 @@ class PessoaFisicaAprovadaPersist(object):
             'dia_vencimento': 'int',
             'nome_impresso': 'str',
             'nome_empresa': 'str',
+            'valor_renda': 'float',
+            'canal_entrada': 'str',
             'telefones': 'list[TelefonePessoaAprovadaPersist]',
             'enderecos': 'list[EnderecoAprovadoPersist]'
         }
@@ -73,7 +75,7 @@ class PessoaFisicaAprovadaPersist(object):
             'unidade_federativa_identidade': 'unidadeFederativaIdentidade',
             'data_emissao_identidade': 'dataEmissaoIdentidade',
             'id_estado_civil': 'idEstadoCivil',
-            'profissao': 'profissao',
+            'id_profissao': 'idProfissao',
             'id_natureza_ocupacao': 'idNaturezaOcupacao',
             'id_nacionalidade': 'idNacionalidade',
             'id_origem_comercial': 'idOrigemComercial',
@@ -84,6 +86,8 @@ class PessoaFisicaAprovadaPersist(object):
             'dia_vencimento': 'diaVencimento',
             'nome_impresso': 'nomeImpresso',
             'nome_empresa': 'nomeEmpresa',
+            'valor_renda': 'valorRenda',
+            'canal_entrada': 'canalEntrada',
             'telefones': 'telefones',
             'enderecos': 'enderecos'
         }
@@ -98,7 +102,7 @@ class PessoaFisicaAprovadaPersist(object):
         self._unidade_federativa_identidade = None
         self._data_emissao_identidade = None
         self._id_estado_civil = None
-        self._profissao = None
+        self._id_profissao = None
         self._id_natureza_ocupacao = None
         self._id_nacionalidade = None
         self._id_origem_comercial = None
@@ -109,6 +113,8 @@ class PessoaFisicaAprovadaPersist(object):
         self._dia_vencimento = None
         self._nome_impresso = None
         self._nome_empresa = None
+        self._valor_renda = None
+        self._canal_entrada = None
         self._telefones = None
         self._enderecos = None
 
@@ -333,26 +339,26 @@ class PessoaFisicaAprovadaPersist(object):
         self._id_estado_civil = id_estado_civil
 
     @property
-    def profissao(self):
+    def id_profissao(self):
         """
-        Gets the profissao of this PessoaFisicaAprovadaPersist.
+        Gets the id_profissao of this PessoaFisicaAprovadaPersist.
         Profiss\u00C3\u00A3o da pessoa fisica
 
-        :return: The profissao of this PessoaFisicaAprovadaPersist.
-        :rtype: str
+        :return: The id_profissao of this PessoaFisicaAprovadaPersist.
+        :rtype: int
         """
-        return self._profissao
+        return self._id_profissao
 
-    @profissao.setter
-    def profissao(self, profissao):
+    @id_profissao.setter
+    def id_profissao(self, id_profissao):
         """
-        Sets the profissao of this PessoaFisicaAprovadaPersist.
+        Sets the id_profissao of this PessoaFisicaAprovadaPersist.
         Profiss\u00C3\u00A3o da pessoa fisica
 
-        :param profissao: The profissao of this PessoaFisicaAprovadaPersist.
-        :type: str
+        :param id_profissao: The id_profissao of this PessoaFisicaAprovadaPersist.
+        :type: int
         """
-        self._profissao = profissao
+        self._id_profissao = id_profissao
 
     @property
     def id_natureza_ocupacao(self):
@@ -573,6 +579,50 @@ class PessoaFisicaAprovadaPersist(object):
         :type: str
         """
         self._nome_empresa = nome_empresa
+
+    @property
+    def valor_renda(self):
+        """
+        Gets the valor_renda of this PessoaFisicaAprovadaPersist.
+        Apresenta o valor da renda compravada
+
+        :return: The valor_renda of this PessoaFisicaAprovadaPersist.
+        :rtype: float
+        """
+        return self._valor_renda
+
+    @valor_renda.setter
+    def valor_renda(self, valor_renda):
+        """
+        Sets the valor_renda of this PessoaFisicaAprovadaPersist.
+        Apresenta o valor da renda compravada
+
+        :param valor_renda: The valor_renda of this PessoaFisicaAprovadaPersist.
+        :type: float
+        """
+        self._valor_renda = valor_renda
+
+    @property
+    def canal_entrada(self):
+        """
+        Gets the canal_entrada of this PessoaFisicaAprovadaPersist.
+        Indica o canal pelo qual o cadastro do cliente foi realizado
+
+        :return: The canal_entrada of this PessoaFisicaAprovadaPersist.
+        :rtype: str
+        """
+        return self._canal_entrada
+
+    @canal_entrada.setter
+    def canal_entrada(self, canal_entrada):
+        """
+        Sets the canal_entrada of this PessoaFisicaAprovadaPersist.
+        Indica o canal pelo qual o cadastro do cliente foi realizado
+
+        :param canal_entrada: The canal_entrada of this PessoaFisicaAprovadaPersist.
+        :type: str
+        """
+        self._canal_entrada = canal_entrada
 
     @property
     def telefones(self):

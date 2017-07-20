@@ -49,6 +49,8 @@ class PessoaJuridicaAprovadaPersist(object):
             'email': 'str',
             'dia_vencimento': 'int',
             'nome_impresso': 'str',
+            'valor_renda': 'float',
+            'canal_entrada': 'str',
             'telefones': 'list[TelefonePessoaAprovadaPersist]',
             'enderecos': 'list[EnderecoAprovadoPersist]',
             'socios': 'list[PessoaPersist]'
@@ -67,6 +69,8 @@ class PessoaJuridicaAprovadaPersist(object):
             'email': 'email',
             'dia_vencimento': 'diaVencimento',
             'nome_impresso': 'nomeImpresso',
+            'valor_renda': 'valorRenda',
+            'canal_entrada': 'canalEntrada',
             'telefones': 'telefones',
             'enderecos': 'enderecos',
             'socios': 'socios'
@@ -84,6 +88,8 @@ class PessoaJuridicaAprovadaPersist(object):
         self._email = None
         self._dia_vencimento = None
         self._nome_impresso = None
+        self._valor_renda = None
+        self._canal_entrada = None
         self._telefones = None
         self._enderecos = None
         self._socios = None
@@ -351,6 +357,50 @@ class PessoaJuridicaAprovadaPersist(object):
         :type: str
         """
         self._nome_impresso = nome_impresso
+
+    @property
+    def valor_renda(self):
+        """
+        Gets the valor_renda of this PessoaJuridicaAprovadaPersist.
+        Apresenta o valor da renda compravada
+
+        :return: The valor_renda of this PessoaJuridicaAprovadaPersist.
+        :rtype: float
+        """
+        return self._valor_renda
+
+    @valor_renda.setter
+    def valor_renda(self, valor_renda):
+        """
+        Sets the valor_renda of this PessoaJuridicaAprovadaPersist.
+        Apresenta o valor da renda compravada
+
+        :param valor_renda: The valor_renda of this PessoaJuridicaAprovadaPersist.
+        :type: float
+        """
+        self._valor_renda = valor_renda
+
+    @property
+    def canal_entrada(self):
+        """
+        Gets the canal_entrada of this PessoaJuridicaAprovadaPersist.
+        Indica o canal pelo qual o cadastro do cliente foi realizado
+
+        :return: The canal_entrada of this PessoaJuridicaAprovadaPersist.
+        :rtype: str
+        """
+        return self._canal_entrada
+
+    @canal_entrada.setter
+    def canal_entrada(self, canal_entrada):
+        """
+        Sets the canal_entrada of this PessoaJuridicaAprovadaPersist.
+        Indica o canal pelo qual o cadastro do cliente foi realizado
+
+        :param canal_entrada: The canal_entrada of this PessoaJuridicaAprovadaPersist.
+        :type: str
+        """
+        self._canal_entrada = canal_entrada
 
     @property
     def telefones(self):

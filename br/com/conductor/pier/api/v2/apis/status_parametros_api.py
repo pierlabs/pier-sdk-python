@@ -199,7 +199,7 @@ class StatusParametrosApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get13(self, id, **kwargs):
+    def consultar_using_get14(self, id, **kwargs):
         """
         Apresenta os dados de um determinado Status Conta
         Este m\u00C3\u00A9todo permite consultar os par\u00C3\u00A2metros de um determinado Status Conta a partir do seu c\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o (id).
@@ -210,7 +210,7 @@ class StatusParametrosApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get13(id, callback=callback_function)
+        >>> thread = api.consultar_using_get14(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -228,14 +228,14 @@ class StatusParametrosApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get13" % key
+                    " to method consultar_using_get14" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get13`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get14`")
 
         resource_path = '/api/status-contas/{id}'.replace('{format}', 'json')
         path_params = {}
@@ -276,7 +276,7 @@ class StatusParametrosApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get14(self, id, **kwargs):
+    def consultar_using_get15(self, id, **kwargs):
         """
         Apresenta os dados de um determinado Status Impress\u00C3\u00A3o
         Este m\u00C3\u00A9todo permite consultar os par\u00C3\u00A2metros de um determinado Status de Impress\u00C3\u00A3o do Cart\u00C3\u00A3o a partir do seu c\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o (id).
@@ -287,7 +287,7 @@ class StatusParametrosApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get14(id, callback=callback_function)
+        >>> thread = api.consultar_using_get15(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -305,14 +305,14 @@ class StatusParametrosApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get14" % key
+                    " to method consultar_using_get15" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get14`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get15`")
 
         resource_path = '/api/status-impressoes/{id}'.replace('{format}', 'json')
         path_params = {}
@@ -462,12 +462,15 @@ class StatusParametrosApi(object):
         :param int flag_cobra_tarifa: Quando ativa, indica que cart\u00C3\u00B5es que tiverem um idStatusCartao atribu\u00C3\u00ADdo com essa caracter\u00C3\u00ADstica, incluir\u00C3\u00A3o a cobran\u00C3\u00A7a de uma tarifa para a conta de acordo com os valores definidos nos par\u00C3\u00A2metros do emissor.
         :param int flag_permite_nova_via_cartao: Par\u00C3\u00A2metro que define se o status do cart\u00C3\u00A3o permite a solicita\u00C3\u00A7\u00C3\u00A3o de uma nova via, sendo: 0: Inativo e 1: Ativo.
         :param int flag_permite_desbloqueio: Par\u00C3\u00A2metro que define se o status do cart\u00C3\u00A3o permite o desbloqueio, sendo: 0: Inativo e 1: Ativo.
+        :param int flag_cancelamento: Par\u00C3\u00A2metro que define se o status do cart\u00C3\u00A3o permite o cancelamento, sendo: 0: Inativo e 1: Ativo.
+        :param int flag_permite_bloqueio: Par\u00C3\u00A2metro que define se o status do cart\u00C3\u00A3o permite o Bloqueio, sendo: 0: Inativo e 1: Ativo.
+        :param int flag_reativar: Par\u00C3\u00A2metro que define se o status do cart\u00C3\u00A3o permite a reativa\u00C3\u00A7\u00C3\u00A3o do cart\u00C3\u00A3o, sendo: 0: Inativo e 1: Ativo.
         :return: PageStatusCartaoResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['page', 'limit', 'id', 'nome', 'flag_cancela_cartao', 'flag_cancela_no_desbloqueio', 'id_status_destino_desbloqueio', 'id_status_destino_conta', 'flag_cobra_tarifa', 'flag_permite_nova_via_cartao', 'flag_permite_desbloqueio']
+        all_params = ['page', 'limit', 'id', 'nome', 'flag_cancela_cartao', 'flag_cancela_no_desbloqueio', 'id_status_destino_desbloqueio', 'id_status_destino_conta', 'flag_cobra_tarifa', 'flag_permite_nova_via_cartao', 'flag_permite_desbloqueio', 'flag_cancelamento', 'flag_permite_bloqueio', 'flag_reativar']
         all_params.append('callback')
 
         params = locals()
@@ -507,6 +510,12 @@ class StatusParametrosApi(object):
             query_params['flagPermiteNovaViaCartao'] = params['flag_permite_nova_via_cartao']
         if 'flag_permite_desbloqueio' in params:
             query_params['flagPermiteDesbloqueio'] = params['flag_permite_desbloqueio']
+        if 'flag_cancelamento' in params:
+            query_params['flagCancelamento'] = params['flag_cancelamento']
+        if 'flag_permite_bloqueio' in params:
+            query_params['flagPermiteBloqueio'] = params['flag_permite_bloqueio']
+        if 'flag_reativar' in params:
+            query_params['flagReativar'] = params['flag_reativar']
 
         header_params = {}
 
@@ -564,12 +573,15 @@ class StatusParametrosApi(object):
         :param int flag_permite_nova_via_cartao: Par\u00C3\u00A2metro que define se o Status da conta permite a solicita\u00C3\u00A7\u00C3\u00A3o de um novo cart\u00C3\u00A3o, sendo: 0: Inativo e 1: Ativo.
         :param int flag_faz_transferencia: Par\u00C3\u00A2metro que define se o Status da conta permite fazer transferencia, sendo: 0: Inativo e 1: Ativo.
         :param int flag_recebe_transferencia: Par\u00C3\u00A2metro que define se o Status da conta permite receber transferencia, sendo: 0: Inativo e 1: Ativo.
+        :param int flag_permite_bloqueio: Par\u00C3\u00A2metro que define se o Status da conta permite receber bloqueio, sendo: 0: Inativo e 1: Ativo.
+        :param int flag_permite_desbloqueio: Par\u00C3\u00A2metro que define se o Status da conta permite receber desbloqueio, sendo: 0: Inativo e 1: Ativo.
+        :param int flag_cancela_conta: Par\u00C3\u00A2metro que define se o Status da conta permite receber cancelamento, sendo: 0: Inativo e 1: Ativo.
         :return: PageStatusContaResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['page', 'limit', 'id', 'nome', 'flag_altera_limite', 'mensagem_consulta_negada', 'flag_permite_nova_via_cartao', 'flag_faz_transferencia', 'flag_recebe_transferencia']
+        all_params = ['page', 'limit', 'id', 'nome', 'flag_altera_limite', 'mensagem_consulta_negada', 'flag_permite_nova_via_cartao', 'flag_faz_transferencia', 'flag_recebe_transferencia', 'flag_permite_bloqueio', 'flag_permite_desbloqueio', 'flag_cancela_conta']
         all_params.append('callback')
 
         params = locals()
@@ -605,6 +617,12 @@ class StatusParametrosApi(object):
             query_params['flagFazTransferencia'] = params['flag_faz_transferencia']
         if 'flag_recebe_transferencia' in params:
             query_params['flagRecebeTransferencia'] = params['flag_recebe_transferencia']
+        if 'flag_permite_bloqueio' in params:
+            query_params['flagPermiteBloqueio'] = params['flag_permite_bloqueio']
+        if 'flag_permite_desbloqueio' in params:
+            query_params['flagPermiteDesbloqueio'] = params['flag_permite_desbloqueio']
+        if 'flag_cancela_conta' in params:
+            query_params['flagCancelaConta'] = params['flag_cancela_conta']
 
         header_params = {}
 

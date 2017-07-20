@@ -180,7 +180,7 @@ class NotificacaoSMSResponse(object):
         :param tipo_evento: The tipo_evento of this NotificacaoSMSResponse.
         :type: str
         """
-        allowed_values = ["RISCO_FRAUDE", "OUTROS"]
+        allowed_values = ["RISCO_FRAUDE", "TOKEN_SMS", "OUTROS"]
         if tipo_evento not in allowed_values:
             raise ValueError(
                 "Invalid value for `tipo_evento`, must be one of {0}"
