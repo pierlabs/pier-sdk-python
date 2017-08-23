@@ -45,7 +45,7 @@ class GestaoLimitesApi(object):
                 config.api_client = ApiClient()
             self.api_client = config.api_client
 
-    def alterar_limite_using_put(self, id, limite_global, limite_compra, limite_parcelado, limite_parcelas, limite_saque_global, limite_saque_periodo, limite_consignado, limite_internacional_compra, limite_internacional_parcelado, limite_internacional_parcelas, limite_internacional_saque_global, limite_internacional_saque_periodo, limite_maximo, **kwargs):
+    def alterar_limite_using_put(self, id, **kwargs):
         """
         Realiza a altera\u00C3\u00A7\u00C3\u00A3o dos limites da conta
         Esse recurso permite realizar a altera\u00C3\u00A7\u00C3\u00A3o dos Limites de uma determinada Conta.
@@ -56,24 +56,24 @@ class GestaoLimitesApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.alterar_limite_using_put(id, limite_global, limite_compra, limite_parcelado, limite_parcelas, limite_saque_global, limite_saque_periodo, limite_consignado, limite_internacional_compra, limite_internacional_parcelado, limite_internacional_parcelas, limite_internacional_saque_global, limite_internacional_saque_periodo, limite_maximo, callback=callback_function)
+        >>> thread = api.alterar_limite_using_put(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int id: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da conta (id). (required)
-        :param float limite_global: Apresenta o valor do limite de cr\u00C3\u00A9dito que o portador do cart\u00C3\u00A3o possui. (required)
-        :param float limite_compra: Quando utilizado pelo emissor, este campo apresenta o valor do limite de cr\u00C3\u00A9dito que o portador possui para uso exclusivo em Compras Nacionais. (required)
-        :param float limite_parcelado: Quando utilizado pelo emissor, este campo apresenta o valor do limite de cr\u00C3\u00A9dito que o portador possui para realizar transa\u00C3\u00A7\u00C3\u00B5es de compras parceladas. (required)
-        :param float limite_parcelas: Quando utilizado pelo emissor, este campo apresenta o valor do limite de cr\u00C3\u00A9dito que portador pode acumular a partir da soma das parcelas das compras que forem realizadas nesta modalidade. (required)
-        :param float limite_saque_global: Quando utilizado pelo emissor, este campo apresenta o valor do limite de cr\u00C3\u00A9dito que o portador pode utilizar para realizar transa\u00C3\u00A7\u00C3\u00B5es de Saque Nacional. (required)
-        :param float limite_saque_periodo: Quando utilizado pelo emissor, este campo apresenta o valor do limite de cr\u00C3\u00A9dito que o portador pode utilizar para realizar transa\u00C3\u00A7\u00C3\u00B5es de Saque Nacional dentro de cada ciclo de faturamento. (required)
-        :param float limite_consignado: Quando utilizado pelo emissor, este campo apresenta o valor da margem de cr\u00C3\u00A9dito que ele poder\u00C3\u00A1 utilizar para ser cobrado de forma consignada (desconto em folha) em seu sal\u00C3\u00A1rio/vencimentos. (required)
-        :param float limite_internacional_compra: Quando utilizado pelo emissor, este campo apresenta o valor do limite de cr\u00C3\u00A9dito que o portador possui para uso exclusivo em Compras Internacionais. (required)
-        :param float limite_internacional_parcelado: Quando utilizado pelo emissor, este campo apresenta o valor do limite de cr\u00C3\u00A9dito que o portador possui para realizar transa\u00C3\u00A7\u00C3\u00B5es Internacionais de Compras Parceladas. (required)
-        :param float limite_internacional_parcelas: Quando utilizado pelo emissor, este campo apresenta o valor do limite de cr\u00C3\u00A9dito que portador pode acumular a partir da soma das parcelas das compras internacionais que forem realizadas nesta modalidade. (required)
-        :param float limite_internacional_saque_global: Quando utilizado pelo emissor, este campo apresenta o valor do limite de cr\u00C3\u00A9dito que o portador pode utilizar para realizar transa\u00C3\u00A7\u00C3\u00B5es de Saque Internacional. (required)
-        :param float limite_internacional_saque_periodo: Quando utilizado pelo emissor, este campo apresenta o valor do limite de cr\u00C3\u00A9dito que o portador pode utilizar para realizar transa\u00C3\u00A7\u00C3\u00B5es de Saque Internacional dentro de cada ciclo de faturamento. (required)
-        :param float limite_maximo: Valor m\u00C3\u00A1ximo do limite de cr\u00C3\u00A9dito para realizar transa\u00C3\u00A7\u00C3\u00B5es. (required)
+        :param float limite_global: Apresenta o valor do limite de cr\u00C3\u00A9dito que o portador do cart\u00C3\u00A3o possui.
+        :param float limite_compra: Quando utilizado pelo emissor, este campo apresenta o valor do limite de cr\u00C3\u00A9dito que o portador possui para uso exclusivo em Compras Nacionais.
+        :param float limite_parcelado: Quando utilizado pelo emissor, este campo apresenta o valor do limite de cr\u00C3\u00A9dito que o portador possui para realizar transa\u00C3\u00A7\u00C3\u00B5es de compras parceladas.
+        :param float limite_parcelas: Quando utilizado pelo emissor, este campo apresenta o valor do limite de cr\u00C3\u00A9dito que portador pode acumular a partir da soma das parcelas das compras que forem realizadas nesta modalidade.
+        :param float limite_saque_global: Quando utilizado pelo emissor, este campo apresenta o valor do limite de cr\u00C3\u00A9dito que o portador pode utilizar para realizar transa\u00C3\u00A7\u00C3\u00B5es de Saque Nacional.
+        :param float limite_saque_periodo: Quando utilizado pelo emissor, este campo apresenta o valor do limite de cr\u00C3\u00A9dito que o portador pode utilizar para realizar transa\u00C3\u00A7\u00C3\u00B5es de Saque Nacional dentro de cada ciclo de faturamento.
+        :param float limite_consignado: Quando utilizado pelo emissor, este campo apresenta o valor da margem de cr\u00C3\u00A9dito que ele poder\u00C3\u00A1 utilizar para ser cobrado de forma consignada (desconto em folha) em seu sal\u00C3\u00A1rio/vencimentos.
+        :param float limite_internacional_compra: Quando utilizado pelo emissor, este campo apresenta o valor do limite de cr\u00C3\u00A9dito que o portador possui para uso exclusivo em Compras Internacionais.
+        :param float limite_internacional_parcelado: Quando utilizado pelo emissor, este campo apresenta o valor do limite de cr\u00C3\u00A9dito que o portador possui para realizar transa\u00C3\u00A7\u00C3\u00B5es Internacionais de Compras Parceladas.
+        :param float limite_internacional_parcelas: Quando utilizado pelo emissor, este campo apresenta o valor do limite de cr\u00C3\u00A9dito que portador pode acumular a partir da soma das parcelas das compras internacionais que forem realizadas nesta modalidade.
+        :param float limite_internacional_saque_global: Quando utilizado pelo emissor, este campo apresenta o valor do limite de cr\u00C3\u00A9dito que o portador pode utilizar para realizar transa\u00C3\u00A7\u00C3\u00B5es de Saque Internacional.
+        :param float limite_internacional_saque_periodo: Quando utilizado pelo emissor, este campo apresenta o valor do limite de cr\u00C3\u00A9dito que o portador pode utilizar para realizar transa\u00C3\u00A7\u00C3\u00B5es de Saque Internacional dentro de cada ciclo de faturamento.
+        :param float limite_maximo: Valor m\u00C3\u00A1ximo do limite de cr\u00C3\u00A9dito para realizar transa\u00C3\u00A7\u00C3\u00B5es.
         :return: LimiteDisponibilidadeResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -95,45 +95,6 @@ class GestaoLimitesApi(object):
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
             raise ValueError("Missing the required parameter `id` when calling `alterar_limite_using_put`")
-        # verify the required parameter 'limite_global' is set
-        if ('limite_global' not in params) or (params['limite_global'] is None):
-            raise ValueError("Missing the required parameter `limite_global` when calling `alterar_limite_using_put`")
-        # verify the required parameter 'limite_compra' is set
-        if ('limite_compra' not in params) or (params['limite_compra'] is None):
-            raise ValueError("Missing the required parameter `limite_compra` when calling `alterar_limite_using_put`")
-        # verify the required parameter 'limite_parcelado' is set
-        if ('limite_parcelado' not in params) or (params['limite_parcelado'] is None):
-            raise ValueError("Missing the required parameter `limite_parcelado` when calling `alterar_limite_using_put`")
-        # verify the required parameter 'limite_parcelas' is set
-        if ('limite_parcelas' not in params) or (params['limite_parcelas'] is None):
-            raise ValueError("Missing the required parameter `limite_parcelas` when calling `alterar_limite_using_put`")
-        # verify the required parameter 'limite_saque_global' is set
-        if ('limite_saque_global' not in params) or (params['limite_saque_global'] is None):
-            raise ValueError("Missing the required parameter `limite_saque_global` when calling `alterar_limite_using_put`")
-        # verify the required parameter 'limite_saque_periodo' is set
-        if ('limite_saque_periodo' not in params) or (params['limite_saque_periodo'] is None):
-            raise ValueError("Missing the required parameter `limite_saque_periodo` when calling `alterar_limite_using_put`")
-        # verify the required parameter 'limite_consignado' is set
-        if ('limite_consignado' not in params) or (params['limite_consignado'] is None):
-            raise ValueError("Missing the required parameter `limite_consignado` when calling `alterar_limite_using_put`")
-        # verify the required parameter 'limite_internacional_compra' is set
-        if ('limite_internacional_compra' not in params) or (params['limite_internacional_compra'] is None):
-            raise ValueError("Missing the required parameter `limite_internacional_compra` when calling `alterar_limite_using_put`")
-        # verify the required parameter 'limite_internacional_parcelado' is set
-        if ('limite_internacional_parcelado' not in params) or (params['limite_internacional_parcelado'] is None):
-            raise ValueError("Missing the required parameter `limite_internacional_parcelado` when calling `alterar_limite_using_put`")
-        # verify the required parameter 'limite_internacional_parcelas' is set
-        if ('limite_internacional_parcelas' not in params) or (params['limite_internacional_parcelas'] is None):
-            raise ValueError("Missing the required parameter `limite_internacional_parcelas` when calling `alterar_limite_using_put`")
-        # verify the required parameter 'limite_internacional_saque_global' is set
-        if ('limite_internacional_saque_global' not in params) or (params['limite_internacional_saque_global'] is None):
-            raise ValueError("Missing the required parameter `limite_internacional_saque_global` when calling `alterar_limite_using_put`")
-        # verify the required parameter 'limite_internacional_saque_periodo' is set
-        if ('limite_internacional_saque_periodo' not in params) or (params['limite_internacional_saque_periodo'] is None):
-            raise ValueError("Missing the required parameter `limite_internacional_saque_periodo` when calling `alterar_limite_using_put`")
-        # verify the required parameter 'limite_maximo' is set
-        if ('limite_maximo' not in params) or (params['limite_maximo'] is None):
-            raise ValueError("Missing the required parameter `limite_maximo` when calling `alterar_limite_using_put`")
 
         resource_path = '/api/contas/{id}/alterar-limites'.replace('{format}', 'json')
         path_params = {}
@@ -293,6 +254,7 @@ class GestaoLimitesApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int id: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da conta (id). (required)
+        :param list[str] sort: Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
         :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
         :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
         :return: PageHistoricoEventosResponse
@@ -300,7 +262,7 @@ class GestaoLimitesApi(object):
                  returns the request thread.
         """
 
-        all_params = ['id', 'page', 'limit']
+        all_params = ['id', 'sort', 'page', 'limit']
         all_params.append('callback')
 
         params = locals()
@@ -323,6 +285,8 @@ class GestaoLimitesApi(object):
             path_params['id'] = params['id']
 
         query_params = {}
+        if 'sort' in params:
+            query_params['sort'] = params['sort']
         if 'page' in params:
             query_params['page'] = params['page']
         if 'limit' in params:

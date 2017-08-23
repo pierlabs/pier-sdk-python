@@ -62,6 +62,7 @@ class ServicosContaApi(object):
             for asynchronous request. (optional)
         :param int id: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da conta (id). (required)
         :param int id_anuidade: Identificador da anuidade (required)
+        :param list[str] sort: Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
         :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
         :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
         :param str ddd: DDD do celular
@@ -73,7 +74,7 @@ class ServicosContaApi(object):
                  returns the request thread.
         """
 
-        all_params = ['id', 'id_anuidade', 'page', 'limit', 'ddd', 'celular', 'id_operadora', 'id_origem_comercial']
+        all_params = ['id', 'id_anuidade', 'sort', 'page', 'limit', 'ddd', 'celular', 'id_operadora', 'id_origem_comercial']
         all_params.append('callback')
 
         params = locals()
@@ -99,6 +100,8 @@ class ServicosContaApi(object):
             path_params['id'] = params['id']
 
         query_params = {}
+        if 'sort' in params:
+            query_params['sort'] = params['sort']
         if 'page' in params:
             query_params['page'] = params['page']
         if 'limit' in params:
@@ -315,6 +318,7 @@ class ServicosContaApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
+        :param list[str] sort: Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
         :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
         :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
         :return: PageAnuidadeResponse
@@ -322,7 +326,7 @@ class ServicosContaApi(object):
                  returns the request thread.
         """
 
-        all_params = ['page', 'limit']
+        all_params = ['sort', 'page', 'limit']
         all_params.append('callback')
 
         params = locals()
@@ -336,10 +340,12 @@ class ServicosContaApi(object):
         del params['kwargs']
 
 
-        resource_path = '/api/api/anuidades'.replace('{format}', 'json')
+        resource_path = '/api/anuidades'.replace('{format}', 'json')
         path_params = {}
 
         query_params = {}
+        if 'sort' in params:
+            query_params['sort'] = params['sort']
         if 'page' in params:
             query_params['page'] = params['page']
         if 'limit' in params:
@@ -392,6 +398,7 @@ class ServicosContaApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
+        :param list[str] sort: Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
         :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
         :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
         :return: PageOperadoraResponse
@@ -399,7 +406,7 @@ class ServicosContaApi(object):
                  returns the request thread.
         """
 
-        all_params = ['page', 'limit']
+        all_params = ['sort', 'page', 'limit']
         all_params.append('callback')
 
         params = locals()
@@ -417,6 +424,8 @@ class ServicosContaApi(object):
         path_params = {}
 
         query_params = {}
+        if 'sort' in params:
+            query_params['sort'] = params['sort']
         if 'page' in params:
             query_params['page'] = params['page']
         if 'limit' in params:

@@ -128,7 +128,7 @@ class PlataformasMobileApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get16(self, **kwargs):
+    def listar_using_get17(self, **kwargs):
         """
         Lista as plataformas mobile cadastradas
         Este m\u00C3\u00A9todo permite que sejam listadas as plataformas mobile existentes na base do PIER.
@@ -139,10 +139,11 @@ class PlataformasMobileApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get16(callback=callback_function)
+        >>> thread = api.listar_using_get17(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
+        :param list[str] sort: Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
         :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
         :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
         :param str nome: Nome da Plataforma Mobile
@@ -151,7 +152,7 @@ class PlataformasMobileApi(object):
                  returns the request thread.
         """
 
-        all_params = ['page', 'limit', 'nome']
+        all_params = ['sort', 'page', 'limit', 'nome']
         all_params.append('callback')
 
         params = locals()
@@ -159,7 +160,7 @@ class PlataformasMobileApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get16" % key
+                    " to method listar_using_get17" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -169,6 +170,8 @@ class PlataformasMobileApi(object):
         path_params = {}
 
         query_params = {}
+        if 'sort' in params:
+            query_params['sort'] = params['sort']
         if 'page' in params:
             query_params['page'] = params['page']
         if 'limit' in params:
@@ -208,7 +211,7 @@ class PlataformasMobileApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def salvar_using_post11(self, persist, **kwargs):
+    def salvar_using_post12(self, persist, **kwargs):
         """
         Cadastra Plataforma Mobile
         Esse recurso permite cadastrar plataformas mobile.
@@ -219,7 +222,7 @@ class PlataformasMobileApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.salvar_using_post11(persist, callback=callback_function)
+        >>> thread = api.salvar_using_post12(persist, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -237,14 +240,14 @@ class PlataformasMobileApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method salvar_using_post11" % key
+                    " to method salvar_using_post12" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'persist' is set
         if ('persist' not in params) or (params['persist'] is None):
-            raise ValueError("Missing the required parameter `persist` when calling `salvar_using_post11`")
+            raise ValueError("Missing the required parameter `persist` when calling `salvar_using_post12`")
 
         resource_path = '/api/plataformas-mobile'.replace('{format}', 'json')
         path_params = {}

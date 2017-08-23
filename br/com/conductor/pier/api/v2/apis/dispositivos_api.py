@@ -199,7 +199,7 @@ class DispositivosApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get8(self, **kwargs):
+    def listar_using_get9(self, **kwargs):
         """
         Lista os dispositivos cadastrados
         Este m\u00C3\u00A9todo permite que sejam listados os dispositivos existentes na base do PIER.
@@ -210,10 +210,11 @@ class DispositivosApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get8(callback=callback_function)
+        >>> thread = api.listar_using_get9(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
+        :param list[str] sort: Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
         :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
         :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
         :param str token: Token do Dispositivo
@@ -226,7 +227,7 @@ class DispositivosApi(object):
                  returns the request thread.
         """
 
-        all_params = ['page', 'limit', 'token', 'id_usuario', 'id_aplicacao_mobile', 'data_criacao', 'data_desativacao']
+        all_params = ['sort', 'page', 'limit', 'token', 'id_usuario', 'id_aplicacao_mobile', 'data_criacao', 'data_desativacao']
         all_params.append('callback')
 
         params = locals()
@@ -234,7 +235,7 @@ class DispositivosApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get8" % key
+                    " to method listar_using_get9" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -244,6 +245,8 @@ class DispositivosApi(object):
         path_params = {}
 
         query_params = {}
+        if 'sort' in params:
+            query_params['sort'] = params['sort']
         if 'page' in params:
             query_params['page'] = params['page']
         if 'limit' in params:

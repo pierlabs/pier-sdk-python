@@ -38,7 +38,6 @@ class TransacaoCorrenteResponse(object):
         """
         self.swagger_types = {
             'ultima_parcela_lancada': 'int',
-            'id': 'int',
             'id_conta': 'int',
             'id_tipo_registro': 'int',
             'ordem': 'int',
@@ -60,7 +59,6 @@ class TransacaoCorrenteResponse(object):
 
         self.attribute_map = {
             'ultima_parcela_lancada': 'ultimaParcelaLancada',
-            'id': 'id',
             'id_conta': 'idConta',
             'id_tipo_registro': 'idTipoRegistro',
             'ordem': 'ordem',
@@ -81,7 +79,6 @@ class TransacaoCorrenteResponse(object):
         }
 
         self._ultima_parcela_lancada = None
-        self._id = None
         self._id_conta = None
         self._id_tipo_registro = None
         self._ordem = None
@@ -121,28 +118,6 @@ class TransacaoCorrenteResponse(object):
         :type: int
         """
         self._ultima_parcela_lancada = ultima_parcela_lancada
-
-    @property
-    def id(self):
-        """
-        Gets the id of this TransacaoCorrenteResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da timeline (idTimeline).
-
-        :return: The id of this TransacaoCorrenteResponse.
-        :rtype: int
-        """
-        return self._id
-
-    @id.setter
-    def id(self, id):
-        """
-        Sets the id of this TransacaoCorrenteResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da timeline (idTimeline).
-
-        :param id: The id of this TransacaoCorrenteResponse.
-        :type: int
-        """
-        self._id = id
 
     @property
     def id_conta(self):

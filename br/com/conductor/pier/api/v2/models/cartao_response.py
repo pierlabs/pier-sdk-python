@@ -38,73 +38,82 @@ class CartaoResponse(object):
         """
         self.swagger_types = {
             'id': 'int',
-            'id_status_cartao': 'int',
-            'id_estagio_cartao': 'int',
-            'id_conta': 'int',
+            'flag_titular': 'int',
             'id_pessoa': 'int',
-            'id_produto': 'int',
-            'tipo_portador': 'str',
+            'sequencial_cartao': 'int',
+            'id_conta': 'int',
+            'id_status': 'int',
+            'data_status': 'str',
+            'id_estagio': 'int',
+            'data_estagio': 'str',
+            'numero_bin': 'int',
             'numero_cartao': 'str',
-            'nome_impresso': 'str',
-            'data_geracao': 'str',
-            'data_status_cartao': 'str',
-            'data_estagio_cartao': 'str',
+            'numero_cartao_hash': 'int',
+            'numero_cartao_criptografado': 'str',
+            'data_emissao': 'str',
             'data_validade': 'str',
+            'cartao_virtual': 'int',
+            'impressao_avulsa': 'int',
             'data_impressao': 'str',
-            'arquivo_impressao': 'str',
-            'flag_impressao_origem_comercial': 'int',
-            'flag_virtual': 'int',
-            'codigo_desbloqueio': 'str',
-            'sequencial_cartao': 'int'
+            'nome_arquivo_impressao': 'str',
+            'id_produto': 'int',
+            'nome_impresso': 'str',
+            'codigo_desbloqueio': 'str'
         }
 
         self.attribute_map = {
             'id': 'id',
-            'id_status_cartao': 'idStatusCartao',
-            'id_estagio_cartao': 'idEstagioCartao',
-            'id_conta': 'idConta',
+            'flag_titular': 'flagTitular',
             'id_pessoa': 'idPessoa',
-            'id_produto': 'idProduto',
-            'tipo_portador': 'tipoPortador',
+            'sequencial_cartao': 'sequencialCartao',
+            'id_conta': 'idConta',
+            'id_status': 'idStatus',
+            'data_status': 'dataStatus',
+            'id_estagio': 'idEstagio',
+            'data_estagio': 'dataEstagio',
+            'numero_bin': 'numeroBin',
             'numero_cartao': 'numeroCartao',
-            'nome_impresso': 'nomeImpresso',
-            'data_geracao': 'dataGeracao',
-            'data_status_cartao': 'dataStatusCartao',
-            'data_estagio_cartao': 'dataEstagioCartao',
+            'numero_cartao_hash': 'numeroCartaoHash',
+            'numero_cartao_criptografado': 'numeroCartaoCriptografado',
+            'data_emissao': 'dataEmissao',
             'data_validade': 'dataValidade',
+            'cartao_virtual': 'cartaoVirtual',
+            'impressao_avulsa': 'impressaoAvulsa',
             'data_impressao': 'dataImpressao',
-            'arquivo_impressao': 'arquivoImpressao',
-            'flag_impressao_origem_comercial': 'flagImpressaoOrigemComercial',
-            'flag_virtual': 'flagVirtual',
-            'codigo_desbloqueio': 'codigoDesbloqueio',
-            'sequencial_cartao': 'sequencialCartao'
+            'nome_arquivo_impressao': 'nomeArquivoImpressao',
+            'id_produto': 'idProduto',
+            'nome_impresso': 'nomeImpresso',
+            'codigo_desbloqueio': 'codigoDesbloqueio'
         }
 
         self._id = None
-        self._id_status_cartao = None
-        self._id_estagio_cartao = None
-        self._id_conta = None
+        self._flag_titular = None
         self._id_pessoa = None
-        self._id_produto = None
-        self._tipo_portador = None
-        self._numero_cartao = None
-        self._nome_impresso = None
-        self._data_geracao = None
-        self._data_status_cartao = None
-        self._data_estagio_cartao = None
-        self._data_validade = None
-        self._data_impressao = None
-        self._arquivo_impressao = None
-        self._flag_impressao_origem_comercial = None
-        self._flag_virtual = None
-        self._codigo_desbloqueio = None
         self._sequencial_cartao = None
+        self._id_conta = None
+        self._id_status = None
+        self._data_status = None
+        self._id_estagio = None
+        self._data_estagio = None
+        self._numero_bin = None
+        self._numero_cartao = None
+        self._numero_cartao_hash = None
+        self._numero_cartao_criptografado = None
+        self._data_emissao = None
+        self._data_validade = None
+        self._cartao_virtual = None
+        self._impressao_avulsa = None
+        self._data_impressao = None
+        self._nome_arquivo_impressao = None
+        self._id_produto = None
+        self._nome_impresso = None
+        self._codigo_desbloqueio = None
 
     @property
     def id(self):
         """
         Gets the id of this CartaoResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Cart\u00C3\u00A3o (id).
+        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Cart\u00C3\u00A3o.
 
         :return: The id of this CartaoResponse.
         :rtype: int
@@ -115,7 +124,7 @@ class CartaoResponse(object):
     def id(self, id):
         """
         Sets the id of this CartaoResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Cart\u00C3\u00A3o (id).
+        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Cart\u00C3\u00A3o.
 
         :param id: The id of this CartaoResponse.
         :type: int
@@ -123,76 +132,32 @@ class CartaoResponse(object):
         self._id = id
 
     @property
-    def id_status_cartao(self):
+    def flag_titular(self):
         """
-        Gets the id_status_cartao of this CartaoResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Status do Cart\u00C3\u00A3o (id).
+        Gets the flag_titular of this CartaoResponse.
+        Apresenta o tipo do Portador do cart\u00C3\u00A3o, sendo: (1: Titular, 0: Adicional).
 
-        :return: The id_status_cartao of this CartaoResponse.
+        :return: The flag_titular of this CartaoResponse.
         :rtype: int
         """
-        return self._id_status_cartao
+        return self._flag_titular
 
-    @id_status_cartao.setter
-    def id_status_cartao(self, id_status_cartao):
+    @flag_titular.setter
+    def flag_titular(self, flag_titular):
         """
-        Sets the id_status_cartao of this CartaoResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Status do Cart\u00C3\u00A3o (id).
+        Sets the flag_titular of this CartaoResponse.
+        Apresenta o tipo do Portador do cart\u00C3\u00A3o, sendo: (1: Titular, 0: Adicional).
 
-        :param id_status_cartao: The id_status_cartao of this CartaoResponse.
+        :param flag_titular: The flag_titular of this CartaoResponse.
         :type: int
         """
-        self._id_status_cartao = id_status_cartao
-
-    @property
-    def id_estagio_cartao(self):
-        """
-        Gets the id_estagio_cartao of this CartaoResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Est\u00C3\u00A1gio de Impress\u00C3\u00A3o do Cart\u00C3\u00A3o (id).
-
-        :return: The id_estagio_cartao of this CartaoResponse.
-        :rtype: int
-        """
-        return self._id_estagio_cartao
-
-    @id_estagio_cartao.setter
-    def id_estagio_cartao(self, id_estagio_cartao):
-        """
-        Sets the id_estagio_cartao of this CartaoResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Est\u00C3\u00A1gio de Impress\u00C3\u00A3o do Cart\u00C3\u00A3o (id).
-
-        :param id_estagio_cartao: The id_estagio_cartao of this CartaoResponse.
-        :type: int
-        """
-        self._id_estagio_cartao = id_estagio_cartao
-
-    @property
-    def id_conta(self):
-        """
-        Gets the id_conta of this CartaoResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Conta a qual o cart\u00C3\u00A3o pertence (id).
-
-        :return: The id_conta of this CartaoResponse.
-        :rtype: int
-        """
-        return self._id_conta
-
-    @id_conta.setter
-    def id_conta(self, id_conta):
-        """
-        Sets the id_conta of this CartaoResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Conta a qual o cart\u00C3\u00A3o pertence (id).
-
-        :param id_conta: The id_conta of this CartaoResponse.
-        :type: int
-        """
-        self._id_conta = id_conta
+        self._flag_titular = flag_titular
 
     @property
     def id_pessoa(self):
         """
         Gets the id_pessoa of this CartaoResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Pessoa a qual o cart\u00C3\u00A3o pertence (id)
+        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Pessoa a qual o cart\u00C3\u00A3o pertence
 
         :return: The id_pessoa of this CartaoResponse.
         :rtype: int
@@ -203,7 +168,7 @@ class CartaoResponse(object):
     def id_pessoa(self, id_pessoa):
         """
         Sets the id_pessoa of this CartaoResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Pessoa a qual o cart\u00C3\u00A3o pertence (id)
+        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Pessoa a qual o cart\u00C3\u00A3o pertence
 
         :param id_pessoa: The id_pessoa of this CartaoResponse.
         :type: int
@@ -211,48 +176,158 @@ class CartaoResponse(object):
         self._id_pessoa = id_pessoa
 
     @property
-    def id_produto(self):
+    def sequencial_cartao(self):
         """
-        Gets the id_produto of this CartaoResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Produto a qual o cart\u00C3\u00A3o pertence (id).
+        Gets the sequencial_cartao of this CartaoResponse.
+        N\u00C3\u00BAmero sequencial do cart\u00C3\u00A3o
 
-        :return: The id_produto of this CartaoResponse.
+        :return: The sequencial_cartao of this CartaoResponse.
         :rtype: int
         """
-        return self._id_produto
+        return self._sequencial_cartao
 
-    @id_produto.setter
-    def id_produto(self, id_produto):
+    @sequencial_cartao.setter
+    def sequencial_cartao(self, sequencial_cartao):
         """
-        Sets the id_produto of this CartaoResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Produto a qual o cart\u00C3\u00A3o pertence (id).
+        Sets the sequencial_cartao of this CartaoResponse.
+        N\u00C3\u00BAmero sequencial do cart\u00C3\u00A3o
 
-        :param id_produto: The id_produto of this CartaoResponse.
+        :param sequencial_cartao: The sequencial_cartao of this CartaoResponse.
         :type: int
         """
-        self._id_produto = id_produto
+        self._sequencial_cartao = sequencial_cartao
 
     @property
-    def tipo_portador(self):
+    def id_conta(self):
         """
-        Gets the tipo_portador of this CartaoResponse.
-        Apresenta o tipo do Portador do cart\u00C3\u00A3o, sendo: ('T': Titular, 'A': Adicional).
+        Gets the id_conta of this CartaoResponse.
+        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Conta a qual o cart\u00C3\u00A3o pertence.
 
-        :return: The tipo_portador of this CartaoResponse.
+        :return: The id_conta of this CartaoResponse.
+        :rtype: int
+        """
+        return self._id_conta
+
+    @id_conta.setter
+    def id_conta(self, id_conta):
+        """
+        Sets the id_conta of this CartaoResponse.
+        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Conta a qual o cart\u00C3\u00A3o pertence.
+
+        :param id_conta: The id_conta of this CartaoResponse.
+        :type: int
+        """
+        self._id_conta = id_conta
+
+    @property
+    def id_status(self):
+        """
+        Gets the id_status of this CartaoResponse.
+        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Status do Cart\u00C3\u00A3o.
+
+        :return: The id_status of this CartaoResponse.
+        :rtype: int
+        """
+        return self._id_status
+
+    @id_status.setter
+    def id_status(self, id_status):
+        """
+        Sets the id_status of this CartaoResponse.
+        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Status do Cart\u00C3\u00A3o.
+
+        :param id_status: The id_status of this CartaoResponse.
+        :type: int
+        """
+        self._id_status = id_status
+
+    @property
+    def data_status(self):
+        """
+        Gets the data_status of this CartaoResponse.
+        Apresenta a data em que o idStatusCartao atual do cart\u00C3\u00A3o fora aplicado, quando houver.
+
+        :return: The data_status of this CartaoResponse.
         :rtype: str
         """
-        return self._tipo_portador
+        return self._data_status
 
-    @tipo_portador.setter
-    def tipo_portador(self, tipo_portador):
+    @data_status.setter
+    def data_status(self, data_status):
         """
-        Sets the tipo_portador of this CartaoResponse.
-        Apresenta o tipo do Portador do cart\u00C3\u00A3o, sendo: ('T': Titular, 'A': Adicional).
+        Sets the data_status of this CartaoResponse.
+        Apresenta a data em que o idStatusCartao atual do cart\u00C3\u00A3o fora aplicado, quando houver.
 
-        :param tipo_portador: The tipo_portador of this CartaoResponse.
+        :param data_status: The data_status of this CartaoResponse.
         :type: str
         """
-        self._tipo_portador = tipo_portador
+        self._data_status = data_status
+
+    @property
+    def id_estagio(self):
+        """
+        Gets the id_estagio of this CartaoResponse.
+        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Est\u00C3\u00A1gio de Impress\u00C3\u00A3o do Cart\u00C3\u00A3o.
+
+        :return: The id_estagio of this CartaoResponse.
+        :rtype: int
+        """
+        return self._id_estagio
+
+    @id_estagio.setter
+    def id_estagio(self, id_estagio):
+        """
+        Sets the id_estagio of this CartaoResponse.
+        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Est\u00C3\u00A1gio de Impress\u00C3\u00A3o do Cart\u00C3\u00A3o.
+
+        :param id_estagio: The id_estagio of this CartaoResponse.
+        :type: int
+        """
+        self._id_estagio = id_estagio
+
+    @property
+    def data_estagio(self):
+        """
+        Gets the data_estagio of this CartaoResponse.
+        Apresenta a data em que o idEstagio atual do cart\u00C3\u00A3o fora aplicado, quando houver.
+
+        :return: The data_estagio of this CartaoResponse.
+        :rtype: str
+        """
+        return self._data_estagio
+
+    @data_estagio.setter
+    def data_estagio(self, data_estagio):
+        """
+        Sets the data_estagio of this CartaoResponse.
+        Apresenta a data em que o idEstagio atual do cart\u00C3\u00A3o fora aplicado, quando houver.
+
+        :param data_estagio: The data_estagio of this CartaoResponse.
+        :type: str
+        """
+        self._data_estagio = data_estagio
+
+    @property
+    def numero_bin(self):
+        """
+        Gets the numero_bin of this CartaoResponse.
+        N\u00C3\u00BAmero do bin do cart\u00C3\u00A3o.
+
+        :return: The numero_bin of this CartaoResponse.
+        :rtype: int
+        """
+        return self._numero_bin
+
+    @numero_bin.setter
+    def numero_bin(self, numero_bin):
+        """
+        Sets the numero_bin of this CartaoResponse.
+        N\u00C3\u00BAmero do bin do cart\u00C3\u00A3o.
+
+        :param numero_bin: The numero_bin of this CartaoResponse.
+        :type: int
+        """
+        self._numero_bin = numero_bin
 
     @property
     def numero_cartao(self):
@@ -277,92 +352,70 @@ class CartaoResponse(object):
         self._numero_cartao = numero_cartao
 
     @property
-    def nome_impresso(self):
+    def numero_cartao_hash(self):
         """
-        Gets the nome_impresso of this CartaoResponse.
-        Apresenta o nome impresso no cart\u00C3\u00A3o.
+        Gets the numero_cartao_hash of this CartaoResponse.
+        N\u00C3\u00BAmero do cart\u00C3\u00A3o hash.
 
-        :return: The nome_impresso of this CartaoResponse.
-        :rtype: str
+        :return: The numero_cartao_hash of this CartaoResponse.
+        :rtype: int
         """
-        return self._nome_impresso
+        return self._numero_cartao_hash
 
-    @nome_impresso.setter
-    def nome_impresso(self, nome_impresso):
+    @numero_cartao_hash.setter
+    def numero_cartao_hash(self, numero_cartao_hash):
         """
-        Sets the nome_impresso of this CartaoResponse.
-        Apresenta o nome impresso no cart\u00C3\u00A3o.
+        Sets the numero_cartao_hash of this CartaoResponse.
+        N\u00C3\u00BAmero do cart\u00C3\u00A3o hash.
 
-        :param nome_impresso: The nome_impresso of this CartaoResponse.
-        :type: str
+        :param numero_cartao_hash: The numero_cartao_hash of this CartaoResponse.
+        :type: int
         """
-        self._nome_impresso = nome_impresso
-
-    @property
-    def data_geracao(self):
-        """
-        Gets the data_geracao of this CartaoResponse.
-        Apresenta a data em que o cart\u00C3\u00A3o foi gerado.
-
-        :return: The data_geracao of this CartaoResponse.
-        :rtype: str
-        """
-        return self._data_geracao
-
-    @data_geracao.setter
-    def data_geracao(self, data_geracao):
-        """
-        Sets the data_geracao of this CartaoResponse.
-        Apresenta a data em que o cart\u00C3\u00A3o foi gerado.
-
-        :param data_geracao: The data_geracao of this CartaoResponse.
-        :type: str
-        """
-        self._data_geracao = data_geracao
+        self._numero_cartao_hash = numero_cartao_hash
 
     @property
-    def data_status_cartao(self):
+    def numero_cartao_criptografado(self):
         """
-        Gets the data_status_cartao of this CartaoResponse.
-        Apresenta a data em que o idStatusCartao atual do cart\u00C3\u00A3o fora aplicado, quando houver.
+        Gets the numero_cartao_criptografado of this CartaoResponse.
+        N\u00C3\u00BAmero do cart\u00C3\u00A3o criptografado.
 
-        :return: The data_status_cartao of this CartaoResponse.
+        :return: The numero_cartao_criptografado of this CartaoResponse.
         :rtype: str
         """
-        return self._data_status_cartao
+        return self._numero_cartao_criptografado
 
-    @data_status_cartao.setter
-    def data_status_cartao(self, data_status_cartao):
+    @numero_cartao_criptografado.setter
+    def numero_cartao_criptografado(self, numero_cartao_criptografado):
         """
-        Sets the data_status_cartao of this CartaoResponse.
-        Apresenta a data em que o idStatusCartao atual do cart\u00C3\u00A3o fora aplicado, quando houver.
+        Sets the numero_cartao_criptografado of this CartaoResponse.
+        N\u00C3\u00BAmero do cart\u00C3\u00A3o criptografado.
 
-        :param data_status_cartao: The data_status_cartao of this CartaoResponse.
+        :param numero_cartao_criptografado: The numero_cartao_criptografado of this CartaoResponse.
         :type: str
         """
-        self._data_status_cartao = data_status_cartao
+        self._numero_cartao_criptografado = numero_cartao_criptografado
 
     @property
-    def data_estagio_cartao(self):
+    def data_emissao(self):
         """
-        Gets the data_estagio_cartao of this CartaoResponse.
-        Apresenta a data em que o idEstagioCartao atual do cart\u00C3\u00A3o fora aplicado, quando houver.
+        Gets the data_emissao of this CartaoResponse.
+        Apresenta a data de emiss\u00C3\u00A3o do cart\u00C3\u00A3o.
 
-        :return: The data_estagio_cartao of this CartaoResponse.
+        :return: The data_emissao of this CartaoResponse.
         :rtype: str
         """
-        return self._data_estagio_cartao
+        return self._data_emissao
 
-    @data_estagio_cartao.setter
-    def data_estagio_cartao(self, data_estagio_cartao):
+    @data_emissao.setter
+    def data_emissao(self, data_emissao):
         """
-        Sets the data_estagio_cartao of this CartaoResponse.
-        Apresenta a data em que o idEstagioCartao atual do cart\u00C3\u00A3o fora aplicado, quando houver.
+        Sets the data_emissao of this CartaoResponse.
+        Apresenta a data de emiss\u00C3\u00A3o do cart\u00C3\u00A3o.
 
-        :param data_estagio_cartao: The data_estagio_cartao of this CartaoResponse.
+        :param data_emissao: The data_emissao of this CartaoResponse.
         :type: str
         """
-        self._data_estagio_cartao = data_estagio_cartao
+        self._data_emissao = data_emissao
 
     @property
     def data_validade(self):
@@ -387,6 +440,50 @@ class CartaoResponse(object):
         self._data_validade = data_validade
 
     @property
+    def cartao_virtual(self):
+        """
+        Gets the cartao_virtual of this CartaoResponse.
+        Apresenta o status que informa se o cart\u00C3\u00A3o \u00C3\u00A9 virtual. Sendo: (1: True, 0: False).
+
+        :return: The cartao_virtual of this CartaoResponse.
+        :rtype: int
+        """
+        return self._cartao_virtual
+
+    @cartao_virtual.setter
+    def cartao_virtual(self, cartao_virtual):
+        """
+        Sets the cartao_virtual of this CartaoResponse.
+        Apresenta o status que informa se o cart\u00C3\u00A3o \u00C3\u00A9 virtual. Sendo: (1: True, 0: False).
+
+        :param cartao_virtual: The cartao_virtual of this CartaoResponse.
+        :type: int
+        """
+        self._cartao_virtual = cartao_virtual
+
+    @property
+    def impressao_avulsa(self):
+        """
+        Gets the impressao_avulsa of this CartaoResponse.
+        Quando ativa, indica que o cart\u00C3\u00A3o fora impresso na Origem Comercial.
+
+        :return: The impressao_avulsa of this CartaoResponse.
+        :rtype: int
+        """
+        return self._impressao_avulsa
+
+    @impressao_avulsa.setter
+    def impressao_avulsa(self, impressao_avulsa):
+        """
+        Sets the impressao_avulsa of this CartaoResponse.
+        Quando ativa, indica que o cart\u00C3\u00A3o fora impresso na Origem Comercial.
+
+        :param impressao_avulsa: The impressao_avulsa of this CartaoResponse.
+        :type: int
+        """
+        self._impressao_avulsa = impressao_avulsa
+
+    @property
     def data_impressao(self):
         """
         Gets the data_impressao of this CartaoResponse.
@@ -409,70 +506,70 @@ class CartaoResponse(object):
         self._data_impressao = data_impressao
 
     @property
-    def arquivo_impressao(self):
+    def nome_arquivo_impressao(self):
         """
-        Gets the arquivo_impressao of this CartaoResponse.
+        Gets the nome_arquivo_impressao of this CartaoResponse.
         Apresenta o nome do arquivo onde o cart\u00C3\u00A3o fora inclu\u00C3\u00ADdo para impress\u00C3\u00A3o por uma gr\u00C3\u00A1fica, quando houver.
 
-        :return: The arquivo_impressao of this CartaoResponse.
+        :return: The nome_arquivo_impressao of this CartaoResponse.
         :rtype: str
         """
-        return self._arquivo_impressao
+        return self._nome_arquivo_impressao
 
-    @arquivo_impressao.setter
-    def arquivo_impressao(self, arquivo_impressao):
+    @nome_arquivo_impressao.setter
+    def nome_arquivo_impressao(self, nome_arquivo_impressao):
         """
-        Sets the arquivo_impressao of this CartaoResponse.
+        Sets the nome_arquivo_impressao of this CartaoResponse.
         Apresenta o nome do arquivo onde o cart\u00C3\u00A3o fora inclu\u00C3\u00ADdo para impress\u00C3\u00A3o por uma gr\u00C3\u00A1fica, quando houver.
 
-        :param arquivo_impressao: The arquivo_impressao of this CartaoResponse.
+        :param nome_arquivo_impressao: The nome_arquivo_impressao of this CartaoResponse.
         :type: str
         """
-        self._arquivo_impressao = arquivo_impressao
+        self._nome_arquivo_impressao = nome_arquivo_impressao
 
     @property
-    def flag_impressao_origem_comercial(self):
+    def id_produto(self):
         """
-        Gets the flag_impressao_origem_comercial of this CartaoResponse.
-        Quando ativa, indica que o cart\u00C3\u00A3o fora impresso na Origem Comercial.
+        Gets the id_produto of this CartaoResponse.
+        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Produto a qual o cart\u00C3\u00A3o pertence.
 
-        :return: The flag_impressao_origem_comercial of this CartaoResponse.
+        :return: The id_produto of this CartaoResponse.
         :rtype: int
         """
-        return self._flag_impressao_origem_comercial
+        return self._id_produto
 
-    @flag_impressao_origem_comercial.setter
-    def flag_impressao_origem_comercial(self, flag_impressao_origem_comercial):
+    @id_produto.setter
+    def id_produto(self, id_produto):
         """
-        Sets the flag_impressao_origem_comercial of this CartaoResponse.
-        Quando ativa, indica que o cart\u00C3\u00A3o fora impresso na Origem Comercial.
+        Sets the id_produto of this CartaoResponse.
+        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Produto a qual o cart\u00C3\u00A3o pertence.
 
-        :param flag_impressao_origem_comercial: The flag_impressao_origem_comercial of this CartaoResponse.
+        :param id_produto: The id_produto of this CartaoResponse.
         :type: int
         """
-        self._flag_impressao_origem_comercial = flag_impressao_origem_comercial
+        self._id_produto = id_produto
 
     @property
-    def flag_virtual(self):
+    def nome_impresso(self):
         """
-        Gets the flag_virtual of this CartaoResponse.
-        Apresenta o status que informa se o cart\u00C3\u00A3o \u00C3\u00A9 virtual.
+        Gets the nome_impresso of this CartaoResponse.
+        Apresenta o nome impresso no cart\u00C3\u00A3o.
 
-        :return: The flag_virtual of this CartaoResponse.
-        :rtype: int
+        :return: The nome_impresso of this CartaoResponse.
+        :rtype: str
         """
-        return self._flag_virtual
+        return self._nome_impresso
 
-    @flag_virtual.setter
-    def flag_virtual(self, flag_virtual):
+    @nome_impresso.setter
+    def nome_impresso(self, nome_impresso):
         """
-        Sets the flag_virtual of this CartaoResponse.
-        Apresenta o status que informa se o cart\u00C3\u00A3o \u00C3\u00A9 virtual.
+        Sets the nome_impresso of this CartaoResponse.
+        Apresenta o nome impresso no cart\u00C3\u00A3o.
 
-        :param flag_virtual: The flag_virtual of this CartaoResponse.
-        :type: int
+        :param nome_impresso: The nome_impresso of this CartaoResponse.
+        :type: str
         """
-        self._flag_virtual = flag_virtual
+        self._nome_impresso = nome_impresso
 
     @property
     def codigo_desbloqueio(self):
@@ -495,28 +592,6 @@ class CartaoResponse(object):
         :type: str
         """
         self._codigo_desbloqueio = codigo_desbloqueio
-
-    @property
-    def sequencial_cartao(self):
-        """
-        Gets the sequencial_cartao of this CartaoResponse.
-        N\u00C3\u00BAmero sequencial do cart\u00C3\u00A3o
-
-        :return: The sequencial_cartao of this CartaoResponse.
-        :rtype: int
-        """
-        return self._sequencial_cartao
-
-    @sequencial_cartao.setter
-    def sequencial_cartao(self, sequencial_cartao):
-        """
-        Sets the sequencial_cartao of this CartaoResponse.
-        N\u00C3\u00BAmero sequencial do cart\u00C3\u00A3o
-
-        :param sequencial_cartao: The sequencial_cartao of this CartaoResponse.
-        :type: int
-        """
-        self._sequencial_cartao = sequencial_cartao
 
     def to_dict(self):
         """

@@ -60,8 +60,12 @@ class PessoaFisicaAprovadaPersist(object):
             'nome_empresa': 'str',
             'valor_renda': 'float',
             'canal_entrada': 'str',
+            'valor_pontuacao': 'int',
             'telefones': 'list[TelefonePessoaAprovadaPersist]',
-            'enderecos': 'list[EnderecoAprovadoPersist]'
+            'enderecos': 'list[EnderecoAprovadoPersist]',
+            'limite_global': 'float',
+            'limite_maximo': 'float',
+            'limite_parcelas': 'float'
         }
 
         self.attribute_map = {
@@ -88,8 +92,12 @@ class PessoaFisicaAprovadaPersist(object):
             'nome_empresa': 'nomeEmpresa',
             'valor_renda': 'valorRenda',
             'canal_entrada': 'canalEntrada',
+            'valor_pontuacao': 'valorPontuacao',
             'telefones': 'telefones',
-            'enderecos': 'enderecos'
+            'enderecos': 'enderecos',
+            'limite_global': 'limiteGlobal',
+            'limite_maximo': 'limiteMaximo',
+            'limite_parcelas': 'limiteParcelas'
         }
 
         self._nome = None
@@ -115,8 +123,12 @@ class PessoaFisicaAprovadaPersist(object):
         self._nome_empresa = None
         self._valor_renda = None
         self._canal_entrada = None
+        self._valor_pontuacao = None
         self._telefones = None
         self._enderecos = None
+        self._limite_global = None
+        self._limite_maximo = None
+        self._limite_parcelas = None
 
     @property
     def nome(self):
@@ -625,6 +637,28 @@ class PessoaFisicaAprovadaPersist(object):
         self._canal_entrada = canal_entrada
 
     @property
+    def valor_pontuacao(self):
+        """
+        Gets the valor_pontuacao of this PessoaFisicaAprovadaPersist.
+        Indica o valor da pontua\u00C3\u00A7\u00C3\u00A3o atribuido ao cliente (caso n\u00C3\u00A3o informado ser\u00C3\u00A1 atribuido o valor = 0)
+
+        :return: The valor_pontuacao of this PessoaFisicaAprovadaPersist.
+        :rtype: int
+        """
+        return self._valor_pontuacao
+
+    @valor_pontuacao.setter
+    def valor_pontuacao(self, valor_pontuacao):
+        """
+        Sets the valor_pontuacao of this PessoaFisicaAprovadaPersist.
+        Indica o valor da pontua\u00C3\u00A7\u00C3\u00A3o atribuido ao cliente (caso n\u00C3\u00A3o informado ser\u00C3\u00A1 atribuido o valor = 0)
+
+        :param valor_pontuacao: The valor_pontuacao of this PessoaFisicaAprovadaPersist.
+        :type: int
+        """
+        self._valor_pontuacao = valor_pontuacao
+
+    @property
     def telefones(self):
         """
         Gets the telefones of this PessoaFisicaAprovadaPersist.
@@ -667,6 +701,72 @@ class PessoaFisicaAprovadaPersist(object):
         :type: list[EnderecoAprovadoPersist]
         """
         self._enderecos = enderecos
+
+    @property
+    def limite_global(self):
+        """
+        Gets the limite_global of this PessoaFisicaAprovadaPersist.
+        Valor do Limite Global
+
+        :return: The limite_global of this PessoaFisicaAprovadaPersist.
+        :rtype: float
+        """
+        return self._limite_global
+
+    @limite_global.setter
+    def limite_global(self, limite_global):
+        """
+        Sets the limite_global of this PessoaFisicaAprovadaPersist.
+        Valor do Limite Global
+
+        :param limite_global: The limite_global of this PessoaFisicaAprovadaPersist.
+        :type: float
+        """
+        self._limite_global = limite_global
+
+    @property
+    def limite_maximo(self):
+        """
+        Gets the limite_maximo of this PessoaFisicaAprovadaPersist.
+        Valor m\u00C3\u00A1ximo do limite de cr\u00C3\u00A9dito para realizar transa\u00C3\u00A7\u00C3\u00B5es
+
+        :return: The limite_maximo of this PessoaFisicaAprovadaPersist.
+        :rtype: float
+        """
+        return self._limite_maximo
+
+    @limite_maximo.setter
+    def limite_maximo(self, limite_maximo):
+        """
+        Sets the limite_maximo of this PessoaFisicaAprovadaPersist.
+        Valor m\u00C3\u00A1ximo do limite de cr\u00C3\u00A9dito para realizar transa\u00C3\u00A7\u00C3\u00B5es
+
+        :param limite_maximo: The limite_maximo of this PessoaFisicaAprovadaPersist.
+        :type: float
+        """
+        self._limite_maximo = limite_maximo
+
+    @property
+    def limite_parcelas(self):
+        """
+        Gets the limite_parcelas of this PessoaFisicaAprovadaPersist.
+        Valor do limite de cr\u00C3\u00A9dito acumulado da soma das parcelas das compras
+
+        :return: The limite_parcelas of this PessoaFisicaAprovadaPersist.
+        :rtype: float
+        """
+        return self._limite_parcelas
+
+    @limite_parcelas.setter
+    def limite_parcelas(self, limite_parcelas):
+        """
+        Sets the limite_parcelas of this PessoaFisicaAprovadaPersist.
+        Valor do limite de cr\u00C3\u00A9dito acumulado da soma das parcelas das compras
+
+        :param limite_parcelas: The limite_parcelas of this PessoaFisicaAprovadaPersist.
+        :type: float
+        """
+        self._limite_parcelas = limite_parcelas
 
     def to_dict(self):
         """

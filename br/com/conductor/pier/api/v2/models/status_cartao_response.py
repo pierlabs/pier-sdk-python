@@ -39,45 +39,27 @@ class StatusCartaoResponse(object):
         self.swagger_types = {
             'id': 'int',
             'nome': 'str',
-            'flag_cancela_cartao': 'int',
-            'flag_cancela_no_desbloqueio': 'int',
-            'id_status_destino_desbloqueio': 'int',
-            'id_status_destino_conta': 'int',
-            'flag_cobra_tarifa': 'int',
-            'flag_permite_nova_via_cartao': 'int',
-            'flag_permite_desbloqueio': 'int',
-            'flag_cancelamento': 'int',
-            'flag_permite_bloqueio': 'int',
-            'flag_reativar': 'int'
+            'permite_desbloquear': 'int',
+            'permite_atribuir_como_bloqueio': 'int',
+            'permite_atribuir_como_cancelamento': 'int',
+            'cobrar_tarifa_ao_emitir_nova_via': 'int'
         }
 
         self.attribute_map = {
             'id': 'id',
             'nome': 'nome',
-            'flag_cancela_cartao': 'flagCancelaCartao',
-            'flag_cancela_no_desbloqueio': 'flagCancelaNoDesbloqueio',
-            'id_status_destino_desbloqueio': 'idStatusDestinoDesbloqueio',
-            'id_status_destino_conta': 'idStatusDestinoConta',
-            'flag_cobra_tarifa': 'flagCobraTarifa',
-            'flag_permite_nova_via_cartao': 'flagPermiteNovaViaCartao',
-            'flag_permite_desbloqueio': 'flagPermiteDesbloqueio',
-            'flag_cancelamento': 'flagCancelamento',
-            'flag_permite_bloqueio': 'flagPermiteBloqueio',
-            'flag_reativar': 'flagReativar'
+            'permite_desbloquear': 'permiteDesbloquear',
+            'permite_atribuir_como_bloqueio': 'permiteAtribuirComoBloqueio',
+            'permite_atribuir_como_cancelamento': 'permiteAtribuirComoCancelamento',
+            'cobrar_tarifa_ao_emitir_nova_via': 'cobrarTarifaAoEmitirNovaVia'
         }
 
         self._id = None
         self._nome = None
-        self._flag_cancela_cartao = None
-        self._flag_cancela_no_desbloqueio = None
-        self._id_status_destino_desbloqueio = None
-        self._id_status_destino_conta = None
-        self._flag_cobra_tarifa = None
-        self._flag_permite_nova_via_cartao = None
-        self._flag_permite_desbloqueio = None
-        self._flag_cancelamento = None
-        self._flag_permite_bloqueio = None
-        self._flag_reativar = None
+        self._permite_desbloquear = None
+        self._permite_atribuir_como_bloqueio = None
+        self._permite_atribuir_como_cancelamento = None
+        self._cobrar_tarifa_ao_emitir_nova_via = None
 
     @property
     def id(self):
@@ -124,224 +106,92 @@ class StatusCartaoResponse(object):
         self._nome = nome
 
     @property
-    def flag_cancela_cartao(self):
+    def permite_desbloquear(self):
         """
-        Gets the flag_cancela_cartao of this StatusCartaoResponse.
-        Quando ativa, indica que ao ser atribu\u00C3\u00ADdo um idStatusCartao com essa caracter\u00C3\u00ADstica, o cart\u00C3\u00A3o ter\u00C3\u00A1 o seu idStatusCartao alterado para o que fora escolhido. Caso contr\u00C3\u00A1rio, o idStatusCartao s\u00C3\u00B3 ser\u00C3\u00A1 alterado ap\u00C3\u00B3s o desbloqueio de um novo cart\u00C3\u00A3o do mesmo Portador e Conta.
-
-        :return: The flag_cancela_cartao of this StatusCartaoResponse.
-        :rtype: int
-        """
-        return self._flag_cancela_cartao
-
-    @flag_cancela_cartao.setter
-    def flag_cancela_cartao(self, flag_cancela_cartao):
-        """
-        Sets the flag_cancela_cartao of this StatusCartaoResponse.
-        Quando ativa, indica que ao ser atribu\u00C3\u00ADdo um idStatusCartao com essa caracter\u00C3\u00ADstica, o cart\u00C3\u00A3o ter\u00C3\u00A1 o seu idStatusCartao alterado para o que fora escolhido. Caso contr\u00C3\u00A1rio, o idStatusCartao s\u00C3\u00B3 ser\u00C3\u00A1 alterado ap\u00C3\u00B3s o desbloqueio de um novo cart\u00C3\u00A3o do mesmo Portador e Conta.
-
-        :param flag_cancela_cartao: The flag_cancela_cartao of this StatusCartaoResponse.
-        :type: int
-        """
-        self._flag_cancela_cartao = flag_cancela_cartao
-
-    @property
-    def flag_cancela_no_desbloqueio(self):
-        """
-        Gets the flag_cancela_no_desbloqueio of this StatusCartaoResponse.
-        Quando ativa, indica que o cart\u00C3\u00A3o ativo que o portador possuir na mesma conta do cart\u00C3\u00A3o a ser desbloqueado, e que o status dele possua essa caracter\u00C3\u00ADstica, dever\u00C3\u00A1 ser cancelado quando um novo cart\u00C3\u00A3o for desbloqueado.
-
-        :return: The flag_cancela_no_desbloqueio of this StatusCartaoResponse.
-        :rtype: int
-        """
-        return self._flag_cancela_no_desbloqueio
-
-    @flag_cancela_no_desbloqueio.setter
-    def flag_cancela_no_desbloqueio(self, flag_cancela_no_desbloqueio):
-        """
-        Sets the flag_cancela_no_desbloqueio of this StatusCartaoResponse.
-        Quando ativa, indica que o cart\u00C3\u00A3o ativo que o portador possuir na mesma conta do cart\u00C3\u00A3o a ser desbloqueado, e que o status dele possua essa caracter\u00C3\u00ADstica, dever\u00C3\u00A1 ser cancelado quando um novo cart\u00C3\u00A3o for desbloqueado.
-
-        :param flag_cancela_no_desbloqueio: The flag_cancela_no_desbloqueio of this StatusCartaoResponse.
-        :type: int
-        """
-        self._flag_cancela_no_desbloqueio = flag_cancela_no_desbloqueio
-
-    @property
-    def id_status_destino_desbloqueio(self):
-        """
-        Gets the id_status_destino_desbloqueio of this StatusCartaoResponse.
-        Indica qual o idStatusCartao que ser\u00C3\u00A1 atribu\u00C3\u00ADdo aos cart\u00C3\u00B5es que forem cancelados devido ao desbloqueio de um novo cart\u00C3\u00A3o.
-
-        :return: The id_status_destino_desbloqueio of this StatusCartaoResponse.
-        :rtype: int
-        """
-        return self._id_status_destino_desbloqueio
-
-    @id_status_destino_desbloqueio.setter
-    def id_status_destino_desbloqueio(self, id_status_destino_desbloqueio):
-        """
-        Sets the id_status_destino_desbloqueio of this StatusCartaoResponse.
-        Indica qual o idStatusCartao que ser\u00C3\u00A1 atribu\u00C3\u00ADdo aos cart\u00C3\u00B5es que forem cancelados devido ao desbloqueio de um novo cart\u00C3\u00A3o.
-
-        :param id_status_destino_desbloqueio: The id_status_destino_desbloqueio of this StatusCartaoResponse.
-        :type: int
-        """
-        self._id_status_destino_desbloqueio = id_status_destino_desbloqueio
-
-    @property
-    def id_status_destino_conta(self):
-        """
-        Gets the id_status_destino_conta of this StatusCartaoResponse.
-        Indica qual o idStatusCartao que ser\u00C3\u00A1 atribu\u00C3\u00ADdo a conta, caso ela seja cancelada devido ao bloqueio de um cart\u00C3\u00A3o quando for utilizado um idStatusCartao no processo de Bloqueio que possua essa caracter\u00C3\u00ADstica.
-
-        :return: The id_status_destino_conta of this StatusCartaoResponse.
-        :rtype: int
-        """
-        return self._id_status_destino_conta
-
-    @id_status_destino_conta.setter
-    def id_status_destino_conta(self, id_status_destino_conta):
-        """
-        Sets the id_status_destino_conta of this StatusCartaoResponse.
-        Indica qual o idStatusCartao que ser\u00C3\u00A1 atribu\u00C3\u00ADdo a conta, caso ela seja cancelada devido ao bloqueio de um cart\u00C3\u00A3o quando for utilizado um idStatusCartao no processo de Bloqueio que possua essa caracter\u00C3\u00ADstica.
-
-        :param id_status_destino_conta: The id_status_destino_conta of this StatusCartaoResponse.
-        :type: int
-        """
-        self._id_status_destino_conta = id_status_destino_conta
-
-    @property
-    def flag_cobra_tarifa(self):
-        """
-        Gets the flag_cobra_tarifa of this StatusCartaoResponse.
-        Quando ativa, indica que cart\u00C3\u00B5es que tiverem um idStatusCartao atribu\u00C3\u00ADdo com essa caracter\u00C3\u00ADstica, incluir\u00C3\u00A3o a cobran\u00C3\u00A7a de uma tarifa para a conta de acordo com os valores definidos nos par\u00C3\u00A2metros do emissor.
-
-        :return: The flag_cobra_tarifa of this StatusCartaoResponse.
-        :rtype: int
-        """
-        return self._flag_cobra_tarifa
-
-    @flag_cobra_tarifa.setter
-    def flag_cobra_tarifa(self, flag_cobra_tarifa):
-        """
-        Sets the flag_cobra_tarifa of this StatusCartaoResponse.
-        Quando ativa, indica que cart\u00C3\u00B5es que tiverem um idStatusCartao atribu\u00C3\u00ADdo com essa caracter\u00C3\u00ADstica, incluir\u00C3\u00A3o a cobran\u00C3\u00A7a de uma tarifa para a conta de acordo com os valores definidos nos par\u00C3\u00A2metros do emissor.
-
-        :param flag_cobra_tarifa: The flag_cobra_tarifa of this StatusCartaoResponse.
-        :type: int
-        """
-        self._flag_cobra_tarifa = flag_cobra_tarifa
-
-    @property
-    def flag_permite_nova_via_cartao(self):
-        """
-        Gets the flag_permite_nova_via_cartao of this StatusCartaoResponse.
-        Par\u00C3\u00A2metro que define se o status do cart\u00C3\u00A3o permite a solicita\u00C3\u00A7\u00C3\u00A3o de uma nova via, sendo: 0: Inativo e 1: Ativo.
-
-        :return: The flag_permite_nova_via_cartao of this StatusCartaoResponse.
-        :rtype: int
-        """
-        return self._flag_permite_nova_via_cartao
-
-    @flag_permite_nova_via_cartao.setter
-    def flag_permite_nova_via_cartao(self, flag_permite_nova_via_cartao):
-        """
-        Sets the flag_permite_nova_via_cartao of this StatusCartaoResponse.
-        Par\u00C3\u00A2metro que define se o status do cart\u00C3\u00A3o permite a solicita\u00C3\u00A7\u00C3\u00A3o de uma nova via, sendo: 0: Inativo e 1: Ativo.
-
-        :param flag_permite_nova_via_cartao: The flag_permite_nova_via_cartao of this StatusCartaoResponse.
-        :type: int
-        """
-        self._flag_permite_nova_via_cartao = flag_permite_nova_via_cartao
-
-    @property
-    def flag_permite_desbloqueio(self):
-        """
-        Gets the flag_permite_desbloqueio of this StatusCartaoResponse.
-        Par\u00C3\u00A2metro que define se o status do cart\u00C3\u00A3o permite o desbloqueio, sendo: 0: Inativo e 1: Ativo.
-
-        :return: The flag_permite_desbloqueio of this StatusCartaoResponse.
-        :rtype: int
-        """
-        return self._flag_permite_desbloqueio
-
-    @flag_permite_desbloqueio.setter
-    def flag_permite_desbloqueio(self, flag_permite_desbloqueio):
-        """
-        Sets the flag_permite_desbloqueio of this StatusCartaoResponse.
-        Par\u00C3\u00A2metro que define se o status do cart\u00C3\u00A3o permite o desbloqueio, sendo: 0: Inativo e 1: Ativo.
-
-        :param flag_permite_desbloqueio: The flag_permite_desbloqueio of this StatusCartaoResponse.
-        :type: int
-        """
-        self._flag_permite_desbloqueio = flag_permite_desbloqueio
-
-    @property
-    def flag_cancelamento(self):
-        """
-        Gets the flag_cancelamento of this StatusCartaoResponse.
-        Par\u00C3\u00A2metro que define se o status do cart\u00C3\u00A3o permite o cancelamento, sendo: 0: Inativo e 1: Ativo.
-
-        :return: The flag_cancelamento of this StatusCartaoResponse.
-        :rtype: int
-        """
-        return self._flag_cancelamento
-
-    @flag_cancelamento.setter
-    def flag_cancelamento(self, flag_cancelamento):
-        """
-        Sets the flag_cancelamento of this StatusCartaoResponse.
-        Par\u00C3\u00A2metro que define se o status do cart\u00C3\u00A3o permite o cancelamento, sendo: 0: Inativo e 1: Ativo.
-
-        :param flag_cancelamento: The flag_cancelamento of this StatusCartaoResponse.
-        :type: int
-        """
-        self._flag_cancelamento = flag_cancelamento
-
-    @property
-    def flag_permite_bloqueio(self):
-        """
-        Gets the flag_permite_bloqueio of this StatusCartaoResponse.
-        Par\u00C3\u00A2metro que define se o status do cart\u00C3\u00A3o permite o bloqueio, sendo: 0: Inativo e 1: Ativo.
-
-        :return: The flag_permite_bloqueio of this StatusCartaoResponse.
-        :rtype: int
-        """
-        return self._flag_permite_bloqueio
-
-    @flag_permite_bloqueio.setter
-    def flag_permite_bloqueio(self, flag_permite_bloqueio):
-        """
-        Sets the flag_permite_bloqueio of this StatusCartaoResponse.
-        Par\u00C3\u00A2metro que define se o status do cart\u00C3\u00A3o permite o bloqueio, sendo: 0: Inativo e 1: Ativo.
-
-        :param flag_permite_bloqueio: The flag_permite_bloqueio of this StatusCartaoResponse.
-        :type: int
-        """
-        self._flag_permite_bloqueio = flag_permite_bloqueio
-
-    @property
-    def flag_reativar(self):
-        """
-        Gets the flag_reativar of this StatusCartaoResponse.
+        Gets the permite_desbloquear of this StatusCartaoResponse.
         Par\u00C3\u00A2metro que define se o status do cart\u00C3\u00A3o permite a reativa\u00C3\u00A7\u00C3\u00A3o do cart\u00C3\u00A3o, sendo: 0: Inativo e 1: Ativo.
 
-        :return: The flag_reativar of this StatusCartaoResponse.
+        :return: The permite_desbloquear of this StatusCartaoResponse.
         :rtype: int
         """
-        return self._flag_reativar
+        return self._permite_desbloquear
 
-    @flag_reativar.setter
-    def flag_reativar(self, flag_reativar):
+    @permite_desbloquear.setter
+    def permite_desbloquear(self, permite_desbloquear):
         """
-        Sets the flag_reativar of this StatusCartaoResponse.
+        Sets the permite_desbloquear of this StatusCartaoResponse.
         Par\u00C3\u00A2metro que define se o status do cart\u00C3\u00A3o permite a reativa\u00C3\u00A7\u00C3\u00A3o do cart\u00C3\u00A3o, sendo: 0: Inativo e 1: Ativo.
 
-        :param flag_reativar: The flag_reativar of this StatusCartaoResponse.
+        :param permite_desbloquear: The permite_desbloquear of this StatusCartaoResponse.
         :type: int
         """
-        self._flag_reativar = flag_reativar
+        self._permite_desbloquear = permite_desbloquear
+
+    @property
+    def permite_atribuir_como_bloqueio(self):
+        """
+        Gets the permite_atribuir_como_bloqueio of this StatusCartaoResponse.
+        Par\u00C3\u00A2metro que define se o status do cart\u00C3\u00A3o permite a reativa\u00C3\u00A7\u00C3\u00A3o do cart\u00C3\u00A3o, sendo: 0: Inativo e 1: Ativo.
+
+        :return: The permite_atribuir_como_bloqueio of this StatusCartaoResponse.
+        :rtype: int
+        """
+        return self._permite_atribuir_como_bloqueio
+
+    @permite_atribuir_como_bloqueio.setter
+    def permite_atribuir_como_bloqueio(self, permite_atribuir_como_bloqueio):
+        """
+        Sets the permite_atribuir_como_bloqueio of this StatusCartaoResponse.
+        Par\u00C3\u00A2metro que define se o status do cart\u00C3\u00A3o permite a reativa\u00C3\u00A7\u00C3\u00A3o do cart\u00C3\u00A3o, sendo: 0: Inativo e 1: Ativo.
+
+        :param permite_atribuir_como_bloqueio: The permite_atribuir_como_bloqueio of this StatusCartaoResponse.
+        :type: int
+        """
+        self._permite_atribuir_como_bloqueio = permite_atribuir_como_bloqueio
+
+    @property
+    def permite_atribuir_como_cancelamento(self):
+        """
+        Gets the permite_atribuir_como_cancelamento of this StatusCartaoResponse.
+        Par\u00C3\u00A2metro que define se o status do cart\u00C3\u00A3o permite a reativa\u00C3\u00A7\u00C3\u00A3o do cart\u00C3\u00A3o, sendo: 0: Inativo e 1: Ativo.
+
+        :return: The permite_atribuir_como_cancelamento of this StatusCartaoResponse.
+        :rtype: int
+        """
+        return self._permite_atribuir_como_cancelamento
+
+    @permite_atribuir_como_cancelamento.setter
+    def permite_atribuir_como_cancelamento(self, permite_atribuir_como_cancelamento):
+        """
+        Sets the permite_atribuir_como_cancelamento of this StatusCartaoResponse.
+        Par\u00C3\u00A2metro que define se o status do cart\u00C3\u00A3o permite a reativa\u00C3\u00A7\u00C3\u00A3o do cart\u00C3\u00A3o, sendo: 0: Inativo e 1: Ativo.
+
+        :param permite_atribuir_como_cancelamento: The permite_atribuir_como_cancelamento of this StatusCartaoResponse.
+        :type: int
+        """
+        self._permite_atribuir_como_cancelamento = permite_atribuir_como_cancelamento
+
+    @property
+    def cobrar_tarifa_ao_emitir_nova_via(self):
+        """
+        Gets the cobrar_tarifa_ao_emitir_nova_via of this StatusCartaoResponse.
+        Par\u00C3\u00A2metro que define se o status do cart\u00C3\u00A3o permite a reativa\u00C3\u00A7\u00C3\u00A3o do cart\u00C3\u00A3o, sendo: 0: Inativo e 1: Ativo.
+
+        :return: The cobrar_tarifa_ao_emitir_nova_via of this StatusCartaoResponse.
+        :rtype: int
+        """
+        return self._cobrar_tarifa_ao_emitir_nova_via
+
+    @cobrar_tarifa_ao_emitir_nova_via.setter
+    def cobrar_tarifa_ao_emitir_nova_via(self, cobrar_tarifa_ao_emitir_nova_via):
+        """
+        Sets the cobrar_tarifa_ao_emitir_nova_via of this StatusCartaoResponse.
+        Par\u00C3\u00A2metro que define se o status do cart\u00C3\u00A3o permite a reativa\u00C3\u00A7\u00C3\u00A3o do cart\u00C3\u00A3o, sendo: 0: Inativo e 1: Ativo.
+
+        :param cobrar_tarifa_ao_emitir_nova_via: The cobrar_tarifa_ao_emitir_nova_via of this StatusCartaoResponse.
+        :type: int
+        """
+        self._cobrar_tarifa_ao_emitir_nova_via = cobrar_tarifa_ao_emitir_nova_via
 
     def to_dict(self):
         """

@@ -45,7 +45,96 @@ class CadastrosClientesApi(object):
                 config.api_client = ApiClient()
             self.api_client = config.api_client
 
-    def alterar_using_put1(self, id, **kwargs):
+    def alterar_using_put(self, id, id_pessoa, adicional_update, **kwargs):
+        """
+        Altera Adicional de uma Conta
+        Este m\u00C3\u00A9todo permite que seja alterado um portador Adicional de uma determinada Conta.
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.alterar_using_put(id, id_pessoa, adicional_update, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da conta (id). (required)
+        :param int id_pessoa: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da pessoa (id). (required)
+        :param AdicionalUpdate adicional_update: adicionalUpdate (required)
+        :return: AdicionalResponse
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'id_pessoa', 'adicional_update']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method alterar_using_put" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `alterar_using_put`")
+        # verify the required parameter 'id_pessoa' is set
+        if ('id_pessoa' not in params) or (params['id_pessoa'] is None):
+            raise ValueError("Missing the required parameter `id_pessoa` when calling `alterar_using_put`")
+        # verify the required parameter 'adicional_update' is set
+        if ('adicional_update' not in params) or (params['adicional_update'] is None):
+            raise ValueError("Missing the required parameter `adicional_update` when calling `alterar_using_put`")
+
+        resource_path = '/api/contas/{id}/adicionais/{idPessoa}'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+        if 'id_pessoa' in params:
+            path_params['idPessoa'] = params['id_pessoa']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        if 'adicional_update' in params:
+            body_params = params['adicional_update']
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = []
+
+        response = self.api_client.call_api(resource_path, 'PUT',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='AdicionalResponse',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
+    def alterar_using_put2(self, id, **kwargs):
         """
         Atualiza os dados de um determinado Endere\u00C3\u00A7o
         Este m\u00C3\u00A9todo permite que seja alterado na base do emissor um ou mais registros ligados a um determinado Endere\u00C3\u00A7o.
@@ -56,7 +145,7 @@ class CadastrosClientesApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.alterar_using_put1(id, callback=callback_function)
+        >>> thread = api.alterar_using_put2(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -85,14 +174,14 @@ class CadastrosClientesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method alterar_using_put1" % key
+                    " to method alterar_using_put2" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `alterar_using_put1`")
+            raise ValueError("Missing the required parameter `id` when calling `alterar_using_put2`")
 
         resource_path = '/api/enderecos'.replace('{format}', 'json')
         path_params = {}
@@ -155,7 +244,7 @@ class CadastrosClientesApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def alterar_using_put4(self, id, **kwargs):
+    def alterar_using_put5(self, id, **kwargs):
         """
         Atualiza os detalhes de uma determinada Pessoa
         Este m\u00C3\u00A9todo permite que seja alterado na base do emissor os detalhes de uma determinada Pessoa.
@@ -166,7 +255,7 @@ class CadastrosClientesApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.alterar_using_put4(id, callback=callback_function)
+        >>> thread = api.alterar_using_put5(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -193,14 +282,14 @@ class CadastrosClientesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method alterar_using_put4" % key
+                    " to method alterar_using_put5" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `alterar_using_put4`")
+            raise ValueError("Missing the required parameter `id` when calling `alterar_using_put5`")
 
         resource_path = '/api/pessoas-detalhes/{id}'.replace('{format}', 'json')
         path_params = {}
@@ -259,7 +348,7 @@ class CadastrosClientesApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def alterar_using_put5(self, id, nome, tipo, **kwargs):
+    def alterar_using_put6(self, id, nome, tipo, **kwargs):
         """
         Atualiza os dados de uma determinada Pessoa
         Este m\u00C3\u00A9todo permite que seja alterado na base do emissor um registro de determinada Pessoa.
@@ -270,7 +359,7 @@ class CadastrosClientesApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.alterar_using_put5(id, nome, tipo, callback=callback_function)
+        >>> thread = api.alterar_using_put6(id, nome, tipo, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -298,20 +387,20 @@ class CadastrosClientesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method alterar_using_put5" % key
+                    " to method alterar_using_put6" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `alterar_using_put5`")
+            raise ValueError("Missing the required parameter `id` when calling `alterar_using_put6`")
         # verify the required parameter 'nome' is set
         if ('nome' not in params) or (params['nome'] is None):
-            raise ValueError("Missing the required parameter `nome` when calling `alterar_using_put5`")
+            raise ValueError("Missing the required parameter `nome` when calling `alterar_using_put6`")
         # verify the required parameter 'tipo' is set
         if ('tipo' not in params) or (params['tipo'] is None):
-            raise ValueError("Missing the required parameter `tipo` when calling `alterar_using_put5`")
+            raise ValueError("Missing the required parameter `tipo` when calling `alterar_using_put6`")
 
         resource_path = '/api/pessoas/{id}'.replace('{format}', 'json')
         path_params = {}
@@ -372,7 +461,7 @@ class CadastrosClientesApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def alterar_using_put6(self, id, **kwargs):
+    def alterar_using_put7(self, id, **kwargs):
         """
         Realiza a altera\u00C3\u00A7\u00C3\u00A3o de um determinado Telefone
         Este m\u00C3\u00A9todo permite que seja alterado um determinado Telefone na base de dados do Emissor.
@@ -383,7 +472,7 @@ class CadastrosClientesApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.alterar_using_put6(id, callback=callback_function)
+        >>> thread = api.alterar_using_put7(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -405,14 +494,14 @@ class CadastrosClientesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method alterar_using_put6" % key
+                    " to method alterar_using_put7" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `alterar_using_put6`")
+            raise ValueError("Missing the required parameter `id` when calling `alterar_using_put7`")
 
         resource_path = '/api/telefones'.replace('{format}', 'json')
         path_params = {}
@@ -461,7 +550,7 @@ class CadastrosClientesApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def atribuir_assinatura_cliente_using_post(self, id, atribuir_assinatura_cliente_request, **kwargs):
+    def atribuir_assinatura_cliente_using_post(self, id, body, **kwargs):
         """
         Permite atribuir um documento para uma Conta
         Este m\u00C3\u00A9todo permite que seja atribu\u00C3\u00ADdo a uma determinada Conta um documento que esteja armazenado no PIER Cloud, informando qual o tipo do documento e o seu respectivo id.
@@ -472,18 +561,18 @@ class CadastrosClientesApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.atribuir_assinatura_cliente_using_post(id, atribuir_assinatura_cliente_request, callback=callback_function)
+        >>> thread = api.atribuir_assinatura_cliente_using_post(id, body, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do arquivo (required)
-        :param AtribuirAssinaturaClienteRequest atribuir_assinatura_cliente_request: atribuirAssinaturaClienteRequest (required)
+        :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Conta (required)
+        :param AtribuirAssinaturaClientePersist body: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Arquivo (required)
         :return: object
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['id', 'atribuir_assinatura_cliente_request']
+        all_params = ['id', 'body']
         all_params.append('callback')
 
         params = locals()
@@ -499,9 +588,9 @@ class CadastrosClientesApi(object):
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
             raise ValueError("Missing the required parameter `id` when calling `atribuir_assinatura_cliente_using_post`")
-        # verify the required parameter 'atribuir_assinatura_cliente_request' is set
-        if ('atribuir_assinatura_cliente_request' not in params) or (params['atribuir_assinatura_cliente_request'] is None):
-            raise ValueError("Missing the required parameter `atribuir_assinatura_cliente_request` when calling `atribuir_assinatura_cliente_using_post`")
+        # verify the required parameter 'body' is set
+        if ('body' not in params) or (params['body'] is None):
+            raise ValueError("Missing the required parameter `body` when calling `atribuir_assinatura_cliente_using_post`")
 
         resource_path = '/api/contas/{id}/atribuir-assinatura-cliente'.replace('{format}', 'json')
         path_params = {}
@@ -516,8 +605,8 @@ class CadastrosClientesApi(object):
         local_var_files = {}
 
         body_params = None
-        if 'atribuir_assinatura_cliente_request' in params:
-            body_params = params['atribuir_assinatura_cliente_request']
+        if 'body' in params:
+            body_params = params['body']
 
         # HTTP header `Accept`
         header_params['Accept'] = self.api_client.\
@@ -935,10 +1024,10 @@ class CadastrosClientesApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get14(self, **kwargs):
+    def inativar_using_post(self, id, id_pessoa, **kwargs):
         """
-        Lista os Detalhes das Pessoas cadastradas no Emissor
-        Este m\u00C3\u00A9todo permite que sejam listadas od detalhes das Pessoas existentes na base de dados do Emissor.
+        Inativa Adicional de uma Conta
+        Este m\u00C3\u00A9todo permite que seja inativado um portador Adicional de uma determinada Conta.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -946,28 +1035,18 @@ class CadastrosClientesApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get14(callback=callback_function)
+        >>> thread = api.inativar_using_post(id, id_pessoa, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
-        :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
-        :param int id_pessoa: C\u00C3\u00B3digo identificador da pessoa
-        :param str nome_mae: Apresenta o nome da m\u00C3\u00A3e da pessoa fisica
-        :param int id_estado_civil: Id Estado civil da pessoa fisica
-        :param int id_profissao: Profiss\u00C3\u00A3o da pessoa fisica
-        :param int id_natureza_ocupacao: Id Natureza Ocupa\u00C3\u00A7\u00C3\u00A3o da pessoa fisica
-        :param int id_nacionalidade: Id Nacionalidade da pessoa fisica
-        :param int numero_agencia: N\u00C3\u00BAmero da ag\u00C3\u00AAncia.
-        :param str numero_conta_corrente: N\u00C3\u00BAmero da conta corrente.
-        :param str email: Email da pessoa fisica
-        :param str nome_empresa: Nome que deve ser impresso no cart\u00C3\u00A3o
-        :return: PagePessoaDetalheResponse
+        :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da conta (id). (required)
+        :param int id_pessoa: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da pessoa (id). (required)
+        :return: str
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['page', 'limit', 'id_pessoa', 'nome_mae', 'id_estado_civil', 'id_profissao', 'id_natureza_ocupacao', 'id_nacionalidade', 'numero_agencia', 'numero_conta_corrente', 'email', 'nome_empresa']
+        all_params = ['id', 'id_pessoa']
         all_params.append('callback')
 
         params = locals()
@@ -975,40 +1054,26 @@ class CadastrosClientesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get14" % key
+                    " to method inativar_using_post" % key
                 )
             params[key] = val
         del params['kwargs']
 
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `inativar_using_post`")
+        # verify the required parameter 'id_pessoa' is set
+        if ('id_pessoa' not in params) or (params['id_pessoa'] is None):
+            raise ValueError("Missing the required parameter `id_pessoa` when calling `inativar_using_post`")
 
-        resource_path = '/api/pessoas-detalhes'.replace('{format}', 'json')
+        resource_path = '/api/contas/{id}/adicionais/{idPessoa}/inativar'.replace('{format}', 'json')
         path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+        if 'id_pessoa' in params:
+            path_params['idPessoa'] = params['id_pessoa']
 
         query_params = {}
-        if 'page' in params:
-            query_params['page'] = params['page']
-        if 'limit' in params:
-            query_params['limit'] = params['limit']
-        if 'id_pessoa' in params:
-            query_params['idPessoa'] = params['id_pessoa']
-        if 'nome_mae' in params:
-            query_params['nomeMae'] = params['nome_mae']
-        if 'id_estado_civil' in params:
-            query_params['idEstadoCivil'] = params['id_estado_civil']
-        if 'id_profissao' in params:
-            query_params['idProfissao'] = params['id_profissao']
-        if 'id_natureza_ocupacao' in params:
-            query_params['idNaturezaOcupacao'] = params['id_natureza_ocupacao']
-        if 'id_nacionalidade' in params:
-            query_params['idNacionalidade'] = params['id_nacionalidade']
-        if 'numero_agencia' in params:
-            query_params['numeroAgencia'] = params['numero_agencia']
-        if 'numero_conta_corrente' in params:
-            query_params['numeroContaCorrente'] = params['numero_conta_corrente']
-        if 'email' in params:
-            query_params['email'] = params['email']
-        if 'nome_empresa' in params:
-            query_params['nomeEmpresa'] = params['nome_empresa']
 
         header_params = {}
 
@@ -1030,22 +1095,22 @@ class CadastrosClientesApi(object):
         # Authentication setting
         auth_settings = []
 
-        response = self.api_client.call_api(resource_path, 'GET',
+        response = self.api_client.call_api(resource_path, 'POST',
                                             path_params,
                                             query_params,
                                             header_params,
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='PagePessoaDetalheResponse',
+                                            response_type='str',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get15(self, **kwargs):
+    def listar_socios_using_get(self, id, **kwargs):
         """
-        Lista as Pessoas cadastradas no Emissor
-        Este m\u00C3\u00A9todo permite que sejam listadas as Pessoas existentes na base de dados do Emissor.
+        Listar s\u00C3\u00B3cios de uma pessoa jur\u00C3\u00ADdica
+        Lista os s\u00C3\u00B3cios vinculados \u00C3\u00A0 uma Pessoa Jur\u00C3\u00ADdica cadastrada.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -1053,29 +1118,20 @@ class CadastrosClientesApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get15(callback=callback_function)
+        >>> thread = api.listar_socios_using_get(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
+        :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Pessoa Jur\u00C3\u00ADdica (required)
+        :param list[str] sort: Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
         :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
         :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
-        :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Pessoa (id).
-        :param str nome: Apresenta o 'Nome Completo da PF' ou o 'Nome Completo da Raz\u00C3\u00A3o Social (Nome Empresarial)'.
-        :param str tipo: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do tipo da Pessoa, sendo: (\"PF\": Pessoa F\u00C3\u00ADsica), (\"PJ\": Pessoa Jur\u00C3\u00ADdica).
-        :param str cpf: N\u00C3\u00BAmero do CPF, quando PF.
-        :param str cnpj: N\u00C3\u00BAmero do CNPJ, quando PJ.
-        :param str data_nascimento: Data de Nascimento da Pessoa, quando PF, ou a Data de Abertura da Empresa, quando PJ.
-        :param str sexo: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do sexo da Pessoa, quando PF, sendo: (\"M\": Masculino), (\"F\": Feminino), (\"O\": Outro), (\"N\": N\u00C3\u00A3o Especificado).
-        :param str numero_identidade: N\u00C3\u00BAmero da Identidade
-        :param str orgao_expedidor_identidade: Org\u00C3\u00A3o expedidor do RG.
-        :param str unidade_federativa_identidade: Sigla da Unidade Federativa de onde foi expedido a Identidade
-        :param str data_emissao_identidade: Data emiss\u00C3\u00A3o da identidade no formato aaaa-MM-dd
         :return: PagePessoaResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['page', 'limit', 'id', 'nome', 'tipo', 'cpf', 'cnpj', 'data_nascimento', 'sexo', 'numero_identidade', 'orgao_expedidor_identidade', 'unidade_federativa_identidade', 'data_emissao_identidade']
+        all_params = ['id', 'sort', 'page', 'limit']
         all_params.append('callback')
 
         params = locals()
@@ -1083,42 +1139,27 @@ class CadastrosClientesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get15" % key
+                    " to method listar_socios_using_get" % key
                 )
             params[key] = val
         del params['kwargs']
 
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `listar_socios_using_get`")
 
-        resource_path = '/api/pessoas'.replace('{format}', 'json')
+        resource_path = '/api/clientes-pessoas-juridicas/{id}/socios'.replace('{format}', 'json')
         path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
 
         query_params = {}
+        if 'sort' in params:
+            query_params['sort'] = params['sort']
         if 'page' in params:
             query_params['page'] = params['page']
         if 'limit' in params:
             query_params['limit'] = params['limit']
-        if 'id' in params:
-            query_params['id'] = params['id']
-        if 'nome' in params:
-            query_params['nome'] = params['nome']
-        if 'tipo' in params:
-            query_params['tipo'] = params['tipo']
-        if 'cpf' in params:
-            query_params['cpf'] = params['cpf']
-        if 'cnpj' in params:
-            query_params['cnpj'] = params['cnpj']
-        if 'data_nascimento' in params:
-            query_params['dataNascimento'] = params['data_nascimento']
-        if 'sexo' in params:
-            query_params['sexo'] = params['sexo']
-        if 'numero_identidade' in params:
-            query_params['numeroIdentidade'] = params['numero_identidade']
-        if 'orgao_expedidor_identidade' in params:
-            query_params['orgaoExpedidorIdentidade'] = params['orgao_expedidor_identidade']
-        if 'unidade_federativa_identidade' in params:
-            query_params['unidadeFederativaIdentidade'] = params['unidade_federativa_identidade']
-        if 'data_emissao_identidade' in params:
-            query_params['dataEmissaoIdentidade'] = params['data_emissao_identidade']
 
         header_params = {}
 
@@ -1152,10 +1193,10 @@ class CadastrosClientesApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get22(self, **kwargs):
+    def listar_using_get(self, id, **kwargs):
         """
-        Lista os Telefones cadastrados no Emissor
-        Este m\u00C3\u00A9todo permite que sejam listados os Telefones existentes na base de dados do Emissor.
+        Lista os Adicionais de uma Conta
+        Este m\u00C3\u00A9todo permite que sejam listados portadores Adicionais de uma determinada Conta.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -1163,25 +1204,19 @@ class CadastrosClientesApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get22(callback=callback_function)
+        >>> thread = api.listar_using_get(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
+        :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da conta (id). (required)
         :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
         :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
-        :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Telefone (id).
-        :param int id_tipo_telefone: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Tipo do Telefone (id).
-        :param int id_pessoa: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Pessoa (id) a qual o telefone pertence.
-        :param str ddd: C\u00C3\u00B3digo DDD do telefone (id).
-        :param str telefone: N\u00C3\u00BAmero do telefone.
-        :param str ramal: N\u00C3\u00BAmero do ramal.
-        :param int status: Apresenta o Status do Telefone, onde: '0': Inativo e '1': Ativo
-        :return: PageTelefoneResponse
+        :return: AdicionalResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['page', 'limit', 'id', 'id_tipo_telefone', 'id_pessoa', 'ddd', 'telefone', 'ramal', 'status']
+        all_params = ['id', 'page', 'limit']
         all_params.append('callback')
 
         params = locals()
@@ -1189,34 +1224,25 @@ class CadastrosClientesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get22" % key
+                    " to method listar_using_get" % key
                 )
             params[key] = val
         del params['kwargs']
 
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `listar_using_get`")
 
-        resource_path = '/api/telefones'.replace('{format}', 'json')
+        resource_path = '/api/contas/{id}/adicionais'.replace('{format}', 'json')
         path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
 
         query_params = {}
         if 'page' in params:
             query_params['page'] = params['page']
         if 'limit' in params:
             query_params['limit'] = params['limit']
-        if 'id' in params:
-            query_params['id'] = params['id']
-        if 'id_tipo_telefone' in params:
-            query_params['idTipoTelefone'] = params['id_tipo_telefone']
-        if 'id_pessoa' in params:
-            query_params['idPessoa'] = params['id_pessoa']
-        if 'ddd' in params:
-            query_params['ddd'] = params['ddd']
-        if 'telefone' in params:
-            query_params['telefone'] = params['telefone']
-        if 'ramal' in params:
-            query_params['ramal'] = params['ramal']
-        if 'status' in params:
-            query_params['status'] = params['status']
 
         header_params = {}
 
@@ -1245,12 +1271,12 @@ class CadastrosClientesApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='PageTelefoneResponse',
+                                            response_type='AdicionalResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get9(self, **kwargs):
+    def listar_using_get10(self, **kwargs):
         """
         Lista os Endere\u00C3\u00A7os cadastrados para o Emissor
         Este m\u00C3\u00A9todo permite que sejam listados os Endere\u00C3\u00A7os existentes na base de dados do Emissor.
@@ -1261,10 +1287,11 @@ class CadastrosClientesApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get9(callback=callback_function)
+        >>> thread = api.listar_using_get10(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
+        :param list[str] sort: Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
         :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
         :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
         :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Endere\u00C3\u00A7o (id).
@@ -1286,7 +1313,7 @@ class CadastrosClientesApi(object):
                  returns the request thread.
         """
 
-        all_params = ['page', 'limit', 'id', 'id_pessoa', 'id_tipo_endereco', 'cep', 'logradouro', 'numero', 'complemento', 'ponto_referencia', 'bairro', 'cidade', 'uf', 'pais', 'data_inclusao', 'data_ultima_atualizacao']
+        all_params = ['sort', 'page', 'limit', 'id', 'id_pessoa', 'id_tipo_endereco', 'cep', 'logradouro', 'numero', 'complemento', 'ponto_referencia', 'bairro', 'cidade', 'uf', 'pais', 'data_inclusao', 'data_ultima_atualizacao']
         all_params.append('callback')
 
         params = locals()
@@ -1294,7 +1321,7 @@ class CadastrosClientesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get9" % key
+                    " to method listar_using_get10" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -1304,6 +1331,8 @@ class CadastrosClientesApi(object):
         path_params = {}
 
         query_params = {}
+        if 'sort' in params:
+            query_params['sort'] = params['sort']
         if 'page' in params:
             query_params['page'] = params['page']
         if 'limit' in params:
@@ -1365,6 +1394,330 @@ class CadastrosClientesApi(object):
                                             post_params=form_params,
                                             files=local_var_files,
                                             response_type='PageEnderecoResponse',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
+    def listar_using_get15(self, **kwargs):
+        """
+        Lista os Detalhes das Pessoas cadastradas no Emissor
+        Este m\u00C3\u00A9todo permite que sejam listadas od detalhes das Pessoas existentes na base de dados do Emissor.
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.listar_using_get15(callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param list[str] sort: Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
+        :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
+        :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
+        :param int id_pessoa: C\u00C3\u00B3digo identificador da pessoa
+        :param str nome_mae: Apresenta o nome da m\u00C3\u00A3e da pessoa fisica
+        :param int id_estado_civil: Id Estado civil da pessoa fisica
+        :param int id_profissao: Profiss\u00C3\u00A3o da pessoa fisica
+        :param int id_natureza_ocupacao: Id Natureza Ocupa\u00C3\u00A7\u00C3\u00A3o da pessoa fisica
+        :param int id_nacionalidade: Id Nacionalidade da pessoa fisica
+        :param int numero_agencia: N\u00C3\u00BAmero da ag\u00C3\u00AAncia.
+        :param str numero_conta_corrente: N\u00C3\u00BAmero da conta corrente.
+        :param str email: Email da pessoa fisica
+        :param str nome_empresa: Nome que deve ser impresso no cart\u00C3\u00A3o
+        :return: PagePessoaDetalheResponse
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['sort', 'page', 'limit', 'id_pessoa', 'nome_mae', 'id_estado_civil', 'id_profissao', 'id_natureza_ocupacao', 'id_nacionalidade', 'numero_agencia', 'numero_conta_corrente', 'email', 'nome_empresa']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method listar_using_get15" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+
+        resource_path = '/api/pessoas-detalhes'.replace('{format}', 'json')
+        path_params = {}
+
+        query_params = {}
+        if 'sort' in params:
+            query_params['sort'] = params['sort']
+        if 'page' in params:
+            query_params['page'] = params['page']
+        if 'limit' in params:
+            query_params['limit'] = params['limit']
+        if 'id_pessoa' in params:
+            query_params['idPessoa'] = params['id_pessoa']
+        if 'nome_mae' in params:
+            query_params['nomeMae'] = params['nome_mae']
+        if 'id_estado_civil' in params:
+            query_params['idEstadoCivil'] = params['id_estado_civil']
+        if 'id_profissao' in params:
+            query_params['idProfissao'] = params['id_profissao']
+        if 'id_natureza_ocupacao' in params:
+            query_params['idNaturezaOcupacao'] = params['id_natureza_ocupacao']
+        if 'id_nacionalidade' in params:
+            query_params['idNacionalidade'] = params['id_nacionalidade']
+        if 'numero_agencia' in params:
+            query_params['numeroAgencia'] = params['numero_agencia']
+        if 'numero_conta_corrente' in params:
+            query_params['numeroContaCorrente'] = params['numero_conta_corrente']
+        if 'email' in params:
+            query_params['email'] = params['email']
+        if 'nome_empresa' in params:
+            query_params['nomeEmpresa'] = params['nome_empresa']
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = []
+
+        response = self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='PagePessoaDetalheResponse',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
+    def listar_using_get16(self, **kwargs):
+        """
+        Lista as Pessoas cadastradas no Emissor
+        Este m\u00C3\u00A9todo permite que sejam listadas as Pessoas existentes na base de dados do Emissor.
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.listar_using_get16(callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param list[str] sort: Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
+        :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
+        :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
+        :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Pessoa (id).
+        :param str nome: Apresenta o 'Nome Completo da PF' ou o 'Nome Completo da Raz\u00C3\u00A3o Social (Nome Empresarial)'.
+        :param str tipo: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do tipo da Pessoa, sendo: (\"PF\": Pessoa F\u00C3\u00ADsica), (\"PJ\": Pessoa Jur\u00C3\u00ADdica).
+        :param str cpf: N\u00C3\u00BAmero do CPF, quando PF.
+        :param str cnpj: N\u00C3\u00BAmero do CNPJ, quando PJ.
+        :param str data_nascimento: Data de Nascimento da Pessoa, quando PF, ou a Data de Abertura da Empresa, quando PJ.
+        :param str sexo: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do sexo da Pessoa, quando PF, sendo: (\"M\": Masculino), (\"F\": Feminino), (\"O\": Outro), (\"N\": N\u00C3\u00A3o Especificado).
+        :param str numero_identidade: N\u00C3\u00BAmero da Identidade
+        :param str orgao_expedidor_identidade: Org\u00C3\u00A3o expedidor do RG.
+        :param str unidade_federativa_identidade: Sigla da Unidade Federativa de onde foi expedido a Identidade
+        :param str data_emissao_identidade: Data emiss\u00C3\u00A3o da identidade no formato aaaa-MM-dd
+        :return: PagePessoaResponse
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['sort', 'page', 'limit', 'id', 'nome', 'tipo', 'cpf', 'cnpj', 'data_nascimento', 'sexo', 'numero_identidade', 'orgao_expedidor_identidade', 'unidade_federativa_identidade', 'data_emissao_identidade']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method listar_using_get16" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+
+        resource_path = '/api/pessoas'.replace('{format}', 'json')
+        path_params = {}
+
+        query_params = {}
+        if 'sort' in params:
+            query_params['sort'] = params['sort']
+        if 'page' in params:
+            query_params['page'] = params['page']
+        if 'limit' in params:
+            query_params['limit'] = params['limit']
+        if 'id' in params:
+            query_params['id'] = params['id']
+        if 'nome' in params:
+            query_params['nome'] = params['nome']
+        if 'tipo' in params:
+            query_params['tipo'] = params['tipo']
+        if 'cpf' in params:
+            query_params['cpf'] = params['cpf']
+        if 'cnpj' in params:
+            query_params['cnpj'] = params['cnpj']
+        if 'data_nascimento' in params:
+            query_params['dataNascimento'] = params['data_nascimento']
+        if 'sexo' in params:
+            query_params['sexo'] = params['sexo']
+        if 'numero_identidade' in params:
+            query_params['numeroIdentidade'] = params['numero_identidade']
+        if 'orgao_expedidor_identidade' in params:
+            query_params['orgaoExpedidorIdentidade'] = params['orgao_expedidor_identidade']
+        if 'unidade_federativa_identidade' in params:
+            query_params['unidadeFederativaIdentidade'] = params['unidade_federativa_identidade']
+        if 'data_emissao_identidade' in params:
+            query_params['dataEmissaoIdentidade'] = params['data_emissao_identidade']
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = []
+
+        response = self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='PagePessoaResponse',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
+    def listar_using_get24(self, **kwargs):
+        """
+        Lista os Telefones cadastrados no Emissor
+        Este m\u00C3\u00A9todo permite que sejam listados os Telefones existentes na base de dados do Emissor.
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.listar_using_get24(callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param list[str] sort: Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
+        :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
+        :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
+        :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Telefone (id).
+        :param int id_tipo_telefone: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Tipo do Telefone (id).
+        :param int id_pessoa: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Pessoa (id) a qual o telefone pertence.
+        :param str ddd: C\u00C3\u00B3digo DDD do telefone (id).
+        :param str telefone: N\u00C3\u00BAmero do telefone.
+        :param str ramal: N\u00C3\u00BAmero do ramal.
+        :param int status: Apresenta o Status do Telefone, onde: '0': Inativo e '1': Ativo
+        :return: PageTelefoneResponse
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['sort', 'page', 'limit', 'id', 'id_tipo_telefone', 'id_pessoa', 'ddd', 'telefone', 'ramal', 'status']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method listar_using_get24" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+
+        resource_path = '/api/telefones'.replace('{format}', 'json')
+        path_params = {}
+
+        query_params = {}
+        if 'sort' in params:
+            query_params['sort'] = params['sort']
+        if 'page' in params:
+            query_params['page'] = params['page']
+        if 'limit' in params:
+            query_params['limit'] = params['limit']
+        if 'id' in params:
+            query_params['id'] = params['id']
+        if 'id_tipo_telefone' in params:
+            query_params['idTipoTelefone'] = params['id_tipo_telefone']
+        if 'id_pessoa' in params:
+            query_params['idPessoa'] = params['id_pessoa']
+        if 'ddd' in params:
+            query_params['ddd'] = params['ddd']
+        if 'telefone' in params:
+            query_params['telefone'] = params['telefone']
+        if 'ramal' in params:
+            query_params['ramal'] = params['ramal']
+        if 'status' in params:
+            query_params['status'] = params['status']
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = []
+
+        response = self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='PageTelefoneResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
@@ -1523,7 +1876,111 @@ class CadastrosClientesApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def salvar_using_post10(self, nome, tipo, **kwargs):
+    def salvar_using_post10(self, id_pessoa, **kwargs):
+        """
+        Salvar os detalhes de uma determinada Pessoa
+        Este m\u00C3\u00A9todo permite que seja incluido na base do emissor os detalhes de uma determinada Pessoa.
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.salvar_using_post10(id_pessoa, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param int id_pessoa: Apresenta o c\u00C3\u00B3digo identificador da pessoa (required)
+        :param str nome_mae: Apresenta o nome da m\u00C3\u00A3e da pessoa fisica
+        :param int id_estado_civil: Id Estado civil da pessoa fisica
+        :param int id_profissao: Profiss\u00C3\u00A3o da pessoa fisica
+        :param int id_natureza_ocupacao: Id Natureza Ocupa\u00C3\u00A7\u00C3\u00A3o da pessoa fisica
+        :param int id_nacionalidade: Id Nacionalidade da pessoa fisica
+        :param int numero_agencia: N\u00C3\u00BAmero da ag\u00C3\u00AAncia.
+        :param str numero_conta_corrente: N\u00C3\u00BAmero da conta corrente.
+        :param str email: Email da pessoa fisica
+        :param str nome_empresa: Nome que deve ser impresso no cart\u00C3\u00A3o
+        :return: PessoaDetalheResponse
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id_pessoa', 'nome_mae', 'id_estado_civil', 'id_profissao', 'id_natureza_ocupacao', 'id_nacionalidade', 'numero_agencia', 'numero_conta_corrente', 'email', 'nome_empresa']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method salvar_using_post10" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        # verify the required parameter 'id_pessoa' is set
+        if ('id_pessoa' not in params) or (params['id_pessoa'] is None):
+            raise ValueError("Missing the required parameter `id_pessoa` when calling `salvar_using_post10`")
+
+        resource_path = '/api/pessoas-detalhes'.replace('{format}', 'json')
+        path_params = {}
+
+        query_params = {}
+        if 'id_pessoa' in params:
+            query_params['idPessoa'] = params['id_pessoa']
+        if 'nome_mae' in params:
+            query_params['nomeMae'] = params['nome_mae']
+        if 'id_estado_civil' in params:
+            query_params['idEstadoCivil'] = params['id_estado_civil']
+        if 'id_profissao' in params:
+            query_params['idProfissao'] = params['id_profissao']
+        if 'id_natureza_ocupacao' in params:
+            query_params['idNaturezaOcupacao'] = params['id_natureza_ocupacao']
+        if 'id_nacionalidade' in params:
+            query_params['idNacionalidade'] = params['id_nacionalidade']
+        if 'numero_agencia' in params:
+            query_params['numeroAgencia'] = params['numero_agencia']
+        if 'numero_conta_corrente' in params:
+            query_params['numeroContaCorrente'] = params['numero_conta_corrente']
+        if 'email' in params:
+            query_params['email'] = params['email']
+        if 'nome_empresa' in params:
+            query_params['nomeEmpresa'] = params['nome_empresa']
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = []
+
+        response = self.api_client.call_api(resource_path, 'POST',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='PessoaDetalheResponse',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
+    def salvar_using_post11(self, nome, tipo, **kwargs):
         """
         Realiza o cadastro de um nova Pessoa
         Este m\u00C3\u00A9todo permite que seja cadastrado uma nova Pessoa na base de dados do Emissor.
@@ -1534,7 +1991,7 @@ class CadastrosClientesApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.salvar_using_post10(nome, tipo, callback=callback_function)
+        >>> thread = api.salvar_using_post11(nome, tipo, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -1561,17 +2018,17 @@ class CadastrosClientesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method salvar_using_post10" % key
+                    " to method salvar_using_post11" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'nome' is set
         if ('nome' not in params) or (params['nome'] is None):
-            raise ValueError("Missing the required parameter `nome` when calling `salvar_using_post10`")
+            raise ValueError("Missing the required parameter `nome` when calling `salvar_using_post11`")
         # verify the required parameter 'tipo' is set
         if ('tipo' not in params) or (params['tipo'] is None):
-            raise ValueError("Missing the required parameter `tipo` when calling `salvar_using_post10`")
+            raise ValueError("Missing the required parameter `tipo` when calling `salvar_using_post11`")
 
         resource_path = '/api/pessoas'.replace('{format}', 'json')
         path_params = {}
@@ -1630,7 +2087,7 @@ class CadastrosClientesApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def salvar_using_post12(self, **kwargs):
+    def salvar_using_post13(self, **kwargs):
         """
         Realiza o cadastro de um novo Telefone
         Este m\u00C3\u00A9todo permite que seja cadastrado um novo Telefone na base de dados do Emissor.
@@ -1641,7 +2098,7 @@ class CadastrosClientesApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.salvar_using_post12(callback=callback_function)
+        >>> thread = api.salvar_using_post13(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -1663,7 +2120,7 @@ class CadastrosClientesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method salvar_using_post12" % key
+                    " to method salvar_using_post13" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -1820,7 +2277,7 @@ class CadastrosClientesApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def salvar_using_post6(self, id, **kwargs):
+    def salvar_using_post7(self, id, **kwargs):
         """
         Inclui a conta como registro para integra\u00C3\u00A7\u00C3\u00A3o
         Este recurso permite incluir uma conta como registro para integra\u00C3\u00A7\u00C3\u00A3o.
@@ -1831,18 +2288,18 @@ class CadastrosClientesApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.salvar_using_post6(id, callback=callback_function)
+        >>> thread = api.salvar_using_post7(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int id: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da conta (id). (required)
-        :param int id_proposta_externa: Apresenta o identificador da proposta externa.
+        :param IntegracaoEmissorPersist body: Descri\u00C3\u00A7\u00C3\u00A3o do canal de entrada
         :return: IntegracaoEmissorResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['id', 'id_proposta_externa']
+        all_params = ['id', 'body']
         all_params.append('callback')
 
         params = locals()
@@ -1850,14 +2307,14 @@ class CadastrosClientesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method salvar_using_post6" % key
+                    " to method salvar_using_post7" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `salvar_using_post6`")
+            raise ValueError("Missing the required parameter `id` when calling `salvar_using_post7`")
 
         resource_path = '/api/contas/{id}/incluir-registro-integracao'.replace('{format}', 'json')
         path_params = {}
@@ -1865,8 +2322,6 @@ class CadastrosClientesApi(object):
             path_params['id'] = params['id']
 
         query_params = {}
-        if 'id_proposta_externa' in params:
-            query_params['idPropostaExterna'] = params['id_proposta_externa']
 
         header_params = {}
 
@@ -1874,6 +2329,8 @@ class CadastrosClientesApi(object):
         local_var_files = {}
 
         body_params = None
+        if 'body' in params:
+            body_params = params['body']
 
         # HTTP header `Accept`
         header_params['Accept'] = self.api_client.\
@@ -1896,110 +2353,6 @@ class CadastrosClientesApi(object):
                                             post_params=form_params,
                                             files=local_var_files,
                                             response_type='IntegracaoEmissorResponse',
-                                            auth_settings=auth_settings,
-                                            callback=params.get('callback'))
-        return response
-
-    def salvar_using_post9(self, id_pessoa, **kwargs):
-        """
-        Salvar os detalhes de uma determinada Pessoa
-        Este m\u00C3\u00A9todo permite que seja incluido na base do emissor os detalhes de uma determinada Pessoa.
-
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
-        >>> thread = api.salvar_using_post9(id_pessoa, callback=callback_function)
-
-        :param callback function: The callback function
-            for asynchronous request. (optional)
-        :param int id_pessoa: Apresenta o c\u00C3\u00B3digo identificador da pessoa (required)
-        :param str nome_mae: Apresenta o nome da m\u00C3\u00A3e da pessoa fisica
-        :param int id_estado_civil: Id Estado civil da pessoa fisica
-        :param int id_profissao: Profiss\u00C3\u00A3o da pessoa fisica
-        :param int id_natureza_ocupacao: Id Natureza Ocupa\u00C3\u00A7\u00C3\u00A3o da pessoa fisica
-        :param int id_nacionalidade: Id Nacionalidade da pessoa fisica
-        :param int numero_agencia: N\u00C3\u00BAmero da ag\u00C3\u00AAncia.
-        :param str numero_conta_corrente: N\u00C3\u00BAmero da conta corrente.
-        :param str email: Email da pessoa fisica
-        :param str nome_empresa: Nome que deve ser impresso no cart\u00C3\u00A3o
-        :return: PessoaDetalheResponse
-                 If the method is called asynchronously,
-                 returns the request thread.
-        """
-
-        all_params = ['id_pessoa', 'nome_mae', 'id_estado_civil', 'id_profissao', 'id_natureza_ocupacao', 'id_nacionalidade', 'numero_agencia', 'numero_conta_corrente', 'email', 'nome_empresa']
-        all_params.append('callback')
-
-        params = locals()
-        for key, val in iteritems(params['kwargs']):
-            if key not in all_params:
-                raise TypeError(
-                    "Got an unexpected keyword argument '%s'"
-                    " to method salvar_using_post9" % key
-                )
-            params[key] = val
-        del params['kwargs']
-
-        # verify the required parameter 'id_pessoa' is set
-        if ('id_pessoa' not in params) or (params['id_pessoa'] is None):
-            raise ValueError("Missing the required parameter `id_pessoa` when calling `salvar_using_post9`")
-
-        resource_path = '/api/pessoas-detalhes'.replace('{format}', 'json')
-        path_params = {}
-
-        query_params = {}
-        if 'id_pessoa' in params:
-            query_params['idPessoa'] = params['id_pessoa']
-        if 'nome_mae' in params:
-            query_params['nomeMae'] = params['nome_mae']
-        if 'id_estado_civil' in params:
-            query_params['idEstadoCivil'] = params['id_estado_civil']
-        if 'id_profissao' in params:
-            query_params['idProfissao'] = params['id_profissao']
-        if 'id_natureza_ocupacao' in params:
-            query_params['idNaturezaOcupacao'] = params['id_natureza_ocupacao']
-        if 'id_nacionalidade' in params:
-            query_params['idNacionalidade'] = params['id_nacionalidade']
-        if 'numero_agencia' in params:
-            query_params['numeroAgencia'] = params['numero_agencia']
-        if 'numero_conta_corrente' in params:
-            query_params['numeroContaCorrente'] = params['numero_conta_corrente']
-        if 'email' in params:
-            query_params['email'] = params['email']
-        if 'nome_empresa' in params:
-            query_params['nomeEmpresa'] = params['nome_empresa']
-
-        header_params = {}
-
-        form_params = []
-        local_var_files = {}
-
-        body_params = None
-
-        # HTTP header `Accept`
-        header_params['Accept'] = self.api_client.\
-            select_header_accept(['application/json'])
-        if not header_params['Accept']:
-            del header_params['Accept']
-
-        # HTTP header `Content-Type`
-        header_params['Content-Type'] = self.api_client.\
-            select_header_content_type(['application/json'])
-
-        # Authentication setting
-        auth_settings = []
-
-        response = self.api_client.call_api(resource_path, 'POST',
-                                            path_params,
-                                            query_params,
-                                            header_params,
-                                            body=body_params,
-                                            post_params=form_params,
-                                            files=local_var_files,
-                                            response_type='PessoaDetalheResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response

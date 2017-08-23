@@ -199,7 +199,7 @@ class EstabelecimentosApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get10(self, **kwargs):
+    def listar_using_get11(self, **kwargs):
         """
         Lista Estabelecimentos
         Lista todas os Estabelecimentos
@@ -210,10 +210,11 @@ class EstabelecimentosApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get10(callback=callback_function)
+        >>> thread = api.listar_using_get11(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
+        :param list[str] sort: Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
         :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
         :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
         :param int id: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do estabelecimento (id).
@@ -240,7 +241,7 @@ class EstabelecimentosApi(object):
                  returns the request thread.
         """
 
-        all_params = ['page', 'limit', 'id', 'numero_receita_federal', 'nome', 'descricao', 'nome_fantasia', 'cep', 'nome_logradouro', 'numero_endereco', 'complemento', 'bairro', 'cidade', 'uf', 'pais', 'data_cadastramento', 'contato', 'email', 'flag_arquivo_secr_fazenda', 'flag_cartao_digitado', 'inativo']
+        all_params = ['sort', 'page', 'limit', 'id', 'numero_receita_federal', 'nome', 'descricao', 'nome_fantasia', 'cep', 'nome_logradouro', 'numero_endereco', 'complemento', 'bairro', 'cidade', 'uf', 'pais', 'data_cadastramento', 'contato', 'email', 'flag_arquivo_secr_fazenda', 'flag_cartao_digitado', 'inativo']
         all_params.append('callback')
 
         params = locals()
@@ -248,7 +249,7 @@ class EstabelecimentosApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get10" % key
+                    " to method listar_using_get11" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -258,6 +259,8 @@ class EstabelecimentosApi(object):
         path_params = {}
 
         query_params = {}
+        if 'sort' in params:
+            query_params['sort'] = params['sort']
         if 'page' in params:
             query_params['page'] = params['page']
         if 'limit' in params:
@@ -333,7 +336,7 @@ class EstabelecimentosApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get23(self, **kwargs):
+    def listar_using_get25(self, **kwargs):
         """
         Lista os Terminais cadastrados no Emissor
         Este m\u00C3\u00A9todo permite que sejam listados os terminais existentes na base de dados do Emissor.
@@ -344,10 +347,11 @@ class EstabelecimentosApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get23(callback=callback_function)
+        >>> thread = api.listar_using_get25(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
+        :param list[str] sort: Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
         :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
         :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
         :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Terminal (id).
@@ -359,7 +363,7 @@ class EstabelecimentosApi(object):
                  returns the request thread.
         """
 
-        all_params = ['page', 'limit', 'id', 'terminal', 'numero_estabelecimento', 'id_estabelecimento']
+        all_params = ['sort', 'page', 'limit', 'id', 'terminal', 'numero_estabelecimento', 'id_estabelecimento']
         all_params.append('callback')
 
         params = locals()
@@ -367,7 +371,7 @@ class EstabelecimentosApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get23" % key
+                    " to method listar_using_get25" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -377,6 +381,8 @@ class EstabelecimentosApi(object):
         path_params = {}
 
         query_params = {}
+        if 'sort' in params:
+            query_params['sort'] = params['sort']
         if 'page' in params:
             query_params['page'] = params['page']
         if 'limit' in params:

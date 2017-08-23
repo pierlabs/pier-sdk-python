@@ -128,7 +128,7 @@ class AplicacoesMobileApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get(self, **kwargs):
+    def listar_using_get1(self, **kwargs):
         """
         Lista os aplicacoes mobile cadastradas
         Este m\u00C3\u00A9todo permite que sejam listadas as aplicacoes mobile existentes na base do PIER.
@@ -139,10 +139,11 @@ class AplicacoesMobileApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get(callback=callback_function)
+        >>> thread = api.listar_using_get1(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
+        :param list[str] sort: Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
         :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
         :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
         :param str id: Identificador da Aplicacao Mobile
@@ -152,7 +153,7 @@ class AplicacoesMobileApi(object):
                  returns the request thread.
         """
 
-        all_params = ['page', 'limit', 'id', 'id_plataforma_mobile']
+        all_params = ['sort', 'page', 'limit', 'id', 'id_plataforma_mobile']
         all_params.append('callback')
 
         params = locals()
@@ -160,7 +161,7 @@ class AplicacoesMobileApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get" % key
+                    " to method listar_using_get1" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -170,6 +171,8 @@ class AplicacoesMobileApi(object):
         path_params = {}
 
         query_params = {}
+        if 'sort' in params:
+            query_params['sort'] = params['sort']
         if 'page' in params:
             query_params['page'] = params['page']
         if 'limit' in params:

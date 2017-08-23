@@ -39,21 +39,27 @@ class IntegracaoEmissorResponse(object):
         self.swagger_types = {
             'id': 'int',
             'id_conta': 'int',
-            'status': 'int',
-            'data_evento': 'str'
+            'id_arquivo': 'int',
+            'status': 'str',
+            'data_inclusao': 'str',
+            'data_alteracao': 'str'
         }
 
         self.attribute_map = {
             'id': 'id',
             'id_conta': 'idConta',
+            'id_arquivo': 'idArquivo',
             'status': 'status',
-            'data_evento': 'dataEvento'
+            'data_inclusao': 'dataInclusao',
+            'data_alteracao': 'dataAlteracao'
         }
 
         self._id = None
         self._id_conta = None
+        self._id_arquivo = None
         self._status = None
-        self._data_evento = None
+        self._data_inclusao = None
+        self._data_alteracao = None
 
     @property
     def id(self):
@@ -100,13 +106,35 @@ class IntegracaoEmissorResponse(object):
         self._id_conta = id_conta
 
     @property
+    def id_arquivo(self):
+        """
+        Gets the id_arquivo of this IntegracaoEmissorResponse.
+        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do arquivo.
+
+        :return: The id_arquivo of this IntegracaoEmissorResponse.
+        :rtype: int
+        """
+        return self._id_arquivo
+
+    @id_arquivo.setter
+    def id_arquivo(self, id_arquivo):
+        """
+        Sets the id_arquivo of this IntegracaoEmissorResponse.
+        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do arquivo.
+
+        :param id_arquivo: The id_arquivo of this IntegracaoEmissorResponse.
+        :type: int
+        """
+        self._id_arquivo = id_arquivo
+
+    @property
     def status(self):
         """
         Gets the status of this IntegracaoEmissorResponse.
         Status do registro.
 
         :return: The status of this IntegracaoEmissorResponse.
-        :rtype: int
+        :rtype: str
         """
         return self._status
 
@@ -117,31 +145,53 @@ class IntegracaoEmissorResponse(object):
         Status do registro.
 
         :param status: The status of this IntegracaoEmissorResponse.
-        :type: int
+        :type: str
         """
         self._status = status
 
     @property
-    def data_evento(self):
+    def data_inclusao(self):
         """
-        Gets the data_evento of this IntegracaoEmissorResponse.
+        Gets the data_inclusao of this IntegracaoEmissorResponse.
         Data de inclus\u00C3\u00A3o do registro.
 
-        :return: The data_evento of this IntegracaoEmissorResponse.
+        :return: The data_inclusao of this IntegracaoEmissorResponse.
         :rtype: str
         """
-        return self._data_evento
+        return self._data_inclusao
 
-    @data_evento.setter
-    def data_evento(self, data_evento):
+    @data_inclusao.setter
+    def data_inclusao(self, data_inclusao):
         """
-        Sets the data_evento of this IntegracaoEmissorResponse.
+        Sets the data_inclusao of this IntegracaoEmissorResponse.
         Data de inclus\u00C3\u00A3o do registro.
 
-        :param data_evento: The data_evento of this IntegracaoEmissorResponse.
+        :param data_inclusao: The data_inclusao of this IntegracaoEmissorResponse.
         :type: str
         """
-        self._data_evento = data_evento
+        self._data_inclusao = data_inclusao
+
+    @property
+    def data_alteracao(self):
+        """
+        Gets the data_alteracao of this IntegracaoEmissorResponse.
+        Data da ultima altera\u00C3\u00A7\u00C3\u00A3o do registro.
+
+        :return: The data_alteracao of this IntegracaoEmissorResponse.
+        :rtype: str
+        """
+        return self._data_alteracao
+
+    @data_alteracao.setter
+    def data_alteracao(self, data_alteracao):
+        """
+        Sets the data_alteracao of this IntegracaoEmissorResponse.
+        Data da ultima altera\u00C3\u00A7\u00C3\u00A3o do registro.
+
+        :param data_alteracao: The data_alteracao of this IntegracaoEmissorResponse.
+        :type: str
+        """
+        self._data_alteracao = data_alteracao
 
     def to_dict(self):
         """

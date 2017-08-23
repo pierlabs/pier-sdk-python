@@ -300,7 +300,7 @@ class AntecipacoesApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get6(self, id_conta, **kwargs):
+    def listar_using_get7(self, id_conta, **kwargs):
         """
         Listar compras com parcelas antecip\u00C3\u00A1veis
         Lista as compras antecip\u00C3\u00A1veis de uma conta.
@@ -311,11 +311,12 @@ class AntecipacoesApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get6(id_conta, callback=callback_function)
+        >>> thread = api.listar_using_get7(id_conta, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int id_conta: C\u00C3\u00B3digo identificador da conta da Compra. (required)
+        :param list[str] sort: Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
         :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
         :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
         :param int id_compra: C\u00C3\u00B3digo identificador da Compra.
@@ -327,7 +328,7 @@ class AntecipacoesApi(object):
                  returns the request thread.
         """
 
-        all_params = ['id_conta', 'page', 'limit', 'id_compra', 'parcelada', 'juros', 'tipo_origem_transacao']
+        all_params = ['id_conta', 'sort', 'page', 'limit', 'id_compra', 'parcelada', 'juros', 'tipo_origem_transacao']
         all_params.append('callback')
 
         params = locals()
@@ -335,19 +336,21 @@ class AntecipacoesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get6" % key
+                    " to method listar_using_get7" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id_conta' is set
         if ('id_conta' not in params) or (params['id_conta'] is None):
-            raise ValueError("Missing the required parameter `id_conta` when calling `listar_using_get6`")
+            raise ValueError("Missing the required parameter `id_conta` when calling `listar_using_get7`")
 
         resource_path = '/api/compras-antecipaveis'.replace('{format}', 'json')
         path_params = {}
 
         query_params = {}
+        if 'sort' in params:
+            query_params['sort'] = params['sort']
         if 'page' in params:
             query_params['page'] = params['page']
         if 'limit' in params:

@@ -216,7 +216,7 @@ class NotificacaoSMSBody(object):
         :param tipo_evento: The tipo_evento of this NotificacaoSMSBody.
         :type: str
         """
-        allowed_values = ["RISCO_FRAUDE", "TOKEN_SMS", "OUTROS"]
+        allowed_values = ["RISCO_FRAUDE", "CODIGO_SEGURANCA", "OUTROS"]
         if tipo_evento not in allowed_values:
             raise ValueError(
                 "Invalid value for `tipo_evento`, must be one of {0}"

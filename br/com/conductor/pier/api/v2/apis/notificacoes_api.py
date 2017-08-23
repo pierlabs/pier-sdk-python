@@ -555,6 +555,7 @@ class NotificacoesApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
+        :param list[str] sort: Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
         :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
         :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
         :return: PageConfiguracaoEmailResponse
@@ -562,7 +563,7 @@ class NotificacoesApi(object):
                  returns the request thread.
         """
 
-        all_params = ['page', 'limit']
+        all_params = ['sort', 'page', 'limit']
         all_params.append('callback')
 
         params = locals()
@@ -580,6 +581,8 @@ class NotificacoesApi(object):
         path_params = {}
 
         query_params = {}
+        if 'sort' in params:
+            query_params['sort'] = params['sort']
         if 'page' in params:
             query_params['page'] = params['page']
         if 'limit' in params:
@@ -632,6 +635,7 @@ class NotificacoesApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
+        :param list[str] sort: Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
         :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
         :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
         :param str data_envio: Apresenta a data e em que o registro foi enviado para o dispositivo.
@@ -644,7 +648,7 @@ class NotificacoesApi(object):
                  returns the request thread.
         """
 
-        all_params = ['page', 'limit', 'data_envio', 'tipo_evento', 'status', 'plataforma', 'protocolo']
+        all_params = ['sort', 'page', 'limit', 'data_envio', 'tipo_evento', 'status', 'plataforma', 'protocolo']
         all_params.append('callback')
 
         params = locals()
@@ -662,6 +666,8 @@ class NotificacoesApi(object):
         path_params = {}
 
         query_params = {}
+        if 'sort' in params:
+            query_params['sort'] = params['sort']
         if 'page' in params:
             query_params['page'] = params['page']
         if 'limit' in params:
@@ -724,6 +730,7 @@ class NotificacoesApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
+        :param list[str] sort: Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
         :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
         :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
         :param str data_inclusao: Apresenta a data e em que o registro foi inclu\u00C3\u00ADdo na base para ser enviado
@@ -737,7 +744,7 @@ class NotificacoesApi(object):
                  returns the request thread.
         """
 
-        all_params = ['page', 'limit', 'data_inclusao', 'tipo_evento', 'status', 'operadora', 'protocolo', 'nsu']
+        all_params = ['sort', 'page', 'limit', 'data_inclusao', 'tipo_evento', 'status', 'operadora', 'protocolo', 'nsu']
         all_params.append('callback')
 
         params = locals()
@@ -755,6 +762,8 @@ class NotificacoesApi(object):
         path_params = {}
 
         query_params = {}
+        if 'sort' in params:
+            query_params['sort'] = params['sort']
         if 'page' in params:
             query_params['page'] = params['page']
         if 'limit' in params:
@@ -819,6 +828,7 @@ class NotificacoesApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
+        :param list[str] sort: Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
         :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
         :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
         :return: PageTemplateNotificacaoResponse
@@ -826,7 +836,7 @@ class NotificacoesApi(object):
                  returns the request thread.
         """
 
-        all_params = ['page', 'limit']
+        all_params = ['sort', 'page', 'limit']
         all_params.append('callback')
 
         params = locals()
@@ -844,6 +854,8 @@ class NotificacoesApi(object):
         path_params = {}
 
         query_params = {}
+        if 'sort' in params:
+            query_params['sort'] = params['sort']
         if 'page' in params:
             query_params['page'] = params['page']
         if 'limit' in params:

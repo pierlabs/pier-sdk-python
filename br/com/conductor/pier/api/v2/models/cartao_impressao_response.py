@@ -59,7 +59,8 @@ class CartaoImpressaoResponse(object):
             'trilha1': 'str',
             'trilha2': 'str',
             'trilha_cvv1': 'str',
-            'trilha_cvv2': 'str'
+            'trilha_cvv2': 'str',
+            'numero_cartao_hash': 'int'
         }
 
         self.attribute_map = {
@@ -85,7 +86,8 @@ class CartaoImpressaoResponse(object):
             'trilha1': 'trilha1',
             'trilha2': 'trilha2',
             'trilha_cvv1': 'trilhaCVV1',
-            'trilha_cvv2': 'trilhaCVV2'
+            'trilha_cvv2': 'trilhaCVV2',
+            'numero_cartao_hash': 'numeroCartaoHash'
         }
 
         self._flag_virtual = None
@@ -111,6 +113,7 @@ class CartaoImpressaoResponse(object):
         self._trilha2 = None
         self._trilha_cvv1 = None
         self._trilha_cvv2 = None
+        self._numero_cartao_hash = None
 
     @property
     def flag_virtual(self):
@@ -617,6 +620,28 @@ class CartaoImpressaoResponse(object):
         :type: str
         """
         self._trilha_cvv2 = trilha_cvv2
+
+    @property
+    def numero_cartao_hash(self):
+        """
+        Gets the numero_cartao_hash of this CartaoImpressaoResponse.
+        Apresenta o numero da hash do cart\u00C3\u00A3o 
+
+        :return: The numero_cartao_hash of this CartaoImpressaoResponse.
+        :rtype: int
+        """
+        return self._numero_cartao_hash
+
+    @numero_cartao_hash.setter
+    def numero_cartao_hash(self, numero_cartao_hash):
+        """
+        Sets the numero_cartao_hash of this CartaoImpressaoResponse.
+        Apresenta o numero da hash do cart\u00C3\u00A3o 
+
+        :param numero_cartao_hash: The numero_cartao_hash of this CartaoImpressaoResponse.
+        :type: int
+        """
+        self._numero_cartao_hash = numero_cartao_hash
 
     def to_dict(self):
         """

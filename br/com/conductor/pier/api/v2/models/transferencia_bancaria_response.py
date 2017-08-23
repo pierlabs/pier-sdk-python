@@ -62,7 +62,8 @@ class TransferenciaBancariaResponse(object):
             'data_vencimento_real': 'str',
             'data_vencimento_padrao': 'str',
             'id_conta_portador': 'int',
-            'numero_estabelecimento': 'int'
+            'numero_estabelecimento': 'int',
+            'valor_taxa_saque': 'float'
         }
 
         self.attribute_map = {
@@ -91,7 +92,8 @@ class TransferenciaBancariaResponse(object):
             'data_vencimento_real': 'dataVencimentoReal',
             'data_vencimento_padrao': 'dataVencimentoPadrao',
             'id_conta_portador': 'idContaPortador',
-            'numero_estabelecimento': 'numeroEstabelecimento'
+            'numero_estabelecimento': 'numeroEstabelecimento',
+            'valor_taxa_saque': 'valorTaxaSaque'
         }
 
         self._nsuorigem = None
@@ -120,6 +122,7 @@ class TransferenciaBancariaResponse(object):
         self._data_vencimento_padrao = None
         self._id_conta_portador = None
         self._numero_estabelecimento = None
+        self._valor_taxa_saque = None
 
     @property
     def nsuorigem(self):
@@ -692,6 +695,28 @@ class TransferenciaBancariaResponse(object):
         :type: int
         """
         self._numero_estabelecimento = numero_estabelecimento
+
+    @property
+    def valor_taxa_saque(self):
+        """
+        Gets the valor_taxa_saque of this TransferenciaBancariaResponse.
+        Valor da taxa saque.
+
+        :return: The valor_taxa_saque of this TransferenciaBancariaResponse.
+        :rtype: float
+        """
+        return self._valor_taxa_saque
+
+    @valor_taxa_saque.setter
+    def valor_taxa_saque(self, valor_taxa_saque):
+        """
+        Sets the valor_taxa_saque of this TransferenciaBancariaResponse.
+        Valor da taxa saque.
+
+        :param valor_taxa_saque: The valor_taxa_saque of this TransferenciaBancariaResponse.
+        :type: float
+        """
+        self._valor_taxa_saque = valor_taxa_saque
 
     def to_dict(self):
         """

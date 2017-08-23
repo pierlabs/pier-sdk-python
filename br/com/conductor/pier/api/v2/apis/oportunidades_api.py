@@ -134,7 +134,7 @@ class OportunidadesApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def alterar_using_put3(self, id, update, **kwargs):
+    def alterar_using_put4(self, id, update, **kwargs):
         """
         Altera as oportunidades
         Este m\u00C3\u00A9todo realiza a altera\u00C3\u00A7\u00C3\u00A3o das oportunidades.
@@ -145,7 +145,7 @@ class OportunidadesApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.alterar_using_put3(id, update, callback=callback_function)
+        >>> thread = api.alterar_using_put4(id, update, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -164,17 +164,17 @@ class OportunidadesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method alterar_using_put3" % key
+                    " to method alterar_using_put4" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `alterar_using_put3`")
+            raise ValueError("Missing the required parameter `id` when calling `alterar_using_put4`")
         # verify the required parameter 'update' is set
         if ('update' not in params) or (params['update'] is None):
-            raise ValueError("Missing the required parameter `update` when calling `alterar_using_put3`")
+            raise ValueError("Missing the required parameter `update` when calling `alterar_using_put4`")
 
         resource_path = '/api/oportunidades/{id}'.replace('{format}', 'json')
         path_params = {}
@@ -217,7 +217,7 @@ class OportunidadesApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def alterar_using_put7(self, id, persist, **kwargs):
+    def alterar_using_put8(self, id, persist, **kwargs):
         """
         Altera os tipos oportunidades
         Este m\u00C3\u00A9todo realiza a altera\u00C3\u00A7\u00C3\u00A3o dos tipos oportunidades.
@@ -228,7 +228,7 @@ class OportunidadesApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.alterar_using_put7(id, persist, callback=callback_function)
+        >>> thread = api.alterar_using_put8(id, persist, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -247,17 +247,17 @@ class OportunidadesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method alterar_using_put7" % key
+                    " to method alterar_using_put8" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `alterar_using_put7`")
+            raise ValueError("Missing the required parameter `id` when calling `alterar_using_put8`")
         # verify the required parameter 'persist' is set
         if ('persist' not in params) or (params['persist'] is None):
-            raise ValueError("Missing the required parameter `persist` when calling `alterar_using_put7`")
+            raise ValueError("Missing the required parameter `persist` when calling `alterar_using_put8`")
 
         resource_path = '/api/tipos-oportunidades/{id}'.replace('{format}', 'json')
         path_params = {}
@@ -552,6 +552,7 @@ class OportunidadesApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
+        :param list[str] sort: Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
         :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
         :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
         :param int rev_type: C\u00C3\u00B3digo que representa o tipo de a\u00C3\u00A7\u00C3\u00A3o realizada no recurso de tipos oportunidades
@@ -567,7 +568,7 @@ class OportunidadesApi(object):
                  returns the request thread.
         """
 
-        all_params = ['page', 'limit', 'rev_type', 'rev_date', 'id', 'id_tipo_oportunidade', 'nome', 'descricao', 'flag_ativo', 'rev_user']
+        all_params = ['sort', 'page', 'limit', 'rev_type', 'rev_date', 'id', 'id_tipo_oportunidade', 'nome', 'descricao', 'flag_ativo', 'rev_user']
         all_params.append('callback')
 
         params = locals()
@@ -585,6 +586,8 @@ class OportunidadesApi(object):
         path_params = {}
 
         query_params = {}
+        if 'sort' in params:
+            query_params['sort'] = params['sort']
         if 'page' in params:
             query_params['page'] = params['page']
         if 'limit' in params:
@@ -653,6 +656,7 @@ class OportunidadesApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
+        :param list[str] sort: Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
         :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
         :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
         :param int id_status_oportunidade: C\u00C3\u00B3digo identificador do status oportunidade
@@ -670,7 +674,7 @@ class OportunidadesApi(object):
                  returns the request thread.
         """
 
-        all_params = ['page', 'limit', 'id_status_oportunidade', 'data_cadastro', 'data_atualizacao', 'numero_receita_federal', 'data_inicio_vigencia', 'datat_fim_vigencia', 'flag_ativo', 'rev_date', 'rev_type', 'rev_user']
+        all_params = ['sort', 'page', 'limit', 'id_status_oportunidade', 'data_cadastro', 'data_atualizacao', 'numero_receita_federal', 'data_inicio_vigencia', 'datat_fim_vigencia', 'flag_ativo', 'rev_date', 'rev_type', 'rev_user']
         all_params.append('callback')
 
         params = locals()
@@ -688,6 +692,8 @@ class OportunidadesApi(object):
         path_params = {}
 
         query_params = {}
+        if 'sort' in params:
+            query_params['sort'] = params['sort']
         if 'page' in params:
             query_params['page'] = params['page']
         if 'limit' in params:
@@ -760,6 +766,7 @@ class OportunidadesApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
+        :param list[str] sort: Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
         :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
         :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
         :param int rev_type: C\u00C3\u00B3digo que representa o tipo de a\u00C3\u00A7\u00C3\u00A3o realizada no recurso de tipos oportunidades
@@ -773,7 +780,7 @@ class OportunidadesApi(object):
                  returns the request thread.
         """
 
-        all_params = ['page', 'limit', 'rev_type', 'rev_date', 'id', 'descricao', 'flag_ativo', 'rev_user']
+        all_params = ['sort', 'page', 'limit', 'rev_type', 'rev_date', 'id', 'descricao', 'flag_ativo', 'rev_user']
         all_params.append('callback')
 
         params = locals()
@@ -791,6 +798,8 @@ class OportunidadesApi(object):
         path_params = {}
 
         query_params = {}
+        if 'sort' in params:
+            query_params['sort'] = params['sort']
         if 'page' in params:
             query_params['page'] = params['page']
         if 'limit' in params:
@@ -856,6 +865,7 @@ class OportunidadesApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int id: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do tipo oportunidade (id). (required)
+        :param list[str] sort: Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
         :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
         :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
         :param str nome: Nome do status oportunidade
@@ -866,7 +876,7 @@ class OportunidadesApi(object):
                  returns the request thread.
         """
 
-        all_params = ['id', 'page', 'limit', 'nome', 'descricao', 'flag_ativo']
+        all_params = ['id', 'sort', 'page', 'limit', 'nome', 'descricao', 'flag_ativo']
         all_params.append('callback')
 
         params = locals()
@@ -889,6 +899,8 @@ class OportunidadesApi(object):
             path_params['id'] = params['id']
 
         query_params = {}
+        if 'sort' in params:
+            query_params['sort'] = params['sort']
         if 'page' in params:
             query_params['page'] = params['page']
         if 'limit' in params:
@@ -932,7 +944,7 @@ class OportunidadesApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get13(self, data_inicio_vigencia, **kwargs):
+    def listar_using_get14(self, **kwargs):
         """
         Lista as oportunidades
         Este recurso permite listar as oportunidades.
@@ -943,17 +955,18 @@ class OportunidadesApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get13(data_inicio_vigencia, callback=callback_function)
+        >>> thread = api.listar_using_get14(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param str data_inicio_vigencia: Data de in\u00C3\u00ADcio da vig\u00C3\u00AAncia da oportunidade (required)
+        :param list[str] sort: Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
         :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
         :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
         :param int id_status_oportunidade: C\u00C3\u00B3digo identificador do status oportunidade
         :param str data_cadastro: Data do cadastro da oportunidade
         :param str data_atualizacao: Data da atualiza\u00C3\u00A7\u00C3\u00A3o da oportunidade
         :param str numero_receita_federal: N\u00C3\u00BAmero receita federal do cliente ao qual ser\u00C3\u00A1 ofertada a oportunidade
+        :param str data_inicio_vigencia: Data de in\u00C3\u00ADcio da vig\u00C3\u00AAncia da oportunidade
         :param str data_fim_vigencia: Data do fim da vig\u00C3\u00AAncia da oportunidade
         :param bool flag_ativo: Flag de verifica\u00C3\u00A7\u00C3\u00A3o se a oportunidade est\u00C3\u00A1 ativa
         :return: PageOportunidadeResponse
@@ -961,7 +974,7 @@ class OportunidadesApi(object):
                  returns the request thread.
         """
 
-        all_params = ['data_inicio_vigencia', 'page', 'limit', 'id_status_oportunidade', 'data_cadastro', 'data_atualizacao', 'numero_receita_federal', 'data_fim_vigencia', 'flag_ativo']
+        all_params = ['sort', 'page', 'limit', 'id_status_oportunidade', 'data_cadastro', 'data_atualizacao', 'numero_receita_federal', 'data_inicio_vigencia', 'data_fim_vigencia', 'flag_ativo']
         all_params.append('callback')
 
         params = locals()
@@ -969,19 +982,18 @@ class OportunidadesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get13" % key
+                    " to method listar_using_get14" % key
                 )
             params[key] = val
         del params['kwargs']
 
-        # verify the required parameter 'data_inicio_vigencia' is set
-        if ('data_inicio_vigencia' not in params) or (params['data_inicio_vigencia'] is None):
-            raise ValueError("Missing the required parameter `data_inicio_vigencia` when calling `listar_using_get13`")
 
         resource_path = '/api/oportunidades'.replace('{format}', 'json')
         path_params = {}
 
         query_params = {}
+        if 'sort' in params:
+            query_params['sort'] = params['sort']
         if 'page' in params:
             query_params['page'] = params['page']
         if 'limit' in params:
@@ -1033,7 +1045,7 @@ class OportunidadesApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get25(self, **kwargs):
+    def listar_using_get27(self, **kwargs):
         """
         Lista os tipos oportunidades
         Este recurso permite listar os tipos oportunidades.
@@ -1044,10 +1056,11 @@ class OportunidadesApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get25(callback=callback_function)
+        >>> thread = api.listar_using_get27(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
+        :param list[str] sort: Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
         :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
         :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
         :param str descricao: Descri\u00C3\u00A7\u00C3\u00A3o do tipo oportunidade
@@ -1057,7 +1070,7 @@ class OportunidadesApi(object):
                  returns the request thread.
         """
 
-        all_params = ['page', 'limit', 'descricao', 'flag_ativo']
+        all_params = ['sort', 'page', 'limit', 'descricao', 'flag_ativo']
         all_params.append('callback')
 
         params = locals()
@@ -1065,7 +1078,7 @@ class OportunidadesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get25" % key
+                    " to method listar_using_get27" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -1075,6 +1088,8 @@ class OportunidadesApi(object):
         path_params = {}
 
         query_params = {}
+        if 'sort' in params:
+            query_params['sort'] = params['sort']
         if 'page' in params:
             query_params['page'] = params['page']
         if 'limit' in params:
@@ -1199,7 +1214,7 @@ class OportunidadesApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def salvar_using_post13(self, persist, **kwargs):
+    def salvar_using_post14(self, persist, **kwargs):
         """
         Cadastra tipos oportunidades
         Esse recurso permite cadastrar tipos oportunidades.
@@ -1210,7 +1225,7 @@ class OportunidadesApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.salvar_using_post13(persist, callback=callback_function)
+        >>> thread = api.salvar_using_post14(persist, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -1228,14 +1243,14 @@ class OportunidadesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method salvar_using_post13" % key
+                    " to method salvar_using_post14" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'persist' is set
         if ('persist' not in params) or (params['persist'] is None):
-            raise ValueError("Missing the required parameter `persist` when calling `salvar_using_post13`")
+            raise ValueError("Missing the required parameter `persist` when calling `salvar_using_post14`")
 
         resource_path = '/api/tipos-oportunidades'.replace('{format}', 'json')
         path_params = {}
@@ -1276,7 +1291,7 @@ class OportunidadesApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def salvar_using_post8(self, persist, **kwargs):
+    def salvar_using_post9(self, persist, **kwargs):
         """
         Cadastra as oportunidades
         Esse recurso permite cadastrar oportunidades.
@@ -1287,7 +1302,7 @@ class OportunidadesApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.salvar_using_post8(persist, callback=callback_function)
+        >>> thread = api.salvar_using_post9(persist, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -1305,14 +1320,14 @@ class OportunidadesApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method salvar_using_post8" % key
+                    " to method salvar_using_post9" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'persist' is set
         if ('persist' not in params) or (params['persist'] is None):
-            raise ValueError("Missing the required parameter `persist` when calling `salvar_using_post8`")
+            raise ValueError("Missing the required parameter `persist` when calling `salvar_using_post9`")
 
         resource_path = '/api/oportunidades'.replace('{format}', 'json')
         path_params = {}

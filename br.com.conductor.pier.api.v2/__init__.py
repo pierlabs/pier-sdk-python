@@ -3,6 +3,7 @@ from __future__ import absolute_import
 # import models into sdk package
 from .models.adicional_persist import AdicionalPersist
 from .models.adicional_response import AdicionalResponse
+from .models.adicional_update import AdicionalUpdate
 from .models.ajuste_response import AjusteResponse
 from .models.antecipacao_response import AntecipacaoResponse
 from .models.antecipacao_simulada_detalhes_response import AntecipacaoSimuladaDetalhesResponse
@@ -16,7 +17,7 @@ from .models.arquivo_parametro_response import ArquivoParametroResponse
 from .models.arquivo_persist import ArquivoPersist
 from .models.arquivo_response import ArquivoResponse
 from .models.atendimento_cliente_response import AtendimentoClienteResponse
-from .models.atribuir_assinatura_cliente_request import AtribuirAssinaturaClienteRequest
+from .models.atribuir_assinatura_cliente_persist import AtribuirAssinaturaClientePersist
 from .models.auth_token import AuthToken
 from .models.autorizacao_on_us_request import AutorizacaoOnUsRequest
 from .models.banco_response import BancoResponse
@@ -35,7 +36,9 @@ from .models.compra_response import CompraResponse
 from .models.configuracao_email_persist import ConfiguracaoEmailPersist
 from .models.configuracao_email_response import ConfiguracaoEmailResponse
 from .models.conta_detalhe_response import ContaDetalheResponse
+from .models.conta_historico_pagamento_response import ContaHistoricoPagamentoResponse
 from .models.conta_response import ContaResponse
+from .models.controle_vencimento_response import ControleVencimentoResponse
 from .models.dados_cartao_response import DadosCartaoResponse
 from .models.desfazimento_transacao_on_us_request import DesfazimentoTransacaoOnUsRequest
 from .models.detalhe_oportunidade_persist import DetalheOportunidadePersist
@@ -52,6 +55,7 @@ from .models.endereco_response import EnderecoResponse
 from .models.estabelecimento_response import EstabelecimentoResponse
 from .models.estagio_cartao_response import EstagioCartaoResponse
 from .models.extra_info import ExtraInfo
+from .models.fantasia_basica_response import FantasiaBasicaResponse
 from .models.faq_response import FaqResponse
 from .models.fatura_consignada_detalhe_response import FaturaConsignadaDetalheResponse
 from .models.fatura_consignada_response import FaturaConsignadaResponse
@@ -61,6 +65,7 @@ from .models.historico_atraso_fatura_response import HistoricoAtrasoFaturaRespon
 from .models.historico_eventos_response import HistoricoEventosResponse
 from .models.historico_impressao_cartao_response import HistoricoImpressaoCartaoResponse
 from .models.historico_telefone_response import HistoricoTelefoneResponse
+from .models.integracao_emissor_persist import IntegracaoEmissorPersist
 from .models.integracao_emissor_response import IntegracaoEmissorResponse
 from .models.job_response import JobResponse
 from .models.limite_disponibilidade_response import LimiteDisponibilidadeResponse
@@ -86,11 +91,14 @@ from .models.page_cartao_response import PageCartaoResponse
 from .models.page_compra_response import PageCompraResponse
 from .models.page_configuracao_email_response import PageConfiguracaoEmailResponse
 from .models.page_conta_detalhe_response import PageContaDetalheResponse
+from .models.page_conta_historico_pagamento_response import PageContaHistoricoPagamentoResponse
 from .models.page_conta_response import PageContaResponse
+from .models.page_controle_vencimento_response import PageControleVencimentoResponse
 from .models.page_dispositivo_response import PageDispositivoResponse
 from .models.page_endereco_response import PageEnderecoResponse
 from .models.page_estabelecimento_response import PageEstabelecimentoResponse
 from .models.page_estagio_cartao_response import PageEstagioCartaoResponse
+from .models.page_fantasia_basica_response import PageFantasiaBasicaResponse
 from .models.page_faq_response import PageFaqResponse
 from .models.page_fatura_consignada_response import PageFaturaConsignadaResponse
 from .models.page_fatura_response import PageFaturaResponse
@@ -106,9 +114,11 @@ from .models.page_origem_comercial_response import PageOrigemComercialResponse
 from .models.page_pais_response import PagePaisResponse
 from .models.page_pessoa_detalhe_response import PagePessoaDetalheResponse
 from .models.page_pessoa_response import PagePessoaResponse
+from .models.page_plano_parcelamento_response import PagePlanoParcelamentoResponse
 from .models.page_plataforma_mobile_response import PagePlataformaMobileResponse
 from .models.page_portador_response import PagePortadorResponse
 from .models.page_produto_response import PageProdutoResponse
+from .models.page_promotor_response import PagePromotorResponse
 from .models.page_push_response import PagePushResponse
 from .models.page_risco_fraude_response import PageRiscoFraudeResponse
 from .models.page_sms_response import PageSMSResponse
@@ -142,6 +152,7 @@ from .models.pessoa_juridica_aprovada_persist import PessoaJuridicaAprovadaPersi
 from .models.pessoa_juridica_aprovada_response import PessoaJuridicaAprovadaResponse
 from .models.pessoa_persist import PessoaPersist
 from .models.pessoa_response import PessoaResponse
+from .models.plano_parcelamento_response import PlanoParcelamentoResponse
 from .models.plataforma_mobile_persist import PlataformaMobilePersist
 from .models.plataforma_mobile_response import PlataformaMobileResponse
 from .models.plataforma_mobile_update import PlataformaMobileUpdate
@@ -149,6 +160,7 @@ from .models.portador_response import PortadorResponse
 from .models.produto_detalhes_response import ProdutoDetalhesResponse
 from .models.produto_origem_response import ProdutoOrigemResponse
 from .models.produto_response import ProdutoResponse
+from .models.promotor_response import PromotorResponse
 from .models.push_apns import PushAPNS
 from .models.push_fcm_e_gcm import PushFCMEGCM
 from .models.risco_fraude_detalhado_response import RiscoFraudeDetalhadoResponse

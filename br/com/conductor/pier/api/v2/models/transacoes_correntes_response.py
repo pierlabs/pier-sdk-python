@@ -46,7 +46,7 @@ class TransacoesCorrentesResponse(object):
             'id_conta': 'int',
             'cartao_mascarado': 'str',
             'nome_portador': 'str',
-            'data_transacao_utc': 'str',
+            'data_transacao': 'str',
             'data_faturamento': 'str',
             'data_vencimento': 'str',
             'modo_entrada_transacao': 'str',
@@ -86,7 +86,7 @@ class TransacoesCorrentesResponse(object):
             'id_conta': 'idConta',
             'cartao_mascarado': 'cartaoMascarado',
             'nome_portador': 'nomePortador',
-            'data_transacao_utc': 'dataTransacaoUTC',
+            'data_transacao': 'dataTransacao',
             'data_faturamento': 'dataFaturamento',
             'data_vencimento': 'dataVencimento',
             'modo_entrada_transacao': 'modoEntradaTransacao',
@@ -125,7 +125,7 @@ class TransacoesCorrentesResponse(object):
         self._id_conta = None
         self._cartao_mascarado = None
         self._nome_portador = None
-        self._data_transacao_utc = None
+        self._data_transacao = None
         self._data_faturamento = None
         self._data_vencimento = None
         self._modo_entrada_transacao = None
@@ -353,26 +353,26 @@ class TransacoesCorrentesResponse(object):
         self._nome_portador = nome_portador
 
     @property
-    def data_transacao_utc(self):
+    def data_transacao(self):
         """
-        Gets the data_transacao_utc of this TransacoesCorrentesResponse.
-        Data em que a Transa\u00C3\u00A7\u00C3\u00A3o foi realizada sob o padr\u00C3\u00A3o de Tempo Universal Coordenado (UTC).
+        Gets the data_transacao of this TransacoesCorrentesResponse.
+        Data em que a Transa\u00C3\u00A7\u00C3\u00A3o foi realizada.
 
-        :return: The data_transacao_utc of this TransacoesCorrentesResponse.
+        :return: The data_transacao of this TransacoesCorrentesResponse.
         :rtype: str
         """
-        return self._data_transacao_utc
+        return self._data_transacao
 
-    @data_transacao_utc.setter
-    def data_transacao_utc(self, data_transacao_utc):
+    @data_transacao.setter
+    def data_transacao(self, data_transacao):
         """
-        Sets the data_transacao_utc of this TransacoesCorrentesResponse.
-        Data em que a Transa\u00C3\u00A7\u00C3\u00A3o foi realizada sob o padr\u00C3\u00A3o de Tempo Universal Coordenado (UTC).
+        Sets the data_transacao of this TransacoesCorrentesResponse.
+        Data em que a Transa\u00C3\u00A7\u00C3\u00A3o foi realizada.
 
-        :param data_transacao_utc: The data_transacao_utc of this TransacoesCorrentesResponse.
+        :param data_transacao: The data_transacao of this TransacoesCorrentesResponse.
         :type: str
         """
-        self._data_transacao_utc = data_transacao_utc
+        self._data_transacao = data_transacao
 
     @property
     def data_faturamento(self):

@@ -534,6 +534,7 @@ class CadastrosGeraisApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
+        :param list[str] sort: Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
         :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
         :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
         :param int id: C\u00C3\u00B3digo identificador do tipo de ajuste.
@@ -543,7 +544,7 @@ class CadastrosGeraisApi(object):
                  returns the request thread.
         """
 
-        all_params = ['page', 'limit', 'id', 'descricao']
+        all_params = ['sort', 'page', 'limit', 'id', 'descricao']
         all_params.append('callback')
 
         params = locals()
@@ -561,6 +562,8 @@ class CadastrosGeraisApi(object):
         path_params = {}
 
         query_params = {}
+        if 'sort' in params:
+            query_params['sort'] = params['sort']
         if 'page' in params:
             query_params['page'] = params['page']
         if 'limit' in params:
@@ -617,6 +620,7 @@ class CadastrosGeraisApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
+        :param list[str] sort: Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
         :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
         :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
         :param int id: C\u00C3\u00B3digo identificador do tipo de boleto.
@@ -627,7 +631,7 @@ class CadastrosGeraisApi(object):
                  returns the request thread.
         """
 
-        all_params = ['page', 'limit', 'id', 'descricao', 'banco']
+        all_params = ['sort', 'page', 'limit', 'id', 'descricao', 'banco']
         all_params.append('callback')
 
         params = locals()
@@ -645,6 +649,8 @@ class CadastrosGeraisApi(object):
         path_params = {}
 
         query_params = {}
+        if 'sort' in params:
+            query_params['sort'] = params['sort']
         if 'page' in params:
             query_params['page'] = params['page']
         if 'limit' in params:
@@ -1012,6 +1018,7 @@ class CadastrosGeraisApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param str numero_receita_federal: N\u00C3\u00BAmero de identifica\u00C3\u00A7\u00C3\u00A3o do cliente na Receita Federal (CPF ou CNPJ) (required)
+        :param list[str] sort: Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
         :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
         :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
         :return: PageContaDetalheResponse
@@ -1019,7 +1026,7 @@ class CadastrosGeraisApi(object):
                  returns the request thread.
         """
 
-        all_params = ['numero_receita_federal', 'page', 'limit']
+        all_params = ['numero_receita_federal', 'sort', 'page', 'limit']
         all_params.append('callback')
 
         params = locals()
@@ -1042,6 +1049,8 @@ class CadastrosGeraisApi(object):
         query_params = {}
         if 'numero_receita_federal' in params:
             query_params['numeroReceitaFederal'] = params['numero_receita_federal']
+        if 'sort' in params:
+            query_params['sort'] = params['sort']
         if 'page' in params:
             query_params['page'] = params['page']
         if 'limit' in params:
@@ -1094,6 +1103,7 @@ class CadastrosGeraisApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
+        :param list[str] sort: Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
         :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
         :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
         :return: PageCampoCodificadoDescricaoResponse
@@ -1101,7 +1111,7 @@ class CadastrosGeraisApi(object):
                  returns the request thread.
         """
 
-        all_params = ['page', 'limit']
+        all_params = ['sort', 'page', 'limit']
         all_params.append('callback')
 
         params = locals()
@@ -1119,6 +1129,8 @@ class CadastrosGeraisApi(object):
         path_params = {}
 
         query_params = {}
+        if 'sort' in params:
+            query_params['sort'] = params['sort']
         if 'page' in params:
             query_params['page'] = params['page']
         if 'limit' in params:
@@ -1152,6 +1164,86 @@ class CadastrosGeraisApi(object):
                                             post_params=form_params,
                                             files=local_var_files,
                                             response_type='PageCampoCodificadoDescricaoResponse',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
+    def listar_fantasias_basicas_using_get(self, **kwargs):
+        """
+        Listar Fantasias B\u00C3\u00A1sicas
+        Lista as fantasia b\u00C3\u00A1sicas.
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.listar_fantasias_basicas_using_get(callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param list[str] sort: Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
+        :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
+        :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
+        :return: PageFantasiaBasicaResponse
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['sort', 'page', 'limit']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method listar_fantasias_basicas_using_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+
+        resource_path = '/api/fantasias-basicas'.replace('{format}', 'json')
+        path_params = {}
+
+        query_params = {}
+        if 'sort' in params:
+            query_params['sort'] = params['sort']
+        if 'page' in params:
+            query_params['page'] = params['page']
+        if 'limit' in params:
+            query_params['limit'] = params['limit']
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = []
+
+        response = self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='PageFantasiaBasicaResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
@@ -1248,6 +1340,7 @@ class CadastrosGeraisApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
+        :param list[str] sort: Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
         :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
         :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
         :return: PageCampoCodificadoDescricaoResponse
@@ -1255,7 +1348,7 @@ class CadastrosGeraisApi(object):
                  returns the request thread.
         """
 
-        all_params = ['page', 'limit']
+        all_params = ['sort', 'page', 'limit']
         all_params.append('callback')
 
         params = locals()
@@ -1273,6 +1366,8 @@ class CadastrosGeraisApi(object):
         path_params = {}
 
         query_params = {}
+        if 'sort' in params:
+            query_params['sort'] = params['sort']
         if 'page' in params:
             query_params['page'] = params['page']
         if 'limit' in params:
@@ -1325,6 +1420,7 @@ class CadastrosGeraisApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
+        :param list[str] sort: Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
         :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
         :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
         :return: PageCampoCodificadoDescricaoResponse
@@ -1332,7 +1428,7 @@ class CadastrosGeraisApi(object):
                  returns the request thread.
         """
 
-        all_params = ['page', 'limit']
+        all_params = ['sort', 'page', 'limit']
         all_params.append('callback')
 
         params = locals()
@@ -1350,6 +1446,8 @@ class CadastrosGeraisApi(object):
         path_params = {}
 
         query_params = {}
+        if 'sort' in params:
+            query_params['sort'] = params['sort']
         if 'page' in params:
             query_params['page'] = params['page']
         if 'limit' in params:
@@ -1402,6 +1500,7 @@ class CadastrosGeraisApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
+        :param list[str] sort: Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
         :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
         :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
         :param int id: Id da origem comercial
@@ -1414,7 +1513,7 @@ class CadastrosGeraisApi(object):
                  returns the request thread.
         """
 
-        all_params = ['page', 'limit', 'id', 'nome', 'status', 'id_estabelecimento', 'id_produto']
+        all_params = ['sort', 'page', 'limit', 'id', 'nome', 'status', 'id_estabelecimento', 'id_produto']
         all_params.append('callback')
 
         params = locals()
@@ -1432,6 +1531,8 @@ class CadastrosGeraisApi(object):
         path_params = {}
 
         query_params = {}
+        if 'sort' in params:
+            query_params['sort'] = params['sort']
         if 'page' in params:
             query_params['page'] = params['page']
         if 'limit' in params:
@@ -1494,6 +1595,7 @@ class CadastrosGeraisApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
+        :param list[str] sort: Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
         :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
         :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
         :return: PageCampoCodificadoDescricaoResponse
@@ -1501,7 +1603,7 @@ class CadastrosGeraisApi(object):
                  returns the request thread.
         """
 
-        all_params = ['page', 'limit']
+        all_params = ['sort', 'page', 'limit']
         all_params.append('callback')
 
         params = locals()
@@ -1519,6 +1621,8 @@ class CadastrosGeraisApi(object):
         path_params = {}
 
         query_params = {}
+        if 'sort' in params:
+            query_params['sort'] = params['sort']
         if 'page' in params:
             query_params['page'] = params['page']
         if 'limit' in params:
@@ -1571,6 +1675,7 @@ class CadastrosGeraisApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
+        :param list[str] sort: Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
         :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
         :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
         :return: PageCampoCodificadoDescricaoResponse
@@ -1578,7 +1683,7 @@ class CadastrosGeraisApi(object):
                  returns the request thread.
         """
 
-        all_params = ['page', 'limit']
+        all_params = ['sort', 'page', 'limit']
         all_params.append('callback')
 
         params = locals()
@@ -1596,6 +1701,8 @@ class CadastrosGeraisApi(object):
         path_params = {}
 
         query_params = {}
+        if 'sort' in params:
+            query_params['sort'] = params['sort']
         if 'page' in params:
             query_params['page'] = params['page']
         if 'limit' in params:
@@ -1633,96 +1740,7 @@ class CadastrosGeraisApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get1(self, **kwargs):
-        """
-        Lista todos os atendimentos
-        Este m\u00C3\u00A9todo permite que sejam listados todos os Registro de Atendimento, independente do Tipo.
-
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
-        >>> thread = api.listar_using_get1(callback=callback_function)
-
-        :param callback function: The callback function
-            for asynchronous request. (optional)
-        :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
-        :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
-        :param int id_tipo_atendimento: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Tipo de Atendimento (id)
-        :param int id_conta: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o de conta (id).
-        :param str nome_atendente: Apresenta o nome do Atendente que registrou o Atendimento.
-        :param str data_atendimento: Apresenta a data em que o Atendimento foi realizado.
-        :return: PageAtendimentoClienteResponse
-                 If the method is called asynchronously,
-                 returns the request thread.
-        """
-
-        all_params = ['page', 'limit', 'id_tipo_atendimento', 'id_conta', 'nome_atendente', 'data_atendimento']
-        all_params.append('callback')
-
-        params = locals()
-        for key, val in iteritems(params['kwargs']):
-            if key not in all_params:
-                raise TypeError(
-                    "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get1" % key
-                )
-            params[key] = val
-        del params['kwargs']
-
-
-        resource_path = '/api/atendimento-clientes'.replace('{format}', 'json')
-        path_params = {}
-
-        query_params = {}
-        if 'page' in params:
-            query_params['page'] = params['page']
-        if 'limit' in params:
-            query_params['limit'] = params['limit']
-        if 'id_tipo_atendimento' in params:
-            query_params['idTipoAtendimento'] = params['id_tipo_atendimento']
-        if 'id_conta' in params:
-            query_params['idConta'] = params['id_conta']
-        if 'nome_atendente' in params:
-            query_params['nomeAtendente'] = params['nome_atendente']
-        if 'data_atendimento' in params:
-            query_params['dataAtendimento'] = params['data_atendimento']
-
-        header_params = {}
-
-        form_params = []
-        local_var_files = {}
-
-        body_params = None
-
-        # HTTP header `Accept`
-        header_params['Accept'] = self.api_client.\
-            select_header_accept(['application/json'])
-        if not header_params['Accept']:
-            del header_params['Accept']
-
-        # HTTP header `Content-Type`
-        header_params['Content-Type'] = self.api_client.\
-            select_header_content_type(['application/json'])
-
-        # Authentication setting
-        auth_settings = []
-
-        response = self.api_client.call_api(resource_path, 'GET',
-                                            path_params,
-                                            query_params,
-                                            header_params,
-                                            body=body_params,
-                                            post_params=form_params,
-                                            files=local_var_files,
-                                            response_type='PageAtendimentoClienteResponse',
-                                            auth_settings=auth_settings,
-                                            callback=params.get('callback'))
-        return response
-
-    def listar_using_get17(self, **kwargs):
+    def listar_using_get18(self, **kwargs):
         """
         Lista os Portadores existentes
         Este m\u00C3\u00A9todo permite que sejam listados os portadores cadastrados na base do emissor.
@@ -1733,10 +1751,11 @@ class CadastrosGeraisApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get17(callback=callback_function)
+        >>> thread = api.listar_using_get18(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
+        :param list[str] sort: Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
         :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
         :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
         :param int id_conta: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Conta (id).
@@ -1754,7 +1773,7 @@ class CadastrosGeraisApi(object):
                  returns the request thread.
         """
 
-        all_params = ['page', 'limit', 'id_conta', 'id_produto', 'id_pessoa', 'id_parentesco', 'tipo_portador', 'nome_impresso', 'id_tipo_cartao', 'flag_ativo', 'data_cadastro_portador', 'data_cancelamento_portador']
+        all_params = ['sort', 'page', 'limit', 'id_conta', 'id_produto', 'id_pessoa', 'id_parentesco', 'tipo_portador', 'nome_impresso', 'id_tipo_cartao', 'flag_ativo', 'data_cadastro_portador', 'data_cancelamento_portador']
         all_params.append('callback')
 
         params = locals()
@@ -1762,7 +1781,7 @@ class CadastrosGeraisApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get17" % key
+                    " to method listar_using_get18" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -1772,6 +1791,8 @@ class CadastrosGeraisApi(object):
         path_params = {}
 
         query_params = {}
+        if 'sort' in params:
+            query_params['sort'] = params['sort']
         if 'page' in params:
             query_params['page'] = params['page']
         if 'limit' in params:
@@ -1829,7 +1850,7 @@ class CadastrosGeraisApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get18(self, **kwargs):
+    def listar_using_get19(self, **kwargs):
         """
         Lista os Produtos do Emissor
         Este m\u00C3\u00A9todo permite que sejam listados os Produtos existentes na base de dados do Emissor.
@@ -1840,10 +1861,11 @@ class CadastrosGeraisApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get18(callback=callback_function)
+        >>> thread = api.listar_using_get19(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
+        :param list[str] sort: Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
         :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
         :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
         :param str nome: Descri\u00C3\u00A7\u00C3\u00A3o do Nome do Produto.
@@ -1854,7 +1876,7 @@ class CadastrosGeraisApi(object):
                  returns the request thread.
         """
 
-        all_params = ['page', 'limit', 'nome', 'status', 'id_fantasia_basica']
+        all_params = ['sort', 'page', 'limit', 'nome', 'status', 'id_fantasia_basica']
         all_params.append('callback')
 
         params = locals()
@@ -1862,7 +1884,7 @@ class CadastrosGeraisApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get18" % key
+                    " to method listar_using_get19" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -1872,6 +1894,8 @@ class CadastrosGeraisApi(object):
         path_params = {}
 
         query_params = {}
+        if 'sort' in params:
+            query_params['sort'] = params['sort']
         if 'page' in params:
             query_params['page'] = params['page']
         if 'limit' in params:
@@ -1917,8 +1941,8 @@ class CadastrosGeraisApi(object):
 
     def listar_using_get2(self, **kwargs):
         """
-        Lista os Bancos cadastrados para o Emissor
-        Este m\u00C3\u00A9todo permite que sejam listados os Bancos existentes na base de dados do Emissor.
+        Lista todos os atendimentos
+        Este m\u00C3\u00A9todo permite que sejam listados todos os Registro de Atendimento, independente do Tipo.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -1930,14 +1954,19 @@ class CadastrosGeraisApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
+        :param list[str] sort: Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
         :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
         :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
-        :return: PageBancoResponse
+        :param int id_tipo_atendimento: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Tipo de Atendimento (id)
+        :param int id_conta: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o de conta (id).
+        :param str nome_atendente: Apresenta o nome do Atendente que registrou o Atendimento.
+        :param str data_atendimento: Apresenta a data em que o Atendimento foi realizado.
+        :return: PageAtendimentoClienteResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['page', 'limit']
+        all_params = ['sort', 'page', 'limit', 'id_tipo_atendimento', 'id_conta', 'nome_atendente', 'data_atendimento']
         all_params.append('callback')
 
         params = locals()
@@ -1951,14 +1980,24 @@ class CadastrosGeraisApi(object):
         del params['kwargs']
 
 
-        resource_path = '/api/bancos'.replace('{format}', 'json')
+        resource_path = '/api/atendimento-clientes'.replace('{format}', 'json')
         path_params = {}
 
         query_params = {}
+        if 'sort' in params:
+            query_params['sort'] = params['sort']
         if 'page' in params:
             query_params['page'] = params['page']
         if 'limit' in params:
             query_params['limit'] = params['limit']
+        if 'id_tipo_atendimento' in params:
+            query_params['idTipoAtendimento'] = params['id_tipo_atendimento']
+        if 'id_conta' in params:
+            query_params['idConta'] = params['id_conta']
+        if 'nome_atendente' in params:
+            query_params['nomeAtendente'] = params['nome_atendente']
+        if 'data_atendimento' in params:
+            query_params['dataAtendimento'] = params['data_atendimento']
 
         header_params = {}
 
@@ -1987,12 +2026,107 @@ class CadastrosGeraisApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='PageBancoResponse',
+                                            response_type='PageAtendimentoClienteResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get24(self, **kwargs):
+    def listar_using_get20(self, **kwargs):
+        """
+        Lista promotores cadastrados na base do emissor
+        Este m\u00C3\u00A9todo permite que sejam listados os cadastros de Promoteres existentes na base de dados do Emissor.
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.listar_using_get20(callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param list[str] sort: Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
+        :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
+        :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
+        :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do promotor (id)
+        :param str nome: Nome do Promotor
+        :param str data_cadastro: Data da Inclus\u00C3\u00A3o.
+        :param int id_estabelecimento: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Estabelecimento
+        :param int id_usuario: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do usu\u00C3\u00A1rio
+        :return: PagePromotorResponse
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['sort', 'page', 'limit', 'id', 'nome', 'data_cadastro', 'id_estabelecimento', 'id_usuario']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method listar_using_get20" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+
+        resource_path = '/api/promotores'.replace('{format}', 'json')
+        path_params = {}
+
+        query_params = {}
+        if 'sort' in params:
+            query_params['sort'] = params['sort']
+        if 'page' in params:
+            query_params['page'] = params['page']
+        if 'limit' in params:
+            query_params['limit'] = params['limit']
+        if 'id' in params:
+            query_params['id'] = params['id']
+        if 'nome' in params:
+            query_params['nome'] = params['nome']
+        if 'data_cadastro' in params:
+            query_params['dataCadastro'] = params['data_cadastro']
+        if 'id_estabelecimento' in params:
+            query_params['idEstabelecimento'] = params['id_estabelecimento']
+        if 'id_usuario' in params:
+            query_params['idUsuario'] = params['id_usuario']
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = []
+
+        response = self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='PagePromotorResponse',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
+    def listar_using_get26(self, **kwargs):
         """
         Lista as op\u00C3\u00B5es de Tipos de Endere\u00C3\u00A7os do Emissor 
         Este m\u00C3\u00A9todo permite que sejam listados os Tipos de Endere\u00C3\u00A7os existentes na base de dados do Emissor.
@@ -2003,10 +2137,11 @@ class CadastrosGeraisApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get24(callback=callback_function)
+        >>> thread = api.listar_using_get26(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
+        :param list[str] sort: Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
         :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
         :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
         :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Tipo do Endere\u00C3\u00A7o (id)
@@ -2016,7 +2151,7 @@ class CadastrosGeraisApi(object):
                  returns the request thread.
         """
 
-        all_params = ['page', 'limit', 'id', 'nome']
+        all_params = ['sort', 'page', 'limit', 'id', 'nome']
         all_params.append('callback')
 
         params = locals()
@@ -2024,7 +2159,7 @@ class CadastrosGeraisApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get24" % key
+                    " to method listar_using_get26" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -2034,6 +2169,8 @@ class CadastrosGeraisApi(object):
         path_params = {}
 
         query_params = {}
+        if 'sort' in params:
+            query_params['sort'] = params['sort']
         if 'page' in params:
             query_params['page'] = params['page']
         if 'limit' in params:
@@ -2075,7 +2212,7 @@ class CadastrosGeraisApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get26(self, **kwargs):
+    def listar_using_get28(self, **kwargs):
         """
         Lista os Tipos de Telefones
         Este m\u00C3\u00A9todo permite que sejam listados os Tipos de Telefones existentes na base de dados do Emissor.
@@ -2086,10 +2223,11 @@ class CadastrosGeraisApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get26(callback=callback_function)
+        >>> thread = api.listar_using_get28(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
+        :param list[str] sort: Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
         :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
         :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
         :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Tipo do Telefone (id).
@@ -2099,7 +2237,7 @@ class CadastrosGeraisApi(object):
                  returns the request thread.
         """
 
-        all_params = ['page', 'limit', 'id', 'nome']
+        all_params = ['sort', 'page', 'limit', 'id', 'nome']
         all_params.append('callback')
 
         params = locals()
@@ -2107,7 +2245,7 @@ class CadastrosGeraisApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get26" % key
+                    " to method listar_using_get28" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -2117,6 +2255,8 @@ class CadastrosGeraisApi(object):
         path_params = {}
 
         query_params = {}
+        if 'sort' in params:
+            query_params['sort'] = params['sort']
         if 'page' in params:
             query_params['page'] = params['page']
         if 'limit' in params:
@@ -2154,6 +2294,169 @@ class CadastrosGeraisApi(object):
                                             post_params=form_params,
                                             files=local_var_files,
                                             response_type='PageTipoTelefoneResponse',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
+    def listar_using_get3(self, **kwargs):
+        """
+        Lista os Bancos cadastrados para o Emissor
+        Este m\u00C3\u00A9todo permite que sejam listados os Bancos existentes na base de dados do Emissor.
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.listar_using_get3(callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param list[str] sort: Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
+        :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
+        :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
+        :return: PageBancoResponse
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['sort', 'page', 'limit']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method listar_using_get3" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+
+        resource_path = '/api/bancos'.replace('{format}', 'json')
+        path_params = {}
+
+        query_params = {}
+        if 'sort' in params:
+            query_params['sort'] = params['sort']
+        if 'page' in params:
+            query_params['page'] = params['page']
+        if 'limit' in params:
+            query_params['limit'] = params['limit']
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = []
+
+        response = self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='PageBancoResponse',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
+    def listar_using_get33(self, **kwargs):
+        """
+        Listar Vencimentos
+        Este recurso permite que sejam listados os Vencimentos do emissor.
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.listar_using_get33(callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param list[str] sort: Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
+        :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
+        :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
+        :param str data_vencimento: Indica a data de vencimento das faturas
+        :return: PageControleVencimentoResponse
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['sort', 'page', 'limit', 'data_vencimento']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method listar_using_get33" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+
+        resource_path = '/api/vencimentos'.replace('{format}', 'json')
+        path_params = {}
+
+        query_params = {}
+        if 'sort' in params:
+            query_params['sort'] = params['sort']
+        if 'page' in params:
+            query_params['page'] = params['page']
+        if 'limit' in params:
+            query_params['limit'] = params['limit']
+        if 'data_vencimento' in params:
+            query_params['dataVencimento'] = params['data_vencimento']
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = []
+
+        response = self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='PageControleVencimentoResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response

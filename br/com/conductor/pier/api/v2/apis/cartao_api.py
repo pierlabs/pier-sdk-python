@@ -1260,6 +1260,83 @@ class CartaoApi(object):
                                             callback=params.get('callback'))
         return response
 
+    def lancar_tarifa_segunda_via_using_post(self, id, **kwargs):
+        """
+        Adiciona tarifa de ajuste da segunda via do cart\u00C3\u00A3o
+        Esse recurso permite adicionar tar\u00C3\u00ADfa de ajuste pela emiss\u00C3\u00A3o da segunda via do cart\u00C3\u00A3o.
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.lancar_tarifa_segunda_via_using_post(id, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param int id: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do cart\u00C3\u00A3o (id). (required)
+        :return: object
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method lancar_tarifa_segunda_via_using_post" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `lancar_tarifa_segunda_via_using_post`")
+
+        resource_path = '/api/cartoes/{id}/lancar-tarifa-reemissao'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = []
+
+        response = self.api_client.call_api(resource_path, 'POST',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='object',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
     def listar_lotes_cartoes_pre_pagos_using_get(self, **kwargs):
         """
         Permite listar os Lotes de Cart\u00C3\u00B5es Pr\u00C3\u00A9-Pago
@@ -1275,6 +1352,7 @@ class CartaoApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
+        :param list[str] sort: Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
         :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
         :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
         :param int id_origem_comercial: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Origem Comercial (id).
@@ -1291,7 +1369,7 @@ class CartaoApi(object):
                  returns the request thread.
         """
 
-        all_params = ['page', 'limit', 'id_origem_comercial', 'id_produto', 'id_tipo_cartao', 'id_imagem', 'id_endereco', 'quantidade_cartoes', 'data_cadastro', 'usuario_cadastro', 'status_processamento']
+        all_params = ['sort', 'page', 'limit', 'id_origem_comercial', 'id_produto', 'id_tipo_cartao', 'id_imagem', 'id_endereco', 'quantidade_cartoes', 'data_cadastro', 'usuario_cadastro', 'status_processamento']
         all_params.append('callback')
 
         params = locals()
@@ -1309,6 +1387,8 @@ class CartaoApi(object):
         path_params = {}
 
         query_params = {}
+        if 'sort' in params:
+            query_params['sort'] = params['sort']
         if 'page' in params:
             query_params['page'] = params['page']
         if 'limit' in params:
@@ -1364,7 +1444,7 @@ class CartaoApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get5(self, **kwargs):
+    def listar_using_get6(self, **kwargs):
         """
         Lista os Cart\u00C3\u00B5es gerados pelo Emissor
         Este m\u00C3\u00A9todo permite que sejam listados os cart\u00C3\u00B5es existentes na base do emissor.
@@ -1375,10 +1455,11 @@ class CartaoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get5(callback=callback_function)
+        >>> thread = api.listar_using_get6(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
+        :param list[str] sort: Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
         :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
         :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
         :param int id_status_cartao: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Status do Cart\u00C3\u00A3o (id).
@@ -1404,7 +1485,7 @@ class CartaoApi(object):
                  returns the request thread.
         """
 
-        all_params = ['page', 'limit', 'id_status_cartao', 'id_estagio_cartao', 'id_conta', 'id_pessoa', 'id_produto', 'tipo_portador', 'numero_cartao', 'nome_impresso', 'data_geracao', 'data_status_cartao', 'data_estagio_cartao', 'data_validade', 'data_impressao', 'arquivo_impressao', 'flag_impressao_origem_comercial', 'flag_provisorio', 'codigo_desbloqueio', 'sequencial_cartao']
+        all_params = ['sort', 'page', 'limit', 'id_status_cartao', 'id_estagio_cartao', 'id_conta', 'id_pessoa', 'id_produto', 'tipo_portador', 'numero_cartao', 'nome_impresso', 'data_geracao', 'data_status_cartao', 'data_estagio_cartao', 'data_validade', 'data_impressao', 'arquivo_impressao', 'flag_impressao_origem_comercial', 'flag_provisorio', 'codigo_desbloqueio', 'sequencial_cartao']
         all_params.append('callback')
 
         params = locals()
@@ -1412,7 +1493,7 @@ class CartaoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get5" % key
+                    " to method listar_using_get6" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -1422,6 +1503,8 @@ class CartaoApi(object):
         path_params = {}
 
         query_params = {}
+        if 'sort' in params:
+            query_params['sort'] = params['sort']
         if 'page' in params:
             query_params['page'] = params['page']
         if 'limit' in params:

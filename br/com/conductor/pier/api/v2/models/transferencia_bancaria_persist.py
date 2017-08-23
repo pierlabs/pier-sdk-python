@@ -37,40 +37,33 @@ class TransferenciaBancariaPersist(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'data_compra': 'str',
-            'proximo_vencimento_padrao': 'str',
-            'proximo_vencimento_real': 'str',
             'valor_compra': 'float',
-            'nome_favorecido': 'str',
+            'valor': 'float',
             'documento_favorecido': 'str',
             'banco': 'int',
             'numero_agencia': 'str',
             'digito_agencia': 'str',
             'numero_conta': 'str',
             'digito_conta': 'str',
-            'flag_conta_poupanca': 'int'
+            'flag_conta_poupanca': 'int',
+            'nome_favorecido': 'str'
         }
 
         self.attribute_map = {
-            'data_compra': 'dataCompra',
-            'proximo_vencimento_padrao': 'proximoVencimentoPadrao',
-            'proximo_vencimento_real': 'proximoVencimentoReal',
             'valor_compra': 'valorCompra',
-            'nome_favorecido': 'nomeFavorecido',
+            'valor': 'valor',
             'documento_favorecido': 'documentoFavorecido',
             'banco': 'banco',
             'numero_agencia': 'numeroAgencia',
             'digito_agencia': 'digitoAgencia',
             'numero_conta': 'numeroConta',
             'digito_conta': 'digitoConta',
-            'flag_conta_poupanca': 'flagContaPoupanca'
+            'flag_conta_poupanca': 'flagContaPoupanca',
+            'nome_favorecido': 'nomeFavorecido'
         }
 
-        self._data_compra = None
-        self._proximo_vencimento_padrao = None
-        self._proximo_vencimento_real = None
         self._valor_compra = None
-        self._nome_favorecido = None
+        self._valor = None
         self._documento_favorecido = None
         self._banco = None
         self._numero_agencia = None
@@ -78,72 +71,7 @@ class TransferenciaBancariaPersist(object):
         self._numero_conta = None
         self._digito_conta = None
         self._flag_conta_poupanca = None
-
-    @property
-    def data_compra(self):
-        """
-        Gets the data_compra of this TransferenciaBancariaPersist.
-        Data da transfer\u00C3\u00AAncia
-
-        :return: The data_compra of this TransferenciaBancariaPersist.
-        :rtype: str
-        """
-        return self._data_compra
-
-    @data_compra.setter
-    def data_compra(self, data_compra):
-        """
-        Sets the data_compra of this TransferenciaBancariaPersist.
-        Data da transfer\u00C3\u00AAncia
-
-        :param data_compra: The data_compra of this TransferenciaBancariaPersist.
-        :type: str
-        """
-        self._data_compra = data_compra
-
-    @property
-    def proximo_vencimento_padrao(self):
-        """
-        Gets the proximo_vencimento_padrao of this TransferenciaBancariaPersist.
-        Dia do vencimento padr\u00C3\u00A3o da fatura
-
-        :return: The proximo_vencimento_padrao of this TransferenciaBancariaPersist.
-        :rtype: str
-        """
-        return self._proximo_vencimento_padrao
-
-    @proximo_vencimento_padrao.setter
-    def proximo_vencimento_padrao(self, proximo_vencimento_padrao):
-        """
-        Sets the proximo_vencimento_padrao of this TransferenciaBancariaPersist.
-        Dia do vencimento padr\u00C3\u00A3o da fatura
-
-        :param proximo_vencimento_padrao: The proximo_vencimento_padrao of this TransferenciaBancariaPersist.
-        :type: str
-        """
-        self._proximo_vencimento_padrao = proximo_vencimento_padrao
-
-    @property
-    def proximo_vencimento_real(self):
-        """
-        Gets the proximo_vencimento_real of this TransferenciaBancariaPersist.
-        Data do vencimento real da fatura
-
-        :return: The proximo_vencimento_real of this TransferenciaBancariaPersist.
-        :rtype: str
-        """
-        return self._proximo_vencimento_real
-
-    @proximo_vencimento_real.setter
-    def proximo_vencimento_real(self, proximo_vencimento_real):
-        """
-        Sets the proximo_vencimento_real of this TransferenciaBancariaPersist.
-        Data do vencimento real da fatura
-
-        :param proximo_vencimento_real: The proximo_vencimento_real of this TransferenciaBancariaPersist.
-        :type: str
-        """
-        self._proximo_vencimento_real = proximo_vencimento_real
+        self._nome_favorecido = None
 
     @property
     def valor_compra(self):
@@ -168,26 +96,26 @@ class TransferenciaBancariaPersist(object):
         self._valor_compra = valor_compra
 
     @property
-    def nome_favorecido(self):
+    def valor(self):
         """
-        Gets the nome_favorecido of this TransferenciaBancariaPersist.
-        Apresenta o 'Nome Completo da PF' ou o 'Nome Completo da Raz\u00C3\u00A3o Social (Nome Empresarial)'.
+        Gets the valor of this TransferenciaBancariaPersist.
+        Valor da transfer\u00C3\u00AAncia
 
-        :return: The nome_favorecido of this TransferenciaBancariaPersist.
-        :rtype: str
+        :return: The valor of this TransferenciaBancariaPersist.
+        :rtype: float
         """
-        return self._nome_favorecido
+        return self._valor
 
-    @nome_favorecido.setter
-    def nome_favorecido(self, nome_favorecido):
+    @valor.setter
+    def valor(self, valor):
         """
-        Sets the nome_favorecido of this TransferenciaBancariaPersist.
-        Apresenta o 'Nome Completo da PF' ou o 'Nome Completo da Raz\u00C3\u00A3o Social (Nome Empresarial)'.
+        Sets the valor of this TransferenciaBancariaPersist.
+        Valor da transfer\u00C3\u00AAncia
 
-        :param nome_favorecido: The nome_favorecido of this TransferenciaBancariaPersist.
-        :type: str
+        :param valor: The valor of this TransferenciaBancariaPersist.
+        :type: float
         """
-        self._nome_favorecido = nome_favorecido
+        self._valor = valor
 
     @property
     def documento_favorecido(self):
@@ -342,6 +270,28 @@ class TransferenciaBancariaPersist(object):
         :type: int
         """
         self._flag_conta_poupanca = flag_conta_poupanca
+
+    @property
+    def nome_favorecido(self):
+        """
+        Gets the nome_favorecido of this TransferenciaBancariaPersist.
+        Apresenta o 'Nome Completo da PF' ou o 'Nome Completo da Raz\u00C3\u00A3o Social (Nome Empresarial)'.
+
+        :return: The nome_favorecido of this TransferenciaBancariaPersist.
+        :rtype: str
+        """
+        return self._nome_favorecido
+
+    @nome_favorecido.setter
+    def nome_favorecido(self, nome_favorecido):
+        """
+        Sets the nome_favorecido of this TransferenciaBancariaPersist.
+        Apresenta o 'Nome Completo da PF' ou o 'Nome Completo da Raz\u00C3\u00A3o Social (Nome Empresarial)'.
+
+        :param nome_favorecido: The nome_favorecido of this TransferenciaBancariaPersist.
+        :type: str
+        """
+        self._nome_favorecido = nome_favorecido
 
     def to_dict(self):
         """
