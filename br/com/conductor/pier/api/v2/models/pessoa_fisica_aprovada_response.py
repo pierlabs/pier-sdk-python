@@ -48,7 +48,7 @@ class PessoaFisicaAprovadaResponse(object):
             'unidade_federativa_identidade': 'str',
             'data_emissao_identidade': 'str',
             'id_estado_civil': 'int',
-            'id_profissao': 'int',
+            'id_profissao': 'str',
             'id_natureza_ocupacao': 'int',
             'id_nacionalidade': 'int',
             'id_origem_comercial': 'int',
@@ -385,7 +385,7 @@ class PessoaFisicaAprovadaResponse(object):
         Profiss\u00C3\u00A3o da pessoa fisica
 
         :return: The id_profissao of this PessoaFisicaAprovadaResponse.
-        :rtype: int
+        :rtype: str
         """
         return self._id_profissao
 
@@ -396,7 +396,7 @@ class PessoaFisicaAprovadaResponse(object):
         Profiss\u00C3\u00A3o da pessoa fisica
 
         :param id_profissao: The id_profissao of this PessoaFisicaAprovadaResponse.
-        :type: int
+        :type: str
         """
         self._id_profissao = id_profissao
 

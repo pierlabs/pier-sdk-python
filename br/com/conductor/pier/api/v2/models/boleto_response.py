@@ -37,27 +37,28 @@ class BoletoResponse(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
+            'numero_do_documento': 'str',
             'data_processamento': 'str',
             'data_documento': 'str',
             'data_vencimento': 'str',
+            'data_fechamento': 'str',
             'valor_boleto': 'float',
-            'numero_do_documento': 'str',
             'nome_beneficiario': 'str',
+            'documento_beneficiario': 'str',
             'agencia': 'str',
             'codigo_beneficiario': 'str',
-            'digito_codigo_beneficiario': 'str',
             'numero_convenio': 'str',
+            'digito_codigo_beneficiario': 'str',
             'carteira': 'str',
             'nosso_numero': 'str',
-            'banco': 'str',
             'digito_nosso_numero': 'str',
+            'banco': 'str',
             'aceite': 'bool',
             'especie_do_documento': 'str',
             'especie': 'str',
             'instrucoes': 'list[str]',
             'locais_de_pagamento': 'list[str]',
             'nome_pagador': 'str',
-            'documento_beneficiario': 'str',
             'documento_pagador': 'str',
             'logradouro_pagador': 'str',
             'bairro_pagador': 'str',
@@ -69,27 +70,28 @@ class BoletoResponse(object):
         }
 
         self.attribute_map = {
+            'numero_do_documento': 'numeroDoDocumento',
             'data_processamento': 'dataProcessamento',
             'data_documento': 'dataDocumento',
             'data_vencimento': 'dataVencimento',
+            'data_fechamento': 'dataFechamento',
             'valor_boleto': 'valorBoleto',
-            'numero_do_documento': 'numeroDoDocumento',
             'nome_beneficiario': 'nomeBeneficiario',
+            'documento_beneficiario': 'documentoBeneficiario',
             'agencia': 'agencia',
             'codigo_beneficiario': 'codigoBeneficiario',
-            'digito_codigo_beneficiario': 'digitoCodigoBeneficiario',
             'numero_convenio': 'numeroConvenio',
+            'digito_codigo_beneficiario': 'digitoCodigoBeneficiario',
             'carteira': 'carteira',
             'nosso_numero': 'nossoNumero',
-            'banco': 'banco',
             'digito_nosso_numero': 'digitoNossoNumero',
+            'banco': 'banco',
             'aceite': 'aceite',
             'especie_do_documento': 'especieDoDocumento',
             'especie': 'especie',
             'instrucoes': 'instrucoes',
             'locais_de_pagamento': 'locaisDePagamento',
             'nome_pagador': 'nomePagador',
-            'documento_beneficiario': 'documentoBeneficiario',
             'documento_pagador': 'documentoPagador',
             'logradouro_pagador': 'logradouroPagador',
             'bairro_pagador': 'bairroPagador',
@@ -100,27 +102,28 @@ class BoletoResponse(object):
             'linha_digitavel': 'linhaDigitavel'
         }
 
+        self._numero_do_documento = None
         self._data_processamento = None
         self._data_documento = None
         self._data_vencimento = None
+        self._data_fechamento = None
         self._valor_boleto = None
-        self._numero_do_documento = None
         self._nome_beneficiario = None
+        self._documento_beneficiario = None
         self._agencia = None
         self._codigo_beneficiario = None
-        self._digito_codigo_beneficiario = None
         self._numero_convenio = None
+        self._digito_codigo_beneficiario = None
         self._carteira = None
         self._nosso_numero = None
-        self._banco = None
         self._digito_nosso_numero = None
+        self._banco = None
         self._aceite = None
         self._especie_do_documento = None
         self._especie = None
         self._instrucoes = None
         self._locais_de_pagamento = None
         self._nome_pagador = None
-        self._documento_beneficiario = None
         self._documento_pagador = None
         self._logradouro_pagador = None
         self._bairro_pagador = None
@@ -129,6 +132,28 @@ class BoletoResponse(object):
         self._uf_pagador = None
         self._codigo_de_barras = None
         self._linha_digitavel = None
+
+    @property
+    def numero_do_documento(self):
+        """
+        Gets the numero_do_documento of this BoletoResponse.
+        N\u00C3\u00BAmero do documento \u00C3\u00A9 o c\u00C3\u00B3digo informado pelo banco para identifica\u00C3\u00A7\u00C3\u00A3o do cliente
+
+        :return: The numero_do_documento of this BoletoResponse.
+        :rtype: str
+        """
+        return self._numero_do_documento
+
+    @numero_do_documento.setter
+    def numero_do_documento(self, numero_do_documento):
+        """
+        Sets the numero_do_documento of this BoletoResponse.
+        N\u00C3\u00BAmero do documento \u00C3\u00A9 o c\u00C3\u00B3digo informado pelo banco para identifica\u00C3\u00A7\u00C3\u00A3o do cliente
+
+        :param numero_do_documento: The numero_do_documento of this BoletoResponse.
+        :type: str
+        """
+        self._numero_do_documento = numero_do_documento
 
     @property
     def data_processamento(self):
@@ -197,6 +222,28 @@ class BoletoResponse(object):
         self._data_vencimento = data_vencimento
 
     @property
+    def data_fechamento(self):
+        """
+        Gets the data_fechamento of this BoletoResponse.
+        Data do fechamento
+
+        :return: The data_fechamento of this BoletoResponse.
+        :rtype: str
+        """
+        return self._data_fechamento
+
+    @data_fechamento.setter
+    def data_fechamento(self, data_fechamento):
+        """
+        Sets the data_fechamento of this BoletoResponse.
+        Data do fechamento
+
+        :param data_fechamento: The data_fechamento of this BoletoResponse.
+        :type: str
+        """
+        self._data_fechamento = data_fechamento
+
+    @property
     def valor_boleto(self):
         """
         Gets the valor_boleto of this BoletoResponse.
@@ -219,28 +266,6 @@ class BoletoResponse(object):
         self._valor_boleto = valor_boleto
 
     @property
-    def numero_do_documento(self):
-        """
-        Gets the numero_do_documento of this BoletoResponse.
-        N\u00C3\u00BAmero do documento \u00C3\u00A9 o c\u00C3\u00B3digo informado pelo banco para identifica\u00C3\u00A7\u00C3\u00A3o do cliente
-
-        :return: The numero_do_documento of this BoletoResponse.
-        :rtype: str
-        """
-        return self._numero_do_documento
-
-    @numero_do_documento.setter
-    def numero_do_documento(self, numero_do_documento):
-        """
-        Sets the numero_do_documento of this BoletoResponse.
-        N\u00C3\u00BAmero do documento \u00C3\u00A9 o c\u00C3\u00B3digo informado pelo banco para identifica\u00C3\u00A7\u00C3\u00A3o do cliente
-
-        :param numero_do_documento: The numero_do_documento of this BoletoResponse.
-        :type: str
-        """
-        self._numero_do_documento = numero_do_documento
-
-    @property
     def nome_beneficiario(self):
         """
         Gets the nome_beneficiario of this BoletoResponse.
@@ -261,6 +286,28 @@ class BoletoResponse(object):
         :type: str
         """
         self._nome_beneficiario = nome_beneficiario
+
+    @property
+    def documento_beneficiario(self):
+        """
+        Gets the documento_beneficiario of this BoletoResponse.
+        Documento do Beneficiario.
+
+        :return: The documento_beneficiario of this BoletoResponse.
+        :rtype: str
+        """
+        return self._documento_beneficiario
+
+    @documento_beneficiario.setter
+    def documento_beneficiario(self, documento_beneficiario):
+        """
+        Sets the documento_beneficiario of this BoletoResponse.
+        Documento do Beneficiario.
+
+        :param documento_beneficiario: The documento_beneficiario of this BoletoResponse.
+        :type: str
+        """
+        self._documento_beneficiario = documento_beneficiario
 
     @property
     def agencia(self):
@@ -307,28 +354,6 @@ class BoletoResponse(object):
         self._codigo_beneficiario = codigo_beneficiario
 
     @property
-    def digito_codigo_beneficiario(self):
-        """
-        Gets the digito_codigo_beneficiario of this BoletoResponse.
-        D\u00C3\u00ADgito do c\u00C3\u00B3digo do benefici\u00C3\u00A1rio
-
-        :return: The digito_codigo_beneficiario of this BoletoResponse.
-        :rtype: str
-        """
-        return self._digito_codigo_beneficiario
-
-    @digito_codigo_beneficiario.setter
-    def digito_codigo_beneficiario(self, digito_codigo_beneficiario):
-        """
-        Sets the digito_codigo_beneficiario of this BoletoResponse.
-        D\u00C3\u00ADgito do c\u00C3\u00B3digo do benefici\u00C3\u00A1rio
-
-        :param digito_codigo_beneficiario: The digito_codigo_beneficiario of this BoletoResponse.
-        :type: str
-        """
-        self._digito_codigo_beneficiario = digito_codigo_beneficiario
-
-    @property
     def numero_convenio(self):
         """
         Gets the numero_convenio of this BoletoResponse.
@@ -349,6 +374,28 @@ class BoletoResponse(object):
         :type: str
         """
         self._numero_convenio = numero_convenio
+
+    @property
+    def digito_codigo_beneficiario(self):
+        """
+        Gets the digito_codigo_beneficiario of this BoletoResponse.
+        D\u00C3\u00ADgito do c\u00C3\u00B3digo do benefici\u00C3\u00A1rio
+
+        :return: The digito_codigo_beneficiario of this BoletoResponse.
+        :rtype: str
+        """
+        return self._digito_codigo_beneficiario
+
+    @digito_codigo_beneficiario.setter
+    def digito_codigo_beneficiario(self, digito_codigo_beneficiario):
+        """
+        Sets the digito_codigo_beneficiario of this BoletoResponse.
+        D\u00C3\u00ADgito do c\u00C3\u00B3digo do benefici\u00C3\u00A1rio
+
+        :param digito_codigo_beneficiario: The digito_codigo_beneficiario of this BoletoResponse.
+        :type: str
+        """
+        self._digito_codigo_beneficiario = digito_codigo_beneficiario
 
     @property
     def carteira(self):
@@ -395,28 +442,6 @@ class BoletoResponse(object):
         self._nosso_numero = nosso_numero
 
     @property
-    def banco(self):
-        """
-        Gets the banco of this BoletoResponse.
-        Banco
-
-        :return: The banco of this BoletoResponse.
-        :rtype: str
-        """
-        return self._banco
-
-    @banco.setter
-    def banco(self, banco):
-        """
-        Sets the banco of this BoletoResponse.
-        Banco
-
-        :param banco: The banco of this BoletoResponse.
-        :type: str
-        """
-        self._banco = banco
-
-    @property
     def digito_nosso_numero(self):
         """
         Gets the digito_nosso_numero of this BoletoResponse.
@@ -437,6 +462,28 @@ class BoletoResponse(object):
         :type: str
         """
         self._digito_nosso_numero = digito_nosso_numero
+
+    @property
+    def banco(self):
+        """
+        Gets the banco of this BoletoResponse.
+        Banco
+
+        :return: The banco of this BoletoResponse.
+        :rtype: str
+        """
+        return self._banco
+
+    @banco.setter
+    def banco(self, banco):
+        """
+        Sets the banco of this BoletoResponse.
+        Banco
+
+        :param banco: The banco of this BoletoResponse.
+        :type: str
+        """
+        self._banco = banco
 
     @property
     def aceite(self):
@@ -569,28 +616,6 @@ class BoletoResponse(object):
         :type: str
         """
         self._nome_pagador = nome_pagador
-
-    @property
-    def documento_beneficiario(self):
-        """
-        Gets the documento_beneficiario of this BoletoResponse.
-        Documento do Beneficiario.
-
-        :return: The documento_beneficiario of this BoletoResponse.
-        :rtype: str
-        """
-        return self._documento_beneficiario
-
-    @documento_beneficiario.setter
-    def documento_beneficiario(self, documento_beneficiario):
-        """
-        Sets the documento_beneficiario of this BoletoResponse.
-        Documento do Beneficiario.
-
-        :param documento_beneficiario: The documento_beneficiario of this BoletoResponse.
-        :type: str
-        """
-        self._documento_beneficiario = documento_beneficiario
 
     @property
     def documento_pagador(self):

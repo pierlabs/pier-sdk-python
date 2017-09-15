@@ -37,7 +37,6 @@ class CartaoImpressaoResponse(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'flag_virtual': 'int',
             'id_conta': 'int',
             'id_pessoa': 'int',
             'id_cartao': 'int',
@@ -60,11 +59,11 @@ class CartaoImpressaoResponse(object):
             'trilha2': 'str',
             'trilha_cvv1': 'str',
             'trilha_cvv2': 'str',
+            'flag_virtual': 'int',
             'numero_cartao_hash': 'int'
         }
 
         self.attribute_map = {
-            'flag_virtual': 'flagVirtual',
             'id_conta': 'idConta',
             'id_pessoa': 'idPessoa',
             'id_cartao': 'idCartao',
@@ -87,10 +86,10 @@ class CartaoImpressaoResponse(object):
             'trilha2': 'trilha2',
             'trilha_cvv1': 'trilhaCVV1',
             'trilha_cvv2': 'trilhaCVV2',
+            'flag_virtual': 'flagVirtual',
             'numero_cartao_hash': 'numeroCartaoHash'
         }
 
-        self._flag_virtual = None
         self._id_conta = None
         self._id_pessoa = None
         self._id_cartao = None
@@ -113,29 +112,8 @@ class CartaoImpressaoResponse(object):
         self._trilha2 = None
         self._trilha_cvv1 = None
         self._trilha_cvv2 = None
+        self._flag_virtual = None
         self._numero_cartao_hash = None
-
-    @property
-    def flag_virtual(self):
-        """
-        Gets the flag_virtual of this CartaoImpressaoResponse.
-
-
-        :return: The flag_virtual of this CartaoImpressaoResponse.
-        :rtype: int
-        """
-        return self._flag_virtual
-
-    @flag_virtual.setter
-    def flag_virtual(self, flag_virtual):
-        """
-        Sets the flag_virtual of this CartaoImpressaoResponse.
-
-
-        :param flag_virtual: The flag_virtual of this CartaoImpressaoResponse.
-        :type: int
-        """
-        self._flag_virtual = flag_virtual
 
     @property
     def id_conta(self):
@@ -620,6 +598,28 @@ class CartaoImpressaoResponse(object):
         :type: str
         """
         self._trilha_cvv2 = trilha_cvv2
+
+    @property
+    def flag_virtual(self):
+        """
+        Gets the flag_virtual of this CartaoImpressaoResponse.
+        Apresenta o status que informa se o cart\u00C3\u00A3o \u00C3\u00A9 virtual 
+
+        :return: The flag_virtual of this CartaoImpressaoResponse.
+        :rtype: int
+        """
+        return self._flag_virtual
+
+    @flag_virtual.setter
+    def flag_virtual(self, flag_virtual):
+        """
+        Sets the flag_virtual of this CartaoImpressaoResponse.
+        Apresenta o status que informa se o cart\u00C3\u00A3o \u00C3\u00A9 virtual 
+
+        :param flag_virtual: The flag_virtual of this CartaoImpressaoResponse.
+        :type: int
+        """
+        self._flag_virtual = flag_virtual
 
     @property
     def numero_cartao_hash(self):

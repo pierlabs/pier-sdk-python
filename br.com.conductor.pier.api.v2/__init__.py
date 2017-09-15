@@ -1,10 +1,12 @@
 from __future__ import absolute_import
 
 # import models into sdk package
+from .models.adicional_detalhe_response import AdicionalDetalheResponse
 from .models.adicional_persist import AdicionalPersist
 from .models.adicional_response import AdicionalResponse
 from .models.adicional_update import AdicionalUpdate
 from .models.ajuste_response import AjusteResponse
+from .models.alterar_produto_request import AlterarProdutoRequest
 from .models.antecipacao_response import AntecipacaoResponse
 from .models.antecipacao_simulada_detalhes_response import AntecipacaoSimuladaDetalhesResponse
 from .models.antecipacao_simulada_response import AntecipacaoSimuladaResponse
@@ -27,6 +29,9 @@ from .models.boleto_response import BoletoResponse
 from .models.campo_codificado_descricao_response import CampoCodificadoDescricaoResponse
 from .models.cancelamento_transacao_on_us_request import CancelamentoTransacaoOnUsRequest
 from .models.cartao_detalhe_response import CartaoDetalheResponse
+from .models.cartao_embossing_request import CartaoEmbossingRequest
+from .models.cartao_embossing_response import CartaoEmbossingResponse
+from .models.cartao_impressao_provisorio_response import CartaoImpressaoProvisorioResponse
 from .models.cartao_impressao_response import CartaoImpressaoResponse
 from .models.cartao_response import CartaoResponse
 from .models.cdt_detalhe_oportunidade_aud import CdtDetalheOportunidadeAUD
@@ -49,6 +54,8 @@ from .models.detalhes_fatura_response import DetalhesFaturaResponse
 from .models.dispositivo_persist import DispositivoPersist
 from .models.dispositivo_response import DispositivoResponse
 from .models.divida_cliente_response import DividaClienteResponse
+from .models.emprestimo_pessoal_request import EmprestimoPessoalRequest
+from .models.emprestimo_pessoal_response import EmprestimoPessoalResponse
 from .models.endereco_aprovado_persist import EnderecoAprovadoPersist
 from .models.endereco_aprovado_response import EnderecoAprovadoResponse
 from .models.endereco_response import EnderecoResponse
@@ -137,6 +144,7 @@ from .models.page_tipo_endereco_response import PageTipoEnderecoResponse
 from .models.page_tipo_oportunidade_aud_response import PageTipoOportunidadeAUDResponse
 from .models.page_tipo_oportunidade_response import PageTipoOportunidadeResponse
 from .models.page_tipo_telefone_response import PageTipoTelefoneResponse
+from .models.page_transacao_nao_processada_response import PageTransacaoNaoProcessadaResponse
 from .models.page_transacao_response import PageTransacaoResponse
 from .models.page_transacoes_correntes_response import PageTransacoesCorrentesResponse
 from .models.page_transferencia_bancaria_response import PageTransferenciaBancariaResponse
@@ -152,6 +160,7 @@ from .models.pessoa_juridica_aprovada_persist import PessoaJuridicaAprovadaPersi
 from .models.pessoa_juridica_aprovada_response import PessoaJuridicaAprovadaResponse
 from .models.pessoa_persist import PessoaPersist
 from .models.pessoa_response import PessoaResponse
+from .models.plano_parcelamento_emprestimo_response import PlanoParcelamentoEmprestimoResponse
 from .models.plano_parcelamento_response import PlanoParcelamentoResponse
 from .models.plataforma_mobile_persist import PlataformaMobilePersist
 from .models.plataforma_mobile_response import PlataformaMobileResponse
@@ -175,6 +184,7 @@ from .models.status_oportunidade_response import StatusOportunidadeResponse
 from .models.taxa_antecipacao_request import TaxaAntecipacaoRequest
 from .models.taxas_refinanciamento_response import TaxasRefinanciamentoResponse
 from .models.telefone_adicional_persist import TelefoneAdicionalPersist
+from .models.telefone_adicional_update import TelefoneAdicionalUpdate
 from .models.telefone_pessoa_aprovada_persist import TelefonePessoaAprovadaPersist
 from .models.telefone_pessoa_aprovada_response import TelefonePessoaAprovadaResponse
 from .models.telefone_response import TelefoneResponse
@@ -183,6 +193,7 @@ from .models.terminal_response import TerminalResponse
 from .models.tipo_ajuste_response import TipoAjusteResponse
 from .models.tipo_boleto_response import TipoBoletoResponse
 from .models.tipo_endereco_response import TipoEnderecoResponse
+from .models.tipo_operacao_response import TipoOperacaoResponse
 from .models.tipo_oportunidade import TipoOportunidade
 from .models.tipo_oportunidade_aud_response import TipoOportunidadeAUDResponse
 from .models.tipo_oportunidade_response import TipoOportunidadeResponse
@@ -190,6 +201,8 @@ from .models.tipo_resolucao_response import TipoResolucaoResponse
 from .models.tipo_telefone_response import TipoTelefoneResponse
 from .models.token_response import TokenResponse
 from .models.transacao_corrente_response import TransacaoCorrenteResponse
+from .models.transacao_nao_processada_response import TransacaoNaoProcessadaResponse
+from .models.transacao_on_us_por_id_cartao_request import TransacaoOnUsPorIdCartaoRequest
 from .models.transacao_on_us_request import TransacaoOnUsRequest
 from .models.transacao_on_us_response import TransacaoOnUsResponse
 from .models.transacoes_correntes_response import TransacoesCorrentesResponse
@@ -204,31 +217,33 @@ from .models.valida_senha_cartao_response import ValidaSenhaCartaoResponse
 from .models.web_hook_response import WebHookResponse
 
 # import apis into sdk package
-from .apis.antecipacoes_api import AntecipacoesApi
-from .apis.aplicacoes_mobile_api import AplicacoesMobileApi
-from .apis.arquivos_api import ArquivosApi
-from .apis.autorizacoes_api import AutorizacoesApi
+from .apis.antecipacao_api import AntecipacaoApi
+from .apis.aplicacao_mobile_api import AplicacaoMobileApi
+from .apis.arquivo_api import ArquivoApi
+from .apis.autorizacao_api import AutorizacaoApi
 from .apis.base_api import BaseApi
-from .apis.cadastros_clientes_api import CadastrosClientesApi
-from .apis.cadastros_gerais_api import CadastrosGeraisApi
+from .apis.cadastro_cliente_api import CadastroClienteApi
+from .apis.cadastro_geral_api import CadastroGeralApi
 from .apis.cartao_api import CartaoApi
 from .apis.conta_api import ContaApi
-from .apis.dispositivos_api import DispositivosApi
-from .apis.enderecos_nacionais_api import EnderecosNacionaisApi
-from .apis.estabelecimentos_api import EstabelecimentosApi
+from .apis.dispositivo_api import DispositivoApi
+from .apis.endereco_nacional_api import EnderecoNacionalApi
+from .apis.estabelecimento_api import EstabelecimentoApi
 from .apis.faq_api import FAQApi
-from .apis.gestao_limites_api import GestaoLimitesApi
-from .apis.jobs_api import JobsApi
-from .apis.notificacoes_api import NotificacoesApi
-from .apis.oportunidades_api import OportunidadesApi
-from .apis.permissao_paises_api import PermissaoPaisesApi
-from .apis.plataformas_mobile_api import PlataformasMobileApi
+from .apis.fatura_api import FaturaApi
+from .apis.job_api import JobApi
+from .apis.limite_api import LimiteApi
+from .apis.mock_api import MockApi
+from .apis.notificacao_api import NotificacaoApi
+from .apis.oportunidade_api import OportunidadeApi
+from .apis.permissao_pais_api import PermissaoPaisApi
+from .apis.plataforma_mobile_api import PlataformaMobileApi
 from .apis.risco_fraude_api import RiscoFraudeApi
-from .apis.servicos_conta_api import ServicosContaApi
-from .apis.status_parametros_api import StatusParametrosApi
+from .apis.servico_conta_api import ServicoContaApi
+from .apis.status_parametro_api import StatusParametroApi
 from .apis.token_api import TokenApi
-from .apis.usuarios_api import UsuariosApi
-from .apis.webhooks_api import WebhooksApi
+from .apis.usuario_api import UsuarioApi
+from .apis.webhook_api import WebhookApi
 
 # import ApiClient
 from .api_client import ApiClient

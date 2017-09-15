@@ -46,12 +46,8 @@ class AdicionalUpdate(object):
             'orgao_expedidor_identidade': 'str',
             'unidade_federativa_identidade': 'str',
             'data_emissao_identidade': 'str',
-            'id_estado_civil': 'int',
-            'id_profissao': 'int',
-            'id_nacionalidade': 'int',
             'id_parentesco': 'int',
-            'email': 'str',
-            'telefones': 'list[TelefoneAdicionalPersist]'
+            'telefones': 'list[TelefoneAdicionalUpdate]'
         }
 
         self.attribute_map = {
@@ -64,11 +60,7 @@ class AdicionalUpdate(object):
             'orgao_expedidor_identidade': 'orgaoExpedidorIdentidade',
             'unidade_federativa_identidade': 'unidadeFederativaIdentidade',
             'data_emissao_identidade': 'dataEmissaoIdentidade',
-            'id_estado_civil': 'idEstadoCivil',
-            'id_profissao': 'idProfissao',
-            'id_nacionalidade': 'idNacionalidade',
             'id_parentesco': 'idParentesco',
-            'email': 'email',
             'telefones': 'telefones'
         }
 
@@ -81,11 +73,7 @@ class AdicionalUpdate(object):
         self._orgao_expedidor_identidade = None
         self._unidade_federativa_identidade = None
         self._data_emissao_identidade = None
-        self._id_estado_civil = None
-        self._id_profissao = None
-        self._id_nacionalidade = None
         self._id_parentesco = None
-        self._email = None
         self._telefones = None
 
     @property
@@ -287,72 +275,6 @@ class AdicionalUpdate(object):
         self._data_emissao_identidade = data_emissao_identidade
 
     @property
-    def id_estado_civil(self):
-        """
-        Gets the id_estado_civil of this AdicionalUpdate.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do Estado Civil do Adicional.
-
-        :return: The id_estado_civil of this AdicionalUpdate.
-        :rtype: int
-        """
-        return self._id_estado_civil
-
-    @id_estado_civil.setter
-    def id_estado_civil(self, id_estado_civil):
-        """
-        Sets the id_estado_civil of this AdicionalUpdate.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do Estado Civil do Adicional.
-
-        :param id_estado_civil: The id_estado_civil of this AdicionalUpdate.
-        :type: int
-        """
-        self._id_estado_civil = id_estado_civil
-
-    @property
-    def id_profissao(self):
-        """
-        Gets the id_profissao of this AdicionalUpdate.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da Profissao do Adicional.
-
-        :return: The id_profissao of this AdicionalUpdate.
-        :rtype: int
-        """
-        return self._id_profissao
-
-    @id_profissao.setter
-    def id_profissao(self, id_profissao):
-        """
-        Sets the id_profissao of this AdicionalUpdate.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da Profissao do Adicional.
-
-        :param id_profissao: The id_profissao of this AdicionalUpdate.
-        :type: int
-        """
-        self._id_profissao = id_profissao
-
-    @property
-    def id_nacionalidade(self):
-        """
-        Gets the id_nacionalidade of this AdicionalUpdate.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da Nacionalidade do Adicional.
-
-        :return: The id_nacionalidade of this AdicionalUpdate.
-        :rtype: int
-        """
-        return self._id_nacionalidade
-
-    @id_nacionalidade.setter
-    def id_nacionalidade(self, id_nacionalidade):
-        """
-        Sets the id_nacionalidade of this AdicionalUpdate.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da Nacionalidade do Adicional.
-
-        :param id_nacionalidade: The id_nacionalidade of this AdicionalUpdate.
-        :type: int
-        """
-        self._id_nacionalidade = id_nacionalidade
-
-    @property
     def id_parentesco(self):
         """
         Gets the id_parentesco of this AdicionalUpdate.
@@ -375,35 +297,13 @@ class AdicionalUpdate(object):
         self._id_parentesco = id_parentesco
 
     @property
-    def email(self):
-        """
-        Gets the email of this AdicionalUpdate.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do Parentesco do Adicional com o Titular.
-
-        :return: The email of this AdicionalUpdate.
-        :rtype: str
-        """
-        return self._email
-
-    @email.setter
-    def email(self, email):
-        """
-        Sets the email of this AdicionalUpdate.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do Parentesco do Adicional com o Titular.
-
-        :param email: The email of this AdicionalUpdate.
-        :type: str
-        """
-        self._email = email
-
-    @property
     def telefones(self):
         """
         Gets the telefones of this AdicionalUpdate.
         Lista de telefones do adicional.
 
         :return: The telefones of this AdicionalUpdate.
-        :rtype: list[TelefoneAdicionalPersist]
+        :rtype: list[TelefoneAdicionalUpdate]
         """
         return self._telefones
 
@@ -414,7 +314,7 @@ class AdicionalUpdate(object):
         Lista de telefones do adicional.
 
         :param telefones: The telefones of this AdicionalUpdate.
-        :type: list[TelefoneAdicionalPersist]
+        :type: list[TelefoneAdicionalUpdate]
         """
         self._telefones = telefones
 

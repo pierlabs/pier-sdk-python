@@ -1,10 +1,12 @@
 from __future__ import absolute_import
 
 # import models into model package
+from .adicional_detalhe_response import AdicionalDetalheResponse
 from .adicional_persist import AdicionalPersist
 from .adicional_response import AdicionalResponse
 from .adicional_update import AdicionalUpdate
 from .ajuste_response import AjusteResponse
+from .alterar_produto_request import AlterarProdutoRequest
 from .antecipacao_response import AntecipacaoResponse
 from .antecipacao_simulada_detalhes_response import AntecipacaoSimuladaDetalhesResponse
 from .antecipacao_simulada_response import AntecipacaoSimuladaResponse
@@ -27,6 +29,9 @@ from .boleto_response import BoletoResponse
 from .campo_codificado_descricao_response import CampoCodificadoDescricaoResponse
 from .cancelamento_transacao_on_us_request import CancelamentoTransacaoOnUsRequest
 from .cartao_detalhe_response import CartaoDetalheResponse
+from .cartao_embossing_request import CartaoEmbossingRequest
+from .cartao_embossing_response import CartaoEmbossingResponse
+from .cartao_impressao_provisorio_response import CartaoImpressaoProvisorioResponse
 from .cartao_impressao_response import CartaoImpressaoResponse
 from .cartao_response import CartaoResponse
 from .cdt_detalhe_oportunidade_aud import CdtDetalheOportunidadeAUD
@@ -49,6 +54,8 @@ from .detalhes_fatura_response import DetalhesFaturaResponse
 from .dispositivo_persist import DispositivoPersist
 from .dispositivo_response import DispositivoResponse
 from .divida_cliente_response import DividaClienteResponse
+from .emprestimo_pessoal_request import EmprestimoPessoalRequest
+from .emprestimo_pessoal_response import EmprestimoPessoalResponse
 from .endereco_aprovado_persist import EnderecoAprovadoPersist
 from .endereco_aprovado_response import EnderecoAprovadoResponse
 from .endereco_response import EnderecoResponse
@@ -137,6 +144,7 @@ from .page_tipo_endereco_response import PageTipoEnderecoResponse
 from .page_tipo_oportunidade_aud_response import PageTipoOportunidadeAUDResponse
 from .page_tipo_oportunidade_response import PageTipoOportunidadeResponse
 from .page_tipo_telefone_response import PageTipoTelefoneResponse
+from .page_transacao_nao_processada_response import PageTransacaoNaoProcessadaResponse
 from .page_transacao_response import PageTransacaoResponse
 from .page_transacoes_correntes_response import PageTransacoesCorrentesResponse
 from .page_transferencia_bancaria_response import PageTransferenciaBancariaResponse
@@ -152,6 +160,7 @@ from .pessoa_juridica_aprovada_persist import PessoaJuridicaAprovadaPersist
 from .pessoa_juridica_aprovada_response import PessoaJuridicaAprovadaResponse
 from .pessoa_persist import PessoaPersist
 from .pessoa_response import PessoaResponse
+from .plano_parcelamento_emprestimo_response import PlanoParcelamentoEmprestimoResponse
 from .plano_parcelamento_response import PlanoParcelamentoResponse
 from .plataforma_mobile_persist import PlataformaMobilePersist
 from .plataforma_mobile_response import PlataformaMobileResponse
@@ -175,6 +184,7 @@ from .status_oportunidade_response import StatusOportunidadeResponse
 from .taxa_antecipacao_request import TaxaAntecipacaoRequest
 from .taxas_refinanciamento_response import TaxasRefinanciamentoResponse
 from .telefone_adicional_persist import TelefoneAdicionalPersist
+from .telefone_adicional_update import TelefoneAdicionalUpdate
 from .telefone_pessoa_aprovada_persist import TelefonePessoaAprovadaPersist
 from .telefone_pessoa_aprovada_response import TelefonePessoaAprovadaResponse
 from .telefone_response import TelefoneResponse
@@ -183,6 +193,7 @@ from .terminal_response import TerminalResponse
 from .tipo_ajuste_response import TipoAjusteResponse
 from .tipo_boleto_response import TipoBoletoResponse
 from .tipo_endereco_response import TipoEnderecoResponse
+from .tipo_operacao_response import TipoOperacaoResponse
 from .tipo_oportunidade import TipoOportunidade
 from .tipo_oportunidade_aud_response import TipoOportunidadeAUDResponse
 from .tipo_oportunidade_response import TipoOportunidadeResponse
@@ -190,6 +201,8 @@ from .tipo_resolucao_response import TipoResolucaoResponse
 from .tipo_telefone_response import TipoTelefoneResponse
 from .token_response import TokenResponse
 from .transacao_corrente_response import TransacaoCorrenteResponse
+from .transacao_nao_processada_response import TransacaoNaoProcessadaResponse
+from .transacao_on_us_por_id_cartao_request import TransacaoOnUsPorIdCartaoRequest
 from .transacao_on_us_request import TransacaoOnUsRequest
 from .transacao_on_us_response import TransacaoOnUsResponse
 from .transacoes_correntes_response import TransacoesCorrentesResponse

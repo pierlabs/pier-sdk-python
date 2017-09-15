@@ -131,7 +131,7 @@ class TemplateNotificacaoResponse(object):
         :param tipo_layout: The tipo_layout of this TemplateNotificacaoResponse.
         :type: str
         """
-        allowed_values = ["RECUPERAR_SENHA", "VALIDAR_DISPOSITIVO"]
+        allowed_values = ["RECUPERAR_SENHA", "FATURA_POR_EMAIL", "VALIDAR_DISPOSITIVO"]
         if tipo_layout not in allowed_values:
             raise ValueError(
                 "Invalid value for `tipo_layout`, must be one of {0}"
