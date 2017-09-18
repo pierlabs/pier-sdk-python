@@ -28,6 +28,7 @@ from .models.body_access_token import BodyAccessToken
 from .models.boleto_response import BoletoResponse
 from .models.campo_codificado_descricao_response import CampoCodificadoDescricaoResponse
 from .models.cancelamento_transacao_on_us_request import CancelamentoTransacaoOnUsRequest
+from .models.cancelamento_transacao_por_id_cartao_request import CancelamentoTransacaoPorIdCartaoRequest
 from .models.cartao_detalhe_response import CartaoDetalheResponse
 from .models.cartao_embossing_request import CartaoEmbossingRequest
 from .models.cartao_embossing_response import CartaoEmbossingResponse
@@ -193,7 +194,6 @@ from .models.terminal_response import TerminalResponse
 from .models.tipo_ajuste_response import TipoAjusteResponse
 from .models.tipo_boleto_response import TipoBoletoResponse
 from .models.tipo_endereco_response import TipoEnderecoResponse
-from .models.tipo_operacao_response import TipoOperacaoResponse
 from .models.tipo_oportunidade import TipoOportunidade
 from .models.tipo_oportunidade_aud_response import TipoOportunidadeAUDResponse
 from .models.tipo_oportunidade_response import TipoOportunidadeResponse

@@ -308,7 +308,7 @@ class MockApi(object):
             for asynchronous request. (optional)
         :param int id: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da conta (id). (required)
         :param str data_vencimento: Data de Vencimento da fatura. (required)
-        :return: list[ByteArray]
+        :return: object
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -369,7 +369,7 @@ class MockApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='list[ByteArray]',
+                                            response_type='object',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response

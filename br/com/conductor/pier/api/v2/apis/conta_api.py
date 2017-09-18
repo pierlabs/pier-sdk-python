@@ -1427,7 +1427,7 @@ class ContaApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get26(self, id, id_transferencia, **kwargs):
+    def consultar_using_get25(self, id, id_transferencia, **kwargs):
         """
         Consultar uma transfer\u00C3\u00AAncia banc\u00C3\u00A1ria para um banco
         Este recurso permite consultar os detalhes de uma determinada transfer\u00C3\u00AAncia de cr\u00C3\u00A9dito realizada para uma conta banc\u00C3\u00A1ria. De modo geral, esta opera\u00C3\u00A7\u00C3\u00A3o poder\u00C3\u00A1 ser utilizada para uma consulta simples destes detalhes ou para realizar a montagem de um comprovante de 2\u00C2\u00AA via de transfer\u00C3\u00AAncia entre contas.
@@ -1438,7 +1438,7 @@ class ContaApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get26(id, id_transferencia, callback=callback_function)
+        >>> thread = api.consultar_using_get25(id, id_transferencia, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -1458,17 +1458,17 @@ class ContaApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get26" % key
+                    " to method consultar_using_get25" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get26`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get25`")
         # verify the required parameter 'id_transferencia' is set
         if ('id_transferencia' not in params) or (params['id_transferencia'] is None):
-            raise ValueError("Missing the required parameter `id_transferencia` when calling `consultar_using_get26`")
+            raise ValueError("Missing the required parameter `id_transferencia` when calling `consultar_using_get25`")
 
         resource_path = '/api/contas/{id}/transferencias-creditos-contas-bancarias/{id_transferencia}'.replace('{format}', 'json')
         path_params = {}
@@ -1513,7 +1513,7 @@ class ContaApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get27(self, id, id_transferencia, **kwargs):
+    def consultar_using_get26(self, id, id_transferencia, **kwargs):
         """
         Consulta os detalhes de uma determinada transfer\u00C3\u00AAncia
         Este m\u00C3\u00A9todo permite consultar os detalhes de uma determinada transfer\u00C3\u00AAncia de cr\u00C3\u00A9dito realizada entre contas.
@@ -1524,7 +1524,7 @@ class ContaApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get27(id, id_transferencia, callback=callback_function)
+        >>> thread = api.consultar_using_get26(id, id_transferencia, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -1543,17 +1543,17 @@ class ContaApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get27" % key
+                    " to method consultar_using_get26" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get27`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get26`")
         # verify the required parameter 'id_transferencia' is set
         if ('id_transferencia' not in params) or (params['id_transferencia'] is None):
-            raise ValueError("Missing the required parameter `id_transferencia` when calling `consultar_using_get27`")
+            raise ValueError("Missing the required parameter `id_transferencia` when calling `consultar_using_get26`")
 
         resource_path = '/api/contas/{id}/transferencias-creditos-cartoes/{id_transferencia}'.replace('{format}', 'json')
         path_params = {}

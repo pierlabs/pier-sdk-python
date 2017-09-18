@@ -771,96 +771,7 @@ class CadastroGeralApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get22(self, id_cartao, id_estabelecimento, codigo_processamento, **kwargs):
-        """
-        Apresenta dados de um determinado tipo de opera\u00C3\u00A7\u00C3\u00A3o
-        Este recurso permite consultar dados de um determinado tipo opera\u00C3\u00A7\u00C3\u00A3o a partir do idCartao, idEstabelecimento e codigoProcessamento.
-
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
-        >>> thread = api.consultar_using_get22(id_cartao, id_estabelecimento, codigo_processamento, callback=callback_function)
-
-        :param callback function: The callback function
-            for asynchronous request. (optional)
-        :param int id_cartao: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do cartao (idCartao). (required)
-        :param int id_estabelecimento: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do estabelecimento (idEstabelecimento). (required)
-        :param str codigo_processamento: C\u00C3\u00B3digo de processamento da opera\u00C3\u00A7\u00C3\u00A3o. (required)
-        :return: TipoOperacaoResponse
-                 If the method is called asynchronously,
-                 returns the request thread.
-        """
-
-        all_params = ['id_cartao', 'id_estabelecimento', 'codigo_processamento']
-        all_params.append('callback')
-
-        params = locals()
-        for key, val in iteritems(params['kwargs']):
-            if key not in all_params:
-                raise TypeError(
-                    "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get22" % key
-                )
-            params[key] = val
-        del params['kwargs']
-
-        # verify the required parameter 'id_cartao' is set
-        if ('id_cartao' not in params) or (params['id_cartao'] is None):
-            raise ValueError("Missing the required parameter `id_cartao` when calling `consultar_using_get22`")
-        # verify the required parameter 'id_estabelecimento' is set
-        if ('id_estabelecimento' not in params) or (params['id_estabelecimento'] is None):
-            raise ValueError("Missing the required parameter `id_estabelecimento` when calling `consultar_using_get22`")
-        # verify the required parameter 'codigo_processamento' is set
-        if ('codigo_processamento' not in params) or (params['codigo_processamento'] is None):
-            raise ValueError("Missing the required parameter `codigo_processamento` when calling `consultar_using_get22`")
-
-        resource_path = '/api/tipo-operacao'.replace('{format}', 'json')
-        path_params = {}
-
-        query_params = {}
-        if 'id_cartao' in params:
-            query_params['idCartao'] = params['id_cartao']
-        if 'id_estabelecimento' in params:
-            query_params['idEstabelecimento'] = params['id_estabelecimento']
-        if 'codigo_processamento' in params:
-            query_params['codigoProcessamento'] = params['codigo_processamento']
-
-        header_params = {}
-
-        form_params = []
-        local_var_files = {}
-
-        body_params = None
-
-        # HTTP header `Accept`
-        header_params['Accept'] = self.api_client.\
-            select_header_accept(['application/json'])
-        if not header_params['Accept']:
-            del header_params['Accept']
-
-        # HTTP header `Content-Type`
-        header_params['Content-Type'] = self.api_client.\
-            select_header_content_type(['application/json'])
-
-        # Authentication setting
-        auth_settings = []
-
-        response = self.api_client.call_api(resource_path, 'GET',
-                                            path_params,
-                                            query_params,
-                                            header_params,
-                                            body=body_params,
-                                            post_params=form_params,
-                                            files=local_var_files,
-                                            response_type='TipoOperacaoResponse',
-                                            auth_settings=auth_settings,
-                                            callback=params.get('callback'))
-        return response
-
-    def consultar_using_get24(self, id, **kwargs):
+    def consultar_using_get23(self, id, **kwargs):
         """
         Apresenta os dados de um determinado Tipo de Telefone
         Este m\u00C3\u00A9todo permite consultar um determinado Tipo de Telefone a partir do seu c\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o (id).
@@ -871,7 +782,7 @@ class CadastroGeralApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get24(id, callback=callback_function)
+        >>> thread = api.consultar_using_get23(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -889,14 +800,14 @@ class CadastroGeralApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get24" % key
+                    " to method consultar_using_get23" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get24`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get23`")
 
         resource_path = '/api/tipos-telefones/{id}'.replace('{format}', 'json')
         path_params = {}
