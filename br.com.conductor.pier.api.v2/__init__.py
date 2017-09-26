@@ -24,6 +24,7 @@ from .models.auth_token import AuthToken
 from .models.autorizacao_on_us_request import AutorizacaoOnUsRequest
 from .models.banco_response import BancoResponse
 from .models.base_response import BaseResponse
+from .models.beneficio_pagamento_atraso_response import BeneficioPagamentoAtrasoResponse
 from .models.body_access_token import BodyAccessToken
 from .models.boleto_response import BoletoResponse
 from .models.campo_codificado_descricao_response import CampoCodificadoDescricaoResponse
@@ -55,6 +56,13 @@ from .models.detalhes_fatura_response import DetalhesFaturaResponse
 from .models.dispositivo_persist import DispositivoPersist
 from .models.dispositivo_response import DispositivoResponse
 from .models.divida_cliente_response import DividaClienteResponse
+from .models.documento_detalhe_response import DocumentoDetalheResponse
+from .models.documento_parametros_request import DocumentoParametrosRequest
+from .models.documento_response import DocumentoResponse
+from .models.documento_template_request import DocumentoTemplateRequest
+from .models.documento_template_response import DocumentoTemplateResponse
+from .models.documento_tipo_request import DocumentoTipoRequest
+from .models.documento_tipo_response import DocumentoTipoResponse
 from .models.emprestimo_pessoal_request import EmprestimoPessoalRequest
 from .models.emprestimo_pessoal_response import EmprestimoPessoalResponse
 from .models.endereco_aprovado_persist import EnderecoAprovadoPersist
@@ -79,6 +87,8 @@ from .models.job_response import JobResponse
 from .models.limite_disponibilidade_response import LimiteDisponibilidadeResponse
 from .models.lote_cartoes_pre_pagos_response import LoteCartoesPrePagosResponse
 from .models.map_ofstring_andstring import MapOfstringAndstring
+from .models.notificacao_email_request import NotificacaoEmailRequest
+from .models.notificacao_email_response import NotificacaoEmailResponse
 from .models.notificacao_push_response import NotificacaoPushResponse
 from .models.notificacao_response import NotificacaoResponse
 from .models.notificacao_sms_body import NotificacaoSMSBody
@@ -227,6 +237,7 @@ from .apis.cadastro_geral_api import CadastroGeralApi
 from .apis.cartao_api import CartaoApi
 from .apis.conta_api import ContaApi
 from .apis.dispositivo_api import DispositivoApi
+from .apis.documentos_api import DocumentosApi
 from .apis.endereco_nacional_api import EnderecoNacionalApi
 from .apis.estabelecimento_api import EstabelecimentoApi
 from .apis.faq_api import FAQApi

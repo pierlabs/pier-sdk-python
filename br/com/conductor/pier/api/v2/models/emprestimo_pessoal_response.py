@@ -39,27 +39,36 @@ class EmprestimoPessoalResponse(object):
         self.swagger_types = {
             'planos_parcelamentos': 'list[PlanoParcelamentoEmprestimoResponse]',
             'valor_solicitado': 'float',
-            'valor_total': 'float',
-            'sistema_amortizacao': 'str',
+            'valor_maximo_solicitacao': 'float',
+            'numero_parcelas': 'int',
+            'valor_maximo_parcela': 'float',
+            'data_primeira_parcela': 'str',
             'periodo_taxa': 'str',
-            'data_primeira_parcela': 'str'
+            'sistema_amortizacao': 'str',
+            'taxa_juros': 'float'
         }
 
         self.attribute_map = {
             'planos_parcelamentos': 'planosParcelamentos',
             'valor_solicitado': 'valorSolicitado',
-            'valor_total': 'valorTotal',
-            'sistema_amortizacao': 'sistemaAmortizacao',
+            'valor_maximo_solicitacao': 'valorMaximoSolicitacao',
+            'numero_parcelas': 'numeroParcelas',
+            'valor_maximo_parcela': 'valorMaximoParcela',
+            'data_primeira_parcela': 'dataPrimeiraParcela',
             'periodo_taxa': 'periodoTaxa',
-            'data_primeira_parcela': 'dataPrimeiraParcela'
+            'sistema_amortizacao': 'sistemaAmortizacao',
+            'taxa_juros': 'taxaJuros'
         }
 
         self._planos_parcelamentos = None
         self._valor_solicitado = None
-        self._valor_total = None
-        self._sistema_amortizacao = None
-        self._periodo_taxa = None
+        self._valor_maximo_solicitacao = None
+        self._numero_parcelas = None
+        self._valor_maximo_parcela = None
         self._data_primeira_parcela = None
+        self._periodo_taxa = None
+        self._sistema_amortizacao = None
+        self._taxa_juros = None
 
     @property
     def planos_parcelamentos(self):
@@ -106,48 +115,92 @@ class EmprestimoPessoalResponse(object):
         self._valor_solicitado = valor_solicitado
 
     @property
-    def valor_total(self):
+    def valor_maximo_solicitacao(self):
         """
-        Gets the valor_total of this EmprestimoPessoalResponse.
-        Valor total do empr\u00C3\u00A9stimo/financiamento
+        Gets the valor_maximo_solicitacao of this EmprestimoPessoalResponse.
+        Valor m\u00C3\u00A1ximo de empr\u00C3\u00A9stimo pelo valor limite de parcela
 
-        :return: The valor_total of this EmprestimoPessoalResponse.
+        :return: The valor_maximo_solicitacao of this EmprestimoPessoalResponse.
         :rtype: float
         """
-        return self._valor_total
+        return self._valor_maximo_solicitacao
 
-    @valor_total.setter
-    def valor_total(self, valor_total):
+    @valor_maximo_solicitacao.setter
+    def valor_maximo_solicitacao(self, valor_maximo_solicitacao):
         """
-        Sets the valor_total of this EmprestimoPessoalResponse.
-        Valor total do empr\u00C3\u00A9stimo/financiamento
+        Sets the valor_maximo_solicitacao of this EmprestimoPessoalResponse.
+        Valor m\u00C3\u00A1ximo de empr\u00C3\u00A9stimo pelo valor limite de parcela
 
-        :param valor_total: The valor_total of this EmprestimoPessoalResponse.
+        :param valor_maximo_solicitacao: The valor_maximo_solicitacao of this EmprestimoPessoalResponse.
         :type: float
         """
-        self._valor_total = valor_total
+        self._valor_maximo_solicitacao = valor_maximo_solicitacao
 
     @property
-    def sistema_amortizacao(self):
+    def numero_parcelas(self):
         """
-        Gets the sistema_amortizacao of this EmprestimoPessoalResponse.
-        Sistema para amortiza\u00C3\u00A7\u00C3\u00A3o do valor das parcelas
+        Gets the numero_parcelas of this EmprestimoPessoalResponse.
+        N\u00C3\u00BAmero de parcelas solicitado
 
-        :return: The sistema_amortizacao of this EmprestimoPessoalResponse.
+        :return: The numero_parcelas of this EmprestimoPessoalResponse.
+        :rtype: int
+        """
+        return self._numero_parcelas
+
+    @numero_parcelas.setter
+    def numero_parcelas(self, numero_parcelas):
+        """
+        Sets the numero_parcelas of this EmprestimoPessoalResponse.
+        N\u00C3\u00BAmero de parcelas solicitado
+
+        :param numero_parcelas: The numero_parcelas of this EmprestimoPessoalResponse.
+        :type: int
+        """
+        self._numero_parcelas = numero_parcelas
+
+    @property
+    def valor_maximo_parcela(self):
+        """
+        Gets the valor_maximo_parcela of this EmprestimoPessoalResponse.
+        Limite m\u00C3\u00A1ximo de parcela permitido
+
+        :return: The valor_maximo_parcela of this EmprestimoPessoalResponse.
+        :rtype: float
+        """
+        return self._valor_maximo_parcela
+
+    @valor_maximo_parcela.setter
+    def valor_maximo_parcela(self, valor_maximo_parcela):
+        """
+        Sets the valor_maximo_parcela of this EmprestimoPessoalResponse.
+        Limite m\u00C3\u00A1ximo de parcela permitido
+
+        :param valor_maximo_parcela: The valor_maximo_parcela of this EmprestimoPessoalResponse.
+        :type: float
+        """
+        self._valor_maximo_parcela = valor_maximo_parcela
+
+    @property
+    def data_primeira_parcela(self):
+        """
+        Gets the data_primeira_parcela of this EmprestimoPessoalResponse.
+        Data do desconto da primeira parcela
+
+        :return: The data_primeira_parcela of this EmprestimoPessoalResponse.
         :rtype: str
         """
-        return self._sistema_amortizacao
+        return self._data_primeira_parcela
 
-    @sistema_amortizacao.setter
-    def sistema_amortizacao(self, sistema_amortizacao):
+    @data_primeira_parcela.setter
+    def data_primeira_parcela(self, data_primeira_parcela):
         """
-        Sets the sistema_amortizacao of this EmprestimoPessoalResponse.
-        Sistema para amortiza\u00C3\u00A7\u00C3\u00A3o do valor das parcelas
+        Sets the data_primeira_parcela of this EmprestimoPessoalResponse.
+        Data do desconto da primeira parcela
 
-        :param sistema_amortizacao: The sistema_amortizacao of this EmprestimoPessoalResponse.
+        :param data_primeira_parcela: The data_primeira_parcela of this EmprestimoPessoalResponse.
         :type: str
         """
-        self._sistema_amortizacao = sistema_amortizacao
+        self._data_primeira_parcela = data_primeira_parcela
 
     @property
     def periodo_taxa(self):
@@ -172,26 +225,48 @@ class EmprestimoPessoalResponse(object):
         self._periodo_taxa = periodo_taxa
 
     @property
-    def data_primeira_parcela(self):
+    def sistema_amortizacao(self):
         """
-        Gets the data_primeira_parcela of this EmprestimoPessoalResponse.
-        Data da primeira parcela do empr\u00C3\u00A9stimo/financiamento
+        Gets the sistema_amortizacao of this EmprestimoPessoalResponse.
+        Sistema para amortiza\u00C3\u00A7\u00C3\u00A3o do valor das parcelas
 
-        :return: The data_primeira_parcela of this EmprestimoPessoalResponse.
+        :return: The sistema_amortizacao of this EmprestimoPessoalResponse.
         :rtype: str
         """
-        return self._data_primeira_parcela
+        return self._sistema_amortizacao
 
-    @data_primeira_parcela.setter
-    def data_primeira_parcela(self, data_primeira_parcela):
+    @sistema_amortizacao.setter
+    def sistema_amortizacao(self, sistema_amortizacao):
         """
-        Sets the data_primeira_parcela of this EmprestimoPessoalResponse.
-        Data da primeira parcela do empr\u00C3\u00A9stimo/financiamento
+        Sets the sistema_amortizacao of this EmprestimoPessoalResponse.
+        Sistema para amortiza\u00C3\u00A7\u00C3\u00A3o do valor das parcelas
 
-        :param data_primeira_parcela: The data_primeira_parcela of this EmprestimoPessoalResponse.
+        :param sistema_amortizacao: The sistema_amortizacao of this EmprestimoPessoalResponse.
         :type: str
         """
-        self._data_primeira_parcela = data_primeira_parcela
+        self._sistema_amortizacao = sistema_amortizacao
+
+    @property
+    def taxa_juros(self):
+        """
+        Gets the taxa_juros of this EmprestimoPessoalResponse.
+        Valor percentual da taxa de juros a ser aplicada
+
+        :return: The taxa_juros of this EmprestimoPessoalResponse.
+        :rtype: float
+        """
+        return self._taxa_juros
+
+    @taxa_juros.setter
+    def taxa_juros(self, taxa_juros):
+        """
+        Sets the taxa_juros of this EmprestimoPessoalResponse.
+        Valor percentual da taxa de juros a ser aplicada
+
+        :param taxa_juros: The taxa_juros of this EmprestimoPessoalResponse.
+        :type: float
+        """
+        self._taxa_juros = taxa_juros
 
     def to_dict(self):
         """

@@ -148,13 +148,14 @@ class NotificacaoApi(object):
         :param int id_configuracao_email: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da configra\u00C3\u00A7\u00C3\u00A3o de EMAIL.
         :param str tipo_layout: Tipo do layout.
         :param str tipo_notificacao: Tipo da notifica\u00C3\u00A7\u00C3\u00A3o.
+        :param str remetente: Remetente
         :param str assunto: Assunto da Notificaca\u00C3\u00A7\u00C3\u00A3o.
         :return: TemplateNotificacaoResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['id', 'conteudo', 'id_configuracao_email', 'tipo_layout', 'tipo_notificacao', 'assunto']
+        all_params = ['id', 'conteudo', 'id_configuracao_email', 'tipo_layout', 'tipo_notificacao', 'remetente', 'assunto']
         all_params.append('callback')
 
         params = locals()
@@ -186,6 +187,8 @@ class NotificacaoApi(object):
             query_params['tipoLayout'] = params['tipo_layout']
         if 'tipo_notificacao' in params:
             query_params['tipoNotificacao'] = params['tipo_notificacao']
+        if 'remetente' in params:
+            query_params['remetente'] = params['remetente']
         if 'assunto' in params:
             query_params['assunto'] = params['assunto']
 
@@ -964,6 +967,83 @@ class NotificacaoApi(object):
                                             callback=params.get('callback'))
         return response
 
+    def notificacao_email_using_post(self, request, **kwargs):
+        """
+        Enviar notifica\u00C3\u00A7\u00C3\u00A3o por email
+        Esse recurso permite enviar uma mensagem de notifica\u00C3\u00A7\u00C3\u00A3o por email
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.notificacao_email_using_post(request, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param NotificacaoEmailRequest request: request (required)
+        :return: NotificacaoEmailResponse
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['request']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method notificacao_email_using_post" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        # verify the required parameter 'request' is set
+        if ('request' not in params) or (params['request'] is None):
+            raise ValueError("Missing the required parameter `request` when calling `notificacao_email_using_post`")
+
+        resource_path = '/api/notificacoes-email'.replace('{format}', 'json')
+        path_params = {}
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        if 'request' in params:
+            body_params = params['request']
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = []
+
+        response = self.api_client.call_api(resource_path, 'POST',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='NotificacaoEmailResponse',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
     def responder_sms_using_post(self, **kwargs):
         """
         Responder SMS
@@ -1448,13 +1528,14 @@ class NotificacaoApi(object):
         :param int id_configuracao_email: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da configra\u00C3\u00A7\u00C3\u00A3o de EMAIL.
         :param str tipo_layout: Tipo do layout.
         :param str tipo_notificacao: Tipo da notifica\u00C3\u00A7\u00C3\u00A3o.
+        :param str remetente: Remetente
         :param str assunto: Assunto da Notificaca\u00C3\u00A7\u00C3\u00A3o.
         :return: TemplateNotificacaoResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['conteudo', 'id_configuracao_email', 'tipo_layout', 'tipo_notificacao', 'assunto']
+        all_params = ['conteudo', 'id_configuracao_email', 'tipo_layout', 'tipo_notificacao', 'remetente', 'assunto']
         all_params.append('callback')
 
         params = locals()
@@ -1481,6 +1562,8 @@ class NotificacaoApi(object):
             query_params['tipoLayout'] = params['tipo_layout']
         if 'tipo_notificacao' in params:
             query_params['tipoNotificacao'] = params['tipo_notificacao']
+        if 'remetente' in params:
+            query_params['remetente'] = params['remetente']
         if 'assunto' in params:
             query_params['assunto'] = params['assunto']
 

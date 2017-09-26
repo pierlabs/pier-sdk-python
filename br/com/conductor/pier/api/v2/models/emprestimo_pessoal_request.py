@@ -42,7 +42,6 @@ class EmprestimoPessoalRequest(object):
             'taxa_juros': 'float',
             'periodo_taxa': 'str',
             'sistema_amortizacao': 'str',
-            'dia_vencimento': 'int',
             'numero_meses_carencia': 'int'
         }
 
@@ -52,7 +51,6 @@ class EmprestimoPessoalRequest(object):
             'taxa_juros': 'taxaJuros',
             'periodo_taxa': 'periodoTaxa',
             'sistema_amortizacao': 'sistemaAmortizacao',
-            'dia_vencimento': 'diaVencimento',
             'numero_meses_carencia': 'numeroMesesCarencia'
         }
 
@@ -61,7 +59,6 @@ class EmprestimoPessoalRequest(object):
         self._taxa_juros = None
         self._periodo_taxa = None
         self._sistema_amortizacao = None
-        self._dia_vencimento = None
         self._numero_meses_carencia = None
 
     @property
@@ -173,28 +170,6 @@ class EmprestimoPessoalRequest(object):
         :type: str
         """
         self._sistema_amortizacao = sistema_amortizacao
-
-    @property
-    def dia_vencimento(self):
-        """
-        Gets the dia_vencimento of this EmprestimoPessoalRequest.
-        Dia para cobran\u00C3\u00A7a da primeira parcela
-
-        :return: The dia_vencimento of this EmprestimoPessoalRequest.
-        :rtype: int
-        """
-        return self._dia_vencimento
-
-    @dia_vencimento.setter
-    def dia_vencimento(self, dia_vencimento):
-        """
-        Sets the dia_vencimento of this EmprestimoPessoalRequest.
-        Dia para cobran\u00C3\u00A7a da primeira parcela
-
-        :param dia_vencimento: The dia_vencimento of this EmprestimoPessoalRequest.
-        :type: int
-        """
-        self._dia_vencimento = dia_vencimento
 
     @property
     def numero_meses_carencia(self):

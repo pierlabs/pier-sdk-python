@@ -1962,7 +1962,87 @@ class CadastroClienteApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def salvar_using_post10(self, id_pessoa, **kwargs):
+    def salvar_using_post10(self, id, **kwargs):
+        """
+        Inclui a conta como registro para integra\u00C3\u00A7\u00C3\u00A3o
+        Este recurso permite incluir uma conta como registro para integra\u00C3\u00A7\u00C3\u00A3o.
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.salvar_using_post10(id, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param int id: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da conta (id). (required)
+        :param IntegracaoEmissorPersist body: Descri\u00C3\u00A7\u00C3\u00A3o do canal de entrada
+        :return: IntegracaoEmissorResponse
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'body']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method salvar_using_post10" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `salvar_using_post10`")
+
+        resource_path = '/api/contas/{id}/incluir-registro-integracao'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        if 'body' in params:
+            body_params = params['body']
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = []
+
+        response = self.api_client.call_api(resource_path, 'POST',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='IntegracaoEmissorResponse',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
+    def salvar_using_post13(self, id_pessoa, **kwargs):
         """
         Salvar os detalhes de uma determinada Pessoa
         Este m\u00C3\u00A9todo permite que seja incluido na base do emissor os detalhes de uma determinada Pessoa.
@@ -1973,7 +2053,7 @@ class CadastroClienteApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.salvar_using_post10(id_pessoa, callback=callback_function)
+        >>> thread = api.salvar_using_post13(id_pessoa, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -2000,14 +2080,14 @@ class CadastroClienteApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method salvar_using_post10" % key
+                    " to method salvar_using_post13" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id_pessoa' is set
         if ('id_pessoa' not in params) or (params['id_pessoa'] is None):
-            raise ValueError("Missing the required parameter `id_pessoa` when calling `salvar_using_post10`")
+            raise ValueError("Missing the required parameter `id_pessoa` when calling `salvar_using_post13`")
 
         resource_path = '/api/pessoas-detalhes'.replace('{format}', 'json')
         path_params = {}
@@ -2066,7 +2146,7 @@ class CadastroClienteApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def salvar_using_post11(self, nome, tipo, **kwargs):
+    def salvar_using_post14(self, nome, tipo, **kwargs):
         """
         Realiza o cadastro de um nova Pessoa
         Este m\u00C3\u00A9todo permite que seja cadastrado uma nova Pessoa na base de dados do Emissor.
@@ -2077,7 +2157,7 @@ class CadastroClienteApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.salvar_using_post11(nome, tipo, callback=callback_function)
+        >>> thread = api.salvar_using_post14(nome, tipo, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -2104,17 +2184,17 @@ class CadastroClienteApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method salvar_using_post11" % key
+                    " to method salvar_using_post14" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'nome' is set
         if ('nome' not in params) or (params['nome'] is None):
-            raise ValueError("Missing the required parameter `nome` when calling `salvar_using_post11`")
+            raise ValueError("Missing the required parameter `nome` when calling `salvar_using_post14`")
         # verify the required parameter 'tipo' is set
         if ('tipo' not in params) or (params['tipo'] is None):
-            raise ValueError("Missing the required parameter `tipo` when calling `salvar_using_post11`")
+            raise ValueError("Missing the required parameter `tipo` when calling `salvar_using_post14`")
 
         resource_path = '/api/pessoas'.replace('{format}', 'json')
         path_params = {}
@@ -2173,7 +2253,7 @@ class CadastroClienteApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def salvar_using_post13(self, **kwargs):
+    def salvar_using_post16(self, **kwargs):
         """
         Realiza o cadastro de um novo Telefone
         Este m\u00C3\u00A9todo permite que seja cadastrado um novo Telefone na base de dados do Emissor.
@@ -2184,7 +2264,7 @@ class CadastroClienteApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.salvar_using_post13(callback=callback_function)
+        >>> thread = api.salvar_using_post16(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -2206,7 +2286,7 @@ class CadastroClienteApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method salvar_using_post13" % key
+                    " to method salvar_using_post16" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -2259,7 +2339,7 @@ class CadastroClienteApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def salvar_using_post5(self, **kwargs):
+    def salvar_using_post8(self, **kwargs):
         """
         Realiza o cadastro de um novo Endere\u00C3\u00A7o
         Este m\u00C3\u00A9todo permite que seja cadastrado um novo Endere\u00C3\u00A7o na base de dados do Emissor.
@@ -2270,7 +2350,7 @@ class CadastroClienteApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.salvar_using_post5(callback=callback_function)
+        >>> thread = api.salvar_using_post8(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -2298,7 +2378,7 @@ class CadastroClienteApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method salvar_using_post5" % key
+                    " to method salvar_using_post8" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -2359,86 +2439,6 @@ class CadastroClienteApi(object):
                                             post_params=form_params,
                                             files=local_var_files,
                                             response_type='EnderecoResponse',
-                                            auth_settings=auth_settings,
-                                            callback=params.get('callback'))
-        return response
-
-    def salvar_using_post7(self, id, **kwargs):
-        """
-        Inclui a conta como registro para integra\u00C3\u00A7\u00C3\u00A3o
-        Este recurso permite incluir uma conta como registro para integra\u00C3\u00A7\u00C3\u00A3o.
-
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
-        >>> thread = api.salvar_using_post7(id, callback=callback_function)
-
-        :param callback function: The callback function
-            for asynchronous request. (optional)
-        :param int id: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da conta (id). (required)
-        :param IntegracaoEmissorPersist body: Descri\u00C3\u00A7\u00C3\u00A3o do canal de entrada
-        :return: IntegracaoEmissorResponse
-                 If the method is called asynchronously,
-                 returns the request thread.
-        """
-
-        all_params = ['id', 'body']
-        all_params.append('callback')
-
-        params = locals()
-        for key, val in iteritems(params['kwargs']):
-            if key not in all_params:
-                raise TypeError(
-                    "Got an unexpected keyword argument '%s'"
-                    " to method salvar_using_post7" % key
-                )
-            params[key] = val
-        del params['kwargs']
-
-        # verify the required parameter 'id' is set
-        if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `salvar_using_post7`")
-
-        resource_path = '/api/contas/{id}/incluir-registro-integracao'.replace('{format}', 'json')
-        path_params = {}
-        if 'id' in params:
-            path_params['id'] = params['id']
-
-        query_params = {}
-
-        header_params = {}
-
-        form_params = []
-        local_var_files = {}
-
-        body_params = None
-        if 'body' in params:
-            body_params = params['body']
-
-        # HTTP header `Accept`
-        header_params['Accept'] = self.api_client.\
-            select_header_accept(['application/json'])
-        if not header_params['Accept']:
-            del header_params['Accept']
-
-        # HTTP header `Content-Type`
-        header_params['Content-Type'] = self.api_client.\
-            select_header_content_type(['application/json'])
-
-        # Authentication setting
-        auth_settings = []
-
-        response = self.api_client.call_api(resource_path, 'POST',
-                                            path_params,
-                                            query_params,
-                                            header_params,
-                                            body=body_params,
-                                            post_params=form_params,
-                                            files=local_var_files,
-                                            response_type='IntegracaoEmissorResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response

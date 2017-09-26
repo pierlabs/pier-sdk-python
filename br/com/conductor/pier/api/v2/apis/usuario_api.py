@@ -45,6 +45,89 @@ class UsuarioApi(object):
                 config.api_client = ApiClient()
             self.api_client = config.api_client
 
+    def alterar_senha_login_using_post(self, login, senha_nova, **kwargs):
+        """
+        Alterar senha do usu\u00C3\u00A1rio.
+        Este m\u00C3\u00A9todo realiza a altera\u00C3\u00A7\u00C3\u00A3o da senha do usu\u00C3\u00A1rio.
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.alterar_senha_login_using_post(login, senha_nova, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str login: Login do usu\u00C3\u00A1rio. (required)
+        :param str senha_nova: Senha Nova (required)
+        :return: str
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['login', 'senha_nova']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method alterar_senha_login_using_post" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        # verify the required parameter 'login' is set
+        if ('login' not in params) or (params['login'] is None):
+            raise ValueError("Missing the required parameter `login` when calling `alterar_senha_login_using_post`")
+        # verify the required parameter 'senha_nova' is set
+        if ('senha_nova' not in params) or (params['senha_nova'] is None):
+            raise ValueError("Missing the required parameter `senha_nova` when calling `alterar_senha_login_using_post`")
+
+        resource_path = '/api/usuarios/{login}/alterar-senha'.replace('{format}', 'json')
+        path_params = {}
+        if 'login' in params:
+            path_params['login'] = params['login']
+
+        query_params = {}
+
+        header_params = {}
+        if 'senha_nova' in params:
+            header_params['senhaNova'] = params['senha_nova']
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = []
+
+        response = self.api_client.call_api(resource_path, 'POST',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='str',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
     def alterar_senha_using_put(self, id, senha_atual, senha_nova, **kwargs):
         """
         Alterar senha do usu\u00C3\u00A1rio na base do PIER ou WS.
@@ -136,7 +219,7 @@ class UsuarioApi(object):
 
     def alterar_using_put10(self, id, update, **kwargs):
         """
-        Altera os usu\u00C3\u00A1rios cadastrados na base do PIER ou WS.
+        Altera os usu\u00C3\u00A1rios cadastrados na base.
         Este m\u00C3\u00A9todo realiza a altera\u00C3\u00A7\u00C3\u00A3o dos usu\u00C3\u00A1rios.
 
         This method makes a synchronous HTTP request by default. To make an
@@ -617,9 +700,9 @@ class UsuarioApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def salvar_using_post16(self, persist, **kwargs):
+    def salvar_using_post19(self, persist, **kwargs):
         """
-        Cadastra Usu\u00C3\u00A1rio na base do PIER ou WS.
+        Cadastra Usu\u00C3\u00A1rio na base.
         Esse recurso permite cadastrar usu\u00C3\u00A1rios.
 
         This method makes a synchronous HTTP request by default. To make an
@@ -628,7 +711,7 @@ class UsuarioApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.salvar_using_post16(persist, callback=callback_function)
+        >>> thread = api.salvar_using_post19(persist, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -646,14 +729,14 @@ class UsuarioApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method salvar_using_post16" % key
+                    " to method salvar_using_post19" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'persist' is set
         if ('persist' not in params) or (params['persist'] is None):
-            raise ValueError("Missing the required parameter `persist` when calling `salvar_using_post16`")
+            raise ValueError("Missing the required parameter `persist` when calling `salvar_using_post19`")
 
         resource_path = '/api/usuarios'.replace('{format}', 'json')
         path_params = {}
@@ -690,6 +773,89 @@ class UsuarioApi(object):
                                             post_params=form_params,
                                             files=local_var_files,
                                             response_type='UsuarioResponse',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
+    def validar_senha_login_using_post(self, login, senha, **kwargs):
+        """
+        Realiza login com valida\u00C3\u00A7\u00C3\u00A3o de senha dos usu\u00C3\u00A1rios cadastrados na base do PIER ou WS.
+        O recurso permite fazer login do usu\u00C3\u00A1rio atrav\u00C3\u00A9s da senha definida pelo emissor.
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.validar_senha_login_using_post(login, senha, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str login: Login identificador do usu\u00C3\u00A1rio (login). (required)
+        :param str senha: Senha do usu\u00C3\u00A1rio (required)
+        :return: object
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['login', 'senha']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method validar_senha_login_using_post" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        # verify the required parameter 'login' is set
+        if ('login' not in params) or (params['login'] is None):
+            raise ValueError("Missing the required parameter `login` when calling `validar_senha_login_using_post`")
+        # verify the required parameter 'senha' is set
+        if ('senha' not in params) or (params['senha'] is None):
+            raise ValueError("Missing the required parameter `senha` when calling `validar_senha_login_using_post`")
+
+        resource_path = '/api/usuarios/{login}/validar-senha'.replace('{format}', 'json')
+        path_params = {}
+        if 'login' in params:
+            path_params['login'] = params['login']
+
+        query_params = {}
+
+        header_params = {}
+        if 'senha' in params:
+            header_params['senha'] = params['senha']
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = []
+
+        response = self.api_client.call_api(resource_path, 'POST',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='object',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response

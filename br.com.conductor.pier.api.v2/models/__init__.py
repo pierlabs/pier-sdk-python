@@ -24,6 +24,7 @@ from .auth_token import AuthToken
 from .autorizacao_on_us_request import AutorizacaoOnUsRequest
 from .banco_response import BancoResponse
 from .base_response import BaseResponse
+from .beneficio_pagamento_atraso_response import BeneficioPagamentoAtrasoResponse
 from .body_access_token import BodyAccessToken
 from .boleto_response import BoletoResponse
 from .campo_codificado_descricao_response import CampoCodificadoDescricaoResponse
@@ -55,6 +56,13 @@ from .detalhes_fatura_response import DetalhesFaturaResponse
 from .dispositivo_persist import DispositivoPersist
 from .dispositivo_response import DispositivoResponse
 from .divida_cliente_response import DividaClienteResponse
+from .documento_detalhe_response import DocumentoDetalheResponse
+from .documento_parametros_request import DocumentoParametrosRequest
+from .documento_response import DocumentoResponse
+from .documento_template_request import DocumentoTemplateRequest
+from .documento_template_response import DocumentoTemplateResponse
+from .documento_tipo_request import DocumentoTipoRequest
+from .documento_tipo_response import DocumentoTipoResponse
 from .emprestimo_pessoal_request import EmprestimoPessoalRequest
 from .emprestimo_pessoal_response import EmprestimoPessoalResponse
 from .endereco_aprovado_persist import EnderecoAprovadoPersist
@@ -79,6 +87,8 @@ from .job_response import JobResponse
 from .limite_disponibilidade_response import LimiteDisponibilidadeResponse
 from .lote_cartoes_pre_pagos_response import LoteCartoesPrePagosResponse
 from .map_ofstring_andstring import MapOfstringAndstring
+from .notificacao_email_request import NotificacaoEmailRequest
+from .notificacao_email_response import NotificacaoEmailResponse
 from .notificacao_push_response import NotificacaoPushResponse
 from .notificacao_response import NotificacaoResponse
 from .notificacao_sms_body import NotificacaoSMSBody

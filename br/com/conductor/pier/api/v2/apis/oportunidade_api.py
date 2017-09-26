@@ -1214,84 +1214,7 @@ class OportunidadeApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def salvar_using_post14(self, persist, **kwargs):
-        """
-        Cadastra tipos oportunidades
-        Esse recurso permite cadastrar tipos oportunidades.
-
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
-        >>> thread = api.salvar_using_post14(persist, callback=callback_function)
-
-        :param callback function: The callback function
-            for asynchronous request. (optional)
-        :param TipoOportunidade persist: persist (required)
-        :return: TipoOportunidadeResponse
-                 If the method is called asynchronously,
-                 returns the request thread.
-        """
-
-        all_params = ['persist']
-        all_params.append('callback')
-
-        params = locals()
-        for key, val in iteritems(params['kwargs']):
-            if key not in all_params:
-                raise TypeError(
-                    "Got an unexpected keyword argument '%s'"
-                    " to method salvar_using_post14" % key
-                )
-            params[key] = val
-        del params['kwargs']
-
-        # verify the required parameter 'persist' is set
-        if ('persist' not in params) or (params['persist'] is None):
-            raise ValueError("Missing the required parameter `persist` when calling `salvar_using_post14`")
-
-        resource_path = '/api/tipos-oportunidades'.replace('{format}', 'json')
-        path_params = {}
-
-        query_params = {}
-
-        header_params = {}
-
-        form_params = []
-        local_var_files = {}
-
-        body_params = None
-        if 'persist' in params:
-            body_params = params['persist']
-
-        # HTTP header `Accept`
-        header_params['Accept'] = self.api_client.\
-            select_header_accept(['application/json'])
-        if not header_params['Accept']:
-            del header_params['Accept']
-
-        # HTTP header `Content-Type`
-        header_params['Content-Type'] = self.api_client.\
-            select_header_content_type(['application/json'])
-
-        # Authentication setting
-        auth_settings = []
-
-        response = self.api_client.call_api(resource_path, 'POST',
-                                            path_params,
-                                            query_params,
-                                            header_params,
-                                            body=body_params,
-                                            post_params=form_params,
-                                            files=local_var_files,
-                                            response_type='TipoOportunidadeResponse',
-                                            auth_settings=auth_settings,
-                                            callback=params.get('callback'))
-        return response
-
-    def salvar_using_post9(self, persist, **kwargs):
+    def salvar_using_post12(self, persist, **kwargs):
         """
         Cadastra as oportunidades
         Esse recurso permite cadastrar oportunidades.
@@ -1302,7 +1225,7 @@ class OportunidadeApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.salvar_using_post9(persist, callback=callback_function)
+        >>> thread = api.salvar_using_post12(persist, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -1320,14 +1243,14 @@ class OportunidadeApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method salvar_using_post9" % key
+                    " to method salvar_using_post12" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'persist' is set
         if ('persist' not in params) or (params['persist'] is None):
-            raise ValueError("Missing the required parameter `persist` when calling `salvar_using_post9`")
+            raise ValueError("Missing the required parameter `persist` when calling `salvar_using_post12`")
 
         resource_path = '/api/oportunidades'.replace('{format}', 'json')
         path_params = {}
@@ -1364,6 +1287,83 @@ class OportunidadeApi(object):
                                             post_params=form_params,
                                             files=local_var_files,
                                             response_type='OportunidadeResponse',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
+    def salvar_using_post17(self, persist, **kwargs):
+        """
+        Cadastra tipos oportunidades
+        Esse recurso permite cadastrar tipos oportunidades.
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.salvar_using_post17(persist, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param TipoOportunidade persist: persist (required)
+        :return: TipoOportunidadeResponse
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['persist']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method salvar_using_post17" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        # verify the required parameter 'persist' is set
+        if ('persist' not in params) or (params['persist'] is None):
+            raise ValueError("Missing the required parameter `persist` when calling `salvar_using_post17`")
+
+        resource_path = '/api/tipos-oportunidades'.replace('{format}', 'json')
+        path_params = {}
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        if 'persist' in params:
+            body_params = params['persist']
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = []
+
+        response = self.api_client.call_api(resource_path, 'POST',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='TipoOportunidadeResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response

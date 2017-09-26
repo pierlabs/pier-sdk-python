@@ -41,6 +41,7 @@ class TemplateNotificacaoResponse(object):
             'id_configuracao_email': 'int',
             'tipo_layout': 'str',
             'tipo_notificacao': 'str',
+            'remetente': 'str',
             'assunto': 'str',
             'conteudo': 'str',
             'data_inclusao': 'str',
@@ -52,6 +53,7 @@ class TemplateNotificacaoResponse(object):
             'id_configuracao_email': 'idConfiguracaoEmail',
             'tipo_layout': 'tipoLayout',
             'tipo_notificacao': 'tipoNotificacao',
+            'remetente': 'remetente',
             'assunto': 'assunto',
             'conteudo': 'conteudo',
             'data_inclusao': 'dataInclusao',
@@ -62,6 +64,7 @@ class TemplateNotificacaoResponse(object):
         self._id_configuracao_email = None
         self._tipo_layout = None
         self._tipo_notificacao = None
+        self._remetente = None
         self._assunto = None
         self._conteudo = None
         self._data_inclusao = None
@@ -131,7 +134,7 @@ class TemplateNotificacaoResponse(object):
         :param tipo_layout: The tipo_layout of this TemplateNotificacaoResponse.
         :type: str
         """
-        allowed_values = ["RECUPERAR_SENHA", "FATURA_POR_EMAIL", "VALIDAR_DISPOSITIVO"]
+        allowed_values = ["RECUPERAR_SENHA", "FATURA_POR_EMAIL", "VALIDAR_DISPOSITIVO", "NOTIFICACAO_EMAIL"]
         if tipo_layout not in allowed_values:
             raise ValueError(
                 "Invalid value for `tipo_layout`, must be one of {0}"
@@ -166,6 +169,28 @@ class TemplateNotificacaoResponse(object):
                 .format(allowed_values)
             )
         self._tipo_notificacao = tipo_notificacao
+
+    @property
+    def remetente(self):
+        """
+        Gets the remetente of this TemplateNotificacaoResponse.
+        Remetente.
+
+        :return: The remetente of this TemplateNotificacaoResponse.
+        :rtype: str
+        """
+        return self._remetente
+
+    @remetente.setter
+    def remetente(self, remetente):
+        """
+        Sets the remetente of this TemplateNotificacaoResponse.
+        Remetente.
+
+        :param remetente: The remetente of this TemplateNotificacaoResponse.
+        :type: str
+        """
+        self._remetente = remetente
 
     @property
     def assunto(self):

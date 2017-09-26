@@ -40,23 +40,23 @@ class PlanoParcelamentoEmprestimoResponse(object):
             'numero_parcelas': 'int',
             'valor_parcelas': 'float',
             'taxa_juros': 'float',
-            'valor_percentual_cet': 'float',
-            'valor_tributos_iof': 'float'
+            'valor_tributos_iof': 'float',
+            'valor_percentual_cet': 'float'
         }
 
         self.attribute_map = {
             'numero_parcelas': 'numeroParcelas',
             'valor_parcelas': 'valorParcelas',
             'taxa_juros': 'taxaJuros',
-            'valor_percentual_cet': 'valorPercentualCET',
-            'valor_tributos_iof': 'valorTributosIOF'
+            'valor_tributos_iof': 'valorTributosIOF',
+            'valor_percentual_cet': 'valorPercentualCET'
         }
 
         self._numero_parcelas = None
         self._valor_parcelas = None
         self._taxa_juros = None
-        self._valor_percentual_cet = None
         self._valor_tributos_iof = None
+        self._valor_percentual_cet = None
 
     @property
     def numero_parcelas(self):
@@ -125,28 +125,6 @@ class PlanoParcelamentoEmprestimoResponse(object):
         self._taxa_juros = taxa_juros
 
     @property
-    def valor_percentual_cet(self):
-        """
-        Gets the valor_percentual_cet of this PlanoParcelamentoEmprestimoResponse.
-        valor percentual do Custo Efetivo Total, ao ano, do empr\u00C3\u00A9stimo / financiamento
-
-        :return: The valor_percentual_cet of this PlanoParcelamentoEmprestimoResponse.
-        :rtype: float
-        """
-        return self._valor_percentual_cet
-
-    @valor_percentual_cet.setter
-    def valor_percentual_cet(self, valor_percentual_cet):
-        """
-        Sets the valor_percentual_cet of this PlanoParcelamentoEmprestimoResponse.
-        valor percentual do Custo Efetivo Total, ao ano, do empr\u00C3\u00A9stimo / financiamento
-
-        :param valor_percentual_cet: The valor_percentual_cet of this PlanoParcelamentoEmprestimoResponse.
-        :type: float
-        """
-        self._valor_percentual_cet = valor_percentual_cet
-
-    @property
     def valor_tributos_iof(self):
         """
         Gets the valor_tributos_iof of this PlanoParcelamentoEmprestimoResponse.
@@ -167,6 +145,28 @@ class PlanoParcelamentoEmprestimoResponse(object):
         :type: float
         """
         self._valor_tributos_iof = valor_tributos_iof
+
+    @property
+    def valor_percentual_cet(self):
+        """
+        Gets the valor_percentual_cet of this PlanoParcelamentoEmprestimoResponse.
+        valor percentual do Custo Efetivo Total, ao ano, do empr\u00C3\u00A9stimo / financiamento
+
+        :return: The valor_percentual_cet of this PlanoParcelamentoEmprestimoResponse.
+        :rtype: float
+        """
+        return self._valor_percentual_cet
+
+    @valor_percentual_cet.setter
+    def valor_percentual_cet(self, valor_percentual_cet):
+        """
+        Sets the valor_percentual_cet of this PlanoParcelamentoEmprestimoResponse.
+        valor percentual do Custo Efetivo Total, ao ano, do empr\u00C3\u00A9stimo / financiamento
+
+        :param valor_percentual_cet: The valor_percentual_cet of this PlanoParcelamentoEmprestimoResponse.
+        :type: float
+        """
+        self._valor_percentual_cet = valor_percentual_cet
 
     def to_dict(self):
         """
