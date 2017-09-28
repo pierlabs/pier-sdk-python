@@ -40,7 +40,7 @@ class DocumentoParametrosRequest(object):
             'id_tipo_documento': 'int',
             'id_template_documento': 'int',
             'nome': 'str',
-            'parametros_conteudo': 'dict(str, object)'
+            'parametros_conteudo': 'list[PropriedadeDocumentoRequest]'
         }
 
         self.attribute_map = {
@@ -125,10 +125,10 @@ class DocumentoParametrosRequest(object):
     def parametros_conteudo(self):
         """
         Gets the parametros_conteudo of this DocumentoParametrosRequest.
-        Mapa de par\u00C3\u00A2metros para montagem do documento.
+        Lista de par\u00C3\u00A2metros para montagem do documento.
 
         :return: The parametros_conteudo of this DocumentoParametrosRequest.
-        :rtype: dict(str, object)
+        :rtype: list[PropriedadeDocumentoRequest]
         """
         return self._parametros_conteudo
 
@@ -136,10 +136,10 @@ class DocumentoParametrosRequest(object):
     def parametros_conteudo(self, parametros_conteudo):
         """
         Sets the parametros_conteudo of this DocumentoParametrosRequest.
-        Mapa de par\u00C3\u00A2metros para montagem do documento.
+        Lista de par\u00C3\u00A2metros para montagem do documento.
 
         :param parametros_conteudo: The parametros_conteudo of this DocumentoParametrosRequest.
-        :type: dict(str, object)
+        :type: list[PropriedadeDocumentoRequest]
         """
         self._parametros_conteudo = parametros_conteudo
 

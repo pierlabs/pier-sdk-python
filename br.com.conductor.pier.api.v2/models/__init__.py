@@ -59,7 +59,7 @@ from .divida_cliente_response import DividaClienteResponse
 from .documento_detalhe_response import DocumentoDetalheResponse
 from .documento_parametros_request import DocumentoParametrosRequest
 from .documento_response import DocumentoResponse
-from .documento_template_request import DocumentoTemplateRequest
+from .documento_template_persist import DocumentoTemplatePersist
 from .documento_template_response import DocumentoTemplateResponse
 from .documento_tipo_request import DocumentoTipoRequest
 from .documento_tipo_response import DocumentoTipoResponse
@@ -113,6 +113,7 @@ from .page_conta_historico_pagamento_response import PageContaHistoricoPagamento
 from .page_conta_response import PageContaResponse
 from .page_controle_vencimento_response import PageControleVencimentoResponse
 from .page_dispositivo_response import PageDispositivoResponse
+from .page_documento_template_response import PageDocumentoTemplateResponse
 from .page_endereco_response import PageEnderecoResponse
 from .page_estabelecimento_response import PageEstabelecimentoResponse
 from .page_estagio_cartao_response import PageEstagioCartaoResponse
@@ -181,6 +182,7 @@ from .produto_detalhes_response import ProdutoDetalhesResponse
 from .produto_origem_response import ProdutoOrigemResponse
 from .produto_response import ProdutoResponse
 from .promotor_response import PromotorResponse
+from .propriedade_documento_request import PropriedadeDocumentoRequest
 from .push_apns import PushAPNS
 from .push_fcm_e_gcm import PushFCMEGCM
 from .risco_fraude_detalhado_response import RiscoFraudeDetalhadoResponse
@@ -204,6 +206,7 @@ from .terminal_response import TerminalResponse
 from .tipo_ajuste_response import TipoAjusteResponse
 from .tipo_boleto_response import TipoBoletoResponse
 from .tipo_endereco_response import TipoEnderecoResponse
+from .tipo_operacao_response import TipoOperacaoResponse
 from .tipo_oportunidade import TipoOportunidade
 from .tipo_oportunidade_aud_response import TipoOportunidadeAUDResponse
 from .tipo_oportunidade_response import TipoOportunidadeResponse

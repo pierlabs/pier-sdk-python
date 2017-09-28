@@ -122,7 +122,7 @@ class JobApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def atualizar_using_put(self, id, descricao, cron, groovy, **kwargs):
+    def atualizar_using_put1(self, id, descricao, cron, groovy, **kwargs):
         """
         Atualizar Job
         Este recurso permite atualizar os dados de um job cadastrado.
@@ -133,7 +133,7 @@ class JobApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.atualizar_using_put(id, descricao, cron, groovy, callback=callback_function)
+        >>> thread = api.atualizar_using_put1(id, descricao, cron, groovy, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -154,23 +154,23 @@ class JobApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method atualizar_using_put" % key
+                    " to method atualizar_using_put1" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `atualizar_using_put`")
+            raise ValueError("Missing the required parameter `id` when calling `atualizar_using_put1`")
         # verify the required parameter 'descricao' is set
         if ('descricao' not in params) or (params['descricao'] is None):
-            raise ValueError("Missing the required parameter `descricao` when calling `atualizar_using_put`")
+            raise ValueError("Missing the required parameter `descricao` when calling `atualizar_using_put1`")
         # verify the required parameter 'cron' is set
         if ('cron' not in params) or (params['cron'] is None):
-            raise ValueError("Missing the required parameter `cron` when calling `atualizar_using_put`")
+            raise ValueError("Missing the required parameter `cron` when calling `atualizar_using_put1`")
         # verify the required parameter 'groovy' is set
         if ('groovy' not in params) or (params['groovy'] is None):
-            raise ValueError("Missing the required parameter `groovy` when calling `atualizar_using_put`")
+            raise ValueError("Missing the required parameter `groovy` when calling `atualizar_using_put1`")
 
         resource_path = '/api/jobs/{id}'.replace('{format}', 'json')
         path_params = {}
@@ -294,7 +294,7 @@ class JobApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get13(self, **kwargs):
+    def listar_using_get14(self, **kwargs):
         """
         Listar Jobs
         Este recurso permite que sejam listados os jobs existentes na base do PIER.
@@ -305,7 +305,7 @@ class JobApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get13(callback=callback_function)
+        >>> thread = api.listar_using_get14(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -328,7 +328,7 @@ class JobApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get13" % key
+                    " to method listar_using_get14" % key
                 )
             params[key] = val
         del params['kwargs']

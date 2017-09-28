@@ -59,7 +59,7 @@ from .models.divida_cliente_response import DividaClienteResponse
 from .models.documento_detalhe_response import DocumentoDetalheResponse
 from .models.documento_parametros_request import DocumentoParametrosRequest
 from .models.documento_response import DocumentoResponse
-from .models.documento_template_request import DocumentoTemplateRequest
+from .models.documento_template_persist import DocumentoTemplatePersist
 from .models.documento_template_response import DocumentoTemplateResponse
 from .models.documento_tipo_request import DocumentoTipoRequest
 from .models.documento_tipo_response import DocumentoTipoResponse
@@ -113,6 +113,7 @@ from .models.page_conta_historico_pagamento_response import PageContaHistoricoPa
 from .models.page_conta_response import PageContaResponse
 from .models.page_controle_vencimento_response import PageControleVencimentoResponse
 from .models.page_dispositivo_response import PageDispositivoResponse
+from .models.page_documento_template_response import PageDocumentoTemplateResponse
 from .models.page_endereco_response import PageEnderecoResponse
 from .models.page_estabelecimento_response import PageEstabelecimentoResponse
 from .models.page_estagio_cartao_response import PageEstagioCartaoResponse
@@ -181,6 +182,7 @@ from .models.produto_detalhes_response import ProdutoDetalhesResponse
 from .models.produto_origem_response import ProdutoOrigemResponse
 from .models.produto_response import ProdutoResponse
 from .models.promotor_response import PromotorResponse
+from .models.propriedade_documento_request import PropriedadeDocumentoRequest
 from .models.push_apns import PushAPNS
 from .models.push_fcm_e_gcm import PushFCMEGCM
 from .models.risco_fraude_detalhado_response import RiscoFraudeDetalhadoResponse
@@ -204,6 +206,7 @@ from .models.terminal_response import TerminalResponse
 from .models.tipo_ajuste_response import TipoAjusteResponse
 from .models.tipo_boleto_response import TipoBoletoResponse
 from .models.tipo_endereco_response import TipoEnderecoResponse
+from .models.tipo_operacao_response import TipoOperacaoResponse
 from .models.tipo_oportunidade import TipoOportunidade
 from .models.tipo_oportunidade_aud_response import TipoOportunidadeAUDResponse
 from .models.tipo_oportunidade_response import TipoOportunidadeResponse
@@ -237,14 +240,13 @@ from .apis.cadastro_geral_api import CadastroGeralApi
 from .apis.cartao_api import CartaoApi
 from .apis.conta_api import ContaApi
 from .apis.dispositivo_api import DispositivoApi
-from .apis.documentos_api import DocumentosApi
+from .apis.documento_api import DocumentoApi
 from .apis.endereco_nacional_api import EnderecoNacionalApi
 from .apis.estabelecimento_api import EstabelecimentoApi
 from .apis.faq_api import FAQApi
 from .apis.fatura_api import FaturaApi
 from .apis.job_api import JobApi
 from .apis.limite_api import LimiteApi
-from .apis.mock_api import MockApi
 from .apis.notificacao_api import NotificacaoApi
 from .apis.oportunidade_api import OportunidadeApi
 from .apis.permissao_pais_api import PermissaoPaisApi

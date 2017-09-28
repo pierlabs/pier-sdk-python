@@ -137,7 +137,7 @@ class WebhookApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get28(self, id, **kwargs):
+    def consultar_using_get30(self, id, **kwargs):
         """
         Consultar Webhook
         Este m\u00C3\u00A9todo permite que sejam consultado um webhook do emissor atrav\u00C3\u00A9s de um id especifico
@@ -148,7 +148,7 @@ class WebhookApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get28(id, callback=callback_function)
+        >>> thread = api.consultar_using_get30(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -166,14 +166,14 @@ class WebhookApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get28" % key
+                    " to method consultar_using_get30" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get28`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get30`")
 
         resource_path = '/api/webhooks/{id}'.replace('{format}', 'json')
         path_params = {}
@@ -214,7 +214,7 @@ class WebhookApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get34(self, **kwargs):
+    def listar_using_get35(self, **kwargs):
         """
         Lista os Webhooks
         Este m\u00C3\u00A9todo permite que sejam listados os webhooks existentes
@@ -225,7 +225,7 @@ class WebhookApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get34(callback=callback_function)
+        >>> thread = api.listar_using_get35(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -249,7 +249,7 @@ class WebhookApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get34" % key
+                    " to method listar_using_get35" % key
                 )
             params[key] = val
         del params['kwargs']

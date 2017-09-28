@@ -38,8 +38,8 @@ class DocumentoResponse(object):
         """
         self.swagger_types = {
             'id': 'int',
-            'id_documento_tipo': 'int',
-            'id_documento_template': 'int',
+            'id_tipo_documento': 'int',
+            'id_template_documento': 'int',
             'nome': 'str',
             'documento': 'str',
             'extensao': 'str',
@@ -48,8 +48,8 @@ class DocumentoResponse(object):
 
         self.attribute_map = {
             'id': 'id',
-            'id_documento_tipo': 'idDocumentoTipo',
-            'id_documento_template': 'idDocumentoTemplate',
+            'id_tipo_documento': 'idTipoDocumento',
+            'id_template_documento': 'idTemplateDocumento',
             'nome': 'nome',
             'documento': 'documento',
             'extensao': 'extensao',
@@ -57,8 +57,8 @@ class DocumentoResponse(object):
         }
 
         self._id = None
-        self._id_documento_tipo = None
-        self._id_documento_template = None
+        self._id_tipo_documento = None
+        self._id_template_documento = None
         self._nome = None
         self._documento = None
         self._extensao = None
@@ -87,48 +87,48 @@ class DocumentoResponse(object):
         self._id = id
 
     @property
-    def id_documento_tipo(self):
+    def id_tipo_documento(self):
         """
-        Gets the id_documento_tipo of this DocumentoResponse.
+        Gets the id_tipo_documento of this DocumentoResponse.
         ID do Tipo de Documento associado.
 
-        :return: The id_documento_tipo of this DocumentoResponse.
+        :return: The id_tipo_documento of this DocumentoResponse.
         :rtype: int
         """
-        return self._id_documento_tipo
+        return self._id_tipo_documento
 
-    @id_documento_tipo.setter
-    def id_documento_tipo(self, id_documento_tipo):
+    @id_tipo_documento.setter
+    def id_tipo_documento(self, id_tipo_documento):
         """
-        Sets the id_documento_tipo of this DocumentoResponse.
+        Sets the id_tipo_documento of this DocumentoResponse.
         ID do Tipo de Documento associado.
 
-        :param id_documento_tipo: The id_documento_tipo of this DocumentoResponse.
+        :param id_tipo_documento: The id_tipo_documento of this DocumentoResponse.
         :type: int
         """
-        self._id_documento_tipo = id_documento_tipo
+        self._id_tipo_documento = id_tipo_documento
 
     @property
-    def id_documento_template(self):
+    def id_template_documento(self):
         """
-        Gets the id_documento_template of this DocumentoResponse.
+        Gets the id_template_documento of this DocumentoResponse.
         ID do Template de Documento associado.
 
-        :return: The id_documento_template of this DocumentoResponse.
+        :return: The id_template_documento of this DocumentoResponse.
         :rtype: int
         """
-        return self._id_documento_template
+        return self._id_template_documento
 
-    @id_documento_template.setter
-    def id_documento_template(self, id_documento_template):
+    @id_template_documento.setter
+    def id_template_documento(self, id_template_documento):
         """
-        Sets the id_documento_template of this DocumentoResponse.
+        Sets the id_template_documento of this DocumentoResponse.
         ID do Template de Documento associado.
 
-        :param id_documento_template: The id_documento_template of this DocumentoResponse.
+        :param id_template_documento: The id_template_documento of this DocumentoResponse.
         :type: int
         """
-        self._id_documento_template = id_documento_template
+        self._id_template_documento = id_template_documento
 
     @property
     def nome(self):

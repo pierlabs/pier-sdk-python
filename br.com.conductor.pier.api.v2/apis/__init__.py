@@ -11,14 +11,13 @@ from .cadastro_geral_api import CadastroGeralApi
 from .cartao_api import CartaoApi
 from .conta_api import ContaApi
 from .dispositivo_api import DispositivoApi
-from .documentos_api import DocumentosApi
+from .documento_api import DocumentoApi
 from .endereco_nacional_api import EnderecoNacionalApi
 from .estabelecimento_api import EstabelecimentoApi
 from .faq_api import FAQApi
 from .fatura_api import FaturaApi
 from .job_api import JobApi
 from .limite_api import LimiteApi
-from .mock_api import MockApi
 from .notificacao_api import NotificacaoApi
 from .oportunidade_api import OportunidadeApi
 from .permissao_pais_api import PermissaoPaisApi

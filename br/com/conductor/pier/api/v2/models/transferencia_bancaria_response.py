@@ -63,7 +63,15 @@ class TransferenciaBancariaResponse(object):
             'data_vencimento_padrao': 'str',
             'id_conta_portador': 'int',
             'numero_estabelecimento': 'int',
-            'valor_taxa_saque': 'float'
+            'valor_taxa_saque': 'float',
+            'banco': 'int',
+            'numero_agencia': 'str',
+            'digito_agencia': 'str',
+            'numero_conta': 'str',
+            'digito_conta': 'str',
+            'flag_conta_poupanca': 'int',
+            'documento_favorecido': 'str',
+            'nome_favorecido': 'str'
         }
 
         self.attribute_map = {
@@ -93,7 +101,15 @@ class TransferenciaBancariaResponse(object):
             'data_vencimento_padrao': 'dataVencimentoPadrao',
             'id_conta_portador': 'idContaPortador',
             'numero_estabelecimento': 'numeroEstabelecimento',
-            'valor_taxa_saque': 'valorTaxaSaque'
+            'valor_taxa_saque': 'valorTaxaSaque',
+            'banco': 'banco',
+            'numero_agencia': 'numeroAgencia',
+            'digito_agencia': 'digitoAgencia',
+            'numero_conta': 'numeroConta',
+            'digito_conta': 'digitoConta',
+            'flag_conta_poupanca': 'flagContaPoupanca',
+            'documento_favorecido': 'documentoFavorecido',
+            'nome_favorecido': 'nomeFavorecido'
         }
 
         self._nsuorigem = None
@@ -123,6 +139,14 @@ class TransferenciaBancariaResponse(object):
         self._id_conta_portador = None
         self._numero_estabelecimento = None
         self._valor_taxa_saque = None
+        self._banco = None
+        self._numero_agencia = None
+        self._digito_agencia = None
+        self._numero_conta = None
+        self._digito_conta = None
+        self._flag_conta_poupanca = None
+        self._documento_favorecido = None
+        self._nome_favorecido = None
 
     @property
     def nsuorigem(self):
@@ -717,6 +741,182 @@ class TransferenciaBancariaResponse(object):
         :type: float
         """
         self._valor_taxa_saque = valor_taxa_saque
+
+    @property
+    def banco(self):
+        """
+        Gets the banco of this TransferenciaBancariaResponse.
+        C\u00C3\u00B3digo do Banco
+
+        :return: The banco of this TransferenciaBancariaResponse.
+        :rtype: int
+        """
+        return self._banco
+
+    @banco.setter
+    def banco(self, banco):
+        """
+        Sets the banco of this TransferenciaBancariaResponse.
+        C\u00C3\u00B3digo do Banco
+
+        :param banco: The banco of this TransferenciaBancariaResponse.
+        :type: int
+        """
+        self._banco = banco
+
+    @property
+    def numero_agencia(self):
+        """
+        Gets the numero_agencia of this TransferenciaBancariaResponse.
+        N\u00C3\u00BAmero da Ag\u00C3\u00AAncia
+
+        :return: The numero_agencia of this TransferenciaBancariaResponse.
+        :rtype: str
+        """
+        return self._numero_agencia
+
+    @numero_agencia.setter
+    def numero_agencia(self, numero_agencia):
+        """
+        Sets the numero_agencia of this TransferenciaBancariaResponse.
+        N\u00C3\u00BAmero da Ag\u00C3\u00AAncia
+
+        :param numero_agencia: The numero_agencia of this TransferenciaBancariaResponse.
+        :type: str
+        """
+        self._numero_agencia = numero_agencia
+
+    @property
+    def digito_agencia(self):
+        """
+        Gets the digito_agencia of this TransferenciaBancariaResponse.
+        D\u00C3\u00ADgito da Ag\u00C3\u00AAncia
+
+        :return: The digito_agencia of this TransferenciaBancariaResponse.
+        :rtype: str
+        """
+        return self._digito_agencia
+
+    @digito_agencia.setter
+    def digito_agencia(self, digito_agencia):
+        """
+        Sets the digito_agencia of this TransferenciaBancariaResponse.
+        D\u00C3\u00ADgito da Ag\u00C3\u00AAncia
+
+        :param digito_agencia: The digito_agencia of this TransferenciaBancariaResponse.
+        :type: str
+        """
+        self._digito_agencia = digito_agencia
+
+    @property
+    def numero_conta(self):
+        """
+        Gets the numero_conta of this TransferenciaBancariaResponse.
+        N\u00C3\u00BAmero da Conta
+
+        :return: The numero_conta of this TransferenciaBancariaResponse.
+        :rtype: str
+        """
+        return self._numero_conta
+
+    @numero_conta.setter
+    def numero_conta(self, numero_conta):
+        """
+        Sets the numero_conta of this TransferenciaBancariaResponse.
+        N\u00C3\u00BAmero da Conta
+
+        :param numero_conta: The numero_conta of this TransferenciaBancariaResponse.
+        :type: str
+        """
+        self._numero_conta = numero_conta
+
+    @property
+    def digito_conta(self):
+        """
+        Gets the digito_conta of this TransferenciaBancariaResponse.
+        D\u00C3\u00ADgito da Conta
+
+        :return: The digito_conta of this TransferenciaBancariaResponse.
+        :rtype: str
+        """
+        return self._digito_conta
+
+    @digito_conta.setter
+    def digito_conta(self, digito_conta):
+        """
+        Sets the digito_conta of this TransferenciaBancariaResponse.
+        D\u00C3\u00ADgito da Conta
+
+        :param digito_conta: The digito_conta of this TransferenciaBancariaResponse.
+        :type: str
+        """
+        self._digito_conta = digito_conta
+
+    @property
+    def flag_conta_poupanca(self):
+        """
+        Gets the flag_conta_poupanca of this TransferenciaBancariaResponse.
+        Tipo da Conta
+
+        :return: The flag_conta_poupanca of this TransferenciaBancariaResponse.
+        :rtype: int
+        """
+        return self._flag_conta_poupanca
+
+    @flag_conta_poupanca.setter
+    def flag_conta_poupanca(self, flag_conta_poupanca):
+        """
+        Sets the flag_conta_poupanca of this TransferenciaBancariaResponse.
+        Tipo da Conta
+
+        :param flag_conta_poupanca: The flag_conta_poupanca of this TransferenciaBancariaResponse.
+        :type: int
+        """
+        self._flag_conta_poupanca = flag_conta_poupanca
+
+    @property
+    def documento_favorecido(self):
+        """
+        Gets the documento_favorecido of this TransferenciaBancariaResponse.
+        Documento do Favorecido
+
+        :return: The documento_favorecido of this TransferenciaBancariaResponse.
+        :rtype: str
+        """
+        return self._documento_favorecido
+
+    @documento_favorecido.setter
+    def documento_favorecido(self, documento_favorecido):
+        """
+        Sets the documento_favorecido of this TransferenciaBancariaResponse.
+        Documento do Favorecido
+
+        :param documento_favorecido: The documento_favorecido of this TransferenciaBancariaResponse.
+        :type: str
+        """
+        self._documento_favorecido = documento_favorecido
+
+    @property
+    def nome_favorecido(self):
+        """
+        Gets the nome_favorecido of this TransferenciaBancariaResponse.
+        Nome do Favorecido
+
+        :return: The nome_favorecido of this TransferenciaBancariaResponse.
+        :rtype: str
+        """
+        return self._nome_favorecido
+
+    @nome_favorecido.setter
+    def nome_favorecido(self, nome_favorecido):
+        """
+        Sets the nome_favorecido of this TransferenciaBancariaResponse.
+        Nome do Favorecido
+
+        :param nome_favorecido: The nome_favorecido of this TransferenciaBancariaResponse.
+        :type: str
+        """
+        self._nome_favorecido = nome_favorecido
 
     def to_dict(self):
         """
