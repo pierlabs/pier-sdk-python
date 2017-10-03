@@ -39,18 +39,21 @@ class PropriedadeDocumentoRequest(object):
         self.swagger_types = {
             'chave': 'str',
             'valor': 'str',
-            'detalhes_tipo': 'str'
+            'detalhes_tipo': 'str',
+            'flag_indice': 'bool'
         }
 
         self.attribute_map = {
             'chave': 'chave',
             'valor': 'valor',
-            'detalhes_tipo': 'detalhesTipo'
+            'detalhes_tipo': 'detalhesTipo',
+            'flag_indice': 'flagIndice'
         }
 
         self._chave = None
         self._valor = None
         self._detalhes_tipo = None
+        self._flag_indice = None
 
     @property
     def chave(self):
@@ -116,13 +119,35 @@ class PropriedadeDocumentoRequest(object):
         :param detalhes_tipo: The detalhes_tipo of this PropriedadeDocumentoRequest.
         :type: str
         """
-        allowed_values = ["LIST", "IMAGEM", "TEXTO", "NUMERO"]
+        allowed_values = ["IMAGEM", "TEXTO", "NUMERO"]
         if detalhes_tipo not in allowed_values:
             raise ValueError(
                 "Invalid value for `detalhes_tipo`, must be one of {0}"
                 .format(allowed_values)
             )
         self._detalhes_tipo = detalhes_tipo
+
+    @property
+    def flag_indice(self):
+        """
+        Gets the flag_indice of this PropriedadeDocumentoRequest.
+        Atributo que indica se o par\u00C3\u00A2metro \u00C3\u00A9 um \u00C3\u00ADndice (default = false)
+
+        :return: The flag_indice of this PropriedadeDocumentoRequest.
+        :rtype: bool
+        """
+        return self._flag_indice
+
+    @flag_indice.setter
+    def flag_indice(self, flag_indice):
+        """
+        Sets the flag_indice of this PropriedadeDocumentoRequest.
+        Atributo que indica se o par\u00C3\u00A2metro \u00C3\u00A9 um \u00C3\u00ADndice (default = false)
+
+        :param flag_indice: The flag_indice of this PropriedadeDocumentoRequest.
+        :type: bool
+        """
+        self._flag_indice = flag_indice
 
     def to_dict(self):
         """

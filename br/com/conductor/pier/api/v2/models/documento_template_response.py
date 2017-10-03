@@ -38,16 +38,16 @@ class DocumentoTemplateResponse(object):
         """
         self.swagger_types = {
             'id': 'int',
-            'id_tipo_documento': 'int'
+            'id_tipo_template': 'int'
         }
 
         self.attribute_map = {
             'id': 'id',
-            'id_tipo_documento': 'idTipoDocumento'
+            'id_tipo_template': 'idTipoTemplate'
         }
 
         self._id = None
-        self._id_tipo_documento = None
+        self._id_tipo_template = None
 
     @property
     def id(self):
@@ -72,26 +72,26 @@ class DocumentoTemplateResponse(object):
         self._id = id
 
     @property
-    def id_tipo_documento(self):
+    def id_tipo_template(self):
         """
-        Gets the id_tipo_documento of this DocumentoTemplateResponse.
-        ID do Tipo de Documento.
+        Gets the id_tipo_template of this DocumentoTemplateResponse.
+        ID do Tipo de Template.
 
-        :return: The id_tipo_documento of this DocumentoTemplateResponse.
+        :return: The id_tipo_template of this DocumentoTemplateResponse.
         :rtype: int
         """
-        return self._id_tipo_documento
+        return self._id_tipo_template
 
-    @id_tipo_documento.setter
-    def id_tipo_documento(self, id_tipo_documento):
+    @id_tipo_template.setter
+    def id_tipo_template(self, id_tipo_template):
         """
-        Sets the id_tipo_documento of this DocumentoTemplateResponse.
-        ID do Tipo de Documento.
+        Sets the id_tipo_template of this DocumentoTemplateResponse.
+        ID do Tipo de Template.
 
-        :param id_tipo_documento: The id_tipo_documento of this DocumentoTemplateResponse.
+        :param id_tipo_template: The id_tipo_template of this DocumentoTemplateResponse.
         :type: int
         """
-        self._id_tipo_documento = id_tipo_documento
+        self._id_tipo_template = id_tipo_template
 
     def to_dict(self):
         """

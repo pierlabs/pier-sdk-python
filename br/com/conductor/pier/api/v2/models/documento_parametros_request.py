@@ -37,45 +37,20 @@ class DocumentoParametrosRequest(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'id_tipo_documento': 'int',
             'id_template_documento': 'int',
             'nome': 'str',
             'parametros_conteudo': 'list[PropriedadeDocumentoRequest]'
         }
 
         self.attribute_map = {
-            'id_tipo_documento': 'idTipoDocumento',
             'id_template_documento': 'idTemplateDocumento',
             'nome': 'nome',
             'parametros_conteudo': 'parametrosConteudo'
         }
 
-        self._id_tipo_documento = None
         self._id_template_documento = None
         self._nome = None
         self._parametros_conteudo = None
-
-    @property
-    def id_tipo_documento(self):
-        """
-        Gets the id_tipo_documento of this DocumentoParametrosRequest.
-        ID para o tipo de documento.
-
-        :return: The id_tipo_documento of this DocumentoParametrosRequest.
-        :rtype: int
-        """
-        return self._id_tipo_documento
-
-    @id_tipo_documento.setter
-    def id_tipo_documento(self, id_tipo_documento):
-        """
-        Sets the id_tipo_documento of this DocumentoParametrosRequest.
-        ID para o tipo de documento.
-
-        :param id_tipo_documento: The id_tipo_documento of this DocumentoParametrosRequest.
-        :type: int
-        """
-        self._id_tipo_documento = id_tipo_documento
 
     @property
     def id_template_documento(self):

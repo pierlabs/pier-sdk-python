@@ -37,6 +37,8 @@ from .models.cartao_impressao_provisorio_response import CartaoImpressaoProvisor
 from .models.cartao_impressao_response import CartaoImpressaoResponse
 from .models.cartao_response import CartaoResponse
 from .models.cdt_detalhe_oportunidade_aud import CdtDetalheOportunidadeAUD
+from .models.codigo_seguranca_email_persist import CodigoSegurancaEMAILPersist
+from .models.codigo_seguranca_response import CodigoSegurancaResponse
 from .models.codigo_seguranca_sms_persist import CodigoSegurancaSMSPersist
 from .models.codigo_seguranca_sms_request import CodigoSegurancaSMSRequest
 from .models.compra_response import CompraResponse
@@ -56,13 +58,12 @@ from .models.detalhes_fatura_response import DetalhesFaturaResponse
 from .models.dispositivo_persist import DispositivoPersist
 from .models.dispositivo_response import DispositivoResponse
 from .models.divida_cliente_response import DividaClienteResponse
+from .models.documento_detalhado_response import DocumentoDetalhadoResponse
 from .models.documento_detalhe_response import DocumentoDetalheResponse
 from .models.documento_parametros_request import DocumentoParametrosRequest
 from .models.documento_response import DocumentoResponse
 from .models.documento_template_persist import DocumentoTemplatePersist
 from .models.documento_template_response import DocumentoTemplateResponse
-from .models.documento_tipo_request import DocumentoTipoRequest
-from .models.documento_tipo_response import DocumentoTipoResponse
 from .models.emprestimo_pessoal_request import EmprestimoPessoalRequest
 from .models.emprestimo_pessoal_response import EmprestimoPessoalResponse
 from .models.endereco_aprovado_persist import EnderecoAprovadoPersist
@@ -83,6 +84,7 @@ from .models.historico_impressao_cartao_response import HistoricoImpressaoCartao
 from .models.historico_telefone_response import HistoricoTelefoneResponse
 from .models.integracao_emissor_persist import IntegracaoEmissorPersist
 from .models.integracao_emissor_response import IntegracaoEmissorResponse
+from .models.integrar_documento_request import IntegrarDocumentoRequest
 from .models.job_response import JobResponse
 from .models.limite_disponibilidade_response import LimiteDisponibilidadeResponse
 from .models.lote_cartoes_pre_pagos_response import LoteCartoesPrePagosResponse
@@ -106,6 +108,7 @@ from .models.page_banco_response import PageBancoResponse
 from .models.page_base_response import PageBaseResponse
 from .models.page_campo_codificado_descricao_response import PageCampoCodificadoDescricaoResponse
 from .models.page_cartao_response import PageCartaoResponse
+from .models.page_codigo_seguranca_response import PageCodigoSegurancaResponse
 from .models.page_compra_response import PageCompraResponse
 from .models.page_configuracao_email_response import PageConfiguracaoEmailResponse
 from .models.page_conta_detalhe_response import PageContaDetalheResponse
@@ -113,6 +116,7 @@ from .models.page_conta_historico_pagamento_response import PageContaHistoricoPa
 from .models.page_conta_response import PageContaResponse
 from .models.page_controle_vencimento_response import PageControleVencimentoResponse
 from .models.page_dispositivo_response import PageDispositivoResponse
+from .models.page_documento_response import PageDocumentoResponse
 from .models.page_documento_template_response import PageDocumentoTemplateResponse
 from .models.page_endereco_response import PageEnderecoResponse
 from .models.page_estabelecimento_response import PageEstabelecimentoResponse
@@ -156,6 +160,7 @@ from .models.page_tipo_endereco_response import PageTipoEnderecoResponse
 from .models.page_tipo_oportunidade_aud_response import PageTipoOportunidadeAUDResponse
 from .models.page_tipo_oportunidade_response import PageTipoOportunidadeResponse
 from .models.page_tipo_telefone_response import PageTipoTelefoneResponse
+from .models.page_tipo_template_response import PageTipoTemplateResponse
 from .models.page_transacao_nao_processada_response import PageTransacaoNaoProcessadaResponse
 from .models.page_transacao_response import PageTransacaoResponse
 from .models.page_transacoes_correntes_response import PageTransacoesCorrentesResponse
@@ -185,6 +190,7 @@ from .models.promotor_response import PromotorResponse
 from .models.propriedade_documento_request import PropriedadeDocumentoRequest
 from .models.push_apns import PushAPNS
 from .models.push_fcm_e_gcm import PushFCMEGCM
+from .models.referencia_id_persist import ReferenciaIdPersist
 from .models.risco_fraude_detalhado_response import RiscoFraudeDetalhadoResponse
 from .models.risco_fraude_response import RiscoFraudeResponse
 from .models.socio_aprovado_response import SocioAprovadoResponse
@@ -201,6 +207,7 @@ from .models.telefone_adicional_update import TelefoneAdicionalUpdate
 from .models.telefone_pessoa_aprovada_persist import TelefonePessoaAprovadaPersist
 from .models.telefone_pessoa_aprovada_response import TelefonePessoaAprovadaResponse
 from .models.telefone_response import TelefoneResponse
+from .models.template_notificacao_detalhe_response import TemplateNotificacaoDetalheResponse
 from .models.template_notificacao_response import TemplateNotificacaoResponse
 from .models.terminal_response import TerminalResponse
 from .models.tipo_ajuste_response import TipoAjusteResponse
@@ -212,6 +219,8 @@ from .models.tipo_oportunidade_aud_response import TipoOportunidadeAUDResponse
 from .models.tipo_oportunidade_response import TipoOportunidadeResponse
 from .models.tipo_resolucao_response import TipoResolucaoResponse
 from .models.tipo_telefone_response import TipoTelefoneResponse
+from .models.tipo_template_request import TipoTemplateRequest
+from .models.tipo_template_response import TipoTemplateResponse
 from .models.token_response import TokenResponse
 from .models.transacao_corrente_response import TransacaoCorrenteResponse
 from .models.transacao_nao_processada_response import TransacaoNaoProcessadaResponse
@@ -221,6 +230,7 @@ from .models.transacao_on_us_response import TransacaoOnUsResponse
 from .models.transacoes_correntes_response import TransacoesCorrentesResponse
 from .models.transferencia_bancaria_persist import TransferenciaBancariaPersist
 from .models.transferencia_bancaria_response import TransferenciaBancariaResponse
+from .models.transferencia_detalhe_response import TransferenciaDetalheResponse
 from .models.transferencia_response import TransferenciaResponse
 from .models.usuario_persist import UsuarioPersist
 from .models.usuario_response import UsuarioResponse

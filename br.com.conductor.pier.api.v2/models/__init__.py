@@ -37,6 +37,8 @@ from .cartao_impressao_provisorio_response import CartaoImpressaoProvisorioRespo
 from .cartao_impressao_response import CartaoImpressaoResponse
 from .cartao_response import CartaoResponse
 from .cdt_detalhe_oportunidade_aud import CdtDetalheOportunidadeAUD
+from .codigo_seguranca_email_persist import CodigoSegurancaEMAILPersist
+from .codigo_seguranca_response import CodigoSegurancaResponse
 from .codigo_seguranca_sms_persist import CodigoSegurancaSMSPersist
 from .codigo_seguranca_sms_request import CodigoSegurancaSMSRequest
 from .compra_response import CompraResponse
@@ -56,13 +58,12 @@ from .detalhes_fatura_response import DetalhesFaturaResponse
 from .dispositivo_persist import DispositivoPersist
 from .dispositivo_response import DispositivoResponse
 from .divida_cliente_response import DividaClienteResponse
+from .documento_detalhado_response import DocumentoDetalhadoResponse
 from .documento_detalhe_response import DocumentoDetalheResponse
 from .documento_parametros_request import DocumentoParametrosRequest
 from .documento_response import DocumentoResponse
 from .documento_template_persist import DocumentoTemplatePersist
 from .documento_template_response import DocumentoTemplateResponse
-from .documento_tipo_request import DocumentoTipoRequest
-from .documento_tipo_response import DocumentoTipoResponse
 from .emprestimo_pessoal_request import EmprestimoPessoalRequest
 from .emprestimo_pessoal_response import EmprestimoPessoalResponse
 from .endereco_aprovado_persist import EnderecoAprovadoPersist
@@ -83,6 +84,7 @@ from .historico_impressao_cartao_response import HistoricoImpressaoCartaoRespons
 from .historico_telefone_response import HistoricoTelefoneResponse
 from .integracao_emissor_persist import IntegracaoEmissorPersist
 from .integracao_emissor_response import IntegracaoEmissorResponse
+from .integrar_documento_request import IntegrarDocumentoRequest
 from .job_response import JobResponse
 from .limite_disponibilidade_response import LimiteDisponibilidadeResponse
 from .lote_cartoes_pre_pagos_response import LoteCartoesPrePagosResponse
@@ -106,6 +108,7 @@ from .page_banco_response import PageBancoResponse
 from .page_base_response import PageBaseResponse
 from .page_campo_codificado_descricao_response import PageCampoCodificadoDescricaoResponse
 from .page_cartao_response import PageCartaoResponse
+from .page_codigo_seguranca_response import PageCodigoSegurancaResponse
 from .page_compra_response import PageCompraResponse
 from .page_configuracao_email_response import PageConfiguracaoEmailResponse
 from .page_conta_detalhe_response import PageContaDetalheResponse
@@ -113,6 +116,7 @@ from .page_conta_historico_pagamento_response import PageContaHistoricoPagamento
 from .page_conta_response import PageContaResponse
 from .page_controle_vencimento_response import PageControleVencimentoResponse
 from .page_dispositivo_response import PageDispositivoResponse
+from .page_documento_response import PageDocumentoResponse
 from .page_documento_template_response import PageDocumentoTemplateResponse
 from .page_endereco_response import PageEnderecoResponse
 from .page_estabelecimento_response import PageEstabelecimentoResponse
@@ -156,6 +160,7 @@ from .page_tipo_endereco_response import PageTipoEnderecoResponse
 from .page_tipo_oportunidade_aud_response import PageTipoOportunidadeAUDResponse
 from .page_tipo_oportunidade_response import PageTipoOportunidadeResponse
 from .page_tipo_telefone_response import PageTipoTelefoneResponse
+from .page_tipo_template_response import PageTipoTemplateResponse
 from .page_transacao_nao_processada_response import PageTransacaoNaoProcessadaResponse
 from .page_transacao_response import PageTransacaoResponse
 from .page_transacoes_correntes_response import PageTransacoesCorrentesResponse
@@ -185,6 +190,7 @@ from .promotor_response import PromotorResponse
 from .propriedade_documento_request import PropriedadeDocumentoRequest
 from .push_apns import PushAPNS
 from .push_fcm_e_gcm import PushFCMEGCM
+from .referencia_id_persist import ReferenciaIdPersist
 from .risco_fraude_detalhado_response import RiscoFraudeDetalhadoResponse
 from .risco_fraude_response import RiscoFraudeResponse
 from .socio_aprovado_response import SocioAprovadoResponse
@@ -201,6 +207,7 @@ from .telefone_adicional_update import TelefoneAdicionalUpdate
 from .telefone_pessoa_aprovada_persist import TelefonePessoaAprovadaPersist
 from .telefone_pessoa_aprovada_response import TelefonePessoaAprovadaResponse
 from .telefone_response import TelefoneResponse
+from .template_notificacao_detalhe_response import TemplateNotificacaoDetalheResponse
 from .template_notificacao_response import TemplateNotificacaoResponse
 from .terminal_response import TerminalResponse
 from .tipo_ajuste_response import TipoAjusteResponse
@@ -212,6 +219,8 @@ from .tipo_oportunidade_aud_response import TipoOportunidadeAUDResponse
 from .tipo_oportunidade_response import TipoOportunidadeResponse
 from .tipo_resolucao_response import TipoResolucaoResponse
 from .tipo_telefone_response import TipoTelefoneResponse
+from .tipo_template_request import TipoTemplateRequest
+from .tipo_template_response import TipoTemplateResponse
 from .token_response import TokenResponse
 from .transacao_corrente_response import TransacaoCorrenteResponse
 from .transacao_nao_processada_response import TransacaoNaoProcessadaResponse
@@ -221,6 +230,7 @@ from .transacao_on_us_response import TransacaoOnUsResponse
 from .transacoes_correntes_response import TransacoesCorrentesResponse
 from .transferencia_bancaria_persist import TransferenciaBancariaPersist
 from .transferencia_bancaria_response import TransferenciaBancariaResponse
+from .transferencia_detalhe_response import TransferenciaDetalheResponse
 from .transferencia_response import TransferenciaResponse
 from .usuario_persist import UsuarioPersist
 from .usuario_response import UsuarioResponse

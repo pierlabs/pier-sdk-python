@@ -128,7 +128,7 @@ class PlataformaMobileApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get18(self, **kwargs):
+    def listar_using_get19(self, **kwargs):
         """
         Lista as plataformas mobile cadastradas
         Este m\u00C3\u00A9todo permite que sejam listadas as plataformas mobile existentes na base do PIER.
@@ -139,7 +139,7 @@ class PlataformaMobileApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get18(callback=callback_function)
+        >>> thread = api.listar_using_get19(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -160,7 +160,7 @@ class PlataformaMobileApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get18" % key
+                    " to method listar_using_get19" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -211,7 +211,7 @@ class PlataformaMobileApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def salvar_using_post15(self, persist, **kwargs):
+    def salvar_using_post14(self, persist, **kwargs):
         """
         Cadastra Plataforma Mobile
         Esse recurso permite cadastrar plataformas mobile.
@@ -222,7 +222,7 @@ class PlataformaMobileApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.salvar_using_post15(persist, callback=callback_function)
+        >>> thread = api.salvar_using_post14(persist, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -240,14 +240,14 @@ class PlataformaMobileApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method salvar_using_post15" % key
+                    " to method salvar_using_post14" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'persist' is set
         if ('persist' not in params) or (params['persist'] is None):
-            raise ValueError("Missing the required parameter `persist` when calling `salvar_using_post15`")
+            raise ValueError("Missing the required parameter `persist` when calling `salvar_using_post14`")
 
         resource_path = '/api/plataformas-mobile'.replace('{format}', 'json')
         path_params = {}

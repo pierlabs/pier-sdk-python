@@ -150,12 +150,13 @@ class NotificacaoApi(object):
         :param str tipo_notificacao: Tipo da notifica\u00C3\u00A7\u00C3\u00A3o.
         :param str remetente: Remetente
         :param str assunto: Assunto da Notificaca\u00C3\u00A7\u00C3\u00A3o.
-        :return: TemplateNotificacaoResponse
+        :param bool template_padrao: Template Padr\u00C3\u00A3o.
+        :return: TemplateNotificacaoDetalheResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['id', 'conteudo', 'id_configuracao_email', 'tipo_layout', 'tipo_notificacao', 'remetente', 'assunto']
+        all_params = ['id', 'conteudo', 'id_configuracao_email', 'tipo_layout', 'tipo_notificacao', 'remetente', 'assunto', 'template_padrao']
         all_params.append('callback')
 
         params = locals()
@@ -191,6 +192,8 @@ class NotificacaoApi(object):
             query_params['remetente'] = params['remetente']
         if 'assunto' in params:
             query_params['assunto'] = params['assunto']
+        if 'template_padrao' in params:
+            query_params['templatePadrao'] = params['template_padrao']
 
         header_params = {}
 
@@ -221,7 +224,7 @@ class NotificacaoApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='TemplateNotificacaoResponse',
+                                            response_type='TemplateNotificacaoDetalheResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
@@ -389,6 +392,160 @@ class NotificacaoApi(object):
                                             callback=params.get('callback'))
         return response
 
+    def consultar_por_email_using_get(self, id, **kwargs):
+        """
+        Consulta c\u00C3\u00B3digo de seguran\u00C3\u00A7a E-mail
+        Esse recurso permite consultar um c\u00C3\u00B3digo de seguran\u00C3\u00A7a E-mail espec\u00C3\u00ADfico por id.
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.consultar_por_email_using_get(id, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da configura\u00C3\u00A7\u00C3\u00A3o de e-mail. (required)
+        :return: CodigoSegurancaResponse
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method consultar_por_email_using_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `consultar_por_email_using_get`")
+
+        resource_path = '/api/codigos-seguranca-email/{id}'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = []
+
+        response = self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='CodigoSegurancaResponse',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
+    def consultar_por_sms_using_get(self, id, **kwargs):
+        """
+        Consulta c\u00C3\u00B3digo de seguran\u00C3\u00A7a SMS
+        Esse recurso permite consultar um c\u00C3\u00B3digo de seguran\u00C3\u00A7a SMS espec\u00C3\u00ADfico por id.
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.consultar_por_sms_using_get(id, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da configura\u00C3\u00A7\u00C3\u00A3o de e-mail. (required)
+        :return: CodigoSegurancaResponse
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method consultar_por_sms_using_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `consultar_por_sms_using_get`")
+
+        resource_path = '/api/codigos-seguranca-sms/{id}'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = []
+
+        response = self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='CodigoSegurancaResponse',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
     def consultar_template_notificacao_using_get(self, id, **kwargs):
         """
         Consulta template de notifica\u00C3\u00A7\u00C3\u00A3o
@@ -405,7 +562,7 @@ class NotificacaoApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do layout de e-mail. (required)
-        :return: TemplateNotificacaoResponse
+        :return: TemplateNotificacaoDetalheResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -461,12 +618,89 @@ class NotificacaoApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='TemplateNotificacaoResponse',
+                                            response_type='TemplateNotificacaoDetalheResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
 
-    def gerar_token_using_post(self, persist, **kwargs):
+    def gerar_token_email_using_post(self, email, **kwargs):
+        """
+        Gerar c\u00C3\u00B3digo de seguran\u00C3\u00A7a e enviar por e-mail
+        Esse recurso permite gerar e enviar c\u00C3\u00B3digos de seguran\u00C3\u00A7a por e-mail, para valida\u00C3\u00A7\u00C3\u00A3o de dispositivos.
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.gerar_token_email_using_post(email, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str email: email (required)
+        :return: str
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['email']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method gerar_token_email_using_post" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        # verify the required parameter 'email' is set
+        if ('email' not in params) or (params['email'] is None):
+            raise ValueError("Missing the required parameter `email` when calling `gerar_token_email_using_post`")
+
+        resource_path = '/api/notificacoes-email/gerar-codigo-seguranca'.replace('{format}', 'json')
+        path_params = {}
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        if 'email' in params:
+            body_params = params['email']
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = []
+
+        response = self.api_client.call_api(resource_path, 'POST',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='str',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
+    def gerar_token_sms_using_post(self, persist, **kwargs):
         """
         Gerar c\u00C3\u00B3digo de seguran\u00C3\u00A7a e enviar por sms
         Esse recurso permite gerar e enviar c\u00C3\u00B3digos de seguran\u00C3\u00A7a por sms, para valida\u00C3\u00A7\u00C3\u00A3o de dispositivos.
@@ -477,7 +711,7 @@ class NotificacaoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.gerar_token_using_post(persist, callback=callback_function)
+        >>> thread = api.gerar_token_sms_using_post(persist, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -495,14 +729,14 @@ class NotificacaoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method gerar_token_using_post" % key
+                    " to method gerar_token_sms_using_post" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'persist' is set
         if ('persist' not in params) or (params['persist'] is None):
-            raise ValueError("Missing the required parameter `persist` when calling `gerar_token_using_post`")
+            raise ValueError("Missing the required parameter `persist` when calling `gerar_token_sms_using_post`")
 
         resource_path = '/api/notificacoes-sms/gerar-codigo-seguranca'.replace('{format}', 'json')
         path_params = {}
@@ -619,6 +853,166 @@ class NotificacaoApi(object):
                                             post_params=form_params,
                                             files=local_var_files,
                                             response_type='PageConfiguracaoEmailResponse',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
+    def listar_por_email_using_get(self, **kwargs):
+        """
+        Lista os c\u00C3\u00B3digos de seguran\u00C3\u00A7a E-Mail
+        Esse recurso permite listar os codigos de seguran\u00C3\u00A7a por E-Mail.
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.listar_por_email_using_get(callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param list[str] sort: Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
+        :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
+        :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
+        :return: PageCodigoSegurancaResponse
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['sort', 'page', 'limit']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method listar_por_email_using_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+
+        resource_path = '/api/codigos-seguranca-email'.replace('{format}', 'json')
+        path_params = {}
+
+        query_params = {}
+        if 'sort' in params:
+            query_params['sort'] = params['sort']
+        if 'page' in params:
+            query_params['page'] = params['page']
+        if 'limit' in params:
+            query_params['limit'] = params['limit']
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = []
+
+        response = self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='PageCodigoSegurancaResponse',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
+    def listar_por_sms_using_get(self, **kwargs):
+        """
+        Lista os c\u00C3\u00B3digos de seguran\u00C3\u00A7a SMS
+        Esse recurso permite listar os codigos de seguran\u00C3\u00A7a por SMS.
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.listar_por_sms_using_get(callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param list[str] sort: Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
+        :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
+        :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
+        :return: PageCodigoSegurancaResponse
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['sort', 'page', 'limit']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method listar_por_sms_using_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+
+        resource_path = '/api/codigos-seguranca-sms'.replace('{format}', 'json')
+        path_params = {}
+
+        query_params = {}
+        if 'sort' in params:
+            query_params['sort'] = params['sort']
+        if 'page' in params:
+            query_params['page'] = params['page']
+        if 'limit' in params:
+            query_params['limit'] = params['limit']
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = []
+
+        response = self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='PageCodigoSegurancaResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
@@ -1530,12 +1924,13 @@ class NotificacaoApi(object):
         :param str tipo_notificacao: Tipo da notifica\u00C3\u00A7\u00C3\u00A3o.
         :param str remetente: Remetente
         :param str assunto: Assunto da Notificaca\u00C3\u00A7\u00C3\u00A3o.
-        :return: TemplateNotificacaoResponse
+        :param bool template_padrao: Template Padr\u00C3\u00A3o.
+        :return: TemplateNotificacaoDetalheResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['conteudo', 'id_configuracao_email', 'tipo_layout', 'tipo_notificacao', 'remetente', 'assunto']
+        all_params = ['conteudo', 'id_configuracao_email', 'tipo_layout', 'tipo_notificacao', 'remetente', 'assunto', 'template_padrao']
         all_params.append('callback')
 
         params = locals()
@@ -1566,6 +1961,8 @@ class NotificacaoApi(object):
             query_params['remetente'] = params['remetente']
         if 'assunto' in params:
             query_params['assunto'] = params['assunto']
+        if 'template_padrao' in params:
+            query_params['templatePadrao'] = params['template_padrao']
 
         header_params = {}
 
@@ -1596,12 +1993,89 @@ class NotificacaoApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='TemplateNotificacaoResponse',
+                                            response_type='TemplateNotificacaoDetalheResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
 
-    def validar_token_using_post(self, request, **kwargs):
+    def validar_token_email_using_post(self, request, **kwargs):
+        """
+        Validar c\u00C3\u00B3digo de seguran\u00C3\u00A7a enviado por e-mail
+        Esse recurso permite validar os c\u00C3\u00B3digos de seguran\u00C3\u00A7a enviador por e-mail, para valida\u00C3\u00A7\u00C3\u00A3o de dispositivos.
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.validar_token_email_using_post(request, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param CodigoSegurancaEMAILPersist request: request (required)
+        :return: str
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['request']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method validar_token_email_using_post" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        # verify the required parameter 'request' is set
+        if ('request' not in params) or (params['request'] is None):
+            raise ValueError("Missing the required parameter `request` when calling `validar_token_email_using_post`")
+
+        resource_path = '/api/notificacoes-email/validar-codigo-seguranca'.replace('{format}', 'json')
+        path_params = {}
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        if 'request' in params:
+            body_params = params['request']
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = []
+
+        response = self.api_client.call_api(resource_path, 'POST',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='str',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
+    def validar_token_sms_using_post(self, request, **kwargs):
         """
         Validar c\u00C3\u00B3digo de seguran\u00C3\u00A7a enviado por sms
         Esse recurso permite validar os c\u00C3\u00B3digos de seguran\u00C3\u00A7a enviador por sms, para valida\u00C3\u00A7\u00C3\u00A3o de dispositivos.
@@ -1612,7 +2086,7 @@ class NotificacaoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.validar_token_using_post(request, callback=callback_function)
+        >>> thread = api.validar_token_sms_using_post(request, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -1630,14 +2104,14 @@ class NotificacaoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method validar_token_using_post" % key
+                    " to method validar_token_sms_using_post" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'request' is set
         if ('request' not in params) or (params['request'] is None):
-            raise ValueError("Missing the required parameter `request` when calling `validar_token_using_post`")
+            raise ValueError("Missing the required parameter `request` when calling `validar_token_sms_using_post`")
 
         resource_path = '/api/notificacoes-sms/validar-codigo-seguranca'.replace('{format}', 'json')
         path_params = {}
