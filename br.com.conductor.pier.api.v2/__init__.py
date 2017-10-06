@@ -35,6 +35,14 @@ from .models.cartao_embossing_request import CartaoEmbossingRequest
 from .models.cartao_embossing_response import CartaoEmbossingResponse
 from .models.cartao_impressao_provisorio_response import CartaoImpressaoProvisorioResponse
 from .models.cartao_impressao_response import CartaoImpressaoResponse
+from .models.cartao_pay_atualizar_chave_response import CartaoPayAtualizarChaveResponse
+from .models.cartao_pay_cadastro_response import CartaoPayCadastroResponse
+from .models.cartao_pay_confirmar_chave_response import CartaoPayConfirmarChaveResponse
+from .models.cartao_pay_detalhe_response import CartaoPayDetalheResponse
+from .models.cartao_pay_key_update import CartaoPayKeyUpdate
+from .models.cartao_pay_persist import CartaoPayPersist
+from .models.cartao_pay_response import CartaoPayResponse
+from .models.cartao_pay_update import CartaoPayUpdate
 from .models.cartao_response import CartaoResponse
 from .models.cdt_detalhe_oportunidade_aud import CdtDetalheOportunidadeAUD
 from .models.codigo_seguranca_email_persist import CodigoSegurancaEMAILPersist
@@ -107,6 +115,7 @@ from .models.page_atendimento_cliente_response import PageAtendimentoClienteResp
 from .models.page_banco_response import PageBancoResponse
 from .models.page_base_response import PageBaseResponse
 from .models.page_campo_codificado_descricao_response import PageCampoCodificadoDescricaoResponse
+from .models.page_cartao_pay_response import PageCartaoPayResponse
 from .models.page_cartao_response import PageCartaoResponse
 from .models.page_codigo_seguranca_response import PageCodigoSegurancaResponse
 from .models.page_compra_response import PageCompraResponse
@@ -227,6 +236,9 @@ from .models.transacao_nao_processada_response import TransacaoNaoProcessadaResp
 from .models.transacao_on_us_por_id_cartao_request import TransacaoOnUsPorIdCartaoRequest
 from .models.transacao_on_us_request import TransacaoOnUsRequest
 from .models.transacao_on_us_response import TransacaoOnUsResponse
+from .models.transacao_pay_query_request import TransacaoPayQueryRequest
+from .models.transacao_pay_query_response import TransacaoPayQueryResponse
+from .models.transacao_pay_secure_request import TransacaoPaySecureRequest
 from .models.transacoes_correntes_response import TransacoesCorrentesResponse
 from .models.transferencia_bancaria_persist import TransferenciaBancariaPersist
 from .models.transferencia_bancaria_response import TransferenciaBancariaResponse
@@ -248,6 +260,7 @@ from .apis.base_api import BaseApi
 from .apis.cadastro_cliente_api import CadastroClienteApi
 from .apis.cadastro_geral_api import CadastroGeralApi
 from .apis.cartao_api import CartaoApi
+from .apis.conductor_pay_api import ConductorPayApi
 from .apis.conta_api import ContaApi
 from .apis.dispositivo_api import DispositivoApi
 from .apis.documento_api import DocumentoApi

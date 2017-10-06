@@ -9,6 +9,7 @@ from .base_api import BaseApi
 from .cadastro_cliente_api import CadastroClienteApi
 from .cadastro_geral_api import CadastroGeralApi
 from .cartao_api import CartaoApi
+from .conductor_pay_api import ConductorPayApi
 from .conta_api import ContaApi
 from .dispositivo_api import DispositivoApi
 from .documento_api import DocumentoApi

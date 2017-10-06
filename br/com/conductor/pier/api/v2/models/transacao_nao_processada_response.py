@@ -63,6 +63,7 @@ class TransacaoNaoProcessadaResponse(object):
             'grupo_descricao_mcc': 'str',
             'id_estabelecimento': 'int',
             'nome_estabelecimento': 'str',
+            'nome_fantasia_estabelecimento': 'str',
             'localidade_estabelecimento': 'str',
             'plano_parcelamento': 'int',
             'numero_parcela': 'int',
@@ -101,6 +102,7 @@ class TransacaoNaoProcessadaResponse(object):
             'grupo_descricao_mcc': 'grupoDescricaoMCC',
             'id_estabelecimento': 'idEstabelecimento',
             'nome_estabelecimento': 'nomeEstabelecimento',
+            'nome_fantasia_estabelecimento': 'nomeFantasiaEstabelecimento',
             'localidade_estabelecimento': 'localidadeEstabelecimento',
             'plano_parcelamento': 'planoParcelamento',
             'numero_parcela': 'numeroParcela',
@@ -138,6 +140,7 @@ class TransacaoNaoProcessadaResponse(object):
         self._grupo_descricao_mcc = None
         self._id_estabelecimento = None
         self._nome_estabelecimento = None
+        self._nome_fantasia_estabelecimento = None
         self._localidade_estabelecimento = None
         self._plano_parcelamento = None
         self._numero_parcela = None
@@ -719,6 +722,28 @@ class TransacaoNaoProcessadaResponse(object):
         :type: str
         """
         self._nome_estabelecimento = nome_estabelecimento
+
+    @property
+    def nome_fantasia_estabelecimento(self):
+        """
+        Gets the nome_fantasia_estabelecimento of this TransacaoNaoProcessadaResponse.
+        Nome Fantasia do Estabelecimento.
+
+        :return: The nome_fantasia_estabelecimento of this TransacaoNaoProcessadaResponse.
+        :rtype: str
+        """
+        return self._nome_fantasia_estabelecimento
+
+    @nome_fantasia_estabelecimento.setter
+    def nome_fantasia_estabelecimento(self, nome_fantasia_estabelecimento):
+        """
+        Sets the nome_fantasia_estabelecimento of this TransacaoNaoProcessadaResponse.
+        Nome Fantasia do Estabelecimento.
+
+        :param nome_fantasia_estabelecimento: The nome_fantasia_estabelecimento of this TransacaoNaoProcessadaResponse.
+        :type: str
+        """
+        self._nome_fantasia_estabelecimento = nome_fantasia_estabelecimento
 
     @property
     def localidade_estabelecimento(self):

@@ -35,6 +35,14 @@ from .cartao_embossing_request import CartaoEmbossingRequest
 from .cartao_embossing_response import CartaoEmbossingResponse
 from .cartao_impressao_provisorio_response import CartaoImpressaoProvisorioResponse
 from .cartao_impressao_response import CartaoImpressaoResponse
+from .cartao_pay_atualizar_chave_response import CartaoPayAtualizarChaveResponse
+from .cartao_pay_cadastro_response import CartaoPayCadastroResponse
+from .cartao_pay_confirmar_chave_response import CartaoPayConfirmarChaveResponse
+from .cartao_pay_detalhe_response import CartaoPayDetalheResponse
+from .cartao_pay_key_update import CartaoPayKeyUpdate
+from .cartao_pay_persist import CartaoPayPersist
+from .cartao_pay_response import CartaoPayResponse
+from .cartao_pay_update import CartaoPayUpdate
 from .cartao_response import CartaoResponse
 from .cdt_detalhe_oportunidade_aud import CdtDetalheOportunidadeAUD
 from .codigo_seguranca_email_persist import CodigoSegurancaEMAILPersist
@@ -107,6 +115,7 @@ from .page_atendimento_cliente_response import PageAtendimentoClienteResponse
 from .page_banco_response import PageBancoResponse
 from .page_base_response import PageBaseResponse
 from .page_campo_codificado_descricao_response import PageCampoCodificadoDescricaoResponse
+from .page_cartao_pay_response import PageCartaoPayResponse
 from .page_cartao_response import PageCartaoResponse
 from .page_codigo_seguranca_response import PageCodigoSegurancaResponse
 from .page_compra_response import PageCompraResponse
@@ -227,6 +236,9 @@ from .transacao_nao_processada_response import TransacaoNaoProcessadaResponse
 from .transacao_on_us_por_id_cartao_request import TransacaoOnUsPorIdCartaoRequest
 from .transacao_on_us_request import TransacaoOnUsRequest
 from .transacao_on_us_response import TransacaoOnUsResponse
+from .transacao_pay_query_request import TransacaoPayQueryRequest
+from .transacao_pay_query_response import TransacaoPayQueryResponse
+from .transacao_pay_secure_request import TransacaoPaySecureRequest
 from .transacoes_correntes_response import TransacoesCorrentesResponse
 from .transferencia_bancaria_persist import TransferenciaBancariaPersist
 from .transferencia_bancaria_response import TransferenciaBancariaResponse
