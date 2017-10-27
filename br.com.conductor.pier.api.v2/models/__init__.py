@@ -7,8 +7,12 @@ from .adicional_response import AdicionalResponse
 from .adicional_update import AdicionalUpdate
 from .ajuste_response import AjusteResponse
 from .alterar_produto_request import AlterarProdutoRequest
+from .anexo_notificacao_email_request import AnexoNotificacaoEmailRequest
+from .antecipacao_mock_response import AntecipacaoMockResponse
 from .antecipacao_response import AntecipacaoResponse
 from .antecipacao_simulada_detalhes_response import AntecipacaoSimuladaDetalhesResponse
+from .antecipacao_simulada_lote_response import AntecipacaoSimuladaLoteResponse
+from .antecipacao_simulada_mock_response import AntecipacaoSimuladaMockResponse
 from .antecipacao_simulada_response import AntecipacaoSimuladaResponse
 from .anuidade_response import AnuidadeResponse
 from .aplicacao_mobile_persist import AplicacaoMobilePersist
@@ -68,6 +72,7 @@ from .dispositivo_response import DispositivoResponse
 from .divida_cliente_response import DividaClienteResponse
 from .documento_detalhado_response import DocumentoDetalhadoResponse
 from .documento_detalhe_response import DocumentoDetalheResponse
+from .documento_integracao_response import DocumentoIntegracaoResponse
 from .documento_parametros_request import DocumentoParametrosRequest
 from .documento_response import DocumentoResponse
 from .documento_template_persist import DocumentoTemplatePersist
@@ -84,6 +89,8 @@ from .fantasia_basica_response import FantasiaBasicaResponse
 from .faq_response import FaqResponse
 from .fatura_consignada_detalhe_response import FaturaConsignadaDetalheResponse
 from .fatura_consignada_response import FaturaConsignadaResponse
+from .fatura_detalhe_response import FaturaDetalheResponse
+from .fatura_fechada_response import FaturaFechadaResponse
 from .fatura_response import FaturaResponse
 from .historico_assessoria_response import HistoricoAssessoriaResponse
 from .historico_atraso_fatura_response import HistoricoAtrasoFaturaResponse
@@ -94,11 +101,11 @@ from .integracao_emissor_persist import IntegracaoEmissorPersist
 from .integracao_emissor_response import IntegracaoEmissorResponse
 from .integrar_documento_request import IntegrarDocumentoRequest
 from .job_response import JobResponse
+from .lancamento_fatura_response import LancamentoFaturaResponse
 from .limite_disponibilidade_response import LimiteDisponibilidadeResponse
 from .lote_cartoes_pre_pagos_response import LoteCartoesPrePagosResponse
 from .map_ofstring_andstring import MapOfstringAndstring
 from .notificacao_email_request import NotificacaoEmailRequest
-from .notificacao_email_response import NotificacaoEmailResponse
 from .notificacao_push_response import NotificacaoPushResponse
 from .notificacao_response import NotificacaoResponse
 from .notificacao_sms_body import NotificacaoSMSBody
@@ -133,6 +140,7 @@ from .page_estagio_cartao_response import PageEstagioCartaoResponse
 from .page_fantasia_basica_response import PageFantasiaBasicaResponse
 from .page_faq_response import PageFaqResponse
 from .page_fatura_consignada_response import PageFaturaConsignadaResponse
+from .page_fatura_fechada_response import PageFaturaFechadaResponse
 from .page_fatura_response import PageFaturaResponse
 from .page_historico_assessoria_response import PageHistoricoAssessoriaResponse
 from .page_historico_atraso_fatura_response import PageHistoricoAtrasoFaturaResponse
@@ -199,6 +207,8 @@ from .promotor_response import PromotorResponse
 from .propriedade_documento_request import PropriedadeDocumentoRequest
 from .push_apns import PushAPNS
 from .push_fcm_e_gcm import PushFCMEGCM
+from .refencia_comercial_aprovado_persist import RefenciaComercialAprovadoPersist
+from .referencia_comercial_aprovado_response import ReferenciaComercialAprovadoResponse
 from .referencia_id_persist import ReferenciaIdPersist
 from .risco_fraude_detalhado_response import RiscoFraudeDetalhadoResponse
 from .risco_fraude_response import RiscoFraudeResponse

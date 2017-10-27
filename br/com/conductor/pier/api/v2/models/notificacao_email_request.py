@@ -37,48 +37,23 @@ class NotificacaoEmailRequest(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'id_documento': 'int',
             'id_template_notificacao': 'int',
-            'destinatario': 'str',
-            'tipo_layout': 'str',
+            'destinatarios': 'list[str]',
+            'anexos': 'list[AnexoNotificacaoEmailRequest]',
             'parametros_conteudo': 'dict(str, object)'
         }
 
         self.attribute_map = {
-            'id_documento': 'idDocumento',
             'id_template_notificacao': 'idTemplateNotificacao',
-            'destinatario': 'destinatario',
-            'tipo_layout': 'tipoLayout',
+            'destinatarios': 'destinatarios',
+            'anexos': 'anexos',
             'parametros_conteudo': 'parametrosConteudo'
         }
 
-        self._id_documento = None
         self._id_template_notificacao = None
-        self._destinatario = None
-        self._tipo_layout = None
+        self._destinatarios = None
+        self._anexos = None
         self._parametros_conteudo = None
-
-    @property
-    def id_documento(self):
-        """
-        Gets the id_documento of this NotificacaoEmailRequest.
-        ID para o documento a ser enviado.
-
-        :return: The id_documento of this NotificacaoEmailRequest.
-        :rtype: int
-        """
-        return self._id_documento
-
-    @id_documento.setter
-    def id_documento(self, id_documento):
-        """
-        Sets the id_documento of this NotificacaoEmailRequest.
-        ID para o documento a ser enviado.
-
-        :param id_documento: The id_documento of this NotificacaoEmailRequest.
-        :type: int
-        """
-        self._id_documento = id_documento
 
     @property
     def id_template_notificacao(self):
@@ -103,54 +78,48 @@ class NotificacaoEmailRequest(object):
         self._id_template_notificacao = id_template_notificacao
 
     @property
-    def destinatario(self):
+    def destinatarios(self):
         """
-        Gets the destinatario of this NotificacaoEmailRequest.
-        Email do destinat\u00C3\u00A1rio.
+        Gets the destinatarios of this NotificacaoEmailRequest.
+        Lista de email(s) do(s) destinat\u00C3\u00A1rio(s).
 
-        :return: The destinatario of this NotificacaoEmailRequest.
-        :rtype: str
+        :return: The destinatarios of this NotificacaoEmailRequest.
+        :rtype: list[str]
         """
-        return self._destinatario
+        return self._destinatarios
 
-    @destinatario.setter
-    def destinatario(self, destinatario):
+    @destinatarios.setter
+    def destinatarios(self, destinatarios):
         """
-        Sets the destinatario of this NotificacaoEmailRequest.
-        Email do destinat\u00C3\u00A1rio.
+        Sets the destinatarios of this NotificacaoEmailRequest.
+        Lista de email(s) do(s) destinat\u00C3\u00A1rio(s).
 
-        :param destinatario: The destinatario of this NotificacaoEmailRequest.
-        :type: str
+        :param destinatarios: The destinatarios of this NotificacaoEmailRequest.
+        :type: list[str]
         """
-        self._destinatario = destinatario
+        self._destinatarios = destinatarios
 
     @property
-    def tipo_layout(self):
+    def anexos(self):
         """
-        Gets the tipo_layout of this NotificacaoEmailRequest.
-        Tipo de layout para o template da notifica\u00C3\u00A7\u00C3\u00A3o.
+        Gets the anexos of this NotificacaoEmailRequest.
+        Lista de ids dos anexos a serem enviados.
 
-        :return: The tipo_layout of this NotificacaoEmailRequest.
-        :rtype: str
+        :return: The anexos of this NotificacaoEmailRequest.
+        :rtype: list[AnexoNotificacaoEmailRequest]
         """
-        return self._tipo_layout
+        return self._anexos
 
-    @tipo_layout.setter
-    def tipo_layout(self, tipo_layout):
+    @anexos.setter
+    def anexos(self, anexos):
         """
-        Sets the tipo_layout of this NotificacaoEmailRequest.
-        Tipo de layout para o template da notifica\u00C3\u00A7\u00C3\u00A3o.
+        Sets the anexos of this NotificacaoEmailRequest.
+        Lista de ids dos anexos a serem enviados.
 
-        :param tipo_layout: The tipo_layout of this NotificacaoEmailRequest.
-        :type: str
+        :param anexos: The anexos of this NotificacaoEmailRequest.
+        :type: list[AnexoNotificacaoEmailRequest]
         """
-        allowed_values = ["RECUPERAR_SENHA", "FATURA_POR_EMAIL", "VALIDAR_DISPOSITIVO", "NOTIFICACAO_EMAIL"]
-        if tipo_layout not in allowed_values:
-            raise ValueError(
-                "Invalid value for `tipo_layout`, must be one of {0}"
-                .format(allowed_values)
-            )
-        self._tipo_layout = tipo_layout
+        self._anexos = anexos
 
     @property
     def parametros_conteudo(self):

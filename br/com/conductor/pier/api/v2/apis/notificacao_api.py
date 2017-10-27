@@ -1377,7 +1377,7 @@ class NotificacaoApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param NotificacaoEmailRequest request: request (required)
-        :return: NotificacaoEmailResponse
+        :return: object
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1433,12 +1433,12 @@ class NotificacaoApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='NotificacaoEmailResponse',
+                                            response_type='object',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
 
-    def responder_sms_using_post(self, **kwargs):
+    def responder_sms_get_using_get(self, **kwargs):
         """
         Responder SMS
         Esse recurso permite atualizar a resposta do SMS, fornecida pedo usu\u00C3\u00A1rio
@@ -1449,7 +1449,7 @@ class NotificacaoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.responder_sms_using_post(callback=callback_function)
+        >>> thread = api.responder_sms_get_using_get(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -1469,7 +1469,7 @@ class NotificacaoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method responder_sms_using_post" % key
+                    " to method responder_sms_get_using_get" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -1506,7 +1506,7 @@ class NotificacaoApi(object):
         # Authentication setting
         auth_settings = []
 
-        response = self.api_client.call_api(resource_path, 'POST',
+        response = self.api_client.call_api(resource_path, 'GET',
                                             path_params,
                                             query_params,
                                             header_params,

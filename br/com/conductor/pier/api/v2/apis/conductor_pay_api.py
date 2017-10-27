@@ -744,7 +744,7 @@ class ConductorPayApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get6(self, device_id, **kwargs):
+    def listar_using_get6(self, **kwargs):
         """
         Lista os cart\u00C3\u00B5es cadastrados
         Este m\u00C3\u00A9todo permite listar os cart\u00C3\u00B5es cadastrado em um dispositivo.
@@ -755,21 +755,22 @@ class ConductorPayApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get6(device_id, callback=callback_function)
+        >>> thread = api.listar_using_get6(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param str device_id: Device id criptografado (required)
+        :param str device_id: Device id criptografado
         :param list[str] sort: Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
         :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
         :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
         :param str status: Status do cart\u00C3\u00A3o tokenizado
+        :param str numero_cartao: Numero do cart\u00C3\u00A3o tokenizado
         :return: PageCartaoPayResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['device_id', 'sort', 'page', 'limit', 'status']
+        all_params = ['device_id', 'sort', 'page', 'limit', 'status', 'numero_cartao']
         all_params.append('callback')
 
         params = locals()
@@ -782,9 +783,6 @@ class ConductorPayApi(object):
             params[key] = val
         del params['kwargs']
 
-        # verify the required parameter 'device_id' is set
-        if ('device_id' not in params) or (params['device_id'] is None):
-            raise ValueError("Missing the required parameter `device_id` when calling `listar_using_get6`")
 
         resource_path = '/api/cartoes-tokenizados'.replace('{format}', 'json')
         path_params = {}
@@ -798,6 +796,8 @@ class ConductorPayApi(object):
             query_params['limit'] = params['limit']
         if 'status' in params:
             query_params['status'] = params['status']
+        if 'numero_cartao' in params:
+            query_params['numeroCartao'] = params['numero_cartao']
 
         header_params = {}
         if 'device_id' in params:

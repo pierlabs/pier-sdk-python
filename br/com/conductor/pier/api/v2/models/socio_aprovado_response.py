@@ -89,7 +89,7 @@ class SocioAprovadoResponse(object):
     def id(self):
         """
         Gets the id of this SocioAprovadoResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Endere\u00C3\u00A7o (id)
+        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do S\u00C3\u00B3cio (id)
 
         :return: The id of this SocioAprovadoResponse.
         :rtype: int
@@ -100,7 +100,7 @@ class SocioAprovadoResponse(object):
     def id(self, id):
         """
         Sets the id of this SocioAprovadoResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Endere\u00C3\u00A7o (id)
+        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do S\u00C3\u00B3cio (id)
 
         :param id: The id of this SocioAprovadoResponse.
         :type: int

@@ -38,19 +38,16 @@ class AlterarProdutoRequest(object):
         """
         self.swagger_types = {
             'id_produto': 'int',
-            'id_origem_comercial': 'int',
-            'limite_global': 'float'
+            'id_origem_comercial': 'int'
         }
 
         self.attribute_map = {
             'id_produto': 'idProduto',
-            'id_origem_comercial': 'idOrigemComercial',
-            'limite_global': 'limiteGlobal'
+            'id_origem_comercial': 'idOrigemComercial'
         }
 
         self._id_produto = None
         self._id_origem_comercial = None
-        self._limite_global = None
 
     @property
     def id_produto(self):
@@ -95,28 +92,6 @@ class AlterarProdutoRequest(object):
         :type: int
         """
         self._id_origem_comercial = id_origem_comercial
-
-    @property
-    def limite_global(self):
-        """
-        Gets the limite_global of this AlterarProdutoRequest.
-        Valor do novo limite Global.
-
-        :return: The limite_global of this AlterarProdutoRequest.
-        :rtype: float
-        """
-        return self._limite_global
-
-    @limite_global.setter
-    def limite_global(self, limite_global):
-        """
-        Sets the limite_global of this AlterarProdutoRequest.
-        Valor do novo limite Global.
-
-        :param limite_global: The limite_global of this AlterarProdutoRequest.
-        :type: float
-        """
-        self._limite_global = limite_global
 
     def to_dict(self):
         """

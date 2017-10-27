@@ -45,6 +45,89 @@ class FaturaApi(object):
                 config.api_client = ApiClient()
             self.api_client = config.api_client
 
+    def consultar_fatura_using_get1(self, data_vencimento, id_conta, **kwargs):
+        """
+        Consulta fatura de um cliente
+        Consulta fatura de um cliente pela data de vencimento.
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.consultar_fatura_using_get1(data_vencimento, id_conta, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param str data_vencimento: Data Vencimento (required)
+        :param int id_conta: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da conta (id). (required)
+        :return: FaturaDetalheResponse
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['data_vencimento', 'id_conta']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method consultar_fatura_using_get1" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        # verify the required parameter 'data_vencimento' is set
+        if ('data_vencimento' not in params) or (params['data_vencimento'] is None):
+            raise ValueError("Missing the required parameter `data_vencimento` when calling `consultar_fatura_using_get1`")
+        # verify the required parameter 'id_conta' is set
+        if ('id_conta' not in params) or (params['id_conta'] is None):
+            raise ValueError("Missing the required parameter `id_conta` when calling `consultar_fatura_using_get1`")
+
+        resource_path = '/api/faturas/{dataVencimento}'.replace('{format}', 'json')
+        path_params = {}
+        if 'data_vencimento' in params:
+            path_params['dataVencimento'] = params['data_vencimento']
+
+        query_params = {}
+        if 'id_conta' in params:
+            query_params['idConta'] = params['id_conta']
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = []
+
+        response = self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='FaturaDetalheResponse',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
     def consultar_lancamentos_futuros_fatura_using_get1(self, id, data_vencimento_padrao, **kwargs):
         """
         Listar planos de parcelamento
@@ -219,6 +302,95 @@ class FaturaApi(object):
                                             post_params=form_params,
                                             files=local_var_files,
                                             response_type='object',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
+    def listar_faturas_using_get1(self, id_conta, **kwargs):
+        """
+        Listar faturas de um cliente.
+        Lista faturas de um cliente.
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.listar_faturas_using_get1(id_conta, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param int id_conta: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da conta (id). (required)
+        :param str situacao_processamento: Status do processamento das faturas. Valores possiveis [ABERTA, FECHADA, TODAS].
+        :param list[str] sort: Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
+        :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
+        :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
+        :return: PageFaturaResponse
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id_conta', 'situacao_processamento', 'sort', 'page', 'limit']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method listar_faturas_using_get1" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        # verify the required parameter 'id_conta' is set
+        if ('id_conta' not in params) or (params['id_conta'] is None):
+            raise ValueError("Missing the required parameter `id_conta` when calling `listar_faturas_using_get1`")
+
+        resource_path = '/api/faturas'.replace('{format}', 'json')
+        path_params = {}
+
+        query_params = {}
+        if 'id_conta' in params:
+            query_params['idConta'] = params['id_conta']
+        if 'situacao_processamento' in params:
+            query_params['situacaoProcessamento'] = params['situacao_processamento']
+        if 'sort' in params:
+            query_params['sort'] = params['sort']
+        if 'page' in params:
+            query_params['page'] = params['page']
+        if 'limit' in params:
+            query_params['limit'] = params['limit']
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = []
+
+        response = self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='PageFaturaResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response

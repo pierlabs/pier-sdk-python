@@ -57,6 +57,7 @@ class PessoaJuridicaAprovadaResponse(object):
             'telefones': 'list[TelefonePessoaAprovadaResponse]',
             'enderecos': 'list[EnderecoAprovadoResponse]',
             'socios': 'list[SocioAprovadoResponse]',
+            'referencias': 'list[ReferenciaComercialAprovadoResponse]',
             'limite_global': 'float',
             'limite_maximo': 'float',
             'limite_parcelas': 'float'
@@ -83,6 +84,7 @@ class PessoaJuridicaAprovadaResponse(object):
             'telefones': 'telefones',
             'enderecos': 'enderecos',
             'socios': 'socios',
+            'referencias': 'referencias',
             'limite_global': 'limiteGlobal',
             'limite_maximo': 'limiteMaximo',
             'limite_parcelas': 'limiteParcelas'
@@ -108,6 +110,7 @@ class PessoaJuridicaAprovadaResponse(object):
         self._telefones = None
         self._enderecos = None
         self._socios = None
+        self._referencias = None
         self._limite_global = None
         self._limite_maximo = None
         self._limite_parcelas = None
@@ -551,6 +554,28 @@ class PessoaJuridicaAprovadaResponse(object):
         :type: list[SocioAprovadoResponse]
         """
         self._socios = socios
+
+    @property
+    def referencias(self):
+        """
+        Gets the referencias of this PessoaJuridicaAprovadaResponse.
+        Apresenta os dados dos s\u00C3\u00B3cios da empresa, caso exista
+
+        :return: The referencias of this PessoaJuridicaAprovadaResponse.
+        :rtype: list[ReferenciaComercialAprovadoResponse]
+        """
+        return self._referencias
+
+    @referencias.setter
+    def referencias(self, referencias):
+        """
+        Sets the referencias of this PessoaJuridicaAprovadaResponse.
+        Apresenta os dados dos s\u00C3\u00B3cios da empresa, caso exista
+
+        :param referencias: The referencias of this PessoaJuridicaAprovadaResponse.
+        :type: list[ReferenciaComercialAprovadoResponse]
+        """
+        self._referencias = referencias
 
     @property
     def limite_global(self):

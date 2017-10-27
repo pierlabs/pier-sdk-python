@@ -54,8 +54,9 @@ class PessoaJuridicaAprovadaPersist(object):
             'valor_pontuacao': 'int',
             'telefones': 'list[TelefonePessoaAprovadaPersist]',
             'enderecos': 'list[EnderecoAprovadoPersist]',
-            'limite_global': 'float',
             'socios': 'list[PessoaPersist]',
+            'referencias_comerciais': 'list[RefenciaComercialAprovadoPersist]',
+            'limite_global': 'float',
             'limite_maximo': 'float',
             'limite_parcelas': 'float'
         }
@@ -78,8 +79,9 @@ class PessoaJuridicaAprovadaPersist(object):
             'valor_pontuacao': 'valorPontuacao',
             'telefones': 'telefones',
             'enderecos': 'enderecos',
-            'limite_global': 'limiteGlobal',
             'socios': 'socios',
+            'referencias_comerciais': 'referenciasComerciais',
+            'limite_global': 'limiteGlobal',
             'limite_maximo': 'limiteMaximo',
             'limite_parcelas': 'limiteParcelas'
         }
@@ -101,8 +103,9 @@ class PessoaJuridicaAprovadaPersist(object):
         self._valor_pontuacao = None
         self._telefones = None
         self._enderecos = None
-        self._limite_global = None
         self._socios = None
+        self._referencias_comerciais = None
+        self._limite_global = None
         self._limite_maximo = None
         self._limite_parcelas = None
 
@@ -481,28 +484,6 @@ class PessoaJuridicaAprovadaPersist(object):
         self._enderecos = enderecos
 
     @property
-    def limite_global(self):
-        """
-        Gets the limite_global of this PessoaJuridicaAprovadaPersist.
-        Valor do Limite Global
-
-        :return: The limite_global of this PessoaJuridicaAprovadaPersist.
-        :rtype: float
-        """
-        return self._limite_global
-
-    @limite_global.setter
-    def limite_global(self, limite_global):
-        """
-        Sets the limite_global of this PessoaJuridicaAprovadaPersist.
-        Valor do Limite Global
-
-        :param limite_global: The limite_global of this PessoaJuridicaAprovadaPersist.
-        :type: float
-        """
-        self._limite_global = limite_global
-
-    @property
     def socios(self):
         """
         Gets the socios of this PessoaJuridicaAprovadaPersist.
@@ -523,6 +504,50 @@ class PessoaJuridicaAprovadaPersist(object):
         :type: list[PessoaPersist]
         """
         self._socios = socios
+
+    @property
+    def referencias_comerciais(self):
+        """
+        Gets the referencias_comerciais of this PessoaJuridicaAprovadaPersist.
+        Apresenta os dados das refer\u00C3\u00AAncias comerciais
+
+        :return: The referencias_comerciais of this PessoaJuridicaAprovadaPersist.
+        :rtype: list[RefenciaComercialAprovadoPersist]
+        """
+        return self._referencias_comerciais
+
+    @referencias_comerciais.setter
+    def referencias_comerciais(self, referencias_comerciais):
+        """
+        Sets the referencias_comerciais of this PessoaJuridicaAprovadaPersist.
+        Apresenta os dados das refer\u00C3\u00AAncias comerciais
+
+        :param referencias_comerciais: The referencias_comerciais of this PessoaJuridicaAprovadaPersist.
+        :type: list[RefenciaComercialAprovadoPersist]
+        """
+        self._referencias_comerciais = referencias_comerciais
+
+    @property
+    def limite_global(self):
+        """
+        Gets the limite_global of this PessoaJuridicaAprovadaPersist.
+        Valor do Limite Global
+
+        :return: The limite_global of this PessoaJuridicaAprovadaPersist.
+        :rtype: float
+        """
+        return self._limite_global
+
+    @limite_global.setter
+    def limite_global(self, limite_global):
+        """
+        Sets the limite_global of this PessoaJuridicaAprovadaPersist.
+        Valor do Limite Global
+
+        :param limite_global: The limite_global of this PessoaJuridicaAprovadaPersist.
+        :type: float
+        """
+        self._limite_global = limite_global
 
     @property
     def limite_maximo(self):

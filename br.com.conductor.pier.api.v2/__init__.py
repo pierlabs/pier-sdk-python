@@ -7,8 +7,12 @@ from .models.adicional_response import AdicionalResponse
 from .models.adicional_update import AdicionalUpdate
 from .models.ajuste_response import AjusteResponse
 from .models.alterar_produto_request import AlterarProdutoRequest
+from .models.anexo_notificacao_email_request import AnexoNotificacaoEmailRequest
+from .models.antecipacao_mock_response import AntecipacaoMockResponse
 from .models.antecipacao_response import AntecipacaoResponse
 from .models.antecipacao_simulada_detalhes_response import AntecipacaoSimuladaDetalhesResponse
+from .models.antecipacao_simulada_lote_response import AntecipacaoSimuladaLoteResponse
+from .models.antecipacao_simulada_mock_response import AntecipacaoSimuladaMockResponse
 from .models.antecipacao_simulada_response import AntecipacaoSimuladaResponse
 from .models.anuidade_response import AnuidadeResponse
 from .models.aplicacao_mobile_persist import AplicacaoMobilePersist
@@ -68,6 +72,7 @@ from .models.dispositivo_response import DispositivoResponse
 from .models.divida_cliente_response import DividaClienteResponse
 from .models.documento_detalhado_response import DocumentoDetalhadoResponse
 from .models.documento_detalhe_response import DocumentoDetalheResponse
+from .models.documento_integracao_response import DocumentoIntegracaoResponse
 from .models.documento_parametros_request import DocumentoParametrosRequest
 from .models.documento_response import DocumentoResponse
 from .models.documento_template_persist import DocumentoTemplatePersist
@@ -84,6 +89,8 @@ from .models.fantasia_basica_response import FantasiaBasicaResponse
 from .models.faq_response import FaqResponse
 from .models.fatura_consignada_detalhe_response import FaturaConsignadaDetalheResponse
 from .models.fatura_consignada_response import FaturaConsignadaResponse
+from .models.fatura_detalhe_response import FaturaDetalheResponse
+from .models.fatura_fechada_response import FaturaFechadaResponse
 from .models.fatura_response import FaturaResponse
 from .models.historico_assessoria_response import HistoricoAssessoriaResponse
 from .models.historico_atraso_fatura_response import HistoricoAtrasoFaturaResponse
@@ -94,11 +101,11 @@ from .models.integracao_emissor_persist import IntegracaoEmissorPersist
 from .models.integracao_emissor_response import IntegracaoEmissorResponse
 from .models.integrar_documento_request import IntegrarDocumentoRequest
 from .models.job_response import JobResponse
+from .models.lancamento_fatura_response import LancamentoFaturaResponse
 from .models.limite_disponibilidade_response import LimiteDisponibilidadeResponse
 from .models.lote_cartoes_pre_pagos_response import LoteCartoesPrePagosResponse
 from .models.map_ofstring_andstring import MapOfstringAndstring
 from .models.notificacao_email_request import NotificacaoEmailRequest
-from .models.notificacao_email_response import NotificacaoEmailResponse
 from .models.notificacao_push_response import NotificacaoPushResponse
 from .models.notificacao_response import NotificacaoResponse
 from .models.notificacao_sms_body import NotificacaoSMSBody
@@ -133,6 +140,7 @@ from .models.page_estagio_cartao_response import PageEstagioCartaoResponse
 from .models.page_fantasia_basica_response import PageFantasiaBasicaResponse
 from .models.page_faq_response import PageFaqResponse
 from .models.page_fatura_consignada_response import PageFaturaConsignadaResponse
+from .models.page_fatura_fechada_response import PageFaturaFechadaResponse
 from .models.page_fatura_response import PageFaturaResponse
 from .models.page_historico_assessoria_response import PageHistoricoAssessoriaResponse
 from .models.page_historico_atraso_fatura_response import PageHistoricoAtrasoFaturaResponse
@@ -199,6 +207,8 @@ from .models.promotor_response import PromotorResponse
 from .models.propriedade_documento_request import PropriedadeDocumentoRequest
 from .models.push_apns import PushAPNS
 from .models.push_fcm_e_gcm import PushFCMEGCM
+from .models.refencia_comercial_aprovado_persist import RefenciaComercialAprovadoPersist
+from .models.referencia_comercial_aprovado_response import ReferenciaComercialAprovadoResponse
 from .models.referencia_id_persist import ReferenciaIdPersist
 from .models.risco_fraude_detalhado_response import RiscoFraudeDetalhadoResponse
 from .models.risco_fraude_response import RiscoFraudeResponse
