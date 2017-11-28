@@ -8,11 +8,9 @@ from .models.adicional_update import AdicionalUpdate
 from .models.ajuste_response import AjusteResponse
 from .models.alterar_produto_request import AlterarProdutoRequest
 from .models.anexo_notificacao_email_request import AnexoNotificacaoEmailRequest
-from .models.antecipacao_mock_response import AntecipacaoMockResponse
 from .models.antecipacao_response import AntecipacaoResponse
 from .models.antecipacao_simulada_detalhes_response import AntecipacaoSimuladaDetalhesResponse
 from .models.antecipacao_simulada_lote_response import AntecipacaoSimuladaLoteResponse
-from .models.antecipacao_simulada_mock_response import AntecipacaoSimuladaMockResponse
 from .models.antecipacao_simulada_response import AntecipacaoSimuladaResponse
 from .models.anuidade_response import AnuidadeResponse
 from .models.aplicacao_mobile_persist import AplicacaoMobilePersist
@@ -31,6 +29,9 @@ from .models.base_response import BaseResponse
 from .models.beneficio_pagamento_atraso_response import BeneficioPagamentoAtrasoResponse
 from .models.body_access_token import BodyAccessToken
 from .models.boleto_response import BoletoResponse
+from .models.campanha_persist import CampanhaPersist
+from .models.campanha_response import CampanhaResponse
+from .models.campanha_update import CampanhaUpdate
 from .models.campo_codificado_descricao_response import CampoCodificadoDescricaoResponse
 from .models.cancelamento_transacao_on_us_request import CancelamentoTransacaoOnUsRequest
 from .models.cancelamento_transacao_por_id_cartao_request import CancelamentoTransacaoPorIdCartaoRequest
@@ -56,6 +57,13 @@ from .models.codigo_seguranca_sms_request import CodigoSegurancaSMSRequest
 from .models.compra_response import CompraResponse
 from .models.configuracao_email_persist import ConfiguracaoEmailPersist
 from .models.configuracao_email_response import ConfiguracaoEmailResponse
+from .models.configuracao_registro_cobranca_persist import ConfiguracaoRegistroCobrancaPersist
+from .models.configuracao_registro_cobranca_response import ConfiguracaoRegistroCobrancaResponse
+from .models.configuracao_rotativo_detalhe_response import ConfiguracaoRotativoDetalheResponse
+from .models.configuracao_rotativo_persist import ConfiguracaoRotativoPersist
+from .models.conta_bancaria_portador_persist import ContaBancariaPortadorPersist
+from .models.conta_bancaria_portador_response import ContaBancariaPortadorResponse
+from .models.conta_bancaria_portador_update import ContaBancariaPortadorUpdate
 from .models.conta_detalhe_response import ContaDetalheResponse
 from .models.conta_historico_pagamento_response import ContaHistoricoPagamentoResponse
 from .models.conta_response import ContaResponse
@@ -121,12 +129,15 @@ from .models.page_aplicacao_mobile_response import PageAplicacaoMobileResponse
 from .models.page_atendimento_cliente_response import PageAtendimentoClienteResponse
 from .models.page_banco_response import PageBancoResponse
 from .models.page_base_response import PageBaseResponse
+from .models.page_campanha_response import PageCampanhaResponse
 from .models.page_campo_codificado_descricao_response import PageCampoCodificadoDescricaoResponse
 from .models.page_cartao_pay_response import PageCartaoPayResponse
 from .models.page_cartao_response import PageCartaoResponse
 from .models.page_codigo_seguranca_response import PageCodigoSegurancaResponse
 from .models.page_compra_response import PageCompraResponse
 from .models.page_configuracao_email_response import PageConfiguracaoEmailResponse
+from .models.page_configuracao_rotativo_response import PageConfiguracaoRotativoResponse
+from .models.page_conta_bancaria_portador_response import PageContaBancariaPortadorResponse
 from .models.page_conta_detalhe_response import PageContaDetalheResponse
 from .models.page_conta_historico_pagamento_response import PageContaHistoricoPagamentoResponse
 from .models.page_conta_response import PageContaResponse
@@ -153,6 +164,7 @@ from .models.page_oportunidade_response import PageOportunidadeResponse
 from .models.page_origem_comercial_response import PageOrigemComercialResponse
 from .models.page_pais_response import PagePaisResponse
 from .models.page_pessoa_detalhe_response import PagePessoaDetalheResponse
+from .models.page_pessoa_juridica_response import PagePessoaJuridicaResponse
 from .models.page_pessoa_response import PagePessoaResponse
 from .models.page_plano_parcelamento_response import PagePlanoParcelamentoResponse
 from .models.page_plataforma_mobile_response import PagePlataformaMobileResponse
@@ -173,6 +185,8 @@ from .models.page_template_notificacao_response import PageTemplateNotificacaoRe
 from .models.page_terminal_response import PageTerminalResponse
 from .models.page_tipo_ajuste_response import PageTipoAjusteResponse
 from .models.page_tipo_boleto_response import PageTipoBoletoResponse
+from .models.page_tipo_campanha_response import PageTipoCampanhaResponse
+from .models.page_tipo_debito_recorrente_response import PageTipoDebitoRecorrenteResponse
 from .models.page_tipo_endereco_response import PageTipoEnderecoResponse
 from .models.page_tipo_oportunidade_aud_response import PageTipoOportunidadeAUDResponse
 from .models.page_tipo_oportunidade_response import PageTipoOportunidadeResponse
@@ -192,8 +206,12 @@ from .models.pessoa_fisica_aprovada_persist import PessoaFisicaAprovadaPersist
 from .models.pessoa_fisica_aprovada_response import PessoaFisicaAprovadaResponse
 from .models.pessoa_juridica_aprovada_persist import PessoaJuridicaAprovadaPersist
 from .models.pessoa_juridica_aprovada_response import PessoaJuridicaAprovadaResponse
+from .models.pessoa_juridica_response import PessoaJuridicaResponse
 from .models.pessoa_persist import PessoaPersist
 from .models.pessoa_response import PessoaResponse
+from .models.plano_campanha_persist import PlanoCampanhaPersist
+from .models.plano_campanha_response import PlanoCampanhaResponse
+from .models.plano_campanha_update import PlanoCampanhaUpdate
 from .models.plano_parcelamento_emprestimo_response import PlanoParcelamentoEmprestimoResponse
 from .models.plano_parcelamento_response import PlanoParcelamentoResponse
 from .models.plataforma_mobile_persist import PlataformaMobilePersist
@@ -229,8 +247,11 @@ from .models.telefone_response import TelefoneResponse
 from .models.template_notificacao_detalhe_response import TemplateNotificacaoDetalheResponse
 from .models.template_notificacao_response import TemplateNotificacaoResponse
 from .models.terminal_response import TerminalResponse
+from .models.terminal_update import TerminalUpdate
 from .models.tipo_ajuste_response import TipoAjusteResponse
 from .models.tipo_boleto_response import TipoBoletoResponse
+from .models.tipo_campanha_response import TipoCampanhaResponse
+from .models.tipo_debito_recorrente_response import TipoDebitoRecorrenteResponse
 from .models.tipo_endereco_response import TipoEnderecoResponse
 from .models.tipo_operacao_response import TipoOperacaoResponse
 from .models.tipo_oportunidade import TipoOportunidade
@@ -267,11 +288,13 @@ from .apis.aplicacao_mobile_api import AplicacaoMobileApi
 from .apis.arquivo_api import ArquivoApi
 from .apis.autorizacao_api import AutorizacaoApi
 from .apis.base_api import BaseApi
+from .apis.boleto_api import BoletoApi
 from .apis.cadastro_cliente_api import CadastroClienteApi
 from .apis.cadastro_geral_api import CadastroGeralApi
 from .apis.cartao_api import CartaoApi
 from .apis.conductor_pay_api import ConductorPayApi
 from .apis.conta_api import ContaApi
+from .apis.debito_recorrente_api import DebitoRecorrenteApi
 from .apis.dispositivo_api import DispositivoApi
 from .apis.documento_api import DocumentoApi
 from .apis.endereco_nacional_api import EnderecoNacionalApi
@@ -280,6 +303,7 @@ from .apis.faq_api import FAQApi
 from .apis.fatura_api import FaturaApi
 from .apis.job_api import JobApi
 from .apis.limite_api import LimiteApi
+from .apis.limite_disponibilidade_api import LimiteDisponibilidadeApi
 from .apis.notificacao_api import NotificacaoApi
 from .apis.oportunidade_api import OportunidadeApi
 from .apis.permissao_pais_api import PermissaoPaisApi
@@ -288,6 +312,7 @@ from .apis.risco_fraude_api import RiscoFraudeApi
 from .apis.servico_conta_api import ServicoContaApi
 from .apis.status_parametro_api import StatusParametroApi
 from .apis.token_api import TokenApi
+from .apis.transferencia_bancaria_api import TransferenciaBancariaApi
 from .apis.usuario_api import UsuarioApi
 from .apis.webhook_api import WebhookApi
 

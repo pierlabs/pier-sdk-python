@@ -134,90 +134,7 @@ class OportunidadeApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def alterar_using_put4(self, id, update, **kwargs):
-        """
-        Altera as oportunidades
-        Este m\u00C3\u00A9todo realiza a altera\u00C3\u00A7\u00C3\u00A3o das oportunidades.
-
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
-        >>> thread = api.alterar_using_put4(id, update, callback=callback_function)
-
-        :param callback function: The callback function
-            for asynchronous request. (optional)
-        :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da oportunidade (id). (required)
-        :param OportunidadeUpdate update: update (required)
-        :return: OportunidadeResponse
-                 If the method is called asynchronously,
-                 returns the request thread.
-        """
-
-        all_params = ['id', 'update']
-        all_params.append('callback')
-
-        params = locals()
-        for key, val in iteritems(params['kwargs']):
-            if key not in all_params:
-                raise TypeError(
-                    "Got an unexpected keyword argument '%s'"
-                    " to method alterar_using_put4" % key
-                )
-            params[key] = val
-        del params['kwargs']
-
-        # verify the required parameter 'id' is set
-        if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `alterar_using_put4`")
-        # verify the required parameter 'update' is set
-        if ('update' not in params) or (params['update'] is None):
-            raise ValueError("Missing the required parameter `update` when calling `alterar_using_put4`")
-
-        resource_path = '/api/oportunidades/{id}'.replace('{format}', 'json')
-        path_params = {}
-        if 'id' in params:
-            path_params['id'] = params['id']
-
-        query_params = {}
-
-        header_params = {}
-
-        form_params = []
-        local_var_files = {}
-
-        body_params = None
-        if 'update' in params:
-            body_params = params['update']
-
-        # HTTP header `Accept`
-        header_params['Accept'] = self.api_client.\
-            select_header_accept(['application/json'])
-        if not header_params['Accept']:
-            del header_params['Accept']
-
-        # HTTP header `Content-Type`
-        header_params['Content-Type'] = self.api_client.\
-            select_header_content_type(['application/json'])
-
-        # Authentication setting
-        auth_settings = []
-
-        response = self.api_client.call_api(resource_path, 'PUT',
-                                            path_params,
-                                            query_params,
-                                            header_params,
-                                            body=body_params,
-                                            post_params=form_params,
-                                            files=local_var_files,
-                                            response_type='OportunidadeResponse',
-                                            auth_settings=auth_settings,
-                                            callback=params.get('callback'))
-        return response
-
-    def alterar_using_put8(self, id, persist, **kwargs):
+    def alterar_using_put14(self, id, persist, **kwargs):
         """
         Altera os tipos oportunidades
         Este m\u00C3\u00A9todo realiza a altera\u00C3\u00A7\u00C3\u00A3o dos tipos oportunidades.
@@ -228,7 +145,7 @@ class OportunidadeApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.alterar_using_put8(id, persist, callback=callback_function)
+        >>> thread = api.alterar_using_put14(id, persist, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -247,17 +164,17 @@ class OportunidadeApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method alterar_using_put8" % key
+                    " to method alterar_using_put14" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `alterar_using_put8`")
+            raise ValueError("Missing the required parameter `id` when calling `alterar_using_put14`")
         # verify the required parameter 'persist' is set
         if ('persist' not in params) or (params['persist'] is None):
-            raise ValueError("Missing the required parameter `persist` when calling `alterar_using_put8`")
+            raise ValueError("Missing the required parameter `persist` when calling `alterar_using_put14`")
 
         resource_path = '/api/tipos-oportunidades/{id}'.replace('{format}', 'json')
         path_params = {}
@@ -296,6 +213,89 @@ class OportunidadeApi(object):
                                             post_params=form_params,
                                             files=local_var_files,
                                             response_type='TipoOportunidadeResponse',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
+    def alterar_using_put8(self, id, update, **kwargs):
+        """
+        Altera as oportunidades
+        Este m\u00C3\u00A9todo realiza a altera\u00C3\u00A7\u00C3\u00A3o das oportunidades.
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.alterar_using_put8(id, update, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da oportunidade (id). (required)
+        :param OportunidadeUpdate update: update (required)
+        :return: OportunidadeResponse
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'update']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method alterar_using_put8" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `alterar_using_put8`")
+        # verify the required parameter 'update' is set
+        if ('update' not in params) or (params['update'] is None):
+            raise ValueError("Missing the required parameter `update` when calling `alterar_using_put8`")
+
+        resource_path = '/api/oportunidades/{id}'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        if 'update' in params:
+            body_params = params['update']
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = []
+
+        response = self.api_client.call_api(resource_path, 'PUT',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='OportunidadeResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
@@ -383,7 +383,7 @@ class OportunidadeApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get13(self, id, **kwargs):
+    def consultar_using_get17(self, id, **kwargs):
         """
         Apresenta dados de uma determinada oportunidade
         Este recurso permite consultar dados de uma determinada oportunidade a partir de seu codigo de identifica\u00C3\u00A7\u00C3\u00A3o (id).
@@ -394,7 +394,7 @@ class OportunidadeApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get13(id, callback=callback_function)
+        >>> thread = api.consultar_using_get17(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -412,14 +412,14 @@ class OportunidadeApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get13" % key
+                    " to method consultar_using_get17" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get13`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get17`")
 
         resource_path = '/api/oportunidades/{id}'.replace('{format}', 'json')
         path_params = {}
@@ -460,7 +460,7 @@ class OportunidadeApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get26(self, id, **kwargs):
+    def consultar_using_get31(self, id, **kwargs):
         """
         Apresenta dados de um determinado tipo oportunidade
         Este recurso permite consultar dados de um determinado tipo oportunidade a partir de seu codigo de identifica\u00C3\u00A7\u00C3\u00A3o (id).
@@ -471,7 +471,7 @@ class OportunidadeApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get26(id, callback=callback_function)
+        >>> thread = api.consultar_using_get31(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -489,14 +489,14 @@ class OportunidadeApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get26" % key
+                    " to method consultar_using_get31" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get26`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get31`")
 
         resource_path = '/api/tipos-oportunidades/{id}'.replace('{format}', 'json')
         path_params = {}
@@ -944,7 +944,7 @@ class OportunidadeApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get17(self, **kwargs):
+    def listar_using_get21(self, **kwargs):
         """
         Lista as oportunidades
         Este recurso permite listar as oportunidades.
@@ -955,7 +955,7 @@ class OportunidadeApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get17(callback=callback_function)
+        >>> thread = api.listar_using_get21(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -982,7 +982,7 @@ class OportunidadeApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get17" % key
+                    " to method listar_using_get21" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -1045,7 +1045,7 @@ class OportunidadeApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get30(self, **kwargs):
+    def listar_using_get36(self, **kwargs):
         """
         Lista os tipos oportunidades
         Este recurso permite listar os tipos oportunidades.
@@ -1056,7 +1056,7 @@ class OportunidadeApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get30(callback=callback_function)
+        >>> thread = api.listar_using_get36(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -1078,7 +1078,7 @@ class OportunidadeApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get30" % key
+                    " to method listar_using_get36" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -1214,7 +1214,7 @@ class OportunidadeApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def salvar_using_post12(self, persist, **kwargs):
+    def salvar_using_post15(self, persist, **kwargs):
         """
         Cadastra as oportunidades
         Esse recurso permite cadastrar oportunidades.
@@ -1225,7 +1225,7 @@ class OportunidadeApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.salvar_using_post12(persist, callback=callback_function)
+        >>> thread = api.salvar_using_post15(persist, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -1243,14 +1243,14 @@ class OportunidadeApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method salvar_using_post12" % key
+                    " to method salvar_using_post15" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'persist' is set
         if ('persist' not in params) or (params['persist'] is None):
-            raise ValueError("Missing the required parameter `persist` when calling `salvar_using_post12`")
+            raise ValueError("Missing the required parameter `persist` when calling `salvar_using_post15`")
 
         resource_path = '/api/oportunidades'.replace('{format}', 'json')
         path_params = {}
@@ -1291,7 +1291,7 @@ class OportunidadeApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def salvar_using_post17(self, persist, **kwargs):
+    def salvar_using_post21(self, persist, **kwargs):
         """
         Cadastra tipos oportunidades
         Esse recurso permite cadastrar tipos oportunidades.
@@ -1302,7 +1302,7 @@ class OportunidadeApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.salvar_using_post17(persist, callback=callback_function)
+        >>> thread = api.salvar_using_post21(persist, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -1320,14 +1320,14 @@ class OportunidadeApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method salvar_using_post17" % key
+                    " to method salvar_using_post21" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'persist' is set
         if ('persist' not in params) or (params['persist'] is None):
-            raise ValueError("Missing the required parameter `persist` when calling `salvar_using_post17`")
+            raise ValueError("Missing the required parameter `persist` when calling `salvar_using_post21`")
 
         resource_path = '/api/tipos-oportunidades'.replace('{format}', 'json')
         path_params = {}

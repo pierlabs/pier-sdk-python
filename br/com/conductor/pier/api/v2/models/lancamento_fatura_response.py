@@ -60,7 +60,8 @@ class LancamentoFaturaResponse(object):
             'nome_portador': 'str',
             'numero_cartao_mascarado': 'str',
             'flag_solicitou_contestacao': 'bool',
-            'valor_taxa_embarque': 'float'
+            'valor_taxa_embarque': 'float',
+            'descricao_abreviada': 'str'
         }
 
         self.attribute_map = {
@@ -87,7 +88,8 @@ class LancamentoFaturaResponse(object):
             'nome_portador': 'nomePortador',
             'numero_cartao_mascarado': 'numeroCartaoMascarado',
             'flag_solicitou_contestacao': 'flagSolicitouContestacao',
-            'valor_taxa_embarque': 'valorTaxaEmbarque'
+            'valor_taxa_embarque': 'valorTaxaEmbarque',
+            'descricao_abreviada': 'descricaoAbreviada'
         }
 
         self._id_transacao = None
@@ -114,6 +116,7 @@ class LancamentoFaturaResponse(object):
         self._numero_cartao_mascarado = None
         self._flag_solicitou_contestacao = None
         self._valor_taxa_embarque = None
+        self._descricao_abreviada = None
 
     @property
     def id_transacao(self):
@@ -642,6 +645,28 @@ class LancamentoFaturaResponse(object):
         :type: float
         """
         self._valor_taxa_embarque = valor_taxa_embarque
+
+    @property
+    def descricao_abreviada(self):
+        """
+        Gets the descricao_abreviada of this LancamentoFaturaResponse.
+        Descri\u00C3\u00A7\u00C3\u00A3o abreviada da transa\u00C3\u00A7\u00C3\u00A3o
+
+        :return: The descricao_abreviada of this LancamentoFaturaResponse.
+        :rtype: str
+        """
+        return self._descricao_abreviada
+
+    @descricao_abreviada.setter
+    def descricao_abreviada(self, descricao_abreviada):
+        """
+        Sets the descricao_abreviada of this LancamentoFaturaResponse.
+        Descri\u00C3\u00A7\u00C3\u00A3o abreviada da transa\u00C3\u00A7\u00C3\u00A3o
+
+        :param descricao_abreviada: The descricao_abreviada of this LancamentoFaturaResponse.
+        :type: str
+        """
+        self._descricao_abreviada = descricao_abreviada
 
     def to_dict(self):
         """

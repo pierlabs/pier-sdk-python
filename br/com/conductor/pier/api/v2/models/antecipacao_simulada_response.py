@@ -37,6 +37,8 @@ class AntecipacaoSimuladaResponse(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
+            'mcc': 'int',
+            'uf': 'str',
             'id_antecipacao_simulada': 'int',
             'id_conta': 'int',
             'id_compra': 'int',
@@ -45,10 +47,26 @@ class AntecipacaoSimuladaResponse(object):
             'valor_parcela': 'float',
             'data_hora_simulacao': 'str',
             'taxa_antecipacao_ano': 'float',
+            'nome_estabelecimento': 'str',
+            'status': 'str',
+            'data_compra': 'str',
+            'tipo_origem_transacao': 'str',
+            'cidade': 'str',
+            'pais': 'str',
+            'latitude': 'str',
+            'longitude': 'str',
+            'id_grupo_mcc': 'int',
+            'descricao_grupo_mcc': 'str',
+            'id_produto': 'int',
+            'descricao_produto': 'str',
+            'descricao_estabelecimento': 'str',
+            'nome_fantasia_estabelecimento': 'str',
             'detalhes': 'list[AntecipacaoSimuladaDetalhesResponse]'
         }
 
         self.attribute_map = {
+            'mcc': 'mcc',
+            'uf': 'uf',
             'id_antecipacao_simulada': 'idAntecipacaoSimulada',
             'id_conta': 'idConta',
             'id_compra': 'idCompra',
@@ -57,9 +75,25 @@ class AntecipacaoSimuladaResponse(object):
             'valor_parcela': 'valorParcela',
             'data_hora_simulacao': 'dataHoraSimulacao',
             'taxa_antecipacao_ano': 'taxaAntecipacaoAno',
+            'nome_estabelecimento': 'nomeEstabelecimento',
+            'status': 'status',
+            'data_compra': 'dataCompra',
+            'tipo_origem_transacao': 'tipoOrigemTransacao',
+            'cidade': 'cidade',
+            'pais': 'pais',
+            'latitude': 'latitude',
+            'longitude': 'longitude',
+            'id_grupo_mcc': 'idGrupoMCC',
+            'descricao_grupo_mcc': 'descricaoGrupoMCC',
+            'id_produto': 'idProduto',
+            'descricao_produto': 'descricaoProduto',
+            'descricao_estabelecimento': 'descricaoEstabelecimento',
+            'nome_fantasia_estabelecimento': 'nomeFantasiaEstabelecimento',
             'detalhes': 'detalhes'
         }
 
+        self._mcc = None
+        self._uf = None
         self._id_antecipacao_simulada = None
         self._id_conta = None
         self._id_compra = None
@@ -68,7 +102,65 @@ class AntecipacaoSimuladaResponse(object):
         self._valor_parcela = None
         self._data_hora_simulacao = None
         self._taxa_antecipacao_ano = None
+        self._nome_estabelecimento = None
+        self._status = None
+        self._data_compra = None
+        self._tipo_origem_transacao = None
+        self._cidade = None
+        self._pais = None
+        self._latitude = None
+        self._longitude = None
+        self._id_grupo_mcc = None
+        self._descricao_grupo_mcc = None
+        self._id_produto = None
+        self._descricao_produto = None
+        self._descricao_estabelecimento = None
+        self._nome_fantasia_estabelecimento = None
         self._detalhes = None
+
+    @property
+    def mcc(self):
+        """
+        Gets the mcc of this AntecipacaoSimuladaResponse.
+
+
+        :return: The mcc of this AntecipacaoSimuladaResponse.
+        :rtype: int
+        """
+        return self._mcc
+
+    @mcc.setter
+    def mcc(self, mcc):
+        """
+        Sets the mcc of this AntecipacaoSimuladaResponse.
+
+
+        :param mcc: The mcc of this AntecipacaoSimuladaResponse.
+        :type: int
+        """
+        self._mcc = mcc
+
+    @property
+    def uf(self):
+        """
+        Gets the uf of this AntecipacaoSimuladaResponse.
+
+
+        :return: The uf of this AntecipacaoSimuladaResponse.
+        :rtype: str
+        """
+        return self._uf
+
+    @uf.setter
+    def uf(self, uf):
+        """
+        Sets the uf of this AntecipacaoSimuladaResponse.
+
+
+        :param uf: The uf of this AntecipacaoSimuladaResponse.
+        :type: str
+        """
+        self._uf = uf
 
     @property
     def id_antecipacao_simulada(self):
@@ -245,6 +337,314 @@ class AntecipacaoSimuladaResponse(object):
         :type: float
         """
         self._taxa_antecipacao_ano = taxa_antecipacao_ano
+
+    @property
+    def nome_estabelecimento(self):
+        """
+        Gets the nome_estabelecimento of this AntecipacaoSimuladaResponse.
+        Estabelecimento onde foi realizada a transa\u00C3\u00A7\u00C3\u00A3o
+
+        :return: The nome_estabelecimento of this AntecipacaoSimuladaResponse.
+        :rtype: str
+        """
+        return self._nome_estabelecimento
+
+    @nome_estabelecimento.setter
+    def nome_estabelecimento(self, nome_estabelecimento):
+        """
+        Sets the nome_estabelecimento of this AntecipacaoSimuladaResponse.
+        Estabelecimento onde foi realizada a transa\u00C3\u00A7\u00C3\u00A3o
+
+        :param nome_estabelecimento: The nome_estabelecimento of this AntecipacaoSimuladaResponse.
+        :type: str
+        """
+        self._nome_estabelecimento = nome_estabelecimento
+
+    @property
+    def status(self):
+        """
+        Gets the status of this AntecipacaoSimuladaResponse.
+        Descri\u00C3\u00A7\u00C3\u00A3o do status da autoriza\u00C3\u00A7\u00C3\u00A3o da compra.
+
+        :return: The status of this AntecipacaoSimuladaResponse.
+        :rtype: str
+        """
+        return self._status
+
+    @status.setter
+    def status(self, status):
+        """
+        Sets the status of this AntecipacaoSimuladaResponse.
+        Descri\u00C3\u00A7\u00C3\u00A3o do status da autoriza\u00C3\u00A7\u00C3\u00A3o da compra.
+
+        :param status: The status of this AntecipacaoSimuladaResponse.
+        :type: str
+        """
+        self._status = status
+
+    @property
+    def data_compra(self):
+        """
+        Gets the data_compra of this AntecipacaoSimuladaResponse.
+        Data da compra.
+
+        :return: The data_compra of this AntecipacaoSimuladaResponse.
+        :rtype: str
+        """
+        return self._data_compra
+
+    @data_compra.setter
+    def data_compra(self, data_compra):
+        """
+        Sets the data_compra of this AntecipacaoSimuladaResponse.
+        Data da compra.
+
+        :param data_compra: The data_compra of this AntecipacaoSimuladaResponse.
+        :type: str
+        """
+        self._data_compra = data_compra
+
+    @property
+    def tipo_origem_transacao(self):
+        """
+        Gets the tipo_origem_transacao of this AntecipacaoSimuladaResponse.
+        Tipo de transa\u00C3\u00A7\u00C3\u00A3o da compra.
+
+        :return: The tipo_origem_transacao of this AntecipacaoSimuladaResponse.
+        :rtype: str
+        """
+        return self._tipo_origem_transacao
+
+    @tipo_origem_transacao.setter
+    def tipo_origem_transacao(self, tipo_origem_transacao):
+        """
+        Sets the tipo_origem_transacao of this AntecipacaoSimuladaResponse.
+        Tipo de transa\u00C3\u00A7\u00C3\u00A3o da compra.
+
+        :param tipo_origem_transacao: The tipo_origem_transacao of this AntecipacaoSimuladaResponse.
+        :type: str
+        """
+        self._tipo_origem_transacao = tipo_origem_transacao
+
+    @property
+    def cidade(self):
+        """
+        Gets the cidade of this AntecipacaoSimuladaResponse.
+        Cidade onde a compra foi realizada.
+
+        :return: The cidade of this AntecipacaoSimuladaResponse.
+        :rtype: str
+        """
+        return self._cidade
+
+    @cidade.setter
+    def cidade(self, cidade):
+        """
+        Sets the cidade of this AntecipacaoSimuladaResponse.
+        Cidade onde a compra foi realizada.
+
+        :param cidade: The cidade of this AntecipacaoSimuladaResponse.
+        :type: str
+        """
+        self._cidade = cidade
+
+    @property
+    def pais(self):
+        """
+        Gets the pais of this AntecipacaoSimuladaResponse.
+        Pa\u00C3\u00ADs onde a compra foi realizada.
+
+        :return: The pais of this AntecipacaoSimuladaResponse.
+        :rtype: str
+        """
+        return self._pais
+
+    @pais.setter
+    def pais(self, pais):
+        """
+        Sets the pais of this AntecipacaoSimuladaResponse.
+        Pa\u00C3\u00ADs onde a compra foi realizada.
+
+        :param pais: The pais of this AntecipacaoSimuladaResponse.
+        :type: str
+        """
+        self._pais = pais
+
+    @property
+    def latitude(self):
+        """
+        Gets the latitude of this AntecipacaoSimuladaResponse.
+        Coordenada latitudinal da localiza\u00C3\u00A7\u00C3\u00A3o da compra.
+
+        :return: The latitude of this AntecipacaoSimuladaResponse.
+        :rtype: str
+        """
+        return self._latitude
+
+    @latitude.setter
+    def latitude(self, latitude):
+        """
+        Sets the latitude of this AntecipacaoSimuladaResponse.
+        Coordenada latitudinal da localiza\u00C3\u00A7\u00C3\u00A3o da compra.
+
+        :param latitude: The latitude of this AntecipacaoSimuladaResponse.
+        :type: str
+        """
+        self._latitude = latitude
+
+    @property
+    def longitude(self):
+        """
+        Gets the longitude of this AntecipacaoSimuladaResponse.
+        Coordenada longitudinal da localiza\u00C3\u00A7\u00C3\u00A3o da compra.
+
+        :return: The longitude of this AntecipacaoSimuladaResponse.
+        :rtype: str
+        """
+        return self._longitude
+
+    @longitude.setter
+    def longitude(self, longitude):
+        """
+        Sets the longitude of this AntecipacaoSimuladaResponse.
+        Coordenada longitudinal da localiza\u00C3\u00A7\u00C3\u00A3o da compra.
+
+        :param longitude: The longitude of this AntecipacaoSimuladaResponse.
+        :type: str
+        """
+        self._longitude = longitude
+
+    @property
+    def id_grupo_mcc(self):
+        """
+        Gets the id_grupo_mcc of this AntecipacaoSimuladaResponse.
+        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Grupo MCC da compra.
+
+        :return: The id_grupo_mcc of this AntecipacaoSimuladaResponse.
+        :rtype: int
+        """
+        return self._id_grupo_mcc
+
+    @id_grupo_mcc.setter
+    def id_grupo_mcc(self, id_grupo_mcc):
+        """
+        Sets the id_grupo_mcc of this AntecipacaoSimuladaResponse.
+        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Grupo MCC da compra.
+
+        :param id_grupo_mcc: The id_grupo_mcc of this AntecipacaoSimuladaResponse.
+        :type: int
+        """
+        self._id_grupo_mcc = id_grupo_mcc
+
+    @property
+    def descricao_grupo_mcc(self):
+        """
+        Gets the descricao_grupo_mcc of this AntecipacaoSimuladaResponse.
+        Descri\u00C3\u00A7\u00C3\u00A3o do Grupo MCC da compra.
+
+        :return: The descricao_grupo_mcc of this AntecipacaoSimuladaResponse.
+        :rtype: str
+        """
+        return self._descricao_grupo_mcc
+
+    @descricao_grupo_mcc.setter
+    def descricao_grupo_mcc(self, descricao_grupo_mcc):
+        """
+        Sets the descricao_grupo_mcc of this AntecipacaoSimuladaResponse.
+        Descri\u00C3\u00A7\u00C3\u00A3o do Grupo MCC da compra.
+
+        :param descricao_grupo_mcc: The descricao_grupo_mcc of this AntecipacaoSimuladaResponse.
+        :type: str
+        """
+        self._descricao_grupo_mcc = descricao_grupo_mcc
+
+    @property
+    def id_produto(self):
+        """
+        Gets the id_produto of this AntecipacaoSimuladaResponse.
+        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do produto da compra.
+
+        :return: The id_produto of this AntecipacaoSimuladaResponse.
+        :rtype: int
+        """
+        return self._id_produto
+
+    @id_produto.setter
+    def id_produto(self, id_produto):
+        """
+        Sets the id_produto of this AntecipacaoSimuladaResponse.
+        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do produto da compra.
+
+        :param id_produto: The id_produto of this AntecipacaoSimuladaResponse.
+        :type: int
+        """
+        self._id_produto = id_produto
+
+    @property
+    def descricao_produto(self):
+        """
+        Gets the descricao_produto of this AntecipacaoSimuladaResponse.
+        Descri\u00C3\u00A7\u00C3\u00A3o do produto da compra.
+
+        :return: The descricao_produto of this AntecipacaoSimuladaResponse.
+        :rtype: str
+        """
+        return self._descricao_produto
+
+    @descricao_produto.setter
+    def descricao_produto(self, descricao_produto):
+        """
+        Sets the descricao_produto of this AntecipacaoSimuladaResponse.
+        Descri\u00C3\u00A7\u00C3\u00A3o do produto da compra.
+
+        :param descricao_produto: The descricao_produto of this AntecipacaoSimuladaResponse.
+        :type: str
+        """
+        self._descricao_produto = descricao_produto
+
+    @property
+    def descricao_estabelecimento(self):
+        """
+        Gets the descricao_estabelecimento of this AntecipacaoSimuladaResponse.
+        Descri\u00C3\u00A7\u00C3\u00A3o do estabelecimento da compra.
+
+        :return: The descricao_estabelecimento of this AntecipacaoSimuladaResponse.
+        :rtype: str
+        """
+        return self._descricao_estabelecimento
+
+    @descricao_estabelecimento.setter
+    def descricao_estabelecimento(self, descricao_estabelecimento):
+        """
+        Sets the descricao_estabelecimento of this AntecipacaoSimuladaResponse.
+        Descri\u00C3\u00A7\u00C3\u00A3o do estabelecimento da compra.
+
+        :param descricao_estabelecimento: The descricao_estabelecimento of this AntecipacaoSimuladaResponse.
+        :type: str
+        """
+        self._descricao_estabelecimento = descricao_estabelecimento
+
+    @property
+    def nome_fantasia_estabelecimento(self):
+        """
+        Gets the nome_fantasia_estabelecimento of this AntecipacaoSimuladaResponse.
+        Nome fantasia do estabelecimento da compra.
+
+        :return: The nome_fantasia_estabelecimento of this AntecipacaoSimuladaResponse.
+        :rtype: str
+        """
+        return self._nome_fantasia_estabelecimento
+
+    @nome_fantasia_estabelecimento.setter
+    def nome_fantasia_estabelecimento(self, nome_fantasia_estabelecimento):
+        """
+        Sets the nome_fantasia_estabelecimento of this AntecipacaoSimuladaResponse.
+        Nome fantasia do estabelecimento da compra.
+
+        :param nome_fantasia_estabelecimento: The nome_fantasia_estabelecimento of this AntecipacaoSimuladaResponse.
+        :type: str
+        """
+        self._nome_fantasia_estabelecimento = nome_fantasia_estabelecimento
 
     @property
     def detalhes(self):

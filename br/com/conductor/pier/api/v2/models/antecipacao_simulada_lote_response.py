@@ -40,7 +40,7 @@ class AntecipacaoSimuladaLoteResponse(object):
             'valor_total_antecipado': 'float',
             'valor_total_desconto': 'float',
             'valor_total_com_desconto': 'float',
-            'antecipacoes_simuladas': 'list[AntecipacaoSimuladaMockResponse]'
+            'antecipacoes_simuladas': 'list[AntecipacaoSimuladaResponse]'
         }
 
         self.attribute_map = {
@@ -128,7 +128,7 @@ class AntecipacaoSimuladaLoteResponse(object):
         Antecipa\u00C3\u00A7\u00C3\u00B5es Simuladas.
 
         :return: The antecipacoes_simuladas of this AntecipacaoSimuladaLoteResponse.
-        :rtype: list[AntecipacaoSimuladaMockResponse]
+        :rtype: list[AntecipacaoSimuladaResponse]
         """
         return self._antecipacoes_simuladas
 
@@ -139,7 +139,7 @@ class AntecipacaoSimuladaLoteResponse(object):
         Antecipa\u00C3\u00A7\u00C3\u00B5es Simuladas.
 
         :param antecipacoes_simuladas: The antecipacoes_simuladas of this AntecipacaoSimuladaLoteResponse.
-        :type: list[AntecipacaoSimuladaMockResponse]
+        :type: list[AntecipacaoSimuladaResponse]
         """
         self._antecipacoes_simuladas = antecipacoes_simuladas
 

@@ -67,7 +67,8 @@ class PessoaFisicaAprovadaResponse(object):
             'enderecos': 'list[EnderecoAprovadoResponse]',
             'limite_global': 'float',
             'limite_maximo': 'float',
-            'limite_parcelas': 'float'
+            'limite_parcelas': 'float',
+            'limite_consignado': 'float'
         }
 
         self.attribute_map = {
@@ -101,7 +102,8 @@ class PessoaFisicaAprovadaResponse(object):
             'enderecos': 'enderecos',
             'limite_global': 'limiteGlobal',
             'limite_maximo': 'limiteMaximo',
-            'limite_parcelas': 'limiteParcelas'
+            'limite_parcelas': 'limiteParcelas',
+            'limite_consignado': 'limiteConsignado'
         }
 
         self._id = None
@@ -135,6 +137,7 @@ class PessoaFisicaAprovadaResponse(object):
         self._limite_global = None
         self._limite_maximo = None
         self._limite_parcelas = None
+        self._limite_consignado = None
 
     @property
     def id(self):
@@ -817,6 +820,28 @@ class PessoaFisicaAprovadaResponse(object):
         :type: float
         """
         self._limite_parcelas = limite_parcelas
+
+    @property
+    def limite_consignado(self):
+        """
+        Gets the limite_consignado of this PessoaFisicaAprovadaResponse.
+        Valor do limite de margem consignado
+
+        :return: The limite_consignado of this PessoaFisicaAprovadaResponse.
+        :rtype: float
+        """
+        return self._limite_consignado
+
+    @limite_consignado.setter
+    def limite_consignado(self, limite_consignado):
+        """
+        Sets the limite_consignado of this PessoaFisicaAprovadaResponse.
+        Valor do limite de margem consignado
+
+        :param limite_consignado: The limite_consignado of this PessoaFisicaAprovadaResponse.
+        :type: float
+        """
+        self._limite_consignado = limite_consignado
 
     def to_dict(self):
         """

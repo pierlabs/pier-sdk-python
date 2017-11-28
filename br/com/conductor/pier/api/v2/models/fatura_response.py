@@ -44,7 +44,8 @@ class FaturaResponse(object):
             'data_vencimento_real': 'str',
             'data_fechamento': 'str',
             'valor_total': 'float',
-            'valor_pagamento_minimo': 'float'
+            'valor_pagamento_minimo': 'float',
+            'saldo_anterior': 'float'
         }
 
         self.attribute_map = {
@@ -55,7 +56,8 @@ class FaturaResponse(object):
             'data_vencimento_real': 'dataVencimentoReal',
             'data_fechamento': 'dataFechamento',
             'valor_total': 'valorTotal',
-            'valor_pagamento_minimo': 'valorPagamentoMinimo'
+            'valor_pagamento_minimo': 'valorPagamentoMinimo',
+            'saldo_anterior': 'saldoAnterior'
         }
 
         self._id_conta = None
@@ -66,6 +68,7 @@ class FaturaResponse(object):
         self._data_fechamento = None
         self._valor_total = None
         self._valor_pagamento_minimo = None
+        self._saldo_anterior = None
 
     @property
     def id_conta(self):
@@ -248,6 +251,28 @@ class FaturaResponse(object):
         :type: float
         """
         self._valor_pagamento_minimo = valor_pagamento_minimo
+
+    @property
+    def saldo_anterior(self):
+        """
+        Gets the saldo_anterior of this FaturaResponse.
+        Valor do saldo anterior.
+
+        :return: The saldo_anterior of this FaturaResponse.
+        :rtype: float
+        """
+        return self._saldo_anterior
+
+    @saldo_anterior.setter
+    def saldo_anterior(self, saldo_anterior):
+        """
+        Sets the saldo_anterior of this FaturaResponse.
+        Valor do saldo anterior.
+
+        :param saldo_anterior: The saldo_anterior of this FaturaResponse.
+        :type: float
+        """
+        self._saldo_anterior = saldo_anterior
 
     def to_dict(self):
         """

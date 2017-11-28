@@ -6,11 +6,13 @@ from .aplicacao_mobile_api import AplicacaoMobileApi
 from .arquivo_api import ArquivoApi
 from .autorizacao_api import AutorizacaoApi
 from .base_api import BaseApi
+from .boleto_api import BoletoApi
 from .cadastro_cliente_api import CadastroClienteApi
 from .cadastro_geral_api import CadastroGeralApi
 from .cartao_api import CartaoApi
 from .conductor_pay_api import ConductorPayApi
 from .conta_api import ContaApi
+from .debito_recorrente_api import DebitoRecorrenteApi
 from .dispositivo_api import DispositivoApi
 from .documento_api import DocumentoApi
 from .endereco_nacional_api import EnderecoNacionalApi
@@ -19,6 +21,7 @@ from .faq_api import FAQApi
 from .fatura_api import FaturaApi
 from .job_api import JobApi
 from .limite_api import LimiteApi
+from .limite_disponibilidade_api import LimiteDisponibilidadeApi
 from .notificacao_api import NotificacaoApi
 from .oportunidade_api import OportunidadeApi
 from .permissao_pais_api import PermissaoPaisApi
@@ -27,5 +30,6 @@ from .risco_fraude_api import RiscoFraudeApi
 from .servico_conta_api import ServicoContaApi
 from .status_parametro_api import StatusParametroApi
 from .token_api import TokenApi
+from .transferencia_bancaria_api import TransferenciaBancariaApi
 from .usuario_api import UsuarioApi
 from .webhook_api import WebhookApi
