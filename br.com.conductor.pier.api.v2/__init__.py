@@ -68,6 +68,7 @@ from .models.conta_detalhe_response import ContaDetalheResponse
 from .models.conta_historico_pagamento_response import ContaHistoricoPagamentoResponse
 from .models.conta_response import ContaResponse
 from .models.controle_vencimento_response import ControleVencimentoResponse
+from .models.dados_cartao_impressao_response import DadosCartaoImpressaoResponse
 from .models.dados_cartao_response import DadosCartaoResponse
 from .models.desfazimento_transacao_on_us_request import DesfazimentoTransacaoOnUsRequest
 from .models.detalhe_oportunidade_persist import DetalheOportunidadePersist

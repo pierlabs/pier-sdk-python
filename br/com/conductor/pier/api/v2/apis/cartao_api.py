@@ -571,7 +571,7 @@ class CartaoApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int id: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do cart\u00C3\u00A3o (id). (required)
-        :return: object
+        :return: DadosCartaoImpressaoResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -627,7 +627,7 @@ class CartaoApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='object',
+                                            response_type='DadosCartaoImpressaoResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response

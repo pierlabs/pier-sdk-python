@@ -38,16 +38,22 @@ class AlterarProdutoRequest(object):
         """
         self.swagger_types = {
             'id_produto': 'int',
-            'id_origem_comercial': 'int'
+            'id_origem_comercial': 'int',
+            'id_estabelecimento': 'int',
+            'id_promotor': 'int'
         }
 
         self.attribute_map = {
             'id_produto': 'idProduto',
-            'id_origem_comercial': 'idOrigemComercial'
+            'id_origem_comercial': 'idOrigemComercial',
+            'id_estabelecimento': 'idEstabelecimento',
+            'id_promotor': 'idPromotor'
         }
 
         self._id_produto = None
         self._id_origem_comercial = None
+        self._id_estabelecimento = None
+        self._id_promotor = None
 
     @property
     def id_produto(self):
@@ -92,6 +98,50 @@ class AlterarProdutoRequest(object):
         :type: int
         """
         self._id_origem_comercial = id_origem_comercial
+
+    @property
+    def id_estabelecimento(self):
+        """
+        Gets the id_estabelecimento of this AlterarProdutoRequest.
+        Identificador do estabelecimento.
+
+        :return: The id_estabelecimento of this AlterarProdutoRequest.
+        :rtype: int
+        """
+        return self._id_estabelecimento
+
+    @id_estabelecimento.setter
+    def id_estabelecimento(self, id_estabelecimento):
+        """
+        Sets the id_estabelecimento of this AlterarProdutoRequest.
+        Identificador do estabelecimento.
+
+        :param id_estabelecimento: The id_estabelecimento of this AlterarProdutoRequest.
+        :type: int
+        """
+        self._id_estabelecimento = id_estabelecimento
+
+    @property
+    def id_promotor(self):
+        """
+        Gets the id_promotor of this AlterarProdutoRequest.
+        Identificador do promotor que realizou a solicita\u00C3\u00A7\u00C3\u00A3o do grade no estabelecimento.
+
+        :return: The id_promotor of this AlterarProdutoRequest.
+        :rtype: int
+        """
+        return self._id_promotor
+
+    @id_promotor.setter
+    def id_promotor(self, id_promotor):
+        """
+        Sets the id_promotor of this AlterarProdutoRequest.
+        Identificador do promotor que realizou a solicita\u00C3\u00A7\u00C3\u00A3o do grade no estabelecimento.
+
+        :param id_promotor: The id_promotor of this AlterarProdutoRequest.
+        :type: int
+        """
+        self._id_promotor = id_promotor
 
     def to_dict(self):
         """
