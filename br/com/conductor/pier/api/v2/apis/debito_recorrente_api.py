@@ -146,7 +146,7 @@ class DebitoRecorrenteApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get34(self, **kwargs):
+    def listar_using_get36(self, **kwargs):
         """
         Listar Tipos Debitos Recorrentes
         Para os emissores que utilizam a entidade Debitos Recorrentes precisam previamente solicitar a Conductor o cadastro de quais Tipos eles poder\u00C3\u00A3o comercializar. Por isso, este recurso tem como objetivo apresentar todos os Tipos de D\u00C3\u00A9bitos Recorrentes que est\u00C3\u00A3o cadastrados para um determinado Emissor, independente do status dele.
@@ -157,7 +157,7 @@ class DebitoRecorrenteApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get34(callback=callback_function)
+        >>> thread = api.listar_using_get36(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -181,7 +181,7 @@ class DebitoRecorrenteApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get34" % key
+                    " to method listar_using_get36" % key
                 )
             params[key] = val
         del params['kwargs']

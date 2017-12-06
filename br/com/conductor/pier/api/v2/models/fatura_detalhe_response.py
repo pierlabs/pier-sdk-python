@@ -37,7 +37,6 @@ class FaturaDetalheResponse(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'lancamentos_fatura_response': 'list[LancamentoFaturaResponse]',
             'id_conta': 'int',
             'situacao_processamento': 'str',
             'pagamento_efetuado': 'bool',
@@ -46,11 +45,11 @@ class FaturaDetalheResponse(object):
             'data_fechamento': 'str',
             'valor_total': 'float',
             'valor_pagamento_minimo': 'float',
+            'lancamentos_fatura_response': 'list[LancamentoFaturaResponse]',
             'saldo_anterior': 'float'
         }
 
         self.attribute_map = {
-            'lancamentos_fatura_response': 'lancamentosFaturaResponse',
             'id_conta': 'idConta',
             'situacao_processamento': 'situacaoProcessamento',
             'pagamento_efetuado': 'pagamentoEfetuado',
@@ -59,10 +58,10 @@ class FaturaDetalheResponse(object):
             'data_fechamento': 'dataFechamento',
             'valor_total': 'valorTotal',
             'valor_pagamento_minimo': 'valorPagamentoMinimo',
+            'lancamentos_fatura_response': 'lancamentosFaturaResponse',
             'saldo_anterior': 'saldoAnterior'
         }
 
-        self._lancamentos_fatura_response = None
         self._id_conta = None
         self._situacao_processamento = None
         self._pagamento_efetuado = None
@@ -71,29 +70,8 @@ class FaturaDetalheResponse(object):
         self._data_fechamento = None
         self._valor_total = None
         self._valor_pagamento_minimo = None
+        self._lancamentos_fatura_response = None
         self._saldo_anterior = None
-
-    @property
-    def lancamentos_fatura_response(self):
-        """
-        Gets the lancamentos_fatura_response of this FaturaDetalheResponse.
-
-
-        :return: The lancamentos_fatura_response of this FaturaDetalheResponse.
-        :rtype: list[LancamentoFaturaResponse]
-        """
-        return self._lancamentos_fatura_response
-
-    @lancamentos_fatura_response.setter
-    def lancamentos_fatura_response(self, lancamentos_fatura_response):
-        """
-        Sets the lancamentos_fatura_response of this FaturaDetalheResponse.
-
-
-        :param lancamentos_fatura_response: The lancamentos_fatura_response of this FaturaDetalheResponse.
-        :type: list[LancamentoFaturaResponse]
-        """
-        self._lancamentos_fatura_response = lancamentos_fatura_response
 
     @property
     def id_conta(self):
@@ -276,6 +254,28 @@ class FaturaDetalheResponse(object):
         :type: float
         """
         self._valor_pagamento_minimo = valor_pagamento_minimo
+
+    @property
+    def lancamentos_fatura_response(self):
+        """
+        Gets the lancamentos_fatura_response of this FaturaDetalheResponse.
+        Lista de lan\u00C3\u00A7amentos da fatura.
+
+        :return: The lancamentos_fatura_response of this FaturaDetalheResponse.
+        :rtype: list[LancamentoFaturaResponse]
+        """
+        return self._lancamentos_fatura_response
+
+    @lancamentos_fatura_response.setter
+    def lancamentos_fatura_response(self, lancamentos_fatura_response):
+        """
+        Sets the lancamentos_fatura_response of this FaturaDetalheResponse.
+        Lista de lan\u00C3\u00A7amentos da fatura.
+
+        :param lancamentos_fatura_response: The lancamentos_fatura_response of this FaturaDetalheResponse.
+        :type: list[LancamentoFaturaResponse]
+        """
+        self._lancamentos_fatura_response = lancamentos_fatura_response
 
     @property
     def saldo_anterior(self):

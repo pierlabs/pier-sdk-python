@@ -294,7 +294,7 @@ class JobApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get20(self, **kwargs):
+    def listar_using_get21(self, **kwargs):
         """
         Listar Jobs
         Este recurso permite que sejam listados os jobs existentes na base do PIER.
@@ -305,7 +305,7 @@ class JobApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get20(callback=callback_function)
+        >>> thread = api.listar_using_get21(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -328,7 +328,7 @@ class JobApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get20" % key
+                    " to method listar_using_get21" % key
                 )
             params[key] = val
         del params['kwargs']

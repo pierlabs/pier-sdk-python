@@ -68,6 +68,8 @@ from .models.conta_detalhe_response import ContaDetalheResponse
 from .models.conta_historico_pagamento_response import ContaHistoricoPagamentoResponse
 from .models.conta_response import ContaResponse
 from .models.controle_vencimento_response import ControleVencimentoResponse
+from .models.credor_dto import CredorDTO
+from .models.credor_response import CredorResponse
 from .models.dados_cartao_impressao_response import DadosCartaoImpressaoResponse
 from .models.dados_cartao_response import DadosCartaoResponse
 from .models.desfazimento_transacao_on_us_request import DesfazimentoTransacaoOnUsRequest
@@ -143,6 +145,7 @@ from .models.page_conta_detalhe_response import PageContaDetalheResponse
 from .models.page_conta_historico_pagamento_response import PageContaHistoricoPagamentoResponse
 from .models.page_conta_response import PageContaResponse
 from .models.page_controle_vencimento_response import PageControleVencimentoResponse
+from .models.page_credor_response import PageCredorResponse
 from .models.page_dispositivo_response import PageDispositivoResponse
 from .models.page_documento_response import PageDocumentoResponse
 from .models.page_documento_template_response import PageDocumentoTemplateResponse
@@ -181,6 +184,7 @@ from .models.page_status_impressao_response import PageStatusImpressaoResponse
 from .models.page_status_oportunidade_aud_response import PageStatusOportunidadeAUDResponse
 from .models.page_status_oportunidade_response import PageStatusOportunidadeResponse
 from .models.page_taxas_refinanciamento_response import PageTaxasRefinanciamentoResponse
+from .models.page_telefone_estabelecimento_response import PageTelefoneEstabelecimentoResponse
 from .models.page_telefone_response import PageTelefoneResponse
 from .models.page_template_notificacao_response import PageTemplateNotificacaoResponse
 from .models.page_terminal_response import PageTerminalResponse
@@ -197,6 +201,7 @@ from .models.page_transacao_nao_processada_response import PageTransacaoNaoProce
 from .models.page_transacao_response import PageTransacaoResponse
 from .models.page_transacoes_correntes_response import PageTransacoesCorrentesResponse
 from .models.page_transferencia_bancaria_response import PageTransferenciaBancariaResponse
+from .models.page_transferencia_credito_conta_bancaria_response import PageTransferenciaCreditoContaBancariaResponse
 from .models.page_transferencia_response import PageTransferenciaResponse
 from .models.page_usuario_response import PageUsuarioResponse
 from .models.page_web_hook_response import PageWebHookResponse
@@ -242,6 +247,7 @@ from .models.taxa_antecipacao_request import TaxaAntecipacaoRequest
 from .models.taxas_refinanciamento_response import TaxasRefinanciamentoResponse
 from .models.telefone_adicional_persist import TelefoneAdicionalPersist
 from .models.telefone_adicional_update import TelefoneAdicionalUpdate
+from .models.telefone_estabelecimento_response import TelefoneEstabelecimentoResponse
 from .models.telefone_pessoa_aprovada_persist import TelefonePessoaAprovadaPersist
 from .models.telefone_pessoa_aprovada_response import TelefonePessoaAprovadaResponse
 from .models.telefone_response import TelefoneResponse
@@ -274,6 +280,9 @@ from .models.transacao_pay_secure_request import TransacaoPaySecureRequest
 from .models.transacoes_correntes_response import TransacoesCorrentesResponse
 from .models.transferencia_bancaria_persist import TransferenciaBancariaPersist
 from .models.transferencia_bancaria_response import TransferenciaBancariaResponse
+from .models.transferencia_credito_conta_bancaria_lista_response import TransferenciaCreditoContaBancariaListaResponse
+from .models.transferencia_credito_conta_bancaria_persist import TransferenciaCreditoContaBancariaPersist
+from .models.transferencia_credito_conta_bancaria_response import TransferenciaCreditoContaBancariaResponse
 from .models.transferencia_detalhe_response import TransferenciaDetalheResponse
 from .models.transferencia_response import TransferenciaResponse
 from .models.usuario_persist import UsuarioPersist

@@ -45,7 +45,7 @@ class LimiteDisponibilidadeApi(object):
                 config.api_client = ApiClient()
             self.api_client = config.api_client
 
-    def alterar_using_put7(self, id_conta, **kwargs):
+    def alterar_using_put8(self, id_conta, **kwargs):
         """
         Realiza a altera\u00C3\u00A7\u00C3\u00A3o dos limites da conta
         Esse recurso permite realizar a altera\u00C3\u00A7\u00C3\u00A3o dos Limites de uma determinada Conta.
@@ -56,7 +56,7 @@ class LimiteDisponibilidadeApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.alterar_using_put7(id_conta, callback=callback_function)
+        >>> thread = api.alterar_using_put8(id_conta, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -87,14 +87,14 @@ class LimiteDisponibilidadeApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method alterar_using_put7" % key
+                    " to method alterar_using_put8" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id_conta' is set
         if ('id_conta' not in params) or (params['id_conta'] is None):
-            raise ValueError("Missing the required parameter `id_conta` when calling `alterar_using_put7`")
+            raise ValueError("Missing the required parameter `id_conta` when calling `alterar_using_put8`")
 
         resource_path = '/api/limites-disponibilidades'.replace('{format}', 'json')
         path_params = {}
@@ -161,7 +161,7 @@ class LimiteDisponibilidadeApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get16(self, id_conta, **kwargs):
+    def consultar_using_get17(self, id_conta, **kwargs):
         """
         Apresenta os limites da conta
         Este m\u00C3\u00A9todo permite consultar os Limites configurados para uma determinada Conta, a partir do c\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da conta (id).
@@ -172,7 +172,7 @@ class LimiteDisponibilidadeApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get16(id_conta, callback=callback_function)
+        >>> thread = api.consultar_using_get17(id_conta, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -190,14 +190,14 @@ class LimiteDisponibilidadeApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get16" % key
+                    " to method consultar_using_get17" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id_conta' is set
         if ('id_conta' not in params) or (params['id_conta'] is None):
-            raise ValueError("Missing the required parameter `id_conta` when calling `consultar_using_get16`")
+            raise ValueError("Missing the required parameter `id_conta` when calling `consultar_using_get17`")
 
         resource_path = '/api/limites-disponibilidades'.replace('{format}', 'json')
         path_params = {}

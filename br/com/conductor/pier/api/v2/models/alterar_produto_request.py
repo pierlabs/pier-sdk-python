@@ -103,7 +103,7 @@ class AlterarProdutoRequest(object):
     def id_estabelecimento(self):
         """
         Gets the id_estabelecimento of this AlterarProdutoRequest.
-        Identificador do estabelecimento.
+        Deve ser preenchido com o idEstabelecimento onde o Grade foi realizado. Quando n\u00C3\u00A3o informado, \u00C3\u00A9 gravado com o idEstabelecimento associado a Origem Comercial que capturou o cadastro inicial da Conta.
 
         :return: The id_estabelecimento of this AlterarProdutoRequest.
         :rtype: int
@@ -114,7 +114,7 @@ class AlterarProdutoRequest(object):
     def id_estabelecimento(self, id_estabelecimento):
         """
         Sets the id_estabelecimento of this AlterarProdutoRequest.
-        Identificador do estabelecimento.
+        Deve ser preenchido com o idEstabelecimento onde o Grade foi realizado. Quando n\u00C3\u00A3o informado, \u00C3\u00A9 gravado com o idEstabelecimento associado a Origem Comercial que capturou o cadastro inicial da Conta.
 
         :param id_estabelecimento: The id_estabelecimento of this AlterarProdutoRequest.
         :type: int
@@ -125,7 +125,7 @@ class AlterarProdutoRequest(object):
     def id_promotor(self):
         """
         Gets the id_promotor of this AlterarProdutoRequest.
-        Identificador do promotor que realizou a solicita\u00C3\u00A7\u00C3\u00A3o do grade no estabelecimento.
+        Deve ser preenchido com o C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do Promotor que realizou o Grade. Quando n\u00C3\u00A3o informado, ser\u00C3\u00A1 gravado com um c\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o padr\u00C3\u00A3o.
 
         :return: The id_promotor of this AlterarProdutoRequest.
         :rtype: int
@@ -136,7 +136,7 @@ class AlterarProdutoRequest(object):
     def id_promotor(self, id_promotor):
         """
         Sets the id_promotor of this AlterarProdutoRequest.
-        Identificador do promotor que realizou a solicita\u00C3\u00A7\u00C3\u00A3o do grade no estabelecimento.
+        Deve ser preenchido com o C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do Promotor que realizou o Grade. Quando n\u00C3\u00A3o informado, ser\u00C3\u00A1 gravado com um c\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o padr\u00C3\u00A3o.
 
         :param id_promotor: The id_promotor of this AlterarProdutoRequest.
         :type: int

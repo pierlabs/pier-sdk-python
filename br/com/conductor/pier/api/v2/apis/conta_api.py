@@ -1145,93 +1145,7 @@ class ContaApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get35(self, id, id_transferencia, **kwargs):
-        """
-        Consultar uma transfer\u00C3\u00AAncia banc\u00C3\u00A1ria para um banco
-        Este recurso permite consultar os detalhes de uma determinada transfer\u00C3\u00AAncia de cr\u00C3\u00A9dito realizada para uma conta banc\u00C3\u00A1ria. De modo geral, esta opera\u00C3\u00A7\u00C3\u00A3o poder\u00C3\u00A1 ser utilizada para uma consulta simples destes detalhes ou para realizar a montagem de um comprovante de 2\u00C2\u00AA via de transfer\u00C3\u00AAncia entre contas.
-
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
-        >>> thread = api.consultar_using_get35(id, id_transferencia, callback=callback_function)
-
-        :param callback function: The callback function
-            for asynchronous request. (optional)
-        :param int id: Id Conta (required)
-        :param int id_transferencia: Id Transfer\u00C3\u00AAncia (required)
-        :param int id_conta_bancaria_destino: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da conta banc\u00C3\u00A1ria de destino (id)
-        :return: TransferenciaBancariaResponse
-                 If the method is called asynchronously,
-                 returns the request thread.
-        """
-
-        all_params = ['id', 'id_transferencia', 'id_conta_bancaria_destino']
-        all_params.append('callback')
-
-        params = locals()
-        for key, val in iteritems(params['kwargs']):
-            if key not in all_params:
-                raise TypeError(
-                    "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get35" % key
-                )
-            params[key] = val
-        del params['kwargs']
-
-        # verify the required parameter 'id' is set
-        if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get35`")
-        # verify the required parameter 'id_transferencia' is set
-        if ('id_transferencia' not in params) or (params['id_transferencia'] is None):
-            raise ValueError("Missing the required parameter `id_transferencia` when calling `consultar_using_get35`")
-
-        resource_path = '/api/contas/{id}/transferencias-creditos-contas-bancarias/{id_transferencia}'.replace('{format}', 'json')
-        path_params = {}
-        if 'id' in params:
-            path_params['id'] = params['id']
-        if 'id_transferencia' in params:
-            path_params['id_transferencia'] = params['id_transferencia']
-
-        query_params = {}
-        if 'id_conta_bancaria_destino' in params:
-            query_params['id_conta_bancaria_destino'] = params['id_conta_bancaria_destino']
-
-        header_params = {}
-
-        form_params = []
-        local_var_files = {}
-
-        body_params = None
-
-        # HTTP header `Accept`
-        header_params['Accept'] = self.api_client.\
-            select_header_accept(['application/json'])
-        if not header_params['Accept']:
-            del header_params['Accept']
-
-        # HTTP header `Content-Type`
-        header_params['Content-Type'] = self.api_client.\
-            select_header_content_type(['application/json'])
-
-        # Authentication setting
-        auth_settings = []
-
-        response = self.api_client.call_api(resource_path, 'GET',
-                                            path_params,
-                                            query_params,
-                                            header_params,
-                                            body=body_params,
-                                            post_params=form_params,
-                                            files=local_var_files,
-                                            response_type='TransferenciaBancariaResponse',
-                                            auth_settings=auth_settings,
-                                            callback=params.get('callback'))
-        return response
-
-    def consultar_using_get36(self, id, id_transferencia, **kwargs):
+    def consultar_using_get38(self, id, id_transferencia, **kwargs):
         """
         Consulta os detalhes de uma determinada transfer\u00C3\u00AAncia
         Este m\u00C3\u00A9todo permite consultar os detalhes de uma determinada transfer\u00C3\u00AAncia de cr\u00C3\u00A9dito realizada entre contas.
@@ -1242,7 +1156,7 @@ class ContaApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get36(id, id_transferencia, callback=callback_function)
+        >>> thread = api.consultar_using_get38(id, id_transferencia, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -1261,17 +1175,17 @@ class ContaApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get36" % key
+                    " to method consultar_using_get38" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get36`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get38`")
         # verify the required parameter 'id_transferencia' is set
         if ('id_transferencia' not in params) or (params['id_transferencia'] is None):
-            raise ValueError("Missing the required parameter `id_transferencia` when calling `consultar_using_get36`")
+            raise ValueError("Missing the required parameter `id_transferencia` when calling `consultar_using_get38`")
 
         resource_path = '/api/contas/{id}/transferencias-creditos-cartoes/{id_transferencia}'.replace('{format}', 'json')
         path_params = {}
@@ -2465,96 +2379,7 @@ class ContaApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get40(self, id, **kwargs):
-        """
-        Listar as transfer\u00C3\u00AAncias banc\u00C3\u00A1rias realizadas
-        Este recurso tem como objetivo permitir que o portador de um Cart\u00C3\u00A3o possa consultar uma lista das Transfer\u00C3\u00AAncias Banc\u00C3\u00A1rias para os Favorecidos cadastrados.
-
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
-        >>> thread = api.listar_using_get40(id, callback=callback_function)
-
-        :param callback function: The callback function
-            for asynchronous request. (optional)
-        :param int id: Id Conta (required)
-        :param int id_conta_bancaria_destino: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da conta banc\u00C3\u00A1ria de destino (id)
-        :param list[str] sort: Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
-        :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
-        :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
-        :return: PageTransferenciaBancariaResponse
-                 If the method is called asynchronously,
-                 returns the request thread.
-        """
-
-        all_params = ['id', 'id_conta_bancaria_destino', 'sort', 'page', 'limit']
-        all_params.append('callback')
-
-        params = locals()
-        for key, val in iteritems(params['kwargs']):
-            if key not in all_params:
-                raise TypeError(
-                    "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get40" % key
-                )
-            params[key] = val
-        del params['kwargs']
-
-        # verify the required parameter 'id' is set
-        if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `listar_using_get40`")
-
-        resource_path = '/api/contas/{id}/transferencias-creditos-contas-bancarias'.replace('{format}', 'json')
-        path_params = {}
-        if 'id' in params:
-            path_params['id'] = params['id']
-
-        query_params = {}
-        if 'id_conta_bancaria_destino' in params:
-            query_params['id_conta_bancaria_destino'] = params['id_conta_bancaria_destino']
-        if 'sort' in params:
-            query_params['sort'] = params['sort']
-        if 'page' in params:
-            query_params['page'] = params['page']
-        if 'limit' in params:
-            query_params['limit'] = params['limit']
-
-        header_params = {}
-
-        form_params = []
-        local_var_files = {}
-
-        body_params = None
-
-        # HTTP header `Accept`
-        header_params['Accept'] = self.api_client.\
-            select_header_accept(['application/json'])
-        if not header_params['Accept']:
-            del header_params['Accept']
-
-        # HTTP header `Content-Type`
-        header_params['Content-Type'] = self.api_client.\
-            select_header_content_type(['application/json'])
-
-        # Authentication setting
-        auth_settings = []
-
-        response = self.api_client.call_api(resource_path, 'GET',
-                                            path_params,
-                                            query_params,
-                                            header_params,
-                                            body=body_params,
-                                            post_params=form_params,
-                                            files=local_var_files,
-                                            response_type='PageTransferenciaBancariaResponse',
-                                            auth_settings=auth_settings,
-                                            callback=params.get('callback'))
-        return response
-
-    def listar_using_get41(self, id, **kwargs):
+    def listar_using_get43(self, id, **kwargs):
         """
         Lista as transfer\u00C3\u00AAncias realizadas pela conta
         Este m\u00C3\u00A9todo permite que sejam listadas as transfer\u00C3\u00AAncias realizadas pela conta existentes na base do emissor.
@@ -2565,7 +2390,7 @@ class ContaApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get41(id, callback=callback_function)
+        >>> thread = api.listar_using_get43(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -2591,14 +2416,14 @@ class ContaApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get41" % key
+                    " to method listar_using_get43" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `listar_using_get41`")
+            raise ValueError("Missing the required parameter `id` when calling `listar_using_get43`")
 
         resource_path = '/api/contas/{id}/transferencias-creditos-cartoes'.replace('{format}', 'json')
         path_params = {}
@@ -2897,89 +2722,6 @@ class ContaApi(object):
                                             post_params=form_params,
                                             files=local_var_files,
                                             response_type='PageTransacaoResponse',
-                                            auth_settings=auth_settings,
-                                            callback=params.get('callback'))
-        return response
-
-    def transferir_using_post(self, id, transferencia_bancaria_persist, **kwargs):
-        """
-        Realizar transfer\u00C3\u00AAncia banc\u00C3\u00A1ria do cart\u00C3\u00A3o para contas banc\u00C3\u00A1rias
-        Este recurso tem como objetivo permitir que o portador de um cart\u00C3\u00A3o possa realizar a transfer\u00C3\u00AAncia de cr\u00C3\u00A9dito para uma conta banc\u00C3\u00A1ria. Assim, o valor do cr\u00C3\u00A9dito somado a tarifa para transfer\u00C3\u00AAncia, quando praticada pelo emissor, ser\u00C3\u00A1 debitado da conta de origem, se houver saldo suficiente, e ser\u00C3\u00A1 creditado na conta banc\u00C3\u00A1ria de destino.
-
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
-        >>> thread = api.transferir_using_post(id, transferencia_bancaria_persist, callback=callback_function)
-
-        :param callback function: The callback function
-            for asynchronous request. (optional)
-        :param int id: Id Conta (required)
-        :param TransferenciaBancariaPersist transferencia_bancaria_persist: transferenciaBancariaPersist (required)
-        :return: TransferenciaBancariaResponse
-                 If the method is called asynchronously,
-                 returns the request thread.
-        """
-
-        all_params = ['id', 'transferencia_bancaria_persist']
-        all_params.append('callback')
-
-        params = locals()
-        for key, val in iteritems(params['kwargs']):
-            if key not in all_params:
-                raise TypeError(
-                    "Got an unexpected keyword argument '%s'"
-                    " to method transferir_using_post" % key
-                )
-            params[key] = val
-        del params['kwargs']
-
-        # verify the required parameter 'id' is set
-        if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `transferir_using_post`")
-        # verify the required parameter 'transferencia_bancaria_persist' is set
-        if ('transferencia_bancaria_persist' not in params) or (params['transferencia_bancaria_persist'] is None):
-            raise ValueError("Missing the required parameter `transferencia_bancaria_persist` when calling `transferir_using_post`")
-
-        resource_path = '/api/contas/{id}/transferencias-creditos-contas-bancarias'.replace('{format}', 'json')
-        path_params = {}
-        if 'id' in params:
-            path_params['id'] = params['id']
-
-        query_params = {}
-
-        header_params = {}
-
-        form_params = []
-        local_var_files = {}
-
-        body_params = None
-        if 'transferencia_bancaria_persist' in params:
-            body_params = params['transferencia_bancaria_persist']
-
-        # HTTP header `Accept`
-        header_params['Accept'] = self.api_client.\
-            select_header_accept(['application/json'])
-        if not header_params['Accept']:
-            del header_params['Accept']
-
-        # HTTP header `Content-Type`
-        header_params['Content-Type'] = self.api_client.\
-            select_header_content_type(['application/json'])
-
-        # Authentication setting
-        auth_settings = []
-
-        response = self.api_client.call_api(resource_path, 'POST',
-                                            path_params,
-                                            query_params,
-                                            header_params,
-                                            body=body_params,
-                                            post_params=form_params,
-                                            files=local_var_files,
-                                            response_type='TransferenciaBancariaResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response

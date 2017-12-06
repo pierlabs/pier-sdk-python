@@ -45,7 +45,7 @@ class WebhookApi(object):
                 config.api_client = ApiClient()
             self.api_client = config.api_client
 
-    def alterar_using_put18(self, id, tipo_evento, url, **kwargs):
+    def alterar_using_put20(self, id, tipo_evento, url, **kwargs):
         """
         Alterar Webhook
         Este m\u00C3\u00A9todo permite que seja modificado um webhooks j\u00C3\u00A1 cadastrado
@@ -56,7 +56,7 @@ class WebhookApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.alterar_using_put18(id, tipo_evento, url, callback=callback_function)
+        >>> thread = api.alterar_using_put20(id, tipo_evento, url, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -77,20 +77,20 @@ class WebhookApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method alterar_using_put18" % key
+                    " to method alterar_using_put20" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `alterar_using_put18`")
+            raise ValueError("Missing the required parameter `id` when calling `alterar_using_put20`")
         # verify the required parameter 'tipo_evento' is set
         if ('tipo_evento' not in params) or (params['tipo_evento'] is None):
-            raise ValueError("Missing the required parameter `tipo_evento` when calling `alterar_using_put18`")
+            raise ValueError("Missing the required parameter `tipo_evento` when calling `alterar_using_put20`")
         # verify the required parameter 'url' is set
         if ('url' not in params) or (params['url'] is None):
-            raise ValueError("Missing the required parameter `url` when calling `alterar_using_put18`")
+            raise ValueError("Missing the required parameter `url` when calling `alterar_using_put20`")
 
         resource_path = '/api/webhooks/{id}'.replace('{format}', 'json')
         path_params = {}
@@ -137,7 +137,7 @@ class WebhookApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get38(self, id, **kwargs):
+    def consultar_using_get40(self, id, **kwargs):
         """
         Consultar Webhook
         Este m\u00C3\u00A9todo permite que sejam consultado um webhook do emissor atrav\u00C3\u00A9s de um id especifico
@@ -148,7 +148,7 @@ class WebhookApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get38(id, callback=callback_function)
+        >>> thread = api.consultar_using_get40(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -166,14 +166,14 @@ class WebhookApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get38" % key
+                    " to method consultar_using_get40" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get38`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get40`")
 
         resource_path = '/api/webhooks/{id}'.replace('{format}', 'json')
         path_params = {}
@@ -214,7 +214,7 @@ class WebhookApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get44(self, **kwargs):
+    def listar_using_get46(self, **kwargs):
         """
         Lista os Webhooks
         Este m\u00C3\u00A9todo permite que sejam listados os webhooks existentes
@@ -225,7 +225,7 @@ class WebhookApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get44(callback=callback_function)
+        >>> thread = api.listar_using_get46(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -249,7 +249,7 @@ class WebhookApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get44" % key
+                    " to method listar_using_get46" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -306,7 +306,7 @@ class WebhookApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def salvar_using_post25(self, tipo_evento, url, **kwargs):
+    def salvar_using_post26(self, tipo_evento, url, **kwargs):
         """
         Salvar Webhook
         Este m\u00C3\u00A9todo permite que seja adicionado um novo webhook
@@ -317,7 +317,7 @@ class WebhookApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.salvar_using_post25(tipo_evento, url, callback=callback_function)
+        >>> thread = api.salvar_using_post26(tipo_evento, url, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -336,17 +336,17 @@ class WebhookApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method salvar_using_post25" % key
+                    " to method salvar_using_post26" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'tipo_evento' is set
         if ('tipo_evento' not in params) or (params['tipo_evento'] is None):
-            raise ValueError("Missing the required parameter `tipo_evento` when calling `salvar_using_post25`")
+            raise ValueError("Missing the required parameter `tipo_evento` when calling `salvar_using_post26`")
         # verify the required parameter 'url' is set
         if ('url' not in params) or (params['url'] is None):
-            raise ValueError("Missing the required parameter `url` when calling `salvar_using_post25`")
+            raise ValueError("Missing the required parameter `url` when calling `salvar_using_post26`")
 
         resource_path = '/api/webhooks'.replace('{format}', 'json')
         path_params = {}

@@ -140,7 +140,7 @@ class FAQApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def alterar_using_put6(self, id, pergunta, resposta, **kwargs):
+    def alterar_using_put7(self, id, pergunta, resposta, **kwargs):
         """
         Alterar FAQ
         Alterar FAQ
@@ -151,7 +151,7 @@ class FAQApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.alterar_using_put6(id, pergunta, resposta, callback=callback_function)
+        >>> thread = api.alterar_using_put7(id, pergunta, resposta, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -175,20 +175,20 @@ class FAQApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method alterar_using_put6" % key
+                    " to method alterar_using_put7" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `alterar_using_put6`")
+            raise ValueError("Missing the required parameter `id` when calling `alterar_using_put7`")
         # verify the required parameter 'pergunta' is set
         if ('pergunta' not in params) or (params['pergunta'] is None):
-            raise ValueError("Missing the required parameter `pergunta` when calling `alterar_using_put6`")
+            raise ValueError("Missing the required parameter `pergunta` when calling `alterar_using_put7`")
         # verify the required parameter 'resposta' is set
         if ('resposta' not in params) or (params['resposta'] is None):
-            raise ValueError("Missing the required parameter `resposta` when calling `alterar_using_put6`")
+            raise ValueError("Missing the required parameter `resposta` when calling `alterar_using_put7`")
 
         resource_path = '/api/faqs/{id}'.replace('{format}', 'json')
         path_params = {}
@@ -241,7 +241,7 @@ class FAQApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get15(self, id, **kwargs):
+    def consultar_using_get16(self, id, **kwargs):
         """
         Consultar FAQ por id
         Consulta os detalhes de uma determinada FAQ
@@ -252,7 +252,7 @@ class FAQApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get15(id, callback=callback_function)
+        >>> thread = api.consultar_using_get16(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -270,14 +270,14 @@ class FAQApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get15" % key
+                    " to method consultar_using_get16" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get15`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get16`")
 
         resource_path = '/api/faqs/{id}'.replace('{format}', 'json')
         path_params = {}
@@ -318,7 +318,7 @@ class FAQApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get19(self, **kwargs):
+    def listar_using_get20(self, **kwargs):
         """
         Lista FAQs
         Lista todas as FAQs
@@ -329,7 +329,7 @@ class FAQApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get19(callback=callback_function)
+        >>> thread = api.listar_using_get20(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -356,7 +356,7 @@ class FAQApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get19" % key
+                    " to method listar_using_get20" % key
                 )
             params[key] = val
         del params['kwargs']
