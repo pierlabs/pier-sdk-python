@@ -5,7 +5,7 @@ from .adicional_detalhe_response import AdicionalDetalheResponse
 from .adicional_persist import AdicionalPersist
 from .adicional_response import AdicionalResponse
 from .adicional_update import AdicionalUpdate
-from .ajuste_response import AjusteResponse
+from .ajuste_financeiro_response import AjusteFinanceiroResponse
 from .alterar_produto_request import AlterarProdutoRequest
 from .anexo_notificacao_email_request import AnexoNotificacaoEmailRequest
 from .antecipacao_response import AntecipacaoResponse
@@ -73,6 +73,7 @@ from .credor_response import CredorResponse
 from .dados_cartao_impressao_response import DadosCartaoImpressaoResponse
 from .dados_cartao_response import DadosCartaoResponse
 from .desfazimento_transacao_on_us_request import DesfazimentoTransacaoOnUsRequest
+from .detalhe_operacao_response import DetalheOperacaoResponse
 from .detalhe_oportunidade_persist import DetalheOportunidadePersist
 from .detalhe_oportunidade_response import DetalheOportunidadeResponse
 from .detalhe_oportunidade_update import DetalheOportunidadeUpdate
@@ -121,12 +122,14 @@ from .notificacao_push_response import NotificacaoPushResponse
 from .notificacao_response import NotificacaoResponse
 from .notificacao_sms_body import NotificacaoSMSBody
 from .notificacao_sms_response import NotificacaoSMSResponse
+from .operacao_response import OperacaoResponse
 from .operadora_response import OperadoraResponse
 from .oportunidade_aud_response import OportunidadeAUDResponse
 from .oportunidade_persist import OportunidadePersist
 from .oportunidade_response import OportunidadeResponse
 from .oportunidade_update import OportunidadeUpdate
 from .origem_comercial_response import OrigemComercialResponse
+from .page_ajuste_response import PageAjusteResponse
 from .page_anuidade_response import PageAnuidadeResponse
 from .page_aplicacao_mobile_response import PageAplicacaoMobileResponse
 from .page_atendimento_cliente_response import PageAtendimentoClienteResponse
@@ -162,6 +165,7 @@ from .page_historico_atraso_fatura_response import PageHistoricoAtrasoFaturaResp
 from .page_historico_eventos_response import PageHistoricoEventosResponse
 from .page_job_response import PageJobResponse
 from .page_lote_cartoes_pre_pagos_response import PageLoteCartoesPrePagosResponse
+from .page_operacao_response import PageOperacaoResponse
 from .page_operadora_response import PageOperadoraResponse
 from .page_oportunidade_aud_response import PageOportunidadeAUDResponse
 from .page_oportunidade_response import PageOportunidadeResponse
@@ -207,6 +211,7 @@ from .page_usuario_response import PageUsuarioResponse
 from .page_web_hook_response import PageWebHookResponse
 from .pais_response import PaisResponse
 from .parametro_produto_response import ParametroProdutoResponse
+from .parcelamento_transferencia_response import ParcelamentoTransferenciaResponse
 from .pessoa_detalhe_response import PessoaDetalheResponse
 from .pessoa_fisica_aprovada_persist import PessoaFisicaAprovadaPersist
 from .pessoa_fisica_aprovada_response import PessoaFisicaAprovadaResponse
@@ -220,6 +225,9 @@ from .plano_campanha_response import PlanoCampanhaResponse
 from .plano_campanha_update import PlanoCampanhaUpdate
 from .plano_parcelamento_emprestimo_response import PlanoParcelamentoEmprestimoResponse
 from .plano_parcelamento_response import PlanoParcelamentoResponse
+from .plano_parcelamento_transferencia_credito_conta_bancaria_request import PlanoParcelamentoTransferenciaCreditoContaBancariaRequest
+from .plano_parcelamento_transferencia_credito_conta_bancaria_response import PlanoParcelamentoTransferenciaCreditoContaBancariaResponse
+from .plano_parcelamento_transferencia_response import PlanoParcelamentoTransferenciaResponse
 from .plataforma_mobile_persist import PlataformaMobilePersist
 from .plataforma_mobile_response import PlataformaMobileResponse
 from .plataforma_mobile_update import PlataformaMobileUpdate

@@ -882,7 +882,7 @@ class CadastroClienteApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get14(self, id, **kwargs):
+    def consultar_using_get15(self, id, **kwargs):
         """
         Apresenta os dados de um determinado Endere\u00C3\u00A7o
         Este m\u00C3\u00A9todo permite consultar um determinado Endere\u00C3\u00A7o a partir do seu c\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o (id).
@@ -893,7 +893,7 @@ class CadastroClienteApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get14(id, callback=callback_function)
+        >>> thread = api.consultar_using_get15(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -911,14 +911,14 @@ class CadastroClienteApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get14" % key
+                    " to method consultar_using_get15" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get14`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get15`")
 
         resource_path = '/api/enderecos/{id}'.replace('{format}', 'json')
         path_params = {}
@@ -959,7 +959,7 @@ class CadastroClienteApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get19(self, id, **kwargs):
+    def consultar_using_get20(self, id, **kwargs):
         """
         Apresenta os detalhes de uma determinada Pessoa
         Este m\u00C3\u00A9todo permite a consulta dos detalhes de uma Pessoa existentes na base de dados do Emissor.
@@ -970,7 +970,7 @@ class CadastroClienteApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get19(id, callback=callback_function)
+        >>> thread = api.consultar_using_get20(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -988,14 +988,14 @@ class CadastroClienteApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get19" % key
+                    " to method consultar_using_get20" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get19`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get20`")
 
         resource_path = '/api/pessoas-detalhes/{id}'.replace('{format}', 'json')
         path_params = {}
@@ -1036,7 +1036,7 @@ class CadastroClienteApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get21(self, id, **kwargs):
+    def consultar_using_get22(self, id, **kwargs):
         """
         Apresenta os dados de uma determinada Pessoa
         Este m\u00C3\u00A9todo permite que sejam listadas as Pessoas existentes na base de dados do Emissor.
@@ -1047,7 +1047,7 @@ class CadastroClienteApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get21(id, callback=callback_function)
+        >>> thread = api.consultar_using_get22(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -1065,14 +1065,14 @@ class CadastroClienteApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get21" % key
+                    " to method consultar_using_get22" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get21`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get22`")
 
         resource_path = '/api/pessoas/{id}'.replace('{format}', 'json')
         path_params = {}
@@ -1113,7 +1113,7 @@ class CadastroClienteApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get27(self, id, **kwargs):
+    def consultar_using_get28(self, id, **kwargs):
         """
         Apresenta os dados de um determinado Telefone
         Este m\u00C3\u00A9todo permite consultar um determinado Telefone a partir do seu c\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o (id).
@@ -1124,7 +1124,7 @@ class CadastroClienteApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get27(id, callback=callback_function)
+        >>> thread = api.consultar_using_get28(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -1142,14 +1142,14 @@ class CadastroClienteApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get27" % key
+                    " to method consultar_using_get28" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get27`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get28`")
 
         resource_path = '/api/telefones/{id}'.replace('{format}', 'json')
         path_params = {}
