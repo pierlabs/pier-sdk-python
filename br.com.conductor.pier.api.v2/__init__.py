@@ -104,6 +104,7 @@ from .models.fatura_consignada_response import FaturaConsignadaResponse
 from .models.fatura_detalhe_response import FaturaDetalheResponse
 from .models.fatura_fechada_response import FaturaFechadaResponse
 from .models.fatura_response import FaturaResponse
+from .models.grade_pendente_request import GradePendenteRequest
 from .models.historico_assessoria_response import HistoricoAssessoriaResponse
 from .models.historico_atraso_fatura_response import HistoricoAtrasoFaturaResponse
 from .models.historico_eventos_response import HistoricoEventosResponse

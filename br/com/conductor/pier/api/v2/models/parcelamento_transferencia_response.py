@@ -40,6 +40,9 @@ class ParcelamentoTransferenciaResponse(object):
             'numero_parcela': 'str',
             'valor_primeira_parcela': 'float',
             'valor_demais_parcelas': 'float',
+            'valor_total': 'float',
+            'valor_tac': 'float',
+            'valor_iof': 'float',
             'taxa_juros': 'float',
             'cet_anual': 'float'
         }
@@ -48,6 +51,9 @@ class ParcelamentoTransferenciaResponse(object):
             'numero_parcela': 'numeroParcela',
             'valor_primeira_parcela': 'valorPrimeiraParcela',
             'valor_demais_parcelas': 'valorDemaisParcelas',
+            'valor_total': 'valorTotal',
+            'valor_tac': 'valorTAC',
+            'valor_iof': 'valorIOF',
             'taxa_juros': 'taxaJuros',
             'cet_anual': 'cetAnual'
         }
@@ -55,6 +61,9 @@ class ParcelamentoTransferenciaResponse(object):
         self._numero_parcela = None
         self._valor_primeira_parcela = None
         self._valor_demais_parcelas = None
+        self._valor_total = None
+        self._valor_tac = None
+        self._valor_iof = None
         self._taxa_juros = None
         self._cet_anual = None
 
@@ -123,6 +132,72 @@ class ParcelamentoTransferenciaResponse(object):
         :type: float
         """
         self._valor_demais_parcelas = valor_demais_parcelas
+
+    @property
+    def valor_total(self):
+        """
+        Gets the valor_total of this ParcelamentoTransferenciaResponse.
+        Valor total do financiamento.
+
+        :return: The valor_total of this ParcelamentoTransferenciaResponse.
+        :rtype: float
+        """
+        return self._valor_total
+
+    @valor_total.setter
+    def valor_total(self, valor_total):
+        """
+        Sets the valor_total of this ParcelamentoTransferenciaResponse.
+        Valor total do financiamento.
+
+        :param valor_total: The valor_total of this ParcelamentoTransferenciaResponse.
+        :type: float
+        """
+        self._valor_total = valor_total
+
+    @property
+    def valor_tac(self):
+        """
+        Gets the valor_tac of this ParcelamentoTransferenciaResponse.
+        Valor da tarifa de contrata\u00C3\u00A7\u00C3\u00A3o.
+
+        :return: The valor_tac of this ParcelamentoTransferenciaResponse.
+        :rtype: float
+        """
+        return self._valor_tac
+
+    @valor_tac.setter
+    def valor_tac(self, valor_tac):
+        """
+        Sets the valor_tac of this ParcelamentoTransferenciaResponse.
+        Valor da tarifa de contrata\u00C3\u00A7\u00C3\u00A3o.
+
+        :param valor_tac: The valor_tac of this ParcelamentoTransferenciaResponse.
+        :type: float
+        """
+        self._valor_tac = valor_tac
+
+    @property
+    def valor_iof(self):
+        """
+        Gets the valor_iof of this ParcelamentoTransferenciaResponse.
+        IOF
+
+        :return: The valor_iof of this ParcelamentoTransferenciaResponse.
+        :rtype: float
+        """
+        return self._valor_iof
+
+    @valor_iof.setter
+    def valor_iof(self, valor_iof):
+        """
+        Sets the valor_iof of this ParcelamentoTransferenciaResponse.
+        IOF
+
+        :param valor_iof: The valor_iof of this ParcelamentoTransferenciaResponse.
+        :type: float
+        """
+        self._valor_iof = valor_iof
 
     @property
     def taxa_juros(self):

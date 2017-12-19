@@ -39,8 +39,7 @@ class PlanoParcelamentoTransferenciaCreditoContaBancariaRequest(object):
         self.swagger_types = {
             'nsu_origem': 'str',
             'valor_transacao': 'float',
-            'numero_real_cartao': 'str',
-            'data_validade_cartao': 'str',
+            'id_cartao': 'int',
             'numero_meses_carencia': 'int',
             'numero_estabelecimento': 'int',
             'data_hora_terminal': 'str',
@@ -50,8 +49,7 @@ class PlanoParcelamentoTransferenciaCreditoContaBancariaRequest(object):
         self.attribute_map = {
             'nsu_origem': 'nsuOrigem',
             'valor_transacao': 'valorTransacao',
-            'numero_real_cartao': 'numeroRealCartao',
-            'data_validade_cartao': 'dataValidadeCartao',
+            'id_cartao': 'idCartao',
             'numero_meses_carencia': 'numeroMesesCarencia',
             'numero_estabelecimento': 'numeroEstabelecimento',
             'data_hora_terminal': 'dataHoraTerminal',
@@ -60,8 +58,7 @@ class PlanoParcelamentoTransferenciaCreditoContaBancariaRequest(object):
 
         self._nsu_origem = None
         self._valor_transacao = None
-        self._numero_real_cartao = None
-        self._data_validade_cartao = None
+        self._id_cartao = None
         self._numero_meses_carencia = None
         self._numero_estabelecimento = None
         self._data_hora_terminal = None
@@ -112,48 +109,26 @@ class PlanoParcelamentoTransferenciaCreditoContaBancariaRequest(object):
         self._valor_transacao = valor_transacao
 
     @property
-    def numero_real_cartao(self):
+    def id_cartao(self):
         """
-        Gets the numero_real_cartao of this PlanoParcelamentoTransferenciaCreditoContaBancariaRequest.
-        N\u00C3\u00BAmero Real do Cart\u00C3\u00A3o.
+        Gets the id_cartao of this PlanoParcelamentoTransferenciaCreditoContaBancariaRequest.
+        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do cart\u00C3\u00A3o.
 
-        :return: The numero_real_cartao of this PlanoParcelamentoTransferenciaCreditoContaBancariaRequest.
-        :rtype: str
+        :return: The id_cartao of this PlanoParcelamentoTransferenciaCreditoContaBancariaRequest.
+        :rtype: int
         """
-        return self._numero_real_cartao
+        return self._id_cartao
 
-    @numero_real_cartao.setter
-    def numero_real_cartao(self, numero_real_cartao):
+    @id_cartao.setter
+    def id_cartao(self, id_cartao):
         """
-        Sets the numero_real_cartao of this PlanoParcelamentoTransferenciaCreditoContaBancariaRequest.
-        N\u00C3\u00BAmero Real do Cart\u00C3\u00A3o.
+        Sets the id_cartao of this PlanoParcelamentoTransferenciaCreditoContaBancariaRequest.
+        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do cart\u00C3\u00A3o.
 
-        :param numero_real_cartao: The numero_real_cartao of this PlanoParcelamentoTransferenciaCreditoContaBancariaRequest.
-        :type: str
+        :param id_cartao: The id_cartao of this PlanoParcelamentoTransferenciaCreditoContaBancariaRequest.
+        :type: int
         """
-        self._numero_real_cartao = numero_real_cartao
-
-    @property
-    def data_validade_cartao(self):
-        """
-        Gets the data_validade_cartao of this PlanoParcelamentoTransferenciaCreditoContaBancariaRequest.
-        Data de Validade do Cart\u00C3\u00A3o. Ex: AAMM
-
-        :return: The data_validade_cartao of this PlanoParcelamentoTransferenciaCreditoContaBancariaRequest.
-        :rtype: str
-        """
-        return self._data_validade_cartao
-
-    @data_validade_cartao.setter
-    def data_validade_cartao(self, data_validade_cartao):
-        """
-        Sets the data_validade_cartao of this PlanoParcelamentoTransferenciaCreditoContaBancariaRequest.
-        Data de Validade do Cart\u00C3\u00A3o. Ex: AAMM
-
-        :param data_validade_cartao: The data_validade_cartao of this PlanoParcelamentoTransferenciaCreditoContaBancariaRequest.
-        :type: str
-        """
-        self._data_validade_cartao = data_validade_cartao
+        self._id_cartao = id_cartao
 
     @property
     def numero_meses_carencia(self):

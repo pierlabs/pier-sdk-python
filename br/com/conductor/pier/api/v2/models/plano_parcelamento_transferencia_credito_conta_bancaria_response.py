@@ -38,29 +38,20 @@ class PlanoParcelamentoTransferenciaCreditoContaBancariaResponse(object):
         """
         self.swagger_types = {
             'nsu_origem': 'str',
-            'nsu_autorizacao': 'str',
-            'codigo_autorizacao': 'str',
             'numero_mascarado_cartao': 'str',
-            'nome_portador_cartao': 'str',
             'terminal_requisitante': 'str',
             'plano_parcelamentos': 'list[PlanoParcelamentoTransferenciaResponse]'
         }
 
         self.attribute_map = {
             'nsu_origem': 'nsuOrigem',
-            'nsu_autorizacao': 'nsuAutorizacao',
-            'codigo_autorizacao': 'codigoAutorizacao',
             'numero_mascarado_cartao': 'numeroMascaradoCartao',
-            'nome_portador_cartao': 'nomePortadorCartao',
             'terminal_requisitante': 'terminalRequisitante',
             'plano_parcelamentos': 'planoParcelamentos'
         }
 
         self._nsu_origem = None
-        self._nsu_autorizacao = None
-        self._codigo_autorizacao = None
         self._numero_mascarado_cartao = None
-        self._nome_portador_cartao = None
         self._terminal_requisitante = None
         self._plano_parcelamentos = None
 
@@ -87,50 +78,6 @@ class PlanoParcelamentoTransferenciaCreditoContaBancariaResponse(object):
         self._nsu_origem = nsu_origem
 
     @property
-    def nsu_autorizacao(self):
-        """
-        Gets the nsu_autorizacao of this PlanoParcelamentoTransferenciaCreditoContaBancariaResponse.
-        N\u00C3\u00BAmero Sequencial \u00C3\u009Anico gerado pelo Autorizador a cada Transa\u00C3\u00A7\u00C3\u00A3o.
-
-        :return: The nsu_autorizacao of this PlanoParcelamentoTransferenciaCreditoContaBancariaResponse.
-        :rtype: str
-        """
-        return self._nsu_autorizacao
-
-    @nsu_autorizacao.setter
-    def nsu_autorizacao(self, nsu_autorizacao):
-        """
-        Sets the nsu_autorizacao of this PlanoParcelamentoTransferenciaCreditoContaBancariaResponse.
-        N\u00C3\u00BAmero Sequencial \u00C3\u009Anico gerado pelo Autorizador a cada Transa\u00C3\u00A7\u00C3\u00A3o.
-
-        :param nsu_autorizacao: The nsu_autorizacao of this PlanoParcelamentoTransferenciaCreditoContaBancariaResponse.
-        :type: str
-        """
-        self._nsu_autorizacao = nsu_autorizacao
-
-    @property
-    def codigo_autorizacao(self):
-        """
-        Gets the codigo_autorizacao of this PlanoParcelamentoTransferenciaCreditoContaBancariaResponse.
-        C\u00C3\u00B3digo de Autoriza\u00C3\u00A7\u00C3\u00A3o gerado pelo Autorizador.
-
-        :return: The codigo_autorizacao of this PlanoParcelamentoTransferenciaCreditoContaBancariaResponse.
-        :rtype: str
-        """
-        return self._codigo_autorizacao
-
-    @codigo_autorizacao.setter
-    def codigo_autorizacao(self, codigo_autorizacao):
-        """
-        Sets the codigo_autorizacao of this PlanoParcelamentoTransferenciaCreditoContaBancariaResponse.
-        C\u00C3\u00B3digo de Autoriza\u00C3\u00A7\u00C3\u00A3o gerado pelo Autorizador.
-
-        :param codigo_autorizacao: The codigo_autorizacao of this PlanoParcelamentoTransferenciaCreditoContaBancariaResponse.
-        :type: str
-        """
-        self._codigo_autorizacao = codigo_autorizacao
-
-    @property
     def numero_mascarado_cartao(self):
         """
         Gets the numero_mascarado_cartao of this PlanoParcelamentoTransferenciaCreditoContaBancariaResponse.
@@ -151,28 +98,6 @@ class PlanoParcelamentoTransferenciaCreditoContaBancariaResponse(object):
         :type: str
         """
         self._numero_mascarado_cartao = numero_mascarado_cartao
-
-    @property
-    def nome_portador_cartao(self):
-        """
-        Gets the nome_portador_cartao of this PlanoParcelamentoTransferenciaCreditoContaBancariaResponse.
-        Nome do Portador do Cart\u00C3\u00A3o que originou a transa\u00C3\u00A7\u00C3\u00A3o.
-
-        :return: The nome_portador_cartao of this PlanoParcelamentoTransferenciaCreditoContaBancariaResponse.
-        :rtype: str
-        """
-        return self._nome_portador_cartao
-
-    @nome_portador_cartao.setter
-    def nome_portador_cartao(self, nome_portador_cartao):
-        """
-        Sets the nome_portador_cartao of this PlanoParcelamentoTransferenciaCreditoContaBancariaResponse.
-        Nome do Portador do Cart\u00C3\u00A3o que originou a transa\u00C3\u00A7\u00C3\u00A3o.
-
-        :param nome_portador_cartao: The nome_portador_cartao of this PlanoParcelamentoTransferenciaCreditoContaBancariaResponse.
-        :type: str
-        """
-        self._nome_portador_cartao = nome_portador_cartao
 
     @property
     def terminal_requisitante(self):
