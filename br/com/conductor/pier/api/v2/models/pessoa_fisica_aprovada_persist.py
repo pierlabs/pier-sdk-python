@@ -39,15 +39,15 @@ class PessoaFisicaAprovadaPersist(object):
         self.swagger_types = {
             'nome': 'str',
             'nome_mae': 'str',
-            'data_nascimento': 'date',
+            'data_nascimento': 'str',
             'sexo': 'str',
             'cpf': 'str',
             'numero_identidade': 'str',
             'orgao_expedidor_identidade': 'str',
             'unidade_federativa_identidade': 'str',
-            'data_emissao_identidade': 'date',
+            'data_emissao_identidade': 'str',
             'id_estado_civil': 'int',
-            'profissao': 'str',
+            'id_profissao': 'str',
             'id_natureza_ocupacao': 'int',
             'id_nacionalidade': 'int',
             'id_origem_comercial': 'int',
@@ -58,8 +58,15 @@ class PessoaFisicaAprovadaPersist(object):
             'dia_vencimento': 'int',
             'nome_impresso': 'str',
             'nome_empresa': 'str',
+            'valor_renda': 'float',
+            'canal_entrada': 'str',
+            'valor_pontuacao': 'int',
             'telefones': 'list[TelefonePessoaAprovadaPersist]',
-            'enderecos': 'list[EnderecoAprovadoPersist]'
+            'enderecos': 'list[EnderecoAprovadoPersist]',
+            'limite_global': 'float',
+            'limite_maximo': 'float',
+            'limite_parcelas': 'float',
+            'limite_consignado': 'float'
         }
 
         self.attribute_map = {
@@ -73,7 +80,7 @@ class PessoaFisicaAprovadaPersist(object):
             'unidade_federativa_identidade': 'unidadeFederativaIdentidade',
             'data_emissao_identidade': 'dataEmissaoIdentidade',
             'id_estado_civil': 'idEstadoCivil',
-            'profissao': 'profissao',
+            'id_profissao': 'idProfissao',
             'id_natureza_ocupacao': 'idNaturezaOcupacao',
             'id_nacionalidade': 'idNacionalidade',
             'id_origem_comercial': 'idOrigemComercial',
@@ -84,8 +91,15 @@ class PessoaFisicaAprovadaPersist(object):
             'dia_vencimento': 'diaVencimento',
             'nome_impresso': 'nomeImpresso',
             'nome_empresa': 'nomeEmpresa',
+            'valor_renda': 'valorRenda',
+            'canal_entrada': 'canalEntrada',
+            'valor_pontuacao': 'valorPontuacao',
             'telefones': 'telefones',
-            'enderecos': 'enderecos'
+            'enderecos': 'enderecos',
+            'limite_global': 'limiteGlobal',
+            'limite_maximo': 'limiteMaximo',
+            'limite_parcelas': 'limiteParcelas',
+            'limite_consignado': 'limiteConsignado'
         }
 
         self._nome = None
@@ -98,7 +112,7 @@ class PessoaFisicaAprovadaPersist(object):
         self._unidade_federativa_identidade = None
         self._data_emissao_identidade = None
         self._id_estado_civil = None
-        self._profissao = None
+        self._id_profissao = None
         self._id_natureza_ocupacao = None
         self._id_nacionalidade = None
         self._id_origem_comercial = None
@@ -109,8 +123,15 @@ class PessoaFisicaAprovadaPersist(object):
         self._dia_vencimento = None
         self._nome_impresso = None
         self._nome_empresa = None
+        self._valor_renda = None
+        self._canal_entrada = None
+        self._valor_pontuacao = None
         self._telefones = None
         self._enderecos = None
+        self._limite_global = None
+        self._limite_maximo = None
+        self._limite_parcelas = None
+        self._limite_consignado = None
 
     @property
     def nome(self):
@@ -163,7 +184,7 @@ class PessoaFisicaAprovadaPersist(object):
         Data de Nascimento da Pessoa. Essa data deve ser informada no formato aaaa-MM-dd.
 
         :return: The data_nascimento of this PessoaFisicaAprovadaPersist.
-        :rtype: date
+        :rtype: str
         """
         return self._data_nascimento
 
@@ -174,7 +195,7 @@ class PessoaFisicaAprovadaPersist(object):
         Data de Nascimento da Pessoa. Essa data deve ser informada no formato aaaa-MM-dd.
 
         :param data_nascimento: The data_nascimento of this PessoaFisicaAprovadaPersist.
-        :type: date
+        :type: str
         """
         self._data_nascimento = data_nascimento
 
@@ -295,7 +316,7 @@ class PessoaFisicaAprovadaPersist(object):
         Data emiss\u00C3\u00A3o da identidade no formato aaaa-MM-dd
 
         :return: The data_emissao_identidade of this PessoaFisicaAprovadaPersist.
-        :rtype: date
+        :rtype: str
         """
         return self._data_emissao_identidade
 
@@ -306,7 +327,7 @@ class PessoaFisicaAprovadaPersist(object):
         Data emiss\u00C3\u00A3o da identidade no formato aaaa-MM-dd
 
         :param data_emissao_identidade: The data_emissao_identidade of this PessoaFisicaAprovadaPersist.
-        :type: date
+        :type: str
         """
         self._data_emissao_identidade = data_emissao_identidade
 
@@ -333,26 +354,26 @@ class PessoaFisicaAprovadaPersist(object):
         self._id_estado_civil = id_estado_civil
 
     @property
-    def profissao(self):
+    def id_profissao(self):
         """
-        Gets the profissao of this PessoaFisicaAprovadaPersist.
+        Gets the id_profissao of this PessoaFisicaAprovadaPersist.
         Profiss\u00C3\u00A3o da pessoa fisica
 
-        :return: The profissao of this PessoaFisicaAprovadaPersist.
+        :return: The id_profissao of this PessoaFisicaAprovadaPersist.
         :rtype: str
         """
-        return self._profissao
+        return self._id_profissao
 
-    @profissao.setter
-    def profissao(self, profissao):
+    @id_profissao.setter
+    def id_profissao(self, id_profissao):
         """
-        Sets the profissao of this PessoaFisicaAprovadaPersist.
+        Sets the id_profissao of this PessoaFisicaAprovadaPersist.
         Profiss\u00C3\u00A3o da pessoa fisica
 
-        :param profissao: The profissao of this PessoaFisicaAprovadaPersist.
+        :param id_profissao: The id_profissao of this PessoaFisicaAprovadaPersist.
         :type: str
         """
-        self._profissao = profissao
+        self._id_profissao = id_profissao
 
     @property
     def id_natureza_ocupacao(self):
@@ -575,6 +596,72 @@ class PessoaFisicaAprovadaPersist(object):
         self._nome_empresa = nome_empresa
 
     @property
+    def valor_renda(self):
+        """
+        Gets the valor_renda of this PessoaFisicaAprovadaPersist.
+        Apresenta o valor da renda compravada
+
+        :return: The valor_renda of this PessoaFisicaAprovadaPersist.
+        :rtype: float
+        """
+        return self._valor_renda
+
+    @valor_renda.setter
+    def valor_renda(self, valor_renda):
+        """
+        Sets the valor_renda of this PessoaFisicaAprovadaPersist.
+        Apresenta o valor da renda compravada
+
+        :param valor_renda: The valor_renda of this PessoaFisicaAprovadaPersist.
+        :type: float
+        """
+        self._valor_renda = valor_renda
+
+    @property
+    def canal_entrada(self):
+        """
+        Gets the canal_entrada of this PessoaFisicaAprovadaPersist.
+        Indica o canal pelo qual o cadastro do cliente foi realizado
+
+        :return: The canal_entrada of this PessoaFisicaAprovadaPersist.
+        :rtype: str
+        """
+        return self._canal_entrada
+
+    @canal_entrada.setter
+    def canal_entrada(self, canal_entrada):
+        """
+        Sets the canal_entrada of this PessoaFisicaAprovadaPersist.
+        Indica o canal pelo qual o cadastro do cliente foi realizado
+
+        :param canal_entrada: The canal_entrada of this PessoaFisicaAprovadaPersist.
+        :type: str
+        """
+        self._canal_entrada = canal_entrada
+
+    @property
+    def valor_pontuacao(self):
+        """
+        Gets the valor_pontuacao of this PessoaFisicaAprovadaPersist.
+        Indica o valor da pontua\u00C3\u00A7\u00C3\u00A3o atribuido ao cliente (caso n\u00C3\u00A3o informado ser\u00C3\u00A1 atribuido o valor = 0)
+
+        :return: The valor_pontuacao of this PessoaFisicaAprovadaPersist.
+        :rtype: int
+        """
+        return self._valor_pontuacao
+
+    @valor_pontuacao.setter
+    def valor_pontuacao(self, valor_pontuacao):
+        """
+        Sets the valor_pontuacao of this PessoaFisicaAprovadaPersist.
+        Indica o valor da pontua\u00C3\u00A7\u00C3\u00A3o atribuido ao cliente (caso n\u00C3\u00A3o informado ser\u00C3\u00A1 atribuido o valor = 0)
+
+        :param valor_pontuacao: The valor_pontuacao of this PessoaFisicaAprovadaPersist.
+        :type: int
+        """
+        self._valor_pontuacao = valor_pontuacao
+
+    @property
     def telefones(self):
         """
         Gets the telefones of this PessoaFisicaAprovadaPersist.
@@ -617,6 +704,94 @@ class PessoaFisicaAprovadaPersist(object):
         :type: list[EnderecoAprovadoPersist]
         """
         self._enderecos = enderecos
+
+    @property
+    def limite_global(self):
+        """
+        Gets the limite_global of this PessoaFisicaAprovadaPersist.
+        Valor do Limite Global
+
+        :return: The limite_global of this PessoaFisicaAprovadaPersist.
+        :rtype: float
+        """
+        return self._limite_global
+
+    @limite_global.setter
+    def limite_global(self, limite_global):
+        """
+        Sets the limite_global of this PessoaFisicaAprovadaPersist.
+        Valor do Limite Global
+
+        :param limite_global: The limite_global of this PessoaFisicaAprovadaPersist.
+        :type: float
+        """
+        self._limite_global = limite_global
+
+    @property
+    def limite_maximo(self):
+        """
+        Gets the limite_maximo of this PessoaFisicaAprovadaPersist.
+        Valor m\u00C3\u00A1ximo do limite de cr\u00C3\u00A9dito para realizar transa\u00C3\u00A7\u00C3\u00B5es
+
+        :return: The limite_maximo of this PessoaFisicaAprovadaPersist.
+        :rtype: float
+        """
+        return self._limite_maximo
+
+    @limite_maximo.setter
+    def limite_maximo(self, limite_maximo):
+        """
+        Sets the limite_maximo of this PessoaFisicaAprovadaPersist.
+        Valor m\u00C3\u00A1ximo do limite de cr\u00C3\u00A9dito para realizar transa\u00C3\u00A7\u00C3\u00B5es
+
+        :param limite_maximo: The limite_maximo of this PessoaFisicaAprovadaPersist.
+        :type: float
+        """
+        self._limite_maximo = limite_maximo
+
+    @property
+    def limite_parcelas(self):
+        """
+        Gets the limite_parcelas of this PessoaFisicaAprovadaPersist.
+        Valor do limite de cr\u00C3\u00A9dito acumulado da soma das parcelas das compras
+
+        :return: The limite_parcelas of this PessoaFisicaAprovadaPersist.
+        :rtype: float
+        """
+        return self._limite_parcelas
+
+    @limite_parcelas.setter
+    def limite_parcelas(self, limite_parcelas):
+        """
+        Sets the limite_parcelas of this PessoaFisicaAprovadaPersist.
+        Valor do limite de cr\u00C3\u00A9dito acumulado da soma das parcelas das compras
+
+        :param limite_parcelas: The limite_parcelas of this PessoaFisicaAprovadaPersist.
+        :type: float
+        """
+        self._limite_parcelas = limite_parcelas
+
+    @property
+    def limite_consignado(self):
+        """
+        Gets the limite_consignado of this PessoaFisicaAprovadaPersist.
+        Valor do limite de margem consignado
+
+        :return: The limite_consignado of this PessoaFisicaAprovadaPersist.
+        :rtype: float
+        """
+        return self._limite_consignado
+
+    @limite_consignado.setter
+    def limite_consignado(self, limite_consignado):
+        """
+        Sets the limite_consignado of this PessoaFisicaAprovadaPersist.
+        Valor do limite de margem consignado
+
+        :param limite_consignado: The limite_consignado of this PessoaFisicaAprovadaPersist.
+        :type: float
+        """
+        self._limite_consignado = limite_consignado
 
     def to_dict(self):
         """

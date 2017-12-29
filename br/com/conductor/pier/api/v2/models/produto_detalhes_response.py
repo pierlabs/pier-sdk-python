@@ -41,7 +41,8 @@ class ProdutoDetalhesResponse(object):
             'nome': 'str',
             'status': 'int',
             'id_fantasia_basica': 'int',
-            'fantasia_basica': 'str'
+            'fantasia_basica': 'str',
+            'uso_exterior': 'bool'
         }
 
         self.attribute_map = {
@@ -49,7 +50,8 @@ class ProdutoDetalhesResponse(object):
             'nome': 'nome',
             'status': 'status',
             'id_fantasia_basica': 'idFantasiaBasica',
-            'fantasia_basica': 'fantasiaBasica'
+            'fantasia_basica': 'fantasiaBasica',
+            'uso_exterior': 'usoExterior'
         }
 
         self._id = None
@@ -57,6 +59,7 @@ class ProdutoDetalhesResponse(object):
         self._status = None
         self._id_fantasia_basica = None
         self._fantasia_basica = None
+        self._uso_exterior = None
 
     @property
     def id(self):
@@ -167,6 +170,28 @@ class ProdutoDetalhesResponse(object):
         :type: str
         """
         self._fantasia_basica = fantasia_basica
+
+    @property
+    def uso_exterior(self):
+        """
+        Gets the uso_exterior of this ProdutoDetalhesResponse.
+        Par\u00C3\u00A2metro que indica se o produto est\u00C3\u00A1 habilitado para compras no exterior.
+
+        :return: The uso_exterior of this ProdutoDetalhesResponse.
+        :rtype: bool
+        """
+        return self._uso_exterior
+
+    @uso_exterior.setter
+    def uso_exterior(self, uso_exterior):
+        """
+        Sets the uso_exterior of this ProdutoDetalhesResponse.
+        Par\u00C3\u00A2metro que indica se o produto est\u00C3\u00A1 habilitado para compras no exterior.
+
+        :param uso_exterior: The uso_exterior of this ProdutoDetalhesResponse.
+        :type: bool
+        """
+        self._uso_exterior = uso_exterior
 
     def to_dict(self):
         """

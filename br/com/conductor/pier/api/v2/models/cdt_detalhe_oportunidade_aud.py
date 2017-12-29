@@ -42,7 +42,7 @@ class CdtDetalheOportunidadeAUD(object):
             'id_oportunidade': 'int',
             'nome_campo': 'str',
             'rev': 'int',
-            'rev_date': 'datetime',
+            'rev_date': 'str',
             'rev_oportunidade': 'int',
             'rev_type': 'int',
             'rev_user': 'str'
@@ -187,7 +187,7 @@ class CdtDetalheOportunidadeAUD(object):
 
 
         :return: The rev_date of this CdtDetalheOportunidadeAUD.
-        :rtype: datetime
+        :rtype: str
         """
         return self._rev_date
 
@@ -198,7 +198,7 @@ class CdtDetalheOportunidadeAUD(object):
 
 
         :param rev_date: The rev_date of this CdtDetalheOportunidadeAUD.
-        :type: datetime
+        :type: str
         """
         self._rev_date = rev_date
 

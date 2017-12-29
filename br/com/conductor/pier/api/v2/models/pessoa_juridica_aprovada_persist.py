@@ -41,7 +41,7 @@ class PessoaJuridicaAprovadaPersist(object):
             'nome_fantasia': 'str',
             'cnpj': 'str',
             'inscricao_estadual': 'str',
-            'data_abertura_empresa': 'date',
+            'data_abertura_empresa': 'str',
             'id_origem_comercial': 'int',
             'id_produto': 'int',
             'numero_agencia': 'int',
@@ -49,9 +49,16 @@ class PessoaJuridicaAprovadaPersist(object):
             'email': 'str',
             'dia_vencimento': 'int',
             'nome_impresso': 'str',
+            'valor_renda': 'float',
+            'canal_entrada': 'str',
+            'valor_pontuacao': 'int',
             'telefones': 'list[TelefonePessoaAprovadaPersist]',
             'enderecos': 'list[EnderecoAprovadoPersist]',
-            'socios': 'list[PessoaPersist]'
+            'socios': 'list[PessoaPersist]',
+            'referencias_comerciais': 'list[RefenciaComercialAprovadoPersist]',
+            'limite_global': 'float',
+            'limite_maximo': 'float',
+            'limite_parcelas': 'float'
         }
 
         self.attribute_map = {
@@ -67,9 +74,16 @@ class PessoaJuridicaAprovadaPersist(object):
             'email': 'email',
             'dia_vencimento': 'diaVencimento',
             'nome_impresso': 'nomeImpresso',
+            'valor_renda': 'valorRenda',
+            'canal_entrada': 'canalEntrada',
+            'valor_pontuacao': 'valorPontuacao',
             'telefones': 'telefones',
             'enderecos': 'enderecos',
-            'socios': 'socios'
+            'socios': 'socios',
+            'referencias_comerciais': 'referenciasComerciais',
+            'limite_global': 'limiteGlobal',
+            'limite_maximo': 'limiteMaximo',
+            'limite_parcelas': 'limiteParcelas'
         }
 
         self._razao_social = None
@@ -84,9 +98,16 @@ class PessoaJuridicaAprovadaPersist(object):
         self._email = None
         self._dia_vencimento = None
         self._nome_impresso = None
+        self._valor_renda = None
+        self._canal_entrada = None
+        self._valor_pontuacao = None
         self._telefones = None
         self._enderecos = None
         self._socios = None
+        self._referencias_comerciais = None
+        self._limite_global = None
+        self._limite_maximo = None
+        self._limite_parcelas = None
 
     @property
     def razao_social(self):
@@ -183,7 +204,7 @@ class PessoaJuridicaAprovadaPersist(object):
         Data de abertura da empresa, essa data deve ser informada no formato: aaaa-MM-dd.
 
         :return: The data_abertura_empresa of this PessoaJuridicaAprovadaPersist.
-        :rtype: date
+        :rtype: str
         """
         return self._data_abertura_empresa
 
@@ -194,7 +215,7 @@ class PessoaJuridicaAprovadaPersist(object):
         Data de abertura da empresa, essa data deve ser informada no formato: aaaa-MM-dd.
 
         :param data_abertura_empresa: The data_abertura_empresa of this PessoaJuridicaAprovadaPersist.
-        :type: date
+        :type: str
         """
         self._data_abertura_empresa = data_abertura_empresa
 
@@ -353,6 +374,72 @@ class PessoaJuridicaAprovadaPersist(object):
         self._nome_impresso = nome_impresso
 
     @property
+    def valor_renda(self):
+        """
+        Gets the valor_renda of this PessoaJuridicaAprovadaPersist.
+        Apresenta o valor da renda compravada
+
+        :return: The valor_renda of this PessoaJuridicaAprovadaPersist.
+        :rtype: float
+        """
+        return self._valor_renda
+
+    @valor_renda.setter
+    def valor_renda(self, valor_renda):
+        """
+        Sets the valor_renda of this PessoaJuridicaAprovadaPersist.
+        Apresenta o valor da renda compravada
+
+        :param valor_renda: The valor_renda of this PessoaJuridicaAprovadaPersist.
+        :type: float
+        """
+        self._valor_renda = valor_renda
+
+    @property
+    def canal_entrada(self):
+        """
+        Gets the canal_entrada of this PessoaJuridicaAprovadaPersist.
+        Indica o canal pelo qual o cadastro do cliente foi realizado
+
+        :return: The canal_entrada of this PessoaJuridicaAprovadaPersist.
+        :rtype: str
+        """
+        return self._canal_entrada
+
+    @canal_entrada.setter
+    def canal_entrada(self, canal_entrada):
+        """
+        Sets the canal_entrada of this PessoaJuridicaAprovadaPersist.
+        Indica o canal pelo qual o cadastro do cliente foi realizado
+
+        :param canal_entrada: The canal_entrada of this PessoaJuridicaAprovadaPersist.
+        :type: str
+        """
+        self._canal_entrada = canal_entrada
+
+    @property
+    def valor_pontuacao(self):
+        """
+        Gets the valor_pontuacao of this PessoaJuridicaAprovadaPersist.
+        Indica o valor da pontua\u00C3\u00A7\u00C3\u00A3o atribuido ao cliente (caso n\u00C3\u00A3o informado ser\u00C3\u00A1 atribuido o valor = 0)
+
+        :return: The valor_pontuacao of this PessoaJuridicaAprovadaPersist.
+        :rtype: int
+        """
+        return self._valor_pontuacao
+
+    @valor_pontuacao.setter
+    def valor_pontuacao(self, valor_pontuacao):
+        """
+        Sets the valor_pontuacao of this PessoaJuridicaAprovadaPersist.
+        Indica o valor da pontua\u00C3\u00A7\u00C3\u00A3o atribuido ao cliente (caso n\u00C3\u00A3o informado ser\u00C3\u00A1 atribuido o valor = 0)
+
+        :param valor_pontuacao: The valor_pontuacao of this PessoaJuridicaAprovadaPersist.
+        :type: int
+        """
+        self._valor_pontuacao = valor_pontuacao
+
+    @property
     def telefones(self):
         """
         Gets the telefones of this PessoaJuridicaAprovadaPersist.
@@ -417,6 +504,94 @@ class PessoaJuridicaAprovadaPersist(object):
         :type: list[PessoaPersist]
         """
         self._socios = socios
+
+    @property
+    def referencias_comerciais(self):
+        """
+        Gets the referencias_comerciais of this PessoaJuridicaAprovadaPersist.
+        Apresenta os dados das refer\u00C3\u00AAncias comerciais
+
+        :return: The referencias_comerciais of this PessoaJuridicaAprovadaPersist.
+        :rtype: list[RefenciaComercialAprovadoPersist]
+        """
+        return self._referencias_comerciais
+
+    @referencias_comerciais.setter
+    def referencias_comerciais(self, referencias_comerciais):
+        """
+        Sets the referencias_comerciais of this PessoaJuridicaAprovadaPersist.
+        Apresenta os dados das refer\u00C3\u00AAncias comerciais
+
+        :param referencias_comerciais: The referencias_comerciais of this PessoaJuridicaAprovadaPersist.
+        :type: list[RefenciaComercialAprovadoPersist]
+        """
+        self._referencias_comerciais = referencias_comerciais
+
+    @property
+    def limite_global(self):
+        """
+        Gets the limite_global of this PessoaJuridicaAprovadaPersist.
+        Valor do Limite Global
+
+        :return: The limite_global of this PessoaJuridicaAprovadaPersist.
+        :rtype: float
+        """
+        return self._limite_global
+
+    @limite_global.setter
+    def limite_global(self, limite_global):
+        """
+        Sets the limite_global of this PessoaJuridicaAprovadaPersist.
+        Valor do Limite Global
+
+        :param limite_global: The limite_global of this PessoaJuridicaAprovadaPersist.
+        :type: float
+        """
+        self._limite_global = limite_global
+
+    @property
+    def limite_maximo(self):
+        """
+        Gets the limite_maximo of this PessoaJuridicaAprovadaPersist.
+        Valor m\u00C3\u00A1ximo do limite de cr\u00C3\u00A9dito para realizar transa\u00C3\u00A7\u00C3\u00B5es
+
+        :return: The limite_maximo of this PessoaJuridicaAprovadaPersist.
+        :rtype: float
+        """
+        return self._limite_maximo
+
+    @limite_maximo.setter
+    def limite_maximo(self, limite_maximo):
+        """
+        Sets the limite_maximo of this PessoaJuridicaAprovadaPersist.
+        Valor m\u00C3\u00A1ximo do limite de cr\u00C3\u00A9dito para realizar transa\u00C3\u00A7\u00C3\u00B5es
+
+        :param limite_maximo: The limite_maximo of this PessoaJuridicaAprovadaPersist.
+        :type: float
+        """
+        self._limite_maximo = limite_maximo
+
+    @property
+    def limite_parcelas(self):
+        """
+        Gets the limite_parcelas of this PessoaJuridicaAprovadaPersist.
+        Valor do limite de cr\u00C3\u00A9dito acumulado da soma das parcelas das compras
+
+        :return: The limite_parcelas of this PessoaJuridicaAprovadaPersist.
+        :rtype: float
+        """
+        return self._limite_parcelas
+
+    @limite_parcelas.setter
+    def limite_parcelas(self, limite_parcelas):
+        """
+        Sets the limite_parcelas of this PessoaJuridicaAprovadaPersist.
+        Valor do limite de cr\u00C3\u00A9dito acumulado da soma das parcelas das compras
+
+        :param limite_parcelas: The limite_parcelas of this PessoaJuridicaAprovadaPersist.
+        :type: float
+        """
+        self._limite_parcelas = limite_parcelas
 
     def to_dict(self):
         """

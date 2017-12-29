@@ -40,15 +40,16 @@ class OportunidadeAUDResponse(object):
             'id': 'int',
             'id_tipo_oportunidade': 'int',
             'id_status_oportunidade': 'int',
-            'data_cadastro': 'datetime',
-            'data_atualizacao': 'datetime',
+            'data_cadastro': 'str',
+            'data_atualizacao': 'str',
             'numero_receita_federal': 'str',
-            'data_inicio_vigencia': 'datetime',
-            'data_fim_vigencia': 'datetime',
+            'data_inicio_vigencia': 'str',
+            'data_fim_vigencia': 'str',
             'flag_ativo': 'bool',
             'detalhes': 'list[CdtDetalheOportunidadeAUD]',
-            'rev_date': 'datetime',
-            'rev_type': 'int'
+            'rev_date': 'str',
+            'rev_type': 'int',
+            'rev': 'int'
         }
 
         self.attribute_map = {
@@ -63,7 +64,8 @@ class OportunidadeAUDResponse(object):
             'flag_ativo': 'flagAtivo',
             'detalhes': 'detalhes',
             'rev_date': 'revDate',
-            'rev_type': 'revType'
+            'rev_type': 'revType',
+            'rev': 'rev'
         }
 
         self._id = None
@@ -78,6 +80,7 @@ class OportunidadeAUDResponse(object):
         self._detalhes = None
         self._rev_date = None
         self._rev_type = None
+        self._rev = None
 
     @property
     def id(self):
@@ -152,7 +155,7 @@ class OportunidadeAUDResponse(object):
         Data cadastro da oportunidade.
 
         :return: The data_cadastro of this OportunidadeAUDResponse.
-        :rtype: datetime
+        :rtype: str
         """
         return self._data_cadastro
 
@@ -163,7 +166,7 @@ class OportunidadeAUDResponse(object):
         Data cadastro da oportunidade.
 
         :param data_cadastro: The data_cadastro of this OportunidadeAUDResponse.
-        :type: datetime
+        :type: str
         """
         self._data_cadastro = data_cadastro
 
@@ -174,7 +177,7 @@ class OportunidadeAUDResponse(object):
         Data atualiza\u00C3\u00A7\u00C3\u00A3o da oportunidade.
 
         :return: The data_atualizacao of this OportunidadeAUDResponse.
-        :rtype: datetime
+        :rtype: str
         """
         return self._data_atualizacao
 
@@ -185,7 +188,7 @@ class OportunidadeAUDResponse(object):
         Data atualiza\u00C3\u00A7\u00C3\u00A3o da oportunidade.
 
         :param data_atualizacao: The data_atualizacao of this OportunidadeAUDResponse.
-        :type: datetime
+        :type: str
         """
         self._data_atualizacao = data_atualizacao
 
@@ -218,7 +221,7 @@ class OportunidadeAUDResponse(object):
         In\u00C3\u00ADcio da vig\u00C3\u00AAncia da oportunidade
 
         :return: The data_inicio_vigencia of this OportunidadeAUDResponse.
-        :rtype: datetime
+        :rtype: str
         """
         return self._data_inicio_vigencia
 
@@ -229,7 +232,7 @@ class OportunidadeAUDResponse(object):
         In\u00C3\u00ADcio da vig\u00C3\u00AAncia da oportunidade
 
         :param data_inicio_vigencia: The data_inicio_vigencia of this OportunidadeAUDResponse.
-        :type: datetime
+        :type: str
         """
         self._data_inicio_vigencia = data_inicio_vigencia
 
@@ -240,7 +243,7 @@ class OportunidadeAUDResponse(object):
         fim da vig\u00C3\u00AAncia da oportunidade
 
         :return: The data_fim_vigencia of this OportunidadeAUDResponse.
-        :rtype: datetime
+        :rtype: str
         """
         return self._data_fim_vigencia
 
@@ -251,7 +254,7 @@ class OportunidadeAUDResponse(object):
         fim da vig\u00C3\u00AAncia da oportunidade
 
         :param data_fim_vigencia: The data_fim_vigencia of this OportunidadeAUDResponse.
-        :type: datetime
+        :type: str
         """
         self._data_fim_vigencia = data_fim_vigencia
 
@@ -306,7 +309,7 @@ class OportunidadeAUDResponse(object):
         Data da auditoria
 
         :return: The rev_date of this OportunidadeAUDResponse.
-        :rtype: datetime
+        :rtype: str
         """
         return self._rev_date
 
@@ -317,7 +320,7 @@ class OportunidadeAUDResponse(object):
         Data da auditoria
 
         :param rev_date: The rev_date of this OportunidadeAUDResponse.
-        :type: datetime
+        :type: str
         """
         self._rev_date = rev_date
 
@@ -342,6 +345,28 @@ class OportunidadeAUDResponse(object):
         :type: int
         """
         self._rev_type = rev_type
+
+    @property
+    def rev(self):
+        """
+        Gets the rev of this OportunidadeAUDResponse.
+        Identificador da auditoria
+
+        :return: The rev of this OportunidadeAUDResponse.
+        :rtype: int
+        """
+        return self._rev
+
+    @rev.setter
+    def rev(self, rev):
+        """
+        Sets the rev of this OportunidadeAUDResponse.
+        Identificador da auditoria
+
+        :param rev: The rev of this OportunidadeAUDResponse.
+        :type: int
+        """
+        self._rev = rev
 
     def to_dict(self):
         """

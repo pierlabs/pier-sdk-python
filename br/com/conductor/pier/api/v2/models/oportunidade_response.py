@@ -40,11 +40,11 @@ class OportunidadeResponse(object):
             'id': 'int',
             'id_tipo_oportunidade': 'int',
             'id_status_oportunidade': 'int',
-            'data_cadastro': 'datetime',
-            'data_atualizacao': 'datetime',
+            'data_cadastro': 'str',
+            'data_atualizacao': 'str',
             'numero_receita_federal': 'str',
-            'data_inicio_vigencia': 'datetime',
-            'data_fim_vigencia': 'datetime',
+            'data_inicio_vigencia': 'str',
+            'data_fim_vigencia': 'str',
             'flag_ativo': 'bool',
             'detalhes': 'list[DetalheOportunidadeResponse]'
         }
@@ -146,7 +146,7 @@ class OportunidadeResponse(object):
         Data cadastro da oportunidade.
 
         :return: The data_cadastro of this OportunidadeResponse.
-        :rtype: datetime
+        :rtype: str
         """
         return self._data_cadastro
 
@@ -157,7 +157,7 @@ class OportunidadeResponse(object):
         Data cadastro da oportunidade.
 
         :param data_cadastro: The data_cadastro of this OportunidadeResponse.
-        :type: datetime
+        :type: str
         """
         self._data_cadastro = data_cadastro
 
@@ -168,7 +168,7 @@ class OportunidadeResponse(object):
         Data atualiza\u00C3\u00A7\u00C3\u00A3o da oportunidade.
 
         :return: The data_atualizacao of this OportunidadeResponse.
-        :rtype: datetime
+        :rtype: str
         """
         return self._data_atualizacao
 
@@ -179,7 +179,7 @@ class OportunidadeResponse(object):
         Data atualiza\u00C3\u00A7\u00C3\u00A3o da oportunidade.
 
         :param data_atualizacao: The data_atualizacao of this OportunidadeResponse.
-        :type: datetime
+        :type: str
         """
         self._data_atualizacao = data_atualizacao
 
@@ -212,7 +212,7 @@ class OportunidadeResponse(object):
         In\u00C3\u00ADcio da vig\u00C3\u00AAncia da oportunidade
 
         :return: The data_inicio_vigencia of this OportunidadeResponse.
-        :rtype: datetime
+        :rtype: str
         """
         return self._data_inicio_vigencia
 
@@ -223,7 +223,7 @@ class OportunidadeResponse(object):
         In\u00C3\u00ADcio da vig\u00C3\u00AAncia da oportunidade
 
         :param data_inicio_vigencia: The data_inicio_vigencia of this OportunidadeResponse.
-        :type: datetime
+        :type: str
         """
         self._data_inicio_vigencia = data_inicio_vigencia
 
@@ -234,7 +234,7 @@ class OportunidadeResponse(object):
         Fim da vig\u00C3\u00AAncia da oportunidade
 
         :return: The data_fim_vigencia of this OportunidadeResponse.
-        :rtype: datetime
+        :rtype: str
         """
         return self._data_fim_vigencia
 
@@ -245,7 +245,7 @@ class OportunidadeResponse(object):
         Fim da vig\u00C3\u00AAncia da oportunidade
 
         :param data_fim_vigencia: The data_fim_vigencia of this OportunidadeResponse.
-        :type: datetime
+        :type: str
         """
         self._data_fim_vigencia = data_fim_vigencia
 
