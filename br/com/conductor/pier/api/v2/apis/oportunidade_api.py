@@ -383,7 +383,7 @@ class OportunidadeApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get18(self, id, **kwargs):
+    def consultar_using_get19(self, id, **kwargs):
         """
         Apresenta dados de uma determinada oportunidade
         Este recurso permite consultar dados de uma determinada oportunidade a partir de seu codigo de identifica\u00C3\u00A7\u00C3\u00A3o (id).
@@ -394,7 +394,7 @@ class OportunidadeApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get18(id, callback=callback_function)
+        >>> thread = api.consultar_using_get19(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -412,14 +412,14 @@ class OportunidadeApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get18" % key
+                    " to method consultar_using_get19" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get18`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get19`")
 
         resource_path = '/api/oportunidades/{id}'.replace('{format}', 'json')
         path_params = {}
@@ -460,7 +460,7 @@ class OportunidadeApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get33(self, id, **kwargs):
+    def consultar_using_get34(self, id, **kwargs):
         """
         Apresenta dados de um determinado tipo oportunidade
         Este recurso permite consultar dados de um determinado tipo oportunidade a partir de seu codigo de identifica\u00C3\u00A7\u00C3\u00A3o (id).
@@ -471,7 +471,7 @@ class OportunidadeApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get33(id, callback=callback_function)
+        >>> thread = api.consultar_using_get34(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -489,14 +489,14 @@ class OportunidadeApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get33" % key
+                    " to method consultar_using_get34" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get33`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get34`")
 
         resource_path = '/api/tipos-oportunidades/{id}'.replace('{format}', 'json')
         path_params = {}

@@ -5,7 +5,7 @@ from .models.adicional_detalhe_response import AdicionalDetalheResponse
 from .models.adicional_persist import AdicionalPersist
 from .models.adicional_response import AdicionalResponse
 from .models.adicional_update import AdicionalUpdate
-from .models.ajuste_response import AjusteResponse
+from .models.ajuste_financeiro_response import AjusteFinanceiroResponse
 from .models.alterar_produto_request import AlterarProdutoRequest
 from .models.anexo_notificacao_email_request import AnexoNotificacaoEmailRequest
 from .models.antecipacao_response import AntecipacaoResponse
@@ -73,6 +73,7 @@ from .models.credor_response import CredorResponse
 from .models.dados_cartao_impressao_response import DadosCartaoImpressaoResponse
 from .models.dados_cartao_response import DadosCartaoResponse
 from .models.desfazimento_transacao_on_us_request import DesfazimentoTransacaoOnUsRequest
+from .models.detalhe_operacao_response import DetalheOperacaoResponse
 from .models.detalhe_oportunidade_persist import DetalheOportunidadePersist
 from .models.detalhe_oportunidade_response import DetalheOportunidadeResponse
 from .models.detalhe_oportunidade_update import DetalheOportunidadeUpdate
@@ -103,6 +104,7 @@ from .models.fatura_consignada_response import FaturaConsignadaResponse
 from .models.fatura_detalhe_response import FaturaDetalheResponse
 from .models.fatura_fechada_response import FaturaFechadaResponse
 from .models.fatura_response import FaturaResponse
+from .models.grade_pendente_request import GradePendenteRequest
 from .models.historico_assessoria_response import HistoricoAssessoriaResponse
 from .models.historico_atraso_fatura_response import HistoricoAtrasoFaturaResponse
 from .models.historico_eventos_response import HistoricoEventosResponse
@@ -121,12 +123,14 @@ from .models.notificacao_push_response import NotificacaoPushResponse
 from .models.notificacao_response import NotificacaoResponse
 from .models.notificacao_sms_body import NotificacaoSMSBody
 from .models.notificacao_sms_response import NotificacaoSMSResponse
+from .models.operacao_response import OperacaoResponse
 from .models.operadora_response import OperadoraResponse
 from .models.oportunidade_aud_response import OportunidadeAUDResponse
 from .models.oportunidade_persist import OportunidadePersist
 from .models.oportunidade_response import OportunidadeResponse
 from .models.oportunidade_update import OportunidadeUpdate
 from .models.origem_comercial_response import OrigemComercialResponse
+from .models.page_ajuste_response import PageAjusteResponse
 from .models.page_anuidade_response import PageAnuidadeResponse
 from .models.page_aplicacao_mobile_response import PageAplicacaoMobileResponse
 from .models.page_atendimento_cliente_response import PageAtendimentoClienteResponse
@@ -162,11 +166,11 @@ from .models.page_historico_atraso_fatura_response import PageHistoricoAtrasoFat
 from .models.page_historico_eventos_response import PageHistoricoEventosResponse
 from .models.page_job_response import PageJobResponse
 from .models.page_lote_cartoes_pre_pagos_response import PageLoteCartoesPrePagosResponse
+from .models.page_operacao_response import PageOperacaoResponse
 from .models.page_operadora_response import PageOperadoraResponse
 from .models.page_oportunidade_aud_response import PageOportunidadeAUDResponse
 from .models.page_oportunidade_response import PageOportunidadeResponse
 from .models.page_origem_comercial_response import PageOrigemComercialResponse
-from .models.page_pais_response import PagePaisResponse
 from .models.page_pessoa_detalhe_response import PagePessoaDetalheResponse
 from .models.page_pessoa_juridica_response import PagePessoaJuridicaResponse
 from .models.page_pessoa_response import PagePessoaResponse
@@ -205,8 +209,8 @@ from .models.page_transferencia_credito_conta_bancaria_response import PageTrans
 from .models.page_transferencia_response import PageTransferenciaResponse
 from .models.page_usuario_response import PageUsuarioResponse
 from .models.page_web_hook_response import PageWebHookResponse
-from .models.pais_response import PaisResponse
 from .models.parametro_produto_response import ParametroProdutoResponse
+from .models.parcelamento_transferencia_response import ParcelamentoTransferenciaResponse
 from .models.pessoa_detalhe_response import PessoaDetalheResponse
 from .models.pessoa_fisica_aprovada_persist import PessoaFisicaAprovadaPersist
 from .models.pessoa_fisica_aprovada_response import PessoaFisicaAprovadaResponse
@@ -220,6 +224,9 @@ from .models.plano_campanha_response import PlanoCampanhaResponse
 from .models.plano_campanha_update import PlanoCampanhaUpdate
 from .models.plano_parcelamento_emprestimo_response import PlanoParcelamentoEmprestimoResponse
 from .models.plano_parcelamento_response import PlanoParcelamentoResponse
+from .models.plano_parcelamento_transferencia_credito_conta_bancaria_request import PlanoParcelamentoTransferenciaCreditoContaBancariaRequest
+from .models.plano_parcelamento_transferencia_credito_conta_bancaria_response import PlanoParcelamentoTransferenciaCreditoContaBancariaResponse
+from .models.plano_parcelamento_transferencia_response import PlanoParcelamentoTransferenciaResponse
 from .models.plataforma_mobile_persist import PlataformaMobilePersist
 from .models.plataforma_mobile_response import PlataformaMobileResponse
 from .models.plataforma_mobile_update import PlataformaMobileUpdate
@@ -293,6 +300,7 @@ from .models.valida_senha_cartao_response import ValidaSenhaCartaoResponse
 from .models.web_hook_response import WebHookResponse
 
 # import apis into sdk package
+from .apis.ajuste_financeiro_api import AjusteFinanceiroApi
 from .apis.antecipacao_api import AntecipacaoApi
 from .apis.aplicacao_mobile_api import AplicacaoMobileApi
 from .apis.arquivo_api import ArquivoApi
@@ -316,7 +324,6 @@ from .apis.limite_api import LimiteApi
 from .apis.limite_disponibilidade_api import LimiteDisponibilidadeApi
 from .apis.notificacao_api import NotificacaoApi
 from .apis.oportunidade_api import OportunidadeApi
-from .apis.permissao_pais_api import PermissaoPaisApi
 from .apis.plataforma_mobile_api import PlataformaMobileApi
 from .apis.risco_fraude_api import RiscoFraudeApi
 from .apis.servico_conta_api import ServicoContaApi

@@ -1,6 +1,7 @@
 from __future__ import absolute_import
 
 # import apis into api package
+from .ajuste_financeiro_api import AjusteFinanceiroApi
 from .antecipacao_api import AntecipacaoApi
 from .aplicacao_mobile_api import AplicacaoMobileApi
 from .arquivo_api import ArquivoApi
@@ -24,7 +25,6 @@ from .limite_api import LimiteApi
 from .limite_disponibilidade_api import LimiteDisponibilidadeApi
 from .notificacao_api import NotificacaoApi
 from .oportunidade_api import OportunidadeApi
-from .permissao_pais_api import PermissaoPaisApi
 from .plataforma_mobile_api import PlataformaMobileApi
 from .risco_fraude_api import RiscoFraudeApi
 from .servico_conta_api import ServicoContaApi

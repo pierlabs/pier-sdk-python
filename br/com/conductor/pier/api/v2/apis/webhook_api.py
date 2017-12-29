@@ -137,7 +137,7 @@ class WebhookApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get40(self, id, **kwargs):
+    def consultar_using_get41(self, id, **kwargs):
         """
         Consultar Webhook
         Este m\u00C3\u00A9todo permite que sejam consultado um webhook do emissor atrav\u00C3\u00A9s de um id especifico
@@ -148,7 +148,7 @@ class WebhookApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get40(id, callback=callback_function)
+        >>> thread = api.consultar_using_get41(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -166,14 +166,14 @@ class WebhookApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get40" % key
+                    " to method consultar_using_get41" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get40`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get41`")
 
         resource_path = '/api/webhooks/{id}'.replace('{format}', 'json')
         path_params = {}

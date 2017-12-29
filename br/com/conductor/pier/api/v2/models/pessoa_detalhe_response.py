@@ -43,6 +43,7 @@ class PessoaDetalheResponse(object):
             'id_profissao': 'str',
             'id_natureza_ocupacao': 'int',
             'id_nacionalidade': 'int',
+            'numero_banco': 'int',
             'numero_agencia': 'int',
             'numero_conta_corrente': 'str',
             'email': 'str',
@@ -56,6 +57,7 @@ class PessoaDetalheResponse(object):
             'id_profissao': 'idProfissao',
             'id_natureza_ocupacao': 'idNaturezaOcupacao',
             'id_nacionalidade': 'idNacionalidade',
+            'numero_banco': 'numeroBanco',
             'numero_agencia': 'numeroAgencia',
             'numero_conta_corrente': 'numeroContaCorrente',
             'email': 'email',
@@ -68,6 +70,7 @@ class PessoaDetalheResponse(object):
         self._id_profissao = None
         self._id_natureza_ocupacao = None
         self._id_nacionalidade = None
+        self._numero_banco = None
         self._numero_agencia = None
         self._numero_conta_corrente = None
         self._email = None
@@ -204,6 +207,28 @@ class PessoaDetalheResponse(object):
         :type: int
         """
         self._id_nacionalidade = id_nacionalidade
+
+    @property
+    def numero_banco(self):
+        """
+        Gets the numero_banco of this PessoaDetalheResponse.
+        N\u00C3\u00BAmero do banco.
+
+        :return: The numero_banco of this PessoaDetalheResponse.
+        :rtype: int
+        """
+        return self._numero_banco
+
+    @numero_banco.setter
+    def numero_banco(self, numero_banco):
+        """
+        Sets the numero_banco of this PessoaDetalheResponse.
+        N\u00C3\u00BAmero do banco.
+
+        :param numero_banco: The numero_banco of this PessoaDetalheResponse.
+        :type: int
+        """
+        self._numero_banco = numero_banco
 
     @property
     def numero_agencia(self):

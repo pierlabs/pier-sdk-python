@@ -377,7 +377,7 @@ class UsuarioApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get39(self, id, **kwargs):
+    def consultar_using_get40(self, id, **kwargs):
         """
         Apresenta os dados de um determinado Usu\u00C3\u00A1rio na base do PIER ou WS.
         Este m\u00C3\u00A9todo permite consultar as informa\u00C3\u00A7\u00C3\u00B5es de um determinado Usu\u00C3\u00A1rio a partir do seu c\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o (id).
@@ -388,7 +388,7 @@ class UsuarioApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get39(id, callback=callback_function)
+        >>> thread = api.consultar_using_get40(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -406,14 +406,14 @@ class UsuarioApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get39" % key
+                    " to method consultar_using_get40" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get39`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get40`")
 
         resource_path = '/api/usuarios/{id}'.replace('{format}', 'json')
         path_params = {}

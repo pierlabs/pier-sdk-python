@@ -45,7 +45,7 @@ class ContaApi(object):
                 config.api_client = ApiClient()
             self.api_client = config.api_client
 
-    def ajustar_conta_using_post(self, id, id_tipo_ajuste, data_ajuste, valor_ajuste, **kwargs):
+    def ajustar_conta_using_post1(self, id, id_tipo_ajuste, data_ajuste, valor_ajuste, **kwargs):
         """
         Lan\u00C3\u00A7a um ajuste para a conta do id informado
         Este recurso insere um ajuste para a conta do id informado
@@ -56,7 +56,7 @@ class ContaApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.ajustar_conta_using_post(id, id_tipo_ajuste, data_ajuste, valor_ajuste, callback=callback_function)
+        >>> thread = api.ajustar_conta_using_post1(id, id_tipo_ajuste, data_ajuste, valor_ajuste, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -64,12 +64,13 @@ class ContaApi(object):
         :param int id_tipo_ajuste: C\u00C3\u00B3digo identificador do tipo de ajuste. (required)
         :param str data_ajuste: Data do ajuste no formato yyyy-MM-dd'T'HH:mm:ss.SSSZ. (required)
         :param float valor_ajuste: Valor do ajuste (required)
-        :return: AjusteResponse
+        :param str identificador_externo: Identificador Externo
+        :return: AjusteFinanceiroResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['id', 'id_tipo_ajuste', 'data_ajuste', 'valor_ajuste']
+        all_params = ['id', 'id_tipo_ajuste', 'data_ajuste', 'valor_ajuste', 'identificador_externo']
         all_params.append('callback')
 
         params = locals()
@@ -77,23 +78,23 @@ class ContaApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method ajustar_conta_using_post" % key
+                    " to method ajustar_conta_using_post1" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `ajustar_conta_using_post`")
+            raise ValueError("Missing the required parameter `id` when calling `ajustar_conta_using_post1`")
         # verify the required parameter 'id_tipo_ajuste' is set
         if ('id_tipo_ajuste' not in params) or (params['id_tipo_ajuste'] is None):
-            raise ValueError("Missing the required parameter `id_tipo_ajuste` when calling `ajustar_conta_using_post`")
+            raise ValueError("Missing the required parameter `id_tipo_ajuste` when calling `ajustar_conta_using_post1`")
         # verify the required parameter 'data_ajuste' is set
         if ('data_ajuste' not in params) or (params['data_ajuste'] is None):
-            raise ValueError("Missing the required parameter `data_ajuste` when calling `ajustar_conta_using_post`")
+            raise ValueError("Missing the required parameter `data_ajuste` when calling `ajustar_conta_using_post1`")
         # verify the required parameter 'valor_ajuste' is set
         if ('valor_ajuste' not in params) or (params['valor_ajuste'] is None):
-            raise ValueError("Missing the required parameter `valor_ajuste` when calling `ajustar_conta_using_post`")
+            raise ValueError("Missing the required parameter `valor_ajuste` when calling `ajustar_conta_using_post1`")
 
         resource_path = '/api/contas/{id}/ajustes-financeiros'.replace('{format}', 'json')
         path_params = {}
@@ -107,6 +108,8 @@ class ContaApi(object):
             query_params['dataAjuste'] = params['data_ajuste']
         if 'valor_ajuste' in params:
             query_params['valorAjuste'] = params['valor_ajuste']
+        if 'identificador_externo' in params:
+            query_params['identificadorExterno'] = params['identificador_externo']
 
         header_params = {}
 
@@ -135,7 +138,7 @@ class ContaApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='AjusteResponse',
+                                            response_type='AjusteFinanceiroResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
@@ -1068,7 +1071,7 @@ class ContaApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get10(self, id, **kwargs):
+    def consultar_using_get11(self, id, **kwargs):
         """
         Apresenta dados de uma determinada conta
         Este m\u00C3\u00A9todo permite consultar dados de uma determinada conta a partir de seu codigo de identifica\u00C3\u00A7\u00C3\u00A3o (id).
@@ -1079,7 +1082,7 @@ class ContaApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get10(id, callback=callback_function)
+        >>> thread = api.consultar_using_get11(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -1097,14 +1100,14 @@ class ContaApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get10" % key
+                    " to method consultar_using_get11" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get10`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get11`")
 
         resource_path = '/api/contas/{id}'.replace('{format}', 'json')
         path_params = {}
@@ -1145,7 +1148,7 @@ class ContaApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get38(self, id, id_transferencia, **kwargs):
+    def consultar_using_get39(self, id, id_transferencia, **kwargs):
         """
         Consulta os detalhes de uma determinada transfer\u00C3\u00AAncia
         Este m\u00C3\u00A9todo permite consultar os detalhes de uma determinada transfer\u00C3\u00AAncia de cr\u00C3\u00A9dito realizada entre contas.
@@ -1156,7 +1159,7 @@ class ContaApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get38(id, id_transferencia, callback=callback_function)
+        >>> thread = api.consultar_using_get39(id, id_transferencia, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -1175,17 +1178,17 @@ class ContaApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get38" % key
+                    " to method consultar_using_get39" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get38`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get39`")
         # verify the required parameter 'id_transferencia' is set
         if ('id_transferencia' not in params) or (params['id_transferencia'] is None):
-            raise ValueError("Missing the required parameter `id_transferencia` when calling `consultar_using_get38`")
+            raise ValueError("Missing the required parameter `id_transferencia` when calling `consultar_using_get39`")
 
         resource_path = '/api/contas/{id}/transferencias-creditos-cartoes/{id_transferencia}'.replace('{format}', 'json')
         path_params = {}

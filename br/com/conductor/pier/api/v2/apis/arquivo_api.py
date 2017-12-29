@@ -45,7 +45,7 @@ class ArquivoApi(object):
                 config.api_client = ApiClient()
             self.api_client = config.api_client
 
-    def consultar_using_get1(self, id, **kwargs):
+    def consultar_using_get2(self, id, **kwargs):
         """
         Consulta de arquivo no PIER Cloud
         Este recurso permite consultar um determinado arquivo armazenado no PIER Cloud.
@@ -56,7 +56,7 @@ class ArquivoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get1(id, callback=callback_function)
+        >>> thread = api.consultar_using_get2(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -74,14 +74,14 @@ class ArquivoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get1" % key
+                    " to method consultar_using_get2" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get1`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get2`")
 
         resource_path = '/api/arquivos/{id}'.replace('{format}', 'json')
         path_params = {}

@@ -588,7 +588,84 @@ class EstabelecimentoApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get11(self, id, **kwargs):
+    def consulta_operacao_using_get(self, id, **kwargs):
+        """
+        Apresenta dados de um determinado tipo de opera\u00C3\u00A7\u00C3\u00A3o
+        Este recurso permite consultar dados de um determinado tipo opera\u00C3\u00A7\u00C3\u00A3o a partir do idoperacao
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.consulta_operacao_using_get(id, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param int id: C\u00C3\u00B3digo de processamento da opera\u00C3\u00A7\u00C3\u00A3o (idOperacao). (required)
+        :return: DetalheOperacaoResponse
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method consulta_operacao_using_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `consulta_operacao_using_get`")
+
+        resource_path = '/api/tipos-operacoes-estabelecimentos/{id}'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = []
+
+        response = self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='DetalheOperacaoResponse',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
+    def consultar_using_get12(self, id, **kwargs):
         """
         Consultar credor
         Consulta um credor atrav\u00C3\u00A9s do seu identificador.
@@ -599,7 +676,7 @@ class EstabelecimentoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get11(id, callback=callback_function)
+        >>> thread = api.consultar_using_get12(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -617,14 +694,14 @@ class EstabelecimentoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get11" % key
+                    " to method consultar_using_get12" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get11`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get12`")
 
         resource_path = '/api/credores/{id}'.replace('{format}', 'json')
         path_params = {}
@@ -665,7 +742,7 @@ class EstabelecimentoApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get15(self, id, **kwargs):
+    def consultar_using_get16(self, id, **kwargs):
         """
         Consultar estabelecimento por id
         Consulta os detalhes de um determinado estabelecimento
@@ -676,7 +753,7 @@ class EstabelecimentoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get15(id, callback=callback_function)
+        >>> thread = api.consultar_using_get16(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -694,14 +771,14 @@ class EstabelecimentoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get15" % key
+                    " to method consultar_using_get16" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get15`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get16`")
 
         resource_path = '/api/estabelecimentos/{id}'.replace('{format}', 'json')
         path_params = {}
@@ -742,7 +819,7 @@ class EstabelecimentoApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get20(self, id, **kwargs):
+    def consultar_using_get21(self, id, **kwargs):
         """
         Consultar pessoa jur\u00C3\u00ADdica
         Consulta uma pessoa jur\u00C3\u00ADdica atrav\u00C3\u00A9s do seu identificador.
@@ -753,7 +830,7 @@ class EstabelecimentoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get20(id, callback=callback_function)
+        >>> thread = api.consultar_using_get21(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -771,14 +848,14 @@ class EstabelecimentoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get20" % key
+                    " to method consultar_using_get21" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get20`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get21`")
 
         resource_path = '/api/pessoas-juridicas/{id}'.replace('{format}', 'json')
         path_params = {}
@@ -819,7 +896,7 @@ class EstabelecimentoApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get26(self, id, **kwargs):
+    def consultar_using_get27(self, id, **kwargs):
         """
         Apresenta os dados de um determinado telefone de um estabelecimento
         Este m\u00C3\u00A9todo permite consultar um determinado telefone de um estabelecimento a partir do seu c\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o (id).
@@ -830,7 +907,7 @@ class EstabelecimentoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get26(id, callback=callback_function)
+        >>> thread = api.consultar_using_get27(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -848,14 +925,14 @@ class EstabelecimentoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get26" % key
+                    " to method consultar_using_get27" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get26`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get27`")
 
         resource_path = '/api/telefones-estabelecimentos/{id}'.replace('{format}', 'json')
         path_params = {}
@@ -896,7 +973,7 @@ class EstabelecimentoApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get28(self, id, **kwargs):
+    def consultar_using_get29(self, id, **kwargs):
         """
         Apresenta os dados de um determinado Terminal
         Este m\u00C3\u00A9todo permite consultar um determinado Terminal a partir do seu c\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o (id).
@@ -907,7 +984,7 @@ class EstabelecimentoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get28(id, callback=callback_function)
+        >>> thread = api.consultar_using_get29(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -925,14 +1002,14 @@ class EstabelecimentoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get28" % key
+                    " to method consultar_using_get29" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get28`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get29`")
 
         resource_path = '/api/terminais/{id}'.replace('{format}', 'json')
         path_params = {}
@@ -969,6 +1046,92 @@ class EstabelecimentoApi(object):
                                             post_params=form_params,
                                             files=local_var_files,
                                             response_type='TerminalResponse',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
+    def lista_operacao_using_get(self, **kwargs):
+        """
+        Apresenta dados de opera\u00C3\u00A7\u00C3\u00B5es em uma lista
+        Este recurso permite listar as opera\u00C3\u00A7\u00C3\u00A3o
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.lista_operacao_using_get(callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param list[str] sort: Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
+        :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
+        :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
+        :param int id_operacao: C\u00C3\u00B3digo que identifica a opera\u00C3\u00A7\u00C3\u00A3o
+        :param str codigo_processamento: C\u00C3\u00B3digo de processamento usado em transa\u00C3\u00A7\u00C3\u00B5es com o autorizador
+        :return: PageOperacaoResponse
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['sort', 'page', 'limit', 'id_operacao', 'codigo_processamento']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method lista_operacao_using_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+
+        resource_path = '/api/tipos-operacoes-estabelecimentos'.replace('{format}', 'json')
+        path_params = {}
+
+        query_params = {}
+        if 'sort' in params:
+            query_params['sort'] = params['sort']
+        if 'page' in params:
+            query_params['page'] = params['page']
+        if 'limit' in params:
+            query_params['limit'] = params['limit']
+        if 'id_operacao' in params:
+            query_params['idOperacao'] = params['id_operacao']
+        if 'codigo_processamento' in params:
+            query_params['codigoProcessamento'] = params['codigo_processamento']
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = []
+
+        response = self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='PageOperacaoResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
