@@ -37,9 +37,8 @@ class ParcelamentoTransferenciaResponse(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'numero_parcela': 'str',
-            'valor_primeira_parcela': 'float',
-            'valor_demais_parcelas': 'float',
+            'numero_parcela': 'int',
+            'valor_parcelas': 'float',
             'valor_total': 'float',
             'valor_tac': 'float',
             'valor_iof': 'float',
@@ -49,8 +48,7 @@ class ParcelamentoTransferenciaResponse(object):
 
         self.attribute_map = {
             'numero_parcela': 'numeroParcela',
-            'valor_primeira_parcela': 'valorPrimeiraParcela',
-            'valor_demais_parcelas': 'valorDemaisParcelas',
+            'valor_parcelas': 'valorParcelas',
             'valor_total': 'valorTotal',
             'valor_tac': 'valorTAC',
             'valor_iof': 'valorIOF',
@@ -59,8 +57,7 @@ class ParcelamentoTransferenciaResponse(object):
         }
 
         self._numero_parcela = None
-        self._valor_primeira_parcela = None
-        self._valor_demais_parcelas = None
+        self._valor_parcelas = None
         self._valor_total = None
         self._valor_tac = None
         self._valor_iof = None
@@ -74,7 +71,7 @@ class ParcelamentoTransferenciaResponse(object):
         N\u00C3\u00BAmero de parcelas dispon\u00C3\u00ADveis.
 
         :return: The numero_parcela of this ParcelamentoTransferenciaResponse.
-        :rtype: str
+        :rtype: int
         """
         return self._numero_parcela
 
@@ -85,53 +82,31 @@ class ParcelamentoTransferenciaResponse(object):
         N\u00C3\u00BAmero de parcelas dispon\u00C3\u00ADveis.
 
         :param numero_parcela: The numero_parcela of this ParcelamentoTransferenciaResponse.
-        :type: str
+        :type: int
         """
         self._numero_parcela = numero_parcela
 
     @property
-    def valor_primeira_parcela(self):
+    def valor_parcelas(self):
         """
-        Gets the valor_primeira_parcela of this ParcelamentoTransferenciaResponse.
-        Valor da primeira parcela.
-
-        :return: The valor_primeira_parcela of this ParcelamentoTransferenciaResponse.
-        :rtype: float
-        """
-        return self._valor_primeira_parcela
-
-    @valor_primeira_parcela.setter
-    def valor_primeira_parcela(self, valor_primeira_parcela):
-        """
-        Sets the valor_primeira_parcela of this ParcelamentoTransferenciaResponse.
-        Valor da primeira parcela.
-
-        :param valor_primeira_parcela: The valor_primeira_parcela of this ParcelamentoTransferenciaResponse.
-        :type: float
-        """
-        self._valor_primeira_parcela = valor_primeira_parcela
-
-    @property
-    def valor_demais_parcelas(self):
-        """
-        Gets the valor_demais_parcelas of this ParcelamentoTransferenciaResponse.
+        Gets the valor_parcelas of this ParcelamentoTransferenciaResponse.
         Valor das demais parcelas.
 
-        :return: The valor_demais_parcelas of this ParcelamentoTransferenciaResponse.
+        :return: The valor_parcelas of this ParcelamentoTransferenciaResponse.
         :rtype: float
         """
-        return self._valor_demais_parcelas
+        return self._valor_parcelas
 
-    @valor_demais_parcelas.setter
-    def valor_demais_parcelas(self, valor_demais_parcelas):
+    @valor_parcelas.setter
+    def valor_parcelas(self, valor_parcelas):
         """
-        Sets the valor_demais_parcelas of this ParcelamentoTransferenciaResponse.
+        Sets the valor_parcelas of this ParcelamentoTransferenciaResponse.
         Valor das demais parcelas.
 
-        :param valor_demais_parcelas: The valor_demais_parcelas of this ParcelamentoTransferenciaResponse.
+        :param valor_parcelas: The valor_parcelas of this ParcelamentoTransferenciaResponse.
         :type: float
         """
-        self._valor_demais_parcelas = valor_demais_parcelas
+        self._valor_parcelas = valor_parcelas
 
     @property
     def valor_total(self):

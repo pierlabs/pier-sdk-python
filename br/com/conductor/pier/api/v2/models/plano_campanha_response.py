@@ -39,18 +39,21 @@ class PlanoCampanhaResponse(object):
         self.swagger_types = {
             'id': 'int',
             'parcelas': 'int',
-            'taxa': 'float'
+            'taxa': 'float',
+            'usuario': 'str'
         }
 
         self.attribute_map = {
             'id': 'id',
             'parcelas': 'parcelas',
-            'taxa': 'taxa'
+            'taxa': 'taxa',
+            'usuario': 'usuario'
         }
 
         self._id = None
         self._parcelas = None
         self._taxa = None
+        self._usuario = None
 
     @property
     def id(self):
@@ -117,6 +120,28 @@ class PlanoCampanhaResponse(object):
         :type: float
         """
         self._taxa = taxa
+
+    @property
+    def usuario(self):
+        """
+        Gets the usuario of this PlanoCampanhaResponse.
+        Nome do usu\u00C3\u00A1rio
+
+        :return: The usuario of this PlanoCampanhaResponse.
+        :rtype: str
+        """
+        return self._usuario
+
+    @usuario.setter
+    def usuario(self, usuario):
+        """
+        Sets the usuario of this PlanoCampanhaResponse.
+        Nome do usu\u00C3\u00A1rio
+
+        :param usuario: The usuario of this PlanoCampanhaResponse.
+        :type: str
+        """
+        self._usuario = usuario
 
     def to_dict(self):
         """

@@ -37,76 +37,20 @@ class PlanoParcelamentoTransferenciaCreditoContaBancariaRequest(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'nsu_origem': 'str',
-            'valor_transacao': 'float',
             'id_cartao': 'int',
-            'numero_meses_carencia': 'int',
-            'numero_estabelecimento': 'int',
-            'data_hora_terminal': 'str',
-            'terminal_requisitante': 'str'
+            'valor_transacao': 'float',
+            'numero_meses_carencia': 'int'
         }
 
         self.attribute_map = {
-            'nsu_origem': 'nsuOrigem',
-            'valor_transacao': 'valorTransacao',
             'id_cartao': 'idCartao',
-            'numero_meses_carencia': 'numeroMesesCarencia',
-            'numero_estabelecimento': 'numeroEstabelecimento',
-            'data_hora_terminal': 'dataHoraTerminal',
-            'terminal_requisitante': 'terminalRequisitante'
+            'valor_transacao': 'valorTransacao',
+            'numero_meses_carencia': 'numeroMesesCarencia'
         }
 
-        self._nsu_origem = None
-        self._valor_transacao = None
         self._id_cartao = None
+        self._valor_transacao = None
         self._numero_meses_carencia = None
-        self._numero_estabelecimento = None
-        self._data_hora_terminal = None
-        self._terminal_requisitante = None
-
-    @property
-    def nsu_origem(self):
-        """
-        Gets the nsu_origem of this PlanoParcelamentoTransferenciaCreditoContaBancariaRequest.
-        N\u00C3\u00BAmero Sequencial \u00C3\u009Anico que identifica a transa\u00C3\u00A7\u00C3\u00A3o no sistema que a originou.
-
-        :return: The nsu_origem of this PlanoParcelamentoTransferenciaCreditoContaBancariaRequest.
-        :rtype: str
-        """
-        return self._nsu_origem
-
-    @nsu_origem.setter
-    def nsu_origem(self, nsu_origem):
-        """
-        Sets the nsu_origem of this PlanoParcelamentoTransferenciaCreditoContaBancariaRequest.
-        N\u00C3\u00BAmero Sequencial \u00C3\u009Anico que identifica a transa\u00C3\u00A7\u00C3\u00A3o no sistema que a originou.
-
-        :param nsu_origem: The nsu_origem of this PlanoParcelamentoTransferenciaCreditoContaBancariaRequest.
-        :type: str
-        """
-        self._nsu_origem = nsu_origem
-
-    @property
-    def valor_transacao(self):
-        """
-        Gets the valor_transacao of this PlanoParcelamentoTransferenciaCreditoContaBancariaRequest.
-        Valor da transa\u00C3\u00A7\u00C3\u00A3o com duas casas decimais para os centavos.
-
-        :return: The valor_transacao of this PlanoParcelamentoTransferenciaCreditoContaBancariaRequest.
-        :rtype: float
-        """
-        return self._valor_transacao
-
-    @valor_transacao.setter
-    def valor_transacao(self, valor_transacao):
-        """
-        Sets the valor_transacao of this PlanoParcelamentoTransferenciaCreditoContaBancariaRequest.
-        Valor da transa\u00C3\u00A7\u00C3\u00A3o com duas casas decimais para os centavos.
-
-        :param valor_transacao: The valor_transacao of this PlanoParcelamentoTransferenciaCreditoContaBancariaRequest.
-        :type: float
-        """
-        self._valor_transacao = valor_transacao
 
     @property
     def id_cartao(self):
@@ -131,6 +75,28 @@ class PlanoParcelamentoTransferenciaCreditoContaBancariaRequest(object):
         self._id_cartao = id_cartao
 
     @property
+    def valor_transacao(self):
+        """
+        Gets the valor_transacao of this PlanoParcelamentoTransferenciaCreditoContaBancariaRequest.
+        Valor da transa\u00C3\u00A7\u00C3\u00A3o com duas casas decimais para os centavos.
+
+        :return: The valor_transacao of this PlanoParcelamentoTransferenciaCreditoContaBancariaRequest.
+        :rtype: float
+        """
+        return self._valor_transacao
+
+    @valor_transacao.setter
+    def valor_transacao(self, valor_transacao):
+        """
+        Sets the valor_transacao of this PlanoParcelamentoTransferenciaCreditoContaBancariaRequest.
+        Valor da transa\u00C3\u00A7\u00C3\u00A3o com duas casas decimais para os centavos.
+
+        :param valor_transacao: The valor_transacao of this PlanoParcelamentoTransferenciaCreditoContaBancariaRequest.
+        :type: float
+        """
+        self._valor_transacao = valor_transacao
+
+    @property
     def numero_meses_carencia(self):
         """
         Gets the numero_meses_carencia of this PlanoParcelamentoTransferenciaCreditoContaBancariaRequest.
@@ -151,72 +117,6 @@ class PlanoParcelamentoTransferenciaCreditoContaBancariaRequest(object):
         :type: int
         """
         self._numero_meses_carencia = numero_meses_carencia
-
-    @property
-    def numero_estabelecimento(self):
-        """
-        Gets the numero_estabelecimento of this PlanoParcelamentoTransferenciaCreditoContaBancariaRequest.
-        N\u00C3\u00BAmero do Estabelecimento (N\u00C3\u00BAmero+DV).
-
-        :return: The numero_estabelecimento of this PlanoParcelamentoTransferenciaCreditoContaBancariaRequest.
-        :rtype: int
-        """
-        return self._numero_estabelecimento
-
-    @numero_estabelecimento.setter
-    def numero_estabelecimento(self, numero_estabelecimento):
-        """
-        Sets the numero_estabelecimento of this PlanoParcelamentoTransferenciaCreditoContaBancariaRequest.
-        N\u00C3\u00BAmero do Estabelecimento (N\u00C3\u00BAmero+DV).
-
-        :param numero_estabelecimento: The numero_estabelecimento of this PlanoParcelamentoTransferenciaCreditoContaBancariaRequest.
-        :type: int
-        """
-        self._numero_estabelecimento = numero_estabelecimento
-
-    @property
-    def data_hora_terminal(self):
-        """
-        Gets the data_hora_terminal of this PlanoParcelamentoTransferenciaCreditoContaBancariaRequest.
-        Apresenta a data e hora local da consulta yyyy-MM-dd'T'HH:mm:ss.SSSZ. Ex: 2000-10-31T01:30:00.000-05:00
-
-        :return: The data_hora_terminal of this PlanoParcelamentoTransferenciaCreditoContaBancariaRequest.
-        :rtype: str
-        """
-        return self._data_hora_terminal
-
-    @data_hora_terminal.setter
-    def data_hora_terminal(self, data_hora_terminal):
-        """
-        Sets the data_hora_terminal of this PlanoParcelamentoTransferenciaCreditoContaBancariaRequest.
-        Apresenta a data e hora local da consulta yyyy-MM-dd'T'HH:mm:ss.SSSZ. Ex: 2000-10-31T01:30:00.000-05:00
-
-        :param data_hora_terminal: The data_hora_terminal of this PlanoParcelamentoTransferenciaCreditoContaBancariaRequest.
-        :type: str
-        """
-        self._data_hora_terminal = data_hora_terminal
-
-    @property
-    def terminal_requisitante(self):
-        """
-        Gets the terminal_requisitante of this PlanoParcelamentoTransferenciaCreditoContaBancariaRequest.
-        Apresenta a identifica\u00C3\u00A7\u00C3\u00A3o do terminal requisitante
-
-        :return: The terminal_requisitante of this PlanoParcelamentoTransferenciaCreditoContaBancariaRequest.
-        :rtype: str
-        """
-        return self._terminal_requisitante
-
-    @terminal_requisitante.setter
-    def terminal_requisitante(self, terminal_requisitante):
-        """
-        Sets the terminal_requisitante of this PlanoParcelamentoTransferenciaCreditoContaBancariaRequest.
-        Apresenta a identifica\u00C3\u00A7\u00C3\u00A3o do terminal requisitante
-
-        :param terminal_requisitante: The terminal_requisitante of this PlanoParcelamentoTransferenciaCreditoContaBancariaRequest.
-        :type: str
-        """
-        self._terminal_requisitante = terminal_requisitante
 
     def to_dict(self):
         """

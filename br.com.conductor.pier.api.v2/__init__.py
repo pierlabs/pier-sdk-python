@@ -171,7 +171,6 @@ from .models.page_operadora_response import PageOperadoraResponse
 from .models.page_oportunidade_aud_response import PageOportunidadeAUDResponse
 from .models.page_oportunidade_response import PageOportunidadeResponse
 from .models.page_origem_comercial_response import PageOrigemComercialResponse
-from .models.page_pais_response import PagePaisResponse
 from .models.page_pessoa_detalhe_response import PagePessoaDetalheResponse
 from .models.page_pessoa_juridica_response import PagePessoaJuridicaResponse
 from .models.page_pessoa_response import PagePessoaResponse
@@ -210,7 +209,6 @@ from .models.page_transferencia_credito_conta_bancaria_response import PageTrans
 from .models.page_transferencia_response import PageTransferenciaResponse
 from .models.page_usuario_response import PageUsuarioResponse
 from .models.page_web_hook_response import PageWebHookResponse
-from .models.pais_response import PaisResponse
 from .models.parametro_produto_response import ParametroProdutoResponse
 from .models.parcelamento_transferencia_response import ParcelamentoTransferenciaResponse
 from .models.pessoa_detalhe_response import PessoaDetalheResponse
@@ -228,7 +226,6 @@ from .models.plano_parcelamento_emprestimo_response import PlanoParcelamentoEmpr
 from .models.plano_parcelamento_response import PlanoParcelamentoResponse
 from .models.plano_parcelamento_transferencia_credito_conta_bancaria_request import PlanoParcelamentoTransferenciaCreditoContaBancariaRequest
 from .models.plano_parcelamento_transferencia_credito_conta_bancaria_response import PlanoParcelamentoTransferenciaCreditoContaBancariaResponse
-from .models.plano_parcelamento_transferencia_response import PlanoParcelamentoTransferenciaResponse
 from .models.plataforma_mobile_persist import PlataformaMobilePersist
 from .models.plataforma_mobile_response import PlataformaMobileResponse
 from .models.plataforma_mobile_update import PlataformaMobileUpdate
@@ -326,7 +323,6 @@ from .apis.limite_api import LimiteApi
 from .apis.limite_disponibilidade_api import LimiteDisponibilidadeApi
 from .apis.notificacao_api import NotificacaoApi
 from .apis.oportunidade_api import OportunidadeApi
-from .apis.permissao_pais_api import PermissaoPaisApi
 from .apis.plataforma_mobile_api import PlataformaMobileApi
 from .apis.risco_fraude_api import RiscoFraudeApi
 from .apis.servico_conta_api import ServicoContaApi

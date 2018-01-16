@@ -155,6 +155,7 @@ class CadastroClienteApi(object):
         :param str id_profissao: Profiss\u00C3\u00A3o da pessoa fisica
         :param int id_natureza_ocupacao: Id Natureza Ocupa\u00C3\u00A7\u00C3\u00A3o da pessoa fisica
         :param int id_nacionalidade: Id Nacionalidade da pessoa fisica
+        :param int numero_banco: N\u00C3\u00BAmero do banco.
         :param int numero_agencia: N\u00C3\u00BAmero da ag\u00C3\u00AAncia.
         :param str numero_conta_corrente: N\u00C3\u00BAmero da conta corrente.
         :param str email: Email da pessoa fisica
@@ -164,7 +165,7 @@ class CadastroClienteApi(object):
                  returns the request thread.
         """
 
-        all_params = ['id', 'nome_mae', 'id_estado_civil', 'id_profissao', 'id_natureza_ocupacao', 'id_nacionalidade', 'numero_agencia', 'numero_conta_corrente', 'email', 'nome_empresa']
+        all_params = ['id', 'nome_mae', 'id_estado_civil', 'id_profissao', 'id_natureza_ocupacao', 'id_nacionalidade', 'numero_banco', 'numero_agencia', 'numero_conta_corrente', 'email', 'nome_empresa']
         all_params.append('callback')
 
         params = locals()
@@ -197,6 +198,8 @@ class CadastroClienteApi(object):
             query_params['idNaturezaOcupacao'] = params['id_natureza_ocupacao']
         if 'id_nacionalidade' in params:
             query_params['idNacionalidade'] = params['id_nacionalidade']
+        if 'numero_banco' in params:
+            query_params['numeroBanco'] = params['numero_banco']
         if 'numero_agencia' in params:
             query_params['numeroAgencia'] = params['numero_agencia']
         if 'numero_conta_corrente' in params:
@@ -1591,6 +1594,7 @@ class CadastroClienteApi(object):
         :param str id_profissao: Profiss\u00C3\u00A3o da pessoa fisica
         :param int id_natureza_ocupacao: Id Natureza Ocupa\u00C3\u00A7\u00C3\u00A3o da pessoa fisica
         :param int id_nacionalidade: Id Nacionalidade da pessoa fisica
+        :param int numero_banco: N\u00C3\u00BAmero do Banco.
         :param int numero_agencia: N\u00C3\u00BAmero da ag\u00C3\u00AAncia.
         :param str numero_conta_corrente: N\u00C3\u00BAmero da conta corrente.
         :param str email: Email da pessoa fisica
@@ -1600,7 +1604,7 @@ class CadastroClienteApi(object):
                  returns the request thread.
         """
 
-        all_params = ['sort', 'page', 'limit', 'id_pessoa', 'nome_mae', 'id_estado_civil', 'id_profissao', 'id_natureza_ocupacao', 'id_nacionalidade', 'numero_agencia', 'numero_conta_corrente', 'email', 'nome_empresa']
+        all_params = ['sort', 'page', 'limit', 'id_pessoa', 'nome_mae', 'id_estado_civil', 'id_profissao', 'id_natureza_ocupacao', 'id_nacionalidade', 'numero_banco', 'numero_agencia', 'numero_conta_corrente', 'email', 'nome_empresa']
         all_params.append('callback')
 
         params = locals()
@@ -1636,6 +1640,8 @@ class CadastroClienteApi(object):
             query_params['idNaturezaOcupacao'] = params['id_natureza_ocupacao']
         if 'id_nacionalidade' in params:
             query_params['idNacionalidade'] = params['id_nacionalidade']
+        if 'numero_banco' in params:
+            query_params['numeroBanco'] = params['numero_banco']
         if 'numero_agencia' in params:
             query_params['numeroAgencia'] = params['numero_agencia']
         if 'numero_conta_corrente' in params:
@@ -2250,6 +2256,7 @@ class CadastroClienteApi(object):
         :param str id_profissao: Profiss\u00C3\u00A3o da pessoa fisica
         :param int id_natureza_ocupacao: Id Natureza Ocupa\u00C3\u00A7\u00C3\u00A3o da pessoa fisica
         :param int id_nacionalidade: Id Nacionalidade da pessoa fisica
+        :param int numero_banco: N\u00C3\u00BAmero do banco.
         :param int numero_agencia: N\u00C3\u00BAmero da ag\u00C3\u00AAncia.
         :param str numero_conta_corrente: N\u00C3\u00BAmero da conta corrente.
         :param str email: Email da pessoa fisica
@@ -2259,7 +2266,7 @@ class CadastroClienteApi(object):
                  returns the request thread.
         """
 
-        all_params = ['id_pessoa', 'nome_mae', 'id_estado_civil', 'id_profissao', 'id_natureza_ocupacao', 'id_nacionalidade', 'numero_agencia', 'numero_conta_corrente', 'email', 'nome_empresa']
+        all_params = ['id_pessoa', 'nome_mae', 'id_estado_civil', 'id_profissao', 'id_natureza_ocupacao', 'id_nacionalidade', 'numero_banco', 'numero_agencia', 'numero_conta_corrente', 'email', 'nome_empresa']
         all_params.append('callback')
 
         params = locals()
@@ -2292,6 +2299,8 @@ class CadastroClienteApi(object):
             query_params['idNaturezaOcupacao'] = params['id_natureza_ocupacao']
         if 'id_nacionalidade' in params:
             query_params['idNacionalidade'] = params['id_nacionalidade']
+        if 'numero_banco' in params:
+            query_params['numeroBanco'] = params['numero_banco']
         if 'numero_agencia' in params:
             query_params['numeroAgencia'] = params['numero_agencia']
         if 'numero_conta_corrente' in params:

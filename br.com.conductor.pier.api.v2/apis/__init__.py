@@ -25,7 +25,6 @@ from .limite_api import LimiteApi
 from .limite_disponibilidade_api import LimiteDisponibilidadeApi
 from .notificacao_api import NotificacaoApi
 from .oportunidade_api import OportunidadeApi
-from .permissao_pais_api import PermissaoPaisApi
 from .plataforma_mobile_api import PlataformaMobileApi
 from .risco_fraude_api import RiscoFraudeApi
 from .servico_conta_api import ServicoContaApi

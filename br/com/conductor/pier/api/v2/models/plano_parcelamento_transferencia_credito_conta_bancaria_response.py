@@ -37,45 +37,26 @@ class PlanoParcelamentoTransferenciaCreditoContaBancariaResponse(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'nsu_origem': 'str',
             'numero_mascarado_cartao': 'str',
-            'terminal_requisitante': 'str',
-            'plano_parcelamentos': 'list[PlanoParcelamentoTransferenciaResponse]'
+            'vencimento_primeira_parcela': 'str',
+            'valor_transacao': 'float',
+            'numero_meses_carencia': 'int',
+            'parcelas': 'list[ParcelamentoTransferenciaResponse]'
         }
 
         self.attribute_map = {
-            'nsu_origem': 'nsuOrigem',
             'numero_mascarado_cartao': 'numeroMascaradoCartao',
-            'terminal_requisitante': 'terminalRequisitante',
-            'plano_parcelamentos': 'planoParcelamentos'
+            'vencimento_primeira_parcela': 'vencimentoPrimeiraParcela',
+            'valor_transacao': 'valorTransacao',
+            'numero_meses_carencia': 'numeroMesesCarencia',
+            'parcelas': 'parcelas'
         }
 
-        self._nsu_origem = None
         self._numero_mascarado_cartao = None
-        self._terminal_requisitante = None
-        self._plano_parcelamentos = None
-
-    @property
-    def nsu_origem(self):
-        """
-        Gets the nsu_origem of this PlanoParcelamentoTransferenciaCreditoContaBancariaResponse.
-        N\u00C3\u00BAmero Sequencial \u00C3\u009Anico que identifica a transa\u00C3\u00A7\u00C3\u00A3o no sistema que a originou.
-
-        :return: The nsu_origem of this PlanoParcelamentoTransferenciaCreditoContaBancariaResponse.
-        :rtype: str
-        """
-        return self._nsu_origem
-
-    @nsu_origem.setter
-    def nsu_origem(self, nsu_origem):
-        """
-        Sets the nsu_origem of this PlanoParcelamentoTransferenciaCreditoContaBancariaResponse.
-        N\u00C3\u00BAmero Sequencial \u00C3\u009Anico que identifica a transa\u00C3\u00A7\u00C3\u00A3o no sistema que a originou.
-
-        :param nsu_origem: The nsu_origem of this PlanoParcelamentoTransferenciaCreditoContaBancariaResponse.
-        :type: str
-        """
-        self._nsu_origem = nsu_origem
+        self._vencimento_primeira_parcela = None
+        self._valor_transacao = None
+        self._numero_meses_carencia = None
+        self._parcelas = None
 
     @property
     def numero_mascarado_cartao(self):
@@ -100,48 +81,92 @@ class PlanoParcelamentoTransferenciaCreditoContaBancariaResponse(object):
         self._numero_mascarado_cartao = numero_mascarado_cartao
 
     @property
-    def terminal_requisitante(self):
+    def vencimento_primeira_parcela(self):
         """
-        Gets the terminal_requisitante of this PlanoParcelamentoTransferenciaCreditoContaBancariaResponse.
-        Apresenta a identifica\u00C3\u00A7\u00C3\u00A3o do terminal requisitante
+        Gets the vencimento_primeira_parcela of this PlanoParcelamentoTransferenciaCreditoContaBancariaResponse.
+        Data de vencimento da primeira parcela.
 
-        :return: The terminal_requisitante of this PlanoParcelamentoTransferenciaCreditoContaBancariaResponse.
+        :return: The vencimento_primeira_parcela of this PlanoParcelamentoTransferenciaCreditoContaBancariaResponse.
         :rtype: str
         """
-        return self._terminal_requisitante
+        return self._vencimento_primeira_parcela
 
-    @terminal_requisitante.setter
-    def terminal_requisitante(self, terminal_requisitante):
+    @vencimento_primeira_parcela.setter
+    def vencimento_primeira_parcela(self, vencimento_primeira_parcela):
         """
-        Sets the terminal_requisitante of this PlanoParcelamentoTransferenciaCreditoContaBancariaResponse.
-        Apresenta a identifica\u00C3\u00A7\u00C3\u00A3o do terminal requisitante
+        Sets the vencimento_primeira_parcela of this PlanoParcelamentoTransferenciaCreditoContaBancariaResponse.
+        Data de vencimento da primeira parcela.
 
-        :param terminal_requisitante: The terminal_requisitante of this PlanoParcelamentoTransferenciaCreditoContaBancariaResponse.
+        :param vencimento_primeira_parcela: The vencimento_primeira_parcela of this PlanoParcelamentoTransferenciaCreditoContaBancariaResponse.
         :type: str
         """
-        self._terminal_requisitante = terminal_requisitante
+        self._vencimento_primeira_parcela = vencimento_primeira_parcela
 
     @property
-    def plano_parcelamentos(self):
+    def valor_transacao(self):
         """
-        Gets the plano_parcelamentos of this PlanoParcelamentoTransferenciaCreditoContaBancariaResponse.
-        Lista os planos de parcelamentos
+        Gets the valor_transacao of this PlanoParcelamentoTransferenciaCreditoContaBancariaResponse.
+        Valor da solicita\u00C3\u00A7\u00C3\u00A3o de saque.
 
-        :return: The plano_parcelamentos of this PlanoParcelamentoTransferenciaCreditoContaBancariaResponse.
-        :rtype: list[PlanoParcelamentoTransferenciaResponse]
+        :return: The valor_transacao of this PlanoParcelamentoTransferenciaCreditoContaBancariaResponse.
+        :rtype: float
         """
-        return self._plano_parcelamentos
+        return self._valor_transacao
 
-    @plano_parcelamentos.setter
-    def plano_parcelamentos(self, plano_parcelamentos):
+    @valor_transacao.setter
+    def valor_transacao(self, valor_transacao):
         """
-        Sets the plano_parcelamentos of this PlanoParcelamentoTransferenciaCreditoContaBancariaResponse.
-        Lista os planos de parcelamentos
+        Sets the valor_transacao of this PlanoParcelamentoTransferenciaCreditoContaBancariaResponse.
+        Valor da solicita\u00C3\u00A7\u00C3\u00A3o de saque.
 
-        :param plano_parcelamentos: The plano_parcelamentos of this PlanoParcelamentoTransferenciaCreditoContaBancariaResponse.
-        :type: list[PlanoParcelamentoTransferenciaResponse]
+        :param valor_transacao: The valor_transacao of this PlanoParcelamentoTransferenciaCreditoContaBancariaResponse.
+        :type: float
         """
-        self._plano_parcelamentos = plano_parcelamentos
+        self._valor_transacao = valor_transacao
+
+    @property
+    def numero_meses_carencia(self):
+        """
+        Gets the numero_meses_carencia of this PlanoParcelamentoTransferenciaCreditoContaBancariaResponse.
+        N\u00C3\u00BAmero de meses para car\u00C3\u00AAncia.
+
+        :return: The numero_meses_carencia of this PlanoParcelamentoTransferenciaCreditoContaBancariaResponse.
+        :rtype: int
+        """
+        return self._numero_meses_carencia
+
+    @numero_meses_carencia.setter
+    def numero_meses_carencia(self, numero_meses_carencia):
+        """
+        Sets the numero_meses_carencia of this PlanoParcelamentoTransferenciaCreditoContaBancariaResponse.
+        N\u00C3\u00BAmero de meses para car\u00C3\u00AAncia.
+
+        :param numero_meses_carencia: The numero_meses_carencia of this PlanoParcelamentoTransferenciaCreditoContaBancariaResponse.
+        :type: int
+        """
+        self._numero_meses_carencia = numero_meses_carencia
+
+    @property
+    def parcelas(self):
+        """
+        Gets the parcelas of this PlanoParcelamentoTransferenciaCreditoContaBancariaResponse.
+        Lista com os planos de parcelamento.
+
+        :return: The parcelas of this PlanoParcelamentoTransferenciaCreditoContaBancariaResponse.
+        :rtype: list[ParcelamentoTransferenciaResponse]
+        """
+        return self._parcelas
+
+    @parcelas.setter
+    def parcelas(self, parcelas):
+        """
+        Sets the parcelas of this PlanoParcelamentoTransferenciaCreditoContaBancariaResponse.
+        Lista com os planos de parcelamento.
+
+        :param parcelas: The parcelas of this PlanoParcelamentoTransferenciaCreditoContaBancariaResponse.
+        :type: list[ParcelamentoTransferenciaResponse]
+        """
+        self._parcelas = parcelas
 
     def to_dict(self):
         """
