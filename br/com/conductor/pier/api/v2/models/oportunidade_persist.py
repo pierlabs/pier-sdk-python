@@ -40,8 +40,8 @@ class OportunidadePersist(object):
             'id_tipo_oportunidade': 'int',
             'id_status_oportunidade': 'int',
             'numero_receita_federal': 'str',
-            'data_inicio_vigencia': 'datetime',
-            'data_fim_vigencia': 'datetime',
+            'data_inicio_vigencia': 'str',
+            'data_fim_vigencia': 'str',
             'flag_ativo': 'bool',
             'detalhes': 'list[DetalheOportunidadePersist]'
         }
@@ -137,7 +137,7 @@ class OportunidadePersist(object):
         Date de in\u00C3\u00ADcio da vig\u00C3\u00AAncia da oportunidade
 
         :return: The data_inicio_vigencia of this OportunidadePersist.
-        :rtype: datetime
+        :rtype: str
         """
         return self._data_inicio_vigencia
 
@@ -148,7 +148,7 @@ class OportunidadePersist(object):
         Date de in\u00C3\u00ADcio da vig\u00C3\u00AAncia da oportunidade
 
         :param data_inicio_vigencia: The data_inicio_vigencia of this OportunidadePersist.
-        :type: datetime
+        :type: str
         """
         self._data_inicio_vigencia = data_inicio_vigencia
 
@@ -159,7 +159,7 @@ class OportunidadePersist(object):
         Data do fim da vig\u00C3\u00AAncia da oportunidade
 
         :return: The data_fim_vigencia of this OportunidadePersist.
-        :rtype: datetime
+        :rtype: str
         """
         return self._data_fim_vigencia
 
@@ -170,7 +170,7 @@ class OportunidadePersist(object):
         Data do fim da vig\u00C3\u00AAncia da oportunidade
 
         :param data_fim_vigencia: The data_fim_vigencia of this OportunidadePersist.
-        :type: datetime
+        :type: str
         """
         self._data_fim_vigencia = data_fim_vigencia
 

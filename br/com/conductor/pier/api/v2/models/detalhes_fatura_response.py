@@ -37,8 +37,8 @@ class DetalhesFaturaResponse(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'fatura': 'FaturaResponse',
-            'transacoes': 'list[TransacoesCorrentes]'
+            'fatura': 'FaturaFechadaResponse',
+            'transacoes': 'list[TransacoesCorrentesResponse]'
         }
 
         self.attribute_map = {
@@ -56,7 +56,7 @@ class DetalhesFaturaResponse(object):
         Apresenta os detalhes da fatura
 
         :return: The fatura of this DetalhesFaturaResponse.
-        :rtype: FaturaResponse
+        :rtype: FaturaFechadaResponse
         """
         return self._fatura
 
@@ -67,7 +67,7 @@ class DetalhesFaturaResponse(object):
         Apresenta os detalhes da fatura
 
         :param fatura: The fatura of this DetalhesFaturaResponse.
-        :type: FaturaResponse
+        :type: FaturaFechadaResponse
         """
         self._fatura = fatura
 
@@ -78,7 +78,7 @@ class DetalhesFaturaResponse(object):
         Apresenta as transa\u00C3\u00A7\u00C3\u00B5es relacionadas a fatura.
 
         :return: The transacoes of this DetalhesFaturaResponse.
-        :rtype: list[TransacoesCorrentes]
+        :rtype: list[TransacoesCorrentesResponse]
         """
         return self._transacoes
 
@@ -89,7 +89,7 @@ class DetalhesFaturaResponse(object):
         Apresenta as transa\u00C3\u00A7\u00C3\u00B5es relacionadas a fatura.
 
         :param transacoes: The transacoes of this DetalhesFaturaResponse.
-        :type: list[TransacoesCorrentes]
+        :type: list[TransacoesCorrentesResponse]
         """
         self._transacoes = transacoes
 

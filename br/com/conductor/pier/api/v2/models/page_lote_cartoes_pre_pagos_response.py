@@ -37,7 +37,7 @@ class PageLoteCartoesPrePagosResponse(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'content': 'list[LoteCartoesPrePagos]',
+            'content': 'list[LoteCartoesPrePagosResponse]',
             'first': 'bool',
             'first_page': 'bool',
             'has_content': 'bool',
@@ -92,7 +92,7 @@ class PageLoteCartoesPrePagosResponse(object):
 
 
         :return: The content of this PageLoteCartoesPrePagosResponse.
-        :rtype: list[LoteCartoesPrePagos]
+        :rtype: list[LoteCartoesPrePagosResponse]
         """
         return self._content
 
@@ -103,7 +103,7 @@ class PageLoteCartoesPrePagosResponse(object):
 
 
         :param content: The content of this PageLoteCartoesPrePagosResponse.
-        :type: list[LoteCartoesPrePagos]
+        :type: list[LoteCartoesPrePagosResponse]
         """
         self._content = content
 

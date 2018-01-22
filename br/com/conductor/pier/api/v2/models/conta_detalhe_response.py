@@ -49,11 +49,11 @@ class ContaDetalheResponse(object):
             'status_conta': 'str',
             'dia_vencimento': 'int',
             'melhor_dia_compra': 'int',
-            'data_status_conta': 'datetime',
+            'data_status_conta': 'str',
             'valor_renda': 'float',
-            'data_cadastro': 'datetime',
-            'data_ultima_alteracao_vencimento': 'datetime',
-            'data_hora_ultima_compra': 'datetime',
+            'data_cadastro': 'str',
+            'data_ultima_alteracao_vencimento': 'str',
+            'data_hora_ultima_compra': 'str',
             'numero_agencia': 'int',
             'numero_conta_corrente': 'str',
             'forma_envio_fatura': 'str',
@@ -301,7 +301,7 @@ class ContaDetalheResponse(object):
     def id_status_conta(self):
         """
         Gets the id_status_conta of this ContaDetalheResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Produto a qual o cart\u00C3\u00A3o pertence (id).
+        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do status atribuido a conta.
 
         :return: The id_status_conta of this ContaDetalheResponse.
         :rtype: int
@@ -312,7 +312,7 @@ class ContaDetalheResponse(object):
     def id_status_conta(self, id_status_conta):
         """
         Sets the id_status_conta of this ContaDetalheResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Produto a qual o cart\u00C3\u00A3o pertence (id).
+        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do status atribuido a conta.
 
         :param id_status_conta: The id_status_conta of this ContaDetalheResponse.
         :type: int
@@ -392,7 +392,7 @@ class ContaDetalheResponse(object):
         Apresenta a data em que o idStatusConta atual fora atribu\u00C3\u00ADdo para ela.
 
         :return: The data_status_conta of this ContaDetalheResponse.
-        :rtype: datetime
+        :rtype: str
         """
         return self._data_status_conta
 
@@ -403,7 +403,7 @@ class ContaDetalheResponse(object):
         Apresenta a data em que o idStatusConta atual fora atribu\u00C3\u00ADdo para ela.
 
         :param data_status_conta: The data_status_conta of this ContaDetalheResponse.
-        :type: datetime
+        :type: str
         """
         self._data_status_conta = data_status_conta
 
@@ -436,7 +436,7 @@ class ContaDetalheResponse(object):
         Apresenta a data em que o cart\u00C3\u00A3o foi gerado.
 
         :return: The data_cadastro of this ContaDetalheResponse.
-        :rtype: datetime
+        :rtype: str
         """
         return self._data_cadastro
 
@@ -447,7 +447,7 @@ class ContaDetalheResponse(object):
         Apresenta a data em que o cart\u00C3\u00A3o foi gerado.
 
         :param data_cadastro: The data_cadastro of this ContaDetalheResponse.
-        :type: datetime
+        :type: str
         """
         self._data_cadastro = data_cadastro
 
@@ -458,7 +458,7 @@ class ContaDetalheResponse(object):
         Apresenta a data da ultima altera\u00C3\u00A7\u00C3\u00A3o de vencimento.
 
         :return: The data_ultima_alteracao_vencimento of this ContaDetalheResponse.
-        :rtype: datetime
+        :rtype: str
         """
         return self._data_ultima_alteracao_vencimento
 
@@ -469,7 +469,7 @@ class ContaDetalheResponse(object):
         Apresenta a data da ultima altera\u00C3\u00A7\u00C3\u00A3o de vencimento.
 
         :param data_ultima_alteracao_vencimento: The data_ultima_alteracao_vencimento of this ContaDetalheResponse.
-        :type: datetime
+        :type: str
         """
         self._data_ultima_alteracao_vencimento = data_ultima_alteracao_vencimento
 
@@ -480,7 +480,7 @@ class ContaDetalheResponse(object):
         Apresenta a data da ultima altera\u00C3\u00A7\u00C3\u00A3o de vencimento.
 
         :return: The data_hora_ultima_compra of this ContaDetalheResponse.
-        :rtype: datetime
+        :rtype: str
         """
         return self._data_hora_ultima_compra
 
@@ -491,7 +491,7 @@ class ContaDetalheResponse(object):
         Apresenta a data da ultima altera\u00C3\u00A7\u00C3\u00A3o de vencimento.
 
         :param data_hora_ultima_compra: The data_hora_ultima_compra of this ContaDetalheResponse.
-        :type: datetime
+        :type: str
         """
         self._data_hora_ultima_compra = data_hora_ultima_compra
 

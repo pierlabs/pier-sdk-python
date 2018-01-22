@@ -37,50 +37,72 @@ class PessoaPersist(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'cpf': 'str',
-            'data_emissao_identidade': 'date',
-            'data_nascimento': 'date',
-            'email': 'str',
-            'estado_civil': 'str',
-            'nacionalidade': 'str',
             'nome': 'str',
+            'cpf': 'str',
+            'data_nascimento': 'str',
+            'sexo': 'str',
             'numero_identidade': 'str',
             'orgao_expedidor_identidade': 'str',
+            'unidade_federativa_identidade': 'str',
+            'data_emissao_identidade': 'str',
+            'estado_civil': 'str',
             'profissao': 'str',
-            'sexo': 'str',
-            'telefones': 'list[TelefonePessoaAprovadaPersist]',
-            'unidade_federativa_identidade': 'str'
+            'nacionalidade': 'str',
+            'email': 'str',
+            'telefones': 'list[TelefonePessoaAprovadaPersist]'
         }
 
         self.attribute_map = {
-            'cpf': 'cpf',
-            'data_emissao_identidade': 'dataEmissaoIdentidade',
-            'data_nascimento': 'dataNascimento',
-            'email': 'email',
-            'estado_civil': 'estadoCivil',
-            'nacionalidade': 'nacionalidade',
             'nome': 'nome',
+            'cpf': 'cpf',
+            'data_nascimento': 'dataNascimento',
+            'sexo': 'sexo',
             'numero_identidade': 'numeroIdentidade',
             'orgao_expedidor_identidade': 'orgaoExpedidorIdentidade',
+            'unidade_federativa_identidade': 'unidadeFederativaIdentidade',
+            'data_emissao_identidade': 'dataEmissaoIdentidade',
+            'estado_civil': 'estadoCivil',
             'profissao': 'profissao',
-            'sexo': 'sexo',
-            'telefones': 'telefones',
-            'unidade_federativa_identidade': 'unidadeFederativaIdentidade'
+            'nacionalidade': 'nacionalidade',
+            'email': 'email',
+            'telefones': 'telefones'
         }
 
-        self._cpf = None
-        self._data_emissao_identidade = None
-        self._data_nascimento = None
-        self._email = None
-        self._estado_civil = None
-        self._nacionalidade = None
         self._nome = None
+        self._cpf = None
+        self._data_nascimento = None
+        self._sexo = None
         self._numero_identidade = None
         self._orgao_expedidor_identidade = None
-        self._profissao = None
-        self._sexo = None
-        self._telefones = None
         self._unidade_federativa_identidade = None
+        self._data_emissao_identidade = None
+        self._estado_civil = None
+        self._profissao = None
+        self._nacionalidade = None
+        self._email = None
+        self._telefones = None
+
+    @property
+    def nome(self):
+        """
+        Gets the nome of this PessoaPersist.
+        Apresenta o Nome do Socio
+
+        :return: The nome of this PessoaPersist.
+        :rtype: str
+        """
+        return self._nome
+
+    @nome.setter
+    def nome(self, nome):
+        """
+        Sets the nome of this PessoaPersist.
+        Apresenta o Nome do Socio
+
+        :param nome: The nome of this PessoaPersist.
+        :type: str
+        """
+        self._nome = nome
 
     @property
     def cpf(self):
@@ -105,35 +127,13 @@ class PessoaPersist(object):
         self._cpf = cpf
 
     @property
-    def data_emissao_identidade(self):
-        """
-        Gets the data_emissao_identidade of this PessoaPersist.
-        Data emiss\u00C3\u00A3o da Identidade
-
-        :return: The data_emissao_identidade of this PessoaPersist.
-        :rtype: date
-        """
-        return self._data_emissao_identidade
-
-    @data_emissao_identidade.setter
-    def data_emissao_identidade(self, data_emissao_identidade):
-        """
-        Sets the data_emissao_identidade of this PessoaPersist.
-        Data emiss\u00C3\u00A3o da Identidade
-
-        :param data_emissao_identidade: The data_emissao_identidade of this PessoaPersist.
-        :type: date
-        """
-        self._data_emissao_identidade = data_emissao_identidade
-
-    @property
     def data_nascimento(self):
         """
         Gets the data_nascimento of this PessoaPersist.
         Data de Nascimento da Pessoa, quando PF, ou a Data de Abertura da Empresa, quando PJ. Essa data deve ser informada no formato aaaa-MM-dd.
 
         :return: The data_nascimento of this PessoaPersist.
-        :rtype: date
+        :rtype: str
         """
         return self._data_nascimento
 
@@ -144,97 +144,31 @@ class PessoaPersist(object):
         Data de Nascimento da Pessoa, quando PF, ou a Data de Abertura da Empresa, quando PJ. Essa data deve ser informada no formato aaaa-MM-dd.
 
         :param data_nascimento: The data_nascimento of this PessoaPersist.
-        :type: date
+        :type: str
         """
         self._data_nascimento = data_nascimento
 
     @property
-    def email(self):
+    def sexo(self):
         """
-        Gets the email of this PessoaPersist.
-        Email do s\u00C3\u00B3cio
+        Gets the sexo of this PessoaPersist.
+        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do sexo da Pessoa, quando PF, sendo: (\"M\": Masculino), (\"F\": Feminino).
 
-        :return: The email of this PessoaPersist.
+        :return: The sexo of this PessoaPersist.
         :rtype: str
         """
-        return self._email
+        return self._sexo
 
-    @email.setter
-    def email(self, email):
+    @sexo.setter
+    def sexo(self, sexo):
         """
-        Sets the email of this PessoaPersist.
-        Email do s\u00C3\u00B3cio
+        Sets the sexo of this PessoaPersist.
+        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do sexo da Pessoa, quando PF, sendo: (\"M\": Masculino), (\"F\": Feminino).
 
-        :param email: The email of this PessoaPersist.
+        :param sexo: The sexo of this PessoaPersist.
         :type: str
         """
-        self._email = email
-
-    @property
-    def estado_civil(self):
-        """
-        Gets the estado_civil of this PessoaPersist.
-        Estado civil do s\u00C3\u00B3cio
-
-        :return: The estado_civil of this PessoaPersist.
-        :rtype: str
-        """
-        return self._estado_civil
-
-    @estado_civil.setter
-    def estado_civil(self, estado_civil):
-        """
-        Sets the estado_civil of this PessoaPersist.
-        Estado civil do s\u00C3\u00B3cio
-
-        :param estado_civil: The estado_civil of this PessoaPersist.
-        :type: str
-        """
-        self._estado_civil = estado_civil
-
-    @property
-    def nacionalidade(self):
-        """
-        Gets the nacionalidade of this PessoaPersist.
-        Nacionalidade do s\u00C3\u00B3cio
-
-        :return: The nacionalidade of this PessoaPersist.
-        :rtype: str
-        """
-        return self._nacionalidade
-
-    @nacionalidade.setter
-    def nacionalidade(self, nacionalidade):
-        """
-        Sets the nacionalidade of this PessoaPersist.
-        Nacionalidade do s\u00C3\u00B3cio
-
-        :param nacionalidade: The nacionalidade of this PessoaPersist.
-        :type: str
-        """
-        self._nacionalidade = nacionalidade
-
-    @property
-    def nome(self):
-        """
-        Gets the nome of this PessoaPersist.
-        Apresenta o Nome do Socio
-
-        :return: The nome of this PessoaPersist.
-        :rtype: str
-        """
-        return self._nome
-
-    @nome.setter
-    def nome(self, nome):
-        """
-        Sets the nome of this PessoaPersist.
-        Apresenta o Nome do Socio
-
-        :param nome: The nome of this PessoaPersist.
-        :type: str
-        """
-        self._nome = nome
+        self._sexo = sexo
 
     @property
     def numero_identidade(self):
@@ -281,6 +215,72 @@ class PessoaPersist(object):
         self._orgao_expedidor_identidade = orgao_expedidor_identidade
 
     @property
+    def unidade_federativa_identidade(self):
+        """
+        Gets the unidade_federativa_identidade of this PessoaPersist.
+        Sigla da Unidade Federativa de onde foi expedido a Identidade
+
+        :return: The unidade_federativa_identidade of this PessoaPersist.
+        :rtype: str
+        """
+        return self._unidade_federativa_identidade
+
+    @unidade_federativa_identidade.setter
+    def unidade_federativa_identidade(self, unidade_federativa_identidade):
+        """
+        Sets the unidade_federativa_identidade of this PessoaPersist.
+        Sigla da Unidade Federativa de onde foi expedido a Identidade
+
+        :param unidade_federativa_identidade: The unidade_federativa_identidade of this PessoaPersist.
+        :type: str
+        """
+        self._unidade_federativa_identidade = unidade_federativa_identidade
+
+    @property
+    def data_emissao_identidade(self):
+        """
+        Gets the data_emissao_identidade of this PessoaPersist.
+        Data emiss\u00C3\u00A3o da Identidade
+
+        :return: The data_emissao_identidade of this PessoaPersist.
+        :rtype: str
+        """
+        return self._data_emissao_identidade
+
+    @data_emissao_identidade.setter
+    def data_emissao_identidade(self, data_emissao_identidade):
+        """
+        Sets the data_emissao_identidade of this PessoaPersist.
+        Data emiss\u00C3\u00A3o da Identidade
+
+        :param data_emissao_identidade: The data_emissao_identidade of this PessoaPersist.
+        :type: str
+        """
+        self._data_emissao_identidade = data_emissao_identidade
+
+    @property
+    def estado_civil(self):
+        """
+        Gets the estado_civil of this PessoaPersist.
+        Estado civil do s\u00C3\u00B3cio
+
+        :return: The estado_civil of this PessoaPersist.
+        :rtype: str
+        """
+        return self._estado_civil
+
+    @estado_civil.setter
+    def estado_civil(self, estado_civil):
+        """
+        Sets the estado_civil of this PessoaPersist.
+        Estado civil do s\u00C3\u00B3cio
+
+        :param estado_civil: The estado_civil of this PessoaPersist.
+        :type: str
+        """
+        self._estado_civil = estado_civil
+
+    @property
     def profissao(self):
         """
         Gets the profissao of this PessoaPersist.
@@ -303,26 +303,48 @@ class PessoaPersist(object):
         self._profissao = profissao
 
     @property
-    def sexo(self):
+    def nacionalidade(self):
         """
-        Gets the sexo of this PessoaPersist.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do sexo da Pessoa, quando PF, sendo: (\"M\": Masculino), (\"F\": Feminino).
+        Gets the nacionalidade of this PessoaPersist.
+        Nacionalidade do s\u00C3\u00B3cio
 
-        :return: The sexo of this PessoaPersist.
+        :return: The nacionalidade of this PessoaPersist.
         :rtype: str
         """
-        return self._sexo
+        return self._nacionalidade
 
-    @sexo.setter
-    def sexo(self, sexo):
+    @nacionalidade.setter
+    def nacionalidade(self, nacionalidade):
         """
-        Sets the sexo of this PessoaPersist.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do sexo da Pessoa, quando PF, sendo: (\"M\": Masculino), (\"F\": Feminino).
+        Sets the nacionalidade of this PessoaPersist.
+        Nacionalidade do s\u00C3\u00B3cio
 
-        :param sexo: The sexo of this PessoaPersist.
+        :param nacionalidade: The nacionalidade of this PessoaPersist.
         :type: str
         """
-        self._sexo = sexo
+        self._nacionalidade = nacionalidade
+
+    @property
+    def email(self):
+        """
+        Gets the email of this PessoaPersist.
+        Email do s\u00C3\u00B3cio
+
+        :return: The email of this PessoaPersist.
+        :rtype: str
+        """
+        return self._email
+
+    @email.setter
+    def email(self, email):
+        """
+        Sets the email of this PessoaPersist.
+        Email do s\u00C3\u00B3cio
+
+        :param email: The email of this PessoaPersist.
+        :type: str
+        """
+        self._email = email
 
     @property
     def telefones(self):
@@ -345,28 +367,6 @@ class PessoaPersist(object):
         :type: list[TelefonePessoaAprovadaPersist]
         """
         self._telefones = telefones
-
-    @property
-    def unidade_federativa_identidade(self):
-        """
-        Gets the unidade_federativa_identidade of this PessoaPersist.
-        Sigla da Unidade Federativa de onde foi expedido a Identidade
-
-        :return: The unidade_federativa_identidade of this PessoaPersist.
-        :rtype: str
-        """
-        return self._unidade_federativa_identidade
-
-    @unidade_federativa_identidade.setter
-    def unidade_federativa_identidade(self, unidade_federativa_identidade):
-        """
-        Sets the unidade_federativa_identidade of this PessoaPersist.
-        Sigla da Unidade Federativa de onde foi expedido a Identidade
-
-        :param unidade_federativa_identidade: The unidade_federativa_identidade of this PessoaPersist.
-        :type: str
-        """
-        self._unidade_federativa_identidade = unidade_federativa_identidade
 
     def to_dict(self):
         """

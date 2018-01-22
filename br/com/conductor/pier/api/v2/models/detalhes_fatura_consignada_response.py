@@ -38,7 +38,7 @@ class DetalhesFaturaConsignadaResponse(object):
         """
         self.swagger_types = {
             'fatura_consignada_response': 'FaturaConsignadaResponse',
-            'transacoes': 'list[TransacoesCorrentes]'
+            'transacoes': 'list[TransacoesCorrentesResponse]'
         }
 
         self.attribute_map = {
@@ -78,7 +78,7 @@ class DetalhesFaturaConsignadaResponse(object):
         Apresenta as transa\u00C3\u00A7\u00C3\u00B5es relacionadas a fatura.
 
         :return: The transacoes of this DetalhesFaturaConsignadaResponse.
-        :rtype: list[TransacoesCorrentes]
+        :rtype: list[TransacoesCorrentesResponse]
         """
         return self._transacoes
 
@@ -89,7 +89,7 @@ class DetalhesFaturaConsignadaResponse(object):
         Apresenta as transa\u00C3\u00A7\u00C3\u00B5es relacionadas a fatura.
 
         :param transacoes: The transacoes of this DetalhesFaturaConsignadaResponse.
-        :type: list[TransacoesCorrentes]
+        :type: list[TransacoesCorrentesResponse]
         """
         self._transacoes = transacoes
 
