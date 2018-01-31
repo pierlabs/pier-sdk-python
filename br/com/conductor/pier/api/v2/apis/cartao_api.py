@@ -1192,12 +1192,13 @@ class CartaoApi(object):
         :param int id_imagem: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Imagem (id).
         :param int id_endereco: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Endere\u00C3\u00A7o (id).
         :param int quantidade_cartoes: N\u00C3\u00BAmero de cart\u00C3\u00B5es existentes no Lote.
+        :param str identificador_externo: N\u00C3\u00BAmero de identifica\u00C3\u00A7\u00C3\u00A3o externo (utilizado pelo emissor).
         :return: LoteCartoesPrePagosResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['id_origem_comercial', 'id_produto', 'id_tipo_cartao', 'id_imagem', 'id_endereco', 'quantidade_cartoes']
+        all_params = ['id_origem_comercial', 'id_produto', 'id_tipo_cartao', 'id_imagem', 'id_endereco', 'quantidade_cartoes', 'identificador_externo']
         all_params.append('callback')
 
         params = locals()
@@ -1227,6 +1228,8 @@ class CartaoApi(object):
             query_params['idEndereco'] = params['id_endereco']
         if 'quantidade_cartoes' in params:
             query_params['quantidadeCartoes'] = params['quantidade_cartoes']
+        if 'identificador_externo' in params:
+            query_params['identificadorExterno'] = params['identificador_externo']
 
         header_params = {}
 
@@ -1441,12 +1444,13 @@ class CartaoApi(object):
         :param str data_cadastro: Data de Cadastro do Lote de Cart\u00C3\u00B5es N\u00C3\u00A3o Nominais.
         :param str usuario_cadastro: Nome do Usu\u00C3\u00A1rio que criou o Lote.
         :param int status_processamento: Indica o Status de Processamento do Lote.
+        :param str identificador_externo: N\u00C3\u00BAmero de identifica\u00C3\u00A7\u00C3\u00A3o externo (utilizado pelo emissor).
         :return: PageLoteCartoesPrePagosResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['sort', 'page', 'limit', 'id_origem_comercial', 'id_produto', 'id_tipo_cartao', 'id_imagem', 'id_endereco', 'quantidade_cartoes', 'data_cadastro', 'usuario_cadastro', 'status_processamento']
+        all_params = ['sort', 'page', 'limit', 'id_origem_comercial', 'id_produto', 'id_tipo_cartao', 'id_imagem', 'id_endereco', 'quantidade_cartoes', 'data_cadastro', 'usuario_cadastro', 'status_processamento', 'identificador_externo']
         all_params.append('callback')
 
         params = locals()
@@ -1488,6 +1492,8 @@ class CartaoApi(object):
             query_params['usuarioCadastro'] = params['usuario_cadastro']
         if 'status_processamento' in params:
             query_params['statusProcessamento'] = params['status_processamento']
+        if 'identificador_externo' in params:
+            query_params['identificadorExterno'] = params['identificador_externo']
 
         header_params = {}
 

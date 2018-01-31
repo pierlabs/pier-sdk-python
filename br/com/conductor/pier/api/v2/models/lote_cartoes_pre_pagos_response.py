@@ -46,7 +46,8 @@ class LoteCartoesPrePagosResponse(object):
             'quantidade': 'int',
             'data_cadastro': 'str',
             'usuario_cadastro': 'str',
-            'status_processamento': 'int'
+            'status_processamento': 'int',
+            'identificador_externo': 'str'
         }
 
         self.attribute_map = {
@@ -59,7 +60,8 @@ class LoteCartoesPrePagosResponse(object):
             'quantidade': 'quantidade',
             'data_cadastro': 'dataCadastro',
             'usuario_cadastro': 'usuarioCadastro',
-            'status_processamento': 'statusProcessamento'
+            'status_processamento': 'statusProcessamento',
+            'identificador_externo': 'identificadorExterno'
         }
 
         self._id = None
@@ -72,6 +74,7 @@ class LoteCartoesPrePagosResponse(object):
         self._data_cadastro = None
         self._usuario_cadastro = None
         self._status_processamento = None
+        self._identificador_externo = None
 
     @property
     def id(self):
@@ -292,6 +295,28 @@ class LoteCartoesPrePagosResponse(object):
         :type: int
         """
         self._status_processamento = status_processamento
+
+    @property
+    def identificador_externo(self):
+        """
+        Gets the identificador_externo of this LoteCartoesPrePagosResponse.
+        N\u00C3\u00BAmero de identifica\u00C3\u00A7\u00C3\u00A3o externo (utilizado pelo emissor).
+
+        :return: The identificador_externo of this LoteCartoesPrePagosResponse.
+        :rtype: str
+        """
+        return self._identificador_externo
+
+    @identificador_externo.setter
+    def identificador_externo(self, identificador_externo):
+        """
+        Sets the identificador_externo of this LoteCartoesPrePagosResponse.
+        N\u00C3\u00BAmero de identifica\u00C3\u00A7\u00C3\u00A3o externo (utilizado pelo emissor).
+
+        :param identificador_externo: The identificador_externo of this LoteCartoesPrePagosResponse.
+        :type: str
+        """
+        self._identificador_externo = identificador_externo
 
     def to_dict(self):
         """
