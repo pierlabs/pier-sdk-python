@@ -20,11 +20,14 @@ from .endereco_nacional_api import EnderecoNacionalApi
 from .estabelecimento_api import EstabelecimentoApi
 from .faq_api import FAQApi
 from .fatura_api import FaturaApi
+from .faturamento_api import FaturamentoApi
 from .job_api import JobApi
 from .limite_api import LimiteApi
 from .limite_disponibilidade_api import LimiteDisponibilidadeApi
 from .notificacao_api import NotificacaoApi
 from .oportunidade_api import OportunidadeApi
+from .pagamento_api import PagamentoApi
+from .permissao_pais_api import PermissaoPaisApi
 from .plataforma_mobile_api import PlataformaMobileApi
 from .risco_fraude_api import RiscoFraudeApi
 from .servico_conta_api import ServicoContaApi

@@ -45,10 +45,10 @@ class EstabelecimentoApi(object):
                 config.api_client = ApiClient()
             self.api_client = config.api_client
 
-    def alterar_using_put11(self, id, razao_social, **kwargs):
+    def alterar_origem_comercial_using_put(self, id, origem_comercial_update, **kwargs):
         """
-        Alterar Pessoa Jur\u00C3\u00ADdica
-        Altera uma pessoa jur\u00C3\u00ADdica.
+        Alterar Origem Comercial
+        Altera uma origem comercial.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -56,25 +56,18 @@ class EstabelecimentoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.alterar_using_put11(id, razao_social, callback=callback_function)
+        >>> thread = api.alterar_origem_comercial_using_put(id, origem_comercial_update, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param int id: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da pessoa jur\u00C3\u00ADdica (required)
-        :param str razao_social: Raz\u00C3\u00A3o social da pessoa jur\u00C3\u00ADdica (required)
-        :param str inscricao_estadual: N\u00C3\u00BAmero da inscri\u00C3\u00A7\u00C3\u00A3o estadual
-        :param str contato: Nome da pessoa para entrar em contato
-        :param int banco: C\u00C3\u00B3digo do banco
-        :param int agencia: Raz\u00C3\u00A3o social da pessoa jur\u00C3\u00ADdica
-        :param str digito_verificador_agencia: D\u00C3\u00ADgito Verificador da ag\u00C3\u00AAncia
-        :param str conta_corrente: C\u00C3\u00B3digo da Conta Corrente
-        :param str digito_verificador_conta_corrente: D\u00C3\u00ADgito Verificador da Conta Corrente
-        :return: PessoaJuridicaResponse
+        :param int id: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da origem comercial (required)
+        :param OrigemComercialUpdate origem_comercial_update: origemComercialUpdate (required)
+        :return: OrigemComercialResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['id', 'razao_social', 'inscricao_estadual', 'contato', 'banco', 'agencia', 'digito_verificador_agencia', 'conta_corrente', 'digito_verificador_conta_corrente']
+        all_params = ['id', 'origem_comercial_update']
         all_params.append('callback')
 
         params = locals()
@@ -82,40 +75,24 @@ class EstabelecimentoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method alterar_using_put11" % key
+                    " to method alterar_origem_comercial_using_put" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `alterar_using_put11`")
-        # verify the required parameter 'razao_social' is set
-        if ('razao_social' not in params) or (params['razao_social'] is None):
-            raise ValueError("Missing the required parameter `razao_social` when calling `alterar_using_put11`")
+            raise ValueError("Missing the required parameter `id` when calling `alterar_origem_comercial_using_put`")
+        # verify the required parameter 'origem_comercial_update' is set
+        if ('origem_comercial_update' not in params) or (params['origem_comercial_update'] is None):
+            raise ValueError("Missing the required parameter `origem_comercial_update` when calling `alterar_origem_comercial_using_put`")
 
-        resource_path = '/api/pessoas-juridicas/{id}'.replace('{format}', 'json')
+        resource_path = '/api/origens-comerciais/{id}'.replace('{format}', 'json')
         path_params = {}
         if 'id' in params:
             path_params['id'] = params['id']
 
         query_params = {}
-        if 'razao_social' in params:
-            query_params['razaoSocial'] = params['razao_social']
-        if 'inscricao_estadual' in params:
-            query_params['inscricaoEstadual'] = params['inscricao_estadual']
-        if 'contato' in params:
-            query_params['contato'] = params['contato']
-        if 'banco' in params:
-            query_params['banco'] = params['banco']
-        if 'agencia' in params:
-            query_params['agencia'] = params['agencia']
-        if 'digito_verificador_agencia' in params:
-            query_params['digitoVerificadorAgencia'] = params['digito_verificador_agencia']
-        if 'conta_corrente' in params:
-            query_params['contaCorrente'] = params['conta_corrente']
-        if 'digito_verificador_conta_corrente' in params:
-            query_params['digitoVerificadorContaCorrente'] = params['digito_verificador_conta_corrente']
 
         header_params = {}
 
@@ -123,6 +100,8 @@ class EstabelecimentoApi(object):
         local_var_files = {}
 
         body_params = None
+        if 'origem_comercial_update' in params:
+            body_params = params['origem_comercial_update']
 
         # HTTP header `Accept`
         header_params['Accept'] = self.api_client.\
@@ -144,12 +123,178 @@ class EstabelecimentoApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='PessoaJuridicaResponse',
+                                            response_type='OrigemComercialResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
 
-    def alterar_using_put13(self, id, ddd, telefone, **kwargs):
+    def alterar_using_put10(self, id, maquineta_update, **kwargs):
+        """
+        Altera uma Maquineta
+        Este m\u00C3\u00A9todo realiza a altera\u00C3\u00A7\u00C3\u00A3o das maquinetas dos estabelecimentos.
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.alterar_using_put10(id, maquineta_update, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Maquineta (id). (required)
+        :param MaquinetaUpdate maquineta_update: maquinetaUpdate (required)
+        :return: MaquinetaResponse
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'maquineta_update']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method alterar_using_put10" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `alterar_using_put10`")
+        # verify the required parameter 'maquineta_update' is set
+        if ('maquineta_update' not in params) or (params['maquineta_update'] is None):
+            raise ValueError("Missing the required parameter `maquineta_update` when calling `alterar_using_put10`")
+
+        resource_path = '/api/maquinetas/{id}'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        if 'maquineta_update' in params:
+            body_params = params['maquineta_update']
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = []
+
+        response = self.api_client.call_api(resource_path, 'PUT',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='MaquinetaResponse',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
+    def alterar_using_put11(self, id, operacao_credor_update, **kwargs):
+        """
+        Altera uma Regra Opera\u00C3\u00A7\u00C3\u00A3o
+        Este m\u00C3\u00A9todo realiza a altera\u00C3\u00A7\u00C3\u00A3o de uma regra opera\u00C3\u00A7\u00C3\u00A3o.
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.alterar_using_put11(id, operacao_credor_update, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Regra Opera\u00C3\u00A7\u00C3\u00A3o (id). (required)
+        :param OperacaoCredorUpdate operacao_credor_update: operacaoCredorUpdate (required)
+        :return: OperacaoCredorResponse
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'operacao_credor_update']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method alterar_using_put11" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `alterar_using_put11`")
+        # verify the required parameter 'operacao_credor_update' is set
+        if ('operacao_credor_update' not in params) or (params['operacao_credor_update'] is None):
+            raise ValueError("Missing the required parameter `operacao_credor_update` when calling `alterar_using_put11`")
+
+        resource_path = '/api/regras-operacoes-estabelecimentos/{id}'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        if 'operacao_credor_update' in params:
+            body_params = params['operacao_credor_update']
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = []
+
+        response = self.api_client.call_api(resource_path, 'PUT',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='OperacaoCredorResponse',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
+    def alterar_using_put15(self, id, ddd, telefone, **kwargs):
         """
         Altera um Telefone do estabelecimento
         Este m\u00C3\u00A9todo realiza a altera\u00C3\u00A7\u00C3\u00A3o dos telefones dos estabelecimentos.
@@ -160,7 +305,7 @@ class EstabelecimentoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.alterar_using_put13(id, ddd, telefone, callback=callback_function)
+        >>> thread = api.alterar_using_put15(id, ddd, telefone, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -181,20 +326,20 @@ class EstabelecimentoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method alterar_using_put13" % key
+                    " to method alterar_using_put15" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `alterar_using_put13`")
+            raise ValueError("Missing the required parameter `id` when calling `alterar_using_put15`")
         # verify the required parameter 'ddd' is set
         if ('ddd' not in params) or (params['ddd'] is None):
-            raise ValueError("Missing the required parameter `ddd` when calling `alterar_using_put13`")
+            raise ValueError("Missing the required parameter `ddd` when calling `alterar_using_put15`")
         # verify the required parameter 'telefone' is set
         if ('telefone' not in params) or (params['telefone'] is None):
-            raise ValueError("Missing the required parameter `telefone` when calling `alterar_using_put13`")
+            raise ValueError("Missing the required parameter `telefone` when calling `alterar_using_put15`")
 
         resource_path = '/api/telefones-estabelecimentos/{id}'.replace('{format}', 'json')
         path_params = {}
@@ -241,7 +386,7 @@ class EstabelecimentoApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def alterar_using_put15(self, id, terminal_update, **kwargs):
+    def alterar_using_put17(self, id, terminal_update, **kwargs):
         """
         Altera um Terminal
         Este m\u00C3\u00A9todo realiza a altera\u00C3\u00A7\u00C3\u00A3o dos Terminais.
@@ -252,7 +397,7 @@ class EstabelecimentoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.alterar_using_put15(id, terminal_update, callback=callback_function)
+        >>> thread = api.alterar_using_put17(id, terminal_update, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -271,17 +416,17 @@ class EstabelecimentoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method alterar_using_put15" % key
+                    " to method alterar_using_put17" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `alterar_using_put15`")
+            raise ValueError("Missing the required parameter `id` when calling `alterar_using_put17`")
         # verify the required parameter 'terminal_update' is set
         if ('terminal_update' not in params) or (params['terminal_update'] is None):
-            raise ValueError("Missing the required parameter `terminal_update` when calling `alterar_using_put15`")
+            raise ValueError("Missing the required parameter `terminal_update` when calling `alterar_using_put17`")
 
         resource_path = '/api/terminais/{id}'.replace('{format}', 'json')
         path_params = {}
@@ -324,10 +469,10 @@ class EstabelecimentoApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def alterar_using_put5(self, id, credor_update, **kwargs):
+    def alterar_using_put6(self, id, update, **kwargs):
         """
-        Alterar Credor
-        Altera um credor.
+        Alterar um estabelecimento
+        Altera um estabelecimento
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -335,18 +480,18 @@ class EstabelecimentoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.alterar_using_put5(id, credor_update, callback=callback_function)
+        >>> thread = api.alterar_using_put6(id, update, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param int id: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da credor (required)
-        :param CredorDTO credor_update: credorUpdate (required)
-        :return: CredorResponse
+        :param int id: Id (required)
+        :param EstabelecimentoUpdate update: update (required)
+        :return: EstabelecimentoResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['id', 'credor_update']
+        all_params = ['id', 'update']
         all_params.append('callback')
 
         params = locals()
@@ -354,19 +499,19 @@ class EstabelecimentoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method alterar_using_put5" % key
+                    " to method alterar_using_put6" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `alterar_using_put5`")
-        # verify the required parameter 'credor_update' is set
-        if ('credor_update' not in params) or (params['credor_update'] is None):
-            raise ValueError("Missing the required parameter `credor_update` when calling `alterar_using_put5`")
+            raise ValueError("Missing the required parameter `id` when calling `alterar_using_put6`")
+        # verify the required parameter 'update' is set
+        if ('update' not in params) or (params['update'] is None):
+            raise ValueError("Missing the required parameter `update` when calling `alterar_using_put6`")
 
-        resource_path = '/api/credores/{id}'.replace('{format}', 'json')
+        resource_path = '/api/estabelecimentos/{id}'.replace('{format}', 'json')
         path_params = {}
         if 'id' in params:
             path_params['id'] = params['id']
@@ -379,8 +524,8 @@ class EstabelecimentoApi(object):
         local_var_files = {}
 
         body_params = None
-        if 'credor_update' in params:
-            body_params = params['credor_update']
+        if 'update' in params:
+            body_params = params['update']
 
         # HTTP header `Accept`
         header_params['Accept'] = self.api_client.\
@@ -402,15 +547,15 @@ class EstabelecimentoApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='CredorResponse',
+                                            response_type='EstabelecimentoResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
 
-    def cadastrar_using_post2(self, credor_persist, **kwargs):
+    def alterar_using_put8(self, id, grupo_economico_dto, **kwargs):
         """
-        Cadastrar Credor
-        Cadastra um credor.
+        Alterar Grupo Econ\u00C3\u00B4mico
+        Altera um grupo econ\u00C3\u00B4mico.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -418,17 +563,177 @@ class EstabelecimentoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.cadastrar_using_post2(credor_persist, callback=callback_function)
+        >>> thread = api.alterar_using_put8(id, grupo_economico_dto, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param CredorDTO credor_persist: credorPersist (required)
-        :return: CredorResponse
+        :param int id: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do grupo econ\u00C3\u00B4mico (required)
+        :param GrupoEconomicoDTO grupo_economico_dto: grupoEconomicoDTO (required)
+        :return: GrupoEconomicoResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['credor_persist']
+        all_params = ['id', 'grupo_economico_dto']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method alterar_using_put8" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `alterar_using_put8`")
+        # verify the required parameter 'grupo_economico_dto' is set
+        if ('grupo_economico_dto' not in params) or (params['grupo_economico_dto'] is None):
+            raise ValueError("Missing the required parameter `grupo_economico_dto` when calling `alterar_using_put8`")
+
+        resource_path = '/api/grupos-economicos/{id}'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        if 'grupo_economico_dto' in params:
+            body_params = params['grupo_economico_dto']
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = []
+
+        response = self.api_client.call_api(resource_path, 'PUT',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='GrupoEconomicoResponse',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
+    def cadastrar_origem_comercial_using_post(self, origem_comercial_persist, **kwargs):
+        """
+        Cadastrar Origem Comercial
+        Cadastra uma origem comercial.
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.cadastrar_origem_comercial_using_post(origem_comercial_persist, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param OrigemComercialPersist origem_comercial_persist: origemComercialPersist (required)
+        :return: OrigemComercialResponse
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['origem_comercial_persist']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method cadastrar_origem_comercial_using_post" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        # verify the required parameter 'origem_comercial_persist' is set
+        if ('origem_comercial_persist' not in params) or (params['origem_comercial_persist'] is None):
+            raise ValueError("Missing the required parameter `origem_comercial_persist` when calling `cadastrar_origem_comercial_using_post`")
+
+        resource_path = '/api/origens-comerciais'.replace('{format}', 'json')
+        path_params = {}
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        if 'origem_comercial_persist' in params:
+            body_params = params['origem_comercial_persist']
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = []
+
+        response = self.api_client.call_api(resource_path, 'POST',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='OrigemComercialResponse',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
+    def cadastrar_using_post2(self, persist, **kwargs):
+        """
+        Cadastrar um estabelecimento
+        Cadastra um novo estabelecimento
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.cadastrar_using_post2(persist, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param EstabelecimentoPersist persist: persist (required)
+        :return: EstabelecimentoResponse
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['persist']
         all_params.append('callback')
 
         params = locals()
@@ -441,11 +746,11 @@ class EstabelecimentoApi(object):
             params[key] = val
         del params['kwargs']
 
-        # verify the required parameter 'credor_persist' is set
-        if ('credor_persist' not in params) or (params['credor_persist'] is None):
-            raise ValueError("Missing the required parameter `credor_persist` when calling `cadastrar_using_post2`")
+        # verify the required parameter 'persist' is set
+        if ('persist' not in params) or (params['persist'] is None):
+            raise ValueError("Missing the required parameter `persist` when calling `cadastrar_using_post2`")
 
-        resource_path = '/api/credores'.replace('{format}', 'json')
+        resource_path = '/api/estabelecimentos'.replace('{format}', 'json')
         path_params = {}
 
         query_params = {}
@@ -456,8 +761,8 @@ class EstabelecimentoApi(object):
         local_var_files = {}
 
         body_params = None
-        if 'credor_persist' in params:
-            body_params = params['credor_persist']
+        if 'persist' in params:
+            body_params = params['persist']
 
         # HTTP header `Accept`
         header_params['Accept'] = self.api_client.\
@@ -479,15 +784,15 @@ class EstabelecimentoApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='CredorResponse',
+                                            response_type='EstabelecimentoResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
 
-    def cadastrar_using_post3(self, razao_social, cnpj, **kwargs):
+    def cadastrar_using_post3(self, grupo_economico_dto, **kwargs):
         """
-        Cadastrar Pessoa Jur\u00C3\u00ADdica
-        Cadastra uma pessoa jur\u00C3\u00ADdica.
+        Cadastrar Grupo Econ\u00C3\u00B4mico
+        Cadastra um grupo econ\u00C3\u00B4mico.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -495,25 +800,17 @@ class EstabelecimentoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.cadastrar_using_post3(razao_social, cnpj, callback=callback_function)
+        >>> thread = api.cadastrar_using_post3(grupo_economico_dto, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param str razao_social: Raz\u00C3\u00A3o social da pessoa jur\u00C3\u00ADdica (required)
-        :param str cnpj: C\u00C3\u00B3digo do Cadastro Nacional de Pessoas Jur\u00C3\u00ADdicas (required)
-        :param str inscricao_estadual: N\u00C3\u00BAmero da inscri\u00C3\u00A7\u00C3\u00A3o estadual
-        :param str contato: Nome da pessoa para entrar em contato
-        :param int banco: C\u00C3\u00B3digo do banco
-        :param int agencia: Raz\u00C3\u00A3o social da pessoa jur\u00C3\u00ADdica
-        :param str digito_verificador_agencia: D\u00C3\u00ADgito Verificador da ag\u00C3\u00AAncia
-        :param str conta_corrente: C\u00C3\u00B3digo da Conta Corrente
-        :param str digito_verificador_conta_corrente: D\u00C3\u00ADgito Verificador da Conta Corrente
-        :return: PessoaJuridicaResponse
+        :param GrupoEconomicoDTO grupo_economico_dto: GrupoEconomicoDTO (required)
+        :return: GrupoEconomicoResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['razao_social', 'cnpj', 'inscricao_estadual', 'contato', 'banco', 'agencia', 'digito_verificador_agencia', 'conta_corrente', 'digito_verificador_conta_corrente']
+        all_params = ['grupo_economico_dto']
         all_params.append('callback')
 
         params = locals()
@@ -526,35 +823,14 @@ class EstabelecimentoApi(object):
             params[key] = val
         del params['kwargs']
 
-        # verify the required parameter 'razao_social' is set
-        if ('razao_social' not in params) or (params['razao_social'] is None):
-            raise ValueError("Missing the required parameter `razao_social` when calling `cadastrar_using_post3`")
-        # verify the required parameter 'cnpj' is set
-        if ('cnpj' not in params) or (params['cnpj'] is None):
-            raise ValueError("Missing the required parameter `cnpj` when calling `cadastrar_using_post3`")
+        # verify the required parameter 'grupo_economico_dto' is set
+        if ('grupo_economico_dto' not in params) or (params['grupo_economico_dto'] is None):
+            raise ValueError("Missing the required parameter `grupo_economico_dto` when calling `cadastrar_using_post3`")
 
-        resource_path = '/api/pessoas-juridicas'.replace('{format}', 'json')
+        resource_path = '/api/grupos-economicos'.replace('{format}', 'json')
         path_params = {}
 
         query_params = {}
-        if 'razao_social' in params:
-            query_params['razaoSocial'] = params['razao_social']
-        if 'cnpj' in params:
-            query_params['cnpj'] = params['cnpj']
-        if 'inscricao_estadual' in params:
-            query_params['inscricaoEstadual'] = params['inscricao_estadual']
-        if 'contato' in params:
-            query_params['contato'] = params['contato']
-        if 'banco' in params:
-            query_params['banco'] = params['banco']
-        if 'agencia' in params:
-            query_params['agencia'] = params['agencia']
-        if 'digito_verificador_agencia' in params:
-            query_params['digitoVerificadorAgencia'] = params['digito_verificador_agencia']
-        if 'conta_corrente' in params:
-            query_params['contaCorrente'] = params['conta_corrente']
-        if 'digito_verificador_conta_corrente' in params:
-            query_params['digitoVerificadorContaCorrente'] = params['digito_verificador_conta_corrente']
 
         header_params = {}
 
@@ -562,6 +838,8 @@ class EstabelecimentoApi(object):
         local_var_files = {}
 
         body_params = None
+        if 'grupo_economico_dto' in params:
+            body_params = params['grupo_economico_dto']
 
         # HTTP header `Accept`
         header_params['Accept'] = self.api_client.\
@@ -583,7 +861,7 @@ class EstabelecimentoApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='PessoaJuridicaResponse',
+                                            response_type='GrupoEconomicoResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
@@ -665,10 +943,10 @@ class EstabelecimentoApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get12(self, id, **kwargs):
+    def consultar_origem_comercial_using_get(self, id, **kwargs):
         """
-        Consultar credor
-        Consulta um credor atrav\u00C3\u00A9s do seu identificador.
+        Consultar Origem Comercial
+        Consulta uma origem comercial atrav\u00C3\u00A9s do seu identificador.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -676,12 +954,12 @@ class EstabelecimentoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get12(id, callback=callback_function)
+        >>> thread = api.consultar_origem_comercial_using_get(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param int id: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da credor (required)
-        :return: CredorResponse
+        :param int id: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da origem comercial (required)
+        :return: OrigemComercialResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -694,16 +972,16 @@ class EstabelecimentoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get12" % key
+                    " to method consultar_origem_comercial_using_get" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get12`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_origem_comercial_using_get`")
 
-        resource_path = '/api/credores/{id}'.replace('{format}', 'json')
+        resource_path = '/api/origens-comerciais/{id}'.replace('{format}', 'json')
         path_params = {}
         if 'id' in params:
             path_params['id'] = params['id']
@@ -737,12 +1015,12 @@ class EstabelecimentoApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='CredorResponse',
+                                            response_type='OrigemComercialResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get16(self, id, **kwargs):
+    def consultar_using_get15(self, id, **kwargs):
         """
         Consultar estabelecimento por id
         Consulta os detalhes de um determinado estabelecimento
@@ -753,7 +1031,7 @@ class EstabelecimentoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get16(id, callback=callback_function)
+        >>> thread = api.consultar_using_get15(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -771,14 +1049,14 @@ class EstabelecimentoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get16" % key
+                    " to method consultar_using_get15" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get16`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get15`")
 
         resource_path = '/api/estabelecimentos/{id}'.replace('{format}', 'json')
         path_params = {}
@@ -819,10 +1097,10 @@ class EstabelecimentoApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get21(self, id, **kwargs):
+    def consultar_using_get17(self, id, **kwargs):
         """
-        Consultar pessoa jur\u00C3\u00ADdica
-        Consulta uma pessoa jur\u00C3\u00ADdica atrav\u00C3\u00A9s do seu identificador.
+        Consultar grupo econ\u00C3\u00B4mico
+        Consulta um grupo econ\u00C3\u00B4mico atrav\u00C3\u00A9s do seu identificador.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -830,12 +1108,12 @@ class EstabelecimentoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get21(id, callback=callback_function)
+        >>> thread = api.consultar_using_get17(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param int id: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da pessoa jur\u00C3\u00ADdica (required)
-        :return: PessoaJuridicaResponse
+        :param int id: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do grupo econ\u00C3\u00B4mico (required)
+        :return: GrupoEconomicoResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -848,16 +1126,16 @@ class EstabelecimentoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get21" % key
+                    " to method consultar_using_get17" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get21`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get17`")
 
-        resource_path = '/api/pessoas-juridicas/{id}'.replace('{format}', 'json')
+        resource_path = '/api/grupos-economicos/{id}'.replace('{format}', 'json')
         path_params = {}
         if 'id' in params:
             path_params['id'] = params['id']
@@ -891,12 +1169,166 @@ class EstabelecimentoApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='PessoaJuridicaResponse',
+                                            response_type='GrupoEconomicoResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get27(self, id, **kwargs):
+    def consultar_using_get19(self, id, **kwargs):
+        """
+        Apresenta os dados de uma determinada maquineta
+        Este m\u00C3\u00A9todo permite consultar uma determinada maquineta a partir do seu c\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o (id).
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.consultar_using_get19(id, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Maquineta (id). (required)
+        :return: MaquinetaResponse
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method consultar_using_get19" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get19`")
+
+        resource_path = '/api/maquinetas/{id}'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = []
+
+        response = self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='MaquinetaResponse',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
+    def consultar_using_get20(self, id, **kwargs):
+        """
+        Apresenta os dados de uma determinada Regra Opera\u00C3\u00A7\u00C3\u00A3o
+        Este m\u00C3\u00A9todo permite consultar uma determinada regra opera\u00C3\u00A7\u00C3\u00A3o a partir do seu c\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o (id).
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.consultar_using_get20(id, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Regra Opera\u00C3\u00A7\u00C3\u00A3o (id). (required)
+        :return: OperacaoCredorResponse
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method consultar_using_get20" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get20`")
+
+        resource_path = '/api/regras-operacoes-estabelecimentos/{id}'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = []
+
+        response = self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='OperacaoCredorResponse',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
+    def consultar_using_get28(self, id, **kwargs):
         """
         Apresenta os dados de um determinado telefone de um estabelecimento
         Este m\u00C3\u00A9todo permite consultar um determinado telefone de um estabelecimento a partir do seu c\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o (id).
@@ -907,7 +1339,7 @@ class EstabelecimentoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get27(id, callback=callback_function)
+        >>> thread = api.consultar_using_get28(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -925,14 +1357,14 @@ class EstabelecimentoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get27" % key
+                    " to method consultar_using_get28" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get27`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get28`")
 
         resource_path = '/api/telefones-estabelecimentos/{id}'.replace('{format}', 'json')
         path_params = {}
@@ -973,7 +1405,7 @@ class EstabelecimentoApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get29(self, id, **kwargs):
+    def consultar_using_get30(self, id, **kwargs):
         """
         Apresenta os dados de um determinado Terminal
         Este m\u00C3\u00A9todo permite consultar um determinado Terminal a partir do seu c\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o (id).
@@ -984,7 +1416,7 @@ class EstabelecimentoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get29(id, callback=callback_function)
+        >>> thread = api.consultar_using_get30(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -1002,14 +1434,14 @@ class EstabelecimentoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get29" % key
+                    " to method consultar_using_get30" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get29`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get30`")
 
         resource_path = '/api/terminais/{id}'.replace('{format}', 'json')
         path_params = {}
@@ -1046,6 +1478,403 @@ class EstabelecimentoApi(object):
                                             post_params=form_params,
                                             files=local_var_files,
                                             response_type='TerminalResponse',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
+    def consultar_using_get42(self, id, **kwargs):
+        """
+        Apresenta os dados de um determinado V\u00C3\u00ADnculo
+        Este m\u00C3\u00A9todo permite consultar um determinado V\u00C3\u00ADnculo a partir do seu c\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o (id).
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.consultar_using_get42(id, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do V\u00C3\u008Dnculo (id). (required)
+        :return: VinculoEstabelecimentoAdquirenteResponse
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method consultar_using_get42" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get42`")
+
+        resource_path = '/api/adquirentes-estabelecimento/{id}'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = []
+
+        response = self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='VinculoEstabelecimentoAdquirenteResponse',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
+    def desabilitar_vinculo_using_post(self, id, **kwargs):
+        """
+        Desabilitar um V\u00C3\u00ADnculo
+        Este m\u00C3\u00A9todo realiza a desativa\u00C3\u00A7\u00C3\u00A3o de um v\u00C3\u00ADnculo.
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.desabilitar_vinculo_using_post(id, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do V\u00C3\u00ADnculo (id). (required)
+        :return: object
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method desabilitar_vinculo_using_post" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `desabilitar_vinculo_using_post`")
+
+        resource_path = '/api/adquirentes-estabelecimento/{id}/desabilitar'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = []
+
+        response = self.api_client.call_api(resource_path, 'POST',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='object',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
+    def desabilitar_vinculo_using_post1(self, id, vinculo_operacao_persist, **kwargs):
+        """
+        Desabilitar um v\u00C3\u00ADnculo opera\u00C3\u00A7\u00C3\u00A3o
+        Este m\u00C3\u00A9todo permite desabilitar um v\u00C3\u00ADnculo.
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.desabilitar_vinculo_using_post1(id, vinculo_operacao_persist, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do estabelecimento (id). (required)
+        :param VinculoOperacaoPersist vinculo_operacao_persist: vinculoOperacaoPersist (required)
+        :return: object
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'vinculo_operacao_persist']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method desabilitar_vinculo_using_post1" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `desabilitar_vinculo_using_post1`")
+        # verify the required parameter 'vinculo_operacao_persist' is set
+        if ('vinculo_operacao_persist' not in params) or (params['vinculo_operacao_persist'] is None):
+            raise ValueError("Missing the required parameter `vinculo_operacao_persist` when calling `desabilitar_vinculo_using_post1`")
+
+        resource_path = '/api/estabelecimentos/{id}/desabilitar-operacao'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        if 'vinculo_operacao_persist' in params:
+            body_params = params['vinculo_operacao_persist']
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = []
+
+        response = self.api_client.call_api(resource_path, 'POST',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='object',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
+    def habilitar_vinculo_using_post(self, id, **kwargs):
+        """
+        Habilitar um V\u00C3\u00ADnculo
+        Este m\u00C3\u00A9todo realiza a ativa\u00C3\u00A7\u00C3\u00A3o de um v\u00C3\u00ADnculo.
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.habilitar_vinculo_using_post(id, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do V\u00C3\u00ADnculo (id). (required)
+        :return: object
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method habilitar_vinculo_using_post" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `habilitar_vinculo_using_post`")
+
+        resource_path = '/api/adquirentes-estabelecimento/{id}/habilitar'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = []
+
+        response = self.api_client.call_api(resource_path, 'POST',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='object',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
+    def habilitar_vinculo_using_post1(self, id, vinculo_operacao_persist, **kwargs):
+        """
+        Habilitar um v\u00C3\u00ADnculo opera\u00C3\u00A7\u00C3\u00A3o
+        Este m\u00C3\u00A9todo permite habilitar um v\u00C3\u00ADnculo.
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.habilitar_vinculo_using_post1(id, vinculo_operacao_persist, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do estabelecimento (id). (required)
+        :param VinculoOperacaoPersist vinculo_operacao_persist: vinculoOperacaoPersist (required)
+        :return: object
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'vinculo_operacao_persist']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method habilitar_vinculo_using_post1" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `habilitar_vinculo_using_post1`")
+        # verify the required parameter 'vinculo_operacao_persist' is set
+        if ('vinculo_operacao_persist' not in params) or (params['vinculo_operacao_persist'] is None):
+            raise ValueError("Missing the required parameter `vinculo_operacao_persist` when calling `habilitar_vinculo_using_post1`")
+
+        resource_path = '/api/estabelecimentos/{id}/habilitar-operacao'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        if 'vinculo_operacao_persist' in params:
+            body_params = params['vinculo_operacao_persist']
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = []
+
+        response = self.api_client.call_api(resource_path, 'POST',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='object',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
@@ -1136,10 +1965,10 @@ class EstabelecimentoApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get14(self, **kwargs):
+    def listar_mcc_using_get(self, **kwargs):
         """
-        Listar credores
-        Lista credores cadastrados. 
+        Lista os MCCs
+        Este m\u00C3\u00A9todo permite que sejam listados os MCCs existentes na base de dados do Emissor.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -1147,42 +1976,19 @@ class EstabelecimentoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get14(callback=callback_function)
+        >>> thread = api.listar_mcc_using_get(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param list[str] sort: Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
         :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
         :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
-        :param int id_pessoa_juridica: Identificador da pessoa jur\u00C3\u00ADdica do credor
-        :param str nome: Nome do credor
-        :param str periodicidade: Periodicidade do pagamento
-        :param str pagamento_semanal: Dia para pagamento semanal
-        :param int pagamento_mensal: Dia da data para o pagamento mensal
-        :param int pagamento_decendial_primeiro: Dia da data para o primeiro pagamento decendial
-        :param int pagamento_decendial_segundo: Dia da data para o segundo pagamento decendial
-        :param int pagamento_decendial_terceiro: Dia da data para o terceiro pagamento decendial
-        :param int pagamento_quinzenal_primeiro: Dia da data para o primeiro pagamento quinzenal
-        :param int pagamento_quinzenal_segundo: Dia da data para o segundo pagamento quinzenal
-        :param bool credor_banco: Indica se este credor pode ser um Credor RAV de outros credores
-        :param float percentual_rav: Valor percentual do RAV do credor
-        :param str recebe_rav: Indica se o credor recebe RAV e o tipo
-        :param float percentual_multiplica: Percentual Multiplica
-        :param float taxa_adm: Taxa Administrativa
-        :param float taxa_banco: Taxa do Banco
-        :param float limite_rav: Valor limite do RAV
-        :param int id_credor_rav: C\u00C3\u00B3digo identificador do credor RAV
-        :param int banco: C\u00C3\u00B3digo do banco
-        :param int agencia: Raz\u00C3\u00A3o social da pessoa jur\u00C3\u00ADdica
-        :param str digito_verificador_agencia: D\u00C3\u00ADgito Verificador da ag\u00C3\u00AAncia
-        :param str conta_corrente: C\u00C3\u00B3digo da Conta Corrente
-        :param str digito_verificador_conta_corrente: D\u00C3\u00ADgito Verificador da Conta Corrente
-        :return: PageCredorResponse
+        :return: PageMCCResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['sort', 'page', 'limit', 'id_pessoa_juridica', 'nome', 'periodicidade', 'pagamento_semanal', 'pagamento_mensal', 'pagamento_decendial_primeiro', 'pagamento_decendial_segundo', 'pagamento_decendial_terceiro', 'pagamento_quinzenal_primeiro', 'pagamento_quinzenal_segundo', 'credor_banco', 'percentual_rav', 'recebe_rav', 'percentual_multiplica', 'taxa_adm', 'taxa_banco', 'limite_rav', 'id_credor_rav', 'banco', 'agencia', 'digito_verificador_agencia', 'conta_corrente', 'digito_verificador_conta_corrente']
+        all_params = ['sort', 'page', 'limit']
         all_params.append('callback')
 
         params = locals()
@@ -1190,13 +1996,13 @@ class EstabelecimentoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get14" % key
+                    " to method listar_mcc_using_get" % key
                 )
             params[key] = val
         del params['kwargs']
 
 
-        resource_path = '/api/credores'.replace('{format}', 'json')
+        resource_path = '/api/mcc-estabelecimentos'.replace('{format}', 'json')
         path_params = {}
 
         query_params = {}
@@ -1206,52 +2012,6 @@ class EstabelecimentoApi(object):
             query_params['page'] = params['page']
         if 'limit' in params:
             query_params['limit'] = params['limit']
-        if 'id_pessoa_juridica' in params:
-            query_params['idPessoaJuridica'] = params['id_pessoa_juridica']
-        if 'nome' in params:
-            query_params['nome'] = params['nome']
-        if 'periodicidade' in params:
-            query_params['periodicidade'] = params['periodicidade']
-        if 'pagamento_semanal' in params:
-            query_params['pagamentoSemanal'] = params['pagamento_semanal']
-        if 'pagamento_mensal' in params:
-            query_params['pagamentoMensal'] = params['pagamento_mensal']
-        if 'pagamento_decendial_primeiro' in params:
-            query_params['pagamentoDecendialPrimeiro'] = params['pagamento_decendial_primeiro']
-        if 'pagamento_decendial_segundo' in params:
-            query_params['pagamentoDecendialSegundo'] = params['pagamento_decendial_segundo']
-        if 'pagamento_decendial_terceiro' in params:
-            query_params['pagamentoDecendialTerceiro'] = params['pagamento_decendial_terceiro']
-        if 'pagamento_quinzenal_primeiro' in params:
-            query_params['pagamentoQuinzenalPrimeiro'] = params['pagamento_quinzenal_primeiro']
-        if 'pagamento_quinzenal_segundo' in params:
-            query_params['pagamentoQuinzenalSegundo'] = params['pagamento_quinzenal_segundo']
-        if 'credor_banco' in params:
-            query_params['credorBanco'] = params['credor_banco']
-        if 'percentual_rav' in params:
-            query_params['percentualRAV'] = params['percentual_rav']
-        if 'recebe_rav' in params:
-            query_params['recebeRAV'] = params['recebe_rav']
-        if 'percentual_multiplica' in params:
-            query_params['percentualMultiplica'] = params['percentual_multiplica']
-        if 'taxa_adm' in params:
-            query_params['taxaAdm'] = params['taxa_adm']
-        if 'taxa_banco' in params:
-            query_params['taxaBanco'] = params['taxa_banco']
-        if 'limite_rav' in params:
-            query_params['limiteRAV'] = params['limite_rav']
-        if 'id_credor_rav' in params:
-            query_params['idCredorRAV'] = params['id_credor_rav']
-        if 'banco' in params:
-            query_params['banco'] = params['banco']
-        if 'agencia' in params:
-            query_params['agencia'] = params['agencia']
-        if 'digito_verificador_agencia' in params:
-            query_params['digitoVerificadorAgencia'] = params['digito_verificador_agencia']
-        if 'conta_corrente' in params:
-            query_params['contaCorrente'] = params['conta_corrente']
-        if 'digito_verificador_conta_corrente' in params:
-            query_params['digitoVerificadorContaCorrente'] = params['digito_verificador_conta_corrente']
 
         header_params = {}
 
@@ -1280,12 +2040,404 @@ class EstabelecimentoApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='PageCredorResponse',
+                                            response_type='PageMCCResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get19(self, **kwargs):
+    def listar_origens_comerciais_using_get(self, **kwargs):
+        """
+        Listar Origens Comerciais
+        Lista origens comerciais cadastradas.
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.listar_origens_comerciais_using_get(callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param list[str] sort: Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
+        :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
+        :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
+        :param int id: Id da origem comercial
+        :param str nome: Nome da origem comercial
+        :param int status: Indica o status da origem comercial
+        :param int id_estabelecimento: Identificador do estabelecimento
+        :param int id_produto: Identificador do produto
+        :param str descricao: Descri\u00C3\u00A7\u00C3\u00A3o da origem comercial
+        :param int id_tipo_origem_comercial: Identificador do tipo de origem comercial
+        :param int id_grupo_origem_comercial: Identificador do grupo de origem comercial
+        :param bool flag_pre_aprovado: Indica se permite pr\u00C3\u00A9 aprova\u00C3\u00A7\u00C3\u00A3o
+        :param bool flag_aprovacao_imediata: Indica se permite aprova\u00C3\u00A7\u00C3\u00A3o imediata
+        :param str nome_fantasia_plastico: Nome fantasia impresso no pl\u00C3\u00A1stico
+        :param bool flag_cartao_provisorio: Indica se permite cart\u00C3\u00A3o provis\u00C3\u00B3rio
+        :param bool flag_cartao_definitivo: Indica se permite cart\u00C3\u00A3o definitivo
+        :param str usuario: Usu\u00C3\u00A1rio para autentica\u00C3\u00A7\u00C3\u00A3o
+        :param str senha: Senha para autentica\u00C3\u00A7\u00C3\u00A3o
+        :param bool flag_origem_externa: Indica se \u00C3\u00A9 origem externa
+        :param bool flag_modificado: Indica se h\u00C3\u00A1 modifica\u00C3\u00A7\u00C3\u00A3o
+        :param bool flag_envia_fatura_usuario: Indica se envia fatura
+        :param bool flag_credito_faturamento: Indica se permite cr\u00C3\u00A9dito de faturamento
+        :param bool flag_concede_limite_provisorio: Indica se concede limite provis\u00C3\u00B3rio
+        :param bool flag_digitalizar_doc: Indica se digitaliza documento
+        :param bool flag_embossing_loja: Indica se realiza embossing em loja
+        :param bool flag_consulta_previa: Indica se realiza consulta pr\u00C3\u00A9via
+        :param str tipo_pessoa: Tipo de pessoa
+        :return: PageOrigemComercialResponse
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['sort', 'page', 'limit', 'id', 'nome', 'status', 'id_estabelecimento', 'id_produto', 'descricao', 'id_tipo_origem_comercial', 'id_grupo_origem_comercial', 'flag_pre_aprovado', 'flag_aprovacao_imediata', 'nome_fantasia_plastico', 'flag_cartao_provisorio', 'flag_cartao_definitivo', 'usuario', 'senha', 'flag_origem_externa', 'flag_modificado', 'flag_envia_fatura_usuario', 'flag_credito_faturamento', 'flag_concede_limite_provisorio', 'flag_digitalizar_doc', 'flag_embossing_loja', 'flag_consulta_previa', 'tipo_pessoa']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method listar_origens_comerciais_using_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+
+        resource_path = '/api/origens-comerciais'.replace('{format}', 'json')
+        path_params = {}
+
+        query_params = {}
+        if 'sort' in params:
+            query_params['sort'] = params['sort']
+        if 'page' in params:
+            query_params['page'] = params['page']
+        if 'limit' in params:
+            query_params['limit'] = params['limit']
+        if 'id' in params:
+            query_params['id'] = params['id']
+        if 'nome' in params:
+            query_params['nome'] = params['nome']
+        if 'status' in params:
+            query_params['status'] = params['status']
+        if 'id_estabelecimento' in params:
+            query_params['idEstabelecimento'] = params['id_estabelecimento']
+        if 'id_produto' in params:
+            query_params['idProduto'] = params['id_produto']
+        if 'descricao' in params:
+            query_params['descricao'] = params['descricao']
+        if 'id_tipo_origem_comercial' in params:
+            query_params['idTipoOrigemComercial'] = params['id_tipo_origem_comercial']
+        if 'id_grupo_origem_comercial' in params:
+            query_params['idGrupoOrigemComercial'] = params['id_grupo_origem_comercial']
+        if 'flag_pre_aprovado' in params:
+            query_params['flagPreAprovado'] = params['flag_pre_aprovado']
+        if 'flag_aprovacao_imediata' in params:
+            query_params['flagAprovacaoImediata'] = params['flag_aprovacao_imediata']
+        if 'nome_fantasia_plastico' in params:
+            query_params['nomeFantasiaPlastico'] = params['nome_fantasia_plastico']
+        if 'flag_cartao_provisorio' in params:
+            query_params['flagCartaoProvisorio'] = params['flag_cartao_provisorio']
+        if 'flag_cartao_definitivo' in params:
+            query_params['flagCartaoDefinitivo'] = params['flag_cartao_definitivo']
+        if 'usuario' in params:
+            query_params['usuario'] = params['usuario']
+        if 'senha' in params:
+            query_params['senha'] = params['senha']
+        if 'flag_origem_externa' in params:
+            query_params['flagOrigemExterna'] = params['flag_origem_externa']
+        if 'flag_modificado' in params:
+            query_params['flagModificado'] = params['flag_modificado']
+        if 'flag_envia_fatura_usuario' in params:
+            query_params['flagEnviaFaturaUsuario'] = params['flag_envia_fatura_usuario']
+        if 'flag_credito_faturamento' in params:
+            query_params['flagCreditoFaturamento'] = params['flag_credito_faturamento']
+        if 'flag_concede_limite_provisorio' in params:
+            query_params['flagConcedeLimiteProvisorio'] = params['flag_concede_limite_provisorio']
+        if 'flag_digitalizar_doc' in params:
+            query_params['flagDigitalizarDoc'] = params['flag_digitalizar_doc']
+        if 'flag_embossing_loja' in params:
+            query_params['flagEmbossingLoja'] = params['flag_embossing_loja']
+        if 'flag_consulta_previa' in params:
+            query_params['flagConsultaPrevia'] = params['flag_consulta_previa']
+        if 'tipo_pessoa' in params:
+            query_params['tipoPessoa'] = params['tipo_pessoa']
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = []
+
+        response = self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='PageOrigemComercialResponse',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
+    def listar_tipos_adquirentes_using_get(self, **kwargs):
+        """
+        Lista os Tipos de adquirentes
+        Este m\u00C3\u00A9todo permite que sejam listados os tipos de adquirentes.
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.listar_tipos_adquirentes_using_get(callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param list[str] sort: Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
+        :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
+        :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
+        :return: PageEntidadeResponse
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['sort', 'page', 'limit']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method listar_tipos_adquirentes_using_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+
+        resource_path = '/api/tipos-adquirentes'.replace('{format}', 'json')
+        path_params = {}
+
+        query_params = {}
+        if 'sort' in params:
+            query_params['sort'] = params['sort']
+        if 'page' in params:
+            query_params['page'] = params['page']
+        if 'limit' in params:
+            query_params['limit'] = params['limit']
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = []
+
+        response = self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='PageEntidadeResponse',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
+    def listar_tipos_maquinetas_using_get(self, **kwargs):
+        """
+        Lista os Tipos de  Maquinetas
+        Este m\u00C3\u00A9todo permite que sejam listadas os Tipos de maquinetas existentes na base de dados do Emissor.
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.listar_tipos_maquinetas_using_get(callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param list[str] sort: Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
+        :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
+        :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
+        :return: PageCampoCodificadoDescricaoResponse
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['sort', 'page', 'limit']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method listar_tipos_maquinetas_using_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+
+        resource_path = '/api/tipos-maquinetas'.replace('{format}', 'json')
+        path_params = {}
+
+        query_params = {}
+        if 'sort' in params:
+            query_params['sort'] = params['sort']
+        if 'page' in params:
+            query_params['page'] = params['page']
+        if 'limit' in params:
+            query_params['limit'] = params['limit']
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = []
+
+        response = self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='PageCampoCodificadoDescricaoResponse',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
+    def listar_tipos_terminais_using_get1(self, **kwargs):
+        """
+        Lista os Tipos Terminais
+        Este m\u00C3\u00A9todo permite que sejam listados os tipos de terminais existentes na base de dados do Emissor.
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.listar_tipos_terminais_using_get1(callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param list[str] sort: Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
+        :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
+        :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
+        :return: PageTipoTerminalResponse
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['sort', 'page', 'limit']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method listar_tipos_terminais_using_get1" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+
+        resource_path = '/api/tipos-terminais-estabelecimento'.replace('{format}', 'json')
+        path_params = {}
+
+        query_params = {}
+        if 'sort' in params:
+            query_params['sort'] = params['sort']
+        if 'page' in params:
+            query_params['page'] = params['page']
+        if 'limit' in params:
+            query_params['limit'] = params['limit']
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = []
+
+        response = self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='PageTipoTerminalResponse',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
+    def listar_using_get18(self, **kwargs):
         """
         Lista Estabelecimentos
         Lista todas os Estabelecimentos
@@ -1296,7 +2448,7 @@ class EstabelecimentoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get19(callback=callback_function)
+        >>> thread = api.listar_using_get18(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -1304,7 +2456,8 @@ class EstabelecimentoApi(object):
         :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
         :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
         :param int id: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do estabelecimento (id).
-        :param int numero_receita_federal: Apresenta o n\u00C3\u00BAmero de identifica\u00C3\u00A7\u00C3\u00A3o do Estabelecimento na Receita Federal.
+        :param int id_credor: Apresenta o n\u00C3\u00BAmero de identifica\u00C3\u00A7\u00C3\u00A3o do Credor.
+        :param str numero_receita_federal: Apresenta o n\u00C3\u00BAmero de identifica\u00C3\u00A7\u00C3\u00A3o do Estabelecimento na Receita Federal.
         :param str nome: Nome do Estabelecimento.
         :param str descricao: Raz\u00C3\u00A3o Social do Estabelecimento.
         :param str nome_fantasia: T\u00C3\u00ADtulo Comercial do Estabelecimento.
@@ -1322,12 +2475,26 @@ class EstabelecimentoApi(object):
         :param int flag_arquivo_secr_fazenda: Indica se o estabelecimento ser\u00C3\u00A1 inclu\u00C3\u00ADdo no arquivo de registro para a Secretaria da Fazenda Estadual.
         :param int flag_cartao_digitado: Indica se o estabelecimento poder\u00C3\u00A1 originar transa\u00C3\u00A7\u00C3\u00B5es sem a leitura da tarja ou do chip do cart\u00C3\u00A3o.
         :param int inativo: Indica se o estabelecimento est\u00C3\u00A1 inativo.
+        :param int id_pais: Identificador de Pa\u00C3\u00ADs.
+        :param int mcc: C\u00C3\u00B3digo de Categoria de Mercado
+        :param int id_tipo_estabelecimento: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do Estabelecimento.
+        :param int id_moeda: C\u00C3\u00B3digo identificador da moeda.
+        :param str tipo_pagamento: Tipo do regime de pagamento do estabelecimento.
+        :param str numero_estabelecimento: N\u00C3\u00BAmero de identifica\u00C3\u00A7\u00C3\u00A3o do Estabelecimento na Conductor.
+        :param str cep2: C\u00C3\u00B3digo de Endere\u00C3\u00A7amento Postal (CEP).
+        :param str nome_logradouro2: Nome do Logradouro.
+        :param int numero_endereco2: N\u00C3\u00BAmero do endere\u00C3\u00A7o.
+        :param str complemento2: Descri\u00C3\u00A7\u00C3\u00B5es complementares referente ao endere\u00C3\u00A7o.
+        :param str bairro2: Nome do bairro do endere\u00C3\u00A7o.
+        :param str cidade2: Nome da cidade do endere\u00C3\u00A7o.
+        :param str uf2: Sigla de identifica\u00C3\u00A7\u00C3\u00A3o da Unidade Federativa do endere\u00C3\u00A7o.
+        :param int flag_matriz: Indica se \u00C3\u00A9 matriz ou filial.
         :return: PageEstabelecimentoResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['sort', 'page', 'limit', 'id', 'numero_receita_federal', 'nome', 'descricao', 'nome_fantasia', 'cep', 'nome_logradouro', 'numero_endereco', 'complemento', 'bairro', 'cidade', 'uf', 'pais', 'data_cadastramento', 'contato', 'email', 'flag_arquivo_secr_fazenda', 'flag_cartao_digitado', 'inativo']
+        all_params = ['sort', 'page', 'limit', 'id', 'id_credor', 'numero_receita_federal', 'nome', 'descricao', 'nome_fantasia', 'cep', 'nome_logradouro', 'numero_endereco', 'complemento', 'bairro', 'cidade', 'uf', 'pais', 'data_cadastramento', 'contato', 'email', 'flag_arquivo_secr_fazenda', 'flag_cartao_digitado', 'inativo', 'id_pais', 'mcc', 'id_tipo_estabelecimento', 'id_moeda', 'tipo_pagamento', 'numero_estabelecimento', 'cep2', 'nome_logradouro2', 'numero_endereco2', 'complemento2', 'bairro2', 'cidade2', 'uf2', 'flag_matriz']
         all_params.append('callback')
 
         params = locals()
@@ -1335,7 +2502,7 @@ class EstabelecimentoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get19" % key
+                    " to method listar_using_get18" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -1353,6 +2520,8 @@ class EstabelecimentoApi(object):
             query_params['limit'] = params['limit']
         if 'id' in params:
             query_params['id'] = params['id']
+        if 'id_credor' in params:
+            query_params['idCredor'] = params['id_credor']
         if 'numero_receita_federal' in params:
             query_params['numeroReceitaFederal'] = params['numero_receita_federal']
         if 'nome' in params:
@@ -1389,6 +2558,34 @@ class EstabelecimentoApi(object):
             query_params['flagCartaoDigitado'] = params['flag_cartao_digitado']
         if 'inativo' in params:
             query_params['inativo'] = params['inativo']
+        if 'id_pais' in params:
+            query_params['idPais'] = params['id_pais']
+        if 'mcc' in params:
+            query_params['mcc'] = params['mcc']
+        if 'id_tipo_estabelecimento' in params:
+            query_params['idTipoEstabelecimento'] = params['id_tipo_estabelecimento']
+        if 'id_moeda' in params:
+            query_params['idMoeda'] = params['id_moeda']
+        if 'tipo_pagamento' in params:
+            query_params['tipoPagamento'] = params['tipo_pagamento']
+        if 'numero_estabelecimento' in params:
+            query_params['numeroEstabelecimento'] = params['numero_estabelecimento']
+        if 'cep2' in params:
+            query_params['cep2'] = params['cep2']
+        if 'nome_logradouro2' in params:
+            query_params['nomeLogradouro2'] = params['nome_logradouro2']
+        if 'numero_endereco2' in params:
+            query_params['numeroEndereco2'] = params['numero_endereco2']
+        if 'complemento2' in params:
+            query_params['complemento2'] = params['complemento2']
+        if 'bairro2' in params:
+            query_params['bairro2'] = params['bairro2']
+        if 'cidade2' in params:
+            query_params['cidade2'] = params['cidade2']
+        if 'uf2' in params:
+            query_params['uf2'] = params['uf2']
+        if 'flag_matriz' in params:
+            query_params['flagMatriz'] = params['flag_matriz']
 
         header_params = {}
 
@@ -1422,10 +2619,10 @@ class EstabelecimentoApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get24(self, **kwargs):
+    def listar_using_get20(self, **kwargs):
         """
-        Listar pessoas jur\u00C3\u00ADdicas
-        Lista pessoas jur\u00C3\u00ADdicas cadastradas. 
+        Listar grupos econ\u00C3\u00B4micos
+        Lista grupos econ\u00C3\u00B4micos cadastrados. 
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -1433,7 +2630,7 @@ class EstabelecimentoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get24(callback=callback_function)
+        >>> thread = api.listar_using_get20(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -1441,20 +2638,36 @@ class EstabelecimentoApi(object):
         :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
         :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
         :param str razao_social: Raz\u00C3\u00A3o social da pessoa jur\u00C3\u00ADdica
-        :param str cnpj: C\u00C3\u00B3digo do Cadastro Nacional de Pessoas Jur\u00C3\u00ADdicas
+        :param str nome_credor: Nome do credor
+        :param str numero_receita_federal: N\u00C3\u00BAmero da Receita Federal
         :param str inscricao_estadual: N\u00C3\u00BAmero da inscri\u00C3\u00A7\u00C3\u00A3o estadual
         :param str contato: Nome da pessoa para entrar em contato
         :param int banco: C\u00C3\u00B3digo do banco
         :param int agencia: Raz\u00C3\u00A3o social da pessoa jur\u00C3\u00ADdica
-        :param str digito_verificador_agencia: D\u00C3\u00ADgito Verificador da ag\u00C3\u00AAncia
+        :param str digito_agencia: D\u00C3\u00ADgito Verificador da ag\u00C3\u00AAncia
         :param str conta_corrente: C\u00C3\u00B3digo da Conta Corrente
-        :param str digito_verificador_conta_corrente: D\u00C3\u00ADgito Verificador da Conta Corrente
-        :return: PagePessoaJuridicaResponse
+        :param str digito_conta_corrente: D\u00C3\u00ADgito Verificador da Conta Corrente
+        :param str periodicidade: Periodicidade do pagamento
+        :param str pagamento_semanal: Dia para pagamento semanal
+        :param int pagamento_mensal: Dia da data para o pagamento mensal
+        :param int pagamento_decendial_primeiro: Dia da data para o primeiro pagamento decendial
+        :param int pagamento_decendial_segundo: Dia da data para o segundo pagamento decendial
+        :param int pagamento_decendial_terceiro: Dia da data para o terceiro pagamento decendial
+        :param int pagamento_quinzenal_primeiro: Dia da data para o primeiro pagamento quinzenal
+        :param int pagamento_quinzenal_segundo: Dia da data para o segundo pagamento quinzenal
+        :param float percentual_rav: Valor percentual do RAV do credor
+        :param str recebe_rav: Indica se o credor recebe RAV e o tipo
+        :param float percentual_multiplica: Percentual Multiplica
+        :param float taxa_adm: Taxa Administrativa
+        :param float taxa_banco: Taxa do Banco
+        :param float limite_rav: Valor limite do RAV
+        :param int id_credor_rav: C\u00C3\u00B3digo identificador do credor RAV
+        :return: PageGrupoEconomicoResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['sort', 'page', 'limit', 'razao_social', 'cnpj', 'inscricao_estadual', 'contato', 'banco', 'agencia', 'digito_verificador_agencia', 'conta_corrente', 'digito_verificador_conta_corrente']
+        all_params = ['sort', 'page', 'limit', 'razao_social', 'nome_credor', 'numero_receita_federal', 'inscricao_estadual', 'contato', 'banco', 'agencia', 'digito_agencia', 'conta_corrente', 'digito_conta_corrente', 'periodicidade', 'pagamento_semanal', 'pagamento_mensal', 'pagamento_decendial_primeiro', 'pagamento_decendial_segundo', 'pagamento_decendial_terceiro', 'pagamento_quinzenal_primeiro', 'pagamento_quinzenal_segundo', 'percentual_rav', 'recebe_rav', 'percentual_multiplica', 'taxa_adm', 'taxa_banco', 'limite_rav', 'id_credor_rav']
         all_params.append('callback')
 
         params = locals()
@@ -1462,13 +2675,13 @@ class EstabelecimentoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get24" % key
+                    " to method listar_using_get20" % key
                 )
             params[key] = val
         del params['kwargs']
 
 
-        resource_path = '/api/pessoas-juridicas'.replace('{format}', 'json')
+        resource_path = '/api/grupos-economicos'.replace('{format}', 'json')
         path_params = {}
 
         query_params = {}
@@ -1480,8 +2693,10 @@ class EstabelecimentoApi(object):
             query_params['limit'] = params['limit']
         if 'razao_social' in params:
             query_params['razaoSocial'] = params['razao_social']
-        if 'cnpj' in params:
-            query_params['cnpj'] = params['cnpj']
+        if 'nome_credor' in params:
+            query_params['nomeCredor'] = params['nome_credor']
+        if 'numero_receita_federal' in params:
+            query_params['numeroReceitaFederal'] = params['numero_receita_federal']
         if 'inscricao_estadual' in params:
             query_params['inscricaoEstadual'] = params['inscricao_estadual']
         if 'contato' in params:
@@ -1490,12 +2705,42 @@ class EstabelecimentoApi(object):
             query_params['banco'] = params['banco']
         if 'agencia' in params:
             query_params['agencia'] = params['agencia']
-        if 'digito_verificador_agencia' in params:
-            query_params['digitoVerificadorAgencia'] = params['digito_verificador_agencia']
+        if 'digito_agencia' in params:
+            query_params['digitoAgencia'] = params['digito_agencia']
         if 'conta_corrente' in params:
             query_params['contaCorrente'] = params['conta_corrente']
-        if 'digito_verificador_conta_corrente' in params:
-            query_params['digitoVerificadorContaCorrente'] = params['digito_verificador_conta_corrente']
+        if 'digito_conta_corrente' in params:
+            query_params['digitoContaCorrente'] = params['digito_conta_corrente']
+        if 'periodicidade' in params:
+            query_params['periodicidade'] = params['periodicidade']
+        if 'pagamento_semanal' in params:
+            query_params['pagamentoSemanal'] = params['pagamento_semanal']
+        if 'pagamento_mensal' in params:
+            query_params['pagamentoMensal'] = params['pagamento_mensal']
+        if 'pagamento_decendial_primeiro' in params:
+            query_params['pagamentoDecendialPrimeiro'] = params['pagamento_decendial_primeiro']
+        if 'pagamento_decendial_segundo' in params:
+            query_params['pagamentoDecendialSegundo'] = params['pagamento_decendial_segundo']
+        if 'pagamento_decendial_terceiro' in params:
+            query_params['pagamentoDecendialTerceiro'] = params['pagamento_decendial_terceiro']
+        if 'pagamento_quinzenal_primeiro' in params:
+            query_params['pagamentoQuinzenalPrimeiro'] = params['pagamento_quinzenal_primeiro']
+        if 'pagamento_quinzenal_segundo' in params:
+            query_params['pagamentoQuinzenalSegundo'] = params['pagamento_quinzenal_segundo']
+        if 'percentual_rav' in params:
+            query_params['percentualRAV'] = params['percentual_rav']
+        if 'recebe_rav' in params:
+            query_params['recebeRAV'] = params['recebe_rav']
+        if 'percentual_multiplica' in params:
+            query_params['percentualMultiplica'] = params['percentual_multiplica']
+        if 'taxa_adm' in params:
+            query_params['taxaAdm'] = params['taxa_adm']
+        if 'taxa_banco' in params:
+            query_params['taxaBanco'] = params['taxa_banco']
+        if 'limite_rav' in params:
+            query_params['limiteRAV'] = params['limite_rav']
+        if 'id_credor_rav' in params:
+            query_params['idCredorRAV'] = params['id_credor_rav']
 
         header_params = {}
 
@@ -1524,12 +2769,273 @@ class EstabelecimentoApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='PagePessoaJuridicaResponse',
+                                            response_type='PageGrupoEconomicoResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get33(self, **kwargs):
+    def listar_using_get22(self, **kwargs):
+        """
+        Lista as Maquinetas
+        Este m\u00C3\u00A9todo permite que sejam listadas as maquinetas existentes na base de dados do Emissor.
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.listar_using_get22(callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param list[str] sort: Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
+        :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
+        :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
+        :param int id_estabelecimento: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Tipo do Estabelecimento (id).
+        :return: PageMaquinetaResponse
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['sort', 'page', 'limit', 'id_estabelecimento']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method listar_using_get22" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+
+        resource_path = '/api/maquinetas'.replace('{format}', 'json')
+        path_params = {}
+
+        query_params = {}
+        if 'sort' in params:
+            query_params['sort'] = params['sort']
+        if 'page' in params:
+            query_params['page'] = params['page']
+        if 'limit' in params:
+            query_params['limit'] = params['limit']
+        if 'id_estabelecimento' in params:
+            query_params['idEstabelecimento'] = params['id_estabelecimento']
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = []
+
+        response = self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='PageMaquinetaResponse',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
+    def listar_using_get23(self, **kwargs):
+        """
+        Lista os tipos de moedas do emissor 
+        Este recurso permite que sejam listados os tipos de moedas existentes na base de dados do emissor.
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.listar_using_get23(callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param list[str] sort: Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
+        :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
+        :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
+        :param str codigo_moeda: C\u00C3\u00B3digo identificador do tipo de moeda.
+        :param str simbolo: S\u00C3\u00ADmbolo da Moeda.
+        :param str descricao: Descri\u00C3\u00A7\u00C3\u00A3o do tipo da moeda.
+        :return: PageMoedaResponse
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['sort', 'page', 'limit', 'codigo_moeda', 'simbolo', 'descricao']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method listar_using_get23" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+
+        resource_path = '/api/tipos-moedas'.replace('{format}', 'json')
+        path_params = {}
+
+        query_params = {}
+        if 'sort' in params:
+            query_params['sort'] = params['sort']
+        if 'page' in params:
+            query_params['page'] = params['page']
+        if 'limit' in params:
+            query_params['limit'] = params['limit']
+        if 'codigo_moeda' in params:
+            query_params['codigoMoeda'] = params['codigo_moeda']
+        if 'simbolo' in params:
+            query_params['simbolo'] = params['simbolo']
+        if 'descricao' in params:
+            query_params['descricao'] = params['descricao']
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = []
+
+        response = self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='PageMoedaResponse',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
+    def listar_using_get24(self, **kwargs):
+        """
+        Lista as Regras Opera\u00C3\u00A7\u00C3\u00B5es
+        Este m\u00C3\u00A9todo permite que sejam listados as Regras opera\u00C3\u00A7\u00C3\u00B5es existentes na base de dados do Emissor.
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.listar_using_get24(callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param list[str] sort: Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
+        :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
+        :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
+        :param int id_operacao: Apresenta o id da Opera\u00C3\u00A7\u00C3\u00A3o.
+        :param int id_credor: Apresenta o id do Credor.
+        :param int id_produto: Apresenta o id do produto que vai ser alterado.
+        :return: PageOperacaoCredorResponse
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['sort', 'page', 'limit', 'id_operacao', 'id_credor', 'id_produto']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method listar_using_get24" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+
+        resource_path = '/api/regras-operacoes-estabelecimentos'.replace('{format}', 'json')
+        path_params = {}
+
+        query_params = {}
+        if 'sort' in params:
+            query_params['sort'] = params['sort']
+        if 'page' in params:
+            query_params['page'] = params['page']
+        if 'limit' in params:
+            query_params['limit'] = params['limit']
+        if 'id_operacao' in params:
+            query_params['idOperacao'] = params['id_operacao']
+        if 'id_credor' in params:
+            query_params['idCredor'] = params['id_credor']
+        if 'id_produto' in params:
+            query_params['idProduto'] = params['id_produto']
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = []
+
+        response = self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='PageOperacaoCredorResponse',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
+    def listar_using_get35(self, **kwargs):
         """
         Lista os Telefones Estabelecimentos
         Este m\u00C3\u00A9todo permite que sejam listados os telefones dos estabelecimentos existentes na base de dados do Emissor.
@@ -1540,7 +3046,7 @@ class EstabelecimentoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get33(callback=callback_function)
+        >>> thread = api.listar_using_get35(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -1561,7 +3067,7 @@ class EstabelecimentoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get33" % key
+                    " to method listar_using_get35" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -1612,7 +3118,7 @@ class EstabelecimentoApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get35(self, **kwargs):
+    def listar_using_get37(self, **kwargs):
         """
         Lista os Terminais cadastrados no Emissor
         Este m\u00C3\u00A9todo permite que sejam listados os terminais existentes na base de dados do Emissor.
@@ -1623,7 +3129,7 @@ class EstabelecimentoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get35(callback=callback_function)
+        >>> thread = api.listar_using_get37(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -1647,7 +3153,7 @@ class EstabelecimentoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get35" % key
+                    " to method listar_using_get37" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -1704,7 +3210,345 @@ class EstabelecimentoApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def salvar_using_post19(self, id_estabelecimento, ddd, telefone, **kwargs):
+    def listar_using_get48(self, **kwargs):
+        """
+        Lista os V\u00C3\u00ADnculos dos estabelecimento com os adquirentes
+        Este m\u00C3\u00A9todo permite que sejam listados os V\u00C3\u00ADnculos dos estabelecimento com os adquirentes.
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.listar_using_get48(callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param list[str] sort: Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
+        :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
+        :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
+        :param int id_adquirente: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do adquirente (id).
+        :param int id_estabelecimento: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do estabelecimento.
+        :param str codigo_estabelecimento_adquirente: C\u00C3\u00B3digo do v\u00C3\u00ADnculo entre o estabelecimento e o adquirente.
+        :return: PageVinculoEstabelecimentoAdquirenteResponse
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['sort', 'page', 'limit', 'id_adquirente', 'id_estabelecimento', 'codigo_estabelecimento_adquirente']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method listar_using_get48" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+
+        resource_path = '/api/adquirentes-estabelecimento'.replace('{format}', 'json')
+        path_params = {}
+
+        query_params = {}
+        if 'sort' in params:
+            query_params['sort'] = params['sort']
+        if 'page' in params:
+            query_params['page'] = params['page']
+        if 'limit' in params:
+            query_params['limit'] = params['limit']
+        if 'id_adquirente' in params:
+            query_params['idAdquirente'] = params['id_adquirente']
+        if 'id_estabelecimento' in params:
+            query_params['idEstabelecimento'] = params['id_estabelecimento']
+        if 'codigo_estabelecimento_adquirente' in params:
+            query_params['codigoEstabelecimentoAdquirente'] = params['codigo_estabelecimento_adquirente']
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = []
+
+        response = self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='PageVinculoEstabelecimentoAdquirenteResponse',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
+    def listar_using_get49(self, id, **kwargs):
+        """
+        Lista os v\u00C3\u00ADnculos cadastrados no Emissor
+        Este m\u00C3\u00A9todo permite que sejam listados os v\u00C3\u00ADnculos opera\u00C3\u00A7\u00C3\u00B5es existentes na base de dados do Emissor.
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.listar_using_get49(id, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do estabelecimento (id). (required)
+        :param list[str] sort: Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
+        :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
+        :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
+        :param int id_produto: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Produto (id).
+        :param int id_operacao: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Opera\u00C3\u00A7\u00C3\u00A3o (id).
+        :param int codigo_mcc: C\u00C3\u00B3digo MCC.
+        :return: PageVinculoOperacaoResponse
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'sort', 'page', 'limit', 'id_produto', 'id_operacao', 'codigo_mcc']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method listar_using_get49" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `listar_using_get49`")
+
+        resource_path = '/api/estabelecimentos/{id}/operacoes'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+
+        query_params = {}
+        if 'sort' in params:
+            query_params['sort'] = params['sort']
+        if 'page' in params:
+            query_params['page'] = params['page']
+        if 'limit' in params:
+            query_params['limit'] = params['limit']
+        if 'id_produto' in params:
+            query_params['idProduto'] = params['id_produto']
+        if 'id_operacao' in params:
+            query_params['idOperacao'] = params['id_operacao']
+        if 'codigo_mcc' in params:
+            query_params['codigoMCC'] = params['codigo_mcc']
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = []
+
+        response = self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='PageVinculoOperacaoResponse',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
+    def salvar_using_post15(self, maquineta_persist, **kwargs):
+        """
+        Realiza o cadastro de uma nova maquineta para um estabelecimento 
+        Este m\u00C3\u00A9todo permite que seja cadastrada uma nova maquineta para um estabelecimento.
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.salvar_using_post15(maquineta_persist, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param MaquinetaPersist maquineta_persist: maquinetaPersist (required)
+        :return: MaquinetaResponse
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['maquineta_persist']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method salvar_using_post15" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        # verify the required parameter 'maquineta_persist' is set
+        if ('maquineta_persist' not in params) or (params['maquineta_persist'] is None):
+            raise ValueError("Missing the required parameter `maquineta_persist` when calling `salvar_using_post15`")
+
+        resource_path = '/api/maquinetas'.replace('{format}', 'json')
+        path_params = {}
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        if 'maquineta_persist' in params:
+            body_params = params['maquineta_persist']
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = []
+
+        response = self.api_client.call_api(resource_path, 'POST',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='MaquinetaResponse',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
+    def salvar_using_post16(self, oprecao_credor_persist, **kwargs):
+        """
+        Realiza o cadastro de uma nova Regra Opera\u00C3\u00A7\u00C3\u00A3o
+        Este m\u00C3\u00A9todo permite que seja cadastrada uma nova Regra Opera\u00C3\u00A7\u00C3\u00A3o.
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.salvar_using_post16(oprecao_credor_persist, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param OperacaoCredorPersist oprecao_credor_persist: oprecaoCredorPersist (required)
+        :return: OperacaoCredorResponse
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['oprecao_credor_persist']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method salvar_using_post16" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        # verify the required parameter 'oprecao_credor_persist' is set
+        if ('oprecao_credor_persist' not in params) or (params['oprecao_credor_persist'] is None):
+            raise ValueError("Missing the required parameter `oprecao_credor_persist` when calling `salvar_using_post16`")
+
+        resource_path = '/api/regras-operacoes-estabelecimentos'.replace('{format}', 'json')
+        path_params = {}
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        if 'oprecao_credor_persist' in params:
+            body_params = params['oprecao_credor_persist']
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = []
+
+        response = self.api_client.call_api(resource_path, 'POST',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='OperacaoCredorResponse',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
+    def salvar_using_post21(self, id_estabelecimento, ddd, telefone, **kwargs):
         """
         Realiza o cadastro de um novo telefone para um estabelecimento 
         Este m\u00C3\u00A9todo permite que seja cadastrado um novo telefone para um estabelecimento.
@@ -1715,7 +3559,7 @@ class EstabelecimentoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.salvar_using_post19(id_estabelecimento, ddd, telefone, callback=callback_function)
+        >>> thread = api.salvar_using_post21(id_estabelecimento, ddd, telefone, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -1736,20 +3580,20 @@ class EstabelecimentoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method salvar_using_post19" % key
+                    " to method salvar_using_post21" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id_estabelecimento' is set
         if ('id_estabelecimento' not in params) or (params['id_estabelecimento'] is None):
-            raise ValueError("Missing the required parameter `id_estabelecimento` when calling `salvar_using_post19`")
+            raise ValueError("Missing the required parameter `id_estabelecimento` when calling `salvar_using_post21`")
         # verify the required parameter 'ddd' is set
         if ('ddd' not in params) or (params['ddd'] is None):
-            raise ValueError("Missing the required parameter `ddd` when calling `salvar_using_post19`")
+            raise ValueError("Missing the required parameter `ddd` when calling `salvar_using_post21`")
         # verify the required parameter 'telefone' is set
         if ('telefone' not in params) or (params['telefone'] is None):
-            raise ValueError("Missing the required parameter `telefone` when calling `salvar_using_post19`")
+            raise ValueError("Missing the required parameter `telefone` when calling `salvar_using_post21`")
 
         resource_path = '/api/telefones-estabelecimentos'.replace('{format}', 'json')
         path_params = {}
@@ -1796,7 +3640,7 @@ class EstabelecimentoApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def salvar_using_post21(self, id_estabelecimento, flag_consulta_extrato, flag_terminal_virtual, **kwargs):
+    def salvar_using_post23(self, terminal_persist, **kwargs):
         """
         Realiza o cadastro de um novo Terminal
         Este m\u00C3\u00A9todo permite que seja cadastrado um novo Terminal.
@@ -1807,19 +3651,17 @@ class EstabelecimentoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.salvar_using_post21(id_estabelecimento, flag_consulta_extrato, flag_terminal_virtual, callback=callback_function)
+        >>> thread = api.salvar_using_post23(terminal_persist, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param int id_estabelecimento: Apresenta o id do estabelecimento. (required)
-        :param bool flag_consulta_extrato: Flag indicando se o terminal \u00C3\u00A9 f\u00C3\u00ADsico ou virtual, sendo: (true: Sim), (false: N\u00C3\u00A3o)). (required)
-        :param bool flag_terminal_virtual: Flag indicando se o terminal permite consultar extrato, sendo: (true: Sim), (false: N\u00C3\u00A3o)). (required)
+        :param TerminalPersist terminal_persist: terminalPersist (required)
         :return: TerminalResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['id_estabelecimento', 'flag_consulta_extrato', 'flag_terminal_virtual']
+        all_params = ['terminal_persist']
         all_params.append('callback')
 
         params = locals()
@@ -1827,31 +3669,19 @@ class EstabelecimentoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method salvar_using_post21" % key
+                    " to method salvar_using_post23" % key
                 )
             params[key] = val
         del params['kwargs']
 
-        # verify the required parameter 'id_estabelecimento' is set
-        if ('id_estabelecimento' not in params) or (params['id_estabelecimento'] is None):
-            raise ValueError("Missing the required parameter `id_estabelecimento` when calling `salvar_using_post21`")
-        # verify the required parameter 'flag_consulta_extrato' is set
-        if ('flag_consulta_extrato' not in params) or (params['flag_consulta_extrato'] is None):
-            raise ValueError("Missing the required parameter `flag_consulta_extrato` when calling `salvar_using_post21`")
-        # verify the required parameter 'flag_terminal_virtual' is set
-        if ('flag_terminal_virtual' not in params) or (params['flag_terminal_virtual'] is None):
-            raise ValueError("Missing the required parameter `flag_terminal_virtual` when calling `salvar_using_post21`")
+        # verify the required parameter 'terminal_persist' is set
+        if ('terminal_persist' not in params) or (params['terminal_persist'] is None):
+            raise ValueError("Missing the required parameter `terminal_persist` when calling `salvar_using_post23`")
 
         resource_path = '/api/terminais'.replace('{format}', 'json')
         path_params = {}
 
         query_params = {}
-        if 'id_estabelecimento' in params:
-            query_params['idEstabelecimento'] = params['id_estabelecimento']
-        if 'flag_consulta_extrato' in params:
-            query_params['flagConsultaExtrato'] = params['flag_consulta_extrato']
-        if 'flag_terminal_virtual' in params:
-            query_params['flagTerminalVirtual'] = params['flag_terminal_virtual']
 
         header_params = {}
 
@@ -1859,6 +3689,8 @@ class EstabelecimentoApi(object):
         local_var_files = {}
 
         body_params = None
+        if 'terminal_persist' in params:
+            body_params = params['terminal_persist']
 
         # HTTP header `Accept`
         header_params['Accept'] = self.api_client.\
@@ -1881,6 +3713,83 @@ class EstabelecimentoApi(object):
                                             post_params=form_params,
                                             files=local_var_files,
                                             response_type='TerminalResponse',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
+    def salvar_using_post28(self, vinculo_estabelecimento_adquirente_persist, **kwargs):
+        """
+        Realiza o cadastro de um novo VinculoEstabelecimentoAdquirente
+        Este m\u00C3\u00A9todo permite que seja cadastrado um novo VinculoEstabelecimentoAdquirente.
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.salvar_using_post28(vinculo_estabelecimento_adquirente_persist, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param VinculoEstabelecimentoAdquirentePersist vinculo_estabelecimento_adquirente_persist: vinculoEstabelecimentoAdquirentePersist (required)
+        :return: VinculoEstabelecimentoAdquirenteResponse
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['vinculo_estabelecimento_adquirente_persist']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method salvar_using_post28" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        # verify the required parameter 'vinculo_estabelecimento_adquirente_persist' is set
+        if ('vinculo_estabelecimento_adquirente_persist' not in params) or (params['vinculo_estabelecimento_adquirente_persist'] is None):
+            raise ValueError("Missing the required parameter `vinculo_estabelecimento_adquirente_persist` when calling `salvar_using_post28`")
+
+        resource_path = '/api/adquirentes-estabelecimento'.replace('{format}', 'json')
+        path_params = {}
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        if 'vinculo_estabelecimento_adquirente_persist' in params:
+            body_params = params['vinculo_estabelecimento_adquirente_persist']
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = []
+
+        response = self.api_client.call_api(resource_path, 'POST',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='VinculoEstabelecimentoAdquirenteResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response

@@ -45,6 +45,89 @@ class AutorizacaoApi(object):
                 config.api_client = ApiClient()
             self.api_client = config.api_client
 
+    def autorizar_por_conta_using_post(self, id, transacao_on_us_por_id_cartao_request, **kwargs):
+        """
+        Autoriza transa\u00C3\u00A7\u00C3\u00A3o financeira por idConta
+        Este m\u00C3\u00A9todo faz uma autoriza\u00C3\u00A7\u00C3\u00A3o de transa\u00C3\u00A7\u00C3\u00A3o financeira com o idConta.
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.autorizar_por_conta_using_post(id, transacao_on_us_por_id_cartao_request, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param int id: Id Conta (required)
+        :param TransacaoOnUsPorIdCartaoRequest transacao_on_us_por_id_cartao_request: transacaoOnUsPorIdCartaoRequest (required)
+        :return: TransacaoOnUsResponse
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'transacao_on_us_por_id_cartao_request']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method autorizar_por_conta_using_post" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `autorizar_por_conta_using_post`")
+        # verify the required parameter 'transacao_on_us_por_id_cartao_request' is set
+        if ('transacao_on_us_por_id_cartao_request' not in params) or (params['transacao_on_us_por_id_cartao_request'] is None):
+            raise ValueError("Missing the required parameter `transacao_on_us_por_id_cartao_request` when calling `autorizar_por_conta_using_post`")
+
+        resource_path = '/api/contas/{id}/autorizar-transacao'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        if 'transacao_on_us_por_id_cartao_request' in params:
+            body_params = params['transacao_on_us_por_id_cartao_request']
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = []
+
+        response = self.api_client.call_api(resource_path, 'POST',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='TransacaoOnUsResponse',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
     def autorizar_using_post(self, autorizacao_on_us_request, **kwargs):
         """
         Autoriza transa\u00C3\u00A7\u00C3\u00A3o financeira
@@ -179,6 +262,89 @@ class AutorizacaoApi(object):
         body_params = None
         if 'transacao_on_us_por_id_cartao_request' in params:
             body_params = params['transacao_on_us_por_id_cartao_request']
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = []
+
+        response = self.api_client.call_api(resource_path, 'POST',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='TransacaoOnUsResponse',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
+    def cancelar_por_id_conta_using_post(self, id, cancelamento_request, **kwargs):
+        """
+        Cancela transa\u00C3\u00A7\u00C3\u00A3o financeira por idConta
+        Este m\u00C3\u00A9todo permite que seja cancelada uma transa\u00C3\u00A7\u00C3\u00A3o a partir do idConta.
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.cancelar_por_id_conta_using_post(id, cancelamento_request, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param int id: Id Conta (required)
+        :param CancelamentoTransacaoPorIdCartaoRequest cancelamento_request: cancelamentoRequest (required)
+        :return: TransacaoOnUsResponse
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'cancelamento_request']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method cancelar_por_id_conta_using_post" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `cancelar_por_id_conta_using_post`")
+        # verify the required parameter 'cancelamento_request' is set
+        if ('cancelamento_request' not in params) or (params['cancelamento_request'] is None):
+            raise ValueError("Missing the required parameter `cancelamento_request` when calling `cancelar_por_id_conta_using_post`")
+
+        resource_path = '/api/contas/{id}/cancelar-transacao'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        if 'cancelamento_request' in params:
+            body_params = params['cancelamento_request']
 
         # HTTP header `Accept`
         header_params['Accept'] = self.api_client.\

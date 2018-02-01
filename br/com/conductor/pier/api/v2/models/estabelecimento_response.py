@@ -39,6 +39,8 @@ class EstabelecimentoResponse(object):
         self.swagger_types = {
             'id': 'int',
             'numero_estabelecimento': 'str',
+            'flag_matriz': 'int',
+            'id_credor': 'int',
             'numero_receita_federal': 'int',
             'nome': 'str',
             'descricao': 'str',
@@ -46,23 +48,44 @@ class EstabelecimentoResponse(object):
             'cep': 'str',
             'nome_logradouro': 'str',
             'numero_endereco': 'str',
-            'complemento': 'str',
             'bairro': 'str',
             'cidade': 'str',
+            'complemento': 'str',
             'uf': 'str',
-            'pais': 'str',
-            'data_cadastramento': 'str',
+            'cep2': 'str',
+            'nome_logradouro2': 'str',
+            'numero_endereco2': 'str',
+            'bairro2': 'str',
+            'cidade2': 'str',
+            'complemento2': 'str',
+            'uf2': 'str',
             'obs': 'str',
             'contato': 'str',
             'email': 'str',
             'flag_arquivo_secr_fazenda': 'int',
             'flag_cartao_digitado': 'int',
-            'inativo': 'int'
+            'inativo': 'int',
+            'id_moeda': 'int',
+            'id_pais': 'int',
+            'associado_spc_brasil': 'int',
+            'mcc': 'int',
+            'id_tipo_estabelecimento': 'int',
+            'tipo_correspondencia': 'str',
+            'cargo_contato': 'str',
+            'tipo_pagamento': 'str',
+            'consulta': 'ConsultaCadastroEstabelecimentoDTO',
+            'consulta2': 'ConsultaCadastroEstabelecimentoDTO',
+            'consulta3': 'ConsultaCadastroEstabelecimentoDTO',
+            'terminal': 'str',
+            'data_cadastramento': 'str',
+            'usuario': 'str'
         }
 
         self.attribute_map = {
             'id': 'id',
             'numero_estabelecimento': 'numeroEstabelecimento',
+            'flag_matriz': 'flagMatriz',
+            'id_credor': 'idCredor',
             'numero_receita_federal': 'numeroReceitaFederal',
             'nome': 'nome',
             'descricao': 'descricao',
@@ -70,22 +93,43 @@ class EstabelecimentoResponse(object):
             'cep': 'cep',
             'nome_logradouro': 'nomeLogradouro',
             'numero_endereco': 'numeroEndereco',
-            'complemento': 'complemento',
             'bairro': 'bairro',
             'cidade': 'cidade',
+            'complemento': 'complemento',
             'uf': 'uf',
-            'pais': 'pais',
-            'data_cadastramento': 'dataCadastramento',
+            'cep2': 'cep2',
+            'nome_logradouro2': 'nomeLogradouro2',
+            'numero_endereco2': 'numeroEndereco2',
+            'bairro2': 'bairro2',
+            'cidade2': 'cidade2',
+            'complemento2': 'complemento2',
+            'uf2': 'uf2',
             'obs': 'obs',
             'contato': 'contato',
             'email': 'email',
             'flag_arquivo_secr_fazenda': 'flagArquivoSecrFazenda',
             'flag_cartao_digitado': 'flagCartaoDigitado',
-            'inativo': 'inativo'
+            'inativo': 'inativo',
+            'id_moeda': 'idMoeda',
+            'id_pais': 'idPais',
+            'associado_spc_brasil': 'associadoSPCBrasil',
+            'mcc': 'mcc',
+            'id_tipo_estabelecimento': 'idTipoEstabelecimento',
+            'tipo_correspondencia': 'tipoCorrespondencia',
+            'cargo_contato': 'cargoContato',
+            'tipo_pagamento': 'tipoPagamento',
+            'consulta': 'consulta',
+            'consulta2': 'consulta2',
+            'consulta3': 'consulta3',
+            'terminal': 'terminal',
+            'data_cadastramento': 'dataCadastramento',
+            'usuario': 'usuario'
         }
 
         self._id = None
         self._numero_estabelecimento = None
+        self._flag_matriz = None
+        self._id_credor = None
         self._numero_receita_federal = None
         self._nome = None
         self._descricao = None
@@ -93,18 +137,37 @@ class EstabelecimentoResponse(object):
         self._cep = None
         self._nome_logradouro = None
         self._numero_endereco = None
-        self._complemento = None
         self._bairro = None
         self._cidade = None
+        self._complemento = None
         self._uf = None
-        self._pais = None
-        self._data_cadastramento = None
+        self._cep2 = None
+        self._nome_logradouro2 = None
+        self._numero_endereco2 = None
+        self._bairro2 = None
+        self._cidade2 = None
+        self._complemento2 = None
+        self._uf2 = None
         self._obs = None
         self._contato = None
         self._email = None
         self._flag_arquivo_secr_fazenda = None
         self._flag_cartao_digitado = None
         self._inativo = None
+        self._id_moeda = None
+        self._id_pais = None
+        self._associado_spc_brasil = None
+        self._mcc = None
+        self._id_tipo_estabelecimento = None
+        self._tipo_correspondencia = None
+        self._cargo_contato = None
+        self._tipo_pagamento = None
+        self._consulta = None
+        self._consulta2 = None
+        self._consulta3 = None
+        self._terminal = None
+        self._data_cadastramento = None
+        self._usuario = None
 
     @property
     def id(self):
@@ -149,6 +212,50 @@ class EstabelecimentoResponse(object):
         :type: str
         """
         self._numero_estabelecimento = numero_estabelecimento
+
+    @property
+    def flag_matriz(self):
+        """
+        Gets the flag_matriz of this EstabelecimentoResponse.
+        Indica se \u00C3\u00A9 matriz ou filial.
+
+        :return: The flag_matriz of this EstabelecimentoResponse.
+        :rtype: int
+        """
+        return self._flag_matriz
+
+    @flag_matriz.setter
+    def flag_matriz(self, flag_matriz):
+        """
+        Sets the flag_matriz of this EstabelecimentoResponse.
+        Indica se \u00C3\u00A9 matriz ou filial.
+
+        :param flag_matriz: The flag_matriz of this EstabelecimentoResponse.
+        :type: int
+        """
+        self._flag_matriz = flag_matriz
+
+    @property
+    def id_credor(self):
+        """
+        Gets the id_credor of this EstabelecimentoResponse.
+        Apresenta o n\u00C3\u00BAmero de identifica\u00C3\u00A7\u00C3\u00A3o do Credor.
+
+        :return: The id_credor of this EstabelecimentoResponse.
+        :rtype: int
+        """
+        return self._id_credor
+
+    @id_credor.setter
+    def id_credor(self, id_credor):
+        """
+        Sets the id_credor of this EstabelecimentoResponse.
+        Apresenta o n\u00C3\u00BAmero de identifica\u00C3\u00A7\u00C3\u00A3o do Credor.
+
+        :param id_credor: The id_credor of this EstabelecimentoResponse.
+        :type: int
+        """
+        self._id_credor = id_credor
 
     @property
     def numero_receita_federal(self):
@@ -305,28 +412,6 @@ class EstabelecimentoResponse(object):
         self._numero_endereco = numero_endereco
 
     @property
-    def complemento(self):
-        """
-        Gets the complemento of this EstabelecimentoResponse.
-        Descri\u00C3\u00A7\u00C3\u00B5es complementares referente ao endere\u00C3\u00A7o.
-
-        :return: The complemento of this EstabelecimentoResponse.
-        :rtype: str
-        """
-        return self._complemento
-
-    @complemento.setter
-    def complemento(self, complemento):
-        """
-        Sets the complemento of this EstabelecimentoResponse.
-        Descri\u00C3\u00A7\u00C3\u00B5es complementares referente ao endere\u00C3\u00A7o.
-
-        :param complemento: The complemento of this EstabelecimentoResponse.
-        :type: str
-        """
-        self._complemento = complemento
-
-    @property
     def bairro(self):
         """
         Gets the bairro of this EstabelecimentoResponse.
@@ -371,6 +456,28 @@ class EstabelecimentoResponse(object):
         self._cidade = cidade
 
     @property
+    def complemento(self):
+        """
+        Gets the complemento of this EstabelecimentoResponse.
+        Descri\u00C3\u00A7\u00C3\u00B5es complementares referente ao endere\u00C3\u00A7o.
+
+        :return: The complemento of this EstabelecimentoResponse.
+        :rtype: str
+        """
+        return self._complemento
+
+    @complemento.setter
+    def complemento(self, complemento):
+        """
+        Sets the complemento of this EstabelecimentoResponse.
+        Descri\u00C3\u00A7\u00C3\u00B5es complementares referente ao endere\u00C3\u00A7o.
+
+        :param complemento: The complemento of this EstabelecimentoResponse.
+        :type: str
+        """
+        self._complemento = complemento
+
+    @property
     def uf(self):
         """
         Gets the uf of this EstabelecimentoResponse.
@@ -393,48 +500,158 @@ class EstabelecimentoResponse(object):
         self._uf = uf
 
     @property
-    def pais(self):
+    def cep2(self):
         """
-        Gets the pais of this EstabelecimentoResponse.
-        Nome do pa\u00C3\u00ADs.
+        Gets the cep2 of this EstabelecimentoResponse.
+        C\u00C3\u00B3digo de Endere\u00C3\u00A7amento Postal (CEP).
 
-        :return: The pais of this EstabelecimentoResponse.
+        :return: The cep2 of this EstabelecimentoResponse.
         :rtype: str
         """
-        return self._pais
+        return self._cep2
 
-    @pais.setter
-    def pais(self, pais):
+    @cep2.setter
+    def cep2(self, cep2):
         """
-        Sets the pais of this EstabelecimentoResponse.
-        Nome do pa\u00C3\u00ADs.
+        Sets the cep2 of this EstabelecimentoResponse.
+        C\u00C3\u00B3digo de Endere\u00C3\u00A7amento Postal (CEP).
 
-        :param pais: The pais of this EstabelecimentoResponse.
+        :param cep2: The cep2 of this EstabelecimentoResponse.
         :type: str
         """
-        self._pais = pais
+        self._cep2 = cep2
 
     @property
-    def data_cadastramento(self):
+    def nome_logradouro2(self):
         """
-        Gets the data_cadastramento of this EstabelecimentoResponse.
-        Data de Cadastro do Estabelecimento.
+        Gets the nome_logradouro2 of this EstabelecimentoResponse.
+        Nome do Logradouro .
 
-        :return: The data_cadastramento of this EstabelecimentoResponse.
+        :return: The nome_logradouro2 of this EstabelecimentoResponse.
         :rtype: str
         """
-        return self._data_cadastramento
+        return self._nome_logradouro2
 
-    @data_cadastramento.setter
-    def data_cadastramento(self, data_cadastramento):
+    @nome_logradouro2.setter
+    def nome_logradouro2(self, nome_logradouro2):
         """
-        Sets the data_cadastramento of this EstabelecimentoResponse.
-        Data de Cadastro do Estabelecimento.
+        Sets the nome_logradouro2 of this EstabelecimentoResponse.
+        Nome do Logradouro .
 
-        :param data_cadastramento: The data_cadastramento of this EstabelecimentoResponse.
+        :param nome_logradouro2: The nome_logradouro2 of this EstabelecimentoResponse.
         :type: str
         """
-        self._data_cadastramento = data_cadastramento
+        self._nome_logradouro2 = nome_logradouro2
+
+    @property
+    def numero_endereco2(self):
+        """
+        Gets the numero_endereco2 of this EstabelecimentoResponse.
+        N\u00C3\u00BAmero do endere\u00C3\u00A7o.
+
+        :return: The numero_endereco2 of this EstabelecimentoResponse.
+        :rtype: str
+        """
+        return self._numero_endereco2
+
+    @numero_endereco2.setter
+    def numero_endereco2(self, numero_endereco2):
+        """
+        Sets the numero_endereco2 of this EstabelecimentoResponse.
+        N\u00C3\u00BAmero do endere\u00C3\u00A7o.
+
+        :param numero_endereco2: The numero_endereco2 of this EstabelecimentoResponse.
+        :type: str
+        """
+        self._numero_endereco2 = numero_endereco2
+
+    @property
+    def bairro2(self):
+        """
+        Gets the bairro2 of this EstabelecimentoResponse.
+        Nome do bairro do endere\u00C3\u00A7o.
+
+        :return: The bairro2 of this EstabelecimentoResponse.
+        :rtype: str
+        """
+        return self._bairro2
+
+    @bairro2.setter
+    def bairro2(self, bairro2):
+        """
+        Sets the bairro2 of this EstabelecimentoResponse.
+        Nome do bairro do endere\u00C3\u00A7o.
+
+        :param bairro2: The bairro2 of this EstabelecimentoResponse.
+        :type: str
+        """
+        self._bairro2 = bairro2
+
+    @property
+    def cidade2(self):
+        """
+        Gets the cidade2 of this EstabelecimentoResponse.
+        Nome da cidade do endere\u00C3\u00A7o.
+
+        :return: The cidade2 of this EstabelecimentoResponse.
+        :rtype: str
+        """
+        return self._cidade2
+
+    @cidade2.setter
+    def cidade2(self, cidade2):
+        """
+        Sets the cidade2 of this EstabelecimentoResponse.
+        Nome da cidade do endere\u00C3\u00A7o.
+
+        :param cidade2: The cidade2 of this EstabelecimentoResponse.
+        :type: str
+        """
+        self._cidade2 = cidade2
+
+    @property
+    def complemento2(self):
+        """
+        Gets the complemento2 of this EstabelecimentoResponse.
+        Descri\u00C3\u00A7\u00C3\u00B5es complementares referente ao endere\u00C3\u00A7o.
+
+        :return: The complemento2 of this EstabelecimentoResponse.
+        :rtype: str
+        """
+        return self._complemento2
+
+    @complemento2.setter
+    def complemento2(self, complemento2):
+        """
+        Sets the complemento2 of this EstabelecimentoResponse.
+        Descri\u00C3\u00A7\u00C3\u00B5es complementares referente ao endere\u00C3\u00A7o.
+
+        :param complemento2: The complemento2 of this EstabelecimentoResponse.
+        :type: str
+        """
+        self._complemento2 = complemento2
+
+    @property
+    def uf2(self):
+        """
+        Gets the uf2 of this EstabelecimentoResponse.
+        Sigla de identifica\u00C3\u00A7\u00C3\u00A3o da Unidade Federativa do endere\u00C3\u00A7o.
+
+        :return: The uf2 of this EstabelecimentoResponse.
+        :rtype: str
+        """
+        return self._uf2
+
+    @uf2.setter
+    def uf2(self, uf2):
+        """
+        Sets the uf2 of this EstabelecimentoResponse.
+        Sigla de identifica\u00C3\u00A7\u00C3\u00A3o da Unidade Federativa do endere\u00C3\u00A7o.
+
+        :param uf2: The uf2 of this EstabelecimentoResponse.
+        :type: str
+        """
+        self._uf2 = uf2
 
     @property
     def obs(self):
@@ -567,6 +784,326 @@ class EstabelecimentoResponse(object):
         :type: int
         """
         self._inativo = inativo
+
+    @property
+    def id_moeda(self):
+        """
+        Gets the id_moeda of this EstabelecimentoResponse.
+        C\u00C3\u00B3digo identificador da moeda.
+
+        :return: The id_moeda of this EstabelecimentoResponse.
+        :rtype: int
+        """
+        return self._id_moeda
+
+    @id_moeda.setter
+    def id_moeda(self, id_moeda):
+        """
+        Sets the id_moeda of this EstabelecimentoResponse.
+        C\u00C3\u00B3digo identificador da moeda.
+
+        :param id_moeda: The id_moeda of this EstabelecimentoResponse.
+        :type: int
+        """
+        self._id_moeda = id_moeda
+
+    @property
+    def id_pais(self):
+        """
+        Gets the id_pais of this EstabelecimentoResponse.
+        Identificador de Pa\u00C3\u00ADs.
+
+        :return: The id_pais of this EstabelecimentoResponse.
+        :rtype: int
+        """
+        return self._id_pais
+
+    @id_pais.setter
+    def id_pais(self, id_pais):
+        """
+        Sets the id_pais of this EstabelecimentoResponse.
+        Identificador de Pa\u00C3\u00ADs.
+
+        :param id_pais: The id_pais of this EstabelecimentoResponse.
+        :type: int
+        """
+        self._id_pais = id_pais
+
+    @property
+    def associado_spc_brasil(self):
+        """
+        Gets the associado_spc_brasil of this EstabelecimentoResponse.
+        N\u00C3\u00BAmero do associado ao SPCBrasil.
+
+        :return: The associado_spc_brasil of this EstabelecimentoResponse.
+        :rtype: int
+        """
+        return self._associado_spc_brasil
+
+    @associado_spc_brasil.setter
+    def associado_spc_brasil(self, associado_spc_brasil):
+        """
+        Sets the associado_spc_brasil of this EstabelecimentoResponse.
+        N\u00C3\u00BAmero do associado ao SPCBrasil.
+
+        :param associado_spc_brasil: The associado_spc_brasil of this EstabelecimentoResponse.
+        :type: int
+        """
+        self._associado_spc_brasil = associado_spc_brasil
+
+    @property
+    def mcc(self):
+        """
+        Gets the mcc of this EstabelecimentoResponse.
+        C\u00C3\u00B3digo de Categoria de Mercado.
+
+        :return: The mcc of this EstabelecimentoResponse.
+        :rtype: int
+        """
+        return self._mcc
+
+    @mcc.setter
+    def mcc(self, mcc):
+        """
+        Sets the mcc of this EstabelecimentoResponse.
+        C\u00C3\u00B3digo de Categoria de Mercado.
+
+        :param mcc: The mcc of this EstabelecimentoResponse.
+        :type: int
+        """
+        self._mcc = mcc
+
+    @property
+    def id_tipo_estabelecimento(self):
+        """
+        Gets the id_tipo_estabelecimento of this EstabelecimentoResponse.
+        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do Estabelecimento.
+
+        :return: The id_tipo_estabelecimento of this EstabelecimentoResponse.
+        :rtype: int
+        """
+        return self._id_tipo_estabelecimento
+
+    @id_tipo_estabelecimento.setter
+    def id_tipo_estabelecimento(self, id_tipo_estabelecimento):
+        """
+        Sets the id_tipo_estabelecimento of this EstabelecimentoResponse.
+        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do Estabelecimento.
+
+        :param id_tipo_estabelecimento: The id_tipo_estabelecimento of this EstabelecimentoResponse.
+        :type: int
+        """
+        self._id_tipo_estabelecimento = id_tipo_estabelecimento
+
+    @property
+    def tipo_correspondencia(self):
+        """
+        Gets the tipo_correspondencia of this EstabelecimentoResponse.
+        Tipo da Correspond\u00C3\u00AAncia (ORIGEM, CORRESPONDENCIA).
+
+        :return: The tipo_correspondencia of this EstabelecimentoResponse.
+        :rtype: str
+        """
+        return self._tipo_correspondencia
+
+    @tipo_correspondencia.setter
+    def tipo_correspondencia(self, tipo_correspondencia):
+        """
+        Sets the tipo_correspondencia of this EstabelecimentoResponse.
+        Tipo da Correspond\u00C3\u00AAncia (ORIGEM, CORRESPONDENCIA).
+
+        :param tipo_correspondencia: The tipo_correspondencia of this EstabelecimentoResponse.
+        :type: str
+        """
+        allowed_values = ["ORIGEM", "CORRESPONDENCIA"]
+        if tipo_correspondencia not in allowed_values:
+            raise ValueError(
+                "Invalid value for `tipo_correspondencia`, must be one of {0}"
+                .format(allowed_values)
+            )
+        self._tipo_correspondencia = tipo_correspondencia
+
+    @property
+    def cargo_contato(self):
+        """
+        Gets the cargo_contato of this EstabelecimentoResponse.
+        Cargo do contato do estabelecimento.
+
+        :return: The cargo_contato of this EstabelecimentoResponse.
+        :rtype: str
+        """
+        return self._cargo_contato
+
+    @cargo_contato.setter
+    def cargo_contato(self, cargo_contato):
+        """
+        Sets the cargo_contato of this EstabelecimentoResponse.
+        Cargo do contato do estabelecimento.
+
+        :param cargo_contato: The cargo_contato of this EstabelecimentoResponse.
+        :type: str
+        """
+        self._cargo_contato = cargo_contato
+
+    @property
+    def tipo_pagamento(self):
+        """
+        Gets the tipo_pagamento of this EstabelecimentoResponse.
+        Tipo do regime de pagamento do estabelecimento.
+
+        :return: The tipo_pagamento of this EstabelecimentoResponse.
+        :rtype: str
+        """
+        return self._tipo_pagamento
+
+    @tipo_pagamento.setter
+    def tipo_pagamento(self, tipo_pagamento):
+        """
+        Sets the tipo_pagamento of this EstabelecimentoResponse.
+        Tipo do regime de pagamento do estabelecimento.
+
+        :param tipo_pagamento: The tipo_pagamento of this EstabelecimentoResponse.
+        :type: str
+        """
+        allowed_values = ["CENTRALIZADO", "PV"]
+        if tipo_pagamento not in allowed_values:
+            raise ValueError(
+                "Invalid value for `tipo_pagamento`, must be one of {0}"
+                .format(allowed_values)
+            )
+        self._tipo_pagamento = tipo_pagamento
+
+    @property
+    def consulta(self):
+        """
+        Gets the consulta of this EstabelecimentoResponse.
+        Consulta de cadastro n\u00C3\u00BAmero um.
+
+        :return: The consulta of this EstabelecimentoResponse.
+        :rtype: ConsultaCadastroEstabelecimentoDTO
+        """
+        return self._consulta
+
+    @consulta.setter
+    def consulta(self, consulta):
+        """
+        Sets the consulta of this EstabelecimentoResponse.
+        Consulta de cadastro n\u00C3\u00BAmero um.
+
+        :param consulta: The consulta of this EstabelecimentoResponse.
+        :type: ConsultaCadastroEstabelecimentoDTO
+        """
+        self._consulta = consulta
+
+    @property
+    def consulta2(self):
+        """
+        Gets the consulta2 of this EstabelecimentoResponse.
+        Consulta de cadastro n\u00C3\u00BAmero um.
+
+        :return: The consulta2 of this EstabelecimentoResponse.
+        :rtype: ConsultaCadastroEstabelecimentoDTO
+        """
+        return self._consulta2
+
+    @consulta2.setter
+    def consulta2(self, consulta2):
+        """
+        Sets the consulta2 of this EstabelecimentoResponse.
+        Consulta de cadastro n\u00C3\u00BAmero um.
+
+        :param consulta2: The consulta2 of this EstabelecimentoResponse.
+        :type: ConsultaCadastroEstabelecimentoDTO
+        """
+        self._consulta2 = consulta2
+
+    @property
+    def consulta3(self):
+        """
+        Gets the consulta3 of this EstabelecimentoResponse.
+        Consulta de cadastro n\u00C3\u00BAmero um.
+
+        :return: The consulta3 of this EstabelecimentoResponse.
+        :rtype: ConsultaCadastroEstabelecimentoDTO
+        """
+        return self._consulta3
+
+    @consulta3.setter
+    def consulta3(self, consulta3):
+        """
+        Sets the consulta3 of this EstabelecimentoResponse.
+        Consulta de cadastro n\u00C3\u00BAmero um.
+
+        :param consulta3: The consulta3 of this EstabelecimentoResponse.
+        :type: ConsultaCadastroEstabelecimentoDTO
+        """
+        self._consulta3 = consulta3
+
+    @property
+    def terminal(self):
+        """
+        Gets the terminal of this EstabelecimentoResponse.
+        Terminal do estabelecimento.
+
+        :return: The terminal of this EstabelecimentoResponse.
+        :rtype: str
+        """
+        return self._terminal
+
+    @terminal.setter
+    def terminal(self, terminal):
+        """
+        Sets the terminal of this EstabelecimentoResponse.
+        Terminal do estabelecimento.
+
+        :param terminal: The terminal of this EstabelecimentoResponse.
+        :type: str
+        """
+        self._terminal = terminal
+
+    @property
+    def data_cadastramento(self):
+        """
+        Gets the data_cadastramento of this EstabelecimentoResponse.
+        Data de Cadastro do Estabelecimento.
+
+        :return: The data_cadastramento of this EstabelecimentoResponse.
+        :rtype: str
+        """
+        return self._data_cadastramento
+
+    @data_cadastramento.setter
+    def data_cadastramento(self, data_cadastramento):
+        """
+        Sets the data_cadastramento of this EstabelecimentoResponse.
+        Data de Cadastro do Estabelecimento.
+
+        :param data_cadastramento: The data_cadastramento of this EstabelecimentoResponse.
+        :type: str
+        """
+        self._data_cadastramento = data_cadastramento
+
+    @property
+    def usuario(self):
+        """
+        Gets the usuario of this EstabelecimentoResponse.
+        Usu\u00C3\u00A1rio da aplica\u00C3\u00A7\u00C3\u00A3o.
+
+        :return: The usuario of this EstabelecimentoResponse.
+        :rtype: str
+        """
+        return self._usuario
+
+    @usuario.setter
+    def usuario(self, usuario):
+        """
+        Sets the usuario of this EstabelecimentoResponse.
+        Usu\u00C3\u00A1rio da aplica\u00C3\u00A7\u00C3\u00A3o.
+
+        :param usuario: The usuario of this EstabelecimentoResponse.
+        :type: str
+        """
+        self._usuario = usuario
 
     def to_dict(self):
         """
