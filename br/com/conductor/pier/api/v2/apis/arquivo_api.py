@@ -61,7 +61,7 @@ class ArquivoApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do arquivo (required)
-        :return: ArquivoResponse
+        :return: ArquivoDetalheResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -117,7 +117,176 @@ class ArquivoApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='ArquivoResponse',
+                                            response_type='ArquivoDetalheResponse',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
+    def integrar_using_post(self, integrar_arquivo_request, **kwargs):
+        """
+        Integrar Arquivos
+        Este recurso foi desenvolvido para realizar a integra\u00C3\u00A7\u00C3\u00A3o de arquivos do PIER Cloud junto a reposit\u00C3\u00B3rios externos pr\u00C3\u00A9-configurado.
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.integrar_using_post(integrar_arquivo_request, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param IntegrarArquivoRequest integrar_arquivo_request: integrarArquivoRequest (required)
+        :return: object
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['integrar_arquivo_request']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method integrar_using_post" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        # verify the required parameter 'integrar_arquivo_request' is set
+        if ('integrar_arquivo_request' not in params) or (params['integrar_arquivo_request'] is None):
+            raise ValueError("Missing the required parameter `integrar_arquivo_request` when calling `integrar_using_post`")
+
+        resource_path = '/api/arquivos/integrar'.replace('{format}', 'json')
+        path_params = {}
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        if 'integrar_arquivo_request' in params:
+            body_params = params['integrar_arquivo_request']
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = []
+
+        response = self.api_client.call_api(resource_path, 'POST',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='object',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
+    def listar_using_get3(self, **kwargs):
+        """
+        Listar arquivos do Pier Cloud
+        Este recurso permite a listagem de todos os arquivos dispon\u00C3\u00ADveis no Pier Cloud.
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.listar_using_get3(callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param list[str] sort: Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
+        :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
+        :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
+        :param str nome: Nome do arquivo
+        :param int id_tipo_arquivo: Tipo do arquivo
+        :param int id_status_arquivo: Identificador do status do arquivo
+        :param str extensao: Extens\u00C3\u00A3o do arquivo
+        :return: PageArquivoResponse
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['sort', 'page', 'limit', 'nome', 'id_tipo_arquivo', 'id_status_arquivo', 'extensao']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method listar_using_get3" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+
+        resource_path = '/api/arquivos'.replace('{format}', 'json')
+        path_params = {}
+
+        query_params = {}
+        if 'sort' in params:
+            query_params['sort'] = params['sort']
+        if 'page' in params:
+            query_params['page'] = params['page']
+        if 'limit' in params:
+            query_params['limit'] = params['limit']
+        if 'nome' in params:
+            query_params['nome'] = params['nome']
+        if 'id_tipo_arquivo' in params:
+            query_params['idTipoArquivo'] = params['id_tipo_arquivo']
+        if 'id_status_arquivo' in params:
+            query_params['idStatusArquivo'] = params['id_status_arquivo']
+        if 'extensao' in params:
+            query_params['extensao'] = params['extensao']
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = []
+
+        response = self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='PageArquivoResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
@@ -138,7 +307,7 @@ class ArquivoApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param ArquivoPersist arquivo_persist: arquivoPersist (required)
-        :return: ArquivoResponse
+        :return: ArquivoDetalheResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -194,7 +363,7 @@ class ArquivoApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=local_var_files,
-                                            response_type='ArquivoResponse',
+                                            response_type='ArquivoDetalheResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response

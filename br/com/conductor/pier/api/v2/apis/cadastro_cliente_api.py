@@ -1448,7 +1448,7 @@ class CadastroClienteApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get17(self, **kwargs):
+    def listar_using_get18(self, **kwargs):
         """
         Lista os Endere\u00C3\u00A7os cadastrados para o Emissor
         Este m\u00C3\u00A9todo permite que sejam listados os Endere\u00C3\u00A7os existentes na base de dados do Emissor.
@@ -1459,7 +1459,7 @@ class CadastroClienteApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get17(callback=callback_function)
+        >>> thread = api.listar_using_get18(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -1493,7 +1493,7 @@ class CadastroClienteApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get17" % key
+                    " to method listar_using_get18" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -1570,7 +1570,7 @@ class CadastroClienteApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get26(self, **kwargs):
+    def listar_using_get27(self, **kwargs):
         """
         Lista os Detalhes das Pessoas cadastradas no Emissor
         Este m\u00C3\u00A9todo permite que sejam listadas od detalhes das Pessoas existentes na base de dados do Emissor.
@@ -1581,7 +1581,7 @@ class CadastroClienteApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get26(callback=callback_function)
+        >>> thread = api.listar_using_get27(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -1612,7 +1612,7 @@ class CadastroClienteApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get26" % key
+                    " to method listar_using_get27" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -1683,7 +1683,7 @@ class CadastroClienteApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get27(self, **kwargs):
+    def listar_using_get28(self, **kwargs):
         """
         Lista as Pessoas cadastradas no Emissor
         Este m\u00C3\u00A9todo permite que sejam listadas as Pessoas existentes na base de dados do Emissor.
@@ -1694,7 +1694,7 @@ class CadastroClienteApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get27(callback=callback_function)
+        >>> thread = api.listar_using_get28(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -1725,7 +1725,7 @@ class CadastroClienteApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get27" % key
+                    " to method listar_using_get28" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -1796,7 +1796,7 @@ class CadastroClienteApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get36(self, **kwargs):
+    def listar_using_get37(self, **kwargs):
         """
         Lista os Telefones cadastrados no Emissor
         Este m\u00C3\u00A9todo permite que sejam listados os Telefones existentes na base de dados do Emissor.
@@ -1807,7 +1807,7 @@ class CadastroClienteApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get36(callback=callback_function)
+        >>> thread = api.listar_using_get37(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -1834,7 +1834,7 @@ class CadastroClienteApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get36" % key
+                    " to method listar_using_get37" % key
                 )
             params[key] = val
         del params['kwargs']

@@ -16,6 +16,7 @@ from .anuidade_response import AnuidadeResponse
 from .aplicacao_mobile_persist import AplicacaoMobilePersist
 from .aplicacao_mobile_response import AplicacaoMobileResponse
 from .aplicacao_mobile_update import AplicacaoMobileUpdate
+from .arquivo_detalhe_response import ArquivoDetalheResponse
 from .arquivo_detalhes_persist import ArquivoDetalhesPersist
 from .arquivo_parametro_response import ArquivoParametroResponse
 from .arquivo_persist import ArquivoPersist
@@ -117,6 +118,7 @@ from .historico_pagamento_response import HistoricoPagamentoResponse
 from .historico_telefone_response import HistoricoTelefoneResponse
 from .integracao_emissor_persist import IntegracaoEmissorPersist
 from .integracao_emissor_response import IntegracaoEmissorResponse
+from .integrar_arquivo_request import IntegrarArquivoRequest
 from .integrar_documento_request import IntegrarDocumentoRequest
 from .job_response import JobResponse
 from .lancamento_fatura_response import LancamentoFaturaResponse
@@ -148,6 +150,7 @@ from .origem_comercial_update import OrigemComercialUpdate
 from .page_ajuste_response import PageAjusteResponse
 from .page_anuidade_response import PageAnuidadeResponse
 from .page_aplicacao_mobile_response import PageAplicacaoMobileResponse
+from .page_arquivo_response import PageArquivoResponse
 from .page_atendimento_cliente_response import PageAtendimentoClienteResponse
 from .page_banco_response import PageBancoResponse
 from .page_base_response import PageBaseResponse

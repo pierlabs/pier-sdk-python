@@ -944,7 +944,7 @@ class OportunidadeApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get25(self, **kwargs):
+    def listar_using_get26(self, **kwargs):
         """
         Lista as oportunidades
         Este recurso permite listar as oportunidades.
@@ -955,7 +955,7 @@ class OportunidadeApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get25(callback=callback_function)
+        >>> thread = api.listar_using_get26(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -982,7 +982,7 @@ class OportunidadeApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get25" % key
+                    " to method listar_using_get26" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -1045,7 +1045,7 @@ class OportunidadeApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get40(self, **kwargs):
+    def listar_using_get41(self, **kwargs):
         """
         Lista os tipos oportunidades
         Este recurso permite listar os tipos oportunidades.
@@ -1056,7 +1056,7 @@ class OportunidadeApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get40(callback=callback_function)
+        >>> thread = api.listar_using_get41(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -1078,7 +1078,7 @@ class OportunidadeApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get40" % key
+                    " to method listar_using_get41" % key
                 )
             params[key] = val
         del params['kwargs']

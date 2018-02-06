@@ -16,6 +16,7 @@ from .models.anuidade_response import AnuidadeResponse
 from .models.aplicacao_mobile_persist import AplicacaoMobilePersist
 from .models.aplicacao_mobile_response import AplicacaoMobileResponse
 from .models.aplicacao_mobile_update import AplicacaoMobileUpdate
+from .models.arquivo_detalhe_response import ArquivoDetalheResponse
 from .models.arquivo_detalhes_persist import ArquivoDetalhesPersist
 from .models.arquivo_parametro_response import ArquivoParametroResponse
 from .models.arquivo_persist import ArquivoPersist
@@ -117,6 +118,7 @@ from .models.historico_pagamento_response import HistoricoPagamentoResponse
 from .models.historico_telefone_response import HistoricoTelefoneResponse
 from .models.integracao_emissor_persist import IntegracaoEmissorPersist
 from .models.integracao_emissor_response import IntegracaoEmissorResponse
+from .models.integrar_arquivo_request import IntegrarArquivoRequest
 from .models.integrar_documento_request import IntegrarDocumentoRequest
 from .models.job_response import JobResponse
 from .models.lancamento_fatura_response import LancamentoFaturaResponse
@@ -148,6 +150,7 @@ from .models.origem_comercial_update import OrigemComercialUpdate
 from .models.page_ajuste_response import PageAjusteResponse
 from .models.page_anuidade_response import PageAnuidadeResponse
 from .models.page_aplicacao_mobile_response import PageAplicacaoMobileResponse
+from .models.page_arquivo_response import PageArquivoResponse
 from .models.page_atendimento_cliente_response import PageAtendimentoClienteResponse
 from .models.page_banco_response import PageBancoResponse
 from .models.page_base_response import PageBaseResponse

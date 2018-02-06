@@ -128,7 +128,7 @@ class PlataformaMobileApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get28(self, **kwargs):
+    def listar_using_get29(self, **kwargs):
         """
         Lista as plataformas mobile cadastradas
         Este m\u00C3\u00A9todo permite que sejam listadas as plataformas mobile existentes na base do PIER.
@@ -139,7 +139,7 @@ class PlataformaMobileApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get28(callback=callback_function)
+        >>> thread = api.listar_using_get29(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -160,7 +160,7 @@ class PlataformaMobileApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get28" % key
+                    " to method listar_using_get29" % key
                 )
             params[key] = val
         del params['kwargs']

@@ -45,7 +45,7 @@ class DebitoRecorrenteApi(object):
                 config.api_client = ApiClient()
             self.api_client = config.api_client
 
-    def listar_using_get12(self, id_conta, **kwargs):
+    def listar_using_get13(self, id_conta, **kwargs):
         """
         Lista os d\u00C3\u00A9bitos recorrentes de uma Conta
         A entidade D\u00C3\u00A9bito Recorrente trata dos registros contratados por um determinado cliente (idConta) onde a cobran\u00C3\u00A7a dele se d\u00C3\u00A1 de forma cont\u00C3\u00ADnua, consistindo em uma \u00E2\u0080\u009Cassinatura\u00E2\u0080\u009D ou pagamento de mensalidades. Isso significa que, enquanto o servi\u00C3\u00A7o continuar a ser prestado, o cliente dever\u00C3\u00A1 continuar realizando os pagamentos. A determina\u00C3\u00A7\u00C3\u00A3o de quanto tempo essa rela\u00C3\u00A7\u00C3\u00A3o ir\u00C3\u00A1 durar \u00C3\u00A9 feita em contrato. Na maioria das vezes, existe um per\u00C3\u00ADodo m\u00C3\u00ADnimo e, caso o servi\u00C3\u00A7o seja cancelado ou o pagamento n\u00C3\u00A3o seja realizado, o status do D\u00C3\u00A9bito Recorrente ter\u00C3\u00A1 a FlagAtivo com valor false. Assim, este m\u00C3\u00A9todo lista todas as opera\u00C3\u00A7\u00C3\u00B5es de D\u00C3\u00A9bitos Recorrentes que um determinado idConta j\u00C3\u00A1 contratou, esteja ele ativo ou n\u00C3\u00A3o.
@@ -56,7 +56,7 @@ class DebitoRecorrenteApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get12(id_conta, callback=callback_function)
+        >>> thread = api.listar_using_get13(id_conta, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -82,14 +82,14 @@ class DebitoRecorrenteApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get12" % key
+                    " to method listar_using_get13" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id_conta' is set
         if ('id_conta' not in params) or (params['id_conta'] is None):
-            raise ValueError("Missing the required parameter `id_conta` when calling `listar_using_get12`")
+            raise ValueError("Missing the required parameter `id_conta` when calling `listar_using_get13`")
 
         resource_path = '/api/debitos-recorrentes'.replace('{format}', 'json')
         path_params = {}
@@ -146,7 +146,7 @@ class DebitoRecorrenteApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get38(self, **kwargs):
+    def listar_using_get39(self, **kwargs):
         """
         Listar Tipos Debitos Recorrentes
         Para os emissores que utilizam a entidade Debitos Recorrentes precisam previamente solicitar a Conductor o cadastro de quais Tipos eles poder\u00C3\u00A3o comercializar. Por isso, este recurso tem como objetivo apresentar todos os Tipos de D\u00C3\u00A9bitos Recorrentes que est\u00C3\u00A3o cadastrados para um determinado Emissor, independente do status dele.
@@ -157,7 +157,7 @@ class DebitoRecorrenteApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get38(callback=callback_function)
+        >>> thread = api.listar_using_get39(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -181,7 +181,7 @@ class DebitoRecorrenteApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get38" % key
+                    " to method listar_using_get39" % key
                 )
             params[key] = val
         del params['kwargs']

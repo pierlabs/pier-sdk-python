@@ -214,7 +214,7 @@ class WebhookApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get50(self, **kwargs):
+    def listar_using_get51(self, **kwargs):
         """
         Lista os Webhooks
         Este m\u00C3\u00A9todo permite que sejam listados os webhooks existentes
@@ -225,7 +225,7 @@ class WebhookApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get50(callback=callback_function)
+        >>> thread = api.listar_using_get51(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -249,7 +249,7 @@ class WebhookApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get50" % key
+                    " to method listar_using_get51" % key
                 )
             params[key] = val
         del params['kwargs']

@@ -608,7 +608,7 @@ class StatusParametroApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get33(self, **kwargs):
+    def listar_using_get34(self, **kwargs):
         """
         Lista os Status Contas cadastrados para o Emissor
         Este m\u00C3\u00A9todo permite que sejam listados os Status Contas existentes na base de dados do Emissor.
@@ -619,7 +619,7 @@ class StatusParametroApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get33(callback=callback_function)
+        >>> thread = api.listar_using_get34(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -650,7 +650,7 @@ class StatusParametroApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get33" % key
+                    " to method listar_using_get34" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -721,7 +721,7 @@ class StatusParametroApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get34(self, **kwargs):
+    def listar_using_get35(self, **kwargs):
         """
         Lista as op\u00C3\u00A7\u00C3\u00B5es de Status Impress\u00C3\u00A3o
         Este m\u00C3\u00A9todo permite que sejam listadas as op\u00C3\u00A7\u00C3\u00B5es de Status Impress\u00C3\u00A3o que podem ser atribu\u00C3\u00ADdas aos Cart\u00C3\u00B5es.
@@ -732,7 +732,7 @@ class StatusParametroApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get34(callback=callback_function)
+        >>> thread = api.listar_using_get35(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -754,7 +754,7 @@ class StatusParametroApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get34" % key
+                    " to method listar_using_get35" % key
                 )
             params[key] = val
         del params['kwargs']

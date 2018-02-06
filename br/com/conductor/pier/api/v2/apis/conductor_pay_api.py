@@ -744,7 +744,7 @@ class ConductorPayApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get6(self, **kwargs):
+    def listar_using_get7(self, **kwargs):
         """
         Lista os cart\u00C3\u00B5es cadastrados
         Este m\u00C3\u00A9todo permite listar os cart\u00C3\u00B5es cadastrado em um dispositivo.
@@ -755,7 +755,7 @@ class ConductorPayApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get6(callback=callback_function)
+        >>> thread = api.listar_using_get7(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -778,7 +778,7 @@ class ConductorPayApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get6" % key
+                    " to method listar_using_get7" % key
                 )
             params[key] = val
         del params['kwargs']

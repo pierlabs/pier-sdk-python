@@ -41,6 +41,7 @@ class ArquivoPersist(object):
             'arquivo': 'str',
             'nome': 'str',
             'extensao': 'str',
+            'tipo_comunicacao': 'str',
             'detalhes': 'list[ArquivoDetalhesPersist]'
         }
 
@@ -49,6 +50,7 @@ class ArquivoPersist(object):
             'arquivo': 'arquivo',
             'nome': 'nome',
             'extensao': 'extensao',
+            'tipo_comunicacao': 'tipoComunicacao',
             'detalhes': 'detalhes'
         }
 
@@ -56,6 +58,7 @@ class ArquivoPersist(object):
         self._arquivo = None
         self._nome = None
         self._extensao = None
+        self._tipo_comunicacao = None
         self._detalhes = None
 
     @property
@@ -145,6 +148,34 @@ class ArquivoPersist(object):
         :type: str
         """
         self._extensao = extensao
+
+    @property
+    def tipo_comunicacao(self):
+        """
+        Gets the tipo_comunicacao of this ArquivoPersist.
+        Tipo de comunica\u00C3\u00A7\u00C3\u00A3o.
+
+        :return: The tipo_comunicacao of this ArquivoPersist.
+        :rtype: str
+        """
+        return self._tipo_comunicacao
+
+    @tipo_comunicacao.setter
+    def tipo_comunicacao(self, tipo_comunicacao):
+        """
+        Sets the tipo_comunicacao of this ArquivoPersist.
+        Tipo de comunica\u00C3\u00A7\u00C3\u00A3o.
+
+        :param tipo_comunicacao: The tipo_comunicacao of this ArquivoPersist.
+        :type: str
+        """
+        allowed_values = ["SOAP", "REST"]
+        if tipo_comunicacao not in allowed_values:
+            raise ValueError(
+                "Invalid value for `tipo_comunicacao`, must be one of {0}"
+                .format(allowed_values)
+            )
+        self._tipo_comunicacao = tipo_comunicacao
 
     @property
     def detalhes(self):
