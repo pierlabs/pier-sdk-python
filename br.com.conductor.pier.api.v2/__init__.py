@@ -16,8 +16,10 @@ from .models.anuidade_response import AnuidadeResponse
 from .models.aplicacao_mobile_persist import AplicacaoMobilePersist
 from .models.aplicacao_mobile_response import AplicacaoMobileResponse
 from .models.aplicacao_mobile_update import AplicacaoMobileUpdate
+from .models.arquivo_aud_response import ArquivoAUDResponse
 from .models.arquivo_detalhe_response import ArquivoDetalheResponse
 from .models.arquivo_detalhes_persist import ArquivoDetalhesPersist
+from .models.arquivo_parametro_aud_response import ArquivoParametroAUDResponse
 from .models.arquivo_parametro_response import ArquivoParametroResponse
 from .models.arquivo_persist import ArquivoPersist
 from .models.arquivo_response import ArquivoResponse
@@ -25,6 +27,7 @@ from .models.atendimento_cliente_response import AtendimentoClienteResponse
 from .models.atribuir_assinatura_cliente_persist import AtribuirAssinaturaClientePersist
 from .models.auth_token import AuthToken
 from .models.autorizacao_on_us_request import AutorizacaoOnUsRequest
+from .models.aviso_viagem_response import AvisoViagemResponse
 from .models.banco_response import BancoResponse
 from .models.base_response import BaseResponse
 from .models.beneficio_pagamento_atraso_response import BeneficioPagamentoAtrasoResponse
@@ -150,8 +153,10 @@ from .models.origem_comercial_update import OrigemComercialUpdate
 from .models.page_ajuste_response import PageAjusteResponse
 from .models.page_anuidade_response import PageAnuidadeResponse
 from .models.page_aplicacao_mobile_response import PageAplicacaoMobileResponse
+from .models.page_arquivo_aud_response import PageArquivoAUDResponse
 from .models.page_arquivo_response import PageArquivoResponse
 from .models.page_atendimento_cliente_response import PageAtendimentoClienteResponse
+from .models.page_aviso_viagem_response import PageAvisoViagemResponse
 from .models.page_banco_response import PageBancoResponse
 from .models.page_base_response import PageBaseResponse
 from .models.page_campanha_response import PageCampanhaResponse
@@ -195,6 +200,7 @@ from .models.page_operadora_response import PageOperadoraResponse
 from .models.page_oportunidade_aud_response import PageOportunidadeAUDResponse
 from .models.page_oportunidade_response import PageOportunidadeResponse
 from .models.page_origem_comercial_response import PageOrigemComercialResponse
+from .models.page_pais_response import PagePaisResponse
 from .models.page_pessoa_detalhe_response import PagePessoaDetalheResponse
 from .models.page_pessoa_response import PagePessoaResponse
 from .models.page_plano_parcelamento_response import PagePlanoParcelamentoResponse
@@ -237,6 +243,7 @@ from .models.page_usuario_response import PageUsuarioResponse
 from .models.page_vinculo_estabelecimento_adquirente_response import PageVinculoEstabelecimentoAdquirenteResponse
 from .models.page_vinculo_operacao_response import PageVinculoOperacaoResponse
 from .models.page_web_hook_response import PageWebHookResponse
+from .models.pais_response import PaisResponse
 from .models.parametro_produto_response import ParametroProdutoResponse
 from .models.parcelamento_transferencia_response import ParcelamentoTransferenciaResponse
 from .models.pessoa_detalhe_response import PessoaDetalheResponse
@@ -327,6 +334,7 @@ from .models.transferencia_response import TransferenciaResponse
 from .models.usuario_persist import UsuarioPersist
 from .models.usuario_response import UsuarioResponse
 from .models.usuario_update import UsuarioUpdate
+from .models.valida_cvv_request import ValidaCVVRequest
 from .models.valida_cartao_response import ValidaCartaoResponse
 from .models.valida_senha_cartao_response import ValidaSenhaCartaoResponse
 from .models.vinculo_estabelecimento_adquirente_persist import VinculoEstabelecimentoAdquirentePersist
@@ -341,6 +349,7 @@ from .apis.antecipacao_api import AntecipacaoApi
 from .apis.aplicacao_mobile_api import AplicacaoMobileApi
 from .apis.arquivo_api import ArquivoApi
 from .apis.autorizacao_api import AutorizacaoApi
+from .apis.aviso_viagem_api import AvisoViagemApi
 from .apis.base_api import BaseApi
 from .apis.boleto_api import BoletoApi
 from .apis.cadastro_cliente_api import CadastroClienteApi

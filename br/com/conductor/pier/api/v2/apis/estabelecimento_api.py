@@ -1020,7 +1020,7 @@ class EstabelecimentoApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get15(self, id, **kwargs):
+    def consultar_using_get16(self, id, **kwargs):
         """
         Consultar estabelecimento por id
         Consulta os detalhes de um determinado estabelecimento
@@ -1031,7 +1031,7 @@ class EstabelecimentoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get15(id, callback=callback_function)
+        >>> thread = api.consultar_using_get16(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -1049,14 +1049,14 @@ class EstabelecimentoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get15" % key
+                    " to method consultar_using_get16" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get15`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get16`")
 
         resource_path = '/api/estabelecimentos/{id}'.replace('{format}', 'json')
         path_params = {}
@@ -1097,7 +1097,7 @@ class EstabelecimentoApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get17(self, id, **kwargs):
+    def consultar_using_get18(self, id, **kwargs):
         """
         Consultar grupo econ\u00C3\u00B4mico
         Consulta um grupo econ\u00C3\u00B4mico atrav\u00C3\u00A9s do seu identificador.
@@ -1108,7 +1108,7 @@ class EstabelecimentoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get17(id, callback=callback_function)
+        >>> thread = api.consultar_using_get18(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -1126,14 +1126,14 @@ class EstabelecimentoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get17" % key
+                    " to method consultar_using_get18" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get17`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get18`")
 
         resource_path = '/api/grupos-economicos/{id}'.replace('{format}', 'json')
         path_params = {}
@@ -1174,7 +1174,7 @@ class EstabelecimentoApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get19(self, id, **kwargs):
+    def consultar_using_get20(self, id, **kwargs):
         """
         Apresenta os dados de uma determinada maquineta
         Este m\u00C3\u00A9todo permite consultar uma determinada maquineta a partir do seu c\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o (id).
@@ -1185,7 +1185,7 @@ class EstabelecimentoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get19(id, callback=callback_function)
+        >>> thread = api.consultar_using_get20(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -1203,14 +1203,14 @@ class EstabelecimentoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get19" % key
+                    " to method consultar_using_get20" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get19`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get20`")
 
         resource_path = '/api/maquinetas/{id}'.replace('{format}', 'json')
         path_params = {}
@@ -1251,7 +1251,7 @@ class EstabelecimentoApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get20(self, id, **kwargs):
+    def consultar_using_get21(self, id, **kwargs):
         """
         Apresenta os dados de uma determinada Regra Opera\u00C3\u00A7\u00C3\u00A3o
         Este m\u00C3\u00A9todo permite consultar uma determinada regra opera\u00C3\u00A7\u00C3\u00A3o a partir do seu c\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o (id).
@@ -1262,7 +1262,7 @@ class EstabelecimentoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get20(id, callback=callback_function)
+        >>> thread = api.consultar_using_get21(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -1280,14 +1280,14 @@ class EstabelecimentoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get20" % key
+                    " to method consultar_using_get21" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get20`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get21`")
 
         resource_path = '/api/regras-operacoes-estabelecimentos/{id}'.replace('{format}', 'json')
         path_params = {}
@@ -1328,7 +1328,7 @@ class EstabelecimentoApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get28(self, id, **kwargs):
+    def consultar_using_get29(self, id, **kwargs):
         """
         Apresenta os dados de um determinado telefone de um estabelecimento
         Este m\u00C3\u00A9todo permite consultar um determinado telefone de um estabelecimento a partir do seu c\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o (id).
@@ -1339,7 +1339,7 @@ class EstabelecimentoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get28(id, callback=callback_function)
+        >>> thread = api.consultar_using_get29(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -1357,14 +1357,14 @@ class EstabelecimentoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get28" % key
+                    " to method consultar_using_get29" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get28`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get29`")
 
         resource_path = '/api/telefones-estabelecimentos/{id}'.replace('{format}', 'json')
         path_params = {}
@@ -1405,7 +1405,7 @@ class EstabelecimentoApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get30(self, id, **kwargs):
+    def consultar_using_get31(self, id, **kwargs):
         """
         Apresenta os dados de um determinado Terminal
         Este m\u00C3\u00A9todo permite consultar um determinado Terminal a partir do seu c\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o (id).
@@ -1416,7 +1416,7 @@ class EstabelecimentoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get30(id, callback=callback_function)
+        >>> thread = api.consultar_using_get31(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -1434,14 +1434,14 @@ class EstabelecimentoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get30" % key
+                    " to method consultar_using_get31" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get30`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get31`")
 
         resource_path = '/api/terminais/{id}'.replace('{format}', 'json')
         path_params = {}
@@ -1482,7 +1482,7 @@ class EstabelecimentoApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get42(self, id, **kwargs):
+    def consultar_using_get43(self, id, **kwargs):
         """
         Apresenta os dados de um determinado V\u00C3\u00ADnculo
         Este m\u00C3\u00A9todo permite consultar um determinado V\u00C3\u00ADnculo a partir do seu c\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o (id).
@@ -1493,7 +1493,7 @@ class EstabelecimentoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get42(id, callback=callback_function)
+        >>> thread = api.consultar_using_get43(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -1511,14 +1511,14 @@ class EstabelecimentoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get42" % key
+                    " to method consultar_using_get43" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get42`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get43`")
 
         resource_path = '/api/adquirentes-estabelecimento/{id}'.replace('{format}', 'json')
         path_params = {}
@@ -2437,7 +2437,7 @@ class EstabelecimentoApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get19(self, **kwargs):
+    def listar_using_get21(self, **kwargs):
         """
         Lista Estabelecimentos
         Lista todas os Estabelecimentos
@@ -2448,7 +2448,7 @@ class EstabelecimentoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get19(callback=callback_function)
+        >>> thread = api.listar_using_get21(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -2502,7 +2502,7 @@ class EstabelecimentoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get19" % key
+                    " to method listar_using_get21" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -2619,7 +2619,7 @@ class EstabelecimentoApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get21(self, **kwargs):
+    def listar_using_get23(self, **kwargs):
         """
         Listar grupos econ\u00C3\u00B4micos
         Lista grupos econ\u00C3\u00B4micos cadastrados. 
@@ -2630,7 +2630,7 @@ class EstabelecimentoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get21(callback=callback_function)
+        >>> thread = api.listar_using_get23(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -2675,7 +2675,7 @@ class EstabelecimentoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get21" % key
+                    " to method listar_using_get23" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -2774,7 +2774,7 @@ class EstabelecimentoApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get23(self, **kwargs):
+    def listar_using_get25(self, **kwargs):
         """
         Lista as Maquinetas
         Este m\u00C3\u00A9todo permite que sejam listadas as maquinetas existentes na base de dados do Emissor.
@@ -2785,7 +2785,7 @@ class EstabelecimentoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get23(callback=callback_function)
+        >>> thread = api.listar_using_get25(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -2806,7 +2806,7 @@ class EstabelecimentoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get23" % key
+                    " to method listar_using_get25" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -2857,7 +2857,7 @@ class EstabelecimentoApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get24(self, **kwargs):
+    def listar_using_get26(self, **kwargs):
         """
         Lista os tipos de moedas do emissor 
         Este recurso permite que sejam listados os tipos de moedas existentes na base de dados do emissor.
@@ -2868,7 +2868,7 @@ class EstabelecimentoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get24(callback=callback_function)
+        >>> thread = api.listar_using_get26(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -2891,7 +2891,7 @@ class EstabelecimentoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get24" % key
+                    " to method listar_using_get26" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -2946,7 +2946,7 @@ class EstabelecimentoApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get25(self, **kwargs):
+    def listar_using_get27(self, **kwargs):
         """
         Lista as Regras Opera\u00C3\u00A7\u00C3\u00B5es
         Este m\u00C3\u00A9todo permite que sejam listados as Regras opera\u00C3\u00A7\u00C3\u00B5es existentes na base de dados do Emissor.
@@ -2957,7 +2957,7 @@ class EstabelecimentoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get25(callback=callback_function)
+        >>> thread = api.listar_using_get27(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -2980,7 +2980,7 @@ class EstabelecimentoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get25" % key
+                    " to method listar_using_get27" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -3035,7 +3035,7 @@ class EstabelecimentoApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get36(self, **kwargs):
+    def listar_using_get38(self, **kwargs):
         """
         Lista os Telefones Estabelecimentos
         Este m\u00C3\u00A9todo permite que sejam listados os telefones dos estabelecimentos existentes na base de dados do Emissor.
@@ -3046,7 +3046,7 @@ class EstabelecimentoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get36(callback=callback_function)
+        >>> thread = api.listar_using_get38(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -3067,7 +3067,7 @@ class EstabelecimentoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get36" % key
+                    " to method listar_using_get38" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -3118,7 +3118,7 @@ class EstabelecimentoApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get38(self, **kwargs):
+    def listar_using_get40(self, **kwargs):
         """
         Lista os Terminais cadastrados no Emissor
         Este m\u00C3\u00A9todo permite que sejam listados os terminais existentes na base de dados do Emissor.
@@ -3129,7 +3129,7 @@ class EstabelecimentoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get38(callback=callback_function)
+        >>> thread = api.listar_using_get40(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -3153,7 +3153,7 @@ class EstabelecimentoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get38" % key
+                    " to method listar_using_get40" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -3210,7 +3210,7 @@ class EstabelecimentoApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get49(self, **kwargs):
+    def listar_using_get51(self, **kwargs):
         """
         Lista os V\u00C3\u00ADnculos dos estabelecimento com os adquirentes
         Este m\u00C3\u00A9todo permite que sejam listados os V\u00C3\u00ADnculos dos estabelecimento com os adquirentes.
@@ -3221,7 +3221,7 @@ class EstabelecimentoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get49(callback=callback_function)
+        >>> thread = api.listar_using_get51(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -3244,7 +3244,7 @@ class EstabelecimentoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get49" % key
+                    " to method listar_using_get51" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -3299,7 +3299,7 @@ class EstabelecimentoApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get50(self, id, **kwargs):
+    def listar_using_get52(self, id, **kwargs):
         """
         Lista os v\u00C3\u00ADnculos cadastrados no Emissor
         Este m\u00C3\u00A9todo permite que sejam listados os v\u00C3\u00ADnculos opera\u00C3\u00A7\u00C3\u00B5es existentes na base de dados do Emissor.
@@ -3310,7 +3310,7 @@ class EstabelecimentoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get50(id, callback=callback_function)
+        >>> thread = api.listar_using_get52(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -3334,14 +3334,14 @@ class EstabelecimentoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get50" % key
+                    " to method listar_using_get52" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `listar_using_get50`")
+            raise ValueError("Missing the required parameter `id` when calling `listar_using_get52`")
 
         resource_path = '/api/estabelecimentos/{id}/operacoes'.replace('{format}', 'json')
         path_params = {}
@@ -3394,7 +3394,7 @@ class EstabelecimentoApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def salvar_using_post15(self, maquineta_persist, **kwargs):
+    def salvar_using_post16(self, maquineta_persist, **kwargs):
         """
         Realiza o cadastro de uma nova maquineta para um estabelecimento 
         Este m\u00C3\u00A9todo permite que seja cadastrada uma nova maquineta para um estabelecimento.
@@ -3405,7 +3405,7 @@ class EstabelecimentoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.salvar_using_post15(maquineta_persist, callback=callback_function)
+        >>> thread = api.salvar_using_post16(maquineta_persist, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -3423,14 +3423,14 @@ class EstabelecimentoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method salvar_using_post15" % key
+                    " to method salvar_using_post16" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'maquineta_persist' is set
         if ('maquineta_persist' not in params) or (params['maquineta_persist'] is None):
-            raise ValueError("Missing the required parameter `maquineta_persist` when calling `salvar_using_post15`")
+            raise ValueError("Missing the required parameter `maquineta_persist` when calling `salvar_using_post16`")
 
         resource_path = '/api/maquinetas'.replace('{format}', 'json')
         path_params = {}
@@ -3471,7 +3471,7 @@ class EstabelecimentoApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def salvar_using_post16(self, oprecao_credor_persist, **kwargs):
+    def salvar_using_post17(self, oprecao_credor_persist, **kwargs):
         """
         Realiza o cadastro de uma nova Regra Opera\u00C3\u00A7\u00C3\u00A3o
         Este m\u00C3\u00A9todo permite que seja cadastrada uma nova Regra Opera\u00C3\u00A7\u00C3\u00A3o.
@@ -3482,7 +3482,7 @@ class EstabelecimentoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.salvar_using_post16(oprecao_credor_persist, callback=callback_function)
+        >>> thread = api.salvar_using_post17(oprecao_credor_persist, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -3500,14 +3500,14 @@ class EstabelecimentoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method salvar_using_post16" % key
+                    " to method salvar_using_post17" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'oprecao_credor_persist' is set
         if ('oprecao_credor_persist' not in params) or (params['oprecao_credor_persist'] is None):
-            raise ValueError("Missing the required parameter `oprecao_credor_persist` when calling `salvar_using_post16`")
+            raise ValueError("Missing the required parameter `oprecao_credor_persist` when calling `salvar_using_post17`")
 
         resource_path = '/api/regras-operacoes-estabelecimentos'.replace('{format}', 'json')
         path_params = {}
@@ -3548,7 +3548,7 @@ class EstabelecimentoApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def salvar_using_post21(self, id_estabelecimento, ddd, telefone, **kwargs):
+    def salvar_using_post22(self, id_estabelecimento, ddd, telefone, **kwargs):
         """
         Realiza o cadastro de um novo telefone para um estabelecimento 
         Este m\u00C3\u00A9todo permite que seja cadastrado um novo telefone para um estabelecimento.
@@ -3559,7 +3559,7 @@ class EstabelecimentoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.salvar_using_post21(id_estabelecimento, ddd, telefone, callback=callback_function)
+        >>> thread = api.salvar_using_post22(id_estabelecimento, ddd, telefone, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -3580,20 +3580,20 @@ class EstabelecimentoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method salvar_using_post21" % key
+                    " to method salvar_using_post22" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id_estabelecimento' is set
         if ('id_estabelecimento' not in params) or (params['id_estabelecimento'] is None):
-            raise ValueError("Missing the required parameter `id_estabelecimento` when calling `salvar_using_post21`")
+            raise ValueError("Missing the required parameter `id_estabelecimento` when calling `salvar_using_post22`")
         # verify the required parameter 'ddd' is set
         if ('ddd' not in params) or (params['ddd'] is None):
-            raise ValueError("Missing the required parameter `ddd` when calling `salvar_using_post21`")
+            raise ValueError("Missing the required parameter `ddd` when calling `salvar_using_post22`")
         # verify the required parameter 'telefone' is set
         if ('telefone' not in params) or (params['telefone'] is None):
-            raise ValueError("Missing the required parameter `telefone` when calling `salvar_using_post21`")
+            raise ValueError("Missing the required parameter `telefone` when calling `salvar_using_post22`")
 
         resource_path = '/api/telefones-estabelecimentos'.replace('{format}', 'json')
         path_params = {}
@@ -3640,7 +3640,7 @@ class EstabelecimentoApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def salvar_using_post23(self, terminal_persist, **kwargs):
+    def salvar_using_post24(self, terminal_persist, **kwargs):
         """
         Realiza o cadastro de um novo Terminal
         Este m\u00C3\u00A9todo permite que seja cadastrado um novo Terminal.
@@ -3651,7 +3651,7 @@ class EstabelecimentoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.salvar_using_post23(terminal_persist, callback=callback_function)
+        >>> thread = api.salvar_using_post24(terminal_persist, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -3669,14 +3669,14 @@ class EstabelecimentoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method salvar_using_post23" % key
+                    " to method salvar_using_post24" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'terminal_persist' is set
         if ('terminal_persist' not in params) or (params['terminal_persist'] is None):
-            raise ValueError("Missing the required parameter `terminal_persist` when calling `salvar_using_post23`")
+            raise ValueError("Missing the required parameter `terminal_persist` when calling `salvar_using_post24`")
 
         resource_path = '/api/terminais'.replace('{format}', 'json')
         path_params = {}
@@ -3717,7 +3717,7 @@ class EstabelecimentoApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def salvar_using_post28(self, vinculo_estabelecimento_adquirente_persist, **kwargs):
+    def salvar_using_post29(self, vinculo_estabelecimento_adquirente_persist, **kwargs):
         """
         Realiza o cadastro de um novo VinculoEstabelecimentoAdquirente
         Este m\u00C3\u00A9todo permite que seja cadastrado um novo VinculoEstabelecimentoAdquirente.
@@ -3728,7 +3728,7 @@ class EstabelecimentoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.salvar_using_post28(vinculo_estabelecimento_adquirente_persist, callback=callback_function)
+        >>> thread = api.salvar_using_post29(vinculo_estabelecimento_adquirente_persist, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -3746,14 +3746,14 @@ class EstabelecimentoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method salvar_using_post28" % key
+                    " to method salvar_using_post29" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'vinculo_estabelecimento_adquirente_persist' is set
         if ('vinculo_estabelecimento_adquirente_persist' not in params) or (params['vinculo_estabelecimento_adquirente_persist'] is None):
-            raise ValueError("Missing the required parameter `vinculo_estabelecimento_adquirente_persist` when calling `salvar_using_post28`")
+            raise ValueError("Missing the required parameter `vinculo_estabelecimento_adquirente_persist` when calling `salvar_using_post29`")
 
         resource_path = '/api/adquirentes-estabelecimento'.replace('{format}', 'json')
         path_params = {}

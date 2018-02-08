@@ -377,7 +377,7 @@ class UsuarioApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get41(self, id, **kwargs):
+    def consultar_using_get42(self, id, **kwargs):
         """
         Apresenta os dados de um determinado Usu\u00C3\u00A1rio na base do PIER ou WS.
         Este m\u00C3\u00A9todo permite consultar as informa\u00C3\u00A7\u00C3\u00B5es de um determinado Usu\u00C3\u00A1rio a partir do seu c\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o (id).
@@ -388,7 +388,7 @@ class UsuarioApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get41(id, callback=callback_function)
+        >>> thread = api.consultar_using_get42(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -406,14 +406,14 @@ class UsuarioApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get41" % key
+                    " to method consultar_using_get42" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get41`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get42`")
 
         resource_path = '/api/usuarios/{id}'.replace('{format}', 'json')
         path_params = {}
@@ -531,7 +531,7 @@ class UsuarioApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get47(self, **kwargs):
+    def listar_using_get49(self, **kwargs):
         """
         Lista os Usu\u00C3\u00A1rios cadastrados na base do PIER ou WS.
         Este m\u00C3\u00A9todo permite que sejam listados os usu\u00C3\u00A1rios existentes na base do PIER.
@@ -542,7 +542,7 @@ class UsuarioApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get47(callback=callback_function)
+        >>> thread = api.listar_using_get49(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -566,7 +566,7 @@ class UsuarioApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get47" % key
+                    " to method listar_using_get49" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -700,7 +700,7 @@ class UsuarioApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def salvar_using_post27(self, persist, **kwargs):
+    def salvar_using_post28(self, persist, **kwargs):
         """
         Cadastra Usu\u00C3\u00A1rio na base.
         Esse recurso permite cadastrar usu\u00C3\u00A1rios.
@@ -711,7 +711,7 @@ class UsuarioApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.salvar_using_post27(persist, callback=callback_function)
+        >>> thread = api.salvar_using_post28(persist, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -729,14 +729,14 @@ class UsuarioApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method salvar_using_post27" % key
+                    " to method salvar_using_post28" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'persist' is set
         if ('persist' not in params) or (params['persist'] is None):
-            raise ValueError("Missing the required parameter `persist` when calling `salvar_using_post27`")
+            raise ValueError("Missing the required parameter `persist` when calling `salvar_using_post28`")
 
         resource_path = '/api/usuarios'.replace('{format}', 'json')
         path_params = {}

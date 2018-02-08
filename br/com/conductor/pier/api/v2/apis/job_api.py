@@ -294,7 +294,7 @@ class JobApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get22(self, **kwargs):
+    def listar_using_get24(self, **kwargs):
         """
         Listar Jobs
         Este recurso permite que sejam listados os jobs existentes na base do PIER.
@@ -305,7 +305,7 @@ class JobApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get22(callback=callback_function)
+        >>> thread = api.listar_using_get24(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -328,7 +328,7 @@ class JobApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get22" % key
+                    " to method listar_using_get24" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -383,7 +383,7 @@ class JobApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def salvar_using_post14(self, descricao, cron, groovy, **kwargs):
+    def salvar_using_post15(self, descricao, cron, groovy, **kwargs):
         """
         Cadastrar Job
         Esse recurso permite cadastrar jobs.
@@ -394,7 +394,7 @@ class JobApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.salvar_using_post14(descricao, cron, groovy, callback=callback_function)
+        >>> thread = api.salvar_using_post15(descricao, cron, groovy, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -414,20 +414,20 @@ class JobApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method salvar_using_post14" % key
+                    " to method salvar_using_post15" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'descricao' is set
         if ('descricao' not in params) or (params['descricao'] is None):
-            raise ValueError("Missing the required parameter `descricao` when calling `salvar_using_post14`")
+            raise ValueError("Missing the required parameter `descricao` when calling `salvar_using_post15`")
         # verify the required parameter 'cron' is set
         if ('cron' not in params) or (params['cron'] is None):
-            raise ValueError("Missing the required parameter `cron` when calling `salvar_using_post14`")
+            raise ValueError("Missing the required parameter `cron` when calling `salvar_using_post15`")
         # verify the required parameter 'groovy' is set
         if ('groovy' not in params) or (params['groovy'] is None):
-            raise ValueError("Missing the required parameter `groovy` when calling `salvar_using_post14`")
+            raise ValueError("Missing the required parameter `groovy` when calling `salvar_using_post15`")
 
         resource_path = '/api/jobs'.replace('{format}', 'json')
         path_params = {}

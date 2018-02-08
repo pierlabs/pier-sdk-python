@@ -940,7 +940,7 @@ class CartaoApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get7(self, id, **kwargs):
+    def consultar_using_get8(self, id, **kwargs):
         """
         Apresenta os dados de um determinado Cart\u00C3\u00A3o
         Este m\u00C3\u00A9todo permite consultar as informa\u00C3\u00A7\u00C3\u00B5es b\u00C3\u00A1sicas de um determinado Cart\u00C3\u00A3o a partir do seu c\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o (id).
@@ -951,7 +951,7 @@ class CartaoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get7(id, callback=callback_function)
+        >>> thread = api.consultar_using_get8(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -969,14 +969,14 @@ class CartaoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get7" % key
+                    " to method consultar_using_get8" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get7`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get8`")
 
         resource_path = '/api/cartoes/{id}'.replace('{format}', 'json')
         path_params = {}
@@ -1527,7 +1527,7 @@ class CartaoApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get8(self, **kwargs):
+    def listar_using_get10(self, **kwargs):
         """
         Lista os Cart\u00C3\u00B5es gerados pelo Emissor
         Este m\u00C3\u00A9todo permite que sejam listados os cart\u00C3\u00B5es existentes na base do emissor.
@@ -1538,7 +1538,7 @@ class CartaoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get8(callback=callback_function)
+        >>> thread = api.listar_using_get10(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -1576,7 +1576,7 @@ class CartaoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get8" % key
+                    " to method listar_using_get10" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -1734,6 +1734,89 @@ class CartaoApi(object):
                                             post_params=form_params,
                                             files=local_var_files,
                                             response_type='CartaoResponse',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
+    def validar_cvv_using_post(self, id, valida_cvv, **kwargs):
+        """
+        Validar CVV do cart\u00C3\u00A3o
+        Esse recurso permite a valida\u00C3\u00A7\u00C3\u00A3o do cvv de um cart\u00C3\u00A3o
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.validar_cvv_using_post(id, valida_cvv, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param int id: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do cart\u00C3\u00A3o (id). (required)
+        :param ValidaCVVRequest valida_cvv: validaCVV (required)
+        :return: object
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'valida_cvv']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method validar_cvv_using_post" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `validar_cvv_using_post`")
+        # verify the required parameter 'valida_cvv' is set
+        if ('valida_cvv' not in params) or (params['valida_cvv'] is None):
+            raise ValueError("Missing the required parameter `valida_cvv` when calling `validar_cvv_using_post`")
+
+        resource_path = '/api/cartoes/{id}/validar-cvv'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        if 'valida_cvv' in params:
+            body_params = params['valida_cvv']
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = []
+
+        response = self.api_client.call_api(resource_path, 'POST',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='object',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response

@@ -6,6 +6,7 @@ from .antecipacao_api import AntecipacaoApi
 from .aplicacao_mobile_api import AplicacaoMobileApi
 from .arquivo_api import ArquivoApi
 from .autorizacao_api import AutorizacaoApi
+from .aviso_viagem_api import AvisoViagemApi
 from .base_api import BaseApi
 from .boleto_api import BoletoApi
 from .cadastro_cliente_api import CadastroClienteApi

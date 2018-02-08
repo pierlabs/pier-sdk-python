@@ -211,7 +211,7 @@ class DocumentoApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get12(self, id, **kwargs):
+    def consultar_using_get13(self, id, **kwargs):
         """
         Consulta documentos
         Esse recurso permite consultar um documento espec\u00C3\u00ADfico a partir do seu c\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o (id).
@@ -222,7 +222,7 @@ class DocumentoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get12(id, callback=callback_function)
+        >>> thread = api.consultar_using_get13(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -240,14 +240,14 @@ class DocumentoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get12" % key
+                    " to method consultar_using_get13" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get12`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get13`")
 
         resource_path = '/api/documentos/{id}'.replace('{format}', 'json')
         path_params = {}
@@ -288,7 +288,7 @@ class DocumentoApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get13(self, id, **kwargs):
+    def consultar_using_get14(self, id, **kwargs):
         """
         Consultar templates dos documentos
         Esse recurso permite consultar templates dos documentos.
@@ -299,7 +299,7 @@ class DocumentoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get13(id, callback=callback_function)
+        >>> thread = api.consultar_using_get14(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -317,14 +317,14 @@ class DocumentoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get13" % key
+                    " to method consultar_using_get14" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get13`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get14`")
 
         resource_path = '/api/templates-documentos/{id}'.replace('{format}', 'json')
         path_params = {}
@@ -365,7 +365,7 @@ class DocumentoApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get37(self, id, **kwargs):
+    def consultar_using_get38(self, id, **kwargs):
         """
         Consultar tipo de template
         Esse recurso permite consultar um determinado tipo de template a partir do id recebido e do id do emissor.
@@ -376,7 +376,7 @@ class DocumentoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get37(id, callback=callback_function)
+        >>> thread = api.consultar_using_get38(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -394,14 +394,14 @@ class DocumentoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get37" % key
+                    " to method consultar_using_get38" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get37`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get38`")
 
         resource_path = '/api/tipos-templates/{id}'.replace('{format}', 'json')
         path_params = {}
@@ -519,7 +519,7 @@ class DocumentoApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get16(self, **kwargs):
+    def listar_using_get18(self, **kwargs):
         """
         Lista documentos
         Esse recurso permite listar documentos.
@@ -530,7 +530,7 @@ class DocumentoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get16(callback=callback_function)
+        >>> thread = api.listar_using_get18(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -553,7 +553,7 @@ class DocumentoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get16" % key
+                    " to method listar_using_get18" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -608,7 +608,7 @@ class DocumentoApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get17(self, **kwargs):
+    def listar_using_get19(self, **kwargs):
         """
         Lista os templates dos documentos
         Esse recurso permite listar os templates dos documentos.
@@ -619,7 +619,7 @@ class DocumentoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get17(callback=callback_function)
+        >>> thread = api.listar_using_get19(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -640,7 +640,7 @@ class DocumentoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get17" % key
+                    " to method listar_using_get19" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -691,7 +691,7 @@ class DocumentoApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get43(self, **kwargs):
+    def listar_using_get45(self, **kwargs):
         """
         Lista os tipos de templates
         Esse recurso permite listar os tipos de templates associados ao emissor.
@@ -702,7 +702,7 @@ class DocumentoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get43(callback=callback_function)
+        >>> thread = api.listar_using_get45(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -722,7 +722,7 @@ class DocumentoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get43" % key
+                    " to method listar_using_get45" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -773,8 +773,8 @@ class DocumentoApi(object):
 
     def salvar_using_post10(self, persist, **kwargs):
         """
-        Cadastra os templates dos documentos
-        Esse recurso permite cadastrar templates dos documentos.
+        Cadastra documentos
+        Esse recurso permite cadastrar documentos.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -786,8 +786,8 @@ class DocumentoApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param DocumentoTemplatePersist persist: persist (required)
-        :return: DocumentoTemplateResponse
+        :param DocumentoParametrosRequest persist: persist (required)
+        :return: DocumentoDetalhadoResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -808,6 +808,83 @@ class DocumentoApi(object):
         # verify the required parameter 'persist' is set
         if ('persist' not in params) or (params['persist'] is None):
             raise ValueError("Missing the required parameter `persist` when calling `salvar_using_post10`")
+
+        resource_path = '/api/documentos'.replace('{format}', 'json')
+        path_params = {}
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        if 'persist' in params:
+            body_params = params['persist']
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = []
+
+        response = self.api_client.call_api(resource_path, 'POST',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='DocumentoDetalhadoResponse',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
+    def salvar_using_post11(self, persist, **kwargs):
+        """
+        Cadastra os templates dos documentos
+        Esse recurso permite cadastrar templates dos documentos.
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.salvar_using_post11(persist, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param DocumentoTemplatePersist persist: persist (required)
+        :return: DocumentoTemplateResponse
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['persist']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method salvar_using_post11" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        # verify the required parameter 'persist' is set
+        if ('persist' not in params) or (params['persist'] is None):
+            raise ValueError("Missing the required parameter `persist` when calling `salvar_using_post11`")
 
         resource_path = '/api/templates-documentos'.replace('{format}', 'json')
         path_params = {}
@@ -848,7 +925,7 @@ class DocumentoApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def salvar_using_post25(self, persist, **kwargs):
+    def salvar_using_post26(self, persist, **kwargs):
         """
         Cadastra os tipos de templates
         Esse recurso permite cadastrar tipos de templates.
@@ -859,7 +936,7 @@ class DocumentoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.salvar_using_post25(persist, callback=callback_function)
+        >>> thread = api.salvar_using_post26(persist, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -877,14 +954,14 @@ class DocumentoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method salvar_using_post25" % key
+                    " to method salvar_using_post26" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'persist' is set
         if ('persist' not in params) or (params['persist'] is None):
-            raise ValueError("Missing the required parameter `persist` when calling `salvar_using_post25`")
+            raise ValueError("Missing the required parameter `persist` when calling `salvar_using_post26`")
 
         resource_path = '/api/tipos-templates'.replace('{format}', 'json')
         path_params = {}
@@ -921,83 +998,6 @@ class DocumentoApi(object):
                                             post_params=form_params,
                                             files=local_var_files,
                                             response_type='TipoTemplateResponse',
-                                            auth_settings=auth_settings,
-                                            callback=params.get('callback'))
-        return response
-
-    def salvar_using_post9(self, persist, **kwargs):
-        """
-        Cadastra documentos
-        Esse recurso permite cadastrar documentos.
-
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please define a `callback` function
-        to be invoked when receiving the response.
-        >>> def callback_function(response):
-        >>>     pprint(response)
-        >>>
-        >>> thread = api.salvar_using_post9(persist, callback=callback_function)
-
-        :param callback function: The callback function
-            for asynchronous request. (optional)
-        :param DocumentoParametrosRequest persist: persist (required)
-        :return: DocumentoDetalhadoResponse
-                 If the method is called asynchronously,
-                 returns the request thread.
-        """
-
-        all_params = ['persist']
-        all_params.append('callback')
-
-        params = locals()
-        for key, val in iteritems(params['kwargs']):
-            if key not in all_params:
-                raise TypeError(
-                    "Got an unexpected keyword argument '%s'"
-                    " to method salvar_using_post9" % key
-                )
-            params[key] = val
-        del params['kwargs']
-
-        # verify the required parameter 'persist' is set
-        if ('persist' not in params) or (params['persist'] is None):
-            raise ValueError("Missing the required parameter `persist` when calling `salvar_using_post9`")
-
-        resource_path = '/api/documentos'.replace('{format}', 'json')
-        path_params = {}
-
-        query_params = {}
-
-        header_params = {}
-
-        form_params = []
-        local_var_files = {}
-
-        body_params = None
-        if 'persist' in params:
-            body_params = params['persist']
-
-        # HTTP header `Accept`
-        header_params['Accept'] = self.api_client.\
-            select_header_accept(['application/json'])
-        if not header_params['Accept']:
-            del header_params['Accept']
-
-        # HTTP header `Content-Type`
-        header_params['Content-Type'] = self.api_client.\
-            select_header_content_type(['application/json'])
-
-        # Authentication setting
-        auth_settings = []
-
-        response = self.api_client.call_api(resource_path, 'POST',
-                                            path_params,
-                                            query_params,
-                                            header_params,
-                                            body=body_params,
-                                            post_params=form_params,
-                                            files=local_var_files,
-                                            response_type='DocumentoDetalhadoResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response

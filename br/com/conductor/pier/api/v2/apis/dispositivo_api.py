@@ -199,7 +199,7 @@ class DispositivoApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get15(self, **kwargs):
+    def listar_using_get17(self, **kwargs):
         """
         Lista os dispositivos cadastrados
         Este m\u00C3\u00A9todo permite que sejam listados os dispositivos existentes na base do PIER.
@@ -210,7 +210,7 @@ class DispositivoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get15(callback=callback_function)
+        >>> thread = api.listar_using_get17(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -235,7 +235,7 @@ class DispositivoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get15" % key
+                    " to method listar_using_get17" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -294,7 +294,7 @@ class DispositivoApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def salvar_using_post8(self, persist, **kwargs):
+    def salvar_using_post9(self, persist, **kwargs):
         """
         Cadastra Dispositivo
         Esse recurso permite cadastrar dispositivos.
@@ -305,7 +305,7 @@ class DispositivoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.salvar_using_post8(persist, callback=callback_function)
+        >>> thread = api.salvar_using_post9(persist, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -323,14 +323,14 @@ class DispositivoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method salvar_using_post8" % key
+                    " to method salvar_using_post9" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'persist' is set
         if ('persist' not in params) or (params['persist'] is None):
-            raise ValueError("Missing the required parameter `persist` when calling `salvar_using_post8`")
+            raise ValueError("Missing the required parameter `persist` when calling `salvar_using_post9`")
 
         resource_path = '/api/dispositivos'.replace('{format}', 'json')
         path_params = {}

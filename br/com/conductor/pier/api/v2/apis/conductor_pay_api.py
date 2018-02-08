@@ -306,7 +306,7 @@ class ConductorPayApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get6(self, device_id, id, **kwargs):
+    def consultar_using_get7(self, device_id, id, **kwargs):
         """
         Apresenta os dados de um determinado cart\u00C3\u00A3o
         Este m\u00C3\u00A9todo permite consultar as informa\u00C3\u00A7\u00C3\u00B5es de um determinado cart\u00C3\u00A3o a partir do seu c\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o (id).
@@ -317,7 +317,7 @@ class ConductorPayApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get6(device_id, id, callback=callback_function)
+        >>> thread = api.consultar_using_get7(device_id, id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -336,17 +336,17 @@ class ConductorPayApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get6" % key
+                    " to method consultar_using_get7" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'device_id' is set
         if ('device_id' not in params) or (params['device_id'] is None):
-            raise ValueError("Missing the required parameter `device_id` when calling `consultar_using_get6`")
+            raise ValueError("Missing the required parameter `device_id` when calling `consultar_using_get7`")
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get6`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get7`")
 
         resource_path = '/api/cartoes-tokenizados/{id}'.replace('{format}', 'json')
         path_params = {}
@@ -744,7 +744,7 @@ class ConductorPayApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get7(self, **kwargs):
+    def listar_using_get9(self, **kwargs):
         """
         Lista os cart\u00C3\u00B5es cadastrados
         Este m\u00C3\u00A9todo permite listar os cart\u00C3\u00B5es cadastrado em um dispositivo.
@@ -755,7 +755,7 @@ class ConductorPayApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get7(callback=callback_function)
+        >>> thread = api.listar_using_get9(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -778,7 +778,7 @@ class ConductorPayApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get7" % key
+                    " to method listar_using_get9" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -833,7 +833,7 @@ class ConductorPayApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def salvar_using_post5(self, device_id, persist, **kwargs):
+    def salvar_using_post6(self, device_id, persist, **kwargs):
         """
         Cria\u00C3\u00A7\u00C3\u00A3o de cart\u00C3\u00A3o
         Este met\u00C3\u00B3do permite a tokeniza\u00C3\u00A7\u00C3\u00A3o de um cart\u00C3\u00A3o a partir dos seus dados impressos.
@@ -844,7 +844,7 @@ class ConductorPayApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.salvar_using_post5(device_id, persist, callback=callback_function)
+        >>> thread = api.salvar_using_post6(device_id, persist, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -863,17 +863,17 @@ class ConductorPayApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method salvar_using_post5" % key
+                    " to method salvar_using_post6" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'device_id' is set
         if ('device_id' not in params) or (params['device_id'] is None):
-            raise ValueError("Missing the required parameter `device_id` when calling `salvar_using_post5`")
+            raise ValueError("Missing the required parameter `device_id` when calling `salvar_using_post6`")
         # verify the required parameter 'persist' is set
         if ('persist' not in params) or (params['persist'] is None):
-            raise ValueError("Missing the required parameter `persist` when calling `salvar_using_post5`")
+            raise ValueError("Missing the required parameter `persist` when calling `salvar_using_post6`")
 
         resource_path = '/api/cartoes-tokenizados'.replace('{format}', 'json')
         path_params = {}

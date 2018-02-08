@@ -205,7 +205,7 @@ class TransferenciaBancariaApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get10(self, id, **kwargs):
+    def consultar_using_get11(self, id, **kwargs):
         """
         Consulta conta banc\u00C3\u00A1ria portador
         Esse recurso permite consultar uma conta banc\u00C3\u00A1ria do portador a partir do seu c\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o (id).
@@ -216,7 +216,7 @@ class TransferenciaBancariaApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get10(id, callback=callback_function)
+        >>> thread = api.consultar_using_get11(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -234,14 +234,14 @@ class TransferenciaBancariaApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get10" % key
+                    " to method consultar_using_get11" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get10`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get11`")
 
         resource_path = '/api/contas-bancarias-portador/{id}'.replace('{format}', 'json')
         path_params = {}
@@ -282,7 +282,7 @@ class TransferenciaBancariaApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get39(self, id, id_transferencia, **kwargs):
+    def consultar_using_get40(self, id, id_transferencia, **kwargs):
         """
         Consultar uma transfer\u00C3\u00AAncia banc\u00C3\u00A1ria para um banco
         Este recurso permite consultar os detalhes de uma determinada transfer\u00C3\u00AAncia de cr\u00C3\u00A9dito realizada para uma conta banc\u00C3\u00A1ria. De modo geral, esta opera\u00C3\u00A7\u00C3\u00A3o poder\u00C3\u00A1 ser utilizada para uma consulta simples destes detalhes ou para realizar a montagem de um comprovante de 2\u00C2\u00AA via de transfer\u00C3\u00AAncia entre contas.
@@ -293,7 +293,7 @@ class TransferenciaBancariaApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get39(id, id_transferencia, callback=callback_function)
+        >>> thread = api.consultar_using_get40(id, id_transferencia, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -313,17 +313,17 @@ class TransferenciaBancariaApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get39" % key
+                    " to method consultar_using_get40" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get39`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get40`")
         # verify the required parameter 'id_transferencia' is set
         if ('id_transferencia' not in params) or (params['id_transferencia'] is None):
-            raise ValueError("Missing the required parameter `id_transferencia` when calling `consultar_using_get39`")
+            raise ValueError("Missing the required parameter `id_transferencia` when calling `consultar_using_get40`")
 
         resource_path = '/api/contas/{id}/transferencias-creditos-contas-bancarias/{id_transferencia}'.replace('{format}', 'json')
         path_params = {}
@@ -457,7 +457,7 @@ class TransferenciaBancariaApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get12(self, **kwargs):
+    def listar_using_get14(self, **kwargs):
         """
         Lista contas banc\u00C3\u00A1rias portador
         Esse recurso permite listar contas banc\u00C3\u00A1rias do portador.
@@ -468,7 +468,7 @@ class TransferenciaBancariaApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get12(callback=callback_function)
+        >>> thread = api.listar_using_get14(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -496,7 +496,7 @@ class TransferenciaBancariaApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get12" % key
+                    " to method listar_using_get14" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -561,7 +561,7 @@ class TransferenciaBancariaApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get45(self, id, **kwargs):
+    def listar_using_get47(self, id, **kwargs):
         """
         Listar as transfer\u00C3\u00AAncias banc\u00C3\u00A1rias realizadas
         Este recurso tem como objetivo permitir que o portador de um Cart\u00C3\u00A3o possa consultar uma lista das Transfer\u00C3\u00AAncias Banc\u00C3\u00A1rias para os Favorecidos cadastrados.
@@ -572,7 +572,7 @@ class TransferenciaBancariaApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get45(id, callback=callback_function)
+        >>> thread = api.listar_using_get47(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -594,14 +594,14 @@ class TransferenciaBancariaApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get45" % key
+                    " to method listar_using_get47" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `listar_using_get45`")
+            raise ValueError("Missing the required parameter `id` when calling `listar_using_get47`")
 
         resource_path = '/api/contas/{id}/transferencias-creditos-contas-bancarias'.replace('{format}', 'json')
         path_params = {}
@@ -650,7 +650,7 @@ class TransferenciaBancariaApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def salvar_using_post7(self, persist, **kwargs):
+    def salvar_using_post8(self, persist, **kwargs):
         """
         Cadastra uma conta banc\u00C3\u00A1ria do portador
         Esse recurso permite cadastrar contas banc\u00C3\u00A1rias do portador.
@@ -661,7 +661,7 @@ class TransferenciaBancariaApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.salvar_using_post7(persist, callback=callback_function)
+        >>> thread = api.salvar_using_post8(persist, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -679,14 +679,14 @@ class TransferenciaBancariaApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method salvar_using_post7" % key
+                    " to method salvar_using_post8" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'persist' is set
         if ('persist' not in params) or (params['persist'] is None):
-            raise ValueError("Missing the required parameter `persist` when calling `salvar_using_post7`")
+            raise ValueError("Missing the required parameter `persist` when calling `salvar_using_post8`")
 
         resource_path = '/api/contas-bancarias-portador'.replace('{format}', 'json')
         path_params = {}

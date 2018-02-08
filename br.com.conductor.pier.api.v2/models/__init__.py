@@ -16,8 +16,10 @@ from .anuidade_response import AnuidadeResponse
 from .aplicacao_mobile_persist import AplicacaoMobilePersist
 from .aplicacao_mobile_response import AplicacaoMobileResponse
 from .aplicacao_mobile_update import AplicacaoMobileUpdate
+from .arquivo_aud_response import ArquivoAUDResponse
 from .arquivo_detalhe_response import ArquivoDetalheResponse
 from .arquivo_detalhes_persist import ArquivoDetalhesPersist
+from .arquivo_parametro_aud_response import ArquivoParametroAUDResponse
 from .arquivo_parametro_response import ArquivoParametroResponse
 from .arquivo_persist import ArquivoPersist
 from .arquivo_response import ArquivoResponse
@@ -25,6 +27,7 @@ from .atendimento_cliente_response import AtendimentoClienteResponse
 from .atribuir_assinatura_cliente_persist import AtribuirAssinaturaClientePersist
 from .auth_token import AuthToken
 from .autorizacao_on_us_request import AutorizacaoOnUsRequest
+from .aviso_viagem_response import AvisoViagemResponse
 from .banco_response import BancoResponse
 from .base_response import BaseResponse
 from .beneficio_pagamento_atraso_response import BeneficioPagamentoAtrasoResponse
@@ -150,8 +153,10 @@ from .origem_comercial_update import OrigemComercialUpdate
 from .page_ajuste_response import PageAjusteResponse
 from .page_anuidade_response import PageAnuidadeResponse
 from .page_aplicacao_mobile_response import PageAplicacaoMobileResponse
+from .page_arquivo_aud_response import PageArquivoAUDResponse
 from .page_arquivo_response import PageArquivoResponse
 from .page_atendimento_cliente_response import PageAtendimentoClienteResponse
+from .page_aviso_viagem_response import PageAvisoViagemResponse
 from .page_banco_response import PageBancoResponse
 from .page_base_response import PageBaseResponse
 from .page_campanha_response import PageCampanhaResponse
@@ -195,6 +200,7 @@ from .page_operadora_response import PageOperadoraResponse
 from .page_oportunidade_aud_response import PageOportunidadeAUDResponse
 from .page_oportunidade_response import PageOportunidadeResponse
 from .page_origem_comercial_response import PageOrigemComercialResponse
+from .page_pais_response import PagePaisResponse
 from .page_pessoa_detalhe_response import PagePessoaDetalheResponse
 from .page_pessoa_response import PagePessoaResponse
 from .page_plano_parcelamento_response import PagePlanoParcelamentoResponse
@@ -237,6 +243,7 @@ from .page_usuario_response import PageUsuarioResponse
 from .page_vinculo_estabelecimento_adquirente_response import PageVinculoEstabelecimentoAdquirenteResponse
 from .page_vinculo_operacao_response import PageVinculoOperacaoResponse
 from .page_web_hook_response import PageWebHookResponse
+from .pais_response import PaisResponse
 from .parametro_produto_response import ParametroProdutoResponse
 from .parcelamento_transferencia_response import ParcelamentoTransferenciaResponse
 from .pessoa_detalhe_response import PessoaDetalheResponse
@@ -327,6 +334,7 @@ from .transferencia_response import TransferenciaResponse
 from .usuario_persist import UsuarioPersist
 from .usuario_response import UsuarioResponse
 from .usuario_update import UsuarioUpdate
+from .valida_cvv_request import ValidaCVVRequest
 from .valida_cartao_response import ValidaCartaoResponse
 from .valida_senha_cartao_response import ValidaSenhaCartaoResponse
 from .vinculo_estabelecimento_adquirente_persist import VinculoEstabelecimentoAdquirentePersist

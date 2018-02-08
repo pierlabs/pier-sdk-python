@@ -63,7 +63,7 @@ class RiscoFraudeDetalhadoResponse(object):
             'cpf': 'str',
             'cnpj': 'str',
             'email': 'str',
-            'tefefones': 'list[TelefoneResponse]'
+            'telefones': 'list[TelefoneResponse]'
         }
 
         self.attribute_map = {
@@ -93,7 +93,7 @@ class RiscoFraudeDetalhadoResponse(object):
             'cpf': 'cpf',
             'cnpj': 'cnpj',
             'email': 'email',
-            'tefefones': 'tefefones'
+            'telefones': 'telefones'
         }
 
         self._id = None
@@ -122,7 +122,7 @@ class RiscoFraudeDetalhadoResponse(object):
         self._cpf = None
         self._cnpj = None
         self._email = None
-        self._tefefones = None
+        self._telefones = None
 
     @property
     def id(self):
@@ -697,26 +697,26 @@ class RiscoFraudeDetalhadoResponse(object):
         self._email = email
 
     @property
-    def tefefones(self):
+    def telefones(self):
         """
-        Gets the tefefones of this RiscoFraudeDetalhadoResponse.
+        Gets the telefones of this RiscoFraudeDetalhadoResponse.
         Lista de telefones associados ao portador do Cart\u00C3\u00A3o
 
-        :return: The tefefones of this RiscoFraudeDetalhadoResponse.
+        :return: The telefones of this RiscoFraudeDetalhadoResponse.
         :rtype: list[TelefoneResponse]
         """
-        return self._tefefones
+        return self._telefones
 
-    @tefefones.setter
-    def tefefones(self, tefefones):
+    @telefones.setter
+    def telefones(self, telefones):
         """
-        Sets the tefefones of this RiscoFraudeDetalhadoResponse.
+        Sets the telefones of this RiscoFraudeDetalhadoResponse.
         Lista de telefones associados ao portador do Cart\u00C3\u00A3o
 
-        :param tefefones: The tefefones of this RiscoFraudeDetalhadoResponse.
+        :param telefones: The telefones of this RiscoFraudeDetalhadoResponse.
         :type: list[TelefoneResponse]
         """
-        self._tefefones = tefefones
+        self._telefones = telefones
 
     def to_dict(self):
         """

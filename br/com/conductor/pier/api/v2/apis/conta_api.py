@@ -312,7 +312,7 @@ class ContaApi(object):
     def alterar_vencimento_using_put(self, id, novo_dia_vencimento, **kwargs):
         """
         Realiza a altera\u00C3\u00A7\u00C3\u00A3o do dia de vencimento das faturas da conta
-        Esse recurso permite alterar o vencimento de uma conta especifica.
+        Esse recurso permite alterar o vencimento para no m\u00C3\u00A1ximo at\u00C3\u00A9 30 dias ap\u00C3\u00B3s data atual de uma conta especifica no PIER, respeitando o par\u00C3\u00A2metro de intervalor entre as modifica\u00C3\u00A7\u00C3\u00B5es do vencimento informado pelo emissor.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -1071,7 +1071,7 @@ class ContaApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get11(self, id, **kwargs):
+    def consultar_using_get12(self, id, **kwargs):
         """
         Apresenta dados de uma determinada conta
         Este m\u00C3\u00A9todo permite consultar dados de uma determinada conta a partir de seu codigo de identifica\u00C3\u00A7\u00C3\u00A3o (id).
@@ -1082,7 +1082,7 @@ class ContaApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get11(id, callback=callback_function)
+        >>> thread = api.consultar_using_get12(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -1100,14 +1100,14 @@ class ContaApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get11" % key
+                    " to method consultar_using_get12" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get11`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get12`")
 
         resource_path = '/api/contas/{id}'.replace('{format}', 'json')
         path_params = {}
@@ -1148,7 +1148,7 @@ class ContaApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get40(self, id, id_transferencia, **kwargs):
+    def consultar_using_get41(self, id, id_transferencia, **kwargs):
         """
         Consulta os detalhes de uma determinada transfer\u00C3\u00AAncia
         Este m\u00C3\u00A9todo permite consultar os detalhes de uma determinada transfer\u00C3\u00AAncia de cr\u00C3\u00A9dito realizada entre contas.
@@ -1159,7 +1159,7 @@ class ContaApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get40(id, id_transferencia, callback=callback_function)
+        >>> thread = api.consultar_using_get41(id, id_transferencia, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -1178,17 +1178,17 @@ class ContaApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get40" % key
+                    " to method consultar_using_get41" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get40`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get41`")
         # verify the required parameter 'id_transferencia' is set
         if ('id_transferencia' not in params) or (params['id_transferencia'] is None):
-            raise ValueError("Missing the required parameter `id_transferencia` when calling `consultar_using_get40`")
+            raise ValueError("Missing the required parameter `id_transferencia` when calling `consultar_using_get41`")
 
         resource_path = '/api/contas/{id}/transferencias-creditos-cartoes/{id_transferencia}'.replace('{format}', 'json')
         path_params = {}
@@ -2171,7 +2171,7 @@ class ContaApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get14(self, **kwargs):
+    def listar_using_get16(self, **kwargs):
         """
         Lista contas existentes na base de dados do Emissor
         Este recurso permite listar contas existentes na base de dados do Emissor.
@@ -2182,7 +2182,7 @@ class ContaApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get14(callback=callback_function)
+        >>> thread = api.listar_using_get16(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -2211,7 +2211,7 @@ class ContaApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get14" % key
+                    " to method listar_using_get16" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -2278,7 +2278,7 @@ class ContaApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get46(self, id, **kwargs):
+    def listar_using_get48(self, id, **kwargs):
         """
         Lista as transfer\u00C3\u00AAncias realizadas pela conta
         Este m\u00C3\u00A9todo permite que sejam listadas as transfer\u00C3\u00AAncias realizadas pela conta existentes na base do emissor.
@@ -2289,7 +2289,7 @@ class ContaApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get46(id, callback=callback_function)
+        >>> thread = api.listar_using_get48(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -2315,14 +2315,14 @@ class ContaApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get46" % key
+                    " to method listar_using_get48" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `listar_using_get46`")
+            raise ValueError("Missing the required parameter `id` when calling `listar_using_get48`")
 
         resource_path = '/api/contas/{id}/transferencias-creditos-cartoes'.replace('{format}', 'json')
         path_params = {}
