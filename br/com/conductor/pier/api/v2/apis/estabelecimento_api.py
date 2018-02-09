@@ -2478,6 +2478,7 @@ class EstabelecimentoApi(object):
         :param int id_pais: Identificador de Pa\u00C3\u00ADs.
         :param int mcc: C\u00C3\u00B3digo de Categoria de Mercado
         :param int id_tipo_estabelecimento: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do Estabelecimento.
+        :param int correspondencia: Indicador para qual endere\u00C3\u00A7o as correspond\u00C3\u00AAncias ser\u00C3\u00A3o enviadas, onde 1 \u00C3\u00A9 ORIGEM e 2 ENDERE\u00C3\u0087O DE CORRESPOND\u00C3\u008ANCIA.
         :param int id_moeda: C\u00C3\u00B3digo identificador da moeda.
         :param str tipo_pagamento: Tipo do regime de pagamento do estabelecimento.
         :param str numero_estabelecimento: N\u00C3\u00BAmero de identifica\u00C3\u00A7\u00C3\u00A3o do Estabelecimento na Conductor.
@@ -2494,7 +2495,7 @@ class EstabelecimentoApi(object):
                  returns the request thread.
         """
 
-        all_params = ['sort', 'page', 'limit', 'id', 'id_credor', 'numero_receita_federal', 'nome', 'descricao', 'nome_fantasia', 'cep', 'nome_logradouro', 'numero_endereco', 'complemento', 'bairro', 'cidade', 'uf', 'pais', 'data_cadastramento', 'contato', 'email', 'flag_arquivo_secr_fazenda', 'flag_cartao_digitado', 'inativo', 'id_pais', 'mcc', 'id_tipo_estabelecimento', 'id_moeda', 'tipo_pagamento', 'numero_estabelecimento', 'cep2', 'nome_logradouro2', 'numero_endereco2', 'complemento2', 'bairro2', 'cidade2', 'uf2', 'flag_matriz']
+        all_params = ['sort', 'page', 'limit', 'id', 'id_credor', 'numero_receita_federal', 'nome', 'descricao', 'nome_fantasia', 'cep', 'nome_logradouro', 'numero_endereco', 'complemento', 'bairro', 'cidade', 'uf', 'pais', 'data_cadastramento', 'contato', 'email', 'flag_arquivo_secr_fazenda', 'flag_cartao_digitado', 'inativo', 'id_pais', 'mcc', 'id_tipo_estabelecimento', 'correspondencia', 'id_moeda', 'tipo_pagamento', 'numero_estabelecimento', 'cep2', 'nome_logradouro2', 'numero_endereco2', 'complemento2', 'bairro2', 'cidade2', 'uf2', 'flag_matriz']
         all_params.append('callback')
 
         params = locals()
@@ -2564,6 +2565,8 @@ class EstabelecimentoApi(object):
             query_params['mcc'] = params['mcc']
         if 'id_tipo_estabelecimento' in params:
             query_params['idTipoEstabelecimento'] = params['id_tipo_estabelecimento']
+        if 'correspondencia' in params:
+            query_params['correspondencia'] = params['correspondencia']
         if 'id_moeda' in params:
             query_params['idMoeda'] = params['id_moeda']
         if 'tipo_pagamento' in params:

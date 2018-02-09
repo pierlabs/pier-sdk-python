@@ -45,7 +45,7 @@ class TransferenciaCreditoContaBancariaPersist(object):
             'numero_meses_carencia': 'int',
             'data_hora_terminal': 'str',
             'terminal_requisitante': 'str',
-            'numero_estabelecimento': 'int'
+            'numero_estabelecimento': 'str'
         }
 
         self.attribute_map = {
@@ -253,7 +253,7 @@ class TransferenciaCreditoContaBancariaPersist(object):
         Representa a identifica\u00C3\u00A7\u00C3\u00A3o do n\u00C3\u00BAmero do estabelecimento.
 
         :return: The numero_estabelecimento of this TransferenciaCreditoContaBancariaPersist.
-        :rtype: int
+        :rtype: str
         """
         return self._numero_estabelecimento
 
@@ -264,7 +264,7 @@ class TransferenciaCreditoContaBancariaPersist(object):
         Representa a identifica\u00C3\u00A7\u00C3\u00A3o do n\u00C3\u00BAmero do estabelecimento.
 
         :param numero_estabelecimento: The numero_estabelecimento of this TransferenciaCreditoContaBancariaPersist.
-        :type: int
+        :type: str
         """
         self._numero_estabelecimento = numero_estabelecimento
 

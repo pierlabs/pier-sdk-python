@@ -66,7 +66,7 @@ class EstabelecimentoUpdate(object):
             'associado_spc_brasil': 'int',
             'mcc': 'int',
             'id_tipo_estabelecimento': 'int',
-            'tipo_correspondencia': 'str',
+            'correspondencia': 'int',
             'cargo_contato': 'str',
             'tipo_pagamento': 'str',
             'consulta': 'ConsultaCadastroEstabelecimentoDTO',
@@ -105,7 +105,7 @@ class EstabelecimentoUpdate(object):
             'associado_spc_brasil': 'associadoSPCBrasil',
             'mcc': 'mcc',
             'id_tipo_estabelecimento': 'idTipoEstabelecimento',
-            'tipo_correspondencia': 'tipoCorrespondencia',
+            'correspondencia': 'correspondencia',
             'cargo_contato': 'cargoContato',
             'tipo_pagamento': 'tipoPagamento',
             'consulta': 'consulta',
@@ -143,7 +143,7 @@ class EstabelecimentoUpdate(object):
         self._associado_spc_brasil = None
         self._mcc = None
         self._id_tipo_estabelecimento = None
-        self._tipo_correspondencia = None
+        self._correspondencia = None
         self._cargo_contato = None
         self._tipo_pagamento = None
         self._consulta = None
@@ -790,32 +790,26 @@ class EstabelecimentoUpdate(object):
         self._id_tipo_estabelecimento = id_tipo_estabelecimento
 
     @property
-    def tipo_correspondencia(self):
+    def correspondencia(self):
         """
-        Gets the tipo_correspondencia of this EstabelecimentoUpdate.
-        Tipo da Correspond\u00C3\u00AAncia (ORIGEM, CORRESPONDENCIA).
+        Gets the correspondencia of this EstabelecimentoUpdate.
+        Indicador para qual endere\u00C3\u00A7o as correspond\u00C3\u00AAncias ser\u00C3\u00A3o enviadas, onde 1 \u00C3\u00A9 ORIGEM e 2 ENDERE\u00C3\u0087O DE CORRESPOND\u00C3\u008ANCIA.
 
-        :return: The tipo_correspondencia of this EstabelecimentoUpdate.
-        :rtype: str
+        :return: The correspondencia of this EstabelecimentoUpdate.
+        :rtype: int
         """
-        return self._tipo_correspondencia
+        return self._correspondencia
 
-    @tipo_correspondencia.setter
-    def tipo_correspondencia(self, tipo_correspondencia):
+    @correspondencia.setter
+    def correspondencia(self, correspondencia):
         """
-        Sets the tipo_correspondencia of this EstabelecimentoUpdate.
-        Tipo da Correspond\u00C3\u00AAncia (ORIGEM, CORRESPONDENCIA).
+        Sets the correspondencia of this EstabelecimentoUpdate.
+        Indicador para qual endere\u00C3\u00A7o as correspond\u00C3\u00AAncias ser\u00C3\u00A3o enviadas, onde 1 \u00C3\u00A9 ORIGEM e 2 ENDERE\u00C3\u0087O DE CORRESPOND\u00C3\u008ANCIA.
 
-        :param tipo_correspondencia: The tipo_correspondencia of this EstabelecimentoUpdate.
-        :type: str
+        :param correspondencia: The correspondencia of this EstabelecimentoUpdate.
+        :type: int
         """
-        allowed_values = ["ORIGEM", "CORRESPONDENCIA"]
-        if tipo_correspondencia not in allowed_values:
-            raise ValueError(
-                "Invalid value for `tipo_correspondencia`, must be one of {0}"
-                .format(allowed_values)
-            )
-        self._tipo_correspondencia = tipo_correspondencia
+        self._correspondencia = correspondencia
 
     @property
     def cargo_contato(self):

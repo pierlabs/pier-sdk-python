@@ -70,7 +70,7 @@ class EstabelecimentoResponse(object):
             'associado_spc_brasil': 'int',
             'mcc': 'int',
             'id_tipo_estabelecimento': 'int',
-            'tipo_correspondencia': 'str',
+            'correspondencia': 'int',
             'cargo_contato': 'str',
             'tipo_pagamento': 'str',
             'consulta': 'ConsultaCadastroEstabelecimentoDTO',
@@ -115,7 +115,7 @@ class EstabelecimentoResponse(object):
             'associado_spc_brasil': 'associadoSPCBrasil',
             'mcc': 'mcc',
             'id_tipo_estabelecimento': 'idTipoEstabelecimento',
-            'tipo_correspondencia': 'tipoCorrespondencia',
+            'correspondencia': 'correspondencia',
             'cargo_contato': 'cargoContato',
             'tipo_pagamento': 'tipoPagamento',
             'consulta': 'consulta',
@@ -159,7 +159,7 @@ class EstabelecimentoResponse(object):
         self._associado_spc_brasil = None
         self._mcc = None
         self._id_tipo_estabelecimento = None
-        self._tipo_correspondencia = None
+        self._correspondencia = None
         self._cargo_contato = None
         self._tipo_pagamento = None
         self._consulta = None
@@ -896,32 +896,26 @@ class EstabelecimentoResponse(object):
         self._id_tipo_estabelecimento = id_tipo_estabelecimento
 
     @property
-    def tipo_correspondencia(self):
+    def correspondencia(self):
         """
-        Gets the tipo_correspondencia of this EstabelecimentoResponse.
+        Gets the correspondencia of this EstabelecimentoResponse.
         Tipo da Correspond\u00C3\u00AAncia (ORIGEM, CORRESPONDENCIA).
 
-        :return: The tipo_correspondencia of this EstabelecimentoResponse.
-        :rtype: str
+        :return: The correspondencia of this EstabelecimentoResponse.
+        :rtype: int
         """
-        return self._tipo_correspondencia
+        return self._correspondencia
 
-    @tipo_correspondencia.setter
-    def tipo_correspondencia(self, tipo_correspondencia):
+    @correspondencia.setter
+    def correspondencia(self, correspondencia):
         """
-        Sets the tipo_correspondencia of this EstabelecimentoResponse.
+        Sets the correspondencia of this EstabelecimentoResponse.
         Tipo da Correspond\u00C3\u00AAncia (ORIGEM, CORRESPONDENCIA).
 
-        :param tipo_correspondencia: The tipo_correspondencia of this EstabelecimentoResponse.
-        :type: str
+        :param correspondencia: The correspondencia of this EstabelecimentoResponse.
+        :type: int
         """
-        allowed_values = ["ORIGEM", "CORRESPONDENCIA"]
-        if tipo_correspondencia not in allowed_values:
-            raise ValueError(
-                "Invalid value for `tipo_correspondencia`, must be one of {0}"
-                .format(allowed_values)
-            )
-        self._tipo_correspondencia = tipo_correspondencia
+        self._correspondencia = correspondencia
 
     @property
     def cargo_contato(self):
