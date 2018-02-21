@@ -45,7 +45,7 @@ class WebhookApi(object):
                 config.api_client = ApiClient()
             self.api_client = config.api_client
 
-    def alterar_using_put22(self, id, tipo_evento, url, **kwargs):
+    def alterar_using_put22(self, id, webhook, **kwargs):
         """
         Alterar Webhook
         Este m\u00C3\u00A9todo permite que seja modificado um webhooks j\u00C3\u00A1 cadastrado
@@ -56,20 +56,19 @@ class WebhookApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.alterar_using_put22(id, tipo_evento, url, callback=callback_function)
+        >>> thread = api.alterar_using_put22(id, webhook, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int id: C\u00C3\u00B3digo identificador do Webhook (required)
-        :param str tipo_evento: TipoEvento a ser chamado pelo WebHook (required)
-        :param str url: URL que a ser consumida pelo WebHook (required)
+        :param WebHook webhook: webhook (required)
         :param str status: Status
         :return: WebHookResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['id', 'tipo_evento', 'url', 'status']
+        all_params = ['id', 'webhook', 'status']
         all_params.append('callback')
 
         params = locals()
@@ -85,12 +84,9 @@ class WebhookApi(object):
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
             raise ValueError("Missing the required parameter `id` when calling `alterar_using_put22`")
-        # verify the required parameter 'tipo_evento' is set
-        if ('tipo_evento' not in params) or (params['tipo_evento'] is None):
-            raise ValueError("Missing the required parameter `tipo_evento` when calling `alterar_using_put22`")
-        # verify the required parameter 'url' is set
-        if ('url' not in params) or (params['url'] is None):
-            raise ValueError("Missing the required parameter `url` when calling `alterar_using_put22`")
+        # verify the required parameter 'webhook' is set
+        if ('webhook' not in params) or (params['webhook'] is None):
+            raise ValueError("Missing the required parameter `webhook` when calling `alterar_using_put22`")
 
         resource_path = '/api/webhooks/{id}'.replace('{format}', 'json')
         path_params = {}
@@ -100,10 +96,6 @@ class WebhookApi(object):
         query_params = {}
         if 'status' in params:
             query_params['status'] = params['status']
-        if 'tipo_evento' in params:
-            query_params['tipoEvento'] = params['tipo_evento']
-        if 'url' in params:
-            query_params['url'] = params['url']
 
         header_params = {}
 
@@ -111,6 +103,8 @@ class WebhookApi(object):
         local_var_files = {}
 
         body_params = None
+        if 'webhook' in params:
+            body_params = params['webhook']
 
         # HTTP header `Accept`
         header_params['Accept'] = self.api_client.\
@@ -306,7 +300,7 @@ class WebhookApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def salvar_using_post30(self, tipo_evento, url, **kwargs):
+    def salvar_using_post30(self, webhook, **kwargs):
         """
         Salvar Webhook
         Este m\u00C3\u00A9todo permite que seja adicionado um novo webhook
@@ -317,18 +311,17 @@ class WebhookApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.salvar_using_post30(tipo_evento, url, callback=callback_function)
+        >>> thread = api.salvar_using_post30(webhook, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param str tipo_evento: TipoEvento a ser chamado pelo WebHook (required)
-        :param str url: URL que a ser consumida pelo WebHook (required)
+        :param WebHook webhook: webhook (required)
         :return: WebHookResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['tipo_evento', 'url']
+        all_params = ['webhook']
         all_params.append('callback')
 
         params = locals()
@@ -341,21 +334,14 @@ class WebhookApi(object):
             params[key] = val
         del params['kwargs']
 
-        # verify the required parameter 'tipo_evento' is set
-        if ('tipo_evento' not in params) or (params['tipo_evento'] is None):
-            raise ValueError("Missing the required parameter `tipo_evento` when calling `salvar_using_post30`")
-        # verify the required parameter 'url' is set
-        if ('url' not in params) or (params['url'] is None):
-            raise ValueError("Missing the required parameter `url` when calling `salvar_using_post30`")
+        # verify the required parameter 'webhook' is set
+        if ('webhook' not in params) or (params['webhook'] is None):
+            raise ValueError("Missing the required parameter `webhook` when calling `salvar_using_post30`")
 
         resource_path = '/api/webhooks'.replace('{format}', 'json')
         path_params = {}
 
         query_params = {}
-        if 'tipo_evento' in params:
-            query_params['tipoEvento'] = params['tipo_evento']
-        if 'url' in params:
-            query_params['url'] = params['url']
 
         header_params = {}
 
@@ -363,6 +349,8 @@ class WebhookApi(object):
         local_var_files = {}
 
         body_params = None
+        if 'webhook' in params:
+            body_params = params['webhook']
 
         # HTTP header `Accept`
         header_params['Accept'] = self.api_client.\

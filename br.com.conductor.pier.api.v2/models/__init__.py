@@ -341,4 +341,5 @@ from .vinculo_estabelecimento_adquirente_persist import VinculoEstabelecimentoAd
 from .vinculo_estabelecimento_adquirente_response import VinculoEstabelecimentoAdquirenteResponse
 from .vinculo_operacao_persist import VinculoOperacaoPersist
 from .vinculo_operacao_response import VinculoOperacaoResponse
+from .web_hook import WebHook
 from .web_hook_response import WebHookResponse

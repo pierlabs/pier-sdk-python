@@ -341,6 +341,7 @@ from .models.vinculo_estabelecimento_adquirente_persist import VinculoEstabeleci
 from .models.vinculo_estabelecimento_adquirente_response import VinculoEstabelecimentoAdquirenteResponse
 from .models.vinculo_operacao_persist import VinculoOperacaoPersist
 from .models.vinculo_operacao_response import VinculoOperacaoResponse
+from .models.web_hook import WebHook
 from .models.web_hook_response import WebHookResponse
 
 # import apis into sdk package
