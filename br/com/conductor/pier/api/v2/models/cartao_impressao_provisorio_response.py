@@ -90,7 +90,7 @@ class CartaoImpressaoProvisorioResponse(object):
     def id_conta(self):
         """
         Gets the id_conta of this CartaoImpressaoProvisorioResponse.
-        Apresenta o C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Conta (id) a qual o cart\u00C3\u00A3o gerado pertence.
+        Apresenta o C\u00F3digo de Identifica\u00E7\u00E3o da Conta (id) a qual o cart\u00E3o gerado pertence.
 
         :return: The id_conta of this CartaoImpressaoProvisorioResponse.
         :rtype: int
@@ -101,7 +101,7 @@ class CartaoImpressaoProvisorioResponse(object):
     def id_conta(self, id_conta):
         """
         Sets the id_conta of this CartaoImpressaoProvisorioResponse.
-        Apresenta o C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Conta (id) a qual o cart\u00C3\u00A3o gerado pertence.
+        Apresenta o C\u00F3digo de Identifica\u00E7\u00E3o da Conta (id) a qual o cart\u00E3o gerado pertence.
 
         :param id_conta: The id_conta of this CartaoImpressaoProvisorioResponse.
         :type: int
@@ -112,7 +112,7 @@ class CartaoImpressaoProvisorioResponse(object):
     def id_pessoa(self):
         """
         Gets the id_pessoa of this CartaoImpressaoProvisorioResponse.
-        Apresenta o C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Pessoa (id) portadora do cart\u00C3\u00A3o gerado.
+        Apresenta o C\u00F3digo de Identifica\u00E7\u00E3o da Pessoa (id) portadora do cart\u00E3o gerado.
 
         :return: The id_pessoa of this CartaoImpressaoProvisorioResponse.
         :rtype: int
@@ -123,7 +123,7 @@ class CartaoImpressaoProvisorioResponse(object):
     def id_pessoa(self, id_pessoa):
         """
         Sets the id_pessoa of this CartaoImpressaoProvisorioResponse.
-        Apresenta o C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Pessoa (id) portadora do cart\u00C3\u00A3o gerado.
+        Apresenta o C\u00F3digo de Identifica\u00E7\u00E3o da Pessoa (id) portadora do cart\u00E3o gerado.
 
         :param id_pessoa: The id_pessoa of this CartaoImpressaoProvisorioResponse.
         :type: int
@@ -134,7 +134,7 @@ class CartaoImpressaoProvisorioResponse(object):
     def id_cartao(self):
         """
         Gets the id_cartao of this CartaoImpressaoProvisorioResponse.
-        Apresenta o C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Cart\u00C3\u00A3o (id) que foi gerado.
+        Apresenta o C\u00F3digo de Identifica\u00E7\u00E3o do Cart\u00E3o (id) que foi gerado.
 
         :return: The id_cartao of this CartaoImpressaoProvisorioResponse.
         :rtype: int
@@ -145,7 +145,7 @@ class CartaoImpressaoProvisorioResponse(object):
     def id_cartao(self, id_cartao):
         """
         Sets the id_cartao of this CartaoImpressaoProvisorioResponse.
-        Apresenta o C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Cart\u00C3\u00A3o (id) que foi gerado.
+        Apresenta o C\u00F3digo de Identifica\u00E7\u00E3o do Cart\u00E3o (id) que foi gerado.
 
         :param id_cartao: The id_cartao of this CartaoImpressaoProvisorioResponse.
         :type: int
@@ -156,7 +156,7 @@ class CartaoImpressaoProvisorioResponse(object):
     def numero_cartao(self):
         """
         Gets the numero_cartao of this CartaoImpressaoProvisorioResponse.
-        Apresenta o n\u00C3\u00BAmero do cart\u00C3\u00A3o.
+        Apresenta o n\u00FAmero do cart\u00E3o.
 
         :return: The numero_cartao of this CartaoImpressaoProvisorioResponse.
         :rtype: str
@@ -167,7 +167,7 @@ class CartaoImpressaoProvisorioResponse(object):
     def numero_cartao(self, numero_cartao):
         """
         Sets the numero_cartao of this CartaoImpressaoProvisorioResponse.
-        Apresenta o n\u00C3\u00BAmero do cart\u00C3\u00A3o.
+        Apresenta o n\u00FAmero do cart\u00E3o.
 
         :param numero_cartao: The numero_cartao of this CartaoImpressaoProvisorioResponse.
         :type: str
@@ -178,7 +178,7 @@ class CartaoImpressaoProvisorioResponse(object):
     def nome_plastico(self):
         """
         Gets the nome_plastico of this CartaoImpressaoProvisorioResponse.
-        Apresenta o nome do Portador do Cart\u00C3\u00A3o.
+        Apresenta o nome do Portador do Cart\u00E3o.
 
         :return: The nome_plastico of this CartaoImpressaoProvisorioResponse.
         :rtype: str
@@ -189,7 +189,7 @@ class CartaoImpressaoProvisorioResponse(object):
     def nome_plastico(self, nome_plastico):
         """
         Sets the nome_plastico of this CartaoImpressaoProvisorioResponse.
-        Apresenta o nome do Portador do Cart\u00C3\u00A3o.
+        Apresenta o nome do Portador do Cart\u00E3o.
 
         :param nome_plastico: The nome_plastico of this CartaoImpressaoProvisorioResponse.
         :type: str
@@ -200,7 +200,7 @@ class CartaoImpressaoProvisorioResponse(object):
     def data_validade(self):
         """
         Gets the data_validade of this CartaoImpressaoProvisorioResponse.
-        Apresenta a data de Validade do Cart\u00C3\u00A3o.
+        Apresenta a data de Validade do Cart\u00E3o.
 
         :return: The data_validade of this CartaoImpressaoProvisorioResponse.
         :rtype: str
@@ -211,7 +211,7 @@ class CartaoImpressaoProvisorioResponse(object):
     def data_validade(self, data_validade):
         """
         Sets the data_validade of this CartaoImpressaoProvisorioResponse.
-        Apresenta a data de Validade do Cart\u00C3\u00A3o.
+        Apresenta a data de Validade do Cart\u00E3o.
 
         :param data_validade: The data_validade of this CartaoImpressaoProvisorioResponse.
         :type: str

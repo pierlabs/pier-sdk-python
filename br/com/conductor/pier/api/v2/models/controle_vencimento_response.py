@@ -87,7 +87,7 @@ class ControleVencimentoResponse(object):
     def data_prevista_corte(self):
         """
         Gets the data_prevista_corte of this ControleVencimentoResponse.
-         Indica a data prevista para a realiza\u00C3\u00A7\u00C3\u00A3o do Corte das faturas
+         Indica a data prevista para a realiza\u00E7\u00E3o do Corte das faturas
 
         :return: The data_prevista_corte of this ControleVencimentoResponse.
         :rtype: str
@@ -98,7 +98,7 @@ class ControleVencimentoResponse(object):
     def data_prevista_corte(self, data_prevista_corte):
         """
         Sets the data_prevista_corte of this ControleVencimentoResponse.
-         Indica a data prevista para a realiza\u00C3\u00A7\u00C3\u00A3o do Corte das faturas
+         Indica a data prevista para a realiza\u00E7\u00E3o do Corte das faturas
 
         :param data_prevista_corte: The data_prevista_corte of this ControleVencimentoResponse.
         :type: str
@@ -109,7 +109,7 @@ class ControleVencimentoResponse(object):
     def data_hora_realizacao_corte(self):
         """
         Gets the data_hora_realizacao_corte of this ControleVencimentoResponse.
-        Indica a data e a hora que fora realizada a realiza\u00C3\u00A7\u00C3\u00A3o do Corte das faturas
+        Indica a data e a hora que fora realizada a realiza\u00E7\u00E3o do Corte das faturas
 
         :return: The data_hora_realizacao_corte of this ControleVencimentoResponse.
         :rtype: str
@@ -120,7 +120,7 @@ class ControleVencimentoResponse(object):
     def data_hora_realizacao_corte(self, data_hora_realizacao_corte):
         """
         Sets the data_hora_realizacao_corte of this ControleVencimentoResponse.
-        Indica a data e a hora que fora realizada a realiza\u00C3\u00A7\u00C3\u00A3o do Corte das faturas
+        Indica a data e a hora que fora realizada a realiza\u00E7\u00E3o do Corte das faturas
 
         :param data_hora_realizacao_corte: The data_hora_realizacao_corte of this ControleVencimentoResponse.
         :type: str
@@ -131,7 +131,7 @@ class ControleVencimentoResponse(object):
     def data_prevista_faturamento(self):
         """
         Gets the data_prevista_faturamento of this ControleVencimentoResponse.
-        Indica a data prevista para a realiza\u00C3\u00A7\u00C3\u00A3o do faturamento
+        Indica a data prevista para a realiza\u00E7\u00E3o do faturamento
 
         :return: The data_prevista_faturamento of this ControleVencimentoResponse.
         :rtype: str
@@ -142,7 +142,7 @@ class ControleVencimentoResponse(object):
     def data_prevista_faturamento(self, data_prevista_faturamento):
         """
         Sets the data_prevista_faturamento of this ControleVencimentoResponse.
-        Indica a data prevista para a realiza\u00C3\u00A7\u00C3\u00A3o do faturamento
+        Indica a data prevista para a realiza\u00E7\u00E3o do faturamento
 
         :param data_prevista_faturamento: The data_prevista_faturamento of this ControleVencimentoResponse.
         :type: str
@@ -175,7 +175,7 @@ class ControleVencimentoResponse(object):
     def data_real_vencimento(self):
         """
         Gets the data_real_vencimento of this ControleVencimentoResponse.
-        Indica o dia \u00C3\u00BAtil que ser\u00C3\u00A1 considerado como a data de vencimento
+        Indica o dia \u00FAtil que ser\u00E1 considerado como a data de vencimento
 
         :return: The data_real_vencimento of this ControleVencimentoResponse.
         :rtype: str
@@ -186,7 +186,7 @@ class ControleVencimentoResponse(object):
     def data_real_vencimento(self, data_real_vencimento):
         """
         Sets the data_real_vencimento of this ControleVencimentoResponse.
-        Indica o dia \u00C3\u00BAtil que ser\u00C3\u00A1 considerado como a data de vencimento
+        Indica o dia \u00FAtil que ser\u00E1 considerado como a data de vencimento
 
         :param data_real_vencimento: The data_real_vencimento of this ControleVencimentoResponse.
         :type: str

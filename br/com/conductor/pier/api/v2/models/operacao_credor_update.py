@@ -83,7 +83,7 @@ class OperacaoCredorUpdate(object):
     def id_operacao(self):
         """
         Gets the id_operacao of this OperacaoCredorUpdate.
-        Apresenta o id da Opera\u00C3\u00A7\u00C3\u00A3o.
+        Apresenta o id da Opera\u00E7\u00E3o.
 
         :return: The id_operacao of this OperacaoCredorUpdate.
         :rtype: int
@@ -94,7 +94,7 @@ class OperacaoCredorUpdate(object):
     def id_operacao(self, id_operacao):
         """
         Sets the id_operacao of this OperacaoCredorUpdate.
-        Apresenta o id da Opera\u00C3\u00A7\u00C3\u00A3o.
+        Apresenta o id da Opera\u00E7\u00E3o.
 
         :param id_operacao: The id_operacao of this OperacaoCredorUpdate.
         :type: int
@@ -149,7 +149,7 @@ class OperacaoCredorUpdate(object):
     def remuneracao_percentual(self):
         """
         Gets the remuneracao_percentual of this OperacaoCredorUpdate.
-        Remunera\u00C3\u00A7\u00C3\u00A3o Percentual.
+        Remunera\u00E7\u00E3o Percentual.
 
         :return: The remuneracao_percentual of this OperacaoCredorUpdate.
         :rtype: float
@@ -160,7 +160,7 @@ class OperacaoCredorUpdate(object):
     def remuneracao_percentual(self, remuneracao_percentual):
         """
         Sets the remuneracao_percentual of this OperacaoCredorUpdate.
-        Remunera\u00C3\u00A7\u00C3\u00A3o Percentual.
+        Remunera\u00E7\u00E3o Percentual.
 
         :param remuneracao_percentual: The remuneracao_percentual of this OperacaoCredorUpdate.
         :type: float
@@ -171,7 +171,7 @@ class OperacaoCredorUpdate(object):
     def remuneracao_fixa(self):
         """
         Gets the remuneracao_fixa of this OperacaoCredorUpdate.
-        Remunera\u00C3\u00A7\u00C3\u00A3o Fixa.
+        Remunera\u00E7\u00E3o Fixa.
 
         :return: The remuneracao_fixa of this OperacaoCredorUpdate.
         :rtype: float
@@ -182,7 +182,7 @@ class OperacaoCredorUpdate(object):
     def remuneracao_fixa(self, remuneracao_fixa):
         """
         Sets the remuneracao_fixa of this OperacaoCredorUpdate.
-        Remunera\u00C3\u00A7\u00C3\u00A3o Fixa.
+        Remunera\u00E7\u00E3o Fixa.
 
         :param remuneracao_fixa: The remuneracao_fixa of this OperacaoCredorUpdate.
         :type: float
@@ -315,7 +315,7 @@ class OperacaoCredorUpdate(object):
     def plano_minimo(self):
         """
         Gets the plano_minimo of this OperacaoCredorUpdate.
-        Plano m\u00C3\u00ADnimo da regra.
+        Plano m\u00EDnimo da regra.
 
         :return: The plano_minimo of this OperacaoCredorUpdate.
         :rtype: int
@@ -326,7 +326,7 @@ class OperacaoCredorUpdate(object):
     def plano_minimo(self, plano_minimo):
         """
         Sets the plano_minimo of this OperacaoCredorUpdate.
-        Plano m\u00C3\u00ADnimo da regra.
+        Plano m\u00EDnimo da regra.
 
         :param plano_minimo: The plano_minimo of this OperacaoCredorUpdate.
         :type: int
@@ -337,7 +337,7 @@ class OperacaoCredorUpdate(object):
     def plano_maximo(self):
         """
         Gets the plano_maximo of this OperacaoCredorUpdate.
-        Plano m\u00C3\u00A1ximo da regra.
+        Plano m\u00E1ximo da regra.
 
         :return: The plano_maximo of this OperacaoCredorUpdate.
         :rtype: int
@@ -348,7 +348,7 @@ class OperacaoCredorUpdate(object):
     def plano_maximo(self, plano_maximo):
         """
         Sets the plano_maximo of this OperacaoCredorUpdate.
-        Plano m\u00C3\u00A1ximo da regra.
+        Plano m\u00E1ximo da regra.
 
         :param plano_maximo: The plano_maximo of this OperacaoCredorUpdate.
         :type: int

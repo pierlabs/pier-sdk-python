@@ -62,7 +62,7 @@ class TransferenciaResponse(object):
     def id(self):
         """
         Gets the id of this TransferenciaResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da transfer\u00C3\u00AAncia (id).
+        C\u00F3digo de identifica\u00E7\u00E3o da transfer\u00EAncia (id).
 
         :return: The id of this TransferenciaResponse.
         :rtype: int
@@ -73,7 +73,7 @@ class TransferenciaResponse(object):
     def id(self, id):
         """
         Sets the id of this TransferenciaResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da transfer\u00C3\u00AAncia (id).
+        C\u00F3digo de identifica\u00E7\u00E3o da transfer\u00EAncia (id).
 
         :param id: The id of this TransferenciaResponse.
         :type: int
@@ -84,7 +84,7 @@ class TransferenciaResponse(object):
     def data_transferencia(self):
         """
         Gets the data_transferencia of this TransferenciaResponse.
-        Data estabelecida para ocorrer a transfer\u00C3\u00AAncia.
+        Data estabelecida para ocorrer a transfer\u00EAncia.
 
         :return: The data_transferencia of this TransferenciaResponse.
         :rtype: str
@@ -95,7 +95,7 @@ class TransferenciaResponse(object):
     def data_transferencia(self, data_transferencia):
         """
         Sets the data_transferencia of this TransferenciaResponse.
-        Data estabelecida para ocorrer a transfer\u00C3\u00AAncia.
+        Data estabelecida para ocorrer a transfer\u00EAncia.
 
         :param data_transferencia: The data_transferencia of this TransferenciaResponse.
         :type: str
@@ -106,7 +106,7 @@ class TransferenciaResponse(object):
     def id_conta_origem(self):
         """
         Gets the id_conta_origem of this TransferenciaResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da conta em que o valor ser\u00C3\u00A1 debitado para a transfer\u00C3\u00AAncia. (id).
+        C\u00F3digo de identifica\u00E7\u00E3o da conta em que o valor ser\u00E1 debitado para a transfer\u00EAncia. (id).
 
         :return: The id_conta_origem of this TransferenciaResponse.
         :rtype: int
@@ -117,7 +117,7 @@ class TransferenciaResponse(object):
     def id_conta_origem(self, id_conta_origem):
         """
         Sets the id_conta_origem of this TransferenciaResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da conta em que o valor ser\u00C3\u00A1 debitado para a transfer\u00C3\u00AAncia. (id).
+        C\u00F3digo de identifica\u00E7\u00E3o da conta em que o valor ser\u00E1 debitado para a transfer\u00EAncia. (id).
 
         :param id_conta_origem: The id_conta_origem of this TransferenciaResponse.
         :type: int
@@ -128,7 +128,7 @@ class TransferenciaResponse(object):
     def id_conta_destino(self):
         """
         Gets the id_conta_destino of this TransferenciaResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da conta em que o valor ser\u00C3\u00A1 creditado para a transfer\u00C3\u00AAncia. (id).
+        C\u00F3digo de identifica\u00E7\u00E3o da conta em que o valor ser\u00E1 creditado para a transfer\u00EAncia. (id).
 
         :return: The id_conta_destino of this TransferenciaResponse.
         :rtype: int
@@ -139,7 +139,7 @@ class TransferenciaResponse(object):
     def id_conta_destino(self, id_conta_destino):
         """
         Sets the id_conta_destino of this TransferenciaResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da conta em que o valor ser\u00C3\u00A1 creditado para a transfer\u00C3\u00AAncia. (id).
+        C\u00F3digo de identifica\u00E7\u00E3o da conta em que o valor ser\u00E1 creditado para a transfer\u00EAncia. (id).
 
         :param id_conta_destino: The id_conta_destino of this TransferenciaResponse.
         :type: int

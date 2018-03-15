@@ -89,7 +89,7 @@ class ContaBancariaPortadorPersist(object):
     def id_conta(self):
         """
         Gets the id_conta of this ContaBancariaPortadorPersist.
-        C\u00C3\u00B3digo identificador da conta cart\u00C3\u00A3o
+        C\u00F3digo identificador da conta cart\u00E3o
 
         :return: The id_conta of this ContaBancariaPortadorPersist.
         :rtype: int
@@ -100,7 +100,7 @@ class ContaBancariaPortadorPersist(object):
     def id_conta(self, id_conta):
         """
         Sets the id_conta of this ContaBancariaPortadorPersist.
-        C\u00C3\u00B3digo identificador da conta cart\u00C3\u00A3o
+        C\u00F3digo identificador da conta cart\u00E3o
 
         :param id_conta: The id_conta of this ContaBancariaPortadorPersist.
         :type: int
@@ -111,7 +111,7 @@ class ContaBancariaPortadorPersist(object):
     def nome_agencia(self):
         """
         Gets the nome_agencia of this ContaBancariaPortadorPersist.
-        Descri\u00C3\u00A7\u00C3\u00A3o da ag\u00C3\u00AAncia
+        Descri\u00E7\u00E3o da ag\u00EAncia
 
         :return: The nome_agencia of this ContaBancariaPortadorPersist.
         :rtype: str
@@ -122,7 +122,7 @@ class ContaBancariaPortadorPersist(object):
     def nome_agencia(self, nome_agencia):
         """
         Sets the nome_agencia of this ContaBancariaPortadorPersist.
-        Descri\u00C3\u00A7\u00C3\u00A3o da ag\u00C3\u00AAncia
+        Descri\u00E7\u00E3o da ag\u00EAncia
 
         :param nome_agencia: The nome_agencia of this ContaBancariaPortadorPersist.
         :type: str
@@ -133,7 +133,7 @@ class ContaBancariaPortadorPersist(object):
     def banco(self):
         """
         Gets the banco of this ContaBancariaPortadorPersist.
-        C\u00C3\u00B3digo do banco
+        C\u00F3digo do banco
 
         :return: The banco of this ContaBancariaPortadorPersist.
         :rtype: int
@@ -144,7 +144,7 @@ class ContaBancariaPortadorPersist(object):
     def banco(self, banco):
         """
         Sets the banco of this ContaBancariaPortadorPersist.
-        C\u00C3\u00B3digo do banco
+        C\u00F3digo do banco
 
         :param banco: The banco of this ContaBancariaPortadorPersist.
         :type: int
@@ -155,7 +155,7 @@ class ContaBancariaPortadorPersist(object):
     def numero_agencia(self):
         """
         Gets the numero_agencia of this ContaBancariaPortadorPersist.
-        N\u00C3\u00BAmero da ag\u00C3\u00AAncia
+        N\u00FAmero da ag\u00EAncia
 
         :return: The numero_agencia of this ContaBancariaPortadorPersist.
         :rtype: str
@@ -166,7 +166,7 @@ class ContaBancariaPortadorPersist(object):
     def numero_agencia(self, numero_agencia):
         """
         Sets the numero_agencia of this ContaBancariaPortadorPersist.
-        N\u00C3\u00BAmero da ag\u00C3\u00AAncia
+        N\u00FAmero da ag\u00EAncia
 
         :param numero_agencia: The numero_agencia of this ContaBancariaPortadorPersist.
         :type: str
@@ -177,7 +177,7 @@ class ContaBancariaPortadorPersist(object):
     def digito_agencia(self):
         """
         Gets the digito_agencia of this ContaBancariaPortadorPersist.
-        D\u00C3\u00ADgito da ag\u00C3\u00AAncia
+        D\u00EDgito da ag\u00EAncia
 
         :return: The digito_agencia of this ContaBancariaPortadorPersist.
         :rtype: str
@@ -188,7 +188,7 @@ class ContaBancariaPortadorPersist(object):
     def digito_agencia(self, digito_agencia):
         """
         Sets the digito_agencia of this ContaBancariaPortadorPersist.
-        D\u00C3\u00ADgito da ag\u00C3\u00AAncia
+        D\u00EDgito da ag\u00EAncia
 
         :param digito_agencia: The digito_agencia of this ContaBancariaPortadorPersist.
         :type: str
@@ -199,7 +199,7 @@ class ContaBancariaPortadorPersist(object):
     def numero_conta(self):
         """
         Gets the numero_conta of this ContaBancariaPortadorPersist.
-        N\u00C3\u00BAmero da conta
+        N\u00FAmero da conta
 
         :return: The numero_conta of this ContaBancariaPortadorPersist.
         :rtype: str
@@ -210,7 +210,7 @@ class ContaBancariaPortadorPersist(object):
     def numero_conta(self, numero_conta):
         """
         Sets the numero_conta of this ContaBancariaPortadorPersist.
-        N\u00C3\u00BAmero da conta
+        N\u00FAmero da conta
 
         :param numero_conta: The numero_conta of this ContaBancariaPortadorPersist.
         :type: str
@@ -221,7 +221,7 @@ class ContaBancariaPortadorPersist(object):
     def digito_conta(self):
         """
         Gets the digito_conta of this ContaBancariaPortadorPersist.
-        D\u00C3\u00ADgito da conta
+        D\u00EDgito da conta
 
         :return: The digito_conta of this ContaBancariaPortadorPersist.
         :rtype: str
@@ -232,7 +232,7 @@ class ContaBancariaPortadorPersist(object):
     def digito_conta(self, digito_conta):
         """
         Sets the digito_conta of this ContaBancariaPortadorPersist.
-        D\u00C3\u00ADgito da conta
+        D\u00EDgito da conta
 
         :param digito_conta: The digito_conta of this ContaBancariaPortadorPersist.
         :type: str
@@ -243,7 +243,7 @@ class ContaBancariaPortadorPersist(object):
     def flag_ativo(self):
         """
         Gets the flag_ativo of this ContaBancariaPortadorPersist.
-        Sinaliza se conta banc\u00C3\u00A1ria est\u00C3\u00A1 ativa ou n\u00C3\u00A3o (1: Ativa, 0: Inativa)
+        Sinaliza se conta banc\u00E1ria est\u00E1 ativa ou n\u00E3o (1: Ativa, 0: Inativa)
 
         :return: The flag_ativo of this ContaBancariaPortadorPersist.
         :rtype: int
@@ -254,7 +254,7 @@ class ContaBancariaPortadorPersist(object):
     def flag_ativo(self, flag_ativo):
         """
         Sets the flag_ativo of this ContaBancariaPortadorPersist.
-        Sinaliza se conta banc\u00C3\u00A1ria est\u00C3\u00A1 ativa ou n\u00C3\u00A3o (1: Ativa, 0: Inativa)
+        Sinaliza se conta banc\u00E1ria est\u00E1 ativa ou n\u00E3o (1: Ativa, 0: Inativa)
 
         :param flag_ativo: The flag_ativo of this ContaBancariaPortadorPersist.
         :type: int
@@ -265,7 +265,7 @@ class ContaBancariaPortadorPersist(object):
     def flag_conta_origem_doc(self):
         """
         Gets the flag_conta_origem_doc of this ContaBancariaPortadorPersist.
-        Sinaliza se origem \u00C3\u00A9 DOC (1: DOC, 0: TED)
+        Sinaliza se origem \u00E9 DOC (1: DOC, 0: TED)
 
         :return: The flag_conta_origem_doc of this ContaBancariaPortadorPersist.
         :rtype: int
@@ -276,7 +276,7 @@ class ContaBancariaPortadorPersist(object):
     def flag_conta_origem_doc(self, flag_conta_origem_doc):
         """
         Sets the flag_conta_origem_doc of this ContaBancariaPortadorPersist.
-        Sinaliza se origem \u00C3\u00A9 DOC (1: DOC, 0: TED)
+        Sinaliza se origem \u00E9 DOC (1: DOC, 0: TED)
 
         :param flag_conta_origem_doc: The flag_conta_origem_doc of this ContaBancariaPortadorPersist.
         :type: int
@@ -287,7 +287,7 @@ class ContaBancariaPortadorPersist(object):
     def id_pessoa_fisica(self):
         """
         Gets the id_pessoa_fisica of this ContaBancariaPortadorPersist.
-        C\u00C3\u00B3digo da pessoa
+        C\u00F3digo da pessoa
 
         :return: The id_pessoa_fisica of this ContaBancariaPortadorPersist.
         :rtype: int
@@ -298,7 +298,7 @@ class ContaBancariaPortadorPersist(object):
     def id_pessoa_fisica(self, id_pessoa_fisica):
         """
         Sets the id_pessoa_fisica of this ContaBancariaPortadorPersist.
-        C\u00C3\u00B3digo da pessoa
+        C\u00F3digo da pessoa
 
         :param id_pessoa_fisica: The id_pessoa_fisica of this ContaBancariaPortadorPersist.
         :type: int
@@ -309,7 +309,7 @@ class ContaBancariaPortadorPersist(object):
     def flag_conta_poupanca(self):
         """
         Gets the flag_conta_poupanca of this ContaBancariaPortadorPersist.
-        Sinaliza se conta banc\u00C3\u00A1ria \u00C3\u00A9 poupan\u00C3\u00A7a (1: Poupan\u00C3\u00A7a, 0: Conta corrente)
+        Sinaliza se conta banc\u00E1ria \u00E9 poupan\u00E7a (1: Poupan\u00E7a, 0: Conta corrente)
 
         :return: The flag_conta_poupanca of this ContaBancariaPortadorPersist.
         :rtype: int
@@ -320,7 +320,7 @@ class ContaBancariaPortadorPersist(object):
     def flag_conta_poupanca(self, flag_conta_poupanca):
         """
         Sets the flag_conta_poupanca of this ContaBancariaPortadorPersist.
-        Sinaliza se conta banc\u00C3\u00A1ria \u00C3\u00A9 poupan\u00C3\u00A7a (1: Poupan\u00C3\u00A7a, 0: Conta corrente)
+        Sinaliza se conta banc\u00E1ria \u00E9 poupan\u00E7a (1: Poupan\u00E7a, 0: Conta corrente)
 
         :param flag_conta_poupanca: The flag_conta_poupanca of this ContaBancariaPortadorPersist.
         :type: int
@@ -375,7 +375,7 @@ class ContaBancariaPortadorPersist(object):
     def titularidade(self):
         """
         Gets the titularidade of this ContaBancariaPortadorPersist.
-        Titularidade da conta (1:Portador \u00C3\u00A9 o titular, 0: Portador n\u00C3\u00A3o \u00C3\u00A9 o t\u00C3\u00ADtular
+        Titularidade da conta (1:Portador \u00E9 o titular, 0: Portador n\u00E3o \u00E9 o t\u00EDtular
 
         :return: The titularidade of this ContaBancariaPortadorPersist.
         :rtype: int
@@ -386,7 +386,7 @@ class ContaBancariaPortadorPersist(object):
     def titularidade(self, titularidade):
         """
         Sets the titularidade of this ContaBancariaPortadorPersist.
-        Titularidade da conta (1:Portador \u00C3\u00A9 o titular, 0: Portador n\u00C3\u00A3o \u00C3\u00A9 o t\u00C3\u00ADtular
+        Titularidade da conta (1:Portador \u00E9 o titular, 0: Portador n\u00E3o \u00E9 o t\u00EDtular
 
         :param titularidade: The titularidade of this ContaBancariaPortadorPersist.
         :type: int

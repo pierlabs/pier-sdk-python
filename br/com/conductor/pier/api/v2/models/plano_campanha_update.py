@@ -59,7 +59,7 @@ class PlanoCampanhaUpdate(object):
     def id(self):
         """
         Gets the id of this PlanoCampanhaUpdate.
-        C\u00C3\u00B3digo identificador do plano campanha
+        C\u00F3digo identificador do plano campanha
 
         :return: The id of this PlanoCampanhaUpdate.
         :rtype: int
@@ -70,7 +70,7 @@ class PlanoCampanhaUpdate(object):
     def id(self, id):
         """
         Sets the id of this PlanoCampanhaUpdate.
-        C\u00C3\u00B3digo identificador do plano campanha
+        C\u00F3digo identificador do plano campanha
 
         :param id: The id of this PlanoCampanhaUpdate.
         :type: int
@@ -125,7 +125,7 @@ class PlanoCampanhaUpdate(object):
     def usuario(self):
         """
         Gets the usuario of this PlanoCampanhaUpdate.
-        Nome do usu\u00C3\u00A1rio
+        Nome do usu\u00E1rio
 
         :return: The usuario of this PlanoCampanhaUpdate.
         :rtype: str
@@ -136,7 +136,7 @@ class PlanoCampanhaUpdate(object):
     def usuario(self, usuario):
         """
         Sets the usuario of this PlanoCampanhaUpdate.
-        Nome do usu\u00C3\u00A1rio
+        Nome do usu\u00E1rio
 
         :param usuario: The usuario of this PlanoCampanhaUpdate.
         :type: str

@@ -48,7 +48,7 @@ class WebhookApi(object):
     def alterar_using_put22(self, id, webhook, **kwargs):
         """
         Alterar Webhook
-        Este m\u00C3\u00A9todo permite que seja modificado um webhooks j\u00C3\u00A1 cadastrado
+        Este m\u00E9todo permite que seja modificado um webhooks j\u00E1 cadastrado
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -60,7 +60,7 @@ class WebhookApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param int id: C\u00C3\u00B3digo identificador do Webhook (required)
+        :param int id: C\u00F3digo identificador do Webhook (required)
         :param WebHook webhook: webhook (required)
         :param str status: Status
         :return: WebHookResponse
@@ -131,10 +131,10 @@ class WebhookApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get44(self, id, **kwargs):
+    def consultar_using_get45(self, id, **kwargs):
         """
         Consultar Webhook
-        Este m\u00C3\u00A9todo permite que sejam consultado um webhook do emissor atrav\u00C3\u00A9s de um id especifico
+        Este m\u00E9todo permite que sejam consultado um webhook do emissor atrav\u00E9s de um id especifico
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -142,11 +142,11 @@ class WebhookApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get44(id, callback=callback_function)
+        >>> thread = api.consultar_using_get45(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Webhook (id). (required)
+        :param int id: C\u00F3digo de Identifica\u00E7\u00E3o do Webhook (id). (required)
         :return: WebHookResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -160,14 +160,14 @@ class WebhookApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get44" % key
+                    " to method consultar_using_get45" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get44`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get45`")
 
         resource_path = '/api/webhooks/{id}'.replace('{format}', 'json')
         path_params = {}
@@ -208,10 +208,10 @@ class WebhookApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get53(self, **kwargs):
+    def listar_using_get55(self, **kwargs):
         """
         Lista os Webhooks
-        Este m\u00C3\u00A9todo permite que sejam listados os webhooks existentes
+        Este m\u00E9todo permite que sejam listados os webhooks existentes
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -219,16 +219,16 @@ class WebhookApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get53(callback=callback_function)
+        >>> thread = api.listar_using_get55(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param list[str] sort: Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
-        :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
-        :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
+        :param list[str] sort: Tipo de ordena\u00E7\u00E3o dos registros.
+        :param int page: P\u00E1gina solicitada (Default = 0)
+        :param int limit: Limite de elementos por solicita\u00E7\u00E3o (Default = 50, Max = 50)
         :param int id: Id do WebHook
         :param str tipo_evento: TipoEvento a ser chamado pelo WebHook
-        :param str metodo: M\u00C3\u00A9todo que a ser chamado pelo WebHook
+        :param str metodo: M\u00E9todo que a ser chamado pelo WebHook
         :param str url: URL que a ser consumida pelo WebHook
         :return: PageWebHookResponse
                  If the method is called asynchronously,
@@ -243,7 +243,7 @@ class WebhookApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get53" % key
+                    " to method listar_using_get55" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -303,7 +303,7 @@ class WebhookApi(object):
     def salvar_using_post30(self, webhook, **kwargs):
         """
         Salvar Webhook
-        Este m\u00C3\u00A9todo permite que seja adicionado um novo webhook
+        Este m\u00E9todo permite que seja adicionado um novo webhook
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function

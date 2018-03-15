@@ -125,7 +125,7 @@ class AntecipacaoSimuladaLoteResponse(object):
     def antecipacoes_simuladas(self):
         """
         Gets the antecipacoes_simuladas of this AntecipacaoSimuladaLoteResponse.
-        Antecipa\u00C3\u00A7\u00C3\u00B5es Simuladas.
+        Antecipa\u00E7\u00F5es Simuladas.
 
         :return: The antecipacoes_simuladas of this AntecipacaoSimuladaLoteResponse.
         :rtype: list[AntecipacaoSimuladaResponse]
@@ -136,7 +136,7 @@ class AntecipacaoSimuladaLoteResponse(object):
     def antecipacoes_simuladas(self, antecipacoes_simuladas):
         """
         Sets the antecipacoes_simuladas of this AntecipacaoSimuladaLoteResponse.
-        Antecipa\u00C3\u00A7\u00C3\u00B5es Simuladas.
+        Antecipa\u00E7\u00F5es Simuladas.
 
         :param antecipacoes_simuladas: The antecipacoes_simuladas of this AntecipacaoSimuladaLoteResponse.
         :type: list[AntecipacaoSimuladaResponse]

@@ -60,7 +60,7 @@ class JobApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Job (id). (required)
+        :param int id: C\u00F3digo de Identifica\u00E7\u00E3o do Job (id). (required)
         :return: JobResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -137,7 +137,7 @@ class JobApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Job (id). (required)
+        :param int id: C\u00F3digo de Identifica\u00E7\u00E3o do Job (id). (required)
         :param str descricao: descricao. (required)
         :param str cron: Cron do Job. (required)
         :param str groovy: groovy (required)
@@ -232,7 +232,7 @@ class JobApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Job (id). (required)
+        :param int id: C\u00F3digo de Identifica\u00E7\u00E3o do Job (id). (required)
         :return: JobResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -294,7 +294,7 @@ class JobApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get24(self, **kwargs):
+    def listar_using_get26(self, **kwargs):
         """
         Listar Jobs
         Este recurso permite que sejam listados os jobs existentes na base do PIER.
@@ -305,16 +305,16 @@ class JobApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get24(callback=callback_function)
+        >>> thread = api.listar_using_get26(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param str groovy: Script Groovy do Job
-        :param str descricao: Descri\u00C3\u00A7\u00C3\u00A3o do Job
+        :param str descricao: Descri\u00E7\u00E3o do Job
         :param str cron: Cron do Job
         :param str status: Status do Job
-        :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
-        :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
+        :param int page: P\u00E1gina solicitada (Default = 0)
+        :param int limit: Limite de elementos por solicita\u00E7\u00E3o (Default = 50, Max = 50)
         :return: PageJobResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -328,7 +328,7 @@ class JobApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get24" % key
+                    " to method listar_using_get26" % key
                 )
             params[key] = val
         del params['kwargs']

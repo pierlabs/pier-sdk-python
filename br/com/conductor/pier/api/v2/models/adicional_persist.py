@@ -114,7 +114,7 @@ class AdicionalPersist(object):
     def nome_impresso(self):
         """
         Gets the nome_impresso of this AdicionalPersist.
-        Nome do Adicional que ser\u00C3\u00A1 gravado no Cart\u00C3\u00A3o.
+        Nome do Adicional que ser\u00E1 gravado no Cart\u00E3o.
 
         :return: The nome_impresso of this AdicionalPersist.
         :rtype: str
@@ -125,7 +125,7 @@ class AdicionalPersist(object):
     def nome_impresso(self, nome_impresso):
         """
         Sets the nome_impresso of this AdicionalPersist.
-        Nome do Adicional que ser\u00C3\u00A1 gravado no Cart\u00C3\u00A3o.
+        Nome do Adicional que ser\u00E1 gravado no Cart\u00E3o.
 
         :param nome_impresso: The nome_impresso of this AdicionalPersist.
         :type: str
@@ -136,7 +136,7 @@ class AdicionalPersist(object):
     def numero_receita_federal(self):
         """
         Gets the numero_receita_federal of this AdicionalPersist.
-        N\u00C3\u00BAmero do CPF ou CNPJ do Adicional.
+        N\u00FAmero do CPF ou CNPJ do Adicional.
 
         :return: The numero_receita_federal of this AdicionalPersist.
         :rtype: str
@@ -147,7 +147,7 @@ class AdicionalPersist(object):
     def numero_receita_federal(self, numero_receita_federal):
         """
         Sets the numero_receita_federal of this AdicionalPersist.
-        N\u00C3\u00BAmero do CPF ou CNPJ do Adicional.
+        N\u00FAmero do CPF ou CNPJ do Adicional.
 
         :param numero_receita_federal: The numero_receita_federal of this AdicionalPersist.
         :type: str
@@ -180,7 +180,7 @@ class AdicionalPersist(object):
     def sexo(self):
         """
         Gets the sexo of this AdicionalPersist.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do sexo da Pessoa, quando PF, sendo: (\"M\": Masculino), (\"F\": Feminino), (\"O\": Outro), (\"N\": N\u00C3\u00A3o Especificado).
+        C\u00F3digo de identifica\u00E7\u00E3o do sexo da Pessoa, quando PF, sendo: (\"M\": Masculino), (\"F\": Feminino), (\"O\": Outro), (\"N\": N\u00E3o Especificado).
 
         :return: The sexo of this AdicionalPersist.
         :rtype: str
@@ -191,7 +191,7 @@ class AdicionalPersist(object):
     def sexo(self, sexo):
         """
         Sets the sexo of this AdicionalPersist.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do sexo da Pessoa, quando PF, sendo: (\"M\": Masculino), (\"F\": Feminino), (\"O\": Outro), (\"N\": N\u00C3\u00A3o Especificado).
+        C\u00F3digo de identifica\u00E7\u00E3o do sexo da Pessoa, quando PF, sendo: (\"M\": Masculino), (\"F\": Feminino), (\"O\": Outro), (\"N\": N\u00E3o Especificado).
 
         :param sexo: The sexo of this AdicionalPersist.
         :type: str
@@ -202,7 +202,7 @@ class AdicionalPersist(object):
     def numero_identidade(self):
         """
         Gets the numero_identidade of this AdicionalPersist.
-        N\u00C3\u00BAmero do Documento de Identidade do Adicional.
+        N\u00FAmero do Documento de Identidade do Adicional.
 
         :return: The numero_identidade of this AdicionalPersist.
         :rtype: str
@@ -213,7 +213,7 @@ class AdicionalPersist(object):
     def numero_identidade(self, numero_identidade):
         """
         Sets the numero_identidade of this AdicionalPersist.
-        N\u00C3\u00BAmero do Documento de Identidade do Adicional.
+        N\u00FAmero do Documento de Identidade do Adicional.
 
         :param numero_identidade: The numero_identidade of this AdicionalPersist.
         :type: str
@@ -224,7 +224,7 @@ class AdicionalPersist(object):
     def orgao_expedidor_identidade(self):
         """
         Gets the orgao_expedidor_identidade of this AdicionalPersist.
-        Nome do Org\u00C3\u00A3o Emissor do Documento de Identidade do Adicional.
+        Nome do Org\u00E3o Emissor do Documento de Identidade do Adicional.
 
         :return: The orgao_expedidor_identidade of this AdicionalPersist.
         :rtype: str
@@ -235,7 +235,7 @@ class AdicionalPersist(object):
     def orgao_expedidor_identidade(self, orgao_expedidor_identidade):
         """
         Sets the orgao_expedidor_identidade of this AdicionalPersist.
-        Nome do Org\u00C3\u00A3o Emissor do Documento de Identidade do Adicional.
+        Nome do Org\u00E3o Emissor do Documento de Identidade do Adicional.
 
         :param orgao_expedidor_identidade: The orgao_expedidor_identidade of this AdicionalPersist.
         :type: str
@@ -268,7 +268,7 @@ class AdicionalPersist(object):
     def data_emissao_identidade(self):
         """
         Gets the data_emissao_identidade of this AdicionalPersist.
-        Data de emiss\u00C3\u00A3o do Documento de Identidade do Adicional em formato yyyy-MM-dd.
+        Data de emiss\u00E3o do Documento de Identidade do Adicional em formato yyyy-MM-dd.
 
         :return: The data_emissao_identidade of this AdicionalPersist.
         :rtype: str
@@ -279,7 +279,7 @@ class AdicionalPersist(object):
     def data_emissao_identidade(self, data_emissao_identidade):
         """
         Sets the data_emissao_identidade of this AdicionalPersist.
-        Data de emiss\u00C3\u00A3o do Documento de Identidade do Adicional em formato yyyy-MM-dd.
+        Data de emiss\u00E3o do Documento de Identidade do Adicional em formato yyyy-MM-dd.
 
         :param data_emissao_identidade: The data_emissao_identidade of this AdicionalPersist.
         :type: str
@@ -290,7 +290,7 @@ class AdicionalPersist(object):
     def id_estado_civil(self):
         """
         Gets the id_estado_civil of this AdicionalPersist.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do Estado Civil do Adicional.
+        C\u00F3digo de identifica\u00E7\u00E3o do Estado Civil do Adicional.
 
         :return: The id_estado_civil of this AdicionalPersist.
         :rtype: int
@@ -301,7 +301,7 @@ class AdicionalPersist(object):
     def id_estado_civil(self, id_estado_civil):
         """
         Sets the id_estado_civil of this AdicionalPersist.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do Estado Civil do Adicional.
+        C\u00F3digo de identifica\u00E7\u00E3o do Estado Civil do Adicional.
 
         :param id_estado_civil: The id_estado_civil of this AdicionalPersist.
         :type: int
@@ -312,7 +312,7 @@ class AdicionalPersist(object):
     def id_profissao(self):
         """
         Gets the id_profissao of this AdicionalPersist.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da Profissao do Adicional.
+        C\u00F3digo de identifica\u00E7\u00E3o da Profissao do Adicional.
 
         :return: The id_profissao of this AdicionalPersist.
         :rtype: int
@@ -323,7 +323,7 @@ class AdicionalPersist(object):
     def id_profissao(self, id_profissao):
         """
         Sets the id_profissao of this AdicionalPersist.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da Profissao do Adicional.
+        C\u00F3digo de identifica\u00E7\u00E3o da Profissao do Adicional.
 
         :param id_profissao: The id_profissao of this AdicionalPersist.
         :type: int
@@ -334,7 +334,7 @@ class AdicionalPersist(object):
     def id_nacionalidade(self):
         """
         Gets the id_nacionalidade of this AdicionalPersist.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da Nacionalidade do Adicional.
+        C\u00F3digo de identifica\u00E7\u00E3o da Nacionalidade do Adicional.
 
         :return: The id_nacionalidade of this AdicionalPersist.
         :rtype: int
@@ -345,7 +345,7 @@ class AdicionalPersist(object):
     def id_nacionalidade(self, id_nacionalidade):
         """
         Sets the id_nacionalidade of this AdicionalPersist.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da Nacionalidade do Adicional.
+        C\u00F3digo de identifica\u00E7\u00E3o da Nacionalidade do Adicional.
 
         :param id_nacionalidade: The id_nacionalidade of this AdicionalPersist.
         :type: int
@@ -356,7 +356,7 @@ class AdicionalPersist(object):
     def id_parentesco(self):
         """
         Gets the id_parentesco of this AdicionalPersist.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do Parentesco do Adicional com o Titular.
+        C\u00F3digo de identifica\u00E7\u00E3o do Parentesco do Adicional com o Titular.
 
         :return: The id_parentesco of this AdicionalPersist.
         :rtype: int
@@ -367,7 +367,7 @@ class AdicionalPersist(object):
     def id_parentesco(self, id_parentesco):
         """
         Sets the id_parentesco of this AdicionalPersist.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do Parentesco do Adicional com o Titular.
+        C\u00F3digo de identifica\u00E7\u00E3o do Parentesco do Adicional com o Titular.
 
         :param id_parentesco: The id_parentesco of this AdicionalPersist.
         :type: int
@@ -378,7 +378,7 @@ class AdicionalPersist(object):
     def email(self):
         """
         Gets the email of this AdicionalPersist.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do Parentesco do Adicional com o Titular.
+        C\u00F3digo de identifica\u00E7\u00E3o do Parentesco do Adicional com o Titular.
 
         :return: The email of this AdicionalPersist.
         :rtype: str
@@ -389,7 +389,7 @@ class AdicionalPersist(object):
     def email(self, email):
         """
         Sets the email of this AdicionalPersist.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do Parentesco do Adicional com o Titular.
+        C\u00F3digo de identifica\u00E7\u00E3o do Parentesco do Adicional com o Titular.
 
         :param email: The email of this AdicionalPersist.
         :type: str

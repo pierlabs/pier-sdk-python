@@ -71,8 +71,7 @@ class EstabelecimentoUpdate(object):
             'tipo_pagamento': 'str',
             'consulta': 'ConsultaCadastroEstabelecimentoDTO',
             'consulta2': 'ConsultaCadastroEstabelecimentoDTO',
-            'consulta3': 'ConsultaCadastroEstabelecimentoDTO',
-            'sort': 'list[str]'
+            'consulta3': 'ConsultaCadastroEstabelecimentoDTO'
         }
 
         self.attribute_map = {
@@ -110,8 +109,7 @@ class EstabelecimentoUpdate(object):
             'tipo_pagamento': 'tipoPagamento',
             'consulta': 'consulta',
             'consulta2': 'consulta2',
-            'consulta3': 'consulta3',
-            'sort': 'sort'
+            'consulta3': 'consulta3'
         }
 
         self._flag_matriz = None
@@ -149,13 +147,12 @@ class EstabelecimentoUpdate(object):
         self._consulta = None
         self._consulta2 = None
         self._consulta3 = None
-        self._sort = None
 
     @property
     def flag_matriz(self):
         """
         Gets the flag_matriz of this EstabelecimentoUpdate.
-        Indica se \u00C3\u00A9 matriz ou filial.
+        Indica se \u00E9 matriz ou filial.
 
         :return: The flag_matriz of this EstabelecimentoUpdate.
         :rtype: int
@@ -166,7 +163,7 @@ class EstabelecimentoUpdate(object):
     def flag_matriz(self, flag_matriz):
         """
         Sets the flag_matriz of this EstabelecimentoUpdate.
-        Indica se \u00C3\u00A9 matriz ou filial.
+        Indica se \u00E9 matriz ou filial.
 
         :param flag_matriz: The flag_matriz of this EstabelecimentoUpdate.
         :type: int
@@ -199,7 +196,7 @@ class EstabelecimentoUpdate(object):
     def descricao(self):
         """
         Gets the descricao of this EstabelecimentoUpdate.
-        Raz\u00C3\u00A3o Social do Estabelecimento.
+        Raz\u00E3o Social do Estabelecimento.
 
         :return: The descricao of this EstabelecimentoUpdate.
         :rtype: str
@@ -210,7 +207,7 @@ class EstabelecimentoUpdate(object):
     def descricao(self, descricao):
         """
         Sets the descricao of this EstabelecimentoUpdate.
-        Raz\u00C3\u00A3o Social do Estabelecimento.
+        Raz\u00E3o Social do Estabelecimento.
 
         :param descricao: The descricao of this EstabelecimentoUpdate.
         :type: str
@@ -221,7 +218,7 @@ class EstabelecimentoUpdate(object):
     def nome_fantasia(self):
         """
         Gets the nome_fantasia of this EstabelecimentoUpdate.
-        T\u00C3\u00ADtulo Comercial do Estabelecimento.
+        T\u00EDtulo Comercial do Estabelecimento.
 
         :return: The nome_fantasia of this EstabelecimentoUpdate.
         :rtype: str
@@ -232,7 +229,7 @@ class EstabelecimentoUpdate(object):
     def nome_fantasia(self, nome_fantasia):
         """
         Sets the nome_fantasia of this EstabelecimentoUpdate.
-        T\u00C3\u00ADtulo Comercial do Estabelecimento.
+        T\u00EDtulo Comercial do Estabelecimento.
 
         :param nome_fantasia: The nome_fantasia of this EstabelecimentoUpdate.
         :type: str
@@ -243,7 +240,7 @@ class EstabelecimentoUpdate(object):
     def cep(self):
         """
         Gets the cep of this EstabelecimentoUpdate.
-        C\u00C3\u00B3digo de Endere\u00C3\u00A7amento Postal (CEP).
+        C\u00F3digo de Endere\u00E7amento Postal (CEP).
 
         :return: The cep of this EstabelecimentoUpdate.
         :rtype: str
@@ -254,7 +251,7 @@ class EstabelecimentoUpdate(object):
     def cep(self, cep):
         """
         Sets the cep of this EstabelecimentoUpdate.
-        C\u00C3\u00B3digo de Endere\u00C3\u00A7amento Postal (CEP).
+        C\u00F3digo de Endere\u00E7amento Postal (CEP).
 
         :param cep: The cep of this EstabelecimentoUpdate.
         :type: str
@@ -287,7 +284,7 @@ class EstabelecimentoUpdate(object):
     def numero_endereco(self):
         """
         Gets the numero_endereco of this EstabelecimentoUpdate.
-        N\u00C3\u00BAmero do endere\u00C3\u00A7o.
+        N\u00FAmero do endere\u00E7o.
 
         :return: The numero_endereco of this EstabelecimentoUpdate.
         :rtype: int
@@ -298,7 +295,7 @@ class EstabelecimentoUpdate(object):
     def numero_endereco(self, numero_endereco):
         """
         Sets the numero_endereco of this EstabelecimentoUpdate.
-        N\u00C3\u00BAmero do endere\u00C3\u00A7o.
+        N\u00FAmero do endere\u00E7o.
 
         :param numero_endereco: The numero_endereco of this EstabelecimentoUpdate.
         :type: int
@@ -309,7 +306,7 @@ class EstabelecimentoUpdate(object):
     def bairro(self):
         """
         Gets the bairro of this EstabelecimentoUpdate.
-        Nome do bairro do endere\u00C3\u00A7o.
+        Nome do bairro do endere\u00E7o.
 
         :return: The bairro of this EstabelecimentoUpdate.
         :rtype: str
@@ -320,7 +317,7 @@ class EstabelecimentoUpdate(object):
     def bairro(self, bairro):
         """
         Sets the bairro of this EstabelecimentoUpdate.
-        Nome do bairro do endere\u00C3\u00A7o.
+        Nome do bairro do endere\u00E7o.
 
         :param bairro: The bairro of this EstabelecimentoUpdate.
         :type: str
@@ -331,7 +328,7 @@ class EstabelecimentoUpdate(object):
     def cidade(self):
         """
         Gets the cidade of this EstabelecimentoUpdate.
-        Nome da cidade do endere\u00C3\u00A7o.
+        Nome da cidade do endere\u00E7o.
 
         :return: The cidade of this EstabelecimentoUpdate.
         :rtype: str
@@ -342,7 +339,7 @@ class EstabelecimentoUpdate(object):
     def cidade(self, cidade):
         """
         Sets the cidade of this EstabelecimentoUpdate.
-        Nome da cidade do endere\u00C3\u00A7o.
+        Nome da cidade do endere\u00E7o.
 
         :param cidade: The cidade of this EstabelecimentoUpdate.
         :type: str
@@ -353,7 +350,7 @@ class EstabelecimentoUpdate(object):
     def complemento(self):
         """
         Gets the complemento of this EstabelecimentoUpdate.
-        Descri\u00C3\u00A7\u00C3\u00B5es complementares referente ao endere\u00C3\u00A7o.
+        Descri\u00E7\u00F5es complementares referente ao endere\u00E7o.
 
         :return: The complemento of this EstabelecimentoUpdate.
         :rtype: str
@@ -364,7 +361,7 @@ class EstabelecimentoUpdate(object):
     def complemento(self, complemento):
         """
         Sets the complemento of this EstabelecimentoUpdate.
-        Descri\u00C3\u00A7\u00C3\u00B5es complementares referente ao endere\u00C3\u00A7o.
+        Descri\u00E7\u00F5es complementares referente ao endere\u00E7o.
 
         :param complemento: The complemento of this EstabelecimentoUpdate.
         :type: str
@@ -375,7 +372,7 @@ class EstabelecimentoUpdate(object):
     def uf(self):
         """
         Gets the uf of this EstabelecimentoUpdate.
-        Sigla de identifica\u00C3\u00A7\u00C3\u00A3o da Unidade Federativa do endere\u00C3\u00A7o.
+        Sigla de identifica\u00E7\u00E3o da Unidade Federativa do endere\u00E7o.
 
         :return: The uf of this EstabelecimentoUpdate.
         :rtype: str
@@ -386,7 +383,7 @@ class EstabelecimentoUpdate(object):
     def uf(self, uf):
         """
         Sets the uf of this EstabelecimentoUpdate.
-        Sigla de identifica\u00C3\u00A7\u00C3\u00A3o da Unidade Federativa do endere\u00C3\u00A7o.
+        Sigla de identifica\u00E7\u00E3o da Unidade Federativa do endere\u00E7o.
 
         :param uf: The uf of this EstabelecimentoUpdate.
         :type: str
@@ -397,7 +394,7 @@ class EstabelecimentoUpdate(object):
     def cep2(self):
         """
         Gets the cep2 of this EstabelecimentoUpdate.
-        C\u00C3\u00B3digo de Endere\u00C3\u00A7amento Postal (CEP).
+        C\u00F3digo de Endere\u00E7amento Postal (CEP).
 
         :return: The cep2 of this EstabelecimentoUpdate.
         :rtype: str
@@ -408,7 +405,7 @@ class EstabelecimentoUpdate(object):
     def cep2(self, cep2):
         """
         Sets the cep2 of this EstabelecimentoUpdate.
-        C\u00C3\u00B3digo de Endere\u00C3\u00A7amento Postal (CEP).
+        C\u00F3digo de Endere\u00E7amento Postal (CEP).
 
         :param cep2: The cep2 of this EstabelecimentoUpdate.
         :type: str
@@ -441,7 +438,7 @@ class EstabelecimentoUpdate(object):
     def numero_endereco2(self):
         """
         Gets the numero_endereco2 of this EstabelecimentoUpdate.
-        N\u00C3\u00BAmero do endere\u00C3\u00A7o.
+        N\u00FAmero do endere\u00E7o.
 
         :return: The numero_endereco2 of this EstabelecimentoUpdate.
         :rtype: int
@@ -452,7 +449,7 @@ class EstabelecimentoUpdate(object):
     def numero_endereco2(self, numero_endereco2):
         """
         Sets the numero_endereco2 of this EstabelecimentoUpdate.
-        N\u00C3\u00BAmero do endere\u00C3\u00A7o.
+        N\u00FAmero do endere\u00E7o.
 
         :param numero_endereco2: The numero_endereco2 of this EstabelecimentoUpdate.
         :type: int
@@ -463,7 +460,7 @@ class EstabelecimentoUpdate(object):
     def bairro2(self):
         """
         Gets the bairro2 of this EstabelecimentoUpdate.
-        Nome do bairro do endere\u00C3\u00A7o.
+        Nome do bairro do endere\u00E7o.
 
         :return: The bairro2 of this EstabelecimentoUpdate.
         :rtype: str
@@ -474,7 +471,7 @@ class EstabelecimentoUpdate(object):
     def bairro2(self, bairro2):
         """
         Sets the bairro2 of this EstabelecimentoUpdate.
-        Nome do bairro do endere\u00C3\u00A7o.
+        Nome do bairro do endere\u00E7o.
 
         :param bairro2: The bairro2 of this EstabelecimentoUpdate.
         :type: str
@@ -485,7 +482,7 @@ class EstabelecimentoUpdate(object):
     def cidade2(self):
         """
         Gets the cidade2 of this EstabelecimentoUpdate.
-        Nome da cidade do endere\u00C3\u00A7o.
+        Nome da cidade do endere\u00E7o.
 
         :return: The cidade2 of this EstabelecimentoUpdate.
         :rtype: str
@@ -496,7 +493,7 @@ class EstabelecimentoUpdate(object):
     def cidade2(self, cidade2):
         """
         Sets the cidade2 of this EstabelecimentoUpdate.
-        Nome da cidade do endere\u00C3\u00A7o.
+        Nome da cidade do endere\u00E7o.
 
         :param cidade2: The cidade2 of this EstabelecimentoUpdate.
         :type: str
@@ -507,7 +504,7 @@ class EstabelecimentoUpdate(object):
     def complemento2(self):
         """
         Gets the complemento2 of this EstabelecimentoUpdate.
-        Descri\u00C3\u00A7\u00C3\u00B5es complementares referente ao endere\u00C3\u00A7o.
+        Descri\u00E7\u00F5es complementares referente ao endere\u00E7o.
 
         :return: The complemento2 of this EstabelecimentoUpdate.
         :rtype: str
@@ -518,7 +515,7 @@ class EstabelecimentoUpdate(object):
     def complemento2(self, complemento2):
         """
         Sets the complemento2 of this EstabelecimentoUpdate.
-        Descri\u00C3\u00A7\u00C3\u00B5es complementares referente ao endere\u00C3\u00A7o.
+        Descri\u00E7\u00F5es complementares referente ao endere\u00E7o.
 
         :param complemento2: The complemento2 of this EstabelecimentoUpdate.
         :type: str
@@ -529,7 +526,7 @@ class EstabelecimentoUpdate(object):
     def uf2(self):
         """
         Gets the uf2 of this EstabelecimentoUpdate.
-        Sigla de identifica\u00C3\u00A7\u00C3\u00A3o da Unidade Federativa do endere\u00C3\u00A7o.
+        Sigla de identifica\u00E7\u00E3o da Unidade Federativa do endere\u00E7o.
 
         :return: The uf2 of this EstabelecimentoUpdate.
         :rtype: str
@@ -540,7 +537,7 @@ class EstabelecimentoUpdate(object):
     def uf2(self, uf2):
         """
         Sets the uf2 of this EstabelecimentoUpdate.
-        Sigla de identifica\u00C3\u00A7\u00C3\u00A3o da Unidade Federativa do endere\u00C3\u00A7o.
+        Sigla de identifica\u00E7\u00E3o da Unidade Federativa do endere\u00E7o.
 
         :param uf2: The uf2 of this EstabelecimentoUpdate.
         :type: str
@@ -551,7 +548,7 @@ class EstabelecimentoUpdate(object):
     def obs(self):
         """
         Gets the obs of this EstabelecimentoUpdate.
-        Detalhes espec\u00C3\u00ADficos quanto ao Cadastro do Estabelecimento.
+        Detalhes espec\u00EDficos quanto ao Cadastro do Estabelecimento.
 
         :return: The obs of this EstabelecimentoUpdate.
         :rtype: str
@@ -562,7 +559,7 @@ class EstabelecimentoUpdate(object):
     def obs(self, obs):
         """
         Sets the obs of this EstabelecimentoUpdate.
-        Detalhes espec\u00C3\u00ADficos quanto ao Cadastro do Estabelecimento.
+        Detalhes espec\u00EDficos quanto ao Cadastro do Estabelecimento.
 
         :param obs: The obs of this EstabelecimentoUpdate.
         :type: str
@@ -617,7 +614,7 @@ class EstabelecimentoUpdate(object):
     def flag_arquivo_secr_fazenda(self):
         """
         Gets the flag_arquivo_secr_fazenda of this EstabelecimentoUpdate.
-        Indica se o estabelecimento ser\u00C3\u00A1 inclu\u00C3\u00ADdo no arquivo de registro para a Secretaria da Fazenda Estadual.
+        Indica se o estabelecimento ser\u00E1 inclu\u00EDdo no arquivo de registro para a Secretaria da Fazenda Estadual.
 
         :return: The flag_arquivo_secr_fazenda of this EstabelecimentoUpdate.
         :rtype: int
@@ -628,7 +625,7 @@ class EstabelecimentoUpdate(object):
     def flag_arquivo_secr_fazenda(self, flag_arquivo_secr_fazenda):
         """
         Sets the flag_arquivo_secr_fazenda of this EstabelecimentoUpdate.
-        Indica se o estabelecimento ser\u00C3\u00A1 inclu\u00C3\u00ADdo no arquivo de registro para a Secretaria da Fazenda Estadual.
+        Indica se o estabelecimento ser\u00E1 inclu\u00EDdo no arquivo de registro para a Secretaria da Fazenda Estadual.
 
         :param flag_arquivo_secr_fazenda: The flag_arquivo_secr_fazenda of this EstabelecimentoUpdate.
         :type: int
@@ -639,7 +636,7 @@ class EstabelecimentoUpdate(object):
     def flag_cartao_digitado(self):
         """
         Gets the flag_cartao_digitado of this EstabelecimentoUpdate.
-        Indica se o estabelecimento poder\u00C3\u00A1 originar transa\u00C3\u00A7\u00C3\u00B5es sem a leitura da tarja ou do chip do cart\u00C3\u00A3o.
+        Indica se o estabelecimento poder\u00E1 originar transa\u00E7\u00F5es sem a leitura da tarja ou do chip do cart\u00E3o.
 
         :return: The flag_cartao_digitado of this EstabelecimentoUpdate.
         :rtype: int
@@ -650,7 +647,7 @@ class EstabelecimentoUpdate(object):
     def flag_cartao_digitado(self, flag_cartao_digitado):
         """
         Sets the flag_cartao_digitado of this EstabelecimentoUpdate.
-        Indica se o estabelecimento poder\u00C3\u00A1 originar transa\u00C3\u00A7\u00C3\u00B5es sem a leitura da tarja ou do chip do cart\u00C3\u00A3o.
+        Indica se o estabelecimento poder\u00E1 originar transa\u00E7\u00F5es sem a leitura da tarja ou do chip do cart\u00E3o.
 
         :param flag_cartao_digitado: The flag_cartao_digitado of this EstabelecimentoUpdate.
         :type: int
@@ -661,7 +658,7 @@ class EstabelecimentoUpdate(object):
     def inativo(self):
         """
         Gets the inativo of this EstabelecimentoUpdate.
-        Indica se o estabelecimento est\u00C3\u00A1 inativo.
+        Indica se o estabelecimento est\u00E1 inativo.
 
         :return: The inativo of this EstabelecimentoUpdate.
         :rtype: int
@@ -672,7 +669,7 @@ class EstabelecimentoUpdate(object):
     def inativo(self, inativo):
         """
         Sets the inativo of this EstabelecimentoUpdate.
-        Indica se o estabelecimento est\u00C3\u00A1 inativo.
+        Indica se o estabelecimento est\u00E1 inativo.
 
         :param inativo: The inativo of this EstabelecimentoUpdate.
         :type: int
@@ -683,7 +680,7 @@ class EstabelecimentoUpdate(object):
     def id_moeda(self):
         """
         Gets the id_moeda of this EstabelecimentoUpdate.
-        C\u00C3\u00B3digo identificador da moeda.
+        C\u00F3digo identificador da moeda.
 
         :return: The id_moeda of this EstabelecimentoUpdate.
         :rtype: int
@@ -694,7 +691,7 @@ class EstabelecimentoUpdate(object):
     def id_moeda(self, id_moeda):
         """
         Sets the id_moeda of this EstabelecimentoUpdate.
-        C\u00C3\u00B3digo identificador da moeda.
+        C\u00F3digo identificador da moeda.
 
         :param id_moeda: The id_moeda of this EstabelecimentoUpdate.
         :type: int
@@ -705,7 +702,7 @@ class EstabelecimentoUpdate(object):
     def id_pais(self):
         """
         Gets the id_pais of this EstabelecimentoUpdate.
-        Identificador de Pa\u00C3\u00ADs.
+        Identificador de Pa\u00EDs.
 
         :return: The id_pais of this EstabelecimentoUpdate.
         :rtype: int
@@ -716,7 +713,7 @@ class EstabelecimentoUpdate(object):
     def id_pais(self, id_pais):
         """
         Sets the id_pais of this EstabelecimentoUpdate.
-        Identificador de Pa\u00C3\u00ADs.
+        Identificador de Pa\u00EDs.
 
         :param id_pais: The id_pais of this EstabelecimentoUpdate.
         :type: int
@@ -727,7 +724,7 @@ class EstabelecimentoUpdate(object):
     def associado_spc_brasil(self):
         """
         Gets the associado_spc_brasil of this EstabelecimentoUpdate.
-        N\u00C3\u00BAmero do associado ao SPCBrasil.
+        N\u00FAmero do associado ao SPCBrasil.
 
         :return: The associado_spc_brasil of this EstabelecimentoUpdate.
         :rtype: int
@@ -738,7 +735,7 @@ class EstabelecimentoUpdate(object):
     def associado_spc_brasil(self, associado_spc_brasil):
         """
         Sets the associado_spc_brasil of this EstabelecimentoUpdate.
-        N\u00C3\u00BAmero do associado ao SPCBrasil.
+        N\u00FAmero do associado ao SPCBrasil.
 
         :param associado_spc_brasil: The associado_spc_brasil of this EstabelecimentoUpdate.
         :type: int
@@ -749,7 +746,7 @@ class EstabelecimentoUpdate(object):
     def mcc(self):
         """
         Gets the mcc of this EstabelecimentoUpdate.
-        C\u00C3\u00B3digo de Categoria de Mercado.
+        C\u00F3digo de Categoria de Mercado.
 
         :return: The mcc of this EstabelecimentoUpdate.
         :rtype: int
@@ -760,7 +757,7 @@ class EstabelecimentoUpdate(object):
     def mcc(self, mcc):
         """
         Sets the mcc of this EstabelecimentoUpdate.
-        C\u00C3\u00B3digo de Categoria de Mercado.
+        C\u00F3digo de Categoria de Mercado.
 
         :param mcc: The mcc of this EstabelecimentoUpdate.
         :type: int
@@ -771,7 +768,7 @@ class EstabelecimentoUpdate(object):
     def id_tipo_estabelecimento(self):
         """
         Gets the id_tipo_estabelecimento of this EstabelecimentoUpdate.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do Estabelecimento.
+        C\u00F3digo de identifica\u00E7\u00E3o do tipo de Estabelecimento.
 
         :return: The id_tipo_estabelecimento of this EstabelecimentoUpdate.
         :rtype: int
@@ -782,7 +779,7 @@ class EstabelecimentoUpdate(object):
     def id_tipo_estabelecimento(self, id_tipo_estabelecimento):
         """
         Sets the id_tipo_estabelecimento of this EstabelecimentoUpdate.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do Estabelecimento.
+        C\u00F3digo de identifica\u00E7\u00E3o do tipo de Estabelecimento.
 
         :param id_tipo_estabelecimento: The id_tipo_estabelecimento of this EstabelecimentoUpdate.
         :type: int
@@ -793,7 +790,7 @@ class EstabelecimentoUpdate(object):
     def correspondencia(self):
         """
         Gets the correspondencia of this EstabelecimentoUpdate.
-        Indicador para qual endere\u00C3\u00A7o as correspond\u00C3\u00AAncias ser\u00C3\u00A3o enviadas, onde 1 \u00C3\u00A9 ORIGEM e 2 ENDERE\u00C3\u0087O DE CORRESPOND\u00C3\u008ANCIA.
+        Indicador para qual endere\u00E7o as correspond\u00EAncias ser\u00E3o enviadas, onde 1 \u00E9 ORIGEM e 2 ENDERE\u00C7O DE CORRESPOND\u00CANCIA.
 
         :return: The correspondencia of this EstabelecimentoUpdate.
         :rtype: int
@@ -804,7 +801,7 @@ class EstabelecimentoUpdate(object):
     def correspondencia(self, correspondencia):
         """
         Sets the correspondencia of this EstabelecimentoUpdate.
-        Indicador para qual endere\u00C3\u00A7o as correspond\u00C3\u00AAncias ser\u00C3\u00A3o enviadas, onde 1 \u00C3\u00A9 ORIGEM e 2 ENDERE\u00C3\u0087O DE CORRESPOND\u00C3\u008ANCIA.
+        Indicador para qual endere\u00E7o as correspond\u00EAncias ser\u00E3o enviadas, onde 1 \u00E9 ORIGEM e 2 ENDERE\u00C7O DE CORRESPOND\u00CANCIA.
 
         :param correspondencia: The correspondencia of this EstabelecimentoUpdate.
         :type: int
@@ -865,7 +862,7 @@ class EstabelecimentoUpdate(object):
     def consulta(self):
         """
         Gets the consulta of this EstabelecimentoUpdate.
-        Consulta de cadastro n\u00C3\u00BAmero um.
+        Consulta de cadastro n\u00FAmero um.
 
         :return: The consulta of this EstabelecimentoUpdate.
         :rtype: ConsultaCadastroEstabelecimentoDTO
@@ -876,7 +873,7 @@ class EstabelecimentoUpdate(object):
     def consulta(self, consulta):
         """
         Sets the consulta of this EstabelecimentoUpdate.
-        Consulta de cadastro n\u00C3\u00BAmero um.
+        Consulta de cadastro n\u00FAmero um.
 
         :param consulta: The consulta of this EstabelecimentoUpdate.
         :type: ConsultaCadastroEstabelecimentoDTO
@@ -887,7 +884,7 @@ class EstabelecimentoUpdate(object):
     def consulta2(self):
         """
         Gets the consulta2 of this EstabelecimentoUpdate.
-        Consulta de cadastro n\u00C3\u00BAmero um.
+        Consulta de cadastro n\u00FAmero dois.
 
         :return: The consulta2 of this EstabelecimentoUpdate.
         :rtype: ConsultaCadastroEstabelecimentoDTO
@@ -898,7 +895,7 @@ class EstabelecimentoUpdate(object):
     def consulta2(self, consulta2):
         """
         Sets the consulta2 of this EstabelecimentoUpdate.
-        Consulta de cadastro n\u00C3\u00BAmero um.
+        Consulta de cadastro n\u00FAmero dois.
 
         :param consulta2: The consulta2 of this EstabelecimentoUpdate.
         :type: ConsultaCadastroEstabelecimentoDTO
@@ -909,7 +906,7 @@ class EstabelecimentoUpdate(object):
     def consulta3(self):
         """
         Gets the consulta3 of this EstabelecimentoUpdate.
-        Consulta de cadastro n\u00C3\u00BAmero um.
+        Consulta de cadastro n\u00FAmero tr\u00EAs.
 
         :return: The consulta3 of this EstabelecimentoUpdate.
         :rtype: ConsultaCadastroEstabelecimentoDTO
@@ -920,34 +917,12 @@ class EstabelecimentoUpdate(object):
     def consulta3(self, consulta3):
         """
         Sets the consulta3 of this EstabelecimentoUpdate.
-        Consulta de cadastro n\u00C3\u00BAmero um.
+        Consulta de cadastro n\u00FAmero tr\u00EAs.
 
         :param consulta3: The consulta3 of this EstabelecimentoUpdate.
         :type: ConsultaCadastroEstabelecimentoDTO
         """
         self._consulta3 = consulta3
-
-    @property
-    def sort(self):
-        """
-        Gets the sort of this EstabelecimentoUpdate.
-        Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
-
-        :return: The sort of this EstabelecimentoUpdate.
-        :rtype: list[str]
-        """
-        return self._sort
-
-    @sort.setter
-    def sort(self, sort):
-        """
-        Sets the sort of this EstabelecimentoUpdate.
-        Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
-
-        :param sort: The sort of this EstabelecimentoUpdate.
-        :type: list[str]
-        """
-        self._sort = sort
 
     def to_dict(self):
         """

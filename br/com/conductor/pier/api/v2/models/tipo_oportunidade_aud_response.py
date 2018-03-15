@@ -65,7 +65,7 @@ class TipoOportunidadeAUDResponse(object):
     def rev(self):
         """
         Gets the rev of this TipoOportunidadeAUDResponse.
-        C\u00C3\u00B3digo identificador da auditoria dos tipos oportunidades
+        C\u00F3digo identificador da auditoria dos tipos oportunidades
 
         :return: The rev of this TipoOportunidadeAUDResponse.
         :rtype: int
@@ -76,7 +76,7 @@ class TipoOportunidadeAUDResponse(object):
     def rev(self, rev):
         """
         Sets the rev of this TipoOportunidadeAUDResponse.
-        C\u00C3\u00B3digo identificador da auditoria dos tipos oportunidades
+        C\u00F3digo identificador da auditoria dos tipos oportunidades
 
         :param rev: The rev of this TipoOportunidadeAUDResponse.
         :type: int
@@ -87,7 +87,7 @@ class TipoOportunidadeAUDResponse(object):
     def rev_type(self):
         """
         Gets the rev_type of this TipoOportunidadeAUDResponse.
-        C\u00C3\u00B3digo que representa o tipo de a\u00C3\u00A7\u00C3\u00A3o realizada no recurso de tipos oportunidades
+        C\u00F3digo que representa o tipo de a\u00E7\u00E3o realizada no recurso de tipos oportunidades
 
         :return: The rev_type of this TipoOportunidadeAUDResponse.
         :rtype: int
@@ -98,7 +98,7 @@ class TipoOportunidadeAUDResponse(object):
     def rev_type(self, rev_type):
         """
         Sets the rev_type of this TipoOportunidadeAUDResponse.
-        C\u00C3\u00B3digo que representa o tipo de a\u00C3\u00A7\u00C3\u00A3o realizada no recurso de tipos oportunidades
+        C\u00F3digo que representa o tipo de a\u00E7\u00E3o realizada no recurso de tipos oportunidades
 
         :param rev_type: The rev_type of this TipoOportunidadeAUDResponse.
         :type: int
@@ -109,7 +109,7 @@ class TipoOportunidadeAUDResponse(object):
     def rev_date(self):
         """
         Gets the rev_date of this TipoOportunidadeAUDResponse.
-        Data da a\u00C3\u00A7\u00C3\u00A3o realizada no recurso de tipos oportunidades
+        Data da a\u00E7\u00E3o realizada no recurso de tipos oportunidades
 
         :return: The rev_date of this TipoOportunidadeAUDResponse.
         :rtype: str
@@ -120,7 +120,7 @@ class TipoOportunidadeAUDResponse(object):
     def rev_date(self, rev_date):
         """
         Sets the rev_date of this TipoOportunidadeAUDResponse.
-        Data da a\u00C3\u00A7\u00C3\u00A3o realizada no recurso de tipos oportunidades
+        Data da a\u00E7\u00E3o realizada no recurso de tipos oportunidades
 
         :param rev_date: The rev_date of this TipoOportunidadeAUDResponse.
         :type: str
@@ -131,7 +131,7 @@ class TipoOportunidadeAUDResponse(object):
     def id(self):
         """
         Gets the id of this TipoOportunidadeAUDResponse.
-        C\u00C3\u00B3digo identificador do tipo oportunidade no qual foi realizado a a\u00C3\u00A7\u00C3\u00A3o
+        C\u00F3digo identificador do tipo oportunidade no qual foi realizado a a\u00E7\u00E3o
 
         :return: The id of this TipoOportunidadeAUDResponse.
         :rtype: int
@@ -142,7 +142,7 @@ class TipoOportunidadeAUDResponse(object):
     def id(self, id):
         """
         Sets the id of this TipoOportunidadeAUDResponse.
-        C\u00C3\u00B3digo identificador do tipo oportunidade no qual foi realizado a a\u00C3\u00A7\u00C3\u00A3o
+        C\u00F3digo identificador do tipo oportunidade no qual foi realizado a a\u00E7\u00E3o
 
         :param id: The id of this TipoOportunidadeAUDResponse.
         :type: int
@@ -153,7 +153,7 @@ class TipoOportunidadeAUDResponse(object):
     def descricao(self):
         """
         Gets the descricao of this TipoOportunidadeAUDResponse.
-        Descri\u00C3\u00A7\u00C3\u00A3o do tipo oportunidade no qual foi realizado a a\u00C3\u00A7\u00C3\u00A3o
+        Descri\u00E7\u00E3o do tipo oportunidade no qual foi realizado a a\u00E7\u00E3o
 
         :return: The descricao of this TipoOportunidadeAUDResponse.
         :rtype: str
@@ -164,7 +164,7 @@ class TipoOportunidadeAUDResponse(object):
     def descricao(self, descricao):
         """
         Sets the descricao of this TipoOportunidadeAUDResponse.
-        Descri\u00C3\u00A7\u00C3\u00A3o do tipo oportunidade no qual foi realizado a a\u00C3\u00A7\u00C3\u00A3o
+        Descri\u00E7\u00E3o do tipo oportunidade no qual foi realizado a a\u00E7\u00E3o
 
         :param descricao: The descricao of this TipoOportunidadeAUDResponse.
         :type: str
@@ -175,7 +175,7 @@ class TipoOportunidadeAUDResponse(object):
     def flag_ativo(self):
         """
         Gets the flag_ativo of this TipoOportunidadeAUDResponse.
-        Atributo que representa se o tipo oportunidade est\u00C3\u00A1 ativo
+        Atributo que representa se o tipo oportunidade est\u00E1 ativo
 
         :return: The flag_ativo of this TipoOportunidadeAUDResponse.
         :rtype: bool
@@ -186,7 +186,7 @@ class TipoOportunidadeAUDResponse(object):
     def flag_ativo(self, flag_ativo):
         """
         Sets the flag_ativo of this TipoOportunidadeAUDResponse.
-        Atributo que representa se o tipo oportunidade est\u00C3\u00A1 ativo
+        Atributo que representa se o tipo oportunidade est\u00E1 ativo
 
         :param flag_ativo: The flag_ativo of this TipoOportunidadeAUDResponse.
         :type: bool

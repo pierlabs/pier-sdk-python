@@ -62,7 +62,7 @@ class TelefoneEstabelecimentoResponse(object):
     def id(self):
         """
         Gets the id of this TelefoneEstabelecimentoResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Telefone.
+        C\u00F3digo de Identifica\u00E7\u00E3o do Telefone.
 
         :return: The id of this TelefoneEstabelecimentoResponse.
         :rtype: int
@@ -73,7 +73,7 @@ class TelefoneEstabelecimentoResponse(object):
     def id(self, id):
         """
         Sets the id of this TelefoneEstabelecimentoResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Telefone.
+        C\u00F3digo de Identifica\u00E7\u00E3o do Telefone.
 
         :param id: The id of this TelefoneEstabelecimentoResponse.
         :type: int
@@ -84,7 +84,7 @@ class TelefoneEstabelecimentoResponse(object):
     def id_estabelecimento(self):
         """
         Gets the id_estabelecimento of this TelefoneEstabelecimentoResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Tipo do Estabelecimento.
+        C\u00F3digo de Identifica\u00E7\u00E3o do Tipo do Estabelecimento.
 
         :return: The id_estabelecimento of this TelefoneEstabelecimentoResponse.
         :rtype: int
@@ -95,7 +95,7 @@ class TelefoneEstabelecimentoResponse(object):
     def id_estabelecimento(self, id_estabelecimento):
         """
         Sets the id_estabelecimento of this TelefoneEstabelecimentoResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Tipo do Estabelecimento.
+        C\u00F3digo de Identifica\u00E7\u00E3o do Tipo do Estabelecimento.
 
         :param id_estabelecimento: The id_estabelecimento of this TelefoneEstabelecimentoResponse.
         :type: int
@@ -106,7 +106,7 @@ class TelefoneEstabelecimentoResponse(object):
     def ddd(self):
         """
         Gets the ddd of this TelefoneEstabelecimentoResponse.
-        C\u00C3\u00B3digo DDD do telefone.
+        C\u00F3digo DDD do telefone.
 
         :return: The ddd of this TelefoneEstabelecimentoResponse.
         :rtype: str
@@ -117,7 +117,7 @@ class TelefoneEstabelecimentoResponse(object):
     def ddd(self, ddd):
         """
         Sets the ddd of this TelefoneEstabelecimentoResponse.
-        C\u00C3\u00B3digo DDD do telefone.
+        C\u00F3digo DDD do telefone.
 
         :param ddd: The ddd of this TelefoneEstabelecimentoResponse.
         :type: str
@@ -128,7 +128,7 @@ class TelefoneEstabelecimentoResponse(object):
     def telefone(self):
         """
         Gets the telefone of this TelefoneEstabelecimentoResponse.
-        N\u00C3\u00BAmero do telefone.
+        N\u00FAmero do telefone.
 
         :return: The telefone of this TelefoneEstabelecimentoResponse.
         :rtype: str
@@ -139,7 +139,7 @@ class TelefoneEstabelecimentoResponse(object):
     def telefone(self, telefone):
         """
         Sets the telefone of this TelefoneEstabelecimentoResponse.
-        N\u00C3\u00BAmero do telefone.
+        N\u00FAmero do telefone.
 
         :param telefone: The telefone of this TelefoneEstabelecimentoResponse.
         :type: str
@@ -150,7 +150,7 @@ class TelefoneEstabelecimentoResponse(object):
     def ramal(self):
         """
         Gets the ramal of this TelefoneEstabelecimentoResponse.
-        N\u00C3\u00BAmero do ramal.
+        N\u00FAmero do ramal.
 
         :return: The ramal of this TelefoneEstabelecimentoResponse.
         :rtype: str
@@ -161,7 +161,7 @@ class TelefoneEstabelecimentoResponse(object):
     def ramal(self, ramal):
         """
         Sets the ramal of this TelefoneEstabelecimentoResponse.
-        N\u00C3\u00BAmero do ramal.
+        N\u00FAmero do ramal.
 
         :param ramal: The ramal of this TelefoneEstabelecimentoResponse.
         :type: str

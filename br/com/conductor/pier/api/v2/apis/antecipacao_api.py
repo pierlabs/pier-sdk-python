@@ -47,8 +47,8 @@ class AntecipacaoApi(object):
 
     def configurar_taxa_antecipacao_using_post(self, id, taxa_antecipacao_request, **kwargs):
         """
-        Configura a Taxa de Antecipa\u00C3\u00A7\u00C3\u00A3o de um Produto
-        Este recurso permite configurar a Taxa de Antecipa\u00C3\u00A7\u00C3\u00A3o de um Produto, a partir do seu c\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o (id).
+        Configura a Taxa de Antecipa\u00E7\u00E3o de um Produto
+        Este recurso permite configurar a Taxa de Antecipa\u00E7\u00E3o de um Produto, a partir do seu c\u00F3digo de identifica\u00E7\u00E3o (id).
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -130,8 +130,8 @@ class AntecipacaoApi(object):
 
     def consultar_taxa_antecipacao_using_get(self, id, tipo_transacao, **kwargs):
         """
-        Consulta a Taxa de Antecipa\u00C3\u00A7\u00C3\u00A3o de um Produto
-        Este recurso permite consultar a Taxa de Antecipa\u00C3\u00A7\u00C3\u00A3o de um Produto, a partir do seu c\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o (id).
+        Consulta a Taxa de Antecipa\u00E7\u00E3o de um Produto
+        Este recurso permite consultar a Taxa de Antecipa\u00E7\u00E3o de um Produto, a partir do seu c\u00F3digo de identifica\u00E7\u00E3o (id).
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -144,7 +144,7 @@ class AntecipacaoApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int id: Id Produto (required)
-        :param str tipo_transacao: Tipo da Transa\u00C3\u00A7\u00C3\u00A3o (ON-US ou OFF-US) (required)
+        :param str tipo_transacao: Tipo da Transa\u00E7\u00E3o (ON-US ou OFF-US) (required)
         :return: ParametroProdutoResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -213,8 +213,8 @@ class AntecipacaoApi(object):
 
     def efetivar_antecipacao_using_post(self, id_conta, id, quantidade_parcelas, **kwargs):
         """
-        Faz a efetiva\u00C3\u00A7\u00C3\u00A3o da antecipa\u00C3\u00A7\u00C3\u00A3o
-        M\u00C3\u00A9todo responsavel pela efetiva\u00C3\u00A7\u00C3\u00A3o da antecipa\u00C3\u00A7\u00C3\u00A3o, cujo desconto \u00C3\u00A9 calculado baseado na data da \u00C3\u00BAltima parcela em aberto.
+        Faz a efetiva\u00E7\u00E3o da antecipa\u00E7\u00E3o
+        M\u00E9todo responsavel pela efetiva\u00E7\u00E3o da antecipa\u00E7\u00E3o, cujo desconto \u00E9 calculado baseado na data da \u00FAltima parcela em aberto.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -226,10 +226,10 @@ class AntecipacaoApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param int id_conta: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Conta. (required)
-        :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do evento. (required)
+        :param int id_conta: C\u00F3digo de Identifica\u00E7\u00E3o da Conta. (required)
+        :param int id: C\u00F3digo de Identifica\u00E7\u00E3o do evento. (required)
         :param int quantidade_parcelas: Quantidade de parcelas para serem antecipadas. (required)
-        :param str complemento: Dados complementares sobre a realiza\u00C3\u00A7\u00C3\u00A3o da transa\u00C3\u00A7\u00C3\u00A3o.
+        :param str complemento: Dados complementares sobre a realiza\u00E7\u00E3o da transa\u00E7\u00E3o.
         :return: AntecipacaoResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -305,8 +305,8 @@ class AntecipacaoApi(object):
 
     def efetivar_antecipacoes_using_post(self, id_conta, **kwargs):
         """
-        Faz a efetiva\u00C3\u00A7\u00C3\u00A3o da antecipa\u00C3\u00A7\u00C3\u00A3o
-        M\u00C3\u00A9todo responsavel pela efetiva\u00C3\u00A7\u00C3\u00A3o de todas as compras antecip\u00C3\u00A1veis com todas as parcelas de uma conta.
+        Faz a efetiva\u00E7\u00E3o da antecipa\u00E7\u00E3o
+        M\u00E9todo responsavel pela efetiva\u00E7\u00E3o de todas as compras antecip\u00E1veis com todas as parcelas de uma conta.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -318,8 +318,8 @@ class AntecipacaoApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param int id_conta: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Conta. (required)
-        :param str complemento: Dados complementares sobre a realiza\u00C3\u00A7\u00C3\u00A3o da transa\u00C3\u00A7\u00C3\u00A3o.
+        :param int id_conta: C\u00F3digo de Identifica\u00E7\u00E3o da Conta. (required)
+        :param str complemento: Dados complementares sobre a realiza\u00E7\u00E3o da transa\u00E7\u00E3o.
         :return: AntecipacaoResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -383,10 +383,10 @@ class AntecipacaoApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get11(self, id_conta, **kwargs):
+    def listar_using_get12(self, id_conta, **kwargs):
         """
-        Listar compras com parcelas antecip\u00C3\u00A1veis
-        Lista as compras antecip\u00C3\u00A1veis de uma conta.
+        Listar compras com parcelas antecip\u00E1veis
+        Lista as compras antecip\u00E1veis de uma conta.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -394,18 +394,18 @@ class AntecipacaoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get11(id_conta, callback=callback_function)
+        >>> thread = api.listar_using_get12(id_conta, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param int id_conta: C\u00C3\u00B3digo identificador da conta da Compra. (required)
-        :param list[str] sort: Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
-        :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
-        :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
-        :param int id_compra: C\u00C3\u00B3digo identificador da Compra.
-        :param bool parcelada: Indica se a compra \u00C3\u00A9 parcelada.
-        :param bool juros: Indica se a compra \u00C3\u00A9 com ou sem juros.
-        :param str tipo_origem_transacao: Indica se a compra \u00C3\u00A9 ON-US ou OFF-US
+        :param int id_conta: C\u00F3digo identificador da conta da Compra. (required)
+        :param list[str] sort: Tipo de ordena\u00E7\u00E3o dos registros.
+        :param int page: P\u00E1gina solicitada (Default = 0)
+        :param int limit: Limite de elementos por solicita\u00E7\u00E3o (Default = 50, Max = 50)
+        :param int id_compra: C\u00F3digo identificador da Compra.
+        :param bool parcelada: Indica se a compra \u00E9 parcelada.
+        :param bool juros: Indica se a compra \u00E9 com ou sem juros.
+        :param str tipo_origem_transacao: Indica se a compra \u00E9 ON-US ou OFF-US
         :return: PageCompraResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -419,14 +419,14 @@ class AntecipacaoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get11" % key
+                    " to method listar_using_get12" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id_conta' is set
         if ('id_conta' not in params) or (params['id_conta'] is None):
-            raise ValueError("Missing the required parameter `id_conta` when calling `listar_using_get11`")
+            raise ValueError("Missing the required parameter `id_conta` when calling `listar_using_get12`")
 
         resource_path = '/api/compras-antecipaveis'.replace('{format}', 'json')
         path_params = {}
@@ -483,8 +483,8 @@ class AntecipacaoApi(object):
 
     def simular_antecipacao_using_get(self, id_conta, id, **kwargs):
         """
-        Simular antecipa\u00C3\u00A7\u00C3\u00A3o de parcelas
-        Simula a antecipa\u00C3\u00A7\u00C3\u00A3o de parcelas de um evento, listando todos os planos de parcelamento dispon\u00C3\u00ADveis, cujo desconto \u00C3\u00A9 calculado baseado na data da \u00C3\u00BAltima parcela em aberto.
+        Simular antecipa\u00E7\u00E3o de parcelas
+        Simula a antecipa\u00E7\u00E3o de parcelas de um evento, listando todos os planos de parcelamento dispon\u00EDveis, cujo desconto \u00E9 calculado baseado na data da \u00FAltima parcela em aberto.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -496,9 +496,9 @@ class AntecipacaoApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param int id_conta: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da conta. (required)
-        :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do evento. (required)
-        :param str complemento: Dados complementares sobre a realiza\u00C3\u00A7\u00C3\u00A3o da transa\u00C3\u00A7\u00C3\u00A3o.
+        :param int id_conta: C\u00F3digo de identifica\u00E7\u00E3o da conta. (required)
+        :param int id: C\u00F3digo de Identifica\u00E7\u00E3o do evento. (required)
+        :param str complemento: Dados complementares sobre a realiza\u00E7\u00E3o da transa\u00E7\u00E3o.
         :return: AntecipacaoSimuladaResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -569,8 +569,8 @@ class AntecipacaoApi(object):
 
     def simular_antecipacoes_using_get(self, id_conta, **kwargs):
         """
-        Simular antecipa\u00C3\u00A7\u00C3\u00A3o de todas as parcelas antecip\u00C3\u00A1veis
-        O recurso permite realizar a simula\u00C3\u00A7\u00C3\u00A3o da antecipa\u00C3\u00A7\u00C3\u00A3o de todas as compras antecip\u00C3\u00A1veis de todas as parcelas de uma determinada conta.
+        Simular antecipa\u00E7\u00E3o de todas as parcelas antecip\u00E1veis
+        O recurso permite realizar a simula\u00E7\u00E3o da antecipa\u00E7\u00E3o de todas as compras antecip\u00E1veis de todas as parcelas de uma determinada conta.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -582,8 +582,8 @@ class AntecipacaoApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param int id_conta: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da conta. (required)
-        :param str complemento: Dados complementares sobre a realiza\u00C3\u00A7\u00C3\u00A3o da transa\u00C3\u00A7\u00C3\u00A3o.
+        :param int id_conta: C\u00F3digo de identifica\u00E7\u00E3o da conta. (required)
+        :param str complemento: Dados complementares sobre a realiza\u00E7\u00E3o da transa\u00E7\u00E3o.
         :return: AntecipacaoSimuladaLoteResponse
                  If the method is called asynchronously,
                  returns the request thread.

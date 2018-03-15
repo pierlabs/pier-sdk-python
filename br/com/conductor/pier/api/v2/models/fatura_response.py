@@ -74,7 +74,7 @@ class FaturaResponse(object):
     def id_conta(self):
         """
         Gets the id_conta of this FaturaResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da conta.
+        C\u00F3digo de identifica\u00E7\u00E3o da conta.
 
         :return: The id_conta of this FaturaResponse.
         :rtype: int
@@ -85,7 +85,7 @@ class FaturaResponse(object):
     def id_conta(self, id_conta):
         """
         Sets the id_conta of this FaturaResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da conta.
+        C\u00F3digo de identifica\u00E7\u00E3o da conta.
 
         :param id_conta: The id_conta of this FaturaResponse.
         :type: int
@@ -96,7 +96,7 @@ class FaturaResponse(object):
     def situacao_processamento(self):
         """
         Gets the situacao_processamento of this FaturaResponse.
-        Situa\u00C3\u00A7\u00C3\u00A3o de Processamento da fatura.
+        Situa\u00E7\u00E3o de Processamento da fatura.
 
         :return: The situacao_processamento of this FaturaResponse.
         :rtype: str
@@ -107,7 +107,7 @@ class FaturaResponse(object):
     def situacao_processamento(self, situacao_processamento):
         """
         Sets the situacao_processamento of this FaturaResponse.
-        Situa\u00C3\u00A7\u00C3\u00A3o de Processamento da fatura.
+        Situa\u00E7\u00E3o de Processamento da fatura.
 
         :param situacao_processamento: The situacao_processamento of this FaturaResponse.
         :type: str
@@ -234,7 +234,7 @@ class FaturaResponse(object):
     def valor_pagamento_minimo(self):
         """
         Gets the valor_pagamento_minimo of this FaturaResponse.
-        Valor do pagamento m\u00C3\u00ADnimo.
+        Valor do pagamento m\u00EDnimo.
 
         :return: The valor_pagamento_minimo of this FaturaResponse.
         :rtype: float
@@ -245,7 +245,7 @@ class FaturaResponse(object):
     def valor_pagamento_minimo(self, valor_pagamento_minimo):
         """
         Sets the valor_pagamento_minimo of this FaturaResponse.
-        Valor do pagamento m\u00C3\u00ADnimo.
+        Valor do pagamento m\u00EDnimo.
 
         :param valor_pagamento_minimo: The valor_pagamento_minimo of this FaturaResponse.
         :type: float

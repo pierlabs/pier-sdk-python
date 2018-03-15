@@ -77,7 +77,7 @@ class PushAPNS(object):
     def id_pessoa(self):
         """
         Gets the id_pessoa of this PushAPNS.
-        C\u00C3\u00B3digo identificado da pessoa
+        C\u00F3digo identificado da pessoa
 
         :return: The id_pessoa of this PushAPNS.
         :rtype: int
@@ -88,7 +88,7 @@ class PushAPNS(object):
     def id_pessoa(self, id_pessoa):
         """
         Sets the id_pessoa of this PushAPNS.
-        C\u00C3\u00B3digo identificado da pessoa
+        C\u00F3digo identificado da pessoa
 
         :param id_pessoa: The id_pessoa of this PushAPNS.
         :type: int
@@ -99,7 +99,7 @@ class PushAPNS(object):
     def id_conta(self):
         """
         Gets the id_conta of this PushAPNS.
-        C\u00C3\u00B3digo identificador da conta
+        C\u00F3digo identificador da conta
 
         :return: The id_conta of this PushAPNS.
         :rtype: int
@@ -110,7 +110,7 @@ class PushAPNS(object):
     def id_conta(self, id_conta):
         """
         Sets the id_conta of this PushAPNS.
-        C\u00C3\u00B3digo identificador da conta
+        C\u00F3digo identificador da conta
 
         :param id_conta: The id_conta of this PushAPNS.
         :type: int
@@ -121,7 +121,7 @@ class PushAPNS(object):
     def token_dispositivo(self):
         """
         Gets the token_dispositivo of this PushAPNS.
-        Apresenta o token do dispositivo que dever\u00C3\u00A1 receber o push.
+        Apresenta o token do dispositivo que dever\u00E1 receber o push.
 
         :return: The token_dispositivo of this PushAPNS.
         :rtype: str
@@ -132,7 +132,7 @@ class PushAPNS(object):
     def token_dispositivo(self, token_dispositivo):
         """
         Sets the token_dispositivo of this PushAPNS.
-        Apresenta o token do dispositivo que dever\u00C3\u00A1 receber o push.
+        Apresenta o token do dispositivo que dever\u00E1 receber o push.
 
         :param token_dispositivo: The token_dispositivo of this PushAPNS.
         :type: str
@@ -143,7 +143,7 @@ class PushAPNS(object):
     def certificado(self):
         """
         Gets the certificado of this PushAPNS.
-        Apresenta o certificado APNs que est\u00C3\u00A1 cadastrado para o aplicativo na loja da Apple. Esse certificado dever\u00C3\u00A1 ser enviado no formado Base64.
+        Apresenta o certificado APNs que est\u00E1 cadastrado para o aplicativo na loja da Apple. Esse certificado dever\u00E1 ser enviado no formado Base64.
 
         :return: The certificado of this PushAPNS.
         :rtype: str
@@ -154,7 +154,7 @@ class PushAPNS(object):
     def certificado(self, certificado):
         """
         Sets the certificado of this PushAPNS.
-        Apresenta o certificado APNs que est\u00C3\u00A1 cadastrado para o aplicativo na loja da Apple. Esse certificado dever\u00C3\u00A1 ser enviado no formado Base64.
+        Apresenta o certificado APNs que est\u00E1 cadastrado para o aplicativo na loja da Apple. Esse certificado dever\u00E1 ser enviado no formado Base64.
 
         :param certificado: The certificado of this PushAPNS.
         :type: str
@@ -165,7 +165,7 @@ class PushAPNS(object):
     def senha(self):
         """
         Gets the senha of this PushAPNS.
-        Apresenta a senha para o certificado APNs que est\u00C3\u00A1 cadastrado para o aplicativo na loja da Apple.
+        Apresenta a senha para o certificado APNs que est\u00E1 cadastrado para o aplicativo na loja da Apple.
 
         :return: The senha of this PushAPNS.
         :rtype: str
@@ -176,7 +176,7 @@ class PushAPNS(object):
     def senha(self, senha):
         """
         Sets the senha of this PushAPNS.
-        Apresenta a senha para o certificado APNs que est\u00C3\u00A1 cadastrado para o aplicativo na loja da Apple.
+        Apresenta a senha para o certificado APNs que est\u00E1 cadastrado para o aplicativo na loja da Apple.
 
         :param senha: The senha of this PushAPNS.
         :type: str
@@ -187,7 +187,7 @@ class PushAPNS(object):
     def titulo(self):
         """
         Gets the titulo of this PushAPNS.
-        Apresenta o t\u00C3\u00ADtulo da notifica\u00C3\u00A7\u00C3\u00A3o.
+        Apresenta o t\u00EDtulo da notifica\u00E7\u00E3o.
 
         :return: The titulo of this PushAPNS.
         :rtype: str
@@ -198,7 +198,7 @@ class PushAPNS(object):
     def titulo(self, titulo):
         """
         Sets the titulo of this PushAPNS.
-        Apresenta o t\u00C3\u00ADtulo da notifica\u00C3\u00A7\u00C3\u00A3o.
+        Apresenta o t\u00EDtulo da notifica\u00E7\u00E3o.
 
         :param titulo: The titulo of this PushAPNS.
         :type: str
@@ -209,7 +209,7 @@ class PushAPNS(object):
     def conteudo(self):
         """
         Gets the conteudo of this PushAPNS.
-        Apresenta o texto da notifica\u00C3\u00A7\u00C3\u00A3o a ser enviado.
+        Apresenta o texto da notifica\u00E7\u00E3o a ser enviado.
 
         :return: The conteudo of this PushAPNS.
         :rtype: str
@@ -220,7 +220,7 @@ class PushAPNS(object):
     def conteudo(self, conteudo):
         """
         Sets the conteudo of this PushAPNS.
-        Apresenta o texto da notifica\u00C3\u00A7\u00C3\u00A3o a ser enviado.
+        Apresenta o texto da notifica\u00E7\u00E3o a ser enviado.
 
         :param conteudo: The conteudo of this PushAPNS.
         :type: str
@@ -231,7 +231,7 @@ class PushAPNS(object):
     def tipo_evento(self):
         """
         Gets the tipo_evento of this PushAPNS.
-        Apresenta o tipoEvento a qual pertence a notifica\u00C3\u00A7\u00C3\u00A3o
+        Apresenta o tipoEvento a qual pertence a notifica\u00E7\u00E3o
 
         :return: The tipo_evento of this PushAPNS.
         :rtype: str
@@ -242,7 +242,7 @@ class PushAPNS(object):
     def tipo_evento(self, tipo_evento):
         """
         Sets the tipo_evento of this PushAPNS.
-        Apresenta o tipoEvento a qual pertence a notifica\u00C3\u00A7\u00C3\u00A3o
+        Apresenta o tipoEvento a qual pertence a notifica\u00E7\u00E3o
 
         :param tipo_evento: The tipo_evento of this PushAPNS.
         :type: str

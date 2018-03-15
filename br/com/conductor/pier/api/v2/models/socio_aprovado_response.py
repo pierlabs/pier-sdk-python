@@ -89,7 +89,7 @@ class SocioAprovadoResponse(object):
     def id(self):
         """
         Gets the id of this SocioAprovadoResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do S\u00C3\u00B3cio (id)
+        C\u00F3digo de Identifica\u00E7\u00E3o do S\u00F3cio (id)
 
         :return: The id of this SocioAprovadoResponse.
         :rtype: int
@@ -100,7 +100,7 @@ class SocioAprovadoResponse(object):
     def id(self, id):
         """
         Sets the id of this SocioAprovadoResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do S\u00C3\u00B3cio (id)
+        C\u00F3digo de Identifica\u00E7\u00E3o do S\u00F3cio (id)
 
         :param id: The id of this SocioAprovadoResponse.
         :type: int
@@ -133,7 +133,7 @@ class SocioAprovadoResponse(object):
     def cpf(self):
         """
         Gets the cpf of this SocioAprovadoResponse.
-        N\u00C3\u00BAmero do CPF, quando PF.
+        N\u00FAmero do CPF, quando PF.
 
         :return: The cpf of this SocioAprovadoResponse.
         :rtype: str
@@ -144,7 +144,7 @@ class SocioAprovadoResponse(object):
     def cpf(self, cpf):
         """
         Sets the cpf of this SocioAprovadoResponse.
-        N\u00C3\u00BAmero do CPF, quando PF.
+        N\u00FAmero do CPF, quando PF.
 
         :param cpf: The cpf of this SocioAprovadoResponse.
         :type: str
@@ -177,7 +177,7 @@ class SocioAprovadoResponse(object):
     def sexo(self):
         """
         Gets the sexo of this SocioAprovadoResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do sexo da Pessoa, quando PF, sendo: (\"M\": Masculino), (\"F\": Feminino), (\"O\": Outro), (\"N\": N\u00C3\u00A3o Especificado).
+        C\u00F3digo de identifica\u00E7\u00E3o do sexo da Pessoa, quando PF, sendo: (\"M\": Masculino), (\"F\": Feminino), (\"O\": Outro), (\"N\": N\u00E3o Especificado).
 
         :return: The sexo of this SocioAprovadoResponse.
         :rtype: str
@@ -188,7 +188,7 @@ class SocioAprovadoResponse(object):
     def sexo(self, sexo):
         """
         Sets the sexo of this SocioAprovadoResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do sexo da Pessoa, quando PF, sendo: (\"M\": Masculino), (\"F\": Feminino), (\"O\": Outro), (\"N\": N\u00C3\u00A3o Especificado).
+        C\u00F3digo de identifica\u00E7\u00E3o do sexo da Pessoa, quando PF, sendo: (\"M\": Masculino), (\"F\": Feminino), (\"O\": Outro), (\"N\": N\u00E3o Especificado).
 
         :param sexo: The sexo of this SocioAprovadoResponse.
         :type: str
@@ -199,7 +199,7 @@ class SocioAprovadoResponse(object):
     def numero_identidade(self):
         """
         Gets the numero_identidade of this SocioAprovadoResponse.
-        N\u00C3\u00BAmero da Identidade.
+        N\u00FAmero da Identidade.
 
         :return: The numero_identidade of this SocioAprovadoResponse.
         :rtype: str
@@ -210,7 +210,7 @@ class SocioAprovadoResponse(object):
     def numero_identidade(self, numero_identidade):
         """
         Sets the numero_identidade of this SocioAprovadoResponse.
-        N\u00C3\u00BAmero da Identidade.
+        N\u00FAmero da Identidade.
 
         :param numero_identidade: The numero_identidade of this SocioAprovadoResponse.
         :type: str
@@ -221,7 +221,7 @@ class SocioAprovadoResponse(object):
     def orgao_expedidor_identidade(self):
         """
         Gets the orgao_expedidor_identidade of this SocioAprovadoResponse.
-        Org\u00C3\u00A3o expedidor do RG.
+        Org\u00E3o expedidor do RG.
 
         :return: The orgao_expedidor_identidade of this SocioAprovadoResponse.
         :rtype: str
@@ -232,7 +232,7 @@ class SocioAprovadoResponse(object):
     def orgao_expedidor_identidade(self, orgao_expedidor_identidade):
         """
         Sets the orgao_expedidor_identidade of this SocioAprovadoResponse.
-        Org\u00C3\u00A3o expedidor do RG.
+        Org\u00E3o expedidor do RG.
 
         :param orgao_expedidor_identidade: The orgao_expedidor_identidade of this SocioAprovadoResponse.
         :type: str
@@ -265,7 +265,7 @@ class SocioAprovadoResponse(object):
     def data_emissao_identidade(self):
         """
         Gets the data_emissao_identidade of this SocioAprovadoResponse.
-        Data emiss\u00C3\u00A3o da Identidade
+        Data emiss\u00E3o da Identidade
 
         :return: The data_emissao_identidade of this SocioAprovadoResponse.
         :rtype: str
@@ -276,7 +276,7 @@ class SocioAprovadoResponse(object):
     def data_emissao_identidade(self, data_emissao_identidade):
         """
         Sets the data_emissao_identidade of this SocioAprovadoResponse.
-        Data emiss\u00C3\u00A3o da Identidade
+        Data emiss\u00E3o da Identidade
 
         :param data_emissao_identidade: The data_emissao_identidade of this SocioAprovadoResponse.
         :type: str
@@ -287,7 +287,7 @@ class SocioAprovadoResponse(object):
     def estado_civil(self):
         """
         Gets the estado_civil of this SocioAprovadoResponse.
-        Estado civil do s\u00C3\u00B3cio
+        Estado civil do s\u00F3cio
 
         :return: The estado_civil of this SocioAprovadoResponse.
         :rtype: str
@@ -298,7 +298,7 @@ class SocioAprovadoResponse(object):
     def estado_civil(self, estado_civil):
         """
         Sets the estado_civil of this SocioAprovadoResponse.
-        Estado civil do s\u00C3\u00B3cio
+        Estado civil do s\u00F3cio
 
         :param estado_civil: The estado_civil of this SocioAprovadoResponse.
         :type: str
@@ -309,7 +309,7 @@ class SocioAprovadoResponse(object):
     def profissao(self):
         """
         Gets the profissao of this SocioAprovadoResponse.
-        Profiss\u00C3\u00A3o do s\u00C3\u00B3cio
+        Profiss\u00E3o do s\u00F3cio
 
         :return: The profissao of this SocioAprovadoResponse.
         :rtype: str
@@ -320,7 +320,7 @@ class SocioAprovadoResponse(object):
     def profissao(self, profissao):
         """
         Sets the profissao of this SocioAprovadoResponse.
-        Profiss\u00C3\u00A3o do s\u00C3\u00B3cio
+        Profiss\u00E3o do s\u00F3cio
 
         :param profissao: The profissao of this SocioAprovadoResponse.
         :type: str
@@ -331,7 +331,7 @@ class SocioAprovadoResponse(object):
     def nacionalidade(self):
         """
         Gets the nacionalidade of this SocioAprovadoResponse.
-        Nacionalidade do s\u00C3\u00B3cio
+        Nacionalidade do s\u00F3cio
 
         :return: The nacionalidade of this SocioAprovadoResponse.
         :rtype: str
@@ -342,7 +342,7 @@ class SocioAprovadoResponse(object):
     def nacionalidade(self, nacionalidade):
         """
         Sets the nacionalidade of this SocioAprovadoResponse.
-        Nacionalidade do s\u00C3\u00B3cio
+        Nacionalidade do s\u00F3cio
 
         :param nacionalidade: The nacionalidade of this SocioAprovadoResponse.
         :type: str
@@ -353,7 +353,7 @@ class SocioAprovadoResponse(object):
     def email(self):
         """
         Gets the email of this SocioAprovadoResponse.
-        Email do s\u00C3\u00B3cio
+        Email do s\u00F3cio
 
         :return: The email of this SocioAprovadoResponse.
         :rtype: str
@@ -364,7 +364,7 @@ class SocioAprovadoResponse(object):
     def email(self, email):
         """
         Sets the email of this SocioAprovadoResponse.
-        Email do s\u00C3\u00B3cio
+        Email do s\u00F3cio
 
         :param email: The email of this SocioAprovadoResponse.
         :type: str
@@ -375,7 +375,7 @@ class SocioAprovadoResponse(object):
     def telefones(self):
         """
         Gets the telefones of this SocioAprovadoResponse.
-        Informa os telefones do s\u00C3\u00B3cio
+        Informa os telefones do s\u00F3cio
 
         :return: The telefones of this SocioAprovadoResponse.
         :rtype: list[TelefonePessoaAprovadaResponse]
@@ -386,7 +386,7 @@ class SocioAprovadoResponse(object):
     def telefones(self, telefones):
         """
         Sets the telefones of this SocioAprovadoResponse.
-        Informa os telefones do s\u00C3\u00B3cio
+        Informa os telefones do s\u00F3cio
 
         :param telefones: The telefones of this SocioAprovadoResponse.
         :type: list[TelefonePessoaAprovadaResponse]

@@ -53,7 +53,7 @@ class NotificacaoResponse(object):
     def protocolo(self):
         """
         Gets the protocolo of this NotificacaoResponse.
-        N\u00C3\u00BAmero do protocolo de envio de notifica\u00C3\u00A7\u00C3\u00B5es
+        N\u00FAmero do protocolo de envio de notifica\u00E7\u00F5es
 
         :return: The protocolo of this NotificacaoResponse.
         :rtype: str
@@ -64,7 +64,7 @@ class NotificacaoResponse(object):
     def protocolo(self, protocolo):
         """
         Sets the protocolo of this NotificacaoResponse.
-        N\u00C3\u00BAmero do protocolo de envio de notifica\u00C3\u00A7\u00C3\u00B5es
+        N\u00FAmero do protocolo de envio de notifica\u00E7\u00F5es
 
         :param protocolo: The protocolo of this NotificacaoResponse.
         :type: str
@@ -75,7 +75,7 @@ class NotificacaoResponse(object):
     def mensagem(self):
         """
         Gets the mensagem of this NotificacaoResponse.
-        Mensagem de resposta da solicita\u00C3\u00A7\u00C3\u00B5es de envio
+        Mensagem de resposta da solicita\u00E7\u00F5es de envio
 
         :return: The mensagem of this NotificacaoResponse.
         :rtype: str
@@ -86,7 +86,7 @@ class NotificacaoResponse(object):
     def mensagem(self, mensagem):
         """
         Sets the mensagem of this NotificacaoResponse.
-        Mensagem de resposta da solicita\u00C3\u00A7\u00C3\u00B5es de envio
+        Mensagem de resposta da solicita\u00E7\u00F5es de envio
 
         :param mensagem: The mensagem of this NotificacaoResponse.
         :type: str

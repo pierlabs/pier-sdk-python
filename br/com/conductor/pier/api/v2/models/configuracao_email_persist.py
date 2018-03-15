@@ -121,7 +121,7 @@ class ConfiguracaoEmailPersist(object):
     def port_tlsstarttls(self):
         """
         Gets the port_tlsstarttls of this ConfiguracaoEmailPersist.
-        Porta usada pelo servi\u00C3\u00A7o TLS/STARTTLS.
+        Porta usada pelo servi\u00E7o TLS/STARTTLS.
 
         :return: The port_tlsstarttls of this ConfiguracaoEmailPersist.
         :rtype: str
@@ -132,7 +132,7 @@ class ConfiguracaoEmailPersist(object):
     def port_tlsstarttls(self, port_tlsstarttls):
         """
         Sets the port_tlsstarttls of this ConfiguracaoEmailPersist.
-        Porta usada pelo servi\u00C3\u00A7o TLS/STARTTLS.
+        Porta usada pelo servi\u00E7o TLS/STARTTLS.
 
         :param port_tlsstarttls: The port_tlsstarttls of this ConfiguracaoEmailPersist.
         :type: str
@@ -143,7 +143,7 @@ class ConfiguracaoEmailPersist(object):
     def port_ssl(self):
         """
         Gets the port_ssl of this ConfiguracaoEmailPersist.
-        Porta usada pelo servi\u00C3\u00A7o SSL.
+        Porta usada pelo servi\u00E7o SSL.
 
         :return: The port_ssl of this ConfiguracaoEmailPersist.
         :rtype: str
@@ -154,7 +154,7 @@ class ConfiguracaoEmailPersist(object):
     def port_ssl(self, port_ssl):
         """
         Sets the port_ssl of this ConfiguracaoEmailPersist.
-        Porta usada pelo servi\u00C3\u00A7o SSL.
+        Porta usada pelo servi\u00E7o SSL.
 
         :param port_ssl: The port_ssl of this ConfiguracaoEmailPersist.
         :type: str
@@ -165,7 +165,7 @@ class ConfiguracaoEmailPersist(object):
     def protocolo(self):
         """
         Gets the protocolo of this ConfiguracaoEmailPersist.
-        Protocolo de comunica\u00C3\u00A7\u00C3\u00A3o usado pelo servi\u00C3\u00A7o de e-mail.
+        Protocolo de comunica\u00E7\u00E3o usado pelo servi\u00E7o de e-mail.
 
         :return: The protocolo of this ConfiguracaoEmailPersist.
         :rtype: str
@@ -176,7 +176,7 @@ class ConfiguracaoEmailPersist(object):
     def protocolo(self, protocolo):
         """
         Sets the protocolo of this ConfiguracaoEmailPersist.
-        Protocolo de comunica\u00C3\u00A7\u00C3\u00A3o usado pelo servi\u00C3\u00A7o de e-mail.
+        Protocolo de comunica\u00E7\u00E3o usado pelo servi\u00E7o de e-mail.
 
         :param protocolo: The protocolo of this ConfiguracaoEmailPersist.
         :type: str
@@ -187,7 +187,7 @@ class ConfiguracaoEmailPersist(object):
     def requer_autenticacao(self):
         """
         Gets the requer_autenticacao of this ConfiguracaoEmailPersist.
-        O servi\u00C3\u00A7o de e-mail requer autentica\u00C3\u00A7\u00C3\u00A3o.
+        O servi\u00E7o de e-mail requer autentica\u00E7\u00E3o.
 
         :return: The requer_autenticacao of this ConfiguracaoEmailPersist.
         :rtype: bool
@@ -198,7 +198,7 @@ class ConfiguracaoEmailPersist(object):
     def requer_autenticacao(self, requer_autenticacao):
         """
         Sets the requer_autenticacao of this ConfiguracaoEmailPersist.
-        O servi\u00C3\u00A7o de e-mail requer autentica\u00C3\u00A7\u00C3\u00A3o.
+        O servi\u00E7o de e-mail requer autentica\u00E7\u00E3o.
 
         :param requer_autenticacao: The requer_autenticacao of this ConfiguracaoEmailPersist.
         :type: bool
@@ -209,7 +209,7 @@ class ConfiguracaoEmailPersist(object):
     def requer_ssl(self):
         """
         Gets the requer_ssl of this ConfiguracaoEmailPersist.
-        O servi\u00C3\u00A7o de e-mail requer SSL.
+        O servi\u00E7o de e-mail requer SSL.
 
         :return: The requer_ssl of this ConfiguracaoEmailPersist.
         :rtype: bool
@@ -220,7 +220,7 @@ class ConfiguracaoEmailPersist(object):
     def requer_ssl(self, requer_ssl):
         """
         Sets the requer_ssl of this ConfiguracaoEmailPersist.
-        O servi\u00C3\u00A7o de e-mail requer SSL.
+        O servi\u00E7o de e-mail requer SSL.
 
         :param requer_ssl: The requer_ssl of this ConfiguracaoEmailPersist.
         :type: bool
@@ -231,7 +231,7 @@ class ConfiguracaoEmailPersist(object):
     def requer_tls(self):
         """
         Gets the requer_tls of this ConfiguracaoEmailPersist.
-        O servi\u00C3\u00A7o de e-mail requer TLS.
+        O servi\u00E7o de e-mail requer TLS.
 
         :return: The requer_tls of this ConfiguracaoEmailPersist.
         :rtype: bool
@@ -242,7 +242,7 @@ class ConfiguracaoEmailPersist(object):
     def requer_tls(self, requer_tls):
         """
         Sets the requer_tls of this ConfiguracaoEmailPersist.
-        O servi\u00C3\u00A7o de e-mail requer TLS.
+        O servi\u00E7o de e-mail requer TLS.
 
         :param requer_tls: The requer_tls of this ConfiguracaoEmailPersist.
         :type: bool
@@ -253,7 +253,7 @@ class ConfiguracaoEmailPersist(object):
     def usuario(self):
         """
         Gets the usuario of this ConfiguracaoEmailPersist.
-        Usuario do servi\u00C3\u00A7o de e-mail.
+        Usuario do servi\u00E7o de e-mail.
 
         :return: The usuario of this ConfiguracaoEmailPersist.
         :rtype: str
@@ -264,7 +264,7 @@ class ConfiguracaoEmailPersist(object):
     def usuario(self, usuario):
         """
         Sets the usuario of this ConfiguracaoEmailPersist.
-        Usuario do servi\u00C3\u00A7o de e-mail.
+        Usuario do servi\u00E7o de e-mail.
 
         :param usuario: The usuario of this ConfiguracaoEmailPersist.
         :type: str
@@ -275,7 +275,7 @@ class ConfiguracaoEmailPersist(object):
     def senha(self):
         """
         Gets the senha of this ConfiguracaoEmailPersist.
-        Senha de usu\u00C3\u00A1rio do servi\u00C3\u00A7o de e-mail.
+        Senha de usu\u00E1rio do servi\u00E7o de e-mail.
 
         :return: The senha of this ConfiguracaoEmailPersist.
         :rtype: str
@@ -286,7 +286,7 @@ class ConfiguracaoEmailPersist(object):
     def senha(self, senha):
         """
         Sets the senha of this ConfiguracaoEmailPersist.
-        Senha de usu\u00C3\u00A1rio do servi\u00C3\u00A7o de e-mail.
+        Senha de usu\u00E1rio do servi\u00E7o de e-mail.
 
         :param senha: The senha of this ConfiguracaoEmailPersist.
         :type: str

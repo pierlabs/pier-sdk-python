@@ -53,7 +53,7 @@ class CodigoSegurancaEMAILPersist(object):
     def email(self):
         """
         Gets the email of this CodigoSegurancaEMAILPersist.
-        E-mail usado para envio do c\u00C3\u00B3digo de seguran\u00C3\u00A7a.
+        E-mail usado para envio do c\u00F3digo de seguran\u00E7a.
 
         :return: The email of this CodigoSegurancaEMAILPersist.
         :rtype: str
@@ -64,7 +64,7 @@ class CodigoSegurancaEMAILPersist(object):
     def email(self, email):
         """
         Sets the email of this CodigoSegurancaEMAILPersist.
-        E-mail usado para envio do c\u00C3\u00B3digo de seguran\u00C3\u00A7a.
+        E-mail usado para envio do c\u00F3digo de seguran\u00E7a.
 
         :param email: The email of this CodigoSegurancaEMAILPersist.
         :type: str
@@ -75,7 +75,7 @@ class CodigoSegurancaEMAILPersist(object):
     def codigo_seguranca(self):
         """
         Gets the codigo_seguranca of this CodigoSegurancaEMAILPersist.
-        Token para valida\u00C3\u00A7\u00C3\u00A3o.
+        Token para valida\u00E7\u00E3o.
 
         :return: The codigo_seguranca of this CodigoSegurancaEMAILPersist.
         :rtype: str
@@ -86,7 +86,7 @@ class CodigoSegurancaEMAILPersist(object):
     def codigo_seguranca(self, codigo_seguranca):
         """
         Sets the codigo_seguranca of this CodigoSegurancaEMAILPersist.
-        Token para valida\u00C3\u00A7\u00C3\u00A3o.
+        Token para valida\u00E7\u00E3o.
 
         :param codigo_seguranca: The codigo_seguranca of this CodigoSegurancaEMAILPersist.
         :type: str

@@ -95,7 +95,7 @@ class TipoOperacaoResponse(object):
     def id(self):
         """
         Gets the id of this TipoOperacaoResponse.
-        C\u00C3\u00B3digo identificador do TipoOperacao
+        C\u00F3digo identificador do TipoOperacao
 
         :return: The id of this TipoOperacaoResponse.
         :rtype: int
@@ -106,7 +106,7 @@ class TipoOperacaoResponse(object):
     def id(self, id):
         """
         Sets the id of this TipoOperacaoResponse.
-        C\u00C3\u00B3digo identificador do TipoOperacao
+        C\u00F3digo identificador do TipoOperacao
 
         :param id: The id of this TipoOperacaoResponse.
         :type: int
@@ -117,7 +117,7 @@ class TipoOperacaoResponse(object):
     def tipo_operacao(self):
         """
         Gets the tipo_operacao of this TipoOperacaoResponse.
-        C\u00C3\u00B3digo do TipoOperacao
+        C\u00F3digo do TipoOperacao
 
         :return: The tipo_operacao of this TipoOperacaoResponse.
         :rtype: str
@@ -128,7 +128,7 @@ class TipoOperacaoResponse(object):
     def tipo_operacao(self, tipo_operacao):
         """
         Sets the tipo_operacao of this TipoOperacaoResponse.
-        C\u00C3\u00B3digo do TipoOperacao
+        C\u00F3digo do TipoOperacao
 
         :param tipo_operacao: The tipo_operacao of this TipoOperacaoResponse.
         :type: str
@@ -161,7 +161,7 @@ class TipoOperacaoResponse(object):
     def descricao(self):
         """
         Gets the descricao of this TipoOperacaoResponse.
-        Decri\u00C3\u00A7\u00C3\u00A3o do TipoOperacao
+        Decri\u00E7\u00E3o do TipoOperacao
 
         :return: The descricao of this TipoOperacaoResponse.
         :rtype: str
@@ -172,7 +172,7 @@ class TipoOperacaoResponse(object):
     def descricao(self, descricao):
         """
         Sets the descricao of this TipoOperacaoResponse.
-        Decri\u00C3\u00A7\u00C3\u00A3o do TipoOperacao
+        Decri\u00E7\u00E3o do TipoOperacao
 
         :param descricao: The descricao of this TipoOperacaoResponse.
         :type: str
@@ -227,7 +227,7 @@ class TipoOperacaoResponse(object):
     def valor_minimo(self):
         """
         Gets the valor_minimo of this TipoOperacaoResponse.
-        Valor minimo para a transa\u00C3\u00A7\u00C3\u00A3o do TipoOperacao
+        Valor minimo para a transa\u00E7\u00E3o do TipoOperacao
 
         :return: The valor_minimo of this TipoOperacaoResponse.
         :rtype: float
@@ -238,7 +238,7 @@ class TipoOperacaoResponse(object):
     def valor_minimo(self, valor_minimo):
         """
         Sets the valor_minimo of this TipoOperacaoResponse.
-        Valor minimo para a transa\u00C3\u00A7\u00C3\u00A3o do TipoOperacao
+        Valor minimo para a transa\u00E7\u00E3o do TipoOperacao
 
         :param valor_minimo: The valor_minimo of this TipoOperacaoResponse.
         :type: float
@@ -249,7 +249,7 @@ class TipoOperacaoResponse(object):
     def valor_maximo(self):
         """
         Gets the valor_maximo of this TipoOperacaoResponse.
-        Valor maximo para a transa\u00C3\u00A7\u00C3\u00A3o do TipoOperacao
+        Valor maximo para a transa\u00E7\u00E3o do TipoOperacao
 
         :return: The valor_maximo of this TipoOperacaoResponse.
         :rtype: float
@@ -260,7 +260,7 @@ class TipoOperacaoResponse(object):
     def valor_maximo(self, valor_maximo):
         """
         Sets the valor_maximo of this TipoOperacaoResponse.
-        Valor maximo para a transa\u00C3\u00A7\u00C3\u00A3o do TipoOperacao
+        Valor maximo para a transa\u00E7\u00E3o do TipoOperacao
 
         :param valor_maximo: The valor_maximo of this TipoOperacaoResponse.
         :type: float
@@ -271,7 +271,7 @@ class TipoOperacaoResponse(object):
     def valor_tac(self):
         """
         Gets the valor_tac of this TipoOperacaoResponse.
-        Valor TAC da transa\u00C3\u00A7\u00C3\u00A3o do TipoOperacao
+        Valor TAC da transa\u00E7\u00E3o do TipoOperacao
 
         :return: The valor_tac of this TipoOperacaoResponse.
         :rtype: float
@@ -282,7 +282,7 @@ class TipoOperacaoResponse(object):
     def valor_tac(self, valor_tac):
         """
         Sets the valor_tac of this TipoOperacaoResponse.
-        Valor TAC da transa\u00C3\u00A7\u00C3\u00A3o do TipoOperacao
+        Valor TAC da transa\u00E7\u00E3o do TipoOperacao
 
         :param valor_tac: The valor_tac of this TipoOperacaoResponse.
         :type: float
@@ -381,7 +381,7 @@ class TipoOperacaoResponse(object):
     def remuneracao_emissor(self):
         """
         Gets the remuneracao_emissor of this TipoOperacaoResponse.
-        Remunera\u00C3\u00A7\u00C3\u00A3o do Emissor para o TipoOperacao
+        Remunera\u00E7\u00E3o do Emissor para o TipoOperacao
 
         :return: The remuneracao_emissor of this TipoOperacaoResponse.
         :rtype: float
@@ -392,7 +392,7 @@ class TipoOperacaoResponse(object):
     def remuneracao_emissor(self, remuneracao_emissor):
         """
         Sets the remuneracao_emissor of this TipoOperacaoResponse.
-        Remunera\u00C3\u00A7\u00C3\u00A3o do Emissor para o TipoOperacao
+        Remunera\u00E7\u00E3o do Emissor para o TipoOperacao
 
         :param remuneracao_emissor: The remuneracao_emissor of this TipoOperacaoResponse.
         :type: float
@@ -403,7 +403,7 @@ class TipoOperacaoResponse(object):
     def plano_maximo(self):
         """
         Gets the plano_maximo of this TipoOperacaoResponse.
-        Plano m\u00C3\u00A1ximo do TipoOperacao
+        Plano m\u00E1ximo do TipoOperacao
 
         :return: The plano_maximo of this TipoOperacaoResponse.
         :rtype: int
@@ -414,7 +414,7 @@ class TipoOperacaoResponse(object):
     def plano_maximo(self, plano_maximo):
         """
         Sets the plano_maximo of this TipoOperacaoResponse.
-        Plano m\u00C3\u00A1ximo do TipoOperacao
+        Plano m\u00E1ximo do TipoOperacao
 
         :param plano_maximo: The plano_maximo of this TipoOperacaoResponse.
         :type: int

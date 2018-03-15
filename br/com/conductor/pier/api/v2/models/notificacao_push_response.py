@@ -102,7 +102,7 @@ class NotificacaoPushResponse(object):
     def id_emissor(self):
         """
         Gets the id_emissor of this NotificacaoPushResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do emissor (id).
+        C\u00F3digo de identifica\u00E7\u00E3o do emissor (id).
 
         :return: The id_emissor of this NotificacaoPushResponse.
         :rtype: int
@@ -113,7 +113,7 @@ class NotificacaoPushResponse(object):
     def id_emissor(self, id_emissor):
         """
         Sets the id_emissor of this NotificacaoPushResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do emissor (id).
+        C\u00F3digo de identifica\u00E7\u00E3o do emissor (id).
 
         :param id_emissor: The id_emissor of this NotificacaoPushResponse.
         :type: int
@@ -124,7 +124,7 @@ class NotificacaoPushResponse(object):
     def tipo_evento(self):
         """
         Gets the tipo_evento of this NotificacaoPushResponse.
-        Nome do tipoEvento da notifica\u00C3\u00A7\u00C3\u00A3o
+        Nome do tipoEvento da notifica\u00E7\u00E3o
 
         :return: The tipo_evento of this NotificacaoPushResponse.
         :rtype: str
@@ -135,7 +135,7 @@ class NotificacaoPushResponse(object):
     def tipo_evento(self, tipo_evento):
         """
         Sets the tipo_evento of this NotificacaoPushResponse.
-        Nome do tipoEvento da notifica\u00C3\u00A7\u00C3\u00A3o
+        Nome do tipoEvento da notifica\u00E7\u00E3o
 
         :param tipo_evento: The tipo_evento of this NotificacaoPushResponse.
         :type: str
@@ -152,7 +152,7 @@ class NotificacaoPushResponse(object):
     def status(self):
         """
         Gets the status of this NotificacaoPushResponse.
-        Status de envio da notifica\u00C3\u00A7\u00C3\u00A3o
+        Status de envio da notifica\u00E7\u00E3o
 
         :return: The status of this NotificacaoPushResponse.
         :rtype: str
@@ -163,7 +163,7 @@ class NotificacaoPushResponse(object):
     def status(self, status):
         """
         Sets the status of this NotificacaoPushResponse.
-        Status de envio da notifica\u00C3\u00A7\u00C3\u00A3o
+        Status de envio da notifica\u00E7\u00E3o
 
         :param status: The status of this NotificacaoPushResponse.
         :type: str
@@ -180,7 +180,7 @@ class NotificacaoPushResponse(object):
     def id_pessoa(self):
         """
         Gets the id_pessoa of this NotificacaoPushResponse.
-        C\u00C3\u00B3digo identificado da pessoa
+        C\u00F3digo identificado da pessoa
 
         :return: The id_pessoa of this NotificacaoPushResponse.
         :rtype: int
@@ -191,7 +191,7 @@ class NotificacaoPushResponse(object):
     def id_pessoa(self, id_pessoa):
         """
         Sets the id_pessoa of this NotificacaoPushResponse.
-        C\u00C3\u00B3digo identificado da pessoa
+        C\u00F3digo identificado da pessoa
 
         :param id_pessoa: The id_pessoa of this NotificacaoPushResponse.
         :type: int
@@ -202,7 +202,7 @@ class NotificacaoPushResponse(object):
     def id_conta(self):
         """
         Gets the id_conta of this NotificacaoPushResponse.
-        C\u00C3\u00B3digo identificador da conta
+        C\u00F3digo identificador da conta
 
         :return: The id_conta of this NotificacaoPushResponse.
         :rtype: int
@@ -213,7 +213,7 @@ class NotificacaoPushResponse(object):
     def id_conta(self, id_conta):
         """
         Sets the id_conta of this NotificacaoPushResponse.
-        C\u00C3\u00B3digo identificador da conta
+        C\u00F3digo identificador da conta
 
         :param id_conta: The id_conta of this NotificacaoPushResponse.
         :type: int
@@ -224,7 +224,7 @@ class NotificacaoPushResponse(object):
     def token_dispositivo(self):
         """
         Gets the token_dispositivo of this NotificacaoPushResponse.
-        Token do dispositivo a qual foi destinado a notifica\u00C3\u00A7\u00C3\u00A3o (device_token)
+        Token do dispositivo a qual foi destinado a notifica\u00E7\u00E3o (device_token)
 
         :return: The token_dispositivo of this NotificacaoPushResponse.
         :rtype: str
@@ -235,7 +235,7 @@ class NotificacaoPushResponse(object):
     def token_dispositivo(self, token_dispositivo):
         """
         Sets the token_dispositivo of this NotificacaoPushResponse.
-        Token do dispositivo a qual foi destinado a notifica\u00C3\u00A7\u00C3\u00A3o (device_token)
+        Token do dispositivo a qual foi destinado a notifica\u00E7\u00E3o (device_token)
 
         :param token_dispositivo: The token_dispositivo of this NotificacaoPushResponse.
         :type: str
@@ -246,7 +246,7 @@ class NotificacaoPushResponse(object):
     def titulo(self):
         """
         Gets the titulo of this NotificacaoPushResponse.
-        T\u00C3\u00ADtulo da notifica\u00C3\u00A7\u00C3\u00A3o enviada.
+        T\u00EDtulo da notifica\u00E7\u00E3o enviada.
 
         :return: The titulo of this NotificacaoPushResponse.
         :rtype: str
@@ -257,7 +257,7 @@ class NotificacaoPushResponse(object):
     def titulo(self, titulo):
         """
         Sets the titulo of this NotificacaoPushResponse.
-        T\u00C3\u00ADtulo da notifica\u00C3\u00A7\u00C3\u00A3o enviada.
+        T\u00EDtulo da notifica\u00E7\u00E3o enviada.
 
         :param titulo: The titulo of this NotificacaoPushResponse.
         :type: str
@@ -268,7 +268,7 @@ class NotificacaoPushResponse(object):
     def conteudo(self):
         """
         Gets the conteudo of this NotificacaoPushResponse.
-        Conte\u00C3\u00BAdo da notifica\u00C3\u00A7\u00C3\u00A3o enviada.
+        Conte\u00FAdo da notifica\u00E7\u00E3o enviada.
 
         :return: The conteudo of this NotificacaoPushResponse.
         :rtype: str
@@ -279,7 +279,7 @@ class NotificacaoPushResponse(object):
     def conteudo(self, conteudo):
         """
         Sets the conteudo of this NotificacaoPushResponse.
-        Conte\u00C3\u00BAdo da notifica\u00C3\u00A7\u00C3\u00A3o enviada.
+        Conte\u00FAdo da notifica\u00E7\u00E3o enviada.
 
         :param conteudo: The conteudo of this NotificacaoPushResponse.
         :type: str
@@ -318,7 +318,7 @@ class NotificacaoPushResponse(object):
     def protocolo(self):
         """
         Gets the protocolo of this NotificacaoPushResponse.
-        N\u00C3\u00BAmero do protocolo de envio de notifica\u00C3\u00A7\u00C3\u00B5es
+        N\u00FAmero do protocolo de envio de notifica\u00E7\u00F5es
 
         :return: The protocolo of this NotificacaoPushResponse.
         :rtype: str
@@ -329,7 +329,7 @@ class NotificacaoPushResponse(object):
     def protocolo(self, protocolo):
         """
         Sets the protocolo of this NotificacaoPushResponse.
-        N\u00C3\u00BAmero do protocolo de envio de notifica\u00C3\u00A7\u00C3\u00B5es
+        N\u00FAmero do protocolo de envio de notifica\u00E7\u00F5es
 
         :param protocolo: The protocolo of this NotificacaoPushResponse.
         :type: str

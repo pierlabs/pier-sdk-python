@@ -71,7 +71,7 @@ class OperacaoResponse(object):
     def id_operacao(self):
         """
         Gets the id_operacao of this OperacaoResponse.
-        C\u00C3\u00B3digo que identifica a opera\u00C3\u00A7\u00C3\u00A3o
+        C\u00F3digo que identifica a opera\u00E7\u00E3o
 
         :return: The id_operacao of this OperacaoResponse.
         :rtype: int
@@ -82,7 +82,7 @@ class OperacaoResponse(object):
     def id_operacao(self, id_operacao):
         """
         Sets the id_operacao of this OperacaoResponse.
-        C\u00C3\u00B3digo que identifica a opera\u00C3\u00A7\u00C3\u00A3o
+        C\u00F3digo que identifica a opera\u00E7\u00E3o
 
         :param id_operacao: The id_operacao of this OperacaoResponse.
         :type: int
@@ -93,7 +93,7 @@ class OperacaoResponse(object):
     def codigo_processamento(self):
         """
         Gets the codigo_processamento of this OperacaoResponse.
-        C\u00C3\u00B3digo de processamento usado em transa\u00C3\u00A7\u00C3\u00B5es com o autorizador
+        C\u00F3digo de processamento usado em transa\u00E7\u00F5es com o autorizador
 
         :return: The codigo_processamento of this OperacaoResponse.
         :rtype: str
@@ -104,7 +104,7 @@ class OperacaoResponse(object):
     def codigo_processamento(self, codigo_processamento):
         """
         Sets the codigo_processamento of this OperacaoResponse.
-        C\u00C3\u00B3digo de processamento usado em transa\u00C3\u00A7\u00C3\u00B5es com o autorizador
+        C\u00F3digo de processamento usado em transa\u00E7\u00F5es com o autorizador
 
         :param codigo_processamento: The codigo_processamento of this OperacaoResponse.
         :type: str
@@ -115,7 +115,7 @@ class OperacaoResponse(object):
     def codigo_processamento_cancelamento(self):
         """
         Gets the codigo_processamento_cancelamento of this OperacaoResponse.
-        C\u00C3\u00B3digo de processamento usado para cancelar transa\u00C3\u00A7\u00C3\u00B5es no autorizador
+        C\u00F3digo de processamento usado para cancelar transa\u00E7\u00F5es no autorizador
 
         :return: The codigo_processamento_cancelamento of this OperacaoResponse.
         :rtype: str
@@ -126,7 +126,7 @@ class OperacaoResponse(object):
     def codigo_processamento_cancelamento(self, codigo_processamento_cancelamento):
         """
         Sets the codigo_processamento_cancelamento of this OperacaoResponse.
-        C\u00C3\u00B3digo de processamento usado para cancelar transa\u00C3\u00A7\u00C3\u00B5es no autorizador
+        C\u00F3digo de processamento usado para cancelar transa\u00E7\u00F5es no autorizador
 
         :param codigo_processamento_cancelamento: The codigo_processamento_cancelamento of this OperacaoResponse.
         :type: str
@@ -137,7 +137,7 @@ class OperacaoResponse(object):
     def nome_operacao(self):
         """
         Gets the nome_operacao of this OperacaoResponse.
-        Nome da opera\u00C3\u00A7\u00C3\u00A3o
+        Nome da opera\u00E7\u00E3o
 
         :return: The nome_operacao of this OperacaoResponse.
         :rtype: str
@@ -148,7 +148,7 @@ class OperacaoResponse(object):
     def nome_operacao(self, nome_operacao):
         """
         Sets the nome_operacao of this OperacaoResponse.
-        Nome da opera\u00C3\u00A7\u00C3\u00A3o
+        Nome da opera\u00E7\u00E3o
 
         :param nome_operacao: The nome_operacao of this OperacaoResponse.
         :type: str
@@ -159,7 +159,7 @@ class OperacaoResponse(object):
     def flag_cobra_juros(self):
         """
         Gets the flag_cobra_juros of this OperacaoResponse.
-        Flag indicativa para crobran\u00C3\u00A7a de juros
+        Flag indicativa para crobran\u00E7a de juros
 
         :return: The flag_cobra_juros of this OperacaoResponse.
         :rtype: bool
@@ -170,7 +170,7 @@ class OperacaoResponse(object):
     def flag_cobra_juros(self, flag_cobra_juros):
         """
         Sets the flag_cobra_juros of this OperacaoResponse.
-        Flag indicativa para crobran\u00C3\u00A7a de juros
+        Flag indicativa para crobran\u00E7a de juros
 
         :param flag_cobra_juros: The flag_cobra_juros of this OperacaoResponse.
         :type: bool
@@ -181,7 +181,7 @@ class OperacaoResponse(object):
     def flag_cobra_tarifa(self):
         """
         Gets the flag_cobra_tarifa of this OperacaoResponse.
-        Flag indicativa para crobran\u00C3\u00A7a de tarifas
+        Flag indicativa para crobran\u00E7a de tarifas
 
         :return: The flag_cobra_tarifa of this OperacaoResponse.
         :rtype: bool
@@ -192,7 +192,7 @@ class OperacaoResponse(object):
     def flag_cobra_tarifa(self, flag_cobra_tarifa):
         """
         Sets the flag_cobra_tarifa of this OperacaoResponse.
-        Flag indicativa para crobran\u00C3\u00A7a de tarifas
+        Flag indicativa para crobran\u00E7a de tarifas
 
         :param flag_cobra_tarifa: The flag_cobra_tarifa of this OperacaoResponse.
         :type: bool
@@ -203,7 +203,7 @@ class OperacaoResponse(object):
     def carencia(self):
         """
         Gets the carencia of this OperacaoResponse.
-        Quantidade de meses para car\u00C3\u00AAncia
+        Quantidade de meses para car\u00EAncia
 
         :return: The carencia of this OperacaoResponse.
         :rtype: int
@@ -214,7 +214,7 @@ class OperacaoResponse(object):
     def carencia(self, carencia):
         """
         Sets the carencia of this OperacaoResponse.
-        Quantidade de meses para car\u00C3\u00AAncia
+        Quantidade de meses para car\u00EAncia
 
         :param carencia: The carencia of this OperacaoResponse.
         :type: int
@@ -225,7 +225,7 @@ class OperacaoResponse(object):
     def flag_permitir_parcelamento(self):
         """
         Gets the flag_permitir_parcelamento of this OperacaoResponse.
-        Permitir transa\u00C3\u00A7\u00C3\u00B5es parceladas
+        Permitir transa\u00E7\u00F5es parceladas
 
         :return: The flag_permitir_parcelamento of this OperacaoResponse.
         :rtype: bool
@@ -236,7 +236,7 @@ class OperacaoResponse(object):
     def flag_permitir_parcelamento(self, flag_permitir_parcelamento):
         """
         Sets the flag_permitir_parcelamento of this OperacaoResponse.
-        Permitir transa\u00C3\u00A7\u00C3\u00B5es parceladas
+        Permitir transa\u00E7\u00F5es parceladas
 
         :param flag_permitir_parcelamento: The flag_permitir_parcelamento of this OperacaoResponse.
         :type: bool

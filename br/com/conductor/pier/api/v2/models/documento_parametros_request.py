@@ -100,7 +100,7 @@ class DocumentoParametrosRequest(object):
     def parametros_conteudo(self):
         """
         Gets the parametros_conteudo of this DocumentoParametrosRequest.
-        Lista de par\u00C3\u00A2metros para montagem do documento.
+        Lista de par\u00E2metros para montagem do documento.
 
         :return: The parametros_conteudo of this DocumentoParametrosRequest.
         :rtype: list[PropriedadeDocumentoRequest]
@@ -111,7 +111,7 @@ class DocumentoParametrosRequest(object):
     def parametros_conteudo(self, parametros_conteudo):
         """
         Sets the parametros_conteudo of this DocumentoParametrosRequest.
-        Lista de par\u00C3\u00A2metros para montagem do documento.
+        Lista de par\u00E2metros para montagem do documento.
 
         :param parametros_conteudo: The parametros_conteudo of this DocumentoParametrosRequest.
         :type: list[PropriedadeDocumentoRequest]

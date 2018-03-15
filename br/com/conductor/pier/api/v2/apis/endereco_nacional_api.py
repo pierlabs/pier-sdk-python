@@ -47,8 +47,8 @@ class EnderecoNacionalApi(object):
 
     def consultar_endereco_using_get(self, cep, **kwargs):
         """
-        Consultar Endere\u00C3\u00A7o
-        Este recurso permite consultar endere\u00C3\u00A7os atrav\u00C3\u00A9s do CEP.
+        Consultar Endere\u00E7o
+        Este recurso permite consultar endere\u00E7os atrav\u00E9s do CEP.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function

@@ -78,7 +78,7 @@ class DispositivoPersist(object):
     def id_aplicacao_mobile(self):
         """
         Gets the id_aplicacao_mobile of this DispositivoPersist.
-        Apresenta o identificador da aplica\u00C3\u00A7\u00C3\u00A3o.
+        Apresenta o identificador da aplica\u00E7\u00E3o.
 
         :return: The id_aplicacao_mobile of this DispositivoPersist.
         :rtype: int
@@ -89,7 +89,7 @@ class DispositivoPersist(object):
     def id_aplicacao_mobile(self, id_aplicacao_mobile):
         """
         Sets the id_aplicacao_mobile of this DispositivoPersist.
-        Apresenta o identificador da aplica\u00C3\u00A7\u00C3\u00A3o.
+        Apresenta o identificador da aplica\u00E7\u00E3o.
 
         :param id_aplicacao_mobile: The id_aplicacao_mobile of this DispositivoPersist.
         :type: int
@@ -100,7 +100,7 @@ class DispositivoPersist(object):
     def id_usuario(self):
         """
         Gets the id_usuario of this DispositivoPersist.
-        Apresenta o identificador do usu\u00C3\u00A1rio.
+        Apresenta o identificador do usu\u00E1rio.
 
         :return: The id_usuario of this DispositivoPersist.
         :rtype: int
@@ -111,7 +111,7 @@ class DispositivoPersist(object):
     def id_usuario(self, id_usuario):
         """
         Sets the id_usuario of this DispositivoPersist.
-        Apresenta o identificador do usu\u00C3\u00A1rio.
+        Apresenta o identificador do usu\u00E1rio.
 
         :param id_usuario: The id_usuario of this DispositivoPersist.
         :type: int

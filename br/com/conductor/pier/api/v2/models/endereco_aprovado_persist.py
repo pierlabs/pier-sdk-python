@@ -80,7 +80,7 @@ class EnderecoAprovadoPersist(object):
     def id_tipo_endereco(self):
         """
         Gets the id_tipo_endereco of this EnderecoAprovadoPersist.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Tipo Endere\u00C3\u00A7o (id)
+        C\u00F3digo de Identifica\u00E7\u00E3o da Tipo Endere\u00E7o (id)
 
         :return: The id_tipo_endereco of this EnderecoAprovadoPersist.
         :rtype: int
@@ -91,7 +91,7 @@ class EnderecoAprovadoPersist(object):
     def id_tipo_endereco(self, id_tipo_endereco):
         """
         Sets the id_tipo_endereco of this EnderecoAprovadoPersist.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Tipo Endere\u00C3\u00A7o (id)
+        C\u00F3digo de Identifica\u00E7\u00E3o da Tipo Endere\u00E7o (id)
 
         :param id_tipo_endereco: The id_tipo_endereco of this EnderecoAprovadoPersist.
         :type: int
@@ -102,7 +102,7 @@ class EnderecoAprovadoPersist(object):
     def cep(self):
         """
         Gets the cep of this EnderecoAprovadoPersist.
-        Apresenta o C\u00C3\u00B3digo de Endere\u00C3\u00A7amento Postal (CEP) no formaro '58800000'
+        Apresenta o C\u00F3digo de Endere\u00E7amento Postal (CEP) no formaro '58800000'
 
         :return: The cep of this EnderecoAprovadoPersist.
         :rtype: str
@@ -113,7 +113,7 @@ class EnderecoAprovadoPersist(object):
     def cep(self, cep):
         """
         Sets the cep of this EnderecoAprovadoPersist.
-        Apresenta o C\u00C3\u00B3digo de Endere\u00C3\u00A7amento Postal (CEP) no formaro '58800000'
+        Apresenta o C\u00F3digo de Endere\u00E7amento Postal (CEP) no formaro '58800000'
 
         :param cep: The cep of this EnderecoAprovadoPersist.
         :type: str
@@ -146,7 +146,7 @@ class EnderecoAprovadoPersist(object):
     def numero(self):
         """
         Gets the numero of this EnderecoAprovadoPersist.
-        Apresenta o n\u00C3\u00BAmero do endere\u00C3\u00A7o
+        Apresenta o n\u00FAmero do endere\u00E7o
 
         :return: The numero of this EnderecoAprovadoPersist.
         :rtype: int
@@ -157,7 +157,7 @@ class EnderecoAprovadoPersist(object):
     def numero(self, numero):
         """
         Sets the numero of this EnderecoAprovadoPersist.
-        Apresenta o n\u00C3\u00BAmero do endere\u00C3\u00A7o
+        Apresenta o n\u00FAmero do endere\u00E7o
 
         :param numero: The numero of this EnderecoAprovadoPersist.
         :type: int
@@ -168,7 +168,7 @@ class EnderecoAprovadoPersist(object):
     def complemento(self):
         """
         Gets the complemento of this EnderecoAprovadoPersist.
-        Apresenta descri\u00C3\u00A7oes complementares referente ao endere\u00C3\u00A7o
+        Apresenta descri\u00E7oes complementares referente ao endere\u00E7o
 
         :return: The complemento of this EnderecoAprovadoPersist.
         :rtype: str
@@ -179,7 +179,7 @@ class EnderecoAprovadoPersist(object):
     def complemento(self, complemento):
         """
         Sets the complemento of this EnderecoAprovadoPersist.
-        Apresenta descri\u00C3\u00A7oes complementares referente ao endere\u00C3\u00A7o
+        Apresenta descri\u00E7oes complementares referente ao endere\u00E7o
 
         :param complemento: The complemento of this EnderecoAprovadoPersist.
         :type: str
@@ -190,7 +190,7 @@ class EnderecoAprovadoPersist(object):
     def ponto_referencia(self):
         """
         Gets the ponto_referencia of this EnderecoAprovadoPersist.
-        Apresenta a descri\u00C3\u00A7\u00C3\u00A3o de ponto de refer\u00C3\u00AAncia do endere\u00C3\u00A7o
+        Apresenta a descri\u00E7\u00E3o de ponto de refer\u00EAncia do endere\u00E7o
 
         :return: The ponto_referencia of this EnderecoAprovadoPersist.
         :rtype: str
@@ -201,7 +201,7 @@ class EnderecoAprovadoPersist(object):
     def ponto_referencia(self, ponto_referencia):
         """
         Sets the ponto_referencia of this EnderecoAprovadoPersist.
-        Apresenta a descri\u00C3\u00A7\u00C3\u00A3o de ponto de refer\u00C3\u00AAncia do endere\u00C3\u00A7o
+        Apresenta a descri\u00E7\u00E3o de ponto de refer\u00EAncia do endere\u00E7o
 
         :param ponto_referencia: The ponto_referencia of this EnderecoAprovadoPersist.
         :type: str
@@ -300,7 +300,7 @@ class EnderecoAprovadoPersist(object):
     def endereco_correspondencia(self):
         """
         Gets the endereco_correspondencia of this EnderecoAprovadoPersist.
-        Indica se o endere\u00C3\u00A7o informado \u00C3\u00A9 o de correspond\u00C3\u00AAncia
+        Indica se o endere\u00E7o informado \u00E9 o de correspond\u00EAncia
 
         :return: The endereco_correspondencia of this EnderecoAprovadoPersist.
         :rtype: bool
@@ -311,7 +311,7 @@ class EnderecoAprovadoPersist(object):
     def endereco_correspondencia(self, endereco_correspondencia):
         """
         Sets the endereco_correspondencia of this EnderecoAprovadoPersist.
-        Indica se o endere\u00C3\u00A7o informado \u00C3\u00A9 o de correspond\u00C3\u00AAncia
+        Indica se o endere\u00E7o informado \u00E9 o de correspond\u00EAncia
 
         :param endereco_correspondencia: The endereco_correspondencia of this EnderecoAprovadoPersist.
         :type: bool

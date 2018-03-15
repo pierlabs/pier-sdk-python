@@ -48,7 +48,7 @@ class CadastroClienteApi(object):
     def alterar_using_put(self, id, id_pessoa, adicional_update, **kwargs):
         """
         Altera Adicional de uma Conta
-        Este m\u00C3\u00A9todo permite que seja alterado um portador Adicional de uma determinada Conta.
+        Este m\u00E9todo permite que seja alterado um portador Adicional de uma determinada Conta.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -60,8 +60,8 @@ class CadastroClienteApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da conta (id). (required)
-        :param int id_pessoa: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da pessoa (id). (required)
+        :param int id: C\u00F3digo de Identifica\u00E7\u00E3o da conta (id). (required)
+        :param int id_pessoa: C\u00F3digo de Identifica\u00E7\u00E3o da pessoa (id). (required)
         :param AdicionalUpdate adicional_update: adicionalUpdate (required)
         :return: AdicionalDetalheResponse
                  If the method is called asynchronously,
@@ -137,7 +137,7 @@ class CadastroClienteApi(object):
     def alterar_using_put13(self, id, **kwargs):
         """
         Atualiza os detalhes de uma determinada Pessoa
-        Este m\u00C3\u00A9todo permite que seja alterado na base do emissor os detalhes de uma determinada Pessoa.
+        Este m\u00E9todo permite que seja alterado na base do emissor os detalhes de uma determinada Pessoa.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -150,16 +150,16 @@ class CadastroClienteApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int id: ID da Pessoa (required)
-        :param str nome_mae: Apresenta o nome da m\u00C3\u00A3e da pessoa fisica
+        :param str nome_mae: Apresenta o nome da m\u00E3e da pessoa fisica
         :param int id_estado_civil: Id Estado civil da pessoa fisica
-        :param str id_profissao: Profiss\u00C3\u00A3o da pessoa fisica
-        :param int id_natureza_ocupacao: Id Natureza Ocupa\u00C3\u00A7\u00C3\u00A3o da pessoa fisica
+        :param str id_profissao: Profiss\u00E3o da pessoa fisica
+        :param int id_natureza_ocupacao: Id Natureza Ocupa\u00E7\u00E3o da pessoa fisica
         :param int id_nacionalidade: Id Nacionalidade da pessoa fisica
-        :param int numero_banco: N\u00C3\u00BAmero do banco.
-        :param int numero_agencia: N\u00C3\u00BAmero da ag\u00C3\u00AAncia.
-        :param str numero_conta_corrente: N\u00C3\u00BAmero da conta corrente.
+        :param int numero_banco: N\u00FAmero do banco.
+        :param int numero_agencia: N\u00FAmero da ag\u00EAncia.
+        :param str numero_conta_corrente: N\u00FAmero da conta corrente.
         :param str email: Email da pessoa fisica
-        :param str nome_empresa: Nome que deve ser impresso no cart\u00C3\u00A3o
+        :param str nome_empresa: Nome que deve ser impresso no cart\u00E3o
         :return: PessoaDetalheResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -244,7 +244,7 @@ class CadastroClienteApi(object):
     def alterar_using_put14(self, id, nome, tipo, data_nascimento, **kwargs):
         """
         Atualiza os dados de uma determinada Pessoa
-        Este m\u00C3\u00A9todo permite que seja alterado na base do emissor um registro de determinada Pessoa.
+        Este m\u00E9todo permite que seja alterado na base do emissor um registro de determinada Pessoa.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -257,16 +257,16 @@ class CadastroClienteApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int id: ID da Pessoa (required)
-        :param str nome: Apresenta o 'Nome Completo da PF' ou o 'Nome Completo da Raz\u00C3\u00A3o Social (Nome Empresarial)'. (required)
-        :param str tipo: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do tipo da Pessoa, sendo: (\"PF\": Pessoa F\u00C3\u00ADsica), (\"PJ\": Pessoa Jur\u00C3\u00ADdica). (required)
+        :param str nome: Apresenta o 'Nome Completo da PF' ou o 'Nome Completo da Raz\u00E3o Social (Nome Empresarial)'. (required)
+        :param str tipo: C\u00F3digo de identifica\u00E7\u00E3o do tipo da Pessoa, sendo: (\"PF\": Pessoa F\u00EDsica), (\"PJ\": Pessoa Jur\u00EDdica). (required)
         :param str data_nascimento: Data de Nascimento da Pessoa, quando PF, ou a Data de Abertura da Empresa, quando PJ. Essa data deve ser informada no formato aaaa-MM-dd. (required)
-        :param str cpf: N\u00C3\u00BAmero do CPF, quando PF.
-        :param str cnpj: N\u00C3\u00BAmero do CNPJ, quando PJ.
-        :param str sexo: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do sexo da Pessoa, quando PF, sendo: (\"M\": Masculino), (\"F\": Feminino), (\"O\": Outro), (\"N\": N\u00C3\u00A3o Especificado).
-        :param str numero_identidade: N\u00C3\u00BAmero da Identidade.
-        :param str orgao_expedidor_identidade: Org\u00C3\u00A3o expedidor do Identidade.
+        :param str cpf: N\u00FAmero do CPF, quando PF.
+        :param str cnpj: N\u00FAmero do CNPJ, quando PJ.
+        :param str sexo: C\u00F3digo de identifica\u00E7\u00E3o do sexo da Pessoa, quando PF, sendo: (\"M\": Masculino), (\"F\": Feminino), (\"O\": Outro), (\"N\": N\u00E3o Especificado).
+        :param str numero_identidade: N\u00FAmero da Identidade.
+        :param str orgao_expedidor_identidade: Org\u00E3o expedidor do Identidade.
         :param str unidade_federativa_identidade: Sigla da Unidade Federativa de onde foi expedido a Identidade
-        :param str data_emissao_identidade: Data emiss\u00C3\u00A3o da Identidade.
+        :param str data_emissao_identidade: Data emiss\u00E3o da Identidade.
         :return: PessoaResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -359,8 +359,8 @@ class CadastroClienteApi(object):
 
     def alterar_using_put16(self, id, **kwargs):
         """
-        Realiza a altera\u00C3\u00A7\u00C3\u00A3o de um determinado Telefone
-        Este m\u00C3\u00A9todo permite que seja alterado um determinado Telefone na base de dados do Emissor.
+        Realiza a altera\u00E7\u00E3o de um determinado Telefone
+        Este m\u00E9todo permite que seja alterado um determinado Telefone na base de dados do Emissor.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -372,11 +372,11 @@ class CadastroClienteApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Telefone (id). (required)
-        :param int id_tipo_telefone: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Tipo do Telefone (id).
-        :param str ddd: C\u00C3\u00B3digo DDD do telefone (id).
-        :param str telefone: N\u00C3\u00BAmero do telefone.
-        :param str ramal: N\u00C3\u00BAmero do ramal.
+        :param int id: C\u00F3digo de Identifica\u00E7\u00E3o do Telefone (id). (required)
+        :param int id_tipo_telefone: C\u00F3digo de Identifica\u00E7\u00E3o do Tipo do Telefone (id).
+        :param str ddd: C\u00F3digo DDD do telefone (id).
+        :param str telefone: N\u00FAmero do telefone.
+        :param str ramal: N\u00FAmero do ramal.
         :return: TelefoneResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -448,8 +448,8 @@ class CadastroClienteApi(object):
 
     def alterar_using_put5(self, id, **kwargs):
         """
-        Atualiza os dados de um determinado Endere\u00C3\u00A7o
-        Este m\u00C3\u00A9todo permite que seja alterado na base do emissor um ou mais registros ligados a um determinado Endere\u00C3\u00A7o.
+        Atualiza os dados de um determinado Endere\u00E7o
+        Este m\u00E9todo permite que seja alterado na base do emissor um ou mais registros ligados a um determinado Endere\u00E7o.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -462,13 +462,13 @@ class CadastroClienteApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int id: id (required)
-        :param int id_pessoa: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Pessoa a qual o endere\u00C3\u00A7o pertence (id)
-        :param int id_tipo_endereco: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Tipo Endere\u00C3\u00A7o (id)
-        :param str cep: Apresenta o C\u00C3\u00B3digo de Endere\u00C3\u00A7amento Postal (CEP) no formaro '58800000'
+        :param int id_pessoa: C\u00F3digo de Identifica\u00E7\u00E3o da Pessoa a qual o endere\u00E7o pertence (id)
+        :param int id_tipo_endereco: C\u00F3digo de Identifica\u00E7\u00E3o da Tipo Endere\u00E7o (id)
+        :param str cep: Apresenta o C\u00F3digo de Endere\u00E7amento Postal (CEP) no formaro '58800000'
         :param str logradouro: Apresenta o nome do Logradouro
-        :param int numero: Apresenta o n\u00C3\u00BAmero do endere\u00C3\u00A7o
-        :param str complemento: Apresenta descri\u00C3\u00A7oes complementares referente ao endere\u00C3\u00A7o
-        :param str ponto_referencia: Apresenta a descri\u00C3\u00A7\u00C3\u00A3o de ponto de refer\u00C3\u00AAncia do endere\u00C3\u00A7o
+        :param int numero: Apresenta o n\u00FAmero do endere\u00E7o
+        :param str complemento: Apresenta descri\u00E7oes complementares referente ao endere\u00E7o
+        :param str ponto_referencia: Apresenta a descri\u00E7\u00E3o de ponto de refer\u00EAncia do endere\u00E7o
         :param str bairro: Apresenta nome do bairro
         :param str cidade: Apresenta nome da cidade
         :param str uf: Apresenta sigla da Unidade Federativa
@@ -559,7 +559,7 @@ class CadastroClienteApi(object):
     def atribuir_assinatura_cliente_using_post(self, id, body, **kwargs):
         """
         Permite atribuir um documento para uma Conta
-        Este m\u00C3\u00A9todo permite que seja atribu\u00C3\u00ADdo a uma determinada Conta um documento que esteja armazenado no PIER Cloud, informando qual o tipo do documento e o seu respectivo id.
+        Este m\u00E9todo permite que seja atribu\u00EDdo a uma determinada Conta um documento que esteja armazenado no PIER Cloud, informando qual o tipo do documento e o seu respectivo id.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -571,8 +571,8 @@ class CadastroClienteApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Conta (required)
-        :param AtribuirAssinaturaClientePersist body: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Arquivo (required)
+        :param int id: C\u00F3digo de Identifica\u00E7\u00E3o da Conta (required)
+        :param AtribuirAssinaturaClientePersist body: C\u00F3digo de Identifica\u00E7\u00E3o do Arquivo (required)
         :return: object
                  If the method is called asynchronously,
                  returns the request thread.
@@ -642,7 +642,7 @@ class CadastroClienteApi(object):
     def atualizar_using_post(self, id, **kwargs):
         """
         Atualiza conta integrada com o emissor
-        Este recurso permite a atualiza\u00C3\u00A7\u00C3\u00A3o de uma conta integrada com o emissor.
+        Este recurso permite a atualiza\u00E7\u00E3o de uma conta integrada com o emissor.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -654,8 +654,8 @@ class CadastroClienteApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param int id: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da conta (id). (required)
-        :param IntegracaoEmissorPersist body: Descri\u00C3\u00A7\u00C3\u00A3o do canal de entrada
+        :param int id: C\u00F3digo de identifica\u00E7\u00E3o da conta (id). (required)
+        :param IntegracaoEmissorPersist body: Descri\u00E7\u00E3o do canal de entrada
         :return: IntegracaoEmissorResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -722,7 +722,7 @@ class CadastroClienteApi(object):
     def cadastrar_using_post(self, id, persist, **kwargs):
         """
         Realiza o cadastro de Adicionais para uma Conta
-        Este m\u00C3\u00A9todo permite que sejam cadastrados um portador Adicional para uma determinada Conta.
+        Este m\u00E9todo permite que sejam cadastrados um portador Adicional para uma determinada Conta.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -734,7 +734,7 @@ class CadastroClienteApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da conta (id). (required)
+        :param int id: C\u00F3digo de Identifica\u00E7\u00E3o da conta (id). (required)
         :param AdicionalPersist persist: persist (required)
         :return: AdicionalDetalheResponse
                  If the method is called asynchronously,
@@ -802,10 +802,10 @@ class CadastroClienteApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get(self, id, id_pessoa, **kwargs):
+    def consultar_using_get1(self, id, id_pessoa, **kwargs):
         """
         Consulta Adicional de uma Conta
-        Este m\u00C3\u00A9todo permite que seja consultado um portador Adicional de uma determinada Conta.
+        Este m\u00E9todo permite que seja consultado um portador Adicional de uma determinada Conta.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -813,12 +813,12 @@ class CadastroClienteApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get(id, id_pessoa, callback=callback_function)
+        >>> thread = api.consultar_using_get1(id, id_pessoa, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da conta (id). (required)
-        :param int id_pessoa: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da pessoa (id). (required)
+        :param int id: C\u00F3digo de Identifica\u00E7\u00E3o da conta (id). (required)
+        :param int id_pessoa: C\u00F3digo de Identifica\u00E7\u00E3o da pessoa (id). (required)
         :return: AdicionalDetalheResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -832,17 +832,17 @@ class CadastroClienteApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get" % key
+                    " to method consultar_using_get1" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get1`")
         # verify the required parameter 'id_pessoa' is set
         if ('id_pessoa' not in params) or (params['id_pessoa'] is None):
-            raise ValueError("Missing the required parameter `id_pessoa` when calling `consultar_using_get`")
+            raise ValueError("Missing the required parameter `id_pessoa` when calling `consultar_using_get1`")
 
         resource_path = '/api/contas/{id}/adicionais/{idPessoa}'.replace('{format}', 'json')
         path_params = {}
@@ -885,10 +885,10 @@ class CadastroClienteApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get15(self, id, **kwargs):
+    def consultar_using_get16(self, id, **kwargs):
         """
-        Apresenta os dados de um determinado Endere\u00C3\u00A7o
-        Este m\u00C3\u00A9todo permite consultar um determinado Endere\u00C3\u00A7o a partir do seu c\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o (id).
+        Apresenta os dados de um determinado Endere\u00E7o
+        Este m\u00E9todo permite consultar um determinado Endere\u00E7o a partir do seu c\u00F3digo de identifica\u00E7\u00E3o (id).
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -896,11 +896,11 @@ class CadastroClienteApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get15(id, callback=callback_function)
+        >>> thread = api.consultar_using_get16(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Endere\u00C3\u00A7o (id). (required)
+        :param int id: C\u00F3digo de Identifica\u00E7\u00E3o do Endere\u00E7o (id). (required)
         :return: EnderecoResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -914,14 +914,14 @@ class CadastroClienteApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get15" % key
+                    " to method consultar_using_get16" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get15`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get16`")
 
         resource_path = '/api/enderecos/{id}'.replace('{format}', 'json')
         path_params = {}
@@ -962,10 +962,10 @@ class CadastroClienteApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get23(self, id, **kwargs):
+    def consultar_using_get24(self, id, **kwargs):
         """
         Apresenta os detalhes de uma determinada Pessoa
-        Este m\u00C3\u00A9todo permite a consulta dos detalhes de uma Pessoa existentes na base de dados do Emissor.
+        Este m\u00E9todo permite a consulta dos detalhes de uma Pessoa existentes na base de dados do Emissor.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -973,7 +973,7 @@ class CadastroClienteApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get23(id, callback=callback_function)
+        >>> thread = api.consultar_using_get24(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -991,14 +991,14 @@ class CadastroClienteApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get23" % key
+                    " to method consultar_using_get24" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get23`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get24`")
 
         resource_path = '/api/pessoas-detalhes/{id}'.replace('{format}', 'json')
         path_params = {}
@@ -1039,10 +1039,10 @@ class CadastroClienteApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get24(self, id, **kwargs):
+    def consultar_using_get25(self, id, **kwargs):
         """
         Apresenta os dados de uma determinada Pessoa
-        Este m\u00C3\u00A9todo permite que sejam listadas as Pessoas existentes na base de dados do Emissor.
+        Este m\u00E9todo permite que sejam listadas as Pessoas existentes na base de dados do Emissor.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -1050,7 +1050,7 @@ class CadastroClienteApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get24(id, callback=callback_function)
+        >>> thread = api.consultar_using_get25(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -1068,14 +1068,14 @@ class CadastroClienteApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get24" % key
+                    " to method consultar_using_get25" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get24`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get25`")
 
         resource_path = '/api/pessoas/{id}'.replace('{format}', 'json')
         path_params = {}
@@ -1116,10 +1116,10 @@ class CadastroClienteApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get30(self, id, **kwargs):
+    def consultar_using_get31(self, id, **kwargs):
         """
         Apresenta os dados de um determinado Telefone
-        Este m\u00C3\u00A9todo permite consultar um determinado Telefone a partir do seu c\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o (id).
+        Este m\u00E9todo permite consultar um determinado Telefone a partir do seu c\u00F3digo de identifica\u00E7\u00E3o (id).
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -1127,11 +1127,11 @@ class CadastroClienteApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get30(id, callback=callback_function)
+        >>> thread = api.consultar_using_get31(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Telefone (id). (required)
+        :param int id: C\u00F3digo de Identifica\u00E7\u00E3o do Telefone (id). (required)
         :return: TelefoneResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -1145,14 +1145,14 @@ class CadastroClienteApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get30" % key
+                    " to method consultar_using_get31" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get30`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get31`")
 
         resource_path = '/api/telefones/{id}'.replace('{format}', 'json')
         path_params = {}
@@ -1196,7 +1196,7 @@ class CadastroClienteApi(object):
     def inativar_using_post(self, id, id_pessoa, **kwargs):
         """
         Inativa Adicional de uma Conta
-        Este m\u00C3\u00A9todo permite que seja inativado um portador Adicional de uma determinada Conta.
+        Este m\u00E9todo permite que seja inativado um portador Adicional de uma determinada Conta.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -1208,8 +1208,8 @@ class CadastroClienteApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da conta (id). (required)
-        :param int id_pessoa: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da pessoa (id). (required)
+        :param int id: C\u00F3digo de Identifica\u00E7\u00E3o da conta (id). (required)
+        :param int id_pessoa: C\u00F3digo de Identifica\u00E7\u00E3o da pessoa (id). (required)
         :return: str
                  If the method is called asynchronously,
                  returns the request thread.
@@ -1278,8 +1278,8 @@ class CadastroClienteApi(object):
 
     def listar_socios_using_get(self, id, **kwargs):
         """
-        Listar s\u00C3\u00B3cios de uma pessoa jur\u00C3\u00ADdica
-        Lista os s\u00C3\u00B3cios vinculados \u00C3\u00A0 uma Pessoa Jur\u00C3\u00ADdica cadastrada.
+        Listar s\u00F3cios de uma pessoa jur\u00EDdica
+        Lista os s\u00F3cios vinculados \u00E0 uma Pessoa Jur\u00EDdica cadastrada.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -1291,10 +1291,10 @@ class CadastroClienteApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Pessoa Jur\u00C3\u00ADdica (required)
-        :param list[str] sort: Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
-        :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
-        :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
+        :param int id: C\u00F3digo de Identifica\u00E7\u00E3o da Pessoa Jur\u00EDdica (required)
+        :param list[str] sort: Tipo de ordena\u00E7\u00E3o dos registros.
+        :param int page: P\u00E1gina solicitada (Default = 0)
+        :param int limit: Limite de elementos por solicita\u00E7\u00E3o (Default = 50, Max = 50)
         :return: PagePessoaResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -1362,10 +1362,10 @@ class CadastroClienteApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get(self, id, **kwargs):
+    def listar_using_get1(self, id, **kwargs):
         """
         Lista os Adicionais de uma Conta
-        Este m\u00C3\u00A9todo permite que sejam listados portadores Adicionais de uma determinada Conta.
+        Este m\u00E9todo permite que sejam listados portadores Adicionais de uma determinada Conta.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -1373,14 +1373,14 @@ class CadastroClienteApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get(id, callback=callback_function)
+        >>> thread = api.listar_using_get1(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da conta (id). (required)
-        :param list[str] sort: Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
-        :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
-        :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
+        :param int id: C\u00F3digo de Identifica\u00E7\u00E3o da conta (id). (required)
+        :param list[str] sort: Tipo de ordena\u00E7\u00E3o dos registros.
+        :param int page: P\u00E1gina solicitada (Default = 0)
+        :param int limit: Limite de elementos por solicita\u00E7\u00E3o (Default = 50, Max = 50)
         :return: AdicionalResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -1394,14 +1394,14 @@ class CadastroClienteApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get" % key
+                    " to method listar_using_get1" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `listar_using_get`")
+            raise ValueError("Missing the required parameter `id` when calling `listar_using_get1`")
 
         resource_path = '/api/contas/{id}/adicionais'.replace('{format}', 'json')
         path_params = {}
@@ -1448,10 +1448,10 @@ class CadastroClienteApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get20(self, **kwargs):
+    def listar_using_get21(self, **kwargs):
         """
-        Lista os Endere\u00C3\u00A7os cadastrados para o Emissor
-        Este m\u00C3\u00A9todo permite que sejam listados os Endere\u00C3\u00A7os existentes na base de dados do Emissor.
+        Lista os Endere\u00E7os cadastrados para o Emissor
+        Este m\u00E9todo permite que sejam listados os Endere\u00E7os existentes na base de dados do Emissor.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -1459,27 +1459,27 @@ class CadastroClienteApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get20(callback=callback_function)
+        >>> thread = api.listar_using_get21(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param list[str] sort: Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
-        :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
-        :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
-        :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Endere\u00C3\u00A7o (id).
-        :param int id_pessoa: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Pessoa a qual o endere\u00C3\u00A7o pertence (id)
-        :param int id_tipo_endereco: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Tipo Endere\u00C3\u00A7o (id)
-        :param str cep: Apresenta o C\u00C3\u00B3digo de Endere\u00C3\u00A7amento Postal (CEP)
+        :param list[str] sort: Tipo de ordena\u00E7\u00E3o dos registros.
+        :param int page: P\u00E1gina solicitada (Default = 0)
+        :param int limit: Limite de elementos por solicita\u00E7\u00E3o (Default = 50, Max = 50)
+        :param int id: C\u00F3digo de Identifica\u00E7\u00E3o do Endere\u00E7o (id).
+        :param int id_pessoa: C\u00F3digo de Identifica\u00E7\u00E3o da Pessoa a qual o endere\u00E7o pertence (id)
+        :param int id_tipo_endereco: C\u00F3digo de Identifica\u00E7\u00E3o da Tipo Endere\u00E7o (id)
+        :param str cep: Apresenta o C\u00F3digo de Endere\u00E7amento Postal (CEP)
         :param str logradouro: Apresenta o nome do Logradouro
-        :param int numero: Apresenta o n\u00C3\u00BAmero do endere\u00C3\u00A7o
-        :param str complemento: Apresenta descri\u00C3\u00A7oes complementares referente ao endere\u00C3\u00A7o
-        :param str ponto_referencia: Apresenta a descri\u00C3\u00A7\u00C3\u00A3o de ponto de refer\u00C3\u00AAncia do endere\u00C3\u00A7o
+        :param int numero: Apresenta o n\u00FAmero do endere\u00E7o
+        :param str complemento: Apresenta descri\u00E7oes complementares referente ao endere\u00E7o
+        :param str ponto_referencia: Apresenta a descri\u00E7\u00E3o de ponto de refer\u00EAncia do endere\u00E7o
         :param str bairro: Apresenta nome do bairro
         :param str cidade: Apresenta nome da cidade
         :param str uf: Apresenta sigla da Unidade Federativa
         :param str pais: Apresenta nome do Pais
-        :param str data_inclusao: Apresenta a data em que fora cadastrado o Endere\u00C3\u00A7o
-        :param str data_ultima_atualizacao: Data em que fora realizada a \u00C3\u00BAltima mudan\u00C3\u00A7a neste registro de endere\u00C3\u00A7o. Quando n\u00C3\u00A3o tiver ocorrido mudan\u00C3\u00A7a, conter\u00C3\u00A1 a mesma informa\u00C3\u00A7\u00C3\u00A3o que o campo dataInclusao
+        :param str data_inclusao: Apresenta a data em que fora cadastrado o Endere\u00E7o
+        :param str data_ultima_atualizacao: Data em que fora realizada a \u00FAltima mudan\u00E7a neste registro de endere\u00E7o. Quando n\u00E3o tiver ocorrido mudan\u00E7a, conter\u00E1 a mesma informa\u00E7\u00E3o que o campo dataInclusao
         :return: PageEnderecoResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -1493,7 +1493,7 @@ class CadastroClienteApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get20" % key
+                    " to method listar_using_get21" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -1570,10 +1570,10 @@ class CadastroClienteApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get29(self, **kwargs):
+    def listar_using_get31(self, **kwargs):
         """
         Lista os Detalhes das Pessoas cadastradas no Emissor
-        Este m\u00C3\u00A9todo permite que sejam listadas od detalhes das Pessoas existentes na base de dados do Emissor.
+        Este m\u00E9todo permite que sejam listadas od detalhes das Pessoas existentes na base de dados do Emissor.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -1581,24 +1581,24 @@ class CadastroClienteApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get29(callback=callback_function)
+        >>> thread = api.listar_using_get31(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param list[str] sort: Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
-        :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
-        :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
-        :param int id_pessoa: C\u00C3\u00B3digo identificador da pessoa
-        :param str nome_mae: Apresenta o nome da m\u00C3\u00A3e da pessoa fisica
+        :param list[str] sort: Tipo de ordena\u00E7\u00E3o dos registros.
+        :param int page: P\u00E1gina solicitada (Default = 0)
+        :param int limit: Limite de elementos por solicita\u00E7\u00E3o (Default = 50, Max = 50)
+        :param int id_pessoa: C\u00F3digo identificador da pessoa
+        :param str nome_mae: Apresenta o nome da m\u00E3e da pessoa fisica
         :param int id_estado_civil: Id Estado civil da pessoa fisica
-        :param str id_profissao: Profiss\u00C3\u00A3o da pessoa fisica
-        :param int id_natureza_ocupacao: Id Natureza Ocupa\u00C3\u00A7\u00C3\u00A3o da pessoa fisica
+        :param str id_profissao: Profiss\u00E3o da pessoa fisica
+        :param int id_natureza_ocupacao: Id Natureza Ocupa\u00E7\u00E3o da pessoa fisica
         :param int id_nacionalidade: Id Nacionalidade da pessoa fisica
-        :param int numero_banco: N\u00C3\u00BAmero do Banco.
-        :param int numero_agencia: N\u00C3\u00BAmero da ag\u00C3\u00AAncia.
-        :param str numero_conta_corrente: N\u00C3\u00BAmero da conta corrente.
+        :param int numero_banco: N\u00FAmero do Banco.
+        :param int numero_agencia: N\u00FAmero da ag\u00EAncia.
+        :param str numero_conta_corrente: N\u00FAmero da conta corrente.
         :param str email: Email da pessoa fisica
-        :param str nome_empresa: Nome que deve ser impresso no cart\u00C3\u00A3o
+        :param str nome_empresa: Nome que deve ser impresso no cart\u00E3o
         :return: PagePessoaDetalheResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -1612,7 +1612,7 @@ class CadastroClienteApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get29" % key
+                    " to method listar_using_get31" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -1683,10 +1683,10 @@ class CadastroClienteApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get30(self, **kwargs):
+    def listar_using_get32(self, **kwargs):
         """
         Lista as Pessoas cadastradas no Emissor
-        Este m\u00C3\u00A9todo permite que sejam listadas as Pessoas existentes na base de dados do Emissor.
+        Este m\u00E9todo permite que sejam listadas as Pessoas existentes na base de dados do Emissor.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -1694,24 +1694,24 @@ class CadastroClienteApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get30(callback=callback_function)
+        >>> thread = api.listar_using_get32(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param list[str] sort: Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
-        :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
-        :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
-        :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Pessoa (id).
-        :param str nome: Apresenta o 'Nome Completo da PF' ou o 'Nome Completo da Raz\u00C3\u00A3o Social (Nome Empresarial)'.
-        :param str tipo: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do tipo da Pessoa, sendo: (\"PF\": Pessoa F\u00C3\u00ADsica), (\"PJ\": Pessoa Jur\u00C3\u00ADdica).
-        :param str cpf: N\u00C3\u00BAmero do CPF, quando PF.
-        :param str cnpj: N\u00C3\u00BAmero do CNPJ, quando PJ.
+        :param list[str] sort: Tipo de ordena\u00E7\u00E3o dos registros.
+        :param int page: P\u00E1gina solicitada (Default = 0)
+        :param int limit: Limite de elementos por solicita\u00E7\u00E3o (Default = 50, Max = 50)
+        :param int id: C\u00F3digo de Identifica\u00E7\u00E3o da Pessoa (id).
+        :param str nome: Apresenta o 'Nome Completo da PF' ou o 'Nome Completo da Raz\u00E3o Social (Nome Empresarial)'.
+        :param str tipo: C\u00F3digo de identifica\u00E7\u00E3o do tipo da Pessoa, sendo: (\"PF\": Pessoa F\u00EDsica), (\"PJ\": Pessoa Jur\u00EDdica).
+        :param str cpf: N\u00FAmero do CPF, quando PF.
+        :param str cnpj: N\u00FAmero do CNPJ, quando PJ.
         :param str data_nascimento: Data de Nascimento da Pessoa, quando PF, ou a Data de Abertura da Empresa, quando PJ.
-        :param str sexo: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do sexo da Pessoa, quando PF, sendo: (\"M\": Masculino), (\"F\": Feminino), (\"O\": Outro), (\"N\": N\u00C3\u00A3o Especificado).
-        :param str numero_identidade: N\u00C3\u00BAmero da Identidade
-        :param str orgao_expedidor_identidade: Org\u00C3\u00A3o expedidor do RG.
+        :param str sexo: C\u00F3digo de identifica\u00E7\u00E3o do sexo da Pessoa, quando PF, sendo: (\"M\": Masculino), (\"F\": Feminino), (\"O\": Outro), (\"N\": N\u00E3o Especificado).
+        :param str numero_identidade: N\u00FAmero da Identidade
+        :param str orgao_expedidor_identidade: Org\u00E3o expedidor do RG.
         :param str unidade_federativa_identidade: Sigla da Unidade Federativa de onde foi expedido a Identidade
-        :param str data_emissao_identidade: Data emiss\u00C3\u00A3o da identidade no formato aaaa-MM-dd
+        :param str data_emissao_identidade: Data emiss\u00E3o da identidade no formato aaaa-MM-dd
         :return: PagePessoaResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -1725,7 +1725,7 @@ class CadastroClienteApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get30" % key
+                    " to method listar_using_get32" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -1796,10 +1796,10 @@ class CadastroClienteApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get39(self, **kwargs):
+    def listar_using_get41(self, **kwargs):
         """
         Lista os Telefones cadastrados no Emissor
-        Este m\u00C3\u00A9todo permite que sejam listados os Telefones existentes na base de dados do Emissor.
+        Este m\u00E9todo permite que sejam listados os Telefones existentes na base de dados do Emissor.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -1807,19 +1807,19 @@ class CadastroClienteApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get39(callback=callback_function)
+        >>> thread = api.listar_using_get41(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param list[str] sort: Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
-        :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
-        :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
-        :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Telefone (id).
-        :param int id_tipo_telefone: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Tipo do Telefone (id).
-        :param int id_pessoa: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Pessoa (id) a qual o telefone pertence.
-        :param str ddd: C\u00C3\u00B3digo DDD do telefone (id).
-        :param str telefone: N\u00C3\u00BAmero do telefone.
-        :param str ramal: N\u00C3\u00BAmero do ramal.
+        :param list[str] sort: Tipo de ordena\u00E7\u00E3o dos registros.
+        :param int page: P\u00E1gina solicitada (Default = 0)
+        :param int limit: Limite de elementos por solicita\u00E7\u00E3o (Default = 50, Max = 50)
+        :param int id: C\u00F3digo de Identifica\u00E7\u00E3o do Telefone (id).
+        :param int id_tipo_telefone: C\u00F3digo de Identifica\u00E7\u00E3o do Tipo do Telefone (id).
+        :param int id_pessoa: C\u00F3digo de Identifica\u00E7\u00E3o da Pessoa (id) a qual o telefone pertence.
+        :param str ddd: C\u00F3digo DDD do telefone (id).
+        :param str telefone: N\u00FAmero do telefone.
+        :param str ramal: N\u00FAmero do ramal.
         :param int status: Apresenta o Status do Telefone, onde: '0': Inativo e '1': Ativo
         :return: PageTelefoneResponse
                  If the method is called asynchronously,
@@ -1834,7 +1834,7 @@ class CadastroClienteApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get39" % key
+                    " to method listar_using_get41" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -1900,7 +1900,7 @@ class CadastroClienteApi(object):
     def salvar_pessoa_fisica_aprovada_using_post(self, pessoa_persist, **kwargs):
         """
         Cadastro de Conta e Pessoa Fisica
-        Permite realizar o cadastro de uma Conta para um cliente do tipo Pessoa F\u00C3\u00ADsica, recebendo nesta opera\u00C3\u00A7\u00C3\u00A3o todos os dados cadastrais que se fazem necess\u00C3\u00A1rios para isso. Uma vez criado, poder\u00C3\u00A1 ser acionado o m\u00C3\u00A9todo de 'Gera\u00C3\u00A7\u00C3\u00A3o de Cart\u00C3\u00A3o' para o cliente e seus adicionais.
+        Permite realizar o cadastro de uma Conta para um cliente do tipo Pessoa F\u00EDsica, recebendo nesta opera\u00E7\u00E3o todos os dados cadastrais que se fazem necess\u00E1rios para isso. Uma vez criado, poder\u00E1 ser acionado o m\u00E9todo de 'Gera\u00E7\u00E3o de Cart\u00E3o' para o cliente e seus adicionais.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -1976,8 +1976,8 @@ class CadastroClienteApi(object):
 
     def salvar_pessoa_juridica_aprovada_using_post(self, pessoa_persist, **kwargs):
         """
-        Cadastro de Conta e Pessoa Jur\u00C3\u00ADdica
-        Cadastro de Conta e Pessoa Jur\u00C3\u00ADdica Permite realizar o cadastro de uma Conta para um cliente do tipo Pessoa Jur\u00C3\u00ADdica, recebendo nesta opera\u00C3\u00A7\u00C3\u00A3o todos os dados cadastrais que se fazem necess\u00C3\u00A1rios para isso, inclu\u00C3\u00ADndo o registro de cada um dos s\u00C3\u00B3cios. Uma vez criado, poder\u00C3\u00A1 ser acionado o m\u00C3\u00A9todo de 'Gera\u00C3\u00A7\u00C3\u00A3o de Cart\u00C3\u00A3o' para o cliente e cada um dos s\u00C3\u00B3cios vinculados.
+        Cadastro de Conta e Pessoa Jur\u00EDdica
+        Cadastro de Conta e Pessoa Jur\u00EDdica Permite realizar o cadastro de uma Conta para um cliente do tipo Pessoa Jur\u00EDdica, recebendo nesta opera\u00E7\u00E3o todos os dados cadastrais que se fazem necess\u00E1rios para isso, inclu\u00EDndo o registro de cada um dos s\u00F3cios. Uma vez criado, poder\u00E1 ser acionado o m\u00E9todo de 'Gera\u00E7\u00E3o de Cart\u00E3o' para o cliente e cada um dos s\u00F3cios vinculados.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -2053,8 +2053,8 @@ class CadastroClienteApi(object):
 
     def salvar_using_post12(self, **kwargs):
         """
-        Realiza o cadastro de um novo Endere\u00C3\u00A7o
-        Este m\u00C3\u00A9todo permite que seja cadastrado um novo Endere\u00C3\u00A7o na base de dados do Emissor.
+        Realiza o cadastro de um novo Endere\u00E7o
+        Este m\u00E9todo permite que seja cadastrado um novo Endere\u00E7o na base de dados do Emissor.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -2066,13 +2066,13 @@ class CadastroClienteApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param int id_pessoa: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Pessoa a qual o endere\u00C3\u00A7o pertence (id)
-        :param int id_tipo_endereco: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Tipo Endere\u00C3\u00A7o (id)
-        :param str cep: Apresenta o C\u00C3\u00B3digo de Endere\u00C3\u00A7amento Postal (CEP) no formaro '58800000'
+        :param int id_pessoa: C\u00F3digo de Identifica\u00E7\u00E3o da Pessoa a qual o endere\u00E7o pertence (id)
+        :param int id_tipo_endereco: C\u00F3digo de Identifica\u00E7\u00E3o da Tipo Endere\u00E7o (id)
+        :param str cep: Apresenta o C\u00F3digo de Endere\u00E7amento Postal (CEP) no formaro '58800000'
         :param str logradouro: Apresenta o nome do Logradouro
-        :param int numero: Apresenta o n\u00C3\u00BAmero do endere\u00C3\u00A7o
-        :param str complemento: Apresenta descri\u00C3\u00A7oes complementares referente ao endere\u00C3\u00A7o
-        :param str ponto_referencia: Apresenta a descri\u00C3\u00A7\u00C3\u00A3o de ponto de refer\u00C3\u00AAncia do endere\u00C3\u00A7o
+        :param int numero: Apresenta o n\u00FAmero do endere\u00E7o
+        :param str complemento: Apresenta descri\u00E7oes complementares referente ao endere\u00E7o
+        :param str ponto_referencia: Apresenta a descri\u00E7\u00E3o de ponto de refer\u00EAncia do endere\u00E7o
         :param str bairro: Apresenta nome do bairro
         :param str cidade: Apresenta nome da cidade
         :param str uf: Apresenta sigla da Unidade Federativa
@@ -2157,8 +2157,8 @@ class CadastroClienteApi(object):
 
     def salvar_using_post14(self, id, **kwargs):
         """
-        Inclui a conta como registro para integra\u00C3\u00A7\u00C3\u00A3o
-        Este recurso permite incluir uma conta como registro para integra\u00C3\u00A7\u00C3\u00A3o.
+        Inclui a conta como registro para integra\u00E7\u00E3o
+        Este recurso permite incluir uma conta como registro para integra\u00E7\u00E3o.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -2170,8 +2170,8 @@ class CadastroClienteApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param int id: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da conta (id). (required)
-        :param IntegracaoEmissorPersist body: Descri\u00C3\u00A7\u00C3\u00A3o do canal de entrada
+        :param int id: C\u00F3digo de identifica\u00E7\u00E3o da conta (id). (required)
+        :param IntegracaoEmissorPersist body: Descri\u00E7\u00E3o do canal de entrada
         :return: IntegracaoEmissorResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -2238,7 +2238,7 @@ class CadastroClienteApi(object):
     def salvar_using_post19(self, id_pessoa, **kwargs):
         """
         Salvar os detalhes de uma determinada Pessoa
-        Este m\u00C3\u00A9todo permite que seja incluido na base do emissor os detalhes de uma determinada Pessoa.
+        Este m\u00E9todo permite que seja incluido na base do emissor os detalhes de uma determinada Pessoa.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -2250,17 +2250,17 @@ class CadastroClienteApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param int id_pessoa: Apresenta o c\u00C3\u00B3digo identificador da pessoa (required)
-        :param str nome_mae: Apresenta o nome da m\u00C3\u00A3e da pessoa fisica
+        :param int id_pessoa: Apresenta o c\u00F3digo identificador da pessoa (required)
+        :param str nome_mae: Apresenta o nome da m\u00E3e da pessoa fisica
         :param int id_estado_civil: Id Estado civil da pessoa fisica
-        :param str id_profissao: Profiss\u00C3\u00A3o da pessoa fisica
-        :param int id_natureza_ocupacao: Id Natureza Ocupa\u00C3\u00A7\u00C3\u00A3o da pessoa fisica
+        :param str id_profissao: Profiss\u00E3o da pessoa fisica
+        :param int id_natureza_ocupacao: Id Natureza Ocupa\u00E7\u00E3o da pessoa fisica
         :param int id_nacionalidade: Id Nacionalidade da pessoa fisica
-        :param int numero_banco: N\u00C3\u00BAmero do banco.
-        :param int numero_agencia: N\u00C3\u00BAmero da ag\u00C3\u00AAncia.
-        :param str numero_conta_corrente: N\u00C3\u00BAmero da conta corrente.
+        :param int numero_banco: N\u00FAmero do banco.
+        :param int numero_agencia: N\u00FAmero da ag\u00EAncia.
+        :param str numero_conta_corrente: N\u00FAmero da conta corrente.
         :param str email: Email da pessoa fisica
-        :param str nome_empresa: Nome que deve ser impresso no cart\u00C3\u00A3o
+        :param str nome_empresa: Nome que deve ser impresso no cart\u00E3o
         :return: PessoaDetalheResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -2345,7 +2345,7 @@ class CadastroClienteApi(object):
     def salvar_using_post20(self, nome, tipo, data_nascimento, **kwargs):
         """
         Realiza o cadastro de um nova Pessoa
-        Este m\u00C3\u00A9todo permite que seja cadastrado uma nova Pessoa na base de dados do Emissor.
+        Este m\u00E9todo permite que seja cadastrado uma nova Pessoa na base de dados do Emissor.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -2357,16 +2357,16 @@ class CadastroClienteApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param str nome: Apresenta o 'Nome Completo da PF' ou o 'Nome Completo da Raz\u00C3\u00A3o Social (Nome Empresarial)'. (required)
-        :param str tipo: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do tipo da Pessoa, sendo: (\"PF\": Pessoa F\u00C3\u00ADsica), (\"PJ\": Pessoa Jur\u00C3\u00ADdica). (required)
+        :param str nome: Apresenta o 'Nome Completo da PF' ou o 'Nome Completo da Raz\u00E3o Social (Nome Empresarial)'. (required)
+        :param str tipo: C\u00F3digo de identifica\u00E7\u00E3o do tipo da Pessoa, sendo: (\"PF\": Pessoa F\u00EDsica), (\"PJ\": Pessoa Jur\u00EDdica). (required)
         :param str data_nascimento: Data de Nascimento da Pessoa, quando PF, ou a Data de Abertura da Empresa, quando PJ. Essa data deve ser informada no formato aaaa-MM-dd. (required)
-        :param str cpf: N\u00C3\u00BAmero do CPF, quando PF.
-        :param str cnpj: N\u00C3\u00BAmero do CNPJ, quando PJ.
-        :param str sexo: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do sexo da Pessoa, quando PF, sendo: (\"M\": Masculino), (\"F\": Feminino), (\"O\": Outro), (\"N\": N\u00C3\u00A3o Especificado).
-        :param str numero_identidade: N\u00C3\u00BAmero da Identidade.
-        :param str orgao_expedidor_identidade: Org\u00C3\u00A3o expedidor do Identidade.
+        :param str cpf: N\u00FAmero do CPF, quando PF.
+        :param str cnpj: N\u00FAmero do CNPJ, quando PJ.
+        :param str sexo: C\u00F3digo de identifica\u00E7\u00E3o do sexo da Pessoa, quando PF, sendo: (\"M\": Masculino), (\"F\": Feminino), (\"O\": Outro), (\"N\": N\u00E3o Especificado).
+        :param str numero_identidade: N\u00FAmero da Identidade.
+        :param str orgao_expedidor_identidade: Org\u00E3o expedidor do Identidade.
         :param str unidade_federativa_identidade: Sigla da Unidade Federativa de onde foi expedido a Identidade
-        :param str data_emissao_identidade: Data emiss\u00C3\u00A3o da Identidade.
+        :param str data_emissao_identidade: Data emiss\u00E3o da Identidade.
         :return: PessoaResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -2455,7 +2455,7 @@ class CadastroClienteApi(object):
     def salvar_using_post23(self, **kwargs):
         """
         Realiza o cadastro de um novo Telefone
-        Este m\u00C3\u00A9todo permite que seja cadastrado um novo Telefone na base de dados do Emissor.
+        Este m\u00E9todo permite que seja cadastrado um novo Telefone na base de dados do Emissor.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -2467,11 +2467,11 @@ class CadastroClienteApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param int id_tipo_telefone: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Tipo do Telefone (id).
-        :param int id_pessoa: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Pessoa (id) a qual o telefone pertence.
-        :param str ddd: C\u00C3\u00B3digo DDD do telefone (id).
-        :param str telefone: N\u00C3\u00BAmero do telefone.
-        :param str ramal: N\u00C3\u00BAmero do ramal.
+        :param int id_tipo_telefone: C\u00F3digo de Identifica\u00E7\u00E3o do Tipo do Telefone (id).
+        :param int id_pessoa: C\u00F3digo de Identifica\u00E7\u00E3o da Pessoa (id) a qual o telefone pertence.
+        :param str ddd: C\u00F3digo DDD do telefone (id).
+        :param str telefone: N\u00FAmero do telefone.
+        :param str ramal: N\u00FAmero do ramal.
         :return: TelefoneResponse
                  If the method is called asynchronously,
                  returns the request thread.

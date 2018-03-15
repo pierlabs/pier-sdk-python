@@ -75,7 +75,7 @@ class DetalhesFaturaConsignadaResponse(object):
     def transacoes(self):
         """
         Gets the transacoes of this DetalhesFaturaConsignadaResponse.
-        Apresenta as transa\u00C3\u00A7\u00C3\u00B5es relacionadas a fatura.
+        Apresenta as transa\u00E7\u00F5es relacionadas a fatura.
 
         :return: The transacoes of this DetalhesFaturaConsignadaResponse.
         :rtype: list[TransacoesCorrentesResponse]
@@ -86,7 +86,7 @@ class DetalhesFaturaConsignadaResponse(object):
     def transacoes(self, transacoes):
         """
         Sets the transacoes of this DetalhesFaturaConsignadaResponse.
-        Apresenta as transa\u00C3\u00A7\u00C3\u00B5es relacionadas a fatura.
+        Apresenta as transa\u00E7\u00F5es relacionadas a fatura.
 
         :param transacoes: The transacoes of this DetalhesFaturaConsignadaResponse.
         :type: list[TransacoesCorrentesResponse]

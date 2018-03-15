@@ -89,7 +89,7 @@ class EnderecoResponse(object):
     def id(self):
         """
         Gets the id of this EnderecoResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Endere\u00C3\u00A7o (id).
+        C\u00F3digo de Identifica\u00E7\u00E3o do Endere\u00E7o (id).
 
         :return: The id of this EnderecoResponse.
         :rtype: int
@@ -100,7 +100,7 @@ class EnderecoResponse(object):
     def id(self, id):
         """
         Sets the id of this EnderecoResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Endere\u00C3\u00A7o (id).
+        C\u00F3digo de Identifica\u00E7\u00E3o do Endere\u00E7o (id).
 
         :param id: The id of this EnderecoResponse.
         :type: int
@@ -111,7 +111,7 @@ class EnderecoResponse(object):
     def id_pessoa(self):
         """
         Gets the id_pessoa of this EnderecoResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Pessoa a qual o endere\u00C3\u00A7o pertence (id)
+        C\u00F3digo de Identifica\u00E7\u00E3o da Pessoa a qual o endere\u00E7o pertence (id)
 
         :return: The id_pessoa of this EnderecoResponse.
         :rtype: int
@@ -122,7 +122,7 @@ class EnderecoResponse(object):
     def id_pessoa(self, id_pessoa):
         """
         Sets the id_pessoa of this EnderecoResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Pessoa a qual o endere\u00C3\u00A7o pertence (id)
+        C\u00F3digo de Identifica\u00E7\u00E3o da Pessoa a qual o endere\u00E7o pertence (id)
 
         :param id_pessoa: The id_pessoa of this EnderecoResponse.
         :type: int
@@ -133,7 +133,7 @@ class EnderecoResponse(object):
     def id_tipo_endereco(self):
         """
         Gets the id_tipo_endereco of this EnderecoResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Tipo Endere\u00C3\u00A7o (id)
+        C\u00F3digo de Identifica\u00E7\u00E3o da Tipo Endere\u00E7o (id)
 
         :return: The id_tipo_endereco of this EnderecoResponse.
         :rtype: int
@@ -144,7 +144,7 @@ class EnderecoResponse(object):
     def id_tipo_endereco(self, id_tipo_endereco):
         """
         Sets the id_tipo_endereco of this EnderecoResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Tipo Endere\u00C3\u00A7o (id)
+        C\u00F3digo de Identifica\u00E7\u00E3o da Tipo Endere\u00E7o (id)
 
         :param id_tipo_endereco: The id_tipo_endereco of this EnderecoResponse.
         :type: int
@@ -155,7 +155,7 @@ class EnderecoResponse(object):
     def cep(self):
         """
         Gets the cep of this EnderecoResponse.
-        Apresenta o C\u00C3\u00B3digo de Endere\u00C3\u00A7amento Postal (CEP) no formaro '58800000'
+        Apresenta o C\u00F3digo de Endere\u00E7amento Postal (CEP) no formaro '58800000'
 
         :return: The cep of this EnderecoResponse.
         :rtype: str
@@ -166,7 +166,7 @@ class EnderecoResponse(object):
     def cep(self, cep):
         """
         Sets the cep of this EnderecoResponse.
-        Apresenta o C\u00C3\u00B3digo de Endere\u00C3\u00A7amento Postal (CEP) no formaro '58800000'
+        Apresenta o C\u00F3digo de Endere\u00E7amento Postal (CEP) no formaro '58800000'
 
         :param cep: The cep of this EnderecoResponse.
         :type: str
@@ -199,7 +199,7 @@ class EnderecoResponse(object):
     def numero(self):
         """
         Gets the numero of this EnderecoResponse.
-        Apresenta o n\u00C3\u00BAmero do endere\u00C3\u00A7o
+        Apresenta o n\u00FAmero do endere\u00E7o
 
         :return: The numero of this EnderecoResponse.
         :rtype: int
@@ -210,7 +210,7 @@ class EnderecoResponse(object):
     def numero(self, numero):
         """
         Sets the numero of this EnderecoResponse.
-        Apresenta o n\u00C3\u00BAmero do endere\u00C3\u00A7o
+        Apresenta o n\u00FAmero do endere\u00E7o
 
         :param numero: The numero of this EnderecoResponse.
         :type: int
@@ -221,7 +221,7 @@ class EnderecoResponse(object):
     def complemento(self):
         """
         Gets the complemento of this EnderecoResponse.
-        Apresenta descri\u00C3\u00A7oes complementares referente ao endere\u00C3\u00A7o
+        Apresenta descri\u00E7oes complementares referente ao endere\u00E7o
 
         :return: The complemento of this EnderecoResponse.
         :rtype: str
@@ -232,7 +232,7 @@ class EnderecoResponse(object):
     def complemento(self, complemento):
         """
         Sets the complemento of this EnderecoResponse.
-        Apresenta descri\u00C3\u00A7oes complementares referente ao endere\u00C3\u00A7o
+        Apresenta descri\u00E7oes complementares referente ao endere\u00E7o
 
         :param complemento: The complemento of this EnderecoResponse.
         :type: str
@@ -243,7 +243,7 @@ class EnderecoResponse(object):
     def ponto_referencia(self):
         """
         Gets the ponto_referencia of this EnderecoResponse.
-        Apresenta a descri\u00C3\u00A7\u00C3\u00A3o de ponto de refer\u00C3\u00AAncia do endere\u00C3\u00A7o
+        Apresenta a descri\u00E7\u00E3o de ponto de refer\u00EAncia do endere\u00E7o
 
         :return: The ponto_referencia of this EnderecoResponse.
         :rtype: str
@@ -254,7 +254,7 @@ class EnderecoResponse(object):
     def ponto_referencia(self, ponto_referencia):
         """
         Sets the ponto_referencia of this EnderecoResponse.
-        Apresenta a descri\u00C3\u00A7\u00C3\u00A3o de ponto de refer\u00C3\u00AAncia do endere\u00C3\u00A7o
+        Apresenta a descri\u00E7\u00E3o de ponto de refer\u00EAncia do endere\u00E7o
 
         :param ponto_referencia: The ponto_referencia of this EnderecoResponse.
         :type: str
@@ -353,7 +353,7 @@ class EnderecoResponse(object):
     def data_inclusao(self):
         """
         Gets the data_inclusao of this EnderecoResponse.
-        Apresenta a data em que fora cadastrado o Endere\u00C3\u00A7o
+        Apresenta a data em que fora cadastrado o Endere\u00E7o
 
         :return: The data_inclusao of this EnderecoResponse.
         :rtype: str
@@ -364,7 +364,7 @@ class EnderecoResponse(object):
     def data_inclusao(self, data_inclusao):
         """
         Sets the data_inclusao of this EnderecoResponse.
-        Apresenta a data em que fora cadastrado o Endere\u00C3\u00A7o
+        Apresenta a data em que fora cadastrado o Endere\u00E7o
 
         :param data_inclusao: The data_inclusao of this EnderecoResponse.
         :type: str
@@ -375,7 +375,7 @@ class EnderecoResponse(object):
     def data_ultima_atualizacao(self):
         """
         Gets the data_ultima_atualizacao of this EnderecoResponse.
-        Data em que fora realizada a \u00C3\u00BAltima mudan\u00C3\u00A7a neste registro de endere\u00C3\u00A7o. Quando n\u00C3\u00A3o tiver ocorrido mudan\u00C3\u00A7a, conter\u00C3\u00A1 a mesma informa\u00C3\u00A7\u00C3\u00A3o que o campo dataInclusao
+        Data em que fora realizada a \u00FAltima mudan\u00E7a neste registro de endere\u00E7o. Quando n\u00E3o tiver ocorrido mudan\u00E7a, conter\u00E1 a mesma informa\u00E7\u00E3o que o campo dataInclusao
 
         :return: The data_ultima_atualizacao of this EnderecoResponse.
         :rtype: str
@@ -386,7 +386,7 @@ class EnderecoResponse(object):
     def data_ultima_atualizacao(self, data_ultima_atualizacao):
         """
         Sets the data_ultima_atualizacao of this EnderecoResponse.
-        Data em que fora realizada a \u00C3\u00BAltima mudan\u00C3\u00A7a neste registro de endere\u00C3\u00A7o. Quando n\u00C3\u00A3o tiver ocorrido mudan\u00C3\u00A7a, conter\u00C3\u00A1 a mesma informa\u00C3\u00A7\u00C3\u00A3o que o campo dataInclusao
+        Data em que fora realizada a \u00FAltima mudan\u00E7a neste registro de endere\u00E7o. Quando n\u00E3o tiver ocorrido mudan\u00E7a, conter\u00E1 a mesma informa\u00E7\u00E3o que o campo dataInclusao
 
         :param data_ultima_atualizacao: The data_ultima_atualizacao of this EnderecoResponse.
         :type: str

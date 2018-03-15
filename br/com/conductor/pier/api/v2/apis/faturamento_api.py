@@ -48,7 +48,7 @@ class FaturamentoApi(object):
     def alterar_tipo_faturamento_using_put(self, id, tipo_faturamento_persist, **kwargs):
         """
         Alterar Faturamento
-        Alterar as configura\u00C3\u00A7\u00C3\u00B5es de um determinado tipo de faturamento
+        Alterar as configura\u00E7\u00F5es de um determinado tipo de faturamento
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -130,8 +130,8 @@ class FaturamentoApi(object):
 
     def cadastrar_faturamento_por_conta_using_post(self, tipo_faturamento_por_conta_persist, **kwargs):
         """
-        Adiciona uma nova configura\u00C3\u00A7\u00C3\u00A3o de faturamento para uma conta
-        Este m\u00C3\u00A9todo permite adicionar uma nova configura\u00C3\u00A7\u00C3\u00A3o de tipo de faturamento para um conta espec\u00C3\u00ADfica.
+        Adiciona uma nova configura\u00E7\u00E3o de faturamento para uma conta
+        Este m\u00E9todo permite adicionar uma nova configura\u00E7\u00E3o de tipo de faturamento para um conta espec\u00EDfica.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -208,7 +208,7 @@ class FaturamentoApi(object):
     def cadastrar_tipo_faturamento_using_post(self, tipo_faturamento_persist, **kwargs):
         """
         Adiciona um novo faturamento
-        Adiciona uma nova configura\u00C3\u00A7\u00C3\u00A3o de tipo de faturamento
+        Adiciona uma nova configura\u00E7\u00E3o de tipo de faturamento
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -361,8 +361,8 @@ class FaturamentoApi(object):
 
     def desativar_faturamento_por_conta_using_post(self, id, modificado_por, **kwargs):
         """
-        Desativar uma configura\u00C3\u00A7\u00C3\u00A3o de tipo de faturamento por conta atrav\u00C3\u00A9s do id
-        Desativa uma configura\u00C3\u00A7\u00C3\u00A3o de tipo de faturamento de uma determinada conta.
+        Desativar uma configura\u00E7\u00E3o de tipo de faturamento por conta atrav\u00E9s do id
+        Desativa uma configura\u00E7\u00E3o de tipo de faturamento de uma determinada conta.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -444,8 +444,8 @@ class FaturamentoApi(object):
 
     def desativar_tipo_faturamento_using_post(self, id, **kwargs):
         """
-        Desativar uma configura\u00C3\u00A7\u00C3\u00A3o de tipo de faturamento atrav\u00C3\u00A9s do id
-        Desativa uma configura\u00C3\u00A7\u00C3\u00A3o de tipo de faturamento.
+        Desativar uma configura\u00E7\u00E3o de tipo de faturamento atrav\u00E9s do id
+        Desativa uma configura\u00E7\u00E3o de tipo de faturamento.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -521,8 +521,8 @@ class FaturamentoApi(object):
 
     def listar_faturamento_por_conta_using_get(self, **kwargs):
         """
-        Lista as configura\u00C3\u00A7\u00C3\u00B5es de tipos de faturamento por conta
-        Este m\u00C3\u00A9todo permite listar as configura\u00C3\u00A7\u00C3\u00B5es de tipos de faturamento registrados a uma conta.
+        Lista as configura\u00E7\u00F5es de tipos de faturamento por conta
+        Este m\u00E9todo permite listar as configura\u00E7\u00F5es de tipos de faturamento registrados a uma conta.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -534,16 +534,16 @@ class FaturamentoApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param list[str] sort: Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
-        :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
-        :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
-        :param int id_tipo_faturamento_por_conta: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do tipo de faturamento por conta (id).
-        :param bool status: Representa se a configura\u00C3\u00A7\u00C3\u00A3o est\u00C3\u00A1 ativada ou desativada para a conta.
-        :param int id_conta: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do tipo de faturamento por conta (id).
-        :param int id_tipo_faturamento: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do tipo de faturamento relacionada (id).
-        :param str data_hora_inclusao: Data da inclus\u00C3\u00A3o da configura\u00C3\u00A7\u00C3\u00A3o, deve ser informada no formato yyyy-MM-dd'T'HH:mm:ss.SSS'Z'.
-        :param str data_hora_cancelamento: Data do cancelamento da configura\u00C3\u00A7\u00C3\u00A3o, deve ser informada no formato yyyy-MM-dd'T'HH:mm:ss.SSS'Z'.
-        :param str modificado_por: Identificador do respons\u00C3\u00A1vel pela modifica\u00C3\u00A7\u00C3\u00A3o do registro.
+        :param list[str] sort: Tipo de ordena\u00E7\u00E3o dos registros.
+        :param int page: P\u00E1gina solicitada (Default = 0)
+        :param int limit: Limite de elementos por solicita\u00E7\u00E3o (Default = 50, Max = 50)
+        :param int id_tipo_faturamento_por_conta: C\u00F3digo de identifica\u00E7\u00E3o do tipo de faturamento por conta (id).
+        :param bool status: Representa se a configura\u00E7\u00E3o est\u00E1 ativada ou desativada para a conta.
+        :param int id_conta: C\u00F3digo de identifica\u00E7\u00E3o do tipo de faturamento por conta (id).
+        :param int id_tipo_faturamento: C\u00F3digo de identifica\u00E7\u00E3o do tipo de faturamento relacionada (id).
+        :param str data_hora_inclusao: Data da inclus\u00E3o da configura\u00E7\u00E3o, deve ser informada no formato yyyy-MM-dd'T'HH:mm:ss.SSS'Z'.
+        :param str data_hora_cancelamento: Data do cancelamento da configura\u00E7\u00E3o, deve ser informada no formato yyyy-MM-dd'T'HH:mm:ss.SSS'Z'.
+        :param str modificado_por: Identificador do respons\u00E1vel pela modifica\u00E7\u00E3o do registro.
         :return: PageTipoFaturamentoPorContaResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -623,7 +623,7 @@ class FaturamentoApi(object):
     def listar_tipo_faturamento_using_get(self, **kwargs):
         """
         Lista Tipos de Faturamento
-        Lista todas as configura\u00C3\u00A7\u00C3\u00B5es dos tipos de faturamento
+        Lista todas as configura\u00E7\u00F5es dos tipos de faturamento
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -635,13 +635,13 @@ class FaturamentoApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param list[str] sort: Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
-        :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
-        :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
-        :param int id_tipo_faturamento: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do tipo de faturamento (id).
-        :param str descricao: Descri\u00C3\u00A7\u00C3\u00A3o do tipo de faturamento.
-        :param bool flag_apenas_demonstrativo: Flag que representa que o faturamento ser\u00C3\u00A1 apenas demonstrativo.
-        :param int id_convenio: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do conv\u00C3\u00AAnio relacionado ao tipo de faturamento.
+        :param list[str] sort: Tipo de ordena\u00E7\u00E3o dos registros.
+        :param int page: P\u00E1gina solicitada (Default = 0)
+        :param int limit: Limite de elementos por solicita\u00E7\u00E3o (Default = 50, Max = 50)
+        :param int id_tipo_faturamento: C\u00F3digo de identifica\u00E7\u00E3o do tipo de faturamento (id).
+        :param str descricao: Descri\u00E7\u00E3o do tipo de faturamento.
+        :param bool flag_apenas_demonstrativo: Flag que representa que o faturamento ser\u00E1 apenas demonstrativo.
+        :param int id_convenio: C\u00F3digo de identifica\u00E7\u00E3o do conv\u00EAnio relacionado ao tipo de faturamento.
         :return: PageTipoFaturamentoResponse
                  If the method is called asynchronously,
                  returns the request thread.

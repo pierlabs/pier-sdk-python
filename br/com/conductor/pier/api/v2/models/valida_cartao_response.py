@@ -71,7 +71,7 @@ class ValidaCartaoResponse(object):
     def id_status_cartao(self):
         """
         Gets the id_status_cartao of this ValidaCartaoResponse.
-        Descri\u00C3\u00A7\u00C3\u00A3o do status do cart\u00C3\u00A3o
+        Descri\u00E7\u00E3o do status do cart\u00E3o
 
         :return: The id_status_cartao of this ValidaCartaoResponse.
         :rtype: int
@@ -82,7 +82,7 @@ class ValidaCartaoResponse(object):
     def id_status_cartao(self, id_status_cartao):
         """
         Sets the id_status_cartao of this ValidaCartaoResponse.
-        Descri\u00C3\u00A7\u00C3\u00A3o do status do cart\u00C3\u00A3o
+        Descri\u00E7\u00E3o do status do cart\u00E3o
 
         :param id_status_cartao: The id_status_cartao of this ValidaCartaoResponse.
         :type: int
@@ -93,7 +93,7 @@ class ValidaCartaoResponse(object):
     def status_cartao(self):
         """
         Gets the status_cartao of this ValidaCartaoResponse.
-        Descri\u00C3\u00A7\u00C3\u00A3o do status do cart\u00C3\u00A3o
+        Descri\u00E7\u00E3o do status do cart\u00E3o
 
         :return: The status_cartao of this ValidaCartaoResponse.
         :rtype: str
@@ -104,7 +104,7 @@ class ValidaCartaoResponse(object):
     def status_cartao(self, status_cartao):
         """
         Sets the status_cartao of this ValidaCartaoResponse.
-        Descri\u00C3\u00A7\u00C3\u00A3o do status do cart\u00C3\u00A3o
+        Descri\u00E7\u00E3o do status do cart\u00E3o
 
         :param status_cartao: The status_cartao of this ValidaCartaoResponse.
         :type: str
@@ -115,7 +115,7 @@ class ValidaCartaoResponse(object):
     def id_status_conta(self):
         """
         Gets the id_status_conta of this ValidaCartaoResponse.
-        Descri\u00C3\u00A7\u00C3\u00A3o do status da conta
+        Descri\u00E7\u00E3o do status da conta
 
         :return: The id_status_conta of this ValidaCartaoResponse.
         :rtype: int
@@ -126,7 +126,7 @@ class ValidaCartaoResponse(object):
     def id_status_conta(self, id_status_conta):
         """
         Sets the id_status_conta of this ValidaCartaoResponse.
-        Descri\u00C3\u00A7\u00C3\u00A3o do status da conta
+        Descri\u00E7\u00E3o do status da conta
 
         :param id_status_conta: The id_status_conta of this ValidaCartaoResponse.
         :type: int
@@ -137,7 +137,7 @@ class ValidaCartaoResponse(object):
     def status_conta(self):
         """
         Gets the status_conta of this ValidaCartaoResponse.
-        Descri\u00C3\u00A7\u00C3\u00A3o do status da conta
+        Descri\u00E7\u00E3o do status da conta
 
         :return: The status_conta of this ValidaCartaoResponse.
         :rtype: str
@@ -148,7 +148,7 @@ class ValidaCartaoResponse(object):
     def status_conta(self, status_conta):
         """
         Sets the status_conta of this ValidaCartaoResponse.
-        Descri\u00C3\u00A7\u00C3\u00A3o do status da conta
+        Descri\u00E7\u00E3o do status da conta
 
         :param status_conta: The status_conta of this ValidaCartaoResponse.
         :type: str
@@ -159,7 +159,7 @@ class ValidaCartaoResponse(object):
     def id_conta(self):
         """
         Gets the id_conta of this ValidaCartaoResponse.
-        C\u00C3\u00B3digo identificador da conta.
+        C\u00F3digo identificador da conta.
 
         :return: The id_conta of this ValidaCartaoResponse.
         :rtype: int
@@ -170,7 +170,7 @@ class ValidaCartaoResponse(object):
     def id_conta(self, id_conta):
         """
         Sets the id_conta of this ValidaCartaoResponse.
-        C\u00C3\u00B3digo identificador da conta.
+        C\u00F3digo identificador da conta.
 
         :param id_conta: The id_conta of this ValidaCartaoResponse.
         :type: int
@@ -181,7 +181,7 @@ class ValidaCartaoResponse(object):
     def numero_agencia(self):
         """
         Gets the numero_agencia of this ValidaCartaoResponse.
-        N\u00C3\u00BAmero da ag\u00C3\u00AAncia.
+        N\u00FAmero da ag\u00EAncia.
 
         :return: The numero_agencia of this ValidaCartaoResponse.
         :rtype: int
@@ -192,7 +192,7 @@ class ValidaCartaoResponse(object):
     def numero_agencia(self, numero_agencia):
         """
         Sets the numero_agencia of this ValidaCartaoResponse.
-        N\u00C3\u00BAmero da ag\u00C3\u00AAncia.
+        N\u00FAmero da ag\u00EAncia.
 
         :param numero_agencia: The numero_agencia of this ValidaCartaoResponse.
         :type: int
@@ -203,7 +203,7 @@ class ValidaCartaoResponse(object):
     def numero_conta_corrente(self):
         """
         Gets the numero_conta_corrente of this ValidaCartaoResponse.
-        N\u00C3\u00BAmero da conta corrente.
+        N\u00FAmero da conta corrente.
 
         :return: The numero_conta_corrente of this ValidaCartaoResponse.
         :rtype: str
@@ -214,7 +214,7 @@ class ValidaCartaoResponse(object):
     def numero_conta_corrente(self, numero_conta_corrente):
         """
         Sets the numero_conta_corrente of this ValidaCartaoResponse.
-        N\u00C3\u00BAmero da conta corrente.
+        N\u00FAmero da conta corrente.
 
         :param numero_conta_corrente: The numero_conta_corrente of this ValidaCartaoResponse.
         :type: str

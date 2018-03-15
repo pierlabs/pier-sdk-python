@@ -53,7 +53,7 @@ class GradePendenteRequest(object):
     def id_conta(self):
         """
         Gets the id_conta of this GradePendenteRequest.
-        C\u00C3\u00B3digo identificador da conta.
+        C\u00F3digo identificador da conta.
 
         :return: The id_conta of this GradePendenteRequest.
         :rtype: int
@@ -64,7 +64,7 @@ class GradePendenteRequest(object):
     def id_conta(self, id_conta):
         """
         Sets the id_conta of this GradePendenteRequest.
-        C\u00C3\u00B3digo identificador da conta.
+        C\u00F3digo identificador da conta.
 
         :param id_conta: The id_conta of this GradePendenteRequest.
         :type: int

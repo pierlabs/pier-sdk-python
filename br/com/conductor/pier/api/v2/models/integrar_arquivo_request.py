@@ -37,36 +37,36 @@ class IntegrarArquivoRequest(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'cpf': 'str'
+            'numero_receita_federal': 'str'
         }
 
         self.attribute_map = {
-            'cpf': 'cpf'
+            'numero_receita_federal': 'numeroReceitaFederal'
         }
 
-        self._cpf = None
+        self._numero_receita_federal = None
 
     @property
-    def cpf(self):
+    def numero_receita_federal(self):
         """
-        Gets the cpf of this IntegrarArquivoRequest.
-        CPF do cliente de Arquivos a serem integrados
+        Gets the numero_receita_federal of this IntegrarArquivoRequest.
+        N\u00FAmero Receita Federal (CPF) vinculado a um ou mais arquivos que ser\u00E3o enviados para realizar integra\u00E7\u00E3o
 
-        :return: The cpf of this IntegrarArquivoRequest.
+        :return: The numero_receita_federal of this IntegrarArquivoRequest.
         :rtype: str
         """
-        return self._cpf
+        return self._numero_receita_federal
 
-    @cpf.setter
-    def cpf(self, cpf):
+    @numero_receita_federal.setter
+    def numero_receita_federal(self, numero_receita_federal):
         """
-        Sets the cpf of this IntegrarArquivoRequest.
-        CPF do cliente de Arquivos a serem integrados
+        Sets the numero_receita_federal of this IntegrarArquivoRequest.
+        N\u00FAmero Receita Federal (CPF) vinculado a um ou mais arquivos que ser\u00E3o enviados para realizar integra\u00E7\u00E3o
 
-        :param cpf: The cpf of this IntegrarArquivoRequest.
+        :param numero_receita_federal: The numero_receita_federal of this IntegrarArquivoRequest.
         :type: str
         """
-        self._cpf = cpf
+        self._numero_receita_federal = numero_receita_federal
 
     def to_dict(self):
         """

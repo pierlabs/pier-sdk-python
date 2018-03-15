@@ -65,7 +65,7 @@ class StatusCartaoResponse(object):
     def id(self):
         """
         Gets the id of this StatusCartaoResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Status do Cart\u00C3\u00A3o (id) 
+        C\u00F3digo de Identifica\u00E7\u00E3o do Status do Cart\u00E3o (id) 
 
         :return: The id of this StatusCartaoResponse.
         :rtype: int
@@ -76,7 +76,7 @@ class StatusCartaoResponse(object):
     def id(self, id):
         """
         Sets the id of this StatusCartaoResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Status do Cart\u00C3\u00A3o (id) 
+        C\u00F3digo de Identifica\u00E7\u00E3o do Status do Cart\u00E3o (id) 
 
         :param id: The id of this StatusCartaoResponse.
         :type: int
@@ -87,7 +87,7 @@ class StatusCartaoResponse(object):
     def nome(self):
         """
         Gets the nome of this StatusCartaoResponse.
-        Nome atribu\u00C3\u00ADdo ao Status de Entrega do Cart\u00C3\u00A3o.
+        Nome atribu\u00EDdo ao Status de Entrega do Cart\u00E3o.
 
         :return: The nome of this StatusCartaoResponse.
         :rtype: str
@@ -98,7 +98,7 @@ class StatusCartaoResponse(object):
     def nome(self, nome):
         """
         Sets the nome of this StatusCartaoResponse.
-        Nome atribu\u00C3\u00ADdo ao Status de Entrega do Cart\u00C3\u00A3o.
+        Nome atribu\u00EDdo ao Status de Entrega do Cart\u00E3o.
 
         :param nome: The nome of this StatusCartaoResponse.
         :type: str
@@ -109,7 +109,7 @@ class StatusCartaoResponse(object):
     def permite_desbloquear(self):
         """
         Gets the permite_desbloquear of this StatusCartaoResponse.
-        Par\u00C3\u00A2metro que define se o status do cart\u00C3\u00A3o permite a reativa\u00C3\u00A7\u00C3\u00A3o do cart\u00C3\u00A3o, sendo: 0: Inativo e 1: Ativo.
+        Par\u00E2metro que define se o status do cart\u00E3o permite a reativa\u00E7\u00E3o do cart\u00E3o, sendo: 0: Inativo e 1: Ativo.
 
         :return: The permite_desbloquear of this StatusCartaoResponse.
         :rtype: int
@@ -120,7 +120,7 @@ class StatusCartaoResponse(object):
     def permite_desbloquear(self, permite_desbloquear):
         """
         Sets the permite_desbloquear of this StatusCartaoResponse.
-        Par\u00C3\u00A2metro que define se o status do cart\u00C3\u00A3o permite a reativa\u00C3\u00A7\u00C3\u00A3o do cart\u00C3\u00A3o, sendo: 0: Inativo e 1: Ativo.
+        Par\u00E2metro que define se o status do cart\u00E3o permite a reativa\u00E7\u00E3o do cart\u00E3o, sendo: 0: Inativo e 1: Ativo.
 
         :param permite_desbloquear: The permite_desbloquear of this StatusCartaoResponse.
         :type: int
@@ -131,7 +131,7 @@ class StatusCartaoResponse(object):
     def permite_atribuir_como_bloqueio(self):
         """
         Gets the permite_atribuir_como_bloqueio of this StatusCartaoResponse.
-        Par\u00C3\u00A2metro que define se o status do cart\u00C3\u00A3o permite a reativa\u00C3\u00A7\u00C3\u00A3o do cart\u00C3\u00A3o, sendo: 0: Inativo e 1: Ativo.
+        Par\u00E2metro que define se o status do cart\u00E3o permite a reativa\u00E7\u00E3o do cart\u00E3o, sendo: 0: Inativo e 1: Ativo.
 
         :return: The permite_atribuir_como_bloqueio of this StatusCartaoResponse.
         :rtype: int
@@ -142,7 +142,7 @@ class StatusCartaoResponse(object):
     def permite_atribuir_como_bloqueio(self, permite_atribuir_como_bloqueio):
         """
         Sets the permite_atribuir_como_bloqueio of this StatusCartaoResponse.
-        Par\u00C3\u00A2metro que define se o status do cart\u00C3\u00A3o permite a reativa\u00C3\u00A7\u00C3\u00A3o do cart\u00C3\u00A3o, sendo: 0: Inativo e 1: Ativo.
+        Par\u00E2metro que define se o status do cart\u00E3o permite a reativa\u00E7\u00E3o do cart\u00E3o, sendo: 0: Inativo e 1: Ativo.
 
         :param permite_atribuir_como_bloqueio: The permite_atribuir_como_bloqueio of this StatusCartaoResponse.
         :type: int
@@ -153,7 +153,7 @@ class StatusCartaoResponse(object):
     def permite_atribuir_como_cancelamento(self):
         """
         Gets the permite_atribuir_como_cancelamento of this StatusCartaoResponse.
-        Par\u00C3\u00A2metro que define se o status do cart\u00C3\u00A3o permite a reativa\u00C3\u00A7\u00C3\u00A3o do cart\u00C3\u00A3o, sendo: 0: Inativo e 1: Ativo.
+        Par\u00E2metro que define se o status do cart\u00E3o permite a reativa\u00E7\u00E3o do cart\u00E3o, sendo: 0: Inativo e 1: Ativo.
 
         :return: The permite_atribuir_como_cancelamento of this StatusCartaoResponse.
         :rtype: int
@@ -164,7 +164,7 @@ class StatusCartaoResponse(object):
     def permite_atribuir_como_cancelamento(self, permite_atribuir_como_cancelamento):
         """
         Sets the permite_atribuir_como_cancelamento of this StatusCartaoResponse.
-        Par\u00C3\u00A2metro que define se o status do cart\u00C3\u00A3o permite a reativa\u00C3\u00A7\u00C3\u00A3o do cart\u00C3\u00A3o, sendo: 0: Inativo e 1: Ativo.
+        Par\u00E2metro que define se o status do cart\u00E3o permite a reativa\u00E7\u00E3o do cart\u00E3o, sendo: 0: Inativo e 1: Ativo.
 
         :param permite_atribuir_como_cancelamento: The permite_atribuir_como_cancelamento of this StatusCartaoResponse.
         :type: int
@@ -175,7 +175,7 @@ class StatusCartaoResponse(object):
     def cobrar_tarifa_ao_emitir_nova_via(self):
         """
         Gets the cobrar_tarifa_ao_emitir_nova_via of this StatusCartaoResponse.
-        Par\u00C3\u00A2metro que define se o status do cart\u00C3\u00A3o permite a reativa\u00C3\u00A7\u00C3\u00A3o do cart\u00C3\u00A3o, sendo: 0: Inativo e 1: Ativo.
+        Par\u00E2metro que define se o status do cart\u00E3o permite a reativa\u00E7\u00E3o do cart\u00E3o, sendo: 0: Inativo e 1: Ativo.
 
         :return: The cobrar_tarifa_ao_emitir_nova_via of this StatusCartaoResponse.
         :rtype: int
@@ -186,7 +186,7 @@ class StatusCartaoResponse(object):
     def cobrar_tarifa_ao_emitir_nova_via(self, cobrar_tarifa_ao_emitir_nova_via):
         """
         Sets the cobrar_tarifa_ao_emitir_nova_via of this StatusCartaoResponse.
-        Par\u00C3\u00A2metro que define se o status do cart\u00C3\u00A3o permite a reativa\u00C3\u00A7\u00C3\u00A3o do cart\u00C3\u00A3o, sendo: 0: Inativo e 1: Ativo.
+        Par\u00E2metro que define se o status do cart\u00E3o permite a reativa\u00E7\u00E3o do cart\u00E3o, sendo: 0: Inativo e 1: Ativo.
 
         :param cobrar_tarifa_ao_emitir_nova_via: The cobrar_tarifa_ao_emitir_nova_via of this StatusCartaoResponse.
         :type: int

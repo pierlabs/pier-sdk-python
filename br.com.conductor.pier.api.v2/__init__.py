@@ -1,6 +1,8 @@
 from __future__ import absolute_import
 
 # import models into sdk package
+from .models.acordo_detalhe_response import AcordoDetalheResponse
+from .models.acordo_response import AcordoResponse
 from .models.adicional_detalhe_response import AdicionalDetalheResponse
 from .models.adicional_persist import AdicionalPersist
 from .models.adicional_response import AdicionalResponse
@@ -75,6 +77,7 @@ from .models.conta_response import ContaResponse
 from .models.controle_vencimento_response import ControleVencimentoResponse
 from .models.dados_cartao_impressao_response import DadosCartaoImpressaoResponse
 from .models.dados_cartao_response import DadosCartaoResponse
+from .models.dados_portador_request import DadosPortadorRequest
 from .models.desfazimento_transacao_on_us_request import DesfazimentoTransacaoOnUsRequest
 from .models.detalhe_operacao_response import DetalheOperacaoResponse
 from .models.detalhe_oportunidade_persist import DetalheOportunidadePersist
@@ -113,6 +116,7 @@ from .models.fatura_response import FaturaResponse
 from .models.grade_pendente_request import GradePendenteRequest
 from .models.grupo_economico_dto import GrupoEconomicoDTO
 from .models.grupo_economico_response import GrupoEconomicoResponse
+from .models.grupo_origem_comercial_response import GrupoOrigemComercialResponse
 from .models.historico_assessoria_response import HistoricoAssessoriaResponse
 from .models.historico_atraso_fatura_response import HistoricoAtrasoFaturaResponse
 from .models.historico_eventos_response import HistoricoEventosResponse
@@ -150,6 +154,7 @@ from .models.oportunidade_update import OportunidadeUpdate
 from .models.origem_comercial_persist import OrigemComercialPersist
 from .models.origem_comercial_response import OrigemComercialResponse
 from .models.origem_comercial_update import OrigemComercialUpdate
+from .models.page_acordo_response import PageAcordoResponse
 from .models.page_ajuste_response import PageAjusteResponse
 from .models.page_anuidade_response import PageAnuidadeResponse
 from .models.page_aplicacao_mobile_response import PageAplicacaoMobileResponse
@@ -185,6 +190,7 @@ from .models.page_fatura_consignada_response import PageFaturaConsignadaResponse
 from .models.page_fatura_fechada_response import PageFaturaFechadaResponse
 from .models.page_fatura_response import PageFaturaResponse
 from .models.page_grupo_economico_response import PageGrupoEconomicoResponse
+from .models.page_grupo_origem_comercial_response import PageGrupoOrigemComercialResponse
 from .models.page_historico_assessoria_response import PageHistoricoAssessoriaResponse
 from .models.page_historico_atraso_fatura_response import PageHistoricoAtrasoFaturaResponse
 from .models.page_historico_eventos_response import PageHistoricoEventosResponse
@@ -211,6 +217,7 @@ from .models.page_promotor_response import PagePromotorResponse
 from .models.page_push_response import PagePushResponse
 from .models.page_risco_fraude_response import PageRiscoFraudeResponse
 from .models.page_sms_response import PageSMSResponse
+from .models.page_status_arquivo_response import PageStatusArquivoResponse
 from .models.page_status_cartao_response import PageStatusCartaoResponse
 from .models.page_status_conta_response import PageStatusContaResponse
 from .models.page_status_impressao_response import PageStatusImpressaoResponse
@@ -222,14 +229,17 @@ from .models.page_telefone_response import PageTelefoneResponse
 from .models.page_template_notificacao_response import PageTemplateNotificacaoResponse
 from .models.page_terminal_response import PageTerminalResponse
 from .models.page_tipo_ajuste_response import PageTipoAjusteResponse
+from .models.page_tipo_arquivo_response import PageTipoArquivoResponse
 from .models.page_tipo_boleto_response import PageTipoBoletoResponse
 from .models.page_tipo_campanha_response import PageTipoCampanhaResponse
 from .models.page_tipo_debito_recorrente_response import PageTipoDebitoRecorrenteResponse
 from .models.page_tipo_endereco_response import PageTipoEnderecoResponse
+from .models.page_tipo_estabelecimento_response import PageTipoEstabelecimentoResponse
 from .models.page_tipo_faturamento_por_conta_response import PageTipoFaturamentoPorContaResponse
 from .models.page_tipo_faturamento_response import PageTipoFaturamentoResponse
 from .models.page_tipo_oportunidade_aud_response import PageTipoOportunidadeAUDResponse
 from .models.page_tipo_oportunidade_response import PageTipoOportunidadeResponse
+from .models.page_tipo_origem_comercial_response import PageTipoOrigemComercialResponse
 from .models.page_tipo_telefone_response import PageTipoTelefoneResponse
 from .models.page_tipo_template_response import PageTipoTemplateResponse
 from .models.page_tipo_terminal_response import PageTipoTerminalResponse
@@ -277,6 +287,7 @@ from .models.referencia_id_persist import ReferenciaIdPersist
 from .models.risco_fraude_detalhado_response import RiscoFraudeDetalhadoResponse
 from .models.risco_fraude_response import RiscoFraudeResponse
 from .models.socio_aprovado_response import SocioAprovadoResponse
+from .models.status_arquivo_response import StatusArquivoResponse
 from .models.status_cartao_response import StatusCartaoResponse
 from .models.status_conta_response import StatusContaResponse
 from .models.status_impressao_response import StatusImpressaoResponse
@@ -287,7 +298,9 @@ from .models.taxa_antecipacao_request import TaxaAntecipacaoRequest
 from .models.taxas_refinanciamento_response import TaxasRefinanciamentoResponse
 from .models.telefone_adicional_persist import TelefoneAdicionalPersist
 from .models.telefone_adicional_update import TelefoneAdicionalUpdate
+from .models.telefone_estabelecimento_persist import TelefoneEstabelecimentoPersist
 from .models.telefone_estabelecimento_response import TelefoneEstabelecimentoResponse
+from .models.telefone_estabelecimento_update import TelefoneEstabelecimentoUpdate
 from .models.telefone_pessoa_aprovada_persist import TelefonePessoaAprovadaPersist
 from .models.telefone_pessoa_aprovada_response import TelefonePessoaAprovadaResponse
 from .models.telefone_response import TelefoneResponse
@@ -297,10 +310,12 @@ from .models.terminal_persist import TerminalPersist
 from .models.terminal_response import TerminalResponse
 from .models.terminal_update import TerminalUpdate
 from .models.tipo_ajuste_response import TipoAjusteResponse
+from .models.tipo_arquivo_response import TipoArquivoResponse
 from .models.tipo_boleto_response import TipoBoletoResponse
 from .models.tipo_campanha_response import TipoCampanhaResponse
 from .models.tipo_debito_recorrente_response import TipoDebitoRecorrenteResponse
 from .models.tipo_endereco_response import TipoEnderecoResponse
+from .models.tipo_estabelecimento_response import TipoEstabelecimentoResponse
 from .models.tipo_faturamento_persist import TipoFaturamentoPersist
 from .models.tipo_faturamento_por_conta_persist import TipoFaturamentoPorContaPersist
 from .models.tipo_faturamento_por_conta_response import TipoFaturamentoPorContaResponse
@@ -309,6 +324,7 @@ from .models.tipo_operacao_response import TipoOperacaoResponse
 from .models.tipo_oportunidade import TipoOportunidade
 from .models.tipo_oportunidade_aud_response import TipoOportunidadeAUDResponse
 from .models.tipo_oportunidade_response import TipoOportunidadeResponse
+from .models.tipo_origem_comercial_response import TipoOrigemComercialResponse
 from .models.tipo_resolucao_response import TipoResolucaoResponse
 from .models.tipo_telefone_response import TipoTelefoneResponse
 from .models.tipo_template_request import TipoTemplateRequest

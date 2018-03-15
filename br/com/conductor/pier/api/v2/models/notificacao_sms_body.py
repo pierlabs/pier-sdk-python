@@ -68,7 +68,7 @@ class NotificacaoSMSBody(object):
     def nsu(self):
         """
         Gets the nsu of this NotificacaoSMSBody.
-        N\u00C3\u00BAmero sequencial \u00C3\u00BAnico
+        N\u00FAmero sequencial \u00FAnico
 
         :return: The nsu of this NotificacaoSMSBody.
         :rtype: int
@@ -79,7 +79,7 @@ class NotificacaoSMSBody(object):
     def nsu(self, nsu):
         """
         Sets the nsu of this NotificacaoSMSBody.
-        N\u00C3\u00BAmero sequencial \u00C3\u00BAnico
+        N\u00FAmero sequencial \u00FAnico
 
         :param nsu: The nsu of this NotificacaoSMSBody.
         :type: int
@@ -90,7 +90,7 @@ class NotificacaoSMSBody(object):
     def id_pessoa(self):
         """
         Gets the id_pessoa of this NotificacaoSMSBody.
-        C\u00C3\u00B3digo identificado da pessoa
+        C\u00F3digo identificado da pessoa
 
         :return: The id_pessoa of this NotificacaoSMSBody.
         :rtype: int
@@ -101,7 +101,7 @@ class NotificacaoSMSBody(object):
     def id_pessoa(self, id_pessoa):
         """
         Sets the id_pessoa of this NotificacaoSMSBody.
-        C\u00C3\u00B3digo identificado da pessoa
+        C\u00F3digo identificado da pessoa
 
         :param id_pessoa: The id_pessoa of this NotificacaoSMSBody.
         :type: int
@@ -112,7 +112,7 @@ class NotificacaoSMSBody(object):
     def id_conta(self):
         """
         Gets the id_conta of this NotificacaoSMSBody.
-        C\u00C3\u00B3digo identificador da conta
+        C\u00F3digo identificador da conta
 
         :return: The id_conta of this NotificacaoSMSBody.
         :rtype: int
@@ -123,7 +123,7 @@ class NotificacaoSMSBody(object):
     def id_conta(self, id_conta):
         """
         Sets the id_conta of this NotificacaoSMSBody.
-        C\u00C3\u00B3digo identificador da conta
+        C\u00F3digo identificador da conta
 
         :param id_conta: The id_conta of this NotificacaoSMSBody.
         :type: int
@@ -178,7 +178,7 @@ class NotificacaoSMSBody(object):
     def data_agendamento(self):
         """
         Gets the data_agendamento of this NotificacaoSMSBody.
-        Apresenta a data e hora em que ser\u00C3\u00A1 enviado a notifica\u00C3\u00A7\u00C3\u00A3o
+        Apresenta a data e hora em que ser\u00E1 enviado a notifica\u00E7\u00E3o
 
         :return: The data_agendamento of this NotificacaoSMSBody.
         :rtype: str
@@ -189,7 +189,7 @@ class NotificacaoSMSBody(object):
     def data_agendamento(self, data_agendamento):
         """
         Sets the data_agendamento of this NotificacaoSMSBody.
-        Apresenta a data e hora em que ser\u00C3\u00A1 enviado a notifica\u00C3\u00A7\u00C3\u00A3o
+        Apresenta a data e hora em que ser\u00E1 enviado a notifica\u00E7\u00E3o
 
         :param data_agendamento: The data_agendamento of this NotificacaoSMSBody.
         :type: str
@@ -200,7 +200,7 @@ class NotificacaoSMSBody(object):
     def tipo_evento(self):
         """
         Gets the tipo_evento of this NotificacaoSMSBody.
-        Apresenta o tipoEvento a qual pertence a notifica\u00C3\u00A7\u00C3\u00A3o
+        Apresenta o tipoEvento a qual pertence a notifica\u00E7\u00E3o
 
         :return: The tipo_evento of this NotificacaoSMSBody.
         :rtype: str
@@ -211,7 +211,7 @@ class NotificacaoSMSBody(object):
     def tipo_evento(self, tipo_evento):
         """
         Sets the tipo_evento of this NotificacaoSMSBody.
-        Apresenta o tipoEvento a qual pertence a notifica\u00C3\u00A7\u00C3\u00A3o
+        Apresenta o tipoEvento a qual pertence a notifica\u00E7\u00E3o
 
         :param tipo_evento: The tipo_evento of this NotificacaoSMSBody.
         :type: str

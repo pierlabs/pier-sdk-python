@@ -68,7 +68,7 @@ class TipoFaturamentoPorContaResponse(object):
     def id(self):
         """
         Gets the id of this TipoFaturamentoPorContaResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do tipo de faturamento por conta (id).
+        C\u00F3digo de identifica\u00E7\u00E3o do tipo de faturamento por conta (id).
 
         :return: The id of this TipoFaturamentoPorContaResponse.
         :rtype: int
@@ -79,7 +79,7 @@ class TipoFaturamentoPorContaResponse(object):
     def id(self, id):
         """
         Sets the id of this TipoFaturamentoPorContaResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do tipo de faturamento por conta (id).
+        C\u00F3digo de identifica\u00E7\u00E3o do tipo de faturamento por conta (id).
 
         :param id: The id of this TipoFaturamentoPorContaResponse.
         :type: int
@@ -90,7 +90,7 @@ class TipoFaturamentoPorContaResponse(object):
     def id_conta(self):
         """
         Gets the id_conta of this TipoFaturamentoPorContaResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da conta relacionada ao tipo de faturamento.
+        C\u00F3digo de identifica\u00E7\u00E3o da conta relacionada ao tipo de faturamento.
 
         :return: The id_conta of this TipoFaturamentoPorContaResponse.
         :rtype: int
@@ -101,7 +101,7 @@ class TipoFaturamentoPorContaResponse(object):
     def id_conta(self, id_conta):
         """
         Sets the id_conta of this TipoFaturamentoPorContaResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da conta relacionada ao tipo de faturamento.
+        C\u00F3digo de identifica\u00E7\u00E3o da conta relacionada ao tipo de faturamento.
 
         :param id_conta: The id_conta of this TipoFaturamentoPorContaResponse.
         :type: int
@@ -112,7 +112,7 @@ class TipoFaturamentoPorContaResponse(object):
     def status(self):
         """
         Gets the status of this TipoFaturamentoPorContaResponse.
-        Status da configura\u00C3\u00A7\u00C3\u00A3o que representa que se o tipo de faturamento por conta est\u00C3\u00A1 ativo ou cancelado.
+        Status da configura\u00E7\u00E3o que representa que se o tipo de faturamento por conta est\u00E1 ativo ou cancelado.
 
         :return: The status of this TipoFaturamentoPorContaResponse.
         :rtype: bool
@@ -123,7 +123,7 @@ class TipoFaturamentoPorContaResponse(object):
     def status(self, status):
         """
         Sets the status of this TipoFaturamentoPorContaResponse.
-        Status da configura\u00C3\u00A7\u00C3\u00A3o que representa que se o tipo de faturamento por conta est\u00C3\u00A1 ativo ou cancelado.
+        Status da configura\u00E7\u00E3o que representa que se o tipo de faturamento por conta est\u00E1 ativo ou cancelado.
 
         :param status: The status of this TipoFaturamentoPorContaResponse.
         :type: bool
@@ -134,7 +134,7 @@ class TipoFaturamentoPorContaResponse(object):
     def id_tipo_faturamento(self):
         """
         Gets the id_tipo_faturamento of this TipoFaturamentoPorContaResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da tipo de faturamento referenciado.
+        C\u00F3digo de identifica\u00E7\u00E3o da tipo de faturamento referenciado.
 
         :return: The id_tipo_faturamento of this TipoFaturamentoPorContaResponse.
         :rtype: int
@@ -145,7 +145,7 @@ class TipoFaturamentoPorContaResponse(object):
     def id_tipo_faturamento(self, id_tipo_faturamento):
         """
         Sets the id_tipo_faturamento of this TipoFaturamentoPorContaResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da tipo de faturamento referenciado.
+        C\u00F3digo de identifica\u00E7\u00E3o da tipo de faturamento referenciado.
 
         :param id_tipo_faturamento: The id_tipo_faturamento of this TipoFaturamentoPorContaResponse.
         :type: int
@@ -156,7 +156,7 @@ class TipoFaturamentoPorContaResponse(object):
     def data_hora_inclusao(self):
         """
         Gets the data_hora_inclusao of this TipoFaturamentoPorContaResponse.
-        Data de inclus\u00C3\u00A3o da configura\u00C3\u00A7\u00C3\u00A3o de tipo de faturamento por conta.
+        Data de inclus\u00E3o da configura\u00E7\u00E3o de tipo de faturamento por conta.
 
         :return: The data_hora_inclusao of this TipoFaturamentoPorContaResponse.
         :rtype: str
@@ -167,7 +167,7 @@ class TipoFaturamentoPorContaResponse(object):
     def data_hora_inclusao(self, data_hora_inclusao):
         """
         Sets the data_hora_inclusao of this TipoFaturamentoPorContaResponse.
-        Data de inclus\u00C3\u00A3o da configura\u00C3\u00A7\u00C3\u00A3o de tipo de faturamento por conta.
+        Data de inclus\u00E3o da configura\u00E7\u00E3o de tipo de faturamento por conta.
 
         :param data_hora_inclusao: The data_hora_inclusao of this TipoFaturamentoPorContaResponse.
         :type: str
@@ -178,7 +178,7 @@ class TipoFaturamentoPorContaResponse(object):
     def data_hora_cancelamento(self):
         """
         Gets the data_hora_cancelamento of this TipoFaturamentoPorContaResponse.
-        Data de cancelamento da configura\u00C3\u00A7\u00C3\u00A3o de tipo de faturamento por conta.
+        Data de cancelamento da configura\u00E7\u00E3o de tipo de faturamento por conta.
 
         :return: The data_hora_cancelamento of this TipoFaturamentoPorContaResponse.
         :rtype: str
@@ -189,7 +189,7 @@ class TipoFaturamentoPorContaResponse(object):
     def data_hora_cancelamento(self, data_hora_cancelamento):
         """
         Sets the data_hora_cancelamento of this TipoFaturamentoPorContaResponse.
-        Data de cancelamento da configura\u00C3\u00A7\u00C3\u00A3o de tipo de faturamento por conta.
+        Data de cancelamento da configura\u00E7\u00E3o de tipo de faturamento por conta.
 
         :param data_hora_cancelamento: The data_hora_cancelamento of this TipoFaturamentoPorContaResponse.
         :type: str
@@ -200,7 +200,7 @@ class TipoFaturamentoPorContaResponse(object):
     def modificado_por(self):
         """
         Gets the modificado_por of this TipoFaturamentoPorContaResponse.
-        Descri\u00C3\u00A7\u00C3\u00A3o do respons\u00C3\u00A1vel pela \u00C3\u00BAltima modifica\u00C3\u00A7\u00C3\u00A3o da configura\u00C3\u00A7\u00C3\u00A3o.
+        Descri\u00E7\u00E3o do respons\u00E1vel pela \u00FAltima modifica\u00E7\u00E3o da configura\u00E7\u00E3o.
 
         :return: The modificado_por of this TipoFaturamentoPorContaResponse.
         :rtype: str
@@ -211,7 +211,7 @@ class TipoFaturamentoPorContaResponse(object):
     def modificado_por(self, modificado_por):
         """
         Sets the modificado_por of this TipoFaturamentoPorContaResponse.
-        Descri\u00C3\u00A7\u00C3\u00A3o do respons\u00C3\u00A1vel pela \u00C3\u00BAltima modifica\u00C3\u00A7\u00C3\u00A3o da configura\u00C3\u00A7\u00C3\u00A3o.
+        Descri\u00E7\u00E3o do respons\u00E1vel pela \u00FAltima modifica\u00E7\u00E3o da configura\u00E7\u00E3o.
 
         :param modificado_por: The modificado_por of this TipoFaturamentoPorContaResponse.
         :type: str

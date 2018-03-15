@@ -77,7 +77,7 @@ class UsuarioResponse(object):
     def id(self):
         """
         Gets the id of this UsuarioResponse.
-        Id do Usu\u00C3\u00A1rio
+        Id do Usu\u00E1rio
 
         :return: The id of this UsuarioResponse.
         :rtype: int
@@ -88,7 +88,7 @@ class UsuarioResponse(object):
     def id(self, id):
         """
         Sets the id of this UsuarioResponse.
-        Id do Usu\u00C3\u00A1rio
+        Id do Usu\u00E1rio
 
         :param id: The id of this UsuarioResponse.
         :type: int
@@ -99,7 +99,7 @@ class UsuarioResponse(object):
     def nome(self):
         """
         Gets the nome of this UsuarioResponse.
-        Nome do Usu\u00C3\u00A1rio
+        Nome do Usu\u00E1rio
 
         :return: The nome of this UsuarioResponse.
         :rtype: str
@@ -110,7 +110,7 @@ class UsuarioResponse(object):
     def nome(self, nome):
         """
         Sets the nome of this UsuarioResponse.
-        Nome do Usu\u00C3\u00A1rio
+        Nome do Usu\u00E1rio
 
         :param nome: The nome of this UsuarioResponse.
         :type: str
@@ -121,7 +121,7 @@ class UsuarioResponse(object):
     def login(self):
         """
         Gets the login of this UsuarioResponse.
-        Login do Usu\u00C3\u00A1rio
+        Login do Usu\u00E1rio
 
         :return: The login of this UsuarioResponse.
         :rtype: str
@@ -132,7 +132,7 @@ class UsuarioResponse(object):
     def login(self, login):
         """
         Sets the login of this UsuarioResponse.
-        Login do Usu\u00C3\u00A1rio
+        Login do Usu\u00E1rio
 
         :param login: The login of this UsuarioResponse.
         :type: str
@@ -143,7 +143,7 @@ class UsuarioResponse(object):
     def id_emissor(self):
         """
         Gets the id_emissor of this UsuarioResponse.
-        Id do emissor do usu\u00C3\u00A1rio
+        Id do emissor do usu\u00E1rio
 
         :return: The id_emissor of this UsuarioResponse.
         :rtype: int
@@ -154,7 +154,7 @@ class UsuarioResponse(object):
     def id_emissor(self, id_emissor):
         """
         Sets the id_emissor of this UsuarioResponse.
-        Id do emissor do usu\u00C3\u00A1rio
+        Id do emissor do usu\u00E1rio
 
         :param id_emissor: The id_emissor of this UsuarioResponse.
         :type: int
@@ -165,7 +165,7 @@ class UsuarioResponse(object):
     def cpf(self):
         """
         Gets the cpf of this UsuarioResponse.
-        CPF do Usu\u00C3\u00A1rio
+        CPF do Usu\u00E1rio
 
         :return: The cpf of this UsuarioResponse.
         :rtype: str
@@ -176,7 +176,7 @@ class UsuarioResponse(object):
     def cpf(self, cpf):
         """
         Sets the cpf of this UsuarioResponse.
-        CPF do Usu\u00C3\u00A1rio
+        CPF do Usu\u00E1rio
 
         :param cpf: The cpf of this UsuarioResponse.
         :type: str
@@ -187,7 +187,7 @@ class UsuarioResponse(object):
     def email(self):
         """
         Gets the email of this UsuarioResponse.
-        Email do Usu\u00C3\u00A1rio
+        Email do Usu\u00E1rio
 
         :return: The email of this UsuarioResponse.
         :rtype: str
@@ -198,7 +198,7 @@ class UsuarioResponse(object):
     def email(self, email):
         """
         Sets the email of this UsuarioResponse.
-        Email do Usu\u00C3\u00A1rio
+        Email do Usu\u00E1rio
 
         :param email: The email of this UsuarioResponse.
         :type: str
@@ -209,7 +209,7 @@ class UsuarioResponse(object):
     def status(self):
         """
         Gets the status of this UsuarioResponse.
-        Status do Usu\u00C3\u00A1rio
+        Status do Usu\u00E1rio
 
         :return: The status of this UsuarioResponse.
         :rtype: str
@@ -220,7 +220,7 @@ class UsuarioResponse(object):
     def status(self, status):
         """
         Sets the status of this UsuarioResponse.
-        Status do Usu\u00C3\u00A1rio
+        Status do Usu\u00E1rio
 
         :param status: The status of this UsuarioResponse.
         :type: str
@@ -237,7 +237,7 @@ class UsuarioResponse(object):
     def data_criacao(self):
         """
         Gets the data_criacao of this UsuarioResponse.
-        Data de cria\u00C3\u00A7\u00C3\u00A3o do Usu\u00C3\u00A1rio
+        Data de cria\u00E7\u00E3o do Usu\u00E1rio
 
         :return: The data_criacao of this UsuarioResponse.
         :rtype: str
@@ -248,7 +248,7 @@ class UsuarioResponse(object):
     def data_criacao(self, data_criacao):
         """
         Sets the data_criacao of this UsuarioResponse.
-        Data de cria\u00C3\u00A7\u00C3\u00A3o do Usu\u00C3\u00A1rio
+        Data de cria\u00E7\u00E3o do Usu\u00E1rio
 
         :param data_criacao: The data_criacao of this UsuarioResponse.
         :type: str
@@ -259,7 +259,7 @@ class UsuarioResponse(object):
     def data_modificacao(self):
         """
         Gets the data_modificacao of this UsuarioResponse.
-        Data de modifica\u00C3\u00A7\u00C3\u00A3o do Usu\u00C3\u00A1rio
+        Data de modifica\u00E7\u00E3o do Usu\u00E1rio
 
         :return: The data_modificacao of this UsuarioResponse.
         :rtype: str
@@ -270,7 +270,7 @@ class UsuarioResponse(object):
     def data_modificacao(self, data_modificacao):
         """
         Sets the data_modificacao of this UsuarioResponse.
-        Data de modifica\u00C3\u00A7\u00C3\u00A3o do Usu\u00C3\u00A1rio
+        Data de modifica\u00E7\u00E3o do Usu\u00E1rio
 
         :param data_modificacao: The data_modificacao of this UsuarioResponse.
         :type: str
@@ -281,7 +281,7 @@ class UsuarioResponse(object):
     def tentativas_incorretas(self):
         """
         Gets the tentativas_incorretas of this UsuarioResponse.
-        N\u00C3\u00BAmero de tentativas de valida\u00C3\u00A7\u00C3\u00A3o incorretas
+        N\u00FAmero de tentativas de valida\u00E7\u00E3o incorretas
 
         :return: The tentativas_incorretas of this UsuarioResponse.
         :rtype: int
@@ -292,7 +292,7 @@ class UsuarioResponse(object):
     def tentativas_incorretas(self, tentativas_incorretas):
         """
         Sets the tentativas_incorretas of this UsuarioResponse.
-        N\u00C3\u00BAmero de tentativas de valida\u00C3\u00A7\u00C3\u00A3o incorretas
+        N\u00FAmero de tentativas de valida\u00E7\u00E3o incorretas
 
         :param tentativas_incorretas: The tentativas_incorretas of this UsuarioResponse.
         :type: int

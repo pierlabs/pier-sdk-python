@@ -47,7 +47,7 @@ class AjusteFinanceiroApi(object):
 
     def ajustar_conta_using_post(self, id_tipo_ajuste, data_ajuste, valor_ajuste, id_conta, **kwargs):
         """
-        Lan\u00C3\u00A7a um ajuste para a conta informada
+        Lan\u00E7a um ajuste para a conta informada
         Este recurso insere um ajuste para a conta do id informado
 
         This method makes a synchronous HTTP request by default. To make an
@@ -60,10 +60,10 @@ class AjusteFinanceiroApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param int id_tipo_ajuste: C\u00C3\u00B3digo identificador do tipo de ajuste. (required)
+        :param int id_tipo_ajuste: C\u00F3digo identificador do tipo de ajuste. (required)
         :param str data_ajuste: Data do ajuste no formato yyyy-MM-dd'T'HH:mm:ss.SSSZ. (required)
         :param float valor_ajuste: Valor do ajuste (required)
-        :param int id_conta: C\u00C3\u00B3digo identificador da conta. (required)
+        :param int id_conta: C\u00F3digo identificador da conta. (required)
         :param str identificador_externo: Codigo Hexadecimal
         :return: AjusteFinanceiroResponse
                  If the method is called asynchronously,
@@ -143,10 +143,10 @@ class AjusteFinanceiroApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get1(self, id, **kwargs):
+    def consultar_using_get2(self, id, **kwargs):
         """
         Apresenta dados de um determinado ajuste financeiro
-        Este m\u00C3\u00A9todo permite consultar dados de um determinado ajuste a partir de seu codigo de identifica\u00C3\u00A7\u00C3\u00A3o (id).
+        Este m\u00E9todo permite consultar dados de um determinado ajuste a partir de seu codigo de identifica\u00E7\u00E3o (id).
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -154,11 +154,11 @@ class AjusteFinanceiroApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get1(id, callback=callback_function)
+        >>> thread = api.consultar_using_get2(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param int id: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do ajuste (id). (required)
+        :param int id: C\u00F3digo de identifica\u00E7\u00E3o do ajuste (id). (required)
         :return: AjusteFinanceiroResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -172,14 +172,14 @@ class AjusteFinanceiroApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get1" % key
+                    " to method consultar_using_get2" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get1`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get2`")
 
         resource_path = '/api/ajustes-financeiros/{id}'.replace('{format}', 'json')
         path_params = {}
@@ -220,7 +220,7 @@ class AjusteFinanceiroApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get1(self, **kwargs):
+    def listar_using_get2(self, **kwargs):
         """
         Lista ajustes existentes na base de dados do Emissor
         Este recurso permite listar ajustes existentes na base de dados do Emissor.
@@ -231,18 +231,18 @@ class AjusteFinanceiroApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get1(callback=callback_function)
+        >>> thread = api.listar_using_get2(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param list[str] sort: Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
-        :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
-        :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
-        :param int id_tipo_ajuste: C\u00C3\u00B3digo identificador do tipo de ajuste.
+        :param list[str] sort: Tipo de ordena\u00E7\u00E3o dos registros.
+        :param int page: P\u00E1gina solicitada (Default = 0)
+        :param int limit: Limite de elementos por solicita\u00E7\u00E3o (Default = 50, Max = 50)
+        :param int id_tipo_ajuste: C\u00F3digo identificador do tipo de ajuste.
         :param str data_ajuste: Data do ajuste no formato yyyy-MM-dd'T'HH:mm:ss.SSSZ.
         :param float valor_ajuste: Valor do ajuste
         :param str identificador_externo: Codigo Hexadecimal
-        :param int id_conta: C\u00C3\u00B3digo identificador da conta.
+        :param int id_conta: C\u00F3digo identificador da conta.
         :return: PageAjusteResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -256,7 +256,7 @@ class AjusteFinanceiroApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get1" % key
+                    " to method listar_using_get2" % key
                 )
             params[key] = val
         del params['kwargs']

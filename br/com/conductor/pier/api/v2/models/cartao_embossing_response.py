@@ -77,7 +77,7 @@ class CartaoEmbossingResponse(object):
     def flag_virtual(self):
         """
         Gets the flag_virtual of this CartaoEmbossingResponse.
-        Apresenta o status que informa se o cart\u00C3\u00A3o \u00C3\u00A9 virtual 
+        Apresenta o status que informa se o cart\u00E3o \u00E9 virtual 
 
         :return: The flag_virtual of this CartaoEmbossingResponse.
         :rtype: int
@@ -88,7 +88,7 @@ class CartaoEmbossingResponse(object):
     def flag_virtual(self, flag_virtual):
         """
         Sets the flag_virtual of this CartaoEmbossingResponse.
-        Apresenta o status que informa se o cart\u00C3\u00A3o \u00C3\u00A9 virtual 
+        Apresenta o status que informa se o cart\u00E3o \u00E9 virtual 
 
         :param flag_virtual: The flag_virtual of this CartaoEmbossingResponse.
         :type: int
@@ -99,7 +99,7 @@ class CartaoEmbossingResponse(object):
     def id_conta(self):
         """
         Gets the id_conta of this CartaoEmbossingResponse.
-        Apresenta o C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Conta (id) a qual o cart\u00C3\u00A3o gerado pertence.
+        Apresenta o C\u00F3digo de Identifica\u00E7\u00E3o da Conta (id) a qual o cart\u00E3o gerado pertence.
 
         :return: The id_conta of this CartaoEmbossingResponse.
         :rtype: int
@@ -110,7 +110,7 @@ class CartaoEmbossingResponse(object):
     def id_conta(self, id_conta):
         """
         Sets the id_conta of this CartaoEmbossingResponse.
-        Apresenta o C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Conta (id) a qual o cart\u00C3\u00A3o gerado pertence.
+        Apresenta o C\u00F3digo de Identifica\u00E7\u00E3o da Conta (id) a qual o cart\u00E3o gerado pertence.
 
         :param id_conta: The id_conta of this CartaoEmbossingResponse.
         :type: int
@@ -121,7 +121,7 @@ class CartaoEmbossingResponse(object):
     def id_pessoa(self):
         """
         Gets the id_pessoa of this CartaoEmbossingResponse.
-        Apresenta o C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Pessoa (id) portadora do cart\u00C3\u00A3o gerado.
+        Apresenta o C\u00F3digo de Identifica\u00E7\u00E3o da Pessoa (id) portadora do cart\u00E3o gerado.
 
         :return: The id_pessoa of this CartaoEmbossingResponse.
         :rtype: int
@@ -132,7 +132,7 @@ class CartaoEmbossingResponse(object):
     def id_pessoa(self, id_pessoa):
         """
         Sets the id_pessoa of this CartaoEmbossingResponse.
-        Apresenta o C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Pessoa (id) portadora do cart\u00C3\u00A3o gerado.
+        Apresenta o C\u00F3digo de Identifica\u00E7\u00E3o da Pessoa (id) portadora do cart\u00E3o gerado.
 
         :param id_pessoa: The id_pessoa of this CartaoEmbossingResponse.
         :type: int
@@ -143,7 +143,7 @@ class CartaoEmbossingResponse(object):
     def id_cartao(self):
         """
         Gets the id_cartao of this CartaoEmbossingResponse.
-        Apresenta o C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Cart\u00C3\u00A3o (id) que foi gerado.
+        Apresenta o C\u00F3digo de Identifica\u00E7\u00E3o do Cart\u00E3o (id) que foi gerado.
 
         :return: The id_cartao of this CartaoEmbossingResponse.
         :rtype: int
@@ -154,7 +154,7 @@ class CartaoEmbossingResponse(object):
     def id_cartao(self, id_cartao):
         """
         Sets the id_cartao of this CartaoEmbossingResponse.
-        Apresenta o C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Cart\u00C3\u00A3o (id) que foi gerado.
+        Apresenta o C\u00F3digo de Identifica\u00E7\u00E3o do Cart\u00E3o (id) que foi gerado.
 
         :param id_cartao: The id_cartao of this CartaoEmbossingResponse.
         :type: int
@@ -165,7 +165,7 @@ class CartaoEmbossingResponse(object):
     def id_bandeira(self):
         """
         Gets the id_bandeira of this CartaoEmbossingResponse.
-        Apresenta o C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Bandeira (id) a qual o Cart\u00C3\u00A3o pertence, quando bandeirado.
+        Apresenta o C\u00F3digo de Identifica\u00E7\u00E3o da Bandeira (id) a qual o Cart\u00E3o pertence, quando bandeirado.
 
         :return: The id_bandeira of this CartaoEmbossingResponse.
         :rtype: int
@@ -176,7 +176,7 @@ class CartaoEmbossingResponse(object):
     def id_bandeira(self, id_bandeira):
         """
         Sets the id_bandeira of this CartaoEmbossingResponse.
-        Apresenta o C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Bandeira (id) a qual o Cart\u00C3\u00A3o pertence, quando bandeirado.
+        Apresenta o C\u00F3digo de Identifica\u00E7\u00E3o da Bandeira (id) a qual o Cart\u00E3o pertence, quando bandeirado.
 
         :param id_bandeira: The id_bandeira of this CartaoEmbossingResponse.
         :type: int
@@ -187,7 +187,7 @@ class CartaoEmbossingResponse(object):
     def id_tipo_cartao(self):
         """
         Gets the id_tipo_cartao of this CartaoEmbossingResponse.
-        Apresenta o C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Tipo do Cart\u00C3\u00A3o (id) atribu\u00C3\u00ADdo ao Cart\u00C3\u00A3o.
+        Apresenta o C\u00F3digo de Identifica\u00E7\u00E3o do Tipo do Cart\u00E3o (id) atribu\u00EDdo ao Cart\u00E3o.
 
         :return: The id_tipo_cartao of this CartaoEmbossingResponse.
         :rtype: int
@@ -198,7 +198,7 @@ class CartaoEmbossingResponse(object):
     def id_tipo_cartao(self, id_tipo_cartao):
         """
         Sets the id_tipo_cartao of this CartaoEmbossingResponse.
-        Apresenta o C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Tipo do Cart\u00C3\u00A3o (id) atribu\u00C3\u00ADdo ao Cart\u00C3\u00A3o.
+        Apresenta o C\u00F3digo de Identifica\u00E7\u00E3o do Tipo do Cart\u00E3o (id) atribu\u00EDdo ao Cart\u00E3o.
 
         :param id_tipo_cartao: The id_tipo_cartao of this CartaoEmbossingResponse.
         :type: int
@@ -209,7 +209,7 @@ class CartaoEmbossingResponse(object):
     def data_geracao(self):
         """
         Gets the data_geracao of this CartaoEmbossingResponse.
-        Apresenta a data de emiss\u00C3\u00A3o do Cart\u00C3\u00A3o.
+        Apresenta a data de emiss\u00E3o do Cart\u00E3o.
 
         :return: The data_geracao of this CartaoEmbossingResponse.
         :rtype: str
@@ -220,7 +220,7 @@ class CartaoEmbossingResponse(object):
     def data_geracao(self, data_geracao):
         """
         Sets the data_geracao of this CartaoEmbossingResponse.
-        Apresenta a data de emiss\u00C3\u00A3o do Cart\u00C3\u00A3o.
+        Apresenta a data de emiss\u00E3o do Cart\u00E3o.
 
         :param data_geracao: The data_geracao of this CartaoEmbossingResponse.
         :type: str
@@ -231,7 +231,7 @@ class CartaoEmbossingResponse(object):
     def data_validade(self):
         """
         Gets the data_validade of this CartaoEmbossingResponse.
-        Apresenta a data de Validade do Cart\u00C3\u00A3o.
+        Apresenta a data de Validade do Cart\u00E3o.
 
         :return: The data_validade of this CartaoEmbossingResponse.
         :rtype: str
@@ -242,7 +242,7 @@ class CartaoEmbossingResponse(object):
     def data_validade(self, data_validade):
         """
         Sets the data_validade of this CartaoEmbossingResponse.
-        Apresenta a data de Validade do Cart\u00C3\u00A3o.
+        Apresenta a data de Validade do Cart\u00E3o.
 
         :param data_validade: The data_validade of this CartaoEmbossingResponse.
         :type: str
@@ -253,7 +253,7 @@ class CartaoEmbossingResponse(object):
     def nome_origem_comercial(self):
         """
         Gets the nome_origem_comercial of this CartaoEmbossingResponse.
-        Apresenta o nome da Origem Comercial que realizou o cadastro do Titular da Conta a qual o Cart\u00C3\u00A3o pertence.
+        Apresenta o nome da Origem Comercial que realizou o cadastro do Titular da Conta a qual o Cart\u00E3o pertence.
 
         :return: The nome_origem_comercial of this CartaoEmbossingResponse.
         :rtype: str
@@ -264,7 +264,7 @@ class CartaoEmbossingResponse(object):
     def nome_origem_comercial(self, nome_origem_comercial):
         """
         Sets the nome_origem_comercial of this CartaoEmbossingResponse.
-        Apresenta o nome da Origem Comercial que realizou o cadastro do Titular da Conta a qual o Cart\u00C3\u00A3o pertence.
+        Apresenta o nome da Origem Comercial que realizou o cadastro do Titular da Conta a qual o Cart\u00E3o pertence.
 
         :param nome_origem_comercial: The nome_origem_comercial of this CartaoEmbossingResponse.
         :type: str
@@ -275,7 +275,7 @@ class CartaoEmbossingResponse(object):
     def cpf(self):
         """
         Gets the cpf of this CartaoEmbossingResponse.
-        Apresenta o CPF do Portador do Cart\u00C3\u00A3o.
+        Apresenta o CPF do Portador do Cart\u00E3o.
 
         :return: The cpf of this CartaoEmbossingResponse.
         :rtype: str
@@ -286,7 +286,7 @@ class CartaoEmbossingResponse(object):
     def cpf(self, cpf):
         """
         Sets the cpf of this CartaoEmbossingResponse.
-        Apresenta o CPF do Portador do Cart\u00C3\u00A3o.
+        Apresenta o CPF do Portador do Cart\u00E3o.
 
         :param cpf: The cpf of this CartaoEmbossingResponse.
         :type: str

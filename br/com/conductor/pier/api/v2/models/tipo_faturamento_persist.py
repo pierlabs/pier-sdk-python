@@ -56,7 +56,7 @@ class TipoFaturamentoPersist(object):
     def descricao(self):
         """
         Gets the descricao of this TipoFaturamentoPersist.
-        Desci\u00C3\u00A7\u00C3\u00A3o do tipo de faturamento.
+        Desci\u00E7\u00E3o do tipo de faturamento.
 
         :return: The descricao of this TipoFaturamentoPersist.
         :rtype: str
@@ -67,7 +67,7 @@ class TipoFaturamentoPersist(object):
     def descricao(self, descricao):
         """
         Sets the descricao of this TipoFaturamentoPersist.
-        Desci\u00C3\u00A7\u00C3\u00A3o do tipo de faturamento.
+        Desci\u00E7\u00E3o do tipo de faturamento.
 
         :param descricao: The descricao of this TipoFaturamentoPersist.
         :type: str
@@ -78,7 +78,7 @@ class TipoFaturamentoPersist(object):
     def flag_apenas_demonstrativo(self):
         """
         Gets the flag_apenas_demonstrativo of this TipoFaturamentoPersist.
-        Flag que representa que o faturamento ser\u00C3\u00A1 apenas demonstrativo.
+        Flag que representa que o faturamento ser\u00E1 apenas demonstrativo.
 
         :return: The flag_apenas_demonstrativo of this TipoFaturamentoPersist.
         :rtype: bool
@@ -89,7 +89,7 @@ class TipoFaturamentoPersist(object):
     def flag_apenas_demonstrativo(self, flag_apenas_demonstrativo):
         """
         Sets the flag_apenas_demonstrativo of this TipoFaturamentoPersist.
-        Flag que representa que o faturamento ser\u00C3\u00A1 apenas demonstrativo.
+        Flag que representa que o faturamento ser\u00E1 apenas demonstrativo.
 
         :param flag_apenas_demonstrativo: The flag_apenas_demonstrativo of this TipoFaturamentoPersist.
         :type: bool
@@ -100,7 +100,7 @@ class TipoFaturamentoPersist(object):
     def id_convenio(self):
         """
         Gets the id_convenio of this TipoFaturamentoPersist.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do convenio relacionado ao tipo de faturamento.
+        C\u00F3digo de identifica\u00E7\u00E3o do convenio relacionado ao tipo de faturamento.
 
         :return: The id_convenio of this TipoFaturamentoPersist.
         :rtype: int
@@ -111,7 +111,7 @@ class TipoFaturamentoPersist(object):
     def id_convenio(self, id_convenio):
         """
         Sets the id_convenio of this TipoFaturamentoPersist.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do convenio relacionado ao tipo de faturamento.
+        C\u00F3digo de identifica\u00E7\u00E3o do convenio relacionado ao tipo de faturamento.
 
         :param id_convenio: The id_convenio of this TipoFaturamentoPersist.
         :type: int

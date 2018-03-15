@@ -174,7 +174,7 @@ class TransferenciaBancariaResponse(object):
     def id_autorizacao(self):
         """
         Gets the id_autorizacao of this TransferenciaBancariaResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da autoriza\u00C3\u00A7\u00C3\u00A3o (id)
+        C\u00F3digo de identifica\u00E7\u00E3o da autoriza\u00E7\u00E3o (id)
 
         :return: The id_autorizacao of this TransferenciaBancariaResponse.
         :rtype: int
@@ -185,7 +185,7 @@ class TransferenciaBancariaResponse(object):
     def id_autorizacao(self, id_autorizacao):
         """
         Sets the id_autorizacao of this TransferenciaBancariaResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da autoriza\u00C3\u00A7\u00C3\u00A3o (id)
+        C\u00F3digo de identifica\u00E7\u00E3o da autoriza\u00E7\u00E3o (id)
 
         :param id_autorizacao: The id_autorizacao of this TransferenciaBancariaResponse.
         :type: int
@@ -196,7 +196,7 @@ class TransferenciaBancariaResponse(object):
     def id_transferencia(self):
         """
         Gets the id_transferencia of this TransferenciaBancariaResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da transferencia (id)
+        C\u00F3digo de identifica\u00E7\u00E3o da transferencia (id)
 
         :return: The id_transferencia of this TransferenciaBancariaResponse.
         :rtype: int
@@ -207,7 +207,7 @@ class TransferenciaBancariaResponse(object):
     def id_transferencia(self, id_transferencia):
         """
         Sets the id_transferencia of this TransferenciaBancariaResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da transferencia (id)
+        C\u00F3digo de identifica\u00E7\u00E3o da transferencia (id)
 
         :param id_transferencia: The id_transferencia of this TransferenciaBancariaResponse.
         :type: int
@@ -218,7 +218,7 @@ class TransferenciaBancariaResponse(object):
     def codigo_autorizacao(self):
         """
         Gets the codigo_autorizacao of this TransferenciaBancariaResponse.
-        C\u00C3\u00B3digo da autoriza\u00C3\u00A7\u00C3\u00A3o
+        C\u00F3digo da autoriza\u00E7\u00E3o
 
         :return: The codigo_autorizacao of this TransferenciaBancariaResponse.
         :rtype: str
@@ -229,7 +229,7 @@ class TransferenciaBancariaResponse(object):
     def codigo_autorizacao(self, codigo_autorizacao):
         """
         Sets the codigo_autorizacao of this TransferenciaBancariaResponse.
-        C\u00C3\u00B3digo da autoriza\u00C3\u00A7\u00C3\u00A3o
+        C\u00F3digo da autoriza\u00E7\u00E3o
 
         :param codigo_autorizacao: The codigo_autorizacao of this TransferenciaBancariaResponse.
         :type: str
@@ -240,7 +240,7 @@ class TransferenciaBancariaResponse(object):
     def data_autorizacao(self):
         """
         Gets the data_autorizacao of this TransferenciaBancariaResponse.
-        Data da autoriza\u00C3\u00A7\u00C3\u00A3o
+        Data da autoriza\u00E7\u00E3o
 
         :return: The data_autorizacao of this TransferenciaBancariaResponse.
         :rtype: str
@@ -251,7 +251,7 @@ class TransferenciaBancariaResponse(object):
     def data_autorizacao(self, data_autorizacao):
         """
         Sets the data_autorizacao of this TransferenciaBancariaResponse.
-        Data da autoriza\u00C3\u00A7\u00C3\u00A3o
+        Data da autoriza\u00E7\u00E3o
 
         :param data_autorizacao: The data_autorizacao of this TransferenciaBancariaResponse.
         :type: str
@@ -306,7 +306,7 @@ class TransferenciaBancariaResponse(object):
     def id_operacao(self):
         """
         Gets the id_operacao of this TransferenciaBancariaResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do tipo de opera\u00C3\u00A7\u00C3\u00A3o (id)
+        C\u00F3digo de identifica\u00E7\u00E3o do tipo de opera\u00E7\u00E3o (id)
 
         :return: The id_operacao of this TransferenciaBancariaResponse.
         :rtype: int
@@ -317,7 +317,7 @@ class TransferenciaBancariaResponse(object):
     def id_operacao(self, id_operacao):
         """
         Sets the id_operacao of this TransferenciaBancariaResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do tipo de opera\u00C3\u00A7\u00C3\u00A3o (id)
+        C\u00F3digo de identifica\u00E7\u00E3o do tipo de opera\u00E7\u00E3o (id)
 
         :param id_operacao: The id_operacao of this TransferenciaBancariaResponse.
         :type: int
@@ -350,7 +350,7 @@ class TransferenciaBancariaResponse(object):
     def id_cartao(self):
         """
         Gets the id_cartao of this TransferenciaBancariaResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do cart\u00C3\u00A3o (id)
+        C\u00F3digo de identifica\u00E7\u00E3o do cart\u00E3o (id)
 
         :return: The id_cartao of this TransferenciaBancariaResponse.
         :rtype: int
@@ -361,7 +361,7 @@ class TransferenciaBancariaResponse(object):
     def id_cartao(self, id_cartao):
         """
         Sets the id_cartao of this TransferenciaBancariaResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do cart\u00C3\u00A3o (id)
+        C\u00F3digo de identifica\u00E7\u00E3o do cart\u00E3o (id)
 
         :param id_cartao: The id_cartao of this TransferenciaBancariaResponse.
         :type: int
@@ -372,7 +372,7 @@ class TransferenciaBancariaResponse(object):
     def data_compra(self):
         """
         Gets the data_compra of this TransferenciaBancariaResponse.
-        Data da transfer\u00C3\u00AAncia
+        Data da transfer\u00EAncia
 
         :return: The data_compra of this TransferenciaBancariaResponse.
         :rtype: str
@@ -383,7 +383,7 @@ class TransferenciaBancariaResponse(object):
     def data_compra(self, data_compra):
         """
         Sets the data_compra of this TransferenciaBancariaResponse.
-        Data da transfer\u00C3\u00AAncia
+        Data da transfer\u00EAncia
 
         :param data_compra: The data_compra of this TransferenciaBancariaResponse.
         :type: str
@@ -394,7 +394,7 @@ class TransferenciaBancariaResponse(object):
     def valor_compra(self):
         """
         Gets the valor_compra of this TransferenciaBancariaResponse.
-        Valor da transfer\u00C3\u00AAncia
+        Valor da transfer\u00EAncia
 
         :return: The valor_compra of this TransferenciaBancariaResponse.
         :rtype: float
@@ -405,7 +405,7 @@ class TransferenciaBancariaResponse(object):
     def valor_compra(self, valor_compra):
         """
         Sets the valor_compra of this TransferenciaBancariaResponse.
-        Valor da transfer\u00C3\u00AAncia
+        Valor da transfer\u00EAncia
 
         :param valor_compra: The valor_compra of this TransferenciaBancariaResponse.
         :type: float
@@ -416,7 +416,7 @@ class TransferenciaBancariaResponse(object):
     def numero_parcelas(self):
         """
         Gets the numero_parcelas of this TransferenciaBancariaResponse.
-        N\u00C3\u00BAmero de parcelas
+        N\u00FAmero de parcelas
 
         :return: The numero_parcelas of this TransferenciaBancariaResponse.
         :rtype: int
@@ -427,7 +427,7 @@ class TransferenciaBancariaResponse(object):
     def numero_parcelas(self, numero_parcelas):
         """
         Sets the numero_parcelas of this TransferenciaBancariaResponse.
-        N\u00C3\u00BAmero de parcelas
+        N\u00FAmero de parcelas
 
         :param numero_parcelas: The numero_parcelas of this TransferenciaBancariaResponse.
         :type: int
@@ -460,7 +460,7 @@ class TransferenciaBancariaResponse(object):
     def id_estabelecimento(self):
         """
         Gets the id_estabelecimento of this TransferenciaBancariaResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do estabelecimento (id)
+        C\u00F3digo de identifica\u00E7\u00E3o do estabelecimento (id)
 
         :return: The id_estabelecimento of this TransferenciaBancariaResponse.
         :rtype: int
@@ -471,7 +471,7 @@ class TransferenciaBancariaResponse(object):
     def id_estabelecimento(self, id_estabelecimento):
         """
         Sets the id_estabelecimento of this TransferenciaBancariaResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do estabelecimento (id)
+        C\u00F3digo de identifica\u00E7\u00E3o do estabelecimento (id)
 
         :param id_estabelecimento: The id_estabelecimento of this TransferenciaBancariaResponse.
         :type: int
@@ -504,7 +504,7 @@ class TransferenciaBancariaResponse(object):
     def valor_contrato(self):
         """
         Gets the valor_contrato of this TransferenciaBancariaResponse.
-        Valor da transfer\u00C3\u00AAncia acrescido do valor da tarifa de saque se houver tarifa de saque
+        Valor da transfer\u00EAncia acrescido do valor da tarifa de saque se houver tarifa de saque
 
         :return: The valor_contrato of this TransferenciaBancariaResponse.
         :rtype: float
@@ -515,7 +515,7 @@ class TransferenciaBancariaResponse(object):
     def valor_contrato(self, valor_contrato):
         """
         Sets the valor_contrato of this TransferenciaBancariaResponse.
-        Valor da transfer\u00C3\u00AAncia acrescido do valor da tarifa de saque se houver tarifa de saque
+        Valor da transfer\u00EAncia acrescido do valor da tarifa de saque se houver tarifa de saque
 
         :param valor_contrato: The valor_contrato of this TransferenciaBancariaResponse.
         :type: float
@@ -592,7 +592,7 @@ class TransferenciaBancariaResponse(object):
     def id_conta(self):
         """
         Gets the id_conta of this TransferenciaBancariaResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da conta (id)
+        C\u00F3digo de identifica\u00E7\u00E3o da conta (id)
 
         :return: The id_conta of this TransferenciaBancariaResponse.
         :rtype: int
@@ -603,7 +603,7 @@ class TransferenciaBancariaResponse(object):
     def id_conta(self, id_conta):
         """
         Sets the id_conta of this TransferenciaBancariaResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da conta (id)
+        C\u00F3digo de identifica\u00E7\u00E3o da conta (id)
 
         :param id_conta: The id_conta of this TransferenciaBancariaResponse.
         :type: int
@@ -658,7 +658,7 @@ class TransferenciaBancariaResponse(object):
     def data_vencimento_padrao(self):
         """
         Gets the data_vencimento_padrao of this TransferenciaBancariaResponse.
-        Dia do vencimento padr\u00C3\u00A3o da fatura
+        Dia do vencimento padr\u00E3o da fatura
 
         :return: The data_vencimento_padrao of this TransferenciaBancariaResponse.
         :rtype: str
@@ -669,7 +669,7 @@ class TransferenciaBancariaResponse(object):
     def data_vencimento_padrao(self, data_vencimento_padrao):
         """
         Sets the data_vencimento_padrao of this TransferenciaBancariaResponse.
-        Dia do vencimento padr\u00C3\u00A3o da fatura
+        Dia do vencimento padr\u00E3o da fatura
 
         :param data_vencimento_padrao: The data_vencimento_padrao of this TransferenciaBancariaResponse.
         :type: str
@@ -680,7 +680,7 @@ class TransferenciaBancariaResponse(object):
     def id_conta_portador(self):
         """
         Gets the id_conta_portador of this TransferenciaBancariaResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da conta banc\u00C3\u00A1ria de destino (id)
+        C\u00F3digo de identifica\u00E7\u00E3o da conta banc\u00E1ria de destino (id)
 
         :return: The id_conta_portador of this TransferenciaBancariaResponse.
         :rtype: int
@@ -691,7 +691,7 @@ class TransferenciaBancariaResponse(object):
     def id_conta_portador(self, id_conta_portador):
         """
         Sets the id_conta_portador of this TransferenciaBancariaResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da conta banc\u00C3\u00A1ria de destino (id)
+        C\u00F3digo de identifica\u00E7\u00E3o da conta banc\u00E1ria de destino (id)
 
         :param id_conta_portador: The id_conta_portador of this TransferenciaBancariaResponse.
         :type: int
@@ -746,7 +746,7 @@ class TransferenciaBancariaResponse(object):
     def banco(self):
         """
         Gets the banco of this TransferenciaBancariaResponse.
-        C\u00C3\u00B3digo do Banco
+        C\u00F3digo do Banco
 
         :return: The banco of this TransferenciaBancariaResponse.
         :rtype: int
@@ -757,7 +757,7 @@ class TransferenciaBancariaResponse(object):
     def banco(self, banco):
         """
         Sets the banco of this TransferenciaBancariaResponse.
-        C\u00C3\u00B3digo do Banco
+        C\u00F3digo do Banco
 
         :param banco: The banco of this TransferenciaBancariaResponse.
         :type: int
@@ -768,7 +768,7 @@ class TransferenciaBancariaResponse(object):
     def numero_agencia(self):
         """
         Gets the numero_agencia of this TransferenciaBancariaResponse.
-        N\u00C3\u00BAmero da Ag\u00C3\u00AAncia
+        N\u00FAmero da Ag\u00EAncia
 
         :return: The numero_agencia of this TransferenciaBancariaResponse.
         :rtype: str
@@ -779,7 +779,7 @@ class TransferenciaBancariaResponse(object):
     def numero_agencia(self, numero_agencia):
         """
         Sets the numero_agencia of this TransferenciaBancariaResponse.
-        N\u00C3\u00BAmero da Ag\u00C3\u00AAncia
+        N\u00FAmero da Ag\u00EAncia
 
         :param numero_agencia: The numero_agencia of this TransferenciaBancariaResponse.
         :type: str
@@ -790,7 +790,7 @@ class TransferenciaBancariaResponse(object):
     def digito_agencia(self):
         """
         Gets the digito_agencia of this TransferenciaBancariaResponse.
-        D\u00C3\u00ADgito da Ag\u00C3\u00AAncia
+        D\u00EDgito da Ag\u00EAncia
 
         :return: The digito_agencia of this TransferenciaBancariaResponse.
         :rtype: str
@@ -801,7 +801,7 @@ class TransferenciaBancariaResponse(object):
     def digito_agencia(self, digito_agencia):
         """
         Sets the digito_agencia of this TransferenciaBancariaResponse.
-        D\u00C3\u00ADgito da Ag\u00C3\u00AAncia
+        D\u00EDgito da Ag\u00EAncia
 
         :param digito_agencia: The digito_agencia of this TransferenciaBancariaResponse.
         :type: str
@@ -812,7 +812,7 @@ class TransferenciaBancariaResponse(object):
     def numero_conta(self):
         """
         Gets the numero_conta of this TransferenciaBancariaResponse.
-        N\u00C3\u00BAmero da Conta
+        N\u00FAmero da Conta
 
         :return: The numero_conta of this TransferenciaBancariaResponse.
         :rtype: str
@@ -823,7 +823,7 @@ class TransferenciaBancariaResponse(object):
     def numero_conta(self, numero_conta):
         """
         Sets the numero_conta of this TransferenciaBancariaResponse.
-        N\u00C3\u00BAmero da Conta
+        N\u00FAmero da Conta
 
         :param numero_conta: The numero_conta of this TransferenciaBancariaResponse.
         :type: str
@@ -834,7 +834,7 @@ class TransferenciaBancariaResponse(object):
     def digito_conta(self):
         """
         Gets the digito_conta of this TransferenciaBancariaResponse.
-        D\u00C3\u00ADgito da Conta
+        D\u00EDgito da Conta
 
         :return: The digito_conta of this TransferenciaBancariaResponse.
         :rtype: str
@@ -845,7 +845,7 @@ class TransferenciaBancariaResponse(object):
     def digito_conta(self, digito_conta):
         """
         Sets the digito_conta of this TransferenciaBancariaResponse.
-        D\u00C3\u00ADgito da Conta
+        D\u00EDgito da Conta
 
         :param digito_conta: The digito_conta of this TransferenciaBancariaResponse.
         :type: str

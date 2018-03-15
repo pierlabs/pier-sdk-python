@@ -138,7 +138,7 @@ class OrigemComercialPersist(object):
     def descricao(self):
         """
         Gets the descricao of this OrigemComercialPersist.
-        Descri\u00C3\u00A7\u00C3\u00A3o da origem comercial
+        Descri\u00E7\u00E3o da origem comercial
 
         :return: The descricao of this OrigemComercialPersist.
         :rtype: str
@@ -149,7 +149,7 @@ class OrigemComercialPersist(object):
     def descricao(self, descricao):
         """
         Sets the descricao of this OrigemComercialPersist.
-        Descri\u00C3\u00A7\u00C3\u00A3o da origem comercial
+        Descri\u00E7\u00E3o da origem comercial
 
         :param descricao: The descricao of this OrigemComercialPersist.
         :type: str
@@ -248,7 +248,7 @@ class OrigemComercialPersist(object):
     def flag_pre_aprovado(self):
         """
         Gets the flag_pre_aprovado of this OrigemComercialPersist.
-        Indica se permite pr\u00C3\u00A9 aprova\u00C3\u00A7\u00C3\u00A3o
+        Indica se permite pr\u00E9 aprova\u00E7\u00E3o
 
         :return: The flag_pre_aprovado of this OrigemComercialPersist.
         :rtype: bool
@@ -259,7 +259,7 @@ class OrigemComercialPersist(object):
     def flag_pre_aprovado(self, flag_pre_aprovado):
         """
         Sets the flag_pre_aprovado of this OrigemComercialPersist.
-        Indica se permite pr\u00C3\u00A9 aprova\u00C3\u00A7\u00C3\u00A3o
+        Indica se permite pr\u00E9 aprova\u00E7\u00E3o
 
         :param flag_pre_aprovado: The flag_pre_aprovado of this OrigemComercialPersist.
         :type: bool
@@ -270,7 +270,7 @@ class OrigemComercialPersist(object):
     def flag_aprovacao_imediata(self):
         """
         Gets the flag_aprovacao_imediata of this OrigemComercialPersist.
-        Indica se permite aprova\u00C3\u00A7\u00C3\u00A3o imediata
+        Indica se permite aprova\u00E7\u00E3o imediata
 
         :return: The flag_aprovacao_imediata of this OrigemComercialPersist.
         :rtype: bool
@@ -281,7 +281,7 @@ class OrigemComercialPersist(object):
     def flag_aprovacao_imediata(self, flag_aprovacao_imediata):
         """
         Sets the flag_aprovacao_imediata of this OrigemComercialPersist.
-        Indica se permite aprova\u00C3\u00A7\u00C3\u00A3o imediata
+        Indica se permite aprova\u00E7\u00E3o imediata
 
         :param flag_aprovacao_imediata: The flag_aprovacao_imediata of this OrigemComercialPersist.
         :type: bool
@@ -292,7 +292,7 @@ class OrigemComercialPersist(object):
     def nome_fantasia_plastico(self):
         """
         Gets the nome_fantasia_plastico of this OrigemComercialPersist.
-        Nome fantasia impresso no pl\u00C3\u00A1stico
+        Nome fantasia impresso no pl\u00E1stico
 
         :return: The nome_fantasia_plastico of this OrigemComercialPersist.
         :rtype: str
@@ -303,7 +303,7 @@ class OrigemComercialPersist(object):
     def nome_fantasia_plastico(self, nome_fantasia_plastico):
         """
         Sets the nome_fantasia_plastico of this OrigemComercialPersist.
-        Nome fantasia impresso no pl\u00C3\u00A1stico
+        Nome fantasia impresso no pl\u00E1stico
 
         :param nome_fantasia_plastico: The nome_fantasia_plastico of this OrigemComercialPersist.
         :type: str
@@ -314,7 +314,7 @@ class OrigemComercialPersist(object):
     def flag_cartao_provisorio(self):
         """
         Gets the flag_cartao_provisorio of this OrigemComercialPersist.
-        Indica se permite cart\u00C3\u00A3o provis\u00C3\u00B3rio
+        Indica se permite cart\u00E3o provis\u00F3rio
 
         :return: The flag_cartao_provisorio of this OrigemComercialPersist.
         :rtype: bool
@@ -325,7 +325,7 @@ class OrigemComercialPersist(object):
     def flag_cartao_provisorio(self, flag_cartao_provisorio):
         """
         Sets the flag_cartao_provisorio of this OrigemComercialPersist.
-        Indica se permite cart\u00C3\u00A3o provis\u00C3\u00B3rio
+        Indica se permite cart\u00E3o provis\u00F3rio
 
         :param flag_cartao_provisorio: The flag_cartao_provisorio of this OrigemComercialPersist.
         :type: bool
@@ -336,7 +336,7 @@ class OrigemComercialPersist(object):
     def flag_cartao_definitivo(self):
         """
         Gets the flag_cartao_definitivo of this OrigemComercialPersist.
-        Indica se permite cart\u00C3\u00A3o definitivo
+        Indica se permite cart\u00E3o definitivo
 
         :return: The flag_cartao_definitivo of this OrigemComercialPersist.
         :rtype: bool
@@ -347,7 +347,7 @@ class OrigemComercialPersist(object):
     def flag_cartao_definitivo(self, flag_cartao_definitivo):
         """
         Sets the flag_cartao_definitivo of this OrigemComercialPersist.
-        Indica se permite cart\u00C3\u00A3o definitivo
+        Indica se permite cart\u00E3o definitivo
 
         :param flag_cartao_definitivo: The flag_cartao_definitivo of this OrigemComercialPersist.
         :type: bool
@@ -358,7 +358,7 @@ class OrigemComercialPersist(object):
     def usuario(self):
         """
         Gets the usuario of this OrigemComercialPersist.
-        Usu\u00C3\u00A1rio para autentica\u00C3\u00A7\u00C3\u00A3o
+        Usu\u00E1rio para autentica\u00E7\u00E3o
 
         :return: The usuario of this OrigemComercialPersist.
         :rtype: str
@@ -369,7 +369,7 @@ class OrigemComercialPersist(object):
     def usuario(self, usuario):
         """
         Sets the usuario of this OrigemComercialPersist.
-        Usu\u00C3\u00A1rio para autentica\u00C3\u00A7\u00C3\u00A3o
+        Usu\u00E1rio para autentica\u00E7\u00E3o
 
         :param usuario: The usuario of this OrigemComercialPersist.
         :type: str
@@ -380,7 +380,7 @@ class OrigemComercialPersist(object):
     def senha(self):
         """
         Gets the senha of this OrigemComercialPersist.
-        Senha para autentica\u00C3\u00A7\u00C3\u00A3o
+        Senha para autentica\u00E7\u00E3o
 
         :return: The senha of this OrigemComercialPersist.
         :rtype: str
@@ -391,7 +391,7 @@ class OrigemComercialPersist(object):
     def senha(self, senha):
         """
         Sets the senha of this OrigemComercialPersist.
-        Senha para autentica\u00C3\u00A7\u00C3\u00A3o
+        Senha para autentica\u00E7\u00E3o
 
         :param senha: The senha of this OrigemComercialPersist.
         :type: str
@@ -402,7 +402,7 @@ class OrigemComercialPersist(object):
     def flag_origem_externa(self):
         """
         Gets the flag_origem_externa of this OrigemComercialPersist.
-        Indica se \u00C3\u00A9 origem externa
+        Indica se \u00E9 origem externa
 
         :return: The flag_origem_externa of this OrigemComercialPersist.
         :rtype: bool
@@ -413,7 +413,7 @@ class OrigemComercialPersist(object):
     def flag_origem_externa(self, flag_origem_externa):
         """
         Sets the flag_origem_externa of this OrigemComercialPersist.
-        Indica se \u00C3\u00A9 origem externa
+        Indica se \u00E9 origem externa
 
         :param flag_origem_externa: The flag_origem_externa of this OrigemComercialPersist.
         :type: bool
@@ -424,7 +424,7 @@ class OrigemComercialPersist(object):
     def flag_modificado(self):
         """
         Gets the flag_modificado of this OrigemComercialPersist.
-        Indica se h\u00C3\u00A1 modifica\u00C3\u00A7\u00C3\u00A3o
+        Indica se h\u00E1 modifica\u00E7\u00E3o
 
         :return: The flag_modificado of this OrigemComercialPersist.
         :rtype: bool
@@ -435,7 +435,7 @@ class OrigemComercialPersist(object):
     def flag_modificado(self, flag_modificado):
         """
         Sets the flag_modificado of this OrigemComercialPersist.
-        Indica se h\u00C3\u00A1 modifica\u00C3\u00A7\u00C3\u00A3o
+        Indica se h\u00E1 modifica\u00E7\u00E3o
 
         :param flag_modificado: The flag_modificado of this OrigemComercialPersist.
         :type: bool
@@ -468,7 +468,7 @@ class OrigemComercialPersist(object):
     def flag_credito_faturamento(self):
         """
         Gets the flag_credito_faturamento of this OrigemComercialPersist.
-        Indica se permite cr\u00C3\u00A9dito de faturamento
+        Indica se permite cr\u00E9dito de faturamento
 
         :return: The flag_credito_faturamento of this OrigemComercialPersist.
         :rtype: bool
@@ -479,7 +479,7 @@ class OrigemComercialPersist(object):
     def flag_credito_faturamento(self, flag_credito_faturamento):
         """
         Sets the flag_credito_faturamento of this OrigemComercialPersist.
-        Indica se permite cr\u00C3\u00A9dito de faturamento
+        Indica se permite cr\u00E9dito de faturamento
 
         :param flag_credito_faturamento: The flag_credito_faturamento of this OrigemComercialPersist.
         :type: bool
@@ -490,7 +490,7 @@ class OrigemComercialPersist(object):
     def flag_concede_limite_provisorio(self):
         """
         Gets the flag_concede_limite_provisorio of this OrigemComercialPersist.
-        Indica se concede limite provis\u00C3\u00B3rio
+        Indica se concede limite provis\u00F3rio
 
         :return: The flag_concede_limite_provisorio of this OrigemComercialPersist.
         :rtype: bool
@@ -501,7 +501,7 @@ class OrigemComercialPersist(object):
     def flag_concede_limite_provisorio(self, flag_concede_limite_provisorio):
         """
         Sets the flag_concede_limite_provisorio of this OrigemComercialPersist.
-        Indica se concede limite provis\u00C3\u00B3rio
+        Indica se concede limite provis\u00F3rio
 
         :param flag_concede_limite_provisorio: The flag_concede_limite_provisorio of this OrigemComercialPersist.
         :type: bool
@@ -556,7 +556,7 @@ class OrigemComercialPersist(object):
     def flag_consulta_previa(self):
         """
         Gets the flag_consulta_previa of this OrigemComercialPersist.
-        Indica se realiza consulta pr\u00C3\u00A9via
+        Indica se realiza consulta pr\u00E9via
 
         :return: The flag_consulta_previa of this OrigemComercialPersist.
         :rtype: bool
@@ -567,7 +567,7 @@ class OrigemComercialPersist(object):
     def flag_consulta_previa(self, flag_consulta_previa):
         """
         Sets the flag_consulta_previa of this OrigemComercialPersist.
-        Indica se realiza consulta pr\u00C3\u00A9via
+        Indica se realiza consulta pr\u00E9via
 
         :param flag_consulta_previa: The flag_consulta_previa of this OrigemComercialPersist.
         :type: bool

@@ -155,7 +155,7 @@ class TransacaoNaoProcessadaResponse(object):
     def id_tipo_transacao_nao_processada(self):
         """
         Gets the id_tipo_transacao_nao_processada of this TransacaoNaoProcessadaResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Tipo da Transa\u00C3\u00A7\u00C3\u00A3o.
+        C\u00F3digo de Identifica\u00E7\u00E3o do Tipo da Transa\u00E7\u00E3o.
 
         :return: The id_tipo_transacao_nao_processada of this TransacaoNaoProcessadaResponse.
         :rtype: int
@@ -166,7 +166,7 @@ class TransacaoNaoProcessadaResponse(object):
     def id_tipo_transacao_nao_processada(self, id_tipo_transacao_nao_processada):
         """
         Sets the id_tipo_transacao_nao_processada of this TransacaoNaoProcessadaResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Tipo da Transa\u00C3\u00A7\u00C3\u00A3o.
+        C\u00F3digo de Identifica\u00E7\u00E3o do Tipo da Transa\u00E7\u00E3o.
 
         :param id_tipo_transacao_nao_processada: The id_tipo_transacao_nao_processada of this TransacaoNaoProcessadaResponse.
         :type: int
@@ -177,7 +177,7 @@ class TransacaoNaoProcessadaResponse(object):
     def descricao_tipo_transacao_nao_processada(self):
         """
         Gets the descricao_tipo_transacao_nao_processada of this TransacaoNaoProcessadaResponse.
-        Descri\u00C3\u00A7\u00C3\u00A3o do Tipo da Transa\u00C3\u00A7\u00C3\u00A3o n\u00C3\u00A3o Processada.
+        Descri\u00E7\u00E3o do Tipo da Transa\u00E7\u00E3o n\u00E3o Processada.
 
         :return: The descricao_tipo_transacao_nao_processada of this TransacaoNaoProcessadaResponse.
         :rtype: str
@@ -188,7 +188,7 @@ class TransacaoNaoProcessadaResponse(object):
     def descricao_tipo_transacao_nao_processada(self, descricao_tipo_transacao_nao_processada):
         """
         Sets the descricao_tipo_transacao_nao_processada of this TransacaoNaoProcessadaResponse.
-        Descri\u00C3\u00A7\u00C3\u00A3o do Tipo da Transa\u00C3\u00A7\u00C3\u00A3o n\u00C3\u00A3o Processada.
+        Descri\u00E7\u00E3o do Tipo da Transa\u00E7\u00E3o n\u00E3o Processada.
 
         :param descricao_tipo_transacao_nao_processada: The descricao_tipo_transacao_nao_processada of this TransacaoNaoProcessadaResponse.
         :type: str
@@ -199,7 +199,7 @@ class TransacaoNaoProcessadaResponse(object):
     def descricao_abreviada(self):
         """
         Gets the descricao_abreviada of this TransacaoNaoProcessadaResponse.
-        Descri\u00C3\u00A7\u00C3\u00A3o Abreviada da Transa\u00C3\u00A7\u00C3\u00A3o.
+        Descri\u00E7\u00E3o Abreviada da Transa\u00E7\u00E3o.
 
         :return: The descricao_abreviada of this TransacaoNaoProcessadaResponse.
         :rtype: str
@@ -210,7 +210,7 @@ class TransacaoNaoProcessadaResponse(object):
     def descricao_abreviada(self, descricao_abreviada):
         """
         Sets the descricao_abreviada of this TransacaoNaoProcessadaResponse.
-        Descri\u00C3\u00A7\u00C3\u00A3o Abreviada da Transa\u00C3\u00A7\u00C3\u00A3o.
+        Descri\u00E7\u00E3o Abreviada da Transa\u00E7\u00E3o.
 
         :param descricao_abreviada: The descricao_abreviada of this TransacaoNaoProcessadaResponse.
         :type: str
@@ -221,7 +221,7 @@ class TransacaoNaoProcessadaResponse(object):
     def id_conta(self):
         """
         Gets the id_conta of this TransacaoNaoProcessadaResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Conta (id).
+        C\u00F3digo de Identifica\u00E7\u00E3o da Conta (id).
 
         :return: The id_conta of this TransacaoNaoProcessadaResponse.
         :rtype: int
@@ -232,7 +232,7 @@ class TransacaoNaoProcessadaResponse(object):
     def id_conta(self, id_conta):
         """
         Sets the id_conta of this TransacaoNaoProcessadaResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Conta (id).
+        C\u00F3digo de Identifica\u00E7\u00E3o da Conta (id).
 
         :param id_conta: The id_conta of this TransacaoNaoProcessadaResponse.
         :type: int
@@ -243,7 +243,7 @@ class TransacaoNaoProcessadaResponse(object):
     def cartao_mascarado(self):
         """
         Gets the cartao_mascarado of this TransacaoNaoProcessadaResponse.
-        N\u00C3\u00BAmero do Cart\u00C3\u00A3o em Formato 0000XXXXXXXX0000.
+        N\u00FAmero do Cart\u00E3o em Formato 0000XXXXXXXX0000.
 
         :return: The cartao_mascarado of this TransacaoNaoProcessadaResponse.
         :rtype: str
@@ -254,7 +254,7 @@ class TransacaoNaoProcessadaResponse(object):
     def cartao_mascarado(self, cartao_mascarado):
         """
         Sets the cartao_mascarado of this TransacaoNaoProcessadaResponse.
-        N\u00C3\u00BAmero do Cart\u00C3\u00A3o em Formato 0000XXXXXXXX0000.
+        N\u00FAmero do Cart\u00E3o em Formato 0000XXXXXXXX0000.
 
         :param cartao_mascarado: The cartao_mascarado of this TransacaoNaoProcessadaResponse.
         :type: str
@@ -265,7 +265,7 @@ class TransacaoNaoProcessadaResponse(object):
     def nome_portador(self):
         """
         Gets the nome_portador of this TransacaoNaoProcessadaResponse.
-        Nome completo do Portador do Cart\u00C3\u00A3o.
+        Nome completo do Portador do Cart\u00E3o.
 
         :return: The nome_portador of this TransacaoNaoProcessadaResponse.
         :rtype: str
@@ -276,7 +276,7 @@ class TransacaoNaoProcessadaResponse(object):
     def nome_portador(self, nome_portador):
         """
         Sets the nome_portador of this TransacaoNaoProcessadaResponse.
-        Nome completo do Portador do Cart\u00C3\u00A3o.
+        Nome completo do Portador do Cart\u00E3o.
 
         :param nome_portador: The nome_portador of this TransacaoNaoProcessadaResponse.
         :type: str
@@ -287,7 +287,7 @@ class TransacaoNaoProcessadaResponse(object):
     def data_origem(self):
         """
         Gets the data_origem of this TransacaoNaoProcessadaResponse.
-        Data em que a Transa\u00C3\u00A7\u00C3\u00A3o foi realizada.
+        Data em que a Transa\u00E7\u00E3o foi realizada.
 
         :return: The data_origem of this TransacaoNaoProcessadaResponse.
         :rtype: str
@@ -298,7 +298,7 @@ class TransacaoNaoProcessadaResponse(object):
     def data_origem(self, data_origem):
         """
         Sets the data_origem of this TransacaoNaoProcessadaResponse.
-        Data em que a Transa\u00C3\u00A7\u00C3\u00A3o foi realizada.
+        Data em que a Transa\u00E7\u00E3o foi realizada.
 
         :param data_origem: The data_origem of this TransacaoNaoProcessadaResponse.
         :type: str
@@ -309,7 +309,7 @@ class TransacaoNaoProcessadaResponse(object):
     def data_faturamento(self):
         """
         Gets the data_faturamento of this TransacaoNaoProcessadaResponse.
-        Data de Faturamento da Transa\u00C3\u00A7\u00C3\u00A3o.
+        Data de Faturamento da Transa\u00E7\u00E3o.
 
         :return: The data_faturamento of this TransacaoNaoProcessadaResponse.
         :rtype: str
@@ -320,7 +320,7 @@ class TransacaoNaoProcessadaResponse(object):
     def data_faturamento(self, data_faturamento):
         """
         Sets the data_faturamento of this TransacaoNaoProcessadaResponse.
-        Data de Faturamento da Transa\u00C3\u00A7\u00C3\u00A3o.
+        Data de Faturamento da Transa\u00E7\u00E3o.
 
         :param data_faturamento: The data_faturamento of this TransacaoNaoProcessadaResponse.
         :type: str
@@ -353,7 +353,7 @@ class TransacaoNaoProcessadaResponse(object):
     def modo_entrada_transacao(self):
         """
         Gets the modo_entrada_transacao of this TransacaoNaoProcessadaResponse.
-        Descreve o modo utilizado para realizar a leitura dos dados do cart\u00C3\u00A3o para realizar a Transa\u00C3\u00A7\u00C3\u00A3o.
+        Descreve o modo utilizado para realizar a leitura dos dados do cart\u00E3o para realizar a Transa\u00E7\u00E3o.
 
         :return: The modo_entrada_transacao of this TransacaoNaoProcessadaResponse.
         :rtype: str
@@ -364,7 +364,7 @@ class TransacaoNaoProcessadaResponse(object):
     def modo_entrada_transacao(self, modo_entrada_transacao):
         """
         Sets the modo_entrada_transacao of this TransacaoNaoProcessadaResponse.
-        Descreve o modo utilizado para realizar a leitura dos dados do cart\u00C3\u00A3o para realizar a Transa\u00C3\u00A7\u00C3\u00A3o.
+        Descreve o modo utilizado para realizar a leitura dos dados do cart\u00E3o para realizar a Transa\u00E7\u00E3o.
 
         :param modo_entrada_transacao: The modo_entrada_transacao of this TransacaoNaoProcessadaResponse.
         :type: str
@@ -375,7 +375,7 @@ class TransacaoNaoProcessadaResponse(object):
     def valor_taxa_embarque(self):
         """
         Gets the valor_taxa_embarque of this TransacaoNaoProcessadaResponse.
-        Valor da Taxa de Embarque em Real (BRL) quando a transa\u00C3\u00A7\u00C3\u00A3o for relacionada a Compra de Passagens A\u00C3\u00A9reas.
+        Valor da Taxa de Embarque em Real (BRL) quando a transa\u00E7\u00E3o for relacionada a Compra de Passagens A\u00E9reas.
 
         :return: The valor_taxa_embarque of this TransacaoNaoProcessadaResponse.
         :rtype: float
@@ -386,7 +386,7 @@ class TransacaoNaoProcessadaResponse(object):
     def valor_taxa_embarque(self, valor_taxa_embarque):
         """
         Sets the valor_taxa_embarque of this TransacaoNaoProcessadaResponse.
-        Valor da Taxa de Embarque em Real (BRL) quando a transa\u00C3\u00A7\u00C3\u00A3o for relacionada a Compra de Passagens A\u00C3\u00A9reas.
+        Valor da Taxa de Embarque em Real (BRL) quando a transa\u00E7\u00E3o for relacionada a Compra de Passagens A\u00E9reas.
 
         :param valor_taxa_embarque: The valor_taxa_embarque of this TransacaoNaoProcessadaResponse.
         :type: float
@@ -397,7 +397,7 @@ class TransacaoNaoProcessadaResponse(object):
     def valor_entrada(self):
         """
         Gets the valor_entrada of this TransacaoNaoProcessadaResponse.
-        Valor da Entrada em Real (BRL) quando a transa\u00C3\u00A7\u00C3\u00A3o for do tipo Parcelada com o pagamento de um valor de Entrada.
+        Valor da Entrada em Real (BRL) quando a transa\u00E7\u00E3o for do tipo Parcelada com o pagamento de um valor de Entrada.
 
         :return: The valor_entrada of this TransacaoNaoProcessadaResponse.
         :rtype: float
@@ -408,7 +408,7 @@ class TransacaoNaoProcessadaResponse(object):
     def valor_entrada(self, valor_entrada):
         """
         Sets the valor_entrada of this TransacaoNaoProcessadaResponse.
-        Valor da Entrada em Real (BRL) quando a transa\u00C3\u00A7\u00C3\u00A3o for do tipo Parcelada com o pagamento de um valor de Entrada.
+        Valor da Entrada em Real (BRL) quando a transa\u00E7\u00E3o for do tipo Parcelada com o pagamento de um valor de Entrada.
 
         :param valor_entrada: The valor_entrada of this TransacaoNaoProcessadaResponse.
         :type: float
@@ -419,7 +419,7 @@ class TransacaoNaoProcessadaResponse(object):
     def valor_brl(self):
         """
         Gets the valor_brl of this TransacaoNaoProcessadaResponse.
-        Valor da Transa\u00C3\u00A7\u00C3\u00A3o em Real (BRL).
+        Valor da Transa\u00E7\u00E3o em Real (BRL).
 
         :return: The valor_brl of this TransacaoNaoProcessadaResponse.
         :rtype: float
@@ -430,7 +430,7 @@ class TransacaoNaoProcessadaResponse(object):
     def valor_brl(self, valor_brl):
         """
         Sets the valor_brl of this TransacaoNaoProcessadaResponse.
-        Valor da Transa\u00C3\u00A7\u00C3\u00A3o em Real (BRL).
+        Valor da Transa\u00E7\u00E3o em Real (BRL).
 
         :param valor_brl: The valor_brl of this TransacaoNaoProcessadaResponse.
         :type: float
@@ -441,7 +441,7 @@ class TransacaoNaoProcessadaResponse(object):
     def valor_usd(self):
         """
         Gets the valor_usd of this TransacaoNaoProcessadaResponse.
-        Valor da Transa\u00C3\u00A7\u00C3\u00A3o em D\u00C3\u00B3lar Americano (USD).
+        Valor da Transa\u00E7\u00E3o em D\u00F3lar Americano (USD).
 
         :return: The valor_usd of this TransacaoNaoProcessadaResponse.
         :rtype: float
@@ -452,7 +452,7 @@ class TransacaoNaoProcessadaResponse(object):
     def valor_usd(self, valor_usd):
         """
         Sets the valor_usd of this TransacaoNaoProcessadaResponse.
-        Valor da Transa\u00C3\u00A7\u00C3\u00A3o em D\u00C3\u00B3lar Americano (USD).
+        Valor da Transa\u00E7\u00E3o em D\u00F3lar Americano (USD).
 
         :param valor_usd: The valor_usd of this TransacaoNaoProcessadaResponse.
         :type: float
@@ -463,7 +463,7 @@ class TransacaoNaoProcessadaResponse(object):
     def cotacao_usd(self):
         """
         Gets the cotacao_usd of this TransacaoNaoProcessadaResponse.
-        Valor do D\u00C3\u00B3lar Americano (USD) convertido em Real (BRL).
+        Valor do D\u00F3lar Americano (USD) convertido em Real (BRL).
 
         :return: The cotacao_usd of this TransacaoNaoProcessadaResponse.
         :rtype: float
@@ -474,7 +474,7 @@ class TransacaoNaoProcessadaResponse(object):
     def cotacao_usd(self, cotacao_usd):
         """
         Sets the cotacao_usd of this TransacaoNaoProcessadaResponse.
-        Valor do D\u00C3\u00B3lar Americano (USD) convertido em Real (BRL).
+        Valor do D\u00F3lar Americano (USD) convertido em Real (BRL).
 
         :param cotacao_usd: The cotacao_usd of this TransacaoNaoProcessadaResponse.
         :type: float
@@ -485,7 +485,7 @@ class TransacaoNaoProcessadaResponse(object):
     def data_cotacao_usd(self):
         """
         Gets the data_cotacao_usd of this TransacaoNaoProcessadaResponse.
-        Data de Fechamento da Cota\u00C3\u00A7\u00C3\u00A3o do D\u00C3\u00B3lar Americano (USD).
+        Data de Fechamento da Cota\u00E7\u00E3o do D\u00F3lar Americano (USD).
 
         :return: The data_cotacao_usd of this TransacaoNaoProcessadaResponse.
         :rtype: str
@@ -496,7 +496,7 @@ class TransacaoNaoProcessadaResponse(object):
     def data_cotacao_usd(self, data_cotacao_usd):
         """
         Sets the data_cotacao_usd of this TransacaoNaoProcessadaResponse.
-        Data de Fechamento da Cota\u00C3\u00A7\u00C3\u00A3o do D\u00C3\u00B3lar Americano (USD).
+        Data de Fechamento da Cota\u00E7\u00E3o do D\u00F3lar Americano (USD).
 
         :param data_cotacao_usd: The data_cotacao_usd of this TransacaoNaoProcessadaResponse.
         :type: str
@@ -507,7 +507,7 @@ class TransacaoNaoProcessadaResponse(object):
     def codigo_moeda_origem(self):
         """
         Gets the codigo_moeda_origem of this TransacaoNaoProcessadaResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Moeda utilizada na Transa\u00C3\u00A7\u00C3\u00A3o, seguindo padr\u00C3\u00A3o ISO 4217.
+        C\u00F3digo de Identifica\u00E7\u00E3o da Moeda utilizada na Transa\u00E7\u00E3o, seguindo padr\u00E3o ISO 4217.
 
         :return: The codigo_moeda_origem of this TransacaoNaoProcessadaResponse.
         :rtype: str
@@ -518,7 +518,7 @@ class TransacaoNaoProcessadaResponse(object):
     def codigo_moeda_origem(self, codigo_moeda_origem):
         """
         Sets the codigo_moeda_origem of this TransacaoNaoProcessadaResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Moeda utilizada na Transa\u00C3\u00A7\u00C3\u00A3o, seguindo padr\u00C3\u00A3o ISO 4217.
+        C\u00F3digo de Identifica\u00E7\u00E3o da Moeda utilizada na Transa\u00E7\u00E3o, seguindo padr\u00E3o ISO 4217.
 
         :param codigo_moeda_origem: The codigo_moeda_origem of this TransacaoNaoProcessadaResponse.
         :type: str
@@ -529,7 +529,7 @@ class TransacaoNaoProcessadaResponse(object):
     def codigo_moeda_destino(self):
         """
         Gets the codigo_moeda_destino of this TransacaoNaoProcessadaResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Moeda da Transa\u00C3\u00A7\u00C3\u00A3o ap\u00C3\u00B3s a convers\u00C3\u00A3o, seguindo padr\u00C3\u00A3o ISO 4217.
+        C\u00F3digo de Identifica\u00E7\u00E3o da Moeda da Transa\u00E7\u00E3o ap\u00F3s a convers\u00E3o, seguindo padr\u00E3o ISO 4217.
 
         :return: The codigo_moeda_destino of this TransacaoNaoProcessadaResponse.
         :rtype: str
@@ -540,7 +540,7 @@ class TransacaoNaoProcessadaResponse(object):
     def codigo_moeda_destino(self, codigo_moeda_destino):
         """
         Sets the codigo_moeda_destino of this TransacaoNaoProcessadaResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Moeda da Transa\u00C3\u00A7\u00C3\u00A3o ap\u00C3\u00B3s a convers\u00C3\u00A3o, seguindo padr\u00C3\u00A3o ISO 4217.
+        C\u00F3digo de Identifica\u00E7\u00E3o da Moeda da Transa\u00E7\u00E3o ap\u00F3s a convers\u00E3o, seguindo padr\u00E3o ISO 4217.
 
         :param codigo_moeda_destino: The codigo_moeda_destino of this TransacaoNaoProcessadaResponse.
         :type: str
@@ -551,7 +551,7 @@ class TransacaoNaoProcessadaResponse(object):
     def codigo_autorizacao(self):
         """
         Gets the codigo_autorizacao of this TransacaoNaoProcessadaResponse.
-        C\u00C3\u00B3digo de Autoriza\u00C3\u00A7\u00C3\u00A3o da Transa\u00C3\u00A7\u00C3\u00A3o.
+        C\u00F3digo de Autoriza\u00E7\u00E3o da Transa\u00E7\u00E3o.
 
         :return: The codigo_autorizacao of this TransacaoNaoProcessadaResponse.
         :rtype: str
@@ -562,7 +562,7 @@ class TransacaoNaoProcessadaResponse(object):
     def codigo_autorizacao(self, codigo_autorizacao):
         """
         Sets the codigo_autorizacao of this TransacaoNaoProcessadaResponse.
-        C\u00C3\u00B3digo de Autoriza\u00C3\u00A7\u00C3\u00A3o da Transa\u00C3\u00A7\u00C3\u00A3o.
+        C\u00F3digo de Autoriza\u00E7\u00E3o da Transa\u00E7\u00E3o.
 
         :param codigo_autorizacao: The codigo_autorizacao of this TransacaoNaoProcessadaResponse.
         :type: str
@@ -573,7 +573,7 @@ class TransacaoNaoProcessadaResponse(object):
     def codigo_referencia(self):
         """
         Gets the codigo_referencia of this TransacaoNaoProcessadaResponse.
-        C\u00C3\u00B3digo de Refer\u00C3\u00AAncia da Transa\u00C3\u00A7\u00C3\u00A3o quando utilizado Cart\u00C3\u00A3o Bandeirado.
+        C\u00F3digo de Refer\u00EAncia da Transa\u00E7\u00E3o quando utilizado Cart\u00E3o Bandeirado.
 
         :return: The codigo_referencia of this TransacaoNaoProcessadaResponse.
         :rtype: str
@@ -584,7 +584,7 @@ class TransacaoNaoProcessadaResponse(object):
     def codigo_referencia(self, codigo_referencia):
         """
         Sets the codigo_referencia of this TransacaoNaoProcessadaResponse.
-        C\u00C3\u00B3digo de Refer\u00C3\u00AAncia da Transa\u00C3\u00A7\u00C3\u00A3o quando utilizado Cart\u00C3\u00A3o Bandeirado.
+        C\u00F3digo de Refer\u00EAncia da Transa\u00E7\u00E3o quando utilizado Cart\u00E3o Bandeirado.
 
         :param codigo_referencia: The codigo_referencia of this TransacaoNaoProcessadaResponse.
         :type: str
@@ -595,7 +595,7 @@ class TransacaoNaoProcessadaResponse(object):
     def codigo_terminal(self):
         """
         Gets the codigo_terminal of this TransacaoNaoProcessadaResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da origem da captura da Transa\u00C3\u00A7\u00C3\u00A3o.
+        C\u00F3digo de Identifica\u00E7\u00E3o da origem da captura da Transa\u00E7\u00E3o.
 
         :return: The codigo_terminal of this TransacaoNaoProcessadaResponse.
         :rtype: str
@@ -606,7 +606,7 @@ class TransacaoNaoProcessadaResponse(object):
     def codigo_terminal(self, codigo_terminal):
         """
         Sets the codigo_terminal of this TransacaoNaoProcessadaResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da origem da captura da Transa\u00C3\u00A7\u00C3\u00A3o.
+        C\u00F3digo de Identifica\u00E7\u00E3o da origem da captura da Transa\u00E7\u00E3o.
 
         :param codigo_terminal: The codigo_terminal of this TransacaoNaoProcessadaResponse.
         :type: str
@@ -617,7 +617,7 @@ class TransacaoNaoProcessadaResponse(object):
     def codigo_mcc(self):
         """
         Gets the codigo_mcc of this TransacaoNaoProcessadaResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da categoria do Estabelecimento.
+        C\u00F3digo de identifica\u00E7\u00E3o da categoria do Estabelecimento.
 
         :return: The codigo_mcc of this TransacaoNaoProcessadaResponse.
         :rtype: int
@@ -628,7 +628,7 @@ class TransacaoNaoProcessadaResponse(object):
     def codigo_mcc(self, codigo_mcc):
         """
         Sets the codigo_mcc of this TransacaoNaoProcessadaResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da categoria do Estabelecimento.
+        C\u00F3digo de identifica\u00E7\u00E3o da categoria do Estabelecimento.
 
         :param codigo_mcc: The codigo_mcc of this TransacaoNaoProcessadaResponse.
         :type: int
@@ -639,7 +639,7 @@ class TransacaoNaoProcessadaResponse(object):
     def grupo_mcc(self):
         """
         Gets the grupo_mcc of this TransacaoNaoProcessadaResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do grupo do Estabelecimento.
+        C\u00F3digo de identifica\u00E7\u00E3o do grupo do Estabelecimento.
 
         :return: The grupo_mcc of this TransacaoNaoProcessadaResponse.
         :rtype: int
@@ -650,7 +650,7 @@ class TransacaoNaoProcessadaResponse(object):
     def grupo_mcc(self, grupo_mcc):
         """
         Sets the grupo_mcc of this TransacaoNaoProcessadaResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do grupo do Estabelecimento.
+        C\u00F3digo de identifica\u00E7\u00E3o do grupo do Estabelecimento.
 
         :param grupo_mcc: The grupo_mcc of this TransacaoNaoProcessadaResponse.
         :type: int
@@ -661,7 +661,7 @@ class TransacaoNaoProcessadaResponse(object):
     def grupo_descricao_mcc(self):
         """
         Gets the grupo_descricao_mcc of this TransacaoNaoProcessadaResponse.
-        Descri\u00C3\u00A7\u00C3\u00A3o do grupo do Estabelecimento.
+        Descri\u00E7\u00E3o do grupo do Estabelecimento.
 
         :return: The grupo_descricao_mcc of this TransacaoNaoProcessadaResponse.
         :rtype: str
@@ -672,7 +672,7 @@ class TransacaoNaoProcessadaResponse(object):
     def grupo_descricao_mcc(self, grupo_descricao_mcc):
         """
         Sets the grupo_descricao_mcc of this TransacaoNaoProcessadaResponse.
-        Descri\u00C3\u00A7\u00C3\u00A3o do grupo do Estabelecimento.
+        Descri\u00E7\u00E3o do grupo do Estabelecimento.
 
         :param grupo_descricao_mcc: The grupo_descricao_mcc of this TransacaoNaoProcessadaResponse.
         :type: str
@@ -683,7 +683,7 @@ class TransacaoNaoProcessadaResponse(object):
     def id_estabelecimento(self):
         """
         Gets the id_estabelecimento of this TransacaoNaoProcessadaResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Estabelecimento (id).
+        C\u00F3digo de Identifica\u00E7\u00E3o do Estabelecimento (id).
 
         :return: The id_estabelecimento of this TransacaoNaoProcessadaResponse.
         :rtype: int
@@ -694,7 +694,7 @@ class TransacaoNaoProcessadaResponse(object):
     def id_estabelecimento(self, id_estabelecimento):
         """
         Sets the id_estabelecimento of this TransacaoNaoProcessadaResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Estabelecimento (id).
+        C\u00F3digo de Identifica\u00E7\u00E3o do Estabelecimento (id).
 
         :param id_estabelecimento: The id_estabelecimento of this TransacaoNaoProcessadaResponse.
         :type: int
@@ -771,7 +771,7 @@ class TransacaoNaoProcessadaResponse(object):
     def plano_parcelamento(self):
         """
         Gets the plano_parcelamento of this TransacaoNaoProcessadaResponse.
-        Quando a Transa\u00C3\u00A7\u00C3\u00A3o for do tipo Parcelada, apresenta o n\u00C3\u00BAmero total de Parcelas.
+        Quando a Transa\u00E7\u00E3o for do tipo Parcelada, apresenta o n\u00FAmero total de Parcelas.
 
         :return: The plano_parcelamento of this TransacaoNaoProcessadaResponse.
         :rtype: int
@@ -782,7 +782,7 @@ class TransacaoNaoProcessadaResponse(object):
     def plano_parcelamento(self, plano_parcelamento):
         """
         Sets the plano_parcelamento of this TransacaoNaoProcessadaResponse.
-        Quando a Transa\u00C3\u00A7\u00C3\u00A3o for do tipo Parcelada, apresenta o n\u00C3\u00BAmero total de Parcelas.
+        Quando a Transa\u00E7\u00E3o for do tipo Parcelada, apresenta o n\u00FAmero total de Parcelas.
 
         :param plano_parcelamento: The plano_parcelamento of this TransacaoNaoProcessadaResponse.
         :type: int
@@ -793,7 +793,7 @@ class TransacaoNaoProcessadaResponse(object):
     def numero_parcela(self):
         """
         Gets the numero_parcela of this TransacaoNaoProcessadaResponse.
-        Quando a Transa\u00C3\u00A7\u00C3\u00A3o for do tipo Parcelada, apresenta o n\u00C3\u00BAmero da Parcela.
+        Quando a Transa\u00E7\u00E3o for do tipo Parcelada, apresenta o n\u00FAmero da Parcela.
 
         :return: The numero_parcela of this TransacaoNaoProcessadaResponse.
         :rtype: int
@@ -804,7 +804,7 @@ class TransacaoNaoProcessadaResponse(object):
     def numero_parcela(self, numero_parcela):
         """
         Sets the numero_parcela of this TransacaoNaoProcessadaResponse.
-        Quando a Transa\u00C3\u00A7\u00C3\u00A3o for do tipo Parcelada, apresenta o n\u00C3\u00BAmero da Parcela.
+        Quando a Transa\u00E7\u00E3o for do tipo Parcelada, apresenta o n\u00FAmero da Parcela.
 
         :param numero_parcela: The numero_parcela of this TransacaoNaoProcessadaResponse.
         :type: int
@@ -815,7 +815,7 @@ class TransacaoNaoProcessadaResponse(object):
     def detalhes_transacao(self):
         """
         Gets the detalhes_transacao of this TransacaoNaoProcessadaResponse.
-        Detalhes complementares a respeito da Transa\u00C3\u00A7\u00C3\u00A3o.
+        Detalhes complementares a respeito da Transa\u00E7\u00E3o.
 
         :return: The detalhes_transacao of this TransacaoNaoProcessadaResponse.
         :rtype: str
@@ -826,7 +826,7 @@ class TransacaoNaoProcessadaResponse(object):
     def detalhes_transacao(self, detalhes_transacao):
         """
         Sets the detalhes_transacao of this TransacaoNaoProcessadaResponse.
-        Detalhes complementares a respeito da Transa\u00C3\u00A7\u00C3\u00A3o.
+        Detalhes complementares a respeito da Transa\u00E7\u00E3o.
 
         :param detalhes_transacao: The detalhes_transacao of this TransacaoNaoProcessadaResponse.
         :type: str
@@ -837,7 +837,7 @@ class TransacaoNaoProcessadaResponse(object):
     def flag_credito(self):
         """
         Gets the flag_credito of this TransacaoNaoProcessadaResponse.
-        Quando ativa, indica que a Transa\u00C3\u00A7\u00C3\u00A3o \u00C3\u00A9 do Tipo 'Cr\u00C3\u00A9dito'.
+        Quando ativa, indica que a Transa\u00E7\u00E3o \u00E9 do Tipo 'Cr\u00E9dito'.
 
         :return: The flag_credito of this TransacaoNaoProcessadaResponse.
         :rtype: int
@@ -848,7 +848,7 @@ class TransacaoNaoProcessadaResponse(object):
     def flag_credito(self, flag_credito):
         """
         Sets the flag_credito of this TransacaoNaoProcessadaResponse.
-        Quando ativa, indica que a Transa\u00C3\u00A7\u00C3\u00A3o \u00C3\u00A9 do Tipo 'Cr\u00C3\u00A9dito'.
+        Quando ativa, indica que a Transa\u00E7\u00E3o \u00E9 do Tipo 'Cr\u00E9dito'.
 
         :param flag_credito: The flag_credito of this TransacaoNaoProcessadaResponse.
         :type: int
@@ -859,7 +859,7 @@ class TransacaoNaoProcessadaResponse(object):
     def flag_faturado(self):
         """
         Gets the flag_faturado of this TransacaoNaoProcessadaResponse.
-        Quando ativa, indica que a Transa\u00C3\u00A7\u00C3\u00A3o foi consolidada em uma Fatura.
+        Quando ativa, indica que a Transa\u00E7\u00E3o foi consolidada em uma Fatura.
 
         :return: The flag_faturado of this TransacaoNaoProcessadaResponse.
         :rtype: int
@@ -870,7 +870,7 @@ class TransacaoNaoProcessadaResponse(object):
     def flag_faturado(self, flag_faturado):
         """
         Sets the flag_faturado of this TransacaoNaoProcessadaResponse.
-        Quando ativa, indica que a Transa\u00C3\u00A7\u00C3\u00A3o foi consolidada em uma Fatura.
+        Quando ativa, indica que a Transa\u00E7\u00E3o foi consolidada em uma Fatura.
 
         :param flag_faturado: The flag_faturado of this TransacaoNaoProcessadaResponse.
         :type: int
@@ -881,7 +881,7 @@ class TransacaoNaoProcessadaResponse(object):
     def flag_estorno(self):
         """
         Gets the flag_estorno of this TransacaoNaoProcessadaResponse.
-        Quando ativa, indica que a Transa\u00C3\u00A7\u00C3\u00A3o foi estornada.
+        Quando ativa, indica que a Transa\u00E7\u00E3o foi estornada.
 
         :return: The flag_estorno of this TransacaoNaoProcessadaResponse.
         :rtype: int
@@ -892,7 +892,7 @@ class TransacaoNaoProcessadaResponse(object):
     def flag_estorno(self, flag_estorno):
         """
         Sets the flag_estorno of this TransacaoNaoProcessadaResponse.
-        Quando ativa, indica que a Transa\u00C3\u00A7\u00C3\u00A3o foi estornada.
+        Quando ativa, indica que a Transa\u00E7\u00E3o foi estornada.
 
         :param flag_estorno: The flag_estorno of this TransacaoNaoProcessadaResponse.
         :type: int
@@ -903,7 +903,7 @@ class TransacaoNaoProcessadaResponse(object):
     def id_transacao_estorno(self):
         """
         Gets the id_transacao_estorno of this TransacaoNaoProcessadaResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Transa\u00C3\u00A7\u00C3\u00A3o (id) que gerou o estorno.
+        C\u00F3digo de Identifica\u00E7\u00E3o da Transa\u00E7\u00E3o (id) que gerou o estorno.
 
         :return: The id_transacao_estorno of this TransacaoNaoProcessadaResponse.
         :rtype: int
@@ -914,7 +914,7 @@ class TransacaoNaoProcessadaResponse(object):
     def id_transacao_estorno(self, id_transacao_estorno):
         """
         Sets the id_transacao_estorno of this TransacaoNaoProcessadaResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Transa\u00C3\u00A7\u00C3\u00A3o (id) que gerou o estorno.
+        C\u00F3digo de Identifica\u00E7\u00E3o da Transa\u00E7\u00E3o (id) que gerou o estorno.
 
         :param id_transacao_estorno: The id_transacao_estorno of this TransacaoNaoProcessadaResponse.
         :type: int
@@ -925,7 +925,7 @@ class TransacaoNaoProcessadaResponse(object):
     def status(self):
         """
         Gets the status of this TransacaoNaoProcessadaResponse.
-        Atributo que representa o c\u00C3\u00B3digo identificador do status da transa\u00C3\u00A7\u00C3\u00A3o.
+        Atributo que representa o c\u00F3digo identificador do status da transa\u00E7\u00E3o.
 
         :return: The status of this TransacaoNaoProcessadaResponse.
         :rtype: int
@@ -936,7 +936,7 @@ class TransacaoNaoProcessadaResponse(object):
     def status(self, status):
         """
         Sets the status of this TransacaoNaoProcessadaResponse.
-        Atributo que representa o c\u00C3\u00B3digo identificador do status da transa\u00C3\u00A7\u00C3\u00A3o.
+        Atributo que representa o c\u00F3digo identificador do status da transa\u00E7\u00E3o.
 
         :param status: The status of this TransacaoNaoProcessadaResponse.
         :type: int

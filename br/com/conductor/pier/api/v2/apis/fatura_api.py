@@ -61,7 +61,7 @@ class FaturaApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param str data_vencimento: Data Vencimento (required)
-        :param int id_conta: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da conta (id). (required)
+        :param int id_conta: C\u00F3digo de identifica\u00E7\u00E3o da conta (id). (required)
         :return: FaturaDetalheResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -143,11 +143,11 @@ class FaturaApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param int id: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da conta (id). (required)
-        :param str data_vencimento_padrao: Indica a data de vencimento padr\u00C3\u00A3o das faturas (required)
-        :param list[str] sort: Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
-        :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
-        :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
+        :param int id: C\u00F3digo de identifica\u00E7\u00E3o da conta (id). (required)
+        :param str data_vencimento_padrao: Indica a data de vencimento padr\u00E3o das faturas (required)
+        :param list[str] sort: Tipo de ordena\u00E7\u00E3o dos registros.
+        :param int page: P\u00E1gina solicitada (Default = 0)
+        :param int limit: Limite de elementos por solicita\u00E7\u00E3o (Default = 50, Max = 50)
         :return: PagePlanoParcelamentoResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -222,7 +222,7 @@ class FaturaApi(object):
 
     def enviar_fatura_email_using_post(self, id, data_vencimento, **kwargs):
         """
-        Envia 2\u00C2\u00AA via de fatura por E-mail
+        Envia 2\u00AA via de fatura por E-mail
         Envia a segunda via da fatura para o e-mail informado/cadastrado.
 
         This method makes a synchronous HTTP request by default. To make an
@@ -235,9 +235,9 @@ class FaturaApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param int id: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da conta (id). (required)
+        :param int id: C\u00F3digo de identifica\u00E7\u00E3o da conta (id). (required)
         :param str data_vencimento: Data de Vencimento da fatura (yyyy-MM-dd). (required)
-        :param str email: E-mail para envio da 2\u00C2\u00AA via da fatura, caso n\u00C3\u00A3o seja informado ser\u00C3\u00A1 usado o e-mail cadastrado.
+        :param str email: E-mail para envio da 2\u00AA via da fatura, caso n\u00E3o seja informado ser\u00E1 usado o e-mail cadastrado.
         :return: object
                  If the method is called asynchronously,
                  returns the request thread.
@@ -321,11 +321,11 @@ class FaturaApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param int id_conta: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da conta (id). (required)
+        :param int id_conta: C\u00F3digo de identifica\u00E7\u00E3o da conta (id). (required)
         :param str situacao_processamento: Status do processamento das faturas. Valores possiveis [ABERTA, FECHADA, TODAS].
-        :param list[str] sort: Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
-        :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
-        :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
+        :param list[str] sort: Tipo de ordena\u00E7\u00E3o dos registros.
+        :param int page: P\u00E1gina solicitada (Default = 0)
+        :param int limit: Limite de elementos por solicita\u00E7\u00E3o (Default = 50, Max = 50)
         :return: PageFaturaResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -398,7 +398,7 @@ class FaturaApi(object):
     def visualizar_documento_using_get(self, id, data_vencimento, **kwargs):
         """
         Permite visualizar o extrato da fatura em formato PDF
-        Esta opera\u00C3\u00A7\u00C3\u00A3o permite visualizar o extrato da fatura de uma determinada conta, em formato PDF. Quando ela for a fatura ativa, ou seja, a do m\u00C3\u00AAs corrente, o pdf ser\u00C3\u00A1 composto pelo extrato de lan\u00C3\u00A7amentos e pela ficha de compensa\u00C3\u00A7\u00C3\u00A3o banc\u00C3\u00A1ria. Quando for de uma fatura do hist\u00C3\u00B3rico do cliente, o PDF ser\u00C3\u00A1 composto apenas pelo extrato de transa\u00C3\u00A7\u00C3\u00B5es.
+        Esta opera\u00E7\u00E3o permite visualizar o extrato da fatura de uma determinada conta, em formato PDF. Quando ela for a fatura ativa, ou seja, a do m\u00EAs corrente, o pdf ser\u00E1 composto pelo extrato de lan\u00E7amentos e pela ficha de compensa\u00E7\u00E3o banc\u00E1ria. Quando for de uma fatura do hist\u00F3rico do cliente, o PDF ser\u00E1 composto apenas pelo extrato de transa\u00E7\u00F5es.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -410,7 +410,7 @@ class FaturaApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param int id: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da conta (id). (required)
+        :param int id: C\u00F3digo de identifica\u00E7\u00E3o da conta (id). (required)
         :param str data_vencimento: Data de Vencimento da fatura. (required)
         :return: object
                  If the method is called asynchronously,

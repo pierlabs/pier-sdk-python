@@ -123,7 +123,7 @@ class TransacaoCorrenteResponse(object):
     def id_conta(self):
         """
         Gets the id_conta of this TransacaoCorrenteResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da conta (id).
+        C\u00F3digo de identifica\u00E7\u00E3o da conta (id).
 
         :return: The id_conta of this TransacaoCorrenteResponse.
         :rtype: int
@@ -134,7 +134,7 @@ class TransacaoCorrenteResponse(object):
     def id_conta(self, id_conta):
         """
         Sets the id_conta of this TransacaoCorrenteResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da conta (id).
+        C\u00F3digo de identifica\u00E7\u00E3o da conta (id).
 
         :param id_conta: The id_conta of this TransacaoCorrenteResponse.
         :type: int
@@ -145,7 +145,7 @@ class TransacaoCorrenteResponse(object):
     def id_tipo_registro(self):
         """
         Gets the id_tipo_registro of this TransacaoCorrenteResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do tipo de transacao (id).
+        C\u00F3digo de identifica\u00E7\u00E3o do tipo de transacao (id).
 
         :return: The id_tipo_registro of this TransacaoCorrenteResponse.
         :rtype: int
@@ -156,7 +156,7 @@ class TransacaoCorrenteResponse(object):
     def id_tipo_registro(self, id_tipo_registro):
         """
         Sets the id_tipo_registro of this TransacaoCorrenteResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do tipo de transacao (id).
+        C\u00F3digo de identifica\u00E7\u00E3o do tipo de transacao (id).
 
         :param id_tipo_registro: The id_tipo_registro of this TransacaoCorrenteResponse.
         :type: int
@@ -167,7 +167,7 @@ class TransacaoCorrenteResponse(object):
     def ordem(self):
         """
         Gets the ordem of this TransacaoCorrenteResponse.
-        Representa\u00C3\u00A7\u00C3\u00A3o da ordena\u00C3\u00A7\u00C3\u00A3o da transacao (id).
+        Representa\u00E7\u00E3o da ordena\u00E7\u00E3o da transacao (id).
 
         :return: The ordem of this TransacaoCorrenteResponse.
         :rtype: int
@@ -178,7 +178,7 @@ class TransacaoCorrenteResponse(object):
     def ordem(self, ordem):
         """
         Sets the ordem of this TransacaoCorrenteResponse.
-        Representa\u00C3\u00A7\u00C3\u00A3o da ordena\u00C3\u00A7\u00C3\u00A3o da transacao (id).
+        Representa\u00E7\u00E3o da ordena\u00E7\u00E3o da transacao (id).
 
         :param ordem: The ordem of this TransacaoCorrenteResponse.
         :type: int
@@ -189,7 +189,7 @@ class TransacaoCorrenteResponse(object):
     def id_transacao(self):
         """
         Gets the id_transacao of this TransacaoCorrenteResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da transacao (id).
+        C\u00F3digo de identifica\u00E7\u00E3o da transacao (id).
 
         :return: The id_transacao of this TransacaoCorrenteResponse.
         :rtype: int
@@ -200,7 +200,7 @@ class TransacaoCorrenteResponse(object):
     def id_transacao(self, id_transacao):
         """
         Sets the id_transacao of this TransacaoCorrenteResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da transacao (id).
+        C\u00F3digo de identifica\u00E7\u00E3o da transacao (id).
 
         :param id_transacao: The id_transacao of this TransacaoCorrenteResponse.
         :type: int
@@ -211,7 +211,7 @@ class TransacaoCorrenteResponse(object):
     def descricao(self):
         """
         Gets the descricao of this TransacaoCorrenteResponse.
-        Atributo que representa a descri\u00C3\u00A7\u00C3\u00A3o da transa\u00C3\u00A7\u00C3\u00A3o.
+        Atributo que representa a descri\u00E7\u00E3o da transa\u00E7\u00E3o.
 
         :return: The descricao of this TransacaoCorrenteResponse.
         :rtype: str
@@ -222,7 +222,7 @@ class TransacaoCorrenteResponse(object):
     def descricao(self, descricao):
         """
         Sets the descricao of this TransacaoCorrenteResponse.
-        Atributo que representa a descri\u00C3\u00A7\u00C3\u00A3o da transa\u00C3\u00A7\u00C3\u00A3o.
+        Atributo que representa a descri\u00E7\u00E3o da transa\u00E7\u00E3o.
 
         :param descricao: The descricao of this TransacaoCorrenteResponse.
         :type: str
@@ -233,7 +233,7 @@ class TransacaoCorrenteResponse(object):
     def status(self):
         """
         Gets the status of this TransacaoCorrenteResponse.
-        Atributo que representa o c\u00C3\u00B3digo identificador do status da transa\u00C3\u00A7\u00C3\u00A3o.
+        Atributo que representa o c\u00F3digo identificador do status da transa\u00E7\u00E3o.
 
         :return: The status of this TransacaoCorrenteResponse.
         :rtype: int
@@ -244,7 +244,7 @@ class TransacaoCorrenteResponse(object):
     def status(self, status):
         """
         Sets the status of this TransacaoCorrenteResponse.
-        Atributo que representa o c\u00C3\u00B3digo identificador do status da transa\u00C3\u00A7\u00C3\u00A3o.
+        Atributo que representa o c\u00F3digo identificador do status da transa\u00E7\u00E3o.
 
         :param status: The status of this TransacaoCorrenteResponse.
         :type: int
@@ -255,7 +255,7 @@ class TransacaoCorrenteResponse(object):
     def descricao_status(self):
         """
         Gets the descricao_status of this TransacaoCorrenteResponse.
-        Atributo que representa a descri\u00C3\u00A7\u00C3\u00A3o do status da transa\u00C3\u00A7\u00C3\u00A3o.
+        Atributo que representa a descri\u00E7\u00E3o do status da transa\u00E7\u00E3o.
 
         :return: The descricao_status of this TransacaoCorrenteResponse.
         :rtype: str
@@ -266,7 +266,7 @@ class TransacaoCorrenteResponse(object):
     def descricao_status(self, descricao_status):
         """
         Sets the descricao_status of this TransacaoCorrenteResponse.
-        Atributo que representa a descri\u00C3\u00A7\u00C3\u00A3o do status da transa\u00C3\u00A7\u00C3\u00A3o.
+        Atributo que representa a descri\u00E7\u00E3o do status da transa\u00E7\u00E3o.
 
         :param descricao_status: The descricao_status of this TransacaoCorrenteResponse.
         :type: str
@@ -277,7 +277,7 @@ class TransacaoCorrenteResponse(object):
     def valor(self):
         """
         Gets the valor of this TransacaoCorrenteResponse.
-        Atributo que representa o valor da transa\u00C3\u00A7\u00C3\u00A3o.
+        Atributo que representa o valor da transa\u00E7\u00E3o.
 
         :return: The valor of this TransacaoCorrenteResponse.
         :rtype: float
@@ -288,7 +288,7 @@ class TransacaoCorrenteResponse(object):
     def valor(self, valor):
         """
         Sets the valor of this TransacaoCorrenteResponse.
-        Atributo que representa o valor da transa\u00C3\u00A7\u00C3\u00A3o.
+        Atributo que representa o valor da transa\u00E7\u00E3o.
 
         :param valor: The valor of this TransacaoCorrenteResponse.
         :type: float
@@ -299,7 +299,7 @@ class TransacaoCorrenteResponse(object):
     def valor_dolar(self):
         """
         Gets the valor_dolar of this TransacaoCorrenteResponse.
-        Atributo que representa o valor em D\u00C3\u00B3lar da transa\u00C3\u00A7\u00C3\u00A3o.
+        Atributo que representa o valor em D\u00F3lar da transa\u00E7\u00E3o.
 
         :return: The valor_dolar of this TransacaoCorrenteResponse.
         :rtype: float
@@ -310,7 +310,7 @@ class TransacaoCorrenteResponse(object):
     def valor_dolar(self, valor_dolar):
         """
         Sets the valor_dolar of this TransacaoCorrenteResponse.
-        Atributo que representa o valor em D\u00C3\u00B3lar da transa\u00C3\u00A7\u00C3\u00A3o.
+        Atributo que representa o valor em D\u00F3lar da transa\u00E7\u00E3o.
 
         :param valor_dolar: The valor_dolar of this TransacaoCorrenteResponse.
         :type: float
@@ -321,7 +321,7 @@ class TransacaoCorrenteResponse(object):
     def quantidade_parcelas(self):
         """
         Gets the quantidade_parcelas of this TransacaoCorrenteResponse.
-        Atributo que representa a quantidade de parcelas da transa\u00C3\u00A7\u00C3\u00A3o.
+        Atributo que representa a quantidade de parcelas da transa\u00E7\u00E3o.
 
         :return: The quantidade_parcelas of this TransacaoCorrenteResponse.
         :rtype: int
@@ -332,7 +332,7 @@ class TransacaoCorrenteResponse(object):
     def quantidade_parcelas(self, quantidade_parcelas):
         """
         Sets the quantidade_parcelas of this TransacaoCorrenteResponse.
-        Atributo que representa a quantidade de parcelas da transa\u00C3\u00A7\u00C3\u00A3o.
+        Atributo que representa a quantidade de parcelas da transa\u00E7\u00E3o.
 
         :param quantidade_parcelas: The quantidade_parcelas of this TransacaoCorrenteResponse.
         :type: int
@@ -343,7 +343,7 @@ class TransacaoCorrenteResponse(object):
     def valor_parcela(self):
         """
         Gets the valor_parcela of this TransacaoCorrenteResponse.
-        Atributo que representa o valor da parcela da transa\u00C3\u00A7\u00C3\u00A3o.
+        Atributo que representa o valor da parcela da transa\u00E7\u00E3o.
 
         :return: The valor_parcela of this TransacaoCorrenteResponse.
         :rtype: float
@@ -354,7 +354,7 @@ class TransacaoCorrenteResponse(object):
     def valor_parcela(self, valor_parcela):
         """
         Sets the valor_parcela of this TransacaoCorrenteResponse.
-        Atributo que representa o valor da parcela da transa\u00C3\u00A7\u00C3\u00A3o.
+        Atributo que representa o valor da parcela da transa\u00E7\u00E3o.
 
         :param valor_parcela: The valor_parcela of this TransacaoCorrenteResponse.
         :type: float
@@ -365,7 +365,7 @@ class TransacaoCorrenteResponse(object):
     def data_evento(self):
         """
         Gets the data_evento of this TransacaoCorrenteResponse.
-        Atributo que representa a data de envio da transa\u00C3\u00A7\u00C3\u00A3o.
+        Atributo que representa a data de envio da transa\u00E7\u00E3o.
 
         :return: The data_evento of this TransacaoCorrenteResponse.
         :rtype: str
@@ -376,7 +376,7 @@ class TransacaoCorrenteResponse(object):
     def data_evento(self, data_evento):
         """
         Sets the data_evento of this TransacaoCorrenteResponse.
-        Atributo que representa a data de envio da transa\u00C3\u00A7\u00C3\u00A3o.
+        Atributo que representa a data de envio da transa\u00E7\u00E3o.
 
         :param data_evento: The data_evento of this TransacaoCorrenteResponse.
         :type: str
@@ -387,7 +387,7 @@ class TransacaoCorrenteResponse(object):
     def estabelecimento(self):
         """
         Gets the estabelecimento of this TransacaoCorrenteResponse.
-        Atributo que representa o estabelecimento da transa\u00C3\u00A7\u00C3\u00A3o.
+        Atributo que representa o estabelecimento da transa\u00E7\u00E3o.
 
         :return: The estabelecimento of this TransacaoCorrenteResponse.
         :rtype: str
@@ -398,7 +398,7 @@ class TransacaoCorrenteResponse(object):
     def estabelecimento(self, estabelecimento):
         """
         Sets the estabelecimento of this TransacaoCorrenteResponse.
-        Atributo que representa o estabelecimento da transa\u00C3\u00A7\u00C3\u00A3o.
+        Atributo que representa o estabelecimento da transa\u00E7\u00E3o.
 
         :param estabelecimento: The estabelecimento of this TransacaoCorrenteResponse.
         :type: str
@@ -409,7 +409,7 @@ class TransacaoCorrenteResponse(object):
     def flag_credito(self):
         """
         Gets the flag_credito of this TransacaoCorrenteResponse.
-        Atributo que identifica se a transa\u00C3\u00A7\u00C3\u00A3o \u00C3\u00A9 um cr\u00C3\u00A9dito ou d\u00C3\u00A9bito.
+        Atributo que identifica se a transa\u00E7\u00E3o \u00E9 um cr\u00E9dito ou d\u00E9bito.
 
         :return: The flag_credito of this TransacaoCorrenteResponse.
         :rtype: int
@@ -420,7 +420,7 @@ class TransacaoCorrenteResponse(object):
     def flag_credito(self, flag_credito):
         """
         Sets the flag_credito of this TransacaoCorrenteResponse.
-        Atributo que identifica se a transa\u00C3\u00A7\u00C3\u00A3o \u00C3\u00A9 um cr\u00C3\u00A9dito ou d\u00C3\u00A9bito.
+        Atributo que identifica se a transa\u00E7\u00E3o \u00E9 um cr\u00E9dito ou d\u00E9bito.
 
         :param flag_credito: The flag_credito of this TransacaoCorrenteResponse.
         :type: int
@@ -431,7 +431,7 @@ class TransacaoCorrenteResponse(object):
     def tipo_estabelecimento(self):
         """
         Gets the tipo_estabelecimento of this TransacaoCorrenteResponse.
-        Atributo que representa o tipo de estabelecimento da transa\u00C3\u00A7\u00C3\u00A3o.
+        Atributo que representa o tipo de estabelecimento da transa\u00E7\u00E3o.
 
         :return: The tipo_estabelecimento of this TransacaoCorrenteResponse.
         :rtype: str
@@ -442,7 +442,7 @@ class TransacaoCorrenteResponse(object):
     def tipo_estabelecimento(self, tipo_estabelecimento):
         """
         Sets the tipo_estabelecimento of this TransacaoCorrenteResponse.
-        Atributo que representa o tipo de estabelecimento da transa\u00C3\u00A7\u00C3\u00A3o.
+        Atributo que representa o tipo de estabelecimento da transa\u00E7\u00E3o.
 
         :param tipo_estabelecimento: The tipo_estabelecimento of this TransacaoCorrenteResponse.
         :type: str
@@ -453,7 +453,7 @@ class TransacaoCorrenteResponse(object):
     def id_grupo_mcc(self):
         """
         Gets the id_grupo_mcc of this TransacaoCorrenteResponse.
-        Atributo que representa o grupo MCC da transa\u00C3\u00A7\u00C3\u00A3o.
+        Atributo que representa o grupo MCC da transa\u00E7\u00E3o.
 
         :return: The id_grupo_mcc of this TransacaoCorrenteResponse.
         :rtype: int
@@ -464,7 +464,7 @@ class TransacaoCorrenteResponse(object):
     def id_grupo_mcc(self, id_grupo_mcc):
         """
         Sets the id_grupo_mcc of this TransacaoCorrenteResponse.
-        Atributo que representa o grupo MCC da transa\u00C3\u00A7\u00C3\u00A3o.
+        Atributo que representa o grupo MCC da transa\u00E7\u00E3o.
 
         :param id_grupo_mcc: The id_grupo_mcc of this TransacaoCorrenteResponse.
         :type: int
@@ -475,7 +475,7 @@ class TransacaoCorrenteResponse(object):
     def flag_solicitou_contestacao(self):
         """
         Gets the flag_solicitou_contestacao of this TransacaoCorrenteResponse.
-        Atributo que identifica se o portador solicitou contesta\u00C3\u00A7\u00C3\u00A3o da transa\u00C3\u00A7\u00C3\u00A3o.
+        Atributo que identifica se o portador solicitou contesta\u00E7\u00E3o da transa\u00E7\u00E3o.
 
         :return: The flag_solicitou_contestacao of this TransacaoCorrenteResponse.
         :rtype: int
@@ -486,7 +486,7 @@ class TransacaoCorrenteResponse(object):
     def flag_solicitou_contestacao(self, flag_solicitou_contestacao):
         """
         Sets the flag_solicitou_contestacao of this TransacaoCorrenteResponse.
-        Atributo que identifica se o portador solicitou contesta\u00C3\u00A7\u00C3\u00A3o da transa\u00C3\u00A7\u00C3\u00A3o.
+        Atributo que identifica se o portador solicitou contesta\u00E7\u00E3o da transa\u00E7\u00E3o.
 
         :param flag_solicitou_contestacao: The flag_solicitou_contestacao of this TransacaoCorrenteResponse.
         :type: int

@@ -53,7 +53,7 @@ class CartaoEmbossingRequest(object):
     def id_pessoa(self):
         """
         Gets the id_pessoa of this CartaoEmbossingRequest.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Pessoa a qual o cart\u00C3\u00A3o pertence (id)
+        C\u00F3digo de Identifica\u00E7\u00E3o da Pessoa a qual o cart\u00E3o pertence (id)
 
         :return: The id_pessoa of this CartaoEmbossingRequest.
         :rtype: int
@@ -64,7 +64,7 @@ class CartaoEmbossingRequest(object):
     def id_pessoa(self, id_pessoa):
         """
         Sets the id_pessoa of this CartaoEmbossingRequest.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Pessoa a qual o cart\u00C3\u00A3o pertence (id)
+        C\u00F3digo de Identifica\u00E7\u00E3o da Pessoa a qual o cart\u00E3o pertence (id)
 
         :param id_pessoa: The id_pessoa of this CartaoEmbossingRequest.
         :type: int
@@ -75,7 +75,7 @@ class CartaoEmbossingRequest(object):
     def id_tipo_plastico(self):
         """
         Gets the id_tipo_plastico of this CartaoEmbossingRequest.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do TipoPlastico (id).
+        C\u00F3digo de identifica\u00E7\u00E3o do TipoPlastico (id).
 
         :return: The id_tipo_plastico of this CartaoEmbossingRequest.
         :rtype: int
@@ -86,7 +86,7 @@ class CartaoEmbossingRequest(object):
     def id_tipo_plastico(self, id_tipo_plastico):
         """
         Sets the id_tipo_plastico of this CartaoEmbossingRequest.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do TipoPlastico (id).
+        C\u00F3digo de identifica\u00E7\u00E3o do TipoPlastico (id).
 
         :param id_tipo_plastico: The id_tipo_plastico of this CartaoEmbossingRequest.
         :type: int

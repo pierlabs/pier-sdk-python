@@ -50,7 +50,7 @@ class IntegracaoEmissorPersist(object):
     def canal_entrada(self):
         """
         Gets the canal_entrada of this IntegracaoEmissorPersist.
-        Canal de entrada onde deve ser informado o dispositivo usado na comunica\u00C3\u00A7\u00C3\u00A3o.
+        Canal de entrada onde deve ser informado o dispositivo usado na comunica\u00E7\u00E3o.
 
         :return: The canal_entrada of this IntegracaoEmissorPersist.
         :rtype: str
@@ -61,7 +61,7 @@ class IntegracaoEmissorPersist(object):
     def canal_entrada(self, canal_entrada):
         """
         Sets the canal_entrada of this IntegracaoEmissorPersist.
-        Canal de entrada onde deve ser informado o dispositivo usado na comunica\u00C3\u00A7\u00C3\u00A3o.
+        Canal de entrada onde deve ser informado o dispositivo usado na comunica\u00E7\u00E3o.
 
         :param canal_entrada: The canal_entrada of this IntegracaoEmissorPersist.
         :type: str

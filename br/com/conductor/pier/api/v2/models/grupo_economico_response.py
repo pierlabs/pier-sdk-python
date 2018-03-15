@@ -57,6 +57,7 @@ class GrupoEconomicoResponse(object):
             'pagamento_decendial_terceiro': 'int',
             'pagamento_quinzenal_primeiro': 'int',
             'pagamento_quinzenal_segundo': 'int',
+            'id_credor_rav': 'int',
             'percentual_rav': 'float',
             'recebe_rav': 'str',
             'percentual_multiplica': 'float',
@@ -86,6 +87,7 @@ class GrupoEconomicoResponse(object):
             'pagamento_decendial_terceiro': 'pagamentoDecendialTerceiro',
             'pagamento_quinzenal_primeiro': 'pagamentoQuinzenalPrimeiro',
             'pagamento_quinzenal_segundo': 'pagamentoQuinzenalSegundo',
+            'id_credor_rav': 'idCredorRAV',
             'percentual_rav': 'percentualRAV',
             'recebe_rav': 'recebeRAV',
             'percentual_multiplica': 'percentualMultiplica',
@@ -114,6 +116,7 @@ class GrupoEconomicoResponse(object):
         self._pagamento_decendial_terceiro = None
         self._pagamento_quinzenal_primeiro = None
         self._pagamento_quinzenal_segundo = None
+        self._id_credor_rav = None
         self._percentual_rav = None
         self._recebe_rav = None
         self._percentual_multiplica = None
@@ -125,7 +128,7 @@ class GrupoEconomicoResponse(object):
     def id(self):
         """
         Gets the id of this GrupoEconomicoResponse.
-        C\u00C3\u00B3digo identificador do grupo econ\u00C3\u00B4mico
+        C\u00F3digo identificador do grupo econ\u00F4mico
 
         :return: The id of this GrupoEconomicoResponse.
         :rtype: int
@@ -136,7 +139,7 @@ class GrupoEconomicoResponse(object):
     def id(self, id):
         """
         Sets the id of this GrupoEconomicoResponse.
-        C\u00C3\u00B3digo identificador do grupo econ\u00C3\u00B4mico
+        C\u00F3digo identificador do grupo econ\u00F4mico
 
         :param id: The id of this GrupoEconomicoResponse.
         :type: int
@@ -147,7 +150,7 @@ class GrupoEconomicoResponse(object):
     def razao_social(self):
         """
         Gets the razao_social of this GrupoEconomicoResponse.
-        Raz\u00C3\u00A3o social da pessoa jur\u00C3\u00ADdica
+        Raz\u00E3o social da pessoa jur\u00EDdica
 
         :return: The razao_social of this GrupoEconomicoResponse.
         :rtype: str
@@ -158,7 +161,7 @@ class GrupoEconomicoResponse(object):
     def razao_social(self, razao_social):
         """
         Sets the razao_social of this GrupoEconomicoResponse.
-        Raz\u00C3\u00A3o social da pessoa jur\u00C3\u00ADdica
+        Raz\u00E3o social da pessoa jur\u00EDdica
 
         :param razao_social: The razao_social of this GrupoEconomicoResponse.
         :type: str
@@ -191,7 +194,7 @@ class GrupoEconomicoResponse(object):
     def numero_receita_federal(self):
         """
         Gets the numero_receita_federal of this GrupoEconomicoResponse.
-        N\u00C3\u00BAmero da Receita Federal
+        N\u00FAmero da Receita Federal
 
         :return: The numero_receita_federal of this GrupoEconomicoResponse.
         :rtype: str
@@ -202,7 +205,7 @@ class GrupoEconomicoResponse(object):
     def numero_receita_federal(self, numero_receita_federal):
         """
         Sets the numero_receita_federal of this GrupoEconomicoResponse.
-        N\u00C3\u00BAmero da Receita Federal
+        N\u00FAmero da Receita Federal
 
         :param numero_receita_federal: The numero_receita_federal of this GrupoEconomicoResponse.
         :type: str
@@ -213,7 +216,7 @@ class GrupoEconomicoResponse(object):
     def inscricao_estadual(self):
         """
         Gets the inscricao_estadual of this GrupoEconomicoResponse.
-        N\u00C3\u00BAmero da inscri\u00C3\u00A7\u00C3\u00A3o estadual
+        N\u00FAmero da inscri\u00E7\u00E3o estadual
 
         :return: The inscricao_estadual of this GrupoEconomicoResponse.
         :rtype: str
@@ -224,7 +227,7 @@ class GrupoEconomicoResponse(object):
     def inscricao_estadual(self, inscricao_estadual):
         """
         Sets the inscricao_estadual of this GrupoEconomicoResponse.
-        N\u00C3\u00BAmero da inscri\u00C3\u00A7\u00C3\u00A3o estadual
+        N\u00FAmero da inscri\u00E7\u00E3o estadual
 
         :param inscricao_estadual: The inscricao_estadual of this GrupoEconomicoResponse.
         :type: str
@@ -257,7 +260,7 @@ class GrupoEconomicoResponse(object):
     def banco(self):
         """
         Gets the banco of this GrupoEconomicoResponse.
-        C\u00C3\u00B3digo do banco
+        C\u00F3digo do banco
 
         :return: The banco of this GrupoEconomicoResponse.
         :rtype: int
@@ -268,7 +271,7 @@ class GrupoEconomicoResponse(object):
     def banco(self, banco):
         """
         Sets the banco of this GrupoEconomicoResponse.
-        C\u00C3\u00B3digo do banco
+        C\u00F3digo do banco
 
         :param banco: The banco of this GrupoEconomicoResponse.
         :type: int
@@ -279,7 +282,7 @@ class GrupoEconomicoResponse(object):
     def agencia(self):
         """
         Gets the agencia of this GrupoEconomicoResponse.
-        C\u00C3\u00B3digo da ag\u00C3\u00AAncia
+        C\u00F3digo da ag\u00EAncia
 
         :return: The agencia of this GrupoEconomicoResponse.
         :rtype: int
@@ -290,7 +293,7 @@ class GrupoEconomicoResponse(object):
     def agencia(self, agencia):
         """
         Sets the agencia of this GrupoEconomicoResponse.
-        C\u00C3\u00B3digo da ag\u00C3\u00AAncia
+        C\u00F3digo da ag\u00EAncia
 
         :param agencia: The agencia of this GrupoEconomicoResponse.
         :type: int
@@ -301,7 +304,7 @@ class GrupoEconomicoResponse(object):
     def digito_agencia(self):
         """
         Gets the digito_agencia of this GrupoEconomicoResponse.
-        D\u00C3\u00ADgito verificador da ag\u00C3\u00AAncia
+        D\u00EDgito verificador da ag\u00EAncia
 
         :return: The digito_agencia of this GrupoEconomicoResponse.
         :rtype: str
@@ -312,7 +315,7 @@ class GrupoEconomicoResponse(object):
     def digito_agencia(self, digito_agencia):
         """
         Sets the digito_agencia of this GrupoEconomicoResponse.
-        D\u00C3\u00ADgito verificador da ag\u00C3\u00AAncia
+        D\u00EDgito verificador da ag\u00EAncia
 
         :param digito_agencia: The digito_agencia of this GrupoEconomicoResponse.
         :type: str
@@ -323,7 +326,7 @@ class GrupoEconomicoResponse(object):
     def conta_corrente(self):
         """
         Gets the conta_corrente of this GrupoEconomicoResponse.
-        C\u00C3\u00B3digo da Conta Corrente
+        C\u00F3digo da Conta Corrente
 
         :return: The conta_corrente of this GrupoEconomicoResponse.
         :rtype: str
@@ -334,7 +337,7 @@ class GrupoEconomicoResponse(object):
     def conta_corrente(self, conta_corrente):
         """
         Sets the conta_corrente of this GrupoEconomicoResponse.
-        C\u00C3\u00B3digo da Conta Corrente
+        C\u00F3digo da Conta Corrente
 
         :param conta_corrente: The conta_corrente of this GrupoEconomicoResponse.
         :type: str
@@ -345,7 +348,7 @@ class GrupoEconomicoResponse(object):
     def digito_conta_corrente(self):
         """
         Gets the digito_conta_corrente of this GrupoEconomicoResponse.
-        D\u00C3\u00ADgito Verificador da Conta Corrente
+        D\u00EDgito Verificador da Conta Corrente
 
         :return: The digito_conta_corrente of this GrupoEconomicoResponse.
         :rtype: str
@@ -356,7 +359,7 @@ class GrupoEconomicoResponse(object):
     def digito_conta_corrente(self, digito_conta_corrente):
         """
         Sets the digito_conta_corrente of this GrupoEconomicoResponse.
-        D\u00C3\u00ADgito Verificador da Conta Corrente
+        D\u00EDgito Verificador da Conta Corrente
 
         :param digito_conta_corrente: The digito_conta_corrente of this GrupoEconomicoResponse.
         :type: str
@@ -367,7 +370,7 @@ class GrupoEconomicoResponse(object):
     def usuario(self):
         """
         Gets the usuario of this GrupoEconomicoResponse.
-        Login do usu\u00C3\u00A1rio para registro da inser\u00C3\u00A7\u00C3\u00A3o
+        Login do usu\u00E1rio para registro da inser\u00E7\u00E3o
 
         :return: The usuario of this GrupoEconomicoResponse.
         :rtype: str
@@ -378,7 +381,7 @@ class GrupoEconomicoResponse(object):
     def usuario(self, usuario):
         """
         Sets the usuario of this GrupoEconomicoResponse.
-        Login do usu\u00C3\u00A1rio para registro da inser\u00C3\u00A7\u00C3\u00A3o
+        Login do usu\u00E1rio para registro da inser\u00E7\u00E3o
 
         :param usuario: The usuario of this GrupoEconomicoResponse.
         :type: str
@@ -572,6 +575,28 @@ class GrupoEconomicoResponse(object):
         :type: int
         """
         self._pagamento_quinzenal_segundo = pagamento_quinzenal_segundo
+
+    @property
+    def id_credor_rav(self):
+        """
+        Gets the id_credor_rav of this GrupoEconomicoResponse.
+        Identificador do credor RAV
+
+        :return: The id_credor_rav of this GrupoEconomicoResponse.
+        :rtype: int
+        """
+        return self._id_credor_rav
+
+    @id_credor_rav.setter
+    def id_credor_rav(self, id_credor_rav):
+        """
+        Sets the id_credor_rav of this GrupoEconomicoResponse.
+        Identificador do credor RAV
+
+        :param id_credor_rav: The id_credor_rav of this GrupoEconomicoResponse.
+        :type: int
+        """
+        self._id_credor_rav = id_credor_rav
 
     @property
     def percentual_rav(self):

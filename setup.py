@@ -4,7 +4,7 @@ import sys
 from setuptools import setup, find_packages
 
 NAME = "br.com.conductor.pier.api.v2"
-VERSION = "2.54.5"
+VERSION = "2.57.0"
 
 
 
@@ -28,7 +28,7 @@ setup(
     packages=find_packages(),
     include_package_data=True,
     long_description="""\
-    Gest\u00C3\u00A3o de pagamento eletr\u00C3\u00B4nicos como servi\u00C3\u00A7o
+    Gest\u00E3o de pagamento eletr\u00F4nicos como servi\u00E7o
     """
 )
 

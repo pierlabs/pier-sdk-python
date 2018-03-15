@@ -92,7 +92,7 @@ class ConfiguracaoRegistroCobrancaResponse(object):
     def id(self):
         """
         Gets the id of this ConfiguracaoRegistroCobrancaResponse.
-        C\u00C3\u00B3digo identificador da configura\u00C3\u00A7\u00C3\u00A3o.
+        C\u00F3digo identificador da configura\u00E7\u00E3o.
 
         :return: The id of this ConfiguracaoRegistroCobrancaResponse.
         :rtype: int
@@ -103,7 +103,7 @@ class ConfiguracaoRegistroCobrancaResponse(object):
     def id(self, id):
         """
         Sets the id of this ConfiguracaoRegistroCobrancaResponse.
-        C\u00C3\u00B3digo identificador da configura\u00C3\u00A7\u00C3\u00A3o.
+        C\u00F3digo identificador da configura\u00E7\u00E3o.
 
         :param id: The id of this ConfiguracaoRegistroCobrancaResponse.
         :type: int
@@ -114,7 +114,7 @@ class ConfiguracaoRegistroCobrancaResponse(object):
     def id_emissor(self):
         """
         Gets the id_emissor of this ConfiguracaoRegistroCobrancaResponse.
-        C\u00C3\u00B3digo do emissor.
+        C\u00F3digo do emissor.
 
         :return: The id_emissor of this ConfiguracaoRegistroCobrancaResponse.
         :rtype: int
@@ -125,7 +125,7 @@ class ConfiguracaoRegistroCobrancaResponse(object):
     def id_emissor(self, id_emissor):
         """
         Sets the id_emissor of this ConfiguracaoRegistroCobrancaResponse.
-        C\u00C3\u00B3digo do emissor.
+        C\u00F3digo do emissor.
 
         :param id_emissor: The id_emissor of this ConfiguracaoRegistroCobrancaResponse.
         :type: int
@@ -136,7 +136,7 @@ class ConfiguracaoRegistroCobrancaResponse(object):
     def codigo_banco(self):
         """
         Gets the codigo_banco of this ConfiguracaoRegistroCobrancaResponse.
-        C\u00C3\u00B3digo do Banco.
+        C\u00F3digo do Banco.
 
         :return: The codigo_banco of this ConfiguracaoRegistroCobrancaResponse.
         :rtype: int
@@ -147,7 +147,7 @@ class ConfiguracaoRegistroCobrancaResponse(object):
     def codigo_banco(self, codigo_banco):
         """
         Sets the codigo_banco of this ConfiguracaoRegistroCobrancaResponse.
-        C\u00C3\u00B3digo do Banco.
+        C\u00F3digo do Banco.
 
         :param codigo_banco: The codigo_banco of this ConfiguracaoRegistroCobrancaResponse.
         :type: int
@@ -400,7 +400,7 @@ class ConfiguracaoRegistroCobrancaResponse(object):
     def status(self):
         """
         Gets the status of this ConfiguracaoRegistroCobrancaResponse.
-        Status indicador se a configura\u00C3\u00A7\u00C3\u00A3o est\u00C3\u00A1 ativa.
+        Status indicador se a configura\u00E7\u00E3o est\u00E1 ativa.
 
         :return: The status of this ConfiguracaoRegistroCobrancaResponse.
         :rtype: str
@@ -411,7 +411,7 @@ class ConfiguracaoRegistroCobrancaResponse(object):
     def status(self, status):
         """
         Sets the status of this ConfiguracaoRegistroCobrancaResponse.
-        Status indicador se a configura\u00C3\u00A7\u00C3\u00A3o est\u00C3\u00A1 ativa.
+        Status indicador se a configura\u00E7\u00E3o est\u00E1 ativa.
 
         :param status: The status of this ConfiguracaoRegistroCobrancaResponse.
         :type: str

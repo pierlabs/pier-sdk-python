@@ -107,7 +107,7 @@ class AdicionalDetalheResponse(object):
     def id_conta(self):
         """
         Gets the id_conta of this AdicionalDetalheResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da Conta para cadastro do Adicional
+        C\u00F3digo de identifica\u00E7\u00E3o da Conta para cadastro do Adicional
 
         :return: The id_conta of this AdicionalDetalheResponse.
         :rtype: int
@@ -118,7 +118,7 @@ class AdicionalDetalheResponse(object):
     def id_conta(self, id_conta):
         """
         Sets the id_conta of this AdicionalDetalheResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da Conta para cadastro do Adicional
+        C\u00F3digo de identifica\u00E7\u00E3o da Conta para cadastro do Adicional
 
         :param id_conta: The id_conta of this AdicionalDetalheResponse.
         :type: int
@@ -129,7 +129,7 @@ class AdicionalDetalheResponse(object):
     def id_pessoa(self):
         """
         Gets the id_pessoa of this AdicionalDetalheResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da Pessoa Adicional
+        C\u00F3digo de identifica\u00E7\u00E3o da Pessoa Adicional
 
         :return: The id_pessoa of this AdicionalDetalheResponse.
         :rtype: int
@@ -140,7 +140,7 @@ class AdicionalDetalheResponse(object):
     def id_pessoa(self, id_pessoa):
         """
         Sets the id_pessoa of this AdicionalDetalheResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da Pessoa Adicional
+        C\u00F3digo de identifica\u00E7\u00E3o da Pessoa Adicional
 
         :param id_pessoa: The id_pessoa of this AdicionalDetalheResponse.
         :type: int
@@ -173,7 +173,7 @@ class AdicionalDetalheResponse(object):
     def nome_impresso(self):
         """
         Gets the nome_impresso of this AdicionalDetalheResponse.
-        Nome do Adicional que ser\u00C3\u00A1 gravado no Cart\u00C3\u00A3o
+        Nome do Adicional que ser\u00E1 gravado no Cart\u00E3o
 
         :return: The nome_impresso of this AdicionalDetalheResponse.
         :rtype: str
@@ -184,7 +184,7 @@ class AdicionalDetalheResponse(object):
     def nome_impresso(self, nome_impresso):
         """
         Sets the nome_impresso of this AdicionalDetalheResponse.
-        Nome do Adicional que ser\u00C3\u00A1 gravado no Cart\u00C3\u00A3o
+        Nome do Adicional que ser\u00E1 gravado no Cart\u00E3o
 
         :param nome_impresso: The nome_impresso of this AdicionalDetalheResponse.
         :type: str
@@ -195,7 +195,7 @@ class AdicionalDetalheResponse(object):
     def numero_receita_federal(self):
         """
         Gets the numero_receita_federal of this AdicionalDetalheResponse.
-        N\u00C3\u00BAmero do CPF ou CNPJ do Adicional
+        N\u00FAmero do CPF ou CNPJ do Adicional
 
         :return: The numero_receita_federal of this AdicionalDetalheResponse.
         :rtype: str
@@ -206,7 +206,7 @@ class AdicionalDetalheResponse(object):
     def numero_receita_federal(self, numero_receita_federal):
         """
         Sets the numero_receita_federal of this AdicionalDetalheResponse.
-        N\u00C3\u00BAmero do CPF ou CNPJ do Adicional
+        N\u00FAmero do CPF ou CNPJ do Adicional
 
         :param numero_receita_federal: The numero_receita_federal of this AdicionalDetalheResponse.
         :type: str
@@ -239,7 +239,7 @@ class AdicionalDetalheResponse(object):
     def sexo(self):
         """
         Gets the sexo of this AdicionalDetalheResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do sexo da Pessoa, quando PF, sendo: (\"M\": Masculino), (\"F\": Feminino), (\"O\": Outro), (\"N\": N\u00C3\u00A3o Especificado).
+        C\u00F3digo de identifica\u00E7\u00E3o do sexo da Pessoa, quando PF, sendo: (\"M\": Masculino), (\"F\": Feminino), (\"O\": Outro), (\"N\": N\u00E3o Especificado).
 
         :return: The sexo of this AdicionalDetalheResponse.
         :rtype: str
@@ -250,7 +250,7 @@ class AdicionalDetalheResponse(object):
     def sexo(self, sexo):
         """
         Sets the sexo of this AdicionalDetalheResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do sexo da Pessoa, quando PF, sendo: (\"M\": Masculino), (\"F\": Feminino), (\"O\": Outro), (\"N\": N\u00C3\u00A3o Especificado).
+        C\u00F3digo de identifica\u00E7\u00E3o do sexo da Pessoa, quando PF, sendo: (\"M\": Masculino), (\"F\": Feminino), (\"O\": Outro), (\"N\": N\u00E3o Especificado).
 
         :param sexo: The sexo of this AdicionalDetalheResponse.
         :type: str
@@ -261,7 +261,7 @@ class AdicionalDetalheResponse(object):
     def numero_identidade(self):
         """
         Gets the numero_identidade of this AdicionalDetalheResponse.
-        N\u00C3\u00BAmero do Documento de Identidade do Adicional
+        N\u00FAmero do Documento de Identidade do Adicional
 
         :return: The numero_identidade of this AdicionalDetalheResponse.
         :rtype: str
@@ -272,7 +272,7 @@ class AdicionalDetalheResponse(object):
     def numero_identidade(self, numero_identidade):
         """
         Sets the numero_identidade of this AdicionalDetalheResponse.
-        N\u00C3\u00BAmero do Documento de Identidade do Adicional
+        N\u00FAmero do Documento de Identidade do Adicional
 
         :param numero_identidade: The numero_identidade of this AdicionalDetalheResponse.
         :type: str
@@ -283,7 +283,7 @@ class AdicionalDetalheResponse(object):
     def orgao_expedidor_identidade(self):
         """
         Gets the orgao_expedidor_identidade of this AdicionalDetalheResponse.
-        Nome do Org\u00C3\u00A3o Emissor do Documento de Identidade do Adicional
+        Nome do Org\u00E3o Emissor do Documento de Identidade do Adicional
 
         :return: The orgao_expedidor_identidade of this AdicionalDetalheResponse.
         :rtype: str
@@ -294,7 +294,7 @@ class AdicionalDetalheResponse(object):
     def orgao_expedidor_identidade(self, orgao_expedidor_identidade):
         """
         Sets the orgao_expedidor_identidade of this AdicionalDetalheResponse.
-        Nome do Org\u00C3\u00A3o Emissor do Documento de Identidade do Adicional
+        Nome do Org\u00E3o Emissor do Documento de Identidade do Adicional
 
         :param orgao_expedidor_identidade: The orgao_expedidor_identidade of this AdicionalDetalheResponse.
         :type: str
@@ -327,7 +327,7 @@ class AdicionalDetalheResponse(object):
     def data_emissao_identidade(self):
         """
         Gets the data_emissao_identidade of this AdicionalDetalheResponse.
-        Data de emiss\u00C3\u00A3o do Documento de Identidade do Adicional
+        Data de emiss\u00E3o do Documento de Identidade do Adicional
 
         :return: The data_emissao_identidade of this AdicionalDetalheResponse.
         :rtype: str
@@ -338,7 +338,7 @@ class AdicionalDetalheResponse(object):
     def data_emissao_identidade(self, data_emissao_identidade):
         """
         Sets the data_emissao_identidade of this AdicionalDetalheResponse.
-        Data de emiss\u00C3\u00A3o do Documento de Identidade do Adicional
+        Data de emiss\u00E3o do Documento de Identidade do Adicional
 
         :param data_emissao_identidade: The data_emissao_identidade of this AdicionalDetalheResponse.
         :type: str
@@ -349,7 +349,7 @@ class AdicionalDetalheResponse(object):
     def id_estado_civil(self):
         """
         Gets the id_estado_civil of this AdicionalDetalheResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do Estado Civil do Adicional
+        C\u00F3digo de identifica\u00E7\u00E3o do Estado Civil do Adicional
 
         :return: The id_estado_civil of this AdicionalDetalheResponse.
         :rtype: int
@@ -360,7 +360,7 @@ class AdicionalDetalheResponse(object):
     def id_estado_civil(self, id_estado_civil):
         """
         Sets the id_estado_civil of this AdicionalDetalheResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do Estado Civil do Adicional
+        C\u00F3digo de identifica\u00E7\u00E3o do Estado Civil do Adicional
 
         :param id_estado_civil: The id_estado_civil of this AdicionalDetalheResponse.
         :type: int
@@ -371,7 +371,7 @@ class AdicionalDetalheResponse(object):
     def id_profissao(self):
         """
         Gets the id_profissao of this AdicionalDetalheResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da Profissao do Adicional
+        C\u00F3digo de identifica\u00E7\u00E3o da Profissao do Adicional
 
         :return: The id_profissao of this AdicionalDetalheResponse.
         :rtype: int
@@ -382,7 +382,7 @@ class AdicionalDetalheResponse(object):
     def id_profissao(self, id_profissao):
         """
         Sets the id_profissao of this AdicionalDetalheResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da Profissao do Adicional
+        C\u00F3digo de identifica\u00E7\u00E3o da Profissao do Adicional
 
         :param id_profissao: The id_profissao of this AdicionalDetalheResponse.
         :type: int
@@ -393,7 +393,7 @@ class AdicionalDetalheResponse(object):
     def id_nacionalidade(self):
         """
         Gets the id_nacionalidade of this AdicionalDetalheResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da Nacionalidade do Adicional
+        C\u00F3digo de identifica\u00E7\u00E3o da Nacionalidade do Adicional
 
         :return: The id_nacionalidade of this AdicionalDetalheResponse.
         :rtype: int
@@ -404,7 +404,7 @@ class AdicionalDetalheResponse(object):
     def id_nacionalidade(self, id_nacionalidade):
         """
         Sets the id_nacionalidade of this AdicionalDetalheResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da Nacionalidade do Adicional
+        C\u00F3digo de identifica\u00E7\u00E3o da Nacionalidade do Adicional
 
         :param id_nacionalidade: The id_nacionalidade of this AdicionalDetalheResponse.
         :type: int
@@ -415,7 +415,7 @@ class AdicionalDetalheResponse(object):
     def id_parentesco(self):
         """
         Gets the id_parentesco of this AdicionalDetalheResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do Parentesco do Adicional com o Titular
+        C\u00F3digo de identifica\u00E7\u00E3o do Parentesco do Adicional com o Titular
 
         :return: The id_parentesco of this AdicionalDetalheResponse.
         :rtype: int
@@ -426,7 +426,7 @@ class AdicionalDetalheResponse(object):
     def id_parentesco(self, id_parentesco):
         """
         Sets the id_parentesco of this AdicionalDetalheResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do Parentesco do Adicional com o Titular
+        C\u00F3digo de identifica\u00E7\u00E3o do Parentesco do Adicional com o Titular
 
         :param id_parentesco: The id_parentesco of this AdicionalDetalheResponse.
         :type: int
@@ -437,7 +437,7 @@ class AdicionalDetalheResponse(object):
     def email(self):
         """
         Gets the email of this AdicionalDetalheResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do Parentesco do Adicional com o Titular
+        C\u00F3digo de identifica\u00E7\u00E3o do Parentesco do Adicional com o Titular
 
         :return: The email of this AdicionalDetalheResponse.
         :rtype: str
@@ -448,7 +448,7 @@ class AdicionalDetalheResponse(object):
     def email(self, email):
         """
         Sets the email of this AdicionalDetalheResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do Parentesco do Adicional com o Titular
+        C\u00F3digo de identifica\u00E7\u00E3o do Parentesco do Adicional com o Titular
 
         :param email: The email of this AdicionalDetalheResponse.
         :type: str
@@ -459,7 +459,7 @@ class AdicionalDetalheResponse(object):
     def flag_ativo(self):
         """
         Gets the flag_ativo of this AdicionalDetalheResponse.
-        Indica se o adicional est\u00C3\u00A1 ativo = 1 ou inativo = 0
+        Indica se o adicional est\u00E1 ativo = 1 ou inativo = 0
 
         :return: The flag_ativo of this AdicionalDetalheResponse.
         :rtype: int
@@ -470,7 +470,7 @@ class AdicionalDetalheResponse(object):
     def flag_ativo(self, flag_ativo):
         """
         Sets the flag_ativo of this AdicionalDetalheResponse.
-        Indica se o adicional est\u00C3\u00A1 ativo = 1 ou inativo = 0
+        Indica se o adicional est\u00E1 ativo = 1 ou inativo = 0
 
         :param flag_ativo: The flag_ativo of this AdicionalDetalheResponse.
         :type: int

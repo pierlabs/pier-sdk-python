@@ -48,7 +48,7 @@ class ServicoContaApi(object):
     def ativar_anuidade_using_post(self, id, id_anuidade, **kwargs):
         """
         Atribuir Anuidade
-        Esse recurso permite configurar qual a regra de Anuidade que ser\u00C3\u00A1 atribu\u00C3\u00ADda a uma determinada Conta.
+        Esse recurso permite configurar qual a regra de Anuidade que ser\u00E1 atribu\u00EDda a uma determinada Conta.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -60,13 +60,13 @@ class ServicoContaApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param int id: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da conta (id). (required)
+        :param int id: C\u00F3digo de identifica\u00E7\u00E3o da conta (id). (required)
         :param int id_anuidade: Identificador da anuidade (required)
-        :param list[str] sort: Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
-        :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
-        :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
+        :param list[str] sort: Tipo de ordena\u00E7\u00E3o dos registros.
+        :param int page: P\u00E1gina solicitada (Default = 0)
+        :param int limit: Limite de elementos por solicita\u00E7\u00E3o (Default = 50, Max = 50)
         :param str ddd: DDD do celular
-        :param str celular: N\u00C3\u00BAmero do celular
+        :param str celular: N\u00FAmero do celular
         :param int id_operadora: Identificador da operadora do celular
         :param int id_origem_comercial: Identificador da origem comercial
         :return: object
@@ -151,8 +151,8 @@ class ServicoContaApi(object):
 
     def ativar_envio_fatura_email_using_post(self, id, **kwargs):
         """
-         Ativa o servi\u00C3\u00A7o de envio de fatura por email
-        Este recurso ativa o servi\u00C3\u00A7o de envio de fatura por email
+         Ativa o servi\u00E7o de envio de fatura por email
+        Este recurso ativa o servi\u00E7o de envio de fatura por email
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -164,7 +164,7 @@ class ServicoContaApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param int id: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da conta (id). (required)
+        :param int id: C\u00F3digo de identifica\u00E7\u00E3o da conta (id). (required)
         :return: object
                  If the method is called asynchronously,
                  returns the request thread.
@@ -228,8 +228,8 @@ class ServicoContaApi(object):
 
     def desativar_envio_fatura_email_using_post(self, id, **kwargs):
         """
-        Desativa o servi\u00C3\u00A7o de envio de fatura por email
-        Este recurso desativa o servi\u00C3\u00A7o de envio de fatura por email
+        Desativa o servi\u00E7o de envio de fatura por email
+        Este recurso desativa o servi\u00E7o de envio de fatura por email
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -241,7 +241,7 @@ class ServicoContaApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param int id: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da conta (id). (required)
+        :param int id: C\u00F3digo de identifica\u00E7\u00E3o da conta (id). (required)
         :return: object
                  If the method is called asynchronously,
                  returns the request thread.
@@ -318,9 +318,9 @@ class ServicoContaApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param list[str] sort: Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
-        :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
-        :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
+        :param list[str] sort: Tipo de ordena\u00E7\u00E3o dos registros.
+        :param int page: P\u00E1gina solicitada (Default = 0)
+        :param int limit: Limite de elementos por solicita\u00E7\u00E3o (Default = 50, Max = 50)
         :return: PageAnuidadeResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -398,9 +398,9 @@ class ServicoContaApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param list[str] sort: Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
-        :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
-        :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
+        :param list[str] sort: Tipo de ordena\u00E7\u00E3o dos registros.
+        :param int page: P\u00E1gina solicitada (Default = 0)
+        :param int limit: Limite de elementos por solicita\u00E7\u00E3o (Default = 50, Max = 50)
         :return: PageOperadoraResponse
                  If the method is called asynchronously,
                  returns the request thread.

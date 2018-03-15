@@ -38,31 +38,40 @@ class TransferenciaCreditoContaBancariaListaResponse(object):
         """
         self.swagger_types = {
             'id_transferencia': 'int',
+            'id_conta': 'int',
+            'id_cartao': 'int',
             'valor_compra': 'float',
             'valor_contrato': 'float',
             'data_compra': 'str',
+            'status': 'int',
             'status_processamento': 'str'
         }
 
         self.attribute_map = {
             'id_transferencia': 'idTransferencia',
+            'id_conta': 'idConta',
+            'id_cartao': 'idCartao',
             'valor_compra': 'valorCompra',
             'valor_contrato': 'valorContrato',
             'data_compra': 'dataCompra',
+            'status': 'status',
             'status_processamento': 'statusProcessamento'
         }
 
         self._id_transferencia = None
+        self._id_conta = None
+        self._id_cartao = None
         self._valor_compra = None
         self._valor_contrato = None
         self._data_compra = None
+        self._status = None
         self._status_processamento = None
 
     @property
     def id_transferencia(self):
         """
         Gets the id_transferencia of this TransferenciaCreditoContaBancariaListaResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da transferencia.
+        C\u00F3digo de identifica\u00E7\u00E3o da transferencia.
 
         :return: The id_transferencia of this TransferenciaCreditoContaBancariaListaResponse.
         :rtype: int
@@ -73,7 +82,7 @@ class TransferenciaCreditoContaBancariaListaResponse(object):
     def id_transferencia(self, id_transferencia):
         """
         Sets the id_transferencia of this TransferenciaCreditoContaBancariaListaResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da transferencia.
+        C\u00F3digo de identifica\u00E7\u00E3o da transferencia.
 
         :param id_transferencia: The id_transferencia of this TransferenciaCreditoContaBancariaListaResponse.
         :type: int
@@ -81,10 +90,54 @@ class TransferenciaCreditoContaBancariaListaResponse(object):
         self._id_transferencia = id_transferencia
 
     @property
+    def id_conta(self):
+        """
+        Gets the id_conta of this TransferenciaCreditoContaBancariaListaResponse.
+        C\u00F3digo de identifica\u00E7\u00E3o da conta.
+
+        :return: The id_conta of this TransferenciaCreditoContaBancariaListaResponse.
+        :rtype: int
+        """
+        return self._id_conta
+
+    @id_conta.setter
+    def id_conta(self, id_conta):
+        """
+        Sets the id_conta of this TransferenciaCreditoContaBancariaListaResponse.
+        C\u00F3digo de identifica\u00E7\u00E3o da conta.
+
+        :param id_conta: The id_conta of this TransferenciaCreditoContaBancariaListaResponse.
+        :type: int
+        """
+        self._id_conta = id_conta
+
+    @property
+    def id_cartao(self):
+        """
+        Gets the id_cartao of this TransferenciaCreditoContaBancariaListaResponse.
+        C\u00F3digo de identifica\u00E7\u00E3o do cart\u00E3o.
+
+        :return: The id_cartao of this TransferenciaCreditoContaBancariaListaResponse.
+        :rtype: int
+        """
+        return self._id_cartao
+
+    @id_cartao.setter
+    def id_cartao(self, id_cartao):
+        """
+        Sets the id_cartao of this TransferenciaCreditoContaBancariaListaResponse.
+        C\u00F3digo de identifica\u00E7\u00E3o do cart\u00E3o.
+
+        :param id_cartao: The id_cartao of this TransferenciaCreditoContaBancariaListaResponse.
+        :type: int
+        """
+        self._id_cartao = id_cartao
+
+    @property
     def valor_compra(self):
         """
         Gets the valor_compra of this TransferenciaCreditoContaBancariaListaResponse.
-        Valor da transfer\u00C3\u00AAncia.
+        Valor da transfer\u00EAncia.
 
         :return: The valor_compra of this TransferenciaCreditoContaBancariaListaResponse.
         :rtype: float
@@ -95,7 +148,7 @@ class TransferenciaCreditoContaBancariaListaResponse(object):
     def valor_compra(self, valor_compra):
         """
         Sets the valor_compra of this TransferenciaCreditoContaBancariaListaResponse.
-        Valor da transfer\u00C3\u00AAncia.
+        Valor da transfer\u00EAncia.
 
         :param valor_compra: The valor_compra of this TransferenciaCreditoContaBancariaListaResponse.
         :type: float
@@ -106,7 +159,7 @@ class TransferenciaCreditoContaBancariaListaResponse(object):
     def valor_contrato(self):
         """
         Gets the valor_contrato of this TransferenciaCreditoContaBancariaListaResponse.
-        Valor da transfer\u00C3\u00AAncia acrescido do valor da tarifa de saque se houver tarifa de saque.
+        Valor da transfer\u00EAncia acrescido do valor da tarifa de saque se houver tarifa de saque.
 
         :return: The valor_contrato of this TransferenciaCreditoContaBancariaListaResponse.
         :rtype: float
@@ -117,7 +170,7 @@ class TransferenciaCreditoContaBancariaListaResponse(object):
     def valor_contrato(self, valor_contrato):
         """
         Sets the valor_contrato of this TransferenciaCreditoContaBancariaListaResponse.
-        Valor da transfer\u00C3\u00AAncia acrescido do valor da tarifa de saque se houver tarifa de saque.
+        Valor da transfer\u00EAncia acrescido do valor da tarifa de saque se houver tarifa de saque.
 
         :param valor_contrato: The valor_contrato of this TransferenciaCreditoContaBancariaListaResponse.
         :type: float
@@ -128,7 +181,7 @@ class TransferenciaCreditoContaBancariaListaResponse(object):
     def data_compra(self):
         """
         Gets the data_compra of this TransferenciaCreditoContaBancariaListaResponse.
-        Data da transfer\u00C3\u00AAncia.
+        Data da transfer\u00EAncia.
 
         :return: The data_compra of this TransferenciaCreditoContaBancariaListaResponse.
         :rtype: str
@@ -139,12 +192,34 @@ class TransferenciaCreditoContaBancariaListaResponse(object):
     def data_compra(self, data_compra):
         """
         Sets the data_compra of this TransferenciaCreditoContaBancariaListaResponse.
-        Data da transfer\u00C3\u00AAncia.
+        Data da transfer\u00EAncia.
 
         :param data_compra: The data_compra of this TransferenciaCreditoContaBancariaListaResponse.
         :type: str
         """
         self._data_compra = data_compra
+
+    @property
+    def status(self):
+        """
+        Gets the status of this TransferenciaCreditoContaBancariaListaResponse.
+        C\u00F3digo de status de processamento.
+
+        :return: The status of this TransferenciaCreditoContaBancariaListaResponse.
+        :rtype: int
+        """
+        return self._status
+
+    @status.setter
+    def status(self, status):
+        """
+        Sets the status of this TransferenciaCreditoContaBancariaListaResponse.
+        C\u00F3digo de status de processamento.
+
+        :param status: The status of this TransferenciaCreditoContaBancariaListaResponse.
+        :type: int
+        """
+        self._status = status
 
     @property
     def status_processamento(self):

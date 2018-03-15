@@ -80,7 +80,7 @@ class CancelamentoTransacaoOnUsRequest(object):
     def nsu_autorizacao_transacao_cancelada(self):
         """
         Gets the nsu_autorizacao_transacao_cancelada of this CancelamentoTransacaoOnUsRequest.
-        N\u00C3\u00BAmero Sequencial \u00C3\u009Anico do HOST que identifica a transa\u00C3\u00A7\u00C3\u00A3o no sistema que autorizou.
+        N\u00FAmero Sequencial \u00DAnico do HOST que identifica a transa\u00E7\u00E3o no sistema que autorizou.
 
         :return: The nsu_autorizacao_transacao_cancelada of this CancelamentoTransacaoOnUsRequest.
         :rtype: str
@@ -91,7 +91,7 @@ class CancelamentoTransacaoOnUsRequest(object):
     def nsu_autorizacao_transacao_cancelada(self, nsu_autorizacao_transacao_cancelada):
         """
         Sets the nsu_autorizacao_transacao_cancelada of this CancelamentoTransacaoOnUsRequest.
-        N\u00C3\u00BAmero Sequencial \u00C3\u009Anico do HOST que identifica a transa\u00C3\u00A7\u00C3\u00A3o no sistema que autorizou.
+        N\u00FAmero Sequencial \u00DAnico do HOST que identifica a transa\u00E7\u00E3o no sistema que autorizou.
 
         :param nsu_autorizacao_transacao_cancelada: The nsu_autorizacao_transacao_cancelada of this CancelamentoTransacaoOnUsRequest.
         :type: str
@@ -102,7 +102,7 @@ class CancelamentoTransacaoOnUsRequest(object):
     def nsu_origem(self):
         """
         Gets the nsu_origem of this CancelamentoTransacaoOnUsRequest.
-        N\u00C3\u00BAmero Sequencial \u00C3\u009Anico que identifica a transa\u00C3\u00A7\u00C3\u00A3o no sistema que a originou.
+        N\u00FAmero Sequencial \u00DAnico que identifica a transa\u00E7\u00E3o no sistema que a originou.
 
         :return: The nsu_origem of this CancelamentoTransacaoOnUsRequest.
         :rtype: str
@@ -113,7 +113,7 @@ class CancelamentoTransacaoOnUsRequest(object):
     def nsu_origem(self, nsu_origem):
         """
         Sets the nsu_origem of this CancelamentoTransacaoOnUsRequest.
-        N\u00C3\u00BAmero Sequencial \u00C3\u009Anico que identifica a transa\u00C3\u00A7\u00C3\u00A3o no sistema que a originou.
+        N\u00FAmero Sequencial \u00DAnico que identifica a transa\u00E7\u00E3o no sistema que a originou.
 
         :param nsu_origem: The nsu_origem of this CancelamentoTransacaoOnUsRequest.
         :type: str
@@ -124,7 +124,7 @@ class CancelamentoTransacaoOnUsRequest(object):
     def nsu_origem_transacao_cancelada(self):
         """
         Gets the nsu_origem_transacao_cancelada of this CancelamentoTransacaoOnUsRequest.
-        N\u00C3\u00BAmero Sequencial \u00C3\u009Anico que identifica a transa\u00C3\u00A7\u00C3\u00A3o no sistema a ser cancelada.
+        N\u00FAmero Sequencial \u00DAnico que identifica a transa\u00E7\u00E3o no sistema a ser cancelada.
 
         :return: The nsu_origem_transacao_cancelada of this CancelamentoTransacaoOnUsRequest.
         :rtype: str
@@ -135,7 +135,7 @@ class CancelamentoTransacaoOnUsRequest(object):
     def nsu_origem_transacao_cancelada(self, nsu_origem_transacao_cancelada):
         """
         Sets the nsu_origem_transacao_cancelada of this CancelamentoTransacaoOnUsRequest.
-        N\u00C3\u00BAmero Sequencial \u00C3\u009Anico que identifica a transa\u00C3\u00A7\u00C3\u00A3o no sistema a ser cancelada.
+        N\u00FAmero Sequencial \u00DAnico que identifica a transa\u00E7\u00E3o no sistema a ser cancelada.
 
         :param nsu_origem_transacao_cancelada: The nsu_origem_transacao_cancelada of this CancelamentoTransacaoOnUsRequest.
         :type: str
@@ -146,7 +146,7 @@ class CancelamentoTransacaoOnUsRequest(object):
     def codigo_processamento(self):
         """
         Gets the codigo_processamento of this CancelamentoTransacaoOnUsRequest.
-        C\u00C3\u00B3digo de Processamento que identifica o Tipo da Transa\u00C3\u00A7\u00C3\u00A3o.
+        C\u00F3digo de Processamento que identifica o Tipo da Transa\u00E7\u00E3o.
 
         :return: The codigo_processamento of this CancelamentoTransacaoOnUsRequest.
         :rtype: str
@@ -157,7 +157,7 @@ class CancelamentoTransacaoOnUsRequest(object):
     def codigo_processamento(self, codigo_processamento):
         """
         Sets the codigo_processamento of this CancelamentoTransacaoOnUsRequest.
-        C\u00C3\u00B3digo de Processamento que identifica o Tipo da Transa\u00C3\u00A7\u00C3\u00A3o.
+        C\u00F3digo de Processamento que identifica o Tipo da Transa\u00E7\u00E3o.
 
         :param codigo_processamento: The codigo_processamento of this CancelamentoTransacaoOnUsRequest.
         :type: str
@@ -168,7 +168,7 @@ class CancelamentoTransacaoOnUsRequest(object):
     def data_hora_transacao_cancelada(self):
         """
         Gets the data_hora_transacao_cancelada of this CancelamentoTransacaoOnUsRequest.
-        Apresenta a data e hora local da transa\u00C3\u00A7\u00C3\u00A3o a ser cancelada yyyy-MM-dd'T'HH:mm:ss.SSSZ. Ex: 2000-10-31T01:30:00.000-05:00
+        Apresenta a data e hora local da transa\u00E7\u00E3o a ser cancelada yyyy-MM-dd'T'HH:mm:ss.SSSZ. Ex: 2000-10-31T01:30:00.000-05:00
 
         :return: The data_hora_transacao_cancelada of this CancelamentoTransacaoOnUsRequest.
         :rtype: str
@@ -179,7 +179,7 @@ class CancelamentoTransacaoOnUsRequest(object):
     def data_hora_transacao_cancelada(self, data_hora_transacao_cancelada):
         """
         Sets the data_hora_transacao_cancelada of this CancelamentoTransacaoOnUsRequest.
-        Apresenta a data e hora local da transa\u00C3\u00A7\u00C3\u00A3o a ser cancelada yyyy-MM-dd'T'HH:mm:ss.SSSZ. Ex: 2000-10-31T01:30:00.000-05:00
+        Apresenta a data e hora local da transa\u00E7\u00E3o a ser cancelada yyyy-MM-dd'T'HH:mm:ss.SSSZ. Ex: 2000-10-31T01:30:00.000-05:00
 
         :param data_hora_transacao_cancelada: The data_hora_transacao_cancelada of this CancelamentoTransacaoOnUsRequest.
         :type: str
@@ -190,7 +190,7 @@ class CancelamentoTransacaoOnUsRequest(object):
     def valor_transacao(self):
         """
         Gets the valor_transacao of this CancelamentoTransacaoOnUsRequest.
-        Valor da transa\u00C3\u00A7\u00C3\u00A3o com duas casas decimais para os centavos.
+        Valor da transa\u00E7\u00E3o com duas casas decimais para os centavos.
 
         :return: The valor_transacao of this CancelamentoTransacaoOnUsRequest.
         :rtype: float
@@ -201,7 +201,7 @@ class CancelamentoTransacaoOnUsRequest(object):
     def valor_transacao(self, valor_transacao):
         """
         Sets the valor_transacao of this CancelamentoTransacaoOnUsRequest.
-        Valor da transa\u00C3\u00A7\u00C3\u00A3o com duas casas decimais para os centavos.
+        Valor da transa\u00E7\u00E3o com duas casas decimais para os centavos.
 
         :param valor_transacao: The valor_transacao of this CancelamentoTransacaoOnUsRequest.
         :type: float
@@ -212,7 +212,7 @@ class CancelamentoTransacaoOnUsRequest(object):
     def numero_real_cartao(self):
         """
         Gets the numero_real_cartao of this CancelamentoTransacaoOnUsRequest.
-        N\u00C3\u00BAmero Real do Cart\u00C3\u00A3o.
+        N\u00FAmero Real do Cart\u00E3o.
 
         :return: The numero_real_cartao of this CancelamentoTransacaoOnUsRequest.
         :rtype: str
@@ -223,7 +223,7 @@ class CancelamentoTransacaoOnUsRequest(object):
     def numero_real_cartao(self, numero_real_cartao):
         """
         Sets the numero_real_cartao of this CancelamentoTransacaoOnUsRequest.
-        N\u00C3\u00BAmero Real do Cart\u00C3\u00A3o.
+        N\u00FAmero Real do Cart\u00E3o.
 
         :param numero_real_cartao: The numero_real_cartao of this CancelamentoTransacaoOnUsRequest.
         :type: str
@@ -234,7 +234,7 @@ class CancelamentoTransacaoOnUsRequest(object):
     def data_validade_cartao(self):
         """
         Gets the data_validade_cartao of this CancelamentoTransacaoOnUsRequest.
-        Data de Validade do Cart\u00C3\u00A3o. Ex: AAMM
+        Data de Validade do Cart\u00E3o. Ex: AAMM
 
         :return: The data_validade_cartao of this CancelamentoTransacaoOnUsRequest.
         :rtype: str
@@ -245,7 +245,7 @@ class CancelamentoTransacaoOnUsRequest(object):
     def data_validade_cartao(self, data_validade_cartao):
         """
         Sets the data_validade_cartao of this CancelamentoTransacaoOnUsRequest.
-        Data de Validade do Cart\u00C3\u00A3o. Ex: AAMM
+        Data de Validade do Cart\u00E3o. Ex: AAMM
 
         :param data_validade_cartao: The data_validade_cartao of this CancelamentoTransacaoOnUsRequest.
         :type: str
@@ -256,7 +256,7 @@ class CancelamentoTransacaoOnUsRequest(object):
     def numero_estabelecimento(self):
         """
         Gets the numero_estabelecimento of this CancelamentoTransacaoOnUsRequest.
-        N\u00C3\u00BAmero do Estabelecimento (N\u00C3\u00BAmero+DV).
+        N\u00FAmero do Estabelecimento (N\u00FAmero+DV).
 
         :return: The numero_estabelecimento of this CancelamentoTransacaoOnUsRequest.
         :rtype: int
@@ -267,7 +267,7 @@ class CancelamentoTransacaoOnUsRequest(object):
     def numero_estabelecimento(self, numero_estabelecimento):
         """
         Sets the numero_estabelecimento of this CancelamentoTransacaoOnUsRequest.
-        N\u00C3\u00BAmero do Estabelecimento (N\u00C3\u00BAmero+DV).
+        N\u00FAmero do Estabelecimento (N\u00FAmero+DV).
 
         :param numero_estabelecimento: The numero_estabelecimento of this CancelamentoTransacaoOnUsRequest.
         :type: int
@@ -300,7 +300,7 @@ class CancelamentoTransacaoOnUsRequest(object):
     def terminal_requisitante(self):
         """
         Gets the terminal_requisitante of this CancelamentoTransacaoOnUsRequest.
-        Apresenta a identifica\u00C3\u00A7\u00C3\u00A3o do terminal requisitante
+        Apresenta a identifica\u00E7\u00E3o do terminal requisitante
 
         :return: The terminal_requisitante of this CancelamentoTransacaoOnUsRequest.
         :rtype: str
@@ -311,7 +311,7 @@ class CancelamentoTransacaoOnUsRequest(object):
     def terminal_requisitante(self, terminal_requisitante):
         """
         Sets the terminal_requisitante of this CancelamentoTransacaoOnUsRequest.
-        Apresenta a identifica\u00C3\u00A7\u00C3\u00A3o do terminal requisitante
+        Apresenta a identifica\u00E7\u00E3o do terminal requisitante
 
         :param terminal_requisitante: The terminal_requisitante of this CancelamentoTransacaoOnUsRequest.
         :type: str

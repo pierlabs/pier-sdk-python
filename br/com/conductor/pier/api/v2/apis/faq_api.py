@@ -60,12 +60,12 @@ class FAQApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param str pergunta: Conte\u00C3\u00BAdo da pergunta. (required)
-        :param str resposta: Conte\u00C3\u00BAdo da resposta. (required)
-        :param int relevancia: N\u00C3\u00ADvel de relev\u00C3\u00A2ncia da pergunta.
+        :param str pergunta: Conte\u00FAdo da pergunta. (required)
+        :param str resposta: Conte\u00FAdo da resposta. (required)
+        :param int relevancia: N\u00EDvel de relev\u00E2ncia da pergunta.
         :param str plataforma: Plataforma em que a FAQ se encaixa.
         :param str categoria: Categoria de assunto do qual a FAQ se trata.
-        :param str status: Status descrevendo a situa\u00C3\u00A7\u00C3\u00A3o atual da FAQ.
+        :param str status: Status descrevendo a situa\u00E7\u00E3o atual da FAQ.
         :return: FaqResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -156,12 +156,12 @@ class FAQApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int id: Id (required)
-        :param str pergunta: Conte\u00C3\u00BAdo da pergunta. (required)
-        :param str resposta: Conte\u00C3\u00BAdo da resposta. (required)
-        :param int relevancia: N\u00C3\u00ADvel de relev\u00C3\u00A2ncia da pergunta.
+        :param str pergunta: Conte\u00FAdo da pergunta. (required)
+        :param str resposta: Conte\u00FAdo da resposta. (required)
+        :param int relevancia: N\u00EDvel de relev\u00E2ncia da pergunta.
         :param str plataforma: Plataforma em que a FAQ se encaixa.
         :param str categoria: Categoria de assunto do qual a FAQ se trata.
-        :param str status: Status descrevendo a situa\u00C3\u00A7\u00C3\u00A3o atual da FAQ.
+        :param str status: Status descrevendo a situa\u00E7\u00E3o atual da FAQ.
         :return: FaqResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -241,7 +241,7 @@ class FAQApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get17(self, id, **kwargs):
+    def consultar_using_get18(self, id, **kwargs):
         """
         Consultar FAQ por id
         Consulta os detalhes de uma determinada FAQ
@@ -252,7 +252,7 @@ class FAQApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get17(id, callback=callback_function)
+        >>> thread = api.consultar_using_get18(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -270,14 +270,14 @@ class FAQApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get17" % key
+                    " to method consultar_using_get18" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get17`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get18`")
 
         resource_path = '/api/faqs/{id}'.replace('{format}', 'json')
         path_params = {}
@@ -318,7 +318,7 @@ class FAQApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get22(self, **kwargs):
+    def listar_using_get23(self, **kwargs):
         """
         Lista FAQs
         Lista todas as FAQs
@@ -329,20 +329,20 @@ class FAQApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get22(callback=callback_function)
+        >>> thread = api.listar_using_get23(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param list[str] sort: Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
-        :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
-        :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
-        :param int id_faq: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da FAQ (id).
-        :param str pergunta: Conte\u00C3\u00BAdo da pergunta.
-        :param str resposta: Conte\u00C3\u00BAdo da resposta.
-        :param int relevancia: N\u00C3\u00ADvel de relev\u00C3\u00A2ncia da pergunta.
+        :param list[str] sort: Tipo de ordena\u00E7\u00E3o dos registros.
+        :param int page: P\u00E1gina solicitada (Default = 0)
+        :param int limit: Limite de elementos por solicita\u00E7\u00E3o (Default = 50, Max = 50)
+        :param int id_faq: C\u00F3digo de identifica\u00E7\u00E3o da FAQ (id).
+        :param str pergunta: Conte\u00FAdo da pergunta.
+        :param str resposta: Conte\u00FAdo da resposta.
+        :param int relevancia: N\u00EDvel de relev\u00E2ncia da pergunta.
         :param str plataforma: Plataforma em que a FAQ se encaixa.
         :param str categoria: Categoria de assunto do qual a FAQ se trata.
-        :param str status: Status descrevendo a situa\u00C3\u00A7\u00C3\u00A3o atual da FAQ.
+        :param str status: Status descrevendo a situa\u00E7\u00E3o atual da FAQ.
         :return: PageFaqResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -356,7 +356,7 @@ class FAQApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get22" % key
+                    " to method listar_using_get23" % key
                 )
             params[key] = val
         del params['kwargs']

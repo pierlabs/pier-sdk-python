@@ -62,7 +62,7 @@ class RefenciaComercialAprovadoPersist(object):
     def razao_social(self):
         """
         Gets the razao_social of this RefenciaComercialAprovadoPersist.
-        Apresenta o nome completo da raz\u00C3\u00A3o social da refer\u00C3\u00AAncia comercial (nome empresarial)
+        Apresenta o nome completo da raz\u00E3o social da refer\u00EAncia comercial (nome empresarial)
 
         :return: The razao_social of this RefenciaComercialAprovadoPersist.
         :rtype: str
@@ -73,7 +73,7 @@ class RefenciaComercialAprovadoPersist(object):
     def razao_social(self, razao_social):
         """
         Sets the razao_social of this RefenciaComercialAprovadoPersist.
-        Apresenta o nome completo da raz\u00C3\u00A3o social da refer\u00C3\u00AAncia comercial (nome empresarial)
+        Apresenta o nome completo da raz\u00E3o social da refer\u00EAncia comercial (nome empresarial)
 
         :param razao_social: The razao_social of this RefenciaComercialAprovadoPersist.
         :type: str
@@ -84,7 +84,7 @@ class RefenciaComercialAprovadoPersist(object):
     def nome_contrato(self):
         """
         Gets the nome_contrato of this RefenciaComercialAprovadoPersist.
-        Nome do respons\u00C3\u00A1vel pela refer\u00C3\u00AAncia comercial
+        Nome do respons\u00E1vel pela refer\u00EAncia comercial
 
         :return: The nome_contrato of this RefenciaComercialAprovadoPersist.
         :rtype: str
@@ -95,7 +95,7 @@ class RefenciaComercialAprovadoPersist(object):
     def nome_contrato(self, nome_contrato):
         """
         Sets the nome_contrato of this RefenciaComercialAprovadoPersist.
-        Nome do respons\u00C3\u00A1vel pela refer\u00C3\u00AAncia comercial
+        Nome do respons\u00E1vel pela refer\u00EAncia comercial
 
         :param nome_contrato: The nome_contrato of this RefenciaComercialAprovadoPersist.
         :type: str
@@ -106,7 +106,7 @@ class RefenciaComercialAprovadoPersist(object):
     def ddd(self):
         """
         Gets the ddd of this RefenciaComercialAprovadoPersist.
-        DDD do contato da refer\u00C3\u00AAncia comercial
+        DDD do contato da refer\u00EAncia comercial
 
         :return: The ddd of this RefenciaComercialAprovadoPersist.
         :rtype: str
@@ -117,7 +117,7 @@ class RefenciaComercialAprovadoPersist(object):
     def ddd(self, ddd):
         """
         Sets the ddd of this RefenciaComercialAprovadoPersist.
-        DDD do contato da refer\u00C3\u00AAncia comercial
+        DDD do contato da refer\u00EAncia comercial
 
         :param ddd: The ddd of this RefenciaComercialAprovadoPersist.
         :type: str
@@ -128,7 +128,7 @@ class RefenciaComercialAprovadoPersist(object):
     def telefone(self):
         """
         Gets the telefone of this RefenciaComercialAprovadoPersist.
-        N\u00C3\u00BAmero de contato da refer\u00C3\u00AAncia comercial
+        N\u00FAmero de contato da refer\u00EAncia comercial
 
         :return: The telefone of this RefenciaComercialAprovadoPersist.
         :rtype: str
@@ -139,7 +139,7 @@ class RefenciaComercialAprovadoPersist(object):
     def telefone(self, telefone):
         """
         Sets the telefone of this RefenciaComercialAprovadoPersist.
-        N\u00C3\u00BAmero de contato da refer\u00C3\u00AAncia comercial
+        N\u00FAmero de contato da refer\u00EAncia comercial
 
         :param telefone: The telefone of this RefenciaComercialAprovadoPersist.
         :type: str
@@ -150,7 +150,7 @@ class RefenciaComercialAprovadoPersist(object):
     def email(self):
         """
         Gets the email of this RefenciaComercialAprovadoPersist.
-        E-mail de contato da refer\u00C3\u00AAncia comercial
+        E-mail de contato da refer\u00EAncia comercial
 
         :return: The email of this RefenciaComercialAprovadoPersist.
         :rtype: str
@@ -161,7 +161,7 @@ class RefenciaComercialAprovadoPersist(object):
     def email(self, email):
         """
         Sets the email of this RefenciaComercialAprovadoPersist.
-        E-mail de contato da refer\u00C3\u00AAncia comercial
+        E-mail de contato da refer\u00EAncia comercial
 
         :param email: The email of this RefenciaComercialAprovadoPersist.
         :type: str

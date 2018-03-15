@@ -59,7 +59,7 @@ class BancoResponse(object):
     def id(self):
         """
         Gets the id of this BancoResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Banco (id).
+        C\u00F3digo de Identifica\u00E7\u00E3o do Banco (id).
 
         :return: The id of this BancoResponse.
         :rtype: int
@@ -70,7 +70,7 @@ class BancoResponse(object):
     def id(self, id):
         """
         Sets the id of this BancoResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Banco (id).
+        C\u00F3digo de Identifica\u00E7\u00E3o do Banco (id).
 
         :param id: The id of this BancoResponse.
         :type: int
@@ -103,7 +103,7 @@ class BancoResponse(object):
     def descricao(self):
         """
         Gets the descricao of this BancoResponse.
-        Descri\u00C3\u00A7\u00C3\u00A3o do banco
+        Descri\u00E7\u00E3o do banco
 
         :return: The descricao of this BancoResponse.
         :rtype: str
@@ -114,7 +114,7 @@ class BancoResponse(object):
     def descricao(self, descricao):
         """
         Sets the descricao of this BancoResponse.
-        Descri\u00C3\u00A7\u00C3\u00A3o do banco
+        Descri\u00E7\u00E3o do banco
 
         :param descricao: The descricao of this BancoResponse.
         :type: str

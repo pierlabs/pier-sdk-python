@@ -74,7 +74,7 @@ class TransferenciaCreditoContaBancariaPersist(object):
     def nsu_origem(self):
         """
         Gets the nsu_origem of this TransferenciaCreditoContaBancariaPersist.
-        Representa o N\u00C3\u00BAmero Sequencial \u00C3\u009Anico que identifica a transa\u00C3\u00A7\u00C3\u00A3o no sistema que a originou.
+        Representa o N\u00FAmero Sequencial \u00DAnico que identifica a transa\u00E7\u00E3o no sistema que a originou.
 
         :return: The nsu_origem of this TransferenciaCreditoContaBancariaPersist.
         :rtype: int
@@ -85,7 +85,7 @@ class TransferenciaCreditoContaBancariaPersist(object):
     def nsu_origem(self, nsu_origem):
         """
         Sets the nsu_origem of this TransferenciaCreditoContaBancariaPersist.
-        Representa o N\u00C3\u00BAmero Sequencial \u00C3\u009Anico que identifica a transa\u00C3\u00A7\u00C3\u00A3o no sistema que a originou.
+        Representa o N\u00FAmero Sequencial \u00DAnico que identifica a transa\u00E7\u00E3o no sistema que a originou.
 
         :param nsu_origem: The nsu_origem of this TransferenciaCreditoContaBancariaPersist.
         :type: int
@@ -118,7 +118,7 @@ class TransferenciaCreditoContaBancariaPersist(object):
     def id_conta_bancaria(self):
         """
         Gets the id_conta_bancaria of this TransferenciaCreditoContaBancariaPersist.
-        Representa o Identificador da conta banc\u00C3\u00A1ria.
+        Representa o Identificador da conta banc\u00E1ria.
 
         :return: The id_conta_bancaria of this TransferenciaCreditoContaBancariaPersist.
         :rtype: int
@@ -129,7 +129,7 @@ class TransferenciaCreditoContaBancariaPersist(object):
     def id_conta_bancaria(self, id_conta_bancaria):
         """
         Sets the id_conta_bancaria of this TransferenciaCreditoContaBancariaPersist.
-        Representa o Identificador da conta banc\u00C3\u00A1ria.
+        Representa o Identificador da conta banc\u00E1ria.
 
         :param id_conta_bancaria: The id_conta_bancaria of this TransferenciaCreditoContaBancariaPersist.
         :type: int
@@ -140,7 +140,7 @@ class TransferenciaCreditoContaBancariaPersist(object):
     def valor(self):
         """
         Gets the valor of this TransferenciaCreditoContaBancariaPersist.
-        Representa o Valor da transfer\u00C3\u00AAncia.
+        Representa o Valor da transfer\u00EAncia.
 
         :return: The valor of this TransferenciaCreditoContaBancariaPersist.
         :rtype: float
@@ -151,7 +151,7 @@ class TransferenciaCreditoContaBancariaPersist(object):
     def valor(self, valor):
         """
         Sets the valor of this TransferenciaCreditoContaBancariaPersist.
-        Representa o Valor da transfer\u00C3\u00AAncia.
+        Representa o Valor da transfer\u00EAncia.
 
         :param valor: The valor of this TransferenciaCreditoContaBancariaPersist.
         :type: float
@@ -162,7 +162,7 @@ class TransferenciaCreditoContaBancariaPersist(object):
     def numero_parcelas(self):
         """
         Gets the numero_parcelas of this TransferenciaCreditoContaBancariaPersist.
-        Representa o N\u00C3\u00BAmero de Parcelas pelo qual o valor da transfer\u00C3\u00AAncia ser\u00C3\u00A1 dividido.
+        Representa o N\u00FAmero de Parcelas pelo qual o valor da transfer\u00EAncia ser\u00E1 dividido.
 
         :return: The numero_parcelas of this TransferenciaCreditoContaBancariaPersist.
         :rtype: int
@@ -173,7 +173,7 @@ class TransferenciaCreditoContaBancariaPersist(object):
     def numero_parcelas(self, numero_parcelas):
         """
         Sets the numero_parcelas of this TransferenciaCreditoContaBancariaPersist.
-        Representa o N\u00C3\u00BAmero de Parcelas pelo qual o valor da transfer\u00C3\u00AAncia ser\u00C3\u00A1 dividido.
+        Representa o N\u00FAmero de Parcelas pelo qual o valor da transfer\u00EAncia ser\u00E1 dividido.
 
         :param numero_parcelas: The numero_parcelas of this TransferenciaCreditoContaBancariaPersist.
         :type: int
@@ -184,7 +184,7 @@ class TransferenciaCreditoContaBancariaPersist(object):
     def numero_meses_carencia(self):
         """
         Gets the numero_meses_carencia of this TransferenciaCreditoContaBancariaPersist.
-        Representa o N\u00C3\u00BAmero de Meses concedido como car\u00C3\u00AAncia.
+        Representa o N\u00FAmero de Meses concedido como car\u00EAncia.
 
         :return: The numero_meses_carencia of this TransferenciaCreditoContaBancariaPersist.
         :rtype: int
@@ -195,7 +195,7 @@ class TransferenciaCreditoContaBancariaPersist(object):
     def numero_meses_carencia(self, numero_meses_carencia):
         """
         Sets the numero_meses_carencia of this TransferenciaCreditoContaBancariaPersist.
-        Representa o N\u00C3\u00BAmero de Meses concedido como car\u00C3\u00AAncia.
+        Representa o N\u00FAmero de Meses concedido como car\u00EAncia.
 
         :param numero_meses_carencia: The numero_meses_carencia of this TransferenciaCreditoContaBancariaPersist.
         :type: int
@@ -228,7 +228,7 @@ class TransferenciaCreditoContaBancariaPersist(object):
     def terminal_requisitante(self):
         """
         Gets the terminal_requisitante of this TransferenciaCreditoContaBancariaPersist.
-        Representa a identifica\u00C3\u00A7\u00C3\u00A3o do terminal requisitante.
+        Representa a identifica\u00E7\u00E3o do terminal requisitante.
 
         :return: The terminal_requisitante of this TransferenciaCreditoContaBancariaPersist.
         :rtype: str
@@ -239,7 +239,7 @@ class TransferenciaCreditoContaBancariaPersist(object):
     def terminal_requisitante(self, terminal_requisitante):
         """
         Sets the terminal_requisitante of this TransferenciaCreditoContaBancariaPersist.
-        Representa a identifica\u00C3\u00A7\u00C3\u00A3o do terminal requisitante.
+        Representa a identifica\u00E7\u00E3o do terminal requisitante.
 
         :param terminal_requisitante: The terminal_requisitante of this TransferenciaCreditoContaBancariaPersist.
         :type: str
@@ -250,7 +250,7 @@ class TransferenciaCreditoContaBancariaPersist(object):
     def numero_estabelecimento(self):
         """
         Gets the numero_estabelecimento of this TransferenciaCreditoContaBancariaPersist.
-        Representa a identifica\u00C3\u00A7\u00C3\u00A3o do n\u00C3\u00BAmero do estabelecimento.
+        Representa a identifica\u00E7\u00E3o do n\u00FAmero do estabelecimento.
 
         :return: The numero_estabelecimento of this TransferenciaCreditoContaBancariaPersist.
         :rtype: str
@@ -261,7 +261,7 @@ class TransferenciaCreditoContaBancariaPersist(object):
     def numero_estabelecimento(self, numero_estabelecimento):
         """
         Sets the numero_estabelecimento of this TransferenciaCreditoContaBancariaPersist.
-        Representa a identifica\u00C3\u00A7\u00C3\u00A3o do n\u00C3\u00BAmero do estabelecimento.
+        Representa a identifica\u00E7\u00E3o do n\u00FAmero do estabelecimento.
 
         :param numero_estabelecimento: The numero_estabelecimento of this TransferenciaCreditoContaBancariaPersist.
         :type: str

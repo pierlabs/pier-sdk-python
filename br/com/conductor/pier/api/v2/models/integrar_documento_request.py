@@ -81,7 +81,7 @@ class IntegrarDocumentoRequest(object):
     def arquivo(self):
         """
         Gets the arquivo of this IntegrarDocumentoRequest.
-        Conte\u00C3\u00BAdo do arquivo convertido em Base 64
+        Conte\u00FAdo do arquivo convertido em Base 64
 
         :return: The arquivo of this IntegrarDocumentoRequest.
         :rtype: str
@@ -92,7 +92,7 @@ class IntegrarDocumentoRequest(object):
     def arquivo(self, arquivo):
         """
         Sets the arquivo of this IntegrarDocumentoRequest.
-        Conte\u00C3\u00BAdo do arquivo convertido em Base 64
+        Conte\u00FAdo do arquivo convertido em Base 64
 
         :param arquivo: The arquivo of this IntegrarDocumentoRequest.
         :type: str
@@ -125,7 +125,7 @@ class IntegrarDocumentoRequest(object):
     def propriedades(self):
         """
         Gets the propriedades of this IntegrarDocumentoRequest.
-        Lista de par\u00C3\u00A2metros para montagem do documento.
+        Lista de par\u00E2metros para montagem do documento.
 
         :return: The propriedades of this IntegrarDocumentoRequest.
         :rtype: list[PropriedadeDocumentoRequest]
@@ -136,7 +136,7 @@ class IntegrarDocumentoRequest(object):
     def propriedades(self, propriedades):
         """
         Sets the propriedades of this IntegrarDocumentoRequest.
-        Lista de par\u00C3\u00A2metros para montagem do documento.
+        Lista de par\u00E2metros para montagem do documento.
 
         :param propriedades: The propriedades of this IntegrarDocumentoRequest.
         :type: list[PropriedadeDocumentoRequest]

@@ -112,7 +112,7 @@ class WebHookResponse(object):
     def metodo(self):
         """
         Gets the metodo of this WebHookResponse.
-        M\u00C3\u00A9todo que a ser chamado pelo WebHook
+        M\u00E9todo que a ser chamado pelo WebHook
 
         :return: The metodo of this WebHookResponse.
         :rtype: str
@@ -123,7 +123,7 @@ class WebHookResponse(object):
     def metodo(self, metodo):
         """
         Sets the metodo of this WebHookResponse.
-        M\u00C3\u00A9todo que a ser chamado pelo WebHook
+        M\u00E9todo que a ser chamado pelo WebHook
 
         :param metodo: The metodo of this WebHookResponse.
         :type: str

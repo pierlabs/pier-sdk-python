@@ -71,7 +71,7 @@ class CartaoPayAtualizarChaveResponse(object):
     def id(self):
         """
         Gets the id of this CartaoPayAtualizarChaveResponse.
-        Id do cart\u00C3\u00A3o
+        Id do cart\u00E3o
 
         :return: The id of this CartaoPayAtualizarChaveResponse.
         :rtype: int
@@ -82,7 +82,7 @@ class CartaoPayAtualizarChaveResponse(object):
     def id(self, id):
         """
         Sets the id of this CartaoPayAtualizarChaveResponse.
-        Id do cart\u00C3\u00A3o
+        Id do cart\u00E3o
 
         :param id: The id of this CartaoPayAtualizarChaveResponse.
         :type: int
@@ -93,7 +93,7 @@ class CartaoPayAtualizarChaveResponse(object):
     def numero_cartao(self):
         """
         Gets the numero_cartao of this CartaoPayAtualizarChaveResponse.
-        N\u00C3\u00BAmero do cart\u00C3\u00A3o real criptografado
+        N\u00FAmero do cart\u00E3o real criptografado
 
         :return: The numero_cartao of this CartaoPayAtualizarChaveResponse.
         :rtype: str
@@ -104,7 +104,7 @@ class CartaoPayAtualizarChaveResponse(object):
     def numero_cartao(self, numero_cartao):
         """
         Sets the numero_cartao of this CartaoPayAtualizarChaveResponse.
-        N\u00C3\u00BAmero do cart\u00C3\u00A3o real criptografado
+        N\u00FAmero do cart\u00E3o real criptografado
 
         :param numero_cartao: The numero_cartao of this CartaoPayAtualizarChaveResponse.
         :type: str
@@ -115,7 +115,7 @@ class CartaoPayAtualizarChaveResponse(object):
     def data_validade_cartao(self):
         """
         Gets the data_validade_cartao of this CartaoPayAtualizarChaveResponse.
-        Data de validade do cart\u00C3\u00A3o
+        Data de validade do cart\u00E3o
 
         :return: The data_validade_cartao of this CartaoPayAtualizarChaveResponse.
         :rtype: str
@@ -126,7 +126,7 @@ class CartaoPayAtualizarChaveResponse(object):
     def data_validade_cartao(self, data_validade_cartao):
         """
         Sets the data_validade_cartao of this CartaoPayAtualizarChaveResponse.
-        Data de validade do cart\u00C3\u00A3o
+        Data de validade do cart\u00E3o
 
         :param data_validade_cartao: The data_validade_cartao of this CartaoPayAtualizarChaveResponse.
         :type: str
@@ -137,7 +137,7 @@ class CartaoPayAtualizarChaveResponse(object):
     def nome_impresso(self):
         """
         Gets the nome_impresso of this CartaoPayAtualizarChaveResponse.
-        Nome impresso no cart\u00C3\u00A3o criptografado
+        Nome impresso no cart\u00E3o criptografado
 
         :return: The nome_impresso of this CartaoPayAtualizarChaveResponse.
         :rtype: str
@@ -148,7 +148,7 @@ class CartaoPayAtualizarChaveResponse(object):
     def nome_impresso(self, nome_impresso):
         """
         Sets the nome_impresso of this CartaoPayAtualizarChaveResponse.
-        Nome impresso no cart\u00C3\u00A3o criptografado
+        Nome impresso no cart\u00E3o criptografado
 
         :param nome_impresso: The nome_impresso of this CartaoPayAtualizarChaveResponse.
         :type: str
@@ -159,7 +159,7 @@ class CartaoPayAtualizarChaveResponse(object):
     def id_entidade(self):
         """
         Gets the id_entidade of this CartaoPayAtualizarChaveResponse.
-        Identificador do emissor do cart\u00C3\u00A3o
+        Identificador do emissor do cart\u00E3o
 
         :return: The id_entidade of this CartaoPayAtualizarChaveResponse.
         :rtype: int
@@ -170,7 +170,7 @@ class CartaoPayAtualizarChaveResponse(object):
     def id_entidade(self, id_entidade):
         """
         Sets the id_entidade of this CartaoPayAtualizarChaveResponse.
-        Identificador do emissor do cart\u00C3\u00A3o
+        Identificador do emissor do cart\u00E3o
 
         :param id_entidade: The id_entidade of this CartaoPayAtualizarChaveResponse.
         :type: int
@@ -181,7 +181,7 @@ class CartaoPayAtualizarChaveResponse(object):
     def nome_entidade(self):
         """
         Gets the nome_entidade of this CartaoPayAtualizarChaveResponse.
-        Nome do emissor do cart\u00C3\u00A3o
+        Nome do emissor do cart\u00E3o
 
         :return: The nome_entidade of this CartaoPayAtualizarChaveResponse.
         :rtype: str
@@ -192,7 +192,7 @@ class CartaoPayAtualizarChaveResponse(object):
     def nome_entidade(self, nome_entidade):
         """
         Sets the nome_entidade of this CartaoPayAtualizarChaveResponse.
-        Nome do emissor do cart\u00C3\u00A3o
+        Nome do emissor do cart\u00E3o
 
         :param nome_entidade: The nome_entidade of this CartaoPayAtualizarChaveResponse.
         :type: str
@@ -203,7 +203,7 @@ class CartaoPayAtualizarChaveResponse(object):
     def status(self):
         """
         Gets the status of this CartaoPayAtualizarChaveResponse.
-        Status do cart\u00C3\u00A3o
+        Status do cart\u00E3o
 
         :return: The status of this CartaoPayAtualizarChaveResponse.
         :rtype: str
@@ -214,7 +214,7 @@ class CartaoPayAtualizarChaveResponse(object):
     def status(self, status):
         """
         Sets the status of this CartaoPayAtualizarChaveResponse.
-        Status do cart\u00C3\u00A3o
+        Status do cart\u00E3o
 
         :param status: The status of this CartaoPayAtualizarChaveResponse.
         :type: str
@@ -231,7 +231,7 @@ class CartaoPayAtualizarChaveResponse(object):
     def chave_criptograma(self):
         """
         Gets the chave_criptograma of this CartaoPayAtualizarChaveResponse.
-        Chave de gera\u00C3\u00A7\u00C3\u00A3o de transa\u00C3\u00A7\u00C3\u00A3o criptograda
+        Chave de gera\u00E7\u00E3o de transa\u00E7\u00E3o criptograda
 
         :return: The chave_criptograma of this CartaoPayAtualizarChaveResponse.
         :rtype: str
@@ -242,7 +242,7 @@ class CartaoPayAtualizarChaveResponse(object):
     def chave_criptograma(self, chave_criptograma):
         """
         Sets the chave_criptograma of this CartaoPayAtualizarChaveResponse.
-        Chave de gera\u00C3\u00A7\u00C3\u00A3o de transa\u00C3\u00A7\u00C3\u00A3o criptograda
+        Chave de gera\u00E7\u00E3o de transa\u00E7\u00E3o criptograda
 
         :param chave_criptograma: The chave_criptograma of this CartaoPayAtualizarChaveResponse.
         :type: str

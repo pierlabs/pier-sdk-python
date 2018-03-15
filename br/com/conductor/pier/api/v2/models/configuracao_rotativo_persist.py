@@ -92,7 +92,7 @@ class ConfiguracaoRotativoPersist(object):
     def id_produto(self):
         """
         Gets the id_produto of this ConfiguracaoRotativoPersist.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Produto (idProduto).
+        C\u00F3digo de Identifica\u00E7\u00E3o do Produto (idProduto).
 
         :return: The id_produto of this ConfiguracaoRotativoPersist.
         :rtype: int
@@ -103,7 +103,7 @@ class ConfiguracaoRotativoPersist(object):
     def id_produto(self, id_produto):
         """
         Sets the id_produto of this ConfiguracaoRotativoPersist.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Produto (idProduto).
+        C\u00F3digo de Identifica\u00E7\u00E3o do Produto (idProduto).
 
         :param id_produto: The id_produto of this ConfiguracaoRotativoPersist.
         :type: int
@@ -136,7 +136,7 @@ class ConfiguracaoRotativoPersist(object):
     def compoe_oferta_valor_nao_financiavel(self):
         """
         Gets the compoe_oferta_valor_nao_financiavel of this ConfiguracaoRotativoPersist.
-        Quando verdadeiro, indica que o valor n\u00C3\u00A3o financi\u00C3\u00A1vel deve compor a oferta de parcelamento.
+        Quando verdadeiro, indica que o valor n\u00E3o financi\u00E1vel deve compor a oferta de parcelamento.
 
         :return: The compoe_oferta_valor_nao_financiavel of this ConfiguracaoRotativoPersist.
         :rtype: bool
@@ -147,7 +147,7 @@ class ConfiguracaoRotativoPersist(object):
     def compoe_oferta_valor_nao_financiavel(self, compoe_oferta_valor_nao_financiavel):
         """
         Sets the compoe_oferta_valor_nao_financiavel of this ConfiguracaoRotativoPersist.
-        Quando verdadeiro, indica que o valor n\u00C3\u00A3o financi\u00C3\u00A1vel deve compor a oferta de parcelamento.
+        Quando verdadeiro, indica que o valor n\u00E3o financi\u00E1vel deve compor a oferta de parcelamento.
 
         :param compoe_oferta_valor_nao_financiavel: The compoe_oferta_valor_nao_financiavel of this ConfiguracaoRotativoPersist.
         :type: bool
@@ -158,7 +158,7 @@ class ConfiguracaoRotativoPersist(object):
     def compoe_oferta_valor_novos_lancamentos(self):
         """
         Gets the compoe_oferta_valor_novos_lancamentos of this ConfiguracaoRotativoPersist.
-        Quando verdadeiro, indica que o valor de novos lan\u00C3\u00A7amentos deve compor a oferta de parcelamento
+        Quando verdadeiro, indica que o valor de novos lan\u00E7amentos deve compor a oferta de parcelamento
 
         :return: The compoe_oferta_valor_novos_lancamentos of this ConfiguracaoRotativoPersist.
         :rtype: bool
@@ -169,7 +169,7 @@ class ConfiguracaoRotativoPersist(object):
     def compoe_oferta_valor_novos_lancamentos(self, compoe_oferta_valor_novos_lancamentos):
         """
         Sets the compoe_oferta_valor_novos_lancamentos of this ConfiguracaoRotativoPersist.
-        Quando verdadeiro, indica que o valor de novos lan\u00C3\u00A7amentos deve compor a oferta de parcelamento
+        Quando verdadeiro, indica que o valor de novos lan\u00E7amentos deve compor a oferta de parcelamento
 
         :param compoe_oferta_valor_novos_lancamentos: The compoe_oferta_valor_novos_lancamentos of this ConfiguracaoRotativoPersist.
         :type: bool
@@ -202,7 +202,7 @@ class ConfiguracaoRotativoPersist(object):
     def minimo_parcelas_recalculo_parcelamento(self):
         """
         Gets the minimo_parcelas_recalculo_parcelamento of this ConfiguracaoRotativoPersist.
-        Indica o m\u00C3\u00ADnimo de parcelas que ser\u00C3\u00A1 acatado no rec\u00C3\u00A1lculo do parcelamento.
+        Indica o m\u00EDnimo de parcelas que ser\u00E1 acatado no rec\u00E1lculo do parcelamento.
 
         :return: The minimo_parcelas_recalculo_parcelamento of this ConfiguracaoRotativoPersist.
         :rtype: bool
@@ -213,7 +213,7 @@ class ConfiguracaoRotativoPersist(object):
     def minimo_parcelas_recalculo_parcelamento(self, minimo_parcelas_recalculo_parcelamento):
         """
         Sets the minimo_parcelas_recalculo_parcelamento of this ConfiguracaoRotativoPersist.
-        Indica o m\u00C3\u00ADnimo de parcelas que ser\u00C3\u00A1 acatado no rec\u00C3\u00A1lculo do parcelamento.
+        Indica o m\u00EDnimo de parcelas que ser\u00E1 acatado no rec\u00E1lculo do parcelamento.
 
         :param minimo_parcelas_recalculo_parcelamento: The minimo_parcelas_recalculo_parcelamento of this ConfiguracaoRotativoPersist.
         :type: bool
@@ -224,7 +224,7 @@ class ConfiguracaoRotativoPersist(object):
     def recalcula_parcelamento(self):
         """
         Gets the recalcula_parcelamento of this ConfiguracaoRotativoPersist.
-        Quando verdadeiro, indica que o parcelamento deve ser recalculado caso o valor calculado da oferta seja inferior ao valor configurado m\u00C3\u00ADnimo da parcela (valorMinimoParcela) e de percentual aberto
+        Quando verdadeiro, indica que o parcelamento deve ser recalculado caso o valor calculado da oferta seja inferior ao valor configurado m\u00EDnimo da parcela (valorMinimoParcela) e de percentual aberto
 
         :return: The recalcula_parcelamento of this ConfiguracaoRotativoPersist.
         :rtype: bool
@@ -235,7 +235,7 @@ class ConfiguracaoRotativoPersist(object):
     def recalcula_parcelamento(self, recalcula_parcelamento):
         """
         Sets the recalcula_parcelamento of this ConfiguracaoRotativoPersist.
-        Quando verdadeiro, indica que o parcelamento deve ser recalculado caso o valor calculado da oferta seja inferior ao valor configurado m\u00C3\u00ADnimo da parcela (valorMinimoParcela) e de percentual aberto
+        Quando verdadeiro, indica que o parcelamento deve ser recalculado caso o valor calculado da oferta seja inferior ao valor configurado m\u00EDnimo da parcela (valorMinimoParcela) e de percentual aberto
 
         :param recalcula_parcelamento: The recalcula_parcelamento of this ConfiguracaoRotativoPersist.
         :type: bool
@@ -246,7 +246,7 @@ class ConfiguracaoRotativoPersist(object):
     def numero_minimo_ofertas(self):
         """
         Gets the numero_minimo_ofertas of this ConfiguracaoRotativoPersist.
-        N\u00C3\u00BAmero m\u00C3\u00ADnimo de parcelas que ser\u00C3\u00A1 acatado no recalculo da oferta.
+        N\u00FAmero m\u00EDnimo de parcelas que ser\u00E1 acatado no recalculo da oferta.
 
         :return: The numero_minimo_ofertas of this ConfiguracaoRotativoPersist.
         :rtype: bool
@@ -257,7 +257,7 @@ class ConfiguracaoRotativoPersist(object):
     def numero_minimo_ofertas(self, numero_minimo_ofertas):
         """
         Sets the numero_minimo_ofertas of this ConfiguracaoRotativoPersist.
-        N\u00C3\u00BAmero m\u00C3\u00ADnimo de parcelas que ser\u00C3\u00A1 acatado no recalculo da oferta.
+        N\u00FAmero m\u00EDnimo de parcelas que ser\u00E1 acatado no recalculo da oferta.
 
         :param numero_minimo_ofertas: The numero_minimo_ofertas of this ConfiguracaoRotativoPersist.
         :type: bool
@@ -268,7 +268,7 @@ class ConfiguracaoRotativoPersist(object):
     def aceita_pagamento_maior_que_entrada(self):
         """
         Gets the aceita_pagamento_maior_que_entrada of this ConfiguracaoRotativoPersist.
-        Quando verdadeiro, indica que valores pagos entre o valor da entrada e o m\u00C3\u00ADnimo da fatura ser\u00C3\u00A3o acatados para a ades\u00C3\u00A3o ao parcelamento
+        Quando verdadeiro, indica que valores pagos entre o valor da entrada e o m\u00EDnimo da fatura ser\u00E3o acatados para a ades\u00E3o ao parcelamento
 
         :return: The aceita_pagamento_maior_que_entrada of this ConfiguracaoRotativoPersist.
         :rtype: bool
@@ -279,7 +279,7 @@ class ConfiguracaoRotativoPersist(object):
     def aceita_pagamento_maior_que_entrada(self, aceita_pagamento_maior_que_entrada):
         """
         Sets the aceita_pagamento_maior_que_entrada of this ConfiguracaoRotativoPersist.
-        Quando verdadeiro, indica que valores pagos entre o valor da entrada e o m\u00C3\u00ADnimo da fatura ser\u00C3\u00A3o acatados para a ades\u00C3\u00A3o ao parcelamento
+        Quando verdadeiro, indica que valores pagos entre o valor da entrada e o m\u00EDnimo da fatura ser\u00E3o acatados para a ades\u00E3o ao parcelamento
 
         :param aceita_pagamento_maior_que_entrada: The aceita_pagamento_maior_que_entrada of this ConfiguracaoRotativoPersist.
         :type: bool
@@ -312,7 +312,7 @@ class ConfiguracaoRotativoPersist(object):
     def valor_minimo_parcela(self):
         """
         Gets the valor_minimo_parcela of this ConfiguracaoRotativoPersist.
-        Valor m\u00C3\u00ADnimo da parcela que deve ser aceito na oferta.
+        Valor m\u00EDnimo da parcela que deve ser aceito na oferta.
 
         :return: The valor_minimo_parcela of this ConfiguracaoRotativoPersist.
         :rtype: float
@@ -323,7 +323,7 @@ class ConfiguracaoRotativoPersist(object):
     def valor_minimo_parcela(self, valor_minimo_parcela):
         """
         Sets the valor_minimo_parcela of this ConfiguracaoRotativoPersist.
-        Valor m\u00C3\u00ADnimo da parcela que deve ser aceito na oferta.
+        Valor m\u00EDnimo da parcela que deve ser aceito na oferta.
 
         :param valor_minimo_parcela: The valor_minimo_parcela of this ConfiguracaoRotativoPersist.
         :type: float
@@ -356,7 +356,7 @@ class ConfiguracaoRotativoPersist(object):
     def id_regra_campanha(self):
         """
         Gets the id_regra_campanha of this ConfiguracaoRotativoPersist.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da regra de campanha.
+        C\u00F3digo de Identifica\u00E7\u00E3o da regra de campanha.
 
         :return: The id_regra_campanha of this ConfiguracaoRotativoPersist.
         :rtype: int
@@ -367,7 +367,7 @@ class ConfiguracaoRotativoPersist(object):
     def id_regra_campanha(self, id_regra_campanha):
         """
         Sets the id_regra_campanha of this ConfiguracaoRotativoPersist.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da regra de campanha.
+        C\u00F3digo de Identifica\u00E7\u00E3o da regra de campanha.
 
         :param id_regra_campanha: The id_regra_campanha of this ConfiguracaoRotativoPersist.
         :type: int
@@ -378,7 +378,7 @@ class ConfiguracaoRotativoPersist(object):
     def parcelar_apenas_minimo(self):
         """
         Gets the parcelar_apenas_minimo of this ConfiguracaoRotativoPersist.
-        Quando verdadeiro, indica que parcelamento ofertado ter\u00C3\u00A1 como valor base o valor m\u00C3\u00ADnimo das transa\u00C3\u00A7\u00C3\u00B5es.
+        Quando verdadeiro, indica que parcelamento ofertado ter\u00E1 como valor base o valor m\u00EDnimo das transa\u00E7\u00F5es.
 
         :return: The parcelar_apenas_minimo of this ConfiguracaoRotativoPersist.
         :rtype: bool
@@ -389,7 +389,7 @@ class ConfiguracaoRotativoPersist(object):
     def parcelar_apenas_minimo(self, parcelar_apenas_minimo):
         """
         Sets the parcelar_apenas_minimo of this ConfiguracaoRotativoPersist.
-        Quando verdadeiro, indica que parcelamento ofertado ter\u00C3\u00A1 como valor base o valor m\u00C3\u00ADnimo das transa\u00C3\u00A7\u00C3\u00B5es.
+        Quando verdadeiro, indica que parcelamento ofertado ter\u00E1 como valor base o valor m\u00EDnimo das transa\u00E7\u00F5es.
 
         :param parcelar_apenas_minimo: The parcelar_apenas_minimo of this ConfiguracaoRotativoPersist.
         :type: bool
@@ -400,7 +400,7 @@ class ConfiguracaoRotativoPersist(object):
     def usuario(self):
         """
         Gets the usuario of this ConfiguracaoRotativoPersist.
-        Nome do usu\u00C3\u00A1rio
+        Nome do usu\u00E1rio
 
         :return: The usuario of this ConfiguracaoRotativoPersist.
         :rtype: str
@@ -411,7 +411,7 @@ class ConfiguracaoRotativoPersist(object):
     def usuario(self, usuario):
         """
         Sets the usuario of this ConfiguracaoRotativoPersist.
-        Nome do usu\u00C3\u00A1rio
+        Nome do usu\u00E1rio
 
         :param usuario: The usuario of this ConfiguracaoRotativoPersist.
         :type: str

@@ -45,10 +45,10 @@ class DebitoRecorrenteApi(object):
                 config.api_client = ApiClient()
             self.api_client = config.api_client
 
-    def listar_using_get15(self, id_conta, **kwargs):
+    def listar_using_get16(self, id_conta, **kwargs):
         """
-        Lista os d\u00C3\u00A9bitos recorrentes de uma Conta
-        A entidade D\u00C3\u00A9bito Recorrente trata dos registros contratados por um determinado cliente (idConta) onde a cobran\u00C3\u00A7a dele se d\u00C3\u00A1 de forma cont\u00C3\u00ADnua, consistindo em uma \u00E2\u0080\u009Cassinatura\u00E2\u0080\u009D ou pagamento de mensalidades. Isso significa que, enquanto o servi\u00C3\u00A7o continuar a ser prestado, o cliente dever\u00C3\u00A1 continuar realizando os pagamentos. A determina\u00C3\u00A7\u00C3\u00A3o de quanto tempo essa rela\u00C3\u00A7\u00C3\u00A3o ir\u00C3\u00A1 durar \u00C3\u00A9 feita em contrato. Na maioria das vezes, existe um per\u00C3\u00ADodo m\u00C3\u00ADnimo e, caso o servi\u00C3\u00A7o seja cancelado ou o pagamento n\u00C3\u00A3o seja realizado, o status do D\u00C3\u00A9bito Recorrente ter\u00C3\u00A1 a FlagAtivo com valor false. Assim, este m\u00C3\u00A9todo lista todas as opera\u00C3\u00A7\u00C3\u00B5es de D\u00C3\u00A9bitos Recorrentes que um determinado idConta j\u00C3\u00A1 contratou, esteja ele ativo ou n\u00C3\u00A3o.
+        Lista os d\u00E9bitos recorrentes de uma Conta
+        A entidade D\u00E9bito Recorrente trata dos registros contratados por um determinado cliente (idConta) onde a cobran\u00E7a dele se d\u00E1 de forma cont\u00EDnua, consistindo em uma \u201Cassinatura\u201D ou pagamento de mensalidades. Isso significa que, enquanto o servi\u00E7o continuar a ser prestado, o cliente dever\u00E1 continuar realizando os pagamentos. A determina\u00E7\u00E3o de quanto tempo essa rela\u00E7\u00E3o ir\u00E1 durar \u00E9 feita em contrato. Na maioria das vezes, existe um per\u00EDodo m\u00EDnimo e, caso o servi\u00E7o seja cancelado ou o pagamento n\u00E3o seja realizado, o status do D\u00E9bito Recorrente ter\u00E1 a FlagAtivo com valor false. Assim, este m\u00E9todo lista todas as opera\u00E7\u00F5es de D\u00E9bitos Recorrentes que um determinado idConta j\u00E1 contratou, esteja ele ativo ou n\u00E3o.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -56,19 +56,19 @@ class DebitoRecorrenteApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get15(id_conta, callback=callback_function)
+        >>> thread = api.listar_using_get16(id_conta, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param int id_conta: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da Conta (id) (required)
-        :param int id_tipo_debito_recorrente: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do tipo de d\u00C3\u00A9bito recorrente (id)
-        :param list[str] sort: Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
-        :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
-        :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
-        :param str data_hora_inicio: Data inicio do d\u00C3\u00A9bito recorrente.
-        :param str data_hora_fim: Data fim do d\u00C3\u00A9bito recorrente.
-        :param bool ativo: Identifica se o d\u00C3\u00A9bito recorrente est\u00C3\u00A1 ativo.
-        :param str data_hora_ultimo_pagamento: Data do \u00C3\u00BAltimo pagamento efetuado.
+        :param int id_conta: C\u00F3digo de identifica\u00E7\u00E3o da Conta (id) (required)
+        :param int id_tipo_debito_recorrente: C\u00F3digo de identifica\u00E7\u00E3o do tipo de d\u00E9bito recorrente (id)
+        :param list[str] sort: Tipo de ordena\u00E7\u00E3o dos registros.
+        :param int page: P\u00E1gina solicitada (Default = 0)
+        :param int limit: Limite de elementos por solicita\u00E7\u00E3o (Default = 50, Max = 50)
+        :param str data_hora_inicio: Data inicio do d\u00E9bito recorrente.
+        :param str data_hora_fim: Data fim do d\u00E9bito recorrente.
+        :param bool ativo: Identifica se o d\u00E9bito recorrente est\u00E1 ativo.
+        :param str data_hora_ultimo_pagamento: Data do \u00FAltimo pagamento efetuado.
         :return: PageTipoDebitoRecorrenteResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -82,14 +82,14 @@ class DebitoRecorrenteApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get15" % key
+                    " to method listar_using_get16" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id_conta' is set
         if ('id_conta' not in params) or (params['id_conta'] is None):
-            raise ValueError("Missing the required parameter `id_conta` when calling `listar_using_get15`")
+            raise ValueError("Missing the required parameter `id_conta` when calling `listar_using_get16`")
 
         resource_path = '/api/debitos-recorrentes'.replace('{format}', 'json')
         path_params = {}
@@ -146,10 +146,10 @@ class DebitoRecorrenteApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get41(self, **kwargs):
+    def listar_using_get43(self, **kwargs):
         """
         Listar Tipos Debitos Recorrentes
-        Para os emissores que utilizam a entidade Debitos Recorrentes precisam previamente solicitar a Conductor o cadastro de quais Tipos eles poder\u00C3\u00A3o comercializar. Por isso, este recurso tem como objetivo apresentar todos os Tipos de D\u00C3\u00A9bitos Recorrentes que est\u00C3\u00A3o cadastrados para um determinado Emissor, independente do status dele.
+        Para os emissores que utilizam a entidade Debitos Recorrentes precisam previamente solicitar a Conductor o cadastro de quais Tipos eles poder\u00E3o comercializar. Por isso, este recurso tem como objetivo apresentar todos os Tipos de D\u00E9bitos Recorrentes que est\u00E3o cadastrados para um determinado Emissor, independente do status dele.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -157,17 +157,17 @@ class DebitoRecorrenteApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get41(callback=callback_function)
+        >>> thread = api.listar_using_get43(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param list[str] sort: Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
-        :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
-        :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
-        :param int id: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do tipo de d\u00C3\u00A9bito recorrente (id).
-        :param str descricao: Descri\u00C3\u00A7\u00C3\u00A3o do tipo de d\u00C3\u00A9bito recorrente.
-        :param float valor: Valor do tipo de d\u00C3\u00A9bito recorrente.
-        :param bool flag_ativo: Flag que identifica se o tipo d\u00C3\u00A9bito recorrente est\u00C3\u00A1 ativo.
+        :param list[str] sort: Tipo de ordena\u00E7\u00E3o dos registros.
+        :param int page: P\u00E1gina solicitada (Default = 0)
+        :param int limit: Limite de elementos por solicita\u00E7\u00E3o (Default = 50, Max = 50)
+        :param int id: C\u00F3digo de identifica\u00E7\u00E3o do tipo de d\u00E9bito recorrente (id).
+        :param str descricao: Descri\u00E7\u00E3o do tipo de d\u00E9bito recorrente.
+        :param float valor: Valor do tipo de d\u00E9bito recorrente.
+        :param bool flag_ativo: Flag que identifica se o tipo d\u00E9bito recorrente est\u00E1 ativo.
         :return: PageTipoDebitoRecorrenteResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -181,7 +181,7 @@ class DebitoRecorrenteApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get41" % key
+                    " to method listar_using_get43" % key
                 )
             params[key] = val
         del params['kwargs']

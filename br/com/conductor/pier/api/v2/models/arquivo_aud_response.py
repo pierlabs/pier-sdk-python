@@ -108,7 +108,7 @@ class ArquivoAUDResponse(object):
     def rev_type(self):
         """
         Gets the rev_type of this ArquivoAUDResponse.
-        Identificador do tipo de auditoria (0 - Criado, 1 - Alterado, 2 - Exclu\u00C3\u00ADdo)
+        Identificador do tipo de auditoria (0 - Criado, 1 - Alterado, 2 - Exclu\u00EDdo)
 
         :return: The rev_type of this ArquivoAUDResponse.
         :rtype: int
@@ -119,7 +119,7 @@ class ArquivoAUDResponse(object):
     def rev_type(self, rev_type):
         """
         Sets the rev_type of this ArquivoAUDResponse.
-        Identificador do tipo de auditoria (0 - Criado, 1 - Alterado, 2 - Exclu\u00C3\u00ADdo)
+        Identificador do tipo de auditoria (0 - Criado, 1 - Alterado, 2 - Exclu\u00EDdo)
 
         :param rev_type: The rev_type of this ArquivoAUDResponse.
         :type: int
@@ -284,7 +284,7 @@ class ArquivoAUDResponse(object):
     def data_hora_inclusao(self):
         """
         Gets the data_hora_inclusao of this ArquivoAUDResponse.
-        Data de inclus\u00C3\u00A3o do arquivo auditado
+        Data de inclus\u00E3o do arquivo auditado
 
         :return: The data_hora_inclusao of this ArquivoAUDResponse.
         :rtype: str
@@ -295,7 +295,7 @@ class ArquivoAUDResponse(object):
     def data_hora_inclusao(self, data_hora_inclusao):
         """
         Sets the data_hora_inclusao of this ArquivoAUDResponse.
-        Data de inclus\u00C3\u00A3o do arquivo auditado
+        Data de inclus\u00E3o do arquivo auditado
 
         :param data_hora_inclusao: The data_hora_inclusao of this ArquivoAUDResponse.
         :type: str
@@ -306,7 +306,7 @@ class ArquivoAUDResponse(object):
     def data_hora_alteracao(self):
         """
         Gets the data_hora_alteracao of this ArquivoAUDResponse.
-        Data de altera\u00C3\u00A7\u00C3\u00A3o do arquivo auditado
+        Data de altera\u00E7\u00E3o do arquivo auditado
 
         :return: The data_hora_alteracao of this ArquivoAUDResponse.
         :rtype: str
@@ -317,7 +317,7 @@ class ArquivoAUDResponse(object):
     def data_hora_alteracao(self, data_hora_alteracao):
         """
         Sets the data_hora_alteracao of this ArquivoAUDResponse.
-        Data de altera\u00C3\u00A7\u00C3\u00A3o do arquivo auditado
+        Data de altera\u00E7\u00E3o do arquivo auditado
 
         :param data_hora_alteracao: The data_hora_alteracao of this ArquivoAUDResponse.
         :type: str
@@ -328,7 +328,7 @@ class ArquivoAUDResponse(object):
     def extensao(self):
         """
         Gets the extensao of this ArquivoAUDResponse.
-        Extens\u00C3\u00A3o do arquivo auditado
+        Extens\u00E3o do arquivo auditado
 
         :return: The extensao of this ArquivoAUDResponse.
         :rtype: str
@@ -339,7 +339,7 @@ class ArquivoAUDResponse(object):
     def extensao(self, extensao):
         """
         Sets the extensao of this ArquivoAUDResponse.
-        Extens\u00C3\u00A3o do arquivo auditado
+        Extens\u00E3o do arquivo auditado
 
         :param extensao: The extensao of this ArquivoAUDResponse.
         :type: str
@@ -350,7 +350,7 @@ class ArquivoAUDResponse(object):
     def parametros(self):
         """
         Gets the parametros of this ArquivoAUDResponse.
-        Lista  de par\u00C3\u00A2metros do arquivo auditado
+        Lista  de par\u00E2metros do arquivo auditado
 
         :return: The parametros of this ArquivoAUDResponse.
         :rtype: list[ArquivoParametroAUDResponse]
@@ -361,7 +361,7 @@ class ArquivoAUDResponse(object):
     def parametros(self, parametros):
         """
         Sets the parametros of this ArquivoAUDResponse.
-        Lista  de par\u00C3\u00A2metros do arquivo auditado
+        Lista  de par\u00E2metros do arquivo auditado
 
         :param parametros: The parametros of this ArquivoAUDResponse.
         :type: list[ArquivoParametroAUDResponse]

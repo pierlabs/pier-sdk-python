@@ -62,7 +62,7 @@ class PlanoParcelamentoTransferenciaCreditoContaBancariaResponse(object):
     def numero_mascarado_cartao(self):
         """
         Gets the numero_mascarado_cartao of this PlanoParcelamentoTransferenciaCreditoContaBancariaResponse.
-        N\u00C3\u00BAmero do Cart\u00C3\u00A3o que originou a transa\u00C3\u00A7\u00C3\u00A3o em formato mascarado.
+        N\u00FAmero do Cart\u00E3o que originou a transa\u00E7\u00E3o em formato mascarado.
 
         :return: The numero_mascarado_cartao of this PlanoParcelamentoTransferenciaCreditoContaBancariaResponse.
         :rtype: str
@@ -73,7 +73,7 @@ class PlanoParcelamentoTransferenciaCreditoContaBancariaResponse(object):
     def numero_mascarado_cartao(self, numero_mascarado_cartao):
         """
         Sets the numero_mascarado_cartao of this PlanoParcelamentoTransferenciaCreditoContaBancariaResponse.
-        N\u00C3\u00BAmero do Cart\u00C3\u00A3o que originou a transa\u00C3\u00A7\u00C3\u00A3o em formato mascarado.
+        N\u00FAmero do Cart\u00E3o que originou a transa\u00E7\u00E3o em formato mascarado.
 
         :param numero_mascarado_cartao: The numero_mascarado_cartao of this PlanoParcelamentoTransferenciaCreditoContaBancariaResponse.
         :type: str
@@ -106,7 +106,7 @@ class PlanoParcelamentoTransferenciaCreditoContaBancariaResponse(object):
     def valor_transacao(self):
         """
         Gets the valor_transacao of this PlanoParcelamentoTransferenciaCreditoContaBancariaResponse.
-        Valor da solicita\u00C3\u00A7\u00C3\u00A3o de saque.
+        Valor da solicita\u00E7\u00E3o de saque.
 
         :return: The valor_transacao of this PlanoParcelamentoTransferenciaCreditoContaBancariaResponse.
         :rtype: float
@@ -117,7 +117,7 @@ class PlanoParcelamentoTransferenciaCreditoContaBancariaResponse(object):
     def valor_transacao(self, valor_transacao):
         """
         Sets the valor_transacao of this PlanoParcelamentoTransferenciaCreditoContaBancariaResponse.
-        Valor da solicita\u00C3\u00A7\u00C3\u00A3o de saque.
+        Valor da solicita\u00E7\u00E3o de saque.
 
         :param valor_transacao: The valor_transacao of this PlanoParcelamentoTransferenciaCreditoContaBancariaResponse.
         :type: float
@@ -128,7 +128,7 @@ class PlanoParcelamentoTransferenciaCreditoContaBancariaResponse(object):
     def numero_meses_carencia(self):
         """
         Gets the numero_meses_carencia of this PlanoParcelamentoTransferenciaCreditoContaBancariaResponse.
-        N\u00C3\u00BAmero de meses para car\u00C3\u00AAncia.
+        N\u00FAmero de meses para car\u00EAncia.
 
         :return: The numero_meses_carencia of this PlanoParcelamentoTransferenciaCreditoContaBancariaResponse.
         :rtype: int
@@ -139,7 +139,7 @@ class PlanoParcelamentoTransferenciaCreditoContaBancariaResponse(object):
     def numero_meses_carencia(self, numero_meses_carencia):
         """
         Sets the numero_meses_carencia of this PlanoParcelamentoTransferenciaCreditoContaBancariaResponse.
-        N\u00C3\u00BAmero de meses para car\u00C3\u00AAncia.
+        N\u00FAmero de meses para car\u00EAncia.
 
         :param numero_meses_carencia: The numero_meses_carencia of this PlanoParcelamentoTransferenciaCreditoContaBancariaResponse.
         :type: int

@@ -78,7 +78,7 @@ class StatusOportunidade(object):
     def descricao(self):
         """
         Gets the descricao of this StatusOportunidade.
-        Descri\u00C3\u00A7\u00C3\u00A3o do status oportunidade
+        Descri\u00E7\u00E3o do status oportunidade
 
         :return: The descricao of this StatusOportunidade.
         :rtype: str
@@ -89,7 +89,7 @@ class StatusOportunidade(object):
     def descricao(self, descricao):
         """
         Sets the descricao of this StatusOportunidade.
-        Descri\u00C3\u00A7\u00C3\u00A3o do status oportunidade
+        Descri\u00E7\u00E3o do status oportunidade
 
         :param descricao: The descricao of this StatusOportunidade.
         :type: str
@@ -100,7 +100,7 @@ class StatusOportunidade(object):
     def flag_ativo(self):
         """
         Gets the flag_ativo of this StatusOportunidade.
-        Flag de verifica\u00C3\u00A7\u00C3\u00A3o se o status oportunidade est\u00C3\u00A1 ativo
+        Flag de verifica\u00E7\u00E3o se o status oportunidade est\u00E1 ativo
 
         :return: The flag_ativo of this StatusOportunidade.
         :rtype: bool
@@ -111,7 +111,7 @@ class StatusOportunidade(object):
     def flag_ativo(self, flag_ativo):
         """
         Sets the flag_ativo of this StatusOportunidade.
-        Flag de verifica\u00C3\u00A7\u00C3\u00A3o se o status oportunidade est\u00C3\u00A1 ativo
+        Flag de verifica\u00E7\u00E3o se o status oportunidade est\u00E1 ativo
 
         :param flag_ativo: The flag_ativo of this StatusOportunidade.
         :type: bool

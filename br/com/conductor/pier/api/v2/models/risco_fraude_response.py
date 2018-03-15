@@ -77,7 +77,7 @@ class RiscoFraudeResponse(object):
     def id(self):
         """
         Gets the id of this RiscoFraudeResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do risco de fraude
+        C\u00F3digo de identifica\u00E7\u00E3o do risco de fraude
 
         :return: The id of this RiscoFraudeResponse.
         :rtype: int
@@ -88,7 +88,7 @@ class RiscoFraudeResponse(object):
     def id(self, id):
         """
         Sets the id of this RiscoFraudeResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do risco de fraude
+        C\u00F3digo de identifica\u00E7\u00E3o do risco de fraude
 
         :param id: The id of this RiscoFraudeResponse.
         :type: int
@@ -99,7 +99,7 @@ class RiscoFraudeResponse(object):
     def id_tipo_resolucao(self):
         """
         Gets the id_tipo_resolucao of this RiscoFraudeResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do tipo de resolu\u00C3\u00A7\u00C3\u00A3o atribu\u00C3\u00ADdo ao registro
+        C\u00F3digo de identifica\u00E7\u00E3o do tipo de resolu\u00E7\u00E3o atribu\u00EDdo ao registro
 
         :return: The id_tipo_resolucao of this RiscoFraudeResponse.
         :rtype: int
@@ -110,7 +110,7 @@ class RiscoFraudeResponse(object):
     def id_tipo_resolucao(self, id_tipo_resolucao):
         """
         Sets the id_tipo_resolucao of this RiscoFraudeResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do tipo de resolu\u00C3\u00A7\u00C3\u00A3o atribu\u00C3\u00ADdo ao registro
+        C\u00F3digo de identifica\u00E7\u00E3o do tipo de resolu\u00E7\u00E3o atribu\u00EDdo ao registro
 
         :param id_tipo_resolucao: The id_tipo_resolucao of this RiscoFraudeResponse.
         :type: int
@@ -121,7 +121,7 @@ class RiscoFraudeResponse(object):
     def descricao_tipo_resolucao(self):
         """
         Gets the descricao_tipo_resolucao of this RiscoFraudeResponse.
-        Descri\u00C3\u00A7\u00C3\u00A3o do tipo de resolu\u00C3\u00A7\u00C3\u00A3o atribu\u00C3\u00ADdo ao registro
+        Descri\u00E7\u00E3o do tipo de resolu\u00E7\u00E3o atribu\u00EDdo ao registro
 
         :return: The descricao_tipo_resolucao of this RiscoFraudeResponse.
         :rtype: str
@@ -132,7 +132,7 @@ class RiscoFraudeResponse(object):
     def descricao_tipo_resolucao(self, descricao_tipo_resolucao):
         """
         Sets the descricao_tipo_resolucao of this RiscoFraudeResponse.
-        Descri\u00C3\u00A7\u00C3\u00A3o do tipo de resolu\u00C3\u00A7\u00C3\u00A3o atribu\u00C3\u00ADdo ao registro
+        Descri\u00E7\u00E3o do tipo de resolu\u00E7\u00E3o atribu\u00EDdo ao registro
 
         :param descricao_tipo_resolucao: The descricao_tipo_resolucao of this RiscoFraudeResponse.
         :type: str
@@ -143,7 +143,7 @@ class RiscoFraudeResponse(object):
     def flag_alto_risco(self):
         """
         Gets the flag_alto_risco of this RiscoFraudeResponse.
-        Quando ativa, indica que a transa\u00C3\u00A7\u00C3\u00A3o possui um alto risco de fraude e que todas as transa\u00C3\u00A7\u00C3\u00B5es seguintes a ela ser\u00C3\u00A3o negadas at\u00C3\u00A9 que todas as transa\u00C3\u00A7\u00C3\u00B5es classificadas com risco de fraude sejam analisadas
+        Quando ativa, indica que a transa\u00E7\u00E3o possui um alto risco de fraude e que todas as transa\u00E7\u00F5es seguintes a ela ser\u00E3o negadas at\u00E9 que todas as transa\u00E7\u00F5es classificadas com risco de fraude sejam analisadas
 
         :return: The flag_alto_risco of this RiscoFraudeResponse.
         :rtype: bool
@@ -154,7 +154,7 @@ class RiscoFraudeResponse(object):
     def flag_alto_risco(self, flag_alto_risco):
         """
         Sets the flag_alto_risco of this RiscoFraudeResponse.
-        Quando ativa, indica que a transa\u00C3\u00A7\u00C3\u00A3o possui um alto risco de fraude e que todas as transa\u00C3\u00A7\u00C3\u00B5es seguintes a ela ser\u00C3\u00A3o negadas at\u00C3\u00A9 que todas as transa\u00C3\u00A7\u00C3\u00B5es classificadas com risco de fraude sejam analisadas
+        Quando ativa, indica que a transa\u00E7\u00E3o possui um alto risco de fraude e que todas as transa\u00E7\u00F5es seguintes a ela ser\u00E3o negadas at\u00E9 que todas as transa\u00E7\u00F5es classificadas com risco de fraude sejam analisadas
 
         :param flag_alto_risco: The flag_alto_risco of this RiscoFraudeResponse.
         :type: bool
@@ -165,7 +165,7 @@ class RiscoFraudeResponse(object):
     def id_conta(self):
         """
         Gets the id_conta of this RiscoFraudeResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da conta
+        C\u00F3digo de identifica\u00E7\u00E3o da conta
 
         :return: The id_conta of this RiscoFraudeResponse.
         :rtype: int
@@ -176,7 +176,7 @@ class RiscoFraudeResponse(object):
     def id_conta(self, id_conta):
         """
         Sets the id_conta of this RiscoFraudeResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da conta
+        C\u00F3digo de identifica\u00E7\u00E3o da conta
 
         :param id_conta: The id_conta of this RiscoFraudeResponse.
         :type: int
@@ -187,7 +187,7 @@ class RiscoFraudeResponse(object):
     def id_cartao(self):
         """
         Gets the id_cartao of this RiscoFraudeResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do cart\u00C3\u00A3o
+        C\u00F3digo de identifica\u00E7\u00E3o do cart\u00E3o
 
         :return: The id_cartao of this RiscoFraudeResponse.
         :rtype: int
@@ -198,7 +198,7 @@ class RiscoFraudeResponse(object):
     def id_cartao(self, id_cartao):
         """
         Sets the id_cartao of this RiscoFraudeResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do cart\u00C3\u00A3o
+        C\u00F3digo de identifica\u00E7\u00E3o do cart\u00E3o
 
         :param id_cartao: The id_cartao of this RiscoFraudeResponse.
         :type: int
@@ -209,7 +209,7 @@ class RiscoFraudeResponse(object):
     def id_transacao(self):
         """
         Gets the id_transacao of this RiscoFraudeResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da transa\u00C3\u00A7\u00C3\u00A3o
+        C\u00F3digo de identifica\u00E7\u00E3o da transa\u00E7\u00E3o
 
         :return: The id_transacao of this RiscoFraudeResponse.
         :rtype: int
@@ -220,7 +220,7 @@ class RiscoFraudeResponse(object):
     def id_transacao(self, id_transacao):
         """
         Sets the id_transacao of this RiscoFraudeResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da transa\u00C3\u00A7\u00C3\u00A3o
+        C\u00F3digo de identifica\u00E7\u00E3o da transa\u00E7\u00E3o
 
         :param id_transacao: The id_transacao of this RiscoFraudeResponse.
         :type: int
@@ -231,7 +231,7 @@ class RiscoFraudeResponse(object):
     def data_transacao(self):
         """
         Gets the data_transacao of this RiscoFraudeResponse.
-        Data em que a transa\u00C3\u00A7\u00C3\u00A3o classificada com risco de fraude foi realizada
+        Data em que a transa\u00E7\u00E3o classificada com risco de fraude foi realizada
 
         :return: The data_transacao of this RiscoFraudeResponse.
         :rtype: str
@@ -242,7 +242,7 @@ class RiscoFraudeResponse(object):
     def data_transacao(self, data_transacao):
         """
         Sets the data_transacao of this RiscoFraudeResponse.
-        Data em que a transa\u00C3\u00A7\u00C3\u00A3o classificada com risco de fraude foi realizada
+        Data em que a transa\u00E7\u00E3o classificada com risco de fraude foi realizada
 
         :param data_transacao: The data_transacao of this RiscoFraudeResponse.
         :type: str
@@ -253,7 +253,7 @@ class RiscoFraudeResponse(object):
     def valor_transacao(self):
         """
         Gets the valor_transacao of this RiscoFraudeResponse.
-        Valor da transa\u00C3\u00A7\u00C3\u00A3o classificada com risco de fraude
+        Valor da transa\u00E7\u00E3o classificada com risco de fraude
 
         :return: The valor_transacao of this RiscoFraudeResponse.
         :rtype: float
@@ -264,7 +264,7 @@ class RiscoFraudeResponse(object):
     def valor_transacao(self, valor_transacao):
         """
         Sets the valor_transacao of this RiscoFraudeResponse.
-        Valor da transa\u00C3\u00A7\u00C3\u00A3o classificada com risco de fraude
+        Valor da transa\u00E7\u00E3o classificada com risco de fraude
 
         :param valor_transacao: The valor_transacao of this RiscoFraudeResponse.
         :type: float
@@ -275,7 +275,7 @@ class RiscoFraudeResponse(object):
     def nome_estabelecimento(self):
         """
         Gets the nome_estabelecimento of this RiscoFraudeResponse.
-        Valor da transa\u00C3\u00A7\u00C3\u00A3o classificada com risco de fraude
+        Valor da transa\u00E7\u00E3o classificada com risco de fraude
 
         :return: The nome_estabelecimento of this RiscoFraudeResponse.
         :rtype: str
@@ -286,7 +286,7 @@ class RiscoFraudeResponse(object):
     def nome_estabelecimento(self, nome_estabelecimento):
         """
         Sets the nome_estabelecimento of this RiscoFraudeResponse.
-        Valor da transa\u00C3\u00A7\u00C3\u00A3o classificada com risco de fraude
+        Valor da transa\u00E7\u00E3o classificada com risco de fraude
 
         :param nome_estabelecimento: The nome_estabelecimento of this RiscoFraudeResponse.
         :type: str

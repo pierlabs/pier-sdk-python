@@ -87,7 +87,7 @@ class ArquivoPersist(object):
     def arquivo(self):
         """
         Gets the arquivo of this ArquivoPersist.
-        Conte\u00C3\u00BAdo do arquivo convertido em Base 64
+        Conte\u00FAdo do arquivo convertido em Base 64
 
         :return: The arquivo of this ArquivoPersist.
         :rtype: str
@@ -98,7 +98,7 @@ class ArquivoPersist(object):
     def arquivo(self, arquivo):
         """
         Sets the arquivo of this ArquivoPersist.
-        Conte\u00C3\u00BAdo do arquivo convertido em Base 64
+        Conte\u00FAdo do arquivo convertido em Base 64
 
         :param arquivo: The arquivo of this ArquivoPersist.
         :type: str
@@ -131,7 +131,7 @@ class ArquivoPersist(object):
     def extensao(self):
         """
         Gets the extensao of this ArquivoPersist.
-        Formato/extens\u00C3\u00A3o do arquivo.
+        Formato/extens\u00E3o do arquivo.
 
         :return: The extensao of this ArquivoPersist.
         :rtype: str
@@ -142,7 +142,7 @@ class ArquivoPersist(object):
     def extensao(self, extensao):
         """
         Sets the extensao of this ArquivoPersist.
-        Formato/extens\u00C3\u00A3o do arquivo.
+        Formato/extens\u00E3o do arquivo.
 
         :param extensao: The extensao of this ArquivoPersist.
         :type: str
@@ -153,7 +153,7 @@ class ArquivoPersist(object):
     def tipo_comunicacao(self):
         """
         Gets the tipo_comunicacao of this ArquivoPersist.
-        Tipo de comunica\u00C3\u00A7\u00C3\u00A3o.
+        Tipo de comunica\u00E7\u00E3o.
 
         :return: The tipo_comunicacao of this ArquivoPersist.
         :rtype: str
@@ -164,7 +164,7 @@ class ArquivoPersist(object):
     def tipo_comunicacao(self, tipo_comunicacao):
         """
         Sets the tipo_comunicacao of this ArquivoPersist.
-        Tipo de comunica\u00C3\u00A7\u00C3\u00A3o.
+        Tipo de comunica\u00E7\u00E3o.
 
         :param tipo_comunicacao: The tipo_comunicacao of this ArquivoPersist.
         :type: str
@@ -181,7 +181,7 @@ class ArquivoPersist(object):
     def detalhes(self):
         """
         Gets the detalhes of this ArquivoPersist.
-        Detalhes contendo informa\u00C3\u00A7\u00C3\u00B5es adicionais, relacionadas ao arquivo
+        Detalhes contendo informa\u00E7\u00F5es adicionais, relacionadas ao arquivo
 
         :return: The detalhes of this ArquivoPersist.
         :rtype: list[ArquivoDetalhesPersist]
@@ -192,7 +192,7 @@ class ArquivoPersist(object):
     def detalhes(self, detalhes):
         """
         Sets the detalhes of this ArquivoPersist.
-        Detalhes contendo informa\u00C3\u00A7\u00C3\u00B5es adicionais, relacionadas ao arquivo
+        Detalhes contendo informa\u00E7\u00F5es adicionais, relacionadas ao arquivo
 
         :param detalhes: The detalhes of this ArquivoPersist.
         :type: list[ArquivoDetalhesPersist]

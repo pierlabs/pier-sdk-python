@@ -74,7 +74,7 @@ class TemplateNotificacaoResponse(object):
     def id(self):
         """
         Gets the id of this TemplateNotificacaoResponse.
-        C\u00C3\u00B3digo Identificador.
+        C\u00F3digo Identificador.
 
         :return: The id of this TemplateNotificacaoResponse.
         :rtype: int
@@ -85,7 +85,7 @@ class TemplateNotificacaoResponse(object):
     def id(self, id):
         """
         Sets the id of this TemplateNotificacaoResponse.
-        C\u00C3\u00B3digo Identificador.
+        C\u00F3digo Identificador.
 
         :param id: The id of this TemplateNotificacaoResponse.
         :type: int
@@ -96,7 +96,7 @@ class TemplateNotificacaoResponse(object):
     def id_configuracao_email(self):
         """
         Gets the id_configuracao_email of this TemplateNotificacaoResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da configra\u00C3\u00A7\u00C3\u00A3o de e-mail.
+        C\u00F3digo de identifica\u00E7\u00E3o da configra\u00E7\u00E3o de e-mail.
 
         :return: The id_configuracao_email of this TemplateNotificacaoResponse.
         :rtype: int
@@ -107,7 +107,7 @@ class TemplateNotificacaoResponse(object):
     def id_configuracao_email(self, id_configuracao_email):
         """
         Sets the id_configuracao_email of this TemplateNotificacaoResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da configra\u00C3\u00A7\u00C3\u00A3o de e-mail.
+        C\u00F3digo de identifica\u00E7\u00E3o da configra\u00E7\u00E3o de e-mail.
 
         :param id_configuracao_email: The id_configuracao_email of this TemplateNotificacaoResponse.
         :type: int
@@ -146,7 +146,7 @@ class TemplateNotificacaoResponse(object):
     def tipo_notificacao(self):
         """
         Gets the tipo_notificacao of this TemplateNotificacaoResponse.
-        Tipo da notifica\u00C3\u00A7\u00C3\u00A3o.
+        Tipo da notifica\u00E7\u00E3o.
 
         :return: The tipo_notificacao of this TemplateNotificacaoResponse.
         :rtype: str
@@ -157,7 +157,7 @@ class TemplateNotificacaoResponse(object):
     def tipo_notificacao(self, tipo_notificacao):
         """
         Sets the tipo_notificacao of this TemplateNotificacaoResponse.
-        Tipo da notifica\u00C3\u00A7\u00C3\u00A3o.
+        Tipo da notifica\u00E7\u00E3o.
 
         :param tipo_notificacao: The tipo_notificacao of this TemplateNotificacaoResponse.
         :type: str
@@ -174,7 +174,7 @@ class TemplateNotificacaoResponse(object):
     def template_padrao(self):
         """
         Gets the template_padrao of this TemplateNotificacaoResponse.
-        Template padr\u00C3\u00A3o.
+        Template padr\u00E3o.
 
         :return: The template_padrao of this TemplateNotificacaoResponse.
         :rtype: str
@@ -185,7 +185,7 @@ class TemplateNotificacaoResponse(object):
     def template_padrao(self, template_padrao):
         """
         Sets the template_padrao of this TemplateNotificacaoResponse.
-        Template padr\u00C3\u00A3o.
+        Template padr\u00E3o.
 
         :param template_padrao: The template_padrao of this TemplateNotificacaoResponse.
         :type: str
@@ -240,7 +240,7 @@ class TemplateNotificacaoResponse(object):
     def data_inclusao(self):
         """
         Gets the data_inclusao of this TemplateNotificacaoResponse.
-        Data da inclus\u00C3\u00A3o.
+        Data da inclus\u00E3o.
 
         :return: The data_inclusao of this TemplateNotificacaoResponse.
         :rtype: str
@@ -251,7 +251,7 @@ class TemplateNotificacaoResponse(object):
     def data_inclusao(self, data_inclusao):
         """
         Sets the data_inclusao of this TemplateNotificacaoResponse.
-        Data da inclus\u00C3\u00A3o.
+        Data da inclus\u00E3o.
 
         :param data_inclusao: The data_inclusao of this TemplateNotificacaoResponse.
         :type: str
@@ -262,7 +262,7 @@ class TemplateNotificacaoResponse(object):
     def data_alteracao(self):
         """
         Gets the data_alteracao of this TemplateNotificacaoResponse.
-        Data altera\u00C3\u00A7\u00C3\u00A3o.
+        Data altera\u00E7\u00E3o.
 
         :return: The data_alteracao of this TemplateNotificacaoResponse.
         :rtype: str
@@ -273,7 +273,7 @@ class TemplateNotificacaoResponse(object):
     def data_alteracao(self, data_alteracao):
         """
         Sets the data_alteracao of this TemplateNotificacaoResponse.
-        Data altera\u00C3\u00A7\u00C3\u00A3o.
+        Data altera\u00E7\u00E3o.
 
         :param data_alteracao: The data_alteracao of this TemplateNotificacaoResponse.
         :type: str

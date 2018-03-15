@@ -65,7 +65,7 @@ class AvisoViagemResponse(object):
     def id(self):
         """
         Gets the id of this AvisoViagemResponse.
-        C\u00C3\u00B3digo identificador \u00C3\u00BAnico do aviso viagem na base (id)
+        C\u00F3digo identificador \u00FAnico do aviso viagem na base (id)
 
         :return: The id of this AvisoViagemResponse.
         :rtype: int
@@ -76,7 +76,7 @@ class AvisoViagemResponse(object):
     def id(self, id):
         """
         Sets the id of this AvisoViagemResponse.
-        C\u00C3\u00B3digo identificador \u00C3\u00BAnico do aviso viagem na base (id)
+        C\u00F3digo identificador \u00FAnico do aviso viagem na base (id)
 
         :param id: The id of this AvisoViagemResponse.
         :type: int
@@ -87,7 +87,7 @@ class AvisoViagemResponse(object):
     def id_cartao(self):
         """
         Gets the id_cartao of this AvisoViagemResponse.
-        C\u00C3\u00B3digo identificador do cart\u00C3\u00A3o na base (id)
+        C\u00F3digo identificador do cart\u00E3o na base (id)
 
         :return: The id_cartao of this AvisoViagemResponse.
         :rtype: int
@@ -98,7 +98,7 @@ class AvisoViagemResponse(object):
     def id_cartao(self, id_cartao):
         """
         Sets the id_cartao of this AvisoViagemResponse.
-        C\u00C3\u00B3digo identificador do cart\u00C3\u00A3o na base (id)
+        C\u00F3digo identificador do cart\u00E3o na base (id)
 
         :param id_cartao: The id_cartao of this AvisoViagemResponse.
         :type: int
@@ -109,7 +109,7 @@ class AvisoViagemResponse(object):
     def codigo_pais(self):
         """
         Gets the codigo_pais of this AvisoViagemResponse.
-        Codigo identificador do pa\u00C3\u00ADs na base (id)
+        Codigo identificador do pa\u00EDs na base (id)
 
         :return: The codigo_pais of this AvisoViagemResponse.
         :rtype: str
@@ -120,7 +120,7 @@ class AvisoViagemResponse(object):
     def codigo_pais(self, codigo_pais):
         """
         Sets the codigo_pais of this AvisoViagemResponse.
-        Codigo identificador do pa\u00C3\u00ADs na base (id)
+        Codigo identificador do pa\u00EDs na base (id)
 
         :param codigo_pais: The codigo_pais of this AvisoViagemResponse.
         :type: str
@@ -175,7 +175,7 @@ class AvisoViagemResponse(object):
     def flag_ativo(self):
         """
         Gets the flag_ativo of this AvisoViagemResponse.
-        Identifica se o aviso viagem esta ativo ou n\u00C3\u00A3o
+        Identifica se o aviso viagem esta ativo ou n\u00E3o
 
         :return: The flag_ativo of this AvisoViagemResponse.
         :rtype: int
@@ -186,7 +186,7 @@ class AvisoViagemResponse(object):
     def flag_ativo(self, flag_ativo):
         """
         Sets the flag_ativo of this AvisoViagemResponse.
-        Identifica se o aviso viagem esta ativo ou n\u00C3\u00A3o
+        Identifica se o aviso viagem esta ativo ou n\u00E3o
 
         :param flag_ativo: The flag_ativo of this AvisoViagemResponse.
         :type: int

@@ -38,7 +38,6 @@ class TokenResponse(object):
         """
         self.swagger_types = {
             'id': 'int',
-            'token': 'str',
             'base': 'int',
             'owner': 'str',
             'status': 'str',
@@ -50,7 +49,6 @@ class TokenResponse(object):
 
         self.attribute_map = {
             'id': 'id',
-            'token': 'token',
             'base': 'base',
             'owner': 'owner',
             'status': 'status',
@@ -61,7 +59,6 @@ class TokenResponse(object):
         }
 
         self._id = None
-        self._token = None
         self._base = None
         self._owner = None
         self._status = None
@@ -74,7 +71,7 @@ class TokenResponse(object):
     def id(self):
         """
         Gets the id of this TokenResponse.
-        C\u00C3\u00B3digo identificador do token
+        C\u00F3digo identificador do token
 
         :return: The id of this TokenResponse.
         :rtype: int
@@ -85,7 +82,7 @@ class TokenResponse(object):
     def id(self, id):
         """
         Sets the id of this TokenResponse.
-        C\u00C3\u00B3digo identificador do token
+        C\u00F3digo identificador do token
 
         :param id: The id of this TokenResponse.
         :type: int
@@ -93,32 +90,10 @@ class TokenResponse(object):
         self._id = id
 
     @property
-    def token(self):
-        """
-        Gets the token of this TokenResponse.
-        Token
-
-        :return: The token of this TokenResponse.
-        :rtype: str
-        """
-        return self._token
-
-    @token.setter
-    def token(self, token):
-        """
-        Sets the token of this TokenResponse.
-        Token
-
-        :param token: The token of this TokenResponse.
-        :type: str
-        """
-        self._token = token
-
-    @property
     def base(self):
         """
         Gets the base of this TokenResponse.
-        C\u00C3\u00B3digo identificador da base
+        C\u00F3digo identificador da base
 
         :return: The base of this TokenResponse.
         :rtype: int
@@ -129,7 +104,7 @@ class TokenResponse(object):
     def base(self, base):
         """
         Sets the base of this TokenResponse.
-        C\u00C3\u00B3digo identificador da base
+        C\u00F3digo identificador da base
 
         :param base: The base of this TokenResponse.
         :type: int
@@ -190,7 +165,7 @@ class TokenResponse(object):
     def criado_por(self):
         """
         Gets the criado_por of this TokenResponse.
-        Descri\u00C3\u00A7\u00C3\u00A3o de quem criou o token
+        Descri\u00E7\u00E3o de quem criou o token
 
         :return: The criado_por of this TokenResponse.
         :rtype: str
@@ -201,7 +176,7 @@ class TokenResponse(object):
     def criado_por(self, criado_por):
         """
         Sets the criado_por of this TokenResponse.
-        Descri\u00C3\u00A7\u00C3\u00A3o de quem criou o token
+        Descri\u00E7\u00E3o de quem criou o token
 
         :param criado_por: The criado_por of this TokenResponse.
         :type: str
@@ -212,7 +187,7 @@ class TokenResponse(object):
     def data_criacao(self):
         """
         Gets the data_criacao of this TokenResponse.
-        Data de cria\u00C3\u00A7\u00C3\u00A3o do token
+        Data de cria\u00E7\u00E3o do token
 
         :return: The data_criacao of this TokenResponse.
         :rtype: datetime
@@ -223,7 +198,7 @@ class TokenResponse(object):
     def data_criacao(self, data_criacao):
         """
         Sets the data_criacao of this TokenResponse.
-        Data de cria\u00C3\u00A7\u00C3\u00A3o do token
+        Data de cria\u00E7\u00E3o do token
 
         :param data_criacao: The data_criacao of this TokenResponse.
         :type: datetime
@@ -234,7 +209,7 @@ class TokenResponse(object):
     def alterado_por(self):
         """
         Gets the alterado_por of this TokenResponse.
-        Descri\u00C3\u00A7\u00C3\u00A3o de quem alterou o token
+        Descri\u00E7\u00E3o de quem alterou o token
 
         :return: The alterado_por of this TokenResponse.
         :rtype: str
@@ -245,7 +220,7 @@ class TokenResponse(object):
     def alterado_por(self, alterado_por):
         """
         Sets the alterado_por of this TokenResponse.
-        Descri\u00C3\u00A7\u00C3\u00A3o de quem alterou o token
+        Descri\u00E7\u00E3o de quem alterou o token
 
         :param alterado_por: The alterado_por of this TokenResponse.
         :type: str
@@ -256,7 +231,7 @@ class TokenResponse(object):
     def data_modificacao(self):
         """
         Gets the data_modificacao of this TokenResponse.
-        Data de modifica\u00C3\u00A7\u00C3\u00A3o do token
+        Data de modifica\u00E7\u00E3o do token
 
         :return: The data_modificacao of this TokenResponse.
         :rtype: datetime
@@ -267,7 +242,7 @@ class TokenResponse(object):
     def data_modificacao(self, data_modificacao):
         """
         Sets the data_modificacao of this TokenResponse.
-        Data de modifica\u00C3\u00A7\u00C3\u00A3o do token
+        Data de modifica\u00E7\u00E3o do token
 
         :param data_modificacao: The data_modificacao of this TokenResponse.
         :type: datetime

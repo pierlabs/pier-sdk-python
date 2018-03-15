@@ -62,7 +62,7 @@ class UsuarioUpdate(object):
     def nome(self):
         """
         Gets the nome of this UsuarioUpdate.
-        Apresenta o nome do usu\u00C3\u00A1rio.
+        Apresenta o nome do usu\u00E1rio.
 
         :return: The nome of this UsuarioUpdate.
         :rtype: str
@@ -73,7 +73,7 @@ class UsuarioUpdate(object):
     def nome(self, nome):
         """
         Sets the nome of this UsuarioUpdate.
-        Apresenta o nome do usu\u00C3\u00A1rio.
+        Apresenta o nome do usu\u00E1rio.
 
         :param nome: The nome of this UsuarioUpdate.
         :type: str
@@ -84,7 +84,7 @@ class UsuarioUpdate(object):
     def login(self):
         """
         Gets the login of this UsuarioUpdate.
-        Apresenta o login do usu\u00C3\u00A1rio.
+        Apresenta o login do usu\u00E1rio.
 
         :return: The login of this UsuarioUpdate.
         :rtype: str
@@ -95,7 +95,7 @@ class UsuarioUpdate(object):
     def login(self, login):
         """
         Sets the login of this UsuarioUpdate.
-        Apresenta o login do usu\u00C3\u00A1rio.
+        Apresenta o login do usu\u00E1rio.
 
         :param login: The login of this UsuarioUpdate.
         :type: str
@@ -106,7 +106,7 @@ class UsuarioUpdate(object):
     def cpf(self):
         """
         Gets the cpf of this UsuarioUpdate.
-        N\u00C3\u00BAmero do CPF.
+        N\u00FAmero do CPF.
 
         :return: The cpf of this UsuarioUpdate.
         :rtype: str
@@ -117,7 +117,7 @@ class UsuarioUpdate(object):
     def cpf(self, cpf):
         """
         Sets the cpf of this UsuarioUpdate.
-        N\u00C3\u00BAmero do CPF.
+        N\u00FAmero do CPF.
 
         :param cpf: The cpf of this UsuarioUpdate.
         :type: str
@@ -128,7 +128,7 @@ class UsuarioUpdate(object):
     def email(self):
         """
         Gets the email of this UsuarioUpdate.
-        Apresenta o email do usu\u00C3\u00A1rio.
+        Apresenta o email do usu\u00E1rio.
 
         :return: The email of this UsuarioUpdate.
         :rtype: str
@@ -139,7 +139,7 @@ class UsuarioUpdate(object):
     def email(self, email):
         """
         Sets the email of this UsuarioUpdate.
-        Apresenta o email do usu\u00C3\u00A1rio.
+        Apresenta o email do usu\u00E1rio.
 
         :param email: The email of this UsuarioUpdate.
         :type: str
@@ -150,7 +150,7 @@ class UsuarioUpdate(object):
     def status(self):
         """
         Gets the status of this UsuarioUpdate.
-        Apresenta o status do usu\u00C3\u00A1rio.
+        Apresenta o status do usu\u00E1rio.
 
         :return: The status of this UsuarioUpdate.
         :rtype: str
@@ -161,7 +161,7 @@ class UsuarioUpdate(object):
     def status(self, status):
         """
         Sets the status of this UsuarioUpdate.
-        Apresenta o status do usu\u00C3\u00A1rio.
+        Apresenta o status do usu\u00E1rio.
 
         :param status: The status of this UsuarioUpdate.
         :type: str

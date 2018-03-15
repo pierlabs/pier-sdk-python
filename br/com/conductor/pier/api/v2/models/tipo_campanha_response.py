@@ -75,7 +75,7 @@ class TipoCampanhaResponse(object):
     def descricao(self):
         """
         Gets the descricao of this TipoCampanhaResponse.
-        Descri\u00C3\u00A7\u00C3\u00A3o do tipo de campanha
+        Descri\u00E7\u00E3o do tipo de campanha
 
         :return: The descricao of this TipoCampanhaResponse.
         :rtype: str
@@ -86,7 +86,7 @@ class TipoCampanhaResponse(object):
     def descricao(self, descricao):
         """
         Sets the descricao of this TipoCampanhaResponse.
-        Descri\u00C3\u00A7\u00C3\u00A3o do tipo de campanha
+        Descri\u00E7\u00E3o do tipo de campanha
 
         :param descricao: The descricao of this TipoCampanhaResponse.
         :type: str

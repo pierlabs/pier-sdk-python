@@ -59,7 +59,7 @@ class TipoDebitoRecorrenteResponse(object):
     def id(self):
         """
         Gets the id of this TipoDebitoRecorrenteResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do tipo de d\u00C3\u00A9bito recorrente (id).
+        C\u00F3digo de identifica\u00E7\u00E3o do tipo de d\u00E9bito recorrente (id).
 
         :return: The id of this TipoDebitoRecorrenteResponse.
         :rtype: int
@@ -70,7 +70,7 @@ class TipoDebitoRecorrenteResponse(object):
     def id(self, id):
         """
         Sets the id of this TipoDebitoRecorrenteResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do tipo de d\u00C3\u00A9bito recorrente (id).
+        C\u00F3digo de identifica\u00E7\u00E3o do tipo de d\u00E9bito recorrente (id).
 
         :param id: The id of this TipoDebitoRecorrenteResponse.
         :type: int
@@ -81,7 +81,7 @@ class TipoDebitoRecorrenteResponse(object):
     def descricao(self):
         """
         Gets the descricao of this TipoDebitoRecorrenteResponse.
-        Descri\u00C3\u00A7\u00C3\u00A3o do tipo de d\u00C3\u00A9bito recorrente.
+        Descri\u00E7\u00E3o do tipo de d\u00E9bito recorrente.
 
         :return: The descricao of this TipoDebitoRecorrenteResponse.
         :rtype: str
@@ -92,7 +92,7 @@ class TipoDebitoRecorrenteResponse(object):
     def descricao(self, descricao):
         """
         Sets the descricao of this TipoDebitoRecorrenteResponse.
-        Descri\u00C3\u00A7\u00C3\u00A3o do tipo de d\u00C3\u00A9bito recorrente.
+        Descri\u00E7\u00E3o do tipo de d\u00E9bito recorrente.
 
         :param descricao: The descricao of this TipoDebitoRecorrenteResponse.
         :type: str
@@ -103,7 +103,7 @@ class TipoDebitoRecorrenteResponse(object):
     def valor(self):
         """
         Gets the valor of this TipoDebitoRecorrenteResponse.
-        Valor do tipo de d\u00C3\u00A9bito recorrente.
+        Valor do tipo de d\u00E9bito recorrente.
 
         :return: The valor of this TipoDebitoRecorrenteResponse.
         :rtype: float
@@ -114,7 +114,7 @@ class TipoDebitoRecorrenteResponse(object):
     def valor(self, valor):
         """
         Sets the valor of this TipoDebitoRecorrenteResponse.
-        Valor do tipo de d\u00C3\u00A9bito recorrente.
+        Valor do tipo de d\u00E9bito recorrente.
 
         :param valor: The valor of this TipoDebitoRecorrenteResponse.
         :type: float
@@ -125,7 +125,7 @@ class TipoDebitoRecorrenteResponse(object):
     def flag_ativo(self):
         """
         Gets the flag_ativo of this TipoDebitoRecorrenteResponse.
-        Flag que identifica se o tipo d\u00C3\u00A9bito recorrente est\u00C3\u00A1 ativo.
+        Flag que identifica se o tipo d\u00E9bito recorrente est\u00E1 ativo.
 
         :return: The flag_ativo of this TipoDebitoRecorrenteResponse.
         :rtype: bool
@@ -136,7 +136,7 @@ class TipoDebitoRecorrenteResponse(object):
     def flag_ativo(self, flag_ativo):
         """
         Sets the flag_ativo of this TipoDebitoRecorrenteResponse.
-        Flag que identifica se o tipo d\u00C3\u00A9bito recorrente est\u00C3\u00A1 ativo.
+        Flag que identifica se o tipo d\u00E9bito recorrente est\u00E1 ativo.
 
         :param flag_ativo: The flag_ativo of this TipoDebitoRecorrenteResponse.
         :type: bool

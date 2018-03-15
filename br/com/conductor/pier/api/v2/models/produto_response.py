@@ -59,7 +59,7 @@ class ProdutoResponse(object):
     def id(self):
         """
         Gets the id of this ProdutoResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Produto (id).
+        C\u00F3digo de Identifica\u00E7\u00E3o do Produto (id).
 
         :return: The id of this ProdutoResponse.
         :rtype: int
@@ -70,7 +70,7 @@ class ProdutoResponse(object):
     def id(self, id):
         """
         Sets the id of this ProdutoResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Produto (id).
+        C\u00F3digo de Identifica\u00E7\u00E3o do Produto (id).
 
         :param id: The id of this ProdutoResponse.
         :type: int
@@ -81,7 +81,7 @@ class ProdutoResponse(object):
     def nome(self):
         """
         Gets the nome of this ProdutoResponse.
-        Descri\u00C3\u00A7\u00C3\u00A3o do Nome do Produto.
+        Descri\u00E7\u00E3o do Nome do Produto.
 
         :return: The nome of this ProdutoResponse.
         :rtype: str
@@ -92,7 +92,7 @@ class ProdutoResponse(object):
     def nome(self, nome):
         """
         Sets the nome of this ProdutoResponse.
-        Descri\u00C3\u00A7\u00C3\u00A3o do Nome do Produto.
+        Descri\u00E7\u00E3o do Nome do Produto.
 
         :param nome: The nome of this ProdutoResponse.
         :type: str
@@ -125,7 +125,7 @@ class ProdutoResponse(object):
     def id_fantasia_basica(self):
         """
         Gets the id_fantasia_basica of this ProdutoResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Fantasia B\u00C3\u00A1sica (id) a qual o produto pertence.
+        C\u00F3digo de Identifica\u00E7\u00E3o da Fantasia B\u00E1sica (id) a qual o produto pertence.
 
         :return: The id_fantasia_basica of this ProdutoResponse.
         :rtype: int
@@ -136,7 +136,7 @@ class ProdutoResponse(object):
     def id_fantasia_basica(self, id_fantasia_basica):
         """
         Sets the id_fantasia_basica of this ProdutoResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Fantasia B\u00C3\u00A1sica (id) a qual o produto pertence.
+        C\u00F3digo de Identifica\u00E7\u00E3o da Fantasia B\u00E1sica (id) a qual o produto pertence.
 
         :param id_fantasia_basica: The id_fantasia_basica of this ProdutoResponse.
         :type: int

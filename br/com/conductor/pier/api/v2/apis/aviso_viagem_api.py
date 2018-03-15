@@ -45,10 +45,10 @@ class AvisoViagemApi(object):
                 config.api_client = ApiClient()
             self.api_client = config.api_client
 
-    def consultar_using_get4(self, id, **kwargs):
+    def consultar_using_get5(self, id, **kwargs):
         """
         Consultar um aviso viagem de acordo com o id passado
-        Este m\u00C3\u00A9todo permite que seja consultado um aviso viagen existente na base do emissor.
+        Este m\u00E9todo permite que seja consultado um aviso viagen existente na base do emissor.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -56,11 +56,11 @@ class AvisoViagemApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get4(id, callback=callback_function)
+        >>> thread = api.consultar_using_get5(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Aviso Viagem (id). (required)
+        :param int id: C\u00F3digo de Identifica\u00E7\u00E3o do Aviso Viagem (id). (required)
         :return: AvisoViagemResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -74,14 +74,14 @@ class AvisoViagemApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get4" % key
+                    " to method consultar_using_get5" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get4`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get5`")
 
         resource_path = '/api/avisos-viagens/{id}'.replace('{format}', 'json')
         path_params = {}
@@ -125,7 +125,7 @@ class AvisoViagemApi(object):
     def desabilitar_using_post(self, id, **kwargs):
         """
         Desabilitar um aviso viagem de acordo com o id passado
-        Este m\u00C3\u00A9todo permite que seja desabilitado um aviso viagen existente na base do emissor.
+        Este m\u00E9todo permite que seja desabilitado um aviso viagen existente na base do emissor.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -137,7 +137,7 @@ class AvisoViagemApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Aviso Viagem (id). (required)
+        :param int id: C\u00F3digo de Identifica\u00E7\u00E3o do Aviso Viagem (id). (required)
         :return: AvisoViagemResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -202,7 +202,7 @@ class AvisoViagemApi(object):
     def habilitar_using_post(self, id, **kwargs):
         """
         Habilitar um aviso viagem de acordo com o id passado
-        Este m\u00C3\u00A9todo permite que seja habilitado um aviso viagen existente na base do emissor.
+        Este m\u00E9todo permite que seja habilitado um aviso viagen existente na base do emissor.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -214,7 +214,7 @@ class AvisoViagemApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Aviso Viagem (id). (required)
+        :param int id: C\u00F3digo de Identifica\u00E7\u00E3o do Aviso Viagem (id). (required)
         :return: AvisoViagemResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -276,10 +276,10 @@ class AvisoViagemApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get6(self, **kwargs):
+    def listar_using_get7(self, **kwargs):
         """
         Lista os avisos viagens gerados pelo Emissor
-        Este m\u00C3\u00A9todo permite que sejam listados os avisos viagens existentes na base do emissor.
+        Este m\u00E9todo permite que sejam listados os avisos viagens existentes na base do emissor.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -287,18 +287,18 @@ class AvisoViagemApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get6(callback=callback_function)
+        >>> thread = api.listar_using_get7(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param list[str] sort: Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
-        :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
-        :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
-        :param int id_cartao: C\u00C3\u00B3digo Identificador do cart\u00C3\u00A3o na base (id)
-        :param str codigo_pais: Codigo identificador do pa\u00C3\u00ADs na base (id)
+        :param list[str] sort: Tipo de ordena\u00E7\u00E3o dos registros.
+        :param int page: P\u00E1gina solicitada (Default = 0)
+        :param int limit: Limite de elementos por solicita\u00E7\u00E3o (Default = 50, Max = 50)
+        :param int id_cartao: C\u00F3digo Identificador do cart\u00E3o na base (id)
+        :param str codigo_pais: Codigo identificador do pa\u00EDs na base (id)
         :param str data_inicio: Data inicio do aviso viagem
         :param str data_fim: Data fim do aviso viagem
-        :param int flag_ativo: Identifica se o aviso viagem esta ativo ou n\u00C3\u00A3o
+        :param int flag_ativo: Identifica se o aviso viagem esta ativo ou n\u00E3o
         :return: PageAvisoViagemResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -312,7 +312,7 @@ class AvisoViagemApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get6" % key
+                    " to method listar_using_get7" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -374,7 +374,7 @@ class AvisoViagemApi(object):
     def salvar_using_post3(self, id_cartao, codigo_pais, data_inicio, data_fim, **kwargs):
         """
         Realiza o cadastro de um novo Aviso Viagem
-        Este m\u00C3\u00A9todo permite que seja cadastrado um novo Aviso Viagem na base de dados do Emissor.
+        Este m\u00E9todo permite que seja cadastrado um novo Aviso Viagem na base de dados do Emissor.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -386,8 +386,8 @@ class AvisoViagemApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param int id_cartao: C\u00C3\u00B3digo Identificador do cart\u00C3\u00A3o na base (id) (required)
-        :param str codigo_pais: Codigo identificador do pa\u00C3\u00ADs na base (id) (required)
+        :param int id_cartao: C\u00F3digo Identificador do cart\u00E3o na base (id) (required)
+        :param str codigo_pais: Codigo identificador do pa\u00EDs na base (id) (required)
         :param str data_inicio: Data inicio do aviso viagem (required)
         :param str data_fim: Data fim do aviso viagem (required)
         :return: AvisoViagemResponse

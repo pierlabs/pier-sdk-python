@@ -108,7 +108,7 @@ class PessoaPersist(object):
     def cpf(self):
         """
         Gets the cpf of this PessoaPersist.
-        N\u00C3\u00BAmero do CPF, quando PF.
+        N\u00FAmero do CPF, quando PF.
 
         :return: The cpf of this PessoaPersist.
         :rtype: str
@@ -119,7 +119,7 @@ class PessoaPersist(object):
     def cpf(self, cpf):
         """
         Sets the cpf of this PessoaPersist.
-        N\u00C3\u00BAmero do CPF, quando PF.
+        N\u00FAmero do CPF, quando PF.
 
         :param cpf: The cpf of this PessoaPersist.
         :type: str
@@ -152,7 +152,7 @@ class PessoaPersist(object):
     def sexo(self):
         """
         Gets the sexo of this PessoaPersist.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do sexo da Pessoa, quando PF, sendo: (\"M\": Masculino), (\"F\": Feminino).
+        C\u00F3digo de identifica\u00E7\u00E3o do sexo da Pessoa, quando PF, sendo: (\"M\": Masculino), (\"F\": Feminino).
 
         :return: The sexo of this PessoaPersist.
         :rtype: str
@@ -163,7 +163,7 @@ class PessoaPersist(object):
     def sexo(self, sexo):
         """
         Sets the sexo of this PessoaPersist.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do sexo da Pessoa, quando PF, sendo: (\"M\": Masculino), (\"F\": Feminino).
+        C\u00F3digo de identifica\u00E7\u00E3o do sexo da Pessoa, quando PF, sendo: (\"M\": Masculino), (\"F\": Feminino).
 
         :param sexo: The sexo of this PessoaPersist.
         :type: str
@@ -174,7 +174,7 @@ class PessoaPersist(object):
     def numero_identidade(self):
         """
         Gets the numero_identidade of this PessoaPersist.
-        N\u00C3\u00BAmero da Identidade.
+        N\u00FAmero da Identidade.
 
         :return: The numero_identidade of this PessoaPersist.
         :rtype: str
@@ -185,7 +185,7 @@ class PessoaPersist(object):
     def numero_identidade(self, numero_identidade):
         """
         Sets the numero_identidade of this PessoaPersist.
-        N\u00C3\u00BAmero da Identidade.
+        N\u00FAmero da Identidade.
 
         :param numero_identidade: The numero_identidade of this PessoaPersist.
         :type: str
@@ -196,7 +196,7 @@ class PessoaPersist(object):
     def orgao_expedidor_identidade(self):
         """
         Gets the orgao_expedidor_identidade of this PessoaPersist.
-        Org\u00C3\u00A3o expedidor da Identidade.
+        Org\u00E3o expedidor da Identidade.
 
         :return: The orgao_expedidor_identidade of this PessoaPersist.
         :rtype: str
@@ -207,7 +207,7 @@ class PessoaPersist(object):
     def orgao_expedidor_identidade(self, orgao_expedidor_identidade):
         """
         Sets the orgao_expedidor_identidade of this PessoaPersist.
-        Org\u00C3\u00A3o expedidor da Identidade.
+        Org\u00E3o expedidor da Identidade.
 
         :param orgao_expedidor_identidade: The orgao_expedidor_identidade of this PessoaPersist.
         :type: str
@@ -240,7 +240,7 @@ class PessoaPersist(object):
     def data_emissao_identidade(self):
         """
         Gets the data_emissao_identidade of this PessoaPersist.
-        Data emiss\u00C3\u00A3o da Identidade
+        Data emiss\u00E3o da Identidade
 
         :return: The data_emissao_identidade of this PessoaPersist.
         :rtype: str
@@ -251,7 +251,7 @@ class PessoaPersist(object):
     def data_emissao_identidade(self, data_emissao_identidade):
         """
         Sets the data_emissao_identidade of this PessoaPersist.
-        Data emiss\u00C3\u00A3o da Identidade
+        Data emiss\u00E3o da Identidade
 
         :param data_emissao_identidade: The data_emissao_identidade of this PessoaPersist.
         :type: str
@@ -262,7 +262,7 @@ class PessoaPersist(object):
     def estado_civil(self):
         """
         Gets the estado_civil of this PessoaPersist.
-        Estado civil do s\u00C3\u00B3cio
+        Estado civil do s\u00F3cio
 
         :return: The estado_civil of this PessoaPersist.
         :rtype: str
@@ -273,7 +273,7 @@ class PessoaPersist(object):
     def estado_civil(self, estado_civil):
         """
         Sets the estado_civil of this PessoaPersist.
-        Estado civil do s\u00C3\u00B3cio
+        Estado civil do s\u00F3cio
 
         :param estado_civil: The estado_civil of this PessoaPersist.
         :type: str
@@ -284,7 +284,7 @@ class PessoaPersist(object):
     def profissao(self):
         """
         Gets the profissao of this PessoaPersist.
-        Profiss\u00C3\u00A3o do s\u00C3\u00B3cio
+        Profiss\u00E3o do s\u00F3cio
 
         :return: The profissao of this PessoaPersist.
         :rtype: str
@@ -295,7 +295,7 @@ class PessoaPersist(object):
     def profissao(self, profissao):
         """
         Sets the profissao of this PessoaPersist.
-        Profiss\u00C3\u00A3o do s\u00C3\u00B3cio
+        Profiss\u00E3o do s\u00F3cio
 
         :param profissao: The profissao of this PessoaPersist.
         :type: str
@@ -306,7 +306,7 @@ class PessoaPersist(object):
     def nacionalidade(self):
         """
         Gets the nacionalidade of this PessoaPersist.
-        Nacionalidade do s\u00C3\u00B3cio
+        Nacionalidade do s\u00F3cio
 
         :return: The nacionalidade of this PessoaPersist.
         :rtype: str
@@ -317,7 +317,7 @@ class PessoaPersist(object):
     def nacionalidade(self, nacionalidade):
         """
         Sets the nacionalidade of this PessoaPersist.
-        Nacionalidade do s\u00C3\u00B3cio
+        Nacionalidade do s\u00F3cio
 
         :param nacionalidade: The nacionalidade of this PessoaPersist.
         :type: str
@@ -328,7 +328,7 @@ class PessoaPersist(object):
     def email(self):
         """
         Gets the email of this PessoaPersist.
-        Email do s\u00C3\u00B3cio
+        Email do s\u00F3cio
 
         :return: The email of this PessoaPersist.
         :rtype: str
@@ -339,7 +339,7 @@ class PessoaPersist(object):
     def email(self, email):
         """
         Sets the email of this PessoaPersist.
-        Email do s\u00C3\u00B3cio
+        Email do s\u00F3cio
 
         :param email: The email of this PessoaPersist.
         :type: str
@@ -350,7 +350,7 @@ class PessoaPersist(object):
     def telefones(self):
         """
         Gets the telefones of this PessoaPersist.
-        Informa os telefones do s\u00C3\u00B3cio
+        Informa os telefones do s\u00F3cio
 
         :return: The telefones of this PessoaPersist.
         :rtype: list[TelefonePessoaAprovadaPersist]
@@ -361,7 +361,7 @@ class PessoaPersist(object):
     def telefones(self, telefones):
         """
         Sets the telefones of this PessoaPersist.
-        Informa os telefones do s\u00C3\u00B3cio
+        Informa os telefones do s\u00F3cio
 
         :param telefones: The telefones of this PessoaPersist.
         :type: list[TelefonePessoaAprovadaPersist]

@@ -86,7 +86,7 @@ class ConfiguracaoRegistroCobrancaPersist(object):
     def codigo_banco(self):
         """
         Gets the codigo_banco of this ConfiguracaoRegistroCobrancaPersist.
-        C\u00C3\u00B3digo do Banco.
+        C\u00F3digo do Banco.
 
         :return: The codigo_banco of this ConfiguracaoRegistroCobrancaPersist.
         :rtype: int
@@ -97,7 +97,7 @@ class ConfiguracaoRegistroCobrancaPersist(object):
     def codigo_banco(self, codigo_banco):
         """
         Sets the codigo_banco of this ConfiguracaoRegistroCobrancaPersist.
-        C\u00C3\u00B3digo do Banco.
+        C\u00F3digo do Banco.
 
         :param codigo_banco: The codigo_banco of this ConfiguracaoRegistroCobrancaPersist.
         :type: int
@@ -350,7 +350,7 @@ class ConfiguracaoRegistroCobrancaPersist(object):
     def status(self):
         """
         Gets the status of this ConfiguracaoRegistroCobrancaPersist.
-        Status descrevendo a situa\u00C3\u00A7\u00C3\u00A3o atual da configura\u00C3\u00A7\u00C3\u00A3o.
+        Status descrevendo a situa\u00E7\u00E3o atual da configura\u00E7\u00E3o.
 
         :return: The status of this ConfiguracaoRegistroCobrancaPersist.
         :rtype: str
@@ -361,7 +361,7 @@ class ConfiguracaoRegistroCobrancaPersist(object):
     def status(self, status):
         """
         Sets the status of this ConfiguracaoRegistroCobrancaPersist.
-        Status descrevendo a situa\u00C3\u00A7\u00C3\u00A3o atual da configura\u00C3\u00A7\u00C3\u00A3o.
+        Status descrevendo a situa\u00E7\u00E3o atual da configura\u00E7\u00E3o.
 
         :param status: The status of this ConfiguracaoRegistroCobrancaPersist.
         :type: str

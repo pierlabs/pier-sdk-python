@@ -98,7 +98,7 @@ class NotificacaoSMSResponse(object):
     def id(self):
         """
         Gets the id of this NotificacaoSMSResponse.
-        C\u00C3\u00B3digo Identificador.
+        C\u00F3digo Identificador.
 
         :return: The id of this NotificacaoSMSResponse.
         :rtype: int
@@ -109,7 +109,7 @@ class NotificacaoSMSResponse(object):
     def id(self, id):
         """
         Sets the id of this NotificacaoSMSResponse.
-        C\u00C3\u00B3digo Identificador.
+        C\u00F3digo Identificador.
 
         :param id: The id of this NotificacaoSMSResponse.
         :type: int
@@ -120,7 +120,7 @@ class NotificacaoSMSResponse(object):
     def nsu(self):
         """
         Gets the nsu of this NotificacaoSMSResponse.
-        N\u00C3\u00BAmero sequencial \u00C3\u00BAnico.
+        N\u00FAmero sequencial \u00FAnico.
 
         :return: The nsu of this NotificacaoSMSResponse.
         :rtype: int
@@ -131,7 +131,7 @@ class NotificacaoSMSResponse(object):
     def nsu(self, nsu):
         """
         Sets the nsu of this NotificacaoSMSResponse.
-        N\u00C3\u00BAmero sequencial \u00C3\u00BAnico.
+        N\u00FAmero sequencial \u00FAnico.
 
         :param nsu: The nsu of this NotificacaoSMSResponse.
         :type: int
@@ -142,7 +142,7 @@ class NotificacaoSMSResponse(object):
     def id_emissor(self):
         """
         Gets the id_emissor of this NotificacaoSMSResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do emissor (id).
+        C\u00F3digo de identifica\u00E7\u00E3o do emissor (id).
 
         :return: The id_emissor of this NotificacaoSMSResponse.
         :rtype: int
@@ -153,7 +153,7 @@ class NotificacaoSMSResponse(object):
     def id_emissor(self, id_emissor):
         """
         Sets the id_emissor of this NotificacaoSMSResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do emissor (id).
+        C\u00F3digo de identifica\u00E7\u00E3o do emissor (id).
 
         :param id_emissor: The id_emissor of this NotificacaoSMSResponse.
         :type: int
@@ -164,7 +164,7 @@ class NotificacaoSMSResponse(object):
     def tipo_evento(self):
         """
         Gets the tipo_evento of this NotificacaoSMSResponse.
-        TipoEvento de notifica\u00C3\u00A7\u00C3\u00A3o
+        TipoEvento de notifica\u00E7\u00E3o
 
         :return: The tipo_evento of this NotificacaoSMSResponse.
         :rtype: str
@@ -175,7 +175,7 @@ class NotificacaoSMSResponse(object):
     def tipo_evento(self, tipo_evento):
         """
         Sets the tipo_evento of this NotificacaoSMSResponse.
-        TipoEvento de notifica\u00C3\u00A7\u00C3\u00A3o
+        TipoEvento de notifica\u00E7\u00E3o
 
         :param tipo_evento: The tipo_evento of this NotificacaoSMSResponse.
         :type: str
@@ -192,7 +192,7 @@ class NotificacaoSMSResponse(object):
     def status(self):
         """
         Gets the status of this NotificacaoSMSResponse.
-        Status de envio da notifica\u00C3\u00A7\u00C3\u00A3o
+        Status de envio da notifica\u00E7\u00E3o
 
         :return: The status of this NotificacaoSMSResponse.
         :rtype: str
@@ -203,7 +203,7 @@ class NotificacaoSMSResponse(object):
     def status(self, status):
         """
         Sets the status of this NotificacaoSMSResponse.
-        Status de envio da notifica\u00C3\u00A7\u00C3\u00A3o
+        Status de envio da notifica\u00E7\u00E3o
 
         :param status: The status of this NotificacaoSMSResponse.
         :type: str
@@ -220,7 +220,7 @@ class NotificacaoSMSResponse(object):
     def descricao_status(self):
         """
         Gets the descricao_status of this NotificacaoSMSResponse.
-        Descri\u00C3\u00A7\u00C3\u00A3o do status de envio da notifica\u00C3\u00A7\u00C3\u00A3o
+        Descri\u00E7\u00E3o do status de envio da notifica\u00E7\u00E3o
 
         :return: The descricao_status of this NotificacaoSMSResponse.
         :rtype: str
@@ -231,7 +231,7 @@ class NotificacaoSMSResponse(object):
     def descricao_status(self, descricao_status):
         """
         Sets the descricao_status of this NotificacaoSMSResponse.
-        Descri\u00C3\u00A7\u00C3\u00A3o do status de envio da notifica\u00C3\u00A7\u00C3\u00A3o
+        Descri\u00E7\u00E3o do status de envio da notifica\u00E7\u00E3o
 
         :param descricao_status: The descricao_status of this NotificacaoSMSResponse.
         :type: str
@@ -242,7 +242,7 @@ class NotificacaoSMSResponse(object):
     def id_pessoa(self):
         """
         Gets the id_pessoa of this NotificacaoSMSResponse.
-        C\u00C3\u00B3digo identificado da pessoa
+        C\u00F3digo identificado da pessoa
 
         :return: The id_pessoa of this NotificacaoSMSResponse.
         :rtype: int
@@ -253,7 +253,7 @@ class NotificacaoSMSResponse(object):
     def id_pessoa(self, id_pessoa):
         """
         Sets the id_pessoa of this NotificacaoSMSResponse.
-        C\u00C3\u00B3digo identificado da pessoa
+        C\u00F3digo identificado da pessoa
 
         :param id_pessoa: The id_pessoa of this NotificacaoSMSResponse.
         :type: int
@@ -264,7 +264,7 @@ class NotificacaoSMSResponse(object):
     def id_conta(self):
         """
         Gets the id_conta of this NotificacaoSMSResponse.
-        C\u00C3\u00B3digo identificador da conta
+        C\u00F3digo identificador da conta
 
         :return: The id_conta of this NotificacaoSMSResponse.
         :rtype: int
@@ -275,7 +275,7 @@ class NotificacaoSMSResponse(object):
     def id_conta(self, id_conta):
         """
         Sets the id_conta of this NotificacaoSMSResponse.
-        C\u00C3\u00B3digo identificador da conta
+        C\u00F3digo identificador da conta
 
         :param id_conta: The id_conta of this NotificacaoSMSResponse.
         :type: int
@@ -330,7 +330,7 @@ class NotificacaoSMSResponse(object):
     def conteudo(self):
         """
         Gets the conteudo of this NotificacaoSMSResponse.
-        Apresenta o texto da notifica\u00C3\u00A7\u00C3\u00A3o a ser enviado
+        Apresenta o texto da notifica\u00E7\u00E3o a ser enviado
 
         :return: The conteudo of this NotificacaoSMSResponse.
         :rtype: str
@@ -341,7 +341,7 @@ class NotificacaoSMSResponse(object):
     def conteudo(self, conteudo):
         """
         Sets the conteudo of this NotificacaoSMSResponse.
-        Apresenta o texto da notifica\u00C3\u00A7\u00C3\u00A3o a ser enviado
+        Apresenta o texto da notifica\u00E7\u00E3o a ser enviado
 
         :param conteudo: The conteudo of this NotificacaoSMSResponse.
         :type: str
@@ -352,7 +352,7 @@ class NotificacaoSMSResponse(object):
     def resposta(self):
         """
         Gets the resposta of this NotificacaoSMSResponse.
-        Apresenta o texto da resposta da notifica\u00C3\u00A7\u00C3\u00A3o que foi enviada
+        Apresenta o texto da resposta da notifica\u00E7\u00E3o que foi enviada
 
         :return: The resposta of this NotificacaoSMSResponse.
         :rtype: str
@@ -363,7 +363,7 @@ class NotificacaoSMSResponse(object):
     def resposta(self, resposta):
         """
         Sets the resposta of this NotificacaoSMSResponse.
-        Apresenta o texto da resposta da notifica\u00C3\u00A7\u00C3\u00A3o que foi enviada
+        Apresenta o texto da resposta da notifica\u00E7\u00E3o que foi enviada
 
         :param resposta: The resposta of this NotificacaoSMSResponse.
         :type: str
@@ -374,7 +374,7 @@ class NotificacaoSMSResponse(object):
     def data_agendamento(self):
         """
         Gets the data_agendamento of this NotificacaoSMSResponse.
-        Apresenta a data e hora em que ser\u00C3\u00A1 enviado a notifica\u00C3\u00A7\u00C3\u00A3o
+        Apresenta a data e hora em que ser\u00E1 enviado a notifica\u00E7\u00E3o
 
         :return: The data_agendamento of this NotificacaoSMSResponse.
         :rtype: str
@@ -385,7 +385,7 @@ class NotificacaoSMSResponse(object):
     def data_agendamento(self, data_agendamento):
         """
         Sets the data_agendamento of this NotificacaoSMSResponse.
-        Apresenta a data e hora em que ser\u00C3\u00A1 enviado a notifica\u00C3\u00A7\u00C3\u00A3o
+        Apresenta a data e hora em que ser\u00E1 enviado a notifica\u00E7\u00E3o
 
         :param data_agendamento: The data_agendamento of this NotificacaoSMSResponse.
         :type: str
@@ -396,7 +396,7 @@ class NotificacaoSMSResponse(object):
     def quantidade_tentativas_envio(self):
         """
         Gets the quantidade_tentativas_envio of this NotificacaoSMSResponse.
-        Quantidade de tentativas e envio da notifica\u00C3\u00A7\u00C3\u00A3o
+        Quantidade de tentativas e envio da notifica\u00E7\u00E3o
 
         :return: The quantidade_tentativas_envio of this NotificacaoSMSResponse.
         :rtype: int
@@ -407,7 +407,7 @@ class NotificacaoSMSResponse(object):
     def quantidade_tentativas_envio(self, quantidade_tentativas_envio):
         """
         Sets the quantidade_tentativas_envio of this NotificacaoSMSResponse.
-        Quantidade de tentativas e envio da notifica\u00C3\u00A7\u00C3\u00A3o
+        Quantidade de tentativas e envio da notifica\u00E7\u00E3o
 
         :param quantidade_tentativas_envio: The quantidade_tentativas_envio of this NotificacaoSMSResponse.
         :type: int
@@ -418,7 +418,7 @@ class NotificacaoSMSResponse(object):
     def data_inclusao(self):
         """
         Gets the data_inclusao of this NotificacaoSMSResponse.
-        Apresenta a data e em que o registro foi inclu\u00C3\u00ADdo na base para ser enviado
+        Apresenta a data e em que o registro foi inclu\u00EDdo na base para ser enviado
 
         :return: The data_inclusao of this NotificacaoSMSResponse.
         :rtype: str
@@ -429,7 +429,7 @@ class NotificacaoSMSResponse(object):
     def data_inclusao(self, data_inclusao):
         """
         Sets the data_inclusao of this NotificacaoSMSResponse.
-        Apresenta a data e em que o registro foi inclu\u00C3\u00ADdo na base para ser enviado
+        Apresenta a data e em que o registro foi inclu\u00EDdo na base para ser enviado
 
         :param data_inclusao: The data_inclusao of this NotificacaoSMSResponse.
         :type: str
@@ -462,7 +462,7 @@ class NotificacaoSMSResponse(object):
     def protocolo(self):
         """
         Gets the protocolo of this NotificacaoSMSResponse.
-        N\u00C3\u00BAmero do protocolo de envio de notifica\u00C3\u00A7\u00C3\u00B5es
+        N\u00FAmero do protocolo de envio de notifica\u00E7\u00F5es
 
         :return: The protocolo of this NotificacaoSMSResponse.
         :rtype: str
@@ -473,7 +473,7 @@ class NotificacaoSMSResponse(object):
     def protocolo(self, protocolo):
         """
         Sets the protocolo of this NotificacaoSMSResponse.
-        N\u00C3\u00BAmero do protocolo de envio de notifica\u00C3\u00A7\u00C3\u00B5es
+        N\u00FAmero do protocolo de envio de notifica\u00E7\u00F5es
 
         :param protocolo: The protocolo of this NotificacaoSMSResponse.
         :type: str

@@ -103,7 +103,7 @@ class TipoTemplateResponse(object):
     def descricao(self):
         """
         Gets the descricao of this TipoTemplateResponse.
-        Descri\u00C3\u00A7\u00C3\u00A3o do Tipo de Template.
+        Descri\u00E7\u00E3o do Tipo de Template.
 
         :return: The descricao of this TipoTemplateResponse.
         :rtype: str
@@ -114,7 +114,7 @@ class TipoTemplateResponse(object):
     def descricao(self, descricao):
         """
         Sets the descricao of this TipoTemplateResponse.
-        Descri\u00C3\u00A7\u00C3\u00A3o do Tipo de Template.
+        Descri\u00E7\u00E3o do Tipo de Template.
 
         :param descricao: The descricao of this TipoTemplateResponse.
         :type: str

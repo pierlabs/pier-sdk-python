@@ -68,7 +68,7 @@ class FaqResponse(object):
     def id(self):
         """
         Gets the id of this FaqResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da FAQ (id).
+        C\u00F3digo de identifica\u00E7\u00E3o da FAQ (id).
 
         :return: The id of this FaqResponse.
         :rtype: int
@@ -79,7 +79,7 @@ class FaqResponse(object):
     def id(self, id):
         """
         Sets the id of this FaqResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da FAQ (id).
+        C\u00F3digo de identifica\u00E7\u00E3o da FAQ (id).
 
         :param id: The id of this FaqResponse.
         :type: int
@@ -90,7 +90,7 @@ class FaqResponse(object):
     def pergunta(self):
         """
         Gets the pergunta of this FaqResponse.
-        Conte\u00C3\u00BAdo da pergunta.
+        Conte\u00FAdo da pergunta.
 
         :return: The pergunta of this FaqResponse.
         :rtype: str
@@ -101,7 +101,7 @@ class FaqResponse(object):
     def pergunta(self, pergunta):
         """
         Sets the pergunta of this FaqResponse.
-        Conte\u00C3\u00BAdo da pergunta.
+        Conte\u00FAdo da pergunta.
 
         :param pergunta: The pergunta of this FaqResponse.
         :type: str
@@ -112,7 +112,7 @@ class FaqResponse(object):
     def resposta(self):
         """
         Gets the resposta of this FaqResponse.
-        Conte\u00C3\u00BAdo da resposta.
+        Conte\u00FAdo da resposta.
 
         :return: The resposta of this FaqResponse.
         :rtype: str
@@ -123,7 +123,7 @@ class FaqResponse(object):
     def resposta(self, resposta):
         """
         Sets the resposta of this FaqResponse.
-        Conte\u00C3\u00BAdo da resposta.
+        Conte\u00FAdo da resposta.
 
         :param resposta: The resposta of this FaqResponse.
         :type: str
@@ -134,7 +134,7 @@ class FaqResponse(object):
     def relevancia(self):
         """
         Gets the relevancia of this FaqResponse.
-        N\u00C3\u00ADvel de relev\u00C3\u00A2ncia da pergunta.
+        N\u00EDvel de relev\u00E2ncia da pergunta.
 
         :return: The relevancia of this FaqResponse.
         :rtype: int
@@ -145,7 +145,7 @@ class FaqResponse(object):
     def relevancia(self, relevancia):
         """
         Sets the relevancia of this FaqResponse.
-        N\u00C3\u00ADvel de relev\u00C3\u00A2ncia da pergunta.
+        N\u00EDvel de relev\u00E2ncia da pergunta.
 
         :param relevancia: The relevancia of this FaqResponse.
         :type: int
@@ -200,7 +200,7 @@ class FaqResponse(object):
     def status(self):
         """
         Gets the status of this FaqResponse.
-        Status descrevendo a situa\u00C3\u00A7\u00C3\u00A3o atual da FAQ.
+        Status descrevendo a situa\u00E7\u00E3o atual da FAQ.
 
         :return: The status of this FaqResponse.
         :rtype: str
@@ -211,7 +211,7 @@ class FaqResponse(object):
     def status(self, status):
         """
         Sets the status of this FaqResponse.
-        Status descrevendo a situa\u00C3\u00A7\u00C3\u00A3o atual da FAQ.
+        Status descrevendo a situa\u00E7\u00E3o atual da FAQ.
 
         :param status: The status of this FaqResponse.
         :type: str

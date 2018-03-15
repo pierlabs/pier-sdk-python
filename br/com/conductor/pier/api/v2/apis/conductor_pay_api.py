@@ -47,8 +47,8 @@ class ConductorPayApi(object):
 
     def atualizar_chave_using_post(self, device_id, id, **kwargs):
         """
-        Atualiza a chave de gera\u00C3\u00A7\u00C3\u00A3o de transa\u00C3\u00A7\u00C3\u00A3o
-        Este m\u00C3\u00A9todo permite atualizar a chave de gera\u00C3\u00A7\u00C3\u00A3o de transa\u00C3\u00A7\u00C3\u00A3o de um dispositivo a partir do seu identificador (id).
+        Atualiza a chave de gera\u00E7\u00E3o de transa\u00E7\u00E3o
+        Este m\u00E9todo permite atualizar a chave de gera\u00E7\u00E3o de transa\u00E7\u00E3o de um dispositivo a partir do seu identificador (id).
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -61,7 +61,7 @@ class ConductorPayApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param str device_id: Device id criptografado (required)
-        :param int id: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do cart\u00C3\u00A3o (id). (required)
+        :param int id: C\u00F3digo de identifica\u00E7\u00E3o do cart\u00E3o (id). (required)
         :return: CartaoPayAtualizarChaveResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -130,8 +130,8 @@ class ConductorPayApi(object):
 
     def atualizar_using_put(self, device_id, id, update, **kwargs):
         """
-        Atualiza os dados do cart\u00C3\u00A3o
-        Este m\u00C3\u00A9todo permite atualizar os dados do cart\u00C3\u00A3o tokenizados de um dispositivo a partir do seu identificador (id).
+        Atualiza os dados do cart\u00E3o
+        Este m\u00E9todo permite atualizar os dados do cart\u00E3o tokenizados de um dispositivo a partir do seu identificador (id).
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -144,7 +144,7 @@ class ConductorPayApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param str device_id: Device id criptografado (required)
-        :param int id: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do cart\u00C3\u00A3o (id). (required)
+        :param int id: C\u00F3digo de identifica\u00E7\u00E3o do cart\u00E3o (id). (required)
         :param CartaoPayUpdate update: update (required)
         :return: CartaoPayResponse
                  If the method is called asynchronously,
@@ -219,8 +219,8 @@ class ConductorPayApi(object):
 
     def confirma_atualizacao_chave_using_post(self, device_id, id, update, **kwargs):
         """
-        Confirma a atualiza\u00C3\u00A7\u00C3\u00A3o da chave de transa\u00C3\u00A7\u00C3\u00A3o
-        Este met\u00C3\u00B3do recebe confirma\u00C3\u00A7\u00C3\u00A3o de atualiza\u00C3\u00A7\u00C3\u00A3o de chave transa\u00C3\u00A7\u00C3\u00A3o.
+        Confirma a atualiza\u00E7\u00E3o da chave de transa\u00E7\u00E3o
+        Este met\u00F3do recebe confirma\u00E7\u00E3o de atualiza\u00E7\u00E3o de chave transa\u00E7\u00E3o.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -233,7 +233,7 @@ class ConductorPayApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param str device_id: Device id criptografado (required)
-        :param int id: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do cart\u00C3\u00A3o (id). (required)
+        :param int id: C\u00F3digo de identifica\u00E7\u00E3o do cart\u00E3o (id). (required)
         :param CartaoPayKeyUpdate update: update (required)
         :return: CartaoPayConfirmarChaveResponse
                  If the method is called asynchronously,
@@ -306,10 +306,10 @@ class ConductorPayApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get7(self, device_id, id, **kwargs):
+    def consultar_using_get8(self, device_id, id, **kwargs):
         """
-        Apresenta os dados de um determinado cart\u00C3\u00A3o
-        Este m\u00C3\u00A9todo permite consultar as informa\u00C3\u00A7\u00C3\u00B5es de um determinado cart\u00C3\u00A3o a partir do seu c\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o (id).
+        Apresenta os dados de um determinado cart\u00E3o
+        Este m\u00E9todo permite consultar as informa\u00E7\u00F5es de um determinado cart\u00E3o a partir do seu c\u00F3digo de identifica\u00E7\u00E3o (id).
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -317,12 +317,12 @@ class ConductorPayApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get7(device_id, id, callback=callback_function)
+        >>> thread = api.consultar_using_get8(device_id, id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param str device_id: Device id criptografado (required)
-        :param int id: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do cart\u00C3\u00A3o (id). (required)
+        :param int id: C\u00F3digo de identifica\u00E7\u00E3o do cart\u00E3o (id). (required)
         :return: CartaoPayDetalheResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -336,17 +336,17 @@ class ConductorPayApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get7" % key
+                    " to method consultar_using_get8" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'device_id' is set
         if ('device_id' not in params) or (params['device_id'] is None):
-            raise ValueError("Missing the required parameter `device_id` when calling `consultar_using_get7`")
+            raise ValueError("Missing the required parameter `device_id` when calling `consultar_using_get8`")
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get7`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get8`")
 
         resource_path = '/api/cartoes-tokenizados/{id}'.replace('{format}', 'json')
         path_params = {}
@@ -391,8 +391,8 @@ class ConductorPayApi(object):
 
     def listar_codigos_resposta_using_get(self, **kwargs):
         """
-        Lista os c\u00C3\u00B3digos de resposta dos recursos de transa\u00C3\u00A7\u00C3\u00A3o e consulta de conta
-        Este m\u00C3\u00A9todo retorna a lista dos c\u00C3\u00B3digos de resposta das transa\u00C3\u00A7\u00C3\u00B5es e consulta de saque realizada no Pay.
+        Lista os c\u00F3digos de resposta dos recursos de transa\u00E7\u00E3o e consulta de conta
+        Este m\u00E9todo retorna a lista dos c\u00F3digos de resposta das transa\u00E7\u00F5es e consulta de saque realizada no Pay.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -463,7 +463,7 @@ class ConductorPayApi(object):
     def listar_modos_entrada_using_get(self, **kwargs):
         """
         Lista os modos entradas
-        Este recurso permite listar os modos de entrada para transa\u00C3\u00A7\u00C3\u00A3o
+        Este recurso permite listar os modos de entrada para transa\u00E7\u00E3o
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -533,8 +533,8 @@ class ConductorPayApi(object):
 
     def listar_operacoes_using_get(self, **kwargs):
         """
-        Lista as opera\u00C3\u00A7\u00C3\u00B5es
-        Este recurso permite listar as opera\u00C3\u00A7\u00C3\u00B5es disponiveis de transa\u00C3\u00A7\u00C3\u00A3o
+        Lista as opera\u00E7\u00F5es
+        Este recurso permite listar as opera\u00E7\u00F5es disponiveis de transa\u00E7\u00E3o
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -605,7 +605,7 @@ class ConductorPayApi(object):
     def listar_tipos_terminais_using_get(self, **kwargs):
         """
         Lista os tipos de terminais
-        Este m\u00C3\u00A9todo retorna a lista dos tipos de terminais.
+        Este m\u00E9todo retorna a lista dos tipos de terminais.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -675,8 +675,8 @@ class ConductorPayApi(object):
 
     def listar_tipos_transacoes_using_get(self, **kwargs):
         """
-        Lista os tipos de transa\u00C3\u00A7\u00C3\u00B5es
-        Este m\u00C3\u00A9todo retorna a lista dos tipos de transa\u00C3\u00A7\u00C3\u00B5es realizadas no Pay.
+        Lista os tipos de transa\u00E7\u00F5es
+        Este m\u00E9todo retorna a lista dos tipos de transa\u00E7\u00F5es realizadas no Pay.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -744,10 +744,10 @@ class ConductorPayApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get9(self, **kwargs):
+    def listar_using_get10(self, **kwargs):
         """
-        Lista os cart\u00C3\u00B5es cadastrados
-        Este m\u00C3\u00A9todo permite listar os cart\u00C3\u00B5es cadastrado em um dispositivo.
+        Lista os cart\u00F5es cadastrados
+        Este m\u00E9todo permite listar os cart\u00F5es cadastrado em um dispositivo.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -755,16 +755,16 @@ class ConductorPayApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get9(callback=callback_function)
+        >>> thread = api.listar_using_get10(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param str device_id: Device id criptografado
-        :param list[str] sort: Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
-        :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
-        :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
-        :param str status: Status do cart\u00C3\u00A3o tokenizado
-        :param str numero_cartao: Numero do cart\u00C3\u00A3o tokenizado
+        :param list[str] sort: Tipo de ordena\u00E7\u00E3o dos registros.
+        :param int page: P\u00E1gina solicitada (Default = 0)
+        :param int limit: Limite de elementos por solicita\u00E7\u00E3o (Default = 50, Max = 50)
+        :param str status: Status do cart\u00E3o tokenizado
+        :param str numero_cartao: Numero do cart\u00E3o tokenizado
         :return: PageCartaoPayResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -778,7 +778,7 @@ class ConductorPayApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get9" % key
+                    " to method listar_using_get10" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -835,8 +835,8 @@ class ConductorPayApi(object):
 
     def salvar_using_post6(self, device_id, persist, **kwargs):
         """
-        Cria\u00C3\u00A7\u00C3\u00A3o de cart\u00C3\u00A3o
-        Este met\u00C3\u00B3do permite a tokeniza\u00C3\u00A7\u00C3\u00A3o de um cart\u00C3\u00A3o a partir dos seus dados impressos.
+        Cria\u00E7\u00E3o de cart\u00E3o
+        Este met\u00F3do permite a tokeniza\u00E7\u00E3o de um cart\u00E3o a partir dos seus dados impressos.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function

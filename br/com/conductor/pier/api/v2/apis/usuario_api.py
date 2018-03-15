@@ -47,8 +47,8 @@ class UsuarioApi(object):
 
     def alterar_senha_login_using_post(self, login, senha_nova, **kwargs):
         """
-        Alterar senha do usu\u00C3\u00A1rio.
-        Este m\u00C3\u00A9todo realiza a altera\u00C3\u00A7\u00C3\u00A3o da senha do usu\u00C3\u00A1rio.
+        Alterar senha do usu\u00E1rio.
+        Este m\u00E9todo realiza a altera\u00E7\u00E3o da senha do usu\u00E1rio.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -60,7 +60,7 @@ class UsuarioApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param str login: Login do usu\u00C3\u00A1rio. (required)
+        :param str login: Login do usu\u00E1rio. (required)
         :param str senha_nova: Senha Nova (required)
         :return: str
                  If the method is called asynchronously,
@@ -130,8 +130,8 @@ class UsuarioApi(object):
 
     def alterar_senha_using_put(self, id, senha_atual, senha_nova, **kwargs):
         """
-        Alterar senha do usu\u00C3\u00A1rio na base do PIER ou WS.
-        Este m\u00C3\u00A9todo realiza a altera\u00C3\u00A7\u00C3\u00A3o da senha do usu\u00C3\u00A1rio.
+        Alterar senha do usu\u00E1rio na base do PIER ou WS.
+        Este m\u00E9todo realiza a altera\u00E7\u00E3o da senha do usu\u00E1rio.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -143,7 +143,7 @@ class UsuarioApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Usu\u00C3\u00A1rio (id). (required)
+        :param int id: C\u00F3digo de Identifica\u00E7\u00E3o do Usu\u00E1rio (id). (required)
         :param str senha_atual: Senha Atual (required)
         :param str senha_nova: Senha Nova (required)
         :return: str
@@ -219,8 +219,8 @@ class UsuarioApi(object):
 
     def alterar_using_put21(self, id, update, **kwargs):
         """
-        Altera os usu\u00C3\u00A1rios cadastrados na base.
-        Este m\u00C3\u00A9todo realiza a altera\u00C3\u00A7\u00C3\u00A3o dos usu\u00C3\u00A1rios.
+        Altera os usu\u00E1rios cadastrados na base.
+        Este m\u00E9todo realiza a altera\u00E7\u00E3o dos usu\u00E1rios.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -232,7 +232,7 @@ class UsuarioApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Usu\u00C3\u00A1rio (id). (required)
+        :param int id: C\u00F3digo de Identifica\u00E7\u00E3o do Usu\u00E1rio (id). (required)
         :param UsuarioUpdate update: update (required)
         :return: UsuarioResponse
                  If the method is called asynchronously,
@@ -302,8 +302,8 @@ class UsuarioApi(object):
 
     def ativar_usuario_using_post(self, id, **kwargs):
         """
-        Ativa os usu\u00C3\u00A1rios cadastrados na base do PIER ou WS.
-        Este m\u00C3\u00A9todo realiza a ativa\u00C3\u00A7\u00C3\u00A3o dos usu\u00C3\u00A1rios.
+        Ativa os usu\u00E1rios cadastrados na base do PIER ou WS.
+        Este m\u00E9todo realiza a ativa\u00E7\u00E3o dos usu\u00E1rios.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -315,7 +315,7 @@ class UsuarioApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Usu\u00C3\u00A1rio (id). (required)
+        :param int id: C\u00F3digo de Identifica\u00E7\u00E3o do Usu\u00E1rio (id). (required)
         :return: UsuarioResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -377,10 +377,10 @@ class UsuarioApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get42(self, id, **kwargs):
+    def consultar_using_get43(self, id, **kwargs):
         """
-        Apresenta os dados de um determinado Usu\u00C3\u00A1rio na base do PIER ou WS.
-        Este m\u00C3\u00A9todo permite consultar as informa\u00C3\u00A7\u00C3\u00B5es de um determinado Usu\u00C3\u00A1rio a partir do seu c\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o (id).
+        Apresenta os dados de um determinado Usu\u00E1rio na base do PIER ou WS.
+        Este m\u00E9todo permite consultar as informa\u00E7\u00F5es de um determinado Usu\u00E1rio a partir do seu c\u00F3digo de identifica\u00E7\u00E3o (id).
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -388,11 +388,11 @@ class UsuarioApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get42(id, callback=callback_function)
+        >>> thread = api.consultar_using_get43(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Usu\u00C3\u00A1rio (id). (required)
+        :param int id: C\u00F3digo de Identifica\u00E7\u00E3o do Usu\u00E1rio (id). (required)
         :return: UsuarioResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -406,14 +406,14 @@ class UsuarioApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get42" % key
+                    " to method consultar_using_get43" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get42`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get43`")
 
         resource_path = '/api/usuarios/{id}'.replace('{format}', 'json')
         path_params = {}
@@ -456,8 +456,8 @@ class UsuarioApi(object):
 
     def desativar_usuario_using_post(self, id, **kwargs):
         """
-        Desativa os usu\u00C3\u00A1rios cadastrados na base do PIER ou WS.
-        Este m\u00C3\u00A9todo realiza a desativa\u00C3\u00A7\u00C3\u00A3o dos usu\u00C3\u00A1rios.
+        Desativa os usu\u00E1rios cadastrados na base do PIER ou WS.
+        Este m\u00E9todo realiza a desativa\u00E7\u00E3o dos usu\u00E1rios.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -469,7 +469,7 @@ class UsuarioApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Usu\u00C3\u00A1rio (id). (required)
+        :param int id: C\u00F3digo de Identifica\u00E7\u00E3o do Usu\u00E1rio (id). (required)
         :return: UsuarioResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -531,10 +531,10 @@ class UsuarioApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get49(self, **kwargs):
+    def listar_using_get51(self, **kwargs):
         """
-        Lista os Usu\u00C3\u00A1rios cadastrados na base do PIER ou WS.
-        Este m\u00C3\u00A9todo permite que sejam listados os usu\u00C3\u00A1rios existentes na base do PIER.
+        Lista os Usu\u00E1rios cadastrados na base do PIER ou WS.
+        Este m\u00E9todo permite que sejam listados os usu\u00E1rios existentes na base do PIER.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -542,13 +542,13 @@ class UsuarioApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get49(callback=callback_function)
+        >>> thread = api.listar_using_get51(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param list[str] sort: Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
-        :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
-        :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
+        :param list[str] sort: Tipo de ordena\u00E7\u00E3o dos registros.
+        :param int page: P\u00E1gina solicitada (Default = 0)
+        :param int limit: Limite de elementos por solicita\u00E7\u00E3o (Default = 50, Max = 50)
         :param str nome: Nome do Usuario
         :param str cpf: CPF do Usuario
         :param str email: Email do Usuario
@@ -566,7 +566,7 @@ class UsuarioApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get49" % key
+                    " to method listar_using_get51" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -625,8 +625,8 @@ class UsuarioApi(object):
 
     def recuperar_senha_using_post(self, id, **kwargs):
         """
-        Recuperar senha do usu\u00C3\u00A1rio na base do PIER ou WS.
-        Esse recurso permite recuperar a senha do usu\u00C3\u00A1rio.
+        Recuperar senha do usu\u00E1rio na base do PIER ou WS.
+        Esse recurso permite recuperar a senha do usu\u00E1rio.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -638,7 +638,7 @@ class UsuarioApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Usu\u00C3\u00A1rio (id). (required)
+        :param int id: C\u00F3digo de Identifica\u00E7\u00E3o do Usu\u00E1rio (id). (required)
         :return: str
                  If the method is called asynchronously,
                  returns the request thread.
@@ -702,8 +702,8 @@ class UsuarioApi(object):
 
     def salvar_using_post28(self, persist, **kwargs):
         """
-        Cadastra Usu\u00C3\u00A1rio na base.
-        Esse recurso permite cadastrar usu\u00C3\u00A1rios.
+        Cadastra Usu\u00E1rio na base.
+        Esse recurso permite cadastrar usu\u00E1rios.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -779,8 +779,8 @@ class UsuarioApi(object):
 
     def validar_senha_login_using_post(self, login, senha, **kwargs):
         """
-        Realiza login com valida\u00C3\u00A7\u00C3\u00A3o de senha dos usu\u00C3\u00A1rios cadastrados na base do PIER ou WS.
-        O recurso permite fazer login do usu\u00C3\u00A1rio atrav\u00C3\u00A9s da senha definida pelo emissor.
+        Realiza login com valida\u00E7\u00E3o de senha dos usu\u00E1rios cadastrados na base do PIER ou WS.
+        O recurso permite fazer login do usu\u00E1rio atrav\u00E9s da senha definida pelo emissor.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -792,8 +792,8 @@ class UsuarioApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param str login: Login identificador do usu\u00C3\u00A1rio (login). (required)
-        :param str senha: Senha do usu\u00C3\u00A1rio (required)
+        :param str login: Login identificador do usu\u00E1rio (login). (required)
+        :param str senha: Senha do usu\u00E1rio (required)
         :return: object
                  If the method is called asynchronously,
                  returns the request thread.
@@ -862,8 +862,8 @@ class UsuarioApi(object):
 
     def validar_senha_using_get1(self, senha, id, **kwargs):
         """
-        Validar a senha do usu\u00C3\u00A1rio na base do PIER ou WS.
-        Este m\u00C3\u00A9todo permite validar a senha do usu\u00C3\u00A1rio).
+        Validar a senha do usu\u00E1rio na base do PIER ou WS.
+        Este m\u00E9todo permite validar a senha do usu\u00E1rio).
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -875,8 +875,8 @@ class UsuarioApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param str senha: Senha do usu\u00C3\u00A1rio (required)
-        :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Usu\u00C3\u00A1rio (id). (required)
+        :param str senha: Senha do usu\u00E1rio (required)
+        :param int id: C\u00F3digo de Identifica\u00E7\u00E3o do Usu\u00E1rio (id). (required)
         :return: str
                  If the method is called asynchronously,
                  returns the request thread.

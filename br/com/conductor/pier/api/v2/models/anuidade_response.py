@@ -59,7 +59,7 @@ class AnuidadeResponse(object):
     def id(self):
         """
         Gets the id of this AnuidadeResponse.
-        Identificador do Tipo de anuidade de b\u00C3\u00B4nus de celular
+        Identificador do Tipo de anuidade de b\u00F4nus de celular
 
         :return: The id of this AnuidadeResponse.
         :rtype: int
@@ -70,7 +70,7 @@ class AnuidadeResponse(object):
     def id(self, id):
         """
         Sets the id of this AnuidadeResponse.
-        Identificador do Tipo de anuidade de b\u00C3\u00B4nus de celular
+        Identificador do Tipo de anuidade de b\u00F4nus de celular
 
         :param id: The id of this AnuidadeResponse.
         :type: int
@@ -81,7 +81,7 @@ class AnuidadeResponse(object):
     def descricao(self):
         """
         Gets the descricao of this AnuidadeResponse.
-        Descri\u00C3\u00A7\u00C3\u00A3o do tipo de anuidade de b\u00C3\u00B4nus de celular
+        Descri\u00E7\u00E3o do tipo de anuidade de b\u00F4nus de celular
 
         :return: The descricao of this AnuidadeResponse.
         :rtype: str
@@ -92,7 +92,7 @@ class AnuidadeResponse(object):
     def descricao(self, descricao):
         """
         Sets the descricao of this AnuidadeResponse.
-        Descri\u00C3\u00A7\u00C3\u00A3o do tipo de anuidade de b\u00C3\u00B4nus de celular
+        Descri\u00E7\u00E3o do tipo de anuidade de b\u00F4nus de celular
 
         :param descricao: The descricao of this AnuidadeResponse.
         :type: str
@@ -103,7 +103,7 @@ class AnuidadeResponse(object):
     def valor(self):
         """
         Gets the valor of this AnuidadeResponse.
-        Valor do tipo de anuidade de b\u00C3\u00B4nus de celular
+        Valor do tipo de anuidade de b\u00F4nus de celular
 
         :return: The valor of this AnuidadeResponse.
         :rtype: float
@@ -114,7 +114,7 @@ class AnuidadeResponse(object):
     def valor(self, valor):
         """
         Sets the valor of this AnuidadeResponse.
-        Valor do tipo de anuidade de b\u00C3\u00B4nus de celular
+        Valor do tipo de anuidade de b\u00F4nus de celular
 
         :param valor: The valor of this AnuidadeResponse.
         :type: float
@@ -125,7 +125,7 @@ class AnuidadeResponse(object):
     def flag_anuidade_bonificada(self):
         """
         Gets the flag_anuidade_bonificada of this AnuidadeResponse.
-        Se o tipo de anuidade de b\u00C3\u00B4nus de celular \u00C3\u00A9 bonificada
+        Se o tipo de anuidade de b\u00F4nus de celular \u00E9 bonificada
 
         :return: The flag_anuidade_bonificada of this AnuidadeResponse.
         :rtype: bool
@@ -136,7 +136,7 @@ class AnuidadeResponse(object):
     def flag_anuidade_bonificada(self, flag_anuidade_bonificada):
         """
         Sets the flag_anuidade_bonificada of this AnuidadeResponse.
-        Se o tipo de anuidade de b\u00C3\u00B4nus de celular \u00C3\u00A9 bonificada
+        Se o tipo de anuidade de b\u00F4nus de celular \u00E9 bonificada
 
         :param flag_anuidade_bonificada: The flag_anuidade_bonificada of this AnuidadeResponse.
         :type: bool

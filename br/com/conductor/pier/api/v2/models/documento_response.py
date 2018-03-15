@@ -125,7 +125,7 @@ class DocumentoResponse(object):
     def extensao(self):
         """
         Gets the extensao of this DocumentoResponse.
-        Extens\u00C3\u00A3o do Documento.
+        Extens\u00E3o do Documento.
 
         :return: The extensao of this DocumentoResponse.
         :rtype: str
@@ -136,7 +136,7 @@ class DocumentoResponse(object):
     def extensao(self, extensao):
         """
         Sets the extensao of this DocumentoResponse.
-        Extens\u00C3\u00A3o do Documento.
+        Extens\u00E3o do Documento.
 
         :param extensao: The extensao of this DocumentoResponse.
         :type: str

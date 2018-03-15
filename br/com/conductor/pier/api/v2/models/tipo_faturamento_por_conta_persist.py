@@ -65,7 +65,7 @@ class TipoFaturamentoPorContaPersist(object):
     def status(self):
         """
         Gets the status of this TipoFaturamentoPorContaPersist.
-        Representa se a configura\u00C3\u00A7\u00C3\u00A3o est\u00C3\u00A1 ativada ou desativada para a conta.
+        Representa se a configura\u00E7\u00E3o est\u00E1 ativada ou desativada para a conta.
 
         :return: The status of this TipoFaturamentoPorContaPersist.
         :rtype: bool
@@ -76,7 +76,7 @@ class TipoFaturamentoPorContaPersist(object):
     def status(self, status):
         """
         Sets the status of this TipoFaturamentoPorContaPersist.
-        Representa se a configura\u00C3\u00A7\u00C3\u00A3o est\u00C3\u00A1 ativada ou desativada para a conta.
+        Representa se a configura\u00E7\u00E3o est\u00E1 ativada ou desativada para a conta.
 
         :param status: The status of this TipoFaturamentoPorContaPersist.
         :type: bool
@@ -87,7 +87,7 @@ class TipoFaturamentoPorContaPersist(object):
     def id_conta(self):
         """
         Gets the id_conta of this TipoFaturamentoPorContaPersist.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da conta relacionada.
+        C\u00F3digo de identifica\u00E7\u00E3o da conta relacionada.
 
         :return: The id_conta of this TipoFaturamentoPorContaPersist.
         :rtype: int
@@ -98,7 +98,7 @@ class TipoFaturamentoPorContaPersist(object):
     def id_conta(self, id_conta):
         """
         Sets the id_conta of this TipoFaturamentoPorContaPersist.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da conta relacionada.
+        C\u00F3digo de identifica\u00E7\u00E3o da conta relacionada.
 
         :param id_conta: The id_conta of this TipoFaturamentoPorContaPersist.
         :type: int
@@ -109,7 +109,7 @@ class TipoFaturamentoPorContaPersist(object):
     def id_tipo_faturamento(self):
         """
         Gets the id_tipo_faturamento of this TipoFaturamentoPorContaPersist.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do tipo de faturamento relacionada.
+        C\u00F3digo de identifica\u00E7\u00E3o do tipo de faturamento relacionada.
 
         :return: The id_tipo_faturamento of this TipoFaturamentoPorContaPersist.
         :rtype: int
@@ -120,7 +120,7 @@ class TipoFaturamentoPorContaPersist(object):
     def id_tipo_faturamento(self, id_tipo_faturamento):
         """
         Sets the id_tipo_faturamento of this TipoFaturamentoPorContaPersist.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do tipo de faturamento relacionada.
+        C\u00F3digo de identifica\u00E7\u00E3o do tipo de faturamento relacionada.
 
         :param id_tipo_faturamento: The id_tipo_faturamento of this TipoFaturamentoPorContaPersist.
         :type: int
@@ -131,7 +131,7 @@ class TipoFaturamentoPorContaPersist(object):
     def data_hora_inclusao(self):
         """
         Gets the data_hora_inclusao of this TipoFaturamentoPorContaPersist.
-        Data da inclus\u00C3\u00A3o da configura\u00C3\u00A7\u00C3\u00A3o, deve ser informada no formato yyyy-MM-dd'T'HH:mm:ss.SSS'Z'.
+        Data da inclus\u00E3o da configura\u00E7\u00E3o, deve ser informada no formato yyyy-MM-dd'T'HH:mm:ss.SSS'Z'.
 
         :return: The data_hora_inclusao of this TipoFaturamentoPorContaPersist.
         :rtype: str
@@ -142,7 +142,7 @@ class TipoFaturamentoPorContaPersist(object):
     def data_hora_inclusao(self, data_hora_inclusao):
         """
         Sets the data_hora_inclusao of this TipoFaturamentoPorContaPersist.
-        Data da inclus\u00C3\u00A3o da configura\u00C3\u00A7\u00C3\u00A3o, deve ser informada no formato yyyy-MM-dd'T'HH:mm:ss.SSS'Z'.
+        Data da inclus\u00E3o da configura\u00E7\u00E3o, deve ser informada no formato yyyy-MM-dd'T'HH:mm:ss.SSS'Z'.
 
         :param data_hora_inclusao: The data_hora_inclusao of this TipoFaturamentoPorContaPersist.
         :type: str
@@ -153,7 +153,7 @@ class TipoFaturamentoPorContaPersist(object):
     def data_hora_cancelamento(self):
         """
         Gets the data_hora_cancelamento of this TipoFaturamentoPorContaPersist.
-        Data do cancelamento da configura\u00C3\u00A7\u00C3\u00A3o, deve ser informada no formato yyyy-MM-dd'T'HH:mm:ss.SSS'Z'.
+        Data do cancelamento da configura\u00E7\u00E3o, deve ser informada no formato yyyy-MM-dd'T'HH:mm:ss.SSS'Z'.
 
         :return: The data_hora_cancelamento of this TipoFaturamentoPorContaPersist.
         :rtype: str
@@ -164,7 +164,7 @@ class TipoFaturamentoPorContaPersist(object):
     def data_hora_cancelamento(self, data_hora_cancelamento):
         """
         Sets the data_hora_cancelamento of this TipoFaturamentoPorContaPersist.
-        Data do cancelamento da configura\u00C3\u00A7\u00C3\u00A3o, deve ser informada no formato yyyy-MM-dd'T'HH:mm:ss.SSS'Z'.
+        Data do cancelamento da configura\u00E7\u00E3o, deve ser informada no formato yyyy-MM-dd'T'HH:mm:ss.SSS'Z'.
 
         :param data_hora_cancelamento: The data_hora_cancelamento of this TipoFaturamentoPorContaPersist.
         :type: str
@@ -175,7 +175,7 @@ class TipoFaturamentoPorContaPersist(object):
     def modificado_por(self):
         """
         Gets the modificado_por of this TipoFaturamentoPorContaPersist.
-        Identificador do respons\u00C3\u00A1vel pela modifica\u00C3\u00A7\u00C3\u00A3o do registro.
+        Identificador do respons\u00E1vel pela modifica\u00E7\u00E3o do registro.
 
         :return: The modificado_por of this TipoFaturamentoPorContaPersist.
         :rtype: str
@@ -186,7 +186,7 @@ class TipoFaturamentoPorContaPersist(object):
     def modificado_por(self, modificado_por):
         """
         Sets the modificado_por of this TipoFaturamentoPorContaPersist.
-        Identificador do respons\u00C3\u00A1vel pela modifica\u00C3\u00A7\u00C3\u00A3o do registro.
+        Identificador do respons\u00E1vel pela modifica\u00E7\u00E3o do registro.
 
         :param modificado_por: The modificado_por of this TipoFaturamentoPorContaPersist.
         :type: str

@@ -81,7 +81,7 @@ class TransacaoPayQueryRequest(object):
     def id_cartao(self):
         """
         Gets the id_cartao of this TransacaoPayQueryRequest.
-        Id do cart\u00C3\u00A3o
+        Id do cart\u00E3o
 
         :return: The id_cartao of this TransacaoPayQueryRequest.
         :rtype: int
@@ -92,7 +92,7 @@ class TransacaoPayQueryRequest(object):
     def id_cartao(self, id_cartao):
         """
         Sets the id_cartao of this TransacaoPayQueryRequest.
-        Id do cart\u00C3\u00A3o
+        Id do cart\u00E3o
 
         :param id_cartao: The id_cartao of this TransacaoPayQueryRequest.
         :type: int
@@ -125,7 +125,7 @@ class TransacaoPayQueryRequest(object):
     def sort(self):
         """
         Gets the sort of this TransacaoPayQueryRequest.
-        Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
+        Tipo de ordena\u00E7\u00E3o dos registros.
 
         :return: The sort of this TransacaoPayQueryRequest.
         :rtype: list[str]
@@ -136,7 +136,7 @@ class TransacaoPayQueryRequest(object):
     def sort(self, sort):
         """
         Sets the sort of this TransacaoPayQueryRequest.
-        Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
+        Tipo de ordena\u00E7\u00E3o dos registros.
 
         :param sort: The sort of this TransacaoPayQueryRequest.
         :type: list[str]

@@ -53,7 +53,7 @@ class ValidaCVVRequest(object):
     def id_chave_criptografia(self):
         """
         Gets the id_chave_criptografia of this ValidaCVVRequest.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do chave de criptografia.
+        C\u00F3digo de identifica\u00E7\u00E3o do chave de criptografia.
 
         :return: The id_chave_criptografia of this ValidaCVVRequest.
         :rtype: int
@@ -64,7 +64,7 @@ class ValidaCVVRequest(object):
     def id_chave_criptografia(self, id_chave_criptografia):
         """
         Sets the id_chave_criptografia of this ValidaCVVRequest.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do chave de criptografia.
+        C\u00F3digo de identifica\u00E7\u00E3o do chave de criptografia.
 
         :param id_chave_criptografia: The id_chave_criptografia of this ValidaCVVRequest.
         :type: int
@@ -75,7 +75,7 @@ class ValidaCVVRequest(object):
     def cvv(self):
         """
         Gets the cvv of this ValidaCVVRequest.
-        Valor de Verifica\u00C3\u00A7\u00C3\u00A3o do Cart\u00C3\u00A3o (CVV).
+        Valor de Verifica\u00E7\u00E3o do Cart\u00E3o (CVV).
 
         :return: The cvv of this ValidaCVVRequest.
         :rtype: str
@@ -86,7 +86,7 @@ class ValidaCVVRequest(object):
     def cvv(self, cvv):
         """
         Sets the cvv of this ValidaCVVRequest.
-        Valor de Verifica\u00C3\u00A7\u00C3\u00A3o do Cart\u00C3\u00A3o (CVV).
+        Valor de Verifica\u00E7\u00E3o do Cart\u00E3o (CVV).
 
         :param cvv: The cvv of this ValidaCVVRequest.
         :type: str

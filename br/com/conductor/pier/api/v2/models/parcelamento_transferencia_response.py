@@ -68,7 +68,7 @@ class ParcelamentoTransferenciaResponse(object):
     def numero_parcela(self):
         """
         Gets the numero_parcela of this ParcelamentoTransferenciaResponse.
-        N\u00C3\u00BAmero de parcelas dispon\u00C3\u00ADveis.
+        N\u00FAmero de parcelas dispon\u00EDveis.
 
         :return: The numero_parcela of this ParcelamentoTransferenciaResponse.
         :rtype: int
@@ -79,7 +79,7 @@ class ParcelamentoTransferenciaResponse(object):
     def numero_parcela(self, numero_parcela):
         """
         Sets the numero_parcela of this ParcelamentoTransferenciaResponse.
-        N\u00C3\u00BAmero de parcelas dispon\u00C3\u00ADveis.
+        N\u00FAmero de parcelas dispon\u00EDveis.
 
         :param numero_parcela: The numero_parcela of this ParcelamentoTransferenciaResponse.
         :type: int
@@ -134,7 +134,7 @@ class ParcelamentoTransferenciaResponse(object):
     def valor_tac(self):
         """
         Gets the valor_tac of this ParcelamentoTransferenciaResponse.
-        Valor da tarifa de contrata\u00C3\u00A7\u00C3\u00A3o.
+        Valor da tarifa de contrata\u00E7\u00E3o.
 
         :return: The valor_tac of this ParcelamentoTransferenciaResponse.
         :rtype: float
@@ -145,7 +145,7 @@ class ParcelamentoTransferenciaResponse(object):
     def valor_tac(self, valor_tac):
         """
         Sets the valor_tac of this ParcelamentoTransferenciaResponse.
-        Valor da tarifa de contrata\u00C3\u00A7\u00C3\u00A3o.
+        Valor da tarifa de contrata\u00E7\u00E3o.
 
         :param valor_tac: The valor_tac of this ParcelamentoTransferenciaResponse.
         :type: float
@@ -156,7 +156,7 @@ class ParcelamentoTransferenciaResponse(object):
     def valor_iof(self):
         """
         Gets the valor_iof of this ParcelamentoTransferenciaResponse.
-        IOF
+        IOF calculado para o cliente
 
         :return: The valor_iof of this ParcelamentoTransferenciaResponse.
         :rtype: float
@@ -167,7 +167,7 @@ class ParcelamentoTransferenciaResponse(object):
     def valor_iof(self, valor_iof):
         """
         Sets the valor_iof of this ParcelamentoTransferenciaResponse.
-        IOF
+        IOF calculado para o cliente
 
         :param valor_iof: The valor_iof of this ParcelamentoTransferenciaResponse.
         :type: float

@@ -53,7 +53,7 @@ class TaxaAntecipacaoRequest(object):
     def tipo_transacao(self):
         """
         Gets the tipo_transacao of this TaxaAntecipacaoRequest.
-        C\u00C3\u00B3digo que identifica se um par\u00C3\u00A2metro refere-se a uma transa\u00C3\u00A7\u00C3\u00A3o On-Us ou Off-Us.
+        C\u00F3digo que identifica se um par\u00E2metro refere-se a uma transa\u00E7\u00E3o On-Us ou Off-Us.
 
         :return: The tipo_transacao of this TaxaAntecipacaoRequest.
         :rtype: str
@@ -64,7 +64,7 @@ class TaxaAntecipacaoRequest(object):
     def tipo_transacao(self, tipo_transacao):
         """
         Sets the tipo_transacao of this TaxaAntecipacaoRequest.
-        C\u00C3\u00B3digo que identifica se um par\u00C3\u00A2metro refere-se a uma transa\u00C3\u00A7\u00C3\u00A3o On-Us ou Off-Us.
+        C\u00F3digo que identifica se um par\u00E2metro refere-se a uma transa\u00E7\u00E3o On-Us ou Off-Us.
 
         :param tipo_transacao: The tipo_transacao of this TaxaAntecipacaoRequest.
         :type: str
@@ -81,7 +81,7 @@ class TaxaAntecipacaoRequest(object):
     def valor_taxa(self):
         """
         Gets the valor_taxa of this TaxaAntecipacaoRequest.
-        Valor da Taxa de Antecipa\u00C3\u00A7\u00C3\u00A3o.
+        Valor da Taxa de Antecipa\u00E7\u00E3o.
 
         :return: The valor_taxa of this TaxaAntecipacaoRequest.
         :rtype: float
@@ -92,7 +92,7 @@ class TaxaAntecipacaoRequest(object):
     def valor_taxa(self, valor_taxa):
         """
         Sets the valor_taxa of this TaxaAntecipacaoRequest.
-        Valor da Taxa de Antecipa\u00C3\u00A7\u00C3\u00A3o.
+        Valor da Taxa de Antecipa\u00E7\u00E3o.
 
         :param valor_taxa: The valor_taxa of this TaxaAntecipacaoRequest.
         :type: float

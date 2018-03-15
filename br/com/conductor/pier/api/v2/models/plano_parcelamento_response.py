@@ -53,6 +53,7 @@ class PlanoParcelamentoResponse(object):
             'data_inclusao': 'str',
             'data_processamento_adesao': 'str',
             'id_conta': 'int',
+            'id_servico_tipo': 'int',
             'descricao_servico_tipo': 'str',
             'com_entrada': 'bool',
             'nome_campanha': 'str'
@@ -75,6 +76,7 @@ class PlanoParcelamentoResponse(object):
             'data_inclusao': 'dataInclusao',
             'data_processamento_adesao': 'dataProcessamentoAdesao',
             'id_conta': 'idConta',
+            'id_servico_tipo': 'idServicoTipo',
             'descricao_servico_tipo': 'descricaoServicoTipo',
             'com_entrada': 'comEntrada',
             'nome_campanha': 'nomeCampanha'
@@ -96,6 +98,7 @@ class PlanoParcelamentoResponse(object):
         self._data_inclusao = None
         self._data_processamento_adesao = None
         self._id_conta = None
+        self._id_servico_tipo = None
         self._descricao_servico_tipo = None
         self._com_entrada = None
         self._nome_campanha = None
@@ -148,7 +151,7 @@ class PlanoParcelamentoResponse(object):
     def data_vencimento_padrao(self):
         """
         Gets the data_vencimento_padrao of this PlanoParcelamentoResponse.
-        Data de vencimento padr\u00C3\u00A3o
+        Data de vencimento padr\u00E3o
 
         :return: The data_vencimento_padrao of this PlanoParcelamentoResponse.
         :rtype: str
@@ -159,7 +162,7 @@ class PlanoParcelamentoResponse(object):
     def data_vencimento_padrao(self, data_vencimento_padrao):
         """
         Sets the data_vencimento_padrao of this PlanoParcelamentoResponse.
-        Data de vencimento padr\u00C3\u00A3o
+        Data de vencimento padr\u00E3o
 
         :param data_vencimento_padrao: The data_vencimento_padrao of this PlanoParcelamentoResponse.
         :type: str
@@ -368,7 +371,7 @@ class PlanoParcelamentoResponse(object):
     def status_adesao(self):
         """
         Gets the status_adesao of this PlanoParcelamentoResponse.
-        Status da ades\u00C3\u00A3o
+        Status da ades\u00E3o
 
         :return: The status_adesao of this PlanoParcelamentoResponse.
         :rtype: int
@@ -379,7 +382,7 @@ class PlanoParcelamentoResponse(object):
     def status_adesao(self, status_adesao):
         """
         Sets the status_adesao of this PlanoParcelamentoResponse.
-        Status da ades\u00C3\u00A3o
+        Status da ades\u00E3o
 
         :param status_adesao: The status_adesao of this PlanoParcelamentoResponse.
         :type: int
@@ -390,7 +393,7 @@ class PlanoParcelamentoResponse(object):
     def data_inclusao(self):
         """
         Gets the data_inclusao of this PlanoParcelamentoResponse.
-        Data de inclus\u00C3\u00A3o
+        Data de inclus\u00E3o
 
         :return: The data_inclusao of this PlanoParcelamentoResponse.
         :rtype: str
@@ -401,7 +404,7 @@ class PlanoParcelamentoResponse(object):
     def data_inclusao(self, data_inclusao):
         """
         Sets the data_inclusao of this PlanoParcelamentoResponse.
-        Data de inclus\u00C3\u00A3o
+        Data de inclus\u00E3o
 
         :param data_inclusao: The data_inclusao of this PlanoParcelamentoResponse.
         :type: str
@@ -412,7 +415,7 @@ class PlanoParcelamentoResponse(object):
     def data_processamento_adesao(self):
         """
         Gets the data_processamento_adesao of this PlanoParcelamentoResponse.
-        Data de processamento da ades\u00C3\u00A3o
+        Data de processamento da ades\u00E3o
 
         :return: The data_processamento_adesao of this PlanoParcelamentoResponse.
         :rtype: str
@@ -423,7 +426,7 @@ class PlanoParcelamentoResponse(object):
     def data_processamento_adesao(self, data_processamento_adesao):
         """
         Sets the data_processamento_adesao of this PlanoParcelamentoResponse.
-        Data de processamento da ades\u00C3\u00A3o
+        Data de processamento da ades\u00E3o
 
         :param data_processamento_adesao: The data_processamento_adesao of this PlanoParcelamentoResponse.
         :type: str
@@ -453,10 +456,32 @@ class PlanoParcelamentoResponse(object):
         self._id_conta = id_conta
 
     @property
+    def id_servico_tipo(self):
+        """
+        Gets the id_servico_tipo of this PlanoParcelamentoResponse.
+        C\u00F3digo de identifica\u00E7\u00E3o do tipo de servi\u00E7o
+
+        :return: The id_servico_tipo of this PlanoParcelamentoResponse.
+        :rtype: int
+        """
+        return self._id_servico_tipo
+
+    @id_servico_tipo.setter
+    def id_servico_tipo(self, id_servico_tipo):
+        """
+        Sets the id_servico_tipo of this PlanoParcelamentoResponse.
+        C\u00F3digo de identifica\u00E7\u00E3o do tipo de servi\u00E7o
+
+        :param id_servico_tipo: The id_servico_tipo of this PlanoParcelamentoResponse.
+        :type: int
+        """
+        self._id_servico_tipo = id_servico_tipo
+
+    @property
     def descricao_servico_tipo(self):
         """
         Gets the descricao_servico_tipo of this PlanoParcelamentoResponse.
-        Descri\u00C3\u00A7\u00C3\u00A3o do tipo de servi\u00C3\u00A7o
+        Descri\u00E7\u00E3o do tipo de servi\u00E7o
 
         :return: The descricao_servico_tipo of this PlanoParcelamentoResponse.
         :rtype: str
@@ -467,7 +492,7 @@ class PlanoParcelamentoResponse(object):
     def descricao_servico_tipo(self, descricao_servico_tipo):
         """
         Sets the descricao_servico_tipo of this PlanoParcelamentoResponse.
-        Descri\u00C3\u00A7\u00C3\u00A3o do tipo de servi\u00C3\u00A7o
+        Descri\u00E7\u00E3o do tipo de servi\u00E7o
 
         :param descricao_servico_tipo: The descricao_servico_tipo of this PlanoParcelamentoResponse.
         :type: str

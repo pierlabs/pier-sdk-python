@@ -56,7 +56,7 @@ class DocumentoDetalheResponse(object):
     def id(self):
         """
         Gets the id of this DocumentoDetalheResponse.
-        ID de identifica\u00C3\u00A7\u00C3\u00A3o do detalhamento do documento.
+        ID de identifica\u00E7\u00E3o do detalhamento do documento.
 
         :return: The id of this DocumentoDetalheResponse.
         :rtype: int
@@ -67,7 +67,7 @@ class DocumentoDetalheResponse(object):
     def id(self, id):
         """
         Sets the id of this DocumentoDetalheResponse.
-        ID de identifica\u00C3\u00A7\u00C3\u00A3o do detalhamento do documento.
+        ID de identifica\u00E7\u00E3o do detalhamento do documento.
 
         :param id: The id of this DocumentoDetalheResponse.
         :type: int
@@ -100,7 +100,7 @@ class DocumentoDetalheResponse(object):
     def conteudo(self):
         """
         Gets the conteudo of this DocumentoDetalheResponse.
-        Conte\u00C3\u00BAdo do detalhamento do documento.
+        Conte\u00FAdo do detalhamento do documento.
 
         :return: The conteudo of this DocumentoDetalheResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class DocumentoDetalheResponse(object):
     def conteudo(self, conteudo):
         """
         Sets the conteudo of this DocumentoDetalheResponse.
-        Conte\u00C3\u00BAdo do detalhamento do documento.
+        Conte\u00FAdo do detalhamento do documento.
 
         :param conteudo: The conteudo of this DocumentoDetalheResponse.
         :type: str

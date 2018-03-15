@@ -53,7 +53,7 @@ class TerminalUpdate(object):
     def flag_consulta_extrato(self):
         """
         Gets the flag_consulta_extrato of this TerminalUpdate.
-        Flag indicando se o terminal permite consultar extrato, sendo: (true: Sim), (false: N\u00C3\u00A3o)).
+        Flag indicando se o terminal permite consultar extrato, sendo: (true: Sim), (false: N\u00E3o)).
 
         :return: The flag_consulta_extrato of this TerminalUpdate.
         :rtype: bool
@@ -64,7 +64,7 @@ class TerminalUpdate(object):
     def flag_consulta_extrato(self, flag_consulta_extrato):
         """
         Sets the flag_consulta_extrato of this TerminalUpdate.
-        Flag indicando se o terminal permite consultar extrato, sendo: (true: Sim), (false: N\u00C3\u00A3o)).
+        Flag indicando se o terminal permite consultar extrato, sendo: (true: Sim), (false: N\u00E3o)).
 
         :param flag_consulta_extrato: The flag_consulta_extrato of this TerminalUpdate.
         :type: bool
@@ -75,7 +75,7 @@ class TerminalUpdate(object):
     def flag_terminal_virtual(self):
         """
         Gets the flag_terminal_virtual of this TerminalUpdate.
-        Flag indicando se o terminal \u00C3\u00A9 f\u00C3\u00ADsico ou virtual, sendo: (true: Sim), (false: N\u00C3\u00A3o)).
+        Flag indicando se o terminal \u00E9 f\u00EDsico ou virtual, sendo: (true: Sim), (false: N\u00E3o)).
 
         :return: The flag_terminal_virtual of this TerminalUpdate.
         :rtype: bool
@@ -86,7 +86,7 @@ class TerminalUpdate(object):
     def flag_terminal_virtual(self, flag_terminal_virtual):
         """
         Sets the flag_terminal_virtual of this TerminalUpdate.
-        Flag indicando se o terminal \u00C3\u00A9 f\u00C3\u00ADsico ou virtual, sendo: (true: Sim), (false: N\u00C3\u00A3o)).
+        Flag indicando se o terminal \u00E9 f\u00EDsico ou virtual, sendo: (true: Sim), (false: N\u00E3o)).
 
         :param flag_terminal_virtual: The flag_terminal_virtual of this TerminalUpdate.
         :type: bool

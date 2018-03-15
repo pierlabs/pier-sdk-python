@@ -78,7 +78,7 @@ class TipoTemplateRequest(object):
     def descricao(self):
         """
         Gets the descricao of this TipoTemplateRequest.
-        Descri\u00C3\u00A7\u00C3\u00A3o do tipo de template.
+        Descri\u00E7\u00E3o do tipo de template.
 
         :return: The descricao of this TipoTemplateRequest.
         :rtype: str
@@ -89,7 +89,7 @@ class TipoTemplateRequest(object):
     def descricao(self, descricao):
         """
         Sets the descricao of this TipoTemplateRequest.
-        Descri\u00C3\u00A7\u00C3\u00A3o do tipo de template.
+        Descri\u00E7\u00E3o do tipo de template.
 
         :param descricao: The descricao of this TipoTemplateRequest.
         :type: str

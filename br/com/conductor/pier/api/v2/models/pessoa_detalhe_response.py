@@ -80,7 +80,7 @@ class PessoaDetalheResponse(object):
     def id_pessoa(self):
         """
         Gets the id_pessoa of this PessoaDetalheResponse.
-        C\u00C3\u00B3digo identificador da pessoa
+        C\u00F3digo identificador da pessoa
 
         :return: The id_pessoa of this PessoaDetalheResponse.
         :rtype: int
@@ -91,7 +91,7 @@ class PessoaDetalheResponse(object):
     def id_pessoa(self, id_pessoa):
         """
         Sets the id_pessoa of this PessoaDetalheResponse.
-        C\u00C3\u00B3digo identificador da pessoa
+        C\u00F3digo identificador da pessoa
 
         :param id_pessoa: The id_pessoa of this PessoaDetalheResponse.
         :type: int
@@ -102,7 +102,7 @@ class PessoaDetalheResponse(object):
     def nome_mae(self):
         """
         Gets the nome_mae of this PessoaDetalheResponse.
-        Apresenta o nome da m\u00C3\u00A3e da pessoa fisica
+        Apresenta o nome da m\u00E3e da pessoa fisica
 
         :return: The nome_mae of this PessoaDetalheResponse.
         :rtype: str
@@ -113,7 +113,7 @@ class PessoaDetalheResponse(object):
     def nome_mae(self, nome_mae):
         """
         Sets the nome_mae of this PessoaDetalheResponse.
-        Apresenta o nome da m\u00C3\u00A3e da pessoa fisica
+        Apresenta o nome da m\u00E3e da pessoa fisica
 
         :param nome_mae: The nome_mae of this PessoaDetalheResponse.
         :type: str
@@ -146,7 +146,7 @@ class PessoaDetalheResponse(object):
     def id_profissao(self):
         """
         Gets the id_profissao of this PessoaDetalheResponse.
-        Profiss\u00C3\u00A3o da pessoa fisica
+        Profiss\u00E3o da pessoa fisica
 
         :return: The id_profissao of this PessoaDetalheResponse.
         :rtype: str
@@ -157,7 +157,7 @@ class PessoaDetalheResponse(object):
     def id_profissao(self, id_profissao):
         """
         Sets the id_profissao of this PessoaDetalheResponse.
-        Profiss\u00C3\u00A3o da pessoa fisica
+        Profiss\u00E3o da pessoa fisica
 
         :param id_profissao: The id_profissao of this PessoaDetalheResponse.
         :type: str
@@ -168,7 +168,7 @@ class PessoaDetalheResponse(object):
     def id_natureza_ocupacao(self):
         """
         Gets the id_natureza_ocupacao of this PessoaDetalheResponse.
-        Id Natureza Ocupa\u00C3\u00A7\u00C3\u00A3o da pessoa fisica
+        Id Natureza Ocupa\u00E7\u00E3o da pessoa fisica
 
         :return: The id_natureza_ocupacao of this PessoaDetalheResponse.
         :rtype: int
@@ -179,7 +179,7 @@ class PessoaDetalheResponse(object):
     def id_natureza_ocupacao(self, id_natureza_ocupacao):
         """
         Sets the id_natureza_ocupacao of this PessoaDetalheResponse.
-        Id Natureza Ocupa\u00C3\u00A7\u00C3\u00A3o da pessoa fisica
+        Id Natureza Ocupa\u00E7\u00E3o da pessoa fisica
 
         :param id_natureza_ocupacao: The id_natureza_ocupacao of this PessoaDetalheResponse.
         :type: int
@@ -212,7 +212,7 @@ class PessoaDetalheResponse(object):
     def numero_banco(self):
         """
         Gets the numero_banco of this PessoaDetalheResponse.
-        N\u00C3\u00BAmero do banco.
+        N\u00FAmero do banco.
 
         :return: The numero_banco of this PessoaDetalheResponse.
         :rtype: int
@@ -223,7 +223,7 @@ class PessoaDetalheResponse(object):
     def numero_banco(self, numero_banco):
         """
         Sets the numero_banco of this PessoaDetalheResponse.
-        N\u00C3\u00BAmero do banco.
+        N\u00FAmero do banco.
 
         :param numero_banco: The numero_banco of this PessoaDetalheResponse.
         :type: int
@@ -234,7 +234,7 @@ class PessoaDetalheResponse(object):
     def numero_agencia(self):
         """
         Gets the numero_agencia of this PessoaDetalheResponse.
-        N\u00C3\u00BAmero da ag\u00C3\u00AAncia.
+        N\u00FAmero da ag\u00EAncia.
 
         :return: The numero_agencia of this PessoaDetalheResponse.
         :rtype: int
@@ -245,7 +245,7 @@ class PessoaDetalheResponse(object):
     def numero_agencia(self, numero_agencia):
         """
         Sets the numero_agencia of this PessoaDetalheResponse.
-        N\u00C3\u00BAmero da ag\u00C3\u00AAncia.
+        N\u00FAmero da ag\u00EAncia.
 
         :param numero_agencia: The numero_agencia of this PessoaDetalheResponse.
         :type: int
@@ -256,7 +256,7 @@ class PessoaDetalheResponse(object):
     def numero_conta_corrente(self):
         """
         Gets the numero_conta_corrente of this PessoaDetalheResponse.
-        N\u00C3\u00BAmero da conta corrente.
+        N\u00FAmero da conta corrente.
 
         :return: The numero_conta_corrente of this PessoaDetalheResponse.
         :rtype: str
@@ -267,7 +267,7 @@ class PessoaDetalheResponse(object):
     def numero_conta_corrente(self, numero_conta_corrente):
         """
         Sets the numero_conta_corrente of this PessoaDetalheResponse.
-        N\u00C3\u00BAmero da conta corrente.
+        N\u00FAmero da conta corrente.
 
         :param numero_conta_corrente: The numero_conta_corrente of this PessoaDetalheResponse.
         :type: str
@@ -300,7 +300,7 @@ class PessoaDetalheResponse(object):
     def nome_empresa(self):
         """
         Gets the nome_empresa of this PessoaDetalheResponse.
-        Nome que deve ser impresso no cart\u00C3\u00A3o
+        Nome que deve ser impresso no cart\u00E3o
 
         :return: The nome_empresa of this PessoaDetalheResponse.
         :rtype: str
@@ -311,7 +311,7 @@ class PessoaDetalheResponse(object):
     def nome_empresa(self, nome_empresa):
         """
         Sets the nome_empresa of this PessoaDetalheResponse.
-        Nome que deve ser impresso no cart\u00C3\u00A3o
+        Nome que deve ser impresso no cart\u00E3o
 
         :param nome_empresa: The nome_empresa of this PessoaDetalheResponse.
         :type: str

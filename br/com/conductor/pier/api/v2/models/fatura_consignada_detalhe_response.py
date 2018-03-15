@@ -191,7 +191,7 @@ class FaturaConsignadaDetalheResponse(object):
     def id(self):
         """
         Gets the id of this FaturaConsignadaDetalheResponse.
-        C\u00C3\u00B3digo identificador da fatura.
+        C\u00F3digo identificador da fatura.
 
         :return: The id of this FaturaConsignadaDetalheResponse.
         :rtype: int
@@ -202,7 +202,7 @@ class FaturaConsignadaDetalheResponse(object):
     def id(self, id):
         """
         Sets the id of this FaturaConsignadaDetalheResponse.
-        C\u00C3\u00B3digo identificador da fatura.
+        C\u00F3digo identificador da fatura.
 
         :param id: The id of this FaturaConsignadaDetalheResponse.
         :type: int
@@ -213,7 +213,7 @@ class FaturaConsignadaDetalheResponse(object):
     def id_conta(self):
         """
         Gets the id_conta of this FaturaConsignadaDetalheResponse.
-        C\u00C3\u00B3digo identificador da conta (id).
+        C\u00F3digo identificador da conta (id).
 
         :return: The id_conta of this FaturaConsignadaDetalheResponse.
         :rtype: int
@@ -224,7 +224,7 @@ class FaturaConsignadaDetalheResponse(object):
     def id_conta(self, id_conta):
         """
         Sets the id_conta of this FaturaConsignadaDetalheResponse.
-        C\u00C3\u00B3digo identificador da conta (id).
+        C\u00F3digo identificador da conta (id).
 
         :param id_conta: The id_conta of this FaturaConsignadaDetalheResponse.
         :type: int
@@ -235,7 +235,7 @@ class FaturaConsignadaDetalheResponse(object):
     def limite_global(self):
         """
         Gets the limite_global of this FaturaConsignadaDetalheResponse.
-        Apresenta o valor do limite de cr\u00C3\u00A9dito que o portador do cart\u00C3\u00A3o possui.
+        Apresenta o valor do limite de cr\u00E9dito que o portador do cart\u00E3o possui.
 
         :return: The limite_global of this FaturaConsignadaDetalheResponse.
         :rtype: float
@@ -246,7 +246,7 @@ class FaturaConsignadaDetalheResponse(object):
     def limite_global(self, limite_global):
         """
         Sets the limite_global of this FaturaConsignadaDetalheResponse.
-        Apresenta o valor do limite de cr\u00C3\u00A9dito que o portador do cart\u00C3\u00A3o possui.
+        Apresenta o valor do limite de cr\u00E9dito que o portador do cart\u00E3o possui.
 
         :param limite_global: The limite_global of this FaturaConsignadaDetalheResponse.
         :type: float
@@ -257,7 +257,7 @@ class FaturaConsignadaDetalheResponse(object):
     def flag_emite_fatura(self):
         """
         Gets the flag_emite_fatura of this FaturaConsignadaDetalheResponse.
-        C\u00C3\u00B3digo identificador da conta a qual a fatura se refere.
+        C\u00F3digo identificador da conta a qual a fatura se refere.
 
         :return: The flag_emite_fatura of this FaturaConsignadaDetalheResponse.
         :rtype: int
@@ -268,7 +268,7 @@ class FaturaConsignadaDetalheResponse(object):
     def flag_emite_fatura(self, flag_emite_fatura):
         """
         Sets the flag_emite_fatura of this FaturaConsignadaDetalheResponse.
-        C\u00C3\u00B3digo identificador da conta a qual a fatura se refere.
+        C\u00F3digo identificador da conta a qual a fatura se refere.
 
         :param flag_emite_fatura: The flag_emite_fatura of this FaturaConsignadaDetalheResponse.
         :type: int
@@ -279,7 +279,7 @@ class FaturaConsignadaDetalheResponse(object):
     def limite_compra(self):
         """
         Gets the limite_compra of this FaturaConsignadaDetalheResponse.
-        Quando utilizado pelo emissor, este campo apresenta o valor do limite de cr\u00C3\u00A9dito que o portador possui para uso exclusivo em Compras Nacionais.
+        Quando utilizado pelo emissor, este campo apresenta o valor do limite de cr\u00E9dito que o portador possui para uso exclusivo em Compras Nacionais.
 
         :return: The limite_compra of this FaturaConsignadaDetalheResponse.
         :rtype: float
@@ -290,7 +290,7 @@ class FaturaConsignadaDetalheResponse(object):
     def limite_compra(self, limite_compra):
         """
         Sets the limite_compra of this FaturaConsignadaDetalheResponse.
-        Quando utilizado pelo emissor, este campo apresenta o valor do limite de cr\u00C3\u00A9dito que o portador possui para uso exclusivo em Compras Nacionais.
+        Quando utilizado pelo emissor, este campo apresenta o valor do limite de cr\u00E9dito que o portador possui para uso exclusivo em Compras Nacionais.
 
         :param limite_compra: The limite_compra of this FaturaConsignadaDetalheResponse.
         :type: float
@@ -323,7 +323,7 @@ class FaturaConsignadaDetalheResponse(object):
     def limite_parcelado(self):
         """
         Gets the limite_parcelado of this FaturaConsignadaDetalheResponse.
-        Quando utilizado pelo emissor, este campo apresenta o valor do limite de cr\u00C3\u00A9dito que o portador possui para realizar transa\u00C3\u00A7\u00C3\u00B5es de compras parceladas.
+        Quando utilizado pelo emissor, este campo apresenta o valor do limite de cr\u00E9dito que o portador possui para realizar transa\u00E7\u00F5es de compras parceladas.
 
         :return: The limite_parcelado of this FaturaConsignadaDetalheResponse.
         :rtype: float
@@ -334,7 +334,7 @@ class FaturaConsignadaDetalheResponse(object):
     def limite_parcelado(self, limite_parcelado):
         """
         Sets the limite_parcelado of this FaturaConsignadaDetalheResponse.
-        Quando utilizado pelo emissor, este campo apresenta o valor do limite de cr\u00C3\u00A9dito que o portador possui para realizar transa\u00C3\u00A7\u00C3\u00B5es de compras parceladas.
+        Quando utilizado pelo emissor, este campo apresenta o valor do limite de cr\u00E9dito que o portador possui para realizar transa\u00E7\u00F5es de compras parceladas.
 
         :param limite_parcelado: The limite_parcelado of this FaturaConsignadaDetalheResponse.
         :type: float
@@ -345,7 +345,7 @@ class FaturaConsignadaDetalheResponse(object):
     def limite_parcelas(self):
         """
         Gets the limite_parcelas of this FaturaConsignadaDetalheResponse.
-        Quando utilizado pelo emissor, este campo apresenta o valor do limite de cr\u00C3\u00A9dito que portador pode acumular a partir da soma das parcelas das compras que forem realizadas nesta modalidade.
+        Quando utilizado pelo emissor, este campo apresenta o valor do limite de cr\u00E9dito que portador pode acumular a partir da soma das parcelas das compras que forem realizadas nesta modalidade.
 
         :return: The limite_parcelas of this FaturaConsignadaDetalheResponse.
         :rtype: float
@@ -356,7 +356,7 @@ class FaturaConsignadaDetalheResponse(object):
     def limite_parcelas(self, limite_parcelas):
         """
         Sets the limite_parcelas of this FaturaConsignadaDetalheResponse.
-        Quando utilizado pelo emissor, este campo apresenta o valor do limite de cr\u00C3\u00A9dito que portador pode acumular a partir da soma das parcelas das compras que forem realizadas nesta modalidade.
+        Quando utilizado pelo emissor, este campo apresenta o valor do limite de cr\u00E9dito que portador pode acumular a partir da soma das parcelas das compras que forem realizadas nesta modalidade.
 
         :param limite_parcelas: The limite_parcelas of this FaturaConsignadaDetalheResponse.
         :type: float
@@ -411,7 +411,7 @@ class FaturaConsignadaDetalheResponse(object):
     def valor_pagamento_minimo(self):
         """
         Gets the valor_pagamento_minimo of this FaturaConsignadaDetalheResponse.
-        Valor m\u00C3\u00ADnimo para pagamento da fatura.
+        Valor m\u00EDnimo para pagamento da fatura.
 
         :return: The valor_pagamento_minimo of this FaturaConsignadaDetalheResponse.
         :rtype: float
@@ -422,7 +422,7 @@ class FaturaConsignadaDetalheResponse(object):
     def valor_pagamento_minimo(self, valor_pagamento_minimo):
         """
         Sets the valor_pagamento_minimo of this FaturaConsignadaDetalheResponse.
-        Valor m\u00C3\u00ADnimo para pagamento da fatura.
+        Valor m\u00EDnimo para pagamento da fatura.
 
         :param valor_pagamento_minimo: The valor_pagamento_minimo of this FaturaConsignadaDetalheResponse.
         :type: float
@@ -433,7 +433,7 @@ class FaturaConsignadaDetalheResponse(object):
     def valor_pagamento_consignado(self):
         """
         Gets the valor_pagamento_consignado of this FaturaConsignadaDetalheResponse.
-        Valor da fatura pago atrav\u00C3\u00A9s de desconto em folha.
+        Valor da fatura pago atrav\u00E9s de desconto em folha.
 
         :return: The valor_pagamento_consignado of this FaturaConsignadaDetalheResponse.
         :rtype: float
@@ -444,7 +444,7 @@ class FaturaConsignadaDetalheResponse(object):
     def valor_pagamento_consignado(self, valor_pagamento_consignado):
         """
         Sets the valor_pagamento_consignado of this FaturaConsignadaDetalheResponse.
-        Valor da fatura pago atrav\u00C3\u00A9s de desconto em folha.
+        Valor da fatura pago atrav\u00E9s de desconto em folha.
 
         :param valor_pagamento_consignado: The valor_pagamento_consignado of this FaturaConsignadaDetalheResponse.
         :type: float
@@ -455,7 +455,7 @@ class FaturaConsignadaDetalheResponse(object):
     def limite_saque_global(self):
         """
         Gets the limite_saque_global of this FaturaConsignadaDetalheResponse.
-        Quando utilizado pelo emissor, este campo apresenta o valor do limite de cr\u00C3\u00A9dito que o portador pode utilizar para realizar transa\u00C3\u00A7\u00C3\u00B5es de Saque Nacional.
+        Quando utilizado pelo emissor, este campo apresenta o valor do limite de cr\u00E9dito que o portador pode utilizar para realizar transa\u00E7\u00F5es de Saque Nacional.
 
         :return: The limite_saque_global of this FaturaConsignadaDetalheResponse.
         :rtype: float
@@ -466,7 +466,7 @@ class FaturaConsignadaDetalheResponse(object):
     def limite_saque_global(self, limite_saque_global):
         """
         Sets the limite_saque_global of this FaturaConsignadaDetalheResponse.
-        Quando utilizado pelo emissor, este campo apresenta o valor do limite de cr\u00C3\u00A9dito que o portador pode utilizar para realizar transa\u00C3\u00A7\u00C3\u00B5es de Saque Nacional.
+        Quando utilizado pelo emissor, este campo apresenta o valor do limite de cr\u00E9dito que o portador pode utilizar para realizar transa\u00E7\u00F5es de Saque Nacional.
 
         :param limite_saque_global: The limite_saque_global of this FaturaConsignadaDetalheResponse.
         :type: float
@@ -477,7 +477,7 @@ class FaturaConsignadaDetalheResponse(object):
     def valor_pagamento_complementar(self):
         """
         Gets the valor_pagamento_complementar of this FaturaConsignadaDetalheResponse.
-        Valor complementar para considerar o pagamento m\u00C3\u00ADnimo da fatura.
+        Valor complementar para considerar o pagamento m\u00EDnimo da fatura.
 
         :return: The valor_pagamento_complementar of this FaturaConsignadaDetalheResponse.
         :rtype: float
@@ -488,7 +488,7 @@ class FaturaConsignadaDetalheResponse(object):
     def valor_pagamento_complementar(self, valor_pagamento_complementar):
         """
         Sets the valor_pagamento_complementar of this FaturaConsignadaDetalheResponse.
-        Valor complementar para considerar o pagamento m\u00C3\u00ADnimo da fatura.
+        Valor complementar para considerar o pagamento m\u00EDnimo da fatura.
 
         :param valor_pagamento_complementar: The valor_pagamento_complementar of this FaturaConsignadaDetalheResponse.
         :type: float
@@ -499,7 +499,7 @@ class FaturaConsignadaDetalheResponse(object):
     def limite_saque_periodo(self):
         """
         Gets the limite_saque_periodo of this FaturaConsignadaDetalheResponse.
-        Quando utilizado pelo emissor, este campo apresenta o valor do limite de cr\u00C3\u00A9dito que o portador pode utilizar para realizar transa\u00C3\u00A7\u00C3\u00B5es de Saque Nacional dentro de cada ciclo de faturamento.
+        Quando utilizado pelo emissor, este campo apresenta o valor do limite de cr\u00E9dito que o portador pode utilizar para realizar transa\u00E7\u00F5es de Saque Nacional dentro de cada ciclo de faturamento.
 
         :return: The limite_saque_periodo of this FaturaConsignadaDetalheResponse.
         :rtype: float
@@ -510,7 +510,7 @@ class FaturaConsignadaDetalheResponse(object):
     def limite_saque_periodo(self, limite_saque_periodo):
         """
         Sets the limite_saque_periodo of this FaturaConsignadaDetalheResponse.
-        Quando utilizado pelo emissor, este campo apresenta o valor do limite de cr\u00C3\u00A9dito que o portador pode utilizar para realizar transa\u00C3\u00A7\u00C3\u00B5es de Saque Nacional dentro de cada ciclo de faturamento.
+        Quando utilizado pelo emissor, este campo apresenta o valor do limite de cr\u00E9dito que o portador pode utilizar para realizar transa\u00E7\u00F5es de Saque Nacional dentro de cada ciclo de faturamento.
 
         :param limite_saque_periodo: The limite_saque_periodo of this FaturaConsignadaDetalheResponse.
         :type: float
@@ -521,7 +521,7 @@ class FaturaConsignadaDetalheResponse(object):
     def total_compras_nacionais(self):
         """
         Gets the total_compras_nacionais of this FaturaConsignadaDetalheResponse.
-        Valor total das compras nacionais lan\u00C3\u00A7adas na fatura.
+        Valor total das compras nacionais lan\u00E7adas na fatura.
 
         :return: The total_compras_nacionais of this FaturaConsignadaDetalheResponse.
         :rtype: float
@@ -532,7 +532,7 @@ class FaturaConsignadaDetalheResponse(object):
     def total_compras_nacionais(self, total_compras_nacionais):
         """
         Sets the total_compras_nacionais of this FaturaConsignadaDetalheResponse.
-        Valor total das compras nacionais lan\u00C3\u00A7adas na fatura.
+        Valor total das compras nacionais lan\u00E7adas na fatura.
 
         :param total_compras_nacionais: The total_compras_nacionais of this FaturaConsignadaDetalheResponse.
         :type: float
@@ -543,7 +543,7 @@ class FaturaConsignadaDetalheResponse(object):
     def limite_consignado(self):
         """
         Gets the limite_consignado of this FaturaConsignadaDetalheResponse.
-        Quando utilizado pelo emissor, este campo apresenta o valor da margem de cr\u00C3\u00A9dito que ele poder\u00C3\u00A1 utilizar para ser cobrado de forma consignada (desconto em folha) em seu sal\u00C3\u00A1rio/vencimentos.
+        Quando utilizado pelo emissor, este campo apresenta o valor da margem de cr\u00E9dito que ele poder\u00E1 utilizar para ser cobrado de forma consignada (desconto em folha) em seu sal\u00E1rio/vencimentos.
 
         :return: The limite_consignado of this FaturaConsignadaDetalheResponse.
         :rtype: float
@@ -554,7 +554,7 @@ class FaturaConsignadaDetalheResponse(object):
     def limite_consignado(self, limite_consignado):
         """
         Sets the limite_consignado of this FaturaConsignadaDetalheResponse.
-        Quando utilizado pelo emissor, este campo apresenta o valor da margem de cr\u00C3\u00A9dito que ele poder\u00C3\u00A1 utilizar para ser cobrado de forma consignada (desconto em folha) em seu sal\u00C3\u00A1rio/vencimentos.
+        Quando utilizado pelo emissor, este campo apresenta o valor da margem de cr\u00E9dito que ele poder\u00E1 utilizar para ser cobrado de forma consignada (desconto em folha) em seu sal\u00E1rio/vencimentos.
 
         :param limite_consignado: The limite_consignado of this FaturaConsignadaDetalheResponse.
         :type: float
@@ -565,7 +565,7 @@ class FaturaConsignadaDetalheResponse(object):
     def total_compras_internacionas(self):
         """
         Gets the total_compras_internacionas of this FaturaConsignadaDetalheResponse.
-        Valor total das compras internacionais lan\u00C3\u00A7adas na fatura.
+        Valor total das compras internacionais lan\u00E7adas na fatura.
 
         :return: The total_compras_internacionas of this FaturaConsignadaDetalheResponse.
         :rtype: float
@@ -576,7 +576,7 @@ class FaturaConsignadaDetalheResponse(object):
     def total_compras_internacionas(self, total_compras_internacionas):
         """
         Sets the total_compras_internacionas of this FaturaConsignadaDetalheResponse.
-        Valor total das compras internacionais lan\u00C3\u00A7adas na fatura.
+        Valor total das compras internacionais lan\u00E7adas na fatura.
 
         :param total_compras_internacionas: The total_compras_internacionas of this FaturaConsignadaDetalheResponse.
         :type: float
@@ -587,7 +587,7 @@ class FaturaConsignadaDetalheResponse(object):
     def limite_internacional_compra(self):
         """
         Gets the limite_internacional_compra of this FaturaConsignadaDetalheResponse.
-        Quando utilizado pelo emissor, este campo apresenta o valor do limite de cr\u00C3\u00A9dito que o portador possui para uso exclusivo em Compras Internacionais.
+        Quando utilizado pelo emissor, este campo apresenta o valor do limite de cr\u00E9dito que o portador possui para uso exclusivo em Compras Internacionais.
 
         :return: The limite_internacional_compra of this FaturaConsignadaDetalheResponse.
         :rtype: float
@@ -598,7 +598,7 @@ class FaturaConsignadaDetalheResponse(object):
     def limite_internacional_compra(self, limite_internacional_compra):
         """
         Sets the limite_internacional_compra of this FaturaConsignadaDetalheResponse.
-        Quando utilizado pelo emissor, este campo apresenta o valor do limite de cr\u00C3\u00A9dito que o portador possui para uso exclusivo em Compras Internacionais.
+        Quando utilizado pelo emissor, este campo apresenta o valor do limite de cr\u00E9dito que o portador possui para uso exclusivo em Compras Internacionais.
 
         :param limite_internacional_compra: The limite_internacional_compra of this FaturaConsignadaDetalheResponse.
         :type: float
@@ -609,7 +609,7 @@ class FaturaConsignadaDetalheResponse(object):
     def total_saques_nacionais(self):
         """
         Gets the total_saques_nacionais of this FaturaConsignadaDetalheResponse.
-        Valor total dos saques nacionais lan\u00C3\u00A7ados na fatura.
+        Valor total dos saques nacionais lan\u00E7ados na fatura.
 
         :return: The total_saques_nacionais of this FaturaConsignadaDetalheResponse.
         :rtype: float
@@ -620,7 +620,7 @@ class FaturaConsignadaDetalheResponse(object):
     def total_saques_nacionais(self, total_saques_nacionais):
         """
         Sets the total_saques_nacionais of this FaturaConsignadaDetalheResponse.
-        Valor total dos saques nacionais lan\u00C3\u00A7ados na fatura.
+        Valor total dos saques nacionais lan\u00E7ados na fatura.
 
         :param total_saques_nacionais: The total_saques_nacionais of this FaturaConsignadaDetalheResponse.
         :type: float
@@ -631,7 +631,7 @@ class FaturaConsignadaDetalheResponse(object):
     def limite_internacional_parcelado(self):
         """
         Gets the limite_internacional_parcelado of this FaturaConsignadaDetalheResponse.
-        Quando utilizado pelo emissor, este campo apresenta o valor do limite de cr\u00C3\u00A9dito que o portador possui para realizar transa\u00C3\u00A7\u00C3\u00B5es Internacionais de Compras Parceladas.
+        Quando utilizado pelo emissor, este campo apresenta o valor do limite de cr\u00E9dito que o portador possui para realizar transa\u00E7\u00F5es Internacionais de Compras Parceladas.
 
         :return: The limite_internacional_parcelado of this FaturaConsignadaDetalheResponse.
         :rtype: float
@@ -642,7 +642,7 @@ class FaturaConsignadaDetalheResponse(object):
     def limite_internacional_parcelado(self, limite_internacional_parcelado):
         """
         Sets the limite_internacional_parcelado of this FaturaConsignadaDetalheResponse.
-        Quando utilizado pelo emissor, este campo apresenta o valor do limite de cr\u00C3\u00A9dito que o portador possui para realizar transa\u00C3\u00A7\u00C3\u00B5es Internacionais de Compras Parceladas.
+        Quando utilizado pelo emissor, este campo apresenta o valor do limite de cr\u00E9dito que o portador possui para realizar transa\u00E7\u00F5es Internacionais de Compras Parceladas.
 
         :param limite_internacional_parcelado: The limite_internacional_parcelado of this FaturaConsignadaDetalheResponse.
         :type: float
@@ -653,7 +653,7 @@ class FaturaConsignadaDetalheResponse(object):
     def total_saques_internacionais(self):
         """
         Gets the total_saques_internacionais of this FaturaConsignadaDetalheResponse.
-        Valor total dos saques internacionais lan\u00C3\u00A7ados na fatura.
+        Valor total dos saques internacionais lan\u00E7ados na fatura.
 
         :return: The total_saques_internacionais of this FaturaConsignadaDetalheResponse.
         :rtype: float
@@ -664,7 +664,7 @@ class FaturaConsignadaDetalheResponse(object):
     def total_saques_internacionais(self, total_saques_internacionais):
         """
         Sets the total_saques_internacionais of this FaturaConsignadaDetalheResponse.
-        Valor total dos saques internacionais lan\u00C3\u00A7ados na fatura.
+        Valor total dos saques internacionais lan\u00E7ados na fatura.
 
         :param total_saques_internacionais: The total_saques_internacionais of this FaturaConsignadaDetalheResponse.
         :type: float
@@ -675,7 +675,7 @@ class FaturaConsignadaDetalheResponse(object):
     def limite_internacional_parcelas(self):
         """
         Gets the limite_internacional_parcelas of this FaturaConsignadaDetalheResponse.
-        Quando utilizado pelo emissor, este campo apresenta o valor do limite de cr\u00C3\u00A9dito que portador pode acumular a partir da soma das parcelas das compras internacionais que forem realizadas nesta modalidade.
+        Quando utilizado pelo emissor, este campo apresenta o valor do limite de cr\u00E9dito que portador pode acumular a partir da soma das parcelas das compras internacionais que forem realizadas nesta modalidade.
 
         :return: The limite_internacional_parcelas of this FaturaConsignadaDetalheResponse.
         :rtype: float
@@ -686,7 +686,7 @@ class FaturaConsignadaDetalheResponse(object):
     def limite_internacional_parcelas(self, limite_internacional_parcelas):
         """
         Sets the limite_internacional_parcelas of this FaturaConsignadaDetalheResponse.
-        Quando utilizado pelo emissor, este campo apresenta o valor do limite de cr\u00C3\u00A9dito que portador pode acumular a partir da soma das parcelas das compras internacionais que forem realizadas nesta modalidade.
+        Quando utilizado pelo emissor, este campo apresenta o valor do limite de cr\u00E9dito que portador pode acumular a partir da soma das parcelas das compras internacionais que forem realizadas nesta modalidade.
 
         :param limite_internacional_parcelas: The limite_internacional_parcelas of this FaturaConsignadaDetalheResponse.
         :type: float
@@ -697,7 +697,7 @@ class FaturaConsignadaDetalheResponse(object):
     def total_debitos_nacionais(self):
         """
         Gets the total_debitos_nacionais of this FaturaConsignadaDetalheResponse.
-        Valor total dos d\u00C3\u00A9bitos nacionais lan\u00C3\u00A7ados na fatura.
+        Valor total dos d\u00E9bitos nacionais lan\u00E7ados na fatura.
 
         :return: The total_debitos_nacionais of this FaturaConsignadaDetalheResponse.
         :rtype: float
@@ -708,7 +708,7 @@ class FaturaConsignadaDetalheResponse(object):
     def total_debitos_nacionais(self, total_debitos_nacionais):
         """
         Sets the total_debitos_nacionais of this FaturaConsignadaDetalheResponse.
-        Valor total dos d\u00C3\u00A9bitos nacionais lan\u00C3\u00A7ados na fatura.
+        Valor total dos d\u00E9bitos nacionais lan\u00E7ados na fatura.
 
         :param total_debitos_nacionais: The total_debitos_nacionais of this FaturaConsignadaDetalheResponse.
         :type: float
@@ -719,7 +719,7 @@ class FaturaConsignadaDetalheResponse(object):
     def limite_internacional_saque_global(self):
         """
         Gets the limite_internacional_saque_global of this FaturaConsignadaDetalheResponse.
-        Quando utilizado pelo emissor, este campo apresenta o valor do limite de cr\u00C3\u00A9dito que o portador pode utilizar para realizar transa\u00C3\u00A7\u00C3\u00B5es de Saque Internacional.
+        Quando utilizado pelo emissor, este campo apresenta o valor do limite de cr\u00E9dito que o portador pode utilizar para realizar transa\u00E7\u00F5es de Saque Internacional.
 
         :return: The limite_internacional_saque_global of this FaturaConsignadaDetalheResponse.
         :rtype: float
@@ -730,7 +730,7 @@ class FaturaConsignadaDetalheResponse(object):
     def limite_internacional_saque_global(self, limite_internacional_saque_global):
         """
         Sets the limite_internacional_saque_global of this FaturaConsignadaDetalheResponse.
-        Quando utilizado pelo emissor, este campo apresenta o valor do limite de cr\u00C3\u00A9dito que o portador pode utilizar para realizar transa\u00C3\u00A7\u00C3\u00B5es de Saque Internacional.
+        Quando utilizado pelo emissor, este campo apresenta o valor do limite de cr\u00E9dito que o portador pode utilizar para realizar transa\u00E7\u00F5es de Saque Internacional.
 
         :param limite_internacional_saque_global: The limite_internacional_saque_global of this FaturaConsignadaDetalheResponse.
         :type: float
@@ -741,7 +741,7 @@ class FaturaConsignadaDetalheResponse(object):
     def total_debitos_recorrentes(self):
         """
         Gets the total_debitos_recorrentes of this FaturaConsignadaDetalheResponse.
-        Valor total dos d\u00C3\u00A9bitos recorrentes lan\u00C3\u00A7ados na fatura.
+        Valor total dos d\u00E9bitos recorrentes lan\u00E7ados na fatura.
 
         :return: The total_debitos_recorrentes of this FaturaConsignadaDetalheResponse.
         :rtype: float
@@ -752,7 +752,7 @@ class FaturaConsignadaDetalheResponse(object):
     def total_debitos_recorrentes(self, total_debitos_recorrentes):
         """
         Sets the total_debitos_recorrentes of this FaturaConsignadaDetalheResponse.
-        Valor total dos d\u00C3\u00A9bitos recorrentes lan\u00C3\u00A7ados na fatura.
+        Valor total dos d\u00E9bitos recorrentes lan\u00E7ados na fatura.
 
         :param total_debitos_recorrentes: The total_debitos_recorrentes of this FaturaConsignadaDetalheResponse.
         :type: float
@@ -763,7 +763,7 @@ class FaturaConsignadaDetalheResponse(object):
     def limite_internacional_saque_periodo(self):
         """
         Gets the limite_internacional_saque_periodo of this FaturaConsignadaDetalheResponse.
-        Quando utilizado pelo emissor, este campo apresenta o valor do limite de cr\u00C3\u00A9dito que o portador pode utilizar para realizar transa\u00C3\u00A7\u00C3\u00B5es de Saque Internacional dentro de cada ciclo de faturamento.
+        Quando utilizado pelo emissor, este campo apresenta o valor do limite de cr\u00E9dito que o portador pode utilizar para realizar transa\u00E7\u00F5es de Saque Internacional dentro de cada ciclo de faturamento.
 
         :return: The limite_internacional_saque_periodo of this FaturaConsignadaDetalheResponse.
         :rtype: float
@@ -774,7 +774,7 @@ class FaturaConsignadaDetalheResponse(object):
     def limite_internacional_saque_periodo(self, limite_internacional_saque_periodo):
         """
         Sets the limite_internacional_saque_periodo of this FaturaConsignadaDetalheResponse.
-        Quando utilizado pelo emissor, este campo apresenta o valor do limite de cr\u00C3\u00A9dito que o portador pode utilizar para realizar transa\u00C3\u00A7\u00C3\u00B5es de Saque Internacional dentro de cada ciclo de faturamento.
+        Quando utilizado pelo emissor, este campo apresenta o valor do limite de cr\u00E9dito que o portador pode utilizar para realizar transa\u00E7\u00F5es de Saque Internacional dentro de cada ciclo de faturamento.
 
         :param limite_internacional_saque_periodo: The limite_internacional_saque_periodo of this FaturaConsignadaDetalheResponse.
         :type: float
@@ -785,7 +785,7 @@ class FaturaConsignadaDetalheResponse(object):
     def total_debitos_internacionais(self):
         """
         Gets the total_debitos_internacionais of this FaturaConsignadaDetalheResponse.
-        Valor total dos d\u00C3\u00A9bitos internacionais lan\u00C3\u00A7ados na fatura.
+        Valor total dos d\u00E9bitos internacionais lan\u00E7ados na fatura.
 
         :return: The total_debitos_internacionais of this FaturaConsignadaDetalheResponse.
         :rtype: float
@@ -796,7 +796,7 @@ class FaturaConsignadaDetalheResponse(object):
     def total_debitos_internacionais(self, total_debitos_internacionais):
         """
         Sets the total_debitos_internacionais of this FaturaConsignadaDetalheResponse.
-        Valor total dos d\u00C3\u00A9bitos internacionais lan\u00C3\u00A7ados na fatura.
+        Valor total dos d\u00E9bitos internacionais lan\u00E7ados na fatura.
 
         :param total_debitos_internacionais: The total_debitos_internacionais of this FaturaConsignadaDetalheResponse.
         :type: float
@@ -807,7 +807,7 @@ class FaturaConsignadaDetalheResponse(object):
     def saldo_disponivel_global(self):
         """
         Gets the saldo_disponivel_global of this FaturaConsignadaDetalheResponse.
-        Apresenta o valor de cr\u00C3\u00A9dito que o portador possui dispon\u00C3\u00ADvel para realizar transa\u00C3\u00A7\u00C3\u00B5es.
+        Apresenta o valor de cr\u00E9dito que o portador possui dispon\u00EDvel para realizar transa\u00E7\u00F5es.
 
         :return: The saldo_disponivel_global of this FaturaConsignadaDetalheResponse.
         :rtype: float
@@ -818,7 +818,7 @@ class FaturaConsignadaDetalheResponse(object):
     def saldo_disponivel_global(self, saldo_disponivel_global):
         """
         Sets the saldo_disponivel_global of this FaturaConsignadaDetalheResponse.
-        Apresenta o valor de cr\u00C3\u00A9dito que o portador possui dispon\u00C3\u00ADvel para realizar transa\u00C3\u00A7\u00C3\u00B5es.
+        Apresenta o valor de cr\u00E9dito que o portador possui dispon\u00EDvel para realizar transa\u00E7\u00F5es.
 
         :param saldo_disponivel_global: The saldo_disponivel_global of this FaturaConsignadaDetalheResponse.
         :type: float
@@ -829,7 +829,7 @@ class FaturaConsignadaDetalheResponse(object):
     def total_debitos_diversos_nacionais(self):
         """
         Gets the total_debitos_diversos_nacionais of this FaturaConsignadaDetalheResponse.
-        Valor total dos d\u00C3\u00A9bitos diversos nacionais lan\u00C3\u00A7ados na fatura.
+        Valor total dos d\u00E9bitos diversos nacionais lan\u00E7ados na fatura.
 
         :return: The total_debitos_diversos_nacionais of this FaturaConsignadaDetalheResponse.
         :rtype: float
@@ -840,7 +840,7 @@ class FaturaConsignadaDetalheResponse(object):
     def total_debitos_diversos_nacionais(self, total_debitos_diversos_nacionais):
         """
         Sets the total_debitos_diversos_nacionais of this FaturaConsignadaDetalheResponse.
-        Valor total dos d\u00C3\u00A9bitos diversos nacionais lan\u00C3\u00A7ados na fatura.
+        Valor total dos d\u00E9bitos diversos nacionais lan\u00E7ados na fatura.
 
         :param total_debitos_diversos_nacionais: The total_debitos_diversos_nacionais of this FaturaConsignadaDetalheResponse.
         :type: float
@@ -851,7 +851,7 @@ class FaturaConsignadaDetalheResponse(object):
     def saldo_disponivel_compra(self):
         """
         Gets the saldo_disponivel_compra of this FaturaConsignadaDetalheResponse.
-        Quando utilizado pelo emissor a modalidade limiteCompra, este campo apresentar\u00C3\u00A1 o valor de cr\u00C3\u00A9dito que o portador possui dispon\u00C3\u00ADvel para realizar transa\u00C3\u00A7\u00C3\u00B5es de compra Nacional.
+        Quando utilizado pelo emissor a modalidade limiteCompra, este campo apresentar\u00E1 o valor de cr\u00E9dito que o portador possui dispon\u00EDvel para realizar transa\u00E7\u00F5es de compra Nacional.
 
         :return: The saldo_disponivel_compra of this FaturaConsignadaDetalheResponse.
         :rtype: float
@@ -862,7 +862,7 @@ class FaturaConsignadaDetalheResponse(object):
     def saldo_disponivel_compra(self, saldo_disponivel_compra):
         """
         Sets the saldo_disponivel_compra of this FaturaConsignadaDetalheResponse.
-        Quando utilizado pelo emissor a modalidade limiteCompra, este campo apresentar\u00C3\u00A1 o valor de cr\u00C3\u00A9dito que o portador possui dispon\u00C3\u00ADvel para realizar transa\u00C3\u00A7\u00C3\u00B5es de compra Nacional.
+        Quando utilizado pelo emissor a modalidade limiteCompra, este campo apresentar\u00E1 o valor de cr\u00E9dito que o portador possui dispon\u00EDvel para realizar transa\u00E7\u00F5es de compra Nacional.
 
         :param saldo_disponivel_compra: The saldo_disponivel_compra of this FaturaConsignadaDetalheResponse.
         :type: float
@@ -873,7 +873,7 @@ class FaturaConsignadaDetalheResponse(object):
     def total_debitos_opcionais(self):
         """
         Gets the total_debitos_opcionais of this FaturaConsignadaDetalheResponse.
-        Valor total dos d\u00C3\u00A9bitos diversos opcionais lan\u00C3\u00A7ados na fatura.
+        Valor total dos d\u00E9bitos diversos opcionais lan\u00E7ados na fatura.
 
         :return: The total_debitos_opcionais of this FaturaConsignadaDetalheResponse.
         :rtype: float
@@ -884,7 +884,7 @@ class FaturaConsignadaDetalheResponse(object):
     def total_debitos_opcionais(self, total_debitos_opcionais):
         """
         Sets the total_debitos_opcionais of this FaturaConsignadaDetalheResponse.
-        Valor total dos d\u00C3\u00A9bitos diversos opcionais lan\u00C3\u00A7ados na fatura.
+        Valor total dos d\u00E9bitos diversos opcionais lan\u00E7ados na fatura.
 
         :param total_debitos_opcionais: The total_debitos_opcionais of this FaturaConsignadaDetalheResponse.
         :type: float
@@ -895,7 +895,7 @@ class FaturaConsignadaDetalheResponse(object):
     def saldo_disponivel_parcelado(self):
         """
         Gets the saldo_disponivel_parcelado of this FaturaConsignadaDetalheResponse.
-        Quando utilizado pelo emissor a modalidade limiteParcelado, este campo apresentar\u00C3\u00A1 o valor de cr\u00C3\u00A9dito que o portador possui dispon\u00C3\u00ADvel para realizar transa\u00C3\u00A7\u00C3\u00B5es de compra Nacional.
+        Quando utilizado pelo emissor a modalidade limiteParcelado, este campo apresentar\u00E1 o valor de cr\u00E9dito que o portador possui dispon\u00EDvel para realizar transa\u00E7\u00F5es de compra Nacional.
 
         :return: The saldo_disponivel_parcelado of this FaturaConsignadaDetalheResponse.
         :rtype: float
@@ -906,7 +906,7 @@ class FaturaConsignadaDetalheResponse(object):
     def saldo_disponivel_parcelado(self, saldo_disponivel_parcelado):
         """
         Sets the saldo_disponivel_parcelado of this FaturaConsignadaDetalheResponse.
-        Quando utilizado pelo emissor a modalidade limiteParcelado, este campo apresentar\u00C3\u00A1 o valor de cr\u00C3\u00A9dito que o portador possui dispon\u00C3\u00ADvel para realizar transa\u00C3\u00A7\u00C3\u00B5es de compra Nacional.
+        Quando utilizado pelo emissor a modalidade limiteParcelado, este campo apresentar\u00E1 o valor de cr\u00E9dito que o portador possui dispon\u00EDvel para realizar transa\u00E7\u00F5es de compra Nacional.
 
         :param saldo_disponivel_parcelado: The saldo_disponivel_parcelado of this FaturaConsignadaDetalheResponse.
         :type: float
@@ -917,7 +917,7 @@ class FaturaConsignadaDetalheResponse(object):
     def total_pagamentos(self):
         """
         Gets the total_pagamentos of this FaturaConsignadaDetalheResponse.
-        Valor total dos pagamentos lan\u00C3\u00A7ados na fatura.
+        Valor total dos pagamentos lan\u00E7ados na fatura.
 
         :return: The total_pagamentos of this FaturaConsignadaDetalheResponse.
         :rtype: float
@@ -928,7 +928,7 @@ class FaturaConsignadaDetalheResponse(object):
     def total_pagamentos(self, total_pagamentos):
         """
         Sets the total_pagamentos of this FaturaConsignadaDetalheResponse.
-        Valor total dos pagamentos lan\u00C3\u00A7ados na fatura.
+        Valor total dos pagamentos lan\u00E7ados na fatura.
 
         :param total_pagamentos: The total_pagamentos of this FaturaConsignadaDetalheResponse.
         :type: float
@@ -939,7 +939,7 @@ class FaturaConsignadaDetalheResponse(object):
     def saldo_disponivel_parcelas(self):
         """
         Gets the saldo_disponivel_parcelas of this FaturaConsignadaDetalheResponse.
-        Quando utilizado pelo emissor a modalidade limiteParcelas, este campo apresentar\u00C3\u00A1 o valor de cr\u00C3\u00A9dito que o portador possui dispon\u00C3\u00ADvel para utilizar como valor de parcelas Nacionais em um determinado ciclo de faturamento.
+        Quando utilizado pelo emissor a modalidade limiteParcelas, este campo apresentar\u00E1 o valor de cr\u00E9dito que o portador possui dispon\u00EDvel para utilizar como valor de parcelas Nacionais em um determinado ciclo de faturamento.
 
         :return: The saldo_disponivel_parcelas of this FaturaConsignadaDetalheResponse.
         :rtype: float
@@ -950,7 +950,7 @@ class FaturaConsignadaDetalheResponse(object):
     def saldo_disponivel_parcelas(self, saldo_disponivel_parcelas):
         """
         Sets the saldo_disponivel_parcelas of this FaturaConsignadaDetalheResponse.
-        Quando utilizado pelo emissor a modalidade limiteParcelas, este campo apresentar\u00C3\u00A1 o valor de cr\u00C3\u00A9dito que o portador possui dispon\u00C3\u00ADvel para utilizar como valor de parcelas Nacionais em um determinado ciclo de faturamento.
+        Quando utilizado pelo emissor a modalidade limiteParcelas, este campo apresentar\u00E1 o valor de cr\u00E9dito que o portador possui dispon\u00EDvel para utilizar como valor de parcelas Nacionais em um determinado ciclo de faturamento.
 
         :param saldo_disponivel_parcelas: The saldo_disponivel_parcelas of this FaturaConsignadaDetalheResponse.
         :type: float
@@ -961,7 +961,7 @@ class FaturaConsignadaDetalheResponse(object):
     def total_creditos_nacionais(self):
         """
         Gets the total_creditos_nacionais of this FaturaConsignadaDetalheResponse.
-        Valor total dos cr\u00C3\u00A9ditos nacionais lan\u00C3\u00A7ados na fatura.
+        Valor total dos cr\u00E9ditos nacionais lan\u00E7ados na fatura.
 
         :return: The total_creditos_nacionais of this FaturaConsignadaDetalheResponse.
         :rtype: float
@@ -972,7 +972,7 @@ class FaturaConsignadaDetalheResponse(object):
     def total_creditos_nacionais(self, total_creditos_nacionais):
         """
         Sets the total_creditos_nacionais of this FaturaConsignadaDetalheResponse.
-        Valor total dos cr\u00C3\u00A9ditos nacionais lan\u00C3\u00A7ados na fatura.
+        Valor total dos cr\u00E9ditos nacionais lan\u00E7ados na fatura.
 
         :param total_creditos_nacionais: The total_creditos_nacionais of this FaturaConsignadaDetalheResponse.
         :type: float
@@ -983,7 +983,7 @@ class FaturaConsignadaDetalheResponse(object):
     def total_ajustes(self):
         """
         Gets the total_ajustes of this FaturaConsignadaDetalheResponse.
-        Valor total dos ajustes lan\u00C3\u00A7ados na fatura.
+        Valor total dos ajustes lan\u00E7ados na fatura.
 
         :return: The total_ajustes of this FaturaConsignadaDetalheResponse.
         :rtype: float
@@ -994,7 +994,7 @@ class FaturaConsignadaDetalheResponse(object):
     def total_ajustes(self, total_ajustes):
         """
         Sets the total_ajustes of this FaturaConsignadaDetalheResponse.
-        Valor total dos ajustes lan\u00C3\u00A7ados na fatura.
+        Valor total dos ajustes lan\u00E7ados na fatura.
 
         :param total_ajustes: The total_ajustes of this FaturaConsignadaDetalheResponse.
         :type: float
@@ -1005,7 +1005,7 @@ class FaturaConsignadaDetalheResponse(object):
     def total_tarifas(self):
         """
         Gets the total_tarifas of this FaturaConsignadaDetalheResponse.
-        Valor total das tarifas lan\u00C3\u00A7adas na fatura.
+        Valor total das tarifas lan\u00E7adas na fatura.
 
         :return: The total_tarifas of this FaturaConsignadaDetalheResponse.
         :rtype: float
@@ -1016,7 +1016,7 @@ class FaturaConsignadaDetalheResponse(object):
     def total_tarifas(self, total_tarifas):
         """
         Sets the total_tarifas of this FaturaConsignadaDetalheResponse.
-        Valor total das tarifas lan\u00C3\u00A7adas na fatura.
+        Valor total das tarifas lan\u00E7adas na fatura.
 
         :param total_tarifas: The total_tarifas of this FaturaConsignadaDetalheResponse.
         :type: float
@@ -1027,7 +1027,7 @@ class FaturaConsignadaDetalheResponse(object):
     def total_multa(self):
         """
         Gets the total_multa of this FaturaConsignadaDetalheResponse.
-        Valor total da multa lan\u00C3\u00A7ada na fatura.
+        Valor total da multa lan\u00E7ada na fatura.
 
         :return: The total_multa of this FaturaConsignadaDetalheResponse.
         :rtype: float
@@ -1038,7 +1038,7 @@ class FaturaConsignadaDetalheResponse(object):
     def total_multa(self, total_multa):
         """
         Sets the total_multa of this FaturaConsignadaDetalheResponse.
-        Valor total da multa lan\u00C3\u00A7ada na fatura.
+        Valor total da multa lan\u00E7ada na fatura.
 
         :param total_multa: The total_multa of this FaturaConsignadaDetalheResponse.
         :type: float
@@ -1049,7 +1049,7 @@ class FaturaConsignadaDetalheResponse(object):
     def saldo_disponivel_saque(self):
         """
         Gets the saldo_disponivel_saque of this FaturaConsignadaDetalheResponse.
-        Quando utilizado pelo emissor a modalidade limiteSaque, este campo apresentar\u00C3\u00A1 o valor de cr\u00C3\u00A9dito que o portador possui dispon\u00C3\u00ADvel para realizar transa\u00C3\u00A7\u00C3\u00B5es de Saque Nacional.
+        Quando utilizado pelo emissor a modalidade limiteSaque, este campo apresentar\u00E1 o valor de cr\u00E9dito que o portador possui dispon\u00EDvel para realizar transa\u00E7\u00F5es de Saque Nacional.
 
         :return: The saldo_disponivel_saque of this FaturaConsignadaDetalheResponse.
         :rtype: float
@@ -1060,7 +1060,7 @@ class FaturaConsignadaDetalheResponse(object):
     def saldo_disponivel_saque(self, saldo_disponivel_saque):
         """
         Sets the saldo_disponivel_saque of this FaturaConsignadaDetalheResponse.
-        Quando utilizado pelo emissor a modalidade limiteSaque, este campo apresentar\u00C3\u00A1 o valor de cr\u00C3\u00A9dito que o portador possui dispon\u00C3\u00ADvel para realizar transa\u00C3\u00A7\u00C3\u00B5es de Saque Nacional.
+        Quando utilizado pelo emissor a modalidade limiteSaque, este campo apresentar\u00E1 o valor de cr\u00E9dito que o portador possui dispon\u00EDvel para realizar transa\u00E7\u00F5es de Saque Nacional.
 
         :param saldo_disponivel_saque: The saldo_disponivel_saque of this FaturaConsignadaDetalheResponse.
         :type: float
@@ -1071,7 +1071,7 @@ class FaturaConsignadaDetalheResponse(object):
     def total_juros(self):
         """
         Gets the total_juros of this FaturaConsignadaDetalheResponse.
-        Valor total dos juros de mora lan\u00C3\u00A7ados na fatura.
+        Valor total dos juros de mora lan\u00E7ados na fatura.
 
         :return: The total_juros of this FaturaConsignadaDetalheResponse.
         :rtype: float
@@ -1082,7 +1082,7 @@ class FaturaConsignadaDetalheResponse(object):
     def total_juros(self, total_juros):
         """
         Sets the total_juros of this FaturaConsignadaDetalheResponse.
-        Valor total dos juros de mora lan\u00C3\u00A7ados na fatura.
+        Valor total dos juros de mora lan\u00E7ados na fatura.
 
         :param total_juros: The total_juros of this FaturaConsignadaDetalheResponse.
         :type: float
@@ -1093,7 +1093,7 @@ class FaturaConsignadaDetalheResponse(object):
     def saldo_pontos_fidelidade(self):
         """
         Gets the saldo_pontos_fidelidade of this FaturaConsignadaDetalheResponse.
-        Quando utilizado um programa de fidelidade pelo emissor, este campo apresentar\u00C3\u00A1 o saldo atual de pontos que o portador possui.
+        Quando utilizado um programa de fidelidade pelo emissor, este campo apresentar\u00E1 o saldo atual de pontos que o portador possui.
 
         :return: The saldo_pontos_fidelidade of this FaturaConsignadaDetalheResponse.
         :rtype: float
@@ -1104,7 +1104,7 @@ class FaturaConsignadaDetalheResponse(object):
     def saldo_pontos_fidelidade(self, saldo_pontos_fidelidade):
         """
         Sets the saldo_pontos_fidelidade of this FaturaConsignadaDetalheResponse.
-        Quando utilizado um programa de fidelidade pelo emissor, este campo apresentar\u00C3\u00A1 o saldo atual de pontos que o portador possui.
+        Quando utilizado um programa de fidelidade pelo emissor, este campo apresentar\u00E1 o saldo atual de pontos que o portador possui.
 
         :param saldo_pontos_fidelidade: The saldo_pontos_fidelidade of this FaturaConsignadaDetalheResponse.
         :type: float
@@ -1137,7 +1137,7 @@ class FaturaConsignadaDetalheResponse(object):
     def saldo_disponivel_compra_internacional(self):
         """
         Gets the saldo_disponivel_compra_internacional of this FaturaConsignadaDetalheResponse.
-        Quando utilizado pelo emissor a modalidade limiteCompraInternacional, este campo apresentar\u00C3\u00A1 o valor de cr\u00C3\u00A9dito que o portador possui dispon\u00C3\u00ADvel para realizar transa\u00C3\u00A7\u00C3\u00B5es de Compra Internacional.
+        Quando utilizado pelo emissor a modalidade limiteCompraInternacional, este campo apresentar\u00E1 o valor de cr\u00E9dito que o portador possui dispon\u00EDvel para realizar transa\u00E7\u00F5es de Compra Internacional.
 
         :return: The saldo_disponivel_compra_internacional of this FaturaConsignadaDetalheResponse.
         :rtype: float
@@ -1148,7 +1148,7 @@ class FaturaConsignadaDetalheResponse(object):
     def saldo_disponivel_compra_internacional(self, saldo_disponivel_compra_internacional):
         """
         Sets the saldo_disponivel_compra_internacional of this FaturaConsignadaDetalheResponse.
-        Quando utilizado pelo emissor a modalidade limiteCompraInternacional, este campo apresentar\u00C3\u00A1 o valor de cr\u00C3\u00A9dito que o portador possui dispon\u00C3\u00ADvel para realizar transa\u00C3\u00A7\u00C3\u00B5es de Compra Internacional.
+        Quando utilizado pelo emissor a modalidade limiteCompraInternacional, este campo apresentar\u00E1 o valor de cr\u00E9dito que o portador possui dispon\u00EDvel para realizar transa\u00E7\u00F5es de Compra Internacional.
 
         :param saldo_disponivel_compra_internacional: The saldo_disponivel_compra_internacional of this FaturaConsignadaDetalheResponse.
         :type: float
@@ -1181,7 +1181,7 @@ class FaturaConsignadaDetalheResponse(object):
     def saldo_disponivel_saque_internacional(self):
         """
         Gets the saldo_disponivel_saque_internacional of this FaturaConsignadaDetalheResponse.
-        Quando utilizado pelo emissor a modalidade limiteSaqueInternacional, este campo apresentar\u00C3\u00A1 o valor de cr\u00C3\u00A9dito que o portador possui dispon\u00C3\u00ADvel para realizar transa\u00C3\u00A7\u00C3\u00B5es de Saque Internacional.
+        Quando utilizado pelo emissor a modalidade limiteSaqueInternacional, este campo apresentar\u00E1 o valor de cr\u00E9dito que o portador possui dispon\u00EDvel para realizar transa\u00E7\u00F5es de Saque Internacional.
 
         :return: The saldo_disponivel_saque_internacional of this FaturaConsignadaDetalheResponse.
         :rtype: float
@@ -1192,7 +1192,7 @@ class FaturaConsignadaDetalheResponse(object):
     def saldo_disponivel_saque_internacional(self, saldo_disponivel_saque_internacional):
         """
         Sets the saldo_disponivel_saque_internacional of this FaturaConsignadaDetalheResponse.
-        Quando utilizado pelo emissor a modalidade limiteSaqueInternacional, este campo apresentar\u00C3\u00A1 o valor de cr\u00C3\u00A9dito que o portador possui dispon\u00C3\u00ADvel para realizar transa\u00C3\u00A7\u00C3\u00B5es de Saque Internacional.
+        Quando utilizado pelo emissor a modalidade limiteSaqueInternacional, este campo apresentar\u00E1 o valor de cr\u00E9dito que o portador possui dispon\u00EDvel para realizar transa\u00E7\u00F5es de Saque Internacional.
 
         :param saldo_disponivel_saque_internacional: The saldo_disponivel_saque_internacional of this FaturaConsignadaDetalheResponse.
         :type: float
@@ -1203,7 +1203,7 @@ class FaturaConsignadaDetalheResponse(object):
     def taxa_maxima_proximo_periodo(self):
         """
         Gets the taxa_maxima_proximo_periodo of this FaturaConsignadaDetalheResponse.
-        Valor m\u00C3\u00A1ximo percentual da taxa de encargos para o pr\u00C3\u00B3ximo per\u00C3\u00ADodo.
+        Valor m\u00E1ximo percentual da taxa de encargos para o pr\u00F3ximo per\u00EDodo.
 
         :return: The taxa_maxima_proximo_periodo of this FaturaConsignadaDetalheResponse.
         :rtype: float
@@ -1214,7 +1214,7 @@ class FaturaConsignadaDetalheResponse(object):
     def taxa_maxima_proximo_periodo(self, taxa_maxima_proximo_periodo):
         """
         Sets the taxa_maxima_proximo_periodo of this FaturaConsignadaDetalheResponse.
-        Valor m\u00C3\u00A1ximo percentual da taxa de encargos para o pr\u00C3\u00B3ximo per\u00C3\u00ADodo.
+        Valor m\u00E1ximo percentual da taxa de encargos para o pr\u00F3ximo per\u00EDodo.
 
         :param taxa_maxima_proximo_periodo: The taxa_maxima_proximo_periodo of this FaturaConsignadaDetalheResponse.
         :type: float

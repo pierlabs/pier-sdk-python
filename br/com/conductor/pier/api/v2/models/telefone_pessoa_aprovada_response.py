@@ -62,7 +62,7 @@ class TelefonePessoaAprovadaResponse(object):
     def id(self):
         """
         Gets the id of this TelefonePessoaAprovadaResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Endere\u00C3\u00A7o (id)
+        C\u00F3digo de Identifica\u00E7\u00E3o do Endere\u00E7o (id)
 
         :return: The id of this TelefonePessoaAprovadaResponse.
         :rtype: int
@@ -73,7 +73,7 @@ class TelefonePessoaAprovadaResponse(object):
     def id(self, id):
         """
         Sets the id of this TelefonePessoaAprovadaResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Endere\u00C3\u00A7o (id)
+        C\u00F3digo de Identifica\u00E7\u00E3o do Endere\u00E7o (id)
 
         :param id: The id of this TelefonePessoaAprovadaResponse.
         :type: int
@@ -84,7 +84,7 @@ class TelefonePessoaAprovadaResponse(object):
     def id_tipo_telefone(self):
         """
         Gets the id_tipo_telefone of this TelefonePessoaAprovadaResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Tipo do Telefone (id).
+        C\u00F3digo de Identifica\u00E7\u00E3o do Tipo do Telefone (id).
 
         :return: The id_tipo_telefone of this TelefonePessoaAprovadaResponse.
         :rtype: int
@@ -95,7 +95,7 @@ class TelefonePessoaAprovadaResponse(object):
     def id_tipo_telefone(self, id_tipo_telefone):
         """
         Sets the id_tipo_telefone of this TelefonePessoaAprovadaResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Tipo do Telefone (id).
+        C\u00F3digo de Identifica\u00E7\u00E3o do Tipo do Telefone (id).
 
         :param id_tipo_telefone: The id_tipo_telefone of this TelefonePessoaAprovadaResponse.
         :type: int
@@ -106,7 +106,7 @@ class TelefonePessoaAprovadaResponse(object):
     def ddd(self):
         """
         Gets the ddd of this TelefonePessoaAprovadaResponse.
-        C\u00C3\u00B3digo DDD do telefone (id).
+        C\u00F3digo DDD do telefone (id).
 
         :return: The ddd of this TelefonePessoaAprovadaResponse.
         :rtype: str
@@ -117,7 +117,7 @@ class TelefonePessoaAprovadaResponse(object):
     def ddd(self, ddd):
         """
         Sets the ddd of this TelefonePessoaAprovadaResponse.
-        C\u00C3\u00B3digo DDD do telefone (id).
+        C\u00F3digo DDD do telefone (id).
 
         :param ddd: The ddd of this TelefonePessoaAprovadaResponse.
         :type: str
@@ -128,7 +128,7 @@ class TelefonePessoaAprovadaResponse(object):
     def telefone(self):
         """
         Gets the telefone of this TelefonePessoaAprovadaResponse.
-        N\u00C3\u00BAmero do telefone.
+        N\u00FAmero do telefone.
 
         :return: The telefone of this TelefonePessoaAprovadaResponse.
         :rtype: str
@@ -139,7 +139,7 @@ class TelefonePessoaAprovadaResponse(object):
     def telefone(self, telefone):
         """
         Sets the telefone of this TelefonePessoaAprovadaResponse.
-        N\u00C3\u00BAmero do telefone.
+        N\u00FAmero do telefone.
 
         :param telefone: The telefone of this TelefonePessoaAprovadaResponse.
         :type: str
@@ -150,7 +150,7 @@ class TelefonePessoaAprovadaResponse(object):
     def ramal(self):
         """
         Gets the ramal of this TelefonePessoaAprovadaResponse.
-        N\u00C3\u00BAmero do ramal.
+        N\u00FAmero do ramal.
 
         :return: The ramal of this TelefonePessoaAprovadaResponse.
         :rtype: str
@@ -161,7 +161,7 @@ class TelefonePessoaAprovadaResponse(object):
     def ramal(self, ramal):
         """
         Sets the ramal of this TelefonePessoaAprovadaResponse.
-        N\u00C3\u00BAmero do ramal.
+        N\u00FAmero do ramal.
 
         :param ramal: The ramal of this TelefonePessoaAprovadaResponse.
         :type: str

@@ -125,7 +125,7 @@ class PlanoCampanhaResponse(object):
     def usuario(self):
         """
         Gets the usuario of this PlanoCampanhaResponse.
-        Nome do usu\u00C3\u00A1rio
+        Nome do usu\u00E1rio
 
         :return: The usuario of this PlanoCampanhaResponse.
         :rtype: str
@@ -136,7 +136,7 @@ class PlanoCampanhaResponse(object):
     def usuario(self, usuario):
         """
         Sets the usuario of this PlanoCampanhaResponse.
-        Nome do usu\u00C3\u00A1rio
+        Nome do usu\u00E1rio
 
         :param usuario: The usuario of this PlanoCampanhaResponse.
         :type: str

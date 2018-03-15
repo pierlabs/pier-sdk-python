@@ -125,7 +125,7 @@ class OrigemComercialResponse(object):
     def id(self):
         """
         Gets the id of this OrigemComercialResponse.
-        C\u00C3\u00B3digo identificador do OrigemComercial
+        C\u00F3digo identificador do OrigemComercial
 
         :return: The id of this OrigemComercialResponse.
         :rtype: int
@@ -136,7 +136,7 @@ class OrigemComercialResponse(object):
     def id(self, id):
         """
         Sets the id of this OrigemComercialResponse.
-        C\u00C3\u00B3digo identificador do OrigemComercial
+        C\u00F3digo identificador do OrigemComercial
 
         :param id: The id of this OrigemComercialResponse.
         :type: int
@@ -169,7 +169,7 @@ class OrigemComercialResponse(object):
     def descricao(self):
         """
         Gets the descricao of this OrigemComercialResponse.
-        Descri\u00C3\u00A7\u00C3\u00A3o completa do nome da Origem Comercial
+        Descri\u00E7\u00E3o completa do nome da Origem Comercial
 
         :return: The descricao of this OrigemComercialResponse.
         :rtype: str
@@ -180,7 +180,7 @@ class OrigemComercialResponse(object):
     def descricao(self, descricao):
         """
         Sets the descricao of this OrigemComercialResponse.
-        Descri\u00C3\u00A7\u00C3\u00A3o completa do nome da Origem Comercial
+        Descri\u00E7\u00E3o completa do nome da Origem Comercial
 
         :param descricao: The descricao of this OrigemComercialResponse.
         :type: str
@@ -213,7 +213,7 @@ class OrigemComercialResponse(object):
     def id_estabelecimento(self):
         """
         Gets the id_estabelecimento of this OrigemComercialResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do Estabelecimento
+        C\u00F3digo de identifica\u00E7\u00E3o do Estabelecimento
 
         :return: The id_estabelecimento of this OrigemComercialResponse.
         :rtype: int
@@ -224,7 +224,7 @@ class OrigemComercialResponse(object):
     def id_estabelecimento(self, id_estabelecimento):
         """
         Sets the id_estabelecimento of this OrigemComercialResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do Estabelecimento
+        C\u00F3digo de identifica\u00E7\u00E3o do Estabelecimento
 
         :param id_estabelecimento: The id_estabelecimento of this OrigemComercialResponse.
         :type: int
@@ -235,7 +235,7 @@ class OrigemComercialResponse(object):
     def id_tipo_origem_comercial(self):
         """
         Gets the id_tipo_origem_comercial of this OrigemComercialResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do Tipo da Origem Comercial
+        C\u00F3digo de identifica\u00E7\u00E3o do Tipo da Origem Comercial
 
         :return: The id_tipo_origem_comercial of this OrigemComercialResponse.
         :rtype: int
@@ -246,7 +246,7 @@ class OrigemComercialResponse(object):
     def id_tipo_origem_comercial(self, id_tipo_origem_comercial):
         """
         Sets the id_tipo_origem_comercial of this OrigemComercialResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do Tipo da Origem Comercial
+        C\u00F3digo de identifica\u00E7\u00E3o do Tipo da Origem Comercial
 
         :param id_tipo_origem_comercial: The id_tipo_origem_comercial of this OrigemComercialResponse.
         :type: int
@@ -345,7 +345,7 @@ class OrigemComercialResponse(object):
     def flag_pre_aprovado(self):
         """
         Gets the flag_pre_aprovado of this OrigemComercialResponse.
-        Indica se permite pr\u00C3\u00A9 aprova\u00C3\u00A7\u00C3\u00A3o
+        Indica se permite pr\u00E9 aprova\u00E7\u00E3o
 
         :return: The flag_pre_aprovado of this OrigemComercialResponse.
         :rtype: bool
@@ -356,7 +356,7 @@ class OrigemComercialResponse(object):
     def flag_pre_aprovado(self, flag_pre_aprovado):
         """
         Sets the flag_pre_aprovado of this OrigemComercialResponse.
-        Indica se permite pr\u00C3\u00A9 aprova\u00C3\u00A7\u00C3\u00A3o
+        Indica se permite pr\u00E9 aprova\u00E7\u00E3o
 
         :param flag_pre_aprovado: The flag_pre_aprovado of this OrigemComercialResponse.
         :type: bool
@@ -367,7 +367,7 @@ class OrigemComercialResponse(object):
     def flag_aprovacao_imediata(self):
         """
         Gets the flag_aprovacao_imediata of this OrigemComercialResponse.
-        Indica se permite aprova\u00C3\u00A7\u00C3\u00A3o imediata
+        Indica se permite aprova\u00E7\u00E3o imediata
 
         :return: The flag_aprovacao_imediata of this OrigemComercialResponse.
         :rtype: bool
@@ -378,7 +378,7 @@ class OrigemComercialResponse(object):
     def flag_aprovacao_imediata(self, flag_aprovacao_imediata):
         """
         Sets the flag_aprovacao_imediata of this OrigemComercialResponse.
-        Indica se permite aprova\u00C3\u00A7\u00C3\u00A3o imediata
+        Indica se permite aprova\u00E7\u00E3o imediata
 
         :param flag_aprovacao_imediata: The flag_aprovacao_imediata of this OrigemComercialResponse.
         :type: bool
@@ -389,7 +389,7 @@ class OrigemComercialResponse(object):
     def nome_fantasia_plastico(self):
         """
         Gets the nome_fantasia_plastico of this OrigemComercialResponse.
-        Nome fantasia impresso no pl\u00C3\u00A1stico
+        Nome fantasia impresso no pl\u00E1stico
 
         :return: The nome_fantasia_plastico of this OrigemComercialResponse.
         :rtype: str
@@ -400,7 +400,7 @@ class OrigemComercialResponse(object):
     def nome_fantasia_plastico(self, nome_fantasia_plastico):
         """
         Sets the nome_fantasia_plastico of this OrigemComercialResponse.
-        Nome fantasia impresso no pl\u00C3\u00A1stico
+        Nome fantasia impresso no pl\u00E1stico
 
         :param nome_fantasia_plastico: The nome_fantasia_plastico of this OrigemComercialResponse.
         :type: str
@@ -411,7 +411,7 @@ class OrigemComercialResponse(object):
     def flag_cartao_provisorio(self):
         """
         Gets the flag_cartao_provisorio of this OrigemComercialResponse.
-        Indica se permite cart\u00C3\u00A3o provis\u00C3\u00B3rio
+        Indica se permite cart\u00E3o provis\u00F3rio
 
         :return: The flag_cartao_provisorio of this OrigemComercialResponse.
         :rtype: bool
@@ -422,7 +422,7 @@ class OrigemComercialResponse(object):
     def flag_cartao_provisorio(self, flag_cartao_provisorio):
         """
         Sets the flag_cartao_provisorio of this OrigemComercialResponse.
-        Indica se permite cart\u00C3\u00A3o provis\u00C3\u00B3rio
+        Indica se permite cart\u00E3o provis\u00F3rio
 
         :param flag_cartao_provisorio: The flag_cartao_provisorio of this OrigemComercialResponse.
         :type: bool
@@ -433,7 +433,7 @@ class OrigemComercialResponse(object):
     def flag_cartao_definitivo(self):
         """
         Gets the flag_cartao_definitivo of this OrigemComercialResponse.
-        Indica se permite cart\u00C3\u00A3o definitivo
+        Indica se permite cart\u00E3o definitivo
 
         :return: The flag_cartao_definitivo of this OrigemComercialResponse.
         :rtype: bool
@@ -444,7 +444,7 @@ class OrigemComercialResponse(object):
     def flag_cartao_definitivo(self, flag_cartao_definitivo):
         """
         Sets the flag_cartao_definitivo of this OrigemComercialResponse.
-        Indica se permite cart\u00C3\u00A3o definitivo
+        Indica se permite cart\u00E3o definitivo
 
         :param flag_cartao_definitivo: The flag_cartao_definitivo of this OrigemComercialResponse.
         :type: bool
@@ -455,7 +455,7 @@ class OrigemComercialResponse(object):
     def usuario(self):
         """
         Gets the usuario of this OrigemComercialResponse.
-        Usu\u00C3\u00A1rio para autentica\u00C3\u00A7\u00C3\u00A3o
+        Usu\u00E1rio para autentica\u00E7\u00E3o
 
         :return: The usuario of this OrigemComercialResponse.
         :rtype: str
@@ -466,7 +466,7 @@ class OrigemComercialResponse(object):
     def usuario(self, usuario):
         """
         Sets the usuario of this OrigemComercialResponse.
-        Usu\u00C3\u00A1rio para autentica\u00C3\u00A7\u00C3\u00A3o
+        Usu\u00E1rio para autentica\u00E7\u00E3o
 
         :param usuario: The usuario of this OrigemComercialResponse.
         :type: str
@@ -477,7 +477,7 @@ class OrigemComercialResponse(object):
     def senha(self):
         """
         Gets the senha of this OrigemComercialResponse.
-        Senha para autentica\u00C3\u00A7\u00C3\u00A3o
+        Senha para autentica\u00E7\u00E3o
 
         :return: The senha of this OrigemComercialResponse.
         :rtype: str
@@ -488,7 +488,7 @@ class OrigemComercialResponse(object):
     def senha(self, senha):
         """
         Sets the senha of this OrigemComercialResponse.
-        Senha para autentica\u00C3\u00A7\u00C3\u00A3o
+        Senha para autentica\u00E7\u00E3o
 
         :param senha: The senha of this OrigemComercialResponse.
         :type: str
@@ -499,7 +499,7 @@ class OrigemComercialResponse(object):
     def flag_origem_externa(self):
         """
         Gets the flag_origem_externa of this OrigemComercialResponse.
-        Indica se \u00C3\u00A9 origem externa
+        Indica se \u00E9 origem externa
 
         :return: The flag_origem_externa of this OrigemComercialResponse.
         :rtype: bool
@@ -510,7 +510,7 @@ class OrigemComercialResponse(object):
     def flag_origem_externa(self, flag_origem_externa):
         """
         Sets the flag_origem_externa of this OrigemComercialResponse.
-        Indica se \u00C3\u00A9 origem externa
+        Indica se \u00E9 origem externa
 
         :param flag_origem_externa: The flag_origem_externa of this OrigemComercialResponse.
         :type: bool
@@ -521,7 +521,7 @@ class OrigemComercialResponse(object):
     def flag_modificado(self):
         """
         Gets the flag_modificado of this OrigemComercialResponse.
-        Indica se h\u00C3\u00A1 modifica\u00C3\u00A7\u00C3\u00A3o
+        Indica se h\u00E1 modifica\u00E7\u00E3o
 
         :return: The flag_modificado of this OrigemComercialResponse.
         :rtype: bool
@@ -532,7 +532,7 @@ class OrigemComercialResponse(object):
     def flag_modificado(self, flag_modificado):
         """
         Sets the flag_modificado of this OrigemComercialResponse.
-        Indica se h\u00C3\u00A1 modifica\u00C3\u00A7\u00C3\u00A3o
+        Indica se h\u00E1 modifica\u00E7\u00E3o
 
         :param flag_modificado: The flag_modificado of this OrigemComercialResponse.
         :type: bool
@@ -565,7 +565,7 @@ class OrigemComercialResponse(object):
     def flag_credito_faturamento(self):
         """
         Gets the flag_credito_faturamento of this OrigemComercialResponse.
-        Indica se permite cr\u00C3\u00A9dito de faturamento
+        Indica se permite cr\u00E9dito de faturamento
 
         :return: The flag_credito_faturamento of this OrigemComercialResponse.
         :rtype: bool
@@ -576,7 +576,7 @@ class OrigemComercialResponse(object):
     def flag_credito_faturamento(self, flag_credito_faturamento):
         """
         Sets the flag_credito_faturamento of this OrigemComercialResponse.
-        Indica se permite cr\u00C3\u00A9dito de faturamento
+        Indica se permite cr\u00E9dito de faturamento
 
         :param flag_credito_faturamento: The flag_credito_faturamento of this OrigemComercialResponse.
         :type: bool
@@ -587,7 +587,7 @@ class OrigemComercialResponse(object):
     def flag_concede_limite_provisorio(self):
         """
         Gets the flag_concede_limite_provisorio of this OrigemComercialResponse.
-        Indica se concede limite provis\u00C3\u00B3rio
+        Indica se concede limite provis\u00F3rio
 
         :return: The flag_concede_limite_provisorio of this OrigemComercialResponse.
         :rtype: bool
@@ -598,7 +598,7 @@ class OrigemComercialResponse(object):
     def flag_concede_limite_provisorio(self, flag_concede_limite_provisorio):
         """
         Sets the flag_concede_limite_provisorio of this OrigemComercialResponse.
-        Indica se concede limite provis\u00C3\u00B3rio
+        Indica se concede limite provis\u00F3rio
 
         :param flag_concede_limite_provisorio: The flag_concede_limite_provisorio of this OrigemComercialResponse.
         :type: bool
@@ -653,7 +653,7 @@ class OrigemComercialResponse(object):
     def flag_consulta_previa(self):
         """
         Gets the flag_consulta_previa of this OrigemComercialResponse.
-        Indica se realiza consulta pr\u00C3\u00A9via
+        Indica se realiza consulta pr\u00E9via
 
         :return: The flag_consulta_previa of this OrigemComercialResponse.
         :rtype: bool
@@ -664,7 +664,7 @@ class OrigemComercialResponse(object):
     def flag_consulta_previa(self, flag_consulta_previa):
         """
         Sets the flag_consulta_previa of this OrigemComercialResponse.
-        Indica se realiza consulta pr\u00C3\u00A9via
+        Indica se realiza consulta pr\u00E9via
 
         :param flag_consulta_previa: The flag_consulta_previa of this OrigemComercialResponse.
         :type: bool

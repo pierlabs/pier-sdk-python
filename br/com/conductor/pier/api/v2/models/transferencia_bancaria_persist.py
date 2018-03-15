@@ -77,7 +77,7 @@ class TransferenciaBancariaPersist(object):
     def valor_compra(self):
         """
         Gets the valor_compra of this TransferenciaBancariaPersist.
-        Valor da transfer\u00C3\u00AAncia
+        Valor da transfer\u00EAncia
 
         :return: The valor_compra of this TransferenciaBancariaPersist.
         :rtype: float
@@ -88,7 +88,7 @@ class TransferenciaBancariaPersist(object):
     def valor_compra(self, valor_compra):
         """
         Sets the valor_compra of this TransferenciaBancariaPersist.
-        Valor da transfer\u00C3\u00AAncia
+        Valor da transfer\u00EAncia
 
         :param valor_compra: The valor_compra of this TransferenciaBancariaPersist.
         :type: float
@@ -99,7 +99,7 @@ class TransferenciaBancariaPersist(object):
     def valor(self):
         """
         Gets the valor of this TransferenciaBancariaPersist.
-        Valor da transfer\u00C3\u00AAncia
+        Valor da transfer\u00EAncia
 
         :return: The valor of this TransferenciaBancariaPersist.
         :rtype: float
@@ -110,7 +110,7 @@ class TransferenciaBancariaPersist(object):
     def valor(self, valor):
         """
         Sets the valor of this TransferenciaBancariaPersist.
-        Valor da transfer\u00C3\u00AAncia
+        Valor da transfer\u00EAncia
 
         :param valor: The valor of this TransferenciaBancariaPersist.
         :type: float
@@ -121,7 +121,7 @@ class TransferenciaBancariaPersist(object):
     def documento_favorecido(self):
         """
         Gets the documento_favorecido of this TransferenciaBancariaPersist.
-        N\u00C3\u00BAmero do CPF ou CNPJ.
+        N\u00FAmero do CPF ou CNPJ.
 
         :return: The documento_favorecido of this TransferenciaBancariaPersist.
         :rtype: str
@@ -132,7 +132,7 @@ class TransferenciaBancariaPersist(object):
     def documento_favorecido(self, documento_favorecido):
         """
         Sets the documento_favorecido of this TransferenciaBancariaPersist.
-        N\u00C3\u00BAmero do CPF ou CNPJ.
+        N\u00FAmero do CPF ou CNPJ.
 
         :param documento_favorecido: The documento_favorecido of this TransferenciaBancariaPersist.
         :type: str
@@ -143,7 +143,7 @@ class TransferenciaBancariaPersist(object):
     def banco(self):
         """
         Gets the banco of this TransferenciaBancariaPersist.
-        C\u00C3\u00B3digo do banco
+        C\u00F3digo do banco
 
         :return: The banco of this TransferenciaBancariaPersist.
         :rtype: int
@@ -154,7 +154,7 @@ class TransferenciaBancariaPersist(object):
     def banco(self, banco):
         """
         Sets the banco of this TransferenciaBancariaPersist.
-        C\u00C3\u00B3digo do banco
+        C\u00F3digo do banco
 
         :param banco: The banco of this TransferenciaBancariaPersist.
         :type: int
@@ -165,7 +165,7 @@ class TransferenciaBancariaPersist(object):
     def numero_agencia(self):
         """
         Gets the numero_agencia of this TransferenciaBancariaPersist.
-        N\u00C3\u00BAmero da ag\u00C3\u00AAncia
+        N\u00FAmero da ag\u00EAncia
 
         :return: The numero_agencia of this TransferenciaBancariaPersist.
         :rtype: str
@@ -176,7 +176,7 @@ class TransferenciaBancariaPersist(object):
     def numero_agencia(self, numero_agencia):
         """
         Sets the numero_agencia of this TransferenciaBancariaPersist.
-        N\u00C3\u00BAmero da ag\u00C3\u00AAncia
+        N\u00FAmero da ag\u00EAncia
 
         :param numero_agencia: The numero_agencia of this TransferenciaBancariaPersist.
         :type: str
@@ -187,7 +187,7 @@ class TransferenciaBancariaPersist(object):
     def digito_agencia(self):
         """
         Gets the digito_agencia of this TransferenciaBancariaPersist.
-        D\u00C3\u00ADgito da ag\u00C3\u00AAncia
+        D\u00EDgito da ag\u00EAncia
 
         :return: The digito_agencia of this TransferenciaBancariaPersist.
         :rtype: str
@@ -198,7 +198,7 @@ class TransferenciaBancariaPersist(object):
     def digito_agencia(self, digito_agencia):
         """
         Sets the digito_agencia of this TransferenciaBancariaPersist.
-        D\u00C3\u00ADgito da ag\u00C3\u00AAncia
+        D\u00EDgito da ag\u00EAncia
 
         :param digito_agencia: The digito_agencia of this TransferenciaBancariaPersist.
         :type: str
@@ -209,7 +209,7 @@ class TransferenciaBancariaPersist(object):
     def numero_conta(self):
         """
         Gets the numero_conta of this TransferenciaBancariaPersist.
-        N\u00C3\u00BAmero da conta
+        N\u00FAmero da conta
 
         :return: The numero_conta of this TransferenciaBancariaPersist.
         :rtype: str
@@ -220,7 +220,7 @@ class TransferenciaBancariaPersist(object):
     def numero_conta(self, numero_conta):
         """
         Sets the numero_conta of this TransferenciaBancariaPersist.
-        N\u00C3\u00BAmero da conta
+        N\u00FAmero da conta
 
         :param numero_conta: The numero_conta of this TransferenciaBancariaPersist.
         :type: str
@@ -231,7 +231,7 @@ class TransferenciaBancariaPersist(object):
     def digito_conta(self):
         """
         Gets the digito_conta of this TransferenciaBancariaPersist.
-        D\u00C3\u00ADgito da conta
+        D\u00EDgito da conta
 
         :return: The digito_conta of this TransferenciaBancariaPersist.
         :rtype: str
@@ -242,7 +242,7 @@ class TransferenciaBancariaPersist(object):
     def digito_conta(self, digito_conta):
         """
         Sets the digito_conta of this TransferenciaBancariaPersist.
-        D\u00C3\u00ADgito da conta
+        D\u00EDgito da conta
 
         :param digito_conta: The digito_conta of this TransferenciaBancariaPersist.
         :type: str
@@ -253,7 +253,7 @@ class TransferenciaBancariaPersist(object):
     def flag_conta_poupanca(self):
         """
         Gets the flag_conta_poupanca of this TransferenciaBancariaPersist.
-        Sinaliza se conta banc\u00C3\u00A1ria \u00C3\u00A9 poupan\u00C3\u00A7a (1: Poupan\u00C3\u00A7a, 0: Conta corrente)
+        Sinaliza se conta banc\u00E1ria \u00E9 poupan\u00E7a (1: Poupan\u00E7a, 0: Conta corrente)
 
         :return: The flag_conta_poupanca of this TransferenciaBancariaPersist.
         :rtype: int
@@ -264,7 +264,7 @@ class TransferenciaBancariaPersist(object):
     def flag_conta_poupanca(self, flag_conta_poupanca):
         """
         Sets the flag_conta_poupanca of this TransferenciaBancariaPersist.
-        Sinaliza se conta banc\u00C3\u00A1ria \u00C3\u00A9 poupan\u00C3\u00A7a (1: Poupan\u00C3\u00A7a, 0: Conta corrente)
+        Sinaliza se conta banc\u00E1ria \u00E9 poupan\u00E7a (1: Poupan\u00E7a, 0: Conta corrente)
 
         :param flag_conta_poupanca: The flag_conta_poupanca of this TransferenciaBancariaPersist.
         :type: int
@@ -275,7 +275,7 @@ class TransferenciaBancariaPersist(object):
     def nome_favorecido(self):
         """
         Gets the nome_favorecido of this TransferenciaBancariaPersist.
-        Apresenta o 'Nome Completo da PF' ou o 'Nome Completo da Raz\u00C3\u00A3o Social (Nome Empresarial)'.
+        Apresenta o 'Nome Completo da PF' ou o 'Nome Completo da Raz\u00E3o Social (Nome Empresarial)'.
 
         :return: The nome_favorecido of this TransferenciaBancariaPersist.
         :rtype: str
@@ -286,7 +286,7 @@ class TransferenciaBancariaPersist(object):
     def nome_favorecido(self, nome_favorecido):
         """
         Sets the nome_favorecido of this TransferenciaBancariaPersist.
-        Apresenta o 'Nome Completo da PF' ou o 'Nome Completo da Raz\u00C3\u00A3o Social (Nome Empresarial)'.
+        Apresenta o 'Nome Completo da PF' ou o 'Nome Completo da Raz\u00E3o Social (Nome Empresarial)'.
 
         :param nome_favorecido: The nome_favorecido of this TransferenciaBancariaPersist.
         :type: str

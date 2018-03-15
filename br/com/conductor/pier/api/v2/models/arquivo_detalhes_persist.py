@@ -75,7 +75,7 @@ class ArquivoDetalhesPersist(object):
     def conteudo(self):
         """
         Gets the conteudo of this ArquivoDetalhesPersist.
-        Conte\u00C3\u00BAdo do nomeCampo
+        Conte\u00FAdo do nomeCampo
 
         :return: The conteudo of this ArquivoDetalhesPersist.
         :rtype: str
@@ -86,7 +86,7 @@ class ArquivoDetalhesPersist(object):
     def conteudo(self, conteudo):
         """
         Sets the conteudo of this ArquivoDetalhesPersist.
-        Conte\u00C3\u00BAdo do nomeCampo
+        Conte\u00FAdo do nomeCampo
 
         :param conteudo: The conteudo of this ArquivoDetalhesPersist.
         :type: str

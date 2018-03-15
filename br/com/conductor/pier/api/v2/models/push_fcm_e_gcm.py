@@ -77,7 +77,7 @@ class PushFCMEGCM(object):
     def id_pessoa(self):
         """
         Gets the id_pessoa of this PushFCMEGCM.
-        C\u00C3\u00B3digo identificado da pessoa
+        C\u00F3digo identificado da pessoa
 
         :return: The id_pessoa of this PushFCMEGCM.
         :rtype: int
@@ -88,7 +88,7 @@ class PushFCMEGCM(object):
     def id_pessoa(self, id_pessoa):
         """
         Sets the id_pessoa of this PushFCMEGCM.
-        C\u00C3\u00B3digo identificado da pessoa
+        C\u00F3digo identificado da pessoa
 
         :param id_pessoa: The id_pessoa of this PushFCMEGCM.
         :type: int
@@ -99,7 +99,7 @@ class PushFCMEGCM(object):
     def id_conta(self):
         """
         Gets the id_conta of this PushFCMEGCM.
-        C\u00C3\u00B3digo identificador da conta
+        C\u00F3digo identificador da conta
 
         :return: The id_conta of this PushFCMEGCM.
         :rtype: int
@@ -110,7 +110,7 @@ class PushFCMEGCM(object):
     def id_conta(self, id_conta):
         """
         Sets the id_conta of this PushFCMEGCM.
-        C\u00C3\u00B3digo identificador da conta
+        C\u00F3digo identificador da conta
 
         :param id_conta: The id_conta of this PushFCMEGCM.
         :type: int
@@ -121,7 +121,7 @@ class PushFCMEGCM(object):
     def token_dispositivo(self):
         """
         Gets the token_dispositivo of this PushFCMEGCM.
-        Apresenta o token do dispositivo que dever\u00C3\u00A1 receber o push.
+        Apresenta o token do dispositivo que dever\u00E1 receber o push.
 
         :return: The token_dispositivo of this PushFCMEGCM.
         :rtype: str
@@ -132,7 +132,7 @@ class PushFCMEGCM(object):
     def token_dispositivo(self, token_dispositivo):
         """
         Sets the token_dispositivo of this PushFCMEGCM.
-        Apresenta o token do dispositivo que dever\u00C3\u00A1 receber o push.
+        Apresenta o token do dispositivo que dever\u00E1 receber o push.
 
         :param token_dispositivo: The token_dispositivo of this PushFCMEGCM.
         :type: str
@@ -143,7 +143,7 @@ class PushFCMEGCM(object):
     def token_servidor(self):
         """
         Gets the token_servidor of this PushFCMEGCM.
-        Apresenta o token da sua aplica\u00C3\u00A7\u00C3\u00A3o Android gerada pela Google.
+        Apresenta o token da sua aplica\u00E7\u00E3o Android gerada pela Google.
 
         :return: The token_servidor of this PushFCMEGCM.
         :rtype: str
@@ -154,7 +154,7 @@ class PushFCMEGCM(object):
     def token_servidor(self, token_servidor):
         """
         Sets the token_servidor of this PushFCMEGCM.
-        Apresenta o token da sua aplica\u00C3\u00A7\u00C3\u00A3o Android gerada pela Google.
+        Apresenta o token da sua aplica\u00E7\u00E3o Android gerada pela Google.
 
         :param token_servidor: The token_servidor of this PushFCMEGCM.
         :type: str
@@ -165,7 +165,7 @@ class PushFCMEGCM(object):
     def titulo(self):
         """
         Gets the titulo of this PushFCMEGCM.
-        Apresenta o t\u00C3\u00ADtulo da notifica\u00C3\u00A7\u00C3\u00A3o.
+        Apresenta o t\u00EDtulo da notifica\u00E7\u00E3o.
 
         :return: The titulo of this PushFCMEGCM.
         :rtype: str
@@ -176,7 +176,7 @@ class PushFCMEGCM(object):
     def titulo(self, titulo):
         """
         Sets the titulo of this PushFCMEGCM.
-        Apresenta o t\u00C3\u00ADtulo da notifica\u00C3\u00A7\u00C3\u00A3o.
+        Apresenta o t\u00EDtulo da notifica\u00E7\u00E3o.
 
         :param titulo: The titulo of this PushFCMEGCM.
         :type: str
@@ -187,7 +187,7 @@ class PushFCMEGCM(object):
     def conteudo(self):
         """
         Gets the conteudo of this PushFCMEGCM.
-        Apresenta o texto da notifica\u00C3\u00A7\u00C3\u00A3o a ser enviado.
+        Apresenta o texto da notifica\u00E7\u00E3o a ser enviado.
 
         :return: The conteudo of this PushFCMEGCM.
         :rtype: str
@@ -198,7 +198,7 @@ class PushFCMEGCM(object):
     def conteudo(self, conteudo):
         """
         Sets the conteudo of this PushFCMEGCM.
-        Apresenta o texto da notifica\u00C3\u00A7\u00C3\u00A3o a ser enviado.
+        Apresenta o texto da notifica\u00E7\u00E3o a ser enviado.
 
         :param conteudo: The conteudo of this PushFCMEGCM.
         :type: str
@@ -209,7 +209,7 @@ class PushFCMEGCM(object):
     def tipo_evento(self):
         """
         Gets the tipo_evento of this PushFCMEGCM.
-        Apresenta o tipoEvento a qual pertence a notifica\u00C3\u00A7\u00C3\u00A3o
+        Apresenta o tipoEvento a qual pertence a notifica\u00E7\u00E3o
 
         :return: The tipo_evento of this PushFCMEGCM.
         :rtype: str
@@ -220,7 +220,7 @@ class PushFCMEGCM(object):
     def tipo_evento(self, tipo_evento):
         """
         Sets the tipo_evento of this PushFCMEGCM.
-        Apresenta o tipoEvento a qual pertence a notifica\u00C3\u00A7\u00C3\u00A3o
+        Apresenta o tipoEvento a qual pertence a notifica\u00E7\u00E3o
 
         :param tipo_evento: The tipo_evento of this PushFCMEGCM.
         :type: str
@@ -281,7 +281,7 @@ class PushFCMEGCM(object):
     def cor(self):
         """
         Gets the cor of this PushFCMEGCM.
-        Apresenta a cor do icone da notifica\u00C3\u00A7\u00C3\u00A3o. Essa cor dever\u00C3\u00A1 ser informada no formato RGB Ex. #000000.
+        Apresenta a cor do icone da notifica\u00E7\u00E3o. Essa cor dever\u00E1 ser informada no formato RGB Ex. #000000.
 
         :return: The cor of this PushFCMEGCM.
         :rtype: str
@@ -292,7 +292,7 @@ class PushFCMEGCM(object):
     def cor(self, cor):
         """
         Sets the cor of this PushFCMEGCM.
-        Apresenta a cor do icone da notifica\u00C3\u00A7\u00C3\u00A3o. Essa cor dever\u00C3\u00A1 ser informada no formato RGB Ex. #000000.
+        Apresenta a cor do icone da notifica\u00E7\u00E3o. Essa cor dever\u00E1 ser informada no formato RGB Ex. #000000.
 
         :param cor: The cor of this PushFCMEGCM.
         :type: str

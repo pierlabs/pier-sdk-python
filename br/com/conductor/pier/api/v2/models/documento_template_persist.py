@@ -78,7 +78,7 @@ class DocumentoTemplatePersist(object):
     def template(self):
         """
         Gets the template of this DocumentoTemplatePersist.
-        Template para o conte\u00C3\u00BAdo do documento.
+        Template para o conte\u00FAdo do documento.
 
         :return: The template of this DocumentoTemplatePersist.
         :rtype: str
@@ -89,7 +89,7 @@ class DocumentoTemplatePersist(object):
     def template(self, template):
         """
         Sets the template of this DocumentoTemplatePersist.
-        Template para o conte\u00C3\u00BAdo do documento.
+        Template para o conte\u00FAdo do documento.
 
         :param template: The template of this DocumentoTemplatePersist.
         :type: str
@@ -100,7 +100,7 @@ class DocumentoTemplatePersist(object):
     def integracoes(self):
         """
         Gets the integracoes of this DocumentoTemplatePersist.
-        Lista de configura\u00C3\u00A7\u00C3\u00B5es de integra\u00C3\u00A7\u00C3\u00A3o
+        Lista de configura\u00E7\u00F5es de integra\u00E7\u00E3o
 
         :return: The integracoes of this DocumentoTemplatePersist.
         :rtype: list[ReferenciaIdPersist]
@@ -111,7 +111,7 @@ class DocumentoTemplatePersist(object):
     def integracoes(self, integracoes):
         """
         Sets the integracoes of this DocumentoTemplatePersist.
-        Lista de configura\u00C3\u00A7\u00C3\u00B5es de integra\u00C3\u00A7\u00C3\u00A3o
+        Lista de configura\u00E7\u00F5es de integra\u00E7\u00E3o
 
         :param integracoes: The integracoes of this DocumentoTemplatePersist.
         :type: list[ReferenciaIdPersist]

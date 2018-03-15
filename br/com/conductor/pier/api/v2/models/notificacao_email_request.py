@@ -59,7 +59,7 @@ class NotificacaoEmailRequest(object):
     def id_template_notificacao(self):
         """
         Gets the id_template_notificacao of this NotificacaoEmailRequest.
-        ID para o template da notifica\u00C3\u00A7\u00C3\u00A3o.
+        ID para o template da notifica\u00E7\u00E3o.
 
         :return: The id_template_notificacao of this NotificacaoEmailRequest.
         :rtype: int
@@ -70,7 +70,7 @@ class NotificacaoEmailRequest(object):
     def id_template_notificacao(self, id_template_notificacao):
         """
         Sets the id_template_notificacao of this NotificacaoEmailRequest.
-        ID para o template da notifica\u00C3\u00A7\u00C3\u00A3o.
+        ID para o template da notifica\u00E7\u00E3o.
 
         :param id_template_notificacao: The id_template_notificacao of this NotificacaoEmailRequest.
         :type: int
@@ -81,7 +81,7 @@ class NotificacaoEmailRequest(object):
     def destinatarios(self):
         """
         Gets the destinatarios of this NotificacaoEmailRequest.
-        Lista de email(s) do(s) destinat\u00C3\u00A1rio(s).
+        Lista de email(s) do(s) destinat\u00E1rio(s).
 
         :return: The destinatarios of this NotificacaoEmailRequest.
         :rtype: list[str]
@@ -92,7 +92,7 @@ class NotificacaoEmailRequest(object):
     def destinatarios(self, destinatarios):
         """
         Sets the destinatarios of this NotificacaoEmailRequest.
-        Lista de email(s) do(s) destinat\u00C3\u00A1rio(s).
+        Lista de email(s) do(s) destinat\u00E1rio(s).
 
         :param destinatarios: The destinatarios of this NotificacaoEmailRequest.
         :type: list[str]
@@ -125,7 +125,7 @@ class NotificacaoEmailRequest(object):
     def parametros_conteudo(self):
         """
         Gets the parametros_conteudo of this NotificacaoEmailRequest.
-        Mapa de par\u00C3\u00A2metros para montagem da notifica\u00C3\u00A7\u00C3\u00A3o.
+        Mapa de par\u00E2metros para montagem da notifica\u00E7\u00E3o.
 
         :return: The parametros_conteudo of this NotificacaoEmailRequest.
         :rtype: dict(str, object)
@@ -136,7 +136,7 @@ class NotificacaoEmailRequest(object):
     def parametros_conteudo(self, parametros_conteudo):
         """
         Sets the parametros_conteudo of this NotificacaoEmailRequest.
-        Mapa de par\u00C3\u00A2metros para montagem da notifica\u00C3\u00A7\u00C3\u00A3o.
+        Mapa de par\u00E2metros para montagem da notifica\u00E7\u00E3o.
 
         :param parametros_conteudo: The parametros_conteudo of this NotificacaoEmailRequest.
         :type: dict(str, object)

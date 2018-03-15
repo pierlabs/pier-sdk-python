@@ -80,7 +80,7 @@ class ContaResponse(object):
     def id(self):
         """
         Gets the id of this ContaResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o de conta (id).
+        C\u00F3digo de identifica\u00E7\u00E3o de conta (id).
 
         :return: The id of this ContaResponse.
         :rtype: int
@@ -91,7 +91,7 @@ class ContaResponse(object):
     def id(self, id):
         """
         Sets the id of this ContaResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o de conta (id).
+        C\u00F3digo de identifica\u00E7\u00E3o de conta (id).
 
         :param id: The id of this ContaResponse.
         :type: int
@@ -102,7 +102,7 @@ class ContaResponse(object):
     def id_produto(self):
         """
         Gets the id_produto of this ContaResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do produto ao qual a conta faz parte. (id).
+        C\u00F3digo de identifica\u00E7\u00E3o do produto ao qual a conta faz parte. (id).
 
         :return: The id_produto of this ContaResponse.
         :rtype: int
@@ -113,7 +113,7 @@ class ContaResponse(object):
     def id_produto(self, id_produto):
         """
         Sets the id_produto of this ContaResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do produto ao qual a conta faz parte. (id).
+        C\u00F3digo de identifica\u00E7\u00E3o do produto ao qual a conta faz parte. (id).
 
         :param id_produto: The id_produto of this ContaResponse.
         :type: int
@@ -124,7 +124,7 @@ class ContaResponse(object):
     def id_origem_comercial(self):
         """
         Gets the id_origem_comercial of this ContaResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Origem Comercial (id) que deu origem a Conta.
+        C\u00F3digo de Identifica\u00E7\u00E3o da Origem Comercial (id) que deu origem a Conta.
 
         :return: The id_origem_comercial of this ContaResponse.
         :rtype: int
@@ -135,7 +135,7 @@ class ContaResponse(object):
     def id_origem_comercial(self, id_origem_comercial):
         """
         Sets the id_origem_comercial of this ContaResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Origem Comercial (id) que deu origem a Conta.
+        C\u00F3digo de Identifica\u00E7\u00E3o da Origem Comercial (id) que deu origem a Conta.
 
         :param id_origem_comercial: The id_origem_comercial of this ContaResponse.
         :type: int
@@ -146,7 +146,7 @@ class ContaResponse(object):
     def id_pessoa(self):
         """
         Gets the id_pessoa of this ContaResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Pessoa Titular da Conta (id).
+        C\u00F3digo de Identifica\u00E7\u00E3o da Pessoa Titular da Conta (id).
 
         :return: The id_pessoa of this ContaResponse.
         :rtype: int
@@ -157,7 +157,7 @@ class ContaResponse(object):
     def id_pessoa(self, id_pessoa):
         """
         Sets the id_pessoa of this ContaResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Pessoa Titular da Conta (id).
+        C\u00F3digo de Identifica\u00E7\u00E3o da Pessoa Titular da Conta (id).
 
         :param id_pessoa: The id_pessoa of this ContaResponse.
         :type: int
@@ -168,7 +168,7 @@ class ContaResponse(object):
     def id_status_conta(self):
         """
         Gets the id_status_conta of this ContaResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do status atribuido a conta.
+        C\u00F3digo de Identifica\u00E7\u00E3o do status atribuido a conta.
 
         :return: The id_status_conta of this ContaResponse.
         :rtype: int
@@ -179,7 +179,7 @@ class ContaResponse(object):
     def id_status_conta(self, id_status_conta):
         """
         Sets the id_status_conta of this ContaResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do status atribuido a conta.
+        C\u00F3digo de Identifica\u00E7\u00E3o do status atribuido a conta.
 
         :param id_status_conta: The id_status_conta of this ContaResponse.
         :type: int
@@ -234,7 +234,7 @@ class ContaResponse(object):
     def data_status_conta(self):
         """
         Gets the data_status_conta of this ContaResponse.
-        Apresenta a data em que o idStatusConta atual fora atribu\u00C3\u00ADdo para ela.
+        Apresenta a data em que o idStatusConta atual fora atribu\u00EDdo para ela.
 
         :return: The data_status_conta of this ContaResponse.
         :rtype: str
@@ -245,7 +245,7 @@ class ContaResponse(object):
     def data_status_conta(self, data_status_conta):
         """
         Sets the data_status_conta of this ContaResponse.
-        Apresenta a data em que o idStatusConta atual fora atribu\u00C3\u00ADdo para ela.
+        Apresenta a data em que o idStatusConta atual fora atribu\u00EDdo para ela.
 
         :param data_status_conta: The data_status_conta of this ContaResponse.
         :type: str
@@ -256,7 +256,7 @@ class ContaResponse(object):
     def data_cadastro(self):
         """
         Gets the data_cadastro of this ContaResponse.
-        Apresenta a data em que o cart\u00C3\u00A3o foi gerado.
+        Apresenta a data em que o cart\u00E3o foi gerado.
 
         :return: The data_cadastro of this ContaResponse.
         :rtype: str
@@ -267,7 +267,7 @@ class ContaResponse(object):
     def data_cadastro(self, data_cadastro):
         """
         Sets the data_cadastro of this ContaResponse.
-        Apresenta a data em que o cart\u00C3\u00A3o foi gerado.
+        Apresenta a data em que o cart\u00E3o foi gerado.
 
         :param data_cadastro: The data_cadastro of this ContaResponse.
         :type: str
@@ -278,7 +278,7 @@ class ContaResponse(object):
     def data_ultima_alteracao_vencimento(self):
         """
         Gets the data_ultima_alteracao_vencimento of this ContaResponse.
-        Apresenta a data da ultima altera\u00C3\u00A7\u00C3\u00A3o de vencimento.
+        Apresenta a data da ultima altera\u00E7\u00E3o de vencimento.
 
         :return: The data_ultima_alteracao_vencimento of this ContaResponse.
         :rtype: str
@@ -289,7 +289,7 @@ class ContaResponse(object):
     def data_ultima_alteracao_vencimento(self, data_ultima_alteracao_vencimento):
         """
         Sets the data_ultima_alteracao_vencimento of this ContaResponse.
-        Apresenta a data da ultima altera\u00C3\u00A7\u00C3\u00A3o de vencimento.
+        Apresenta a data da ultima altera\u00E7\u00E3o de vencimento.
 
         :param data_ultima_alteracao_vencimento: The data_ultima_alteracao_vencimento of this ContaResponse.
         :type: str

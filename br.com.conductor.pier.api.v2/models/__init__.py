@@ -1,6 +1,8 @@
 from __future__ import absolute_import
 
 # import models into model package
+from .acordo_detalhe_response import AcordoDetalheResponse
+from .acordo_response import AcordoResponse
 from .adicional_detalhe_response import AdicionalDetalheResponse
 from .adicional_persist import AdicionalPersist
 from .adicional_response import AdicionalResponse
@@ -75,6 +77,7 @@ from .conta_response import ContaResponse
 from .controle_vencimento_response import ControleVencimentoResponse
 from .dados_cartao_impressao_response import DadosCartaoImpressaoResponse
 from .dados_cartao_response import DadosCartaoResponse
+from .dados_portador_request import DadosPortadorRequest
 from .desfazimento_transacao_on_us_request import DesfazimentoTransacaoOnUsRequest
 from .detalhe_operacao_response import DetalheOperacaoResponse
 from .detalhe_oportunidade_persist import DetalheOportunidadePersist
@@ -113,6 +116,7 @@ from .fatura_response import FaturaResponse
 from .grade_pendente_request import GradePendenteRequest
 from .grupo_economico_dto import GrupoEconomicoDTO
 from .grupo_economico_response import GrupoEconomicoResponse
+from .grupo_origem_comercial_response import GrupoOrigemComercialResponse
 from .historico_assessoria_response import HistoricoAssessoriaResponse
 from .historico_atraso_fatura_response import HistoricoAtrasoFaturaResponse
 from .historico_eventos_response import HistoricoEventosResponse
@@ -150,6 +154,7 @@ from .oportunidade_update import OportunidadeUpdate
 from .origem_comercial_persist import OrigemComercialPersist
 from .origem_comercial_response import OrigemComercialResponse
 from .origem_comercial_update import OrigemComercialUpdate
+from .page_acordo_response import PageAcordoResponse
 from .page_ajuste_response import PageAjusteResponse
 from .page_anuidade_response import PageAnuidadeResponse
 from .page_aplicacao_mobile_response import PageAplicacaoMobileResponse
@@ -185,6 +190,7 @@ from .page_fatura_consignada_response import PageFaturaConsignadaResponse
 from .page_fatura_fechada_response import PageFaturaFechadaResponse
 from .page_fatura_response import PageFaturaResponse
 from .page_grupo_economico_response import PageGrupoEconomicoResponse
+from .page_grupo_origem_comercial_response import PageGrupoOrigemComercialResponse
 from .page_historico_assessoria_response import PageHistoricoAssessoriaResponse
 from .page_historico_atraso_fatura_response import PageHistoricoAtrasoFaturaResponse
 from .page_historico_eventos_response import PageHistoricoEventosResponse
@@ -211,6 +217,7 @@ from .page_promotor_response import PagePromotorResponse
 from .page_push_response import PagePushResponse
 from .page_risco_fraude_response import PageRiscoFraudeResponse
 from .page_sms_response import PageSMSResponse
+from .page_status_arquivo_response import PageStatusArquivoResponse
 from .page_status_cartao_response import PageStatusCartaoResponse
 from .page_status_conta_response import PageStatusContaResponse
 from .page_status_impressao_response import PageStatusImpressaoResponse
@@ -222,14 +229,17 @@ from .page_telefone_response import PageTelefoneResponse
 from .page_template_notificacao_response import PageTemplateNotificacaoResponse
 from .page_terminal_response import PageTerminalResponse
 from .page_tipo_ajuste_response import PageTipoAjusteResponse
+from .page_tipo_arquivo_response import PageTipoArquivoResponse
 from .page_tipo_boleto_response import PageTipoBoletoResponse
 from .page_tipo_campanha_response import PageTipoCampanhaResponse
 from .page_tipo_debito_recorrente_response import PageTipoDebitoRecorrenteResponse
 from .page_tipo_endereco_response import PageTipoEnderecoResponse
+from .page_tipo_estabelecimento_response import PageTipoEstabelecimentoResponse
 from .page_tipo_faturamento_por_conta_response import PageTipoFaturamentoPorContaResponse
 from .page_tipo_faturamento_response import PageTipoFaturamentoResponse
 from .page_tipo_oportunidade_aud_response import PageTipoOportunidadeAUDResponse
 from .page_tipo_oportunidade_response import PageTipoOportunidadeResponse
+from .page_tipo_origem_comercial_response import PageTipoOrigemComercialResponse
 from .page_tipo_telefone_response import PageTipoTelefoneResponse
 from .page_tipo_template_response import PageTipoTemplateResponse
 from .page_tipo_terminal_response import PageTipoTerminalResponse
@@ -277,6 +287,7 @@ from .referencia_id_persist import ReferenciaIdPersist
 from .risco_fraude_detalhado_response import RiscoFraudeDetalhadoResponse
 from .risco_fraude_response import RiscoFraudeResponse
 from .socio_aprovado_response import SocioAprovadoResponse
+from .status_arquivo_response import StatusArquivoResponse
 from .status_cartao_response import StatusCartaoResponse
 from .status_conta_response import StatusContaResponse
 from .status_impressao_response import StatusImpressaoResponse
@@ -287,7 +298,9 @@ from .taxa_antecipacao_request import TaxaAntecipacaoRequest
 from .taxas_refinanciamento_response import TaxasRefinanciamentoResponse
 from .telefone_adicional_persist import TelefoneAdicionalPersist
 from .telefone_adicional_update import TelefoneAdicionalUpdate
+from .telefone_estabelecimento_persist import TelefoneEstabelecimentoPersist
 from .telefone_estabelecimento_response import TelefoneEstabelecimentoResponse
+from .telefone_estabelecimento_update import TelefoneEstabelecimentoUpdate
 from .telefone_pessoa_aprovada_persist import TelefonePessoaAprovadaPersist
 from .telefone_pessoa_aprovada_response import TelefonePessoaAprovadaResponse
 from .telefone_response import TelefoneResponse
@@ -297,10 +310,12 @@ from .terminal_persist import TerminalPersist
 from .terminal_response import TerminalResponse
 from .terminal_update import TerminalUpdate
 from .tipo_ajuste_response import TipoAjusteResponse
+from .tipo_arquivo_response import TipoArquivoResponse
 from .tipo_boleto_response import TipoBoletoResponse
 from .tipo_campanha_response import TipoCampanhaResponse
 from .tipo_debito_recorrente_response import TipoDebitoRecorrenteResponse
 from .tipo_endereco_response import TipoEnderecoResponse
+from .tipo_estabelecimento_response import TipoEstabelecimentoResponse
 from .tipo_faturamento_persist import TipoFaturamentoPersist
 from .tipo_faturamento_por_conta_persist import TipoFaturamentoPorContaPersist
 from .tipo_faturamento_por_conta_response import TipoFaturamentoPorContaResponse
@@ -309,6 +324,7 @@ from .tipo_operacao_response import TipoOperacaoResponse
 from .tipo_oportunidade import TipoOportunidade
 from .tipo_oportunidade_aud_response import TipoOportunidadeAUDResponse
 from .tipo_oportunidade_response import TipoOportunidadeResponse
+from .tipo_origem_comercial_response import TipoOrigemComercialResponse
 from .tipo_resolucao_response import TipoResolucaoResponse
 from .tipo_telefone_response import TipoTelefoneResponse
 from .tipo_template_request import TipoTemplateRequest

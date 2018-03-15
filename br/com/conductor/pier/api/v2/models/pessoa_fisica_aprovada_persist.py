@@ -159,7 +159,7 @@ class PessoaFisicaAprovadaPersist(object):
     def nome_mae(self):
         """
         Gets the nome_mae of this PessoaFisicaAprovadaPersist.
-        Apresenta o nome da m\u00C3\u00A3e da pessoa fisica
+        Apresenta o nome da m\u00E3e da pessoa fisica
 
         :return: The nome_mae of this PessoaFisicaAprovadaPersist.
         :rtype: str
@@ -170,7 +170,7 @@ class PessoaFisicaAprovadaPersist(object):
     def nome_mae(self, nome_mae):
         """
         Sets the nome_mae of this PessoaFisicaAprovadaPersist.
-        Apresenta o nome da m\u00C3\u00A3e da pessoa fisica
+        Apresenta o nome da m\u00E3e da pessoa fisica
 
         :param nome_mae: The nome_mae of this PessoaFisicaAprovadaPersist.
         :type: str
@@ -203,7 +203,7 @@ class PessoaFisicaAprovadaPersist(object):
     def sexo(self):
         """
         Gets the sexo of this PessoaFisicaAprovadaPersist.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do sexo da Pessoa, quando PF, sendo: (\"M\": Masculino), (\"F\": Feminino).
+        C\u00F3digo de identifica\u00E7\u00E3o do sexo da Pessoa, quando PF, sendo: (\"M\": Masculino), (\"F\": Feminino).
 
         :return: The sexo of this PessoaFisicaAprovadaPersist.
         :rtype: str
@@ -214,7 +214,7 @@ class PessoaFisicaAprovadaPersist(object):
     def sexo(self, sexo):
         """
         Sets the sexo of this PessoaFisicaAprovadaPersist.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do sexo da Pessoa, quando PF, sendo: (\"M\": Masculino), (\"F\": Feminino).
+        C\u00F3digo de identifica\u00E7\u00E3o do sexo da Pessoa, quando PF, sendo: (\"M\": Masculino), (\"F\": Feminino).
 
         :param sexo: The sexo of this PessoaFisicaAprovadaPersist.
         :type: str
@@ -225,7 +225,7 @@ class PessoaFisicaAprovadaPersist(object):
     def cpf(self):
         """
         Gets the cpf of this PessoaFisicaAprovadaPersist.
-        N\u00C3\u00BAmero do Cadastro de Pessoa Fisica (CPF)
+        N\u00FAmero do Cadastro de Pessoa Fisica (CPF)
 
         :return: The cpf of this PessoaFisicaAprovadaPersist.
         :rtype: str
@@ -236,7 +236,7 @@ class PessoaFisicaAprovadaPersist(object):
     def cpf(self, cpf):
         """
         Sets the cpf of this PessoaFisicaAprovadaPersist.
-        N\u00C3\u00BAmero do Cadastro de Pessoa Fisica (CPF)
+        N\u00FAmero do Cadastro de Pessoa Fisica (CPF)
 
         :param cpf: The cpf of this PessoaFisicaAprovadaPersist.
         :type: str
@@ -247,7 +247,7 @@ class PessoaFisicaAprovadaPersist(object):
     def numero_identidade(self):
         """
         Gets the numero_identidade of this PessoaFisicaAprovadaPersist.
-        N\u00C3\u00BAmero da Identidade
+        N\u00FAmero da Identidade
 
         :return: The numero_identidade of this PessoaFisicaAprovadaPersist.
         :rtype: str
@@ -258,7 +258,7 @@ class PessoaFisicaAprovadaPersist(object):
     def numero_identidade(self, numero_identidade):
         """
         Sets the numero_identidade of this PessoaFisicaAprovadaPersist.
-        N\u00C3\u00BAmero da Identidade
+        N\u00FAmero da Identidade
 
         :param numero_identidade: The numero_identidade of this PessoaFisicaAprovadaPersist.
         :type: str
@@ -269,7 +269,7 @@ class PessoaFisicaAprovadaPersist(object):
     def orgao_expedidor_identidade(self):
         """
         Gets the orgao_expedidor_identidade of this PessoaFisicaAprovadaPersist.
-        Org\u00C3\u00A3o expedidor do RG.
+        Org\u00E3o expedidor do RG.
 
         :return: The orgao_expedidor_identidade of this PessoaFisicaAprovadaPersist.
         :rtype: str
@@ -280,7 +280,7 @@ class PessoaFisicaAprovadaPersist(object):
     def orgao_expedidor_identidade(self, orgao_expedidor_identidade):
         """
         Sets the orgao_expedidor_identidade of this PessoaFisicaAprovadaPersist.
-        Org\u00C3\u00A3o expedidor do RG.
+        Org\u00E3o expedidor do RG.
 
         :param orgao_expedidor_identidade: The orgao_expedidor_identidade of this PessoaFisicaAprovadaPersist.
         :type: str
@@ -313,7 +313,7 @@ class PessoaFisicaAprovadaPersist(object):
     def data_emissao_identidade(self):
         """
         Gets the data_emissao_identidade of this PessoaFisicaAprovadaPersist.
-        Data emiss\u00C3\u00A3o da identidade no formato aaaa-MM-dd
+        Data emiss\u00E3o da identidade no formato aaaa-MM-dd
 
         :return: The data_emissao_identidade of this PessoaFisicaAprovadaPersist.
         :rtype: str
@@ -324,7 +324,7 @@ class PessoaFisicaAprovadaPersist(object):
     def data_emissao_identidade(self, data_emissao_identidade):
         """
         Sets the data_emissao_identidade of this PessoaFisicaAprovadaPersist.
-        Data emiss\u00C3\u00A3o da identidade no formato aaaa-MM-dd
+        Data emiss\u00E3o da identidade no formato aaaa-MM-dd
 
         :param data_emissao_identidade: The data_emissao_identidade of this PessoaFisicaAprovadaPersist.
         :type: str
@@ -357,7 +357,7 @@ class PessoaFisicaAprovadaPersist(object):
     def id_profissao(self):
         """
         Gets the id_profissao of this PessoaFisicaAprovadaPersist.
-        Profiss\u00C3\u00A3o da pessoa fisica
+        Profiss\u00E3o da pessoa fisica
 
         :return: The id_profissao of this PessoaFisicaAprovadaPersist.
         :rtype: str
@@ -368,7 +368,7 @@ class PessoaFisicaAprovadaPersist(object):
     def id_profissao(self, id_profissao):
         """
         Sets the id_profissao of this PessoaFisicaAprovadaPersist.
-        Profiss\u00C3\u00A3o da pessoa fisica
+        Profiss\u00E3o da pessoa fisica
 
         :param id_profissao: The id_profissao of this PessoaFisicaAprovadaPersist.
         :type: str
@@ -379,7 +379,7 @@ class PessoaFisicaAprovadaPersist(object):
     def id_natureza_ocupacao(self):
         """
         Gets the id_natureza_ocupacao of this PessoaFisicaAprovadaPersist.
-        Id Natureza Ocupa\u00C3\u00A7\u00C3\u00A3o da pessoa fisica
+        Id Natureza Ocupa\u00E7\u00E3o da pessoa fisica
 
         :return: The id_natureza_ocupacao of this PessoaFisicaAprovadaPersist.
         :rtype: int
@@ -390,7 +390,7 @@ class PessoaFisicaAprovadaPersist(object):
     def id_natureza_ocupacao(self, id_natureza_ocupacao):
         """
         Sets the id_natureza_ocupacao of this PessoaFisicaAprovadaPersist.
-        Id Natureza Ocupa\u00C3\u00A7\u00C3\u00A3o da pessoa fisica
+        Id Natureza Ocupa\u00E7\u00E3o da pessoa fisica
 
         :param id_natureza_ocupacao: The id_natureza_ocupacao of this PessoaFisicaAprovadaPersist.
         :type: int
@@ -467,7 +467,7 @@ class PessoaFisicaAprovadaPersist(object):
     def numero_agencia(self):
         """
         Gets the numero_agencia of this PessoaFisicaAprovadaPersist.
-        N\u00C3\u00BAmero da ag\u00C3\u00AAncia.
+        N\u00FAmero da ag\u00EAncia.
 
         :return: The numero_agencia of this PessoaFisicaAprovadaPersist.
         :rtype: int
@@ -478,7 +478,7 @@ class PessoaFisicaAprovadaPersist(object):
     def numero_agencia(self, numero_agencia):
         """
         Sets the numero_agencia of this PessoaFisicaAprovadaPersist.
-        N\u00C3\u00BAmero da ag\u00C3\u00AAncia.
+        N\u00FAmero da ag\u00EAncia.
 
         :param numero_agencia: The numero_agencia of this PessoaFisicaAprovadaPersist.
         :type: int
@@ -489,7 +489,7 @@ class PessoaFisicaAprovadaPersist(object):
     def numero_conta_corrente(self):
         """
         Gets the numero_conta_corrente of this PessoaFisicaAprovadaPersist.
-        N\u00C3\u00BAmero da conta corrente.
+        N\u00FAmero da conta corrente.
 
         :return: The numero_conta_corrente of this PessoaFisicaAprovadaPersist.
         :rtype: str
@@ -500,7 +500,7 @@ class PessoaFisicaAprovadaPersist(object):
     def numero_conta_corrente(self, numero_conta_corrente):
         """
         Sets the numero_conta_corrente of this PessoaFisicaAprovadaPersist.
-        N\u00C3\u00BAmero da conta corrente.
+        N\u00FAmero da conta corrente.
 
         :param numero_conta_corrente: The numero_conta_corrente of this PessoaFisicaAprovadaPersist.
         :type: str
@@ -555,7 +555,7 @@ class PessoaFisicaAprovadaPersist(object):
     def nome_impresso(self):
         """
         Gets the nome_impresso of this PessoaFisicaAprovadaPersist.
-        Nome que deve ser impresso no cart\u00C3\u00A3o
+        Nome que deve ser impresso no cart\u00E3o
 
         :return: The nome_impresso of this PessoaFisicaAprovadaPersist.
         :rtype: str
@@ -566,7 +566,7 @@ class PessoaFisicaAprovadaPersist(object):
     def nome_impresso(self, nome_impresso):
         """
         Sets the nome_impresso of this PessoaFisicaAprovadaPersist.
-        Nome que deve ser impresso no cart\u00C3\u00A3o
+        Nome que deve ser impresso no cart\u00E3o
 
         :param nome_impresso: The nome_impresso of this PessoaFisicaAprovadaPersist.
         :type: str
@@ -577,7 +577,7 @@ class PessoaFisicaAprovadaPersist(object):
     def nome_empresa(self):
         """
         Gets the nome_empresa of this PessoaFisicaAprovadaPersist.
-        Nome que deve ser impresso no cart\u00C3\u00A3o
+        Nome que deve ser impresso no cart\u00E3o
 
         :return: The nome_empresa of this PessoaFisicaAprovadaPersist.
         :rtype: str
@@ -588,7 +588,7 @@ class PessoaFisicaAprovadaPersist(object):
     def nome_empresa(self, nome_empresa):
         """
         Sets the nome_empresa of this PessoaFisicaAprovadaPersist.
-        Nome que deve ser impresso no cart\u00C3\u00A3o
+        Nome que deve ser impresso no cart\u00E3o
 
         :param nome_empresa: The nome_empresa of this PessoaFisicaAprovadaPersist.
         :type: str
@@ -643,7 +643,7 @@ class PessoaFisicaAprovadaPersist(object):
     def valor_pontuacao(self):
         """
         Gets the valor_pontuacao of this PessoaFisicaAprovadaPersist.
-        Indica o valor da pontua\u00C3\u00A7\u00C3\u00A3o atribuido ao cliente (caso n\u00C3\u00A3o informado ser\u00C3\u00A1 atribuido o valor = 0)
+        Indica o valor da pontua\u00E7\u00E3o atribuido ao cliente (caso n\u00E3o informado ser\u00E1 atribuido o valor = 0)
 
         :return: The valor_pontuacao of this PessoaFisicaAprovadaPersist.
         :rtype: int
@@ -654,7 +654,7 @@ class PessoaFisicaAprovadaPersist(object):
     def valor_pontuacao(self, valor_pontuacao):
         """
         Sets the valor_pontuacao of this PessoaFisicaAprovadaPersist.
-        Indica o valor da pontua\u00C3\u00A7\u00C3\u00A3o atribuido ao cliente (caso n\u00C3\u00A3o informado ser\u00C3\u00A1 atribuido o valor = 0)
+        Indica o valor da pontua\u00E7\u00E3o atribuido ao cliente (caso n\u00E3o informado ser\u00E1 atribuido o valor = 0)
 
         :param valor_pontuacao: The valor_pontuacao of this PessoaFisicaAprovadaPersist.
         :type: int
@@ -687,7 +687,7 @@ class PessoaFisicaAprovadaPersist(object):
     def enderecos(self):
         """
         Gets the enderecos of this PessoaFisicaAprovadaPersist.
-        Pode ser informado os seguintes tipos de endere\u00C3\u00A7o: Residencial, Comercial, e Outros
+        Pode ser informado os seguintes tipos de endere\u00E7o: Residencial, Comercial, e Outros
 
         :return: The enderecos of this PessoaFisicaAprovadaPersist.
         :rtype: list[EnderecoAprovadoPersist]
@@ -698,7 +698,7 @@ class PessoaFisicaAprovadaPersist(object):
     def enderecos(self, enderecos):
         """
         Sets the enderecos of this PessoaFisicaAprovadaPersist.
-        Pode ser informado os seguintes tipos de endere\u00C3\u00A7o: Residencial, Comercial, e Outros
+        Pode ser informado os seguintes tipos de endere\u00E7o: Residencial, Comercial, e Outros
 
         :param enderecos: The enderecos of this PessoaFisicaAprovadaPersist.
         :type: list[EnderecoAprovadoPersist]
@@ -731,7 +731,7 @@ class PessoaFisicaAprovadaPersist(object):
     def limite_maximo(self):
         """
         Gets the limite_maximo of this PessoaFisicaAprovadaPersist.
-        Valor m\u00C3\u00A1ximo do limite de cr\u00C3\u00A9dito para realizar transa\u00C3\u00A7\u00C3\u00B5es
+        Valor m\u00E1ximo do limite de cr\u00E9dito para realizar transa\u00E7\u00F5es
 
         :return: The limite_maximo of this PessoaFisicaAprovadaPersist.
         :rtype: float
@@ -742,7 +742,7 @@ class PessoaFisicaAprovadaPersist(object):
     def limite_maximo(self, limite_maximo):
         """
         Sets the limite_maximo of this PessoaFisicaAprovadaPersist.
-        Valor m\u00C3\u00A1ximo do limite de cr\u00C3\u00A9dito para realizar transa\u00C3\u00A7\u00C3\u00B5es
+        Valor m\u00E1ximo do limite de cr\u00E9dito para realizar transa\u00E7\u00F5es
 
         :param limite_maximo: The limite_maximo of this PessoaFisicaAprovadaPersist.
         :type: float
@@ -753,7 +753,7 @@ class PessoaFisicaAprovadaPersist(object):
     def limite_parcelas(self):
         """
         Gets the limite_parcelas of this PessoaFisicaAprovadaPersist.
-        Valor do limite de cr\u00C3\u00A9dito acumulado da soma das parcelas das compras
+        Valor do limite de cr\u00E9dito acumulado da soma das parcelas das compras
 
         :return: The limite_parcelas of this PessoaFisicaAprovadaPersist.
         :rtype: float
@@ -764,7 +764,7 @@ class PessoaFisicaAprovadaPersist(object):
     def limite_parcelas(self, limite_parcelas):
         """
         Sets the limite_parcelas of this PessoaFisicaAprovadaPersist.
-        Valor do limite de cr\u00C3\u00A9dito acumulado da soma das parcelas das compras
+        Valor do limite de cr\u00E9dito acumulado da soma das parcelas das compras
 
         :param limite_parcelas: The limite_parcelas of this PessoaFisicaAprovadaPersist.
         :type: float

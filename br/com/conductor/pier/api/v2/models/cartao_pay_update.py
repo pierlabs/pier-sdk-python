@@ -50,7 +50,7 @@ class CartaoPayUpdate(object):
     def status(self):
         """
         Gets the status of this CartaoPayUpdate.
-        Status do cart\u00C3\u00A3o
+        Status do cart\u00E3o
 
         :return: The status of this CartaoPayUpdate.
         :rtype: str
@@ -61,7 +61,7 @@ class CartaoPayUpdate(object):
     def status(self, status):
         """
         Sets the status of this CartaoPayUpdate.
-        Status do cart\u00C3\u00A3o
+        Status do cart\u00E3o
 
         :param status: The status of this CartaoPayUpdate.
         :type: str

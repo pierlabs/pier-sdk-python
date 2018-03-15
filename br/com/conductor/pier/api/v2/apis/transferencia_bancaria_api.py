@@ -47,8 +47,8 @@ class TransferenciaBancariaApi(object):
 
     def atualizar_using_put1(self, id, update, **kwargs):
         """
-        Atualiza conta banc\u00C3\u00A1ria portador
-        Esse recurso permite atualizar uma conta banc\u00C3\u00A1ria do portador.
+        Atualiza conta banc\u00E1ria portador
+        Esse recurso permite atualizar uma conta banc\u00E1ria do portador.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -60,7 +60,7 @@ class TransferenciaBancariaApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param int id: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da conta banc\u00C3\u00A1ria do portador (id). (required)
+        :param int id: C\u00F3digo de identifica\u00E7\u00E3o da conta banc\u00E1ria do portador (id). (required)
         :param ContaBancariaPortadorUpdate update: update (required)
         :return: ContaBancariaPortadorResponse
                  If the method is called asynchronously,
@@ -128,10 +128,164 @@ class TransferenciaBancariaApi(object):
                                             callback=params.get('callback'))
         return response
 
+    def cancelar_transferencia_credito_conta_bancaria_using_post(self, id_transferencia, **kwargs):
+        """
+        Realizar o cancelamento de uma transfer\u00EAncia banc\u00E1ria do cart\u00E3o para contas banc\u00E1rias que esteja pendente de confirma\u00E7\u00E3o.
+        Este recurso tem como objetivo permitir o canelamento de uma transfer\u00EAncia de cr\u00E9dito entre contas.
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.cancelar_transferencia_credito_conta_bancaria_using_post(id_transferencia, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param int id_transferencia: Id Transfer\u00EAncia (required)
+        :return: str
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id_transferencia']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method cancelar_transferencia_credito_conta_bancaria_using_post" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        # verify the required parameter 'id_transferencia' is set
+        if ('id_transferencia' not in params) or (params['id_transferencia'] is None):
+            raise ValueError("Missing the required parameter `id_transferencia` when calling `cancelar_transferencia_credito_conta_bancaria_using_post`")
+
+        resource_path = '/api/transferencias-creditos-contas-bancarias/{idTransferencia}/cancelar'.replace('{format}', 'json')
+        path_params = {}
+        if 'id_transferencia' in params:
+            path_params['idTransferencia'] = params['id_transferencia']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = []
+
+        response = self.api_client.call_api(resource_path, 'POST',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='str',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
+    def confirmar_transferencia_credito_conta_bancaria_using_post(self, id_transferencia, **kwargs):
+        """
+        Realizar a confirma\u00E7\u00E3o de uma transfer\u00EAncia banc\u00E1ria do cart\u00E3o para contas banc\u00E1rias que esteja pendente de confirma\u00E7\u00E3o.
+        Este recurso tem como objetivo permitir a confirma\u00E7\u00E3o da transfer\u00EAncia de cr\u00E9dito entre contas.
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.confirmar_transferencia_credito_conta_bancaria_using_post(id_transferencia, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param int id_transferencia: Id Transfer\u00EAncia (required)
+        :return: str
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id_transferencia']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method confirmar_transferencia_credito_conta_bancaria_using_post" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        # verify the required parameter 'id_transferencia' is set
+        if ('id_transferencia' not in params) or (params['id_transferencia'] is None):
+            raise ValueError("Missing the required parameter `id_transferencia` when calling `confirmar_transferencia_credito_conta_bancaria_using_post`")
+
+        resource_path = '/api/transferencias-creditos-contas-bancarias/{idTransferencia}/confirmar'.replace('{format}', 'json')
+        path_params = {}
+        if 'id_transferencia' in params:
+            path_params['idTransferencia'] = params['id_transferencia']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = []
+
+        response = self.api_client.call_api(resource_path, 'POST',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='str',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
     def consultar_transferencia_bancaria_using_get(self, id_transferencia, **kwargs):
         """
-        Realiza a consulta de uma transfer\u00C3\u00AAncia banc\u00C3\u00A1ria de cr\u00C3\u00A9dito entre contas banc\u00C3\u00A1rias de um portador
-        Recurso utilizado para recuperar uma transfer\u00C3\u00AAncia de cr\u00C3\u00A9dito entre contas banc\u00C3\u00A1ria de um portador, utiliza o ID da transfer\u00C3\u00AAncia banc\u00C3\u00A1riae o idConta para realizar a consulta.
+        Realiza a consulta de uma transfer\u00EAncia banc\u00E1ria de cr\u00E9dito entre contas banc\u00E1rias de um portador
+        Recurso utilizado para recuperar uma transfer\u00EAncia de cr\u00E9dito entre contas banc\u00E1ria de um portador, utiliza o ID da transfer\u00EAncia banc\u00E1riae o idConta para realizar a consulta.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -143,7 +297,7 @@ class TransferenciaBancariaApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param int id_transferencia: Id Transfer\u00C3\u00AAncia (required)
+        :param int id_transferencia: Id Transfer\u00EAncia (required)
         :return: TransferenciaCreditoContaBancariaResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -205,10 +359,10 @@ class TransferenciaBancariaApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get11(self, id, **kwargs):
+    def consultar_using_get12(self, id, **kwargs):
         """
-        Consulta conta banc\u00C3\u00A1ria portador
-        Esse recurso permite consultar uma conta banc\u00C3\u00A1ria do portador a partir do seu c\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o (id).
+        Consulta conta banc\u00E1ria portador
+        Esse recurso permite consultar uma conta banc\u00E1ria do portador a partir do seu c\u00F3digo de identifica\u00E7\u00E3o (id).
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -216,11 +370,11 @@ class TransferenciaBancariaApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get11(id, callback=callback_function)
+        >>> thread = api.consultar_using_get12(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param int id: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da conta banc\u00C3\u00A1ria (id). (required)
+        :param int id: C\u00F3digo de identifica\u00E7\u00E3o da conta banc\u00E1ria (id). (required)
         :return: ContaBancariaPortadorResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -234,14 +388,14 @@ class TransferenciaBancariaApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get11" % key
+                    " to method consultar_using_get12" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get11`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get12`")
 
         resource_path = '/api/contas-bancarias-portador/{id}'.replace('{format}', 'json')
         path_params = {}
@@ -282,10 +436,10 @@ class TransferenciaBancariaApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get40(self, id, id_transferencia, **kwargs):
+    def consultar_using_get41(self, id, id_transferencia, **kwargs):
         """
-        Consultar uma transfer\u00C3\u00AAncia banc\u00C3\u00A1ria para um banco
-        Este recurso permite consultar os detalhes de uma determinada transfer\u00C3\u00AAncia de cr\u00C3\u00A9dito realizada para uma conta banc\u00C3\u00A1ria. De modo geral, esta opera\u00C3\u00A7\u00C3\u00A3o poder\u00C3\u00A1 ser utilizada para uma consulta simples destes detalhes ou para realizar a montagem de um comprovante de 2\u00C2\u00AA via de transfer\u00C3\u00AAncia entre contas.
+        Consultar uma transfer\u00EAncia banc\u00E1ria para um banco
+        Este recurso permite consultar os detalhes de uma determinada transfer\u00EAncia de cr\u00E9dito realizada para uma conta banc\u00E1ria. De modo geral, esta opera\u00E7\u00E3o poder\u00E1 ser utilizada para uma consulta simples destes detalhes ou para realizar a montagem de um comprovante de 2\u00AA via de transfer\u00EAncia entre contas.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -293,13 +447,13 @@ class TransferenciaBancariaApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get40(id, id_transferencia, callback=callback_function)
+        >>> thread = api.consultar_using_get41(id, id_transferencia, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int id: Id Conta (required)
-        :param int id_transferencia: Id Transfer\u00C3\u00AAncia (required)
-        :param int id_conta_bancaria_destino: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da conta banc\u00C3\u00A1ria de destino (id)
+        :param int id_transferencia: Id Transfer\u00EAncia (required)
+        :param int id_conta_bancaria_destino: C\u00F3digo de identifica\u00E7\u00E3o da conta banc\u00E1ria de destino (id)
         :return: TransferenciaBancariaResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -313,17 +467,17 @@ class TransferenciaBancariaApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get40" % key
+                    " to method consultar_using_get41" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get40`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get41`")
         # verify the required parameter 'id_transferencia' is set
         if ('id_transferencia' not in params) or (params['id_transferencia'] is None):
-            raise ValueError("Missing the required parameter `id_transferencia` when calling `consultar_using_get40`")
+            raise ValueError("Missing the required parameter `id_transferencia` when calling `consultar_using_get41`")
 
         resource_path = '/api/contas/{id}/transferencias-creditos-contas-bancarias/{id_transferencia}'.replace('{format}', 'json')
         path_params = {}
@@ -370,8 +524,8 @@ class TransferenciaBancariaApi(object):
 
     def listar_transferencia_bancaria_using_get(self, **kwargs):
         """
-        Realiza a listagem das transfer\u00C3\u00AAncias banc\u00C3\u00A1rias de cr\u00C3\u00A9dito entre contas banc\u00C3\u00A1rias
-        Recurso utilizado para listar as transfer\u00C3\u00AAncia de cr\u00C3\u00A9dito entre contas banc\u00C3\u00A1ria de um portador solicitadas.
+        Realiza a listagem das transfer\u00EAncias banc\u00E1rias de cr\u00E9dito entre contas banc\u00E1rias
+        Recurso utilizado para listar as transfer\u00EAncia de cr\u00E9dito entre contas banc\u00E1ria de um portador solicitadas.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -383,18 +537,19 @@ class TransferenciaBancariaApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param list[str] sort: Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
-        :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
-        :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
-        :param int id_conta: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da Conta.
-        :param str data_solicitacao_inicial: Data inicial da solicita\u00C3\u00A7\u00C3\u00A3o de transfer\u00C3\u00AAncia.
-        :param str data_solicitacao_final: Data final da solicita\u00C3\u00A7\u00C3\u00A3o de transfer\u00C3\u00AAncia
+        :param list[str] sort: Tipo de ordena\u00E7\u00E3o dos registros.
+        :param int page: P\u00E1gina solicitada (Default = 0)
+        :param int limit: Limite de elementos por solicita\u00E7\u00E3o (Default = 50, Max = 50)
+        :param int id_conta: C\u00F3digo de identifica\u00E7\u00E3o da Conta.
+        :param str data_solicitacao_inicial: Data inicial da solicita\u00E7\u00E3o de transfer\u00EAncia.
+        :param str data_solicitacao_final: Data final da solicita\u00E7\u00E3o de transfer\u00EAncia
+        :param int status: C\u00F3digo do status do processamento
         :return: PageTransferenciaCreditoContaBancariaResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['sort', 'page', 'limit', 'id_conta', 'data_solicitacao_inicial', 'data_solicitacao_final']
+        all_params = ['sort', 'page', 'limit', 'id_conta', 'data_solicitacao_inicial', 'data_solicitacao_final', 'status']
         all_params.append('callback')
 
         params = locals()
@@ -424,6 +579,8 @@ class TransferenciaBancariaApi(object):
             query_params['dataSolicitacaoInicial'] = params['data_solicitacao_inicial']
         if 'data_solicitacao_final' in params:
             query_params['dataSolicitacaoFinal'] = params['data_solicitacao_final']
+        if 'status' in params:
+            query_params['status'] = params['status']
 
         header_params = {}
 
@@ -457,10 +614,10 @@ class TransferenciaBancariaApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get14(self, **kwargs):
+    def listar_using_get15(self, **kwargs):
         """
-        Lista contas banc\u00C3\u00A1rias portador
-        Esse recurso permite listar contas banc\u00C3\u00A1rias do portador.
+        Lista contas banc\u00E1rias portador
+        Esse recurso permite listar contas banc\u00E1rias do portador.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -468,21 +625,21 @@ class TransferenciaBancariaApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get14(callback=callback_function)
+        >>> thread = api.listar_using_get15(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param int id_conta: C\u00C3\u00B3digo identificador da conta cart\u00C3\u00A3o
-        :param str nome_agencia: Descri\u00C3\u00A7\u00C3\u00A3o da ag\u00C3\u00AAncia
-        :param str numero_agencia: N\u00C3\u00BAmero da ag\u00C3\u00AAncia
-        :param str numero_conta: N\u00C3\u00BAmero da conta
-        :param int flag_conta_origem_doc: Sinaliza se origem \u00C3\u00A9 DOC (1: DOC, 0: TED)
-        :param int id_pessoa_fisica: C\u00C3\u00B3digo da pessoa
+        :param int id_conta: C\u00F3digo identificador da conta cart\u00E3o
+        :param str nome_agencia: Descri\u00E7\u00E3o da ag\u00EAncia
+        :param str numero_agencia: N\u00FAmero da ag\u00EAncia
+        :param str numero_conta: N\u00FAmero da conta
+        :param int flag_conta_origem_doc: Sinaliza se origem \u00E9 DOC (1: DOC, 0: TED)
+        :param int id_pessoa_fisica: C\u00F3digo da pessoa
         :param str favorecido: Nome do favorecido
         :param str numero_receira_federal: Documento do favorecido
-        :param list[str] sort: Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
-        :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
-        :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
+        :param list[str] sort: Tipo de ordena\u00E7\u00E3o dos registros.
+        :param int page: P\u00E1gina solicitada (Default = 0)
+        :param int limit: Limite de elementos por solicita\u00E7\u00E3o (Default = 50, Max = 50)
         :return: PageContaBancariaPortadorResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -496,7 +653,7 @@ class TransferenciaBancariaApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get14" % key
+                    " to method listar_using_get15" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -561,10 +718,10 @@ class TransferenciaBancariaApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get47(self, id, **kwargs):
+    def listar_using_get49(self, id, **kwargs):
         """
-        Listar as transfer\u00C3\u00AAncias banc\u00C3\u00A1rias realizadas
-        Este recurso tem como objetivo permitir que o portador de um Cart\u00C3\u00A3o possa consultar uma lista das Transfer\u00C3\u00AAncias Banc\u00C3\u00A1rias para os Favorecidos cadastrados.
+        Listar as transfer\u00EAncias banc\u00E1rias realizadas
+        Este recurso tem como objetivo permitir que o portador de um Cart\u00E3o possa consultar uma lista das Transfer\u00EAncias Banc\u00E1rias para os Favorecidos cadastrados.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -572,15 +729,15 @@ class TransferenciaBancariaApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get47(id, callback=callback_function)
+        >>> thread = api.listar_using_get49(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int id: Id Conta (required)
-        :param int id_conta_bancaria_destino: C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da conta banc\u00C3\u00A1ria de destino (id)
-        :param list[str] sort: Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
-        :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
-        :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
+        :param int id_conta_bancaria_destino: C\u00F3digo de identifica\u00E7\u00E3o da conta banc\u00E1ria de destino (id)
+        :param list[str] sort: Tipo de ordena\u00E7\u00E3o dos registros.
+        :param int page: P\u00E1gina solicitada (Default = 0)
+        :param int limit: Limite de elementos por solicita\u00E7\u00E3o (Default = 50, Max = 50)
         :return: PageTransferenciaBancariaResponse
                  If the method is called asynchronously,
                  returns the request thread.
@@ -594,14 +751,14 @@ class TransferenciaBancariaApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get47" % key
+                    " to method listar_using_get49" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `listar_using_get47`")
+            raise ValueError("Missing the required parameter `id` when calling `listar_using_get49`")
 
         resource_path = '/api/contas/{id}/transferencias-creditos-contas-bancarias'.replace('{format}', 'json')
         path_params = {}
@@ -652,8 +809,8 @@ class TransferenciaBancariaApi(object):
 
     def salvar_using_post8(self, persist, **kwargs):
         """
-        Cadastra uma conta banc\u00C3\u00A1ria do portador
-        Esse recurso permite cadastrar contas banc\u00C3\u00A1rias do portador.
+        Cadastra uma conta banc\u00E1ria do portador
+        Esse recurso permite cadastrar contas banc\u00E1rias do portador.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -729,8 +886,8 @@ class TransferenciaBancariaApi(object):
 
     def simular_transferencia_bancaria_using_post(self, request, **kwargs):
         """
-        Realiza a simula\u00C3\u00A7\u00C3\u00A3o dos planos de parcelamentos para uma transfer\u00C3\u00AAncia banc\u00C3\u00A1ria de cr\u00C3\u00A9dito entre contas banc\u00C3\u00A1rias
-        Realiza a simula\u00C3\u00A7\u00C3\u00A3o dos planos de parcelamentos para uma transfer\u00C3\u00AAncia banc\u00C3\u00A1ria de cr\u00C3\u00A9dito entre contas banc\u00C3\u00A1rias.
+        Realiza a simula\u00E7\u00E3o dos planos de parcelamentos para uma transfer\u00EAncia banc\u00E1ria de cr\u00E9dito entre contas banc\u00E1rias
+        Realiza a simula\u00E7\u00E3o dos planos de parcelamentos para uma transfer\u00EAncia banc\u00E1ria de cr\u00E9dito entre contas banc\u00E1rias.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -806,8 +963,8 @@ class TransferenciaBancariaApi(object):
 
     def transferencia_credito_conta_bancaria_using_post(self, persist, **kwargs):
         """
-        Realizar transfer\u00C3\u00AAncia banc\u00C3\u00A1ria do cart\u00C3\u00A3o para contas banc\u00C3\u00A1rias
-        Este recurso tem como objetivo permitir que o portador de um cart\u00C3\u00A3o possa realizar a transfer\u00C3\u00AAncia de cr\u00C3\u00A9dito para uma conta banc\u00C3\u00A1ria. Assim, o valor do cr\u00C3\u00A9dito somado a tarifa para transfer\u00C3\u00AAncia, quando praticada pelo emissor, ser\u00C3\u00A1 debitado da conta de origem, se houver saldo suficiente, e ser\u00C3\u00A1 creditado na conta banc\u00C3\u00A1ria de destino.
+        Realizar transfer\u00EAncia banc\u00E1ria do cart\u00E3o para contas banc\u00E1rias
+        Este recurso tem como objetivo permitir que o portador de um cart\u00E3o possa realizar a transfer\u00EAncia de cr\u00E9dito para uma conta banc\u00E1ria. Assim, o valor do cr\u00E9dito somado a tarifa para transfer\u00EAncia, quando praticada pelo emissor, ser\u00E1 debitado da conta de origem, se houver saldo suficiente, e ser\u00E1 creditado na conta banc\u00E1ria de destino.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -883,8 +1040,8 @@ class TransferenciaBancariaApi(object):
 
     def transferir_using_post(self, id, transferencia_bancaria_persist, **kwargs):
         """
-        Realizar transfer\u00C3\u00AAncia banc\u00C3\u00A1ria do cart\u00C3\u00A3o para contas banc\u00C3\u00A1rias
-        Este recurso tem como objetivo permitir que o portador de um cart\u00C3\u00A3o possa realizar a transfer\u00C3\u00AAncia de cr\u00C3\u00A9dito para uma conta banc\u00C3\u00A1ria. Assim, o valor do cr\u00C3\u00A9dito somado a tarifa para transfer\u00C3\u00AAncia, quando praticada pelo emissor, ser\u00C3\u00A1 debitado da conta de origem, se houver saldo suficiente, e ser\u00C3\u00A1 creditado na conta banc\u00C3\u00A1ria de destino.
+        Realizar transfer\u00EAncia banc\u00E1ria do cart\u00E3o para contas banc\u00E1rias
+        Este recurso tem como objetivo permitir que o portador de um cart\u00E3o possa realizar a transfer\u00EAncia de cr\u00E9dito para uma conta banc\u00E1ria. Assim, o valor do cr\u00E9dito somado a tarifa para transfer\u00EAncia, quando praticada pelo emissor, ser\u00E1 debitado da conta de origem, se houver saldo suficiente, e ser\u00E1 creditado na conta banc\u00E1ria de destino.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function

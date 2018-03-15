@@ -103,7 +103,7 @@ class CampanhaResponse(object):
     def id_tipo_campanha(self):
         """
         Gets the id_tipo_campanha of this CampanhaResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do tipo de campanha a qual a a Campanha pertence
+        C\u00F3digo de Identifica\u00E7\u00E3o do tipo de campanha a qual a a Campanha pertence
 
         :return: The id_tipo_campanha of this CampanhaResponse.
         :rtype: int
@@ -114,7 +114,7 @@ class CampanhaResponse(object):
     def id_tipo_campanha(self, id_tipo_campanha):
         """
         Sets the id_tipo_campanha of this CampanhaResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do tipo de campanha a qual a a Campanha pertence
+        C\u00F3digo de Identifica\u00E7\u00E3o do tipo de campanha a qual a a Campanha pertence
 
         :param id_tipo_campanha: The id_tipo_campanha of this CampanhaResponse.
         :type: int

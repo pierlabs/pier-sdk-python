@@ -131,7 +131,7 @@ class DocumentoDetalhadoResponse(object):
     def documento(self):
         """
         Gets the documento of this DocumentoDetalhadoResponse.
-        Representa\u00C3\u00A7\u00C3\u00A3o do documento em Base64.
+        Representa\u00E7\u00E3o do documento em Base64.
 
         :return: The documento of this DocumentoDetalhadoResponse.
         :rtype: str
@@ -142,7 +142,7 @@ class DocumentoDetalhadoResponse(object):
     def documento(self, documento):
         """
         Sets the documento of this DocumentoDetalhadoResponse.
-        Representa\u00C3\u00A7\u00C3\u00A3o do documento em Base64.
+        Representa\u00E7\u00E3o do documento em Base64.
 
         :param documento: The documento of this DocumentoDetalhadoResponse.
         :type: str
@@ -153,7 +153,7 @@ class DocumentoDetalhadoResponse(object):
     def extensao(self):
         """
         Gets the extensao of this DocumentoDetalhadoResponse.
-        Extens\u00C3\u00A3o do Documento.
+        Extens\u00E3o do Documento.
 
         :return: The extensao of this DocumentoDetalhadoResponse.
         :rtype: str
@@ -164,7 +164,7 @@ class DocumentoDetalhadoResponse(object):
     def extensao(self, extensao):
         """
         Sets the extensao of this DocumentoDetalhadoResponse.
-        Extens\u00C3\u00A3o do Documento.
+        Extens\u00E3o do Documento.
 
         :param extensao: The extensao of this DocumentoDetalhadoResponse.
         :type: str

@@ -53,7 +53,7 @@ class TipoOportunidade(object):
     def descricao(self):
         """
         Gets the descricao of this TipoOportunidade.
-        Descri\u00C3\u00A7\u00C3\u00A3o do tipo oportunidade
+        Descri\u00E7\u00E3o do tipo oportunidade
 
         :return: The descricao of this TipoOportunidade.
         :rtype: str
@@ -64,7 +64,7 @@ class TipoOportunidade(object):
     def descricao(self, descricao):
         """
         Sets the descricao of this TipoOportunidade.
-        Descri\u00C3\u00A7\u00C3\u00A3o do tipo oportunidade
+        Descri\u00E7\u00E3o do tipo oportunidade
 
         :param descricao: The descricao of this TipoOportunidade.
         :type: str
@@ -75,7 +75,7 @@ class TipoOportunidade(object):
     def flag_ativo(self):
         """
         Gets the flag_ativo of this TipoOportunidade.
-        Flag de verifica\u00C3\u00A7\u00C3\u00A3o se o tipo oportunidade est\u00C3\u00A1 ativo
+        Flag de verifica\u00E7\u00E3o se o tipo oportunidade est\u00E1 ativo
 
         :return: The flag_ativo of this TipoOportunidade.
         :rtype: bool
@@ -86,7 +86,7 @@ class TipoOportunidade(object):
     def flag_ativo(self, flag_ativo):
         """
         Sets the flag_ativo of this TipoOportunidade.
-        Flag de verifica\u00C3\u00A7\u00C3\u00A3o se o tipo oportunidade est\u00C3\u00A1 ativo
+        Flag de verifica\u00E7\u00E3o se o tipo oportunidade est\u00E1 ativo
 
         :param flag_ativo: The flag_ativo of this TipoOportunidade.
         :type: bool

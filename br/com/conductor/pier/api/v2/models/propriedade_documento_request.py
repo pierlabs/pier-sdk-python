@@ -131,7 +131,7 @@ class PropriedadeDocumentoRequest(object):
     def flag_indice(self):
         """
         Gets the flag_indice of this PropriedadeDocumentoRequest.
-        Atributo que indica se o par\u00C3\u00A2metro \u00C3\u00A9 um \u00C3\u00ADndice (default = false)
+        Atributo que indica se o par\u00E2metro \u00E9 um \u00EDndice (default = false)
 
         :return: The flag_indice of this PropriedadeDocumentoRequest.
         :rtype: bool
@@ -142,7 +142,7 @@ class PropriedadeDocumentoRequest(object):
     def flag_indice(self, flag_indice):
         """
         Sets the flag_indice of this PropriedadeDocumentoRequest.
-        Atributo que indica se o par\u00C3\u00A2metro \u00C3\u00A9 um \u00C3\u00ADndice (default = false)
+        Atributo que indica se o par\u00E2metro \u00E9 um \u00EDndice (default = false)
 
         :param flag_indice: The flag_indice of this PropriedadeDocumentoRequest.
         :type: bool

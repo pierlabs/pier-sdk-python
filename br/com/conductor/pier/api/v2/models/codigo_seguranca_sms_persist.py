@@ -53,7 +53,7 @@ class CodigoSegurancaSMSPersist(object):
     def ddd(self):
         """
         Gets the ddd of this CodigoSegurancaSMSPersist.
-        DDD do n\u00C3\u00BAmero de telefone para envio do sms.
+        DDD do n\u00FAmero de telefone para envio do sms.
 
         :return: The ddd of this CodigoSegurancaSMSPersist.
         :rtype: str
@@ -64,7 +64,7 @@ class CodigoSegurancaSMSPersist(object):
     def ddd(self, ddd):
         """
         Sets the ddd of this CodigoSegurancaSMSPersist.
-        DDD do n\u00C3\u00BAmero de telefone para envio do sms.
+        DDD do n\u00FAmero de telefone para envio do sms.
 
         :param ddd: The ddd of this CodigoSegurancaSMSPersist.
         :type: str
@@ -75,7 +75,7 @@ class CodigoSegurancaSMSPersist(object):
     def telefone(self):
         """
         Gets the telefone of this CodigoSegurancaSMSPersist.
-        N\u00C3\u00BAmero do telefone para envio do sms.
+        N\u00FAmero do telefone para envio do sms.
 
         :return: The telefone of this CodigoSegurancaSMSPersist.
         :rtype: str
@@ -86,7 +86,7 @@ class CodigoSegurancaSMSPersist(object):
     def telefone(self, telefone):
         """
         Sets the telefone of this CodigoSegurancaSMSPersist.
-        N\u00C3\u00BAmero do telefone para envio do sms.
+        N\u00FAmero do telefone para envio do sms.
 
         :param telefone: The telefone of this CodigoSegurancaSMSPersist.
         :type: str

@@ -65,7 +65,7 @@ class EmprestimoPessoalRequest(object):
     def valor_solicitado(self):
         """
         Gets the valor_solicitado of this EmprestimoPessoalRequest.
-        Valor do empr\u00C3\u00A9stimo/financiamento
+        Valor do empr\u00E9stimo/financiamento
 
         :return: The valor_solicitado of this EmprestimoPessoalRequest.
         :rtype: float
@@ -76,7 +76,7 @@ class EmprestimoPessoalRequest(object):
     def valor_solicitado(self, valor_solicitado):
         """
         Sets the valor_solicitado of this EmprestimoPessoalRequest.
-        Valor do empr\u00C3\u00A9stimo/financiamento
+        Valor do empr\u00E9stimo/financiamento
 
         :param valor_solicitado: The valor_solicitado of this EmprestimoPessoalRequest.
         :type: float
@@ -87,7 +87,7 @@ class EmprestimoPessoalRequest(object):
     def numero_parcelas(self):
         """
         Gets the numero_parcelas of this EmprestimoPessoalRequest.
-        N\u00C3\u00BAmero total de parcelas do empr\u00C3\u00A9stimo/financiamento
+        N\u00FAmero total de parcelas do empr\u00E9stimo/financiamento
 
         :return: The numero_parcelas of this EmprestimoPessoalRequest.
         :rtype: int
@@ -98,7 +98,7 @@ class EmprestimoPessoalRequest(object):
     def numero_parcelas(self, numero_parcelas):
         """
         Sets the numero_parcelas of this EmprestimoPessoalRequest.
-        N\u00C3\u00BAmero total de parcelas do empr\u00C3\u00A9stimo/financiamento
+        N\u00FAmero total de parcelas do empr\u00E9stimo/financiamento
 
         :param numero_parcelas: The numero_parcelas of this EmprestimoPessoalRequest.
         :type: int
@@ -131,7 +131,7 @@ class EmprestimoPessoalRequest(object):
     def periodo_taxa(self):
         """
         Gets the periodo_taxa of this EmprestimoPessoalRequest.
-        Per\u00C3\u00ADodo de aplica da taxa de juros
+        Per\u00EDodo de aplica da taxa de juros
 
         :return: The periodo_taxa of this EmprestimoPessoalRequest.
         :rtype: str
@@ -142,7 +142,7 @@ class EmprestimoPessoalRequest(object):
     def periodo_taxa(self, periodo_taxa):
         """
         Sets the periodo_taxa of this EmprestimoPessoalRequest.
-        Per\u00C3\u00ADodo de aplica da taxa de juros
+        Per\u00EDodo de aplica da taxa de juros
 
         :param periodo_taxa: The periodo_taxa of this EmprestimoPessoalRequest.
         :type: str
@@ -153,7 +153,7 @@ class EmprestimoPessoalRequest(object):
     def sistema_amortizacao(self):
         """
         Gets the sistema_amortizacao of this EmprestimoPessoalRequest.
-        Sistema para amortiza\u00C3\u00A7\u00C3\u00A3o do valor das parcelas
+        Sistema para amortiza\u00E7\u00E3o do valor das parcelas
 
         :return: The sistema_amortizacao of this EmprestimoPessoalRequest.
         :rtype: str
@@ -164,7 +164,7 @@ class EmprestimoPessoalRequest(object):
     def sistema_amortizacao(self, sistema_amortizacao):
         """
         Sets the sistema_amortizacao of this EmprestimoPessoalRequest.
-        Sistema para amortiza\u00C3\u00A7\u00C3\u00A3o do valor das parcelas
+        Sistema para amortiza\u00E7\u00E3o do valor das parcelas
 
         :param sistema_amortizacao: The sistema_amortizacao of this EmprestimoPessoalRequest.
         :type: str
@@ -175,7 +175,7 @@ class EmprestimoPessoalRequest(object):
     def numero_meses_carencia(self):
         """
         Gets the numero_meses_carencia of this EmprestimoPessoalRequest.
-        N\u00C3\u00BAmero de meses para cobran\u00C3\u00A7a da primeira parcela
+        N\u00FAmero de meses para cobran\u00E7a da primeira parcela
 
         :return: The numero_meses_carencia of this EmprestimoPessoalRequest.
         :rtype: int
@@ -186,7 +186,7 @@ class EmprestimoPessoalRequest(object):
     def numero_meses_carencia(self, numero_meses_carencia):
         """
         Sets the numero_meses_carencia of this EmprestimoPessoalRequest.
-        N\u00C3\u00BAmero de meses para cobran\u00C3\u00A7a da primeira parcela
+        N\u00FAmero de meses para cobran\u00E7a da primeira parcela
 
         :param numero_meses_carencia: The numero_meses_carencia of this EmprestimoPessoalRequest.
         :type: int

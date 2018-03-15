@@ -40,44 +40,50 @@ class BaseResponse(object):
             'id': 'int',
             'servidor': 'str',
             'usuario': 'str',
-            'senha': 'str',
             'nome_base': 'str',
             'senha_criptografada': 'bool',
             'domain': 'str',
             'nome_base_controle_acesso': 'str',
             'id_emissor': 'int',
-            'servidor_controle_acesso': 'str'
+            'servidor_controle_acesso': 'str',
+            'nome_base_usuarios': 'str',
+            'servidor_usuarios': 'str',
+            'flag_cluster': 'bool'
         }
 
         self.attribute_map = {
             'id': 'id',
             'servidor': 'servidor',
             'usuario': 'usuario',
-            'senha': 'senha',
             'nome_base': 'nomeBase',
             'senha_criptografada': 'senhaCriptografada',
             'domain': 'domain',
             'nome_base_controle_acesso': 'nomeBaseControleAcesso',
             'id_emissor': 'idEmissor',
-            'servidor_controle_acesso': 'servidorControleAcesso'
+            'servidor_controle_acesso': 'servidorControleAcesso',
+            'nome_base_usuarios': 'nomeBaseUsuarios',
+            'servidor_usuarios': 'servidorUsuarios',
+            'flag_cluster': 'flagCluster'
         }
 
         self._id = None
         self._servidor = None
         self._usuario = None
-        self._senha = None
         self._nome_base = None
         self._senha_criptografada = None
         self._domain = None
         self._nome_base_controle_acesso = None
         self._id_emissor = None
         self._servidor_controle_acesso = None
+        self._nome_base_usuarios = None
+        self._servidor_usuarios = None
+        self._flag_cluster = None
 
     @property
     def id(self):
         """
         Gets the id of this BaseResponse.
-        C\u00C3\u00B3digo identificador da base
+        C\u00F3digo identificador da base
 
         :return: The id of this BaseResponse.
         :rtype: int
@@ -88,7 +94,7 @@ class BaseResponse(object):
     def id(self, id):
         """
         Sets the id of this BaseResponse.
-        C\u00C3\u00B3digo identificador da base
+        C\u00F3digo identificador da base
 
         :param id: The id of this BaseResponse.
         :type: int
@@ -121,7 +127,7 @@ class BaseResponse(object):
     def usuario(self):
         """
         Gets the usuario of this BaseResponse.
-        Nome do usu\u00C3\u00A1rio
+        Nome do usu\u00E1rio
 
         :return: The usuario of this BaseResponse.
         :rtype: str
@@ -132,34 +138,12 @@ class BaseResponse(object):
     def usuario(self, usuario):
         """
         Sets the usuario of this BaseResponse.
-        Nome do usu\u00C3\u00A1rio
+        Nome do usu\u00E1rio
 
         :param usuario: The usuario of this BaseResponse.
         :type: str
         """
         self._usuario = usuario
-
-    @property
-    def senha(self):
-        """
-        Gets the senha of this BaseResponse.
-        Senha
-
-        :return: The senha of this BaseResponse.
-        :rtype: str
-        """
-        return self._senha
-
-    @senha.setter
-    def senha(self, senha):
-        """
-        Sets the senha of this BaseResponse.
-        Senha
-
-        :param senha: The senha of this BaseResponse.
-        :type: str
-        """
-        self._senha = senha
 
     @property
     def nome_base(self):
@@ -209,7 +193,7 @@ class BaseResponse(object):
     def domain(self):
         """
         Gets the domain of this BaseResponse.
-        Dom\u00C3\u00ADnio da base
+        Dom\u00EDnio da base
 
         :return: The domain of this BaseResponse.
         :rtype: str
@@ -220,7 +204,7 @@ class BaseResponse(object):
     def domain(self, domain):
         """
         Sets the domain of this BaseResponse.
-        Dom\u00C3\u00ADnio da base
+        Dom\u00EDnio da base
 
         :param domain: The domain of this BaseResponse.
         :type: str
@@ -253,7 +237,7 @@ class BaseResponse(object):
     def id_emissor(self):
         """
         Gets the id_emissor of this BaseResponse.
-        C\u00C3\u00B3digo do identificador do emissor
+        C\u00F3digo do identificador do emissor
 
         :return: The id_emissor of this BaseResponse.
         :rtype: int
@@ -264,7 +248,7 @@ class BaseResponse(object):
     def id_emissor(self, id_emissor):
         """
         Sets the id_emissor of this BaseResponse.
-        C\u00C3\u00B3digo do identificador do emissor
+        C\u00F3digo do identificador do emissor
 
         :param id_emissor: The id_emissor of this BaseResponse.
         :type: int
@@ -292,6 +276,72 @@ class BaseResponse(object):
         :type: str
         """
         self._servidor_controle_acesso = servidor_controle_acesso
+
+    @property
+    def nome_base_usuarios(self):
+        """
+        Gets the nome_base_usuarios of this BaseResponse.
+        Nome da base de usu\u00E1rios
+
+        :return: The nome_base_usuarios of this BaseResponse.
+        :rtype: str
+        """
+        return self._nome_base_usuarios
+
+    @nome_base_usuarios.setter
+    def nome_base_usuarios(self, nome_base_usuarios):
+        """
+        Sets the nome_base_usuarios of this BaseResponse.
+        Nome da base de usu\u00E1rios
+
+        :param nome_base_usuarios: The nome_base_usuarios of this BaseResponse.
+        :type: str
+        """
+        self._nome_base_usuarios = nome_base_usuarios
+
+    @property
+    def servidor_usuarios(self):
+        """
+        Gets the servidor_usuarios of this BaseResponse.
+        Servidor do controle de acesso
+
+        :return: The servidor_usuarios of this BaseResponse.
+        :rtype: str
+        """
+        return self._servidor_usuarios
+
+    @servidor_usuarios.setter
+    def servidor_usuarios(self, servidor_usuarios):
+        """
+        Sets the servidor_usuarios of this BaseResponse.
+        Servidor do controle de acesso
+
+        :param servidor_usuarios: The servidor_usuarios of this BaseResponse.
+        :type: str
+        """
+        self._servidor_usuarios = servidor_usuarios
+
+    @property
+    def flag_cluster(self):
+        """
+        Gets the flag_cluster of this BaseResponse.
+        Flag Cluester
+
+        :return: The flag_cluster of this BaseResponse.
+        :rtype: bool
+        """
+        return self._flag_cluster
+
+    @flag_cluster.setter
+    def flag_cluster(self, flag_cluster):
+        """
+        Sets the flag_cluster of this BaseResponse.
+        Flag Cluester
+
+        :param flag_cluster: The flag_cluster of this BaseResponse.
+        :type: bool
+        """
+        self._flag_cluster = flag_cluster
 
     def to_dict(self):
         """

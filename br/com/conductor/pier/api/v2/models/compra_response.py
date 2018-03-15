@@ -160,7 +160,7 @@ class CompraResponse(object):
     def id_compra(self):
         """
         Gets the id_compra of this CompraResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da compra.
+        C\u00F3digo de identifica\u00E7\u00E3o da compra.
 
         :return: The id_compra of this CompraResponse.
         :rtype: int
@@ -171,7 +171,7 @@ class CompraResponse(object):
     def id_compra(self, id_compra):
         """
         Sets the id_compra of this CompraResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da compra.
+        C\u00F3digo de identifica\u00E7\u00E3o da compra.
 
         :param id_compra: The id_compra of this CompraResponse.
         :type: int
@@ -182,7 +182,7 @@ class CompraResponse(object):
     def status(self):
         """
         Gets the status of this CompraResponse.
-        Descri\u00C3\u00A7\u00C3\u00A3o do status da autoriza\u00C3\u00A7\u00C3\u00A3o da compra.
+        Descri\u00E7\u00E3o do status da autoriza\u00E7\u00E3o da compra.
 
         :return: The status of this CompraResponse.
         :rtype: str
@@ -193,7 +193,7 @@ class CompraResponse(object):
     def status(self, status):
         """
         Sets the status of this CompraResponse.
-        Descri\u00C3\u00A7\u00C3\u00A3o do status da autoriza\u00C3\u00A7\u00C3\u00A3o da compra.
+        Descri\u00E7\u00E3o do status da autoriza\u00E7\u00E3o da compra.
 
         :param status: The status of this CompraResponse.
         :type: str
@@ -292,7 +292,7 @@ class CompraResponse(object):
     def numero_parcelas(self):
         """
         Gets the numero_parcelas of this CompraResponse.
-        N\u00C3\u00BAmero de parcelas da compra.
+        N\u00FAmero de parcelas da compra.
 
         :return: The numero_parcelas of this CompraResponse.
         :rtype: int
@@ -303,7 +303,7 @@ class CompraResponse(object):
     def numero_parcelas(self, numero_parcelas):
         """
         Sets the numero_parcelas of this CompraResponse.
-        N\u00C3\u00BAmero de parcelas da compra.
+        N\u00FAmero de parcelas da compra.
 
         :param numero_parcelas: The numero_parcelas of this CompraResponse.
         :type: int
@@ -314,7 +314,7 @@ class CompraResponse(object):
     def numero_parcelas_antecipaveis(self):
         """
         Gets the numero_parcelas_antecipaveis of this CompraResponse.
-        N\u00C3\u00BAmero de parcelas antecip\u00C3\u00A1veis da compra.
+        N\u00FAmero de parcelas antecip\u00E1veis da compra.
 
         :return: The numero_parcelas_antecipaveis of this CompraResponse.
         :rtype: int
@@ -325,7 +325,7 @@ class CompraResponse(object):
     def numero_parcelas_antecipaveis(self, numero_parcelas_antecipaveis):
         """
         Sets the numero_parcelas_antecipaveis of this CompraResponse.
-        N\u00C3\u00BAmero de parcelas antecip\u00C3\u00A1veis da compra.
+        N\u00FAmero de parcelas antecip\u00E1veis da compra.
 
         :param numero_parcelas_antecipaveis: The numero_parcelas_antecipaveis of this CompraResponse.
         :type: int
@@ -358,7 +358,7 @@ class CompraResponse(object):
     def tipo_origem_transacao(self):
         """
         Gets the tipo_origem_transacao of this CompraResponse.
-        Tipo de transa\u00C3\u00A7\u00C3\u00A3o da compra.
+        Tipo de transa\u00E7\u00E3o da compra.
 
         :return: The tipo_origem_transacao of this CompraResponse.
         :rtype: str
@@ -369,7 +369,7 @@ class CompraResponse(object):
     def tipo_origem_transacao(self, tipo_origem_transacao):
         """
         Sets the tipo_origem_transacao of this CompraResponse.
-        Tipo de transa\u00C3\u00A7\u00C3\u00A3o da compra.
+        Tipo de transa\u00E7\u00E3o da compra.
 
         :param tipo_origem_transacao: The tipo_origem_transacao of this CompraResponse.
         :type: str
@@ -402,7 +402,7 @@ class CompraResponse(object):
     def pais(self):
         """
         Gets the pais of this CompraResponse.
-        Pa\u00C3\u00ADs onde a compra foi realizada.
+        Pa\u00EDs onde a compra foi realizada.
 
         :return: The pais of this CompraResponse.
         :rtype: str
@@ -413,7 +413,7 @@ class CompraResponse(object):
     def pais(self, pais):
         """
         Sets the pais of this CompraResponse.
-        Pa\u00C3\u00ADs onde a compra foi realizada.
+        Pa\u00EDs onde a compra foi realizada.
 
         :param pais: The pais of this CompraResponse.
         :type: str
@@ -424,7 +424,7 @@ class CompraResponse(object):
     def latitude(self):
         """
         Gets the latitude of this CompraResponse.
-        Coordenada latitudinal da localiza\u00C3\u00A7\u00C3\u00A3o da compra.
+        Coordenada latitudinal da localiza\u00E7\u00E3o da compra.
 
         :return: The latitude of this CompraResponse.
         :rtype: str
@@ -435,7 +435,7 @@ class CompraResponse(object):
     def latitude(self, latitude):
         """
         Sets the latitude of this CompraResponse.
-        Coordenada latitudinal da localiza\u00C3\u00A7\u00C3\u00A3o da compra.
+        Coordenada latitudinal da localiza\u00E7\u00E3o da compra.
 
         :param latitude: The latitude of this CompraResponse.
         :type: str
@@ -446,7 +446,7 @@ class CompraResponse(object):
     def longitude(self):
         """
         Gets the longitude of this CompraResponse.
-        Coordenada longitudinal da localiza\u00C3\u00A7\u00C3\u00A3o da compra.
+        Coordenada longitudinal da localiza\u00E7\u00E3o da compra.
 
         :return: The longitude of this CompraResponse.
         :rtype: str
@@ -457,7 +457,7 @@ class CompraResponse(object):
     def longitude(self, longitude):
         """
         Sets the longitude of this CompraResponse.
-        Coordenada longitudinal da localiza\u00C3\u00A7\u00C3\u00A3o da compra.
+        Coordenada longitudinal da localiza\u00E7\u00E3o da compra.
 
         :param longitude: The longitude of this CompraResponse.
         :type: str
@@ -468,7 +468,7 @@ class CompraResponse(object):
     def id_grupo_mcc(self):
         """
         Gets the id_grupo_mcc of this CompraResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Grupo MCC da compra.
+        C\u00F3digo de Identifica\u00E7\u00E3o do Grupo MCC da compra.
 
         :return: The id_grupo_mcc of this CompraResponse.
         :rtype: int
@@ -479,7 +479,7 @@ class CompraResponse(object):
     def id_grupo_mcc(self, id_grupo_mcc):
         """
         Sets the id_grupo_mcc of this CompraResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Grupo MCC da compra.
+        C\u00F3digo de Identifica\u00E7\u00E3o do Grupo MCC da compra.
 
         :param id_grupo_mcc: The id_grupo_mcc of this CompraResponse.
         :type: int
@@ -490,7 +490,7 @@ class CompraResponse(object):
     def descricao_grupo_mcc(self):
         """
         Gets the descricao_grupo_mcc of this CompraResponse.
-        Descri\u00C3\u00A7\u00C3\u00A3o do Grupo MCC da compra.
+        Descri\u00E7\u00E3o do Grupo MCC da compra.
 
         :return: The descricao_grupo_mcc of this CompraResponse.
         :rtype: str
@@ -501,7 +501,7 @@ class CompraResponse(object):
     def descricao_grupo_mcc(self, descricao_grupo_mcc):
         """
         Sets the descricao_grupo_mcc of this CompraResponse.
-        Descri\u00C3\u00A7\u00C3\u00A3o do Grupo MCC da compra.
+        Descri\u00E7\u00E3o do Grupo MCC da compra.
 
         :param descricao_grupo_mcc: The descricao_grupo_mcc of this CompraResponse.
         :type: str
@@ -512,7 +512,7 @@ class CompraResponse(object):
     def id_conta(self):
         """
         Gets the id_conta of this CompraResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da conta da compra.
+        C\u00F3digo de Identifica\u00E7\u00E3o da conta da compra.
 
         :return: The id_conta of this CompraResponse.
         :rtype: int
@@ -523,7 +523,7 @@ class CompraResponse(object):
     def id_conta(self, id_conta):
         """
         Sets the id_conta of this CompraResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da conta da compra.
+        C\u00F3digo de Identifica\u00E7\u00E3o da conta da compra.
 
         :param id_conta: The id_conta of this CompraResponse.
         :type: int
@@ -534,7 +534,7 @@ class CompraResponse(object):
     def id_produto(self):
         """
         Gets the id_produto of this CompraResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do produto da compra.
+        C\u00F3digo de Identifica\u00E7\u00E3o do produto da compra.
 
         :return: The id_produto of this CompraResponse.
         :rtype: int
@@ -545,7 +545,7 @@ class CompraResponse(object):
     def id_produto(self, id_produto):
         """
         Sets the id_produto of this CompraResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do produto da compra.
+        C\u00F3digo de Identifica\u00E7\u00E3o do produto da compra.
 
         :param id_produto: The id_produto of this CompraResponse.
         :type: int
@@ -556,7 +556,7 @@ class CompraResponse(object):
     def descricao_produto(self):
         """
         Gets the descricao_produto of this CompraResponse.
-        Descri\u00C3\u00A7\u00C3\u00A3o do produto da compra.
+        Descri\u00E7\u00E3o do produto da compra.
 
         :return: The descricao_produto of this CompraResponse.
         :rtype: str
@@ -567,7 +567,7 @@ class CompraResponse(object):
     def descricao_produto(self, descricao_produto):
         """
         Sets the descricao_produto of this CompraResponse.
-        Descri\u00C3\u00A7\u00C3\u00A3o do produto da compra.
+        Descri\u00E7\u00E3o do produto da compra.
 
         :param descricao_produto: The descricao_produto of this CompraResponse.
         :type: str
@@ -578,7 +578,7 @@ class CompraResponse(object):
     def cartao(self):
         """
         Gets the cartao of this CompraResponse.
-        N\u00C3\u00BAmero do cart\u00C3\u00A3o da compra.
+        N\u00FAmero do cart\u00E3o da compra.
 
         :return: The cartao of this CompraResponse.
         :rtype: str
@@ -589,7 +589,7 @@ class CompraResponse(object):
     def cartao(self, cartao):
         """
         Sets the cartao of this CompraResponse.
-        N\u00C3\u00BAmero do cart\u00C3\u00A3o da compra.
+        N\u00FAmero do cart\u00E3o da compra.
 
         :param cartao: The cartao of this CompraResponse.
         :type: str
@@ -600,7 +600,7 @@ class CompraResponse(object):
     def nome_portador_cartao(self):
         """
         Gets the nome_portador_cartao of this CompraResponse.
-        Nome do portador do cart\u00C3\u00A3o da compra.
+        Nome do portador do cart\u00E3o da compra.
 
         :return: The nome_portador_cartao of this CompraResponse.
         :rtype: str
@@ -611,7 +611,7 @@ class CompraResponse(object):
     def nome_portador_cartao(self, nome_portador_cartao):
         """
         Sets the nome_portador_cartao of this CompraResponse.
-        Nome do portador do cart\u00C3\u00A3o da compra.
+        Nome do portador do cart\u00E3o da compra.
 
         :param nome_portador_cartao: The nome_portador_cartao of this CompraResponse.
         :type: str

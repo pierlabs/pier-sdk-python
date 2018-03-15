@@ -80,7 +80,7 @@ class PessoaResponse(object):
     def id(self):
         """
         Gets the id of this PessoaResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Pessoa (id).
+        C\u00F3digo de Identifica\u00E7\u00E3o da Pessoa (id).
 
         :return: The id of this PessoaResponse.
         :rtype: int
@@ -91,7 +91,7 @@ class PessoaResponse(object):
     def id(self, id):
         """
         Sets the id of this PessoaResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Pessoa (id).
+        C\u00F3digo de Identifica\u00E7\u00E3o da Pessoa (id).
 
         :param id: The id of this PessoaResponse.
         :type: int
@@ -102,7 +102,7 @@ class PessoaResponse(object):
     def nome(self):
         """
         Gets the nome of this PessoaResponse.
-        Apresenta o 'Nome Completo da PF' ou o 'Nome Completo da Raz\u00C3\u00A3o Social (Nome Empresarial)'.
+        Apresenta o 'Nome Completo da PF' ou o 'Nome Completo da Raz\u00E3o Social (Nome Empresarial)'.
 
         :return: The nome of this PessoaResponse.
         :rtype: str
@@ -113,7 +113,7 @@ class PessoaResponse(object):
     def nome(self, nome):
         """
         Sets the nome of this PessoaResponse.
-        Apresenta o 'Nome Completo da PF' ou o 'Nome Completo da Raz\u00C3\u00A3o Social (Nome Empresarial)'.
+        Apresenta o 'Nome Completo da PF' ou o 'Nome Completo da Raz\u00E3o Social (Nome Empresarial)'.
 
         :param nome: The nome of this PessoaResponse.
         :type: str
@@ -124,7 +124,7 @@ class PessoaResponse(object):
     def tipo(self):
         """
         Gets the tipo of this PessoaResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do tipo da Pessoa, sendo: (\"PF\": Pessoa F\u00C3\u00ADsica), (\"PJ\": Pessoa Jur\u00C3\u00ADdica).
+        C\u00F3digo de identifica\u00E7\u00E3o do tipo da Pessoa, sendo: (\"PF\": Pessoa F\u00EDsica), (\"PJ\": Pessoa Jur\u00EDdica).
 
         :return: The tipo of this PessoaResponse.
         :rtype: str
@@ -135,7 +135,7 @@ class PessoaResponse(object):
     def tipo(self, tipo):
         """
         Sets the tipo of this PessoaResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do tipo da Pessoa, sendo: (\"PF\": Pessoa F\u00C3\u00ADsica), (\"PJ\": Pessoa Jur\u00C3\u00ADdica).
+        C\u00F3digo de identifica\u00E7\u00E3o do tipo da Pessoa, sendo: (\"PF\": Pessoa F\u00EDsica), (\"PJ\": Pessoa Jur\u00EDdica).
 
         :param tipo: The tipo of this PessoaResponse.
         :type: str
@@ -146,7 +146,7 @@ class PessoaResponse(object):
     def cpf(self):
         """
         Gets the cpf of this PessoaResponse.
-        N\u00C3\u00BAmero do CPF, quando PF.
+        N\u00FAmero do CPF, quando PF.
 
         :return: The cpf of this PessoaResponse.
         :rtype: str
@@ -157,7 +157,7 @@ class PessoaResponse(object):
     def cpf(self, cpf):
         """
         Sets the cpf of this PessoaResponse.
-        N\u00C3\u00BAmero do CPF, quando PF.
+        N\u00FAmero do CPF, quando PF.
 
         :param cpf: The cpf of this PessoaResponse.
         :type: str
@@ -168,7 +168,7 @@ class PessoaResponse(object):
     def cnpj(self):
         """
         Gets the cnpj of this PessoaResponse.
-        N\u00C3\u00BAmero do CNPJ, quando PJ.
+        N\u00FAmero do CNPJ, quando PJ.
 
         :return: The cnpj of this PessoaResponse.
         :rtype: str
@@ -179,7 +179,7 @@ class PessoaResponse(object):
     def cnpj(self, cnpj):
         """
         Sets the cnpj of this PessoaResponse.
-        N\u00C3\u00BAmero do CNPJ, quando PJ.
+        N\u00FAmero do CNPJ, quando PJ.
 
         :param cnpj: The cnpj of this PessoaResponse.
         :type: str
@@ -212,7 +212,7 @@ class PessoaResponse(object):
     def numero_identidade(self):
         """
         Gets the numero_identidade of this PessoaResponse.
-        N\u00C3\u00BAmero da Identidade
+        N\u00FAmero da Identidade
 
         :return: The numero_identidade of this PessoaResponse.
         :rtype: str
@@ -223,7 +223,7 @@ class PessoaResponse(object):
     def numero_identidade(self, numero_identidade):
         """
         Sets the numero_identidade of this PessoaResponse.
-        N\u00C3\u00BAmero da Identidade
+        N\u00FAmero da Identidade
 
         :param numero_identidade: The numero_identidade of this PessoaResponse.
         :type: str
@@ -234,7 +234,7 @@ class PessoaResponse(object):
     def orgao_expedidor_identidade(self):
         """
         Gets the orgao_expedidor_identidade of this PessoaResponse.
-        Org\u00C3\u00A3o expedidor do RG.
+        Org\u00E3o expedidor do RG.
 
         :return: The orgao_expedidor_identidade of this PessoaResponse.
         :rtype: str
@@ -245,7 +245,7 @@ class PessoaResponse(object):
     def orgao_expedidor_identidade(self, orgao_expedidor_identidade):
         """
         Sets the orgao_expedidor_identidade of this PessoaResponse.
-        Org\u00C3\u00A3o expedidor do RG.
+        Org\u00E3o expedidor do RG.
 
         :param orgao_expedidor_identidade: The orgao_expedidor_identidade of this PessoaResponse.
         :type: str
@@ -256,7 +256,7 @@ class PessoaResponse(object):
     def sexo(self):
         """
         Gets the sexo of this PessoaResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do sexo da Pessoa, quando PF, sendo: (\"M\": Masculino), (\"F\": Feminino), (\"O\": Outro), (\"N\": N\u00C3\u00A3o Especificado).
+        C\u00F3digo de identifica\u00E7\u00E3o do sexo da Pessoa, quando PF, sendo: (\"M\": Masculino), (\"F\": Feminino), (\"O\": Outro), (\"N\": N\u00E3o Especificado).
 
         :return: The sexo of this PessoaResponse.
         :rtype: str
@@ -267,7 +267,7 @@ class PessoaResponse(object):
     def sexo(self, sexo):
         """
         Sets the sexo of this PessoaResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do sexo da Pessoa, quando PF, sendo: (\"M\": Masculino), (\"F\": Feminino), (\"O\": Outro), (\"N\": N\u00C3\u00A3o Especificado).
+        C\u00F3digo de identifica\u00E7\u00E3o do sexo da Pessoa, quando PF, sendo: (\"M\": Masculino), (\"F\": Feminino), (\"O\": Outro), (\"N\": N\u00E3o Especificado).
 
         :param sexo: The sexo of this PessoaResponse.
         :type: str
@@ -300,7 +300,7 @@ class PessoaResponse(object):
     def data_emissao_identidade(self):
         """
         Gets the data_emissao_identidade of this PessoaResponse.
-        Data emiss\u00C3\u00A3o da identidade no formato aaaa-MM-dd
+        Data emiss\u00E3o da identidade no formato aaaa-MM-dd
 
         :return: The data_emissao_identidade of this PessoaResponse.
         :rtype: str
@@ -311,7 +311,7 @@ class PessoaResponse(object):
     def data_emissao_identidade(self, data_emissao_identidade):
         """
         Sets the data_emissao_identidade of this PessoaResponse.
-        Data emiss\u00C3\u00A3o da identidade no formato aaaa-MM-dd
+        Data emiss\u00E3o da identidade no formato aaaa-MM-dd
 
         :param data_emissao_identidade: The data_emissao_identidade of this PessoaResponse.
         :type: str

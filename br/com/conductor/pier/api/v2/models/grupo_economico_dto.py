@@ -55,6 +55,7 @@ class GrupoEconomicoDTO(object):
             'pagamento_decendial_terceiro': 'int',
             'pagamento_quinzenal_primeiro': 'int',
             'pagamento_quinzenal_segundo': 'int',
+            'id_credor_rav': 'int',
             'percentual_rav': 'float',
             'recebe_rav': 'str',
             'percentual_multiplica': 'float',
@@ -82,6 +83,7 @@ class GrupoEconomicoDTO(object):
             'pagamento_decendial_terceiro': 'pagamentoDecendialTerceiro',
             'pagamento_quinzenal_primeiro': 'pagamentoQuinzenalPrimeiro',
             'pagamento_quinzenal_segundo': 'pagamentoQuinzenalSegundo',
+            'id_credor_rav': 'idCredorRAV',
             'percentual_rav': 'percentualRAV',
             'recebe_rav': 'recebeRAV',
             'percentual_multiplica': 'percentualMultiplica',
@@ -108,6 +110,7 @@ class GrupoEconomicoDTO(object):
         self._pagamento_decendial_terceiro = None
         self._pagamento_quinzenal_primeiro = None
         self._pagamento_quinzenal_segundo = None
+        self._id_credor_rav = None
         self._percentual_rav = None
         self._recebe_rav = None
         self._percentual_multiplica = None
@@ -119,7 +122,7 @@ class GrupoEconomicoDTO(object):
     def razao_social(self):
         """
         Gets the razao_social of this GrupoEconomicoDTO.
-        Raz\u00C3\u00A3o social da pessoa jur\u00C3\u00ADdica
+        Raz\u00E3o social da pessoa jur\u00EDdica
 
         :return: The razao_social of this GrupoEconomicoDTO.
         :rtype: str
@@ -130,7 +133,7 @@ class GrupoEconomicoDTO(object):
     def razao_social(self, razao_social):
         """
         Sets the razao_social of this GrupoEconomicoDTO.
-        Raz\u00C3\u00A3o social da pessoa jur\u00C3\u00ADdica
+        Raz\u00E3o social da pessoa jur\u00EDdica
 
         :param razao_social: The razao_social of this GrupoEconomicoDTO.
         :type: str
@@ -163,7 +166,7 @@ class GrupoEconomicoDTO(object):
     def numero_receita_federal(self):
         """
         Gets the numero_receita_federal of this GrupoEconomicoDTO.
-        N\u00C3\u00BAmero da Receita Federal
+        N\u00FAmero da Receita Federal
 
         :return: The numero_receita_federal of this GrupoEconomicoDTO.
         :rtype: str
@@ -174,7 +177,7 @@ class GrupoEconomicoDTO(object):
     def numero_receita_federal(self, numero_receita_federal):
         """
         Sets the numero_receita_federal of this GrupoEconomicoDTO.
-        N\u00C3\u00BAmero da Receita Federal
+        N\u00FAmero da Receita Federal
 
         :param numero_receita_federal: The numero_receita_federal of this GrupoEconomicoDTO.
         :type: str
@@ -185,7 +188,7 @@ class GrupoEconomicoDTO(object):
     def inscricao_estadual(self):
         """
         Gets the inscricao_estadual of this GrupoEconomicoDTO.
-        N\u00C3\u00BAmero da inscri\u00C3\u00A7\u00C3\u00A3o estadual
+        N\u00FAmero da inscri\u00E7\u00E3o estadual
 
         :return: The inscricao_estadual of this GrupoEconomicoDTO.
         :rtype: str
@@ -196,7 +199,7 @@ class GrupoEconomicoDTO(object):
     def inscricao_estadual(self, inscricao_estadual):
         """
         Sets the inscricao_estadual of this GrupoEconomicoDTO.
-        N\u00C3\u00BAmero da inscri\u00C3\u00A7\u00C3\u00A3o estadual
+        N\u00FAmero da inscri\u00E7\u00E3o estadual
 
         :param inscricao_estadual: The inscricao_estadual of this GrupoEconomicoDTO.
         :type: str
@@ -229,7 +232,7 @@ class GrupoEconomicoDTO(object):
     def banco(self):
         """
         Gets the banco of this GrupoEconomicoDTO.
-        C\u00C3\u00B3digo do banco
+        C\u00F3digo do banco
 
         :return: The banco of this GrupoEconomicoDTO.
         :rtype: int
@@ -240,7 +243,7 @@ class GrupoEconomicoDTO(object):
     def banco(self, banco):
         """
         Sets the banco of this GrupoEconomicoDTO.
-        C\u00C3\u00B3digo do banco
+        C\u00F3digo do banco
 
         :param banco: The banco of this GrupoEconomicoDTO.
         :type: int
@@ -251,7 +254,7 @@ class GrupoEconomicoDTO(object):
     def agencia(self):
         """
         Gets the agencia of this GrupoEconomicoDTO.
-        Raz\u00C3\u00A3o social da pessoa jur\u00C3\u00ADdica
+        C\u00F3digo da ag\u00EAncia
 
         :return: The agencia of this GrupoEconomicoDTO.
         :rtype: int
@@ -262,7 +265,7 @@ class GrupoEconomicoDTO(object):
     def agencia(self, agencia):
         """
         Sets the agencia of this GrupoEconomicoDTO.
-        Raz\u00C3\u00A3o social da pessoa jur\u00C3\u00ADdica
+        C\u00F3digo da ag\u00EAncia
 
         :param agencia: The agencia of this GrupoEconomicoDTO.
         :type: int
@@ -273,7 +276,7 @@ class GrupoEconomicoDTO(object):
     def digito_agencia(self):
         """
         Gets the digito_agencia of this GrupoEconomicoDTO.
-        D\u00C3\u00ADgito Verificador da ag\u00C3\u00AAncia
+        D\u00EDgito verificador da ag\u00EAncia
 
         :return: The digito_agencia of this GrupoEconomicoDTO.
         :rtype: str
@@ -284,7 +287,7 @@ class GrupoEconomicoDTO(object):
     def digito_agencia(self, digito_agencia):
         """
         Sets the digito_agencia of this GrupoEconomicoDTO.
-        D\u00C3\u00ADgito Verificador da ag\u00C3\u00AAncia
+        D\u00EDgito verificador da ag\u00EAncia
 
         :param digito_agencia: The digito_agencia of this GrupoEconomicoDTO.
         :type: str
@@ -295,7 +298,7 @@ class GrupoEconomicoDTO(object):
     def conta_corrente(self):
         """
         Gets the conta_corrente of this GrupoEconomicoDTO.
-        C\u00C3\u00B3digo da Conta Corrente
+        C\u00F3digo da Conta Corrente
 
         :return: The conta_corrente of this GrupoEconomicoDTO.
         :rtype: str
@@ -306,7 +309,7 @@ class GrupoEconomicoDTO(object):
     def conta_corrente(self, conta_corrente):
         """
         Sets the conta_corrente of this GrupoEconomicoDTO.
-        C\u00C3\u00B3digo da Conta Corrente
+        C\u00F3digo da Conta Corrente
 
         :param conta_corrente: The conta_corrente of this GrupoEconomicoDTO.
         :type: str
@@ -317,7 +320,7 @@ class GrupoEconomicoDTO(object):
     def digito_conta_corrente(self):
         """
         Gets the digito_conta_corrente of this GrupoEconomicoDTO.
-        D\u00C3\u00ADgito Verificador da Conta Corrente
+        D\u00EDgito Verificador da Conta Corrente
 
         :return: The digito_conta_corrente of this GrupoEconomicoDTO.
         :rtype: str
@@ -328,7 +331,7 @@ class GrupoEconomicoDTO(object):
     def digito_conta_corrente(self, digito_conta_corrente):
         """
         Sets the digito_conta_corrente of this GrupoEconomicoDTO.
-        D\u00C3\u00ADgito Verificador da Conta Corrente
+        D\u00EDgito Verificador da Conta Corrente
 
         :param digito_conta_corrente: The digito_conta_corrente of this GrupoEconomicoDTO.
         :type: str
@@ -522,6 +525,28 @@ class GrupoEconomicoDTO(object):
         :type: int
         """
         self._pagamento_quinzenal_segundo = pagamento_quinzenal_segundo
+
+    @property
+    def id_credor_rav(self):
+        """
+        Gets the id_credor_rav of this GrupoEconomicoDTO.
+        Identificador do credor RAV
+
+        :return: The id_credor_rav of this GrupoEconomicoDTO.
+        :rtype: int
+        """
+        return self._id_credor_rav
+
+    @id_credor_rav.setter
+    def id_credor_rav(self, id_credor_rav):
+        """
+        Sets the id_credor_rav of this GrupoEconomicoDTO.
+        Identificador do credor RAV
+
+        :param id_credor_rav: The id_credor_rav of this GrupoEconomicoDTO.
+        :type: int
+        """
+        self._id_credor_rav = id_credor_rav
 
     @property
     def percentual_rav(self):

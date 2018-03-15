@@ -62,7 +62,7 @@ class UsuarioPersist(object):
     def nome(self):
         """
         Gets the nome of this UsuarioPersist.
-        Apresenta o nome do usu\u00C3\u00A1rio.
+        Apresenta o nome do usu\u00E1rio.
 
         :return: The nome of this UsuarioPersist.
         :rtype: str
@@ -73,7 +73,7 @@ class UsuarioPersist(object):
     def nome(self, nome):
         """
         Sets the nome of this UsuarioPersist.
-        Apresenta o nome do usu\u00C3\u00A1rio.
+        Apresenta o nome do usu\u00E1rio.
 
         :param nome: The nome of this UsuarioPersist.
         :type: str
@@ -84,7 +84,7 @@ class UsuarioPersist(object):
     def login(self):
         """
         Gets the login of this UsuarioPersist.
-        Apresenta o login do usu\u00C3\u00A1rio.
+        Apresenta o login do usu\u00E1rio.
 
         :return: The login of this UsuarioPersist.
         :rtype: str
@@ -95,7 +95,7 @@ class UsuarioPersist(object):
     def login(self, login):
         """
         Sets the login of this UsuarioPersist.
-        Apresenta o login do usu\u00C3\u00A1rio.
+        Apresenta o login do usu\u00E1rio.
 
         :param login: The login of this UsuarioPersist.
         :type: str
@@ -106,7 +106,7 @@ class UsuarioPersist(object):
     def cpf(self):
         """
         Gets the cpf of this UsuarioPersist.
-        N\u00C3\u00BAmero do CPF.
+        N\u00FAmero do CPF.
 
         :return: The cpf of this UsuarioPersist.
         :rtype: str
@@ -117,7 +117,7 @@ class UsuarioPersist(object):
     def cpf(self, cpf):
         """
         Sets the cpf of this UsuarioPersist.
-        N\u00C3\u00BAmero do CPF.
+        N\u00FAmero do CPF.
 
         :param cpf: The cpf of this UsuarioPersist.
         :type: str
@@ -128,7 +128,7 @@ class UsuarioPersist(object):
     def email(self):
         """
         Gets the email of this UsuarioPersist.
-        Apresenta o email do usu\u00C3\u00A1rio.
+        Apresenta o email do usu\u00E1rio.
 
         :return: The email of this UsuarioPersist.
         :rtype: str
@@ -139,7 +139,7 @@ class UsuarioPersist(object):
     def email(self, email):
         """
         Sets the email of this UsuarioPersist.
-        Apresenta o email do usu\u00C3\u00A1rio.
+        Apresenta o email do usu\u00E1rio.
 
         :param email: The email of this UsuarioPersist.
         :type: str
@@ -150,7 +150,7 @@ class UsuarioPersist(object):
     def senha(self):
         """
         Gets the senha of this UsuarioPersist.
-        Apresenta a senha do usu\u00C3\u00A1rio.
+        Apresenta a senha do usu\u00E1rio.
 
         :return: The senha of this UsuarioPersist.
         :rtype: str
@@ -161,7 +161,7 @@ class UsuarioPersist(object):
     def senha(self, senha):
         """
         Sets the senha of this UsuarioPersist.
-        Apresenta a senha do usu\u00C3\u00A1rio.
+        Apresenta a senha do usu\u00E1rio.
 
         :param senha: The senha of this UsuarioPersist.
         :type: str

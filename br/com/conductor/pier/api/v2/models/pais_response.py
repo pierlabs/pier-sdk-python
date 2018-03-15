@@ -65,7 +65,7 @@ class PaisResponse(object):
     def id(self):
         """
         Gets the id of this PaisResponse.
-        C\u00C3\u00B3digo identificador \u00C3\u00BAnico do pa\u00C3\u00ADs na base
+        C\u00F3digo identificador \u00FAnico do pa\u00EDs na base
 
         :return: The id of this PaisResponse.
         :rtype: int
@@ -76,7 +76,7 @@ class PaisResponse(object):
     def id(self, id):
         """
         Sets the id of this PaisResponse.
-        C\u00C3\u00B3digo identificador \u00C3\u00BAnico do pa\u00C3\u00ADs na base
+        C\u00F3digo identificador \u00FAnico do pa\u00EDs na base
 
         :param id: The id of this PaisResponse.
         :type: int
@@ -87,7 +87,7 @@ class PaisResponse(object):
     def codigo(self):
         """
         Gets the codigo of this PaisResponse.
-        C\u00C3\u00B3digo identificador do pa\u00C3\u00ADs
+        C\u00F3digo identificador do pa\u00EDs
 
         :return: The codigo of this PaisResponse.
         :rtype: str
@@ -98,7 +98,7 @@ class PaisResponse(object):
     def codigo(self, codigo):
         """
         Sets the codigo of this PaisResponse.
-        C\u00C3\u00B3digo identificador do pa\u00C3\u00ADs
+        C\u00F3digo identificador do pa\u00EDs
 
         :param codigo: The codigo of this PaisResponse.
         :type: str
@@ -109,7 +109,7 @@ class PaisResponse(object):
     def sigla(self):
         """
         Gets the sigla of this PaisResponse.
-        Sigla do pa\u00C3\u00ADs
+        Sigla do pa\u00EDs
 
         :return: The sigla of this PaisResponse.
         :rtype: str
@@ -120,7 +120,7 @@ class PaisResponse(object):
     def sigla(self, sigla):
         """
         Sets the sigla of this PaisResponse.
-        Sigla do pa\u00C3\u00ADs
+        Sigla do pa\u00EDs
 
         :param sigla: The sigla of this PaisResponse.
         :type: str
@@ -131,7 +131,7 @@ class PaisResponse(object):
     def descricao(self):
         """
         Gets the descricao of this PaisResponse.
-        Nome do pa\u00C3\u00ADs
+        Nome do pa\u00EDs
 
         :return: The descricao of this PaisResponse.
         :rtype: str
@@ -142,7 +142,7 @@ class PaisResponse(object):
     def descricao(self, descricao):
         """
         Sets the descricao of this PaisResponse.
-        Nome do pa\u00C3\u00ADs
+        Nome do pa\u00EDs
 
         :param descricao: The descricao of this PaisResponse.
         :type: str
@@ -153,7 +153,7 @@ class PaisResponse(object):
     def continente(self):
         """
         Gets the continente of this PaisResponse.
-        Continente no qual o pa\u00C3\u00ADs faz parte
+        Continente no qual o pa\u00EDs faz parte
 
         :return: The continente of this PaisResponse.
         :rtype: str
@@ -164,7 +164,7 @@ class PaisResponse(object):
     def continente(self, continente):
         """
         Sets the continente of this PaisResponse.
-        Continente no qual o pa\u00C3\u00ADs faz parte
+        Continente no qual o pa\u00EDs faz parte
 
         :param continente: The continente of this PaisResponse.
         :type: str
@@ -181,7 +181,7 @@ class PaisResponse(object):
     def flag_ativo(self):
         """
         Gets the flag_ativo of this PaisResponse.
-        Atributo que representa se o pa\u00C3\u00ADs est\u00C3\u00A1 ativo
+        Atributo que representa se o pa\u00EDs est\u00E1 ativo
 
         :return: The flag_ativo of this PaisResponse.
         :rtype: bool
@@ -192,7 +192,7 @@ class PaisResponse(object):
     def flag_ativo(self, flag_ativo):
         """
         Sets the flag_ativo of this PaisResponse.
-        Atributo que representa se o pa\u00C3\u00ADs est\u00C3\u00A1 ativo
+        Atributo que representa se o pa\u00EDs est\u00E1 ativo
 
         :param flag_ativo: The flag_ativo of this PaisResponse.
         :type: bool

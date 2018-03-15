@@ -56,7 +56,7 @@ class DetalheOportunidadeUpdate(object):
     def id(self):
         """
         Gets the id of this DetalheOportunidadeUpdate.
-        C\u00C3\u00B3digo identificador do detalhe
+        C\u00F3digo identificador do detalhe
 
         :return: The id of this DetalheOportunidadeUpdate.
         :rtype: int
@@ -67,7 +67,7 @@ class DetalheOportunidadeUpdate(object):
     def id(self, id):
         """
         Sets the id of this DetalheOportunidadeUpdate.
-        C\u00C3\u00B3digo identificador do detalhe
+        C\u00F3digo identificador do detalhe
 
         :param id: The id of this DetalheOportunidadeUpdate.
         :type: int
@@ -78,7 +78,7 @@ class DetalheOportunidadeUpdate(object):
     def nome_campo(self):
         """
         Gets the nome_campo of this DetalheOportunidadeUpdate.
-        Nome do conte\u00C3\u00BAdo
+        Nome do conte\u00FAdo
 
         :return: The nome_campo of this DetalheOportunidadeUpdate.
         :rtype: str
@@ -89,7 +89,7 @@ class DetalheOportunidadeUpdate(object):
     def nome_campo(self, nome_campo):
         """
         Sets the nome_campo of this DetalheOportunidadeUpdate.
-        Nome do conte\u00C3\u00BAdo
+        Nome do conte\u00FAdo
 
         :param nome_campo: The nome_campo of this DetalheOportunidadeUpdate.
         :type: str
@@ -100,7 +100,7 @@ class DetalheOportunidadeUpdate(object):
     def conteudo(self):
         """
         Gets the conteudo of this DetalheOportunidadeUpdate.
-        Conte\u00C3\u00BAdo do detalhe
+        Conte\u00FAdo do detalhe
 
         :return: The conteudo of this DetalheOportunidadeUpdate.
         :rtype: str
@@ -111,7 +111,7 @@ class DetalheOportunidadeUpdate(object):
     def conteudo(self, conteudo):
         """
         Sets the conteudo of this DetalheOportunidadeUpdate.
-        Conte\u00C3\u00BAdo do detalhe
+        Conte\u00FAdo do detalhe
 
         :param conteudo: The conteudo of this DetalheOportunidadeUpdate.
         :type: str

@@ -68,7 +68,7 @@ class AjusteFinanceiroResponse(object):
     def id(self):
         """
         Gets the id of this AjusteFinanceiroResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do ajuste (id)
+        C\u00F3digo de identifica\u00E7\u00E3o do ajuste (id)
 
         :return: The id of this AjusteFinanceiroResponse.
         :rtype: int
@@ -79,7 +79,7 @@ class AjusteFinanceiroResponse(object):
     def id(self, id):
         """
         Sets the id of this AjusteFinanceiroResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do ajuste (id)
+        C\u00F3digo de identifica\u00E7\u00E3o do ajuste (id)
 
         :param id: The id of this AjusteFinanceiroResponse.
         :type: int
@@ -90,7 +90,7 @@ class AjusteFinanceiroResponse(object):
     def id_tipo_ajuste(self):
         """
         Gets the id_tipo_ajuste of this AjusteFinanceiroResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do tipo do ajuste
+        C\u00F3digo de identifica\u00E7\u00E3o do tipo do ajuste
 
         :return: The id_tipo_ajuste of this AjusteFinanceiroResponse.
         :rtype: int
@@ -101,7 +101,7 @@ class AjusteFinanceiroResponse(object):
     def id_tipo_ajuste(self, id_tipo_ajuste):
         """
         Sets the id_tipo_ajuste of this AjusteFinanceiroResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do tipo do ajuste
+        C\u00F3digo de identifica\u00E7\u00E3o do tipo do ajuste
 
         :param id_tipo_ajuste: The id_tipo_ajuste of this AjusteFinanceiroResponse.
         :type: int
@@ -112,7 +112,7 @@ class AjusteFinanceiroResponse(object):
     def id_conta(self):
         """
         Gets the id_conta of this AjusteFinanceiroResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da conta (idConta)
+        C\u00F3digo de identifica\u00E7\u00E3o da conta (idConta)
 
         :return: The id_conta of this AjusteFinanceiroResponse.
         :rtype: int
@@ -123,7 +123,7 @@ class AjusteFinanceiroResponse(object):
     def id_conta(self, id_conta):
         """
         Sets the id_conta of this AjusteFinanceiroResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da conta (idConta)
+        C\u00F3digo de identifica\u00E7\u00E3o da conta (idConta)
 
         :param id_conta: The id_conta of this AjusteFinanceiroResponse.
         :type: int
@@ -178,7 +178,7 @@ class AjusteFinanceiroResponse(object):
     def identificador_externo(self):
         """
         Gets the identificador_externo of this AjusteFinanceiroResponse.
-        Descri\u00C3\u00A7\u00C3\u00A3o do status da autoriza\u00C3\u00A7\u00C3\u00A3o da compra.
+        Descri\u00E7\u00E3o do status da autoriza\u00E7\u00E3o da compra.
 
         :return: The identificador_externo of this AjusteFinanceiroResponse.
         :rtype: str
@@ -189,7 +189,7 @@ class AjusteFinanceiroResponse(object):
     def identificador_externo(self, identificador_externo):
         """
         Sets the identificador_externo of this AjusteFinanceiroResponse.
-        Descri\u00C3\u00A7\u00C3\u00A3o do status da autoriza\u00C3\u00A7\u00C3\u00A3o da compra.
+        Descri\u00E7\u00E3o do status da autoriza\u00E7\u00E3o da compra.
 
         :param identificador_externo: The identificador_externo of this AjusteFinanceiroResponse.
         :type: str

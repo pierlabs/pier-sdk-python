@@ -56,7 +56,7 @@ class CodigoSegurancaSMSRequest(object):
     def ddd(self):
         """
         Gets the ddd of this CodigoSegurancaSMSRequest.
-        C\u00C3\u00B3digo DDD do telefone (id).
+        C\u00F3digo DDD do telefone (id).
 
         :return: The ddd of this CodigoSegurancaSMSRequest.
         :rtype: str
@@ -67,7 +67,7 @@ class CodigoSegurancaSMSRequest(object):
     def ddd(self, ddd):
         """
         Sets the ddd of this CodigoSegurancaSMSRequest.
-        C\u00C3\u00B3digo DDD do telefone (id).
+        C\u00F3digo DDD do telefone (id).
 
         :param ddd: The ddd of this CodigoSegurancaSMSRequest.
         :type: str
@@ -78,7 +78,7 @@ class CodigoSegurancaSMSRequest(object):
     def telefone(self):
         """
         Gets the telefone of this CodigoSegurancaSMSRequest.
-        N\u00C3\u00BAmero do telefone.
+        N\u00FAmero do telefone.
 
         :return: The telefone of this CodigoSegurancaSMSRequest.
         :rtype: str
@@ -89,7 +89,7 @@ class CodigoSegurancaSMSRequest(object):
     def telefone(self, telefone):
         """
         Sets the telefone of this CodigoSegurancaSMSRequest.
-        N\u00C3\u00BAmero do telefone.
+        N\u00FAmero do telefone.
 
         :param telefone: The telefone of this CodigoSegurancaSMSRequest.
         :type: str
@@ -100,7 +100,7 @@ class CodigoSegurancaSMSRequest(object):
     def codigo_seguranca(self):
         """
         Gets the codigo_seguranca of this CodigoSegurancaSMSRequest.
-        Token para valida\u00C3\u00A7\u00C3\u00A3o.
+        Token para valida\u00E7\u00E3o.
 
         :return: The codigo_seguranca of this CodigoSegurancaSMSRequest.
         :rtype: str
@@ -111,7 +111,7 @@ class CodigoSegurancaSMSRequest(object):
     def codigo_seguranca(self, codigo_seguranca):
         """
         Sets the codigo_seguranca of this CodigoSegurancaSMSRequest.
-        Token para valida\u00C3\u00A7\u00C3\u00A3o.
+        Token para valida\u00E7\u00E3o.
 
         :param codigo_seguranca: The codigo_seguranca of this CodigoSegurancaSMSRequest.
         :type: str

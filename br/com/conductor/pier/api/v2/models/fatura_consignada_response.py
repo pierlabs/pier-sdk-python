@@ -131,7 +131,7 @@ class FaturaConsignadaResponse(object):
     def id(self):
         """
         Gets the id of this FaturaConsignadaResponse.
-        C\u00C3\u00B3digo identificador da fatura.
+        C\u00F3digo identificador da fatura.
 
         :return: The id of this FaturaConsignadaResponse.
         :rtype: int
@@ -142,7 +142,7 @@ class FaturaConsignadaResponse(object):
     def id(self, id):
         """
         Sets the id of this FaturaConsignadaResponse.
-        C\u00C3\u00B3digo identificador da fatura.
+        C\u00F3digo identificador da fatura.
 
         :param id: The id of this FaturaConsignadaResponse.
         :type: int
@@ -153,7 +153,7 @@ class FaturaConsignadaResponse(object):
     def id_conta(self):
         """
         Gets the id_conta of this FaturaConsignadaResponse.
-        C\u00C3\u00B3digo identificador da conta (id).
+        C\u00F3digo identificador da conta (id).
 
         :return: The id_conta of this FaturaConsignadaResponse.
         :rtype: int
@@ -164,7 +164,7 @@ class FaturaConsignadaResponse(object):
     def id_conta(self, id_conta):
         """
         Sets the id_conta of this FaturaConsignadaResponse.
-        C\u00C3\u00B3digo identificador da conta (id).
+        C\u00F3digo identificador da conta (id).
 
         :param id_conta: The id_conta of this FaturaConsignadaResponse.
         :type: int
@@ -175,7 +175,7 @@ class FaturaConsignadaResponse(object):
     def flag_emite_fatura(self):
         """
         Gets the flag_emite_fatura of this FaturaConsignadaResponse.
-        C\u00C3\u00B3digo identificador da conta a qual a fatura se refere.
+        C\u00F3digo identificador da conta a qual a fatura se refere.
 
         :return: The flag_emite_fatura of this FaturaConsignadaResponse.
         :rtype: int
@@ -186,7 +186,7 @@ class FaturaConsignadaResponse(object):
     def flag_emite_fatura(self, flag_emite_fatura):
         """
         Sets the flag_emite_fatura of this FaturaConsignadaResponse.
-        C\u00C3\u00B3digo identificador da conta a qual a fatura se refere.
+        C\u00F3digo identificador da conta a qual a fatura se refere.
 
         :param flag_emite_fatura: The flag_emite_fatura of this FaturaConsignadaResponse.
         :type: int
@@ -263,7 +263,7 @@ class FaturaConsignadaResponse(object):
     def valor_pagamento_minimo(self):
         """
         Gets the valor_pagamento_minimo of this FaturaConsignadaResponse.
-        Valor m\u00C3\u00ADnimo para pagamento da fatura.
+        Valor m\u00EDnimo para pagamento da fatura.
 
         :return: The valor_pagamento_minimo of this FaturaConsignadaResponse.
         :rtype: float
@@ -274,7 +274,7 @@ class FaturaConsignadaResponse(object):
     def valor_pagamento_minimo(self, valor_pagamento_minimo):
         """
         Sets the valor_pagamento_minimo of this FaturaConsignadaResponse.
-        Valor m\u00C3\u00ADnimo para pagamento da fatura.
+        Valor m\u00EDnimo para pagamento da fatura.
 
         :param valor_pagamento_minimo: The valor_pagamento_minimo of this FaturaConsignadaResponse.
         :type: float
@@ -285,7 +285,7 @@ class FaturaConsignadaResponse(object):
     def valor_pagamento_consignado(self):
         """
         Gets the valor_pagamento_consignado of this FaturaConsignadaResponse.
-        Valor da fatura pago atrav\u00C3\u00A9s de desconto em folha.
+        Valor da fatura pago atrav\u00E9s de desconto em folha.
 
         :return: The valor_pagamento_consignado of this FaturaConsignadaResponse.
         :rtype: float
@@ -296,7 +296,7 @@ class FaturaConsignadaResponse(object):
     def valor_pagamento_consignado(self, valor_pagamento_consignado):
         """
         Sets the valor_pagamento_consignado of this FaturaConsignadaResponse.
-        Valor da fatura pago atrav\u00C3\u00A9s de desconto em folha.
+        Valor da fatura pago atrav\u00E9s de desconto em folha.
 
         :param valor_pagamento_consignado: The valor_pagamento_consignado of this FaturaConsignadaResponse.
         :type: float
@@ -307,7 +307,7 @@ class FaturaConsignadaResponse(object):
     def valor_pagamento_complementar(self):
         """
         Gets the valor_pagamento_complementar of this FaturaConsignadaResponse.
-        Valor complementar para considerar o pagamento m\u00C3\u00ADnimo da fatura.
+        Valor complementar para considerar o pagamento m\u00EDnimo da fatura.
 
         :return: The valor_pagamento_complementar of this FaturaConsignadaResponse.
         :rtype: float
@@ -318,7 +318,7 @@ class FaturaConsignadaResponse(object):
     def valor_pagamento_complementar(self, valor_pagamento_complementar):
         """
         Sets the valor_pagamento_complementar of this FaturaConsignadaResponse.
-        Valor complementar para considerar o pagamento m\u00C3\u00ADnimo da fatura.
+        Valor complementar para considerar o pagamento m\u00EDnimo da fatura.
 
         :param valor_pagamento_complementar: The valor_pagamento_complementar of this FaturaConsignadaResponse.
         :type: float
@@ -329,7 +329,7 @@ class FaturaConsignadaResponse(object):
     def total_compras_nacionais(self):
         """
         Gets the total_compras_nacionais of this FaturaConsignadaResponse.
-        Valor total das compras nacionais lan\u00C3\u00A7adas na fatura.
+        Valor total das compras nacionais lan\u00E7adas na fatura.
 
         :return: The total_compras_nacionais of this FaturaConsignadaResponse.
         :rtype: float
@@ -340,7 +340,7 @@ class FaturaConsignadaResponse(object):
     def total_compras_nacionais(self, total_compras_nacionais):
         """
         Sets the total_compras_nacionais of this FaturaConsignadaResponse.
-        Valor total das compras nacionais lan\u00C3\u00A7adas na fatura.
+        Valor total das compras nacionais lan\u00E7adas na fatura.
 
         :param total_compras_nacionais: The total_compras_nacionais of this FaturaConsignadaResponse.
         :type: float
@@ -351,7 +351,7 @@ class FaturaConsignadaResponse(object):
     def total_compras_internacionas(self):
         """
         Gets the total_compras_internacionas of this FaturaConsignadaResponse.
-        Valor total das compras internacionais lan\u00C3\u00A7adas na fatura.
+        Valor total das compras internacionais lan\u00E7adas na fatura.
 
         :return: The total_compras_internacionas of this FaturaConsignadaResponse.
         :rtype: float
@@ -362,7 +362,7 @@ class FaturaConsignadaResponse(object):
     def total_compras_internacionas(self, total_compras_internacionas):
         """
         Sets the total_compras_internacionas of this FaturaConsignadaResponse.
-        Valor total das compras internacionais lan\u00C3\u00A7adas na fatura.
+        Valor total das compras internacionais lan\u00E7adas na fatura.
 
         :param total_compras_internacionas: The total_compras_internacionas of this FaturaConsignadaResponse.
         :type: float
@@ -373,7 +373,7 @@ class FaturaConsignadaResponse(object):
     def total_saques_nacionais(self):
         """
         Gets the total_saques_nacionais of this FaturaConsignadaResponse.
-        Valor total dos saques nacionais lan\u00C3\u00A7ados na fatura.
+        Valor total dos saques nacionais lan\u00E7ados na fatura.
 
         :return: The total_saques_nacionais of this FaturaConsignadaResponse.
         :rtype: float
@@ -384,7 +384,7 @@ class FaturaConsignadaResponse(object):
     def total_saques_nacionais(self, total_saques_nacionais):
         """
         Sets the total_saques_nacionais of this FaturaConsignadaResponse.
-        Valor total dos saques nacionais lan\u00C3\u00A7ados na fatura.
+        Valor total dos saques nacionais lan\u00E7ados na fatura.
 
         :param total_saques_nacionais: The total_saques_nacionais of this FaturaConsignadaResponse.
         :type: float
@@ -395,7 +395,7 @@ class FaturaConsignadaResponse(object):
     def total_saques_internacionais(self):
         """
         Gets the total_saques_internacionais of this FaturaConsignadaResponse.
-        Valor total dos saques internacionais lan\u00C3\u00A7ados na fatura.
+        Valor total dos saques internacionais lan\u00E7ados na fatura.
 
         :return: The total_saques_internacionais of this FaturaConsignadaResponse.
         :rtype: float
@@ -406,7 +406,7 @@ class FaturaConsignadaResponse(object):
     def total_saques_internacionais(self, total_saques_internacionais):
         """
         Sets the total_saques_internacionais of this FaturaConsignadaResponse.
-        Valor total dos saques internacionais lan\u00C3\u00A7ados na fatura.
+        Valor total dos saques internacionais lan\u00E7ados na fatura.
 
         :param total_saques_internacionais: The total_saques_internacionais of this FaturaConsignadaResponse.
         :type: float
@@ -417,7 +417,7 @@ class FaturaConsignadaResponse(object):
     def total_debitos_nacionais(self):
         """
         Gets the total_debitos_nacionais of this FaturaConsignadaResponse.
-        Valor total dos d\u00C3\u00A9bitos nacionais lan\u00C3\u00A7ados na fatura.
+        Valor total dos d\u00E9bitos nacionais lan\u00E7ados na fatura.
 
         :return: The total_debitos_nacionais of this FaturaConsignadaResponse.
         :rtype: float
@@ -428,7 +428,7 @@ class FaturaConsignadaResponse(object):
     def total_debitos_nacionais(self, total_debitos_nacionais):
         """
         Sets the total_debitos_nacionais of this FaturaConsignadaResponse.
-        Valor total dos d\u00C3\u00A9bitos nacionais lan\u00C3\u00A7ados na fatura.
+        Valor total dos d\u00E9bitos nacionais lan\u00E7ados na fatura.
 
         :param total_debitos_nacionais: The total_debitos_nacionais of this FaturaConsignadaResponse.
         :type: float
@@ -439,7 +439,7 @@ class FaturaConsignadaResponse(object):
     def total_debitos_recorrentes(self):
         """
         Gets the total_debitos_recorrentes of this FaturaConsignadaResponse.
-        Valor total dos d\u00C3\u00A9bitos recorrentes lan\u00C3\u00A7ados na fatura.
+        Valor total dos d\u00E9bitos recorrentes lan\u00E7ados na fatura.
 
         :return: The total_debitos_recorrentes of this FaturaConsignadaResponse.
         :rtype: float
@@ -450,7 +450,7 @@ class FaturaConsignadaResponse(object):
     def total_debitos_recorrentes(self, total_debitos_recorrentes):
         """
         Sets the total_debitos_recorrentes of this FaturaConsignadaResponse.
-        Valor total dos d\u00C3\u00A9bitos recorrentes lan\u00C3\u00A7ados na fatura.
+        Valor total dos d\u00E9bitos recorrentes lan\u00E7ados na fatura.
 
         :param total_debitos_recorrentes: The total_debitos_recorrentes of this FaturaConsignadaResponse.
         :type: float
@@ -461,7 +461,7 @@ class FaturaConsignadaResponse(object):
     def total_debitos_internacionais(self):
         """
         Gets the total_debitos_internacionais of this FaturaConsignadaResponse.
-        Valor total dos d\u00C3\u00A9bitos internacionais lan\u00C3\u00A7ados na fatura.
+        Valor total dos d\u00E9bitos internacionais lan\u00E7ados na fatura.
 
         :return: The total_debitos_internacionais of this FaturaConsignadaResponse.
         :rtype: float
@@ -472,7 +472,7 @@ class FaturaConsignadaResponse(object):
     def total_debitos_internacionais(self, total_debitos_internacionais):
         """
         Sets the total_debitos_internacionais of this FaturaConsignadaResponse.
-        Valor total dos d\u00C3\u00A9bitos internacionais lan\u00C3\u00A7ados na fatura.
+        Valor total dos d\u00E9bitos internacionais lan\u00E7ados na fatura.
 
         :param total_debitos_internacionais: The total_debitos_internacionais of this FaturaConsignadaResponse.
         :type: float
@@ -483,7 +483,7 @@ class FaturaConsignadaResponse(object):
     def total_debitos_diversos_nacionais(self):
         """
         Gets the total_debitos_diversos_nacionais of this FaturaConsignadaResponse.
-        Valor total dos d\u00C3\u00A9bitos diversos nacionais lan\u00C3\u00A7ados na fatura.
+        Valor total dos d\u00E9bitos diversos nacionais lan\u00E7ados na fatura.
 
         :return: The total_debitos_diversos_nacionais of this FaturaConsignadaResponse.
         :rtype: float
@@ -494,7 +494,7 @@ class FaturaConsignadaResponse(object):
     def total_debitos_diversos_nacionais(self, total_debitos_diversos_nacionais):
         """
         Sets the total_debitos_diversos_nacionais of this FaturaConsignadaResponse.
-        Valor total dos d\u00C3\u00A9bitos diversos nacionais lan\u00C3\u00A7ados na fatura.
+        Valor total dos d\u00E9bitos diversos nacionais lan\u00E7ados na fatura.
 
         :param total_debitos_diversos_nacionais: The total_debitos_diversos_nacionais of this FaturaConsignadaResponse.
         :type: float
@@ -505,7 +505,7 @@ class FaturaConsignadaResponse(object):
     def total_debitos_opcionais(self):
         """
         Gets the total_debitos_opcionais of this FaturaConsignadaResponse.
-        Valor total dos d\u00C3\u00A9bitos diversos opcionais lan\u00C3\u00A7ados na fatura.
+        Valor total dos d\u00E9bitos diversos opcionais lan\u00E7ados na fatura.
 
         :return: The total_debitos_opcionais of this FaturaConsignadaResponse.
         :rtype: float
@@ -516,7 +516,7 @@ class FaturaConsignadaResponse(object):
     def total_debitos_opcionais(self, total_debitos_opcionais):
         """
         Sets the total_debitos_opcionais of this FaturaConsignadaResponse.
-        Valor total dos d\u00C3\u00A9bitos diversos opcionais lan\u00C3\u00A7ados na fatura.
+        Valor total dos d\u00E9bitos diversos opcionais lan\u00E7ados na fatura.
 
         :param total_debitos_opcionais: The total_debitos_opcionais of this FaturaConsignadaResponse.
         :type: float
@@ -527,7 +527,7 @@ class FaturaConsignadaResponse(object):
     def total_pagamentos(self):
         """
         Gets the total_pagamentos of this FaturaConsignadaResponse.
-        Valor total dos pagamentos lan\u00C3\u00A7ados na fatura.
+        Valor total dos pagamentos lan\u00E7ados na fatura.
 
         :return: The total_pagamentos of this FaturaConsignadaResponse.
         :rtype: float
@@ -538,7 +538,7 @@ class FaturaConsignadaResponse(object):
     def total_pagamentos(self, total_pagamentos):
         """
         Sets the total_pagamentos of this FaturaConsignadaResponse.
-        Valor total dos pagamentos lan\u00C3\u00A7ados na fatura.
+        Valor total dos pagamentos lan\u00E7ados na fatura.
 
         :param total_pagamentos: The total_pagamentos of this FaturaConsignadaResponse.
         :type: float
@@ -549,7 +549,7 @@ class FaturaConsignadaResponse(object):
     def total_creditos_nacionais(self):
         """
         Gets the total_creditos_nacionais of this FaturaConsignadaResponse.
-        Valor total dos cr\u00C3\u00A9ditos nacionais lan\u00C3\u00A7ados na fatura.
+        Valor total dos cr\u00E9ditos nacionais lan\u00E7ados na fatura.
 
         :return: The total_creditos_nacionais of this FaturaConsignadaResponse.
         :rtype: float
@@ -560,7 +560,7 @@ class FaturaConsignadaResponse(object):
     def total_creditos_nacionais(self, total_creditos_nacionais):
         """
         Sets the total_creditos_nacionais of this FaturaConsignadaResponse.
-        Valor total dos cr\u00C3\u00A9ditos nacionais lan\u00C3\u00A7ados na fatura.
+        Valor total dos cr\u00E9ditos nacionais lan\u00E7ados na fatura.
 
         :param total_creditos_nacionais: The total_creditos_nacionais of this FaturaConsignadaResponse.
         :type: float
@@ -571,7 +571,7 @@ class FaturaConsignadaResponse(object):
     def total_ajustes(self):
         """
         Gets the total_ajustes of this FaturaConsignadaResponse.
-        Valor total dos ajustes lan\u00C3\u00A7ados na fatura.
+        Valor total dos ajustes lan\u00E7ados na fatura.
 
         :return: The total_ajustes of this FaturaConsignadaResponse.
         :rtype: float
@@ -582,7 +582,7 @@ class FaturaConsignadaResponse(object):
     def total_ajustes(self, total_ajustes):
         """
         Sets the total_ajustes of this FaturaConsignadaResponse.
-        Valor total dos ajustes lan\u00C3\u00A7ados na fatura.
+        Valor total dos ajustes lan\u00E7ados na fatura.
 
         :param total_ajustes: The total_ajustes of this FaturaConsignadaResponse.
         :type: float
@@ -593,7 +593,7 @@ class FaturaConsignadaResponse(object):
     def total_tarifas(self):
         """
         Gets the total_tarifas of this FaturaConsignadaResponse.
-        Valor total das tarifas lan\u00C3\u00A7adas na fatura.
+        Valor total das tarifas lan\u00E7adas na fatura.
 
         :return: The total_tarifas of this FaturaConsignadaResponse.
         :rtype: float
@@ -604,7 +604,7 @@ class FaturaConsignadaResponse(object):
     def total_tarifas(self, total_tarifas):
         """
         Sets the total_tarifas of this FaturaConsignadaResponse.
-        Valor total das tarifas lan\u00C3\u00A7adas na fatura.
+        Valor total das tarifas lan\u00E7adas na fatura.
 
         :param total_tarifas: The total_tarifas of this FaturaConsignadaResponse.
         :type: float
@@ -615,7 +615,7 @@ class FaturaConsignadaResponse(object):
     def total_multa(self):
         """
         Gets the total_multa of this FaturaConsignadaResponse.
-        Valor total da multa lan\u00C3\u00A7ada na fatura.
+        Valor total da multa lan\u00E7ada na fatura.
 
         :return: The total_multa of this FaturaConsignadaResponse.
         :rtype: float
@@ -626,7 +626,7 @@ class FaturaConsignadaResponse(object):
     def total_multa(self, total_multa):
         """
         Sets the total_multa of this FaturaConsignadaResponse.
-        Valor total da multa lan\u00C3\u00A7ada na fatura.
+        Valor total da multa lan\u00E7ada na fatura.
 
         :param total_multa: The total_multa of this FaturaConsignadaResponse.
         :type: float
@@ -637,7 +637,7 @@ class FaturaConsignadaResponse(object):
     def total_juros(self):
         """
         Gets the total_juros of this FaturaConsignadaResponse.
-        Valor total dos juros de mora lan\u00C3\u00A7ados na fatura.
+        Valor total dos juros de mora lan\u00E7ados na fatura.
 
         :return: The total_juros of this FaturaConsignadaResponse.
         :rtype: float
@@ -648,7 +648,7 @@ class FaturaConsignadaResponse(object):
     def total_juros(self, total_juros):
         """
         Sets the total_juros of this FaturaConsignadaResponse.
-        Valor total dos juros de mora lan\u00C3\u00A7ados na fatura.
+        Valor total dos juros de mora lan\u00E7ados na fatura.
 
         :param total_juros: The total_juros of this FaturaConsignadaResponse.
         :type: float
@@ -703,7 +703,7 @@ class FaturaConsignadaResponse(object):
     def taxa_maxima_proximo_periodo(self):
         """
         Gets the taxa_maxima_proximo_periodo of this FaturaConsignadaResponse.
-        Valor m\u00C3\u00A1ximo percentual da taxa de encargos para o pr\u00C3\u00B3ximo per\u00C3\u00ADodo.
+        Valor m\u00E1ximo percentual da taxa de encargos para o pr\u00F3ximo per\u00EDodo.
 
         :return: The taxa_maxima_proximo_periodo of this FaturaConsignadaResponse.
         :rtype: float
@@ -714,7 +714,7 @@ class FaturaConsignadaResponse(object):
     def taxa_maxima_proximo_periodo(self, taxa_maxima_proximo_periodo):
         """
         Sets the taxa_maxima_proximo_periodo of this FaturaConsignadaResponse.
-        Valor m\u00C3\u00A1ximo percentual da taxa de encargos para o pr\u00C3\u00B3ximo per\u00C3\u00ADodo.
+        Valor m\u00E1ximo percentual da taxa de encargos para o pr\u00F3ximo per\u00EDodo.
 
         :param taxa_maxima_proximo_periodo: The taxa_maxima_proximo_periodo of this FaturaConsignadaResponse.
         :type: float

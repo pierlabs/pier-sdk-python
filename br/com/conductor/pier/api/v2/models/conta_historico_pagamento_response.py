@@ -71,7 +71,7 @@ class ContaHistoricoPagamentoResponse(object):
     def id_pagamento(self):
         """
         Gets the id_pagamento of this ContaHistoricoPagamentoResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Pagamento
+        C\u00F3digo de Identifica\u00E7\u00E3o do Pagamento
 
         :return: The id_pagamento of this ContaHistoricoPagamentoResponse.
         :rtype: int
@@ -82,7 +82,7 @@ class ContaHistoricoPagamentoResponse(object):
     def id_pagamento(self, id_pagamento):
         """
         Sets the id_pagamento of this ContaHistoricoPagamentoResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Pagamento
+        C\u00F3digo de Identifica\u00E7\u00E3o do Pagamento
 
         :param id_pagamento: The id_pagamento of this ContaHistoricoPagamentoResponse.
         :type: int
@@ -93,7 +93,7 @@ class ContaHistoricoPagamentoResponse(object):
     def id_estabelecimento(self):
         """
         Gets the id_estabelecimento of this ContaHistoricoPagamentoResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Estabelecimento onde o Pagamento foi realizado, quando este for o local de pagamento.
+        C\u00F3digo de Identifica\u00E7\u00E3o do Estabelecimento onde o Pagamento foi realizado, quando este for o local de pagamento.
 
         :return: The id_estabelecimento of this ContaHistoricoPagamentoResponse.
         :rtype: int
@@ -104,7 +104,7 @@ class ContaHistoricoPagamentoResponse(object):
     def id_estabelecimento(self, id_estabelecimento):
         """
         Sets the id_estabelecimento of this ContaHistoricoPagamentoResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Estabelecimento onde o Pagamento foi realizado, quando este for o local de pagamento.
+        C\u00F3digo de Identifica\u00E7\u00E3o do Estabelecimento onde o Pagamento foi realizado, quando este for o local de pagamento.
 
         :param id_estabelecimento: The id_estabelecimento of this ContaHistoricoPagamentoResponse.
         :type: int
@@ -115,7 +115,7 @@ class ContaHistoricoPagamentoResponse(object):
     def id_banco(self):
         """
         Gets the id_banco of this ContaHistoricoPagamentoResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Institui\u00C3\u00A7\u00C3\u00A3o Banc\u00C3\u00A1ria onde o Pagamento foi realizado, quando este for o local de pagamento
+        C\u00F3digo de Identifica\u00E7\u00E3o da Institui\u00E7\u00E3o Banc\u00E1ria onde o Pagamento foi realizado, quando este for o local de pagamento
 
         :return: The id_banco of this ContaHistoricoPagamentoResponse.
         :rtype: int
@@ -126,7 +126,7 @@ class ContaHistoricoPagamentoResponse(object):
     def id_banco(self, id_banco):
         """
         Sets the id_banco of this ContaHistoricoPagamentoResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Institui\u00C3\u00A7\u00C3\u00A3o Banc\u00C3\u00A1ria onde o Pagamento foi realizado, quando este for o local de pagamento
+        C\u00F3digo de Identifica\u00E7\u00E3o da Institui\u00E7\u00E3o Banc\u00E1ria onde o Pagamento foi realizado, quando este for o local de pagamento
 
         :param id_banco: The id_banco of this ContaHistoricoPagamentoResponse.
         :type: int
@@ -137,7 +137,7 @@ class ContaHistoricoPagamentoResponse(object):
     def id_cartao(self):
         """
         Gets the id_cartao of this ContaHistoricoPagamentoResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Cart\u00C3\u00A3o
+        C\u00F3digo de Identifica\u00E7\u00E3o do Cart\u00E3o
 
         :return: The id_cartao of this ContaHistoricoPagamentoResponse.
         :rtype: int
@@ -148,7 +148,7 @@ class ContaHistoricoPagamentoResponse(object):
     def id_cartao(self, id_cartao):
         """
         Sets the id_cartao of this ContaHistoricoPagamentoResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Cart\u00C3\u00A3o
+        C\u00F3digo de Identifica\u00E7\u00E3o do Cart\u00E3o
 
         :param id_cartao: The id_cartao of this ContaHistoricoPagamentoResponse.
         :type: int
@@ -181,7 +181,7 @@ class ContaHistoricoPagamentoResponse(object):
     def data_hora_pagamento(self):
         """
         Gets the data_hora_pagamento of this ContaHistoricoPagamentoResponse.
-        Data e Hora da realiza\u00C3\u00A7\u00C3\u00A3o do Pagamento. Quando feito em Institui\u00C3\u00A7\u00C3\u00A3o Banc\u00C3\u00A1ria, o hor\u00C3\u00A1rio do pagamento \u00C3\u00A9 exibido com valor zero
+        Data e Hora da realiza\u00E7\u00E3o do Pagamento. Quando feito em Institui\u00E7\u00E3o Banc\u00E1ria, o hor\u00E1rio do pagamento \u00E9 exibido com valor zero
 
         :return: The data_hora_pagamento of this ContaHistoricoPagamentoResponse.
         :rtype: str
@@ -192,7 +192,7 @@ class ContaHistoricoPagamentoResponse(object):
     def data_hora_pagamento(self, data_hora_pagamento):
         """
         Sets the data_hora_pagamento of this ContaHistoricoPagamentoResponse.
-        Data e Hora da realiza\u00C3\u00A7\u00C3\u00A3o do Pagamento. Quando feito em Institui\u00C3\u00A7\u00C3\u00A3o Banc\u00C3\u00A1ria, o hor\u00C3\u00A1rio do pagamento \u00C3\u00A9 exibido com valor zero
+        Data e Hora da realiza\u00E7\u00E3o do Pagamento. Quando feito em Institui\u00E7\u00E3o Banc\u00E1ria, o hor\u00E1rio do pagamento \u00E9 exibido com valor zero
 
         :param data_hora_pagamento: The data_hora_pagamento of this ContaHistoricoPagamentoResponse.
         :type: str
@@ -225,7 +225,7 @@ class ContaHistoricoPagamentoResponse(object):
     def status(self):
         """
         Gets the status of this ContaHistoricoPagamentoResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Status do Pagamento
+        C\u00F3digo de Identifica\u00E7\u00E3o do Status do Pagamento
 
         :return: The status of this ContaHistoricoPagamentoResponse.
         :rtype: int
@@ -236,7 +236,7 @@ class ContaHistoricoPagamentoResponse(object):
     def status(self, status):
         """
         Sets the status of this ContaHistoricoPagamentoResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Status do Pagamento
+        C\u00F3digo de Identifica\u00E7\u00E3o do Status do Pagamento
 
         :param status: The status of this ContaHistoricoPagamentoResponse.
         :type: int

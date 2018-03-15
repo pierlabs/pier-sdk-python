@@ -60,7 +60,7 @@ class AplicacaoMobileApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param int id: C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Aplicacao (id). (required)
+        :param int id: C\u00F3digo de Identifica\u00E7\u00E3o da Aplicacao (id). (required)
         :param AplicacaoMobileUpdate update: update (required)
         :return: AplicacaoMobileResponse
                  If the method is called asynchronously,
@@ -128,10 +128,10 @@ class AplicacaoMobileApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get2(self, **kwargs):
+    def listar_using_get3(self, **kwargs):
         """
         Lista os aplicacoes mobile cadastradas
-        Este m\u00C3\u00A9todo permite que sejam listadas as aplicacoes mobile existentes na base do PIER.
+        Este m\u00E9todo permite que sejam listadas as aplicacoes mobile existentes na base do PIER.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -139,13 +139,13 @@ class AplicacaoMobileApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get2(callback=callback_function)
+        >>> thread = api.listar_using_get3(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param list[str] sort: Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
-        :param int page: P\u00C3\u00A1gina solicitada (Default = 0)
-        :param int limit: Limite de elementos por solicita\u00C3\u00A7\u00C3\u00A3o (Default = 50, Max = 50)
+        :param list[str] sort: Tipo de ordena\u00E7\u00E3o dos registros.
+        :param int page: P\u00E1gina solicitada (Default = 0)
+        :param int limit: Limite de elementos por solicita\u00E7\u00E3o (Default = 50, Max = 50)
         :param str id: Identificador da Aplicacao Mobile
         :param int id_plataforma_mobile: Identificador da Plataforma Mobile
         :return: PageAplicacaoMobileResponse
@@ -161,7 +161,7 @@ class AplicacaoMobileApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get2" % key
+                    " to method listar_using_get3" % key
                 )
             params[key] = val
         del params['kwargs']

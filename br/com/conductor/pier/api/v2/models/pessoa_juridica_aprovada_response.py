@@ -119,7 +119,7 @@ class PessoaJuridicaAprovadaResponse(object):
     def id(self):
         """
         Gets the id of this PessoaJuridicaAprovadaResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da pessoa jur\u00C3\u00ADdica (id)
+        C\u00F3digo de Identifica\u00E7\u00E3o da pessoa jur\u00EDdica (id)
 
         :return: The id of this PessoaJuridicaAprovadaResponse.
         :rtype: int
@@ -130,7 +130,7 @@ class PessoaJuridicaAprovadaResponse(object):
     def id(self, id):
         """
         Sets the id of this PessoaJuridicaAprovadaResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da pessoa jur\u00C3\u00ADdica (id)
+        C\u00F3digo de Identifica\u00E7\u00E3o da pessoa jur\u00EDdica (id)
 
         :param id: The id of this PessoaJuridicaAprovadaResponse.
         :type: int
@@ -141,7 +141,7 @@ class PessoaJuridicaAprovadaResponse(object):
     def razao_social(self):
         """
         Gets the razao_social of this PessoaJuridicaAprovadaResponse.
-        Apresenta o nome completo da raz\u00C3\u00A3o social (nome empresarial)'.
+        Apresenta o nome completo da raz\u00E3o social (nome empresarial)'.
 
         :return: The razao_social of this PessoaJuridicaAprovadaResponse.
         :rtype: str
@@ -152,7 +152,7 @@ class PessoaJuridicaAprovadaResponse(object):
     def razao_social(self, razao_social):
         """
         Sets the razao_social of this PessoaJuridicaAprovadaResponse.
-        Apresenta o nome completo da raz\u00C3\u00A3o social (nome empresarial)'.
+        Apresenta o nome completo da raz\u00E3o social (nome empresarial)'.
 
         :param razao_social: The razao_social of this PessoaJuridicaAprovadaResponse.
         :type: str
@@ -185,7 +185,7 @@ class PessoaJuridicaAprovadaResponse(object):
     def cnpj(self):
         """
         Gets the cnpj of this PessoaJuridicaAprovadaResponse.
-        N\u00C3\u00BAmero do Cadastro Nacional de Pessoa Juridica (CNPJ)
+        N\u00FAmero do Cadastro Nacional de Pessoa Juridica (CNPJ)
 
         :return: The cnpj of this PessoaJuridicaAprovadaResponse.
         :rtype: str
@@ -196,7 +196,7 @@ class PessoaJuridicaAprovadaResponse(object):
     def cnpj(self, cnpj):
         """
         Sets the cnpj of this PessoaJuridicaAprovadaResponse.
-        N\u00C3\u00BAmero do Cadastro Nacional de Pessoa Juridica (CNPJ)
+        N\u00FAmero do Cadastro Nacional de Pessoa Juridica (CNPJ)
 
         :param cnpj: The cnpj of this PessoaJuridicaAprovadaResponse.
         :type: str
@@ -207,7 +207,7 @@ class PessoaJuridicaAprovadaResponse(object):
     def inscricao_estadual(self):
         """
         Gets the inscricao_estadual of this PessoaJuridicaAprovadaResponse.
-        N\u00C3\u00BAmero da Inscri\u00C3\u00A7\u00C3\u00A3o Estadual (IE).
+        N\u00FAmero da Inscri\u00E7\u00E3o Estadual (IE).
 
         :return: The inscricao_estadual of this PessoaJuridicaAprovadaResponse.
         :rtype: str
@@ -218,7 +218,7 @@ class PessoaJuridicaAprovadaResponse(object):
     def inscricao_estadual(self, inscricao_estadual):
         """
         Sets the inscricao_estadual of this PessoaJuridicaAprovadaResponse.
-        N\u00C3\u00BAmero da Inscri\u00C3\u00A7\u00C3\u00A3o Estadual (IE).
+        N\u00FAmero da Inscri\u00E7\u00E3o Estadual (IE).
 
         :param inscricao_estadual: The inscricao_estadual of this PessoaJuridicaAprovadaResponse.
         :type: str
@@ -295,7 +295,7 @@ class PessoaJuridicaAprovadaResponse(object):
     def numero_agencia(self):
         """
         Gets the numero_agencia of this PessoaJuridicaAprovadaResponse.
-        N\u00C3\u00BAmero da ag\u00C3\u00AAncia.
+        N\u00FAmero da ag\u00EAncia.
 
         :return: The numero_agencia of this PessoaJuridicaAprovadaResponse.
         :rtype: int
@@ -306,7 +306,7 @@ class PessoaJuridicaAprovadaResponse(object):
     def numero_agencia(self, numero_agencia):
         """
         Sets the numero_agencia of this PessoaJuridicaAprovadaResponse.
-        N\u00C3\u00BAmero da ag\u00C3\u00AAncia.
+        N\u00FAmero da ag\u00EAncia.
 
         :param numero_agencia: The numero_agencia of this PessoaJuridicaAprovadaResponse.
         :type: int
@@ -317,7 +317,7 @@ class PessoaJuridicaAprovadaResponse(object):
     def numero_conta_corrente(self):
         """
         Gets the numero_conta_corrente of this PessoaJuridicaAprovadaResponse.
-        N\u00C3\u00BAmero da conta corrente.
+        N\u00FAmero da conta corrente.
 
         :return: The numero_conta_corrente of this PessoaJuridicaAprovadaResponse.
         :rtype: str
@@ -328,7 +328,7 @@ class PessoaJuridicaAprovadaResponse(object):
     def numero_conta_corrente(self, numero_conta_corrente):
         """
         Sets the numero_conta_corrente of this PessoaJuridicaAprovadaResponse.
-        N\u00C3\u00BAmero da conta corrente.
+        N\u00FAmero da conta corrente.
 
         :param numero_conta_corrente: The numero_conta_corrente of this PessoaJuridicaAprovadaResponse.
         :type: str
@@ -383,7 +383,7 @@ class PessoaJuridicaAprovadaResponse(object):
     def nome_impresso(self):
         """
         Gets the nome_impresso of this PessoaJuridicaAprovadaResponse.
-        Nome que deve ser impresso no cart\u00C3\u00A3o
+        Nome que deve ser impresso no cart\u00E3o
 
         :return: The nome_impresso of this PessoaJuridicaAprovadaResponse.
         :rtype: str
@@ -394,7 +394,7 @@ class PessoaJuridicaAprovadaResponse(object):
     def nome_impresso(self, nome_impresso):
         """
         Sets the nome_impresso of this PessoaJuridicaAprovadaResponse.
-        Nome que deve ser impresso no cart\u00C3\u00A3o
+        Nome que deve ser impresso no cart\u00E3o
 
         :param nome_impresso: The nome_impresso of this PessoaJuridicaAprovadaResponse.
         :type: str
@@ -405,7 +405,7 @@ class PessoaJuridicaAprovadaResponse(object):
     def id_conta(self):
         """
         Gets the id_conta of this PessoaJuridicaAprovadaResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da conta cadastrada
+        C\u00F3digo de identifica\u00E7\u00E3o da conta cadastrada
 
         :return: The id_conta of this PessoaJuridicaAprovadaResponse.
         :rtype: int
@@ -416,7 +416,7 @@ class PessoaJuridicaAprovadaResponse(object):
     def id_conta(self, id_conta):
         """
         Sets the id_conta of this PessoaJuridicaAprovadaResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da conta cadastrada
+        C\u00F3digo de identifica\u00E7\u00E3o da conta cadastrada
 
         :param id_conta: The id_conta of this PessoaJuridicaAprovadaResponse.
         :type: int
@@ -427,7 +427,7 @@ class PessoaJuridicaAprovadaResponse(object):
     def id_proposta(self):
         """
         Gets the id_proposta of this PessoaJuridicaAprovadaResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da proposta
+        C\u00F3digo de identifica\u00E7\u00E3o da proposta
 
         :return: The id_proposta of this PessoaJuridicaAprovadaResponse.
         :rtype: int
@@ -438,7 +438,7 @@ class PessoaJuridicaAprovadaResponse(object):
     def id_proposta(self, id_proposta):
         """
         Sets the id_proposta of this PessoaJuridicaAprovadaResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o da proposta
+        C\u00F3digo de identifica\u00E7\u00E3o da proposta
 
         :param id_proposta: The id_proposta of this PessoaJuridicaAprovadaResponse.
         :type: int
@@ -471,7 +471,7 @@ class PessoaJuridicaAprovadaResponse(object):
     def valor_pontuacao(self):
         """
         Gets the valor_pontuacao of this PessoaJuridicaAprovadaResponse.
-        Indica o valor da pontua\u00C3\u00A7\u00C3\u00A3o atribuido ao cliente (caso n\u00C3\u00A3o informado ser\u00C3\u00A1 atribuido o valor = 0)
+        Indica o valor da pontua\u00E7\u00E3o atribuido ao cliente (caso n\u00E3o informado ser\u00E1 atribuido o valor = 0)
 
         :return: The valor_pontuacao of this PessoaJuridicaAprovadaResponse.
         :rtype: int
@@ -482,7 +482,7 @@ class PessoaJuridicaAprovadaResponse(object):
     def valor_pontuacao(self, valor_pontuacao):
         """
         Sets the valor_pontuacao of this PessoaJuridicaAprovadaResponse.
-        Indica o valor da pontua\u00C3\u00A7\u00C3\u00A3o atribuido ao cliente (caso n\u00C3\u00A3o informado ser\u00C3\u00A1 atribuido o valor = 0)
+        Indica o valor da pontua\u00E7\u00E3o atribuido ao cliente (caso n\u00E3o informado ser\u00E1 atribuido o valor = 0)
 
         :param valor_pontuacao: The valor_pontuacao of this PessoaJuridicaAprovadaResponse.
         :type: int
@@ -515,7 +515,7 @@ class PessoaJuridicaAprovadaResponse(object):
     def enderecos(self):
         """
         Gets the enderecos of this PessoaJuridicaAprovadaResponse.
-        Pode ser informado os seguintes tipos de endere\u00C3\u00A7o: Residencial, Comercial, e Outros
+        Pode ser informado os seguintes tipos de endere\u00E7o: Residencial, Comercial, e Outros
 
         :return: The enderecos of this PessoaJuridicaAprovadaResponse.
         :rtype: list[EnderecoAprovadoResponse]
@@ -526,7 +526,7 @@ class PessoaJuridicaAprovadaResponse(object):
     def enderecos(self, enderecos):
         """
         Sets the enderecos of this PessoaJuridicaAprovadaResponse.
-        Pode ser informado os seguintes tipos de endere\u00C3\u00A7o: Residencial, Comercial, e Outros
+        Pode ser informado os seguintes tipos de endere\u00E7o: Residencial, Comercial, e Outros
 
         :param enderecos: The enderecos of this PessoaJuridicaAprovadaResponse.
         :type: list[EnderecoAprovadoResponse]
@@ -537,7 +537,7 @@ class PessoaJuridicaAprovadaResponse(object):
     def socios(self):
         """
         Gets the socios of this PessoaJuridicaAprovadaResponse.
-        Apresenta os dados dos s\u00C3\u00B3cios da empresa, caso exista
+        Apresenta os dados dos s\u00F3cios da empresa, caso exista
 
         :return: The socios of this PessoaJuridicaAprovadaResponse.
         :rtype: list[SocioAprovadoResponse]
@@ -548,7 +548,7 @@ class PessoaJuridicaAprovadaResponse(object):
     def socios(self, socios):
         """
         Sets the socios of this PessoaJuridicaAprovadaResponse.
-        Apresenta os dados dos s\u00C3\u00B3cios da empresa, caso exista
+        Apresenta os dados dos s\u00F3cios da empresa, caso exista
 
         :param socios: The socios of this PessoaJuridicaAprovadaResponse.
         :type: list[SocioAprovadoResponse]
@@ -559,7 +559,7 @@ class PessoaJuridicaAprovadaResponse(object):
     def referencias(self):
         """
         Gets the referencias of this PessoaJuridicaAprovadaResponse.
-        Apresenta os dados dos s\u00C3\u00B3cios da empresa, caso exista
+        Apresenta os dados dos s\u00F3cios da empresa, caso exista
 
         :return: The referencias of this PessoaJuridicaAprovadaResponse.
         :rtype: list[ReferenciaComercialAprovadoResponse]
@@ -570,7 +570,7 @@ class PessoaJuridicaAprovadaResponse(object):
     def referencias(self, referencias):
         """
         Sets the referencias of this PessoaJuridicaAprovadaResponse.
-        Apresenta os dados dos s\u00C3\u00B3cios da empresa, caso exista
+        Apresenta os dados dos s\u00F3cios da empresa, caso exista
 
         :param referencias: The referencias of this PessoaJuridicaAprovadaResponse.
         :type: list[ReferenciaComercialAprovadoResponse]
@@ -603,7 +603,7 @@ class PessoaJuridicaAprovadaResponse(object):
     def limite_maximo(self):
         """
         Gets the limite_maximo of this PessoaJuridicaAprovadaResponse.
-        Valor m\u00C3\u00A1ximo do limite de cr\u00C3\u00A9dito para realizar transa\u00C3\u00A7\u00C3\u00B5es
+        Valor m\u00E1ximo do limite de cr\u00E9dito para realizar transa\u00E7\u00F5es
 
         :return: The limite_maximo of this PessoaJuridicaAprovadaResponse.
         :rtype: float
@@ -614,7 +614,7 @@ class PessoaJuridicaAprovadaResponse(object):
     def limite_maximo(self, limite_maximo):
         """
         Sets the limite_maximo of this PessoaJuridicaAprovadaResponse.
-        Valor m\u00C3\u00A1ximo do limite de cr\u00C3\u00A9dito para realizar transa\u00C3\u00A7\u00C3\u00B5es
+        Valor m\u00E1ximo do limite de cr\u00E9dito para realizar transa\u00E7\u00F5es
 
         :param limite_maximo: The limite_maximo of this PessoaJuridicaAprovadaResponse.
         :type: float
@@ -625,7 +625,7 @@ class PessoaJuridicaAprovadaResponse(object):
     def limite_parcelas(self):
         """
         Gets the limite_parcelas of this PessoaJuridicaAprovadaResponse.
-        Valor do limite de cr\u00C3\u00A9dito acumulado da soma das parcelas das compras
+        Valor do limite de cr\u00E9dito acumulado da soma das parcelas das compras
 
         :return: The limite_parcelas of this PessoaJuridicaAprovadaResponse.
         :rtype: float
@@ -636,7 +636,7 @@ class PessoaJuridicaAprovadaResponse(object):
     def limite_parcelas(self, limite_parcelas):
         """
         Sets the limite_parcelas of this PessoaJuridicaAprovadaResponse.
-        Valor do limite de cr\u00C3\u00A9dito acumulado da soma das parcelas das compras
+        Valor do limite de cr\u00E9dito acumulado da soma das parcelas das compras
 
         :param limite_parcelas: The limite_parcelas of this PessoaJuridicaAprovadaResponse.
         :type: float

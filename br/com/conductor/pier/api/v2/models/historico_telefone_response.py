@@ -62,7 +62,7 @@ class HistoricoTelefoneResponse(object):
     def id(self):
         """
         Gets the id of this HistoricoTelefoneResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Telefone (id).
+        C\u00F3digo de Identifica\u00E7\u00E3o do Telefone (id).
 
         :return: The id of this HistoricoTelefoneResponse.
         :rtype: int
@@ -73,7 +73,7 @@ class HistoricoTelefoneResponse(object):
     def id(self, id):
         """
         Sets the id of this HistoricoTelefoneResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Telefone (id).
+        C\u00F3digo de Identifica\u00E7\u00E3o do Telefone (id).
 
         :param id: The id of this HistoricoTelefoneResponse.
         :type: int
@@ -84,7 +84,7 @@ class HistoricoTelefoneResponse(object):
     def telefone(self):
         """
         Gets the telefone of this HistoricoTelefoneResponse.
-        Apresenta o N\u00C3\u00BAmero do telefone.
+        Apresenta o N\u00FAmero do telefone.
 
         :return: The telefone of this HistoricoTelefoneResponse.
         :rtype: str
@@ -95,7 +95,7 @@ class HistoricoTelefoneResponse(object):
     def telefone(self, telefone):
         """
         Sets the telefone of this HistoricoTelefoneResponse.
-        Apresenta o N\u00C3\u00BAmero do telefone.
+        Apresenta o N\u00FAmero do telefone.
 
         :param telefone: The telefone of this HistoricoTelefoneResponse.
         :type: str
@@ -128,7 +128,7 @@ class HistoricoTelefoneResponse(object):
     def tipo_telefone(self):
         """
         Gets the tipo_telefone of this HistoricoTelefoneResponse.
-        Apresenta a descri\u00C3\u00A7\u00C3\u00A3o do tipo do telefone.
+        Apresenta a descri\u00E7\u00E3o do tipo do telefone.
 
         :return: The tipo_telefone of this HistoricoTelefoneResponse.
         :rtype: str
@@ -139,7 +139,7 @@ class HistoricoTelefoneResponse(object):
     def tipo_telefone(self, tipo_telefone):
         """
         Sets the tipo_telefone of this HistoricoTelefoneResponse.
-        Apresenta a descri\u00C3\u00A7\u00C3\u00A3o do tipo do telefone.
+        Apresenta a descri\u00E7\u00E3o do tipo do telefone.
 
         :param tipo_telefone: The tipo_telefone of this HistoricoTelefoneResponse.
         :type: str

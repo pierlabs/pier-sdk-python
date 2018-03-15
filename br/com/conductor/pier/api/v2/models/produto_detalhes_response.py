@@ -65,7 +65,7 @@ class ProdutoDetalhesResponse(object):
     def id(self):
         """
         Gets the id of this ProdutoDetalhesResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Produto (id).
+        C\u00F3digo de Identifica\u00E7\u00E3o do Produto (id).
 
         :return: The id of this ProdutoDetalhesResponse.
         :rtype: int
@@ -76,7 +76,7 @@ class ProdutoDetalhesResponse(object):
     def id(self, id):
         """
         Sets the id of this ProdutoDetalhesResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Produto (id).
+        C\u00F3digo de Identifica\u00E7\u00E3o do Produto (id).
 
         :param id: The id of this ProdutoDetalhesResponse.
         :type: int
@@ -87,7 +87,7 @@ class ProdutoDetalhesResponse(object):
     def nome(self):
         """
         Gets the nome of this ProdutoDetalhesResponse.
-        Descri\u00C3\u00A7\u00C3\u00A3o do Nome do Produto.
+        Descri\u00E7\u00E3o do Nome do Produto.
 
         :return: The nome of this ProdutoDetalhesResponse.
         :rtype: str
@@ -98,7 +98,7 @@ class ProdutoDetalhesResponse(object):
     def nome(self, nome):
         """
         Sets the nome of this ProdutoDetalhesResponse.
-        Descri\u00C3\u00A7\u00C3\u00A3o do Nome do Produto.
+        Descri\u00E7\u00E3o do Nome do Produto.
 
         :param nome: The nome of this ProdutoDetalhesResponse.
         :type: str
@@ -131,7 +131,7 @@ class ProdutoDetalhesResponse(object):
     def id_fantasia_basica(self):
         """
         Gets the id_fantasia_basica of this ProdutoDetalhesResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Fantasia B\u00C3\u00A1sica (id) a qual o produto pertence.
+        C\u00F3digo de Identifica\u00E7\u00E3o da Fantasia B\u00E1sica (id) a qual o produto pertence.
 
         :return: The id_fantasia_basica of this ProdutoDetalhesResponse.
         :rtype: int
@@ -142,7 +142,7 @@ class ProdutoDetalhesResponse(object):
     def id_fantasia_basica(self, id_fantasia_basica):
         """
         Sets the id_fantasia_basica of this ProdutoDetalhesResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da Fantasia B\u00C3\u00A1sica (id) a qual o produto pertence.
+        C\u00F3digo de Identifica\u00E7\u00E3o da Fantasia B\u00E1sica (id) a qual o produto pertence.
 
         :param id_fantasia_basica: The id_fantasia_basica of this ProdutoDetalhesResponse.
         :type: int
@@ -153,7 +153,7 @@ class ProdutoDetalhesResponse(object):
     def fantasia_basica(self):
         """
         Gets the fantasia_basica of this ProdutoDetalhesResponse.
-        Descri\u00C3\u00A7\u00C3\u00A3o da Fantasia B\u00C3\u00A1sica a qual o produto pertence.
+        Descri\u00E7\u00E3o da Fantasia B\u00E1sica a qual o produto pertence.
 
         :return: The fantasia_basica of this ProdutoDetalhesResponse.
         :rtype: str
@@ -164,7 +164,7 @@ class ProdutoDetalhesResponse(object):
     def fantasia_basica(self, fantasia_basica):
         """
         Sets the fantasia_basica of this ProdutoDetalhesResponse.
-        Descri\u00C3\u00A7\u00C3\u00A3o da Fantasia B\u00C3\u00A1sica a qual o produto pertence.
+        Descri\u00E7\u00E3o da Fantasia B\u00E1sica a qual o produto pertence.
 
         :param fantasia_basica: The fantasia_basica of this ProdutoDetalhesResponse.
         :type: str
@@ -175,7 +175,7 @@ class ProdutoDetalhesResponse(object):
     def uso_exterior(self):
         """
         Gets the uso_exterior of this ProdutoDetalhesResponse.
-        Par\u00C3\u00A2metro que indica se o produto est\u00C3\u00A1 habilitado para compras no exterior.
+        Par\u00E2metro que indica se o produto est\u00E1 habilitado para compras no exterior.
 
         :return: The uso_exterior of this ProdutoDetalhesResponse.
         :rtype: bool
@@ -186,7 +186,7 @@ class ProdutoDetalhesResponse(object):
     def uso_exterior(self, uso_exterior):
         """
         Sets the uso_exterior of this ProdutoDetalhesResponse.
-        Par\u00C3\u00A2metro que indica se o produto est\u00C3\u00A1 habilitado para compras no exterior.
+        Par\u00E2metro que indica se o produto est\u00E1 habilitado para compras no exterior.
 
         :param uso_exterior: The uso_exterior of this ProdutoDetalhesResponse.
         :type: bool

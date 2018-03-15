@@ -96,7 +96,7 @@ class EmprestimoPessoalResponse(object):
     def valor_solicitado(self):
         """
         Gets the valor_solicitado of this EmprestimoPessoalResponse.
-        Valor solicitado do empr\u00C3\u00A9stimo/financiamento
+        Valor solicitado do empr\u00E9stimo/financiamento
 
         :return: The valor_solicitado of this EmprestimoPessoalResponse.
         :rtype: float
@@ -107,7 +107,7 @@ class EmprestimoPessoalResponse(object):
     def valor_solicitado(self, valor_solicitado):
         """
         Sets the valor_solicitado of this EmprestimoPessoalResponse.
-        Valor solicitado do empr\u00C3\u00A9stimo/financiamento
+        Valor solicitado do empr\u00E9stimo/financiamento
 
         :param valor_solicitado: The valor_solicitado of this EmprestimoPessoalResponse.
         :type: float
@@ -118,7 +118,7 @@ class EmprestimoPessoalResponse(object):
     def valor_maximo_solicitacao(self):
         """
         Gets the valor_maximo_solicitacao of this EmprestimoPessoalResponse.
-        Valor m\u00C3\u00A1ximo de empr\u00C3\u00A9stimo pelo valor limite de parcela
+        Valor m\u00E1ximo de empr\u00E9stimo pelo valor limite de parcela
 
         :return: The valor_maximo_solicitacao of this EmprestimoPessoalResponse.
         :rtype: float
@@ -129,7 +129,7 @@ class EmprestimoPessoalResponse(object):
     def valor_maximo_solicitacao(self, valor_maximo_solicitacao):
         """
         Sets the valor_maximo_solicitacao of this EmprestimoPessoalResponse.
-        Valor m\u00C3\u00A1ximo de empr\u00C3\u00A9stimo pelo valor limite de parcela
+        Valor m\u00E1ximo de empr\u00E9stimo pelo valor limite de parcela
 
         :param valor_maximo_solicitacao: The valor_maximo_solicitacao of this EmprestimoPessoalResponse.
         :type: float
@@ -140,7 +140,7 @@ class EmprestimoPessoalResponse(object):
     def numero_parcelas(self):
         """
         Gets the numero_parcelas of this EmprestimoPessoalResponse.
-        N\u00C3\u00BAmero de parcelas solicitado
+        N\u00FAmero de parcelas solicitado
 
         :return: The numero_parcelas of this EmprestimoPessoalResponse.
         :rtype: int
@@ -151,7 +151,7 @@ class EmprestimoPessoalResponse(object):
     def numero_parcelas(self, numero_parcelas):
         """
         Sets the numero_parcelas of this EmprestimoPessoalResponse.
-        N\u00C3\u00BAmero de parcelas solicitado
+        N\u00FAmero de parcelas solicitado
 
         :param numero_parcelas: The numero_parcelas of this EmprestimoPessoalResponse.
         :type: int
@@ -162,7 +162,7 @@ class EmprestimoPessoalResponse(object):
     def valor_maximo_parcela(self):
         """
         Gets the valor_maximo_parcela of this EmprestimoPessoalResponse.
-        Limite m\u00C3\u00A1ximo de parcela permitido
+        Limite m\u00E1ximo de parcela permitido
 
         :return: The valor_maximo_parcela of this EmprestimoPessoalResponse.
         :rtype: float
@@ -173,7 +173,7 @@ class EmprestimoPessoalResponse(object):
     def valor_maximo_parcela(self, valor_maximo_parcela):
         """
         Sets the valor_maximo_parcela of this EmprestimoPessoalResponse.
-        Limite m\u00C3\u00A1ximo de parcela permitido
+        Limite m\u00E1ximo de parcela permitido
 
         :param valor_maximo_parcela: The valor_maximo_parcela of this EmprestimoPessoalResponse.
         :type: float
@@ -206,7 +206,7 @@ class EmprestimoPessoalResponse(object):
     def periodo_taxa(self):
         """
         Gets the periodo_taxa of this EmprestimoPessoalResponse.
-        Per\u00C3\u00ADodo de aplica da taxa de juros
+        Per\u00EDodo de aplica da taxa de juros
 
         :return: The periodo_taxa of this EmprestimoPessoalResponse.
         :rtype: str
@@ -217,7 +217,7 @@ class EmprestimoPessoalResponse(object):
     def periodo_taxa(self, periodo_taxa):
         """
         Sets the periodo_taxa of this EmprestimoPessoalResponse.
-        Per\u00C3\u00ADodo de aplica da taxa de juros
+        Per\u00EDodo de aplica da taxa de juros
 
         :param periodo_taxa: The periodo_taxa of this EmprestimoPessoalResponse.
         :type: str
@@ -228,7 +228,7 @@ class EmprestimoPessoalResponse(object):
     def sistema_amortizacao(self):
         """
         Gets the sistema_amortizacao of this EmprestimoPessoalResponse.
-        Sistema para amortiza\u00C3\u00A7\u00C3\u00A3o do valor das parcelas
+        Sistema para amortiza\u00E7\u00E3o do valor das parcelas
 
         :return: The sistema_amortizacao of this EmprestimoPessoalResponse.
         :rtype: str
@@ -239,7 +239,7 @@ class EmprestimoPessoalResponse(object):
     def sistema_amortizacao(self, sistema_amortizacao):
         """
         Sets the sistema_amortizacao of this EmprestimoPessoalResponse.
-        Sistema para amortiza\u00C3\u00A7\u00C3\u00A3o do valor das parcelas
+        Sistema para amortiza\u00E7\u00E3o do valor das parcelas
 
         :param sistema_amortizacao: The sistema_amortizacao of this EmprestimoPessoalResponse.
         :type: str

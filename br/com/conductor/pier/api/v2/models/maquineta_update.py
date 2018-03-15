@@ -59,7 +59,7 @@ class MaquinetaUpdate(object):
     def id_terminal(self):
         """
         Gets the id_terminal of this MaquinetaUpdate.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Terminal (id).
+        C\u00F3digo de Identifica\u00E7\u00E3o do Terminal (id).
 
         :return: The id_terminal of this MaquinetaUpdate.
         :rtype: int
@@ -70,7 +70,7 @@ class MaquinetaUpdate(object):
     def id_terminal(self, id_terminal):
         """
         Sets the id_terminal of this MaquinetaUpdate.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Terminal (id).
+        C\u00F3digo de Identifica\u00E7\u00E3o do Terminal (id).
 
         :param id_terminal: The id_terminal of this MaquinetaUpdate.
         :type: int
@@ -81,7 +81,7 @@ class MaquinetaUpdate(object):
     def id_tipo_maquineta(self):
         """
         Gets the id_tipo_maquineta of this MaquinetaUpdate.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Tipo Maquineta (id).
+        C\u00F3digo de Identifica\u00E7\u00E3o do Tipo Maquineta (id).
 
         :return: The id_tipo_maquineta of this MaquinetaUpdate.
         :rtype: int
@@ -92,7 +92,7 @@ class MaquinetaUpdate(object):
     def id_tipo_maquineta(self, id_tipo_maquineta):
         """
         Sets the id_tipo_maquineta of this MaquinetaUpdate.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Tipo Maquineta (id).
+        C\u00F3digo de Identifica\u00E7\u00E3o do Tipo Maquineta (id).
 
         :param id_tipo_maquineta: The id_tipo_maquineta of this MaquinetaUpdate.
         :type: int
@@ -103,7 +103,7 @@ class MaquinetaUpdate(object):
     def valor(self):
         """
         Gets the valor of this MaquinetaUpdate.
-        Valor de Manuten\u00C3\u00A7\u00C3\u00A3o da Maquineta.
+        Valor de Manuten\u00E7\u00E3o da Maquineta.
 
         :return: The valor of this MaquinetaUpdate.
         :rtype: float
@@ -114,7 +114,7 @@ class MaquinetaUpdate(object):
     def valor(self, valor):
         """
         Sets the valor of this MaquinetaUpdate.
-        Valor de Manuten\u00C3\u00A7\u00C3\u00A3o da Maquineta.
+        Valor de Manuten\u00E7\u00E3o da Maquineta.
 
         :param valor: The valor of this MaquinetaUpdate.
         :type: float
@@ -125,7 +125,7 @@ class MaquinetaUpdate(object):
     def data_hora_implantacao(self):
         """
         Gets the data_hora_implantacao of this MaquinetaUpdate.
-        Data da implanta\u00C3\u00A7\u00C3\u00A3o da Maquineta.
+        Data da implanta\u00E7\u00E3o da Maquineta.
 
         :return: The data_hora_implantacao of this MaquinetaUpdate.
         :rtype: str
@@ -136,7 +136,7 @@ class MaquinetaUpdate(object):
     def data_hora_implantacao(self, data_hora_implantacao):
         """
         Sets the data_hora_implantacao of this MaquinetaUpdate.
-        Data da implanta\u00C3\u00A7\u00C3\u00A3o da Maquineta.
+        Data da implanta\u00E7\u00E3o da Maquineta.
 
         :param data_hora_implantacao: The data_hora_implantacao of this MaquinetaUpdate.
         :type: str

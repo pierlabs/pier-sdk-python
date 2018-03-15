@@ -77,7 +77,7 @@ class ArquivoResponse(object):
     def id(self):
         """
         Gets the id of this ArquivoResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do arquivo
+        C\u00F3digo de identifica\u00E7\u00E3o do arquivo
 
         :return: The id of this ArquivoResponse.
         :rtype: int
@@ -88,7 +88,7 @@ class ArquivoResponse(object):
     def id(self, id):
         """
         Sets the id of this ArquivoResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do arquivo
+        C\u00F3digo de identifica\u00E7\u00E3o do arquivo
 
         :param id: The id of this ArquivoResponse.
         :type: int
@@ -99,7 +99,7 @@ class ArquivoResponse(object):
     def id_tipo_arquivo(self):
         """
         Gets the id_tipo_arquivo of this ArquivoResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do Tipo do arquivo
+        C\u00F3digo de identifica\u00E7\u00E3o do Tipo do arquivo
 
         :return: The id_tipo_arquivo of this ArquivoResponse.
         :rtype: int
@@ -110,7 +110,7 @@ class ArquivoResponse(object):
     def id_tipo_arquivo(self, id_tipo_arquivo):
         """
         Sets the id_tipo_arquivo of this ArquivoResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do Tipo do arquivo
+        C\u00F3digo de identifica\u00E7\u00E3o do Tipo do arquivo
 
         :param id_tipo_arquivo: The id_tipo_arquivo of this ArquivoResponse.
         :type: int
@@ -121,7 +121,7 @@ class ArquivoResponse(object):
     def nome_tipo_arquivo(self):
         """
         Gets the nome_tipo_arquivo of this ArquivoResponse.
-        Descri\u00C3\u00A7\u00C3\u00A3o do tipo do arquivo
+        Descri\u00E7\u00E3o do tipo do arquivo
 
         :return: The nome_tipo_arquivo of this ArquivoResponse.
         :rtype: str
@@ -132,7 +132,7 @@ class ArquivoResponse(object):
     def nome_tipo_arquivo(self, nome_tipo_arquivo):
         """
         Sets the nome_tipo_arquivo of this ArquivoResponse.
-        Descri\u00C3\u00A7\u00C3\u00A3o do tipo do arquivo
+        Descri\u00E7\u00E3o do tipo do arquivo
 
         :param nome_tipo_arquivo: The nome_tipo_arquivo of this ArquivoResponse.
         :type: str
@@ -143,7 +143,7 @@ class ArquivoResponse(object):
     def id_status_arquivo(self):
         """
         Gets the id_status_arquivo of this ArquivoResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do Status do arquivo
+        C\u00F3digo de identifica\u00E7\u00E3o do Status do arquivo
 
         :return: The id_status_arquivo of this ArquivoResponse.
         :rtype: int
@@ -154,7 +154,7 @@ class ArquivoResponse(object):
     def id_status_arquivo(self, id_status_arquivo):
         """
         Sets the id_status_arquivo of this ArquivoResponse.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do Status do arquivo
+        C\u00F3digo de identifica\u00E7\u00E3o do Status do arquivo
 
         :param id_status_arquivo: The id_status_arquivo of this ArquivoResponse.
         :type: int
@@ -165,7 +165,7 @@ class ArquivoResponse(object):
     def nome_status_arquivo(self):
         """
         Gets the nome_status_arquivo of this ArquivoResponse.
-        Desci\u00C3\u00A7\u00C3\u00A3o do status do arquivo
+        Desci\u00E7\u00E3o do status do arquivo
 
         :return: The nome_status_arquivo of this ArquivoResponse.
         :rtype: str
@@ -176,7 +176,7 @@ class ArquivoResponse(object):
     def nome_status_arquivo(self, nome_status_arquivo):
         """
         Sets the nome_status_arquivo of this ArquivoResponse.
-        Desci\u00C3\u00A7\u00C3\u00A3o do status do arquivo
+        Desci\u00E7\u00E3o do status do arquivo
 
         :param nome_status_arquivo: The nome_status_arquivo of this ArquivoResponse.
         :type: str
@@ -209,7 +209,7 @@ class ArquivoResponse(object):
     def extensao(self):
         """
         Gets the extensao of this ArquivoResponse.
-        Formato/Extens\u00C3\u00A3o do arquivo
+        Formato/Extens\u00E3o do arquivo
 
         :return: The extensao of this ArquivoResponse.
         :rtype: str
@@ -220,7 +220,7 @@ class ArquivoResponse(object):
     def extensao(self, extensao):
         """
         Sets the extensao of this ArquivoResponse.
-        Formato/Extens\u00C3\u00A3o do arquivo
+        Formato/Extens\u00E3o do arquivo
 
         :param extensao: The extensao of this ArquivoResponse.
         :type: str
@@ -231,7 +231,7 @@ class ArquivoResponse(object):
     def data_inclusao(self):
         """
         Gets the data_inclusao of this ArquivoResponse.
-        Data de inclus\u00C3\u00A3o do arquivo.
+        Data de inclus\u00E3o do arquivo.
 
         :return: The data_inclusao of this ArquivoResponse.
         :rtype: str
@@ -242,7 +242,7 @@ class ArquivoResponse(object):
     def data_inclusao(self, data_inclusao):
         """
         Sets the data_inclusao of this ArquivoResponse.
-        Data de inclus\u00C3\u00A3o do arquivo.
+        Data de inclus\u00E3o do arquivo.
 
         :param data_inclusao: The data_inclusao of this ArquivoResponse.
         :type: str
@@ -253,7 +253,7 @@ class ArquivoResponse(object):
     def data_alteracao(self):
         """
         Gets the data_alteracao of this ArquivoResponse.
-        Data da \u00C3\u00BAltima altera\u00C3\u00A7\u00C3\u00A3o do aquivo.
+        Data da \u00FAltima altera\u00E7\u00E3o do aquivo.
 
         :return: The data_alteracao of this ArquivoResponse.
         :rtype: str
@@ -264,7 +264,7 @@ class ArquivoResponse(object):
     def data_alteracao(self, data_alteracao):
         """
         Sets the data_alteracao of this ArquivoResponse.
-        Data da \u00C3\u00BAltima altera\u00C3\u00A7\u00C3\u00A3o do aquivo.
+        Data da \u00FAltima altera\u00E7\u00E3o do aquivo.
 
         :param data_alteracao: The data_alteracao of this ArquivoResponse.
         :type: str
@@ -275,7 +275,7 @@ class ArquivoResponse(object):
     def detalhes(self):
         """
         Gets the detalhes of this ArquivoResponse.
-        Detalhes contendo informa\u00C3\u00A7\u00C3\u00B5es adicionais, relacionadas ao arquivo.
+        Detalhes contendo informa\u00E7\u00F5es adicionais, relacionadas ao arquivo.
 
         :return: The detalhes of this ArquivoResponse.
         :rtype: list[ArquivoParametroResponse]
@@ -286,7 +286,7 @@ class ArquivoResponse(object):
     def detalhes(self, detalhes):
         """
         Sets the detalhes of this ArquivoResponse.
-        Detalhes contendo informa\u00C3\u00A7\u00C3\u00B5es adicionais, relacionadas ao arquivo.
+        Detalhes contendo informa\u00E7\u00F5es adicionais, relacionadas ao arquivo.
 
         :param detalhes: The detalhes of this ArquivoResponse.
         :type: list[ArquivoParametroResponse]

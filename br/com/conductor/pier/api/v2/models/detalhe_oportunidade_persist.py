@@ -53,7 +53,7 @@ class DetalheOportunidadePersist(object):
     def nome_campo(self):
         """
         Gets the nome_campo of this DetalheOportunidadePersist.
-        Nome do conte\u00C3\u00BAdo
+        Nome do conte\u00FAdo
 
         :return: The nome_campo of this DetalheOportunidadePersist.
         :rtype: str
@@ -64,7 +64,7 @@ class DetalheOportunidadePersist(object):
     def nome_campo(self, nome_campo):
         """
         Sets the nome_campo of this DetalheOportunidadePersist.
-        Nome do conte\u00C3\u00BAdo
+        Nome do conte\u00FAdo
 
         :param nome_campo: The nome_campo of this DetalheOportunidadePersist.
         :type: str
@@ -75,7 +75,7 @@ class DetalheOportunidadePersist(object):
     def conteudo(self):
         """
         Gets the conteudo of this DetalheOportunidadePersist.
-        Conte\u00C3\u00BAdo do detalhe
+        Conte\u00FAdo do detalhe
 
         :return: The conteudo of this DetalheOportunidadePersist.
         :rtype: str
@@ -86,7 +86,7 @@ class DetalheOportunidadePersist(object):
     def conteudo(self, conteudo):
         """
         Sets the conteudo of this DetalheOportunidadePersist.
-        Conte\u00C3\u00BAdo do detalhe
+        Conte\u00FAdo do detalhe
 
         :param conteudo: The conteudo of this DetalheOportunidadePersist.
         :type: str

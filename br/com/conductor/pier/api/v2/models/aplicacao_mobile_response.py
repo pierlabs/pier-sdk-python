@@ -181,7 +181,7 @@ class AplicacaoMobileResponse(object):
     def icone(self):
         """
         Gets the icone of this AplicacaoMobileResponse.
-        Apresenta o icone da mensagem da aplica\u00C3\u00A7\u00C3\u00A3o.
+        Apresenta o icone da mensagem da aplica\u00E7\u00E3o.
 
         :return: The icone of this AplicacaoMobileResponse.
         :rtype: str
@@ -192,7 +192,7 @@ class AplicacaoMobileResponse(object):
     def icone(self, icone):
         """
         Sets the icone of this AplicacaoMobileResponse.
-        Apresenta o icone da mensagem da aplica\u00C3\u00A7\u00C3\u00A3o.
+        Apresenta o icone da mensagem da aplica\u00E7\u00E3o.
 
         :param icone: The icone of this AplicacaoMobileResponse.
         :type: str
@@ -203,7 +203,7 @@ class AplicacaoMobileResponse(object):
     def certificado_base64(self):
         """
         Gets the certificado_base64 of this AplicacaoMobileResponse.
-        Apresenta o certificado da aplica\u00C3\u00A7\u00C3\u00A3o.
+        Apresenta o certificado da aplica\u00E7\u00E3o.
 
         :return: The certificado_base64 of this AplicacaoMobileResponse.
         :rtype: str
@@ -214,7 +214,7 @@ class AplicacaoMobileResponse(object):
     def certificado_base64(self, certificado_base64):
         """
         Sets the certificado_base64 of this AplicacaoMobileResponse.
-        Apresenta o certificado da aplica\u00C3\u00A7\u00C3\u00A3o.
+        Apresenta o certificado da aplica\u00E7\u00E3o.
 
         :param certificado_base64: The certificado_base64 of this AplicacaoMobileResponse.
         :type: str
@@ -225,7 +225,7 @@ class AplicacaoMobileResponse(object):
     def senha(self):
         """
         Gets the senha of this AplicacaoMobileResponse.
-        Apresenta a senha da aplica\u00C3\u00A7\u00C3\u00A3o.
+        Apresenta a senha da aplica\u00E7\u00E3o.
 
         :return: The senha of this AplicacaoMobileResponse.
         :rtype: str
@@ -236,7 +236,7 @@ class AplicacaoMobileResponse(object):
     def senha(self, senha):
         """
         Sets the senha of this AplicacaoMobileResponse.
-        Apresenta a senha da aplica\u00C3\u00A7\u00C3\u00A3o.
+        Apresenta a senha da aplica\u00E7\u00E3o.
 
         :param senha: The senha of this AplicacaoMobileResponse.
         :type: str

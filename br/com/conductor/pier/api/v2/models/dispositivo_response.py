@@ -103,7 +103,7 @@ class DispositivoResponse(object):
     def id_aplicacao_mobile(self):
         """
         Gets the id_aplicacao_mobile of this DispositivoResponse.
-        Identificador da Aplica\u00C3\u00A7\u00C3\u00A3o.
+        Identificador da Aplica\u00E7\u00E3o.
 
         :return: The id_aplicacao_mobile of this DispositivoResponse.
         :rtype: int
@@ -114,7 +114,7 @@ class DispositivoResponse(object):
     def id_aplicacao_mobile(self, id_aplicacao_mobile):
         """
         Sets the id_aplicacao_mobile of this DispositivoResponse.
-        Identificador da Aplica\u00C3\u00A7\u00C3\u00A3o.
+        Identificador da Aplica\u00E7\u00E3o.
 
         :param id_aplicacao_mobile: The id_aplicacao_mobile of this DispositivoResponse.
         :type: int
@@ -125,7 +125,7 @@ class DispositivoResponse(object):
     def id_usuario(self):
         """
         Gets the id_usuario of this DispositivoResponse.
-        Identificador do usu\u00C3\u00A1rio.
+        Identificador do usu\u00E1rio.
 
         :return: The id_usuario of this DispositivoResponse.
         :rtype: int
@@ -136,7 +136,7 @@ class DispositivoResponse(object):
     def id_usuario(self, id_usuario):
         """
         Sets the id_usuario of this DispositivoResponse.
-        Identificador do usu\u00C3\u00A1rio.
+        Identificador do usu\u00E1rio.
 
         :param id_usuario: The id_usuario of this DispositivoResponse.
         :type: int

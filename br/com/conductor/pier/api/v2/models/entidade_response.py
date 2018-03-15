@@ -56,7 +56,7 @@ class EntidadeResponse(object):
     def id(self):
         """
         Gets the id of this EntidadeResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da entidade.
+        C\u00F3digo de Identifica\u00E7\u00E3o da entidade.
 
         :return: The id of this EntidadeResponse.
         :rtype: int
@@ -67,7 +67,7 @@ class EntidadeResponse(object):
     def id(self, id):
         """
         Sets the id of this EntidadeResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o da entidade.
+        C\u00F3digo de Identifica\u00E7\u00E3o da entidade.
 
         :param id: The id of this EntidadeResponse.
         :type: int
@@ -78,7 +78,7 @@ class EntidadeResponse(object):
     def descricao(self):
         """
         Gets the descricao of this EntidadeResponse.
-        Descri\u00C3\u00A7\u00C3\u00A3o da entidade.
+        Descri\u00E7\u00E3o da entidade.
 
         :return: The descricao of this EntidadeResponse.
         :rtype: str
@@ -89,7 +89,7 @@ class EntidadeResponse(object):
     def descricao(self, descricao):
         """
         Sets the descricao of this EntidadeResponse.
-        Descri\u00C3\u00A7\u00C3\u00A3o da entidade.
+        Descri\u00E7\u00E3o da entidade.
 
         :param descricao: The descricao of this EntidadeResponse.
         :type: str
@@ -100,7 +100,7 @@ class EntidadeResponse(object):
     def flag_ativo(self):
         """
         Gets the flag_ativo of this EntidadeResponse.
-        Flag que indica se a entidade est\u00C3\u00A1 ativa.
+        Flag que indica se a entidade est\u00E1 ativa.
 
         :return: The flag_ativo of this EntidadeResponse.
         :rtype: bool
@@ -111,7 +111,7 @@ class EntidadeResponse(object):
     def flag_ativo(self, flag_ativo):
         """
         Sets the flag_ativo of this EntidadeResponse.
-        Flag que indica se a entidade est\u00C3\u00A1 ativa.
+        Flag que indica se a entidade est\u00E1 ativa.
 
         :param flag_ativo: The flag_ativo of this EntidadeResponse.
         :type: bool

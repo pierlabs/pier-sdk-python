@@ -38,7 +38,7 @@ class EstabelecimentoPersist(object):
         """
         self.swagger_types = {
             'flag_matriz': 'int',
-            'id_credor': 'int',
+            'id_grupo_economico': 'int',
             'numero_receita_federal': 'str',
             'nome': 'str',
             'descricao': 'str',
@@ -80,7 +80,7 @@ class EstabelecimentoPersist(object):
 
         self.attribute_map = {
             'flag_matriz': 'flagMatriz',
-            'id_credor': 'idCredor',
+            'id_grupo_economico': 'idGrupoEconomico',
             'numero_receita_federal': 'numeroReceitaFederal',
             'nome': 'nome',
             'descricao': 'descricao',
@@ -121,7 +121,7 @@ class EstabelecimentoPersist(object):
         }
 
         self._flag_matriz = None
-        self._id_credor = None
+        self._id_grupo_economico = None
         self._numero_receita_federal = None
         self._nome = None
         self._descricao = None
@@ -164,7 +164,7 @@ class EstabelecimentoPersist(object):
     def flag_matriz(self):
         """
         Gets the flag_matriz of this EstabelecimentoPersist.
-        Indica se \u00C3\u00A9 matriz ou filial.
+        Indica se \u00E9 matriz ou filial.
 
         :return: The flag_matriz of this EstabelecimentoPersist.
         :rtype: int
@@ -175,7 +175,7 @@ class EstabelecimentoPersist(object):
     def flag_matriz(self, flag_matriz):
         """
         Sets the flag_matriz of this EstabelecimentoPersist.
-        Indica se \u00C3\u00A9 matriz ou filial.
+        Indica se \u00E9 matriz ou filial.
 
         :param flag_matriz: The flag_matriz of this EstabelecimentoPersist.
         :type: int
@@ -183,32 +183,32 @@ class EstabelecimentoPersist(object):
         self._flag_matriz = flag_matriz
 
     @property
-    def id_credor(self):
+    def id_grupo_economico(self):
         """
-        Gets the id_credor of this EstabelecimentoPersist.
-        Apresenta o n\u00C3\u00BAmero de identifica\u00C3\u00A7\u00C3\u00A3o do Credor.
+        Gets the id_grupo_economico of this EstabelecimentoPersist.
+        Apresenta o n\u00FAmero de identifica\u00E7\u00E3o do Grupo Econ\u00F4mico.
 
-        :return: The id_credor of this EstabelecimentoPersist.
+        :return: The id_grupo_economico of this EstabelecimentoPersist.
         :rtype: int
         """
-        return self._id_credor
+        return self._id_grupo_economico
 
-    @id_credor.setter
-    def id_credor(self, id_credor):
+    @id_grupo_economico.setter
+    def id_grupo_economico(self, id_grupo_economico):
         """
-        Sets the id_credor of this EstabelecimentoPersist.
-        Apresenta o n\u00C3\u00BAmero de identifica\u00C3\u00A7\u00C3\u00A3o do Credor.
+        Sets the id_grupo_economico of this EstabelecimentoPersist.
+        Apresenta o n\u00FAmero de identifica\u00E7\u00E3o do Grupo Econ\u00F4mico.
 
-        :param id_credor: The id_credor of this EstabelecimentoPersist.
+        :param id_grupo_economico: The id_grupo_economico of this EstabelecimentoPersist.
         :type: int
         """
-        self._id_credor = id_credor
+        self._id_grupo_economico = id_grupo_economico
 
     @property
     def numero_receita_federal(self):
         """
         Gets the numero_receita_federal of this EstabelecimentoPersist.
-        Apresenta o n\u00C3\u00BAmero de identifica\u00C3\u00A7\u00C3\u00A3o do Estabelecimento na Receita Federal.
+        Apresenta o n\u00FAmero de identifica\u00E7\u00E3o do Estabelecimento na Receita Federal.
 
         :return: The numero_receita_federal of this EstabelecimentoPersist.
         :rtype: str
@@ -219,7 +219,7 @@ class EstabelecimentoPersist(object):
     def numero_receita_federal(self, numero_receita_federal):
         """
         Sets the numero_receita_federal of this EstabelecimentoPersist.
-        Apresenta o n\u00C3\u00BAmero de identifica\u00C3\u00A7\u00C3\u00A3o do Estabelecimento na Receita Federal.
+        Apresenta o n\u00FAmero de identifica\u00E7\u00E3o do Estabelecimento na Receita Federal.
 
         :param numero_receita_federal: The numero_receita_federal of this EstabelecimentoPersist.
         :type: str
@@ -252,7 +252,7 @@ class EstabelecimentoPersist(object):
     def descricao(self):
         """
         Gets the descricao of this EstabelecimentoPersist.
-        Raz\u00C3\u00A3o Social do Estabelecimento.
+        Raz\u00E3o Social do Estabelecimento.
 
         :return: The descricao of this EstabelecimentoPersist.
         :rtype: str
@@ -263,7 +263,7 @@ class EstabelecimentoPersist(object):
     def descricao(self, descricao):
         """
         Sets the descricao of this EstabelecimentoPersist.
-        Raz\u00C3\u00A3o Social do Estabelecimento.
+        Raz\u00E3o Social do Estabelecimento.
 
         :param descricao: The descricao of this EstabelecimentoPersist.
         :type: str
@@ -274,7 +274,7 @@ class EstabelecimentoPersist(object):
     def nome_fantasia(self):
         """
         Gets the nome_fantasia of this EstabelecimentoPersist.
-        T\u00C3\u00ADtulo Comercial do Estabelecimento.
+        T\u00EDtulo Comercial do Estabelecimento.
 
         :return: The nome_fantasia of this EstabelecimentoPersist.
         :rtype: str
@@ -285,7 +285,7 @@ class EstabelecimentoPersist(object):
     def nome_fantasia(self, nome_fantasia):
         """
         Sets the nome_fantasia of this EstabelecimentoPersist.
-        T\u00C3\u00ADtulo Comercial do Estabelecimento.
+        T\u00EDtulo Comercial do Estabelecimento.
 
         :param nome_fantasia: The nome_fantasia of this EstabelecimentoPersist.
         :type: str
@@ -296,7 +296,7 @@ class EstabelecimentoPersist(object):
     def cep(self):
         """
         Gets the cep of this EstabelecimentoPersist.
-        C\u00C3\u00B3digo de Endere\u00C3\u00A7amento Postal (CEP).
+        C\u00F3digo de Endere\u00E7amento Postal (CEP).
 
         :return: The cep of this EstabelecimentoPersist.
         :rtype: str
@@ -307,7 +307,7 @@ class EstabelecimentoPersist(object):
     def cep(self, cep):
         """
         Sets the cep of this EstabelecimentoPersist.
-        C\u00C3\u00B3digo de Endere\u00C3\u00A7amento Postal (CEP).
+        C\u00F3digo de Endere\u00E7amento Postal (CEP).
 
         :param cep: The cep of this EstabelecimentoPersist.
         :type: str
@@ -340,7 +340,7 @@ class EstabelecimentoPersist(object):
     def numero_endereco(self):
         """
         Gets the numero_endereco of this EstabelecimentoPersist.
-        N\u00C3\u00BAmero do endere\u00C3\u00A7o.
+        N\u00FAmero do endere\u00E7o.
 
         :return: The numero_endereco of this EstabelecimentoPersist.
         :rtype: int
@@ -351,7 +351,7 @@ class EstabelecimentoPersist(object):
     def numero_endereco(self, numero_endereco):
         """
         Sets the numero_endereco of this EstabelecimentoPersist.
-        N\u00C3\u00BAmero do endere\u00C3\u00A7o.
+        N\u00FAmero do endere\u00E7o.
 
         :param numero_endereco: The numero_endereco of this EstabelecimentoPersist.
         :type: int
@@ -362,7 +362,7 @@ class EstabelecimentoPersist(object):
     def bairro(self):
         """
         Gets the bairro of this EstabelecimentoPersist.
-        Nome do bairro do endere\u00C3\u00A7o.
+        Nome do bairro do endere\u00E7o.
 
         :return: The bairro of this EstabelecimentoPersist.
         :rtype: str
@@ -373,7 +373,7 @@ class EstabelecimentoPersist(object):
     def bairro(self, bairro):
         """
         Sets the bairro of this EstabelecimentoPersist.
-        Nome do bairro do endere\u00C3\u00A7o.
+        Nome do bairro do endere\u00E7o.
 
         :param bairro: The bairro of this EstabelecimentoPersist.
         :type: str
@@ -384,7 +384,7 @@ class EstabelecimentoPersist(object):
     def cidade(self):
         """
         Gets the cidade of this EstabelecimentoPersist.
-        Nome da cidade do endere\u00C3\u00A7o.
+        Nome da cidade do endere\u00E7o.
 
         :return: The cidade of this EstabelecimentoPersist.
         :rtype: str
@@ -395,7 +395,7 @@ class EstabelecimentoPersist(object):
     def cidade(self, cidade):
         """
         Sets the cidade of this EstabelecimentoPersist.
-        Nome da cidade do endere\u00C3\u00A7o.
+        Nome da cidade do endere\u00E7o.
 
         :param cidade: The cidade of this EstabelecimentoPersist.
         :type: str
@@ -406,7 +406,7 @@ class EstabelecimentoPersist(object):
     def complemento(self):
         """
         Gets the complemento of this EstabelecimentoPersist.
-        Descri\u00C3\u00A7\u00C3\u00B5es complementares referente ao endere\u00C3\u00A7o.
+        Descri\u00E7\u00F5es complementares referente ao endere\u00E7o.
 
         :return: The complemento of this EstabelecimentoPersist.
         :rtype: str
@@ -417,7 +417,7 @@ class EstabelecimentoPersist(object):
     def complemento(self, complemento):
         """
         Sets the complemento of this EstabelecimentoPersist.
-        Descri\u00C3\u00A7\u00C3\u00B5es complementares referente ao endere\u00C3\u00A7o.
+        Descri\u00E7\u00F5es complementares referente ao endere\u00E7o.
 
         :param complemento: The complemento of this EstabelecimentoPersist.
         :type: str
@@ -428,7 +428,7 @@ class EstabelecimentoPersist(object):
     def uf(self):
         """
         Gets the uf of this EstabelecimentoPersist.
-        Sigla de identifica\u00C3\u00A7\u00C3\u00A3o da Unidade Federativa do endere\u00C3\u00A7o.
+        Sigla de identifica\u00E7\u00E3o da Unidade Federativa do endere\u00E7o.
 
         :return: The uf of this EstabelecimentoPersist.
         :rtype: str
@@ -439,7 +439,7 @@ class EstabelecimentoPersist(object):
     def uf(self, uf):
         """
         Sets the uf of this EstabelecimentoPersist.
-        Sigla de identifica\u00C3\u00A7\u00C3\u00A3o da Unidade Federativa do endere\u00C3\u00A7o.
+        Sigla de identifica\u00E7\u00E3o da Unidade Federativa do endere\u00E7o.
 
         :param uf: The uf of this EstabelecimentoPersist.
         :type: str
@@ -450,7 +450,7 @@ class EstabelecimentoPersist(object):
     def cep2(self):
         """
         Gets the cep2 of this EstabelecimentoPersist.
-        C\u00C3\u00B3digo de Endere\u00C3\u00A7amento Postal (CEP).
+        C\u00F3digo de Endere\u00E7amento Postal (CEP).
 
         :return: The cep2 of this EstabelecimentoPersist.
         :rtype: str
@@ -461,7 +461,7 @@ class EstabelecimentoPersist(object):
     def cep2(self, cep2):
         """
         Sets the cep2 of this EstabelecimentoPersist.
-        C\u00C3\u00B3digo de Endere\u00C3\u00A7amento Postal (CEP).
+        C\u00F3digo de Endere\u00E7amento Postal (CEP).
 
         :param cep2: The cep2 of this EstabelecimentoPersist.
         :type: str
@@ -494,7 +494,7 @@ class EstabelecimentoPersist(object):
     def numero_endereco2(self):
         """
         Gets the numero_endereco2 of this EstabelecimentoPersist.
-        N\u00C3\u00BAmero do endere\u00C3\u00A7o.
+        N\u00FAmero do endere\u00E7o.
 
         :return: The numero_endereco2 of this EstabelecimentoPersist.
         :rtype: int
@@ -505,7 +505,7 @@ class EstabelecimentoPersist(object):
     def numero_endereco2(self, numero_endereco2):
         """
         Sets the numero_endereco2 of this EstabelecimentoPersist.
-        N\u00C3\u00BAmero do endere\u00C3\u00A7o.
+        N\u00FAmero do endere\u00E7o.
 
         :param numero_endereco2: The numero_endereco2 of this EstabelecimentoPersist.
         :type: int
@@ -516,7 +516,7 @@ class EstabelecimentoPersist(object):
     def bairro2(self):
         """
         Gets the bairro2 of this EstabelecimentoPersist.
-        Nome do bairro do endere\u00C3\u00A7o.
+        Nome do bairro do endere\u00E7o.
 
         :return: The bairro2 of this EstabelecimentoPersist.
         :rtype: str
@@ -527,7 +527,7 @@ class EstabelecimentoPersist(object):
     def bairro2(self, bairro2):
         """
         Sets the bairro2 of this EstabelecimentoPersist.
-        Nome do bairro do endere\u00C3\u00A7o.
+        Nome do bairro do endere\u00E7o.
 
         :param bairro2: The bairro2 of this EstabelecimentoPersist.
         :type: str
@@ -538,7 +538,7 @@ class EstabelecimentoPersist(object):
     def cidade2(self):
         """
         Gets the cidade2 of this EstabelecimentoPersist.
-        Nome da cidade do endere\u00C3\u00A7o.
+        Nome da cidade do endere\u00E7o.
 
         :return: The cidade2 of this EstabelecimentoPersist.
         :rtype: str
@@ -549,7 +549,7 @@ class EstabelecimentoPersist(object):
     def cidade2(self, cidade2):
         """
         Sets the cidade2 of this EstabelecimentoPersist.
-        Nome da cidade do endere\u00C3\u00A7o.
+        Nome da cidade do endere\u00E7o.
 
         :param cidade2: The cidade2 of this EstabelecimentoPersist.
         :type: str
@@ -560,7 +560,7 @@ class EstabelecimentoPersist(object):
     def complemento2(self):
         """
         Gets the complemento2 of this EstabelecimentoPersist.
-        Descri\u00C3\u00A7\u00C3\u00B5es complementares referente ao endere\u00C3\u00A7o.
+        Descri\u00E7\u00F5es complementares referente ao endere\u00E7o.
 
         :return: The complemento2 of this EstabelecimentoPersist.
         :rtype: str
@@ -571,7 +571,7 @@ class EstabelecimentoPersist(object):
     def complemento2(self, complemento2):
         """
         Sets the complemento2 of this EstabelecimentoPersist.
-        Descri\u00C3\u00A7\u00C3\u00B5es complementares referente ao endere\u00C3\u00A7o.
+        Descri\u00E7\u00F5es complementares referente ao endere\u00E7o.
 
         :param complemento2: The complemento2 of this EstabelecimentoPersist.
         :type: str
@@ -582,7 +582,7 @@ class EstabelecimentoPersist(object):
     def uf2(self):
         """
         Gets the uf2 of this EstabelecimentoPersist.
-        Sigla de identifica\u00C3\u00A7\u00C3\u00A3o da Unidade Federativa do endere\u00C3\u00A7o.
+        Sigla de identifica\u00E7\u00E3o da Unidade Federativa do endere\u00E7o.
 
         :return: The uf2 of this EstabelecimentoPersist.
         :rtype: str
@@ -593,7 +593,7 @@ class EstabelecimentoPersist(object):
     def uf2(self, uf2):
         """
         Sets the uf2 of this EstabelecimentoPersist.
-        Sigla de identifica\u00C3\u00A7\u00C3\u00A3o da Unidade Federativa do endere\u00C3\u00A7o.
+        Sigla de identifica\u00E7\u00E3o da Unidade Federativa do endere\u00E7o.
 
         :param uf2: The uf2 of this EstabelecimentoPersist.
         :type: str
@@ -604,7 +604,7 @@ class EstabelecimentoPersist(object):
     def obs(self):
         """
         Gets the obs of this EstabelecimentoPersist.
-        Detalhes espec\u00C3\u00ADficos quanto ao Cadastro do Estabelecimento.
+        Detalhes espec\u00EDficos quanto ao Cadastro do Estabelecimento.
 
         :return: The obs of this EstabelecimentoPersist.
         :rtype: str
@@ -615,7 +615,7 @@ class EstabelecimentoPersist(object):
     def obs(self, obs):
         """
         Sets the obs of this EstabelecimentoPersist.
-        Detalhes espec\u00C3\u00ADficos quanto ao Cadastro do Estabelecimento.
+        Detalhes espec\u00EDficos quanto ao Cadastro do Estabelecimento.
 
         :param obs: The obs of this EstabelecimentoPersist.
         :type: str
@@ -670,7 +670,7 @@ class EstabelecimentoPersist(object):
     def flag_arquivo_secr_fazenda(self):
         """
         Gets the flag_arquivo_secr_fazenda of this EstabelecimentoPersist.
-        Indica se o estabelecimento ser\u00C3\u00A1 inclu\u00C3\u00ADdo no arquivo de registro para a Secretaria da Fazenda Estadual.
+        Indica se o estabelecimento ser\u00E1 inclu\u00EDdo no arquivo de registro para a Secretaria da Fazenda Estadual.
 
         :return: The flag_arquivo_secr_fazenda of this EstabelecimentoPersist.
         :rtype: int
@@ -681,7 +681,7 @@ class EstabelecimentoPersist(object):
     def flag_arquivo_secr_fazenda(self, flag_arquivo_secr_fazenda):
         """
         Sets the flag_arquivo_secr_fazenda of this EstabelecimentoPersist.
-        Indica se o estabelecimento ser\u00C3\u00A1 inclu\u00C3\u00ADdo no arquivo de registro para a Secretaria da Fazenda Estadual.
+        Indica se o estabelecimento ser\u00E1 inclu\u00EDdo no arquivo de registro para a Secretaria da Fazenda Estadual.
 
         :param flag_arquivo_secr_fazenda: The flag_arquivo_secr_fazenda of this EstabelecimentoPersist.
         :type: int
@@ -692,7 +692,7 @@ class EstabelecimentoPersist(object):
     def flag_cartao_digitado(self):
         """
         Gets the flag_cartao_digitado of this EstabelecimentoPersist.
-        Indica se o estabelecimento poder\u00C3\u00A1 originar transa\u00C3\u00A7\u00C3\u00B5es sem a leitura da tarja ou do chip do cart\u00C3\u00A3o.
+        Indica se o estabelecimento poder\u00E1 originar transa\u00E7\u00F5es sem a leitura da tarja ou do chip do cart\u00E3o.
 
         :return: The flag_cartao_digitado of this EstabelecimentoPersist.
         :rtype: int
@@ -703,7 +703,7 @@ class EstabelecimentoPersist(object):
     def flag_cartao_digitado(self, flag_cartao_digitado):
         """
         Sets the flag_cartao_digitado of this EstabelecimentoPersist.
-        Indica se o estabelecimento poder\u00C3\u00A1 originar transa\u00C3\u00A7\u00C3\u00B5es sem a leitura da tarja ou do chip do cart\u00C3\u00A3o.
+        Indica se o estabelecimento poder\u00E1 originar transa\u00E7\u00F5es sem a leitura da tarja ou do chip do cart\u00E3o.
 
         :param flag_cartao_digitado: The flag_cartao_digitado of this EstabelecimentoPersist.
         :type: int
@@ -714,7 +714,7 @@ class EstabelecimentoPersist(object):
     def inativo(self):
         """
         Gets the inativo of this EstabelecimentoPersist.
-        Indica se o estabelecimento est\u00C3\u00A1 inativo.
+        Indica se o estabelecimento est\u00E1 inativo.
 
         :return: The inativo of this EstabelecimentoPersist.
         :rtype: int
@@ -725,7 +725,7 @@ class EstabelecimentoPersist(object):
     def inativo(self, inativo):
         """
         Sets the inativo of this EstabelecimentoPersist.
-        Indica se o estabelecimento est\u00C3\u00A1 inativo.
+        Indica se o estabelecimento est\u00E1 inativo.
 
         :param inativo: The inativo of this EstabelecimentoPersist.
         :type: int
@@ -736,7 +736,7 @@ class EstabelecimentoPersist(object):
     def id_moeda(self):
         """
         Gets the id_moeda of this EstabelecimentoPersist.
-        C\u00C3\u00B3digo identificador da moeda.
+        C\u00F3digo identificador da moeda.
 
         :return: The id_moeda of this EstabelecimentoPersist.
         :rtype: int
@@ -747,7 +747,7 @@ class EstabelecimentoPersist(object):
     def id_moeda(self, id_moeda):
         """
         Sets the id_moeda of this EstabelecimentoPersist.
-        C\u00C3\u00B3digo identificador da moeda.
+        C\u00F3digo identificador da moeda.
 
         :param id_moeda: The id_moeda of this EstabelecimentoPersist.
         :type: int
@@ -758,7 +758,7 @@ class EstabelecimentoPersist(object):
     def id_pais(self):
         """
         Gets the id_pais of this EstabelecimentoPersist.
-        Identificador de Pa\u00C3\u00ADs.
+        Identificador de Pa\u00EDs.
 
         :return: The id_pais of this EstabelecimentoPersist.
         :rtype: int
@@ -769,7 +769,7 @@ class EstabelecimentoPersist(object):
     def id_pais(self, id_pais):
         """
         Sets the id_pais of this EstabelecimentoPersist.
-        Identificador de Pa\u00C3\u00ADs.
+        Identificador de Pa\u00EDs.
 
         :param id_pais: The id_pais of this EstabelecimentoPersist.
         :type: int
@@ -780,7 +780,7 @@ class EstabelecimentoPersist(object):
     def associado_spc_brasil(self):
         """
         Gets the associado_spc_brasil of this EstabelecimentoPersist.
-        N\u00C3\u00BAmero do associado ao SPCBrasil.
+        N\u00FAmero do associado ao SPCBrasil.
 
         :return: The associado_spc_brasil of this EstabelecimentoPersist.
         :rtype: int
@@ -791,7 +791,7 @@ class EstabelecimentoPersist(object):
     def associado_spc_brasil(self, associado_spc_brasil):
         """
         Sets the associado_spc_brasil of this EstabelecimentoPersist.
-        N\u00C3\u00BAmero do associado ao SPCBrasil.
+        N\u00FAmero do associado ao SPCBrasil.
 
         :param associado_spc_brasil: The associado_spc_brasil of this EstabelecimentoPersist.
         :type: int
@@ -802,7 +802,7 @@ class EstabelecimentoPersist(object):
     def mcc(self):
         """
         Gets the mcc of this EstabelecimentoPersist.
-        C\u00C3\u00B3digo de Categoria de Mercado.
+        C\u00F3digo de Categoria de Mercado.
 
         :return: The mcc of this EstabelecimentoPersist.
         :rtype: int
@@ -813,7 +813,7 @@ class EstabelecimentoPersist(object):
     def mcc(self, mcc):
         """
         Sets the mcc of this EstabelecimentoPersist.
-        C\u00C3\u00B3digo de Categoria de Mercado.
+        C\u00F3digo de Categoria de Mercado.
 
         :param mcc: The mcc of this EstabelecimentoPersist.
         :type: int
@@ -824,7 +824,7 @@ class EstabelecimentoPersist(object):
     def id_tipo_estabelecimento(self):
         """
         Gets the id_tipo_estabelecimento of this EstabelecimentoPersist.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do Estabelecimento.
+        C\u00F3digo de identifica\u00E7\u00E3o do tipo de Estabelecimento.
 
         :return: The id_tipo_estabelecimento of this EstabelecimentoPersist.
         :rtype: int
@@ -835,7 +835,7 @@ class EstabelecimentoPersist(object):
     def id_tipo_estabelecimento(self, id_tipo_estabelecimento):
         """
         Sets the id_tipo_estabelecimento of this EstabelecimentoPersist.
-        C\u00C3\u00B3digo de identifica\u00C3\u00A7\u00C3\u00A3o do Estabelecimento.
+        C\u00F3digo de identifica\u00E7\u00E3o do tipo de Estabelecimento.
 
         :param id_tipo_estabelecimento: The id_tipo_estabelecimento of this EstabelecimentoPersist.
         :type: int
@@ -846,7 +846,7 @@ class EstabelecimentoPersist(object):
     def correspondencia(self):
         """
         Gets the correspondencia of this EstabelecimentoPersist.
-        Indicador para qual endere\u00C3\u00A7o as correspond\u00C3\u00AAncias ser\u00C3\u00A3o enviadas, onde 1 \u00C3\u00A9 ORIGEM e 2 ENDERE\u00C3\u0087O DE CORRESPOND\u00C3\u008ANCIA.
+        Indicador para qual endere\u00E7o as correspond\u00EAncias ser\u00E3o enviadas, onde 1 \u00E9 ORIGEM e 2 ENDERE\u00C7O DE CORRESPOND\u00CANCIA.
 
         :return: The correspondencia of this EstabelecimentoPersist.
         :rtype: int
@@ -857,7 +857,7 @@ class EstabelecimentoPersist(object):
     def correspondencia(self, correspondencia):
         """
         Sets the correspondencia of this EstabelecimentoPersist.
-        Indicador para qual endere\u00C3\u00A7o as correspond\u00C3\u00AAncias ser\u00C3\u00A3o enviadas, onde 1 \u00C3\u00A9 ORIGEM e 2 ENDERE\u00C3\u0087O DE CORRESPOND\u00C3\u008ANCIA.
+        Indicador para qual endere\u00E7o as correspond\u00EAncias ser\u00E3o enviadas, onde 1 \u00E9 ORIGEM e 2 ENDERE\u00C7O DE CORRESPOND\u00CANCIA.
 
         :param correspondencia: The correspondencia of this EstabelecimentoPersist.
         :type: int
@@ -918,7 +918,7 @@ class EstabelecimentoPersist(object):
     def consulta(self):
         """
         Gets the consulta of this EstabelecimentoPersist.
-        Consulta de cadastro n\u00C3\u00BAmero um.
+        Consulta de cadastro n\u00FAmero um.
 
         :return: The consulta of this EstabelecimentoPersist.
         :rtype: ConsultaCadastroEstabelecimentoDTO
@@ -929,7 +929,7 @@ class EstabelecimentoPersist(object):
     def consulta(self, consulta):
         """
         Sets the consulta of this EstabelecimentoPersist.
-        Consulta de cadastro n\u00C3\u00BAmero um.
+        Consulta de cadastro n\u00FAmero um.
 
         :param consulta: The consulta of this EstabelecimentoPersist.
         :type: ConsultaCadastroEstabelecimentoDTO
@@ -940,7 +940,7 @@ class EstabelecimentoPersist(object):
     def consulta2(self):
         """
         Gets the consulta2 of this EstabelecimentoPersist.
-        Consulta de cadastro n\u00C3\u00BAmero um.
+        Consulta de cadastro n\u00FAmero dois.
 
         :return: The consulta2 of this EstabelecimentoPersist.
         :rtype: ConsultaCadastroEstabelecimentoDTO
@@ -951,7 +951,7 @@ class EstabelecimentoPersist(object):
     def consulta2(self, consulta2):
         """
         Sets the consulta2 of this EstabelecimentoPersist.
-        Consulta de cadastro n\u00C3\u00BAmero um.
+        Consulta de cadastro n\u00FAmero dois.
 
         :param consulta2: The consulta2 of this EstabelecimentoPersist.
         :type: ConsultaCadastroEstabelecimentoDTO
@@ -962,7 +962,7 @@ class EstabelecimentoPersist(object):
     def consulta3(self):
         """
         Gets the consulta3 of this EstabelecimentoPersist.
-        Consulta de cadastro n\u00C3\u00BAmero um.
+        Consulta de cadastro n\u00FAmero tr\u00EAs.
 
         :return: The consulta3 of this EstabelecimentoPersist.
         :rtype: ConsultaCadastroEstabelecimentoDTO
@@ -973,7 +973,7 @@ class EstabelecimentoPersist(object):
     def consulta3(self, consulta3):
         """
         Sets the consulta3 of this EstabelecimentoPersist.
-        Consulta de cadastro n\u00C3\u00BAmero um.
+        Consulta de cadastro n\u00FAmero tr\u00EAs.
 
         :param consulta3: The consulta3 of this EstabelecimentoPersist.
         :type: ConsultaCadastroEstabelecimentoDTO
@@ -984,7 +984,7 @@ class EstabelecimentoPersist(object):
     def flag_terminal_virtual(self):
         """
         Gets the flag_terminal_virtual of this EstabelecimentoPersist.
-        Flag indicando se o terminal \u00C3\u00A9 f\u00C3\u00ADsico ou virtual, sendo: (true: Sim), (false: N\u00C3\u00A3o)).
+        Flag indicando se o terminal \u00E9 f\u00EDsico ou virtual, sendo: (true: Sim), (false: N\u00E3o)).
 
         :return: The flag_terminal_virtual of this EstabelecimentoPersist.
         :rtype: bool
@@ -995,7 +995,7 @@ class EstabelecimentoPersist(object):
     def flag_terminal_virtual(self, flag_terminal_virtual):
         """
         Sets the flag_terminal_virtual of this EstabelecimentoPersist.
-        Flag indicando se o terminal \u00C3\u00A9 f\u00C3\u00ADsico ou virtual, sendo: (true: Sim), (false: N\u00C3\u00A3o)).
+        Flag indicando se o terminal \u00E9 f\u00EDsico ou virtual, sendo: (true: Sim), (false: N\u00E3o)).
 
         :param flag_terminal_virtual: The flag_terminal_virtual of this EstabelecimentoPersist.
         :type: bool
@@ -1006,7 +1006,7 @@ class EstabelecimentoPersist(object):
     def flag_consulta_extrato(self):
         """
         Gets the flag_consulta_extrato of this EstabelecimentoPersist.
-        Flag indicando se o terminal permite consultar extrato, sendo: (true: Sim), (false: N\u00C3\u00A3o)).
+        Flag indicando se o terminal permite consultar extrato, sendo: (true: Sim), (false: N\u00E3o)).
 
         :return: The flag_consulta_extrato of this EstabelecimentoPersist.
         :rtype: bool
@@ -1017,7 +1017,7 @@ class EstabelecimentoPersist(object):
     def flag_consulta_extrato(self, flag_consulta_extrato):
         """
         Sets the flag_consulta_extrato of this EstabelecimentoPersist.
-        Flag indicando se o terminal permite consultar extrato, sendo: (true: Sim), (false: N\u00C3\u00A3o)).
+        Flag indicando se o terminal permite consultar extrato, sendo: (true: Sim), (false: N\u00E3o)).
 
         :param flag_consulta_extrato: The flag_consulta_extrato of this EstabelecimentoPersist.
         :type: bool

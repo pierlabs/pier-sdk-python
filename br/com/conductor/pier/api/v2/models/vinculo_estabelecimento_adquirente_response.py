@@ -68,7 +68,7 @@ class VinculoEstabelecimentoAdquirenteResponse(object):
     def id(self):
         """
         Gets the id of this VinculoEstabelecimentoAdquirenteResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do VinculoEstabelecimentoAdquirente (id).
+        C\u00F3digo de Identifica\u00E7\u00E3o do VinculoEstabelecimentoAdquirente (id).
 
         :return: The id of this VinculoEstabelecimentoAdquirenteResponse.
         :rtype: int
@@ -79,7 +79,7 @@ class VinculoEstabelecimentoAdquirenteResponse(object):
     def id(self, id):
         """
         Sets the id of this VinculoEstabelecimentoAdquirenteResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do VinculoEstabelecimentoAdquirente (id).
+        C\u00F3digo de Identifica\u00E7\u00E3o do VinculoEstabelecimentoAdquirente (id).
 
         :param id: The id of this VinculoEstabelecimentoAdquirenteResponse.
         :type: int
@@ -90,7 +90,7 @@ class VinculoEstabelecimentoAdquirenteResponse(object):
     def id_estabelecimento(self):
         """
         Gets the id_estabelecimento of this VinculoEstabelecimentoAdquirenteResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Estabelecimento (id).
+        C\u00F3digo de Identifica\u00E7\u00E3o do Estabelecimento (id).
 
         :return: The id_estabelecimento of this VinculoEstabelecimentoAdquirenteResponse.
         :rtype: int
@@ -101,7 +101,7 @@ class VinculoEstabelecimentoAdquirenteResponse(object):
     def id_estabelecimento(self, id_estabelecimento):
         """
         Sets the id_estabelecimento of this VinculoEstabelecimentoAdquirenteResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Estabelecimento (id).
+        C\u00F3digo de Identifica\u00E7\u00E3o do Estabelecimento (id).
 
         :param id_estabelecimento: The id_estabelecimento of this VinculoEstabelecimentoAdquirenteResponse.
         :type: int
@@ -112,7 +112,7 @@ class VinculoEstabelecimentoAdquirenteResponse(object):
     def id_adquirente(self):
         """
         Gets the id_adquirente of this VinculoEstabelecimentoAdquirenteResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Adquirente (id).
+        C\u00F3digo de Identifica\u00E7\u00E3o do Adquirente (id).
 
         :return: The id_adquirente of this VinculoEstabelecimentoAdquirenteResponse.
         :rtype: int
@@ -123,7 +123,7 @@ class VinculoEstabelecimentoAdquirenteResponse(object):
     def id_adquirente(self, id_adquirente):
         """
         Sets the id_adquirente of this VinculoEstabelecimentoAdquirenteResponse.
-        C\u00C3\u00B3digo de Identifica\u00C3\u00A7\u00C3\u00A3o do Adquirente (id).
+        C\u00F3digo de Identifica\u00E7\u00E3o do Adquirente (id).
 
         :param id_adquirente: The id_adquirente of this VinculoEstabelecimentoAdquirenteResponse.
         :type: int
@@ -134,7 +134,7 @@ class VinculoEstabelecimentoAdquirenteResponse(object):
     def codigo_estabelecimento_adquirente(self):
         """
         Gets the codigo_estabelecimento_adquirente of this VinculoEstabelecimentoAdquirenteResponse.
-        C\u00C3\u00B3digo do v\u00C3\u00ADnculo entre o estabelecimento e o adquirente.
+        C\u00F3digo do v\u00EDnculo entre o estabelecimento e o adquirente.
 
         :return: The codigo_estabelecimento_adquirente of this VinculoEstabelecimentoAdquirenteResponse.
         :rtype: str
@@ -145,7 +145,7 @@ class VinculoEstabelecimentoAdquirenteResponse(object):
     def codigo_estabelecimento_adquirente(self, codigo_estabelecimento_adquirente):
         """
         Sets the codigo_estabelecimento_adquirente of this VinculoEstabelecimentoAdquirenteResponse.
-        C\u00C3\u00B3digo do v\u00C3\u00ADnculo entre o estabelecimento e o adquirente.
+        C\u00F3digo do v\u00EDnculo entre o estabelecimento e o adquirente.
 
         :param codigo_estabelecimento_adquirente: The codigo_estabelecimento_adquirente of this VinculoEstabelecimentoAdquirenteResponse.
         :type: str
@@ -156,7 +156,7 @@ class VinculoEstabelecimentoAdquirenteResponse(object):
     def data_hora_cadastro(self):
         """
         Gets the data_hora_cadastro of this VinculoEstabelecimentoAdquirenteResponse.
-        Data de cadastro do v\u00C3\u00ADnculo.
+        Data de cadastro do v\u00EDnculo.
 
         :return: The data_hora_cadastro of this VinculoEstabelecimentoAdquirenteResponse.
         :rtype: str
@@ -167,7 +167,7 @@ class VinculoEstabelecimentoAdquirenteResponse(object):
     def data_hora_cadastro(self, data_hora_cadastro):
         """
         Sets the data_hora_cadastro of this VinculoEstabelecimentoAdquirenteResponse.
-        Data de cadastro do v\u00C3\u00ADnculo.
+        Data de cadastro do v\u00EDnculo.
 
         :param data_hora_cadastro: The data_hora_cadastro of this VinculoEstabelecimentoAdquirenteResponse.
         :type: str
@@ -178,7 +178,7 @@ class VinculoEstabelecimentoAdquirenteResponse(object):
     def mensagem(self):
         """
         Gets the mensagem of this VinculoEstabelecimentoAdquirenteResponse.
-        Data de cadastro do v\u00C3\u00ADnculo.
+        Data de cadastro do v\u00EDnculo.
 
         :return: The mensagem of this VinculoEstabelecimentoAdquirenteResponse.
         :rtype: str
@@ -189,7 +189,7 @@ class VinculoEstabelecimentoAdquirenteResponse(object):
     def mensagem(self, mensagem):
         """
         Sets the mensagem of this VinculoEstabelecimentoAdquirenteResponse.
-        Data de cadastro do v\u00C3\u00ADnculo.
+        Data de cadastro do v\u00EDnculo.
 
         :param mensagem: The mensagem of this VinculoEstabelecimentoAdquirenteResponse.
         :type: str
@@ -200,7 +200,7 @@ class VinculoEstabelecimentoAdquirenteResponse(object):
     def status(self):
         """
         Gets the status of this VinculoEstabelecimentoAdquirenteResponse.
-        Data de cadastro do v\u00C3\u00ADnculo.
+        Data de cadastro do v\u00EDnculo.
 
         :return: The status of this VinculoEstabelecimentoAdquirenteResponse.
         :rtype: int
@@ -211,7 +211,7 @@ class VinculoEstabelecimentoAdquirenteResponse(object):
     def status(self, status):
         """
         Sets the status of this VinculoEstabelecimentoAdquirenteResponse.
-        Data de cadastro do v\u00C3\u00ADnculo.
+        Data de cadastro do v\u00EDnculo.
 
         :param status: The status of this VinculoEstabelecimentoAdquirenteResponse.
         :type: int

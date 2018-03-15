@@ -62,7 +62,7 @@ class HistoricoEventosResponse(object):
     def id_historico(self):
         """
         Gets the id_historico of this HistoricoEventosResponse.
-        C\u00C3\u00B3digo identificador do evento
+        C\u00F3digo identificador do evento
 
         :return: The id_historico of this HistoricoEventosResponse.
         :rtype: int
@@ -73,7 +73,7 @@ class HistoricoEventosResponse(object):
     def id_historico(self, id_historico):
         """
         Sets the id_historico of this HistoricoEventosResponse.
-        C\u00C3\u00B3digo identificador do evento
+        C\u00F3digo identificador do evento
 
         :param id_historico: The id_historico of this HistoricoEventosResponse.
         :type: int
@@ -128,7 +128,7 @@ class HistoricoEventosResponse(object):
     def valor_anterior(self):
         """
         Gets the valor_anterior of this HistoricoEventosResponse.
-        Valor anterior a modifica\u00C3\u00A7\u00C3\u00A3o
+        Valor anterior a modifica\u00E7\u00E3o
 
         :return: The valor_anterior of this HistoricoEventosResponse.
         :rtype: str
@@ -139,7 +139,7 @@ class HistoricoEventosResponse(object):
     def valor_anterior(self, valor_anterior):
         """
         Sets the valor_anterior of this HistoricoEventosResponse.
-        Valor anterior a modifica\u00C3\u00A7\u00C3\u00A3o
+        Valor anterior a modifica\u00E7\u00E3o
 
         :param valor_anterior: The valor_anterior of this HistoricoEventosResponse.
         :type: str
@@ -150,7 +150,7 @@ class HistoricoEventosResponse(object):
     def valor_atribuido(self):
         """
         Gets the valor_atribuido of this HistoricoEventosResponse.
-        Valor atribu\u00C3\u00ADdo na modifica\u00C3\u00A7\u00C3\u00A3o
+        Valor atribu\u00EDdo na modifica\u00E7\u00E3o
 
         :return: The valor_atribuido of this HistoricoEventosResponse.
         :rtype: str
@@ -161,7 +161,7 @@ class HistoricoEventosResponse(object):
     def valor_atribuido(self, valor_atribuido):
         """
         Sets the valor_atribuido of this HistoricoEventosResponse.
-        Valor atribu\u00C3\u00ADdo na modifica\u00C3\u00A7\u00C3\u00A3o
+        Valor atribu\u00EDdo na modifica\u00E7\u00E3o
 
         :param valor_atribuido: The valor_atribuido of this HistoricoEventosResponse.
         :type: str

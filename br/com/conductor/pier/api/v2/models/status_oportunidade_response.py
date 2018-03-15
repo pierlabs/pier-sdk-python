@@ -62,7 +62,7 @@ class StatusOportunidadeResponse(object):
     def id(self):
         """
         Gets the id of this StatusOportunidadeResponse.
-        C\u00C3\u00B3digo identificador do StatusOportunidade
+        C\u00F3digo identificador do StatusOportunidade
 
         :return: The id of this StatusOportunidadeResponse.
         :rtype: int
@@ -73,7 +73,7 @@ class StatusOportunidadeResponse(object):
     def id(self, id):
         """
         Sets the id of this StatusOportunidadeResponse.
-        C\u00C3\u00B3digo identificador do StatusOportunidade
+        C\u00F3digo identificador do StatusOportunidade
 
         :param id: The id of this StatusOportunidadeResponse.
         :type: int
@@ -84,7 +84,7 @@ class StatusOportunidadeResponse(object):
     def id_tipo_oportunidade(self):
         """
         Gets the id_tipo_oportunidade of this StatusOportunidadeResponse.
-        C\u00C3\u00B3digo identificador do TipoOportunidade
+        C\u00F3digo identificador do TipoOportunidade
 
         :return: The id_tipo_oportunidade of this StatusOportunidadeResponse.
         :rtype: int
@@ -95,7 +95,7 @@ class StatusOportunidadeResponse(object):
     def id_tipo_oportunidade(self, id_tipo_oportunidade):
         """
         Sets the id_tipo_oportunidade of this StatusOportunidadeResponse.
-        C\u00C3\u00B3digo identificador do TipoOportunidade
+        C\u00F3digo identificador do TipoOportunidade
 
         :param id_tipo_oportunidade: The id_tipo_oportunidade of this StatusOportunidadeResponse.
         :type: int
@@ -150,7 +150,7 @@ class StatusOportunidadeResponse(object):
     def flag_ativo(self):
         """
         Gets the flag_ativo of this StatusOportunidadeResponse.
-        Flag que representa se o tipo oportunidade est\u00C3\u00A1 ativo
+        Flag que representa se o tipo oportunidade est\u00E1 ativo
 
         :return: The flag_ativo of this StatusOportunidadeResponse.
         :rtype: bool
@@ -161,7 +161,7 @@ class StatusOportunidadeResponse(object):
     def flag_ativo(self, flag_ativo):
         """
         Sets the flag_ativo of this StatusOportunidadeResponse.
-        Flag que representa se o tipo oportunidade est\u00C3\u00A1 ativo
+        Flag que representa se o tipo oportunidade est\u00E1 ativo
 
         :param flag_ativo: The flag_ativo of this StatusOportunidadeResponse.
         :type: bool

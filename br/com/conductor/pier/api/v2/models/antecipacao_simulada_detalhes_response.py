@@ -125,7 +125,7 @@ class AntecipacaoSimuladaDetalhesResponse(object):
     def valor_parcelas_desconto(self):
         """
         Gets the valor_parcelas_desconto of this AntecipacaoSimuladaDetalhesResponse.
-        Valor total da parcela ap\u00C3\u00B3s a aplica\u00C3\u00A7\u00C3\u00A3o do desconto.
+        Valor total da parcela ap\u00F3s a aplica\u00E7\u00E3o do desconto.
 
         :return: The valor_parcelas_desconto of this AntecipacaoSimuladaDetalhesResponse.
         :rtype: float
@@ -136,7 +136,7 @@ class AntecipacaoSimuladaDetalhesResponse(object):
     def valor_parcelas_desconto(self, valor_parcelas_desconto):
         """
         Sets the valor_parcelas_desconto of this AntecipacaoSimuladaDetalhesResponse.
-        Valor total da parcela ap\u00C3\u00B3s a aplica\u00C3\u00A7\u00C3\u00A3o do desconto.
+        Valor total da parcela ap\u00F3s a aplica\u00E7\u00E3o do desconto.
 
         :param valor_parcelas_desconto: The valor_parcelas_desconto of this AntecipacaoSimuladaDetalhesResponse.
         :type: float

@@ -89,7 +89,7 @@ class TransacaoPaySecureRequest(object):
     def data_hora_transacao(self):
         """
         Gets the data_hora_transacao of this TransacaoPaySecureRequest.
-        Data e hora utilizado na gera\u00C3\u00A7\u00C3\u00A3o do criptograma em GMT - 0
+        Data e hora utilizado na gera\u00E7\u00E3o do criptograma em GMT - 0
 
         :return: The data_hora_transacao of this TransacaoPaySecureRequest.
         :rtype: str
@@ -100,7 +100,7 @@ class TransacaoPaySecureRequest(object):
     def data_hora_transacao(self, data_hora_transacao):
         """
         Sets the data_hora_transacao of this TransacaoPaySecureRequest.
-        Data e hora utilizado na gera\u00C3\u00A7\u00C3\u00A3o do criptograma em GMT - 0
+        Data e hora utilizado na gera\u00E7\u00E3o do criptograma em GMT - 0
 
         :param data_hora_transacao: The data_hora_transacao of this TransacaoPaySecureRequest.
         :type: str
@@ -133,7 +133,7 @@ class TransacaoPaySecureRequest(object):
     def id_cartao(self):
         """
         Gets the id_cartao of this TransacaoPaySecureRequest.
-        Id do cart\u00C3\u00A3o
+        Id do cart\u00E3o
 
         :return: The id_cartao of this TransacaoPaySecureRequest.
         :rtype: int
@@ -144,7 +144,7 @@ class TransacaoPaySecureRequest(object):
     def id_cartao(self, id_cartao):
         """
         Sets the id_cartao of this TransacaoPaySecureRequest.
-        Id do cart\u00C3\u00A3o
+        Id do cart\u00E3o
 
         :param id_cartao: The id_cartao of this TransacaoPaySecureRequest.
         :type: int
@@ -155,7 +155,7 @@ class TransacaoPaySecureRequest(object):
     def valor(self):
         """
         Gets the valor of this TransacaoPaySecureRequest.
-        Valor da transa\u00C3\u00A7\u00C3\u00A3o em moeda local
+        Valor da transa\u00E7\u00E3o em moeda local
 
         :return: The valor of this TransacaoPaySecureRequest.
         :rtype: float
@@ -166,7 +166,7 @@ class TransacaoPaySecureRequest(object):
     def valor(self, valor):
         """
         Sets the valor of this TransacaoPaySecureRequest.
-        Valor da transa\u00C3\u00A7\u00C3\u00A3o em moeda local
+        Valor da transa\u00E7\u00E3o em moeda local
 
         :param valor: The valor of this TransacaoPaySecureRequest.
         :type: float
@@ -177,7 +177,7 @@ class TransacaoPaySecureRequest(object):
     def nsu_origem(self):
         """
         Gets the nsu_origem of this TransacaoPaySecureRequest.
-        N\u00C3\u00BAmero Sequencial \u00C3\u009Anico que identifica a transa\u00C3\u00A7\u00C3\u00A3o no sistema que a originou (critografado).
+        N\u00FAmero Sequencial \u00DAnico que identifica a transa\u00E7\u00E3o no sistema que a originou (critografado).
 
         :return: The nsu_origem of this TransacaoPaySecureRequest.
         :rtype: str
@@ -188,7 +188,7 @@ class TransacaoPaySecureRequest(object):
     def nsu_origem(self, nsu_origem):
         """
         Sets the nsu_origem of this TransacaoPaySecureRequest.
-        N\u00C3\u00BAmero Sequencial \u00C3\u009Anico que identifica a transa\u00C3\u00A7\u00C3\u00A3o no sistema que a originou (critografado).
+        N\u00FAmero Sequencial \u00DAnico que identifica a transa\u00E7\u00E3o no sistema que a originou (critografado).
 
         :param nsu_origem: The nsu_origem of this TransacaoPaySecureRequest.
         :type: str
@@ -199,7 +199,7 @@ class TransacaoPaySecureRequest(object):
     def nome_portador_cartao(self):
         """
         Gets the nome_portador_cartao of this TransacaoPaySecureRequest.
-        Nome do Portador do Cart\u00C3\u00A3o que originou a transa\u00C3\u00A7\u00C3\u00A3o (criptografado).
+        Nome do Portador do Cart\u00E3o que originou a transa\u00E7\u00E3o (criptografado).
 
         :return: The nome_portador_cartao of this TransacaoPaySecureRequest.
         :rtype: str
@@ -210,7 +210,7 @@ class TransacaoPaySecureRequest(object):
     def nome_portador_cartao(self, nome_portador_cartao):
         """
         Sets the nome_portador_cartao of this TransacaoPaySecureRequest.
-        Nome do Portador do Cart\u00C3\u00A3o que originou a transa\u00C3\u00A7\u00C3\u00A3o (criptografado).
+        Nome do Portador do Cart\u00E3o que originou a transa\u00E7\u00E3o (criptografado).
 
         :param nome_portador_cartao: The nome_portador_cartao of this TransacaoPaySecureRequest.
         :type: str
@@ -221,7 +221,7 @@ class TransacaoPaySecureRequest(object):
     def origem(self):
         """
         Gets the origem of this TransacaoPaySecureRequest.
-        Origem da transa\u00C3\u00A7\u00C3\u00A3o
+        Origem da transa\u00E7\u00E3o
 
         :return: The origem of this TransacaoPaySecureRequest.
         :rtype: str
@@ -232,7 +232,7 @@ class TransacaoPaySecureRequest(object):
     def origem(self, origem):
         """
         Sets the origem of this TransacaoPaySecureRequest.
-        Origem da transa\u00C3\u00A7\u00C3\u00A3o
+        Origem da transa\u00E7\u00E3o
 
         :param origem: The origem of this TransacaoPaySecureRequest.
         :type: str
@@ -243,7 +243,7 @@ class TransacaoPaySecureRequest(object):
     def terminal_requisitante(self):
         """
         Gets the terminal_requisitante of this TransacaoPaySecureRequest.
-        Apresenta a identifica\u00C3\u00A7\u00C3\u00A3o do terminal requisitante
+        Apresenta a identifica\u00E7\u00E3o do terminal requisitante
 
         :return: The terminal_requisitante of this TransacaoPaySecureRequest.
         :rtype: str
@@ -254,7 +254,7 @@ class TransacaoPaySecureRequest(object):
     def terminal_requisitante(self, terminal_requisitante):
         """
         Sets the terminal_requisitante of this TransacaoPaySecureRequest.
-        Apresenta a identifica\u00C3\u00A7\u00C3\u00A3o do terminal requisitante
+        Apresenta a identifica\u00E7\u00E3o do terminal requisitante
 
         :param terminal_requisitante: The terminal_requisitante of this TransacaoPaySecureRequest.
         :type: str
@@ -265,7 +265,7 @@ class TransacaoPaySecureRequest(object):
     def codigo_processamento(self):
         """
         Gets the codigo_processamento of this TransacaoPaySecureRequest.
-        C\u00C3\u00B3digo de Processamento que identifica o Tipo da Transa\u00C3\u00A7\u00C3\u00A3o.
+        C\u00F3digo de Processamento que identifica o Tipo da Transa\u00E7\u00E3o.
 
         :return: The codigo_processamento of this TransacaoPaySecureRequest.
         :rtype: str
@@ -276,7 +276,7 @@ class TransacaoPaySecureRequest(object):
     def codigo_processamento(self, codigo_processamento):
         """
         Sets the codigo_processamento of this TransacaoPaySecureRequest.
-        C\u00C3\u00B3digo de Processamento que identifica o Tipo da Transa\u00C3\u00A7\u00C3\u00A3o.
+        C\u00F3digo de Processamento que identifica o Tipo da Transa\u00E7\u00E3o.
 
         :param codigo_processamento: The codigo_processamento of this TransacaoPaySecureRequest.
         :type: str
@@ -287,7 +287,7 @@ class TransacaoPaySecureRequest(object):
     def data_validade_cartao(self):
         """
         Gets the data_validade_cartao of this TransacaoPaySecureRequest.
-        Data de Validade do Cart\u00C3\u00A3o. Ex: AAMM
+        Data de Validade do Cart\u00E3o. Ex: AAMM
 
         :return: The data_validade_cartao of this TransacaoPaySecureRequest.
         :rtype: str
@@ -298,7 +298,7 @@ class TransacaoPaySecureRequest(object):
     def data_validade_cartao(self, data_validade_cartao):
         """
         Sets the data_validade_cartao of this TransacaoPaySecureRequest.
-        Data de Validade do Cart\u00C3\u00A3o. Ex: AAMM
+        Data de Validade do Cart\u00E3o. Ex: AAMM
 
         :param data_validade_cartao: The data_validade_cartao of this TransacaoPaySecureRequest.
         :type: str
@@ -309,7 +309,7 @@ class TransacaoPaySecureRequest(object):
     def numero_estabelecimento(self):
         """
         Gets the numero_estabelecimento of this TransacaoPaySecureRequest.
-        N\u00C3\u00BAmero do Estabelecimento (N\u00C3\u00BAmero+DV).
+        N\u00FAmero do Estabelecimento (N\u00FAmero+DV).
 
         :return: The numero_estabelecimento of this TransacaoPaySecureRequest.
         :rtype: str
@@ -320,7 +320,7 @@ class TransacaoPaySecureRequest(object):
     def numero_estabelecimento(self, numero_estabelecimento):
         """
         Sets the numero_estabelecimento of this TransacaoPaySecureRequest.
-        N\u00C3\u00BAmero do Estabelecimento (N\u00C3\u00BAmero+DV).
+        N\u00FAmero do Estabelecimento (N\u00FAmero+DV).
 
         :param numero_estabelecimento: The numero_estabelecimento of this TransacaoPaySecureRequest.
         :type: str
@@ -331,7 +331,7 @@ class TransacaoPaySecureRequest(object):
     def numero_parcelas(self):
         """
         Gets the numero_parcelas of this TransacaoPaySecureRequest.
-        N\u00C3\u00BAmero de Parcelas.
+        N\u00FAmero de Parcelas.
 
         :return: The numero_parcelas of this TransacaoPaySecureRequest.
         :rtype: int
@@ -342,7 +342,7 @@ class TransacaoPaySecureRequest(object):
     def numero_parcelas(self, numero_parcelas):
         """
         Sets the numero_parcelas of this TransacaoPaySecureRequest.
-        N\u00C3\u00BAmero de Parcelas.
+        N\u00FAmero de Parcelas.
 
         :param numero_parcelas: The numero_parcelas of this TransacaoPaySecureRequest.
         :type: int
@@ -353,7 +353,7 @@ class TransacaoPaySecureRequest(object):
     def codigo_seguranca_cartao(self):
         """
         Gets the codigo_seguranca_cartao of this TransacaoPaySecureRequest.
-        C\u00C3\u00B3digo de Seguran\u00C3\u00A7a do Cart\u00C3\u00A3o (criptografado).
+        C\u00F3digo de Seguran\u00E7a do Cart\u00E3o (criptografado).
 
         :return: The codigo_seguranca_cartao of this TransacaoPaySecureRequest.
         :rtype: str
@@ -364,7 +364,7 @@ class TransacaoPaySecureRequest(object):
     def codigo_seguranca_cartao(self, codigo_seguranca_cartao):
         """
         Sets the codigo_seguranca_cartao of this TransacaoPaySecureRequest.
-        C\u00C3\u00B3digo de Seguran\u00C3\u00A7a do Cart\u00C3\u00A3o (criptografado).
+        C\u00F3digo de Seguran\u00E7a do Cart\u00E3o (criptografado).
 
         :param codigo_seguranca_cartao: The codigo_seguranca_cartao of this TransacaoPaySecureRequest.
         :type: str
@@ -375,7 +375,7 @@ class TransacaoPaySecureRequest(object):
     def sort(self):
         """
         Gets the sort of this TransacaoPaySecureRequest.
-        Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
+        Tipo de ordena\u00E7\u00E3o dos registros.
 
         :return: The sort of this TransacaoPaySecureRequest.
         :rtype: list[str]
@@ -386,7 +386,7 @@ class TransacaoPaySecureRequest(object):
     def sort(self, sort):
         """
         Sets the sort of this TransacaoPaySecureRequest.
-        Tipo de ordena\u00C3\u00A7\u00C3\u00A3o dos registros.
+        Tipo de ordena\u00E7\u00E3o dos registros.
 
         :param sort: The sort of this TransacaoPaySecureRequest.
         :type: list[str]

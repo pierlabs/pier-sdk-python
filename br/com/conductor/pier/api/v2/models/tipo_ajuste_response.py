@@ -53,7 +53,7 @@ class TipoAjusteResponse(object):
     def id(self):
         """
         Gets the id of this TipoAjusteResponse.
-        C\u00C3\u00B3digo identificador do tipo de ajuste.
+        C\u00F3digo identificador do tipo de ajuste.
 
         :return: The id of this TipoAjusteResponse.
         :rtype: int
@@ -64,7 +64,7 @@ class TipoAjusteResponse(object):
     def id(self, id):
         """
         Sets the id of this TipoAjusteResponse.
-        C\u00C3\u00B3digo identificador do tipo de ajuste.
+        C\u00F3digo identificador do tipo de ajuste.
 
         :param id: The id of this TipoAjusteResponse.
         :type: int
@@ -75,7 +75,7 @@ class TipoAjusteResponse(object):
     def descricao(self):
         """
         Gets the descricao of this TipoAjusteResponse.
-        Descri\u00C3\u00A7\u00C3\u00A3o do tipo de ajuste.
+        Descri\u00E7\u00E3o do tipo de ajuste.
 
         :return: The descricao of this TipoAjusteResponse.
         :rtype: str
@@ -86,7 +86,7 @@ class TipoAjusteResponse(object):
     def descricao(self, descricao):
         """
         Sets the descricao of this TipoAjusteResponse.
-        Descri\u00C3\u00A7\u00C3\u00A3o do tipo de ajuste.
+        Descri\u00E7\u00E3o do tipo de ajuste.
 
         :param descricao: The descricao of this TipoAjusteResponse.
         :type: str
