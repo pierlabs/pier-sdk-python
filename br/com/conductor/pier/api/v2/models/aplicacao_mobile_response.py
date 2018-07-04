@@ -71,7 +71,7 @@ class AplicacaoMobileResponse(object):
     def id(self):
         """
         Gets the id of this AplicacaoMobileResponse.
-        Apresenta o identificador da aplicacao.
+        {{{aplicacao_mobile_response_id_value}}}
 
         :return: The id of this AplicacaoMobileResponse.
         :rtype: int
@@ -82,7 +82,7 @@ class AplicacaoMobileResponse(object):
     def id(self, id):
         """
         Sets the id of this AplicacaoMobileResponse.
-        Apresenta o identificador da aplicacao.
+        {{{aplicacao_mobile_response_id_value}}}
 
         :param id: The id of this AplicacaoMobileResponse.
         :type: int
@@ -93,7 +93,7 @@ class AplicacaoMobileResponse(object):
     def id_plataforma_mobile(self):
         """
         Gets the id_plataforma_mobile of this AplicacaoMobileResponse.
-        Apresenta o identificador da plataforma.
+        {{{aplicacao_mobile_response_id_plataforma_mobile_value}}}
 
         :return: The id_plataforma_mobile of this AplicacaoMobileResponse.
         :rtype: int
@@ -104,7 +104,7 @@ class AplicacaoMobileResponse(object):
     def id_plataforma_mobile(self, id_plataforma_mobile):
         """
         Sets the id_plataforma_mobile of this AplicacaoMobileResponse.
-        Apresenta o identificador da plataforma.
+        {{{aplicacao_mobile_response_id_plataforma_mobile_value}}}
 
         :param id_plataforma_mobile: The id_plataforma_mobile of this AplicacaoMobileResponse.
         :type: int
@@ -115,7 +115,7 @@ class AplicacaoMobileResponse(object):
     def token(self):
         """
         Gets the token of this AplicacaoMobileResponse.
-        Apresenta o token da aplicacao.
+        {{{aplicacao_mobile_response_token_value}}}
 
         :return: The token of this AplicacaoMobileResponse.
         :rtype: str
@@ -126,7 +126,7 @@ class AplicacaoMobileResponse(object):
     def token(self, token):
         """
         Sets the token of this AplicacaoMobileResponse.
-        Apresenta o token da aplicacao.
+        {{{aplicacao_mobile_response_token_value}}}
 
         :param token: The token of this AplicacaoMobileResponse.
         :type: str
@@ -137,7 +137,7 @@ class AplicacaoMobileResponse(object):
     def cor(self):
         """
         Gets the cor of this AplicacaoMobileResponse.
-        Apresenta a cor da mensagem da aplicacao.
+        {{{aplicacao_mobile_response_cor_value}}}
 
         :return: The cor of this AplicacaoMobileResponse.
         :rtype: str
@@ -148,7 +148,7 @@ class AplicacaoMobileResponse(object):
     def cor(self, cor):
         """
         Sets the cor of this AplicacaoMobileResponse.
-        Apresenta a cor da mensagem da aplicacao.
+        {{{aplicacao_mobile_response_cor_value}}}
 
         :param cor: The cor of this AplicacaoMobileResponse.
         :type: str
@@ -159,7 +159,7 @@ class AplicacaoMobileResponse(object):
     def som(self):
         """
         Gets the som of this AplicacaoMobileResponse.
-        Apresenta o som da mensagem da aplicacao
+        {{{aplicacao_mobile_response_som_value}}}
 
         :return: The som of this AplicacaoMobileResponse.
         :rtype: str
@@ -170,7 +170,7 @@ class AplicacaoMobileResponse(object):
     def som(self, som):
         """
         Sets the som of this AplicacaoMobileResponse.
-        Apresenta o som da mensagem da aplicacao
+        {{{aplicacao_mobile_response_som_value}}}
 
         :param som: The som of this AplicacaoMobileResponse.
         :type: str
@@ -181,7 +181,7 @@ class AplicacaoMobileResponse(object):
     def icone(self):
         """
         Gets the icone of this AplicacaoMobileResponse.
-        Apresenta o icone da mensagem da aplica\u00E7\u00E3o.
+        {{{aplicacao_mobile_response_icone_value}}}
 
         :return: The icone of this AplicacaoMobileResponse.
         :rtype: str
@@ -192,7 +192,7 @@ class AplicacaoMobileResponse(object):
     def icone(self, icone):
         """
         Sets the icone of this AplicacaoMobileResponse.
-        Apresenta o icone da mensagem da aplica\u00E7\u00E3o.
+        {{{aplicacao_mobile_response_icone_value}}}
 
         :param icone: The icone of this AplicacaoMobileResponse.
         :type: str
@@ -203,7 +203,7 @@ class AplicacaoMobileResponse(object):
     def certificado_base64(self):
         """
         Gets the certificado_base64 of this AplicacaoMobileResponse.
-        Apresenta o certificado da aplica\u00E7\u00E3o.
+        {{{aplicacao_mobile_response_certificado_base64_value}}}
 
         :return: The certificado_base64 of this AplicacaoMobileResponse.
         :rtype: str
@@ -214,7 +214,7 @@ class AplicacaoMobileResponse(object):
     def certificado_base64(self, certificado_base64):
         """
         Sets the certificado_base64 of this AplicacaoMobileResponse.
-        Apresenta o certificado da aplica\u00E7\u00E3o.
+        {{{aplicacao_mobile_response_certificado_base64_value}}}
 
         :param certificado_base64: The certificado_base64 of this AplicacaoMobileResponse.
         :type: str
@@ -225,7 +225,7 @@ class AplicacaoMobileResponse(object):
     def senha(self):
         """
         Gets the senha of this AplicacaoMobileResponse.
-        Apresenta a senha da aplica\u00E7\u00E3o.
+        {{{aplicacao_mobile_response_senha_value}}}
 
         :return: The senha of this AplicacaoMobileResponse.
         :rtype: str
@@ -236,7 +236,7 @@ class AplicacaoMobileResponse(object):
     def senha(self, senha):
         """
         Sets the senha of this AplicacaoMobileResponse.
-        Apresenta a senha da aplica\u00E7\u00E3o.
+        {{{aplicacao_mobile_response_senha_value}}}
 
         :param senha: The senha of this AplicacaoMobileResponse.
         :type: str

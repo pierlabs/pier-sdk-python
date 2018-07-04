@@ -77,7 +77,7 @@ class PortadorResponse(object):
     def id_conta(self):
         """
         Gets the id_conta of this PortadorResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o da Conta (id).
+        {{{portador_response_id_conta_value}}}
 
         :return: The id_conta of this PortadorResponse.
         :rtype: int
@@ -88,7 +88,7 @@ class PortadorResponse(object):
     def id_conta(self, id_conta):
         """
         Sets the id_conta of this PortadorResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o da Conta (id).
+        {{{portador_response_id_conta_value}}}
 
         :param id_conta: The id_conta of this PortadorResponse.
         :type: int
@@ -99,7 +99,7 @@ class PortadorResponse(object):
     def id_produto(self):
         """
         Gets the id_produto of this PortadorResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o do Produto (id).
+        {{{portador_response_id_produto_value}}}
 
         :return: The id_produto of this PortadorResponse.
         :rtype: int
@@ -110,7 +110,7 @@ class PortadorResponse(object):
     def id_produto(self, id_produto):
         """
         Sets the id_produto of this PortadorResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o do Produto (id).
+        {{{portador_response_id_produto_value}}}
 
         :param id_produto: The id_produto of this PortadorResponse.
         :type: int
@@ -121,7 +121,7 @@ class PortadorResponse(object):
     def id_pessoa(self):
         """
         Gets the id_pessoa of this PortadorResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o da Pessoa (id).
+        {{{portador_response_id_pessoa_value}}}
 
         :return: The id_pessoa of this PortadorResponse.
         :rtype: int
@@ -132,7 +132,7 @@ class PortadorResponse(object):
     def id_pessoa(self, id_pessoa):
         """
         Sets the id_pessoa of this PortadorResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o da Pessoa (id).
+        {{{portador_response_id_pessoa_value}}}
 
         :param id_pessoa: The id_pessoa of this PortadorResponse.
         :type: int
@@ -143,7 +143,7 @@ class PortadorResponse(object):
     def id_parentesco(self):
         """
         Gets the id_parentesco of this PortadorResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o do Parentesco (id)
+        {{{portador_response_id_parentesco_value}}}
 
         :return: The id_parentesco of this PortadorResponse.
         :rtype: int
@@ -154,7 +154,7 @@ class PortadorResponse(object):
     def id_parentesco(self, id_parentesco):
         """
         Sets the id_parentesco of this PortadorResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o do Parentesco (id)
+        {{{portador_response_id_parentesco_value}}}
 
         :param id_parentesco: The id_parentesco of this PortadorResponse.
         :type: int
@@ -165,7 +165,7 @@ class PortadorResponse(object):
     def tipo_portador(self):
         """
         Gets the tipo_portador of this PortadorResponse.
-        Apresenta o tipo do Portador do cart\u00E3o, sendo: ('T': Titular, 'A': Adicional).
+        {{{portador_response_tipo_portador_value}}}
 
         :return: The tipo_portador of this PortadorResponse.
         :rtype: str
@@ -176,7 +176,7 @@ class PortadorResponse(object):
     def tipo_portador(self, tipo_portador):
         """
         Sets the tipo_portador of this PortadorResponse.
-        Apresenta o tipo do Portador do cart\u00E3o, sendo: ('T': Titular, 'A': Adicional).
+        {{{portador_response_tipo_portador_value}}}
 
         :param tipo_portador: The tipo_portador of this PortadorResponse.
         :type: str
@@ -187,7 +187,7 @@ class PortadorResponse(object):
     def nome_impresso(self):
         """
         Gets the nome_impresso of this PortadorResponse.
-        Apresenta o nome a ser impresso no cart\u00E3o.
+        {{{portador_response_nome_impresso_value}}}
 
         :return: The nome_impresso of this PortadorResponse.
         :rtype: str
@@ -198,7 +198,7 @@ class PortadorResponse(object):
     def nome_impresso(self, nome_impresso):
         """
         Sets the nome_impresso of this PortadorResponse.
-        Apresenta o nome a ser impresso no cart\u00E3o.
+        {{{portador_response_nome_impresso_value}}}
 
         :param nome_impresso: The nome_impresso of this PortadorResponse.
         :type: str
@@ -209,7 +209,7 @@ class PortadorResponse(object):
     def id_tipo_cartao(self):
         """
         Gets the id_tipo_cartao of this PortadorResponse.
-        Apresenta o c\u00F3digo de identifica\u00E7\u00E3o do tipo do cart\u00E3o (id), que ser\u00E1 utilizado para gerar os cart\u00F5es deste portador, vinculados a sua respectiva conta atrav\u00E9s do campo idConta.
+        {{{portador_response_id_tipo_cartao_value}}}
 
         :return: The id_tipo_cartao of this PortadorResponse.
         :rtype: int
@@ -220,7 +220,7 @@ class PortadorResponse(object):
     def id_tipo_cartao(self, id_tipo_cartao):
         """
         Sets the id_tipo_cartao of this PortadorResponse.
-        Apresenta o c\u00F3digo de identifica\u00E7\u00E3o do tipo do cart\u00E3o (id), que ser\u00E1 utilizado para gerar os cart\u00F5es deste portador, vinculados a sua respectiva conta atrav\u00E9s do campo idConta.
+        {{{portador_response_id_tipo_cartao_value}}}
 
         :param id_tipo_cartao: The id_tipo_cartao of this PortadorResponse.
         :type: int
@@ -231,7 +231,7 @@ class PortadorResponse(object):
     def flag_ativo(self):
         """
         Gets the flag_ativo of this PortadorResponse.
-        Quanto ativa, indica que o cadastro do Portador est\u00E1 ativo, em emissores que realizam este tipo de gest\u00E3o.
+        {{{portador_response_flag_ativo_value}}}
 
         :return: The flag_ativo of this PortadorResponse.
         :rtype: int
@@ -242,7 +242,7 @@ class PortadorResponse(object):
     def flag_ativo(self, flag_ativo):
         """
         Sets the flag_ativo of this PortadorResponse.
-        Quanto ativa, indica que o cadastro do Portador est\u00E1 ativo, em emissores que realizam este tipo de gest\u00E3o.
+        {{{portador_response_flag_ativo_value}}}
 
         :param flag_ativo: The flag_ativo of this PortadorResponse.
         :type: int
@@ -253,7 +253,7 @@ class PortadorResponse(object):
     def data_cadastro_portador(self):
         """
         Gets the data_cadastro_portador of this PortadorResponse.
-        Apresenta a data em que o Portador fora cadastrado, quando possuir esta informa\u00E7\u00E3o.
+        {{{portador_response_data_cadastro_portador_value}}}
 
         :return: The data_cadastro_portador of this PortadorResponse.
         :rtype: str
@@ -264,7 +264,7 @@ class PortadorResponse(object):
     def data_cadastro_portador(self, data_cadastro_portador):
         """
         Sets the data_cadastro_portador of this PortadorResponse.
-        Apresenta a data em que o Portador fora cadastrado, quando possuir esta informa\u00E7\u00E3o.
+        {{{portador_response_data_cadastro_portador_value}}}
 
         :param data_cadastro_portador: The data_cadastro_portador of this PortadorResponse.
         :type: str
@@ -275,7 +275,7 @@ class PortadorResponse(object):
     def data_cancelamento_portador(self):
         """
         Gets the data_cancelamento_portador of this PortadorResponse.
-        Apresenta a data em que o Portador fora cancelado, quando possuir esta informa\u00E7\u00E3o.
+        {{{portador_response_data_cancelamento_portador_value}}}
 
         :return: The data_cancelamento_portador of this PortadorResponse.
         :rtype: str
@@ -286,7 +286,7 @@ class PortadorResponse(object):
     def data_cancelamento_portador(self, data_cancelamento_portador):
         """
         Sets the data_cancelamento_portador of this PortadorResponse.
-        Apresenta a data em que o Portador fora cancelado, quando possuir esta informa\u00E7\u00E3o.
+        {{{portador_response_data_cancelamento_portador_value}}}
 
         :param data_cancelamento_portador: The data_cancelamento_portador of this PortadorResponse.
         :type: str

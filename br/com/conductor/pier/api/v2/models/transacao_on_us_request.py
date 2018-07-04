@@ -71,7 +71,7 @@ class TransacaoOnUsRequest(object):
     def nsu_origem(self):
         """
         Gets the nsu_origem of this TransacaoOnUsRequest.
-        N\u00FAmero Sequencial \u00DAnico que identifica a transa\u00E7\u00E3o no sistema que a originou.
+        {{{transacao_on_us_request_nsu_origem_value}}}
 
         :return: The nsu_origem of this TransacaoOnUsRequest.
         :rtype: str
@@ -82,7 +82,7 @@ class TransacaoOnUsRequest(object):
     def nsu_origem(self, nsu_origem):
         """
         Sets the nsu_origem of this TransacaoOnUsRequest.
-        N\u00FAmero Sequencial \u00DAnico que identifica a transa\u00E7\u00E3o no sistema que a originou.
+        {{{transacao_on_us_request_nsu_origem_value}}}
 
         :param nsu_origem: The nsu_origem of this TransacaoOnUsRequest.
         :type: str
@@ -93,7 +93,7 @@ class TransacaoOnUsRequest(object):
     def codigo_processamento(self):
         """
         Gets the codigo_processamento of this TransacaoOnUsRequest.
-        C\u00F3digo de Processamento que identifica o Tipo da Transa\u00E7\u00E3o.
+        {{{transacao_on_us_request_codigo_processamento_value}}}
 
         :return: The codigo_processamento of this TransacaoOnUsRequest.
         :rtype: str
@@ -104,7 +104,7 @@ class TransacaoOnUsRequest(object):
     def codigo_processamento(self, codigo_processamento):
         """
         Sets the codigo_processamento of this TransacaoOnUsRequest.
-        C\u00F3digo de Processamento que identifica o Tipo da Transa\u00E7\u00E3o.
+        {{{transacao_on_us_request_codigo_processamento_value}}}
 
         :param codigo_processamento: The codigo_processamento of this TransacaoOnUsRequest.
         :type: str
@@ -115,7 +115,7 @@ class TransacaoOnUsRequest(object):
     def valor_transacao(self):
         """
         Gets the valor_transacao of this TransacaoOnUsRequest.
-        Valor da transa\u00E7\u00E3o com duas casas decimais para os centavos.
+        {{{transacao_on_us_request_valor_transacao_value}}}
 
         :return: The valor_transacao of this TransacaoOnUsRequest.
         :rtype: float
@@ -126,7 +126,7 @@ class TransacaoOnUsRequest(object):
     def valor_transacao(self, valor_transacao):
         """
         Sets the valor_transacao of this TransacaoOnUsRequest.
-        Valor da transa\u00E7\u00E3o com duas casas decimais para os centavos.
+        {{{transacao_on_us_request_valor_transacao_value}}}
 
         :param valor_transacao: The valor_transacao of this TransacaoOnUsRequest.
         :type: float
@@ -137,7 +137,7 @@ class TransacaoOnUsRequest(object):
     def numero_real_cartao(self):
         """
         Gets the numero_real_cartao of this TransacaoOnUsRequest.
-        N\u00FAmero Real do Cart\u00E3o.
+        {{{transacao_on_us_request_numero_real_cartao_value}}}
 
         :return: The numero_real_cartao of this TransacaoOnUsRequest.
         :rtype: str
@@ -148,7 +148,7 @@ class TransacaoOnUsRequest(object):
     def numero_real_cartao(self, numero_real_cartao):
         """
         Sets the numero_real_cartao of this TransacaoOnUsRequest.
-        N\u00FAmero Real do Cart\u00E3o.
+        {{{transacao_on_us_request_numero_real_cartao_value}}}
 
         :param numero_real_cartao: The numero_real_cartao of this TransacaoOnUsRequest.
         :type: str
@@ -159,7 +159,7 @@ class TransacaoOnUsRequest(object):
     def data_validade_cartao(self):
         """
         Gets the data_validade_cartao of this TransacaoOnUsRequest.
-        Data de Validade do Cart\u00E3o. Ex: AAMM
+        {{{transacao_on_us_request_data_validade_cartao_value}}}
 
         :return: The data_validade_cartao of this TransacaoOnUsRequest.
         :rtype: str
@@ -170,7 +170,7 @@ class TransacaoOnUsRequest(object):
     def data_validade_cartao(self, data_validade_cartao):
         """
         Sets the data_validade_cartao of this TransacaoOnUsRequest.
-        Data de Validade do Cart\u00E3o. Ex: AAMM
+        {{{transacao_on_us_request_data_validade_cartao_value}}}
 
         :param data_validade_cartao: The data_validade_cartao of this TransacaoOnUsRequest.
         :type: str
@@ -181,7 +181,7 @@ class TransacaoOnUsRequest(object):
     def numero_estabelecimento(self):
         """
         Gets the numero_estabelecimento of this TransacaoOnUsRequest.
-        N\u00FAmero do Estabelecimento (N\u00FAmero+DV).
+        {{{transacao_on_us_request_numero_estabelecimento_value}}}
 
         :return: The numero_estabelecimento of this TransacaoOnUsRequest.
         :rtype: int
@@ -192,7 +192,7 @@ class TransacaoOnUsRequest(object):
     def numero_estabelecimento(self, numero_estabelecimento):
         """
         Sets the numero_estabelecimento of this TransacaoOnUsRequest.
-        N\u00FAmero do Estabelecimento (N\u00FAmero+DV).
+        {{{transacao_on_us_request_numero_estabelecimento_value}}}
 
         :param numero_estabelecimento: The numero_estabelecimento of this TransacaoOnUsRequest.
         :type: int
@@ -203,7 +203,7 @@ class TransacaoOnUsRequest(object):
     def data_hora_terminal(self):
         """
         Gets the data_hora_terminal of this TransacaoOnUsRequest.
-        Apresenta a data e hora local da consulta yyyy-MM-dd'T'HH:mm:ss.SSSZ. Ex: 2000-10-31T01:30:00.000-05:00
+        {{{transacao_on_us_request_data_hora_terminal_value}}}
 
         :return: The data_hora_terminal of this TransacaoOnUsRequest.
         :rtype: str
@@ -214,7 +214,7 @@ class TransacaoOnUsRequest(object):
     def data_hora_terminal(self, data_hora_terminal):
         """
         Sets the data_hora_terminal of this TransacaoOnUsRequest.
-        Apresenta a data e hora local da consulta yyyy-MM-dd'T'HH:mm:ss.SSSZ. Ex: 2000-10-31T01:30:00.000-05:00
+        {{{transacao_on_us_request_data_hora_terminal_value}}}
 
         :param data_hora_terminal: The data_hora_terminal of this TransacaoOnUsRequest.
         :type: str
@@ -225,7 +225,7 @@ class TransacaoOnUsRequest(object):
     def terminal_requisitante(self):
         """
         Gets the terminal_requisitante of this TransacaoOnUsRequest.
-        Apresenta a identifica\u00E7\u00E3o do terminal requisitante
+        {{{transacao_on_us_request_terminal_requisitante_value}}}
 
         :return: The terminal_requisitante of this TransacaoOnUsRequest.
         :rtype: str
@@ -236,7 +236,7 @@ class TransacaoOnUsRequest(object):
     def terminal_requisitante(self, terminal_requisitante):
         """
         Sets the terminal_requisitante of this TransacaoOnUsRequest.
-        Apresenta a identifica\u00E7\u00E3o do terminal requisitante
+        {{{transacao_on_us_request_terminal_requisitante_value}}}
 
         :param terminal_requisitante: The terminal_requisitante of this TransacaoOnUsRequest.
         :type: str

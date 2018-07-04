@@ -53,7 +53,7 @@ class DetalhesFaturaResponse(object):
     def fatura(self):
         """
         Gets the fatura of this DetalhesFaturaResponse.
-        Apresenta os detalhes da fatura
+        {{{detalhes_fatura_response_fatura_value}}}
 
         :return: The fatura of this DetalhesFaturaResponse.
         :rtype: FaturaFechadaResponse
@@ -64,7 +64,7 @@ class DetalhesFaturaResponse(object):
     def fatura(self, fatura):
         """
         Sets the fatura of this DetalhesFaturaResponse.
-        Apresenta os detalhes da fatura
+        {{{detalhes_fatura_response_fatura_value}}}
 
         :param fatura: The fatura of this DetalhesFaturaResponse.
         :type: FaturaFechadaResponse
@@ -75,7 +75,7 @@ class DetalhesFaturaResponse(object):
     def transacoes(self):
         """
         Gets the transacoes of this DetalhesFaturaResponse.
-        Apresenta as transa\u00E7\u00F5es relacionadas a fatura.
+        {{{detalhes_fatura_response_transacoes_value}}}
 
         :return: The transacoes of this DetalhesFaturaResponse.
         :rtype: list[TransacoesCorrentesResponse]
@@ -86,7 +86,7 @@ class DetalhesFaturaResponse(object):
     def transacoes(self, transacoes):
         """
         Sets the transacoes of this DetalhesFaturaResponse.
-        Apresenta as transa\u00E7\u00F5es relacionadas a fatura.
+        {{{detalhes_fatura_response_transacoes_value}}}
 
         :param transacoes: The transacoes of this DetalhesFaturaResponse.
         :type: list[TransacoesCorrentesResponse]

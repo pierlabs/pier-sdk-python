@@ -53,7 +53,7 @@ class GrupoOrigemComercialResponse(object):
     def id(self):
         """
         Gets the id of this GrupoOrigemComercialResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o do grupo de origem comercial.
+        {{{grupo_origem_comercial_response_id_value}}}
 
         :return: The id of this GrupoOrigemComercialResponse.
         :rtype: int
@@ -64,7 +64,7 @@ class GrupoOrigemComercialResponse(object):
     def id(self, id):
         """
         Sets the id of this GrupoOrigemComercialResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o do grupo de origem comercial.
+        {{{grupo_origem_comercial_response_id_value}}}
 
         :param id: The id of this GrupoOrigemComercialResponse.
         :type: int
@@ -75,7 +75,7 @@ class GrupoOrigemComercialResponse(object):
     def nome(self):
         """
         Gets the nome of this GrupoOrigemComercialResponse.
-        Nome do grupo da origem comercial
+        {{{grupo_origem_comercial_response_nome_value}}}
 
         :return: The nome of this GrupoOrigemComercialResponse.
         :rtype: str
@@ -86,7 +86,7 @@ class GrupoOrigemComercialResponse(object):
     def nome(self, nome):
         """
         Sets the nome of this GrupoOrigemComercialResponse.
-        Nome do grupo da origem comercial
+        {{{grupo_origem_comercial_response_nome_value}}}
 
         :param nome: The nome of this GrupoOrigemComercialResponse.
         :type: str

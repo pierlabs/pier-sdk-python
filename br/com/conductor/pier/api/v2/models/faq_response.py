@@ -68,7 +68,7 @@ class FaqResponse(object):
     def id(self):
         """
         Gets the id of this FaqResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o da FAQ (id).
+        {{{faq_response_id_value}}}
 
         :return: The id of this FaqResponse.
         :rtype: int
@@ -79,7 +79,7 @@ class FaqResponse(object):
     def id(self, id):
         """
         Sets the id of this FaqResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o da FAQ (id).
+        {{{faq_response_id_value}}}
 
         :param id: The id of this FaqResponse.
         :type: int
@@ -90,7 +90,7 @@ class FaqResponse(object):
     def pergunta(self):
         """
         Gets the pergunta of this FaqResponse.
-        Conte\u00FAdo da pergunta.
+        {{{faq_response_pergunta_value}}}
 
         :return: The pergunta of this FaqResponse.
         :rtype: str
@@ -101,7 +101,7 @@ class FaqResponse(object):
     def pergunta(self, pergunta):
         """
         Sets the pergunta of this FaqResponse.
-        Conte\u00FAdo da pergunta.
+        {{{faq_response_pergunta_value}}}
 
         :param pergunta: The pergunta of this FaqResponse.
         :type: str
@@ -112,7 +112,7 @@ class FaqResponse(object):
     def resposta(self):
         """
         Gets the resposta of this FaqResponse.
-        Conte\u00FAdo da resposta.
+        {{{faq_response_resposta_value}}}
 
         :return: The resposta of this FaqResponse.
         :rtype: str
@@ -123,7 +123,7 @@ class FaqResponse(object):
     def resposta(self, resposta):
         """
         Sets the resposta of this FaqResponse.
-        Conte\u00FAdo da resposta.
+        {{{faq_response_resposta_value}}}
 
         :param resposta: The resposta of this FaqResponse.
         :type: str
@@ -134,7 +134,7 @@ class FaqResponse(object):
     def relevancia(self):
         """
         Gets the relevancia of this FaqResponse.
-        N\u00EDvel de relev\u00E2ncia da pergunta.
+        {{{faq_response_relevancia_value}}}
 
         :return: The relevancia of this FaqResponse.
         :rtype: int
@@ -145,7 +145,7 @@ class FaqResponse(object):
     def relevancia(self, relevancia):
         """
         Sets the relevancia of this FaqResponse.
-        N\u00EDvel de relev\u00E2ncia da pergunta.
+        {{{faq_response_relevancia_value}}}
 
         :param relevancia: The relevancia of this FaqResponse.
         :type: int
@@ -156,7 +156,7 @@ class FaqResponse(object):
     def plataforma(self):
         """
         Gets the plataforma of this FaqResponse.
-        Plataforma em que a FAQ se encaixa.
+        {{{faq_response_plataforma_value}}}
 
         :return: The plataforma of this FaqResponse.
         :rtype: str
@@ -167,7 +167,7 @@ class FaqResponse(object):
     def plataforma(self, plataforma):
         """
         Sets the plataforma of this FaqResponse.
-        Plataforma em que a FAQ se encaixa.
+        {{{faq_response_plataforma_value}}}
 
         :param plataforma: The plataforma of this FaqResponse.
         :type: str
@@ -178,7 +178,7 @@ class FaqResponse(object):
     def categoria(self):
         """
         Gets the categoria of this FaqResponse.
-        Categoria de assunto do qual a FAQ se trata.
+        {{{faq_response_categoria_value}}}
 
         :return: The categoria of this FaqResponse.
         :rtype: str
@@ -189,7 +189,7 @@ class FaqResponse(object):
     def categoria(self, categoria):
         """
         Sets the categoria of this FaqResponse.
-        Categoria de assunto do qual a FAQ se trata.
+        {{{faq_response_categoria_value}}}
 
         :param categoria: The categoria of this FaqResponse.
         :type: str
@@ -200,7 +200,7 @@ class FaqResponse(object):
     def status(self):
         """
         Gets the status of this FaqResponse.
-        Status descrevendo a situa\u00E7\u00E3o atual da FAQ.
+        {{{faq_response_status_value}}}
 
         :return: The status of this FaqResponse.
         :rtype: str
@@ -211,7 +211,7 @@ class FaqResponse(object):
     def status(self, status):
         """
         Sets the status of this FaqResponse.
-        Status descrevendo a situa\u00E7\u00E3o atual da FAQ.
+        {{{faq_response_status_value}}}
 
         :param status: The status of this FaqResponse.
         :type: str

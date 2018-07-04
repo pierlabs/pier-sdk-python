@@ -53,7 +53,7 @@ class TransacaoPayQueryResponse(object):
     def codigo(self):
         """
         Gets the codigo of this TransacaoPayQueryResponse.
-        Resultado de consulta de conta
+        {{{transacao_pay_query_response_codigo_value}}}
 
         :return: The codigo of this TransacaoPayQueryResponse.
         :rtype: str
@@ -64,7 +64,7 @@ class TransacaoPayQueryResponse(object):
     def codigo(self, codigo):
         """
         Sets the codigo of this TransacaoPayQueryResponse.
-        Resultado de consulta de conta
+        {{{transacao_pay_query_response_codigo_value}}}
 
         :param codigo: The codigo of this TransacaoPayQueryResponse.
         :type: str
@@ -75,7 +75,7 @@ class TransacaoPayQueryResponse(object):
     def descricao(self):
         """
         Gets the descricao of this TransacaoPayQueryResponse.
-        Mensagem descrevendo resposta.
+        {{{transacao_pay_query_response_descricao_value}}}
 
         :return: The descricao of this TransacaoPayQueryResponse.
         :rtype: str
@@ -86,7 +86,7 @@ class TransacaoPayQueryResponse(object):
     def descricao(self, descricao):
         """
         Sets the descricao of this TransacaoPayQueryResponse.
-        Mensagem descrevendo resposta.
+        {{{transacao_pay_query_response_descricao_value}}}
 
         :param descricao: The descricao of this TransacaoPayQueryResponse.
         :type: str

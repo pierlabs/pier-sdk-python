@@ -71,7 +71,7 @@ class MaquinetaResponse(object):
     def id(self):
         """
         Gets the id of this MaquinetaResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o da Maquineta.
+        {{{maquineta_response_id_value}}}
 
         :return: The id of this MaquinetaResponse.
         :rtype: int
@@ -82,7 +82,7 @@ class MaquinetaResponse(object):
     def id(self, id):
         """
         Sets the id of this MaquinetaResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o da Maquineta.
+        {{{maquineta_response_id_value}}}
 
         :param id: The id of this MaquinetaResponse.
         :type: int
@@ -93,7 +93,7 @@ class MaquinetaResponse(object):
     def id_estabelecimento(self):
         """
         Gets the id_estabelecimento of this MaquinetaResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o do EStabelecimento.
+        {{{maquineta_response_id_estabelecimento_value}}}
 
         :return: The id_estabelecimento of this MaquinetaResponse.
         :rtype: int
@@ -104,7 +104,7 @@ class MaquinetaResponse(object):
     def id_estabelecimento(self, id_estabelecimento):
         """
         Sets the id_estabelecimento of this MaquinetaResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o do EStabelecimento.
+        {{{maquineta_response_id_estabelecimento_value}}}
 
         :param id_estabelecimento: The id_estabelecimento of this MaquinetaResponse.
         :type: int
@@ -115,7 +115,7 @@ class MaquinetaResponse(object):
     def id_tipo_maquineta(self):
         """
         Gets the id_tipo_maquineta of this MaquinetaResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o do Tipo Maquineta.
+        {{{maquineta_response_id_tipo_maquineta_value}}}
 
         :return: The id_tipo_maquineta of this MaquinetaResponse.
         :rtype: int
@@ -126,7 +126,7 @@ class MaquinetaResponse(object):
     def id_tipo_maquineta(self, id_tipo_maquineta):
         """
         Sets the id_tipo_maquineta of this MaquinetaResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o do Tipo Maquineta.
+        {{{maquineta_response_id_tipo_maquineta_value}}}
 
         :param id_tipo_maquineta: The id_tipo_maquineta of this MaquinetaResponse.
         :type: int
@@ -137,7 +137,7 @@ class MaquinetaResponse(object):
     def valor(self):
         """
         Gets the valor of this MaquinetaResponse.
-        Valor de manuten\u00E7\u00E3o da Maquineta.
+        {{{maquineta_response_valor_value}}}
 
         :return: The valor of this MaquinetaResponse.
         :rtype: float
@@ -148,7 +148,7 @@ class MaquinetaResponse(object):
     def valor(self, valor):
         """
         Sets the valor of this MaquinetaResponse.
-        Valor de manuten\u00E7\u00E3o da Maquineta.
+        {{{maquineta_response_valor_value}}}
 
         :param valor: The valor of this MaquinetaResponse.
         :type: float
@@ -159,7 +159,7 @@ class MaquinetaResponse(object):
     def data_hora_implantacao(self):
         """
         Gets the data_hora_implantacao of this MaquinetaResponse.
-        Data de implanta\u00E7\u00E3o da Maquineta.
+        {{{maquineta_response_data_hora_implantacao_value}}}
 
         :return: The data_hora_implantacao of this MaquinetaResponse.
         :rtype: str
@@ -170,7 +170,7 @@ class MaquinetaResponse(object):
     def data_hora_implantacao(self, data_hora_implantacao):
         """
         Sets the data_hora_implantacao of this MaquinetaResponse.
-        Data de implanta\u00E7\u00E3o da Maquineta.
+        {{{maquineta_response_data_hora_implantacao_value}}}
 
         :param data_hora_implantacao: The data_hora_implantacao of this MaquinetaResponse.
         :type: str
@@ -181,7 +181,7 @@ class MaquinetaResponse(object):
     def data_hora_cadastramento(self):
         """
         Gets the data_hora_cadastramento of this MaquinetaResponse.
-        Data de cadastramento da Maquineta.
+        {{{maquineta_response_data_hora_cadastramento_value}}}
 
         :return: The data_hora_cadastramento of this MaquinetaResponse.
         :rtype: str
@@ -192,7 +192,7 @@ class MaquinetaResponse(object):
     def data_hora_cadastramento(self, data_hora_cadastramento):
         """
         Sets the data_hora_cadastramento of this MaquinetaResponse.
-        Data de cadastramento da Maquineta.
+        {{{maquineta_response_data_hora_cadastramento_value}}}
 
         :param data_hora_cadastramento: The data_hora_cadastramento of this MaquinetaResponse.
         :type: str
@@ -203,7 +203,7 @@ class MaquinetaResponse(object):
     def terminal(self):
         """
         Gets the terminal of this MaquinetaResponse.
-        N\u00FAmero do terminal vinculado a Maquineta.
+        {{{maquineta_response_terminal_value}}}
 
         :return: The terminal of this MaquinetaResponse.
         :rtype: str
@@ -214,7 +214,7 @@ class MaquinetaResponse(object):
     def terminal(self, terminal):
         """
         Sets the terminal of this MaquinetaResponse.
-        N\u00FAmero do terminal vinculado a Maquineta.
+        {{{maquineta_response_terminal_value}}}
 
         :param terminal: The terminal of this MaquinetaResponse.
         :type: str
@@ -225,7 +225,7 @@ class MaquinetaResponse(object):
     def usuario_apl(self):
         """
         Gets the usuario_apl of this MaquinetaResponse.
-        Usu\u00E1rio da aplica\u00E7\u00E3o.
+        {{{maquineta_response_usuario_apl_value}}}
 
         :return: The usuario_apl of this MaquinetaResponse.
         :rtype: str
@@ -236,7 +236,7 @@ class MaquinetaResponse(object):
     def usuario_apl(self, usuario_apl):
         """
         Sets the usuario_apl of this MaquinetaResponse.
-        Usu\u00E1rio da aplica\u00E7\u00E3o.
+        {{{maquineta_response_usuario_apl_value}}}
 
         :param usuario_apl: The usuario_apl of this MaquinetaResponse.
         :type: str

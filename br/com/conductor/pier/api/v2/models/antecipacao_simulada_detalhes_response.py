@@ -59,7 +59,7 @@ class AntecipacaoSimuladaDetalhesResponse(object):
     def quantidade_parcelas(self):
         """
         Gets the quantidade_parcelas of this AntecipacaoSimuladaDetalhesResponse.
-        Quantidade de parcelas do plano de parcelamento simulado.
+        {{{antecipacao_simulada_detalhes_response_quantidade_parcelas_value}}}
 
         :return: The quantidade_parcelas of this AntecipacaoSimuladaDetalhesResponse.
         :rtype: int
@@ -70,7 +70,7 @@ class AntecipacaoSimuladaDetalhesResponse(object):
     def quantidade_parcelas(self, quantidade_parcelas):
         """
         Sets the quantidade_parcelas of this AntecipacaoSimuladaDetalhesResponse.
-        Quantidade de parcelas do plano de parcelamento simulado.
+        {{{antecipacao_simulada_detalhes_response_quantidade_parcelas_value}}}
 
         :param quantidade_parcelas: The quantidade_parcelas of this AntecipacaoSimuladaDetalhesResponse.
         :type: int
@@ -81,7 +81,7 @@ class AntecipacaoSimuladaDetalhesResponse(object):
     def valor_parcelas(self):
         """
         Gets the valor_parcelas of this AntecipacaoSimuladaDetalhesResponse.
-        Valor total das parcelas do plano de parcelamento.
+        {{{antecipacao_simulada_detalhes_response_valor_parcelas_value}}}
 
         :return: The valor_parcelas of this AntecipacaoSimuladaDetalhesResponse.
         :rtype: float
@@ -92,7 +92,7 @@ class AntecipacaoSimuladaDetalhesResponse(object):
     def valor_parcelas(self, valor_parcelas):
         """
         Sets the valor_parcelas of this AntecipacaoSimuladaDetalhesResponse.
-        Valor total das parcelas do plano de parcelamento.
+        {{{antecipacao_simulada_detalhes_response_valor_parcelas_value}}}
 
         :param valor_parcelas: The valor_parcelas of this AntecipacaoSimuladaDetalhesResponse.
         :type: float
@@ -103,7 +103,7 @@ class AntecipacaoSimuladaDetalhesResponse(object):
     def valor_desconto(self):
         """
         Gets the valor_desconto of this AntecipacaoSimuladaDetalhesResponse.
-        Valor do desconto para o plano de parcelamento.
+        {{{antecipacao_simulada_detalhes_response_valor_desconto_value}}}
 
         :return: The valor_desconto of this AntecipacaoSimuladaDetalhesResponse.
         :rtype: float
@@ -114,7 +114,7 @@ class AntecipacaoSimuladaDetalhesResponse(object):
     def valor_desconto(self, valor_desconto):
         """
         Sets the valor_desconto of this AntecipacaoSimuladaDetalhesResponse.
-        Valor do desconto para o plano de parcelamento.
+        {{{antecipacao_simulada_detalhes_response_valor_desconto_value}}}
 
         :param valor_desconto: The valor_desconto of this AntecipacaoSimuladaDetalhesResponse.
         :type: float
@@ -125,7 +125,7 @@ class AntecipacaoSimuladaDetalhesResponse(object):
     def valor_parcelas_desconto(self):
         """
         Gets the valor_parcelas_desconto of this AntecipacaoSimuladaDetalhesResponse.
-        Valor total da parcela ap\u00F3s a aplica\u00E7\u00E3o do desconto.
+        {{{antecipacao_simulada_detalhes_response_valor_parcelas_desconto_value}}}
 
         :return: The valor_parcelas_desconto of this AntecipacaoSimuladaDetalhesResponse.
         :rtype: float
@@ -136,7 +136,7 @@ class AntecipacaoSimuladaDetalhesResponse(object):
     def valor_parcelas_desconto(self, valor_parcelas_desconto):
         """
         Sets the valor_parcelas_desconto of this AntecipacaoSimuladaDetalhesResponse.
-        Valor total da parcela ap\u00F3s a aplica\u00E7\u00E3o do desconto.
+        {{{antecipacao_simulada_detalhes_response_valor_parcelas_desconto_value}}}
 
         :param valor_parcelas_desconto: The valor_parcelas_desconto of this AntecipacaoSimuladaDetalhesResponse.
         :type: float

@@ -71,7 +71,7 @@ class DadosPortadorRequest(object):
     def cartao(self):
         """
         Gets the cartao of this DadosPortadorRequest.
-        N\u00FAmero do cart\u00E3o.
+        {{{dados_portador_request_cartao_value}}}
 
         :return: The cartao of this DadosPortadorRequest.
         :rtype: str
@@ -82,7 +82,7 @@ class DadosPortadorRequest(object):
     def cartao(self, cartao):
         """
         Sets the cartao of this DadosPortadorRequest.
-        N\u00FAmero do cart\u00E3o.
+        {{{dados_portador_request_cartao_value}}}
 
         :param cartao: The cartao of this DadosPortadorRequest.
         :type: str
@@ -93,7 +93,7 @@ class DadosPortadorRequest(object):
     def cpf(self):
         """
         Gets the cpf of this DadosPortadorRequest.
-        N\u00FAmero do CPF.
+        {{{dados_portador_request_cpf_value}}}
 
         :return: The cpf of this DadosPortadorRequest.
         :rtype: str
@@ -104,7 +104,7 @@ class DadosPortadorRequest(object):
     def cpf(self, cpf):
         """
         Sets the cpf of this DadosPortadorRequest.
-        N\u00FAmero do CPF.
+        {{{dados_portador_request_cpf_value}}}
 
         :param cpf: The cpf of this DadosPortadorRequest.
         :type: str
@@ -115,7 +115,7 @@ class DadosPortadorRequest(object):
     def nome(self):
         """
         Gets the nome of this DadosPortadorRequest.
-        Nome do portador.
+        {{{dados_portador_request_nome_value}}}
 
         :return: The nome of this DadosPortadorRequest.
         :rtype: str
@@ -126,7 +126,7 @@ class DadosPortadorRequest(object):
     def nome(self, nome):
         """
         Sets the nome of this DadosPortadorRequest.
-        Nome do portador.
+        {{{dados_portador_request_nome_value}}}
 
         :param nome: The nome of this DadosPortadorRequest.
         :type: str
@@ -137,7 +137,7 @@ class DadosPortadorRequest(object):
     def data_nascimento(self):
         """
         Gets the data_nascimento of this DadosPortadorRequest.
-        Data de nascimento do portador do cart\u00E3o.
+        {{{dados_portador_request_data_nascimento_value}}}
 
         :return: The data_nascimento of this DadosPortadorRequest.
         :rtype: str
@@ -148,7 +148,7 @@ class DadosPortadorRequest(object):
     def data_nascimento(self, data_nascimento):
         """
         Sets the data_nascimento of this DadosPortadorRequest.
-        Data de nascimento do portador do cart\u00E3o.
+        {{{dados_portador_request_data_nascimento_value}}}
 
         :param data_nascimento: The data_nascimento of this DadosPortadorRequest.
         :type: str
@@ -159,7 +159,7 @@ class DadosPortadorRequest(object):
     def cep_residencial(self):
         """
         Gets the cep_residencial of this DadosPortadorRequest.
-        CEP da resid\u00EAncia do portador da conta.
+        {{{dados_portador_request_cep_residencial_value}}}
 
         :return: The cep_residencial of this DadosPortadorRequest.
         :rtype: str
@@ -170,7 +170,7 @@ class DadosPortadorRequest(object):
     def cep_residencial(self, cep_residencial):
         """
         Sets the cep_residencial of this DadosPortadorRequest.
-        CEP da resid\u00EAncia do portador da conta.
+        {{{dados_portador_request_cep_residencial_value}}}
 
         :param cep_residencial: The cep_residencial of this DadosPortadorRequest.
         :type: str
@@ -181,7 +181,7 @@ class DadosPortadorRequest(object):
     def email(self):
         """
         Gets the email of this DadosPortadorRequest.
-        E-mail do portador do cart\u00E3o.
+        {{{dados_portador_request_email_value}}}
 
         :return: The email of this DadosPortadorRequest.
         :rtype: str
@@ -192,7 +192,7 @@ class DadosPortadorRequest(object):
     def email(self, email):
         """
         Sets the email of this DadosPortadorRequest.
-        E-mail do portador do cart\u00E3o.
+        {{{dados_portador_request_email_value}}}
 
         :param email: The email of this DadosPortadorRequest.
         :type: str
@@ -203,7 +203,7 @@ class DadosPortadorRequest(object):
     def ddd(self):
         """
         Gets the ddd of this DadosPortadorRequest.
-        DDD do n\u00FAmero de telefone do portador do cart\u00E3o.
+        {{{dados_portador_request_ddd_value}}}
 
         :return: The ddd of this DadosPortadorRequest.
         :rtype: str
@@ -214,7 +214,7 @@ class DadosPortadorRequest(object):
     def ddd(self, ddd):
         """
         Sets the ddd of this DadosPortadorRequest.
-        DDD do n\u00FAmero de telefone do portador do cart\u00E3o.
+        {{{dados_portador_request_ddd_value}}}
 
         :param ddd: The ddd of this DadosPortadorRequest.
         :type: str
@@ -225,7 +225,7 @@ class DadosPortadorRequest(object):
     def telefone(self):
         """
         Gets the telefone of this DadosPortadorRequest.
-        N\u00FAmero do telefone do portador do cart\u00E3o.
+        {{{dados_portador_request_telefone_value}}}
 
         :return: The telefone of this DadosPortadorRequest.
         :rtype: str
@@ -236,7 +236,7 @@ class DadosPortadorRequest(object):
     def telefone(self, telefone):
         """
         Sets the telefone of this DadosPortadorRequest.
-        N\u00FAmero do telefone do portador do cart\u00E3o.
+        {{{dados_portador_request_telefone_value}}}
 
         :param telefone: The telefone of this DadosPortadorRequest.
         :type: str

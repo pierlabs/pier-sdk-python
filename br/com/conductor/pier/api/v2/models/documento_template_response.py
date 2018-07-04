@@ -53,7 +53,7 @@ class DocumentoTemplateResponse(object):
     def id(self):
         """
         Gets the id of this DocumentoTemplateResponse.
-        ID do Template do Documento.
+        {{{documento_template_response_id_value}}}
 
         :return: The id of this DocumentoTemplateResponse.
         :rtype: int
@@ -64,7 +64,7 @@ class DocumentoTemplateResponse(object):
     def id(self, id):
         """
         Sets the id of this DocumentoTemplateResponse.
-        ID do Template do Documento.
+        {{{documento_template_response_id_value}}}
 
         :param id: The id of this DocumentoTemplateResponse.
         :type: int
@@ -75,7 +75,7 @@ class DocumentoTemplateResponse(object):
     def id_tipo_template(self):
         """
         Gets the id_tipo_template of this DocumentoTemplateResponse.
-        ID do Tipo de Template.
+        {{{documento_template_response_id_tipo_template_value}}}
 
         :return: The id_tipo_template of this DocumentoTemplateResponse.
         :rtype: int
@@ -86,7 +86,7 @@ class DocumentoTemplateResponse(object):
     def id_tipo_template(self, id_tipo_template):
         """
         Sets the id_tipo_template of this DocumentoTemplateResponse.
-        ID do Tipo de Template.
+        {{{documento_template_response_id_tipo_template_value}}}
 
         :param id_tipo_template: The id_tipo_template of this DocumentoTemplateResponse.
         :type: int

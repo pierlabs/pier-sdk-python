@@ -46,7 +46,8 @@ class UsuarioResponse(object):
             'status': 'str',
             'data_criacao': 'str',
             'data_modificacao': 'str',
-            'tentativas_incorretas': 'int'
+            'tentativas_incorretas': 'int',
+            'bloquear_acesso': 'bool'
         }
 
         self.attribute_map = {
@@ -59,7 +60,8 @@ class UsuarioResponse(object):
             'status': 'status',
             'data_criacao': 'dataCriacao',
             'data_modificacao': 'dataModificacao',
-            'tentativas_incorretas': 'tentativasIncorretas'
+            'tentativas_incorretas': 'tentativasIncorretas',
+            'bloquear_acesso': 'bloquearAcesso'
         }
 
         self._id = None
@@ -72,12 +74,13 @@ class UsuarioResponse(object):
         self._data_criacao = None
         self._data_modificacao = None
         self._tentativas_incorretas = None
+        self._bloquear_acesso = None
 
     @property
     def id(self):
         """
         Gets the id of this UsuarioResponse.
-        Id do Usu\u00E1rio
+        {{{usuario_response_id_value}}}
 
         :return: The id of this UsuarioResponse.
         :rtype: int
@@ -88,7 +91,7 @@ class UsuarioResponse(object):
     def id(self, id):
         """
         Sets the id of this UsuarioResponse.
-        Id do Usu\u00E1rio
+        {{{usuario_response_id_value}}}
 
         :param id: The id of this UsuarioResponse.
         :type: int
@@ -99,7 +102,7 @@ class UsuarioResponse(object):
     def nome(self):
         """
         Gets the nome of this UsuarioResponse.
-        Nome do Usu\u00E1rio
+        {{{usuario_response_nome_value}}}
 
         :return: The nome of this UsuarioResponse.
         :rtype: str
@@ -110,7 +113,7 @@ class UsuarioResponse(object):
     def nome(self, nome):
         """
         Sets the nome of this UsuarioResponse.
-        Nome do Usu\u00E1rio
+        {{{usuario_response_nome_value}}}
 
         :param nome: The nome of this UsuarioResponse.
         :type: str
@@ -121,7 +124,7 @@ class UsuarioResponse(object):
     def login(self):
         """
         Gets the login of this UsuarioResponse.
-        Login do Usu\u00E1rio
+        {{{usuario_response_login_value}}}
 
         :return: The login of this UsuarioResponse.
         :rtype: str
@@ -132,7 +135,7 @@ class UsuarioResponse(object):
     def login(self, login):
         """
         Sets the login of this UsuarioResponse.
-        Login do Usu\u00E1rio
+        {{{usuario_response_login_value}}}
 
         :param login: The login of this UsuarioResponse.
         :type: str
@@ -143,7 +146,7 @@ class UsuarioResponse(object):
     def id_emissor(self):
         """
         Gets the id_emissor of this UsuarioResponse.
-        Id do emissor do usu\u00E1rio
+        {{{usuario_response_id_emissor_value}}}
 
         :return: The id_emissor of this UsuarioResponse.
         :rtype: int
@@ -154,7 +157,7 @@ class UsuarioResponse(object):
     def id_emissor(self, id_emissor):
         """
         Sets the id_emissor of this UsuarioResponse.
-        Id do emissor do usu\u00E1rio
+        {{{usuario_response_id_emissor_value}}}
 
         :param id_emissor: The id_emissor of this UsuarioResponse.
         :type: int
@@ -165,7 +168,7 @@ class UsuarioResponse(object):
     def cpf(self):
         """
         Gets the cpf of this UsuarioResponse.
-        CPF do Usu\u00E1rio
+        {{{usuario_response_cpf_value}}}
 
         :return: The cpf of this UsuarioResponse.
         :rtype: str
@@ -176,7 +179,7 @@ class UsuarioResponse(object):
     def cpf(self, cpf):
         """
         Sets the cpf of this UsuarioResponse.
-        CPF do Usu\u00E1rio
+        {{{usuario_response_cpf_value}}}
 
         :param cpf: The cpf of this UsuarioResponse.
         :type: str
@@ -187,7 +190,7 @@ class UsuarioResponse(object):
     def email(self):
         """
         Gets the email of this UsuarioResponse.
-        Email do Usu\u00E1rio
+        {{{usuario_response_email_value}}}
 
         :return: The email of this UsuarioResponse.
         :rtype: str
@@ -198,7 +201,7 @@ class UsuarioResponse(object):
     def email(self, email):
         """
         Sets the email of this UsuarioResponse.
-        Email do Usu\u00E1rio
+        {{{usuario_response_email_value}}}
 
         :param email: The email of this UsuarioResponse.
         :type: str
@@ -209,7 +212,7 @@ class UsuarioResponse(object):
     def status(self):
         """
         Gets the status of this UsuarioResponse.
-        Status do Usu\u00E1rio
+        {{{usuario_response_status_value}}}
 
         :return: The status of this UsuarioResponse.
         :rtype: str
@@ -220,7 +223,7 @@ class UsuarioResponse(object):
     def status(self, status):
         """
         Sets the status of this UsuarioResponse.
-        Status do Usu\u00E1rio
+        {{{usuario_response_status_value}}}
 
         :param status: The status of this UsuarioResponse.
         :type: str
@@ -237,7 +240,7 @@ class UsuarioResponse(object):
     def data_criacao(self):
         """
         Gets the data_criacao of this UsuarioResponse.
-        Data de cria\u00E7\u00E3o do Usu\u00E1rio
+        {{{usuario_response_data_criacao_value}}}
 
         :return: The data_criacao of this UsuarioResponse.
         :rtype: str
@@ -248,7 +251,7 @@ class UsuarioResponse(object):
     def data_criacao(self, data_criacao):
         """
         Sets the data_criacao of this UsuarioResponse.
-        Data de cria\u00E7\u00E3o do Usu\u00E1rio
+        {{{usuario_response_data_criacao_value}}}
 
         :param data_criacao: The data_criacao of this UsuarioResponse.
         :type: str
@@ -259,7 +262,7 @@ class UsuarioResponse(object):
     def data_modificacao(self):
         """
         Gets the data_modificacao of this UsuarioResponse.
-        Data de modifica\u00E7\u00E3o do Usu\u00E1rio
+        {{{usuario_response_data_modificacao_value}}}
 
         :return: The data_modificacao of this UsuarioResponse.
         :rtype: str
@@ -270,7 +273,7 @@ class UsuarioResponse(object):
     def data_modificacao(self, data_modificacao):
         """
         Sets the data_modificacao of this UsuarioResponse.
-        Data de modifica\u00E7\u00E3o do Usu\u00E1rio
+        {{{usuario_response_data_modificacao_value}}}
 
         :param data_modificacao: The data_modificacao of this UsuarioResponse.
         :type: str
@@ -281,7 +284,7 @@ class UsuarioResponse(object):
     def tentativas_incorretas(self):
         """
         Gets the tentativas_incorretas of this UsuarioResponse.
-        N\u00FAmero de tentativas de valida\u00E7\u00E3o incorretas
+        {{{usuario_response_tentativas_incorretas_value}}}
 
         :return: The tentativas_incorretas of this UsuarioResponse.
         :rtype: int
@@ -292,12 +295,34 @@ class UsuarioResponse(object):
     def tentativas_incorretas(self, tentativas_incorretas):
         """
         Sets the tentativas_incorretas of this UsuarioResponse.
-        N\u00FAmero de tentativas de valida\u00E7\u00E3o incorretas
+        {{{usuario_response_tentativas_incorretas_value}}}
 
         :param tentativas_incorretas: The tentativas_incorretas of this UsuarioResponse.
         :type: int
         """
         self._tentativas_incorretas = tentativas_incorretas
+
+    @property
+    def bloquear_acesso(self):
+        """
+        Gets the bloquear_acesso of this UsuarioResponse.
+        {{{usuario_response_bloquear_acesso_descricao}}}
+
+        :return: The bloquear_acesso of this UsuarioResponse.
+        :rtype: bool
+        """
+        return self._bloquear_acesso
+
+    @bloquear_acesso.setter
+    def bloquear_acesso(self, bloquear_acesso):
+        """
+        Sets the bloquear_acesso of this UsuarioResponse.
+        {{{usuario_response_bloquear_acesso_descricao}}}
+
+        :param bloquear_acesso: The bloquear_acesso of this UsuarioResponse.
+        :type: bool
+        """
+        self._bloquear_acesso = bloquear_acesso
 
     def to_dict(self):
         """

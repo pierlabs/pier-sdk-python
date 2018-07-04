@@ -56,7 +56,7 @@ class CodigoSegurancaSMSRequest(object):
     def ddd(self):
         """
         Gets the ddd of this CodigoSegurancaSMSRequest.
-        C\u00F3digo DDD do telefone (id).
+        {{{codigo_seguranca_s_m_s_request_ddd_value}}}
 
         :return: The ddd of this CodigoSegurancaSMSRequest.
         :rtype: str
@@ -67,7 +67,7 @@ class CodigoSegurancaSMSRequest(object):
     def ddd(self, ddd):
         """
         Sets the ddd of this CodigoSegurancaSMSRequest.
-        C\u00F3digo DDD do telefone (id).
+        {{{codigo_seguranca_s_m_s_request_ddd_value}}}
 
         :param ddd: The ddd of this CodigoSegurancaSMSRequest.
         :type: str
@@ -78,7 +78,7 @@ class CodigoSegurancaSMSRequest(object):
     def telefone(self):
         """
         Gets the telefone of this CodigoSegurancaSMSRequest.
-        N\u00FAmero do telefone.
+        {{{codigo_seguranca_s_m_s_request_telefone_value}}}
 
         :return: The telefone of this CodigoSegurancaSMSRequest.
         :rtype: str
@@ -89,7 +89,7 @@ class CodigoSegurancaSMSRequest(object):
     def telefone(self, telefone):
         """
         Sets the telefone of this CodigoSegurancaSMSRequest.
-        N\u00FAmero do telefone.
+        {{{codigo_seguranca_s_m_s_request_telefone_value}}}
 
         :param telefone: The telefone of this CodigoSegurancaSMSRequest.
         :type: str
@@ -100,7 +100,7 @@ class CodigoSegurancaSMSRequest(object):
     def codigo_seguranca(self):
         """
         Gets the codigo_seguranca of this CodigoSegurancaSMSRequest.
-        Token para valida\u00E7\u00E3o.
+        {{{codigo_seguranca_s_m_s_request_codigo_seguranca_value}}}
 
         :return: The codigo_seguranca of this CodigoSegurancaSMSRequest.
         :rtype: str
@@ -111,7 +111,7 @@ class CodigoSegurancaSMSRequest(object):
     def codigo_seguranca(self, codigo_seguranca):
         """
         Sets the codigo_seguranca of this CodigoSegurancaSMSRequest.
-        Token para valida\u00E7\u00E3o.
+        {{{codigo_seguranca_s_m_s_request_codigo_seguranca_value}}}
 
         :param codigo_seguranca: The codigo_seguranca of this CodigoSegurancaSMSRequest.
         :type: str

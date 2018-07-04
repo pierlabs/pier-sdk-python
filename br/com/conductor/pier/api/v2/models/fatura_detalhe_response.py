@@ -77,7 +77,7 @@ class FaturaDetalheResponse(object):
     def id_conta(self):
         """
         Gets the id_conta of this FaturaDetalheResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o da conta.
+        {{{fatura_response_id_conta_value}}}
 
         :return: The id_conta of this FaturaDetalheResponse.
         :rtype: int
@@ -88,7 +88,7 @@ class FaturaDetalheResponse(object):
     def id_conta(self, id_conta):
         """
         Sets the id_conta of this FaturaDetalheResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o da conta.
+        {{{fatura_response_id_conta_value}}}
 
         :param id_conta: The id_conta of this FaturaDetalheResponse.
         :type: int
@@ -99,7 +99,7 @@ class FaturaDetalheResponse(object):
     def situacao_processamento(self):
         """
         Gets the situacao_processamento of this FaturaDetalheResponse.
-        Situa\u00E7\u00E3o de Processamento da fatura.
+        {{{fatura_response_situacao_processamento_value}}}
 
         :return: The situacao_processamento of this FaturaDetalheResponse.
         :rtype: str
@@ -110,7 +110,7 @@ class FaturaDetalheResponse(object):
     def situacao_processamento(self, situacao_processamento):
         """
         Sets the situacao_processamento of this FaturaDetalheResponse.
-        Situa\u00E7\u00E3o de Processamento da fatura.
+        {{{fatura_response_situacao_processamento_value}}}
 
         :param situacao_processamento: The situacao_processamento of this FaturaDetalheResponse.
         :type: str
@@ -127,7 +127,7 @@ class FaturaDetalheResponse(object):
     def pagamento_efetuado(self):
         """
         Gets the pagamento_efetuado of this FaturaDetalheResponse.
-        Status de pagamento efetuado.
+        {{{fatura_response_pagamento_efetuado_value}}}
 
         :return: The pagamento_efetuado of this FaturaDetalheResponse.
         :rtype: bool
@@ -138,7 +138,7 @@ class FaturaDetalheResponse(object):
     def pagamento_efetuado(self, pagamento_efetuado):
         """
         Sets the pagamento_efetuado of this FaturaDetalheResponse.
-        Status de pagamento efetuado.
+        {{{fatura_response_pagamento_efetuado_value}}}
 
         :param pagamento_efetuado: The pagamento_efetuado of this FaturaDetalheResponse.
         :type: bool
@@ -149,7 +149,7 @@ class FaturaDetalheResponse(object):
     def data_vencimento_fatura(self):
         """
         Gets the data_vencimento_fatura of this FaturaDetalheResponse.
-        Data de vencimento da fatura.
+        {{{fatura_response_data_vencimento_fatura_value}}}
 
         :return: The data_vencimento_fatura of this FaturaDetalheResponse.
         :rtype: str
@@ -160,7 +160,7 @@ class FaturaDetalheResponse(object):
     def data_vencimento_fatura(self, data_vencimento_fatura):
         """
         Sets the data_vencimento_fatura of this FaturaDetalheResponse.
-        Data de vencimento da fatura.
+        {{{fatura_response_data_vencimento_fatura_value}}}
 
         :param data_vencimento_fatura: The data_vencimento_fatura of this FaturaDetalheResponse.
         :type: str
@@ -171,7 +171,7 @@ class FaturaDetalheResponse(object):
     def data_vencimento_real(self):
         """
         Gets the data_vencimento_real of this FaturaDetalheResponse.
-        Data de vencimento real da fatura.
+        {{{fatura_response_data_vencimento_real_value}}}
 
         :return: The data_vencimento_real of this FaturaDetalheResponse.
         :rtype: str
@@ -182,7 +182,7 @@ class FaturaDetalheResponse(object):
     def data_vencimento_real(self, data_vencimento_real):
         """
         Sets the data_vencimento_real of this FaturaDetalheResponse.
-        Data de vencimento real da fatura.
+        {{{fatura_response_data_vencimento_real_value}}}
 
         :param data_vencimento_real: The data_vencimento_real of this FaturaDetalheResponse.
         :type: str
@@ -193,7 +193,7 @@ class FaturaDetalheResponse(object):
     def data_fechamento(self):
         """
         Gets the data_fechamento of this FaturaDetalheResponse.
-        Data de fechamento da fatura.
+        {{{fatura_response_data_fechamento_value}}}
 
         :return: The data_fechamento of this FaturaDetalheResponse.
         :rtype: str
@@ -204,7 +204,7 @@ class FaturaDetalheResponse(object):
     def data_fechamento(self, data_fechamento):
         """
         Sets the data_fechamento of this FaturaDetalheResponse.
-        Data de fechamento da fatura.
+        {{{fatura_response_data_fechamento_value}}}
 
         :param data_fechamento: The data_fechamento of this FaturaDetalheResponse.
         :type: str
@@ -215,7 +215,7 @@ class FaturaDetalheResponse(object):
     def valor_total(self):
         """
         Gets the valor_total of this FaturaDetalheResponse.
-        Valor total da fatura.
+        {{{fatura_response_valor_total_value}}}
 
         :return: The valor_total of this FaturaDetalheResponse.
         :rtype: float
@@ -226,7 +226,7 @@ class FaturaDetalheResponse(object):
     def valor_total(self, valor_total):
         """
         Sets the valor_total of this FaturaDetalheResponse.
-        Valor total da fatura.
+        {{{fatura_response_valor_total_value}}}
 
         :param valor_total: The valor_total of this FaturaDetalheResponse.
         :type: float
@@ -237,7 +237,7 @@ class FaturaDetalheResponse(object):
     def valor_pagamento_minimo(self):
         """
         Gets the valor_pagamento_minimo of this FaturaDetalheResponse.
-        Valor do pagamento m\u00EDnimo.
+        {{{fatura_response_valor_pagamento_minimo_value}}}
 
         :return: The valor_pagamento_minimo of this FaturaDetalheResponse.
         :rtype: float
@@ -248,7 +248,7 @@ class FaturaDetalheResponse(object):
     def valor_pagamento_minimo(self, valor_pagamento_minimo):
         """
         Sets the valor_pagamento_minimo of this FaturaDetalheResponse.
-        Valor do pagamento m\u00EDnimo.
+        {{{fatura_response_valor_pagamento_minimo_value}}}
 
         :param valor_pagamento_minimo: The valor_pagamento_minimo of this FaturaDetalheResponse.
         :type: float
@@ -259,7 +259,7 @@ class FaturaDetalheResponse(object):
     def lancamentos_fatura_response(self):
         """
         Gets the lancamentos_fatura_response of this FaturaDetalheResponse.
-        Lista de lan\u00E7amentos da fatura.
+        {{{fatura_detalhe_response_lancamentos_fatura_response_value}}}
 
         :return: The lancamentos_fatura_response of this FaturaDetalheResponse.
         :rtype: list[LancamentoFaturaResponse]
@@ -270,7 +270,7 @@ class FaturaDetalheResponse(object):
     def lancamentos_fatura_response(self, lancamentos_fatura_response):
         """
         Sets the lancamentos_fatura_response of this FaturaDetalheResponse.
-        Lista de lan\u00E7amentos da fatura.
+        {{{fatura_detalhe_response_lancamentos_fatura_response_value}}}
 
         :param lancamentos_fatura_response: The lancamentos_fatura_response of this FaturaDetalheResponse.
         :type: list[LancamentoFaturaResponse]
@@ -281,7 +281,7 @@ class FaturaDetalheResponse(object):
     def saldo_anterior(self):
         """
         Gets the saldo_anterior of this FaturaDetalheResponse.
-        Valor do saldo anterior.
+        {{{fatura_response_saldo_anterior_value}}}
 
         :return: The saldo_anterior of this FaturaDetalheResponse.
         :rtype: float
@@ -292,7 +292,7 @@ class FaturaDetalheResponse(object):
     def saldo_anterior(self, saldo_anterior):
         """
         Sets the saldo_anterior of this FaturaDetalheResponse.
-        Valor do saldo anterior.
+        {{{fatura_response_saldo_anterior_value}}}
 
         :param saldo_anterior: The saldo_anterior of this FaturaDetalheResponse.
         :type: float

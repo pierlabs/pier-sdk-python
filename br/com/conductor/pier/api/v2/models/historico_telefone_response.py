@@ -62,7 +62,7 @@ class HistoricoTelefoneResponse(object):
     def id(self):
         """
         Gets the id of this HistoricoTelefoneResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o do Telefone (id).
+        {{{historico_telefone_response_id_value}}}
 
         :return: The id of this HistoricoTelefoneResponse.
         :rtype: int
@@ -73,7 +73,7 @@ class HistoricoTelefoneResponse(object):
     def id(self, id):
         """
         Sets the id of this HistoricoTelefoneResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o do Telefone (id).
+        {{{historico_telefone_response_id_value}}}
 
         :param id: The id of this HistoricoTelefoneResponse.
         :type: int
@@ -84,7 +84,7 @@ class HistoricoTelefoneResponse(object):
     def telefone(self):
         """
         Gets the telefone of this HistoricoTelefoneResponse.
-        Apresenta o N\u00FAmero do telefone.
+        {{{historico_telefone_response_telefone_value}}}
 
         :return: The telefone of this HistoricoTelefoneResponse.
         :rtype: str
@@ -95,7 +95,7 @@ class HistoricoTelefoneResponse(object):
     def telefone(self, telefone):
         """
         Sets the telefone of this HistoricoTelefoneResponse.
-        Apresenta o N\u00FAmero do telefone.
+        {{{historico_telefone_response_telefone_value}}}
 
         :param telefone: The telefone of this HistoricoTelefoneResponse.
         :type: str
@@ -106,7 +106,7 @@ class HistoricoTelefoneResponse(object):
     def id_tipo_telefone(self):
         """
         Gets the id_tipo_telefone of this HistoricoTelefoneResponse.
-        Apresenta o id do tipo do telefone.
+        {{{historico_telefone_response_id_tipo_telefone_value}}}
 
         :return: The id_tipo_telefone of this HistoricoTelefoneResponse.
         :rtype: int
@@ -117,7 +117,7 @@ class HistoricoTelefoneResponse(object):
     def id_tipo_telefone(self, id_tipo_telefone):
         """
         Sets the id_tipo_telefone of this HistoricoTelefoneResponse.
-        Apresenta o id do tipo do telefone.
+        {{{historico_telefone_response_id_tipo_telefone_value}}}
 
         :param id_tipo_telefone: The id_tipo_telefone of this HistoricoTelefoneResponse.
         :type: int
@@ -128,7 +128,7 @@ class HistoricoTelefoneResponse(object):
     def tipo_telefone(self):
         """
         Gets the tipo_telefone of this HistoricoTelefoneResponse.
-        Apresenta a descri\u00E7\u00E3o do tipo do telefone.
+        {{{historico_telefone_response_tipo_telefone_value}}}
 
         :return: The tipo_telefone of this HistoricoTelefoneResponse.
         :rtype: str
@@ -139,7 +139,7 @@ class HistoricoTelefoneResponse(object):
     def tipo_telefone(self, tipo_telefone):
         """
         Sets the tipo_telefone of this HistoricoTelefoneResponse.
-        Apresenta a descri\u00E7\u00E3o do tipo do telefone.
+        {{{historico_telefone_response_tipo_telefone_value}}}
 
         :param tipo_telefone: The tipo_telefone of this HistoricoTelefoneResponse.
         :type: str
@@ -150,7 +150,7 @@ class HistoricoTelefoneResponse(object):
     def data_modificacao(self):
         """
         Gets the data_modificacao of this HistoricoTelefoneResponse.
-        Apresenta a data que o telefone fora alterado.
+        {{{historico_telefone_response_data_modificacao_value}}}
 
         :return: The data_modificacao of this HistoricoTelefoneResponse.
         :rtype: str
@@ -161,7 +161,7 @@ class HistoricoTelefoneResponse(object):
     def data_modificacao(self, data_modificacao):
         """
         Sets the data_modificacao of this HistoricoTelefoneResponse.
-        Apresenta a data que o telefone fora alterado.
+        {{{historico_telefone_response_data_modificacao_value}}}
 
         :param data_modificacao: The data_modificacao of this HistoricoTelefoneResponse.
         :type: str

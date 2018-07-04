@@ -80,7 +80,7 @@ class LoteCartoesPrePagosResponse(object):
     def id(self):
         """
         Gets the id of this LoteCartoesPrePagosResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o do lote de cart\u00F5es pr\u00E9-pagos (id).
+        {{{lote_cartoes_pre_pagos_response_id_value}}}
 
         :return: The id of this LoteCartoesPrePagosResponse.
         :rtype: int
@@ -91,7 +91,7 @@ class LoteCartoesPrePagosResponse(object):
     def id(self, id):
         """
         Sets the id of this LoteCartoesPrePagosResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o do lote de cart\u00F5es pr\u00E9-pagos (id).
+        {{{lote_cartoes_pre_pagos_response_id_value}}}
 
         :param id: The id of this LoteCartoesPrePagosResponse.
         :type: int
@@ -102,7 +102,7 @@ class LoteCartoesPrePagosResponse(object):
     def id_origem_comercial(self):
         """
         Gets the id_origem_comercial of this LoteCartoesPrePagosResponse.
-        C\u00F3digo identificador da origem comercial.
+        {{{lote_cartoes_pre_pagos_response_id_origem_comercial_value}}}
 
         :return: The id_origem_comercial of this LoteCartoesPrePagosResponse.
         :rtype: int
@@ -113,7 +113,7 @@ class LoteCartoesPrePagosResponse(object):
     def id_origem_comercial(self, id_origem_comercial):
         """
         Sets the id_origem_comercial of this LoteCartoesPrePagosResponse.
-        C\u00F3digo identificador da origem comercial.
+        {{{lote_cartoes_pre_pagos_response_id_origem_comercial_value}}}
 
         :param id_origem_comercial: The id_origem_comercial of this LoteCartoesPrePagosResponse.
         :type: int
@@ -124,7 +124,7 @@ class LoteCartoesPrePagosResponse(object):
     def id_produto(self):
         """
         Gets the id_produto of this LoteCartoesPrePagosResponse.
-        C\u00F3digo identificador do Produto.
+        {{{lote_cartoes_pre_pagos_response_id_produto_value}}}
 
         :return: The id_produto of this LoteCartoesPrePagosResponse.
         :rtype: int
@@ -135,7 +135,7 @@ class LoteCartoesPrePagosResponse(object):
     def id_produto(self, id_produto):
         """
         Sets the id_produto of this LoteCartoesPrePagosResponse.
-        C\u00F3digo identificador do Produto.
+        {{{lote_cartoes_pre_pagos_response_id_produto_value}}}
 
         :param id_produto: The id_produto of this LoteCartoesPrePagosResponse.
         :type: int
@@ -146,7 +146,7 @@ class LoteCartoesPrePagosResponse(object):
     def id_tipo_cartao(self):
         """
         Gets the id_tipo_cartao of this LoteCartoesPrePagosResponse.
-        C\u00F3digo identificador do tipo do cart\u00E3o.
+        {{{lote_cartoes_pre_pagos_response_id_tipo_cartao_value}}}
 
         :return: The id_tipo_cartao of this LoteCartoesPrePagosResponse.
         :rtype: int
@@ -157,7 +157,7 @@ class LoteCartoesPrePagosResponse(object):
     def id_tipo_cartao(self, id_tipo_cartao):
         """
         Sets the id_tipo_cartao of this LoteCartoesPrePagosResponse.
-        C\u00F3digo identificador do tipo do cart\u00E3o.
+        {{{lote_cartoes_pre_pagos_response_id_tipo_cartao_value}}}
 
         :param id_tipo_cartao: The id_tipo_cartao of this LoteCartoesPrePagosResponse.
         :type: int
@@ -168,7 +168,7 @@ class LoteCartoesPrePagosResponse(object):
     def id_imagem(self):
         """
         Gets the id_imagem of this LoteCartoesPrePagosResponse.
-        C\u00F3digo identificador da Imagem do cart\u00E3o.
+        {{{lote_cartoes_pre_pagos_response_id_imagem_value}}}
 
         :return: The id_imagem of this LoteCartoesPrePagosResponse.
         :rtype: int
@@ -179,7 +179,7 @@ class LoteCartoesPrePagosResponse(object):
     def id_imagem(self, id_imagem):
         """
         Sets the id_imagem of this LoteCartoesPrePagosResponse.
-        C\u00F3digo identificador da Imagem do cart\u00E3o.
+        {{{lote_cartoes_pre_pagos_response_id_imagem_value}}}
 
         :param id_imagem: The id_imagem of this LoteCartoesPrePagosResponse.
         :type: int
@@ -190,7 +190,7 @@ class LoteCartoesPrePagosResponse(object):
     def id_endereco(self):
         """
         Gets the id_endereco of this LoteCartoesPrePagosResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o do Endere\u00E7o.
+        {{{lote_cartoes_pre_pagos_response_id_endereco_value}}}
 
         :return: The id_endereco of this LoteCartoesPrePagosResponse.
         :rtype: int
@@ -201,7 +201,7 @@ class LoteCartoesPrePagosResponse(object):
     def id_endereco(self, id_endereco):
         """
         Sets the id_endereco of this LoteCartoesPrePagosResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o do Endere\u00E7o.
+        {{{lote_cartoes_pre_pagos_response_id_endereco_value}}}
 
         :param id_endereco: The id_endereco of this LoteCartoesPrePagosResponse.
         :type: int
@@ -212,7 +212,7 @@ class LoteCartoesPrePagosResponse(object):
     def quantidade(self):
         """
         Gets the quantidade of this LoteCartoesPrePagosResponse.
-        N\u00FAmero de cart\u00F5es existentes no Lote.
+        {{{lote_cartoes_pre_pagos_response_quantidade_value}}}
 
         :return: The quantidade of this LoteCartoesPrePagosResponse.
         :rtype: int
@@ -223,7 +223,7 @@ class LoteCartoesPrePagosResponse(object):
     def quantidade(self, quantidade):
         """
         Sets the quantidade of this LoteCartoesPrePagosResponse.
-        N\u00FAmero de cart\u00F5es existentes no Lote.
+        {{{lote_cartoes_pre_pagos_response_quantidade_value}}}
 
         :param quantidade: The quantidade of this LoteCartoesPrePagosResponse.
         :type: int
@@ -234,7 +234,7 @@ class LoteCartoesPrePagosResponse(object):
     def data_cadastro(self):
         """
         Gets the data_cadastro of this LoteCartoesPrePagosResponse.
-        Data de cadastro do lote de cart\u00F5es pr\u00E9-pagos.
+        {{{lote_cartoes_pre_pagos_response_data_cadastro_value}}}
 
         :return: The data_cadastro of this LoteCartoesPrePagosResponse.
         :rtype: str
@@ -245,7 +245,7 @@ class LoteCartoesPrePagosResponse(object):
     def data_cadastro(self, data_cadastro):
         """
         Sets the data_cadastro of this LoteCartoesPrePagosResponse.
-        Data de cadastro do lote de cart\u00F5es pr\u00E9-pagos.
+        {{{lote_cartoes_pre_pagos_response_data_cadastro_value}}}
 
         :param data_cadastro: The data_cadastro of this LoteCartoesPrePagosResponse.
         :type: str
@@ -256,7 +256,7 @@ class LoteCartoesPrePagosResponse(object):
     def usuario_cadastro(self):
         """
         Gets the usuario_cadastro of this LoteCartoesPrePagosResponse.
-        Nome do usu\u00E1rio que criou o lote.
+        {{{lote_cartoes_pre_pagos_response_usuario_cadastro_value}}}
 
         :return: The usuario_cadastro of this LoteCartoesPrePagosResponse.
         :rtype: str
@@ -267,7 +267,7 @@ class LoteCartoesPrePagosResponse(object):
     def usuario_cadastro(self, usuario_cadastro):
         """
         Sets the usuario_cadastro of this LoteCartoesPrePagosResponse.
-        Nome do usu\u00E1rio que criou o lote.
+        {{{lote_cartoes_pre_pagos_response_usuario_cadastro_value}}}
 
         :param usuario_cadastro: The usuario_cadastro of this LoteCartoesPrePagosResponse.
         :type: str
@@ -278,7 +278,7 @@ class LoteCartoesPrePagosResponse(object):
     def status_processamento(self):
         """
         Gets the status_processamento of this LoteCartoesPrePagosResponse.
-        Indica o status de processamento do lote.
+        {{{lote_cartoes_pre_pagos_response_status_processamento_value}}}
 
         :return: The status_processamento of this LoteCartoesPrePagosResponse.
         :rtype: int
@@ -289,7 +289,7 @@ class LoteCartoesPrePagosResponse(object):
     def status_processamento(self, status_processamento):
         """
         Sets the status_processamento of this LoteCartoesPrePagosResponse.
-        Indica o status de processamento do lote.
+        {{{lote_cartoes_pre_pagos_response_status_processamento_value}}}
 
         :param status_processamento: The status_processamento of this LoteCartoesPrePagosResponse.
         :type: int
@@ -300,7 +300,7 @@ class LoteCartoesPrePagosResponse(object):
     def identificador_externo(self):
         """
         Gets the identificador_externo of this LoteCartoesPrePagosResponse.
-        N\u00FAmero de identifica\u00E7\u00E3o externo (utilizado pelo emissor).
+        {{{lote_cartoes_pre_pagos_response_identificador_externo_value}}}
 
         :return: The identificador_externo of this LoteCartoesPrePagosResponse.
         :rtype: str
@@ -311,7 +311,7 @@ class LoteCartoesPrePagosResponse(object):
     def identificador_externo(self, identificador_externo):
         """
         Sets the identificador_externo of this LoteCartoesPrePagosResponse.
-        N\u00FAmero de identifica\u00E7\u00E3o externo (utilizado pelo emissor).
+        {{{lote_cartoes_pre_pagos_response_identificador_externo_value}}}
 
         :param identificador_externo: The identificador_externo of this LoteCartoesPrePagosResponse.
         :type: str

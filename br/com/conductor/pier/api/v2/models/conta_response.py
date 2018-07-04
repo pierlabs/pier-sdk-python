@@ -80,7 +80,7 @@ class ContaResponse(object):
     def id(self):
         """
         Gets the id of this ContaResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o de conta (id).
+        {{{conta_response_id_value}}}
 
         :return: The id of this ContaResponse.
         :rtype: int
@@ -91,7 +91,7 @@ class ContaResponse(object):
     def id(self, id):
         """
         Sets the id of this ContaResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o de conta (id).
+        {{{conta_response_id_value}}}
 
         :param id: The id of this ContaResponse.
         :type: int
@@ -102,7 +102,7 @@ class ContaResponse(object):
     def id_produto(self):
         """
         Gets the id_produto of this ContaResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o do produto ao qual a conta faz parte. (id).
+        {{{conta_response_id_produto_value}}}
 
         :return: The id_produto of this ContaResponse.
         :rtype: int
@@ -113,7 +113,7 @@ class ContaResponse(object):
     def id_produto(self, id_produto):
         """
         Sets the id_produto of this ContaResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o do produto ao qual a conta faz parte. (id).
+        {{{conta_response_id_produto_value}}}
 
         :param id_produto: The id_produto of this ContaResponse.
         :type: int
@@ -124,7 +124,7 @@ class ContaResponse(object):
     def id_origem_comercial(self):
         """
         Gets the id_origem_comercial of this ContaResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o da Origem Comercial (id) que deu origem a Conta.
+        {{{conta_response_id_origem_comercial_value}}}
 
         :return: The id_origem_comercial of this ContaResponse.
         :rtype: int
@@ -135,7 +135,7 @@ class ContaResponse(object):
     def id_origem_comercial(self, id_origem_comercial):
         """
         Sets the id_origem_comercial of this ContaResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o da Origem Comercial (id) que deu origem a Conta.
+        {{{conta_response_id_origem_comercial_value}}}
 
         :param id_origem_comercial: The id_origem_comercial of this ContaResponse.
         :type: int
@@ -146,7 +146,7 @@ class ContaResponse(object):
     def id_pessoa(self):
         """
         Gets the id_pessoa of this ContaResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o da Pessoa Titular da Conta (id).
+        {{{conta_response_id_pessoa_value}}}
 
         :return: The id_pessoa of this ContaResponse.
         :rtype: int
@@ -157,7 +157,7 @@ class ContaResponse(object):
     def id_pessoa(self, id_pessoa):
         """
         Sets the id_pessoa of this ContaResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o da Pessoa Titular da Conta (id).
+        {{{conta_response_id_pessoa_value}}}
 
         :param id_pessoa: The id_pessoa of this ContaResponse.
         :type: int
@@ -168,7 +168,7 @@ class ContaResponse(object):
     def id_status_conta(self):
         """
         Gets the id_status_conta of this ContaResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o do status atribuido a conta.
+        {{{conta_response_id_status_conta_value}}}
 
         :return: The id_status_conta of this ContaResponse.
         :rtype: int
@@ -179,7 +179,7 @@ class ContaResponse(object):
     def id_status_conta(self, id_status_conta):
         """
         Sets the id_status_conta of this ContaResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o do status atribuido a conta.
+        {{{conta_response_id_status_conta_value}}}
 
         :param id_status_conta: The id_status_conta of this ContaResponse.
         :type: int
@@ -190,7 +190,7 @@ class ContaResponse(object):
     def dia_vencimento(self):
         """
         Gets the dia_vencimento of this ContaResponse.
-        Apresenta o dia de vencimento.
+        {{{conta_response_dia_vencimento_value}}}
 
         :return: The dia_vencimento of this ContaResponse.
         :rtype: int
@@ -201,7 +201,7 @@ class ContaResponse(object):
     def dia_vencimento(self, dia_vencimento):
         """
         Sets the dia_vencimento of this ContaResponse.
-        Apresenta o dia de vencimento.
+        {{{conta_response_dia_vencimento_value}}}
 
         :param dia_vencimento: The dia_vencimento of this ContaResponse.
         :type: int
@@ -212,7 +212,7 @@ class ContaResponse(object):
     def melhor_dia_compra(self):
         """
         Gets the melhor_dia_compra of this ContaResponse.
-        Apresenta o melhor dia de compra.
+        {{{conta_response_melhor_dia_compra_value}}}
 
         :return: The melhor_dia_compra of this ContaResponse.
         :rtype: int
@@ -223,7 +223,7 @@ class ContaResponse(object):
     def melhor_dia_compra(self, melhor_dia_compra):
         """
         Sets the melhor_dia_compra of this ContaResponse.
-        Apresenta o melhor dia de compra.
+        {{{conta_response_melhor_dia_compra_value}}}
 
         :param melhor_dia_compra: The melhor_dia_compra of this ContaResponse.
         :type: int
@@ -234,7 +234,7 @@ class ContaResponse(object):
     def data_status_conta(self):
         """
         Gets the data_status_conta of this ContaResponse.
-        Apresenta a data em que o idStatusConta atual fora atribu\u00EDdo para ela.
+        {{{conta_response_data_status_conta_value}}}
 
         :return: The data_status_conta of this ContaResponse.
         :rtype: str
@@ -245,7 +245,7 @@ class ContaResponse(object):
     def data_status_conta(self, data_status_conta):
         """
         Sets the data_status_conta of this ContaResponse.
-        Apresenta a data em que o idStatusConta atual fora atribu\u00EDdo para ela.
+        {{{conta_response_data_status_conta_value}}}
 
         :param data_status_conta: The data_status_conta of this ContaResponse.
         :type: str
@@ -256,7 +256,7 @@ class ContaResponse(object):
     def data_cadastro(self):
         """
         Gets the data_cadastro of this ContaResponse.
-        Apresenta a data em que o cart\u00E3o foi gerado.
+        {{{conta_response_data_cadastro_value}}}
 
         :return: The data_cadastro of this ContaResponse.
         :rtype: str
@@ -267,7 +267,7 @@ class ContaResponse(object):
     def data_cadastro(self, data_cadastro):
         """
         Sets the data_cadastro of this ContaResponse.
-        Apresenta a data em que o cart\u00E3o foi gerado.
+        {{{conta_response_data_cadastro_value}}}
 
         :param data_cadastro: The data_cadastro of this ContaResponse.
         :type: str
@@ -278,7 +278,7 @@ class ContaResponse(object):
     def data_ultima_alteracao_vencimento(self):
         """
         Gets the data_ultima_alteracao_vencimento of this ContaResponse.
-        Apresenta a data da ultima altera\u00E7\u00E3o de vencimento.
+        {{{conta_response_data_ultima_alteracao_vencimento_value}}}
 
         :return: The data_ultima_alteracao_vencimento of this ContaResponse.
         :rtype: str
@@ -289,7 +289,7 @@ class ContaResponse(object):
     def data_ultima_alteracao_vencimento(self, data_ultima_alteracao_vencimento):
         """
         Sets the data_ultima_alteracao_vencimento of this ContaResponse.
-        Apresenta a data da ultima altera\u00E7\u00E3o de vencimento.
+        {{{conta_response_data_ultima_alteracao_vencimento_value}}}
 
         :param data_ultima_alteracao_vencimento: The data_ultima_alteracao_vencimento of this ContaResponse.
         :type: str
@@ -300,7 +300,7 @@ class ContaResponse(object):
     def valor_renda(self):
         """
         Gets the valor_renda of this ContaResponse.
-        Apresenta o valor da renda comprovada
+        {{{conta_response_valor_renda_value}}}
 
         :return: The valor_renda of this ContaResponse.
         :rtype: float
@@ -311,7 +311,7 @@ class ContaResponse(object):
     def valor_renda(self, valor_renda):
         """
         Sets the valor_renda of this ContaResponse.
-        Apresenta o valor da renda comprovada
+        {{{conta_response_valor_renda_value}}}
 
         :param valor_renda: The valor_renda of this ContaResponse.
         :type: float

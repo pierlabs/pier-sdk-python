@@ -62,7 +62,7 @@ class HistoricoEventosResponse(object):
     def id_historico(self):
         """
         Gets the id_historico of this HistoricoEventosResponse.
-        C\u00F3digo identificador do evento
+        {{{historico_eventos_response_id_historico_value}}}
 
         :return: The id_historico of this HistoricoEventosResponse.
         :rtype: int
@@ -73,7 +73,7 @@ class HistoricoEventosResponse(object):
     def id_historico(self, id_historico):
         """
         Sets the id_historico of this HistoricoEventosResponse.
-        C\u00F3digo identificador do evento
+        {{{historico_eventos_response_id_historico_value}}}
 
         :param id_historico: The id_historico of this HistoricoEventosResponse.
         :type: int
@@ -84,7 +84,7 @@ class HistoricoEventosResponse(object):
     def data_historico(self):
         """
         Gets the data_historico of this HistoricoEventosResponse.
-        Data do evento
+        {{{historico_eventos_response_data_historico_value}}}
 
         :return: The data_historico of this HistoricoEventosResponse.
         :rtype: str
@@ -95,7 +95,7 @@ class HistoricoEventosResponse(object):
     def data_historico(self, data_historico):
         """
         Sets the data_historico of this HistoricoEventosResponse.
-        Data do evento
+        {{{historico_eventos_response_data_historico_value}}}
 
         :param data_historico: The data_historico of this HistoricoEventosResponse.
         :type: str
@@ -106,7 +106,7 @@ class HistoricoEventosResponse(object):
     def tipo_historico(self):
         """
         Gets the tipo_historico of this HistoricoEventosResponse.
-        Nome do campo alterado
+        {{{historico_eventos_response_tipo_historico_value}}}
 
         :return: The tipo_historico of this HistoricoEventosResponse.
         :rtype: str
@@ -117,7 +117,7 @@ class HistoricoEventosResponse(object):
     def tipo_historico(self, tipo_historico):
         """
         Sets the tipo_historico of this HistoricoEventosResponse.
-        Nome do campo alterado
+        {{{historico_eventos_response_tipo_historico_value}}}
 
         :param tipo_historico: The tipo_historico of this HistoricoEventosResponse.
         :type: str
@@ -128,7 +128,7 @@ class HistoricoEventosResponse(object):
     def valor_anterior(self):
         """
         Gets the valor_anterior of this HistoricoEventosResponse.
-        Valor anterior a modifica\u00E7\u00E3o
+        {{{historico_eventos_response_valor_anterior_value}}}
 
         :return: The valor_anterior of this HistoricoEventosResponse.
         :rtype: str
@@ -139,7 +139,7 @@ class HistoricoEventosResponse(object):
     def valor_anterior(self, valor_anterior):
         """
         Sets the valor_anterior of this HistoricoEventosResponse.
-        Valor anterior a modifica\u00E7\u00E3o
+        {{{historico_eventos_response_valor_anterior_value}}}
 
         :param valor_anterior: The valor_anterior of this HistoricoEventosResponse.
         :type: str
@@ -150,7 +150,7 @@ class HistoricoEventosResponse(object):
     def valor_atribuido(self):
         """
         Gets the valor_atribuido of this HistoricoEventosResponse.
-        Valor atribu\u00EDdo na modifica\u00E7\u00E3o
+        {{{historico_eventos_response_valor_atribuido_value}}}
 
         :return: The valor_atribuido of this HistoricoEventosResponse.
         :rtype: str
@@ -161,7 +161,7 @@ class HistoricoEventosResponse(object):
     def valor_atribuido(self, valor_atribuido):
         """
         Sets the valor_atribuido of this HistoricoEventosResponse.
-        Valor atribu\u00EDdo na modifica\u00E7\u00E3o
+        {{{historico_eventos_response_valor_atribuido_value}}}
 
         :param valor_atribuido: The valor_atribuido of this HistoricoEventosResponse.
         :type: str

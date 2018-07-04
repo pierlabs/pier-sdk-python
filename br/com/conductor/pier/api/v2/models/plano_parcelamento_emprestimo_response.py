@@ -62,7 +62,7 @@ class PlanoParcelamentoEmprestimoResponse(object):
     def numero_parcelas(self):
         """
         Gets the numero_parcelas of this PlanoParcelamentoEmprestimoResponse.
-        N\u00FAmeros de parcelas do empr\u00E9stimo/financiamento
+        {{{plano_parcelamento_emprestimo_response_numero_parcelas_value}}}
 
         :return: The numero_parcelas of this PlanoParcelamentoEmprestimoResponse.
         :rtype: int
@@ -73,7 +73,7 @@ class PlanoParcelamentoEmprestimoResponse(object):
     def numero_parcelas(self, numero_parcelas):
         """
         Sets the numero_parcelas of this PlanoParcelamentoEmprestimoResponse.
-        N\u00FAmeros de parcelas do empr\u00E9stimo/financiamento
+        {{{plano_parcelamento_emprestimo_response_numero_parcelas_value}}}
 
         :param numero_parcelas: The numero_parcelas of this PlanoParcelamentoEmprestimoResponse.
         :type: int
@@ -84,7 +84,7 @@ class PlanoParcelamentoEmprestimoResponse(object):
     def valor_parcelas(self):
         """
         Gets the valor_parcelas of this PlanoParcelamentoEmprestimoResponse.
-        Valor da parcela
+        {{{plano_parcelamento_emprestimo_response_valor_parcelas_value}}}
 
         :return: The valor_parcelas of this PlanoParcelamentoEmprestimoResponse.
         :rtype: float
@@ -95,7 +95,7 @@ class PlanoParcelamentoEmprestimoResponse(object):
     def valor_parcelas(self, valor_parcelas):
         """
         Sets the valor_parcelas of this PlanoParcelamentoEmprestimoResponse.
-        Valor da parcela
+        {{{plano_parcelamento_emprestimo_response_valor_parcelas_value}}}
 
         :param valor_parcelas: The valor_parcelas of this PlanoParcelamentoEmprestimoResponse.
         :type: float
@@ -106,7 +106,7 @@ class PlanoParcelamentoEmprestimoResponse(object):
     def taxa_juros(self):
         """
         Gets the taxa_juros of this PlanoParcelamentoEmprestimoResponse.
-        Taxa de juros aplicado no empr\u00E9stimo/financiamento
+        {{{plano_parcelamento_emprestimo_response_taxa_juros_value}}}
 
         :return: The taxa_juros of this PlanoParcelamentoEmprestimoResponse.
         :rtype: float
@@ -117,7 +117,7 @@ class PlanoParcelamentoEmprestimoResponse(object):
     def taxa_juros(self, taxa_juros):
         """
         Sets the taxa_juros of this PlanoParcelamentoEmprestimoResponse.
-        Taxa de juros aplicado no empr\u00E9stimo/financiamento
+        {{{plano_parcelamento_emprestimo_response_taxa_juros_value}}}
 
         :param taxa_juros: The taxa_juros of this PlanoParcelamentoEmprestimoResponse.
         :type: float
@@ -128,7 +128,7 @@ class PlanoParcelamentoEmprestimoResponse(object):
     def valor_tributos_iof(self):
         """
         Gets the valor_tributos_iof of this PlanoParcelamentoEmprestimoResponse.
-        valor total estimado dos tributos do Imposto sobre Opera\u00E7\u00F5es Financeiras
+        {{{plano_parcelamento_emprestimo_response_valor_tributos_i_o_f_value}}}
 
         :return: The valor_tributos_iof of this PlanoParcelamentoEmprestimoResponse.
         :rtype: float
@@ -139,7 +139,7 @@ class PlanoParcelamentoEmprestimoResponse(object):
     def valor_tributos_iof(self, valor_tributos_iof):
         """
         Sets the valor_tributos_iof of this PlanoParcelamentoEmprestimoResponse.
-        valor total estimado dos tributos do Imposto sobre Opera\u00E7\u00F5es Financeiras
+        {{{plano_parcelamento_emprestimo_response_valor_tributos_i_o_f_value}}}
 
         :param valor_tributos_iof: The valor_tributos_iof of this PlanoParcelamentoEmprestimoResponse.
         :type: float
@@ -150,7 +150,7 @@ class PlanoParcelamentoEmprestimoResponse(object):
     def valor_percentual_cet(self):
         """
         Gets the valor_percentual_cet of this PlanoParcelamentoEmprestimoResponse.
-        valor percentual do Custo Efetivo Total, ao ano, do empr\u00E9stimo / financiamento
+        {{{plano_parcelamento_emprestimo_response_valor_percentual_c_e_t_value}}}
 
         :return: The valor_percentual_cet of this PlanoParcelamentoEmprestimoResponse.
         :rtype: float
@@ -161,7 +161,7 @@ class PlanoParcelamentoEmprestimoResponse(object):
     def valor_percentual_cet(self, valor_percentual_cet):
         """
         Sets the valor_percentual_cet of this PlanoParcelamentoEmprestimoResponse.
-        valor percentual do Custo Efetivo Total, ao ano, do empr\u00E9stimo / financiamento
+        {{{plano_parcelamento_emprestimo_response_valor_percentual_c_e_t_value}}}
 
         :param valor_percentual_cet: The valor_percentual_cet of this PlanoParcelamentoEmprestimoResponse.
         :type: float

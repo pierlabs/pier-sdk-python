@@ -62,7 +62,7 @@ class ParametroProdutoResponse(object):
     def id_produto(self):
         """
         Gets the id_produto of this ParametroProdutoResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o do Produto (id).
+        {{{parametro_produto_response_id_produto_value}}}
 
         :return: The id_produto of this ParametroProdutoResponse.
         :rtype: int
@@ -73,7 +73,7 @@ class ParametroProdutoResponse(object):
     def id_produto(self, id_produto):
         """
         Sets the id_produto of this ParametroProdutoResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o do Produto (id).
+        {{{parametro_produto_response_id_produto_value}}}
 
         :param id_produto: The id_produto of this ParametroProdutoResponse.
         :type: int
@@ -84,7 +84,7 @@ class ParametroProdutoResponse(object):
     def tipo_origem_transacao(self):
         """
         Gets the tipo_origem_transacao of this ParametroProdutoResponse.
-        Tipo da Transa\u00E7\u00E3o (ON_US ou OFF_US).
+        {{{parametro_produto_response_tipo_origem_transacao_value}}}
 
         :return: The tipo_origem_transacao of this ParametroProdutoResponse.
         :rtype: str
@@ -95,7 +95,7 @@ class ParametroProdutoResponse(object):
     def tipo_origem_transacao(self, tipo_origem_transacao):
         """
         Sets the tipo_origem_transacao of this ParametroProdutoResponse.
-        Tipo da Transa\u00E7\u00E3o (ON_US ou OFF_US).
+        {{{parametro_produto_response_tipo_origem_transacao_value}}}
 
         :param tipo_origem_transacao: The tipo_origem_transacao of this ParametroProdutoResponse.
         :type: str
@@ -112,7 +112,7 @@ class ParametroProdutoResponse(object):
     def descricao(self):
         """
         Gets the descricao of this ParametroProdutoResponse.
-        Descri\u00E7\u00E3o do Tipo da Transa\u00E7\u00E3o.
+        {{{parametro_produto_response_descricao_value}}}
 
         :return: The descricao of this ParametroProdutoResponse.
         :rtype: str
@@ -123,7 +123,7 @@ class ParametroProdutoResponse(object):
     def descricao(self, descricao):
         """
         Sets the descricao of this ParametroProdutoResponse.
-        Descri\u00E7\u00E3o do Tipo da Transa\u00E7\u00E3o.
+        {{{parametro_produto_response_descricao_value}}}
 
         :param descricao: The descricao of this ParametroProdutoResponse.
         :type: str
@@ -134,7 +134,7 @@ class ParametroProdutoResponse(object):
     def valor_parametro(self):
         """
         Gets the valor_parametro of this ParametroProdutoResponse.
-        Valor do Par\u00E2metro.
+        {{{parametro_produto_response_valor_parametro_value}}}
 
         :return: The valor_parametro of this ParametroProdutoResponse.
         :rtype: float
@@ -145,7 +145,7 @@ class ParametroProdutoResponse(object):
     def valor_parametro(self, valor_parametro):
         """
         Sets the valor_parametro of this ParametroProdutoResponse.
-        Valor do Par\u00E2metro.
+        {{{parametro_produto_response_valor_parametro_value}}}
 
         :param valor_parametro: The valor_parametro of this ParametroProdutoResponse.
         :type: float
@@ -156,7 +156,7 @@ class ParametroProdutoResponse(object):
     def data_validade(self):
         """
         Gets the data_validade of this ParametroProdutoResponse.
-        Data de Validade do Par\u00E2metro do Produto.
+        {{{parametro_produto_response_data_validade_value}}}
 
         :return: The data_validade of this ParametroProdutoResponse.
         :rtype: str
@@ -167,7 +167,7 @@ class ParametroProdutoResponse(object):
     def data_validade(self, data_validade):
         """
         Sets the data_validade of this ParametroProdutoResponse.
-        Data de Validade do Par\u00E2metro do Produto.
+        {{{parametro_produto_response_data_validade_value}}}
 
         :param data_validade: The data_validade of this ParametroProdutoResponse.
         :type: str

@@ -119,7 +119,7 @@ class CartaoImpressaoResponse(object):
     def id_conta(self):
         """
         Gets the id_conta of this CartaoImpressaoResponse.
-        Apresenta o C\u00F3digo de Identifica\u00E7\u00E3o da Conta (id) a qual o cart\u00E3o gerado pertence.
+        {{{cartao_impressao_response_id_conta_value}}}
 
         :return: The id_conta of this CartaoImpressaoResponse.
         :rtype: int
@@ -130,7 +130,7 @@ class CartaoImpressaoResponse(object):
     def id_conta(self, id_conta):
         """
         Sets the id_conta of this CartaoImpressaoResponse.
-        Apresenta o C\u00F3digo de Identifica\u00E7\u00E3o da Conta (id) a qual o cart\u00E3o gerado pertence.
+        {{{cartao_impressao_response_id_conta_value}}}
 
         :param id_conta: The id_conta of this CartaoImpressaoResponse.
         :type: int
@@ -141,7 +141,7 @@ class CartaoImpressaoResponse(object):
     def id_pessoa(self):
         """
         Gets the id_pessoa of this CartaoImpressaoResponse.
-        Apresenta o C\u00F3digo de Identifica\u00E7\u00E3o da Pessoa (id) portadora do cart\u00E3o gerado.
+        {{{cartao_impressao_response_id_pessoa_value}}}
 
         :return: The id_pessoa of this CartaoImpressaoResponse.
         :rtype: int
@@ -152,7 +152,7 @@ class CartaoImpressaoResponse(object):
     def id_pessoa(self, id_pessoa):
         """
         Sets the id_pessoa of this CartaoImpressaoResponse.
-        Apresenta o C\u00F3digo de Identifica\u00E7\u00E3o da Pessoa (id) portadora do cart\u00E3o gerado.
+        {{{cartao_impressao_response_id_pessoa_value}}}
 
         :param id_pessoa: The id_pessoa of this CartaoImpressaoResponse.
         :type: int
@@ -163,7 +163,7 @@ class CartaoImpressaoResponse(object):
     def id_cartao(self):
         """
         Gets the id_cartao of this CartaoImpressaoResponse.
-        Apresenta o C\u00F3digo de Identifica\u00E7\u00E3o do Cart\u00E3o (id) que foi gerado.
+        {{{cartao_impressao_response_id_cartao_value}}}
 
         :return: The id_cartao of this CartaoImpressaoResponse.
         :rtype: int
@@ -174,7 +174,7 @@ class CartaoImpressaoResponse(object):
     def id_cartao(self, id_cartao):
         """
         Sets the id_cartao of this CartaoImpressaoResponse.
-        Apresenta o C\u00F3digo de Identifica\u00E7\u00E3o do Cart\u00E3o (id) que foi gerado.
+        {{{cartao_impressao_response_id_cartao_value}}}
 
         :param id_cartao: The id_cartao of this CartaoImpressaoResponse.
         :type: int
@@ -185,7 +185,7 @@ class CartaoImpressaoResponse(object):
     def id_bandeira(self):
         """
         Gets the id_bandeira of this CartaoImpressaoResponse.
-        Apresenta o C\u00F3digo de Identifica\u00E7\u00E3o da Bandeira (id) a qual o Cart\u00E3o pertence, quando bandeirado.
+        {{{cartao_impressao_response_id_bandeira_value}}}
 
         :return: The id_bandeira of this CartaoImpressaoResponse.
         :rtype: int
@@ -196,7 +196,7 @@ class CartaoImpressaoResponse(object):
     def id_bandeira(self, id_bandeira):
         """
         Sets the id_bandeira of this CartaoImpressaoResponse.
-        Apresenta o C\u00F3digo de Identifica\u00E7\u00E3o da Bandeira (id) a qual o Cart\u00E3o pertence, quando bandeirado.
+        {{{cartao_impressao_response_id_bandeira_value}}}
 
         :param id_bandeira: The id_bandeira of this CartaoImpressaoResponse.
         :type: int
@@ -207,7 +207,7 @@ class CartaoImpressaoResponse(object):
     def id_tipo_cartao(self):
         """
         Gets the id_tipo_cartao of this CartaoImpressaoResponse.
-        Apresenta o C\u00F3digo de Identifica\u00E7\u00E3o do Tipo do Cart\u00E3o (id) atribu\u00EDdo ao Cart\u00E3o.
+        {{{cartao_impressao_response_id_tipo_cartao_value}}}
 
         :return: The id_tipo_cartao of this CartaoImpressaoResponse.
         :rtype: int
@@ -218,7 +218,7 @@ class CartaoImpressaoResponse(object):
     def id_tipo_cartao(self, id_tipo_cartao):
         """
         Sets the id_tipo_cartao of this CartaoImpressaoResponse.
-        Apresenta o C\u00F3digo de Identifica\u00E7\u00E3o do Tipo do Cart\u00E3o (id) atribu\u00EDdo ao Cart\u00E3o.
+        {{{cartao_impressao_response_id_tipo_cartao_value}}}
 
         :param id_tipo_cartao: The id_tipo_cartao of this CartaoImpressaoResponse.
         :type: int
@@ -229,7 +229,7 @@ class CartaoImpressaoResponse(object):
     def numero_cartao(self):
         """
         Gets the numero_cartao of this CartaoImpressaoResponse.
-        Apresenta o n\u00FAmero do cart\u00E3o.
+        {{{cartao_impressao_response_numero_cartao_value}}}
 
         :return: The numero_cartao of this CartaoImpressaoResponse.
         :rtype: str
@@ -240,7 +240,7 @@ class CartaoImpressaoResponse(object):
     def numero_cartao(self, numero_cartao):
         """
         Sets the numero_cartao of this CartaoImpressaoResponse.
-        Apresenta o n\u00FAmero do cart\u00E3o.
+        {{{cartao_impressao_response_numero_cartao_value}}}
 
         :param numero_cartao: The numero_cartao of this CartaoImpressaoResponse.
         :type: str
@@ -251,7 +251,7 @@ class CartaoImpressaoResponse(object):
     def nome_plastico(self):
         """
         Gets the nome_plastico of this CartaoImpressaoResponse.
-        Apresenta o nome do Portador do Cart\u00E3o.
+        {{{cartao_impressao_response_nome_plastico_value}}}
 
         :return: The nome_plastico of this CartaoImpressaoResponse.
         :rtype: str
@@ -262,7 +262,7 @@ class CartaoImpressaoResponse(object):
     def nome_plastico(self, nome_plastico):
         """
         Sets the nome_plastico of this CartaoImpressaoResponse.
-        Apresenta o nome do Portador do Cart\u00E3o.
+        {{{cartao_impressao_response_nome_plastico_value}}}
 
         :param nome_plastico: The nome_plastico of this CartaoImpressaoResponse.
         :type: str
@@ -273,7 +273,7 @@ class CartaoImpressaoResponse(object):
     def cvv2(self):
         """
         Gets the cvv2 of this CartaoImpressaoResponse.
-        Apresenta o n\u00FAmero do CVV a ser impresso no Cart\u00E3o
+        {{{cartao_impressao_response_cvv2_value}}}
 
         :return: The cvv2 of this CartaoImpressaoResponse.
         :rtype: str
@@ -284,7 +284,7 @@ class CartaoImpressaoResponse(object):
     def cvv2(self, cvv2):
         """
         Sets the cvv2 of this CartaoImpressaoResponse.
-        Apresenta o n\u00FAmero do CVV a ser impresso no Cart\u00E3o
+        {{{cartao_impressao_response_cvv2_value}}}
 
         :param cvv2: The cvv2 of this CartaoImpressaoResponse.
         :type: str
@@ -295,7 +295,7 @@ class CartaoImpressaoResponse(object):
     def data_geracao(self):
         """
         Gets the data_geracao of this CartaoImpressaoResponse.
-        Apresenta a data de emiss\u00E3o do Cart\u00E3o.
+        {{{cartao_impressao_response_data_geracao_value}}}
 
         :return: The data_geracao of this CartaoImpressaoResponse.
         :rtype: str
@@ -306,7 +306,7 @@ class CartaoImpressaoResponse(object):
     def data_geracao(self, data_geracao):
         """
         Sets the data_geracao of this CartaoImpressaoResponse.
-        Apresenta a data de emiss\u00E3o do Cart\u00E3o.
+        {{{cartao_impressao_response_data_geracao_value}}}
 
         :param data_geracao: The data_geracao of this CartaoImpressaoResponse.
         :type: str
@@ -317,7 +317,7 @@ class CartaoImpressaoResponse(object):
     def data_validade(self):
         """
         Gets the data_validade of this CartaoImpressaoResponse.
-        Apresenta a data de Validade do Cart\u00E3o.
+        {{{cartao_impressao_response_data_validade_value}}}
 
         :return: The data_validade of this CartaoImpressaoResponse.
         :rtype: str
@@ -328,7 +328,7 @@ class CartaoImpressaoResponse(object):
     def data_validade(self, data_validade):
         """
         Sets the data_validade of this CartaoImpressaoResponse.
-        Apresenta a data de Validade do Cart\u00E3o.
+        {{{cartao_impressao_response_data_validade_value}}}
 
         :param data_validade: The data_validade of this CartaoImpressaoResponse.
         :type: str
@@ -339,7 +339,7 @@ class CartaoImpressaoResponse(object):
     def nome_origem_comercial(self):
         """
         Gets the nome_origem_comercial of this CartaoImpressaoResponse.
-        Apresenta o nome da Origem Comercial que realizou o cadastro do Titular da Conta a qual o Cart\u00E3o pertence.
+        {{{cartao_impressao_response_nome_origem_comercial_value}}}
 
         :return: The nome_origem_comercial of this CartaoImpressaoResponse.
         :rtype: str
@@ -350,7 +350,7 @@ class CartaoImpressaoResponse(object):
     def nome_origem_comercial(self, nome_origem_comercial):
         """
         Sets the nome_origem_comercial of this CartaoImpressaoResponse.
-        Apresenta o nome da Origem Comercial que realizou o cadastro do Titular da Conta a qual o Cart\u00E3o pertence.
+        {{{cartao_impressao_response_nome_origem_comercial_value}}}
 
         :param nome_origem_comercial: The nome_origem_comercial of this CartaoImpressaoResponse.
         :type: str
@@ -361,7 +361,7 @@ class CartaoImpressaoResponse(object):
     def nome_empresa(self):
         """
         Gets the nome_empresa of this CartaoImpressaoResponse.
-        Apresenta o nome da Empresa (Pessoa Jur\u00EDdica) titular do Cart\u00E3o, quando aplic\u00E1vel.
+        {{{cartao_impressao_response_nome_empresa_value}}}
 
         :return: The nome_empresa of this CartaoImpressaoResponse.
         :rtype: str
@@ -372,7 +372,7 @@ class CartaoImpressaoResponse(object):
     def nome_empresa(self, nome_empresa):
         """
         Sets the nome_empresa of this CartaoImpressaoResponse.
-        Apresenta o nome da Empresa (Pessoa Jur\u00EDdica) titular do Cart\u00E3o, quando aplic\u00E1vel.
+        {{{cartao_impressao_response_nome_empresa_value}}}
 
         :param nome_empresa: The nome_empresa of this CartaoImpressaoResponse.
         :type: str
@@ -383,7 +383,7 @@ class CartaoImpressaoResponse(object):
     def numero_agencia(self):
         """
         Gets the numero_agencia of this CartaoImpressaoResponse.
-        Apresenta o n\u00FAmero da Ag\u00EAncia a ser impresso no Cart\u00E3o, quando aplic\u00E1vel.
+        {{{cartao_impressao_response_numero_agencia_value}}}
 
         :return: The numero_agencia of this CartaoImpressaoResponse.
         :rtype: int
@@ -394,7 +394,7 @@ class CartaoImpressaoResponse(object):
     def numero_agencia(self, numero_agencia):
         """
         Sets the numero_agencia of this CartaoImpressaoResponse.
-        Apresenta o n\u00FAmero da Ag\u00EAncia a ser impresso no Cart\u00E3o, quando aplic\u00E1vel.
+        {{{cartao_impressao_response_numero_agencia_value}}}
 
         :param numero_agencia: The numero_agencia of this CartaoImpressaoResponse.
         :type: int
@@ -405,7 +405,7 @@ class CartaoImpressaoResponse(object):
     def numero_conta_corente(self):
         """
         Gets the numero_conta_corente of this CartaoImpressaoResponse.
-        Apresenta o n\u00FAmero da Conta Corrente a ser impresso no Cart\u00E3o, quando aplic\u00E1vel.
+        {{{cartao_impressao_response_numero_conta_corente_value}}}
 
         :return: The numero_conta_corente of this CartaoImpressaoResponse.
         :rtype: str
@@ -416,7 +416,7 @@ class CartaoImpressaoResponse(object):
     def numero_conta_corente(self, numero_conta_corente):
         """
         Sets the numero_conta_corente of this CartaoImpressaoResponse.
-        Apresenta o n\u00FAmero da Conta Corrente a ser impresso no Cart\u00E3o, quando aplic\u00E1vel.
+        {{{cartao_impressao_response_numero_conta_corente_value}}}
 
         :param numero_conta_corente: The numero_conta_corente of this CartaoImpressaoResponse.
         :type: str
@@ -427,7 +427,7 @@ class CartaoImpressaoResponse(object):
     def nome_empresa_beneficio(self):
         """
         Gets the nome_empresa_beneficio of this CartaoImpressaoResponse.
-        Apresenta o nome da Pessoa F\u00EDsica ou Jur\u00EDdica que contratou servi\u00E7os de benef\u00EDcio para o portador do cart\u00E3o, quando aplic\u00E1vel.
+        {{{cartao_impressao_response_nome_empresa_beneficio_value}}}
 
         :return: The nome_empresa_beneficio of this CartaoImpressaoResponse.
         :rtype: str
@@ -438,7 +438,7 @@ class CartaoImpressaoResponse(object):
     def nome_empresa_beneficio(self, nome_empresa_beneficio):
         """
         Sets the nome_empresa_beneficio of this CartaoImpressaoResponse.
-        Apresenta o nome da Pessoa F\u00EDsica ou Jur\u00EDdica que contratou servi\u00E7os de benef\u00EDcio para o portador do cart\u00E3o, quando aplic\u00E1vel.
+        {{{cartao_impressao_response_nome_empresa_beneficio_value}}}
 
         :param nome_empresa_beneficio: The nome_empresa_beneficio of this CartaoImpressaoResponse.
         :type: str
@@ -449,7 +449,7 @@ class CartaoImpressaoResponse(object):
     def cpf(self):
         """
         Gets the cpf of this CartaoImpressaoResponse.
-        Apresenta o CPF do Portador do Cart\u00E3o.
+        {{{cartao_impressao_response_cpf_value}}}
 
         :return: The cpf of this CartaoImpressaoResponse.
         :rtype: str
@@ -460,7 +460,7 @@ class CartaoImpressaoResponse(object):
     def cpf(self, cpf):
         """
         Sets the cpf of this CartaoImpressaoResponse.
-        Apresenta o CPF do Portador do Cart\u00E3o.
+        {{{cartao_impressao_response_cpf_value}}}
 
         :param cpf: The cpf of this CartaoImpressaoResponse.
         :type: str
@@ -471,7 +471,7 @@ class CartaoImpressaoResponse(object):
     def tipo_portador(self):
         """
         Gets the tipo_portador of this CartaoImpressaoResponse.
-        Apresenta o tipo do Portador do cart\u00E3o, sendo: ('T': Titular, 'A': Adicional).
+        {{{cartao_impressao_response_tipo_portador_value}}}
 
         :return: The tipo_portador of this CartaoImpressaoResponse.
         :rtype: str
@@ -482,7 +482,7 @@ class CartaoImpressaoResponse(object):
     def tipo_portador(self, tipo_portador):
         """
         Sets the tipo_portador of this CartaoImpressaoResponse.
-        Apresenta o tipo do Portador do cart\u00E3o, sendo: ('T': Titular, 'A': Adicional).
+        {{{cartao_impressao_response_tipo_portador_value}}}
 
         :param tipo_portador: The tipo_portador of this CartaoImpressaoResponse.
         :type: str
@@ -493,7 +493,7 @@ class CartaoImpressaoResponse(object):
     def nome_empregador(self):
         """
         Gets the nome_empregador of this CartaoImpressaoResponse.
-        Apresenta o nome da Pessoa F\u00EDsica ou Jur\u00EDdica a ser impresso no cart\u00E3o, quando aplic\u00E1vel.
+        {{{cartao_impressao_response_nome_empregador_value}}}
 
         :return: The nome_empregador of this CartaoImpressaoResponse.
         :rtype: str
@@ -504,7 +504,7 @@ class CartaoImpressaoResponse(object):
     def nome_empregador(self, nome_empregador):
         """
         Sets the nome_empregador of this CartaoImpressaoResponse.
-        Apresenta o nome da Pessoa F\u00EDsica ou Jur\u00EDdica a ser impresso no cart\u00E3o, quando aplic\u00E1vel.
+        {{{cartao_impressao_response_nome_empregador_value}}}
 
         :param nome_empregador: The nome_empregador of this CartaoImpressaoResponse.
         :type: str
@@ -515,7 +515,7 @@ class CartaoImpressaoResponse(object):
     def trilha1(self):
         """
         Gets the trilha1 of this CartaoImpressaoResponse.
-        Apresenta os dados da Trilha1, seguindo as regras de trilha do emissor.
+        {{{cartao_impressao_response_trilha1_value}}}
 
         :return: The trilha1 of this CartaoImpressaoResponse.
         :rtype: str
@@ -526,7 +526,7 @@ class CartaoImpressaoResponse(object):
     def trilha1(self, trilha1):
         """
         Sets the trilha1 of this CartaoImpressaoResponse.
-        Apresenta os dados da Trilha1, seguindo as regras de trilha do emissor.
+        {{{cartao_impressao_response_trilha1_value}}}
 
         :param trilha1: The trilha1 of this CartaoImpressaoResponse.
         :type: str
@@ -537,7 +537,7 @@ class CartaoImpressaoResponse(object):
     def trilha2(self):
         """
         Gets the trilha2 of this CartaoImpressaoResponse.
-        Apresenta os dados da Trilha2, seguindo as regras de trilha do emissor.
+        {{{cartao_impressao_response_trilha2_value}}}
 
         :return: The trilha2 of this CartaoImpressaoResponse.
         :rtype: str
@@ -548,7 +548,7 @@ class CartaoImpressaoResponse(object):
     def trilha2(self, trilha2):
         """
         Sets the trilha2 of this CartaoImpressaoResponse.
-        Apresenta os dados da Trilha2, seguindo as regras de trilha do emissor.
+        {{{cartao_impressao_response_trilha2_value}}}
 
         :param trilha2: The trilha2 of this CartaoImpressaoResponse.
         :type: str
@@ -559,7 +559,7 @@ class CartaoImpressaoResponse(object):
     def trilha_cvv1(self):
         """
         Gets the trilha_cvv1 of this CartaoImpressaoResponse.
-        Apresenta os dados da TrilhaCVV01, seguindo as regras de trilha do emissor.
+        {{{cartao_impressao_response_trilha_c_v_v1_value}}}
 
         :return: The trilha_cvv1 of this CartaoImpressaoResponse.
         :rtype: str
@@ -570,7 +570,7 @@ class CartaoImpressaoResponse(object):
     def trilha_cvv1(self, trilha_cvv1):
         """
         Sets the trilha_cvv1 of this CartaoImpressaoResponse.
-        Apresenta os dados da TrilhaCVV01, seguindo as regras de trilha do emissor.
+        {{{cartao_impressao_response_trilha_c_v_v1_value}}}
 
         :param trilha_cvv1: The trilha_cvv1 of this CartaoImpressaoResponse.
         :type: str
@@ -581,7 +581,7 @@ class CartaoImpressaoResponse(object):
     def trilha_cvv2(self):
         """
         Gets the trilha_cvv2 of this CartaoImpressaoResponse.
-        Apresenta os dados da TrilhaCVV02, seguindo as regras de trilha do emissor.
+        {{{cartao_impressao_response_trilha_c_v_v2_value}}}
 
         :return: The trilha_cvv2 of this CartaoImpressaoResponse.
         :rtype: str
@@ -592,7 +592,7 @@ class CartaoImpressaoResponse(object):
     def trilha_cvv2(self, trilha_cvv2):
         """
         Sets the trilha_cvv2 of this CartaoImpressaoResponse.
-        Apresenta os dados da TrilhaCVV02, seguindo as regras de trilha do emissor.
+        {{{cartao_impressao_response_trilha_c_v_v2_value}}}
 
         :param trilha_cvv2: The trilha_cvv2 of this CartaoImpressaoResponse.
         :type: str
@@ -603,7 +603,7 @@ class CartaoImpressaoResponse(object):
     def flag_virtual(self):
         """
         Gets the flag_virtual of this CartaoImpressaoResponse.
-        Apresenta o status que informa se o cart\u00E3o \u00E9 virtual 
+        {{{cartao_impressao_response_flag_virtual_value}}}
 
         :return: The flag_virtual of this CartaoImpressaoResponse.
         :rtype: int
@@ -614,7 +614,7 @@ class CartaoImpressaoResponse(object):
     def flag_virtual(self, flag_virtual):
         """
         Sets the flag_virtual of this CartaoImpressaoResponse.
-        Apresenta o status que informa se o cart\u00E3o \u00E9 virtual 
+        {{{cartao_impressao_response_flag_virtual_value}}}
 
         :param flag_virtual: The flag_virtual of this CartaoImpressaoResponse.
         :type: int
@@ -625,7 +625,7 @@ class CartaoImpressaoResponse(object):
     def numero_cartao_hash(self):
         """
         Gets the numero_cartao_hash of this CartaoImpressaoResponse.
-        Apresenta o numero da hash do cart\u00E3o 
+        {{{cartao_impressao_response_numero_cartao_hash_value}}}
 
         :return: The numero_cartao_hash of this CartaoImpressaoResponse.
         :rtype: int
@@ -636,7 +636,7 @@ class CartaoImpressaoResponse(object):
     def numero_cartao_hash(self, numero_cartao_hash):
         """
         Sets the numero_cartao_hash of this CartaoImpressaoResponse.
-        Apresenta o numero da hash do cart\u00E3o 
+        {{{cartao_impressao_response_numero_cartao_hash_value}}}
 
         :param numero_cartao_hash: The numero_cartao_hash of this CartaoImpressaoResponse.
         :type: int

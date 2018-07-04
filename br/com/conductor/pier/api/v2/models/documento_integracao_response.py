@@ -56,7 +56,7 @@ class DocumentoIntegracaoResponse(object):
     def id(self):
         """
         Gets the id of this DocumentoIntegracaoResponse.
-        ID do Documento Integrado.
+        {{{documento_integracao_response_id_value}}}
 
         :return: The id of this DocumentoIntegracaoResponse.
         :rtype: int
@@ -67,7 +67,7 @@ class DocumentoIntegracaoResponse(object):
     def id(self, id):
         """
         Sets the id of this DocumentoIntegracaoResponse.
-        ID do Documento Integrado.
+        {{{documento_integracao_response_id_value}}}
 
         :param id: The id of this DocumentoIntegracaoResponse.
         :type: int
@@ -78,7 +78,7 @@ class DocumentoIntegracaoResponse(object):
     def id_template(self):
         """
         Gets the id_template of this DocumentoIntegracaoResponse.
-        ID do Template de Documento associado.
+        {{{documento_integracao_response_id_template_value}}}
 
         :return: The id_template of this DocumentoIntegracaoResponse.
         :rtype: int
@@ -89,7 +89,7 @@ class DocumentoIntegracaoResponse(object):
     def id_template(self, id_template):
         """
         Sets the id_template of this DocumentoIntegracaoResponse.
-        ID do Template de Documento associado.
+        {{{documento_integracao_response_id_template_value}}}
 
         :param id_template: The id_template of this DocumentoIntegracaoResponse.
         :type: int
@@ -100,7 +100,7 @@ class DocumentoIntegracaoResponse(object):
     def nome(self):
         """
         Gets the nome of this DocumentoIntegracaoResponse.
-        Nome do Documento.
+        {{{documento_integracao_response_nome_value}}}
 
         :return: The nome of this DocumentoIntegracaoResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class DocumentoIntegracaoResponse(object):
     def nome(self, nome):
         """
         Sets the nome of this DocumentoIntegracaoResponse.
-        Nome do Documento.
+        {{{documento_integracao_response_nome_value}}}
 
         :param nome: The nome of this DocumentoIntegracaoResponse.
         :type: str

@@ -56,7 +56,7 @@ class EntidadeResponse(object):
     def id(self):
         """
         Gets the id of this EntidadeResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o da entidade.
+        {{{entidade_response_id_value}}}
 
         :return: The id of this EntidadeResponse.
         :rtype: int
@@ -67,7 +67,7 @@ class EntidadeResponse(object):
     def id(self, id):
         """
         Sets the id of this EntidadeResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o da entidade.
+        {{{entidade_response_id_value}}}
 
         :param id: The id of this EntidadeResponse.
         :type: int
@@ -78,7 +78,7 @@ class EntidadeResponse(object):
     def descricao(self):
         """
         Gets the descricao of this EntidadeResponse.
-        Descri\u00E7\u00E3o da entidade.
+        {{{entidade_response_descricao_value}}}
 
         :return: The descricao of this EntidadeResponse.
         :rtype: str
@@ -89,7 +89,7 @@ class EntidadeResponse(object):
     def descricao(self, descricao):
         """
         Sets the descricao of this EntidadeResponse.
-        Descri\u00E7\u00E3o da entidade.
+        {{{entidade_response_descricao_value}}}
 
         :param descricao: The descricao of this EntidadeResponse.
         :type: str
@@ -100,7 +100,7 @@ class EntidadeResponse(object):
     def flag_ativo(self):
         """
         Gets the flag_ativo of this EntidadeResponse.
-        Flag que indica se a entidade est\u00E1 ativa.
+        {{{entidade_response_flag_ativo_value}}}
 
         :return: The flag_ativo of this EntidadeResponse.
         :rtype: bool
@@ -111,7 +111,7 @@ class EntidadeResponse(object):
     def flag_ativo(self, flag_ativo):
         """
         Sets the flag_ativo of this EntidadeResponse.
-        Flag que indica se a entidade est\u00E1 ativa.
+        {{{entidade_response_flag_ativo_value}}}
 
         :param flag_ativo: The flag_ativo of this EntidadeResponse.
         :type: bool

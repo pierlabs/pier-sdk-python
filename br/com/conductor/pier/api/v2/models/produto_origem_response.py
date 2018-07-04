@@ -50,7 +50,7 @@ class ProdutoOrigemResponse(object):
     def id_produto(self):
         """
         Gets the id_produto of this ProdutoOrigemResponse.
-        C\u00F3digo identificador do produto
+        {{{produto_origem_response_id_produto_value}}}
 
         :return: The id_produto of this ProdutoOrigemResponse.
         :rtype: int
@@ -61,7 +61,7 @@ class ProdutoOrigemResponse(object):
     def id_produto(self, id_produto):
         """
         Sets the id_produto of this ProdutoOrigemResponse.
-        C\u00F3digo identificador do produto
+        {{{produto_origem_response_id_produto_value}}}
 
         :param id_produto: The id_produto of this ProdutoOrigemResponse.
         :type: int

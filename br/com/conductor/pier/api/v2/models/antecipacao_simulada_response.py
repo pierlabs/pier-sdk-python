@@ -166,7 +166,7 @@ class AntecipacaoSimuladaResponse(object):
     def id_antecipacao_simulada(self):
         """
         Gets the id_antecipacao_simulada of this AntecipacaoSimuladaResponse.
-        C\u00F3digo identificador da simula\u00E7\u00E3o de antecipa\u00E7\u00E3o.
+        {{{antecipacao_simulada_response_id_antecipacao_simulada_value}}}
 
         :return: The id_antecipacao_simulada of this AntecipacaoSimuladaResponse.
         :rtype: int
@@ -177,7 +177,7 @@ class AntecipacaoSimuladaResponse(object):
     def id_antecipacao_simulada(self, id_antecipacao_simulada):
         """
         Sets the id_antecipacao_simulada of this AntecipacaoSimuladaResponse.
-        C\u00F3digo identificador da simula\u00E7\u00E3o de antecipa\u00E7\u00E3o.
+        {{{antecipacao_simulada_response_id_antecipacao_simulada_value}}}
 
         :param id_antecipacao_simulada: The id_antecipacao_simulada of this AntecipacaoSimuladaResponse.
         :type: int
@@ -188,7 +188,7 @@ class AntecipacaoSimuladaResponse(object):
     def id_conta(self):
         """
         Gets the id_conta of this AntecipacaoSimuladaResponse.
-        C\u00F3digo identificador da conta.
+        {{{antecipacao_simulada_response_id_conta_value}}}
 
         :return: The id_conta of this AntecipacaoSimuladaResponse.
         :rtype: int
@@ -199,7 +199,7 @@ class AntecipacaoSimuladaResponse(object):
     def id_conta(self, id_conta):
         """
         Sets the id_conta of this AntecipacaoSimuladaResponse.
-        C\u00F3digo identificador da conta.
+        {{{antecipacao_simulada_response_id_conta_value}}}
 
         :param id_conta: The id_conta of this AntecipacaoSimuladaResponse.
         :type: int
@@ -210,7 +210,7 @@ class AntecipacaoSimuladaResponse(object):
     def id_compra(self):
         """
         Gets the id_compra of this AntecipacaoSimuladaResponse.
-        C\u00F3digo identificador do evento compra.
+        {{{antecipacao_simulada_response_id_compra_value}}}
 
         :return: The id_compra of this AntecipacaoSimuladaResponse.
         :rtype: int
@@ -221,7 +221,7 @@ class AntecipacaoSimuladaResponse(object):
     def id_compra(self, id_compra):
         """
         Sets the id_compra of this AntecipacaoSimuladaResponse.
-        C\u00F3digo identificador do evento compra.
+        {{{antecipacao_simulada_response_id_compra_value}}}
 
         :param id_compra: The id_compra of this AntecipacaoSimuladaResponse.
         :type: int
@@ -232,7 +232,7 @@ class AntecipacaoSimuladaResponse(object):
     def id_tipo_transacao(self):
         """
         Gets the id_tipo_transacao of this AntecipacaoSimuladaResponse.
-        C\u00F3digo identificador do tipo do evento compra.
+        {{{antecipacao_simulada_response_id_tipo_transacao_value}}}
 
         :return: The id_tipo_transacao of this AntecipacaoSimuladaResponse.
         :rtype: int
@@ -243,7 +243,7 @@ class AntecipacaoSimuladaResponse(object):
     def id_tipo_transacao(self, id_tipo_transacao):
         """
         Sets the id_tipo_transacao of this AntecipacaoSimuladaResponse.
-        C\u00F3digo identificador do tipo do evento compra.
+        {{{antecipacao_simulada_response_id_tipo_transacao_value}}}
 
         :param id_tipo_transacao: The id_tipo_transacao of this AntecipacaoSimuladaResponse.
         :type: int
@@ -254,7 +254,7 @@ class AntecipacaoSimuladaResponse(object):
     def quantidade_parcelas_antecipaveis(self):
         """
         Gets the quantidade_parcelas_antecipaveis of this AntecipacaoSimuladaResponse.
-        Quantidade de parcelas antecip\u00E1veis.
+        {{{antecipacao_simulada_response_quantidade_parcelas_antecipaveis_value}}}
 
         :return: The quantidade_parcelas_antecipaveis of this AntecipacaoSimuladaResponse.
         :rtype: int
@@ -265,7 +265,7 @@ class AntecipacaoSimuladaResponse(object):
     def quantidade_parcelas_antecipaveis(self, quantidade_parcelas_antecipaveis):
         """
         Sets the quantidade_parcelas_antecipaveis of this AntecipacaoSimuladaResponse.
-        Quantidade de parcelas antecip\u00E1veis.
+        {{{antecipacao_simulada_response_quantidade_parcelas_antecipaveis_value}}}
 
         :param quantidade_parcelas_antecipaveis: The quantidade_parcelas_antecipaveis of this AntecipacaoSimuladaResponse.
         :type: int
@@ -276,7 +276,7 @@ class AntecipacaoSimuladaResponse(object):
     def valor_parcela(self):
         """
         Gets the valor_parcela of this AntecipacaoSimuladaResponse.
-        Valor da parcela.
+        {{{antecipacao_simulada_response_valor_parcela_value}}}
 
         :return: The valor_parcela of this AntecipacaoSimuladaResponse.
         :rtype: float
@@ -287,7 +287,7 @@ class AntecipacaoSimuladaResponse(object):
     def valor_parcela(self, valor_parcela):
         """
         Sets the valor_parcela of this AntecipacaoSimuladaResponse.
-        Valor da parcela.
+        {{{antecipacao_simulada_response_valor_parcela_value}}}
 
         :param valor_parcela: The valor_parcela of this AntecipacaoSimuladaResponse.
         :type: float
@@ -298,7 +298,7 @@ class AntecipacaoSimuladaResponse(object):
     def data_hora_simulacao(self):
         """
         Gets the data_hora_simulacao of this AntecipacaoSimuladaResponse.
-        Data e hora em que a simula\u00E7\u00E3o foi feita.
+        {{{antecipacao_simulada_response_data_hora_simulacao_value}}}
 
         :return: The data_hora_simulacao of this AntecipacaoSimuladaResponse.
         :rtype: str
@@ -309,7 +309,7 @@ class AntecipacaoSimuladaResponse(object):
     def data_hora_simulacao(self, data_hora_simulacao):
         """
         Sets the data_hora_simulacao of this AntecipacaoSimuladaResponse.
-        Data e hora em que a simula\u00E7\u00E3o foi feita.
+        {{{antecipacao_simulada_response_data_hora_simulacao_value}}}
 
         :param data_hora_simulacao: The data_hora_simulacao of this AntecipacaoSimuladaResponse.
         :type: str
@@ -320,7 +320,7 @@ class AntecipacaoSimuladaResponse(object):
     def taxa_antecipacao_ano(self):
         """
         Gets the taxa_antecipacao_ano of this AntecipacaoSimuladaResponse.
-        Taxa de antecipa\u00E7\u00E3o aplicada (ao ano).
+        {{{antecipacao_simulada_response_taxa_antecipacao_ano_value}}}
 
         :return: The taxa_antecipacao_ano of this AntecipacaoSimuladaResponse.
         :rtype: float
@@ -331,7 +331,7 @@ class AntecipacaoSimuladaResponse(object):
     def taxa_antecipacao_ano(self, taxa_antecipacao_ano):
         """
         Sets the taxa_antecipacao_ano of this AntecipacaoSimuladaResponse.
-        Taxa de antecipa\u00E7\u00E3o aplicada (ao ano).
+        {{{antecipacao_simulada_response_taxa_antecipacao_ano_value}}}
 
         :param taxa_antecipacao_ano: The taxa_antecipacao_ano of this AntecipacaoSimuladaResponse.
         :type: float
@@ -342,7 +342,7 @@ class AntecipacaoSimuladaResponse(object):
     def nome_estabelecimento(self):
         """
         Gets the nome_estabelecimento of this AntecipacaoSimuladaResponse.
-        Estabelecimento onde foi realizada a transa\u00E7\u00E3o
+        {{{antecipacao_simulada_response_nome_estabelecimento_value}}}
 
         :return: The nome_estabelecimento of this AntecipacaoSimuladaResponse.
         :rtype: str
@@ -353,7 +353,7 @@ class AntecipacaoSimuladaResponse(object):
     def nome_estabelecimento(self, nome_estabelecimento):
         """
         Sets the nome_estabelecimento of this AntecipacaoSimuladaResponse.
-        Estabelecimento onde foi realizada a transa\u00E7\u00E3o
+        {{{antecipacao_simulada_response_nome_estabelecimento_value}}}
 
         :param nome_estabelecimento: The nome_estabelecimento of this AntecipacaoSimuladaResponse.
         :type: str
@@ -364,7 +364,7 @@ class AntecipacaoSimuladaResponse(object):
     def status(self):
         """
         Gets the status of this AntecipacaoSimuladaResponse.
-        Descri\u00E7\u00E3o do status da autoriza\u00E7\u00E3o da compra.
+        {{{antecipacao_simulada_response_status_value}}}
 
         :return: The status of this AntecipacaoSimuladaResponse.
         :rtype: str
@@ -375,7 +375,7 @@ class AntecipacaoSimuladaResponse(object):
     def status(self, status):
         """
         Sets the status of this AntecipacaoSimuladaResponse.
-        Descri\u00E7\u00E3o do status da autoriza\u00E7\u00E3o da compra.
+        {{{antecipacao_simulada_response_status_value}}}
 
         :param status: The status of this AntecipacaoSimuladaResponse.
         :type: str
@@ -386,7 +386,7 @@ class AntecipacaoSimuladaResponse(object):
     def data_compra(self):
         """
         Gets the data_compra of this AntecipacaoSimuladaResponse.
-        Data da compra.
+        {{{antecipacao_simulada_response_data_compra_value}}}
 
         :return: The data_compra of this AntecipacaoSimuladaResponse.
         :rtype: str
@@ -397,7 +397,7 @@ class AntecipacaoSimuladaResponse(object):
     def data_compra(self, data_compra):
         """
         Sets the data_compra of this AntecipacaoSimuladaResponse.
-        Data da compra.
+        {{{antecipacao_simulada_response_data_compra_value}}}
 
         :param data_compra: The data_compra of this AntecipacaoSimuladaResponse.
         :type: str
@@ -408,7 +408,7 @@ class AntecipacaoSimuladaResponse(object):
     def tipo_origem_transacao(self):
         """
         Gets the tipo_origem_transacao of this AntecipacaoSimuladaResponse.
-        Tipo de transa\u00E7\u00E3o da compra.
+        {{{antecipacao_simulada_response_tipo_origem_transacao_value}}}
 
         :return: The tipo_origem_transacao of this AntecipacaoSimuladaResponse.
         :rtype: str
@@ -419,7 +419,7 @@ class AntecipacaoSimuladaResponse(object):
     def tipo_origem_transacao(self, tipo_origem_transacao):
         """
         Sets the tipo_origem_transacao of this AntecipacaoSimuladaResponse.
-        Tipo de transa\u00E7\u00E3o da compra.
+        {{{antecipacao_simulada_response_tipo_origem_transacao_value}}}
 
         :param tipo_origem_transacao: The tipo_origem_transacao of this AntecipacaoSimuladaResponse.
         :type: str
@@ -430,7 +430,7 @@ class AntecipacaoSimuladaResponse(object):
     def cidade(self):
         """
         Gets the cidade of this AntecipacaoSimuladaResponse.
-        Cidade onde a compra foi realizada.
+        {{{antecipacao_simulada_response_cidade_value}}}
 
         :return: The cidade of this AntecipacaoSimuladaResponse.
         :rtype: str
@@ -441,7 +441,7 @@ class AntecipacaoSimuladaResponse(object):
     def cidade(self, cidade):
         """
         Sets the cidade of this AntecipacaoSimuladaResponse.
-        Cidade onde a compra foi realizada.
+        {{{antecipacao_simulada_response_cidade_value}}}
 
         :param cidade: The cidade of this AntecipacaoSimuladaResponse.
         :type: str
@@ -452,7 +452,7 @@ class AntecipacaoSimuladaResponse(object):
     def pais(self):
         """
         Gets the pais of this AntecipacaoSimuladaResponse.
-        Pa\u00EDs onde a compra foi realizada.
+        {{{antecipacao_simulada_response_pais_value}}}
 
         :return: The pais of this AntecipacaoSimuladaResponse.
         :rtype: str
@@ -463,7 +463,7 @@ class AntecipacaoSimuladaResponse(object):
     def pais(self, pais):
         """
         Sets the pais of this AntecipacaoSimuladaResponse.
-        Pa\u00EDs onde a compra foi realizada.
+        {{{antecipacao_simulada_response_pais_value}}}
 
         :param pais: The pais of this AntecipacaoSimuladaResponse.
         :type: str
@@ -474,7 +474,7 @@ class AntecipacaoSimuladaResponse(object):
     def latitude(self):
         """
         Gets the latitude of this AntecipacaoSimuladaResponse.
-        Coordenada latitudinal da localiza\u00E7\u00E3o da compra.
+        {{{antecipacao_simulada_response_latitude_value}}}
 
         :return: The latitude of this AntecipacaoSimuladaResponse.
         :rtype: str
@@ -485,7 +485,7 @@ class AntecipacaoSimuladaResponse(object):
     def latitude(self, latitude):
         """
         Sets the latitude of this AntecipacaoSimuladaResponse.
-        Coordenada latitudinal da localiza\u00E7\u00E3o da compra.
+        {{{antecipacao_simulada_response_latitude_value}}}
 
         :param latitude: The latitude of this AntecipacaoSimuladaResponse.
         :type: str
@@ -496,7 +496,7 @@ class AntecipacaoSimuladaResponse(object):
     def longitude(self):
         """
         Gets the longitude of this AntecipacaoSimuladaResponse.
-        Coordenada longitudinal da localiza\u00E7\u00E3o da compra.
+        {{{antecipacao_simulada_response_longitude_value}}}
 
         :return: The longitude of this AntecipacaoSimuladaResponse.
         :rtype: str
@@ -507,7 +507,7 @@ class AntecipacaoSimuladaResponse(object):
     def longitude(self, longitude):
         """
         Sets the longitude of this AntecipacaoSimuladaResponse.
-        Coordenada longitudinal da localiza\u00E7\u00E3o da compra.
+        {{{antecipacao_simulada_response_longitude_value}}}
 
         :param longitude: The longitude of this AntecipacaoSimuladaResponse.
         :type: str
@@ -518,7 +518,7 @@ class AntecipacaoSimuladaResponse(object):
     def id_grupo_mcc(self):
         """
         Gets the id_grupo_mcc of this AntecipacaoSimuladaResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o do Grupo MCC da compra.
+        {{{antecipacao_simulada_response_id_grupo_m_c_c_value}}}
 
         :return: The id_grupo_mcc of this AntecipacaoSimuladaResponse.
         :rtype: int
@@ -529,7 +529,7 @@ class AntecipacaoSimuladaResponse(object):
     def id_grupo_mcc(self, id_grupo_mcc):
         """
         Sets the id_grupo_mcc of this AntecipacaoSimuladaResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o do Grupo MCC da compra.
+        {{{antecipacao_simulada_response_id_grupo_m_c_c_value}}}
 
         :param id_grupo_mcc: The id_grupo_mcc of this AntecipacaoSimuladaResponse.
         :type: int
@@ -540,7 +540,7 @@ class AntecipacaoSimuladaResponse(object):
     def descricao_grupo_mcc(self):
         """
         Gets the descricao_grupo_mcc of this AntecipacaoSimuladaResponse.
-        Descri\u00E7\u00E3o do Grupo MCC da compra.
+        {{{antecipacao_simulada_response_descricao_grupo_m_c_c_value}}}
 
         :return: The descricao_grupo_mcc of this AntecipacaoSimuladaResponse.
         :rtype: str
@@ -551,7 +551,7 @@ class AntecipacaoSimuladaResponse(object):
     def descricao_grupo_mcc(self, descricao_grupo_mcc):
         """
         Sets the descricao_grupo_mcc of this AntecipacaoSimuladaResponse.
-        Descri\u00E7\u00E3o do Grupo MCC da compra.
+        {{{antecipacao_simulada_response_descricao_grupo_m_c_c_value}}}
 
         :param descricao_grupo_mcc: The descricao_grupo_mcc of this AntecipacaoSimuladaResponse.
         :type: str
@@ -562,7 +562,7 @@ class AntecipacaoSimuladaResponse(object):
     def id_produto(self):
         """
         Gets the id_produto of this AntecipacaoSimuladaResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o do produto da compra.
+        {{{antecipacao_simulada_response_id_produto_value}}}
 
         :return: The id_produto of this AntecipacaoSimuladaResponse.
         :rtype: int
@@ -573,7 +573,7 @@ class AntecipacaoSimuladaResponse(object):
     def id_produto(self, id_produto):
         """
         Sets the id_produto of this AntecipacaoSimuladaResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o do produto da compra.
+        {{{antecipacao_simulada_response_id_produto_value}}}
 
         :param id_produto: The id_produto of this AntecipacaoSimuladaResponse.
         :type: int
@@ -584,7 +584,7 @@ class AntecipacaoSimuladaResponse(object):
     def descricao_produto(self):
         """
         Gets the descricao_produto of this AntecipacaoSimuladaResponse.
-        Descri\u00E7\u00E3o do produto da compra.
+        {{{antecipacao_simulada_response_descricao_produto_value}}}
 
         :return: The descricao_produto of this AntecipacaoSimuladaResponse.
         :rtype: str
@@ -595,7 +595,7 @@ class AntecipacaoSimuladaResponse(object):
     def descricao_produto(self, descricao_produto):
         """
         Sets the descricao_produto of this AntecipacaoSimuladaResponse.
-        Descri\u00E7\u00E3o do produto da compra.
+        {{{antecipacao_simulada_response_descricao_produto_value}}}
 
         :param descricao_produto: The descricao_produto of this AntecipacaoSimuladaResponse.
         :type: str
@@ -606,7 +606,7 @@ class AntecipacaoSimuladaResponse(object):
     def descricao_estabelecimento(self):
         """
         Gets the descricao_estabelecimento of this AntecipacaoSimuladaResponse.
-        Descri\u00E7\u00E3o do estabelecimento da compra.
+        {{{antecipacao_simulada_response_descricao_estabelecimento_value}}}
 
         :return: The descricao_estabelecimento of this AntecipacaoSimuladaResponse.
         :rtype: str
@@ -617,7 +617,7 @@ class AntecipacaoSimuladaResponse(object):
     def descricao_estabelecimento(self, descricao_estabelecimento):
         """
         Sets the descricao_estabelecimento of this AntecipacaoSimuladaResponse.
-        Descri\u00E7\u00E3o do estabelecimento da compra.
+        {{{antecipacao_simulada_response_descricao_estabelecimento_value}}}
 
         :param descricao_estabelecimento: The descricao_estabelecimento of this AntecipacaoSimuladaResponse.
         :type: str
@@ -628,7 +628,7 @@ class AntecipacaoSimuladaResponse(object):
     def nome_fantasia_estabelecimento(self):
         """
         Gets the nome_fantasia_estabelecimento of this AntecipacaoSimuladaResponse.
-        Nome fantasia do estabelecimento da compra.
+        {{{antecipacao_simulada_response_nome_fantasia_estabelecimento_value}}}
 
         :return: The nome_fantasia_estabelecimento of this AntecipacaoSimuladaResponse.
         :rtype: str
@@ -639,7 +639,7 @@ class AntecipacaoSimuladaResponse(object):
     def nome_fantasia_estabelecimento(self, nome_fantasia_estabelecimento):
         """
         Sets the nome_fantasia_estabelecimento of this AntecipacaoSimuladaResponse.
-        Nome fantasia do estabelecimento da compra.
+        {{{antecipacao_simulada_response_nome_fantasia_estabelecimento_value}}}
 
         :param nome_fantasia_estabelecimento: The nome_fantasia_estabelecimento of this AntecipacaoSimuladaResponse.
         :type: str
@@ -650,7 +650,7 @@ class AntecipacaoSimuladaResponse(object):
     def detalhes(self):
         """
         Gets the detalhes of this AntecipacaoSimuladaResponse.
-        Detalhes da simula\u00E7\u00E3o.
+        {{{antecipacao_simulada_response_detalhes_value}}}
 
         :return: The detalhes of this AntecipacaoSimuladaResponse.
         :rtype: list[AntecipacaoSimuladaDetalhesResponse]
@@ -661,7 +661,7 @@ class AntecipacaoSimuladaResponse(object):
     def detalhes(self, detalhes):
         """
         Sets the detalhes of this AntecipacaoSimuladaResponse.
-        Detalhes da simula\u00E7\u00E3o.
+        {{{antecipacao_simulada_response_detalhes_value}}}
 
         :param detalhes: The detalhes of this AntecipacaoSimuladaResponse.
         :type: list[AntecipacaoSimuladaDetalhesResponse]

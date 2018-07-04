@@ -86,7 +86,7 @@ class OportunidadeAUDResponse(object):
     def id(self):
         """
         Gets the id of this OportunidadeAUDResponse.
-        C\u00F3digo identificador da oportunidade
+        {{{oportunidade_a_u_d_response_id_value}}}
 
         :return: The id of this OportunidadeAUDResponse.
         :rtype: int
@@ -97,7 +97,7 @@ class OportunidadeAUDResponse(object):
     def id(self, id):
         """
         Sets the id of this OportunidadeAUDResponse.
-        C\u00F3digo identificador da oportunidade
+        {{{oportunidade_a_u_d_response_id_value}}}
 
         :param id: The id of this OportunidadeAUDResponse.
         :type: int
@@ -108,7 +108,7 @@ class OportunidadeAUDResponse(object):
     def id_tipo_oportunidade(self):
         """
         Gets the id_tipo_oportunidade of this OportunidadeAUDResponse.
-        C\u00F3digo identificador do tipo oportunidade
+        {{{oportunidade_a_u_d_response_id_tipo_oportunidade_value}}}
 
         :return: The id_tipo_oportunidade of this OportunidadeAUDResponse.
         :rtype: int
@@ -119,7 +119,7 @@ class OportunidadeAUDResponse(object):
     def id_tipo_oportunidade(self, id_tipo_oportunidade):
         """
         Sets the id_tipo_oportunidade of this OportunidadeAUDResponse.
-        C\u00F3digo identificador do tipo oportunidade
+        {{{oportunidade_a_u_d_response_id_tipo_oportunidade_value}}}
 
         :param id_tipo_oportunidade: The id_tipo_oportunidade of this OportunidadeAUDResponse.
         :type: int
@@ -130,7 +130,7 @@ class OportunidadeAUDResponse(object):
     def id_status_oportunidade(self):
         """
         Gets the id_status_oportunidade of this OportunidadeAUDResponse.
-        C\u00F3digo identificador do status oportunidade
+        {{{oportunidade_a_u_d_response_id_status_oportunidade_value}}}
 
         :return: The id_status_oportunidade of this OportunidadeAUDResponse.
         :rtype: int
@@ -141,7 +141,7 @@ class OportunidadeAUDResponse(object):
     def id_status_oportunidade(self, id_status_oportunidade):
         """
         Sets the id_status_oportunidade of this OportunidadeAUDResponse.
-        C\u00F3digo identificador do status oportunidade
+        {{{oportunidade_a_u_d_response_id_status_oportunidade_value}}}
 
         :param id_status_oportunidade: The id_status_oportunidade of this OportunidadeAUDResponse.
         :type: int
@@ -152,7 +152,7 @@ class OportunidadeAUDResponse(object):
     def data_cadastro(self):
         """
         Gets the data_cadastro of this OportunidadeAUDResponse.
-        Data cadastro da oportunidade.
+        {{{oportunidade_a_u_d_response_data_cadastro_value}}}
 
         :return: The data_cadastro of this OportunidadeAUDResponse.
         :rtype: str
@@ -163,7 +163,7 @@ class OportunidadeAUDResponse(object):
     def data_cadastro(self, data_cadastro):
         """
         Sets the data_cadastro of this OportunidadeAUDResponse.
-        Data cadastro da oportunidade.
+        {{{oportunidade_a_u_d_response_data_cadastro_value}}}
 
         :param data_cadastro: The data_cadastro of this OportunidadeAUDResponse.
         :type: str
@@ -174,7 +174,7 @@ class OportunidadeAUDResponse(object):
     def data_atualizacao(self):
         """
         Gets the data_atualizacao of this OportunidadeAUDResponse.
-        Data atualiza\u00E7\u00E3o da oportunidade.
+        {{{oportunidade_a_u_d_response_data_atualizacao_value}}}
 
         :return: The data_atualizacao of this OportunidadeAUDResponse.
         :rtype: str
@@ -185,7 +185,7 @@ class OportunidadeAUDResponse(object):
     def data_atualizacao(self, data_atualizacao):
         """
         Sets the data_atualizacao of this OportunidadeAUDResponse.
-        Data atualiza\u00E7\u00E3o da oportunidade.
+        {{{oportunidade_a_u_d_response_data_atualizacao_value}}}
 
         :param data_atualizacao: The data_atualizacao of this OportunidadeAUDResponse.
         :type: str
@@ -196,7 +196,7 @@ class OportunidadeAUDResponse(object):
     def numero_receita_federal(self):
         """
         Gets the numero_receita_federal of this OportunidadeAUDResponse.
-        N\u00FAmero receita federal do cliente ao qual ser\u00E1 ofertada a oportunidade
+        {{{oportunidade_a_u_d_response_numero_receita_federal_value}}}
 
         :return: The numero_receita_federal of this OportunidadeAUDResponse.
         :rtype: str
@@ -207,7 +207,7 @@ class OportunidadeAUDResponse(object):
     def numero_receita_federal(self, numero_receita_federal):
         """
         Sets the numero_receita_federal of this OportunidadeAUDResponse.
-        N\u00FAmero receita federal do cliente ao qual ser\u00E1 ofertada a oportunidade
+        {{{oportunidade_a_u_d_response_numero_receita_federal_value}}}
 
         :param numero_receita_federal: The numero_receita_federal of this OportunidadeAUDResponse.
         :type: str
@@ -218,7 +218,7 @@ class OportunidadeAUDResponse(object):
     def data_inicio_vigencia(self):
         """
         Gets the data_inicio_vigencia of this OportunidadeAUDResponse.
-        In\u00EDcio da vig\u00EAncia da oportunidade
+        {{{oportunidade_a_u_d_response_data_inicio_vigencia_value}}}
 
         :return: The data_inicio_vigencia of this OportunidadeAUDResponse.
         :rtype: str
@@ -229,7 +229,7 @@ class OportunidadeAUDResponse(object):
     def data_inicio_vigencia(self, data_inicio_vigencia):
         """
         Sets the data_inicio_vigencia of this OportunidadeAUDResponse.
-        In\u00EDcio da vig\u00EAncia da oportunidade
+        {{{oportunidade_a_u_d_response_data_inicio_vigencia_value}}}
 
         :param data_inicio_vigencia: The data_inicio_vigencia of this OportunidadeAUDResponse.
         :type: str
@@ -240,7 +240,7 @@ class OportunidadeAUDResponse(object):
     def data_fim_vigencia(self):
         """
         Gets the data_fim_vigencia of this OportunidadeAUDResponse.
-        fim da vig\u00EAncia da oportunidade
+        {{{oportunidade_a_u_d_response_data_fim_vigencia_value}}}
 
         :return: The data_fim_vigencia of this OportunidadeAUDResponse.
         :rtype: str
@@ -251,7 +251,7 @@ class OportunidadeAUDResponse(object):
     def data_fim_vigencia(self, data_fim_vigencia):
         """
         Sets the data_fim_vigencia of this OportunidadeAUDResponse.
-        fim da vig\u00EAncia da oportunidade
+        {{{oportunidade_a_u_d_response_data_fim_vigencia_value}}}
 
         :param data_fim_vigencia: The data_fim_vigencia of this OportunidadeAUDResponse.
         :type: str
@@ -262,7 +262,7 @@ class OportunidadeAUDResponse(object):
     def flag_ativo(self):
         """
         Gets the flag_ativo of this OportunidadeAUDResponse.
-        Flag de verifica\u00E7\u00E3o se a oportunidade est\u00E1 ativa
+        {{{oportunidade_a_u_d_response_flag_ativo_value}}}
 
         :return: The flag_ativo of this OportunidadeAUDResponse.
         :rtype: bool
@@ -273,7 +273,7 @@ class OportunidadeAUDResponse(object):
     def flag_ativo(self, flag_ativo):
         """
         Sets the flag_ativo of this OportunidadeAUDResponse.
-        Flag de verifica\u00E7\u00E3o se a oportunidade est\u00E1 ativa
+        {{{oportunidade_a_u_d_response_flag_ativo_value}}}
 
         :param flag_ativo: The flag_ativo of this OportunidadeAUDResponse.
         :type: bool
@@ -284,7 +284,7 @@ class OportunidadeAUDResponse(object):
     def detalhes(self):
         """
         Gets the detalhes of this OportunidadeAUDResponse.
-        Lista de detalhes da oportunidade
+        {{{oportunidade_a_u_d_response_detalhes_value}}}
 
         :return: The detalhes of this OportunidadeAUDResponse.
         :rtype: list[CdtDetalheOportunidadeAUD]
@@ -295,7 +295,7 @@ class OportunidadeAUDResponse(object):
     def detalhes(self, detalhes):
         """
         Sets the detalhes of this OportunidadeAUDResponse.
-        Lista de detalhes da oportunidade
+        {{{oportunidade_a_u_d_response_detalhes_value}}}
 
         :param detalhes: The detalhes of this OportunidadeAUDResponse.
         :type: list[CdtDetalheOportunidadeAUD]
@@ -306,7 +306,7 @@ class OportunidadeAUDResponse(object):
     def rev_date(self):
         """
         Gets the rev_date of this OportunidadeAUDResponse.
-        Data da auditoria
+        {{{oportunidade_a_u_d_response_rev_date_value}}}
 
         :return: The rev_date of this OportunidadeAUDResponse.
         :rtype: str
@@ -317,7 +317,7 @@ class OportunidadeAUDResponse(object):
     def rev_date(self, rev_date):
         """
         Sets the rev_date of this OportunidadeAUDResponse.
-        Data da auditoria
+        {{{oportunidade_a_u_d_response_rev_date_value}}}
 
         :param rev_date: The rev_date of this OportunidadeAUDResponse.
         :type: str
@@ -328,7 +328,7 @@ class OportunidadeAUDResponse(object):
     def rev_type(self):
         """
         Gets the rev_type of this OportunidadeAUDResponse.
-        Tipo da auditoria
+        {{{oportunidade_a_u_d_response_rev_type_value}}}
 
         :return: The rev_type of this OportunidadeAUDResponse.
         :rtype: int
@@ -339,7 +339,7 @@ class OportunidadeAUDResponse(object):
     def rev_type(self, rev_type):
         """
         Sets the rev_type of this OportunidadeAUDResponse.
-        Tipo da auditoria
+        {{{oportunidade_a_u_d_response_rev_type_value}}}
 
         :param rev_type: The rev_type of this OportunidadeAUDResponse.
         :type: int
@@ -350,7 +350,7 @@ class OportunidadeAUDResponse(object):
     def rev(self):
         """
         Gets the rev of this OportunidadeAUDResponse.
-        Identificador da auditoria
+        {{{oportunidade_a_u_d_response_rev_value}}}
 
         :return: The rev of this OportunidadeAUDResponse.
         :rtype: int
@@ -361,7 +361,7 @@ class OportunidadeAUDResponse(object):
     def rev(self, rev):
         """
         Sets the rev of this OportunidadeAUDResponse.
-        Identificador da auditoria
+        {{{oportunidade_a_u_d_response_rev_value}}}
 
         :param rev: The rev of this OportunidadeAUDResponse.
         :type: int

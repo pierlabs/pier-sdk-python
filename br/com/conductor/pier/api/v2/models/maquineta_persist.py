@@ -59,7 +59,7 @@ class MaquinetaPersist(object):
     def id_terminal(self):
         """
         Gets the id_terminal of this MaquinetaPersist.
-        C\u00F3digo de Identifica\u00E7\u00E3o do Terminal (id).
+        {{{maquineta_persist_id_terminal_value}}}
 
         :return: The id_terminal of this MaquinetaPersist.
         :rtype: int
@@ -70,7 +70,7 @@ class MaquinetaPersist(object):
     def id_terminal(self, id_terminal):
         """
         Sets the id_terminal of this MaquinetaPersist.
-        C\u00F3digo de Identifica\u00E7\u00E3o do Terminal (id).
+        {{{maquineta_persist_id_terminal_value}}}
 
         :param id_terminal: The id_terminal of this MaquinetaPersist.
         :type: int
@@ -81,7 +81,7 @@ class MaquinetaPersist(object):
     def id_tipo_maquineta(self):
         """
         Gets the id_tipo_maquineta of this MaquinetaPersist.
-        C\u00F3digo de Identifica\u00E7\u00E3o do Tipo Maquineta (id).
+        {{{maquineta_persist_id_tipo_maquineta_value}}}
 
         :return: The id_tipo_maquineta of this MaquinetaPersist.
         :rtype: int
@@ -92,7 +92,7 @@ class MaquinetaPersist(object):
     def id_tipo_maquineta(self, id_tipo_maquineta):
         """
         Sets the id_tipo_maquineta of this MaquinetaPersist.
-        C\u00F3digo de Identifica\u00E7\u00E3o do Tipo Maquineta (id).
+        {{{maquineta_persist_id_tipo_maquineta_value}}}
 
         :param id_tipo_maquineta: The id_tipo_maquineta of this MaquinetaPersist.
         :type: int
@@ -103,7 +103,7 @@ class MaquinetaPersist(object):
     def valor(self):
         """
         Gets the valor of this MaquinetaPersist.
-        Valor de Manuten\u00E7\u00E3o da Maquineta.
+        {{{maquineta_persist_valor_value}}}
 
         :return: The valor of this MaquinetaPersist.
         :rtype: float
@@ -114,7 +114,7 @@ class MaquinetaPersist(object):
     def valor(self, valor):
         """
         Sets the valor of this MaquinetaPersist.
-        Valor de Manuten\u00E7\u00E3o da Maquineta.
+        {{{maquineta_persist_valor_value}}}
 
         :param valor: The valor of this MaquinetaPersist.
         :type: float
@@ -125,7 +125,7 @@ class MaquinetaPersist(object):
     def data_hora_implantacao(self):
         """
         Gets the data_hora_implantacao of this MaquinetaPersist.
-        Data da implanta\u00E7\u00E3o da Maquineta, inserir no formato yyyy-MM-dd'T'HH:mm:ss.SSS'Z'.
+        {{{maquineta_persist_data_hora_implantacao_value}}}
 
         :return: The data_hora_implantacao of this MaquinetaPersist.
         :rtype: str
@@ -136,7 +136,7 @@ class MaquinetaPersist(object):
     def data_hora_implantacao(self, data_hora_implantacao):
         """
         Sets the data_hora_implantacao of this MaquinetaPersist.
-        Data da implanta\u00E7\u00E3o da Maquineta, inserir no formato yyyy-MM-dd'T'HH:mm:ss.SSS'Z'.
+        {{{maquineta_persist_data_hora_implantacao_value}}}
 
         :param data_hora_implantacao: The data_hora_implantacao of this MaquinetaPersist.
         :type: str

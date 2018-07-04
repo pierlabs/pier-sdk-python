@@ -50,7 +50,7 @@ class AnexoNotificacaoEmailRequest(object):
     def id_documento(self):
         """
         Gets the id_documento of this AnexoNotificacaoEmailRequest.
-        ID do documento que ser\u00E1 anexado a notifica\u00E7\u00E3o.
+        {{{anexo_notificacao_email_request_id_documento_value}}}
 
         :return: The id_documento of this AnexoNotificacaoEmailRequest.
         :rtype: int
@@ -61,7 +61,7 @@ class AnexoNotificacaoEmailRequest(object):
     def id_documento(self, id_documento):
         """
         Sets the id_documento of this AnexoNotificacaoEmailRequest.
-        ID do documento que ser\u00E1 anexado a notifica\u00E7\u00E3o.
+        {{{anexo_notificacao_email_request_id_documento_value}}}
 
         :param id_documento: The id_documento of this AnexoNotificacaoEmailRequest.
         :type: int

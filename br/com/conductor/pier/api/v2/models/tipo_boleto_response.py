@@ -71,7 +71,7 @@ class TipoBoletoResponse(object):
     def id(self):
         """
         Gets the id of this TipoBoletoResponse.
-        C\u00F3digo identificador do tipo de boleto.
+        {{{tipo_boleto_response_id_value}}}
 
         :return: The id of this TipoBoletoResponse.
         :rtype: int
@@ -82,7 +82,7 @@ class TipoBoletoResponse(object):
     def id(self, id):
         """
         Sets the id of this TipoBoletoResponse.
-        C\u00F3digo identificador do tipo de boleto.
+        {{{tipo_boleto_response_id_value}}}
 
         :param id: The id of this TipoBoletoResponse.
         :type: int
@@ -93,7 +93,7 @@ class TipoBoletoResponse(object):
     def descricao(self):
         """
         Gets the descricao of this TipoBoletoResponse.
-        Descri\u00E7\u00E3o do tipo de boleto.
+        {{{tipo_boleto_response_descricao_value}}}
 
         :return: The descricao of this TipoBoletoResponse.
         :rtype: str
@@ -104,7 +104,7 @@ class TipoBoletoResponse(object):
     def descricao(self, descricao):
         """
         Sets the descricao of this TipoBoletoResponse.
-        Descri\u00E7\u00E3o do tipo de boleto.
+        {{{tipo_boleto_response_descricao_value}}}
 
         :param descricao: The descricao of this TipoBoletoResponse.
         :type: str
@@ -115,7 +115,7 @@ class TipoBoletoResponse(object):
     def banco(self):
         """
         Gets the banco of this TipoBoletoResponse.
-        C\u00F3digo identificador do banco.
+        {{{tipo_boleto_response_banco_value}}}
 
         :return: The banco of this TipoBoletoResponse.
         :rtype: int
@@ -126,7 +126,7 @@ class TipoBoletoResponse(object):
     def banco(self, banco):
         """
         Sets the banco of this TipoBoletoResponse.
-        C\u00F3digo identificador do banco.
+        {{{tipo_boleto_response_banco_value}}}
 
         :param banco: The banco of this TipoBoletoResponse.
         :type: int
@@ -137,7 +137,7 @@ class TipoBoletoResponse(object):
     def faixa_nosso_numero(self):
         """
         Gets the faixa_nosso_numero of this TipoBoletoResponse.
-        Faixa permitida para cria\u00E7\u00E3o do nosso n\u00FAmero.
+        {{{tipo_boleto_response_faixa_nosso_numero_value}}}
 
         :return: The faixa_nosso_numero of this TipoBoletoResponse.
         :rtype: int
@@ -148,7 +148,7 @@ class TipoBoletoResponse(object):
     def faixa_nosso_numero(self, faixa_nosso_numero):
         """
         Sets the faixa_nosso_numero of this TipoBoletoResponse.
-        Faixa permitida para cria\u00E7\u00E3o do nosso n\u00FAmero.
+        {{{tipo_boleto_response_faixa_nosso_numero_value}}}
 
         :param faixa_nosso_numero: The faixa_nosso_numero of this TipoBoletoResponse.
         :type: int
@@ -159,7 +159,7 @@ class TipoBoletoResponse(object):
     def min_nosso_numero(self):
         """
         Gets the min_nosso_numero of this TipoBoletoResponse.
-        N\u00FAmero minimo para o nosso n\u00FAmero.
+        {{{tipo_boleto_response_min_nosso_numero_value}}}
 
         :return: The min_nosso_numero of this TipoBoletoResponse.
         :rtype: float
@@ -170,7 +170,7 @@ class TipoBoletoResponse(object):
     def min_nosso_numero(self, min_nosso_numero):
         """
         Sets the min_nosso_numero of this TipoBoletoResponse.
-        N\u00FAmero minimo para o nosso n\u00FAmero.
+        {{{tipo_boleto_response_min_nosso_numero_value}}}
 
         :param min_nosso_numero: The min_nosso_numero of this TipoBoletoResponse.
         :type: float
@@ -181,7 +181,7 @@ class TipoBoletoResponse(object):
     def max_nosso_numero(self):
         """
         Gets the max_nosso_numero of this TipoBoletoResponse.
-        N\u00FAmero m\u00E1ximo para o nosso n\u00FAmero.
+        {{{tipo_boleto_response_max_nosso_numero_value}}}
 
         :return: The max_nosso_numero of this TipoBoletoResponse.
         :rtype: float
@@ -192,7 +192,7 @@ class TipoBoletoResponse(object):
     def max_nosso_numero(self, max_nosso_numero):
         """
         Sets the max_nosso_numero of this TipoBoletoResponse.
-        N\u00FAmero m\u00E1ximo para o nosso n\u00FAmero.
+        {{{tipo_boleto_response_max_nosso_numero_value}}}
 
         :param max_nosso_numero: The max_nosso_numero of this TipoBoletoResponse.
         :type: float
@@ -203,7 +203,7 @@ class TipoBoletoResponse(object):
     def tam_nosso_numero(self):
         """
         Gets the tam_nosso_numero of this TipoBoletoResponse.
-        Tamanho do nosso n\u00FAmero.
+        {{{tipo_boleto_response_tam_nosso_numero_value}}}
 
         :return: The tam_nosso_numero of this TipoBoletoResponse.
         :rtype: int
@@ -214,7 +214,7 @@ class TipoBoletoResponse(object):
     def tam_nosso_numero(self, tam_nosso_numero):
         """
         Sets the tam_nosso_numero of this TipoBoletoResponse.
-        Tamanho do nosso n\u00FAmero.
+        {{{tipo_boleto_response_tam_nosso_numero_value}}}
 
         :param tam_nosso_numero: The tam_nosso_numero of this TipoBoletoResponse.
         :type: int
@@ -225,7 +225,7 @@ class TipoBoletoResponse(object):
     def ultimo_nosso_numero(self):
         """
         Gets the ultimo_nosso_numero of this TipoBoletoResponse.
-        \u00DAltimo nosso n\u00FAmero utilizado.
+        {{{tipo_boleto_response_ultimo_nosso_numero_value}}}
 
         :return: The ultimo_nosso_numero of this TipoBoletoResponse.
         :rtype: float
@@ -236,7 +236,7 @@ class TipoBoletoResponse(object):
     def ultimo_nosso_numero(self, ultimo_nosso_numero):
         """
         Sets the ultimo_nosso_numero of this TipoBoletoResponse.
-        \u00DAltimo nosso n\u00FAmero utilizado.
+        {{{tipo_boleto_response_ultimo_nosso_numero_value}}}
 
         :param ultimo_nosso_numero: The ultimo_nosso_numero of this TipoBoletoResponse.
         :type: float

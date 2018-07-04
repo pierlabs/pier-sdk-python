@@ -77,7 +77,7 @@ class OportunidadeResponse(object):
     def id(self):
         """
         Gets the id of this OportunidadeResponse.
-        C\u00F3digo identificador da oportunidade
+        {{{oportunidade_response_id_value}}}
 
         :return: The id of this OportunidadeResponse.
         :rtype: int
@@ -88,7 +88,7 @@ class OportunidadeResponse(object):
     def id(self, id):
         """
         Sets the id of this OportunidadeResponse.
-        C\u00F3digo identificador da oportunidade
+        {{{oportunidade_response_id_value}}}
 
         :param id: The id of this OportunidadeResponse.
         :type: int
@@ -99,7 +99,7 @@ class OportunidadeResponse(object):
     def id_tipo_oportunidade(self):
         """
         Gets the id_tipo_oportunidade of this OportunidadeResponse.
-        C\u00F3digo identificador do tipo oportunidade
+        {{{oportunidade_response_id_tipo_oportunidade_value}}}
 
         :return: The id_tipo_oportunidade of this OportunidadeResponse.
         :rtype: int
@@ -110,7 +110,7 @@ class OportunidadeResponse(object):
     def id_tipo_oportunidade(self, id_tipo_oportunidade):
         """
         Sets the id_tipo_oportunidade of this OportunidadeResponse.
-        C\u00F3digo identificador do tipo oportunidade
+        {{{oportunidade_response_id_tipo_oportunidade_value}}}
 
         :param id_tipo_oportunidade: The id_tipo_oportunidade of this OportunidadeResponse.
         :type: int
@@ -121,7 +121,7 @@ class OportunidadeResponse(object):
     def id_status_oportunidade(self):
         """
         Gets the id_status_oportunidade of this OportunidadeResponse.
-        C\u00F3digo identificador do status oportunidade
+        {{{oportunidade_response_id_status_oportunidade_value}}}
 
         :return: The id_status_oportunidade of this OportunidadeResponse.
         :rtype: int
@@ -132,7 +132,7 @@ class OportunidadeResponse(object):
     def id_status_oportunidade(self, id_status_oportunidade):
         """
         Sets the id_status_oportunidade of this OportunidadeResponse.
-        C\u00F3digo identificador do status oportunidade
+        {{{oportunidade_response_id_status_oportunidade_value}}}
 
         :param id_status_oportunidade: The id_status_oportunidade of this OportunidadeResponse.
         :type: int
@@ -143,7 +143,7 @@ class OportunidadeResponse(object):
     def data_cadastro(self):
         """
         Gets the data_cadastro of this OportunidadeResponse.
-        Data cadastro da oportunidade.
+        {{{oportunidade_response_data_cadastro_value}}}
 
         :return: The data_cadastro of this OportunidadeResponse.
         :rtype: str
@@ -154,7 +154,7 @@ class OportunidadeResponse(object):
     def data_cadastro(self, data_cadastro):
         """
         Sets the data_cadastro of this OportunidadeResponse.
-        Data cadastro da oportunidade.
+        {{{oportunidade_response_data_cadastro_value}}}
 
         :param data_cadastro: The data_cadastro of this OportunidadeResponse.
         :type: str
@@ -165,7 +165,7 @@ class OportunidadeResponse(object):
     def data_atualizacao(self):
         """
         Gets the data_atualizacao of this OportunidadeResponse.
-        Data atualiza\u00E7\u00E3o da oportunidade.
+        {{{oportunidade_response_data_atualizacao_value}}}
 
         :return: The data_atualizacao of this OportunidadeResponse.
         :rtype: str
@@ -176,7 +176,7 @@ class OportunidadeResponse(object):
     def data_atualizacao(self, data_atualizacao):
         """
         Sets the data_atualizacao of this OportunidadeResponse.
-        Data atualiza\u00E7\u00E3o da oportunidade.
+        {{{oportunidade_response_data_atualizacao_value}}}
 
         :param data_atualizacao: The data_atualizacao of this OportunidadeResponse.
         :type: str
@@ -187,7 +187,7 @@ class OportunidadeResponse(object):
     def numero_receita_federal(self):
         """
         Gets the numero_receita_federal of this OportunidadeResponse.
-        N\u00FAmero receita federal do cliente ao qual ser\u00E1 ofertada a oportunidade
+        {{{oportunidade_response_numero_receita_federal_value}}}
 
         :return: The numero_receita_federal of this OportunidadeResponse.
         :rtype: str
@@ -198,7 +198,7 @@ class OportunidadeResponse(object):
     def numero_receita_federal(self, numero_receita_federal):
         """
         Sets the numero_receita_federal of this OportunidadeResponse.
-        N\u00FAmero receita federal do cliente ao qual ser\u00E1 ofertada a oportunidade
+        {{{oportunidade_response_numero_receita_federal_value}}}
 
         :param numero_receita_federal: The numero_receita_federal of this OportunidadeResponse.
         :type: str
@@ -209,7 +209,7 @@ class OportunidadeResponse(object):
     def data_inicio_vigencia(self):
         """
         Gets the data_inicio_vigencia of this OportunidadeResponse.
-        In\u00EDcio da vig\u00EAncia da oportunidade
+        {{{oportunidade_response_data_inicio_vigencia_value}}}
 
         :return: The data_inicio_vigencia of this OportunidadeResponse.
         :rtype: str
@@ -220,7 +220,7 @@ class OportunidadeResponse(object):
     def data_inicio_vigencia(self, data_inicio_vigencia):
         """
         Sets the data_inicio_vigencia of this OportunidadeResponse.
-        In\u00EDcio da vig\u00EAncia da oportunidade
+        {{{oportunidade_response_data_inicio_vigencia_value}}}
 
         :param data_inicio_vigencia: The data_inicio_vigencia of this OportunidadeResponse.
         :type: str
@@ -231,7 +231,7 @@ class OportunidadeResponse(object):
     def data_fim_vigencia(self):
         """
         Gets the data_fim_vigencia of this OportunidadeResponse.
-        Fim da vig\u00EAncia da oportunidade
+        {{{oportunidade_response_data_fim_vigencia_value}}}
 
         :return: The data_fim_vigencia of this OportunidadeResponse.
         :rtype: str
@@ -242,7 +242,7 @@ class OportunidadeResponse(object):
     def data_fim_vigencia(self, data_fim_vigencia):
         """
         Sets the data_fim_vigencia of this OportunidadeResponse.
-        Fim da vig\u00EAncia da oportunidade
+        {{{oportunidade_response_data_fim_vigencia_value}}}
 
         :param data_fim_vigencia: The data_fim_vigencia of this OportunidadeResponse.
         :type: str
@@ -253,7 +253,7 @@ class OportunidadeResponse(object):
     def flag_ativo(self):
         """
         Gets the flag_ativo of this OportunidadeResponse.
-        Flag de verifica\u00E7\u00E3o se a oportunidade est\u00E1 ativa
+        {{{oportunidade_response_flag_ativo_value}}}
 
         :return: The flag_ativo of this OportunidadeResponse.
         :rtype: bool
@@ -264,7 +264,7 @@ class OportunidadeResponse(object):
     def flag_ativo(self, flag_ativo):
         """
         Sets the flag_ativo of this OportunidadeResponse.
-        Flag de verifica\u00E7\u00E3o se a oportunidade est\u00E1 ativa
+        {{{oportunidade_response_flag_ativo_value}}}
 
         :param flag_ativo: The flag_ativo of this OportunidadeResponse.
         :type: bool
@@ -275,7 +275,7 @@ class OportunidadeResponse(object):
     def detalhes(self):
         """
         Gets the detalhes of this OportunidadeResponse.
-        Lista de detalhes da oportunidade
+        {{{oportunidade_response_detalhes_value}}}
 
         :return: The detalhes of this OportunidadeResponse.
         :rtype: list[DetalheOportunidadeResponse]
@@ -286,7 +286,7 @@ class OportunidadeResponse(object):
     def detalhes(self, detalhes):
         """
         Sets the detalhes of this OportunidadeResponse.
-        Lista de detalhes da oportunidade
+        {{{oportunidade_response_detalhes_value}}}
 
         :param detalhes: The detalhes of this OportunidadeResponse.
         :type: list[DetalheOportunidadeResponse]

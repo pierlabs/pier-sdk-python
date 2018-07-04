@@ -65,7 +65,7 @@ class EmprestimoPessoalRequest(object):
     def valor_solicitado(self):
         """
         Gets the valor_solicitado of this EmprestimoPessoalRequest.
-        Valor do empr\u00E9stimo/financiamento
+        {{{emprestimo_pessoal_request_valor_solicitado_value}}}
 
         :return: The valor_solicitado of this EmprestimoPessoalRequest.
         :rtype: float
@@ -76,7 +76,7 @@ class EmprestimoPessoalRequest(object):
     def valor_solicitado(self, valor_solicitado):
         """
         Sets the valor_solicitado of this EmprestimoPessoalRequest.
-        Valor do empr\u00E9stimo/financiamento
+        {{{emprestimo_pessoal_request_valor_solicitado_value}}}
 
         :param valor_solicitado: The valor_solicitado of this EmprestimoPessoalRequest.
         :type: float
@@ -87,7 +87,7 @@ class EmprestimoPessoalRequest(object):
     def numero_parcelas(self):
         """
         Gets the numero_parcelas of this EmprestimoPessoalRequest.
-        N\u00FAmero total de parcelas do empr\u00E9stimo/financiamento
+        {{{emprestimo_pessoal_request_numero_parcelas_value}}}
 
         :return: The numero_parcelas of this EmprestimoPessoalRequest.
         :rtype: int
@@ -98,7 +98,7 @@ class EmprestimoPessoalRequest(object):
     def numero_parcelas(self, numero_parcelas):
         """
         Sets the numero_parcelas of this EmprestimoPessoalRequest.
-        N\u00FAmero total de parcelas do empr\u00E9stimo/financiamento
+        {{{emprestimo_pessoal_request_numero_parcelas_value}}}
 
         :param numero_parcelas: The numero_parcelas of this EmprestimoPessoalRequest.
         :type: int
@@ -109,7 +109,7 @@ class EmprestimoPessoalRequest(object):
     def taxa_juros(self):
         """
         Gets the taxa_juros of this EmprestimoPessoalRequest.
-        Valor percentual da taxa de juros a ser aplicada
+        {{{emprestimo_pessoal_request_taxa_juros_value}}}
 
         :return: The taxa_juros of this EmprestimoPessoalRequest.
         :rtype: float
@@ -120,7 +120,7 @@ class EmprestimoPessoalRequest(object):
     def taxa_juros(self, taxa_juros):
         """
         Sets the taxa_juros of this EmprestimoPessoalRequest.
-        Valor percentual da taxa de juros a ser aplicada
+        {{{emprestimo_pessoal_request_taxa_juros_value}}}
 
         :param taxa_juros: The taxa_juros of this EmprestimoPessoalRequest.
         :type: float
@@ -131,7 +131,7 @@ class EmprestimoPessoalRequest(object):
     def periodo_taxa(self):
         """
         Gets the periodo_taxa of this EmprestimoPessoalRequest.
-        Per\u00EDodo de aplica da taxa de juros
+        {{{emprestimo_pessoal_request_periodo_taxa_value}}}
 
         :return: The periodo_taxa of this EmprestimoPessoalRequest.
         :rtype: str
@@ -142,7 +142,7 @@ class EmprestimoPessoalRequest(object):
     def periodo_taxa(self, periodo_taxa):
         """
         Sets the periodo_taxa of this EmprestimoPessoalRequest.
-        Per\u00EDodo de aplica da taxa de juros
+        {{{emprestimo_pessoal_request_periodo_taxa_value}}}
 
         :param periodo_taxa: The periodo_taxa of this EmprestimoPessoalRequest.
         :type: str
@@ -153,7 +153,7 @@ class EmprestimoPessoalRequest(object):
     def sistema_amortizacao(self):
         """
         Gets the sistema_amortizacao of this EmprestimoPessoalRequest.
-        Sistema para amortiza\u00E7\u00E3o do valor das parcelas
+        {{{emprestimo_pessoal_request_sistema_amortizacao_value}}}
 
         :return: The sistema_amortizacao of this EmprestimoPessoalRequest.
         :rtype: str
@@ -164,7 +164,7 @@ class EmprestimoPessoalRequest(object):
     def sistema_amortizacao(self, sistema_amortizacao):
         """
         Sets the sistema_amortizacao of this EmprestimoPessoalRequest.
-        Sistema para amortiza\u00E7\u00E3o do valor das parcelas
+        {{{emprestimo_pessoal_request_sistema_amortizacao_value}}}
 
         :param sistema_amortizacao: The sistema_amortizacao of this EmprestimoPessoalRequest.
         :type: str
@@ -175,7 +175,7 @@ class EmprestimoPessoalRequest(object):
     def numero_meses_carencia(self):
         """
         Gets the numero_meses_carencia of this EmprestimoPessoalRequest.
-        N\u00FAmero de meses para cobran\u00E7a da primeira parcela
+        {{{emprestimo_pessoal_request_numero_meses_carencia_value}}}
 
         :return: The numero_meses_carencia of this EmprestimoPessoalRequest.
         :rtype: int
@@ -186,7 +186,7 @@ class EmprestimoPessoalRequest(object):
     def numero_meses_carencia(self, numero_meses_carencia):
         """
         Sets the numero_meses_carencia of this EmprestimoPessoalRequest.
-        N\u00FAmero de meses para cobran\u00E7a da primeira parcela
+        {{{emprestimo_pessoal_request_numero_meses_carencia_value}}}
 
         :param numero_meses_carencia: The numero_meses_carencia of this EmprestimoPessoalRequest.
         :type: int

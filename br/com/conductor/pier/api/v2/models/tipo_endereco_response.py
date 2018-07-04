@@ -53,7 +53,7 @@ class TipoEnderecoResponse(object):
     def id(self):
         """
         Gets the id of this TipoEnderecoResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o do Tipo do Endere\u00E7o (id)
+        {{{tipo_endereco_response_id_value}}}
 
         :return: The id of this TipoEnderecoResponse.
         :rtype: int
@@ -64,7 +64,7 @@ class TipoEnderecoResponse(object):
     def id(self, id):
         """
         Sets the id of this TipoEnderecoResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o do Tipo do Endere\u00E7o (id)
+        {{{tipo_endereco_response_id_value}}}
 
         :param id: The id of this TipoEnderecoResponse.
         :type: int
@@ -75,7 +75,7 @@ class TipoEnderecoResponse(object):
     def nome(self):
         """
         Gets the nome of this TipoEnderecoResponse.
-        Nome do Tipo do Endere\u00E7o
+        {{{tipo_endereco_response_nome_value}}}
 
         :return: The nome of this TipoEnderecoResponse.
         :rtype: str
@@ -86,7 +86,7 @@ class TipoEnderecoResponse(object):
     def nome(self, nome):
         """
         Sets the nome of this TipoEnderecoResponse.
-        Nome do Tipo do Endere\u00E7o
+        {{{tipo_endereco_response_nome_value}}}
 
         :param nome: The nome of this TipoEnderecoResponse.
         :type: str

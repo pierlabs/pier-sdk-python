@@ -65,7 +65,7 @@ class IntegracaoEmissorResponse(object):
     def id(self):
         """
         Gets the id of this IntegracaoEmissorResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o do registro na tabela Integra\u00E7\u00E3oEmissor.
+        {{{integracao_emissor_response_id_value}}}
 
         :return: The id of this IntegracaoEmissorResponse.
         :rtype: int
@@ -76,7 +76,7 @@ class IntegracaoEmissorResponse(object):
     def id(self, id):
         """
         Sets the id of this IntegracaoEmissorResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o do registro na tabela Integra\u00E7\u00E3oEmissor.
+        {{{integracao_emissor_response_id_value}}}
 
         :param id: The id of this IntegracaoEmissorResponse.
         :type: int
@@ -87,7 +87,7 @@ class IntegracaoEmissorResponse(object):
     def id_conta(self):
         """
         Gets the id_conta of this IntegracaoEmissorResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o da conta.
+        {{{integracao_emissor_response_id_conta_value}}}
 
         :return: The id_conta of this IntegracaoEmissorResponse.
         :rtype: int
@@ -98,7 +98,7 @@ class IntegracaoEmissorResponse(object):
     def id_conta(self, id_conta):
         """
         Sets the id_conta of this IntegracaoEmissorResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o da conta.
+        {{{integracao_emissor_response_id_conta_value}}}
 
         :param id_conta: The id_conta of this IntegracaoEmissorResponse.
         :type: int
@@ -109,7 +109,7 @@ class IntegracaoEmissorResponse(object):
     def id_arquivo(self):
         """
         Gets the id_arquivo of this IntegracaoEmissorResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o do arquivo.
+        {{{integracao_emissor_response_id_arquivo_value}}}
 
         :return: The id_arquivo of this IntegracaoEmissorResponse.
         :rtype: int
@@ -120,7 +120,7 @@ class IntegracaoEmissorResponse(object):
     def id_arquivo(self, id_arquivo):
         """
         Sets the id_arquivo of this IntegracaoEmissorResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o do arquivo.
+        {{{integracao_emissor_response_id_arquivo_value}}}
 
         :param id_arquivo: The id_arquivo of this IntegracaoEmissorResponse.
         :type: int
@@ -131,7 +131,7 @@ class IntegracaoEmissorResponse(object):
     def status(self):
         """
         Gets the status of this IntegracaoEmissorResponse.
-        Status do registro.
+        {{{integracao_emissor_response_status_value}}}
 
         :return: The status of this IntegracaoEmissorResponse.
         :rtype: str
@@ -142,7 +142,7 @@ class IntegracaoEmissorResponse(object):
     def status(self, status):
         """
         Sets the status of this IntegracaoEmissorResponse.
-        Status do registro.
+        {{{integracao_emissor_response_status_value}}}
 
         :param status: The status of this IntegracaoEmissorResponse.
         :type: str
@@ -153,7 +153,7 @@ class IntegracaoEmissorResponse(object):
     def data_inclusao(self):
         """
         Gets the data_inclusao of this IntegracaoEmissorResponse.
-        Data de inclus\u00E3o do registro.
+        {{{integracao_emissor_response_data_inclusao_value}}}
 
         :return: The data_inclusao of this IntegracaoEmissorResponse.
         :rtype: str
@@ -164,7 +164,7 @@ class IntegracaoEmissorResponse(object):
     def data_inclusao(self, data_inclusao):
         """
         Sets the data_inclusao of this IntegracaoEmissorResponse.
-        Data de inclus\u00E3o do registro.
+        {{{integracao_emissor_response_data_inclusao_value}}}
 
         :param data_inclusao: The data_inclusao of this IntegracaoEmissorResponse.
         :type: str
@@ -175,7 +175,7 @@ class IntegracaoEmissorResponse(object):
     def data_alteracao(self):
         """
         Gets the data_alteracao of this IntegracaoEmissorResponse.
-        Data da ultima altera\u00E7\u00E3o do registro.
+        {{{integracao_emissor_response_data_alteracao_value}}}
 
         :return: The data_alteracao of this IntegracaoEmissorResponse.
         :rtype: str
@@ -186,7 +186,7 @@ class IntegracaoEmissorResponse(object):
     def data_alteracao(self, data_alteracao):
         """
         Sets the data_alteracao of this IntegracaoEmissorResponse.
-        Data da ultima altera\u00E7\u00E3o do registro.
+        {{{integracao_emissor_response_data_alteracao_value}}}
 
         :param data_alteracao: The data_alteracao of this IntegracaoEmissorResponse.
         :type: str

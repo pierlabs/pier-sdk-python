@@ -59,7 +59,7 @@ class DispositivoResponse(object):
     def id(self):
         """
         Gets the id of this DispositivoResponse.
-        Identificador do dispositivo.
+        {{{dispositivo_response_id_value}}}
 
         :return: The id of this DispositivoResponse.
         :rtype: int
@@ -70,7 +70,7 @@ class DispositivoResponse(object):
     def id(self, id):
         """
         Sets the id of this DispositivoResponse.
-        Identificador do dispositivo.
+        {{{dispositivo_response_id_value}}}
 
         :param id: The id of this DispositivoResponse.
         :type: int
@@ -81,7 +81,7 @@ class DispositivoResponse(object):
     def token(self):
         """
         Gets the token of this DispositivoResponse.
-        Token do dispositivo.
+        {{{dispositivo_response_token_value}}}
 
         :return: The token of this DispositivoResponse.
         :rtype: str
@@ -92,7 +92,7 @@ class DispositivoResponse(object):
     def token(self, token):
         """
         Sets the token of this DispositivoResponse.
-        Token do dispositivo.
+        {{{dispositivo_response_token_value}}}
 
         :param token: The token of this DispositivoResponse.
         :type: str
@@ -103,7 +103,7 @@ class DispositivoResponse(object):
     def id_aplicacao_mobile(self):
         """
         Gets the id_aplicacao_mobile of this DispositivoResponse.
-        Identificador da Aplica\u00E7\u00E3o.
+        {{{dispositivo_response_id_aplicacao_mobile_value}}}
 
         :return: The id_aplicacao_mobile of this DispositivoResponse.
         :rtype: int
@@ -114,7 +114,7 @@ class DispositivoResponse(object):
     def id_aplicacao_mobile(self, id_aplicacao_mobile):
         """
         Sets the id_aplicacao_mobile of this DispositivoResponse.
-        Identificador da Aplica\u00E7\u00E3o.
+        {{{dispositivo_response_id_aplicacao_mobile_value}}}
 
         :param id_aplicacao_mobile: The id_aplicacao_mobile of this DispositivoResponse.
         :type: int
@@ -125,7 +125,7 @@ class DispositivoResponse(object):
     def id_usuario(self):
         """
         Gets the id_usuario of this DispositivoResponse.
-        Identificador do usu\u00E1rio.
+        {{{dispositivo_response_id_usuario_value}}}
 
         :return: The id_usuario of this DispositivoResponse.
         :rtype: int
@@ -136,7 +136,7 @@ class DispositivoResponse(object):
     def id_usuario(self, id_usuario):
         """
         Sets the id_usuario of this DispositivoResponse.
-        Identificador do usu\u00E1rio.
+        {{{dispositivo_response_id_usuario_value}}}
 
         :param id_usuario: The id_usuario of this DispositivoResponse.
         :type: int

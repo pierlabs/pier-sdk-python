@@ -56,7 +56,7 @@ class TipoArquivoResponse(object):
     def id(self):
         """
         Gets the id of this TipoArquivoResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o do tipo arquivo
+        {{{tipo_arquivo_response_id_value}}}
 
         :return: The id of this TipoArquivoResponse.
         :rtype: int
@@ -67,7 +67,7 @@ class TipoArquivoResponse(object):
     def id(self, id):
         """
         Sets the id of this TipoArquivoResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o do tipo arquivo
+        {{{tipo_arquivo_response_id_value}}}
 
         :param id: The id of this TipoArquivoResponse.
         :type: int
@@ -78,7 +78,7 @@ class TipoArquivoResponse(object):
     def nome(self):
         """
         Gets the nome of this TipoArquivoResponse.
-        Nome do tipo do arquivo
+        {{{tipo_arquivo_response_nome_value}}}
 
         :return: The nome of this TipoArquivoResponse.
         :rtype: str
@@ -89,7 +89,7 @@ class TipoArquivoResponse(object):
     def nome(self, nome):
         """
         Sets the nome of this TipoArquivoResponse.
-        Nome do tipo do arquivo
+        {{{tipo_arquivo_response_nome_value}}}
 
         :param nome: The nome of this TipoArquivoResponse.
         :type: str
@@ -100,7 +100,7 @@ class TipoArquivoResponse(object):
     def descricao(self):
         """
         Gets the descricao of this TipoArquivoResponse.
-        Descri\u00E7\u00E3o do tipo do arquivo
+        {{{tipo_arquivo_response_descricao_value}}}
 
         :return: The descricao of this TipoArquivoResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class TipoArquivoResponse(object):
     def descricao(self, descricao):
         """
         Sets the descricao of this TipoArquivoResponse.
-        Descri\u00E7\u00E3o do tipo do arquivo
+        {{{tipo_arquivo_response_descricao_value}}}
 
         :param descricao: The descricao of this TipoArquivoResponse.
         :type: str

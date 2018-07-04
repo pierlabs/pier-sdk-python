@@ -62,7 +62,7 @@ class WebHookResponse(object):
     def id(self):
         """
         Gets the id of this WebHookResponse.
-        Id do WebHook
+        {{{web_hook_response_id_value}}}
 
         :return: The id of this WebHookResponse.
         :rtype: int
@@ -73,7 +73,7 @@ class WebHookResponse(object):
     def id(self, id):
         """
         Sets the id of this WebHookResponse.
-        Id do WebHook
+        {{{web_hook_response_id_value}}}
 
         :param id: The id of this WebHookResponse.
         :type: int
@@ -84,7 +84,7 @@ class WebHookResponse(object):
     def tipo_evento(self):
         """
         Gets the tipo_evento of this WebHookResponse.
-        TipoEvento a ser chamado pelo WebHook
+        {{{web_hook_response_tipo_evento_value}}}
 
         :return: The tipo_evento of this WebHookResponse.
         :rtype: str
@@ -95,7 +95,7 @@ class WebHookResponse(object):
     def tipo_evento(self, tipo_evento):
         """
         Sets the tipo_evento of this WebHookResponse.
-        TipoEvento a ser chamado pelo WebHook
+        {{{web_hook_response_tipo_evento_value}}}
 
         :param tipo_evento: The tipo_evento of this WebHookResponse.
         :type: str
@@ -112,7 +112,7 @@ class WebHookResponse(object):
     def metodo(self):
         """
         Gets the metodo of this WebHookResponse.
-        M\u00E9todo que a ser chamado pelo WebHook
+        {{{web_hook_response_metodo_value}}}
 
         :return: The metodo of this WebHookResponse.
         :rtype: str
@@ -123,7 +123,7 @@ class WebHookResponse(object):
     def metodo(self, metodo):
         """
         Sets the metodo of this WebHookResponse.
-        M\u00E9todo que a ser chamado pelo WebHook
+        {{{web_hook_response_metodo_value}}}
 
         :param metodo: The metodo of this WebHookResponse.
         :type: str
@@ -140,7 +140,7 @@ class WebHookResponse(object):
     def url(self):
         """
         Gets the url of this WebHookResponse.
-        URL que a ser consumida pelo WebHook
+        {{{web_hook_response_url_value}}}
 
         :return: The url of this WebHookResponse.
         :rtype: str
@@ -151,7 +151,7 @@ class WebHookResponse(object):
     def url(self, url):
         """
         Sets the url of this WebHookResponse.
-        URL que a ser consumida pelo WebHook
+        {{{web_hook_response_url_value}}}
 
         :param url: The url of this WebHookResponse.
         :type: str
@@ -162,7 +162,7 @@ class WebHookResponse(object):
     def status(self):
         """
         Gets the status of this WebHookResponse.
-        Status do WebHook
+        {{{web_hook_response_status_value}}}
 
         :return: The status of this WebHookResponse.
         :rtype: str
@@ -173,7 +173,7 @@ class WebHookResponse(object):
     def status(self, status):
         """
         Sets the status of this WebHookResponse.
-        Status do WebHook
+        {{{web_hook_response_status_value}}}
 
         :param status: The status of this WebHookResponse.
         :type: str

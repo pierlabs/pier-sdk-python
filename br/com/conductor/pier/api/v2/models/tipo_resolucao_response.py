@@ -53,7 +53,7 @@ class TipoResolucaoResponse(object):
     def id(self):
         """
         Gets the id of this TipoResolucaoResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o do tipo de resolu\u00E7\u00E3o
+        {{{tipo_resolucao_response_id_value}}}
 
         :return: The id of this TipoResolucaoResponse.
         :rtype: int
@@ -64,7 +64,7 @@ class TipoResolucaoResponse(object):
     def id(self, id):
         """
         Sets the id of this TipoResolucaoResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o do tipo de resolu\u00E7\u00E3o
+        {{{tipo_resolucao_response_id_value}}}
 
         :param id: The id of this TipoResolucaoResponse.
         :type: int
@@ -75,7 +75,7 @@ class TipoResolucaoResponse(object):
     def descricao(self):
         """
         Gets the descricao of this TipoResolucaoResponse.
-        Descri\u00E7\u00E3o do tipo de resolu\u00E7\u00E3o
+        {{{tipo_resolucao_response_descricao_value}}}
 
         :return: The descricao of this TipoResolucaoResponse.
         :rtype: str
@@ -86,7 +86,7 @@ class TipoResolucaoResponse(object):
     def descricao(self, descricao):
         """
         Sets the descricao of this TipoResolucaoResponse.
-        Descri\u00E7\u00E3o do tipo de resolu\u00E7\u00E3o
+        {{{tipo_resolucao_response_descricao_value}}}
 
         :param descricao: The descricao of this TipoResolucaoResponse.
         :type: str

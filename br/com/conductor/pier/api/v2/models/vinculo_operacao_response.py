@@ -59,7 +59,7 @@ class VinculoOperacaoResponse(object):
     def id_produto(self):
         """
         Gets the id_produto of this VinculoOperacaoResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o do Produto (id).
+        {{{vinculo_operacao_response_id_produto_value}}}
 
         :return: The id_produto of this VinculoOperacaoResponse.
         :rtype: int
@@ -70,7 +70,7 @@ class VinculoOperacaoResponse(object):
     def id_produto(self, id_produto):
         """
         Sets the id_produto of this VinculoOperacaoResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o do Produto (id).
+        {{{vinculo_operacao_response_id_produto_value}}}
 
         :param id_produto: The id_produto of this VinculoOperacaoResponse.
         :type: int
@@ -81,7 +81,7 @@ class VinculoOperacaoResponse(object):
     def id_operacao(self):
         """
         Gets the id_operacao of this VinculoOperacaoResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o da Opera\u00E7\u00E3o (id).
+        {{{vinculo_operacao_response_id_operacao_value}}}
 
         :return: The id_operacao of this VinculoOperacaoResponse.
         :rtype: int
@@ -92,7 +92,7 @@ class VinculoOperacaoResponse(object):
     def id_operacao(self, id_operacao):
         """
         Sets the id_operacao of this VinculoOperacaoResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o da Opera\u00E7\u00E3o (id).
+        {{{vinculo_operacao_response_id_operacao_value}}}
 
         :param id_operacao: The id_operacao of this VinculoOperacaoResponse.
         :type: int
@@ -103,7 +103,7 @@ class VinculoOperacaoResponse(object):
     def codigo_processamento(self):
         """
         Gets the codigo_processamento of this VinculoOperacaoResponse.
-        C\u00F3digo de processamento.
+        {{{vinculo_operacao_response_codigo_processamento_value}}}
 
         :return: The codigo_processamento of this VinculoOperacaoResponse.
         :rtype: str
@@ -114,7 +114,7 @@ class VinculoOperacaoResponse(object):
     def codigo_processamento(self, codigo_processamento):
         """
         Sets the codigo_processamento of this VinculoOperacaoResponse.
-        C\u00F3digo de processamento.
+        {{{vinculo_operacao_response_codigo_processamento_value}}}
 
         :param codigo_processamento: The codigo_processamento of this VinculoOperacaoResponse.
         :type: str
@@ -125,7 +125,7 @@ class VinculoOperacaoResponse(object):
     def codigo_mcc(self):
         """
         Gets the codigo_mcc of this VinculoOperacaoResponse.
-        C\u00F3digo MCC.
+        {{{vinculo_operacao_response_codigo_m_c_c_value}}}
 
         :return: The codigo_mcc of this VinculoOperacaoResponse.
         :rtype: int
@@ -136,7 +136,7 @@ class VinculoOperacaoResponse(object):
     def codigo_mcc(self, codigo_mcc):
         """
         Sets the codigo_mcc of this VinculoOperacaoResponse.
-        C\u00F3digo MCC.
+        {{{vinculo_operacao_response_codigo_m_c_c_value}}}
 
         :param codigo_mcc: The codigo_mcc of this VinculoOperacaoResponse.
         :type: int

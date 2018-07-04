@@ -92,7 +92,7 @@ class AdicionalResponse(object):
     def id_conta(self):
         """
         Gets the id_conta of this AdicionalResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o da Conta para cadastro do Adicional
+        {{{adicional_response_id_conta_value}}}
 
         :return: The id_conta of this AdicionalResponse.
         :rtype: int
@@ -103,7 +103,7 @@ class AdicionalResponse(object):
     def id_conta(self, id_conta):
         """
         Sets the id_conta of this AdicionalResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o da Conta para cadastro do Adicional
+        {{{adicional_response_id_conta_value}}}
 
         :param id_conta: The id_conta of this AdicionalResponse.
         :type: int
@@ -114,7 +114,7 @@ class AdicionalResponse(object):
     def id_pessoa(self):
         """
         Gets the id_pessoa of this AdicionalResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o da Pessoa Adicional
+        {{{adicional_response_id_pessoa_value}}}
 
         :return: The id_pessoa of this AdicionalResponse.
         :rtype: int
@@ -125,7 +125,7 @@ class AdicionalResponse(object):
     def id_pessoa(self, id_pessoa):
         """
         Sets the id_pessoa of this AdicionalResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o da Pessoa Adicional
+        {{{adicional_response_id_pessoa_value}}}
 
         :param id_pessoa: The id_pessoa of this AdicionalResponse.
         :type: int
@@ -136,7 +136,7 @@ class AdicionalResponse(object):
     def nome(self):
         """
         Gets the nome of this AdicionalResponse.
-        Nome completo do Adicional
+        {{{adicional_response_nome_value}}}
 
         :return: The nome of this AdicionalResponse.
         :rtype: str
@@ -147,7 +147,7 @@ class AdicionalResponse(object):
     def nome(self, nome):
         """
         Sets the nome of this AdicionalResponse.
-        Nome completo do Adicional
+        {{{adicional_response_nome_value}}}
 
         :param nome: The nome of this AdicionalResponse.
         :type: str
@@ -158,7 +158,7 @@ class AdicionalResponse(object):
     def nome_impresso(self):
         """
         Gets the nome_impresso of this AdicionalResponse.
-        Nome do Adicional que ser\u00E1 gravado no Cart\u00E3o
+        {{{adicional_response_nome_impresso_value}}}
 
         :return: The nome_impresso of this AdicionalResponse.
         :rtype: str
@@ -169,7 +169,7 @@ class AdicionalResponse(object):
     def nome_impresso(self, nome_impresso):
         """
         Sets the nome_impresso of this AdicionalResponse.
-        Nome do Adicional que ser\u00E1 gravado no Cart\u00E3o
+        {{{adicional_response_nome_impresso_value}}}
 
         :param nome_impresso: The nome_impresso of this AdicionalResponse.
         :type: str
@@ -180,7 +180,7 @@ class AdicionalResponse(object):
     def numero_receita_federal(self):
         """
         Gets the numero_receita_federal of this AdicionalResponse.
-        N\u00FAmero do CPF ou CNPJ do Adicional
+        {{{adicional_response_numero_receita_federal_value}}}
 
         :return: The numero_receita_federal of this AdicionalResponse.
         :rtype: str
@@ -191,7 +191,7 @@ class AdicionalResponse(object):
     def numero_receita_federal(self, numero_receita_federal):
         """
         Sets the numero_receita_federal of this AdicionalResponse.
-        N\u00FAmero do CPF ou CNPJ do Adicional
+        {{{adicional_response_numero_receita_federal_value}}}
 
         :param numero_receita_federal: The numero_receita_federal of this AdicionalResponse.
         :type: str
@@ -202,7 +202,7 @@ class AdicionalResponse(object):
     def data_nascimento(self):
         """
         Gets the data_nascimento of this AdicionalResponse.
-        Data de Nascimento do Adicional
+        {{{adicional_response_data_nascimento_value}}}
 
         :return: The data_nascimento of this AdicionalResponse.
         :rtype: str
@@ -213,7 +213,7 @@ class AdicionalResponse(object):
     def data_nascimento(self, data_nascimento):
         """
         Sets the data_nascimento of this AdicionalResponse.
-        Data de Nascimento do Adicional
+        {{{adicional_response_data_nascimento_value}}}
 
         :param data_nascimento: The data_nascimento of this AdicionalResponse.
         :type: str
@@ -224,7 +224,7 @@ class AdicionalResponse(object):
     def sexo(self):
         """
         Gets the sexo of this AdicionalResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o do sexo da Pessoa, quando PF, sendo: (\"M\": Masculino), (\"F\": Feminino), (\"O\": Outro), (\"N\": N\u00E3o Especificado).
+        {{{adicional_response_sexo_value}}}
 
         :return: The sexo of this AdicionalResponse.
         :rtype: str
@@ -235,7 +235,7 @@ class AdicionalResponse(object):
     def sexo(self, sexo):
         """
         Sets the sexo of this AdicionalResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o do sexo da Pessoa, quando PF, sendo: (\"M\": Masculino), (\"F\": Feminino), (\"O\": Outro), (\"N\": N\u00E3o Especificado).
+        {{{adicional_response_sexo_value}}}
 
         :param sexo: The sexo of this AdicionalResponse.
         :type: str
@@ -246,7 +246,7 @@ class AdicionalResponse(object):
     def numero_identidade(self):
         """
         Gets the numero_identidade of this AdicionalResponse.
-        N\u00FAmero do Documento de Identidade do Adicional
+        {{{adicional_response_numero_identidade_value}}}
 
         :return: The numero_identidade of this AdicionalResponse.
         :rtype: str
@@ -257,7 +257,7 @@ class AdicionalResponse(object):
     def numero_identidade(self, numero_identidade):
         """
         Sets the numero_identidade of this AdicionalResponse.
-        N\u00FAmero do Documento de Identidade do Adicional
+        {{{adicional_response_numero_identidade_value}}}
 
         :param numero_identidade: The numero_identidade of this AdicionalResponse.
         :type: str
@@ -268,7 +268,7 @@ class AdicionalResponse(object):
     def orgao_expedidor_identidade(self):
         """
         Gets the orgao_expedidor_identidade of this AdicionalResponse.
-        Nome do Org\u00E3o Emissor do Documento de Identidade do Adicional
+        {{{adicional_response_orgao_expedidor_identidade_value}}}
 
         :return: The orgao_expedidor_identidade of this AdicionalResponse.
         :rtype: str
@@ -279,7 +279,7 @@ class AdicionalResponse(object):
     def orgao_expedidor_identidade(self, orgao_expedidor_identidade):
         """
         Sets the orgao_expedidor_identidade of this AdicionalResponse.
-        Nome do Org\u00E3o Emissor do Documento de Identidade do Adicional
+        {{{adicional_response_orgao_expedidor_identidade_value}}}
 
         :param orgao_expedidor_identidade: The orgao_expedidor_identidade of this AdicionalResponse.
         :type: str
@@ -290,7 +290,7 @@ class AdicionalResponse(object):
     def unidade_federativa_identidade(self):
         """
         Gets the unidade_federativa_identidade of this AdicionalResponse.
-        Sigla da Unidade Federativa onde o Documento de Identidade do Adicional foi emitido
+        {{{adicional_response_unidade_federativa_identidade_value}}}
 
         :return: The unidade_federativa_identidade of this AdicionalResponse.
         :rtype: str
@@ -301,7 +301,7 @@ class AdicionalResponse(object):
     def unidade_federativa_identidade(self, unidade_federativa_identidade):
         """
         Sets the unidade_federativa_identidade of this AdicionalResponse.
-        Sigla da Unidade Federativa onde o Documento de Identidade do Adicional foi emitido
+        {{{adicional_response_unidade_federativa_identidade_value}}}
 
         :param unidade_federativa_identidade: The unidade_federativa_identidade of this AdicionalResponse.
         :type: str
@@ -312,7 +312,7 @@ class AdicionalResponse(object):
     def data_emissao_identidade(self):
         """
         Gets the data_emissao_identidade of this AdicionalResponse.
-        Data de emiss\u00E3o do Documento de Identidade do Adicional
+        {{{adicional_response_data_emissao_identidade_value}}}
 
         :return: The data_emissao_identidade of this AdicionalResponse.
         :rtype: str
@@ -323,7 +323,7 @@ class AdicionalResponse(object):
     def data_emissao_identidade(self, data_emissao_identidade):
         """
         Sets the data_emissao_identidade of this AdicionalResponse.
-        Data de emiss\u00E3o do Documento de Identidade do Adicional
+        {{{adicional_response_data_emissao_identidade_value}}}
 
         :param data_emissao_identidade: The data_emissao_identidade of this AdicionalResponse.
         :type: str
@@ -334,7 +334,7 @@ class AdicionalResponse(object):
     def id_parentesco(self):
         """
         Gets the id_parentesco of this AdicionalResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o do Parentesco do Adicional com o Titular
+        {{{adicional_response_id_parentesco_value}}}
 
         :return: The id_parentesco of this AdicionalResponse.
         :rtype: int
@@ -345,7 +345,7 @@ class AdicionalResponse(object):
     def id_parentesco(self, id_parentesco):
         """
         Sets the id_parentesco of this AdicionalResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o do Parentesco do Adicional com o Titular
+        {{{adicional_response_id_parentesco_value}}}
 
         :param id_parentesco: The id_parentesco of this AdicionalResponse.
         :type: int
@@ -356,7 +356,7 @@ class AdicionalResponse(object):
     def flag_ativo(self):
         """
         Gets the flag_ativo of this AdicionalResponse.
-        Indica se o adicional est\u00E1 ativo = 1 ou inativo = 0
+        {{{adicional_response_flag_ativo_value}}}
 
         :return: The flag_ativo of this AdicionalResponse.
         :rtype: int
@@ -367,7 +367,7 @@ class AdicionalResponse(object):
     def flag_ativo(self, flag_ativo):
         """
         Sets the flag_ativo of this AdicionalResponse.
-        Indica se o adicional est\u00E1 ativo = 1 ou inativo = 0
+        {{{adicional_response_flag_ativo_value}}}
 
         :param flag_ativo: The flag_ativo of this AdicionalResponse.
         :type: int
@@ -378,7 +378,7 @@ class AdicionalResponse(object):
     def data_cadastro_portador(self):
         """
         Gets the data_cadastro_portador of this AdicionalResponse.
-        Indica a data de cadastro do adicional
+        {{{adicional_response_data_cadastro_portador_value}}}
 
         :return: The data_cadastro_portador of this AdicionalResponse.
         :rtype: str
@@ -389,7 +389,7 @@ class AdicionalResponse(object):
     def data_cadastro_portador(self, data_cadastro_portador):
         """
         Sets the data_cadastro_portador of this AdicionalResponse.
-        Indica a data de cadastro do adicional
+        {{{adicional_response_data_cadastro_portador_value}}}
 
         :param data_cadastro_portador: The data_cadastro_portador of this AdicionalResponse.
         :type: str
@@ -400,7 +400,7 @@ class AdicionalResponse(object):
     def data_cancelamento_portador(self):
         """
         Gets the data_cancelamento_portador of this AdicionalResponse.
-        Indica a data de cancelamento do adicional
+        {{{adicional_response_data_cancelamento_portador_value}}}
 
         :return: The data_cancelamento_portador of this AdicionalResponse.
         :rtype: str
@@ -411,7 +411,7 @@ class AdicionalResponse(object):
     def data_cancelamento_portador(self, data_cancelamento_portador):
         """
         Sets the data_cancelamento_portador of this AdicionalResponse.
-        Indica a data de cancelamento do adicional
+        {{{adicional_response_data_cancelamento_portador_value}}}
 
         :param data_cancelamento_portador: The data_cancelamento_portador of this AdicionalResponse.
         :type: str

@@ -38,7 +38,7 @@ class OperacaoCredorUpdate(object):
         """
         self.swagger_types = {
             'id_operacao': 'int',
-            'id_credor': 'int',
+            'id_grupo_economico': 'int',
             'id_produto': 'int',
             'remuneracao_percentual': 'float',
             'remuneracao_fixa': 'float',
@@ -53,7 +53,7 @@ class OperacaoCredorUpdate(object):
 
         self.attribute_map = {
             'id_operacao': 'idOperacao',
-            'id_credor': 'idCredor',
+            'id_grupo_economico': 'idGrupoEconomico',
             'id_produto': 'idProduto',
             'remuneracao_percentual': 'remuneracaoPercentual',
             'remuneracao_fixa': 'remuneracaoFixa',
@@ -67,7 +67,7 @@ class OperacaoCredorUpdate(object):
         }
 
         self._id_operacao = None
-        self._id_credor = None
+        self._id_grupo_economico = None
         self._id_produto = None
         self._remuneracao_percentual = None
         self._remuneracao_fixa = None
@@ -83,7 +83,7 @@ class OperacaoCredorUpdate(object):
     def id_operacao(self):
         """
         Gets the id_operacao of this OperacaoCredorUpdate.
-        Apresenta o id da Opera\u00E7\u00E3o.
+        {{{operacao_credor_update_id_operacao_value}}}
 
         :return: The id_operacao of this OperacaoCredorUpdate.
         :rtype: int
@@ -94,7 +94,7 @@ class OperacaoCredorUpdate(object):
     def id_operacao(self, id_operacao):
         """
         Sets the id_operacao of this OperacaoCredorUpdate.
-        Apresenta o id da Opera\u00E7\u00E3o.
+        {{{operacao_credor_update_id_operacao_value}}}
 
         :param id_operacao: The id_operacao of this OperacaoCredorUpdate.
         :type: int
@@ -102,32 +102,32 @@ class OperacaoCredorUpdate(object):
         self._id_operacao = id_operacao
 
     @property
-    def id_credor(self):
+    def id_grupo_economico(self):
         """
-        Gets the id_credor of this OperacaoCredorUpdate.
-        Apresenta o id do Credor.
+        Gets the id_grupo_economico of this OperacaoCredorUpdate.
+        {{{operacao_credor_update_id_grupo_economico_value}}}
 
-        :return: The id_credor of this OperacaoCredorUpdate.
+        :return: The id_grupo_economico of this OperacaoCredorUpdate.
         :rtype: int
         """
-        return self._id_credor
+        return self._id_grupo_economico
 
-    @id_credor.setter
-    def id_credor(self, id_credor):
+    @id_grupo_economico.setter
+    def id_grupo_economico(self, id_grupo_economico):
         """
-        Sets the id_credor of this OperacaoCredorUpdate.
-        Apresenta o id do Credor.
+        Sets the id_grupo_economico of this OperacaoCredorUpdate.
+        {{{operacao_credor_update_id_grupo_economico_value}}}
 
-        :param id_credor: The id_credor of this OperacaoCredorUpdate.
+        :param id_grupo_economico: The id_grupo_economico of this OperacaoCredorUpdate.
         :type: int
         """
-        self._id_credor = id_credor
+        self._id_grupo_economico = id_grupo_economico
 
     @property
     def id_produto(self):
         """
         Gets the id_produto of this OperacaoCredorUpdate.
-        Apresenta o id do produto que vai ser alterado.
+        {{{operacao_credor_update_id_produto_value}}}
 
         :return: The id_produto of this OperacaoCredorUpdate.
         :rtype: int
@@ -138,7 +138,7 @@ class OperacaoCredorUpdate(object):
     def id_produto(self, id_produto):
         """
         Sets the id_produto of this OperacaoCredorUpdate.
-        Apresenta o id do produto que vai ser alterado.
+        {{{operacao_credor_update_id_produto_value}}}
 
         :param id_produto: The id_produto of this OperacaoCredorUpdate.
         :type: int
@@ -149,7 +149,7 @@ class OperacaoCredorUpdate(object):
     def remuneracao_percentual(self):
         """
         Gets the remuneracao_percentual of this OperacaoCredorUpdate.
-        Remunera\u00E7\u00E3o Percentual.
+        {{{operacao_credor_update_remuneracao_percentual_value}}}
 
         :return: The remuneracao_percentual of this OperacaoCredorUpdate.
         :rtype: float
@@ -160,7 +160,7 @@ class OperacaoCredorUpdate(object):
     def remuneracao_percentual(self, remuneracao_percentual):
         """
         Sets the remuneracao_percentual of this OperacaoCredorUpdate.
-        Remunera\u00E7\u00E3o Percentual.
+        {{{operacao_credor_update_remuneracao_percentual_value}}}
 
         :param remuneracao_percentual: The remuneracao_percentual of this OperacaoCredorUpdate.
         :type: float
@@ -171,7 +171,7 @@ class OperacaoCredorUpdate(object):
     def remuneracao_fixa(self):
         """
         Gets the remuneracao_fixa of this OperacaoCredorUpdate.
-        Remunera\u00E7\u00E3o Fixa.
+        {{{operacao_credor_update_remuneracao_fixa_value}}}
 
         :return: The remuneracao_fixa of this OperacaoCredorUpdate.
         :rtype: float
@@ -182,7 +182,7 @@ class OperacaoCredorUpdate(object):
     def remuneracao_fixa(self, remuneracao_fixa):
         """
         Sets the remuneracao_fixa of this OperacaoCredorUpdate.
-        Remunera\u00E7\u00E3o Fixa.
+        {{{operacao_credor_update_remuneracao_fixa_value}}}
 
         :param remuneracao_fixa: The remuneracao_fixa of this OperacaoCredorUpdate.
         :type: float
@@ -193,7 +193,7 @@ class OperacaoCredorUpdate(object):
     def periodicidade(self):
         """
         Gets the periodicidade of this OperacaoCredorUpdate.
-        Periodicidade (DIARIO(1), SEMANAL(2), MENSAL(3), DECENDIAL(4), QUINZENAL(5)).
+        {{{operacao_credor_update_periodicidade_value}}}
 
         :return: The periodicidade of this OperacaoCredorUpdate.
         :rtype: str
@@ -204,7 +204,7 @@ class OperacaoCredorUpdate(object):
     def periodicidade(self, periodicidade):
         """
         Sets the periodicidade of this OperacaoCredorUpdate.
-        Periodicidade (DIARIO(1), SEMANAL(2), MENSAL(3), DECENDIAL(4), QUINZENAL(5)).
+        {{{operacao_credor_update_periodicidade_value}}}
 
         :param periodicidade: The periodicidade of this OperacaoCredorUpdate.
         :type: str
@@ -221,7 +221,7 @@ class OperacaoCredorUpdate(object):
     def vencimento_primeira_parcela(self):
         """
         Gets the vencimento_primeira_parcela of this OperacaoCredorUpdate.
-        Vencimento da primeira parcela.
+        {{{operacao_credor_update_vencimento_primeira_parcela_value}}}
 
         :return: The vencimento_primeira_parcela of this OperacaoCredorUpdate.
         :rtype: int
@@ -232,7 +232,7 @@ class OperacaoCredorUpdate(object):
     def vencimento_primeira_parcela(self, vencimento_primeira_parcela):
         """
         Sets the vencimento_primeira_parcela of this OperacaoCredorUpdate.
-        Vencimento da primeira parcela.
+        {{{operacao_credor_update_vencimento_primeira_parcela_value}}}
 
         :param vencimento_primeira_parcela: The vencimento_primeira_parcela of this OperacaoCredorUpdate.
         :type: int
@@ -243,7 +243,7 @@ class OperacaoCredorUpdate(object):
     def dias_afastamento(self):
         """
         Gets the dias_afastamento of this OperacaoCredorUpdate.
-        Dias afastamento.
+        {{{operacao_credor_update_dias_afastamento_value}}}
 
         :return: The dias_afastamento of this OperacaoCredorUpdate.
         :rtype: int
@@ -254,7 +254,7 @@ class OperacaoCredorUpdate(object):
     def dias_afastamento(self, dias_afastamento):
         """
         Sets the dias_afastamento of this OperacaoCredorUpdate.
-        Dias afastamento.
+        {{{operacao_credor_update_dias_afastamento_value}}}
 
         :param dias_afastamento: The dias_afastamento of this OperacaoCredorUpdate.
         :type: int
@@ -265,7 +265,7 @@ class OperacaoCredorUpdate(object):
     def fator_multiplicador(self):
         """
         Gets the fator_multiplicador of this OperacaoCredorUpdate.
-        Fator multiplicador (FORA_AGENDA(0), AGENDA(1)).
+        {{{operacao_credor_update_fator_multiplicador_value}}}
 
         :return: The fator_multiplicador of this OperacaoCredorUpdate.
         :rtype: str
@@ -276,7 +276,7 @@ class OperacaoCredorUpdate(object):
     def fator_multiplicador(self, fator_multiplicador):
         """
         Sets the fator_multiplicador of this OperacaoCredorUpdate.
-        Fator multiplicador (FORA_AGENDA(0), AGENDA(1)).
+        {{{operacao_credor_update_fator_multiplicador_value}}}
 
         :param fator_multiplicador: The fator_multiplicador of this OperacaoCredorUpdate.
         :type: str
@@ -293,7 +293,7 @@ class OperacaoCredorUpdate(object):
     def flag_taxa_fixada(self):
         """
         Gets the flag_taxa_fixada of this OperacaoCredorUpdate.
-        Flag taxa fixada.
+        {{{operacao_credor_update_flag_taxa_fixada_value}}}
 
         :return: The flag_taxa_fixada of this OperacaoCredorUpdate.
         :rtype: bool
@@ -304,7 +304,7 @@ class OperacaoCredorUpdate(object):
     def flag_taxa_fixada(self, flag_taxa_fixada):
         """
         Sets the flag_taxa_fixada of this OperacaoCredorUpdate.
-        Flag taxa fixada.
+        {{{operacao_credor_update_flag_taxa_fixada_value}}}
 
         :param flag_taxa_fixada: The flag_taxa_fixada of this OperacaoCredorUpdate.
         :type: bool
@@ -315,7 +315,7 @@ class OperacaoCredorUpdate(object):
     def plano_minimo(self):
         """
         Gets the plano_minimo of this OperacaoCredorUpdate.
-        Plano m\u00EDnimo da regra.
+        {{{operacao_credor_update_plano_minimo_value}}}
 
         :return: The plano_minimo of this OperacaoCredorUpdate.
         :rtype: int
@@ -326,7 +326,7 @@ class OperacaoCredorUpdate(object):
     def plano_minimo(self, plano_minimo):
         """
         Sets the plano_minimo of this OperacaoCredorUpdate.
-        Plano m\u00EDnimo da regra.
+        {{{operacao_credor_update_plano_minimo_value}}}
 
         :param plano_minimo: The plano_minimo of this OperacaoCredorUpdate.
         :type: int
@@ -337,7 +337,7 @@ class OperacaoCredorUpdate(object):
     def plano_maximo(self):
         """
         Gets the plano_maximo of this OperacaoCredorUpdate.
-        Plano m\u00E1ximo da regra.
+        {{{operacao_credor_update_plano_maximo_value}}}
 
         :return: The plano_maximo of this OperacaoCredorUpdate.
         :rtype: int
@@ -348,7 +348,7 @@ class OperacaoCredorUpdate(object):
     def plano_maximo(self, plano_maximo):
         """
         Sets the plano_maximo of this OperacaoCredorUpdate.
-        Plano m\u00E1ximo da regra.
+        {{{operacao_credor_update_plano_maximo_value}}}
 
         :param plano_maximo: The plano_maximo of this OperacaoCredorUpdate.
         :type: int

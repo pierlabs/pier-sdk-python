@@ -77,7 +77,7 @@ class TemplateNotificacaoDetalheResponse(object):
     def id(self):
         """
         Gets the id of this TemplateNotificacaoDetalheResponse.
-        C\u00F3digo Identificador.
+        {{{template_notificacao_response_id_value}}}
 
         :return: The id of this TemplateNotificacaoDetalheResponse.
         :rtype: int
@@ -88,7 +88,7 @@ class TemplateNotificacaoDetalheResponse(object):
     def id(self, id):
         """
         Sets the id of this TemplateNotificacaoDetalheResponse.
-        C\u00F3digo Identificador.
+        {{{template_notificacao_response_id_value}}}
 
         :param id: The id of this TemplateNotificacaoDetalheResponse.
         :type: int
@@ -99,7 +99,7 @@ class TemplateNotificacaoDetalheResponse(object):
     def id_configuracao_email(self):
         """
         Gets the id_configuracao_email of this TemplateNotificacaoDetalheResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o da configra\u00E7\u00E3o de e-mail.
+        {{{template_notificacao_response_id_configuracao_email_value}}}
 
         :return: The id_configuracao_email of this TemplateNotificacaoDetalheResponse.
         :rtype: int
@@ -110,7 +110,7 @@ class TemplateNotificacaoDetalheResponse(object):
     def id_configuracao_email(self, id_configuracao_email):
         """
         Sets the id_configuracao_email of this TemplateNotificacaoDetalheResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o da configra\u00E7\u00E3o de e-mail.
+        {{{template_notificacao_response_id_configuracao_email_value}}}
 
         :param id_configuracao_email: The id_configuracao_email of this TemplateNotificacaoDetalheResponse.
         :type: int
@@ -121,7 +121,7 @@ class TemplateNotificacaoDetalheResponse(object):
     def tipo_layout(self):
         """
         Gets the tipo_layout of this TemplateNotificacaoDetalheResponse.
-        Tipo do layout de e-mail.
+        {{{template_notificacao_response_tipo_layout_value}}}
 
         :return: The tipo_layout of this TemplateNotificacaoDetalheResponse.
         :rtype: str
@@ -132,7 +132,7 @@ class TemplateNotificacaoDetalheResponse(object):
     def tipo_layout(self, tipo_layout):
         """
         Sets the tipo_layout of this TemplateNotificacaoDetalheResponse.
-        Tipo do layout de e-mail.
+        {{{template_notificacao_response_tipo_layout_value}}}
 
         :param tipo_layout: The tipo_layout of this TemplateNotificacaoDetalheResponse.
         :type: str
@@ -149,7 +149,7 @@ class TemplateNotificacaoDetalheResponse(object):
     def tipo_notificacao(self):
         """
         Gets the tipo_notificacao of this TemplateNotificacaoDetalheResponse.
-        Tipo da notifica\u00E7\u00E3o.
+        {{{template_notificacao_response_tipo_notificacao_value}}}
 
         :return: The tipo_notificacao of this TemplateNotificacaoDetalheResponse.
         :rtype: str
@@ -160,7 +160,7 @@ class TemplateNotificacaoDetalheResponse(object):
     def tipo_notificacao(self, tipo_notificacao):
         """
         Sets the tipo_notificacao of this TemplateNotificacaoDetalheResponse.
-        Tipo da notifica\u00E7\u00E3o.
+        {{{template_notificacao_response_tipo_notificacao_value}}}
 
         :param tipo_notificacao: The tipo_notificacao of this TemplateNotificacaoDetalheResponse.
         :type: str
@@ -177,7 +177,7 @@ class TemplateNotificacaoDetalheResponse(object):
     def template_padrao(self):
         """
         Gets the template_padrao of this TemplateNotificacaoDetalheResponse.
-        Template padr\u00E3o.
+        {{{template_notificacao_response_template_padrao_value}}}
 
         :return: The template_padrao of this TemplateNotificacaoDetalheResponse.
         :rtype: str
@@ -188,7 +188,7 @@ class TemplateNotificacaoDetalheResponse(object):
     def template_padrao(self, template_padrao):
         """
         Sets the template_padrao of this TemplateNotificacaoDetalheResponse.
-        Template padr\u00E3o.
+        {{{template_notificacao_response_template_padrao_value}}}
 
         :param template_padrao: The template_padrao of this TemplateNotificacaoDetalheResponse.
         :type: str
@@ -199,7 +199,7 @@ class TemplateNotificacaoDetalheResponse(object):
     def remetente(self):
         """
         Gets the remetente of this TemplateNotificacaoDetalheResponse.
-        Remetente.
+        {{{template_notificacao_response_remetente_value}}}
 
         :return: The remetente of this TemplateNotificacaoDetalheResponse.
         :rtype: str
@@ -210,7 +210,7 @@ class TemplateNotificacaoDetalheResponse(object):
     def remetente(self, remetente):
         """
         Sets the remetente of this TemplateNotificacaoDetalheResponse.
-        Remetente.
+        {{{template_notificacao_response_remetente_value}}}
 
         :param remetente: The remetente of this TemplateNotificacaoDetalheResponse.
         :type: str
@@ -221,7 +221,7 @@ class TemplateNotificacaoDetalheResponse(object):
     def assunto(self):
         """
         Gets the assunto of this TemplateNotificacaoDetalheResponse.
-        Assunto do e-mail.
+        {{{template_notificacao_response_assunto_value}}}
 
         :return: The assunto of this TemplateNotificacaoDetalheResponse.
         :rtype: str
@@ -232,7 +232,7 @@ class TemplateNotificacaoDetalheResponse(object):
     def assunto(self, assunto):
         """
         Sets the assunto of this TemplateNotificacaoDetalheResponse.
-        Assunto do e-mail.
+        {{{template_notificacao_response_assunto_value}}}
 
         :param assunto: The assunto of this TemplateNotificacaoDetalheResponse.
         :type: str
@@ -243,7 +243,7 @@ class TemplateNotificacaoDetalheResponse(object):
     def data_inclusao(self):
         """
         Gets the data_inclusao of this TemplateNotificacaoDetalheResponse.
-        Data da inclus\u00E3o.
+        {{{template_notificacao_response_data_inclusao_value}}}
 
         :return: The data_inclusao of this TemplateNotificacaoDetalheResponse.
         :rtype: str
@@ -254,7 +254,7 @@ class TemplateNotificacaoDetalheResponse(object):
     def data_inclusao(self, data_inclusao):
         """
         Sets the data_inclusao of this TemplateNotificacaoDetalheResponse.
-        Data da inclus\u00E3o.
+        {{{template_notificacao_response_data_inclusao_value}}}
 
         :param data_inclusao: The data_inclusao of this TemplateNotificacaoDetalheResponse.
         :type: str
@@ -265,7 +265,7 @@ class TemplateNotificacaoDetalheResponse(object):
     def data_alteracao(self):
         """
         Gets the data_alteracao of this TemplateNotificacaoDetalheResponse.
-        Data altera\u00E7\u00E3o.
+        {{{template_notificacao_response_data_alteracao_value}}}
 
         :return: The data_alteracao of this TemplateNotificacaoDetalheResponse.
         :rtype: str
@@ -276,7 +276,7 @@ class TemplateNotificacaoDetalheResponse(object):
     def data_alteracao(self, data_alteracao):
         """
         Sets the data_alteracao of this TemplateNotificacaoDetalheResponse.
-        Data altera\u00E7\u00E3o.
+        {{{template_notificacao_response_data_alteracao_value}}}
 
         :param data_alteracao: The data_alteracao of this TemplateNotificacaoDetalheResponse.
         :type: str
@@ -287,7 +287,7 @@ class TemplateNotificacaoDetalheResponse(object):
     def conteudo(self):
         """
         Gets the conteudo of this TemplateNotificacaoDetalheResponse.
-        Conteudo do e-mail.
+        {{{template_notificacao_detalhe_response_conteudo_value}}}
 
         :return: The conteudo of this TemplateNotificacaoDetalheResponse.
         :rtype: str
@@ -298,7 +298,7 @@ class TemplateNotificacaoDetalheResponse(object):
     def conteudo(self, conteudo):
         """
         Sets the conteudo of this TemplateNotificacaoDetalheResponse.
-        Conteudo do e-mail.
+        {{{template_notificacao_detalhe_response_conteudo_value}}}
 
         :param conteudo: The conteudo of this TemplateNotificacaoDetalheResponse.
         :type: str

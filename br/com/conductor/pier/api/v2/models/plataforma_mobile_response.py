@@ -53,7 +53,7 @@ class PlataformaMobileResponse(object):
     def id(self):
         """
         Gets the id of this PlataformaMobileResponse.
-        Identificador da Plataforma
+        {{{plataforma_mobile_response_id_value}}}
 
         :return: The id of this PlataformaMobileResponse.
         :rtype: int
@@ -64,7 +64,7 @@ class PlataformaMobileResponse(object):
     def id(self, id):
         """
         Sets the id of this PlataformaMobileResponse.
-        Identificador da Plataforma
+        {{{plataforma_mobile_response_id_value}}}
 
         :param id: The id of this PlataformaMobileResponse.
         :type: int
@@ -75,7 +75,7 @@ class PlataformaMobileResponse(object):
     def nome(self):
         """
         Gets the nome of this PlataformaMobileResponse.
-        Nome da Plataforma
+        {{{plataforma_mobile_response_nome_value}}}
 
         :return: The nome of this PlataformaMobileResponse.
         :rtype: str
@@ -86,7 +86,7 @@ class PlataformaMobileResponse(object):
     def nome(self, nome):
         """
         Sets the nome of this PlataformaMobileResponse.
-        Nome da Plataforma
+        {{{plataforma_mobile_response_nome_value}}}
 
         :param nome: The nome of this PlataformaMobileResponse.
         :type: str

@@ -59,7 +59,7 @@ class ProdutoResponse(object):
     def id(self):
         """
         Gets the id of this ProdutoResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o do Produto (id).
+        {{{produto_response_id_value}}}
 
         :return: The id of this ProdutoResponse.
         :rtype: int
@@ -70,7 +70,7 @@ class ProdutoResponse(object):
     def id(self, id):
         """
         Sets the id of this ProdutoResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o do Produto (id).
+        {{{produto_response_id_value}}}
 
         :param id: The id of this ProdutoResponse.
         :type: int
@@ -81,7 +81,7 @@ class ProdutoResponse(object):
     def nome(self):
         """
         Gets the nome of this ProdutoResponse.
-        Descri\u00E7\u00E3o do Nome do Produto.
+        {{{produto_response_nome_value}}}
 
         :return: The nome of this ProdutoResponse.
         :rtype: str
@@ -92,7 +92,7 @@ class ProdutoResponse(object):
     def nome(self, nome):
         """
         Sets the nome of this ProdutoResponse.
-        Descri\u00E7\u00E3o do Nome do Produto.
+        {{{produto_response_nome_value}}}
 
         :param nome: The nome of this ProdutoResponse.
         :type: str
@@ -103,7 +103,7 @@ class ProdutoResponse(object):
     def status(self):
         """
         Gets the status of this ProdutoResponse.
-        Representa o Status do Produto, onde: (\"0\": Inativo), (\"1\": Ativo).
+        {{{produto_response_status_value}}}
 
         :return: The status of this ProdutoResponse.
         :rtype: int
@@ -114,7 +114,7 @@ class ProdutoResponse(object):
     def status(self, status):
         """
         Sets the status of this ProdutoResponse.
-        Representa o Status do Produto, onde: (\"0\": Inativo), (\"1\": Ativo).
+        {{{produto_response_status_value}}}
 
         :param status: The status of this ProdutoResponse.
         :type: int
@@ -125,7 +125,7 @@ class ProdutoResponse(object):
     def id_fantasia_basica(self):
         """
         Gets the id_fantasia_basica of this ProdutoResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o da Fantasia B\u00E1sica (id) a qual o produto pertence.
+        {{{produto_response_id_fantasia_basica_value}}}
 
         :return: The id_fantasia_basica of this ProdutoResponse.
         :rtype: int
@@ -136,7 +136,7 @@ class ProdutoResponse(object):
     def id_fantasia_basica(self, id_fantasia_basica):
         """
         Sets the id_fantasia_basica of this ProdutoResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o da Fantasia B\u00E1sica (id) a qual o produto pertence.
+        {{{produto_response_id_fantasia_basica_value}}}
 
         :param id_fantasia_basica: The id_fantasia_basica of this ProdutoResponse.
         :type: int

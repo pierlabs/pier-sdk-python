@@ -49,7 +49,9 @@ class ConfiguracaoRegistroCobrancaPersist(object):
             'truststore_alias': 'str',
             'type_truststore': 'str',
             'uri_adicional': 'str',
-            'status': 'str'
+            'status': 'str',
+            'secret': 'str',
+            'client_id': 'str'
         }
 
         self.attribute_map = {
@@ -65,7 +67,9 @@ class ConfiguracaoRegistroCobrancaPersist(object):
             'truststore_alias': 'truststoreAlias',
             'type_truststore': 'typeTruststore',
             'uri_adicional': 'uriAdicional',
-            'status': 'status'
+            'status': 'status',
+            'secret': 'secret',
+            'client_id': 'clientID'
         }
 
         self._codigo_banco = None
@@ -81,12 +85,14 @@ class ConfiguracaoRegistroCobrancaPersist(object):
         self._type_truststore = None
         self._uri_adicional = None
         self._status = None
+        self._secret = None
+        self._client_id = None
 
     @property
     def codigo_banco(self):
         """
         Gets the codigo_banco of this ConfiguracaoRegistroCobrancaPersist.
-        C\u00F3digo do Banco.
+        {{{configuracao_registro_cobranca_persist_codigo_banco_value}}}
 
         :return: The codigo_banco of this ConfiguracaoRegistroCobrancaPersist.
         :rtype: int
@@ -97,7 +103,7 @@ class ConfiguracaoRegistroCobrancaPersist(object):
     def codigo_banco(self, codigo_banco):
         """
         Sets the codigo_banco of this ConfiguracaoRegistroCobrancaPersist.
-        C\u00F3digo do Banco.
+        {{{configuracao_registro_cobranca_persist_codigo_banco_value}}}
 
         :param codigo_banco: The codigo_banco of this ConfiguracaoRegistroCobrancaPersist.
         :type: int
@@ -108,7 +114,7 @@ class ConfiguracaoRegistroCobrancaPersist(object):
     def uri(self):
         """
         Gets the uri of this ConfiguracaoRegistroCobrancaPersist.
-        URL de acesso ao banco.
+        {{{configuracao_registro_cobranca_persist_uri_value}}}
 
         :return: The uri of this ConfiguracaoRegistroCobrancaPersist.
         :rtype: str
@@ -119,7 +125,7 @@ class ConfiguracaoRegistroCobrancaPersist(object):
     def uri(self, uri):
         """
         Sets the uri of this ConfiguracaoRegistroCobrancaPersist.
-        URL de acesso ao banco.
+        {{{configuracao_registro_cobranca_persist_uri_value}}}
 
         :param uri: The uri of this ConfiguracaoRegistroCobrancaPersist.
         :type: str
@@ -130,7 +136,7 @@ class ConfiguracaoRegistroCobrancaPersist(object):
     def key_store_name(self):
         """
         Gets the key_store_name of this ConfiguracaoRegistroCobrancaPersist.
-        Caminho do certificado digital do emissor.
+        {{{configuracao_registro_cobranca_persist_key_store_name_value}}}
 
         :return: The key_store_name of this ConfiguracaoRegistroCobrancaPersist.
         :rtype: str
@@ -141,7 +147,7 @@ class ConfiguracaoRegistroCobrancaPersist(object):
     def key_store_name(self, key_store_name):
         """
         Sets the key_store_name of this ConfiguracaoRegistroCobrancaPersist.
-        Caminho do certificado digital do emissor.
+        {{{configuracao_registro_cobranca_persist_key_store_name_value}}}
 
         :param key_store_name: The key_store_name of this ConfiguracaoRegistroCobrancaPersist.
         :type: str
@@ -152,7 +158,7 @@ class ConfiguracaoRegistroCobrancaPersist(object):
     def key_store_password(self):
         """
         Gets the key_store_password of this ConfiguracaoRegistroCobrancaPersist.
-        Senha do certificado digital do emissor.
+        {{{configuracao_registro_cobranca_persist_key_store_password_value}}}
 
         :return: The key_store_password of this ConfiguracaoRegistroCobrancaPersist.
         :rtype: str
@@ -163,7 +169,7 @@ class ConfiguracaoRegistroCobrancaPersist(object):
     def key_store_password(self, key_store_password):
         """
         Sets the key_store_password of this ConfiguracaoRegistroCobrancaPersist.
-        Senha do certificado digital do emissor.
+        {{{configuracao_registro_cobranca_persist_key_store_password_value}}}
 
         :param key_store_password: The key_store_password of this ConfiguracaoRegistroCobrancaPersist.
         :type: str
@@ -174,7 +180,7 @@ class ConfiguracaoRegistroCobrancaPersist(object):
     def keystore_alias(self):
         """
         Gets the keystore_alias of this ConfiguracaoRegistroCobrancaPersist.
-        Alias do certificado digital do emissor.
+        {{{configuracao_registro_cobranca_persist_keystore_alias_value}}}
 
         :return: The keystore_alias of this ConfiguracaoRegistroCobrancaPersist.
         :rtype: str
@@ -185,7 +191,7 @@ class ConfiguracaoRegistroCobrancaPersist(object):
     def keystore_alias(self, keystore_alias):
         """
         Sets the keystore_alias of this ConfiguracaoRegistroCobrancaPersist.
-        Alias do certificado digital do emissor.
+        {{{configuracao_registro_cobranca_persist_keystore_alias_value}}}
 
         :param keystore_alias: The keystore_alias of this ConfiguracaoRegistroCobrancaPersist.
         :type: str
@@ -196,7 +202,7 @@ class ConfiguracaoRegistroCobrancaPersist(object):
     def key_store_private_key_password(self):
         """
         Gets the key_store_private_key_password of this ConfiguracaoRegistroCobrancaPersist.
-        Senha da chave privada do certificado digital do emissor.
+        {{{configuracao_registro_cobranca_persist_key_store_private_key_password_value}}}
 
         :return: The key_store_private_key_password of this ConfiguracaoRegistroCobrancaPersist.
         :rtype: str
@@ -207,7 +213,7 @@ class ConfiguracaoRegistroCobrancaPersist(object):
     def key_store_private_key_password(self, key_store_private_key_password):
         """
         Sets the key_store_private_key_password of this ConfiguracaoRegistroCobrancaPersist.
-        Senha da chave privada do certificado digital do emissor.
+        {{{configuracao_registro_cobranca_persist_key_store_private_key_password_value}}}
 
         :param key_store_private_key_password: The key_store_private_key_password of this ConfiguracaoRegistroCobrancaPersist.
         :type: str
@@ -218,7 +224,7 @@ class ConfiguracaoRegistroCobrancaPersist(object):
     def type_keystore(self):
         """
         Gets the type_keystore of this ConfiguracaoRegistroCobrancaPersist.
-        Tipo do certificado digital do emissor.
+        {{{configuracao_registro_cobranca_persist_type_keystore_value}}}
 
         :return: The type_keystore of this ConfiguracaoRegistroCobrancaPersist.
         :rtype: str
@@ -229,7 +235,7 @@ class ConfiguracaoRegistroCobrancaPersist(object):
     def type_keystore(self, type_keystore):
         """
         Sets the type_keystore of this ConfiguracaoRegistroCobrancaPersist.
-        Tipo do certificado digital do emissor.
+        {{{configuracao_registro_cobranca_persist_type_keystore_value}}}
 
         :param type_keystore: The type_keystore of this ConfiguracaoRegistroCobrancaPersist.
         :type: str
@@ -240,7 +246,7 @@ class ConfiguracaoRegistroCobrancaPersist(object):
     def trust_store_name(self):
         """
         Gets the trust_store_name of this ConfiguracaoRegistroCobrancaPersist.
-        Caminho do certificado digital do banco.
+        {{{configuracao_registro_cobranca_persist_trust_store_name_value}}}
 
         :return: The trust_store_name of this ConfiguracaoRegistroCobrancaPersist.
         :rtype: str
@@ -251,7 +257,7 @@ class ConfiguracaoRegistroCobrancaPersist(object):
     def trust_store_name(self, trust_store_name):
         """
         Sets the trust_store_name of this ConfiguracaoRegistroCobrancaPersist.
-        Caminho do certificado digital do banco.
+        {{{configuracao_registro_cobranca_persist_trust_store_name_value}}}
 
         :param trust_store_name: The trust_store_name of this ConfiguracaoRegistroCobrancaPersist.
         :type: str
@@ -262,7 +268,7 @@ class ConfiguracaoRegistroCobrancaPersist(object):
     def trust_store_password(self):
         """
         Gets the trust_store_password of this ConfiguracaoRegistroCobrancaPersist.
-        Senha do certificado digital do banco.
+        {{{configuracao_registro_cobranca_persist_trust_store_password_value}}}
 
         :return: The trust_store_password of this ConfiguracaoRegistroCobrancaPersist.
         :rtype: str
@@ -273,7 +279,7 @@ class ConfiguracaoRegistroCobrancaPersist(object):
     def trust_store_password(self, trust_store_password):
         """
         Sets the trust_store_password of this ConfiguracaoRegistroCobrancaPersist.
-        Senha do certificado digital do banco.
+        {{{configuracao_registro_cobranca_persist_trust_store_password_value}}}
 
         :param trust_store_password: The trust_store_password of this ConfiguracaoRegistroCobrancaPersist.
         :type: str
@@ -284,7 +290,7 @@ class ConfiguracaoRegistroCobrancaPersist(object):
     def truststore_alias(self):
         """
         Gets the truststore_alias of this ConfiguracaoRegistroCobrancaPersist.
-        Alias do certificado digital do banco.
+        {{{configuracao_registro_cobranca_persist_truststore_alias_value}}}
 
         :return: The truststore_alias of this ConfiguracaoRegistroCobrancaPersist.
         :rtype: str
@@ -295,7 +301,7 @@ class ConfiguracaoRegistroCobrancaPersist(object):
     def truststore_alias(self, truststore_alias):
         """
         Sets the truststore_alias of this ConfiguracaoRegistroCobrancaPersist.
-        Alias do certificado digital do banco.
+        {{{configuracao_registro_cobranca_persist_truststore_alias_value}}}
 
         :param truststore_alias: The truststore_alias of this ConfiguracaoRegistroCobrancaPersist.
         :type: str
@@ -306,7 +312,7 @@ class ConfiguracaoRegistroCobrancaPersist(object):
     def type_truststore(self):
         """
         Gets the type_truststore of this ConfiguracaoRegistroCobrancaPersist.
-        Tipo do certificado digital do banco.
+        {{{configuracao_registro_cobranca_persist_type_truststore_value}}}
 
         :return: The type_truststore of this ConfiguracaoRegistroCobrancaPersist.
         :rtype: str
@@ -317,7 +323,7 @@ class ConfiguracaoRegistroCobrancaPersist(object):
     def type_truststore(self, type_truststore):
         """
         Sets the type_truststore of this ConfiguracaoRegistroCobrancaPersist.
-        Tipo do certificado digital do banco.
+        {{{configuracao_registro_cobranca_persist_type_truststore_value}}}
 
         :param type_truststore: The type_truststore of this ConfiguracaoRegistroCobrancaPersist.
         :type: str
@@ -328,7 +334,7 @@ class ConfiguracaoRegistroCobrancaPersist(object):
     def uri_adicional(self):
         """
         Gets the uri_adicional of this ConfiguracaoRegistroCobrancaPersist.
-        URL adicional de acesso ao banco.
+        {{{configuracao_registro_cobranca_persist_uri_adicional_value}}}
 
         :return: The uri_adicional of this ConfiguracaoRegistroCobrancaPersist.
         :rtype: str
@@ -339,7 +345,7 @@ class ConfiguracaoRegistroCobrancaPersist(object):
     def uri_adicional(self, uri_adicional):
         """
         Sets the uri_adicional of this ConfiguracaoRegistroCobrancaPersist.
-        URL adicional de acesso ao banco.
+        {{{configuracao_registro_cobranca_persist_uri_adicional_value}}}
 
         :param uri_adicional: The uri_adicional of this ConfiguracaoRegistroCobrancaPersist.
         :type: str
@@ -350,7 +356,7 @@ class ConfiguracaoRegistroCobrancaPersist(object):
     def status(self):
         """
         Gets the status of this ConfiguracaoRegistroCobrancaPersist.
-        Status descrevendo a situa\u00E7\u00E3o atual da configura\u00E7\u00E3o.
+        {{{configuracao_registro_cobranca_persist_status_value}}}
 
         :return: The status of this ConfiguracaoRegistroCobrancaPersist.
         :rtype: str
@@ -361,7 +367,7 @@ class ConfiguracaoRegistroCobrancaPersist(object):
     def status(self, status):
         """
         Sets the status of this ConfiguracaoRegistroCobrancaPersist.
-        Status descrevendo a situa\u00E7\u00E3o atual da configura\u00E7\u00E3o.
+        {{{configuracao_registro_cobranca_persist_status_value}}}
 
         :param status: The status of this ConfiguracaoRegistroCobrancaPersist.
         :type: str
@@ -373,6 +379,50 @@ class ConfiguracaoRegistroCobrancaPersist(object):
                 .format(allowed_values)
             )
         self._status = status
+
+    @property
+    def secret(self):
+        """
+        Gets the secret of this ConfiguracaoRegistroCobrancaPersist.
+        {{{configuracao_registro_cobranca_persist_secret_value}}}
+
+        :return: The secret of this ConfiguracaoRegistroCobrancaPersist.
+        :rtype: str
+        """
+        return self._secret
+
+    @secret.setter
+    def secret(self, secret):
+        """
+        Sets the secret of this ConfiguracaoRegistroCobrancaPersist.
+        {{{configuracao_registro_cobranca_persist_secret_value}}}
+
+        :param secret: The secret of this ConfiguracaoRegistroCobrancaPersist.
+        :type: str
+        """
+        self._secret = secret
+
+    @property
+    def client_id(self):
+        """
+        Gets the client_id of this ConfiguracaoRegistroCobrancaPersist.
+        {{{configuracao_registro_cobranca_persist_client_id_value}}}
+
+        :return: The client_id of this ConfiguracaoRegistroCobrancaPersist.
+        :rtype: str
+        """
+        return self._client_id
+
+    @client_id.setter
+    def client_id(self, client_id):
+        """
+        Sets the client_id of this ConfiguracaoRegistroCobrancaPersist.
+        {{{configuracao_registro_cobranca_persist_client_id_value}}}
+
+        :param client_id: The client_id of this ConfiguracaoRegistroCobrancaPersist.
+        :type: str
+        """
+        self._client_id = client_id
 
     def to_dict(self):
         """

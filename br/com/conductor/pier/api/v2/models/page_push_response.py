@@ -37,7 +37,7 @@ class PagePushResponse(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'content': 'list[NotificacaoPushResponse]',
+            'content': 'list[NotificacaoPushResponseValue]',
             'first': 'bool',
             'first_page': 'bool',
             'has_content': 'bool',
@@ -92,7 +92,7 @@ class PagePushResponse(object):
 
 
         :return: The content of this PagePushResponse.
-        :rtype: list[NotificacaoPushResponse]
+        :rtype: list[NotificacaoPushResponseValue]
         """
         return self._content
 
@@ -103,7 +103,7 @@ class PagePushResponse(object):
 
 
         :param content: The content of this PagePushResponse.
-        :type: list[NotificacaoPushResponse]
+        :type: list[NotificacaoPushResponseValue]
         """
         self._content = content
 

@@ -95,7 +95,7 @@ class ConfiguracaoRotativoDetalheResponse(object):
     def id(self):
         """
         Gets the id of this ConfiguracaoRotativoDetalheResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o de ConfiguracaoRotativo (id).
+        {{{configuracao_rotativo_detalhe_response_id_value}}}
 
         :return: The id of this ConfiguracaoRotativoDetalheResponse.
         :rtype: int
@@ -106,7 +106,7 @@ class ConfiguracaoRotativoDetalheResponse(object):
     def id(self, id):
         """
         Sets the id of this ConfiguracaoRotativoDetalheResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o de ConfiguracaoRotativo (id).
+        {{{configuracao_rotativo_detalhe_response_id_value}}}
 
         :param id: The id of this ConfiguracaoRotativoDetalheResponse.
         :type: int
@@ -117,7 +117,7 @@ class ConfiguracaoRotativoDetalheResponse(object):
     def id_produto(self):
         """
         Gets the id_produto of this ConfiguracaoRotativoDetalheResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o do Produto (idProduto).
+        {{{configuracao_rotativo_detalhe_response_id_produto_value}}}
 
         :return: The id_produto of this ConfiguracaoRotativoDetalheResponse.
         :rtype: int
@@ -128,7 +128,7 @@ class ConfiguracaoRotativoDetalheResponse(object):
     def id_produto(self, id_produto):
         """
         Sets the id_produto of this ConfiguracaoRotativoDetalheResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o do Produto (idProduto).
+        {{{configuracao_rotativo_detalhe_response_id_produto_value}}}
 
         :param id_produto: The id_produto of this ConfiguracaoRotativoDetalheResponse.
         :type: int
@@ -139,7 +139,7 @@ class ConfiguracaoRotativoDetalheResponse(object):
     def compoe_oferta_valor_rotativo(self):
         """
         Gets the compoe_oferta_valor_rotativo of this ConfiguracaoRotativoDetalheResponse.
-        Quando verdadeiro, indica que o valor do rotativo deve compor a oferta de parcelamento.
+        {{{configuracao_rotativo_detalhe_response_compoe_oferta_valor_rotativo_value}}}
 
         :return: The compoe_oferta_valor_rotativo of this ConfiguracaoRotativoDetalheResponse.
         :rtype: bool
@@ -150,7 +150,7 @@ class ConfiguracaoRotativoDetalheResponse(object):
     def compoe_oferta_valor_rotativo(self, compoe_oferta_valor_rotativo):
         """
         Sets the compoe_oferta_valor_rotativo of this ConfiguracaoRotativoDetalheResponse.
-        Quando verdadeiro, indica que o valor do rotativo deve compor a oferta de parcelamento.
+        {{{configuracao_rotativo_detalhe_response_compoe_oferta_valor_rotativo_value}}}
 
         :param compoe_oferta_valor_rotativo: The compoe_oferta_valor_rotativo of this ConfiguracaoRotativoDetalheResponse.
         :type: bool
@@ -161,7 +161,7 @@ class ConfiguracaoRotativoDetalheResponse(object):
     def compoe_oferta_valor_nao_financiavel(self):
         """
         Gets the compoe_oferta_valor_nao_financiavel of this ConfiguracaoRotativoDetalheResponse.
-        Quando verdadeiro, indica que o valor n\u00E3o financi\u00E1vel deve compor a oferta de parcelamento.
+        {{{configuracao_rotativo_detalhe_response_compoe_oferta_valor_nao_financiavel_value}}}
 
         :return: The compoe_oferta_valor_nao_financiavel of this ConfiguracaoRotativoDetalheResponse.
         :rtype: bool
@@ -172,7 +172,7 @@ class ConfiguracaoRotativoDetalheResponse(object):
     def compoe_oferta_valor_nao_financiavel(self, compoe_oferta_valor_nao_financiavel):
         """
         Sets the compoe_oferta_valor_nao_financiavel of this ConfiguracaoRotativoDetalheResponse.
-        Quando verdadeiro, indica que o valor n\u00E3o financi\u00E1vel deve compor a oferta de parcelamento.
+        {{{configuracao_rotativo_detalhe_response_compoe_oferta_valor_nao_financiavel_value}}}
 
         :param compoe_oferta_valor_nao_financiavel: The compoe_oferta_valor_nao_financiavel of this ConfiguracaoRotativoDetalheResponse.
         :type: bool
@@ -183,7 +183,7 @@ class ConfiguracaoRotativoDetalheResponse(object):
     def compoe_oferta_valor_novos_lancamentos(self):
         """
         Gets the compoe_oferta_valor_novos_lancamentos of this ConfiguracaoRotativoDetalheResponse.
-        Quando verdadeiro, indica que o valor de novos lan\u00E7amentos deve compor a oferta de parcelamento
+        {{{configuracao_rotativo_detalhe_response_compoe_oferta_valor_novos_lancamentos_value}}}
 
         :return: The compoe_oferta_valor_novos_lancamentos of this ConfiguracaoRotativoDetalheResponse.
         :rtype: bool
@@ -194,7 +194,7 @@ class ConfiguracaoRotativoDetalheResponse(object):
     def compoe_oferta_valor_novos_lancamentos(self, compoe_oferta_valor_novos_lancamentos):
         """
         Sets the compoe_oferta_valor_novos_lancamentos of this ConfiguracaoRotativoDetalheResponse.
-        Quando verdadeiro, indica que o valor de novos lan\u00E7amentos deve compor a oferta de parcelamento
+        {{{configuracao_rotativo_detalhe_response_compoe_oferta_valor_novos_lancamentos_value}}}
 
         :param compoe_oferta_valor_novos_lancamentos: The compoe_oferta_valor_novos_lancamentos of this ConfiguracaoRotativoDetalheResponse.
         :type: bool
@@ -205,7 +205,7 @@ class ConfiguracaoRotativoDetalheResponse(object):
     def recalcula_parcelamento_para_entrada_maior(self):
         """
         Gets the recalcula_parcelamento_para_entrada_maior of this ConfiguracaoRotativoDetalheResponse.
-        Quando verdadeiro, indica que deve recalcular o parcelamento caso o valor pago de entrada seja maior que o valor esperado
+        {{{configuracao_rotativo_detalhe_response_recalcula_parcelamento_para_entrada_maior_value}}}
 
         :return: The recalcula_parcelamento_para_entrada_maior of this ConfiguracaoRotativoDetalheResponse.
         :rtype: bool
@@ -216,7 +216,7 @@ class ConfiguracaoRotativoDetalheResponse(object):
     def recalcula_parcelamento_para_entrada_maior(self, recalcula_parcelamento_para_entrada_maior):
         """
         Sets the recalcula_parcelamento_para_entrada_maior of this ConfiguracaoRotativoDetalheResponse.
-        Quando verdadeiro, indica que deve recalcular o parcelamento caso o valor pago de entrada seja maior que o valor esperado
+        {{{configuracao_rotativo_detalhe_response_recalcula_parcelamento_para_entrada_maior_value}}}
 
         :param recalcula_parcelamento_para_entrada_maior: The recalcula_parcelamento_para_entrada_maior of this ConfiguracaoRotativoDetalheResponse.
         :type: bool
@@ -227,7 +227,7 @@ class ConfiguracaoRotativoDetalheResponse(object):
     def minimo_parcelas_recalculo_parcelamento(self):
         """
         Gets the minimo_parcelas_recalculo_parcelamento of this ConfiguracaoRotativoDetalheResponse.
-        Indica o m\u00EDnimo de parcelas que ser\u00E1 acatado no rec\u00E1lculo do parcelamento.
+        {{{configuracao_rotativo_detalhe_response_minimo_parcelas_recalculo_parcelamento_value}}}
 
         :return: The minimo_parcelas_recalculo_parcelamento of this ConfiguracaoRotativoDetalheResponse.
         :rtype: bool
@@ -238,7 +238,7 @@ class ConfiguracaoRotativoDetalheResponse(object):
     def minimo_parcelas_recalculo_parcelamento(self, minimo_parcelas_recalculo_parcelamento):
         """
         Sets the minimo_parcelas_recalculo_parcelamento of this ConfiguracaoRotativoDetalheResponse.
-        Indica o m\u00EDnimo de parcelas que ser\u00E1 acatado no rec\u00E1lculo do parcelamento.
+        {{{configuracao_rotativo_detalhe_response_minimo_parcelas_recalculo_parcelamento_value}}}
 
         :param minimo_parcelas_recalculo_parcelamento: The minimo_parcelas_recalculo_parcelamento of this ConfiguracaoRotativoDetalheResponse.
         :type: bool
@@ -249,7 +249,7 @@ class ConfiguracaoRotativoDetalheResponse(object):
     def recalcula_parcelamento(self):
         """
         Gets the recalcula_parcelamento of this ConfiguracaoRotativoDetalheResponse.
-        Quando verdadeiro, indica que o parcelamento deve ser recalculado caso o valor calculado da oferta seja inferior ao valor configurado m\u00EDnimo da parcela (valorMinimoParcela) e de percentual aberto
+        {{{configuracao_rotativo_detalhe_response_recalcula_parcelamento_value}}}
 
         :return: The recalcula_parcelamento of this ConfiguracaoRotativoDetalheResponse.
         :rtype: bool
@@ -260,7 +260,7 @@ class ConfiguracaoRotativoDetalheResponse(object):
     def recalcula_parcelamento(self, recalcula_parcelamento):
         """
         Sets the recalcula_parcelamento of this ConfiguracaoRotativoDetalheResponse.
-        Quando verdadeiro, indica que o parcelamento deve ser recalculado caso o valor calculado da oferta seja inferior ao valor configurado m\u00EDnimo da parcela (valorMinimoParcela) e de percentual aberto
+        {{{configuracao_rotativo_detalhe_response_recalcula_parcelamento_value}}}
 
         :param recalcula_parcelamento: The recalcula_parcelamento of this ConfiguracaoRotativoDetalheResponse.
         :type: bool
@@ -271,7 +271,7 @@ class ConfiguracaoRotativoDetalheResponse(object):
     def numero_minimo_ofertas(self):
         """
         Gets the numero_minimo_ofertas of this ConfiguracaoRotativoDetalheResponse.
-        N\u00FAmero m\u00EDnimo de parcelas que ser\u00E1 acatado no recalculo da oferta.
+        {{{configuracao_rotativo_detalhe_response_numero_minimo_ofertas_value}}}
 
         :return: The numero_minimo_ofertas of this ConfiguracaoRotativoDetalheResponse.
         :rtype: bool
@@ -282,7 +282,7 @@ class ConfiguracaoRotativoDetalheResponse(object):
     def numero_minimo_ofertas(self, numero_minimo_ofertas):
         """
         Sets the numero_minimo_ofertas of this ConfiguracaoRotativoDetalheResponse.
-        N\u00FAmero m\u00EDnimo de parcelas que ser\u00E1 acatado no recalculo da oferta.
+        {{{configuracao_rotativo_detalhe_response_numero_minimo_ofertas_value}}}
 
         :param numero_minimo_ofertas: The numero_minimo_ofertas of this ConfiguracaoRotativoDetalheResponse.
         :type: bool
@@ -293,7 +293,7 @@ class ConfiguracaoRotativoDetalheResponse(object):
     def aceita_pagamento_maior_que_entrada(self):
         """
         Gets the aceita_pagamento_maior_que_entrada of this ConfiguracaoRotativoDetalheResponse.
-        Quando verdadeiro, indica que valores pagos entre o valor da entrada e o m\u00EDnimo da fatura ser\u00E3o acatados para a ades\u00E3o ao parcelamento
+        {{{configuracao_rotativo_detalhe_response_aceita_pagamento_maior_que_entrada_value}}}
 
         :return: The aceita_pagamento_maior_que_entrada of this ConfiguracaoRotativoDetalheResponse.
         :rtype: bool
@@ -304,7 +304,7 @@ class ConfiguracaoRotativoDetalheResponse(object):
     def aceita_pagamento_maior_que_entrada(self, aceita_pagamento_maior_que_entrada):
         """
         Sets the aceita_pagamento_maior_que_entrada of this ConfiguracaoRotativoDetalheResponse.
-        Quando verdadeiro, indica que valores pagos entre o valor da entrada e o m\u00EDnimo da fatura ser\u00E3o acatados para a ades\u00E3o ao parcelamento
+        {{{configuracao_rotativo_detalhe_response_aceita_pagamento_maior_que_entrada_value}}}
 
         :param aceita_pagamento_maior_que_entrada: The aceita_pagamento_maior_que_entrada of this ConfiguracaoRotativoDetalheResponse.
         :type: bool
@@ -315,7 +315,7 @@ class ConfiguracaoRotativoDetalheResponse(object):
     def antecipa_parcelamentos_abertos(self):
         """
         Gets the antecipa_parcelamentos_abertos of this ConfiguracaoRotativoDetalheResponse.
-        Quando verdadeiro, indica que deve-se incluir o valor presente dos parcelamentos em aberto.
+        {{{configuracao_rotativo_detalhe_response_antecipa_parcelamentos_abertos_value}}}
 
         :return: The antecipa_parcelamentos_abertos of this ConfiguracaoRotativoDetalheResponse.
         :rtype: bool
@@ -326,7 +326,7 @@ class ConfiguracaoRotativoDetalheResponse(object):
     def antecipa_parcelamentos_abertos(self, antecipa_parcelamentos_abertos):
         """
         Sets the antecipa_parcelamentos_abertos of this ConfiguracaoRotativoDetalheResponse.
-        Quando verdadeiro, indica que deve-se incluir o valor presente dos parcelamentos em aberto.
+        {{{configuracao_rotativo_detalhe_response_antecipa_parcelamentos_abertos_value}}}
 
         :param antecipa_parcelamentos_abertos: The antecipa_parcelamentos_abertos of this ConfiguracaoRotativoDetalheResponse.
         :type: bool
@@ -337,7 +337,7 @@ class ConfiguracaoRotativoDetalheResponse(object):
     def valor_minimo_parcela(self):
         """
         Gets the valor_minimo_parcela of this ConfiguracaoRotativoDetalheResponse.
-        Valor m\u00EDnimo da parcela que deve ser aceito na oferta.
+        {{{configuracao_rotativo_detalhe_response_valor_minimo_parcela_value}}}
 
         :return: The valor_minimo_parcela of this ConfiguracaoRotativoDetalheResponse.
         :rtype: float
@@ -348,7 +348,7 @@ class ConfiguracaoRotativoDetalheResponse(object):
     def valor_minimo_parcela(self, valor_minimo_parcela):
         """
         Sets the valor_minimo_parcela of this ConfiguracaoRotativoDetalheResponse.
-        Valor m\u00EDnimo da parcela que deve ser aceito na oferta.
+        {{{configuracao_rotativo_detalhe_response_valor_minimo_parcela_value}}}
 
         :param valor_minimo_parcela: The valor_minimo_parcela of this ConfiguracaoRotativoDetalheResponse.
         :type: float
@@ -359,7 +359,7 @@ class ConfiguracaoRotativoDetalheResponse(object):
     def percentual_limitar_valor_minimo_parcela(self):
         """
         Gets the percentual_limitar_valor_minimo_parcela of this ConfiguracaoRotativoDetalheResponse.
-        Percentual sobre os valores de parcelamento anteriores em aberto que deve ser considerado para limitar valorMinimoParcela.
+        {{{configuracao_rotativo_detalhe_response_percentual_limitar_valor_minimo_parcela_value}}}
 
         :return: The percentual_limitar_valor_minimo_parcela of this ConfiguracaoRotativoDetalheResponse.
         :rtype: float
@@ -370,7 +370,7 @@ class ConfiguracaoRotativoDetalheResponse(object):
     def percentual_limitar_valor_minimo_parcela(self, percentual_limitar_valor_minimo_parcela):
         """
         Sets the percentual_limitar_valor_minimo_parcela of this ConfiguracaoRotativoDetalheResponse.
-        Percentual sobre os valores de parcelamento anteriores em aberto que deve ser considerado para limitar valorMinimoParcela.
+        {{{configuracao_rotativo_detalhe_response_percentual_limitar_valor_minimo_parcela_value}}}
 
         :param percentual_limitar_valor_minimo_parcela: The percentual_limitar_valor_minimo_parcela of this ConfiguracaoRotativoDetalheResponse.
         :type: float
@@ -381,7 +381,7 @@ class ConfiguracaoRotativoDetalheResponse(object):
     def id_regra_campanha(self):
         """
         Gets the id_regra_campanha of this ConfiguracaoRotativoDetalheResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o da regra de campanha.
+        {{{configuracao_rotativo_detalhe_response_id_regra_campanha_value}}}
 
         :return: The id_regra_campanha of this ConfiguracaoRotativoDetalheResponse.
         :rtype: int
@@ -392,7 +392,7 @@ class ConfiguracaoRotativoDetalheResponse(object):
     def id_regra_campanha(self, id_regra_campanha):
         """
         Sets the id_regra_campanha of this ConfiguracaoRotativoDetalheResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o da regra de campanha.
+        {{{configuracao_rotativo_detalhe_response_id_regra_campanha_value}}}
 
         :param id_regra_campanha: The id_regra_campanha of this ConfiguracaoRotativoDetalheResponse.
         :type: int
@@ -403,7 +403,7 @@ class ConfiguracaoRotativoDetalheResponse(object):
     def parcelar_apenas_minimo(self):
         """
         Gets the parcelar_apenas_minimo of this ConfiguracaoRotativoDetalheResponse.
-        Quando verdadeiro, indica que parcelamento ofertado ter\u00E1 como valor base o valor m\u00EDnimo das transa\u00E7\u00F5es.
+        {{{configuracao_rotativo_detalhe_response_parcelar_apenas_minimo_value}}}
 
         :return: The parcelar_apenas_minimo of this ConfiguracaoRotativoDetalheResponse.
         :rtype: bool
@@ -414,7 +414,7 @@ class ConfiguracaoRotativoDetalheResponse(object):
     def parcelar_apenas_minimo(self, parcelar_apenas_minimo):
         """
         Sets the parcelar_apenas_minimo of this ConfiguracaoRotativoDetalheResponse.
-        Quando verdadeiro, indica que parcelamento ofertado ter\u00E1 como valor base o valor m\u00EDnimo das transa\u00E7\u00F5es.
+        {{{configuracao_rotativo_detalhe_response_parcelar_apenas_minimo_value}}}
 
         :param parcelar_apenas_minimo: The parcelar_apenas_minimo of this ConfiguracaoRotativoDetalheResponse.
         :type: bool
@@ -425,7 +425,7 @@ class ConfiguracaoRotativoDetalheResponse(object):
     def usuario(self):
         """
         Gets the usuario of this ConfiguracaoRotativoDetalheResponse.
-        Nome do usu\u00E1rio.
+        {{{configuracao_rotativo_detalhe_response_usuario_value}}}
 
         :return: The usuario of this ConfiguracaoRotativoDetalheResponse.
         :rtype: str
@@ -436,7 +436,7 @@ class ConfiguracaoRotativoDetalheResponse(object):
     def usuario(self, usuario):
         """
         Sets the usuario of this ConfiguracaoRotativoDetalheResponse.
-        Nome do usu\u00E1rio.
+        {{{configuracao_rotativo_detalhe_response_usuario_value}}}
 
         :param usuario: The usuario of this ConfiguracaoRotativoDetalheResponse.
         :type: str

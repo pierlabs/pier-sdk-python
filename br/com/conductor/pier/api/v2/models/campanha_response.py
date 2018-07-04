@@ -59,7 +59,7 @@ class CampanhaResponse(object):
     def id(self):
         """
         Gets the id of this CampanhaResponse.
-        Identificador da campanha
+        {{{campanha_response_id_value}}}
 
         :return: The id of this CampanhaResponse.
         :rtype: int
@@ -70,7 +70,7 @@ class CampanhaResponse(object):
     def id(self, id):
         """
         Sets the id of this CampanhaResponse.
-        Identificador da campanha
+        {{{campanha_response_id_value}}}
 
         :param id: The id of this CampanhaResponse.
         :type: int
@@ -81,7 +81,7 @@ class CampanhaResponse(object):
     def nome(self):
         """
         Gets the nome of this CampanhaResponse.
-        Nome da campanha
+        {{{campanha_response_nome_value}}}
 
         :return: The nome of this CampanhaResponse.
         :rtype: str
@@ -92,7 +92,7 @@ class CampanhaResponse(object):
     def nome(self, nome):
         """
         Sets the nome of this CampanhaResponse.
-        Nome da campanha
+        {{{campanha_response_nome_value}}}
 
         :param nome: The nome of this CampanhaResponse.
         :type: str
@@ -103,7 +103,7 @@ class CampanhaResponse(object):
     def id_tipo_campanha(self):
         """
         Gets the id_tipo_campanha of this CampanhaResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o do tipo de campanha a qual a a Campanha pertence
+        {{{campanha_response_id_tipo_campanha_value}}}
 
         :return: The id_tipo_campanha of this CampanhaResponse.
         :rtype: int
@@ -114,7 +114,7 @@ class CampanhaResponse(object):
     def id_tipo_campanha(self, id_tipo_campanha):
         """
         Sets the id_tipo_campanha of this CampanhaResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o do tipo de campanha a qual a a Campanha pertence
+        {{{campanha_response_id_tipo_campanha_value}}}
 
         :param id_tipo_campanha: The id_tipo_campanha of this CampanhaResponse.
         :type: int
@@ -125,7 +125,7 @@ class CampanhaResponse(object):
     def planos_campanhas(self):
         """
         Gets the planos_campanhas of this CampanhaResponse.
-        Lista de planos associados a Campanha
+        {{{campanha_response_planos_campanhas_value}}}
 
         :return: The planos_campanhas of this CampanhaResponse.
         :rtype: list[PlanoCampanhaResponse]
@@ -136,7 +136,7 @@ class CampanhaResponse(object):
     def planos_campanhas(self, planos_campanhas):
         """
         Sets the planos_campanhas of this CampanhaResponse.
-        Lista de planos associados a Campanha
+        {{{campanha_response_planos_campanhas_value}}}
 
         :param planos_campanhas: The planos_campanhas of this CampanhaResponse.
         :type: list[PlanoCampanhaResponse]

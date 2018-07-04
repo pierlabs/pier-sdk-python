@@ -68,7 +68,7 @@ class ArquivoParametroAUDResponse(object):
     def rev(self):
         """
         Gets the rev of this ArquivoParametroAUDResponse.
-        Identificador da auditoria arquivo
+        {{{arquivo_parametro_a_u_d_response_rev_value}}}
 
         :return: The rev of this ArquivoParametroAUDResponse.
         :rtype: int
@@ -79,7 +79,7 @@ class ArquivoParametroAUDResponse(object):
     def rev(self, rev):
         """
         Sets the rev of this ArquivoParametroAUDResponse.
-        Identificador da auditoria arquivo
+        {{{arquivo_parametro_a_u_d_response_rev_value}}}
 
         :param rev: The rev of this ArquivoParametroAUDResponse.
         :type: int
@@ -90,7 +90,7 @@ class ArquivoParametroAUDResponse(object):
     def rev_type(self):
         """
         Gets the rev_type of this ArquivoParametroAUDResponse.
-        Identificador do tipo de auditoria (0 - Criado, 1 - Alterado, 2 - Exclu\u00EDdo)
+        {{{arquivo_parametro_a_u_d_response_rev_type_value}}}
 
         :return: The rev_type of this ArquivoParametroAUDResponse.
         :rtype: int
@@ -101,7 +101,7 @@ class ArquivoParametroAUDResponse(object):
     def rev_type(self, rev_type):
         """
         Sets the rev_type of this ArquivoParametroAUDResponse.
-        Identificador do tipo de auditoria (0 - Criado, 1 - Alterado, 2 - Exclu\u00EDdo)
+        {{{arquivo_parametro_a_u_d_response_rev_type_value}}}
 
         :param rev_type: The rev_type of this ArquivoParametroAUDResponse.
         :type: int
@@ -112,7 +112,7 @@ class ArquivoParametroAUDResponse(object):
     def id(self):
         """
         Gets the id of this ArquivoParametroAUDResponse.
-        Identificador do par\u00E2metro
+        {{{arquivo_parametro_a_u_d_response_id_value}}}
 
         :return: The id of this ArquivoParametroAUDResponse.
         :rtype: str
@@ -123,7 +123,7 @@ class ArquivoParametroAUDResponse(object):
     def id(self, id):
         """
         Sets the id of this ArquivoParametroAUDResponse.
-        Identificador do par\u00E2metro
+        {{{arquivo_parametro_a_u_d_response_id_value}}}
 
         :param id: The id of this ArquivoParametroAUDResponse.
         :type: str
@@ -134,7 +134,7 @@ class ArquivoParametroAUDResponse(object):
     def parametro(self):
         """
         Gets the parametro of this ArquivoParametroAUDResponse.
-        Nome do par\u00E2metro
+        {{{arquivo_parametro_a_u_d_response_parametro_value}}}
 
         :return: The parametro of this ArquivoParametroAUDResponse.
         :rtype: str
@@ -145,7 +145,7 @@ class ArquivoParametroAUDResponse(object):
     def parametro(self, parametro):
         """
         Sets the parametro of this ArquivoParametroAUDResponse.
-        Nome do par\u00E2metro
+        {{{arquivo_parametro_a_u_d_response_parametro_value}}}
 
         :param parametro: The parametro of this ArquivoParametroAUDResponse.
         :type: str
@@ -156,7 +156,7 @@ class ArquivoParametroAUDResponse(object):
     def conteudo(self):
         """
         Gets the conteudo of this ArquivoParametroAUDResponse.
-        Conte\u00FAdo do par\u00E2metro
+        {{{arquivo_parametro_a_u_d_response_conteudo_value}}}
 
         :return: The conteudo of this ArquivoParametroAUDResponse.
         :rtype: str
@@ -167,7 +167,7 @@ class ArquivoParametroAUDResponse(object):
     def conteudo(self, conteudo):
         """
         Sets the conteudo of this ArquivoParametroAUDResponse.
-        Conte\u00FAdo do par\u00E2metro
+        {{{arquivo_parametro_a_u_d_response_conteudo_value}}}
 
         :param conteudo: The conteudo of this ArquivoParametroAUDResponse.
         :type: str
@@ -178,7 +178,7 @@ class ArquivoParametroAUDResponse(object):
     def data_hora_inclusao(self):
         """
         Gets the data_hora_inclusao of this ArquivoParametroAUDResponse.
-        Data de inclus\u00E3o do par\u00E2metro
+        {{{arquivo_parametro_a_u_d_response_data_hora_inclusao_value}}}
 
         :return: The data_hora_inclusao of this ArquivoParametroAUDResponse.
         :rtype: str
@@ -189,7 +189,7 @@ class ArquivoParametroAUDResponse(object):
     def data_hora_inclusao(self, data_hora_inclusao):
         """
         Sets the data_hora_inclusao of this ArquivoParametroAUDResponse.
-        Data de inclus\u00E3o do par\u00E2metro
+        {{{arquivo_parametro_a_u_d_response_data_hora_inclusao_value}}}
 
         :param data_hora_inclusao: The data_hora_inclusao of this ArquivoParametroAUDResponse.
         :type: str
@@ -200,7 +200,7 @@ class ArquivoParametroAUDResponse(object):
     def data_hora_alteracao(self):
         """
         Gets the data_hora_alteracao of this ArquivoParametroAUDResponse.
-        Data de altera\u00E7\u00E3o do par\u00E2metro
+        {{{arquivo_parametro_a_u_d_response_data_hora_alteracao_value}}}
 
         :return: The data_hora_alteracao of this ArquivoParametroAUDResponse.
         :rtype: str
@@ -211,7 +211,7 @@ class ArquivoParametroAUDResponse(object):
     def data_hora_alteracao(self, data_hora_alteracao):
         """
         Sets the data_hora_alteracao of this ArquivoParametroAUDResponse.
-        Data de altera\u00E7\u00E3o do par\u00E2metro
+        {{{arquivo_parametro_a_u_d_response_data_hora_alteracao_value}}}
 
         :param data_hora_alteracao: The data_hora_alteracao of this ArquivoParametroAUDResponse.
         :type: str

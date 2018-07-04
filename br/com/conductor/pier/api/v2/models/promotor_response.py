@@ -62,7 +62,7 @@ class PromotorResponse(object):
     def id(self):
         """
         Gets the id of this PromotorResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o do promotor (id)
+        {{{promotor_response_id_value}}}
 
         :return: The id of this PromotorResponse.
         :rtype: int
@@ -73,7 +73,7 @@ class PromotorResponse(object):
     def id(self, id):
         """
         Sets the id of this PromotorResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o do promotor (id)
+        {{{promotor_response_id_value}}}
 
         :param id: The id of this PromotorResponse.
         :type: int
@@ -84,7 +84,7 @@ class PromotorResponse(object):
     def nome(self):
         """
         Gets the nome of this PromotorResponse.
-        Nome do Promotor
+        {{{promotor_response_nome_value}}}
 
         :return: The nome of this PromotorResponse.
         :rtype: str
@@ -95,7 +95,7 @@ class PromotorResponse(object):
     def nome(self, nome):
         """
         Sets the nome of this PromotorResponse.
-        Nome do Promotor
+        {{{promotor_response_nome_value}}}
 
         :param nome: The nome of this PromotorResponse.
         :type: str
@@ -106,7 +106,7 @@ class PromotorResponse(object):
     def data_cadastro(self):
         """
         Gets the data_cadastro of this PromotorResponse.
-        Data da Inclus\u00E3o
+        {{{promotor_response_data_cadastro_value}}}
 
         :return: The data_cadastro of this PromotorResponse.
         :rtype: str
@@ -117,7 +117,7 @@ class PromotorResponse(object):
     def data_cadastro(self, data_cadastro):
         """
         Sets the data_cadastro of this PromotorResponse.
-        Data da Inclus\u00E3o
+        {{{promotor_response_data_cadastro_value}}}
 
         :param data_cadastro: The data_cadastro of this PromotorResponse.
         :type: str
@@ -128,7 +128,7 @@ class PromotorResponse(object):
     def id_estabelecimento(self):
         """
         Gets the id_estabelecimento of this PromotorResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o do Estabelecimento
+        {{{promotor_response_id_estabelecimento_value}}}
 
         :return: The id_estabelecimento of this PromotorResponse.
         :rtype: int
@@ -139,7 +139,7 @@ class PromotorResponse(object):
     def id_estabelecimento(self, id_estabelecimento):
         """
         Sets the id_estabelecimento of this PromotorResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o do Estabelecimento
+        {{{promotor_response_id_estabelecimento_value}}}
 
         :param id_estabelecimento: The id_estabelecimento of this PromotorResponse.
         :type: int
@@ -150,7 +150,7 @@ class PromotorResponse(object):
     def id_usuario(self):
         """
         Gets the id_usuario of this PromotorResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o do usu\u00E1rio
+        {{{promotor_response_id_usuario_value}}}
 
         :return: The id_usuario of this PromotorResponse.
         :rtype: int
@@ -161,7 +161,7 @@ class PromotorResponse(object):
     def id_usuario(self, id_usuario):
         """
         Sets the id_usuario of this PromotorResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o do usu\u00E1rio
+        {{{promotor_response_id_usuario_value}}}
 
         :param id_usuario: The id_usuario of this PromotorResponse.
         :type: int

@@ -68,7 +68,7 @@ class TransacaoOnUsResponse(object):
     def nsu_origem(self):
         """
         Gets the nsu_origem of this TransacaoOnUsResponse.
-        N\u00FAmero Sequencial \u00DAnico que identifica a transa\u00E7\u00E3o no sistema que a originou.
+        {{{transacao_on_us_response_nsu_origem_value}}}
 
         :return: The nsu_origem of this TransacaoOnUsResponse.
         :rtype: str
@@ -79,7 +79,7 @@ class TransacaoOnUsResponse(object):
     def nsu_origem(self, nsu_origem):
         """
         Sets the nsu_origem of this TransacaoOnUsResponse.
-        N\u00FAmero Sequencial \u00DAnico que identifica a transa\u00E7\u00E3o no sistema que a originou.
+        {{{transacao_on_us_response_nsu_origem_value}}}
 
         :param nsu_origem: The nsu_origem of this TransacaoOnUsResponse.
         :type: str
@@ -90,7 +90,7 @@ class TransacaoOnUsResponse(object):
     def nsu_autorizacao(self):
         """
         Gets the nsu_autorizacao of this TransacaoOnUsResponse.
-        N\u00FAmero Sequencial \u00DAnico gerado pelo Autorizador a cada Transa\u00E7\u00E3o.
+        {{{transacao_on_us_response_nsu_autorizacao_value}}}
 
         :return: The nsu_autorizacao of this TransacaoOnUsResponse.
         :rtype: str
@@ -101,7 +101,7 @@ class TransacaoOnUsResponse(object):
     def nsu_autorizacao(self, nsu_autorizacao):
         """
         Sets the nsu_autorizacao of this TransacaoOnUsResponse.
-        N\u00FAmero Sequencial \u00DAnico gerado pelo Autorizador a cada Transa\u00E7\u00E3o.
+        {{{transacao_on_us_response_nsu_autorizacao_value}}}
 
         :param nsu_autorizacao: The nsu_autorizacao of this TransacaoOnUsResponse.
         :type: str
@@ -112,7 +112,7 @@ class TransacaoOnUsResponse(object):
     def plano_de_parcelamento(self):
         """
         Gets the plano_de_parcelamento of this TransacaoOnUsResponse.
-        Descri\u00E7\u00E3o do Plano de Parcelamento atribu\u00EDdo a Transa\u00E7\u00E3o.
+        {{{transacao_on_us_response_plano_de_parcelamento_value}}}
 
         :return: The plano_de_parcelamento of this TransacaoOnUsResponse.
         :rtype: list[MapOfstringAndstring]
@@ -123,7 +123,7 @@ class TransacaoOnUsResponse(object):
     def plano_de_parcelamento(self, plano_de_parcelamento):
         """
         Sets the plano_de_parcelamento of this TransacaoOnUsResponse.
-        Descri\u00E7\u00E3o do Plano de Parcelamento atribu\u00EDdo a Transa\u00E7\u00E3o.
+        {{{transacao_on_us_response_plano_de_parcelamento_value}}}
 
         :param plano_de_parcelamento: The plano_de_parcelamento of this TransacaoOnUsResponse.
         :type: list[MapOfstringAndstring]
@@ -134,7 +134,7 @@ class TransacaoOnUsResponse(object):
     def codigo_autorizacao(self):
         """
         Gets the codigo_autorizacao of this TransacaoOnUsResponse.
-        C\u00F3digo de Autoriza\u00E7\u00E3o gerado pelo Autorizador.
+        {{{transacao_on_us_response_codigo_autorizacao_value}}}
 
         :return: The codigo_autorizacao of this TransacaoOnUsResponse.
         :rtype: str
@@ -145,7 +145,7 @@ class TransacaoOnUsResponse(object):
     def codigo_autorizacao(self, codigo_autorizacao):
         """
         Sets the codigo_autorizacao of this TransacaoOnUsResponse.
-        C\u00F3digo de Autoriza\u00E7\u00E3o gerado pelo Autorizador.
+        {{{transacao_on_us_response_codigo_autorizacao_value}}}
 
         :param codigo_autorizacao: The codigo_autorizacao of this TransacaoOnUsResponse.
         :type: str
@@ -156,7 +156,7 @@ class TransacaoOnUsResponse(object):
     def numero_mascarado_cartao(self):
         """
         Gets the numero_mascarado_cartao of this TransacaoOnUsResponse.
-        N\u00FAmero do Cart\u00E3o que originou a transa\u00E7\u00E3o em formato mascarado.
+        {{{transacao_on_us_response_numero_mascarado_cartao_value}}}
 
         :return: The numero_mascarado_cartao of this TransacaoOnUsResponse.
         :rtype: str
@@ -167,7 +167,7 @@ class TransacaoOnUsResponse(object):
     def numero_mascarado_cartao(self, numero_mascarado_cartao):
         """
         Sets the numero_mascarado_cartao of this TransacaoOnUsResponse.
-        N\u00FAmero do Cart\u00E3o que originou a transa\u00E7\u00E3o em formato mascarado.
+        {{{transacao_on_us_response_numero_mascarado_cartao_value}}}
 
         :param numero_mascarado_cartao: The numero_mascarado_cartao of this TransacaoOnUsResponse.
         :type: str
@@ -178,7 +178,7 @@ class TransacaoOnUsResponse(object):
     def nome_portador_cartao(self):
         """
         Gets the nome_portador_cartao of this TransacaoOnUsResponse.
-        Nome do Portador do Cart\u00E3o que originou a transa\u00E7\u00E3o.
+        {{{transacao_on_us_response_nome_portador_cartao_value}}}
 
         :return: The nome_portador_cartao of this TransacaoOnUsResponse.
         :rtype: str
@@ -189,7 +189,7 @@ class TransacaoOnUsResponse(object):
     def nome_portador_cartao(self, nome_portador_cartao):
         """
         Sets the nome_portador_cartao of this TransacaoOnUsResponse.
-        Nome do Portador do Cart\u00E3o que originou a transa\u00E7\u00E3o.
+        {{{transacao_on_us_response_nome_portador_cartao_value}}}
 
         :param nome_portador_cartao: The nome_portador_cartao of this TransacaoOnUsResponse.
         :type: str
@@ -200,7 +200,7 @@ class TransacaoOnUsResponse(object):
     def terminal_requisitante(self):
         """
         Gets the terminal_requisitante of this TransacaoOnUsResponse.
-        Apresenta a identifica\u00E7\u00E3o do terminal requisitante
+        {{{transacao_on_us_response_terminal_requisitante_value}}}
 
         :return: The terminal_requisitante of this TransacaoOnUsResponse.
         :rtype: str
@@ -211,7 +211,7 @@ class TransacaoOnUsResponse(object):
     def terminal_requisitante(self, terminal_requisitante):
         """
         Sets the terminal_requisitante of this TransacaoOnUsResponse.
-        Apresenta a identifica\u00E7\u00E3o do terminal requisitante
+        {{{transacao_on_us_response_terminal_requisitante_value}}}
 
         :param terminal_requisitante: The terminal_requisitante of this TransacaoOnUsResponse.
         :type: str

@@ -37,213 +37,122 @@ class TransacaoNaoProcessadaResponse(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'id_tipo_transacao_nao_processada': 'int',
-            'descricao_tipo_transacao_nao_processada': 'str',
-            'descricao_abreviada': 'str',
-            'id_conta': 'int',
             'cartao_mascarado': 'str',
-            'nome_portador': 'str',
-            'data_origem': 'str',
-            'data_faturamento': 'str',
-            'data_vencimento': 'str',
-            'modo_entrada_transacao': 'str',
-            'valor_taxa_embarque': 'float',
-            'valor_entrada': 'float',
-            'valor_brl': 'float',
-            'valor_usd': 'float',
-            'cotacao_usd': 'float',
-            'data_cotacao_usd': 'str',
-            'codigo_moeda_origem': 'str',
-            'codigo_moeda_destino': 'str',
             'codigo_autorizacao': 'str',
+            'codigo_mcc': 'int',
+            'codigo_moeda_destino': 'str',
+            'codigo_moeda_origem': 'str',
             'codigo_referencia': 'str',
             'codigo_terminal': 'str',
-            'codigo_mcc': 'int',
-            'grupo_mcc': 'int',
-            'grupo_descricao_mcc': 'str',
-            'id_estabelecimento': 'int',
-            'nome_estabelecimento': 'str',
-            'nome_fantasia_estabelecimento': 'str',
-            'localidade_estabelecimento': 'str',
-            'plano_parcelamento': 'int',
-            'numero_parcela': 'int',
+            'cotacao_usd': 'float',
+            'data_cotacao_usd': 'str',
+            'data_faturamento': 'str',
+            'data_origem': 'str',
+            'data_vencimento_real': 'str',
+            'descricao_abreviada': 'str',
+            'descricao_tipo_transacao_nao_processada': 'str',
             'detalhes_transacao': 'str',
             'flag_credito': 'int',
             'flag_faturado': 'int',
-            'flag_estorno': 'int',
+            'grupo_descricao_mcc': 'str',
+            'grupo_mcc': 'int',
+            'id_conta': 'int',
+            'id_estabelecimento': 'int',
+            'id_tipo_transacao_nao_processada': 'int',
             'id_transacao_estorno': 'int',
-            'status': 'int'
+            'localidade_estabelecimento': 'str',
+            'modo_entrada_transacao': 'str',
+            'nome_estabelecimento': 'str',
+            'nome_fantasia_estabelecimento': 'str',
+            'nome_portador': 'str',
+            'parcela': 'int',
+            'plano': 'int',
+            'status': 'int',
+            'taxa_embarque': 'float',
+            'valor_brl': 'float',
+            'valor_entrada': 'float',
+            'valor_usd': 'float'
         }
 
         self.attribute_map = {
-            'id_tipo_transacao_nao_processada': 'idTipoTransacaoNaoProcessada',
-            'descricao_tipo_transacao_nao_processada': 'descricaoTipoTransacaoNaoProcessada',
-            'descricao_abreviada': 'descricaoAbreviada',
-            'id_conta': 'idConta',
             'cartao_mascarado': 'cartaoMascarado',
-            'nome_portador': 'nomePortador',
-            'data_origem': 'dataOrigem',
-            'data_faturamento': 'dataFaturamento',
-            'data_vencimento': 'dataVencimento',
-            'modo_entrada_transacao': 'modoEntradaTransacao',
-            'valor_taxa_embarque': 'valorTaxaEmbarque',
-            'valor_entrada': 'valorEntrada',
-            'valor_brl': 'valorBRL',
-            'valor_usd': 'valorUSD',
-            'cotacao_usd': 'cotacaoUSD',
-            'data_cotacao_usd': 'dataCotacaoUSD',
-            'codigo_moeda_origem': 'codigoMoedaOrigem',
-            'codigo_moeda_destino': 'codigoMoedaDestino',
             'codigo_autorizacao': 'codigoAutorizacao',
+            'codigo_mcc': 'codigoMCC',
+            'codigo_moeda_destino': 'codigoMoedaDestino',
+            'codigo_moeda_origem': 'codigoMoedaOrigem',
             'codigo_referencia': 'codigoReferencia',
             'codigo_terminal': 'codigoTerminal',
-            'codigo_mcc': 'codigoMCC',
-            'grupo_mcc': 'grupoMCC',
-            'grupo_descricao_mcc': 'grupoDescricaoMCC',
-            'id_estabelecimento': 'idEstabelecimento',
-            'nome_estabelecimento': 'nomeEstabelecimento',
-            'nome_fantasia_estabelecimento': 'nomeFantasiaEstabelecimento',
-            'localidade_estabelecimento': 'localidadeEstabelecimento',
-            'plano_parcelamento': 'planoParcelamento',
-            'numero_parcela': 'numeroParcela',
+            'cotacao_usd': 'cotacaoUSD',
+            'data_cotacao_usd': 'dataCotacaoUSD',
+            'data_faturamento': 'dataFaturamento',
+            'data_origem': 'dataOrigem',
+            'data_vencimento_real': 'dataVencimentoReal',
+            'descricao_abreviada': 'descricaoAbreviada',
+            'descricao_tipo_transacao_nao_processada': 'descricaoTipoTransacaoNaoProcessada',
             'detalhes_transacao': 'detalhesTransacao',
             'flag_credito': 'flagCredito',
             'flag_faturado': 'flagFaturado',
-            'flag_estorno': 'flagEstorno',
+            'grupo_descricao_mcc': 'grupoDescricaoMCC',
+            'grupo_mcc': 'grupoMCC',
+            'id_conta': 'idConta',
+            'id_estabelecimento': 'idEstabelecimento',
+            'id_tipo_transacao_nao_processada': 'idTipoTransacaoNaoProcessada',
             'id_transacao_estorno': 'idTransacaoEstorno',
-            'status': 'status'
+            'localidade_estabelecimento': 'localidadeEstabelecimento',
+            'modo_entrada_transacao': 'modoEntradaTransacao',
+            'nome_estabelecimento': 'nomeEstabelecimento',
+            'nome_fantasia_estabelecimento': 'nomeFantasiaEstabelecimento',
+            'nome_portador': 'nomePortador',
+            'parcela': 'parcela',
+            'plano': 'plano',
+            'status': 'status',
+            'taxa_embarque': 'taxaEmbarque',
+            'valor_brl': 'valorBRL',
+            'valor_entrada': 'valorEntrada',
+            'valor_usd': 'valorUSD'
         }
 
-        self._id_tipo_transacao_nao_processada = None
-        self._descricao_tipo_transacao_nao_processada = None
-        self._descricao_abreviada = None
-        self._id_conta = None
         self._cartao_mascarado = None
-        self._nome_portador = None
-        self._data_origem = None
-        self._data_faturamento = None
-        self._data_vencimento = None
-        self._modo_entrada_transacao = None
-        self._valor_taxa_embarque = None
-        self._valor_entrada = None
-        self._valor_brl = None
-        self._valor_usd = None
-        self._cotacao_usd = None
-        self._data_cotacao_usd = None
-        self._codigo_moeda_origem = None
-        self._codigo_moeda_destino = None
         self._codigo_autorizacao = None
+        self._codigo_mcc = None
+        self._codigo_moeda_destino = None
+        self._codigo_moeda_origem = None
         self._codigo_referencia = None
         self._codigo_terminal = None
-        self._codigo_mcc = None
-        self._grupo_mcc = None
-        self._grupo_descricao_mcc = None
-        self._id_estabelecimento = None
-        self._nome_estabelecimento = None
-        self._nome_fantasia_estabelecimento = None
-        self._localidade_estabelecimento = None
-        self._plano_parcelamento = None
-        self._numero_parcela = None
+        self._cotacao_usd = None
+        self._data_cotacao_usd = None
+        self._data_faturamento = None
+        self._data_origem = None
+        self._data_vencimento_real = None
+        self._descricao_abreviada = None
+        self._descricao_tipo_transacao_nao_processada = None
         self._detalhes_transacao = None
         self._flag_credito = None
         self._flag_faturado = None
-        self._flag_estorno = None
+        self._grupo_descricao_mcc = None
+        self._grupo_mcc = None
+        self._id_conta = None
+        self._id_estabelecimento = None
+        self._id_tipo_transacao_nao_processada = None
         self._id_transacao_estorno = None
+        self._localidade_estabelecimento = None
+        self._modo_entrada_transacao = None
+        self._nome_estabelecimento = None
+        self._nome_fantasia_estabelecimento = None
+        self._nome_portador = None
+        self._parcela = None
+        self._plano = None
         self._status = None
-
-    @property
-    def id_tipo_transacao_nao_processada(self):
-        """
-        Gets the id_tipo_transacao_nao_processada of this TransacaoNaoProcessadaResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o do Tipo da Transa\u00E7\u00E3o.
-
-        :return: The id_tipo_transacao_nao_processada of this TransacaoNaoProcessadaResponse.
-        :rtype: int
-        """
-        return self._id_tipo_transacao_nao_processada
-
-    @id_tipo_transacao_nao_processada.setter
-    def id_tipo_transacao_nao_processada(self, id_tipo_transacao_nao_processada):
-        """
-        Sets the id_tipo_transacao_nao_processada of this TransacaoNaoProcessadaResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o do Tipo da Transa\u00E7\u00E3o.
-
-        :param id_tipo_transacao_nao_processada: The id_tipo_transacao_nao_processada of this TransacaoNaoProcessadaResponse.
-        :type: int
-        """
-        self._id_tipo_transacao_nao_processada = id_tipo_transacao_nao_processada
-
-    @property
-    def descricao_tipo_transacao_nao_processada(self):
-        """
-        Gets the descricao_tipo_transacao_nao_processada of this TransacaoNaoProcessadaResponse.
-        Descri\u00E7\u00E3o do Tipo da Transa\u00E7\u00E3o n\u00E3o Processada.
-
-        :return: The descricao_tipo_transacao_nao_processada of this TransacaoNaoProcessadaResponse.
-        :rtype: str
-        """
-        return self._descricao_tipo_transacao_nao_processada
-
-    @descricao_tipo_transacao_nao_processada.setter
-    def descricao_tipo_transacao_nao_processada(self, descricao_tipo_transacao_nao_processada):
-        """
-        Sets the descricao_tipo_transacao_nao_processada of this TransacaoNaoProcessadaResponse.
-        Descri\u00E7\u00E3o do Tipo da Transa\u00E7\u00E3o n\u00E3o Processada.
-
-        :param descricao_tipo_transacao_nao_processada: The descricao_tipo_transacao_nao_processada of this TransacaoNaoProcessadaResponse.
-        :type: str
-        """
-        self._descricao_tipo_transacao_nao_processada = descricao_tipo_transacao_nao_processada
-
-    @property
-    def descricao_abreviada(self):
-        """
-        Gets the descricao_abreviada of this TransacaoNaoProcessadaResponse.
-        Descri\u00E7\u00E3o Abreviada da Transa\u00E7\u00E3o.
-
-        :return: The descricao_abreviada of this TransacaoNaoProcessadaResponse.
-        :rtype: str
-        """
-        return self._descricao_abreviada
-
-    @descricao_abreviada.setter
-    def descricao_abreviada(self, descricao_abreviada):
-        """
-        Sets the descricao_abreviada of this TransacaoNaoProcessadaResponse.
-        Descri\u00E7\u00E3o Abreviada da Transa\u00E7\u00E3o.
-
-        :param descricao_abreviada: The descricao_abreviada of this TransacaoNaoProcessadaResponse.
-        :type: str
-        """
-        self._descricao_abreviada = descricao_abreviada
-
-    @property
-    def id_conta(self):
-        """
-        Gets the id_conta of this TransacaoNaoProcessadaResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o da Conta (id).
-
-        :return: The id_conta of this TransacaoNaoProcessadaResponse.
-        :rtype: int
-        """
-        return self._id_conta
-
-    @id_conta.setter
-    def id_conta(self, id_conta):
-        """
-        Sets the id_conta of this TransacaoNaoProcessadaResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o da Conta (id).
-
-        :param id_conta: The id_conta of this TransacaoNaoProcessadaResponse.
-        :type: int
-        """
-        self._id_conta = id_conta
+        self._taxa_embarque = None
+        self._valor_brl = None
+        self._valor_entrada = None
+        self._valor_usd = None
 
     @property
     def cartao_mascarado(self):
         """
         Gets the cartao_mascarado of this TransacaoNaoProcessadaResponse.
-        N\u00FAmero do Cart\u00E3o em Formato 0000XXXXXXXX0000.
+        {{{transacao_nao_processada_response_cartao_mascarado_value}}}
 
         :return: The cartao_mascarado of this TransacaoNaoProcessadaResponse.
         :rtype: str
@@ -254,7 +163,7 @@ class TransacaoNaoProcessadaResponse(object):
     def cartao_mascarado(self, cartao_mascarado):
         """
         Sets the cartao_mascarado of this TransacaoNaoProcessadaResponse.
-        N\u00FAmero do Cart\u00E3o em Formato 0000XXXXXXXX0000.
+        {{{transacao_nao_processada_response_cartao_mascarado_value}}}
 
         :param cartao_mascarado: The cartao_mascarado of this TransacaoNaoProcessadaResponse.
         :type: str
@@ -262,296 +171,10 @@ class TransacaoNaoProcessadaResponse(object):
         self._cartao_mascarado = cartao_mascarado
 
     @property
-    def nome_portador(self):
-        """
-        Gets the nome_portador of this TransacaoNaoProcessadaResponse.
-        Nome completo do Portador do Cart\u00E3o.
-
-        :return: The nome_portador of this TransacaoNaoProcessadaResponse.
-        :rtype: str
-        """
-        return self._nome_portador
-
-    @nome_portador.setter
-    def nome_portador(self, nome_portador):
-        """
-        Sets the nome_portador of this TransacaoNaoProcessadaResponse.
-        Nome completo do Portador do Cart\u00E3o.
-
-        :param nome_portador: The nome_portador of this TransacaoNaoProcessadaResponse.
-        :type: str
-        """
-        self._nome_portador = nome_portador
-
-    @property
-    def data_origem(self):
-        """
-        Gets the data_origem of this TransacaoNaoProcessadaResponse.
-        Data em que a Transa\u00E7\u00E3o foi realizada.
-
-        :return: The data_origem of this TransacaoNaoProcessadaResponse.
-        :rtype: str
-        """
-        return self._data_origem
-
-    @data_origem.setter
-    def data_origem(self, data_origem):
-        """
-        Sets the data_origem of this TransacaoNaoProcessadaResponse.
-        Data em que a Transa\u00E7\u00E3o foi realizada.
-
-        :param data_origem: The data_origem of this TransacaoNaoProcessadaResponse.
-        :type: str
-        """
-        self._data_origem = data_origem
-
-    @property
-    def data_faturamento(self):
-        """
-        Gets the data_faturamento of this TransacaoNaoProcessadaResponse.
-        Data de Faturamento da Transa\u00E7\u00E3o.
-
-        :return: The data_faturamento of this TransacaoNaoProcessadaResponse.
-        :rtype: str
-        """
-        return self._data_faturamento
-
-    @data_faturamento.setter
-    def data_faturamento(self, data_faturamento):
-        """
-        Sets the data_faturamento of this TransacaoNaoProcessadaResponse.
-        Data de Faturamento da Transa\u00E7\u00E3o.
-
-        :param data_faturamento: The data_faturamento of this TransacaoNaoProcessadaResponse.
-        :type: str
-        """
-        self._data_faturamento = data_faturamento
-
-    @property
-    def data_vencimento(self):
-        """
-        Gets the data_vencimento of this TransacaoNaoProcessadaResponse.
-        Data de Vencimento da Fatura.
-
-        :return: The data_vencimento of this TransacaoNaoProcessadaResponse.
-        :rtype: str
-        """
-        return self._data_vencimento
-
-    @data_vencimento.setter
-    def data_vencimento(self, data_vencimento):
-        """
-        Sets the data_vencimento of this TransacaoNaoProcessadaResponse.
-        Data de Vencimento da Fatura.
-
-        :param data_vencimento: The data_vencimento of this TransacaoNaoProcessadaResponse.
-        :type: str
-        """
-        self._data_vencimento = data_vencimento
-
-    @property
-    def modo_entrada_transacao(self):
-        """
-        Gets the modo_entrada_transacao of this TransacaoNaoProcessadaResponse.
-        Descreve o modo utilizado para realizar a leitura dos dados do cart\u00E3o para realizar a Transa\u00E7\u00E3o.
-
-        :return: The modo_entrada_transacao of this TransacaoNaoProcessadaResponse.
-        :rtype: str
-        """
-        return self._modo_entrada_transacao
-
-    @modo_entrada_transacao.setter
-    def modo_entrada_transacao(self, modo_entrada_transacao):
-        """
-        Sets the modo_entrada_transacao of this TransacaoNaoProcessadaResponse.
-        Descreve o modo utilizado para realizar a leitura dos dados do cart\u00E3o para realizar a Transa\u00E7\u00E3o.
-
-        :param modo_entrada_transacao: The modo_entrada_transacao of this TransacaoNaoProcessadaResponse.
-        :type: str
-        """
-        self._modo_entrada_transacao = modo_entrada_transacao
-
-    @property
-    def valor_taxa_embarque(self):
-        """
-        Gets the valor_taxa_embarque of this TransacaoNaoProcessadaResponse.
-        Valor da Taxa de Embarque em Real (BRL) quando a transa\u00E7\u00E3o for relacionada a Compra de Passagens A\u00E9reas.
-
-        :return: The valor_taxa_embarque of this TransacaoNaoProcessadaResponse.
-        :rtype: float
-        """
-        return self._valor_taxa_embarque
-
-    @valor_taxa_embarque.setter
-    def valor_taxa_embarque(self, valor_taxa_embarque):
-        """
-        Sets the valor_taxa_embarque of this TransacaoNaoProcessadaResponse.
-        Valor da Taxa de Embarque em Real (BRL) quando a transa\u00E7\u00E3o for relacionada a Compra de Passagens A\u00E9reas.
-
-        :param valor_taxa_embarque: The valor_taxa_embarque of this TransacaoNaoProcessadaResponse.
-        :type: float
-        """
-        self._valor_taxa_embarque = valor_taxa_embarque
-
-    @property
-    def valor_entrada(self):
-        """
-        Gets the valor_entrada of this TransacaoNaoProcessadaResponse.
-        Valor da Entrada em Real (BRL) quando a transa\u00E7\u00E3o for do tipo Parcelada com o pagamento de um valor de Entrada.
-
-        :return: The valor_entrada of this TransacaoNaoProcessadaResponse.
-        :rtype: float
-        """
-        return self._valor_entrada
-
-    @valor_entrada.setter
-    def valor_entrada(self, valor_entrada):
-        """
-        Sets the valor_entrada of this TransacaoNaoProcessadaResponse.
-        Valor da Entrada em Real (BRL) quando a transa\u00E7\u00E3o for do tipo Parcelada com o pagamento de um valor de Entrada.
-
-        :param valor_entrada: The valor_entrada of this TransacaoNaoProcessadaResponse.
-        :type: float
-        """
-        self._valor_entrada = valor_entrada
-
-    @property
-    def valor_brl(self):
-        """
-        Gets the valor_brl of this TransacaoNaoProcessadaResponse.
-        Valor da Transa\u00E7\u00E3o em Real (BRL).
-
-        :return: The valor_brl of this TransacaoNaoProcessadaResponse.
-        :rtype: float
-        """
-        return self._valor_brl
-
-    @valor_brl.setter
-    def valor_brl(self, valor_brl):
-        """
-        Sets the valor_brl of this TransacaoNaoProcessadaResponse.
-        Valor da Transa\u00E7\u00E3o em Real (BRL).
-
-        :param valor_brl: The valor_brl of this TransacaoNaoProcessadaResponse.
-        :type: float
-        """
-        self._valor_brl = valor_brl
-
-    @property
-    def valor_usd(self):
-        """
-        Gets the valor_usd of this TransacaoNaoProcessadaResponse.
-        Valor da Transa\u00E7\u00E3o em D\u00F3lar Americano (USD).
-
-        :return: The valor_usd of this TransacaoNaoProcessadaResponse.
-        :rtype: float
-        """
-        return self._valor_usd
-
-    @valor_usd.setter
-    def valor_usd(self, valor_usd):
-        """
-        Sets the valor_usd of this TransacaoNaoProcessadaResponse.
-        Valor da Transa\u00E7\u00E3o em D\u00F3lar Americano (USD).
-
-        :param valor_usd: The valor_usd of this TransacaoNaoProcessadaResponse.
-        :type: float
-        """
-        self._valor_usd = valor_usd
-
-    @property
-    def cotacao_usd(self):
-        """
-        Gets the cotacao_usd of this TransacaoNaoProcessadaResponse.
-        Valor do D\u00F3lar Americano (USD) convertido em Real (BRL).
-
-        :return: The cotacao_usd of this TransacaoNaoProcessadaResponse.
-        :rtype: float
-        """
-        return self._cotacao_usd
-
-    @cotacao_usd.setter
-    def cotacao_usd(self, cotacao_usd):
-        """
-        Sets the cotacao_usd of this TransacaoNaoProcessadaResponse.
-        Valor do D\u00F3lar Americano (USD) convertido em Real (BRL).
-
-        :param cotacao_usd: The cotacao_usd of this TransacaoNaoProcessadaResponse.
-        :type: float
-        """
-        self._cotacao_usd = cotacao_usd
-
-    @property
-    def data_cotacao_usd(self):
-        """
-        Gets the data_cotacao_usd of this TransacaoNaoProcessadaResponse.
-        Data de Fechamento da Cota\u00E7\u00E3o do D\u00F3lar Americano (USD).
-
-        :return: The data_cotacao_usd of this TransacaoNaoProcessadaResponse.
-        :rtype: str
-        """
-        return self._data_cotacao_usd
-
-    @data_cotacao_usd.setter
-    def data_cotacao_usd(self, data_cotacao_usd):
-        """
-        Sets the data_cotacao_usd of this TransacaoNaoProcessadaResponse.
-        Data de Fechamento da Cota\u00E7\u00E3o do D\u00F3lar Americano (USD).
-
-        :param data_cotacao_usd: The data_cotacao_usd of this TransacaoNaoProcessadaResponse.
-        :type: str
-        """
-        self._data_cotacao_usd = data_cotacao_usd
-
-    @property
-    def codigo_moeda_origem(self):
-        """
-        Gets the codigo_moeda_origem of this TransacaoNaoProcessadaResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o da Moeda utilizada na Transa\u00E7\u00E3o, seguindo padr\u00E3o ISO 4217.
-
-        :return: The codigo_moeda_origem of this TransacaoNaoProcessadaResponse.
-        :rtype: str
-        """
-        return self._codigo_moeda_origem
-
-    @codigo_moeda_origem.setter
-    def codigo_moeda_origem(self, codigo_moeda_origem):
-        """
-        Sets the codigo_moeda_origem of this TransacaoNaoProcessadaResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o da Moeda utilizada na Transa\u00E7\u00E3o, seguindo padr\u00E3o ISO 4217.
-
-        :param codigo_moeda_origem: The codigo_moeda_origem of this TransacaoNaoProcessadaResponse.
-        :type: str
-        """
-        self._codigo_moeda_origem = codigo_moeda_origem
-
-    @property
-    def codigo_moeda_destino(self):
-        """
-        Gets the codigo_moeda_destino of this TransacaoNaoProcessadaResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o da Moeda da Transa\u00E7\u00E3o ap\u00F3s a convers\u00E3o, seguindo padr\u00E3o ISO 4217.
-
-        :return: The codigo_moeda_destino of this TransacaoNaoProcessadaResponse.
-        :rtype: str
-        """
-        return self._codigo_moeda_destino
-
-    @codigo_moeda_destino.setter
-    def codigo_moeda_destino(self, codigo_moeda_destino):
-        """
-        Sets the codigo_moeda_destino of this TransacaoNaoProcessadaResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o da Moeda da Transa\u00E7\u00E3o ap\u00F3s a convers\u00E3o, seguindo padr\u00E3o ISO 4217.
-
-        :param codigo_moeda_destino: The codigo_moeda_destino of this TransacaoNaoProcessadaResponse.
-        :type: str
-        """
-        self._codigo_moeda_destino = codigo_moeda_destino
-
-    @property
     def codigo_autorizacao(self):
         """
         Gets the codigo_autorizacao of this TransacaoNaoProcessadaResponse.
-        C\u00F3digo de Autoriza\u00E7\u00E3o da Transa\u00E7\u00E3o.
+        {{{transacao_nao_processada_response_codigo_autorizacao_value}}}
 
         :return: The codigo_autorizacao of this TransacaoNaoProcessadaResponse.
         :rtype: str
@@ -562,7 +185,7 @@ class TransacaoNaoProcessadaResponse(object):
     def codigo_autorizacao(self, codigo_autorizacao):
         """
         Sets the codigo_autorizacao of this TransacaoNaoProcessadaResponse.
-        C\u00F3digo de Autoriza\u00E7\u00E3o da Transa\u00E7\u00E3o.
+        {{{transacao_nao_processada_response_codigo_autorizacao_value}}}
 
         :param codigo_autorizacao: The codigo_autorizacao of this TransacaoNaoProcessadaResponse.
         :type: str
@@ -570,54 +193,10 @@ class TransacaoNaoProcessadaResponse(object):
         self._codigo_autorizacao = codigo_autorizacao
 
     @property
-    def codigo_referencia(self):
-        """
-        Gets the codigo_referencia of this TransacaoNaoProcessadaResponse.
-        C\u00F3digo de Refer\u00EAncia da Transa\u00E7\u00E3o quando utilizado Cart\u00E3o Bandeirado.
-
-        :return: The codigo_referencia of this TransacaoNaoProcessadaResponse.
-        :rtype: str
-        """
-        return self._codigo_referencia
-
-    @codigo_referencia.setter
-    def codigo_referencia(self, codigo_referencia):
-        """
-        Sets the codigo_referencia of this TransacaoNaoProcessadaResponse.
-        C\u00F3digo de Refer\u00EAncia da Transa\u00E7\u00E3o quando utilizado Cart\u00E3o Bandeirado.
-
-        :param codigo_referencia: The codigo_referencia of this TransacaoNaoProcessadaResponse.
-        :type: str
-        """
-        self._codigo_referencia = codigo_referencia
-
-    @property
-    def codigo_terminal(self):
-        """
-        Gets the codigo_terminal of this TransacaoNaoProcessadaResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o da origem da captura da Transa\u00E7\u00E3o.
-
-        :return: The codigo_terminal of this TransacaoNaoProcessadaResponse.
-        :rtype: str
-        """
-        return self._codigo_terminal
-
-    @codigo_terminal.setter
-    def codigo_terminal(self, codigo_terminal):
-        """
-        Sets the codigo_terminal of this TransacaoNaoProcessadaResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o da origem da captura da Transa\u00E7\u00E3o.
-
-        :param codigo_terminal: The codigo_terminal of this TransacaoNaoProcessadaResponse.
-        :type: str
-        """
-        self._codigo_terminal = codigo_terminal
-
-    @property
     def codigo_mcc(self):
         """
         Gets the codigo_mcc of this TransacaoNaoProcessadaResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o da categoria do Estabelecimento.
+        {{{transacao_nao_processada_response_codigo_mcc_value}}}
 
         :return: The codigo_mcc of this TransacaoNaoProcessadaResponse.
         :rtype: int
@@ -628,7 +207,7 @@ class TransacaoNaoProcessadaResponse(object):
     def codigo_mcc(self, codigo_mcc):
         """
         Sets the codigo_mcc of this TransacaoNaoProcessadaResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o da categoria do Estabelecimento.
+        {{{transacao_nao_processada_response_codigo_mcc_value}}}
 
         :param codigo_mcc: The codigo_mcc of this TransacaoNaoProcessadaResponse.
         :type: int
@@ -636,186 +215,252 @@ class TransacaoNaoProcessadaResponse(object):
         self._codigo_mcc = codigo_mcc
 
     @property
-    def grupo_mcc(self):
+    def codigo_moeda_destino(self):
         """
-        Gets the grupo_mcc of this TransacaoNaoProcessadaResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o do grupo do Estabelecimento.
+        Gets the codigo_moeda_destino of this TransacaoNaoProcessadaResponse.
+        {{{transacao_nao_processada_response_codigo_moeda_destino_value}}}
 
-        :return: The grupo_mcc of this TransacaoNaoProcessadaResponse.
-        :rtype: int
-        """
-        return self._grupo_mcc
-
-    @grupo_mcc.setter
-    def grupo_mcc(self, grupo_mcc):
-        """
-        Sets the grupo_mcc of this TransacaoNaoProcessadaResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o do grupo do Estabelecimento.
-
-        :param grupo_mcc: The grupo_mcc of this TransacaoNaoProcessadaResponse.
-        :type: int
-        """
-        self._grupo_mcc = grupo_mcc
-
-    @property
-    def grupo_descricao_mcc(self):
-        """
-        Gets the grupo_descricao_mcc of this TransacaoNaoProcessadaResponse.
-        Descri\u00E7\u00E3o do grupo do Estabelecimento.
-
-        :return: The grupo_descricao_mcc of this TransacaoNaoProcessadaResponse.
+        :return: The codigo_moeda_destino of this TransacaoNaoProcessadaResponse.
         :rtype: str
         """
-        return self._grupo_descricao_mcc
+        return self._codigo_moeda_destino
 
-    @grupo_descricao_mcc.setter
-    def grupo_descricao_mcc(self, grupo_descricao_mcc):
+    @codigo_moeda_destino.setter
+    def codigo_moeda_destino(self, codigo_moeda_destino):
         """
-        Sets the grupo_descricao_mcc of this TransacaoNaoProcessadaResponse.
-        Descri\u00E7\u00E3o do grupo do Estabelecimento.
+        Sets the codigo_moeda_destino of this TransacaoNaoProcessadaResponse.
+        {{{transacao_nao_processada_response_codigo_moeda_destino_value}}}
 
-        :param grupo_descricao_mcc: The grupo_descricao_mcc of this TransacaoNaoProcessadaResponse.
+        :param codigo_moeda_destino: The codigo_moeda_destino of this TransacaoNaoProcessadaResponse.
         :type: str
         """
-        self._grupo_descricao_mcc = grupo_descricao_mcc
+        self._codigo_moeda_destino = codigo_moeda_destino
 
     @property
-    def id_estabelecimento(self):
+    def codigo_moeda_origem(self):
         """
-        Gets the id_estabelecimento of this TransacaoNaoProcessadaResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o do Estabelecimento (id).
+        Gets the codigo_moeda_origem of this TransacaoNaoProcessadaResponse.
+        {{{transacao_nao_processada_response_codigo_moeda_origem_value}}}
 
-        :return: The id_estabelecimento of this TransacaoNaoProcessadaResponse.
-        :rtype: int
-        """
-        return self._id_estabelecimento
-
-    @id_estabelecimento.setter
-    def id_estabelecimento(self, id_estabelecimento):
-        """
-        Sets the id_estabelecimento of this TransacaoNaoProcessadaResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o do Estabelecimento (id).
-
-        :param id_estabelecimento: The id_estabelecimento of this TransacaoNaoProcessadaResponse.
-        :type: int
-        """
-        self._id_estabelecimento = id_estabelecimento
-
-    @property
-    def nome_estabelecimento(self):
-        """
-        Gets the nome_estabelecimento of this TransacaoNaoProcessadaResponse.
-        Nome do Estabelecimento.
-
-        :return: The nome_estabelecimento of this TransacaoNaoProcessadaResponse.
+        :return: The codigo_moeda_origem of this TransacaoNaoProcessadaResponse.
         :rtype: str
         """
-        return self._nome_estabelecimento
+        return self._codigo_moeda_origem
 
-    @nome_estabelecimento.setter
-    def nome_estabelecimento(self, nome_estabelecimento):
+    @codigo_moeda_origem.setter
+    def codigo_moeda_origem(self, codigo_moeda_origem):
         """
-        Sets the nome_estabelecimento of this TransacaoNaoProcessadaResponse.
-        Nome do Estabelecimento.
+        Sets the codigo_moeda_origem of this TransacaoNaoProcessadaResponse.
+        {{{transacao_nao_processada_response_codigo_moeda_origem_value}}}
 
-        :param nome_estabelecimento: The nome_estabelecimento of this TransacaoNaoProcessadaResponse.
+        :param codigo_moeda_origem: The codigo_moeda_origem of this TransacaoNaoProcessadaResponse.
         :type: str
         """
-        self._nome_estabelecimento = nome_estabelecimento
+        self._codigo_moeda_origem = codigo_moeda_origem
 
     @property
-    def nome_fantasia_estabelecimento(self):
+    def codigo_referencia(self):
         """
-        Gets the nome_fantasia_estabelecimento of this TransacaoNaoProcessadaResponse.
-        Nome Fantasia do Estabelecimento.
+        Gets the codigo_referencia of this TransacaoNaoProcessadaResponse.
+        {{{transacao_nao_processada_response_codigo_referencia_value}}}
 
-        :return: The nome_fantasia_estabelecimento of this TransacaoNaoProcessadaResponse.
+        :return: The codigo_referencia of this TransacaoNaoProcessadaResponse.
         :rtype: str
         """
-        return self._nome_fantasia_estabelecimento
+        return self._codigo_referencia
 
-    @nome_fantasia_estabelecimento.setter
-    def nome_fantasia_estabelecimento(self, nome_fantasia_estabelecimento):
+    @codigo_referencia.setter
+    def codigo_referencia(self, codigo_referencia):
         """
-        Sets the nome_fantasia_estabelecimento of this TransacaoNaoProcessadaResponse.
-        Nome Fantasia do Estabelecimento.
+        Sets the codigo_referencia of this TransacaoNaoProcessadaResponse.
+        {{{transacao_nao_processada_response_codigo_referencia_value}}}
 
-        :param nome_fantasia_estabelecimento: The nome_fantasia_estabelecimento of this TransacaoNaoProcessadaResponse.
+        :param codigo_referencia: The codigo_referencia of this TransacaoNaoProcessadaResponse.
         :type: str
         """
-        self._nome_fantasia_estabelecimento = nome_fantasia_estabelecimento
+        self._codigo_referencia = codigo_referencia
 
     @property
-    def localidade_estabelecimento(self):
+    def codigo_terminal(self):
         """
-        Gets the localidade_estabelecimento of this TransacaoNaoProcessadaResponse.
-        Localidade do Estabelecimento.
+        Gets the codigo_terminal of this TransacaoNaoProcessadaResponse.
+        {{{transacao_nao_processada_response_codigo_terminal_value}}}
 
-        :return: The localidade_estabelecimento of this TransacaoNaoProcessadaResponse.
+        :return: The codigo_terminal of this TransacaoNaoProcessadaResponse.
         :rtype: str
         """
-        return self._localidade_estabelecimento
+        return self._codigo_terminal
 
-    @localidade_estabelecimento.setter
-    def localidade_estabelecimento(self, localidade_estabelecimento):
+    @codigo_terminal.setter
+    def codigo_terminal(self, codigo_terminal):
         """
-        Sets the localidade_estabelecimento of this TransacaoNaoProcessadaResponse.
-        Localidade do Estabelecimento.
+        Sets the codigo_terminal of this TransacaoNaoProcessadaResponse.
+        {{{transacao_nao_processada_response_codigo_terminal_value}}}
 
-        :param localidade_estabelecimento: The localidade_estabelecimento of this TransacaoNaoProcessadaResponse.
+        :param codigo_terminal: The codigo_terminal of this TransacaoNaoProcessadaResponse.
         :type: str
         """
-        self._localidade_estabelecimento = localidade_estabelecimento
+        self._codigo_terminal = codigo_terminal
 
     @property
-    def plano_parcelamento(self):
+    def cotacao_usd(self):
         """
-        Gets the plano_parcelamento of this TransacaoNaoProcessadaResponse.
-        Quando a Transa\u00E7\u00E3o for do tipo Parcelada, apresenta o n\u00FAmero total de Parcelas.
+        Gets the cotacao_usd of this TransacaoNaoProcessadaResponse.
+        {{{transacao_nao_processada_response_cotacao_usd_value}}}
 
-        :return: The plano_parcelamento of this TransacaoNaoProcessadaResponse.
-        :rtype: int
+        :return: The cotacao_usd of this TransacaoNaoProcessadaResponse.
+        :rtype: float
         """
-        return self._plano_parcelamento
+        return self._cotacao_usd
 
-    @plano_parcelamento.setter
-    def plano_parcelamento(self, plano_parcelamento):
+    @cotacao_usd.setter
+    def cotacao_usd(self, cotacao_usd):
         """
-        Sets the plano_parcelamento of this TransacaoNaoProcessadaResponse.
-        Quando a Transa\u00E7\u00E3o for do tipo Parcelada, apresenta o n\u00FAmero total de Parcelas.
+        Sets the cotacao_usd of this TransacaoNaoProcessadaResponse.
+        {{{transacao_nao_processada_response_cotacao_usd_value}}}
 
-        :param plano_parcelamento: The plano_parcelamento of this TransacaoNaoProcessadaResponse.
-        :type: int
+        :param cotacao_usd: The cotacao_usd of this TransacaoNaoProcessadaResponse.
+        :type: float
         """
-        self._plano_parcelamento = plano_parcelamento
+        self._cotacao_usd = cotacao_usd
 
     @property
-    def numero_parcela(self):
+    def data_cotacao_usd(self):
         """
-        Gets the numero_parcela of this TransacaoNaoProcessadaResponse.
-        Quando a Transa\u00E7\u00E3o for do tipo Parcelada, apresenta o n\u00FAmero da Parcela.
+        Gets the data_cotacao_usd of this TransacaoNaoProcessadaResponse.
+        {{{transacao_nao_processada_response_data_cotacao_usd_value}}}
 
-        :return: The numero_parcela of this TransacaoNaoProcessadaResponse.
-        :rtype: int
+        :return: The data_cotacao_usd of this TransacaoNaoProcessadaResponse.
+        :rtype: str
         """
-        return self._numero_parcela
+        return self._data_cotacao_usd
 
-    @numero_parcela.setter
-    def numero_parcela(self, numero_parcela):
+    @data_cotacao_usd.setter
+    def data_cotacao_usd(self, data_cotacao_usd):
         """
-        Sets the numero_parcela of this TransacaoNaoProcessadaResponse.
-        Quando a Transa\u00E7\u00E3o for do tipo Parcelada, apresenta o n\u00FAmero da Parcela.
+        Sets the data_cotacao_usd of this TransacaoNaoProcessadaResponse.
+        {{{transacao_nao_processada_response_data_cotacao_usd_value}}}
 
-        :param numero_parcela: The numero_parcela of this TransacaoNaoProcessadaResponse.
-        :type: int
+        :param data_cotacao_usd: The data_cotacao_usd of this TransacaoNaoProcessadaResponse.
+        :type: str
         """
-        self._numero_parcela = numero_parcela
+        self._data_cotacao_usd = data_cotacao_usd
+
+    @property
+    def data_faturamento(self):
+        """
+        Gets the data_faturamento of this TransacaoNaoProcessadaResponse.
+        {{{transacao_nao_processada_response_data_faturamento_value}}}
+
+        :return: The data_faturamento of this TransacaoNaoProcessadaResponse.
+        :rtype: str
+        """
+        return self._data_faturamento
+
+    @data_faturamento.setter
+    def data_faturamento(self, data_faturamento):
+        """
+        Sets the data_faturamento of this TransacaoNaoProcessadaResponse.
+        {{{transacao_nao_processada_response_data_faturamento_value}}}
+
+        :param data_faturamento: The data_faturamento of this TransacaoNaoProcessadaResponse.
+        :type: str
+        """
+        self._data_faturamento = data_faturamento
+
+    @property
+    def data_origem(self):
+        """
+        Gets the data_origem of this TransacaoNaoProcessadaResponse.
+        {{{transacao_nao_processada_response_data_origem_value}}}
+
+        :return: The data_origem of this TransacaoNaoProcessadaResponse.
+        :rtype: str
+        """
+        return self._data_origem
+
+    @data_origem.setter
+    def data_origem(self, data_origem):
+        """
+        Sets the data_origem of this TransacaoNaoProcessadaResponse.
+        {{{transacao_nao_processada_response_data_origem_value}}}
+
+        :param data_origem: The data_origem of this TransacaoNaoProcessadaResponse.
+        :type: str
+        """
+        self._data_origem = data_origem
+
+    @property
+    def data_vencimento_real(self):
+        """
+        Gets the data_vencimento_real of this TransacaoNaoProcessadaResponse.
+        {{{transacao_nao_processada_response_data_vencimento_value}}}
+
+        :return: The data_vencimento_real of this TransacaoNaoProcessadaResponse.
+        :rtype: str
+        """
+        return self._data_vencimento_real
+
+    @data_vencimento_real.setter
+    def data_vencimento_real(self, data_vencimento_real):
+        """
+        Sets the data_vencimento_real of this TransacaoNaoProcessadaResponse.
+        {{{transacao_nao_processada_response_data_vencimento_value}}}
+
+        :param data_vencimento_real: The data_vencimento_real of this TransacaoNaoProcessadaResponse.
+        :type: str
+        """
+        self._data_vencimento_real = data_vencimento_real
+
+    @property
+    def descricao_abreviada(self):
+        """
+        Gets the descricao_abreviada of this TransacaoNaoProcessadaResponse.
+        {{{transacao_nao_processada_response_descricao_abreviada_value}}}
+
+        :return: The descricao_abreviada of this TransacaoNaoProcessadaResponse.
+        :rtype: str
+        """
+        return self._descricao_abreviada
+
+    @descricao_abreviada.setter
+    def descricao_abreviada(self, descricao_abreviada):
+        """
+        Sets the descricao_abreviada of this TransacaoNaoProcessadaResponse.
+        {{{transacao_nao_processada_response_descricao_abreviada_value}}}
+
+        :param descricao_abreviada: The descricao_abreviada of this TransacaoNaoProcessadaResponse.
+        :type: str
+        """
+        self._descricao_abreviada = descricao_abreviada
+
+    @property
+    def descricao_tipo_transacao_nao_processada(self):
+        """
+        Gets the descricao_tipo_transacao_nao_processada of this TransacaoNaoProcessadaResponse.
+        {{{transacao_nao_processada_response_descricao_tipo_transacao_nao_processada_value}}}
+
+        :return: The descricao_tipo_transacao_nao_processada of this TransacaoNaoProcessadaResponse.
+        :rtype: str
+        """
+        return self._descricao_tipo_transacao_nao_processada
+
+    @descricao_tipo_transacao_nao_processada.setter
+    def descricao_tipo_transacao_nao_processada(self, descricao_tipo_transacao_nao_processada):
+        """
+        Sets the descricao_tipo_transacao_nao_processada of this TransacaoNaoProcessadaResponse.
+        {{{transacao_nao_processada_response_descricao_tipo_transacao_nao_processada_value}}}
+
+        :param descricao_tipo_transacao_nao_processada: The descricao_tipo_transacao_nao_processada of this TransacaoNaoProcessadaResponse.
+        :type: str
+        """
+        self._descricao_tipo_transacao_nao_processada = descricao_tipo_transacao_nao_processada
 
     @property
     def detalhes_transacao(self):
         """
         Gets the detalhes_transacao of this TransacaoNaoProcessadaResponse.
-        Detalhes complementares a respeito da Transa\u00E7\u00E3o.
+        {{{transacao_nao_processada_response_detalhes_transacao_value}}}
 
         :return: The detalhes_transacao of this TransacaoNaoProcessadaResponse.
         :rtype: str
@@ -826,7 +471,7 @@ class TransacaoNaoProcessadaResponse(object):
     def detalhes_transacao(self, detalhes_transacao):
         """
         Sets the detalhes_transacao of this TransacaoNaoProcessadaResponse.
-        Detalhes complementares a respeito da Transa\u00E7\u00E3o.
+        {{{transacao_nao_processada_response_detalhes_transacao_value}}}
 
         :param detalhes_transacao: The detalhes_transacao of this TransacaoNaoProcessadaResponse.
         :type: str
@@ -837,7 +482,7 @@ class TransacaoNaoProcessadaResponse(object):
     def flag_credito(self):
         """
         Gets the flag_credito of this TransacaoNaoProcessadaResponse.
-        Quando ativa, indica que a Transa\u00E7\u00E3o \u00E9 do Tipo 'Cr\u00E9dito'.
+        {{{transacao_nao_processada_response_flag_credito_value}}}
 
         :return: The flag_credito of this TransacaoNaoProcessadaResponse.
         :rtype: int
@@ -848,7 +493,7 @@ class TransacaoNaoProcessadaResponse(object):
     def flag_credito(self, flag_credito):
         """
         Sets the flag_credito of this TransacaoNaoProcessadaResponse.
-        Quando ativa, indica que a Transa\u00E7\u00E3o \u00E9 do Tipo 'Cr\u00E9dito'.
+        {{{transacao_nao_processada_response_flag_credito_value}}}
 
         :param flag_credito: The flag_credito of this TransacaoNaoProcessadaResponse.
         :type: int
@@ -859,7 +504,7 @@ class TransacaoNaoProcessadaResponse(object):
     def flag_faturado(self):
         """
         Gets the flag_faturado of this TransacaoNaoProcessadaResponse.
-        Quando ativa, indica que a Transa\u00E7\u00E3o foi consolidada em uma Fatura.
+        {{{transacao_nao_processada_response_flag_faturado_value}}}
 
         :return: The flag_faturado of this TransacaoNaoProcessadaResponse.
         :rtype: int
@@ -870,7 +515,7 @@ class TransacaoNaoProcessadaResponse(object):
     def flag_faturado(self, flag_faturado):
         """
         Sets the flag_faturado of this TransacaoNaoProcessadaResponse.
-        Quando ativa, indica que a Transa\u00E7\u00E3o foi consolidada em uma Fatura.
+        {{{transacao_nao_processada_response_flag_faturado_value}}}
 
         :param flag_faturado: The flag_faturado of this TransacaoNaoProcessadaResponse.
         :type: int
@@ -878,32 +523,120 @@ class TransacaoNaoProcessadaResponse(object):
         self._flag_faturado = flag_faturado
 
     @property
-    def flag_estorno(self):
+    def grupo_descricao_mcc(self):
         """
-        Gets the flag_estorno of this TransacaoNaoProcessadaResponse.
-        Quando ativa, indica que a Transa\u00E7\u00E3o foi estornada.
+        Gets the grupo_descricao_mcc of this TransacaoNaoProcessadaResponse.
+        {{{transacao_nao_processada_response_grupo_descricao_mcc_value}}}
 
-        :return: The flag_estorno of this TransacaoNaoProcessadaResponse.
+        :return: The grupo_descricao_mcc of this TransacaoNaoProcessadaResponse.
+        :rtype: str
+        """
+        return self._grupo_descricao_mcc
+
+    @grupo_descricao_mcc.setter
+    def grupo_descricao_mcc(self, grupo_descricao_mcc):
+        """
+        Sets the grupo_descricao_mcc of this TransacaoNaoProcessadaResponse.
+        {{{transacao_nao_processada_response_grupo_descricao_mcc_value}}}
+
+        :param grupo_descricao_mcc: The grupo_descricao_mcc of this TransacaoNaoProcessadaResponse.
+        :type: str
+        """
+        self._grupo_descricao_mcc = grupo_descricao_mcc
+
+    @property
+    def grupo_mcc(self):
+        """
+        Gets the grupo_mcc of this TransacaoNaoProcessadaResponse.
+        {{{transacao_nao_processada_response_grupo_mcc_value}}}
+
+        :return: The grupo_mcc of this TransacaoNaoProcessadaResponse.
         :rtype: int
         """
-        return self._flag_estorno
+        return self._grupo_mcc
 
-    @flag_estorno.setter
-    def flag_estorno(self, flag_estorno):
+    @grupo_mcc.setter
+    def grupo_mcc(self, grupo_mcc):
         """
-        Sets the flag_estorno of this TransacaoNaoProcessadaResponse.
-        Quando ativa, indica que a Transa\u00E7\u00E3o foi estornada.
+        Sets the grupo_mcc of this TransacaoNaoProcessadaResponse.
+        {{{transacao_nao_processada_response_grupo_mcc_value}}}
 
-        :param flag_estorno: The flag_estorno of this TransacaoNaoProcessadaResponse.
+        :param grupo_mcc: The grupo_mcc of this TransacaoNaoProcessadaResponse.
         :type: int
         """
-        self._flag_estorno = flag_estorno
+        self._grupo_mcc = grupo_mcc
+
+    @property
+    def id_conta(self):
+        """
+        Gets the id_conta of this TransacaoNaoProcessadaResponse.
+        {{{transacao_nao_processada_response_id_conta_value}}}
+
+        :return: The id_conta of this TransacaoNaoProcessadaResponse.
+        :rtype: int
+        """
+        return self._id_conta
+
+    @id_conta.setter
+    def id_conta(self, id_conta):
+        """
+        Sets the id_conta of this TransacaoNaoProcessadaResponse.
+        {{{transacao_nao_processada_response_id_conta_value}}}
+
+        :param id_conta: The id_conta of this TransacaoNaoProcessadaResponse.
+        :type: int
+        """
+        self._id_conta = id_conta
+
+    @property
+    def id_estabelecimento(self):
+        """
+        Gets the id_estabelecimento of this TransacaoNaoProcessadaResponse.
+        {{{transacao_nao_processada_response_id_estabelecimento_value}}}
+
+        :return: The id_estabelecimento of this TransacaoNaoProcessadaResponse.
+        :rtype: int
+        """
+        return self._id_estabelecimento
+
+    @id_estabelecimento.setter
+    def id_estabelecimento(self, id_estabelecimento):
+        """
+        Sets the id_estabelecimento of this TransacaoNaoProcessadaResponse.
+        {{{transacao_nao_processada_response_id_estabelecimento_value}}}
+
+        :param id_estabelecimento: The id_estabelecimento of this TransacaoNaoProcessadaResponse.
+        :type: int
+        """
+        self._id_estabelecimento = id_estabelecimento
+
+    @property
+    def id_tipo_transacao_nao_processada(self):
+        """
+        Gets the id_tipo_transacao_nao_processada of this TransacaoNaoProcessadaResponse.
+        {{{transacao_nao_processada_response_id_tipo_transacao_nao_processada_value}}}
+
+        :return: The id_tipo_transacao_nao_processada of this TransacaoNaoProcessadaResponse.
+        :rtype: int
+        """
+        return self._id_tipo_transacao_nao_processada
+
+    @id_tipo_transacao_nao_processada.setter
+    def id_tipo_transacao_nao_processada(self, id_tipo_transacao_nao_processada):
+        """
+        Sets the id_tipo_transacao_nao_processada of this TransacaoNaoProcessadaResponse.
+        {{{transacao_nao_processada_response_id_tipo_transacao_nao_processada_value}}}
+
+        :param id_tipo_transacao_nao_processada: The id_tipo_transacao_nao_processada of this TransacaoNaoProcessadaResponse.
+        :type: int
+        """
+        self._id_tipo_transacao_nao_processada = id_tipo_transacao_nao_processada
 
     @property
     def id_transacao_estorno(self):
         """
         Gets the id_transacao_estorno of this TransacaoNaoProcessadaResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o da Transa\u00E7\u00E3o (id) que gerou o estorno.
+        {{{transacao_nao_processada_response_id_transacao_estorno_value}}}
 
         :return: The id_transacao_estorno of this TransacaoNaoProcessadaResponse.
         :rtype: int
@@ -914,7 +647,7 @@ class TransacaoNaoProcessadaResponse(object):
     def id_transacao_estorno(self, id_transacao_estorno):
         """
         Sets the id_transacao_estorno of this TransacaoNaoProcessadaResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o da Transa\u00E7\u00E3o (id) que gerou o estorno.
+        {{{transacao_nao_processada_response_id_transacao_estorno_value}}}
 
         :param id_transacao_estorno: The id_transacao_estorno of this TransacaoNaoProcessadaResponse.
         :type: int
@@ -922,10 +655,164 @@ class TransacaoNaoProcessadaResponse(object):
         self._id_transacao_estorno = id_transacao_estorno
 
     @property
+    def localidade_estabelecimento(self):
+        """
+        Gets the localidade_estabelecimento of this TransacaoNaoProcessadaResponse.
+        {{{transacao_nao_processada_response_localidade_estabelecimento_value}}}
+
+        :return: The localidade_estabelecimento of this TransacaoNaoProcessadaResponse.
+        :rtype: str
+        """
+        return self._localidade_estabelecimento
+
+    @localidade_estabelecimento.setter
+    def localidade_estabelecimento(self, localidade_estabelecimento):
+        """
+        Sets the localidade_estabelecimento of this TransacaoNaoProcessadaResponse.
+        {{{transacao_nao_processada_response_localidade_estabelecimento_value}}}
+
+        :param localidade_estabelecimento: The localidade_estabelecimento of this TransacaoNaoProcessadaResponse.
+        :type: str
+        """
+        self._localidade_estabelecimento = localidade_estabelecimento
+
+    @property
+    def modo_entrada_transacao(self):
+        """
+        Gets the modo_entrada_transacao of this TransacaoNaoProcessadaResponse.
+        {{{transacao_nao_processada_response_modo_entrada_transacao_value}}}
+
+        :return: The modo_entrada_transacao of this TransacaoNaoProcessadaResponse.
+        :rtype: str
+        """
+        return self._modo_entrada_transacao
+
+    @modo_entrada_transacao.setter
+    def modo_entrada_transacao(self, modo_entrada_transacao):
+        """
+        Sets the modo_entrada_transacao of this TransacaoNaoProcessadaResponse.
+        {{{transacao_nao_processada_response_modo_entrada_transacao_value}}}
+
+        :param modo_entrada_transacao: The modo_entrada_transacao of this TransacaoNaoProcessadaResponse.
+        :type: str
+        """
+        self._modo_entrada_transacao = modo_entrada_transacao
+
+    @property
+    def nome_estabelecimento(self):
+        """
+        Gets the nome_estabelecimento of this TransacaoNaoProcessadaResponse.
+        {{{transacao_nao_processada_response_nome_estabelecimento_value}}}
+
+        :return: The nome_estabelecimento of this TransacaoNaoProcessadaResponse.
+        :rtype: str
+        """
+        return self._nome_estabelecimento
+
+    @nome_estabelecimento.setter
+    def nome_estabelecimento(self, nome_estabelecimento):
+        """
+        Sets the nome_estabelecimento of this TransacaoNaoProcessadaResponse.
+        {{{transacao_nao_processada_response_nome_estabelecimento_value}}}
+
+        :param nome_estabelecimento: The nome_estabelecimento of this TransacaoNaoProcessadaResponse.
+        :type: str
+        """
+        self._nome_estabelecimento = nome_estabelecimento
+
+    @property
+    def nome_fantasia_estabelecimento(self):
+        """
+        Gets the nome_fantasia_estabelecimento of this TransacaoNaoProcessadaResponse.
+        {{{transacao_nao_processada_response_nome_fantasia_estabelecimento_value}}}
+
+        :return: The nome_fantasia_estabelecimento of this TransacaoNaoProcessadaResponse.
+        :rtype: str
+        """
+        return self._nome_fantasia_estabelecimento
+
+    @nome_fantasia_estabelecimento.setter
+    def nome_fantasia_estabelecimento(self, nome_fantasia_estabelecimento):
+        """
+        Sets the nome_fantasia_estabelecimento of this TransacaoNaoProcessadaResponse.
+        {{{transacao_nao_processada_response_nome_fantasia_estabelecimento_value}}}
+
+        :param nome_fantasia_estabelecimento: The nome_fantasia_estabelecimento of this TransacaoNaoProcessadaResponse.
+        :type: str
+        """
+        self._nome_fantasia_estabelecimento = nome_fantasia_estabelecimento
+
+    @property
+    def nome_portador(self):
+        """
+        Gets the nome_portador of this TransacaoNaoProcessadaResponse.
+        {{{transacao_nao_processada_response_nome_portador_value}}}
+
+        :return: The nome_portador of this TransacaoNaoProcessadaResponse.
+        :rtype: str
+        """
+        return self._nome_portador
+
+    @nome_portador.setter
+    def nome_portador(self, nome_portador):
+        """
+        Sets the nome_portador of this TransacaoNaoProcessadaResponse.
+        {{{transacao_nao_processada_response_nome_portador_value}}}
+
+        :param nome_portador: The nome_portador of this TransacaoNaoProcessadaResponse.
+        :type: str
+        """
+        self._nome_portador = nome_portador
+
+    @property
+    def parcela(self):
+        """
+        Gets the parcela of this TransacaoNaoProcessadaResponse.
+        {{{transacao_nao_processada_response_numero_parcela_value}}}
+
+        :return: The parcela of this TransacaoNaoProcessadaResponse.
+        :rtype: int
+        """
+        return self._parcela
+
+    @parcela.setter
+    def parcela(self, parcela):
+        """
+        Sets the parcela of this TransacaoNaoProcessadaResponse.
+        {{{transacao_nao_processada_response_numero_parcela_value}}}
+
+        :param parcela: The parcela of this TransacaoNaoProcessadaResponse.
+        :type: int
+        """
+        self._parcela = parcela
+
+    @property
+    def plano(self):
+        """
+        Gets the plano of this TransacaoNaoProcessadaResponse.
+        {{{transacao_nao_processada_response_plano_parcelamento_value}}}
+
+        :return: The plano of this TransacaoNaoProcessadaResponse.
+        :rtype: int
+        """
+        return self._plano
+
+    @plano.setter
+    def plano(self, plano):
+        """
+        Sets the plano of this TransacaoNaoProcessadaResponse.
+        {{{transacao_nao_processada_response_plano_parcelamento_value}}}
+
+        :param plano: The plano of this TransacaoNaoProcessadaResponse.
+        :type: int
+        """
+        self._plano = plano
+
+    @property
     def status(self):
         """
         Gets the status of this TransacaoNaoProcessadaResponse.
-        Atributo que representa o c\u00F3digo identificador do status da transa\u00E7\u00E3o.
+        {{{transacao_nao_processada_response_status_value}}}
 
         :return: The status of this TransacaoNaoProcessadaResponse.
         :rtype: int
@@ -936,12 +823,100 @@ class TransacaoNaoProcessadaResponse(object):
     def status(self, status):
         """
         Sets the status of this TransacaoNaoProcessadaResponse.
-        Atributo que representa o c\u00F3digo identificador do status da transa\u00E7\u00E3o.
+        {{{transacao_nao_processada_response_status_value}}}
 
         :param status: The status of this TransacaoNaoProcessadaResponse.
         :type: int
         """
         self._status = status
+
+    @property
+    def taxa_embarque(self):
+        """
+        Gets the taxa_embarque of this TransacaoNaoProcessadaResponse.
+        {{{transacao_nao_processada_response_valor_taxa_embarque_value}}}
+
+        :return: The taxa_embarque of this TransacaoNaoProcessadaResponse.
+        :rtype: float
+        """
+        return self._taxa_embarque
+
+    @taxa_embarque.setter
+    def taxa_embarque(self, taxa_embarque):
+        """
+        Sets the taxa_embarque of this TransacaoNaoProcessadaResponse.
+        {{{transacao_nao_processada_response_valor_taxa_embarque_value}}}
+
+        :param taxa_embarque: The taxa_embarque of this TransacaoNaoProcessadaResponse.
+        :type: float
+        """
+        self._taxa_embarque = taxa_embarque
+
+    @property
+    def valor_brl(self):
+        """
+        Gets the valor_brl of this TransacaoNaoProcessadaResponse.
+        {{{transacao_nao_processada_response_valor_brl_value}}}
+
+        :return: The valor_brl of this TransacaoNaoProcessadaResponse.
+        :rtype: float
+        """
+        return self._valor_brl
+
+    @valor_brl.setter
+    def valor_brl(self, valor_brl):
+        """
+        Sets the valor_brl of this TransacaoNaoProcessadaResponse.
+        {{{transacao_nao_processada_response_valor_brl_value}}}
+
+        :param valor_brl: The valor_brl of this TransacaoNaoProcessadaResponse.
+        :type: float
+        """
+        self._valor_brl = valor_brl
+
+    @property
+    def valor_entrada(self):
+        """
+        Gets the valor_entrada of this TransacaoNaoProcessadaResponse.
+        {{{transacao_nao_processada_response_valor_entrada_value}}}
+
+        :return: The valor_entrada of this TransacaoNaoProcessadaResponse.
+        :rtype: float
+        """
+        return self._valor_entrada
+
+    @valor_entrada.setter
+    def valor_entrada(self, valor_entrada):
+        """
+        Sets the valor_entrada of this TransacaoNaoProcessadaResponse.
+        {{{transacao_nao_processada_response_valor_entrada_value}}}
+
+        :param valor_entrada: The valor_entrada of this TransacaoNaoProcessadaResponse.
+        :type: float
+        """
+        self._valor_entrada = valor_entrada
+
+    @property
+    def valor_usd(self):
+        """
+        Gets the valor_usd of this TransacaoNaoProcessadaResponse.
+        {{{transacao_nao_processada_response_valor_usd_value}}}
+
+        :return: The valor_usd of this TransacaoNaoProcessadaResponse.
+        :rtype: float
+        """
+        return self._valor_usd
+
+    @valor_usd.setter
+    def valor_usd(self, valor_usd):
+        """
+        Sets the valor_usd of this TransacaoNaoProcessadaResponse.
+        {{{transacao_nao_processada_response_valor_usd_value}}}
+
+        :param valor_usd: The valor_usd of this TransacaoNaoProcessadaResponse.
+        :type: float
+        """
+        self._valor_usd = valor_usd
 
     def to_dict(self):
         """

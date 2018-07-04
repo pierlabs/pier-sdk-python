@@ -143,7 +143,7 @@ class PessoaFisicaAprovadaResponse(object):
     def id(self):
         """
         Gets the id of this PessoaFisicaAprovadaResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o da pessoa fisica (id)
+        {{{pessoa_fisica_aprovada_response_id_value}}}
 
         :return: The id of this PessoaFisicaAprovadaResponse.
         :rtype: int
@@ -154,7 +154,7 @@ class PessoaFisicaAprovadaResponse(object):
     def id(self, id):
         """
         Sets the id of this PessoaFisicaAprovadaResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o da pessoa fisica (id)
+        {{{pessoa_fisica_aprovada_response_id_value}}}
 
         :param id: The id of this PessoaFisicaAprovadaResponse.
         :type: int
@@ -165,7 +165,7 @@ class PessoaFisicaAprovadaResponse(object):
     def nome(self):
         """
         Gets the nome of this PessoaFisicaAprovadaResponse.
-        Apresenta o nome completo da pessoa fisica.
+        {{{pessoa_fisica_aprovada_response_nome_value}}}
 
         :return: The nome of this PessoaFisicaAprovadaResponse.
         :rtype: str
@@ -176,7 +176,7 @@ class PessoaFisicaAprovadaResponse(object):
     def nome(self, nome):
         """
         Sets the nome of this PessoaFisicaAprovadaResponse.
-        Apresenta o nome completo da pessoa fisica.
+        {{{pessoa_fisica_aprovada_response_nome_value}}}
 
         :param nome: The nome of this PessoaFisicaAprovadaResponse.
         :type: str
@@ -187,7 +187,7 @@ class PessoaFisicaAprovadaResponse(object):
     def nome_mae(self):
         """
         Gets the nome_mae of this PessoaFisicaAprovadaResponse.
-        Apresenta o nome da m\u00E3e da pessoa fisica
+        {{{pessoa_fisica_aprovada_response_nome_mae_value}}}
 
         :return: The nome_mae of this PessoaFisicaAprovadaResponse.
         :rtype: str
@@ -198,7 +198,7 @@ class PessoaFisicaAprovadaResponse(object):
     def nome_mae(self, nome_mae):
         """
         Sets the nome_mae of this PessoaFisicaAprovadaResponse.
-        Apresenta o nome da m\u00E3e da pessoa fisica
+        {{{pessoa_fisica_aprovada_response_nome_mae_value}}}
 
         :param nome_mae: The nome_mae of this PessoaFisicaAprovadaResponse.
         :type: str
@@ -209,7 +209,7 @@ class PessoaFisicaAprovadaResponse(object):
     def data_nascimento(self):
         """
         Gets the data_nascimento of this PessoaFisicaAprovadaResponse.
-        Data de Nascimento da Pessoa. Essa data deve ser informada no formato aaaa-MM-dd.
+        {{{pessoa_fisica_aprovada_response_data_nascimento_value}}}
 
         :return: The data_nascimento of this PessoaFisicaAprovadaResponse.
         :rtype: str
@@ -220,7 +220,7 @@ class PessoaFisicaAprovadaResponse(object):
     def data_nascimento(self, data_nascimento):
         """
         Sets the data_nascimento of this PessoaFisicaAprovadaResponse.
-        Data de Nascimento da Pessoa. Essa data deve ser informada no formato aaaa-MM-dd.
+        {{{pessoa_fisica_aprovada_response_data_nascimento_value}}}
 
         :param data_nascimento: The data_nascimento of this PessoaFisicaAprovadaResponse.
         :type: str
@@ -231,7 +231,7 @@ class PessoaFisicaAprovadaResponse(object):
     def sexo(self):
         """
         Gets the sexo of this PessoaFisicaAprovadaResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o do sexo da Pessoa, quando PF, sendo: (\"M\": Masculino), (\"F\": Feminino).
+        {{{pessoa_fisica_aprovada_response_sexo_value}}}
 
         :return: The sexo of this PessoaFisicaAprovadaResponse.
         :rtype: str
@@ -242,7 +242,7 @@ class PessoaFisicaAprovadaResponse(object):
     def sexo(self, sexo):
         """
         Sets the sexo of this PessoaFisicaAprovadaResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o do sexo da Pessoa, quando PF, sendo: (\"M\": Masculino), (\"F\": Feminino).
+        {{{pessoa_fisica_aprovada_response_sexo_value}}}
 
         :param sexo: The sexo of this PessoaFisicaAprovadaResponse.
         :type: str
@@ -253,7 +253,7 @@ class PessoaFisicaAprovadaResponse(object):
     def cpf(self):
         """
         Gets the cpf of this PessoaFisicaAprovadaResponse.
-        N\u00FAmero do Cadastro de Pessoa Fisica (CPF)
+        {{{pessoa_fisica_aprovada_response_cpf_value}}}
 
         :return: The cpf of this PessoaFisicaAprovadaResponse.
         :rtype: str
@@ -264,7 +264,7 @@ class PessoaFisicaAprovadaResponse(object):
     def cpf(self, cpf):
         """
         Sets the cpf of this PessoaFisicaAprovadaResponse.
-        N\u00FAmero do Cadastro de Pessoa Fisica (CPF)
+        {{{pessoa_fisica_aprovada_response_cpf_value}}}
 
         :param cpf: The cpf of this PessoaFisicaAprovadaResponse.
         :type: str
@@ -275,7 +275,7 @@ class PessoaFisicaAprovadaResponse(object):
     def numero_identidade(self):
         """
         Gets the numero_identidade of this PessoaFisicaAprovadaResponse.
-        N\u00FAmero da identidade.
+        {{{pessoa_fisica_aprovada_response_numero_identidade_value}}}
 
         :return: The numero_identidade of this PessoaFisicaAprovadaResponse.
         :rtype: str
@@ -286,7 +286,7 @@ class PessoaFisicaAprovadaResponse(object):
     def numero_identidade(self, numero_identidade):
         """
         Sets the numero_identidade of this PessoaFisicaAprovadaResponse.
-        N\u00FAmero da identidade.
+        {{{pessoa_fisica_aprovada_response_numero_identidade_value}}}
 
         :param numero_identidade: The numero_identidade of this PessoaFisicaAprovadaResponse.
         :type: str
@@ -297,7 +297,7 @@ class PessoaFisicaAprovadaResponse(object):
     def orgao_expedidor_identidade(self):
         """
         Gets the orgao_expedidor_identidade of this PessoaFisicaAprovadaResponse.
-        Org\u00E3o expedidor da Identidade.
+        {{{pessoa_fisica_aprovada_response_orgao_expedidor_identidade_value}}}
 
         :return: The orgao_expedidor_identidade of this PessoaFisicaAprovadaResponse.
         :rtype: str
@@ -308,7 +308,7 @@ class PessoaFisicaAprovadaResponse(object):
     def orgao_expedidor_identidade(self, orgao_expedidor_identidade):
         """
         Sets the orgao_expedidor_identidade of this PessoaFisicaAprovadaResponse.
-        Org\u00E3o expedidor da Identidade.
+        {{{pessoa_fisica_aprovada_response_orgao_expedidor_identidade_value}}}
 
         :param orgao_expedidor_identidade: The orgao_expedidor_identidade of this PessoaFisicaAprovadaResponse.
         :type: str
@@ -319,7 +319,7 @@ class PessoaFisicaAprovadaResponse(object):
     def unidade_federativa_identidade(self):
         """
         Gets the unidade_federativa_identidade of this PessoaFisicaAprovadaResponse.
-        Sigla da Unidade Federativa de onde foi expedido a Identidade
+        {{{pessoa_fisica_aprovada_response_unidade_federativa_identidade_value}}}
 
         :return: The unidade_federativa_identidade of this PessoaFisicaAprovadaResponse.
         :rtype: str
@@ -330,7 +330,7 @@ class PessoaFisicaAprovadaResponse(object):
     def unidade_federativa_identidade(self, unidade_federativa_identidade):
         """
         Sets the unidade_federativa_identidade of this PessoaFisicaAprovadaResponse.
-        Sigla da Unidade Federativa de onde foi expedido a Identidade
+        {{{pessoa_fisica_aprovada_response_unidade_federativa_identidade_value}}}
 
         :param unidade_federativa_identidade: The unidade_federativa_identidade of this PessoaFisicaAprovadaResponse.
         :type: str
@@ -341,7 +341,7 @@ class PessoaFisicaAprovadaResponse(object):
     def data_emissao_identidade(self):
         """
         Gets the data_emissao_identidade of this PessoaFisicaAprovadaResponse.
-        Data emiss\u00E3o da Identidade no formato aaaa-MM-dd
+        {{{pessoa_fisica_aprovada_response_data_emissao_identidade_value}}}
 
         :return: The data_emissao_identidade of this PessoaFisicaAprovadaResponse.
         :rtype: str
@@ -352,7 +352,7 @@ class PessoaFisicaAprovadaResponse(object):
     def data_emissao_identidade(self, data_emissao_identidade):
         """
         Sets the data_emissao_identidade of this PessoaFisicaAprovadaResponse.
-        Data emiss\u00E3o da Identidade no formato aaaa-MM-dd
+        {{{pessoa_fisica_aprovada_response_data_emissao_identidade_value}}}
 
         :param data_emissao_identidade: The data_emissao_identidade of this PessoaFisicaAprovadaResponse.
         :type: str
@@ -363,7 +363,7 @@ class PessoaFisicaAprovadaResponse(object):
     def id_estado_civil(self):
         """
         Gets the id_estado_civil of this PessoaFisicaAprovadaResponse.
-        Id Estado civil da pessoa fisica
+        {{{pessoa_fisica_aprovada_response_id_estado_civil_value}}}
 
         :return: The id_estado_civil of this PessoaFisicaAprovadaResponse.
         :rtype: int
@@ -374,7 +374,7 @@ class PessoaFisicaAprovadaResponse(object):
     def id_estado_civil(self, id_estado_civil):
         """
         Sets the id_estado_civil of this PessoaFisicaAprovadaResponse.
-        Id Estado civil da pessoa fisica
+        {{{pessoa_fisica_aprovada_response_id_estado_civil_value}}}
 
         :param id_estado_civil: The id_estado_civil of this PessoaFisicaAprovadaResponse.
         :type: int
@@ -385,7 +385,7 @@ class PessoaFisicaAprovadaResponse(object):
     def id_profissao(self):
         """
         Gets the id_profissao of this PessoaFisicaAprovadaResponse.
-        Profiss\u00E3o da pessoa fisica
+        {{{pessoa_fisica_aprovada_response_id_profissao_value}}}
 
         :return: The id_profissao of this PessoaFisicaAprovadaResponse.
         :rtype: str
@@ -396,7 +396,7 @@ class PessoaFisicaAprovadaResponse(object):
     def id_profissao(self, id_profissao):
         """
         Sets the id_profissao of this PessoaFisicaAprovadaResponse.
-        Profiss\u00E3o da pessoa fisica
+        {{{pessoa_fisica_aprovada_response_id_profissao_value}}}
 
         :param id_profissao: The id_profissao of this PessoaFisicaAprovadaResponse.
         :type: str
@@ -407,7 +407,7 @@ class PessoaFisicaAprovadaResponse(object):
     def id_natureza_ocupacao(self):
         """
         Gets the id_natureza_ocupacao of this PessoaFisicaAprovadaResponse.
-        Id Natureza Ocupa\u00E7\u00E3o da pessoa fisica
+        {{{pessoa_fisica_aprovada_response_id_natureza_ocupacao_value}}}
 
         :return: The id_natureza_ocupacao of this PessoaFisicaAprovadaResponse.
         :rtype: int
@@ -418,7 +418,7 @@ class PessoaFisicaAprovadaResponse(object):
     def id_natureza_ocupacao(self, id_natureza_ocupacao):
         """
         Sets the id_natureza_ocupacao of this PessoaFisicaAprovadaResponse.
-        Id Natureza Ocupa\u00E7\u00E3o da pessoa fisica
+        {{{pessoa_fisica_aprovada_response_id_natureza_ocupacao_value}}}
 
         :param id_natureza_ocupacao: The id_natureza_ocupacao of this PessoaFisicaAprovadaResponse.
         :type: int
@@ -429,7 +429,7 @@ class PessoaFisicaAprovadaResponse(object):
     def id_nacionalidade(self):
         """
         Gets the id_nacionalidade of this PessoaFisicaAprovadaResponse.
-        Id Nacionalidade da pessoa fisica
+        {{{pessoa_fisica_aprovada_response_id_nacionalidade_value}}}
 
         :return: The id_nacionalidade of this PessoaFisicaAprovadaResponse.
         :rtype: int
@@ -440,7 +440,7 @@ class PessoaFisicaAprovadaResponse(object):
     def id_nacionalidade(self, id_nacionalidade):
         """
         Sets the id_nacionalidade of this PessoaFisicaAprovadaResponse.
-        Id Nacionalidade da pessoa fisica
+        {{{pessoa_fisica_aprovada_response_id_nacionalidade_value}}}
 
         :param id_nacionalidade: The id_nacionalidade of this PessoaFisicaAprovadaResponse.
         :type: int
@@ -451,7 +451,7 @@ class PessoaFisicaAprovadaResponse(object):
     def id_origem_comercial(self):
         """
         Gets the id_origem_comercial of this PessoaFisicaAprovadaResponse.
-        Id da origem comercial
+        {{{pessoa_fisica_aprovada_response_id_origem_comercial_value}}}
 
         :return: The id_origem_comercial of this PessoaFisicaAprovadaResponse.
         :rtype: int
@@ -462,7 +462,7 @@ class PessoaFisicaAprovadaResponse(object):
     def id_origem_comercial(self, id_origem_comercial):
         """
         Sets the id_origem_comercial of this PessoaFisicaAprovadaResponse.
-        Id da origem comercial
+        {{{pessoa_fisica_aprovada_response_id_origem_comercial_value}}}
 
         :param id_origem_comercial: The id_origem_comercial of this PessoaFisicaAprovadaResponse.
         :type: int
@@ -473,7 +473,7 @@ class PessoaFisicaAprovadaResponse(object):
     def id_produto(self):
         """
         Gets the id_produto of this PessoaFisicaAprovadaResponse.
-        Id do produto
+        {{{pessoa_fisica_aprovada_response_id_produto_value}}}
 
         :return: The id_produto of this PessoaFisicaAprovadaResponse.
         :rtype: int
@@ -484,7 +484,7 @@ class PessoaFisicaAprovadaResponse(object):
     def id_produto(self, id_produto):
         """
         Sets the id_produto of this PessoaFisicaAprovadaResponse.
-        Id do produto
+        {{{pessoa_fisica_aprovada_response_id_produto_value}}}
 
         :param id_produto: The id_produto of this PessoaFisicaAprovadaResponse.
         :type: int
@@ -495,7 +495,7 @@ class PessoaFisicaAprovadaResponse(object):
     def numero_agencia(self):
         """
         Gets the numero_agencia of this PessoaFisicaAprovadaResponse.
-        N\u00FAmero da ag\u00EAncia.
+        {{{pessoa_fisica_aprovada_response_numero_agencia_value}}}
 
         :return: The numero_agencia of this PessoaFisicaAprovadaResponse.
         :rtype: int
@@ -506,7 +506,7 @@ class PessoaFisicaAprovadaResponse(object):
     def numero_agencia(self, numero_agencia):
         """
         Sets the numero_agencia of this PessoaFisicaAprovadaResponse.
-        N\u00FAmero da ag\u00EAncia.
+        {{{pessoa_fisica_aprovada_response_numero_agencia_value}}}
 
         :param numero_agencia: The numero_agencia of this PessoaFisicaAprovadaResponse.
         :type: int
@@ -517,7 +517,7 @@ class PessoaFisicaAprovadaResponse(object):
     def numero_conta_corrente(self):
         """
         Gets the numero_conta_corrente of this PessoaFisicaAprovadaResponse.
-        N\u00FAmero da conta corrente.
+        {{{pessoa_fisica_aprovada_response_numero_conta_corrente_value}}}
 
         :return: The numero_conta_corrente of this PessoaFisicaAprovadaResponse.
         :rtype: str
@@ -528,7 +528,7 @@ class PessoaFisicaAprovadaResponse(object):
     def numero_conta_corrente(self, numero_conta_corrente):
         """
         Sets the numero_conta_corrente of this PessoaFisicaAprovadaResponse.
-        N\u00FAmero da conta corrente.
+        {{{pessoa_fisica_aprovada_response_numero_conta_corrente_value}}}
 
         :param numero_conta_corrente: The numero_conta_corrente of this PessoaFisicaAprovadaResponse.
         :type: str
@@ -539,7 +539,7 @@ class PessoaFisicaAprovadaResponse(object):
     def email(self):
         """
         Gets the email of this PessoaFisicaAprovadaResponse.
-        Email da pessoa fisica
+        {{{pessoa_fisica_aprovada_response_email_value}}}
 
         :return: The email of this PessoaFisicaAprovadaResponse.
         :rtype: str
@@ -550,7 +550,7 @@ class PessoaFisicaAprovadaResponse(object):
     def email(self, email):
         """
         Sets the email of this PessoaFisicaAprovadaResponse.
-        Email da pessoa fisica
+        {{{pessoa_fisica_aprovada_response_email_value}}}
 
         :param email: The email of this PessoaFisicaAprovadaResponse.
         :type: str
@@ -561,7 +561,7 @@ class PessoaFisicaAprovadaResponse(object):
     def dia_vencimento(self):
         """
         Gets the dia_vencimento of this PessoaFisicaAprovadaResponse.
-        Dia vencimento
+        {{{pessoa_fisica_aprovada_response_dia_vencimento_value}}}
 
         :return: The dia_vencimento of this PessoaFisicaAprovadaResponse.
         :rtype: int
@@ -572,7 +572,7 @@ class PessoaFisicaAprovadaResponse(object):
     def dia_vencimento(self, dia_vencimento):
         """
         Sets the dia_vencimento of this PessoaFisicaAprovadaResponse.
-        Dia vencimento
+        {{{pessoa_fisica_aprovada_response_dia_vencimento_value}}}
 
         :param dia_vencimento: The dia_vencimento of this PessoaFisicaAprovadaResponse.
         :type: int
@@ -583,7 +583,7 @@ class PessoaFisicaAprovadaResponse(object):
     def nome_impresso(self):
         """
         Gets the nome_impresso of this PessoaFisicaAprovadaResponse.
-        Nome que deve ser impresso no cart\u00E3o
+        {{{pessoa_fisica_aprovada_response_nome_impresso_value}}}
 
         :return: The nome_impresso of this PessoaFisicaAprovadaResponse.
         :rtype: str
@@ -594,7 +594,7 @@ class PessoaFisicaAprovadaResponse(object):
     def nome_impresso(self, nome_impresso):
         """
         Sets the nome_impresso of this PessoaFisicaAprovadaResponse.
-        Nome que deve ser impresso no cart\u00E3o
+        {{{pessoa_fisica_aprovada_response_nome_impresso_value}}}
 
         :param nome_impresso: The nome_impresso of this PessoaFisicaAprovadaResponse.
         :type: str
@@ -605,7 +605,7 @@ class PessoaFisicaAprovadaResponse(object):
     def nome_empresa(self):
         """
         Gets the nome_empresa of this PessoaFisicaAprovadaResponse.
-        Nome da empresa
+        {{{pessoa_fisica_aprovada_response_nome_empresa_value}}}
 
         :return: The nome_empresa of this PessoaFisicaAprovadaResponse.
         :rtype: str
@@ -616,7 +616,7 @@ class PessoaFisicaAprovadaResponse(object):
     def nome_empresa(self, nome_empresa):
         """
         Sets the nome_empresa of this PessoaFisicaAprovadaResponse.
-        Nome da empresa
+        {{{pessoa_fisica_aprovada_response_nome_empresa_value}}}
 
         :param nome_empresa: The nome_empresa of this PessoaFisicaAprovadaResponse.
         :type: str
@@ -627,7 +627,7 @@ class PessoaFisicaAprovadaResponse(object):
     def id_conta(self):
         """
         Gets the id_conta of this PessoaFisicaAprovadaResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o da conta cadastrada
+        {{{pessoa_fisica_aprovada_response_id_conta_value}}}
 
         :return: The id_conta of this PessoaFisicaAprovadaResponse.
         :rtype: int
@@ -638,7 +638,7 @@ class PessoaFisicaAprovadaResponse(object):
     def id_conta(self, id_conta):
         """
         Sets the id_conta of this PessoaFisicaAprovadaResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o da conta cadastrada
+        {{{pessoa_fisica_aprovada_response_id_conta_value}}}
 
         :param id_conta: The id_conta of this PessoaFisicaAprovadaResponse.
         :type: int
@@ -649,7 +649,7 @@ class PessoaFisicaAprovadaResponse(object):
     def id_proposta(self):
         """
         Gets the id_proposta of this PessoaFisicaAprovadaResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o da proposta
+        {{{pessoa_fisica_aprovada_response_id_proposta_value}}}
 
         :return: The id_proposta of this PessoaFisicaAprovadaResponse.
         :rtype: int
@@ -660,7 +660,7 @@ class PessoaFisicaAprovadaResponse(object):
     def id_proposta(self, id_proposta):
         """
         Sets the id_proposta of this PessoaFisicaAprovadaResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o da proposta
+        {{{pessoa_fisica_aprovada_response_id_proposta_value}}}
 
         :param id_proposta: The id_proposta of this PessoaFisicaAprovadaResponse.
         :type: int
@@ -671,7 +671,7 @@ class PessoaFisicaAprovadaResponse(object):
     def canal_entrada(self):
         """
         Gets the canal_entrada of this PessoaFisicaAprovadaResponse.
-        Indica o canal pelo qual o cadastro do cliente foi realizado
+        {{{pessoa_fisica_aprovada_response_canal_entrada_value}}}
 
         :return: The canal_entrada of this PessoaFisicaAprovadaResponse.
         :rtype: str
@@ -682,7 +682,7 @@ class PessoaFisicaAprovadaResponse(object):
     def canal_entrada(self, canal_entrada):
         """
         Sets the canal_entrada of this PessoaFisicaAprovadaResponse.
-        Indica o canal pelo qual o cadastro do cliente foi realizado
+        {{{pessoa_fisica_aprovada_response_canal_entrada_value}}}
 
         :param canal_entrada: The canal_entrada of this PessoaFisicaAprovadaResponse.
         :type: str
@@ -693,7 +693,7 @@ class PessoaFisicaAprovadaResponse(object):
     def valor_pontuacao(self):
         """
         Gets the valor_pontuacao of this PessoaFisicaAprovadaResponse.
-        Indica o valor da pontua\u00E7\u00E3o atribuido ao cliente (caso n\u00E3o informado ser\u00E1 atribuido o valor = 0)
+        {{{pessoa_fisica_aprovada_response_valor_pontuacao_value}}}
 
         :return: The valor_pontuacao of this PessoaFisicaAprovadaResponse.
         :rtype: int
@@ -704,7 +704,7 @@ class PessoaFisicaAprovadaResponse(object):
     def valor_pontuacao(self, valor_pontuacao):
         """
         Sets the valor_pontuacao of this PessoaFisicaAprovadaResponse.
-        Indica o valor da pontua\u00E7\u00E3o atribuido ao cliente (caso n\u00E3o informado ser\u00E1 atribuido o valor = 0)
+        {{{pessoa_fisica_aprovada_response_valor_pontuacao_value}}}
 
         :param valor_pontuacao: The valor_pontuacao of this PessoaFisicaAprovadaResponse.
         :type: int
@@ -715,7 +715,7 @@ class PessoaFisicaAprovadaResponse(object):
     def telefones(self):
         """
         Gets the telefones of this PessoaFisicaAprovadaResponse.
-        Apresenta os telefones da empresa
+        {{{pessoa_fisica_aprovada_response_telefones_value}}}
 
         :return: The telefones of this PessoaFisicaAprovadaResponse.
         :rtype: list[TelefonePessoaAprovadaResponse]
@@ -726,7 +726,7 @@ class PessoaFisicaAprovadaResponse(object):
     def telefones(self, telefones):
         """
         Sets the telefones of this PessoaFisicaAprovadaResponse.
-        Apresenta os telefones da empresa
+        {{{pessoa_fisica_aprovada_response_telefones_value}}}
 
         :param telefones: The telefones of this PessoaFisicaAprovadaResponse.
         :type: list[TelefonePessoaAprovadaResponse]
@@ -737,7 +737,7 @@ class PessoaFisicaAprovadaResponse(object):
     def enderecos(self):
         """
         Gets the enderecos of this PessoaFisicaAprovadaResponse.
-        Pode ser informado os seguintes tipos de endere\u00E7o: Residencial, Comercial, e Outros
+        {{{pessoa_fisica_aprovada_response_enderecos_value}}}
 
         :return: The enderecos of this PessoaFisicaAprovadaResponse.
         :rtype: list[EnderecoAprovadoResponse]
@@ -748,7 +748,7 @@ class PessoaFisicaAprovadaResponse(object):
     def enderecos(self, enderecos):
         """
         Sets the enderecos of this PessoaFisicaAprovadaResponse.
-        Pode ser informado os seguintes tipos de endere\u00E7o: Residencial, Comercial, e Outros
+        {{{pessoa_fisica_aprovada_response_enderecos_value}}}
 
         :param enderecos: The enderecos of this PessoaFisicaAprovadaResponse.
         :type: list[EnderecoAprovadoResponse]
@@ -759,7 +759,7 @@ class PessoaFisicaAprovadaResponse(object):
     def limite_global(self):
         """
         Gets the limite_global of this PessoaFisicaAprovadaResponse.
-        Valor do Limite Global
+        {{{pessoa_fisica_aprovada_response_limite_global_value}}}
 
         :return: The limite_global of this PessoaFisicaAprovadaResponse.
         :rtype: float
@@ -770,7 +770,7 @@ class PessoaFisicaAprovadaResponse(object):
     def limite_global(self, limite_global):
         """
         Sets the limite_global of this PessoaFisicaAprovadaResponse.
-        Valor do Limite Global
+        {{{pessoa_fisica_aprovada_response_limite_global_value}}}
 
         :param limite_global: The limite_global of this PessoaFisicaAprovadaResponse.
         :type: float
@@ -781,7 +781,7 @@ class PessoaFisicaAprovadaResponse(object):
     def limite_maximo(self):
         """
         Gets the limite_maximo of this PessoaFisicaAprovadaResponse.
-        Valor m\u00E1ximo do limite de cr\u00E9dito para realizar transa\u00E7\u00F5es
+        {{{pessoa_fisica_aprovada_response_limite_maximo_value}}}
 
         :return: The limite_maximo of this PessoaFisicaAprovadaResponse.
         :rtype: float
@@ -792,7 +792,7 @@ class PessoaFisicaAprovadaResponse(object):
     def limite_maximo(self, limite_maximo):
         """
         Sets the limite_maximo of this PessoaFisicaAprovadaResponse.
-        Valor m\u00E1ximo do limite de cr\u00E9dito para realizar transa\u00E7\u00F5es
+        {{{pessoa_fisica_aprovada_response_limite_maximo_value}}}
 
         :param limite_maximo: The limite_maximo of this PessoaFisicaAprovadaResponse.
         :type: float
@@ -803,7 +803,7 @@ class PessoaFisicaAprovadaResponse(object):
     def limite_parcelas(self):
         """
         Gets the limite_parcelas of this PessoaFisicaAprovadaResponse.
-        Valor do limite de cr\u00E9dito acumulado da soma das parcelas das compras
+        {{{pessoa_fisica_aprovada_response_limite_parcelas_value}}}
 
         :return: The limite_parcelas of this PessoaFisicaAprovadaResponse.
         :rtype: float
@@ -814,7 +814,7 @@ class PessoaFisicaAprovadaResponse(object):
     def limite_parcelas(self, limite_parcelas):
         """
         Sets the limite_parcelas of this PessoaFisicaAprovadaResponse.
-        Valor do limite de cr\u00E9dito acumulado da soma das parcelas das compras
+        {{{pessoa_fisica_aprovada_response_limite_parcelas_value}}}
 
         :param limite_parcelas: The limite_parcelas of this PessoaFisicaAprovadaResponse.
         :type: float
@@ -825,7 +825,7 @@ class PessoaFisicaAprovadaResponse(object):
     def limite_consignado(self):
         """
         Gets the limite_consignado of this PessoaFisicaAprovadaResponse.
-        Valor do limite de margem consignado
+        {{{pessoa_fisica_aprovada_response_limite_consignado_value}}}
 
         :return: The limite_consignado of this PessoaFisicaAprovadaResponse.
         :rtype: float
@@ -836,7 +836,7 @@ class PessoaFisicaAprovadaResponse(object):
     def limite_consignado(self, limite_consignado):
         """
         Sets the limite_consignado of this PessoaFisicaAprovadaResponse.
-        Valor do limite de margem consignado
+        {{{pessoa_fisica_aprovada_response_limite_consignado_value}}}
 
         :param limite_consignado: The limite_consignado of this PessoaFisicaAprovadaResponse.
         :type: float

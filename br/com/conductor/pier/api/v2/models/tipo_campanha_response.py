@@ -53,7 +53,7 @@ class TipoCampanhaResponse(object):
     def id(self):
         """
         Gets the id of this TipoCampanhaResponse.
-        Identificador do tipo de campanha
+        {{{tipo_campanha_response_id_value}}}
 
         :return: The id of this TipoCampanhaResponse.
         :rtype: int
@@ -64,7 +64,7 @@ class TipoCampanhaResponse(object):
     def id(self, id):
         """
         Sets the id of this TipoCampanhaResponse.
-        Identificador do tipo de campanha
+        {{{tipo_campanha_response_id_value}}}
 
         :param id: The id of this TipoCampanhaResponse.
         :type: int
@@ -75,7 +75,7 @@ class TipoCampanhaResponse(object):
     def descricao(self):
         """
         Gets the descricao of this TipoCampanhaResponse.
-        Descri\u00E7\u00E3o do tipo de campanha
+        {{{tipo_campanha_response_descricao_value}}}
 
         :return: The descricao of this TipoCampanhaResponse.
         :rtype: str
@@ -86,7 +86,7 @@ class TipoCampanhaResponse(object):
     def descricao(self, descricao):
         """
         Sets the descricao of this TipoCampanhaResponse.
-        Descri\u00E7\u00E3o do tipo de campanha
+        {{{tipo_campanha_response_descricao_value}}}
 
         :param descricao: The descricao of this TipoCampanhaResponse.
         :type: str

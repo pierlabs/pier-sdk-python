@@ -89,7 +89,7 @@ class AtendimentoClienteResponse(object):
     def id_atendimento(self):
         """
         Gets the id_atendimento of this AtendimentoClienteResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o do Atendimento (id)
+        {{{atendimento_cliente_response_id_atendimento_value}}}
 
         :return: The id_atendimento of this AtendimentoClienteResponse.
         :rtype: int
@@ -100,7 +100,7 @@ class AtendimentoClienteResponse(object):
     def id_atendimento(self, id_atendimento):
         """
         Sets the id_atendimento of this AtendimentoClienteResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o do Atendimento (id)
+        {{{atendimento_cliente_response_id_atendimento_value}}}
 
         :param id_atendimento: The id_atendimento of this AtendimentoClienteResponse.
         :type: int
@@ -111,7 +111,7 @@ class AtendimentoClienteResponse(object):
     def id_conta(self):
         """
         Gets the id_conta of this AtendimentoClienteResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o da Conta a qual o Atendimento est\u00E1 associado
+        {{{atendimento_cliente_response_id_conta_value}}}
 
         :return: The id_conta of this AtendimentoClienteResponse.
         :rtype: int
@@ -122,7 +122,7 @@ class AtendimentoClienteResponse(object):
     def id_conta(self, id_conta):
         """
         Sets the id_conta of this AtendimentoClienteResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o da Conta a qual o Atendimento est\u00E1 associado
+        {{{atendimento_cliente_response_id_conta_value}}}
 
         :param id_conta: The id_conta of this AtendimentoClienteResponse.
         :type: int
@@ -133,7 +133,7 @@ class AtendimentoClienteResponse(object):
     def id_tipo_atendimento(self):
         """
         Gets the id_tipo_atendimento of this AtendimentoClienteResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o do Tipo de Atendimento (id)
+        {{{atendimento_cliente_response_id_tipo_atendimento_value}}}
 
         :return: The id_tipo_atendimento of this AtendimentoClienteResponse.
         :rtype: int
@@ -144,7 +144,7 @@ class AtendimentoClienteResponse(object):
     def id_tipo_atendimento(self, id_tipo_atendimento):
         """
         Sets the id_tipo_atendimento of this AtendimentoClienteResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o do Tipo de Atendimento (id)
+        {{{atendimento_cliente_response_id_tipo_atendimento_value}}}
 
         :param id_tipo_atendimento: The id_tipo_atendimento of this AtendimentoClienteResponse.
         :type: int
@@ -155,7 +155,7 @@ class AtendimentoClienteResponse(object):
     def descricao_tipo_atendimento(self):
         """
         Gets the descricao_tipo_atendimento of this AtendimentoClienteResponse.
-        Apresenta a descri\u00E7\u00E3o do Tipo de Atendimento
+        {{{atendimento_cliente_response_descricao_tipo_atendimento_value}}}
 
         :return: The descricao_tipo_atendimento of this AtendimentoClienteResponse.
         :rtype: str
@@ -166,7 +166,7 @@ class AtendimentoClienteResponse(object):
     def descricao_tipo_atendimento(self, descricao_tipo_atendimento):
         """
         Sets the descricao_tipo_atendimento of this AtendimentoClienteResponse.
-        Apresenta a descri\u00E7\u00E3o do Tipo de Atendimento
+        {{{atendimento_cliente_response_descricao_tipo_atendimento_value}}}
 
         :param descricao_tipo_atendimento: The descricao_tipo_atendimento of this AtendimentoClienteResponse.
         :type: str
@@ -177,7 +177,7 @@ class AtendimentoClienteResponse(object):
     def conteudo_atendimento(self):
         """
         Gets the conteudo_atendimento of this AtendimentoClienteResponse.
-        Apresenta as informa\u00E7\u00F5es que foram utilizadas para consultar, cadastrar ou alterar informa\u00E7\u00F5es relacionadas ao Atendimento.
+        {{{atendimento_cliente_response_conteudo_atendimento_value}}}
 
         :return: The conteudo_atendimento of this AtendimentoClienteResponse.
         :rtype: str
@@ -188,7 +188,7 @@ class AtendimentoClienteResponse(object):
     def conteudo_atendimento(self, conteudo_atendimento):
         """
         Sets the conteudo_atendimento of this AtendimentoClienteResponse.
-        Apresenta as informa\u00E7\u00F5es que foram utilizadas para consultar, cadastrar ou alterar informa\u00E7\u00F5es relacionadas ao Atendimento.
+        {{{atendimento_cliente_response_conteudo_atendimento_value}}}
 
         :param conteudo_atendimento: The conteudo_atendimento of this AtendimentoClienteResponse.
         :type: str
@@ -199,7 +199,7 @@ class AtendimentoClienteResponse(object):
     def detalhes_atendimento(self):
         """
         Gets the detalhes_atendimento of this AtendimentoClienteResponse.
-        Apresenta os detalhes lan\u00E7ados pelo sistema ou pelo Atendente durante relacionados ao Atendimento.
+        {{{atendimento_cliente_response_detalhes_atendimento_value}}}
 
         :return: The detalhes_atendimento of this AtendimentoClienteResponse.
         :rtype: str
@@ -210,7 +210,7 @@ class AtendimentoClienteResponse(object):
     def detalhes_atendimento(self, detalhes_atendimento):
         """
         Sets the detalhes_atendimento of this AtendimentoClienteResponse.
-        Apresenta os detalhes lan\u00E7ados pelo sistema ou pelo Atendente durante relacionados ao Atendimento.
+        {{{atendimento_cliente_response_detalhes_atendimento_value}}}
 
         :param detalhes_atendimento: The detalhes_atendimento of this AtendimentoClienteResponse.
         :type: str
@@ -221,7 +221,7 @@ class AtendimentoClienteResponse(object):
     def nome_atendente(self):
         """
         Gets the nome_atendente of this AtendimentoClienteResponse.
-        Apresenta o nome do Atendente que registrou o Atendimento.
+        {{{atendimento_cliente_response_nome_atendente_value}}}
 
         :return: The nome_atendente of this AtendimentoClienteResponse.
         :rtype: str
@@ -232,7 +232,7 @@ class AtendimentoClienteResponse(object):
     def nome_atendente(self, nome_atendente):
         """
         Sets the nome_atendente of this AtendimentoClienteResponse.
-        Apresenta o nome do Atendente que registrou o Atendimento.
+        {{{atendimento_cliente_response_nome_atendente_value}}}
 
         :param nome_atendente: The nome_atendente of this AtendimentoClienteResponse.
         :type: str
@@ -243,7 +243,7 @@ class AtendimentoClienteResponse(object):
     def nome_sistema(self):
         """
         Gets the nome_sistema of this AtendimentoClienteResponse.
-        Apresenta o nome do Sistema, Servidor, M\u00F3dulo ou M\u00E9todo REST que originou o registro do Atendimento.
+        {{{atendimento_cliente_response_nome_sistema_value}}}
 
         :return: The nome_sistema of this AtendimentoClienteResponse.
         :rtype: str
@@ -254,7 +254,7 @@ class AtendimentoClienteResponse(object):
     def nome_sistema(self, nome_sistema):
         """
         Sets the nome_sistema of this AtendimentoClienteResponse.
-        Apresenta o nome do Sistema, Servidor, M\u00F3dulo ou M\u00E9todo REST que originou o registro do Atendimento.
+        {{{atendimento_cliente_response_nome_sistema_value}}}
 
         :param nome_sistema: The nome_sistema of this AtendimentoClienteResponse.
         :type: str
@@ -265,7 +265,7 @@ class AtendimentoClienteResponse(object):
     def data_hora_inicio_atendimento(self):
         """
         Gets the data_hora_inicio_atendimento of this AtendimentoClienteResponse.
-        Apresenta a data e hora em que o Atendimento foi iniciado. Quando utilizado, serve para medir a performance dos Atendimentos.
+        {{{atendimento_cliente_response_data_hora_inicio_atendimento_value}}}
 
         :return: The data_hora_inicio_atendimento of this AtendimentoClienteResponse.
         :rtype: str
@@ -276,7 +276,7 @@ class AtendimentoClienteResponse(object):
     def data_hora_inicio_atendimento(self, data_hora_inicio_atendimento):
         """
         Sets the data_hora_inicio_atendimento of this AtendimentoClienteResponse.
-        Apresenta a data e hora em que o Atendimento foi iniciado. Quando utilizado, serve para medir a performance dos Atendimentos.
+        {{{atendimento_cliente_response_data_hora_inicio_atendimento_value}}}
 
         :param data_hora_inicio_atendimento: The data_hora_inicio_atendimento of this AtendimentoClienteResponse.
         :type: str
@@ -287,7 +287,7 @@ class AtendimentoClienteResponse(object):
     def data_hora_fim_atendimento(self):
         """
         Gets the data_hora_fim_atendimento of this AtendimentoClienteResponse.
-        Apresenta a data e hora em que o Atendimento foi iniciado. Quando utilizado, serve para medir a performance dos Atendimentos.
+        {{{atendimento_cliente_response_data_hora_fim_atendimento_value}}}
 
         :return: The data_hora_fim_atendimento of this AtendimentoClienteResponse.
         :rtype: str
@@ -298,7 +298,7 @@ class AtendimentoClienteResponse(object):
     def data_hora_fim_atendimento(self, data_hora_fim_atendimento):
         """
         Sets the data_hora_fim_atendimento of this AtendimentoClienteResponse.
-        Apresenta a data e hora em que o Atendimento foi iniciado. Quando utilizado, serve para medir a performance dos Atendimentos.
+        {{{atendimento_cliente_response_data_hora_fim_atendimento_value}}}
 
         :param data_hora_fim_atendimento: The data_hora_fim_atendimento of this AtendimentoClienteResponse.
         :type: str
@@ -309,7 +309,7 @@ class AtendimentoClienteResponse(object):
     def data_atendimento(self):
         """
         Gets the data_atendimento of this AtendimentoClienteResponse.
-        Apresenta a data e hora em que o Atendimento foi realizado.
+        {{{atendimento_cliente_response_data_atendimento_value}}}
 
         :return: The data_atendimento of this AtendimentoClienteResponse.
         :rtype: str
@@ -320,7 +320,7 @@ class AtendimentoClienteResponse(object):
     def data_atendimento(self, data_atendimento):
         """
         Sets the data_atendimento of this AtendimentoClienteResponse.
-        Apresenta a data e hora em que o Atendimento foi realizado.
+        {{{atendimento_cliente_response_data_atendimento_value}}}
 
         :param data_atendimento: The data_atendimento of this AtendimentoClienteResponse.
         :type: str
@@ -331,7 +331,7 @@ class AtendimentoClienteResponse(object):
     def data_agendamento(self):
         """
         Gets the data_agendamento of this AtendimentoClienteResponse.
-        Quando utilizado, de acordo com o Tipo de Atendimento, apresenta a data e hora para processamento ou a data para retorno do Atendimento.
+        {{{atendimento_cliente_response_data_agendamento_value}}}
 
         :return: The data_agendamento of this AtendimentoClienteResponse.
         :rtype: str
@@ -342,7 +342,7 @@ class AtendimentoClienteResponse(object):
     def data_agendamento(self, data_agendamento):
         """
         Sets the data_agendamento of this AtendimentoClienteResponse.
-        Quando utilizado, de acordo com o Tipo de Atendimento, apresenta a data e hora para processamento ou a data para retorno do Atendimento.
+        {{{atendimento_cliente_response_data_agendamento_value}}}
 
         :param data_agendamento: The data_agendamento of this AtendimentoClienteResponse.
         :type: str
@@ -353,7 +353,7 @@ class AtendimentoClienteResponse(object):
     def data_processamento(self):
         """
         Gets the data_processamento of this AtendimentoClienteResponse.
-        Quando utilizado, apresenta a data e hora em que a solicita\u00E7\u00E3o registrada no Atendimento fora processada.
+        {{{atendimento_cliente_response_data_processamento_value}}}
 
         :return: The data_processamento of this AtendimentoClienteResponse.
         :rtype: str
@@ -364,7 +364,7 @@ class AtendimentoClienteResponse(object):
     def data_processamento(self, data_processamento):
         """
         Sets the data_processamento of this AtendimentoClienteResponse.
-        Quando utilizado, apresenta a data e hora em que a solicita\u00E7\u00E3o registrada no Atendimento fora processada.
+        {{{atendimento_cliente_response_data_processamento_value}}}
 
         :param data_processamento: The data_processamento of this AtendimentoClienteResponse.
         :type: str
@@ -375,7 +375,7 @@ class AtendimentoClienteResponse(object):
     def flag_processamento(self):
         """
         Gets the flag_processamento of this AtendimentoClienteResponse.
-        Quando aplic\u00E1vel, de acordo com o Indica se o Processamento da solicita\u00E7\u00E3o fora realizado.
+        {{{atendimento_cliente_response_flag_processamento_value}}}
 
         :return: The flag_processamento of this AtendimentoClienteResponse.
         :rtype: int
@@ -386,7 +386,7 @@ class AtendimentoClienteResponse(object):
     def flag_processamento(self, flag_processamento):
         """
         Sets the flag_processamento of this AtendimentoClienteResponse.
-        Quando aplic\u00E1vel, de acordo com o Indica se o Processamento da solicita\u00E7\u00E3o fora realizado.
+        {{{atendimento_cliente_response_flag_processamento_value}}}
 
         :param flag_processamento: The flag_processamento of this AtendimentoClienteResponse.
         :type: int

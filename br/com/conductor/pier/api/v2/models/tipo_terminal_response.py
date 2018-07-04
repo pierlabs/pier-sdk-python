@@ -53,7 +53,7 @@ class TipoTerminalResponse(object):
     def id(self):
         """
         Gets the id of this TipoTerminalResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o do Tipo Terminal (id).
+        {{{tipo_terminal_response_id_value}}}
 
         :return: The id of this TipoTerminalResponse.
         :rtype: int
@@ -64,7 +64,7 @@ class TipoTerminalResponse(object):
     def id(self, id):
         """
         Sets the id of this TipoTerminalResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o do Tipo Terminal (id).
+        {{{tipo_terminal_response_id_value}}}
 
         :param id: The id of this TipoTerminalResponse.
         :type: int
@@ -75,7 +75,7 @@ class TipoTerminalResponse(object):
     def descricao_terminal(self):
         """
         Gets the descricao_terminal of this TipoTerminalResponse.
-        Descri\u00E7\u00E3o do Tipo Terminal.
+        {{{tipo_terminal_response_descricao_terminal_value}}}
 
         :return: The descricao_terminal of this TipoTerminalResponse.
         :rtype: str
@@ -86,7 +86,7 @@ class TipoTerminalResponse(object):
     def descricao_terminal(self, descricao_terminal):
         """
         Sets the descricao_terminal of this TipoTerminalResponse.
-        Descri\u00E7\u00E3o do Tipo Terminal.
+        {{{tipo_terminal_response_descricao_terminal_value}}}
 
         :param descricao_terminal: The descricao_terminal of this TipoTerminalResponse.
         :type: str

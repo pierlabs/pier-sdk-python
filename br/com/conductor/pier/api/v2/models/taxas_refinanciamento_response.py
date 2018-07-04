@@ -113,7 +113,7 @@ class TaxasRefinanciamentoResponse(object):
     def id(self):
         """
         Gets the id of this TaxasRefinanciamentoResponse.
-        ID das taxas
+        {{{taxas_refinanciamento_response_id_value}}}
 
         :return: The id of this TaxasRefinanciamentoResponse.
         :rtype: int
@@ -124,7 +124,7 @@ class TaxasRefinanciamentoResponse(object):
     def id(self, id):
         """
         Sets the id of this TaxasRefinanciamentoResponse.
-        ID das taxas
+        {{{taxas_refinanciamento_response_id_value}}}
 
         :param id: The id of this TaxasRefinanciamentoResponse.
         :type: int
@@ -135,7 +135,7 @@ class TaxasRefinanciamentoResponse(object):
     def id_conta(self):
         """
         Gets the id_conta of this TaxasRefinanciamentoResponse.
-        ID da conta
+        {{{taxas_refinanciamento_response_id_conta_value}}}
 
         :return: The id_conta of this TaxasRefinanciamentoResponse.
         :rtype: int
@@ -146,7 +146,7 @@ class TaxasRefinanciamentoResponse(object):
     def id_conta(self, id_conta):
         """
         Sets the id_conta of this TaxasRefinanciamentoResponse.
-        ID da conta
+        {{{taxas_refinanciamento_response_id_conta_value}}}
 
         :param id_conta: The id_conta of this TaxasRefinanciamentoResponse.
         :type: int
@@ -157,7 +157,7 @@ class TaxasRefinanciamentoResponse(object):
     def id_produto(self):
         """
         Gets the id_produto of this TaxasRefinanciamentoResponse.
-        ID do produto
+        {{{taxas_refinanciamento_response_id_produto_value}}}
 
         :return: The id_produto of this TaxasRefinanciamentoResponse.
         :rtype: int
@@ -168,7 +168,7 @@ class TaxasRefinanciamentoResponse(object):
     def id_produto(self, id_produto):
         """
         Sets the id_produto of this TaxasRefinanciamentoResponse.
-        ID do produto
+        {{{taxas_refinanciamento_response_id_produto_value}}}
 
         :param id_produto: The id_produto of this TaxasRefinanciamentoResponse.
         :type: int
@@ -179,7 +179,7 @@ class TaxasRefinanciamentoResponse(object):
     def id_plano_conta(self):
         """
         Gets the id_plano_conta of this TaxasRefinanciamentoResponse.
-        ID do plano de contas
+        {{{taxas_refinanciamento_response_id_plano_conta_value}}}
 
         :return: The id_plano_conta of this TaxasRefinanciamentoResponse.
         :rtype: int
@@ -190,7 +190,7 @@ class TaxasRefinanciamentoResponse(object):
     def id_plano_conta(self, id_plano_conta):
         """
         Sets the id_plano_conta of this TaxasRefinanciamentoResponse.
-        ID do plano de contas
+        {{{taxas_refinanciamento_response_id_plano_conta_value}}}
 
         :param id_plano_conta: The id_plano_conta of this TaxasRefinanciamentoResponse.
         :type: int
@@ -201,7 +201,7 @@ class TaxasRefinanciamentoResponse(object):
     def id_plano_pct(self):
         """
         Gets the id_plano_pct of this TaxasRefinanciamentoResponse.
-        ID do plano PCT
+        {{{taxas_refinanciamento_response_id_plano_pct_value}}}
 
         :return: The id_plano_pct of this TaxasRefinanciamentoResponse.
         :rtype: int
@@ -212,7 +212,7 @@ class TaxasRefinanciamentoResponse(object):
     def id_plano_pct(self, id_plano_pct):
         """
         Sets the id_plano_pct of this TaxasRefinanciamentoResponse.
-        ID do plano PCT
+        {{{taxas_refinanciamento_response_id_plano_pct_value}}}
 
         :param id_plano_pct: The id_plano_pct of this TaxasRefinanciamentoResponse.
         :type: int
@@ -223,7 +223,7 @@ class TaxasRefinanciamentoResponse(object):
     def id_plano_credito_taxa(self):
         """
         Gets the id_plano_credito_taxa of this TaxasRefinanciamentoResponse.
-        ID do plano credito taxa
+        {{{taxas_refinanciamento_response_id_plano_credito_taxa_value}}}
 
         :return: The id_plano_credito_taxa of this TaxasRefinanciamentoResponse.
         :rtype: int
@@ -234,7 +234,7 @@ class TaxasRefinanciamentoResponse(object):
     def id_plano_credito_taxa(self, id_plano_credito_taxa):
         """
         Sets the id_plano_credito_taxa of this TaxasRefinanciamentoResponse.
-        ID do plano credito taxa
+        {{{taxas_refinanciamento_response_id_plano_credito_taxa_value}}}
 
         :param id_plano_credito_taxa: The id_plano_credito_taxa of this TaxasRefinanciamentoResponse.
         :type: int
@@ -245,7 +245,7 @@ class TaxasRefinanciamentoResponse(object):
     def data_entrada(self):
         """
         Gets the data_entrada of this TaxasRefinanciamentoResponse.
-        Data de entrada
+        {{{taxas_refinanciamento_response_data_entrada_value}}}
 
         :return: The data_entrada of this TaxasRefinanciamentoResponse.
         :rtype: str
@@ -256,7 +256,7 @@ class TaxasRefinanciamentoResponse(object):
     def data_entrada(self, data_entrada):
         """
         Sets the data_entrada of this TaxasRefinanciamentoResponse.
-        Data de entrada
+        {{{taxas_refinanciamento_response_data_entrada_value}}}
 
         :param data_entrada: The data_entrada of this TaxasRefinanciamentoResponse.
         :type: str
@@ -267,7 +267,7 @@ class TaxasRefinanciamentoResponse(object):
     def vencimento(self):
         """
         Gets the vencimento of this TaxasRefinanciamentoResponse.
-        Vencimento das taxas
+        {{{taxas_refinanciamento_response_vencimento_value}}}
 
         :return: The vencimento of this TaxasRefinanciamentoResponse.
         :rtype: str
@@ -278,7 +278,7 @@ class TaxasRefinanciamentoResponse(object):
     def vencimento(self, vencimento):
         """
         Sets the vencimento of this TaxasRefinanciamentoResponse.
-        Vencimento das taxas
+        {{{taxas_refinanciamento_response_vencimento_value}}}
 
         :param vencimento: The vencimento of this TaxasRefinanciamentoResponse.
         :type: str
@@ -289,7 +289,7 @@ class TaxasRefinanciamentoResponse(object):
     def recuperacao_encargos_financeiros(self):
         """
         Gets the recuperacao_encargos_financeiros of this TaxasRefinanciamentoResponse.
-        Recupera\u00E7\u00E3o de encargos financeiro
+        {{{taxas_refinanciamento_response_recuperacao_encargos_financeiros_value}}}
 
         :return: The recuperacao_encargos_financeiros of this TaxasRefinanciamentoResponse.
         :rtype: float
@@ -300,7 +300,7 @@ class TaxasRefinanciamentoResponse(object):
     def recuperacao_encargos_financeiros(self, recuperacao_encargos_financeiros):
         """
         Sets the recuperacao_encargos_financeiros of this TaxasRefinanciamentoResponse.
-        Recupera\u00E7\u00E3o de encargos financeiro
+        {{{taxas_refinanciamento_response_recuperacao_encargos_financeiros_value}}}
 
         :param recuperacao_encargos_financeiros: The recuperacao_encargos_financeiros of this TaxasRefinanciamentoResponse.
         :type: float
@@ -311,7 +311,7 @@ class TaxasRefinanciamentoResponse(object):
     def comissao_garantia(self):
         """
         Gets the comissao_garantia of this TaxasRefinanciamentoResponse.
-        Descri\u00E7\u00E3o da comiss\u00E3o de garantia
+        {{{taxas_refinanciamento_response_comissao_garantia_value}}}
 
         :return: The comissao_garantia of this TaxasRefinanciamentoResponse.
         :rtype: float
@@ -322,7 +322,7 @@ class TaxasRefinanciamentoResponse(object):
     def comissao_garantia(self, comissao_garantia):
         """
         Sets the comissao_garantia of this TaxasRefinanciamentoResponse.
-        Descri\u00E7\u00E3o da comiss\u00E3o de garantia
+        {{{taxas_refinanciamento_response_comissao_garantia_value}}}
 
         :param comissao_garantia: The comissao_garantia of this TaxasRefinanciamentoResponse.
         :type: float
@@ -333,7 +333,7 @@ class TaxasRefinanciamentoResponse(object):
     def agenciamento(self):
         """
         Gets the agenciamento of this TaxasRefinanciamentoResponse.
-        Descri\u00E7\u00E3o do agenciamento
+        {{{taxas_refinanciamento_response_agenciamento_value}}}
 
         :return: The agenciamento of this TaxasRefinanciamentoResponse.
         :rtype: float
@@ -344,7 +344,7 @@ class TaxasRefinanciamentoResponse(object):
     def agenciamento(self, agenciamento):
         """
         Sets the agenciamento of this TaxasRefinanciamentoResponse.
-        Descri\u00E7\u00E3o do agenciamento
+        {{{taxas_refinanciamento_response_agenciamento_value}}}
 
         :param agenciamento: The agenciamento of this TaxasRefinanciamentoResponse.
         :type: float
@@ -355,7 +355,7 @@ class TaxasRefinanciamentoResponse(object):
     def taxa_maxima_proximo_periodo(self):
         """
         Gets the taxa_maxima_proximo_periodo of this TaxasRefinanciamentoResponse.
-        Taxa m\u00E1xima do proximo per\u00EDodo
+        {{{taxas_refinanciamento_response_taxa_maxima_proximo_periodo_value}}}
 
         :return: The taxa_maxima_proximo_periodo of this TaxasRefinanciamentoResponse.
         :rtype: float
@@ -366,7 +366,7 @@ class TaxasRefinanciamentoResponse(object):
     def taxa_maxima_proximo_periodo(self, taxa_maxima_proximo_periodo):
         """
         Sets the taxa_maxima_proximo_periodo of this TaxasRefinanciamentoResponse.
-        Taxa m\u00E1xima do proximo per\u00EDodo
+        {{{taxas_refinanciamento_response_taxa_maxima_proximo_periodo_value}}}
 
         :param taxa_maxima_proximo_periodo: The taxa_maxima_proximo_periodo of this TaxasRefinanciamentoResponse.
         :type: float
@@ -377,7 +377,7 @@ class TaxasRefinanciamentoResponse(object):
     def taxa_encargos_financiamento(self):
         """
         Gets the taxa_encargos_financiamento of this TaxasRefinanciamentoResponse.
-        Taxa de encargos do financiamento
+        {{{taxas_refinanciamento_response_taxa_encargos_financiamento_value}}}
 
         :return: The taxa_encargos_financiamento of this TaxasRefinanciamentoResponse.
         :rtype: float
@@ -388,7 +388,7 @@ class TaxasRefinanciamentoResponse(object):
     def taxa_encargos_financiamento(self, taxa_encargos_financiamento):
         """
         Sets the taxa_encargos_financiamento of this TaxasRefinanciamentoResponse.
-        Taxa de encargos do financiamento
+        {{{taxas_refinanciamento_response_taxa_encargos_financiamento_value}}}
 
         :param taxa_encargos_financiamento: The taxa_encargos_financiamento of this TaxasRefinanciamentoResponse.
         :type: float
@@ -399,7 +399,7 @@ class TaxasRefinanciamentoResponse(object):
     def taxa_maxima_saque(self):
         """
         Gets the taxa_maxima_saque of this TaxasRefinanciamentoResponse.
-        Taxa m\u00E1xima de saque
+        {{{taxas_refinanciamento_response_taxa_maxima_saque_value}}}
 
         :return: The taxa_maxima_saque of this TaxasRefinanciamentoResponse.
         :rtype: float
@@ -410,7 +410,7 @@ class TaxasRefinanciamentoResponse(object):
     def taxa_maxima_saque(self, taxa_maxima_saque):
         """
         Sets the taxa_maxima_saque of this TaxasRefinanciamentoResponse.
-        Taxa m\u00E1xima de saque
+        {{{taxas_refinanciamento_response_taxa_maxima_saque_value}}}
 
         :param taxa_maxima_saque: The taxa_maxima_saque of this TaxasRefinanciamentoResponse.
         :type: float
@@ -421,7 +421,7 @@ class TaxasRefinanciamentoResponse(object):
     def taxa_saque(self):
         """
         Gets the taxa_saque of this TaxasRefinanciamentoResponse.
-        Taxa de saque
+        {{{taxas_refinanciamento_response_taxa_saque_value}}}
 
         :return: The taxa_saque of this TaxasRefinanciamentoResponse.
         :rtype: float
@@ -432,7 +432,7 @@ class TaxasRefinanciamentoResponse(object):
     def taxa_saque(self, taxa_saque):
         """
         Sets the taxa_saque of this TaxasRefinanciamentoResponse.
-        Taxa de saque
+        {{{taxas_refinanciamento_response_taxa_saque_value}}}
 
         :param taxa_saque: The taxa_saque of this TaxasRefinanciamentoResponse.
         :type: float
@@ -443,7 +443,7 @@ class TaxasRefinanciamentoResponse(object):
     def taxa_maxima_compra_juros(self):
         """
         Gets the taxa_maxima_compra_juros of this TaxasRefinanciamentoResponse.
-        Taxa m\u00E1xima de compras juros
+        {{{taxas_refinanciamento_response_taxa_maxima_compra_juros_value}}}
 
         :return: The taxa_maxima_compra_juros of this TaxasRefinanciamentoResponse.
         :rtype: float
@@ -454,7 +454,7 @@ class TaxasRefinanciamentoResponse(object):
     def taxa_maxima_compra_juros(self, taxa_maxima_compra_juros):
         """
         Sets the taxa_maxima_compra_juros of this TaxasRefinanciamentoResponse.
-        Taxa m\u00E1xima de compras juros
+        {{{taxas_refinanciamento_response_taxa_maxima_compra_juros_value}}}
 
         :param taxa_maxima_compra_juros: The taxa_maxima_compra_juros of this TaxasRefinanciamentoResponse.
         :type: float
@@ -465,7 +465,7 @@ class TaxasRefinanciamentoResponse(object):
     def taxa_compra_juros(self):
         """
         Gets the taxa_compra_juros of this TaxasRefinanciamentoResponse.
-        Taxa de juros compra
+        {{{taxas_refinanciamento_response_taxa_compra_juros_value}}}
 
         :return: The taxa_compra_juros of this TaxasRefinanciamentoResponse.
         :rtype: float
@@ -476,7 +476,7 @@ class TaxasRefinanciamentoResponse(object):
     def taxa_compra_juros(self, taxa_compra_juros):
         """
         Sets the taxa_compra_juros of this TaxasRefinanciamentoResponse.
-        Taxa de juros compra
+        {{{taxas_refinanciamento_response_taxa_compra_juros_value}}}
 
         :param taxa_compra_juros: The taxa_compra_juros of this TaxasRefinanciamentoResponse.
         :type: float
@@ -487,7 +487,7 @@ class TaxasRefinanciamentoResponse(object):
     def taxa_permanencia(self):
         """
         Gets the taxa_permanencia of this TaxasRefinanciamentoResponse.
-        Taxa de permanencia
+        {{{taxas_refinanciamento_response_taxa_permanencia_value}}}
 
         :return: The taxa_permanencia of this TaxasRefinanciamentoResponse.
         :rtype: float
@@ -498,7 +498,7 @@ class TaxasRefinanciamentoResponse(object):
     def taxa_permanencia(self, taxa_permanencia):
         """
         Sets the taxa_permanencia of this TaxasRefinanciamentoResponse.
-        Taxa de permanencia
+        {{{taxas_refinanciamento_response_taxa_permanencia_value}}}
 
         :param taxa_permanencia: The taxa_permanencia of this TaxasRefinanciamentoResponse.
         :type: float
@@ -509,7 +509,7 @@ class TaxasRefinanciamentoResponse(object):
     def taxa_refinanciamento(self):
         """
         Gets the taxa_refinanciamento of this TaxasRefinanciamentoResponse.
-        Taxa de permanencia
+        {{{taxas_refinanciamento_response_taxa_refinanciamento_value}}}
 
         :return: The taxa_refinanciamento of this TaxasRefinanciamentoResponse.
         :rtype: float
@@ -520,7 +520,7 @@ class TaxasRefinanciamentoResponse(object):
     def taxa_refinanciamento(self, taxa_refinanciamento):
         """
         Sets the taxa_refinanciamento of this TaxasRefinanciamentoResponse.
-        Taxa de permanencia
+        {{{taxas_refinanciamento_response_taxa_refinanciamento_value}}}
 
         :param taxa_refinanciamento: The taxa_refinanciamento of this TaxasRefinanciamentoResponse.
         :type: float
@@ -531,7 +531,7 @@ class TaxasRefinanciamentoResponse(object):
     def taxa_recuperacao_refinanciamento(self):
         """
         Gets the taxa_recuperacao_refinanciamento of this TaxasRefinanciamentoResponse.
-        Taxa de permanencia
+        {{{taxas_refinanciamento_response_taxa_recuperacao_refinanciamento_value}}}
 
         :return: The taxa_recuperacao_refinanciamento of this TaxasRefinanciamentoResponse.
         :rtype: float
@@ -542,7 +542,7 @@ class TaxasRefinanciamentoResponse(object):
     def taxa_recuperacao_refinanciamento(self, taxa_recuperacao_refinanciamento):
         """
         Sets the taxa_recuperacao_refinanciamento of this TaxasRefinanciamentoResponse.
-        Taxa de permanencia
+        {{{taxas_refinanciamento_response_taxa_recuperacao_refinanciamento_value}}}
 
         :param taxa_recuperacao_refinanciamento: The taxa_recuperacao_refinanciamento of this TaxasRefinanciamentoResponse.
         :type: float
@@ -553,7 +553,7 @@ class TaxasRefinanciamentoResponse(object):
     def taxa_perc_calc_pagamento_minimo(self):
         """
         Gets the taxa_perc_calc_pagamento_minimo of this TaxasRefinanciamentoResponse.
-        Taxa Percelamento pagamento minimo
+        {{{taxas_refinanciamento_response_taxa_perc_calc_pagamento_minimo_value}}}
 
         :return: The taxa_perc_calc_pagamento_minimo of this TaxasRefinanciamentoResponse.
         :rtype: float
@@ -564,7 +564,7 @@ class TaxasRefinanciamentoResponse(object):
     def taxa_perc_calc_pagamento_minimo(self, taxa_perc_calc_pagamento_minimo):
         """
         Sets the taxa_perc_calc_pagamento_minimo of this TaxasRefinanciamentoResponse.
-        Taxa Percelamento pagamento minimo
+        {{{taxas_refinanciamento_response_taxa_perc_calc_pagamento_minimo_value}}}
 
         :param taxa_perc_calc_pagamento_minimo: The taxa_perc_calc_pagamento_minimo of this TaxasRefinanciamentoResponse.
         :type: float
@@ -575,7 +575,7 @@ class TaxasRefinanciamentoResponse(object):
     def plano_taxa_default(self):
         """
         Gets the plano_taxa_default of this TaxasRefinanciamentoResponse.
-        Plano de taxa padr\u00E3o
+        {{{taxas_refinanciamento_response_plano_taxa_default_value}}}
 
         :return: The plano_taxa_default of this TaxasRefinanciamentoResponse.
         :rtype: int
@@ -586,7 +586,7 @@ class TaxasRefinanciamentoResponse(object):
     def plano_taxa_default(self, plano_taxa_default):
         """
         Sets the plano_taxa_default of this TaxasRefinanciamentoResponse.
-        Plano de taxa padr\u00E3o
+        {{{taxas_refinanciamento_response_plano_taxa_default_value}}}
 
         :param plano_taxa_default: The plano_taxa_default of this TaxasRefinanciamentoResponse.
         :type: int

@@ -65,7 +65,7 @@ class CartaoPayPersist(object):
     def numero_cartao(self):
         """
         Gets the numero_cartao of this CartaoPayPersist.
-        N\u00FAmero do cart\u00E3o criptografado
+        {{{cartao_pay_persist_numero_cartao_value}}}
 
         :return: The numero_cartao of this CartaoPayPersist.
         :rtype: str
@@ -76,7 +76,7 @@ class CartaoPayPersist(object):
     def numero_cartao(self, numero_cartao):
         """
         Sets the numero_cartao of this CartaoPayPersist.
-        N\u00FAmero do cart\u00E3o criptografado
+        {{{cartao_pay_persist_numero_cartao_value}}}
 
         :param numero_cartao: The numero_cartao of this CartaoPayPersist.
         :type: str
@@ -87,7 +87,7 @@ class CartaoPayPersist(object):
     def data_validade(self):
         """
         Gets the data_validade of this CartaoPayPersist.
-        Data de validade do cart\u00E3o
+        {{{cartao_pay_persist_data_validade_value}}}
 
         :return: The data_validade of this CartaoPayPersist.
         :rtype: str
@@ -98,7 +98,7 @@ class CartaoPayPersist(object):
     def data_validade(self, data_validade):
         """
         Sets the data_validade of this CartaoPayPersist.
-        Data de validade do cart\u00E3o
+        {{{cartao_pay_persist_data_validade_value}}}
 
         :param data_validade: The data_validade of this CartaoPayPersist.
         :type: str
@@ -109,7 +109,7 @@ class CartaoPayPersist(object):
     def cvv(self):
         """
         Gets the cvv of this CartaoPayPersist.
-        CVV do cart\u00E3o criptografado
+        {{{cartao_pay_persist_cvv_value}}}
 
         :return: The cvv of this CartaoPayPersist.
         :rtype: str
@@ -120,7 +120,7 @@ class CartaoPayPersist(object):
     def cvv(self, cvv):
         """
         Sets the cvv of this CartaoPayPersist.
-        CVV do cart\u00E3o criptografado
+        {{{cartao_pay_persist_cvv_value}}}
 
         :param cvv: The cvv of this CartaoPayPersist.
         :type: str
@@ -131,7 +131,7 @@ class CartaoPayPersist(object):
     def numero_receita_federal(self):
         """
         Gets the numero_receita_federal of this CartaoPayPersist.
-        CPF do portador do cart\u00E3o criptografado
+        {{{cartao_pay_persist_numero_receita_federal_value}}}
 
         :return: The numero_receita_federal of this CartaoPayPersist.
         :rtype: str
@@ -142,7 +142,7 @@ class CartaoPayPersist(object):
     def numero_receita_federal(self, numero_receita_federal):
         """
         Sets the numero_receita_federal of this CartaoPayPersist.
-        CPF do portador do cart\u00E3o criptografado
+        {{{cartao_pay_persist_numero_receita_federal_value}}}
 
         :param numero_receita_federal: The numero_receita_federal of this CartaoPayPersist.
         :type: str
@@ -153,7 +153,7 @@ class CartaoPayPersist(object):
     def nome_impresso(self):
         """
         Gets the nome_impresso of this CartaoPayPersist.
-        Nome impresso no cart\u00E3o criptografado
+        {{{cartao_pay_persist_nome_impresso_value}}}
 
         :return: The nome_impresso of this CartaoPayPersist.
         :rtype: str
@@ -164,7 +164,7 @@ class CartaoPayPersist(object):
     def nome_impresso(self, nome_impresso):
         """
         Sets the nome_impresso of this CartaoPayPersist.
-        Nome impresso no cart\u00E3o criptografado
+        {{{cartao_pay_persist_nome_impresso_value}}}
 
         :param nome_impresso: The nome_impresso of this CartaoPayPersist.
         :type: str
@@ -175,7 +175,7 @@ class CartaoPayPersist(object):
     def chave_publica_device(self):
         """
         Gets the chave_publica_device of this CartaoPayPersist.
-        Chave p\u00FAblica do dispositivo criptografada
+        {{{cartao_pay_persist_chave_publica_device_value}}}
 
         :return: The chave_publica_device of this CartaoPayPersist.
         :rtype: str
@@ -186,7 +186,7 @@ class CartaoPayPersist(object):
     def chave_publica_device(self, chave_publica_device):
         """
         Sets the chave_publica_device of this CartaoPayPersist.
-        Chave p\u00FAblica do dispositivo criptografada
+        {{{cartao_pay_persist_chave_publica_device_value}}}
 
         :param chave_publica_device: The chave_publica_device of this CartaoPayPersist.
         :type: str

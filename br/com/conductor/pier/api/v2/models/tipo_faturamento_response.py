@@ -59,7 +59,7 @@ class TipoFaturamentoResponse(object):
     def id(self):
         """
         Gets the id of this TipoFaturamentoResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o do tipo de faturamento (id).
+        {{{tipo_faturamento_response_id_value}}}
 
         :return: The id of this TipoFaturamentoResponse.
         :rtype: int
@@ -70,7 +70,7 @@ class TipoFaturamentoResponse(object):
     def id(self, id):
         """
         Sets the id of this TipoFaturamentoResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o do tipo de faturamento (id).
+        {{{tipo_faturamento_response_id_value}}}
 
         :param id: The id of this TipoFaturamentoResponse.
         :type: int
@@ -81,7 +81,7 @@ class TipoFaturamentoResponse(object):
     def descricao(self):
         """
         Gets the descricao of this TipoFaturamentoResponse.
-        Desci\u00E7\u00E3o do tipo de faturamento.
+        {{{tipo_faturamento_response_descricao_value}}}
 
         :return: The descricao of this TipoFaturamentoResponse.
         :rtype: str
@@ -92,7 +92,7 @@ class TipoFaturamentoResponse(object):
     def descricao(self, descricao):
         """
         Sets the descricao of this TipoFaturamentoResponse.
-        Desci\u00E7\u00E3o do tipo de faturamento.
+        {{{tipo_faturamento_response_descricao_value}}}
 
         :param descricao: The descricao of this TipoFaturamentoResponse.
         :type: str
@@ -103,7 +103,7 @@ class TipoFaturamentoResponse(object):
     def flag_apenas_demonstrativo(self):
         """
         Gets the flag_apenas_demonstrativo of this TipoFaturamentoResponse.
-        Flag que representa que o faturamento ser\u00E1 apenas demonstrativo.
+        {{{tipo_faturamento_response_flag_apenas_demonstrativo_value}}}
 
         :return: The flag_apenas_demonstrativo of this TipoFaturamentoResponse.
         :rtype: bool
@@ -114,7 +114,7 @@ class TipoFaturamentoResponse(object):
     def flag_apenas_demonstrativo(self, flag_apenas_demonstrativo):
         """
         Sets the flag_apenas_demonstrativo of this TipoFaturamentoResponse.
-        Flag que representa que o faturamento ser\u00E1 apenas demonstrativo.
+        {{{tipo_faturamento_response_flag_apenas_demonstrativo_value}}}
 
         :param flag_apenas_demonstrativo: The flag_apenas_demonstrativo of this TipoFaturamentoResponse.
         :type: bool
@@ -125,7 +125,7 @@ class TipoFaturamentoResponse(object):
     def id_convenio(self):
         """
         Gets the id_convenio of this TipoFaturamentoResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o do conv\u00EAnio relacionado ao tipo de faturamento.
+        {{{tipo_faturamento_response_id_convenio_value}}}
 
         :return: The id_convenio of this TipoFaturamentoResponse.
         :rtype: int
@@ -136,7 +136,7 @@ class TipoFaturamentoResponse(object):
     def id_convenio(self, id_convenio):
         """
         Sets the id_convenio of this TipoFaturamentoResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o do conv\u00EAnio relacionado ao tipo de faturamento.
+        {{{tipo_faturamento_response_id_convenio_value}}}
 
         :param id_convenio: The id_convenio of this TipoFaturamentoResponse.
         :type: int

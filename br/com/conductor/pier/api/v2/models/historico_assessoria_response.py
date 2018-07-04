@@ -56,7 +56,7 @@ class HistoricoAssessoriaResponse(object):
     def data_hora_historico(self):
         """
         Gets the data_hora_historico of this HistoricoAssessoriaResponse.
-        Apresenta a data e hora do hist\u00F3rico
+        {{{historico_assessoria_response_data_hora_historico_value}}}
 
         :return: The data_hora_historico of this HistoricoAssessoriaResponse.
         :rtype: str
@@ -67,7 +67,7 @@ class HistoricoAssessoriaResponse(object):
     def data_hora_historico(self, data_hora_historico):
         """
         Sets the data_hora_historico of this HistoricoAssessoriaResponse.
-        Apresenta a data e hora do hist\u00F3rico
+        {{{historico_assessoria_response_data_hora_historico_value}}}
 
         :param data_hora_historico: The data_hora_historico of this HistoricoAssessoriaResponse.
         :type: str
@@ -78,7 +78,7 @@ class HistoricoAssessoriaResponse(object):
     def tipo_historico(self):
         """
         Gets the tipo_historico of this HistoricoAssessoriaResponse.
-        Apresenta o tipo do hist\u00F3rico podendo ser ENTRADA ou SAIDA
+        {{{historico_assessoria_response_tipo_historico_value}}}
 
         :return: The tipo_historico of this HistoricoAssessoriaResponse.
         :rtype: str
@@ -89,7 +89,7 @@ class HistoricoAssessoriaResponse(object):
     def tipo_historico(self, tipo_historico):
         """
         Sets the tipo_historico of this HistoricoAssessoriaResponse.
-        Apresenta o tipo do hist\u00F3rico podendo ser ENTRADA ou SAIDA
+        {{{historico_assessoria_response_tipo_historico_value}}}
 
         :param tipo_historico: The tipo_historico of this HistoricoAssessoriaResponse.
         :type: str
@@ -100,7 +100,7 @@ class HistoricoAssessoriaResponse(object):
     def nome_assessoria(self):
         """
         Gets the nome_assessoria of this HistoricoAssessoriaResponse.
-        Apresenta o nome da Assessoria de Cobran\u00E7a relacionada ao hist\u00F3rico
+        {{{historico_assessoria_response_nome_assessoria_value}}}
 
         :return: The nome_assessoria of this HistoricoAssessoriaResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class HistoricoAssessoriaResponse(object):
     def nome_assessoria(self, nome_assessoria):
         """
         Sets the nome_assessoria of this HistoricoAssessoriaResponse.
-        Apresenta o nome da Assessoria de Cobran\u00E7a relacionada ao hist\u00F3rico
+        {{{historico_assessoria_response_nome_assessoria_value}}}
 
         :param nome_assessoria: The nome_assessoria of this HistoricoAssessoriaResponse.
         :type: str

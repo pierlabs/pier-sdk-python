@@ -65,7 +65,7 @@ class CodigoSegurancaResponse(object):
     def id(self):
         """
         Gets the id of this CodigoSegurancaResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o do c\u00F3digo de seguranca (id).
+        {{{codigo_seguranca_response_id_value}}}
 
         :return: The id of this CodigoSegurancaResponse.
         :rtype: int
@@ -76,7 +76,7 @@ class CodigoSegurancaResponse(object):
     def id(self, id):
         """
         Sets the id of this CodigoSegurancaResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o do c\u00F3digo de seguranca (id).
+        {{{codigo_seguranca_response_id_value}}}
 
         :param id: The id of this CodigoSegurancaResponse.
         :type: int
@@ -87,7 +87,7 @@ class CodigoSegurancaResponse(object):
     def id_emissor(self):
         """
         Gets the id_emissor of this CodigoSegurancaResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o do Emissor (idEmissor).
+        {{{codigo_seguranca_response_id_emissor_value}}}
 
         :return: The id_emissor of this CodigoSegurancaResponse.
         :rtype: int
@@ -98,7 +98,7 @@ class CodigoSegurancaResponse(object):
     def id_emissor(self, id_emissor):
         """
         Sets the id_emissor of this CodigoSegurancaResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o do Emissor (idEmissor).
+        {{{codigo_seguranca_response_id_emissor_value}}}
 
         :param id_emissor: The id_emissor of this CodigoSegurancaResponse.
         :type: int
@@ -109,7 +109,7 @@ class CodigoSegurancaResponse(object):
     def modo_envio(self):
         """
         Gets the modo_envio of this CodigoSegurancaResponse.
-        Apresenta o Modo de Envio do C\u00F3digo de Seguran\u00E7a.
+        {{{codigo_seguranca_response_modo_envio_value}}}
 
         :return: The modo_envio of this CodigoSegurancaResponse.
         :rtype: str
@@ -120,7 +120,7 @@ class CodigoSegurancaResponse(object):
     def modo_envio(self, modo_envio):
         """
         Sets the modo_envio of this CodigoSegurancaResponse.
-        Apresenta o Modo de Envio do C\u00F3digo de Seguran\u00E7a.
+        {{{codigo_seguranca_response_modo_envio_value}}}
 
         :param modo_envio: The modo_envio of this CodigoSegurancaResponse.
         :type: str
@@ -131,7 +131,7 @@ class CodigoSegurancaResponse(object):
     def contato(self):
         """
         Gets the contato of this CodigoSegurancaResponse.
-        Apresenta o contato do c\u00F3digo de seguran\u00E7a.
+        {{{codigo_seguranca_response_contato_value}}}
 
         :return: The contato of this CodigoSegurancaResponse.
         :rtype: str
@@ -142,7 +142,7 @@ class CodigoSegurancaResponse(object):
     def contato(self, contato):
         """
         Sets the contato of this CodigoSegurancaResponse.
-        Apresenta o contato do c\u00F3digo de seguran\u00E7a.
+        {{{codigo_seguranca_response_contato_value}}}
 
         :param contato: The contato of this CodigoSegurancaResponse.
         :type: str
@@ -153,7 +153,7 @@ class CodigoSegurancaResponse(object):
     def ativo(self):
         """
         Gets the ativo of this CodigoSegurancaResponse.
-        Apresenta o status do c\u00F3digo de seguran\u00E7a.
+        {{{codigo_seguranca_response_ativo_value}}}
 
         :return: The ativo of this CodigoSegurancaResponse.
         :rtype: bool
@@ -164,7 +164,7 @@ class CodigoSegurancaResponse(object):
     def ativo(self, ativo):
         """
         Sets the ativo of this CodigoSegurancaResponse.
-        Apresenta o status do c\u00F3digo de seguran\u00E7a.
+        {{{codigo_seguranca_response_ativo_value}}}
 
         :param ativo: The ativo of this CodigoSegurancaResponse.
         :type: bool
@@ -175,7 +175,7 @@ class CodigoSegurancaResponse(object):
     def data_validade(self):
         """
         Gets the data_validade of this CodigoSegurancaResponse.
-        Apresenta a data de validade do c\u00F3digo de seguran\u00E7a gerado.
+        {{{codigo_seguranca_response_data_validade_value}}}
 
         :return: The data_validade of this CodigoSegurancaResponse.
         :rtype: str
@@ -186,7 +186,7 @@ class CodigoSegurancaResponse(object):
     def data_validade(self, data_validade):
         """
         Sets the data_validade of this CodigoSegurancaResponse.
-        Apresenta a data de validade do c\u00F3digo de seguran\u00E7a gerado.
+        {{{codigo_seguranca_response_data_validade_value}}}
 
         :param data_validade: The data_validade of this CodigoSegurancaResponse.
         :type: str

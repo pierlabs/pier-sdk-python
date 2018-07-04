@@ -125,7 +125,7 @@ class ContaDetalheResponse(object):
     def id(self):
         """
         Gets the id of this ContaDetalheResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o de conta (id).
+        {{{conta_detalhe_response_id_value}}}
 
         :return: The id of this ContaDetalheResponse.
         :rtype: int
@@ -136,7 +136,7 @@ class ContaDetalheResponse(object):
     def id(self, id):
         """
         Sets the id of this ContaDetalheResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o de conta (id).
+        {{{conta_detalhe_response_id_value}}}
 
         :param id: The id of this ContaDetalheResponse.
         :type: int
@@ -147,7 +147,7 @@ class ContaDetalheResponse(object):
     def id_pessoa(self):
         """
         Gets the id_pessoa of this ContaDetalheResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o da Pessoa Titular da Conta (id).
+        {{{conta_detalhe_response_id_pessoa_value}}}
 
         :return: The id_pessoa of this ContaDetalheResponse.
         :rtype: int
@@ -158,7 +158,7 @@ class ContaDetalheResponse(object):
     def id_pessoa(self, id_pessoa):
         """
         Sets the id_pessoa of this ContaDetalheResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o da Pessoa Titular da Conta (id).
+        {{{conta_detalhe_response_id_pessoa_value}}}
 
         :param id_pessoa: The id_pessoa of this ContaDetalheResponse.
         :type: int
@@ -169,7 +169,7 @@ class ContaDetalheResponse(object):
     def nome(self):
         """
         Gets the nome of this ContaDetalheResponse.
-        Apresenta o 'Nome Completo da PF' ou o 'Nome Completo da Raz\u00E3o Social (Nome Empresarial)'.
+        {{{conta_detalhe_response_nome_value}}}
 
         :return: The nome of this ContaDetalheResponse.
         :rtype: str
@@ -180,7 +180,7 @@ class ContaDetalheResponse(object):
     def nome(self, nome):
         """
         Sets the nome of this ContaDetalheResponse.
-        Apresenta o 'Nome Completo da PF' ou o 'Nome Completo da Raz\u00E3o Social (Nome Empresarial)'.
+        {{{conta_detalhe_response_nome_value}}}
 
         :param nome: The nome of this ContaDetalheResponse.
         :type: str
@@ -191,7 +191,7 @@ class ContaDetalheResponse(object):
     def id_produto(self):
         """
         Gets the id_produto of this ContaDetalheResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o do produto ao qual a conta faz parte. (id).
+        {{{conta_detalhe_response_id_produto_value}}}
 
         :return: The id_produto of this ContaDetalheResponse.
         :rtype: int
@@ -202,7 +202,7 @@ class ContaDetalheResponse(object):
     def id_produto(self, id_produto):
         """
         Sets the id_produto of this ContaDetalheResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o do produto ao qual a conta faz parte. (id).
+        {{{conta_detalhe_response_id_produto_value}}}
 
         :param id_produto: The id_produto of this ContaDetalheResponse.
         :type: int
@@ -213,7 +213,7 @@ class ContaDetalheResponse(object):
     def id_origem_comercial(self):
         """
         Gets the id_origem_comercial of this ContaDetalheResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o da Origem Comercial (id) que deu origem a Conta.
+        {{{conta_detalhe_response_id_origem_comercial_value}}}
 
         :return: The id_origem_comercial of this ContaDetalheResponse.
         :rtype: int
@@ -224,7 +224,7 @@ class ContaDetalheResponse(object):
     def id_origem_comercial(self, id_origem_comercial):
         """
         Sets the id_origem_comercial of this ContaDetalheResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o da Origem Comercial (id) que deu origem a Conta.
+        {{{conta_detalhe_response_id_origem_comercial_value}}}
 
         :param id_origem_comercial: The id_origem_comercial of this ContaDetalheResponse.
         :type: int
@@ -235,7 +235,7 @@ class ContaDetalheResponse(object):
     def nome_origem_comercial(self):
         """
         Gets the nome_origem_comercial of this ContaDetalheResponse.
-        Nome da origem comercial
+        {{{conta_detalhe_response_nome_origem_comercial_value}}}
 
         :return: The nome_origem_comercial of this ContaDetalheResponse.
         :rtype: str
@@ -246,7 +246,7 @@ class ContaDetalheResponse(object):
     def nome_origem_comercial(self, nome_origem_comercial):
         """
         Sets the nome_origem_comercial of this ContaDetalheResponse.
-        Nome da origem comercial
+        {{{conta_detalhe_response_nome_origem_comercial_value}}}
 
         :param nome_origem_comercial: The nome_origem_comercial of this ContaDetalheResponse.
         :type: str
@@ -257,7 +257,7 @@ class ContaDetalheResponse(object):
     def id_fantasia_basica(self):
         """
         Gets the id_fantasia_basica of this ContaDetalheResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o da Fantasia Basica (id).
+        {{{conta_detalhe_response_id_fantasia_basica_value}}}
 
         :return: The id_fantasia_basica of this ContaDetalheResponse.
         :rtype: int
@@ -268,7 +268,7 @@ class ContaDetalheResponse(object):
     def id_fantasia_basica(self, id_fantasia_basica):
         """
         Sets the id_fantasia_basica of this ContaDetalheResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o da Fantasia Basica (id).
+        {{{conta_detalhe_response_id_fantasia_basica_value}}}
 
         :param id_fantasia_basica: The id_fantasia_basica of this ContaDetalheResponse.
         :type: int
@@ -279,7 +279,7 @@ class ContaDetalheResponse(object):
     def nome_fantasia_basica(self):
         """
         Gets the nome_fantasia_basica of this ContaDetalheResponse.
-        Nome da Fantasia Basica
+        {{{conta_detalhe_response_nome_fantasia_basica_value}}}
 
         :return: The nome_fantasia_basica of this ContaDetalheResponse.
         :rtype: str
@@ -290,7 +290,7 @@ class ContaDetalheResponse(object):
     def nome_fantasia_basica(self, nome_fantasia_basica):
         """
         Sets the nome_fantasia_basica of this ContaDetalheResponse.
-        Nome da Fantasia Basica
+        {{{conta_detalhe_response_nome_fantasia_basica_value}}}
 
         :param nome_fantasia_basica: The nome_fantasia_basica of this ContaDetalheResponse.
         :type: str
@@ -301,7 +301,7 @@ class ContaDetalheResponse(object):
     def id_status_conta(self):
         """
         Gets the id_status_conta of this ContaDetalheResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o do status atribuido a conta.
+        {{{conta_detalhe_response_id_status_conta_value}}}
 
         :return: The id_status_conta of this ContaDetalheResponse.
         :rtype: int
@@ -312,7 +312,7 @@ class ContaDetalheResponse(object):
     def id_status_conta(self, id_status_conta):
         """
         Sets the id_status_conta of this ContaDetalheResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o do status atribuido a conta.
+        {{{conta_detalhe_response_id_status_conta_value}}}
 
         :param id_status_conta: The id_status_conta of this ContaDetalheResponse.
         :type: int
@@ -323,7 +323,7 @@ class ContaDetalheResponse(object):
     def status_conta(self):
         """
         Gets the status_conta of this ContaDetalheResponse.
-        Descri\u00E7\u00E3o do status da conta
+        {{{conta_detalhe_response_status_conta_value}}}
 
         :return: The status_conta of this ContaDetalheResponse.
         :rtype: str
@@ -334,7 +334,7 @@ class ContaDetalheResponse(object):
     def status_conta(self, status_conta):
         """
         Sets the status_conta of this ContaDetalheResponse.
-        Descri\u00E7\u00E3o do status da conta
+        {{{conta_detalhe_response_status_conta_value}}}
 
         :param status_conta: The status_conta of this ContaDetalheResponse.
         :type: str
@@ -345,7 +345,7 @@ class ContaDetalheResponse(object):
     def dia_vencimento(self):
         """
         Gets the dia_vencimento of this ContaDetalheResponse.
-        Apresenta o dia de vencimento.
+        {{{conta_detalhe_response_dia_vencimento_value}}}
 
         :return: The dia_vencimento of this ContaDetalheResponse.
         :rtype: int
@@ -356,7 +356,7 @@ class ContaDetalheResponse(object):
     def dia_vencimento(self, dia_vencimento):
         """
         Sets the dia_vencimento of this ContaDetalheResponse.
-        Apresenta o dia de vencimento.
+        {{{conta_detalhe_response_dia_vencimento_value}}}
 
         :param dia_vencimento: The dia_vencimento of this ContaDetalheResponse.
         :type: int
@@ -367,7 +367,7 @@ class ContaDetalheResponse(object):
     def melhor_dia_compra(self):
         """
         Gets the melhor_dia_compra of this ContaDetalheResponse.
-        Apresenta o melhor dia de compra.
+        {{{conta_detalhe_response_melhor_dia_compra_value}}}
 
         :return: The melhor_dia_compra of this ContaDetalheResponse.
         :rtype: int
@@ -378,7 +378,7 @@ class ContaDetalheResponse(object):
     def melhor_dia_compra(self, melhor_dia_compra):
         """
         Sets the melhor_dia_compra of this ContaDetalheResponse.
-        Apresenta o melhor dia de compra.
+        {{{conta_detalhe_response_melhor_dia_compra_value}}}
 
         :param melhor_dia_compra: The melhor_dia_compra of this ContaDetalheResponse.
         :type: int
@@ -389,7 +389,7 @@ class ContaDetalheResponse(object):
     def data_status_conta(self):
         """
         Gets the data_status_conta of this ContaDetalheResponse.
-        Apresenta a data em que o idStatusConta atual fora atribu\u00EDdo para ela.
+        {{{conta_detalhe_response_data_status_conta_value}}}
 
         :return: The data_status_conta of this ContaDetalheResponse.
         :rtype: str
@@ -400,7 +400,7 @@ class ContaDetalheResponse(object):
     def data_status_conta(self, data_status_conta):
         """
         Sets the data_status_conta of this ContaDetalheResponse.
-        Apresenta a data em que o idStatusConta atual fora atribu\u00EDdo para ela.
+        {{{conta_detalhe_response_data_status_conta_value}}}
 
         :param data_status_conta: The data_status_conta of this ContaDetalheResponse.
         :type: str
@@ -411,7 +411,7 @@ class ContaDetalheResponse(object):
     def valor_renda(self):
         """
         Gets the valor_renda of this ContaDetalheResponse.
-        Valor da renda comprovada.
+        {{{conta_detalhe_response_valor_renda_value}}}
 
         :return: The valor_renda of this ContaDetalheResponse.
         :rtype: float
@@ -422,7 +422,7 @@ class ContaDetalheResponse(object):
     def valor_renda(self, valor_renda):
         """
         Sets the valor_renda of this ContaDetalheResponse.
-        Valor da renda comprovada.
+        {{{conta_detalhe_response_valor_renda_value}}}
 
         :param valor_renda: The valor_renda of this ContaDetalheResponse.
         :type: float
@@ -433,7 +433,7 @@ class ContaDetalheResponse(object):
     def data_cadastro(self):
         """
         Gets the data_cadastro of this ContaDetalheResponse.
-        Apresenta a data em que o cart\u00E3o foi gerado.
+        {{{conta_detalhe_response_data_cadastro_value}}}
 
         :return: The data_cadastro of this ContaDetalheResponse.
         :rtype: str
@@ -444,7 +444,7 @@ class ContaDetalheResponse(object):
     def data_cadastro(self, data_cadastro):
         """
         Sets the data_cadastro of this ContaDetalheResponse.
-        Apresenta a data em que o cart\u00E3o foi gerado.
+        {{{conta_detalhe_response_data_cadastro_value}}}
 
         :param data_cadastro: The data_cadastro of this ContaDetalheResponse.
         :type: str
@@ -455,7 +455,7 @@ class ContaDetalheResponse(object):
     def data_ultima_alteracao_vencimento(self):
         """
         Gets the data_ultima_alteracao_vencimento of this ContaDetalheResponse.
-        Apresenta a data da ultima altera\u00E7\u00E3o de vencimento.
+        {{{conta_detalhe_response_data_ultima_alteracao_vencimento_value}}}
 
         :return: The data_ultima_alteracao_vencimento of this ContaDetalheResponse.
         :rtype: str
@@ -466,7 +466,7 @@ class ContaDetalheResponse(object):
     def data_ultima_alteracao_vencimento(self, data_ultima_alteracao_vencimento):
         """
         Sets the data_ultima_alteracao_vencimento of this ContaDetalheResponse.
-        Apresenta a data da ultima altera\u00E7\u00E3o de vencimento.
+        {{{conta_detalhe_response_data_ultima_alteracao_vencimento_value}}}
 
         :param data_ultima_alteracao_vencimento: The data_ultima_alteracao_vencimento of this ContaDetalheResponse.
         :type: str
@@ -477,7 +477,7 @@ class ContaDetalheResponse(object):
     def data_hora_ultima_compra(self):
         """
         Gets the data_hora_ultima_compra of this ContaDetalheResponse.
-        Apresenta a data da ultima altera\u00E7\u00E3o de vencimento.
+        {{{conta_detalhe_response_data_hora_ultima_compra_value}}}
 
         :return: The data_hora_ultima_compra of this ContaDetalheResponse.
         :rtype: str
@@ -488,7 +488,7 @@ class ContaDetalheResponse(object):
     def data_hora_ultima_compra(self, data_hora_ultima_compra):
         """
         Sets the data_hora_ultima_compra of this ContaDetalheResponse.
-        Apresenta a data da ultima altera\u00E7\u00E3o de vencimento.
+        {{{conta_detalhe_response_data_hora_ultima_compra_value}}}
 
         :param data_hora_ultima_compra: The data_hora_ultima_compra of this ContaDetalheResponse.
         :type: str
@@ -499,7 +499,7 @@ class ContaDetalheResponse(object):
     def numero_agencia(self):
         """
         Gets the numero_agencia of this ContaDetalheResponse.
-        N\u00FAmero da ag\u00EAncia.
+        {{{conta_detalhe_response_numero_agencia_value}}}
 
         :return: The numero_agencia of this ContaDetalheResponse.
         :rtype: int
@@ -510,7 +510,7 @@ class ContaDetalheResponse(object):
     def numero_agencia(self, numero_agencia):
         """
         Sets the numero_agencia of this ContaDetalheResponse.
-        N\u00FAmero da ag\u00EAncia.
+        {{{conta_detalhe_response_numero_agencia_value}}}
 
         :param numero_agencia: The numero_agencia of this ContaDetalheResponse.
         :type: int
@@ -521,7 +521,7 @@ class ContaDetalheResponse(object):
     def numero_conta_corrente(self):
         """
         Gets the numero_conta_corrente of this ContaDetalheResponse.
-        N\u00FAmero da conta corrente.
+        {{{conta_detalhe_response_numero_conta_corrente_value}}}
 
         :return: The numero_conta_corrente of this ContaDetalheResponse.
         :rtype: str
@@ -532,7 +532,7 @@ class ContaDetalheResponse(object):
     def numero_conta_corrente(self, numero_conta_corrente):
         """
         Sets the numero_conta_corrente of this ContaDetalheResponse.
-        N\u00FAmero da conta corrente.
+        {{{conta_detalhe_response_numero_conta_corrente_value}}}
 
         :param numero_conta_corrente: The numero_conta_corrente of this ContaDetalheResponse.
         :type: str
@@ -543,7 +543,7 @@ class ContaDetalheResponse(object):
     def forma_envio_fatura(self):
         """
         Gets the forma_envio_fatura of this ContaDetalheResponse.
-        Forma de envio da fatura.
+        {{{conta_detalhe_response_forma_envio_fatura_value}}}
 
         :return: The forma_envio_fatura of this ContaDetalheResponse.
         :rtype: str
@@ -554,7 +554,7 @@ class ContaDetalheResponse(object):
     def forma_envio_fatura(self, forma_envio_fatura):
         """
         Sets the forma_envio_fatura of this ContaDetalheResponse.
-        Forma de envio da fatura.
+        {{{conta_detalhe_response_forma_envio_fatura_value}}}
 
         :param forma_envio_fatura: The forma_envio_fatura of this ContaDetalheResponse.
         :type: str
@@ -565,7 +565,7 @@ class ContaDetalheResponse(object):
     def titular(self):
         """
         Gets the titular of this ContaDetalheResponse.
-        Apresenta se a pessoa \u00E9 titular da conta.
+        {{{conta_detalhe_response_titular_value}}}
 
         :return: The titular of this ContaDetalheResponse.
         :rtype: bool
@@ -576,7 +576,7 @@ class ContaDetalheResponse(object):
     def titular(self, titular):
         """
         Sets the titular of this ContaDetalheResponse.
-        Apresenta se a pessoa \u00E9 titular da conta.
+        {{{conta_detalhe_response_titular_value}}}
 
         :param titular: The titular of this ContaDetalheResponse.
         :type: bool
@@ -587,7 +587,7 @@ class ContaDetalheResponse(object):
     def limite_global(self):
         """
         Gets the limite_global of this ContaDetalheResponse.
-        Apresenta o valor do limite de cr\u00E9dito que o portador do cart\u00E3o possui.
+        {{{conta_detalhe_response_limite_global_value}}}
 
         :return: The limite_global of this ContaDetalheResponse.
         :rtype: float
@@ -598,7 +598,7 @@ class ContaDetalheResponse(object):
     def limite_global(self, limite_global):
         """
         Sets the limite_global of this ContaDetalheResponse.
-        Apresenta o valor do limite de cr\u00E9dito que o portador do cart\u00E3o possui.
+        {{{conta_detalhe_response_limite_global_value}}}
 
         :param limite_global: The limite_global of this ContaDetalheResponse.
         :type: float
@@ -609,7 +609,7 @@ class ContaDetalheResponse(object):
     def limite_saque_global(self):
         """
         Gets the limite_saque_global of this ContaDetalheResponse.
-        Quando utilizado pelo emissor, este campo apresenta o valor do limite de cr\u00E9dito que o portador pode utilizar para realizar transa\u00E7\u00F5es de Saque Nacional.
+        {{{conta_detalhe_response_limite_saque_global_value}}}
 
         :return: The limite_saque_global of this ContaDetalheResponse.
         :rtype: float
@@ -620,7 +620,7 @@ class ContaDetalheResponse(object):
     def limite_saque_global(self, limite_saque_global):
         """
         Sets the limite_saque_global of this ContaDetalheResponse.
-        Quando utilizado pelo emissor, este campo apresenta o valor do limite de cr\u00E9dito que o portador pode utilizar para realizar transa\u00E7\u00F5es de Saque Nacional.
+        {{{conta_detalhe_response_limite_saque_global_value}}}
 
         :param limite_saque_global: The limite_saque_global of this ContaDetalheResponse.
         :type: float
@@ -631,7 +631,7 @@ class ContaDetalheResponse(object):
     def saldo_disponivel_global(self):
         """
         Gets the saldo_disponivel_global of this ContaDetalheResponse.
-        Quando utilizado pelo emissor, este campo apresenta o valor do limite de cr\u00E9dito que o portador possui para uso exclusivo em Compras Nacionais.
+        {{{conta_detalhe_response_saldo_disponivel_global_value}}}
 
         :return: The saldo_disponivel_global of this ContaDetalheResponse.
         :rtype: float
@@ -642,7 +642,7 @@ class ContaDetalheResponse(object):
     def saldo_disponivel_global(self, saldo_disponivel_global):
         """
         Sets the saldo_disponivel_global of this ContaDetalheResponse.
-        Quando utilizado pelo emissor, este campo apresenta o valor do limite de cr\u00E9dito que o portador possui para uso exclusivo em Compras Nacionais.
+        {{{conta_detalhe_response_saldo_disponivel_global_value}}}
 
         :param saldo_disponivel_global: The saldo_disponivel_global of this ContaDetalheResponse.
         :type: float
@@ -653,7 +653,7 @@ class ContaDetalheResponse(object):
     def saldo_disponivel_saque(self):
         """
         Gets the saldo_disponivel_saque of this ContaDetalheResponse.
-        Quando utilizado pelo emissor, este campo apresenta o valor do limite de cr\u00E9dito que o portador pode utilizar para realizar transa\u00E7\u00F5es de Saque Nacional dentro de cada ciclo de faturamento.
+        {{{conta_detalhe_response_saldo_disponivel_saque_value}}}
 
         :return: The saldo_disponivel_saque of this ContaDetalheResponse.
         :rtype: float
@@ -664,7 +664,7 @@ class ContaDetalheResponse(object):
     def saldo_disponivel_saque(self, saldo_disponivel_saque):
         """
         Sets the saldo_disponivel_saque of this ContaDetalheResponse.
-        Quando utilizado pelo emissor, este campo apresenta o valor do limite de cr\u00E9dito que o portador pode utilizar para realizar transa\u00E7\u00F5es de Saque Nacional dentro de cada ciclo de faturamento.
+        {{{conta_detalhe_response_saldo_disponivel_saque_value}}}
 
         :param saldo_disponivel_saque: The saldo_disponivel_saque of this ContaDetalheResponse.
         :type: float
@@ -675,7 +675,7 @@ class ContaDetalheResponse(object):
     def dias_atraso(self):
         """
         Gets the dias_atraso of this ContaDetalheResponse.
-        Apresenta a quantidade de dias que a conta esta em atraso
+        {{{conta_detalhe_response_dias_atraso_value}}}
 
         :return: The dias_atraso of this ContaDetalheResponse.
         :rtype: int
@@ -686,7 +686,7 @@ class ContaDetalheResponse(object):
     def dias_atraso(self, dias_atraso):
         """
         Sets the dias_atraso of this ContaDetalheResponse.
-        Apresenta a quantidade de dias que a conta esta em atraso
+        {{{conta_detalhe_response_dias_atraso_value}}}
 
         :param dias_atraso: The dias_atraso of this ContaDetalheResponse.
         :type: int

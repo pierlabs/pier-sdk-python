@@ -62,7 +62,7 @@ class JobResponse(object):
     def id(self):
         """
         Gets the id of this JobResponse.
-        Identificador do Job
+        {{{job_response_id_value}}}
 
         :return: The id of this JobResponse.
         :rtype: int
@@ -73,7 +73,7 @@ class JobResponse(object):
     def id(self, id):
         """
         Sets the id of this JobResponse.
-        Identificador do Job
+        {{{job_response_id_value}}}
 
         :param id: The id of this JobResponse.
         :type: int
@@ -84,7 +84,7 @@ class JobResponse(object):
     def descricao(self):
         """
         Gets the descricao of this JobResponse.
-        Descricao do Job
+        {{{job_response_descricao_value}}}
 
         :return: The descricao of this JobResponse.
         :rtype: str
@@ -95,7 +95,7 @@ class JobResponse(object):
     def descricao(self, descricao):
         """
         Sets the descricao of this JobResponse.
-        Descricao do Job
+        {{{job_response_descricao_value}}}
 
         :param descricao: The descricao of this JobResponse.
         :type: str
@@ -106,7 +106,7 @@ class JobResponse(object):
     def groovy(self):
         """
         Gets the groovy of this JobResponse.
-        Script Groovy do Job
+        {{{job_response_groovy_value}}}
 
         :return: The groovy of this JobResponse.
         :rtype: str
@@ -117,7 +117,7 @@ class JobResponse(object):
     def groovy(self, groovy):
         """
         Sets the groovy of this JobResponse.
-        Script Groovy do Job
+        {{{job_response_groovy_value}}}
 
         :param groovy: The groovy of this JobResponse.
         :type: str
@@ -128,7 +128,7 @@ class JobResponse(object):
     def cron(self):
         """
         Gets the cron of this JobResponse.
-        Cron do Job
+        {{{job_response_cron_value}}}
 
         :return: The cron of this JobResponse.
         :rtype: str
@@ -139,7 +139,7 @@ class JobResponse(object):
     def cron(self, cron):
         """
         Sets the cron of this JobResponse.
-        Cron do Job
+        {{{job_response_cron_value}}}
 
         :param cron: The cron of this JobResponse.
         :type: str
@@ -150,7 +150,7 @@ class JobResponse(object):
     def status(self):
         """
         Gets the status of this JobResponse.
-        Status do Job no agendador de tarefas
+        {{{job_response_status_value}}}
 
         :return: The status of this JobResponse.
         :rtype: str
@@ -161,7 +161,7 @@ class JobResponse(object):
     def status(self, status):
         """
         Sets the status of this JobResponse.
-        Status do Job no agendador de tarefas
+        {{{job_response_status_value}}}
 
         :param status: The status of this JobResponse.
         :type: str

@@ -62,7 +62,7 @@ class PlanoParcelamentoTransferenciaCreditoContaBancariaResponse(object):
     def numero_mascarado_cartao(self):
         """
         Gets the numero_mascarado_cartao of this PlanoParcelamentoTransferenciaCreditoContaBancariaResponse.
-        N\u00FAmero do Cart\u00E3o que originou a transa\u00E7\u00E3o em formato mascarado.
+        {{{plano_parcelamento_transferencia_credito_conta_bancaria_response_numero_mascarado_cartao_value}}}
 
         :return: The numero_mascarado_cartao of this PlanoParcelamentoTransferenciaCreditoContaBancariaResponse.
         :rtype: str
@@ -73,7 +73,7 @@ class PlanoParcelamentoTransferenciaCreditoContaBancariaResponse(object):
     def numero_mascarado_cartao(self, numero_mascarado_cartao):
         """
         Sets the numero_mascarado_cartao of this PlanoParcelamentoTransferenciaCreditoContaBancariaResponse.
-        N\u00FAmero do Cart\u00E3o que originou a transa\u00E7\u00E3o em formato mascarado.
+        {{{plano_parcelamento_transferencia_credito_conta_bancaria_response_numero_mascarado_cartao_value}}}
 
         :param numero_mascarado_cartao: The numero_mascarado_cartao of this PlanoParcelamentoTransferenciaCreditoContaBancariaResponse.
         :type: str
@@ -84,7 +84,7 @@ class PlanoParcelamentoTransferenciaCreditoContaBancariaResponse(object):
     def vencimento_primeira_parcela(self):
         """
         Gets the vencimento_primeira_parcela of this PlanoParcelamentoTransferenciaCreditoContaBancariaResponse.
-        Data de vencimento da primeira parcela.
+        {{{plano_parcelamento_transferencia_credito_conta_bancaria_response_vencimento_primeira_parcela_value}}}
 
         :return: The vencimento_primeira_parcela of this PlanoParcelamentoTransferenciaCreditoContaBancariaResponse.
         :rtype: str
@@ -95,7 +95,7 @@ class PlanoParcelamentoTransferenciaCreditoContaBancariaResponse(object):
     def vencimento_primeira_parcela(self, vencimento_primeira_parcela):
         """
         Sets the vencimento_primeira_parcela of this PlanoParcelamentoTransferenciaCreditoContaBancariaResponse.
-        Data de vencimento da primeira parcela.
+        {{{plano_parcelamento_transferencia_credito_conta_bancaria_response_vencimento_primeira_parcela_value}}}
 
         :param vencimento_primeira_parcela: The vencimento_primeira_parcela of this PlanoParcelamentoTransferenciaCreditoContaBancariaResponse.
         :type: str
@@ -106,7 +106,7 @@ class PlanoParcelamentoTransferenciaCreditoContaBancariaResponse(object):
     def valor_transacao(self):
         """
         Gets the valor_transacao of this PlanoParcelamentoTransferenciaCreditoContaBancariaResponse.
-        Valor da solicita\u00E7\u00E3o de saque.
+        {{{plano_parcelamento_transferencia_credito_conta_bancaria_response_valor_transacao_value}}}
 
         :return: The valor_transacao of this PlanoParcelamentoTransferenciaCreditoContaBancariaResponse.
         :rtype: float
@@ -117,7 +117,7 @@ class PlanoParcelamentoTransferenciaCreditoContaBancariaResponse(object):
     def valor_transacao(self, valor_transacao):
         """
         Sets the valor_transacao of this PlanoParcelamentoTransferenciaCreditoContaBancariaResponse.
-        Valor da solicita\u00E7\u00E3o de saque.
+        {{{plano_parcelamento_transferencia_credito_conta_bancaria_response_valor_transacao_value}}}
 
         :param valor_transacao: The valor_transacao of this PlanoParcelamentoTransferenciaCreditoContaBancariaResponse.
         :type: float
@@ -128,7 +128,7 @@ class PlanoParcelamentoTransferenciaCreditoContaBancariaResponse(object):
     def numero_meses_carencia(self):
         """
         Gets the numero_meses_carencia of this PlanoParcelamentoTransferenciaCreditoContaBancariaResponse.
-        N\u00FAmero de meses para car\u00EAncia.
+        {{{plano_parcelamento_transferencia_credito_conta_bancaria_response_numero_meses_carencia_value}}}
 
         :return: The numero_meses_carencia of this PlanoParcelamentoTransferenciaCreditoContaBancariaResponse.
         :rtype: int
@@ -139,7 +139,7 @@ class PlanoParcelamentoTransferenciaCreditoContaBancariaResponse(object):
     def numero_meses_carencia(self, numero_meses_carencia):
         """
         Sets the numero_meses_carencia of this PlanoParcelamentoTransferenciaCreditoContaBancariaResponse.
-        N\u00FAmero de meses para car\u00EAncia.
+        {{{plano_parcelamento_transferencia_credito_conta_bancaria_response_numero_meses_carencia_value}}}
 
         :param numero_meses_carencia: The numero_meses_carencia of this PlanoParcelamentoTransferenciaCreditoContaBancariaResponse.
         :type: int
@@ -150,7 +150,7 @@ class PlanoParcelamentoTransferenciaCreditoContaBancariaResponse(object):
     def parcelas(self):
         """
         Gets the parcelas of this PlanoParcelamentoTransferenciaCreditoContaBancariaResponse.
-        Lista com os planos de parcelamento.
+        {{{plano_parcelamento_transferencia_credito_conta_bancaria_response_parcelas_value}}}
 
         :return: The parcelas of this PlanoParcelamentoTransferenciaCreditoContaBancariaResponse.
         :rtype: list[ParcelamentoTransferenciaResponse]
@@ -161,7 +161,7 @@ class PlanoParcelamentoTransferenciaCreditoContaBancariaResponse(object):
     def parcelas(self, parcelas):
         """
         Sets the parcelas of this PlanoParcelamentoTransferenciaCreditoContaBancariaResponse.
-        Lista com os planos de parcelamento.
+        {{{plano_parcelamento_transferencia_credito_conta_bancaria_response_parcelas_value}}}
 
         :param parcelas: The parcelas of this PlanoParcelamentoTransferenciaCreditoContaBancariaResponse.
         :type: list[ParcelamentoTransferenciaResponse]

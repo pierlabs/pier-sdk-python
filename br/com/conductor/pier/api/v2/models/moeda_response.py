@@ -59,7 +59,7 @@ class MoedaResponse(object):
     def id(self):
         """
         Gets the id of this MoedaResponse.
-        Identificador do tipo de moeda.
+        {{{moeda_response_id_value}}}
 
         :return: The id of this MoedaResponse.
         :rtype: int
@@ -70,7 +70,7 @@ class MoedaResponse(object):
     def id(self, id):
         """
         Sets the id of this MoedaResponse.
-        Identificador do tipo de moeda.
+        {{{moeda_response_id_value}}}
 
         :param id: The id of this MoedaResponse.
         :type: int
@@ -81,7 +81,7 @@ class MoedaResponse(object):
     def codigo_moeda(self):
         """
         Gets the codigo_moeda of this MoedaResponse.
-        C\u00F3digo identificador do tipo de moeda.
+        {{{moeda_response_codigo_moeda_value}}}
 
         :return: The codigo_moeda of this MoedaResponse.
         :rtype: str
@@ -92,7 +92,7 @@ class MoedaResponse(object):
     def codigo_moeda(self, codigo_moeda):
         """
         Sets the codigo_moeda of this MoedaResponse.
-        C\u00F3digo identificador do tipo de moeda.
+        {{{moeda_response_codigo_moeda_value}}}
 
         :param codigo_moeda: The codigo_moeda of this MoedaResponse.
         :type: str
@@ -103,7 +103,7 @@ class MoedaResponse(object):
     def simbolo(self):
         """
         Gets the simbolo of this MoedaResponse.
-        S\u00EDmbolo da Moeda.
+        {{{moeda_response_simbolo_value}}}
 
         :return: The simbolo of this MoedaResponse.
         :rtype: str
@@ -114,7 +114,7 @@ class MoedaResponse(object):
     def simbolo(self, simbolo):
         """
         Sets the simbolo of this MoedaResponse.
-        S\u00EDmbolo da Moeda.
+        {{{moeda_response_simbolo_value}}}
 
         :param simbolo: The simbolo of this MoedaResponse.
         :type: str
@@ -125,7 +125,7 @@ class MoedaResponse(object):
     def descricao(self):
         """
         Gets the descricao of this MoedaResponse.
-        Descri\u00E7\u00E3o do tipo da moeda.
+        {{{moeda_response_descricao_value}}}
 
         :return: The descricao of this MoedaResponse.
         :rtype: str
@@ -136,7 +136,7 @@ class MoedaResponse(object):
     def descricao(self, descricao):
         """
         Sets the descricao of this MoedaResponse.
-        Descri\u00E7\u00E3o do tipo da moeda.
+        {{{moeda_response_descricao_value}}}
 
         :param descricao: The descricao of this MoedaResponse.
         :type: str

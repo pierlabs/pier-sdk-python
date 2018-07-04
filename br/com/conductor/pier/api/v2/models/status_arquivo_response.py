@@ -56,7 +56,7 @@ class StatusArquivoResponse(object):
     def id(self):
         """
         Gets the id of this StatusArquivoResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o do status do arquivo
+        {{{status_arquivo_response_id_value}}}
 
         :return: The id of this StatusArquivoResponse.
         :rtype: int
@@ -67,7 +67,7 @@ class StatusArquivoResponse(object):
     def id(self, id):
         """
         Sets the id of this StatusArquivoResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o do status do arquivo
+        {{{status_arquivo_response_id_value}}}
 
         :param id: The id of this StatusArquivoResponse.
         :type: int
@@ -78,7 +78,7 @@ class StatusArquivoResponse(object):
     def nome(self):
         """
         Gets the nome of this StatusArquivoResponse.
-        Nome do status do arquivo
+        {{{status_arquivo_response_nome_value}}}
 
         :return: The nome of this StatusArquivoResponse.
         :rtype: str
@@ -89,7 +89,7 @@ class StatusArquivoResponse(object):
     def nome(self, nome):
         """
         Sets the nome of this StatusArquivoResponse.
-        Nome do status do arquivo
+        {{{status_arquivo_response_nome_value}}}
 
         :param nome: The nome of this StatusArquivoResponse.
         :type: str
@@ -100,7 +100,7 @@ class StatusArquivoResponse(object):
     def descricao(self):
         """
         Gets the descricao of this StatusArquivoResponse.
-        Descri\u00E7\u00E3o do status do arquivo
+        {{{status_arquivo_response_descricao_value}}}
 
         :return: The descricao of this StatusArquivoResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class StatusArquivoResponse(object):
     def descricao(self, descricao):
         """
         Sets the descricao of this StatusArquivoResponse.
-        Descri\u00E7\u00E3o do status do arquivo
+        {{{status_arquivo_response_descricao_value}}}
 
         :param descricao: The descricao of this StatusArquivoResponse.
         :type: str

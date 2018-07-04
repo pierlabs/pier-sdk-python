@@ -92,7 +92,7 @@ class AdicionalPersist(object):
     def nome(self):
         """
         Gets the nome of this AdicionalPersist.
-        Nome completo do Adicional.
+        {{{adicional_persist_nome_value}}}
 
         :return: The nome of this AdicionalPersist.
         :rtype: str
@@ -103,7 +103,7 @@ class AdicionalPersist(object):
     def nome(self, nome):
         """
         Sets the nome of this AdicionalPersist.
-        Nome completo do Adicional.
+        {{{adicional_persist_nome_value}}}
 
         :param nome: The nome of this AdicionalPersist.
         :type: str
@@ -114,7 +114,7 @@ class AdicionalPersist(object):
     def nome_impresso(self):
         """
         Gets the nome_impresso of this AdicionalPersist.
-        Nome do Adicional que ser\u00E1 gravado no Cart\u00E3o.
+        {{{adicional_persist_nome_impresso_value}}}
 
         :return: The nome_impresso of this AdicionalPersist.
         :rtype: str
@@ -125,7 +125,7 @@ class AdicionalPersist(object):
     def nome_impresso(self, nome_impresso):
         """
         Sets the nome_impresso of this AdicionalPersist.
-        Nome do Adicional que ser\u00E1 gravado no Cart\u00E3o.
+        {{{adicional_persist_nome_impresso_value}}}
 
         :param nome_impresso: The nome_impresso of this AdicionalPersist.
         :type: str
@@ -136,7 +136,7 @@ class AdicionalPersist(object):
     def numero_receita_federal(self):
         """
         Gets the numero_receita_federal of this AdicionalPersist.
-        N\u00FAmero do CPF ou CNPJ do Adicional.
+        {{{adicional_persist_numero_receita_federal_value}}}
 
         :return: The numero_receita_federal of this AdicionalPersist.
         :rtype: str
@@ -147,7 +147,7 @@ class AdicionalPersist(object):
     def numero_receita_federal(self, numero_receita_federal):
         """
         Sets the numero_receita_federal of this AdicionalPersist.
-        N\u00FAmero do CPF ou CNPJ do Adicional.
+        {{{adicional_persist_numero_receita_federal_value}}}
 
         :param numero_receita_federal: The numero_receita_federal of this AdicionalPersist.
         :type: str
@@ -158,7 +158,7 @@ class AdicionalPersist(object):
     def data_nascimento(self):
         """
         Gets the data_nascimento of this AdicionalPersist.
-        Data de Nascimento do Adicional em formato yyyy-MM-dd.
+        {{{adicional_persist_data_nascimento_value}}}
 
         :return: The data_nascimento of this AdicionalPersist.
         :rtype: str
@@ -169,7 +169,7 @@ class AdicionalPersist(object):
     def data_nascimento(self, data_nascimento):
         """
         Sets the data_nascimento of this AdicionalPersist.
-        Data de Nascimento do Adicional em formato yyyy-MM-dd.
+        {{{adicional_persist_data_nascimento_value}}}
 
         :param data_nascimento: The data_nascimento of this AdicionalPersist.
         :type: str
@@ -180,7 +180,7 @@ class AdicionalPersist(object):
     def sexo(self):
         """
         Gets the sexo of this AdicionalPersist.
-        C\u00F3digo de identifica\u00E7\u00E3o do sexo da Pessoa, quando PF, sendo: (\"M\": Masculino), (\"F\": Feminino), (\"O\": Outro), (\"N\": N\u00E3o Especificado).
+        {{{adicional_persist_sexo_value}}}
 
         :return: The sexo of this AdicionalPersist.
         :rtype: str
@@ -191,7 +191,7 @@ class AdicionalPersist(object):
     def sexo(self, sexo):
         """
         Sets the sexo of this AdicionalPersist.
-        C\u00F3digo de identifica\u00E7\u00E3o do sexo da Pessoa, quando PF, sendo: (\"M\": Masculino), (\"F\": Feminino), (\"O\": Outro), (\"N\": N\u00E3o Especificado).
+        {{{adicional_persist_sexo_value}}}
 
         :param sexo: The sexo of this AdicionalPersist.
         :type: str
@@ -202,7 +202,7 @@ class AdicionalPersist(object):
     def numero_identidade(self):
         """
         Gets the numero_identidade of this AdicionalPersist.
-        N\u00FAmero do Documento de Identidade do Adicional.
+        {{{adicional_persist_numero_identidade_value}}}
 
         :return: The numero_identidade of this AdicionalPersist.
         :rtype: str
@@ -213,7 +213,7 @@ class AdicionalPersist(object):
     def numero_identidade(self, numero_identidade):
         """
         Sets the numero_identidade of this AdicionalPersist.
-        N\u00FAmero do Documento de Identidade do Adicional.
+        {{{adicional_persist_numero_identidade_value}}}
 
         :param numero_identidade: The numero_identidade of this AdicionalPersist.
         :type: str
@@ -224,7 +224,7 @@ class AdicionalPersist(object):
     def orgao_expedidor_identidade(self):
         """
         Gets the orgao_expedidor_identidade of this AdicionalPersist.
-        Nome do Org\u00E3o Emissor do Documento de Identidade do Adicional.
+        {{{adicional_persist_orgao_expedidor_identidade_value}}}
 
         :return: The orgao_expedidor_identidade of this AdicionalPersist.
         :rtype: str
@@ -235,7 +235,7 @@ class AdicionalPersist(object):
     def orgao_expedidor_identidade(self, orgao_expedidor_identidade):
         """
         Sets the orgao_expedidor_identidade of this AdicionalPersist.
-        Nome do Org\u00E3o Emissor do Documento de Identidade do Adicional.
+        {{{adicional_persist_orgao_expedidor_identidade_value}}}
 
         :param orgao_expedidor_identidade: The orgao_expedidor_identidade of this AdicionalPersist.
         :type: str
@@ -246,7 +246,7 @@ class AdicionalPersist(object):
     def unidade_federativa_identidade(self):
         """
         Gets the unidade_federativa_identidade of this AdicionalPersist.
-        Sigla da Unidade Federativa onde o Documento de Identidade do Adicional foi emitido.
+        {{{adicional_persist_unidade_federativa_identidade_value}}}
 
         :return: The unidade_federativa_identidade of this AdicionalPersist.
         :rtype: str
@@ -257,7 +257,7 @@ class AdicionalPersist(object):
     def unidade_federativa_identidade(self, unidade_federativa_identidade):
         """
         Sets the unidade_federativa_identidade of this AdicionalPersist.
-        Sigla da Unidade Federativa onde o Documento de Identidade do Adicional foi emitido.
+        {{{adicional_persist_unidade_federativa_identidade_value}}}
 
         :param unidade_federativa_identidade: The unidade_federativa_identidade of this AdicionalPersist.
         :type: str
@@ -268,7 +268,7 @@ class AdicionalPersist(object):
     def data_emissao_identidade(self):
         """
         Gets the data_emissao_identidade of this AdicionalPersist.
-        Data de emiss\u00E3o do Documento de Identidade do Adicional em formato yyyy-MM-dd.
+        {{{adicional_persist_data_emissao_identidade_value}}}
 
         :return: The data_emissao_identidade of this AdicionalPersist.
         :rtype: str
@@ -279,7 +279,7 @@ class AdicionalPersist(object):
     def data_emissao_identidade(self, data_emissao_identidade):
         """
         Sets the data_emissao_identidade of this AdicionalPersist.
-        Data de emiss\u00E3o do Documento de Identidade do Adicional em formato yyyy-MM-dd.
+        {{{adicional_persist_data_emissao_identidade_value}}}
 
         :param data_emissao_identidade: The data_emissao_identidade of this AdicionalPersist.
         :type: str
@@ -290,7 +290,7 @@ class AdicionalPersist(object):
     def id_estado_civil(self):
         """
         Gets the id_estado_civil of this AdicionalPersist.
-        C\u00F3digo de identifica\u00E7\u00E3o do Estado Civil do Adicional.
+        {{{adicional_persist_id_estado_civil_value}}}
 
         :return: The id_estado_civil of this AdicionalPersist.
         :rtype: int
@@ -301,7 +301,7 @@ class AdicionalPersist(object):
     def id_estado_civil(self, id_estado_civil):
         """
         Sets the id_estado_civil of this AdicionalPersist.
-        C\u00F3digo de identifica\u00E7\u00E3o do Estado Civil do Adicional.
+        {{{adicional_persist_id_estado_civil_value}}}
 
         :param id_estado_civil: The id_estado_civil of this AdicionalPersist.
         :type: int
@@ -312,7 +312,7 @@ class AdicionalPersist(object):
     def id_profissao(self):
         """
         Gets the id_profissao of this AdicionalPersist.
-        C\u00F3digo de identifica\u00E7\u00E3o da Profissao do Adicional.
+        {{{adicional_persist_id_profissao_value}}}
 
         :return: The id_profissao of this AdicionalPersist.
         :rtype: int
@@ -323,7 +323,7 @@ class AdicionalPersist(object):
     def id_profissao(self, id_profissao):
         """
         Sets the id_profissao of this AdicionalPersist.
-        C\u00F3digo de identifica\u00E7\u00E3o da Profissao do Adicional.
+        {{{adicional_persist_id_profissao_value}}}
 
         :param id_profissao: The id_profissao of this AdicionalPersist.
         :type: int
@@ -334,7 +334,7 @@ class AdicionalPersist(object):
     def id_nacionalidade(self):
         """
         Gets the id_nacionalidade of this AdicionalPersist.
-        C\u00F3digo de identifica\u00E7\u00E3o da Nacionalidade do Adicional.
+        {{{adicional_persist_id_nacionalidade_value}}}
 
         :return: The id_nacionalidade of this AdicionalPersist.
         :rtype: int
@@ -345,7 +345,7 @@ class AdicionalPersist(object):
     def id_nacionalidade(self, id_nacionalidade):
         """
         Sets the id_nacionalidade of this AdicionalPersist.
-        C\u00F3digo de identifica\u00E7\u00E3o da Nacionalidade do Adicional.
+        {{{adicional_persist_id_nacionalidade_value}}}
 
         :param id_nacionalidade: The id_nacionalidade of this AdicionalPersist.
         :type: int
@@ -356,7 +356,7 @@ class AdicionalPersist(object):
     def id_parentesco(self):
         """
         Gets the id_parentesco of this AdicionalPersist.
-        C\u00F3digo de identifica\u00E7\u00E3o do Parentesco do Adicional com o Titular.
+        {{{adicional_persist_id_parentesco_value}}}
 
         :return: The id_parentesco of this AdicionalPersist.
         :rtype: int
@@ -367,7 +367,7 @@ class AdicionalPersist(object):
     def id_parentesco(self, id_parentesco):
         """
         Sets the id_parentesco of this AdicionalPersist.
-        C\u00F3digo de identifica\u00E7\u00E3o do Parentesco do Adicional com o Titular.
+        {{{adicional_persist_id_parentesco_value}}}
 
         :param id_parentesco: The id_parentesco of this AdicionalPersist.
         :type: int
@@ -378,7 +378,7 @@ class AdicionalPersist(object):
     def email(self):
         """
         Gets the email of this AdicionalPersist.
-        C\u00F3digo de identifica\u00E7\u00E3o do Parentesco do Adicional com o Titular.
+        {{{adicional_persist_email_value}}}
 
         :return: The email of this AdicionalPersist.
         :rtype: str
@@ -389,7 +389,7 @@ class AdicionalPersist(object):
     def email(self, email):
         """
         Sets the email of this AdicionalPersist.
-        C\u00F3digo de identifica\u00E7\u00E3o do Parentesco do Adicional com o Titular.
+        {{{adicional_persist_email_value}}}
 
         :param email: The email of this AdicionalPersist.
         :type: str
@@ -400,7 +400,7 @@ class AdicionalPersist(object):
     def telefones(self):
         """
         Gets the telefones of this AdicionalPersist.
-        Lista de telefones do adicional.
+        {{{adicional_persist_telefones_value}}}
 
         :return: The telefones of this AdicionalPersist.
         :rtype: list[TelefoneAdicionalPersist]
@@ -411,7 +411,7 @@ class AdicionalPersist(object):
     def telefones(self, telefones):
         """
         Sets the telefones of this AdicionalPersist.
-        Lista de telefones do adicional.
+        {{{adicional_persist_telefones_value}}}
 
         :param telefones: The telefones of this AdicionalPersist.
         :type: list[TelefoneAdicionalPersist]

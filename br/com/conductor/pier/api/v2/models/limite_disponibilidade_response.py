@@ -113,7 +113,7 @@ class LimiteDisponibilidadeResponse(object):
     def id(self):
         """
         Gets the id of this LimiteDisponibilidadeResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o de Limite e Disponibilidade (id).
+        {{{limite_disponibilidade_response_id_value}}}
 
         :return: The id of this LimiteDisponibilidadeResponse.
         :rtype: int
@@ -124,7 +124,7 @@ class LimiteDisponibilidadeResponse(object):
     def id(self, id):
         """
         Sets the id of this LimiteDisponibilidadeResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o de Limite e Disponibilidade (id).
+        {{{limite_disponibilidade_response_id_value}}}
 
         :param id: The id of this LimiteDisponibilidadeResponse.
         :type: int
@@ -135,7 +135,7 @@ class LimiteDisponibilidadeResponse(object):
     def limite_global(self):
         """
         Gets the limite_global of this LimiteDisponibilidadeResponse.
-        Valor do limite de cr\u00E9dito.
+        {{{limite_disponibilidade_response_limite_global_value}}}
 
         :return: The limite_global of this LimiteDisponibilidadeResponse.
         :rtype: float
@@ -146,7 +146,7 @@ class LimiteDisponibilidadeResponse(object):
     def limite_global(self, limite_global):
         """
         Sets the limite_global of this LimiteDisponibilidadeResponse.
-        Valor do limite de cr\u00E9dito.
+        {{{limite_disponibilidade_response_limite_global_value}}}
 
         :param limite_global: The limite_global of this LimiteDisponibilidadeResponse.
         :type: float
@@ -157,7 +157,7 @@ class LimiteDisponibilidadeResponse(object):
     def limite_compra(self):
         """
         Gets the limite_compra of this LimiteDisponibilidadeResponse.
-        Valor do limite de cr\u00E9dito para uso exclusivo em compras nacionais.
+        {{{limite_disponibilidade_response_limite_compra_value}}}
 
         :return: The limite_compra of this LimiteDisponibilidadeResponse.
         :rtype: float
@@ -168,7 +168,7 @@ class LimiteDisponibilidadeResponse(object):
     def limite_compra(self, limite_compra):
         """
         Sets the limite_compra of this LimiteDisponibilidadeResponse.
-        Valor do limite de cr\u00E9dito para uso exclusivo em compras nacionais.
+        {{{limite_disponibilidade_response_limite_compra_value}}}
 
         :param limite_compra: The limite_compra of this LimiteDisponibilidadeResponse.
         :type: float
@@ -179,7 +179,7 @@ class LimiteDisponibilidadeResponse(object):
     def limite_parcelado(self):
         """
         Gets the limite_parcelado of this LimiteDisponibilidadeResponse.
-        Valor do limite de cr\u00E9dito para transa\u00E7\u00F5es de compras parceladas.
+        {{{limite_disponibilidade_response_limite_parcelado_value}}}
 
         :return: The limite_parcelado of this LimiteDisponibilidadeResponse.
         :rtype: float
@@ -190,7 +190,7 @@ class LimiteDisponibilidadeResponse(object):
     def limite_parcelado(self, limite_parcelado):
         """
         Sets the limite_parcelado of this LimiteDisponibilidadeResponse.
-        Valor do limite de cr\u00E9dito para transa\u00E7\u00F5es de compras parceladas.
+        {{{limite_disponibilidade_response_limite_parcelado_value}}}
 
         :param limite_parcelado: The limite_parcelado of this LimiteDisponibilidadeResponse.
         :type: float
@@ -201,7 +201,7 @@ class LimiteDisponibilidadeResponse(object):
     def limite_parcelas(self):
         """
         Gets the limite_parcelas of this LimiteDisponibilidadeResponse.
-        Valor do limite de cr\u00E9dito acumulado da soma das parcelas das compras que forem realizadas nesta modalidade.
+        {{{limite_disponibilidade_response_limite_parcelas_value}}}
 
         :return: The limite_parcelas of this LimiteDisponibilidadeResponse.
         :rtype: float
@@ -212,7 +212,7 @@ class LimiteDisponibilidadeResponse(object):
     def limite_parcelas(self, limite_parcelas):
         """
         Sets the limite_parcelas of this LimiteDisponibilidadeResponse.
-        Valor do limite de cr\u00E9dito acumulado da soma das parcelas das compras que forem realizadas nesta modalidade.
+        {{{limite_disponibilidade_response_limite_parcelas_value}}}
 
         :param limite_parcelas: The limite_parcelas of this LimiteDisponibilidadeResponse.
         :type: float
@@ -223,7 +223,7 @@ class LimiteDisponibilidadeResponse(object):
     def limite_saque_global(self):
         """
         Gets the limite_saque_global of this LimiteDisponibilidadeResponse.
-        Valor do limite de cr\u00E9dito para transa\u00E7\u00F5es de Saque Nacional.
+        {{{limite_disponibilidade_response_limite_saque_global_value}}}
 
         :return: The limite_saque_global of this LimiteDisponibilidadeResponse.
         :rtype: float
@@ -234,7 +234,7 @@ class LimiteDisponibilidadeResponse(object):
     def limite_saque_global(self, limite_saque_global):
         """
         Sets the limite_saque_global of this LimiteDisponibilidadeResponse.
-        Valor do limite de cr\u00E9dito para transa\u00E7\u00F5es de Saque Nacional.
+        {{{limite_disponibilidade_response_limite_saque_global_value}}}
 
         :param limite_saque_global: The limite_saque_global of this LimiteDisponibilidadeResponse.
         :type: float
@@ -245,7 +245,7 @@ class LimiteDisponibilidadeResponse(object):
     def limite_saque_periodo(self):
         """
         Gets the limite_saque_periodo of this LimiteDisponibilidadeResponse.
-        Valor do limite de cr\u00E9dito para transa\u00E7\u00F5es de Saque Nacional dentro de cada ciclo de faturamento.
+        {{{limite_disponibilidade_response_limite_saque_periodo_value}}}
 
         :return: The limite_saque_periodo of this LimiteDisponibilidadeResponse.
         :rtype: float
@@ -256,7 +256,7 @@ class LimiteDisponibilidadeResponse(object):
     def limite_saque_periodo(self, limite_saque_periodo):
         """
         Sets the limite_saque_periodo of this LimiteDisponibilidadeResponse.
-        Valor do limite de cr\u00E9dito para transa\u00E7\u00F5es de Saque Nacional dentro de cada ciclo de faturamento.
+        {{{limite_disponibilidade_response_limite_saque_periodo_value}}}
 
         :param limite_saque_periodo: The limite_saque_periodo of this LimiteDisponibilidadeResponse.
         :type: float
@@ -267,7 +267,7 @@ class LimiteDisponibilidadeResponse(object):
     def limite_consignado(self):
         """
         Gets the limite_consignado of this LimiteDisponibilidadeResponse.
-        Valor da margem de cr\u00E9dito para consigna\u00E7\u00F5es (desconto em folha).
+        {{{limite_disponibilidade_response_limite_consignado_value}}}
 
         :return: The limite_consignado of this LimiteDisponibilidadeResponse.
         :rtype: float
@@ -278,7 +278,7 @@ class LimiteDisponibilidadeResponse(object):
     def limite_consignado(self, limite_consignado):
         """
         Sets the limite_consignado of this LimiteDisponibilidadeResponse.
-        Valor da margem de cr\u00E9dito para consigna\u00E7\u00F5es (desconto em folha).
+        {{{limite_disponibilidade_response_limite_consignado_value}}}
 
         :param limite_consignado: The limite_consignado of this LimiteDisponibilidadeResponse.
         :type: float
@@ -289,7 +289,7 @@ class LimiteDisponibilidadeResponse(object):
     def limite_internacional_compra(self):
         """
         Gets the limite_internacional_compra of this LimiteDisponibilidadeResponse.
-        Valor do limite de cr\u00E9dito para uso exclusivo em compras internacionais.
+        {{{limite_disponibilidade_response_limite_internacional_compra_value}}}
 
         :return: The limite_internacional_compra of this LimiteDisponibilidadeResponse.
         :rtype: float
@@ -300,7 +300,7 @@ class LimiteDisponibilidadeResponse(object):
     def limite_internacional_compra(self, limite_internacional_compra):
         """
         Sets the limite_internacional_compra of this LimiteDisponibilidadeResponse.
-        Valor do limite de cr\u00E9dito para uso exclusivo em compras internacionais.
+        {{{limite_disponibilidade_response_limite_internacional_compra_value}}}
 
         :param limite_internacional_compra: The limite_internacional_compra of this LimiteDisponibilidadeResponse.
         :type: float
@@ -311,7 +311,7 @@ class LimiteDisponibilidadeResponse(object):
     def limite_internacional_parcelado(self):
         """
         Gets the limite_internacional_parcelado of this LimiteDisponibilidadeResponse.
-        Valor do limite de cr\u00E9dito para transa\u00E7\u00F5es internacionais de compras parceladas.
+        {{{limite_disponibilidade_response_limite_internacional_parcelado_value}}}
 
         :return: The limite_internacional_parcelado of this LimiteDisponibilidadeResponse.
         :rtype: float
@@ -322,7 +322,7 @@ class LimiteDisponibilidadeResponse(object):
     def limite_internacional_parcelado(self, limite_internacional_parcelado):
         """
         Sets the limite_internacional_parcelado of this LimiteDisponibilidadeResponse.
-        Valor do limite de cr\u00E9dito para transa\u00E7\u00F5es internacionais de compras parceladas.
+        {{{limite_disponibilidade_response_limite_internacional_parcelado_value}}}
 
         :param limite_internacional_parcelado: The limite_internacional_parcelado of this LimiteDisponibilidadeResponse.
         :type: float
@@ -333,7 +333,7 @@ class LimiteDisponibilidadeResponse(object):
     def limite_internacional_parcelas(self):
         """
         Gets the limite_internacional_parcelas of this LimiteDisponibilidadeResponse.
-        Valor do limite de cr\u00E9dito acumulado da soma das parcelas das compras internacionais que forem realizadas nesta modalidade.
+        {{{limite_disponibilidade_response_limite_internacional_parcelas_value}}}
 
         :return: The limite_internacional_parcelas of this LimiteDisponibilidadeResponse.
         :rtype: float
@@ -344,7 +344,7 @@ class LimiteDisponibilidadeResponse(object):
     def limite_internacional_parcelas(self, limite_internacional_parcelas):
         """
         Sets the limite_internacional_parcelas of this LimiteDisponibilidadeResponse.
-        Valor do limite de cr\u00E9dito acumulado da soma das parcelas das compras internacionais que forem realizadas nesta modalidade.
+        {{{limite_disponibilidade_response_limite_internacional_parcelas_value}}}
 
         :param limite_internacional_parcelas: The limite_internacional_parcelas of this LimiteDisponibilidadeResponse.
         :type: float
@@ -355,7 +355,7 @@ class LimiteDisponibilidadeResponse(object):
     def limite_internacional_saque_global(self):
         """
         Gets the limite_internacional_saque_global of this LimiteDisponibilidadeResponse.
-        Valor do limite de cr\u00E9dito para transa\u00E7\u00F5es de saque internacional.
+        {{{limite_disponibilidade_response_limite_internacional_saque_global_value}}}
 
         :return: The limite_internacional_saque_global of this LimiteDisponibilidadeResponse.
         :rtype: float
@@ -366,7 +366,7 @@ class LimiteDisponibilidadeResponse(object):
     def limite_internacional_saque_global(self, limite_internacional_saque_global):
         """
         Sets the limite_internacional_saque_global of this LimiteDisponibilidadeResponse.
-        Valor do limite de cr\u00E9dito para transa\u00E7\u00F5es de saque internacional.
+        {{{limite_disponibilidade_response_limite_internacional_saque_global_value}}}
 
         :param limite_internacional_saque_global: The limite_internacional_saque_global of this LimiteDisponibilidadeResponse.
         :type: float
@@ -377,7 +377,7 @@ class LimiteDisponibilidadeResponse(object):
     def limite_internacional_saque_periodo(self):
         """
         Gets the limite_internacional_saque_periodo of this LimiteDisponibilidadeResponse.
-        Valor do limite de cr\u00E9dito para transa\u00E7\u00F5es de saque internacional dentro de cada ciclo de faturamento.
+        {{{limite_disponibilidade_response_limite_internacional_saque_periodo_value}}}
 
         :return: The limite_internacional_saque_periodo of this LimiteDisponibilidadeResponse.
         :rtype: float
@@ -388,7 +388,7 @@ class LimiteDisponibilidadeResponse(object):
     def limite_internacional_saque_periodo(self, limite_internacional_saque_periodo):
         """
         Sets the limite_internacional_saque_periodo of this LimiteDisponibilidadeResponse.
-        Valor do limite de cr\u00E9dito para transa\u00E7\u00F5es de saque internacional dentro de cada ciclo de faturamento.
+        {{{limite_disponibilidade_response_limite_internacional_saque_periodo_value}}}
 
         :param limite_internacional_saque_periodo: The limite_internacional_saque_periodo of this LimiteDisponibilidadeResponse.
         :type: float
@@ -399,7 +399,7 @@ class LimiteDisponibilidadeResponse(object):
     def limite_maximo(self):
         """
         Gets the limite_maximo of this LimiteDisponibilidadeResponse.
-        Valor m\u00E1ximo do limite de cr\u00E9dito para realizar transa\u00E7\u00F5es.
+        {{{limite_disponibilidade_response_limite_maximo_value}}}
 
         :return: The limite_maximo of this LimiteDisponibilidadeResponse.
         :rtype: float
@@ -410,7 +410,7 @@ class LimiteDisponibilidadeResponse(object):
     def limite_maximo(self, limite_maximo):
         """
         Sets the limite_maximo of this LimiteDisponibilidadeResponse.
-        Valor m\u00E1ximo do limite de cr\u00E9dito para realizar transa\u00E7\u00F5es.
+        {{{limite_disponibilidade_response_limite_maximo_value}}}
 
         :param limite_maximo: The limite_maximo of this LimiteDisponibilidadeResponse.
         :type: float
@@ -421,7 +421,7 @@ class LimiteDisponibilidadeResponse(object):
     def saldo_disponivel_global(self):
         """
         Gets the saldo_disponivel_global of this LimiteDisponibilidadeResponse.
-        Valor de cr\u00E9dito dispon\u00EDvel para transa\u00E7\u00F5es.
+        {{{limite_disponibilidade_response_saldo_disponivel_global_value}}}
 
         :return: The saldo_disponivel_global of this LimiteDisponibilidadeResponse.
         :rtype: float
@@ -432,7 +432,7 @@ class LimiteDisponibilidadeResponse(object):
     def saldo_disponivel_global(self, saldo_disponivel_global):
         """
         Sets the saldo_disponivel_global of this LimiteDisponibilidadeResponse.
-        Valor de cr\u00E9dito dispon\u00EDvel para transa\u00E7\u00F5es.
+        {{{limite_disponibilidade_response_saldo_disponivel_global_value}}}
 
         :param saldo_disponivel_global: The saldo_disponivel_global of this LimiteDisponibilidadeResponse.
         :type: float
@@ -443,7 +443,7 @@ class LimiteDisponibilidadeResponse(object):
     def saldo_disponivel_compra(self):
         """
         Gets the saldo_disponivel_compra of this LimiteDisponibilidadeResponse.
-        Valor de cr\u00E9dito dispon\u00EDvel para transa\u00E7\u00F5es de compra nacional.
+        {{{limite_disponibilidade_response_saldo_disponivel_compra_value}}}
 
         :return: The saldo_disponivel_compra of this LimiteDisponibilidadeResponse.
         :rtype: float
@@ -454,7 +454,7 @@ class LimiteDisponibilidadeResponse(object):
     def saldo_disponivel_compra(self, saldo_disponivel_compra):
         """
         Sets the saldo_disponivel_compra of this LimiteDisponibilidadeResponse.
-        Valor de cr\u00E9dito dispon\u00EDvel para transa\u00E7\u00F5es de compra nacional.
+        {{{limite_disponibilidade_response_saldo_disponivel_compra_value}}}
 
         :param saldo_disponivel_compra: The saldo_disponivel_compra of this LimiteDisponibilidadeResponse.
         :type: float
@@ -465,7 +465,7 @@ class LimiteDisponibilidadeResponse(object):
     def saldo_disponivel_parcelado(self):
         """
         Gets the saldo_disponivel_parcelado of this LimiteDisponibilidadeResponse.
-        Valor de cr\u00E9dito dispon\u00EDvel para transa\u00E7\u00F5es de compra nacional parcelada.
+        {{{limite_disponibilidade_response_saldo_disponivel_parcelado_value}}}
 
         :return: The saldo_disponivel_parcelado of this LimiteDisponibilidadeResponse.
         :rtype: float
@@ -476,7 +476,7 @@ class LimiteDisponibilidadeResponse(object):
     def saldo_disponivel_parcelado(self, saldo_disponivel_parcelado):
         """
         Sets the saldo_disponivel_parcelado of this LimiteDisponibilidadeResponse.
-        Valor de cr\u00E9dito dispon\u00EDvel para transa\u00E7\u00F5es de compra nacional parcelada.
+        {{{limite_disponibilidade_response_saldo_disponivel_parcelado_value}}}
 
         :param saldo_disponivel_parcelado: The saldo_disponivel_parcelado of this LimiteDisponibilidadeResponse.
         :type: float
@@ -487,7 +487,7 @@ class LimiteDisponibilidadeResponse(object):
     def saldo_disponivel_parcelas(self):
         """
         Gets the saldo_disponivel_parcelas of this LimiteDisponibilidadeResponse.
-        Valor de cr\u00E9dito dispon\u00EDvel para utilizar como valor de parcelas Nacionais em um determinado ciclo de faturamento.
+        {{{limite_disponibilidade_response_saldo_disponivel_parcelas_value}}}
 
         :return: The saldo_disponivel_parcelas of this LimiteDisponibilidadeResponse.
         :rtype: float
@@ -498,7 +498,7 @@ class LimiteDisponibilidadeResponse(object):
     def saldo_disponivel_parcelas(self, saldo_disponivel_parcelas):
         """
         Sets the saldo_disponivel_parcelas of this LimiteDisponibilidadeResponse.
-        Valor de cr\u00E9dito dispon\u00EDvel para utilizar como valor de parcelas Nacionais em um determinado ciclo de faturamento.
+        {{{limite_disponibilidade_response_saldo_disponivel_parcelas_value}}}
 
         :param saldo_disponivel_parcelas: The saldo_disponivel_parcelas of this LimiteDisponibilidadeResponse.
         :type: float
@@ -509,7 +509,7 @@ class LimiteDisponibilidadeResponse(object):
     def saldo_disponivel_saque(self):
         """
         Gets the saldo_disponivel_saque of this LimiteDisponibilidadeResponse.
-        Valor de cr\u00E9dito que o portador possui dispon\u00EDvel para realizar transa\u00E7\u00F5es de Saque Nacional.
+        {{{limite_disponibilidade_response_saldo_disponivel_saque_value}}}
 
         :return: The saldo_disponivel_saque of this LimiteDisponibilidadeResponse.
         :rtype: float
@@ -520,7 +520,7 @@ class LimiteDisponibilidadeResponse(object):
     def saldo_disponivel_saque(self, saldo_disponivel_saque):
         """
         Sets the saldo_disponivel_saque of this LimiteDisponibilidadeResponse.
-        Valor de cr\u00E9dito que o portador possui dispon\u00EDvel para realizar transa\u00E7\u00F5es de Saque Nacional.
+        {{{limite_disponibilidade_response_saldo_disponivel_saque_value}}}
 
         :param saldo_disponivel_saque: The saldo_disponivel_saque of this LimiteDisponibilidadeResponse.
         :type: float
@@ -531,7 +531,7 @@ class LimiteDisponibilidadeResponse(object):
     def saldo_pontos_fidelidade(self):
         """
         Gets the saldo_pontos_fidelidade of this LimiteDisponibilidadeResponse.
-        Saldo atual de pontos do programa de fidelidade.
+        {{{limite_disponibilidade_response_saldo_pontos_fidelidade_value}}}
 
         :return: The saldo_pontos_fidelidade of this LimiteDisponibilidadeResponse.
         :rtype: float
@@ -542,7 +542,7 @@ class LimiteDisponibilidadeResponse(object):
     def saldo_pontos_fidelidade(self, saldo_pontos_fidelidade):
         """
         Sets the saldo_pontos_fidelidade of this LimiteDisponibilidadeResponse.
-        Saldo atual de pontos do programa de fidelidade.
+        {{{limite_disponibilidade_response_saldo_pontos_fidelidade_value}}}
 
         :param saldo_pontos_fidelidade: The saldo_pontos_fidelidade of this LimiteDisponibilidadeResponse.
         :type: float
@@ -553,7 +553,7 @@ class LimiteDisponibilidadeResponse(object):
     def saldo_disponivel_compra_internacional(self):
         """
         Gets the saldo_disponivel_compra_internacional of this LimiteDisponibilidadeResponse.
-        Valor de cr\u00E9dito dispon\u00EDvel para transa\u00E7\u00F5es de compra internacional.
+        {{{limite_disponibilidade_response_saldo_disponivel_compra_internacional_value}}}
 
         :return: The saldo_disponivel_compra_internacional of this LimiteDisponibilidadeResponse.
         :rtype: float
@@ -564,7 +564,7 @@ class LimiteDisponibilidadeResponse(object):
     def saldo_disponivel_compra_internacional(self, saldo_disponivel_compra_internacional):
         """
         Sets the saldo_disponivel_compra_internacional of this LimiteDisponibilidadeResponse.
-        Valor de cr\u00E9dito dispon\u00EDvel para transa\u00E7\u00F5es de compra internacional.
+        {{{limite_disponibilidade_response_saldo_disponivel_compra_internacional_value}}}
 
         :param saldo_disponivel_compra_internacional: The saldo_disponivel_compra_internacional of this LimiteDisponibilidadeResponse.
         :type: float
@@ -575,7 +575,7 @@ class LimiteDisponibilidadeResponse(object):
     def saldo_disponivel_saque_internacional(self):
         """
         Gets the saldo_disponivel_saque_internacional of this LimiteDisponibilidadeResponse.
-        Valor de cr\u00E9dito dispon\u00EDvel para transa\u00E7\u00F5es de saque internacional.
+        {{{limite_disponibilidade_response_saldo_disponivel_saque_internacional_value}}}
 
         :return: The saldo_disponivel_saque_internacional of this LimiteDisponibilidadeResponse.
         :rtype: float
@@ -586,7 +586,7 @@ class LimiteDisponibilidadeResponse(object):
     def saldo_disponivel_saque_internacional(self, saldo_disponivel_saque_internacional):
         """
         Sets the saldo_disponivel_saque_internacional of this LimiteDisponibilidadeResponse.
-        Valor de cr\u00E9dito dispon\u00EDvel para transa\u00E7\u00F5es de saque internacional.
+        {{{limite_disponibilidade_response_saldo_disponivel_saque_internacional_value}}}
 
         :param saldo_disponivel_saque_internacional: The saldo_disponivel_saque_internacional of this LimiteDisponibilidadeResponse.
         :type: float

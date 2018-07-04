@@ -62,7 +62,7 @@ class ValidaSenhaCartaoResponse(object):
     def mensagem(self):
         """
         Gets the mensagem of this ValidaSenhaCartaoResponse.
-        Mensagem
+        {{{valida_senha_cartao_response_mensagem_value}}}
 
         :return: The mensagem of this ValidaSenhaCartaoResponse.
         :rtype: str
@@ -73,7 +73,7 @@ class ValidaSenhaCartaoResponse(object):
     def mensagem(self, mensagem):
         """
         Sets the mensagem of this ValidaSenhaCartaoResponse.
-        Mensagem
+        {{{valida_senha_cartao_response_mensagem_value}}}
 
         :param mensagem: The mensagem of this ValidaSenhaCartaoResponse.
         :type: str
@@ -84,7 +84,7 @@ class ValidaSenhaCartaoResponse(object):
     def id_status_cartao(self):
         """
         Gets the id_status_cartao of this ValidaSenhaCartaoResponse.
-        Descri\u00E7\u00E3o do status do cart\u00E3o
+        {{{valida_senha_cartao_response_id_status_cartao_value}}}
 
         :return: The id_status_cartao of this ValidaSenhaCartaoResponse.
         :rtype: int
@@ -95,7 +95,7 @@ class ValidaSenhaCartaoResponse(object):
     def id_status_cartao(self, id_status_cartao):
         """
         Sets the id_status_cartao of this ValidaSenhaCartaoResponse.
-        Descri\u00E7\u00E3o do status do cart\u00E3o
+        {{{valida_senha_cartao_response_id_status_cartao_value}}}
 
         :param id_status_cartao: The id_status_cartao of this ValidaSenhaCartaoResponse.
         :type: int
@@ -106,7 +106,7 @@ class ValidaSenhaCartaoResponse(object):
     def status_cartao(self):
         """
         Gets the status_cartao of this ValidaSenhaCartaoResponse.
-        Descri\u00E7\u00E3o do status do cart\u00E3o
+        {{{valida_senha_cartao_response_status_cartao_value}}}
 
         :return: The status_cartao of this ValidaSenhaCartaoResponse.
         :rtype: str
@@ -117,7 +117,7 @@ class ValidaSenhaCartaoResponse(object):
     def status_cartao(self, status_cartao):
         """
         Sets the status_cartao of this ValidaSenhaCartaoResponse.
-        Descri\u00E7\u00E3o do status do cart\u00E3o
+        {{{valida_senha_cartao_response_status_cartao_value}}}
 
         :param status_cartao: The status_cartao of this ValidaSenhaCartaoResponse.
         :type: str
@@ -128,7 +128,7 @@ class ValidaSenhaCartaoResponse(object):
     def quantidade_tentativas(self):
         """
         Gets the quantidade_tentativas of this ValidaSenhaCartaoResponse.
-        Quantidade tentativas
+        {{{valida_senha_cartao_response_quantidade_tentativas_value}}}
 
         :return: The quantidade_tentativas of this ValidaSenhaCartaoResponse.
         :rtype: int
@@ -139,7 +139,7 @@ class ValidaSenhaCartaoResponse(object):
     def quantidade_tentativas(self, quantidade_tentativas):
         """
         Sets the quantidade_tentativas of this ValidaSenhaCartaoResponse.
-        Quantidade tentativas
+        {{{valida_senha_cartao_response_quantidade_tentativas_value}}}
 
         :param quantidade_tentativas: The quantidade_tentativas of this ValidaSenhaCartaoResponse.
         :type: int
@@ -150,7 +150,7 @@ class ValidaSenhaCartaoResponse(object):
     def quantidade_maxima_tentativas(self):
         """
         Gets the quantidade_maxima_tentativas of this ValidaSenhaCartaoResponse.
-        Quantidade m\u00E1xima tentativas permitidas
+        {{{valida_senha_cartao_response_quantidade_maxima_tentativas_value}}}
 
         :return: The quantidade_maxima_tentativas of this ValidaSenhaCartaoResponse.
         :rtype: int
@@ -161,7 +161,7 @@ class ValidaSenhaCartaoResponse(object):
     def quantidade_maxima_tentativas(self, quantidade_maxima_tentativas):
         """
         Sets the quantidade_maxima_tentativas of this ValidaSenhaCartaoResponse.
-        Quantidade m\u00E1xima tentativas permitidas
+        {{{valida_senha_cartao_response_quantidade_maxima_tentativas_value}}}
 
         :param quantidade_maxima_tentativas: The quantidade_maxima_tentativas of this ValidaSenhaCartaoResponse.
         :type: int

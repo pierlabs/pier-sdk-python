@@ -50,7 +50,8 @@ class EnderecoResponse(object):
             'uf': 'str',
             'pais': 'str',
             'data_inclusao': 'str',
-            'data_ultima_atualizacao': 'str'
+            'data_ultima_atualizacao': 'str',
+            'flag_correspondencia': 'bool'
         }
 
         self.attribute_map = {
@@ -67,7 +68,8 @@ class EnderecoResponse(object):
             'uf': 'uf',
             'pais': 'pais',
             'data_inclusao': 'dataInclusao',
-            'data_ultima_atualizacao': 'dataUltimaAtualizacao'
+            'data_ultima_atualizacao': 'dataUltimaAtualizacao',
+            'flag_correspondencia': 'flagCorrespondencia'
         }
 
         self._id = None
@@ -84,12 +86,13 @@ class EnderecoResponse(object):
         self._pais = None
         self._data_inclusao = None
         self._data_ultima_atualizacao = None
+        self._flag_correspondencia = None
 
     @property
     def id(self):
         """
         Gets the id of this EnderecoResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o do Endere\u00E7o (id).
+        {{{endereco_response_id_value}}}
 
         :return: The id of this EnderecoResponse.
         :rtype: int
@@ -100,7 +103,7 @@ class EnderecoResponse(object):
     def id(self, id):
         """
         Sets the id of this EnderecoResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o do Endere\u00E7o (id).
+        {{{endereco_response_id_value}}}
 
         :param id: The id of this EnderecoResponse.
         :type: int
@@ -111,7 +114,7 @@ class EnderecoResponse(object):
     def id_pessoa(self):
         """
         Gets the id_pessoa of this EnderecoResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o da Pessoa a qual o endere\u00E7o pertence (id)
+        {{{endereco_response_id_pessoa_value}}}
 
         :return: The id_pessoa of this EnderecoResponse.
         :rtype: int
@@ -122,7 +125,7 @@ class EnderecoResponse(object):
     def id_pessoa(self, id_pessoa):
         """
         Sets the id_pessoa of this EnderecoResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o da Pessoa a qual o endere\u00E7o pertence (id)
+        {{{endereco_response_id_pessoa_value}}}
 
         :param id_pessoa: The id_pessoa of this EnderecoResponse.
         :type: int
@@ -133,7 +136,7 @@ class EnderecoResponse(object):
     def id_tipo_endereco(self):
         """
         Gets the id_tipo_endereco of this EnderecoResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o da Tipo Endere\u00E7o (id)
+        {{{endereco_response_id_tipo_endereco_value}}}
 
         :return: The id_tipo_endereco of this EnderecoResponse.
         :rtype: int
@@ -144,7 +147,7 @@ class EnderecoResponse(object):
     def id_tipo_endereco(self, id_tipo_endereco):
         """
         Sets the id_tipo_endereco of this EnderecoResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o da Tipo Endere\u00E7o (id)
+        {{{endereco_response_id_tipo_endereco_value}}}
 
         :param id_tipo_endereco: The id_tipo_endereco of this EnderecoResponse.
         :type: int
@@ -155,7 +158,7 @@ class EnderecoResponse(object):
     def cep(self):
         """
         Gets the cep of this EnderecoResponse.
-        Apresenta o C\u00F3digo de Endere\u00E7amento Postal (CEP) no formaro '58800000'
+        {{{endereco_response_cep_value}}}
 
         :return: The cep of this EnderecoResponse.
         :rtype: str
@@ -166,7 +169,7 @@ class EnderecoResponse(object):
     def cep(self, cep):
         """
         Sets the cep of this EnderecoResponse.
-        Apresenta o C\u00F3digo de Endere\u00E7amento Postal (CEP) no formaro '58800000'
+        {{{endereco_response_cep_value}}}
 
         :param cep: The cep of this EnderecoResponse.
         :type: str
@@ -177,7 +180,7 @@ class EnderecoResponse(object):
     def logradouro(self):
         """
         Gets the logradouro of this EnderecoResponse.
-        Apresenta o nome do Logradouro
+        {{{endereco_response_logradouro_value}}}
 
         :return: The logradouro of this EnderecoResponse.
         :rtype: str
@@ -188,7 +191,7 @@ class EnderecoResponse(object):
     def logradouro(self, logradouro):
         """
         Sets the logradouro of this EnderecoResponse.
-        Apresenta o nome do Logradouro
+        {{{endereco_response_logradouro_value}}}
 
         :param logradouro: The logradouro of this EnderecoResponse.
         :type: str
@@ -199,7 +202,7 @@ class EnderecoResponse(object):
     def numero(self):
         """
         Gets the numero of this EnderecoResponse.
-        Apresenta o n\u00FAmero do endere\u00E7o
+        {{{endereco_response_numero_value}}}
 
         :return: The numero of this EnderecoResponse.
         :rtype: int
@@ -210,7 +213,7 @@ class EnderecoResponse(object):
     def numero(self, numero):
         """
         Sets the numero of this EnderecoResponse.
-        Apresenta o n\u00FAmero do endere\u00E7o
+        {{{endereco_response_numero_value}}}
 
         :param numero: The numero of this EnderecoResponse.
         :type: int
@@ -221,7 +224,7 @@ class EnderecoResponse(object):
     def complemento(self):
         """
         Gets the complemento of this EnderecoResponse.
-        Apresenta descri\u00E7oes complementares referente ao endere\u00E7o
+        {{{endereco_response_complemento_value}}}
 
         :return: The complemento of this EnderecoResponse.
         :rtype: str
@@ -232,7 +235,7 @@ class EnderecoResponse(object):
     def complemento(self, complemento):
         """
         Sets the complemento of this EnderecoResponse.
-        Apresenta descri\u00E7oes complementares referente ao endere\u00E7o
+        {{{endereco_response_complemento_value}}}
 
         :param complemento: The complemento of this EnderecoResponse.
         :type: str
@@ -243,7 +246,7 @@ class EnderecoResponse(object):
     def ponto_referencia(self):
         """
         Gets the ponto_referencia of this EnderecoResponse.
-        Apresenta a descri\u00E7\u00E3o de ponto de refer\u00EAncia do endere\u00E7o
+        {{{endereco_response_ponto_referencia_value}}}
 
         :return: The ponto_referencia of this EnderecoResponse.
         :rtype: str
@@ -254,7 +257,7 @@ class EnderecoResponse(object):
     def ponto_referencia(self, ponto_referencia):
         """
         Sets the ponto_referencia of this EnderecoResponse.
-        Apresenta a descri\u00E7\u00E3o de ponto de refer\u00EAncia do endere\u00E7o
+        {{{endereco_response_ponto_referencia_value}}}
 
         :param ponto_referencia: The ponto_referencia of this EnderecoResponse.
         :type: str
@@ -265,7 +268,7 @@ class EnderecoResponse(object):
     def bairro(self):
         """
         Gets the bairro of this EnderecoResponse.
-        Apresenta nome do bairro
+        {{{endereco_response_bairro_value}}}
 
         :return: The bairro of this EnderecoResponse.
         :rtype: str
@@ -276,7 +279,7 @@ class EnderecoResponse(object):
     def bairro(self, bairro):
         """
         Sets the bairro of this EnderecoResponse.
-        Apresenta nome do bairro
+        {{{endereco_response_bairro_value}}}
 
         :param bairro: The bairro of this EnderecoResponse.
         :type: str
@@ -287,7 +290,7 @@ class EnderecoResponse(object):
     def cidade(self):
         """
         Gets the cidade of this EnderecoResponse.
-        Apresenta nome da cidade
+        {{{endereco_response_cidade_value}}}
 
         :return: The cidade of this EnderecoResponse.
         :rtype: str
@@ -298,7 +301,7 @@ class EnderecoResponse(object):
     def cidade(self, cidade):
         """
         Sets the cidade of this EnderecoResponse.
-        Apresenta nome da cidade
+        {{{endereco_response_cidade_value}}}
 
         :param cidade: The cidade of this EnderecoResponse.
         :type: str
@@ -309,7 +312,7 @@ class EnderecoResponse(object):
     def uf(self):
         """
         Gets the uf of this EnderecoResponse.
-        Apresenta sigla da Unidade Federativa
+        {{{endereco_response_uf_value}}}
 
         :return: The uf of this EnderecoResponse.
         :rtype: str
@@ -320,7 +323,7 @@ class EnderecoResponse(object):
     def uf(self, uf):
         """
         Sets the uf of this EnderecoResponse.
-        Apresenta sigla da Unidade Federativa
+        {{{endereco_response_uf_value}}}
 
         :param uf: The uf of this EnderecoResponse.
         :type: str
@@ -331,7 +334,7 @@ class EnderecoResponse(object):
     def pais(self):
         """
         Gets the pais of this EnderecoResponse.
-        Apresenta nome do Pais
+        {{{endereco_response_pais_value}}}
 
         :return: The pais of this EnderecoResponse.
         :rtype: str
@@ -342,7 +345,7 @@ class EnderecoResponse(object):
     def pais(self, pais):
         """
         Sets the pais of this EnderecoResponse.
-        Apresenta nome do Pais
+        {{{endereco_response_pais_value}}}
 
         :param pais: The pais of this EnderecoResponse.
         :type: str
@@ -353,7 +356,7 @@ class EnderecoResponse(object):
     def data_inclusao(self):
         """
         Gets the data_inclusao of this EnderecoResponse.
-        Apresenta a data em que fora cadastrado o Endere\u00E7o
+        {{{endereco_response_data_inclusao_value}}}
 
         :return: The data_inclusao of this EnderecoResponse.
         :rtype: str
@@ -364,7 +367,7 @@ class EnderecoResponse(object):
     def data_inclusao(self, data_inclusao):
         """
         Sets the data_inclusao of this EnderecoResponse.
-        Apresenta a data em que fora cadastrado o Endere\u00E7o
+        {{{endereco_response_data_inclusao_value}}}
 
         :param data_inclusao: The data_inclusao of this EnderecoResponse.
         :type: str
@@ -375,7 +378,7 @@ class EnderecoResponse(object):
     def data_ultima_atualizacao(self):
         """
         Gets the data_ultima_atualizacao of this EnderecoResponse.
-        Data em que fora realizada a \u00FAltima mudan\u00E7a neste registro de endere\u00E7o. Quando n\u00E3o tiver ocorrido mudan\u00E7a, conter\u00E1 a mesma informa\u00E7\u00E3o que o campo dataInclusao
+        {{{endereco_response_data_ultima_atualizacao_value}}}
 
         :return: The data_ultima_atualizacao of this EnderecoResponse.
         :rtype: str
@@ -386,12 +389,34 @@ class EnderecoResponse(object):
     def data_ultima_atualizacao(self, data_ultima_atualizacao):
         """
         Sets the data_ultima_atualizacao of this EnderecoResponse.
-        Data em que fora realizada a \u00FAltima mudan\u00E7a neste registro de endere\u00E7o. Quando n\u00E3o tiver ocorrido mudan\u00E7a, conter\u00E1 a mesma informa\u00E7\u00E3o que o campo dataInclusao
+        {{{endereco_response_data_ultima_atualizacao_value}}}
 
         :param data_ultima_atualizacao: The data_ultima_atualizacao of this EnderecoResponse.
         :type: str
         """
         self._data_ultima_atualizacao = data_ultima_atualizacao
+
+    @property
+    def flag_correspondencia(self):
+        """
+        Gets the flag_correspondencia of this EnderecoResponse.
+        {{{endereco_response_flag_correspondencia_value}}}
+
+        :return: The flag_correspondencia of this EnderecoResponse.
+        :rtype: bool
+        """
+        return self._flag_correspondencia
+
+    @flag_correspondencia.setter
+    def flag_correspondencia(self, flag_correspondencia):
+        """
+        Sets the flag_correspondencia of this EnderecoResponse.
+        {{{endereco_response_flag_correspondencia_value}}}
+
+        :param flag_correspondencia: The flag_correspondencia of this EnderecoResponse.
+        :type: bool
+        """
+        self._flag_correspondencia = flag_correspondencia
 
     def to_dict(self):
         """

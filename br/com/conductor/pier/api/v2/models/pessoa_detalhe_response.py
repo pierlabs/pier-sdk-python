@@ -80,7 +80,7 @@ class PessoaDetalheResponse(object):
     def id_pessoa(self):
         """
         Gets the id_pessoa of this PessoaDetalheResponse.
-        C\u00F3digo identificador da pessoa
+        {{{pessoa_detalhe_response_id_pessoa_value}}}
 
         :return: The id_pessoa of this PessoaDetalheResponse.
         :rtype: int
@@ -91,7 +91,7 @@ class PessoaDetalheResponse(object):
     def id_pessoa(self, id_pessoa):
         """
         Sets the id_pessoa of this PessoaDetalheResponse.
-        C\u00F3digo identificador da pessoa
+        {{{pessoa_detalhe_response_id_pessoa_value}}}
 
         :param id_pessoa: The id_pessoa of this PessoaDetalheResponse.
         :type: int
@@ -102,7 +102,7 @@ class PessoaDetalheResponse(object):
     def nome_mae(self):
         """
         Gets the nome_mae of this PessoaDetalheResponse.
-        Apresenta o nome da m\u00E3e da pessoa fisica
+        {{{pessoa_detalhe_response_nome_mae_value}}}
 
         :return: The nome_mae of this PessoaDetalheResponse.
         :rtype: str
@@ -113,7 +113,7 @@ class PessoaDetalheResponse(object):
     def nome_mae(self, nome_mae):
         """
         Sets the nome_mae of this PessoaDetalheResponse.
-        Apresenta o nome da m\u00E3e da pessoa fisica
+        {{{pessoa_detalhe_response_nome_mae_value}}}
 
         :param nome_mae: The nome_mae of this PessoaDetalheResponse.
         :type: str
@@ -124,7 +124,7 @@ class PessoaDetalheResponse(object):
     def id_estado_civil(self):
         """
         Gets the id_estado_civil of this PessoaDetalheResponse.
-        Id Estado civil da pessoa fisica
+        {{{pessoa_detalhe_response_id_estado_civil_value}}}
 
         :return: The id_estado_civil of this PessoaDetalheResponse.
         :rtype: int
@@ -135,7 +135,7 @@ class PessoaDetalheResponse(object):
     def id_estado_civil(self, id_estado_civil):
         """
         Sets the id_estado_civil of this PessoaDetalheResponse.
-        Id Estado civil da pessoa fisica
+        {{{pessoa_detalhe_response_id_estado_civil_value}}}
 
         :param id_estado_civil: The id_estado_civil of this PessoaDetalheResponse.
         :type: int
@@ -146,7 +146,7 @@ class PessoaDetalheResponse(object):
     def id_profissao(self):
         """
         Gets the id_profissao of this PessoaDetalheResponse.
-        Profiss\u00E3o da pessoa fisica
+        {{{pessoa_detalhe_response_id_profissao_value}}}
 
         :return: The id_profissao of this PessoaDetalheResponse.
         :rtype: str
@@ -157,7 +157,7 @@ class PessoaDetalheResponse(object):
     def id_profissao(self, id_profissao):
         """
         Sets the id_profissao of this PessoaDetalheResponse.
-        Profiss\u00E3o da pessoa fisica
+        {{{pessoa_detalhe_response_id_profissao_value}}}
 
         :param id_profissao: The id_profissao of this PessoaDetalheResponse.
         :type: str
@@ -168,7 +168,7 @@ class PessoaDetalheResponse(object):
     def id_natureza_ocupacao(self):
         """
         Gets the id_natureza_ocupacao of this PessoaDetalheResponse.
-        Id Natureza Ocupa\u00E7\u00E3o da pessoa fisica
+        {{{pessoa_detalhe_response_id_natureza_ocupacao_value}}}
 
         :return: The id_natureza_ocupacao of this PessoaDetalheResponse.
         :rtype: int
@@ -179,7 +179,7 @@ class PessoaDetalheResponse(object):
     def id_natureza_ocupacao(self, id_natureza_ocupacao):
         """
         Sets the id_natureza_ocupacao of this PessoaDetalheResponse.
-        Id Natureza Ocupa\u00E7\u00E3o da pessoa fisica
+        {{{pessoa_detalhe_response_id_natureza_ocupacao_value}}}
 
         :param id_natureza_ocupacao: The id_natureza_ocupacao of this PessoaDetalheResponse.
         :type: int
@@ -190,7 +190,7 @@ class PessoaDetalheResponse(object):
     def id_nacionalidade(self):
         """
         Gets the id_nacionalidade of this PessoaDetalheResponse.
-        Id Nacionalidade da pessoa fisica
+        {{{pessoa_detalhe_response_id_nacionalidade_value}}}
 
         :return: The id_nacionalidade of this PessoaDetalheResponse.
         :rtype: int
@@ -201,7 +201,7 @@ class PessoaDetalheResponse(object):
     def id_nacionalidade(self, id_nacionalidade):
         """
         Sets the id_nacionalidade of this PessoaDetalheResponse.
-        Id Nacionalidade da pessoa fisica
+        {{{pessoa_detalhe_response_id_nacionalidade_value}}}
 
         :param id_nacionalidade: The id_nacionalidade of this PessoaDetalheResponse.
         :type: int
@@ -212,7 +212,7 @@ class PessoaDetalheResponse(object):
     def numero_banco(self):
         """
         Gets the numero_banco of this PessoaDetalheResponse.
-        N\u00FAmero do banco.
+        {{{pessoa_detalhe_response_numero_banco_value}}}
 
         :return: The numero_banco of this PessoaDetalheResponse.
         :rtype: int
@@ -223,7 +223,7 @@ class PessoaDetalheResponse(object):
     def numero_banco(self, numero_banco):
         """
         Sets the numero_banco of this PessoaDetalheResponse.
-        N\u00FAmero do banco.
+        {{{pessoa_detalhe_response_numero_banco_value}}}
 
         :param numero_banco: The numero_banco of this PessoaDetalheResponse.
         :type: int
@@ -234,7 +234,7 @@ class PessoaDetalheResponse(object):
     def numero_agencia(self):
         """
         Gets the numero_agencia of this PessoaDetalheResponse.
-        N\u00FAmero da ag\u00EAncia.
+        {{{pessoa_detalhe_response_numero_agencia_value}}}
 
         :return: The numero_agencia of this PessoaDetalheResponse.
         :rtype: int
@@ -245,7 +245,7 @@ class PessoaDetalheResponse(object):
     def numero_agencia(self, numero_agencia):
         """
         Sets the numero_agencia of this PessoaDetalheResponse.
-        N\u00FAmero da ag\u00EAncia.
+        {{{pessoa_detalhe_response_numero_agencia_value}}}
 
         :param numero_agencia: The numero_agencia of this PessoaDetalheResponse.
         :type: int
@@ -256,7 +256,7 @@ class PessoaDetalheResponse(object):
     def numero_conta_corrente(self):
         """
         Gets the numero_conta_corrente of this PessoaDetalheResponse.
-        N\u00FAmero da conta corrente.
+        {{{pessoa_detalhe_response_numero_conta_corrente_value}}}
 
         :return: The numero_conta_corrente of this PessoaDetalheResponse.
         :rtype: str
@@ -267,7 +267,7 @@ class PessoaDetalheResponse(object):
     def numero_conta_corrente(self, numero_conta_corrente):
         """
         Sets the numero_conta_corrente of this PessoaDetalheResponse.
-        N\u00FAmero da conta corrente.
+        {{{pessoa_detalhe_response_numero_conta_corrente_value}}}
 
         :param numero_conta_corrente: The numero_conta_corrente of this PessoaDetalheResponse.
         :type: str
@@ -278,7 +278,7 @@ class PessoaDetalheResponse(object):
     def email(self):
         """
         Gets the email of this PessoaDetalheResponse.
-        Email da pessoa fisica
+        {{{pessoa_detalhe_response_email_value}}}
 
         :return: The email of this PessoaDetalheResponse.
         :rtype: str
@@ -289,7 +289,7 @@ class PessoaDetalheResponse(object):
     def email(self, email):
         """
         Sets the email of this PessoaDetalheResponse.
-        Email da pessoa fisica
+        {{{pessoa_detalhe_response_email_value}}}
 
         :param email: The email of this PessoaDetalheResponse.
         :type: str
@@ -300,7 +300,7 @@ class PessoaDetalheResponse(object):
     def nome_empresa(self):
         """
         Gets the nome_empresa of this PessoaDetalheResponse.
-        Nome que deve ser impresso no cart\u00E3o
+        {{{pessoa_detalhe_response_nome_empresa_value}}}
 
         :return: The nome_empresa of this PessoaDetalheResponse.
         :rtype: str
@@ -311,7 +311,7 @@ class PessoaDetalheResponse(object):
     def nome_empresa(self, nome_empresa):
         """
         Sets the nome_empresa of this PessoaDetalheResponse.
-        Nome que deve ser impresso no cart\u00E3o
+        {{{pessoa_detalhe_response_nome_empresa_value}}}
 
         :param nome_empresa: The nome_empresa of this PessoaDetalheResponse.
         :type: str

@@ -83,7 +83,7 @@ class EnderecoAprovadoResponse(object):
     def id(self):
         """
         Gets the id of this EnderecoAprovadoResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o do Endere\u00E7o (id)
+        {{{endereco_aprovado_response_id_value}}}
 
         :return: The id of this EnderecoAprovadoResponse.
         :rtype: int
@@ -94,7 +94,7 @@ class EnderecoAprovadoResponse(object):
     def id(self, id):
         """
         Sets the id of this EnderecoAprovadoResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o do Endere\u00E7o (id)
+        {{{endereco_aprovado_response_id_value}}}
 
         :param id: The id of this EnderecoAprovadoResponse.
         :type: int
@@ -105,7 +105,7 @@ class EnderecoAprovadoResponse(object):
     def id_tipo_endereco(self):
         """
         Gets the id_tipo_endereco of this EnderecoAprovadoResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o da Tipo Endere\u00E7o (id)
+        {{{endereco_aprovado_response_id_tipo_endereco_value}}}
 
         :return: The id_tipo_endereco of this EnderecoAprovadoResponse.
         :rtype: int
@@ -116,7 +116,7 @@ class EnderecoAprovadoResponse(object):
     def id_tipo_endereco(self, id_tipo_endereco):
         """
         Sets the id_tipo_endereco of this EnderecoAprovadoResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o da Tipo Endere\u00E7o (id)
+        {{{endereco_aprovado_response_id_tipo_endereco_value}}}
 
         :param id_tipo_endereco: The id_tipo_endereco of this EnderecoAprovadoResponse.
         :type: int
@@ -127,7 +127,7 @@ class EnderecoAprovadoResponse(object):
     def cep(self):
         """
         Gets the cep of this EnderecoAprovadoResponse.
-        Apresenta o C\u00F3digo de Endere\u00E7amento Postal (CEP) no formaro '58800000'
+        {{{endereco_aprovado_response_cep_value}}}
 
         :return: The cep of this EnderecoAprovadoResponse.
         :rtype: str
@@ -138,7 +138,7 @@ class EnderecoAprovadoResponse(object):
     def cep(self, cep):
         """
         Sets the cep of this EnderecoAprovadoResponse.
-        Apresenta o C\u00F3digo de Endere\u00E7amento Postal (CEP) no formaro '58800000'
+        {{{endereco_aprovado_response_cep_value}}}
 
         :param cep: The cep of this EnderecoAprovadoResponse.
         :type: str
@@ -149,7 +149,7 @@ class EnderecoAprovadoResponse(object):
     def logradouro(self):
         """
         Gets the logradouro of this EnderecoAprovadoResponse.
-        Apresenta o nome do Logradouro
+        {{{endereco_aprovado_response_logradouro_value}}}
 
         :return: The logradouro of this EnderecoAprovadoResponse.
         :rtype: str
@@ -160,7 +160,7 @@ class EnderecoAprovadoResponse(object):
     def logradouro(self, logradouro):
         """
         Sets the logradouro of this EnderecoAprovadoResponse.
-        Apresenta o nome do Logradouro
+        {{{endereco_aprovado_response_logradouro_value}}}
 
         :param logradouro: The logradouro of this EnderecoAprovadoResponse.
         :type: str
@@ -171,7 +171,7 @@ class EnderecoAprovadoResponse(object):
     def numero(self):
         """
         Gets the numero of this EnderecoAprovadoResponse.
-        Apresenta o n\u00FAmero do endere\u00E7o
+        {{{endereco_aprovado_response_numero_value}}}
 
         :return: The numero of this EnderecoAprovadoResponse.
         :rtype: int
@@ -182,7 +182,7 @@ class EnderecoAprovadoResponse(object):
     def numero(self, numero):
         """
         Sets the numero of this EnderecoAprovadoResponse.
-        Apresenta o n\u00FAmero do endere\u00E7o
+        {{{endereco_aprovado_response_numero_value}}}
 
         :param numero: The numero of this EnderecoAprovadoResponse.
         :type: int
@@ -193,7 +193,7 @@ class EnderecoAprovadoResponse(object):
     def complemento(self):
         """
         Gets the complemento of this EnderecoAprovadoResponse.
-        Apresenta descri\u00E7oes complementares referente ao endere\u00E7o
+        {{{endereco_aprovado_response_complemento_value}}}
 
         :return: The complemento of this EnderecoAprovadoResponse.
         :rtype: str
@@ -204,7 +204,7 @@ class EnderecoAprovadoResponse(object):
     def complemento(self, complemento):
         """
         Sets the complemento of this EnderecoAprovadoResponse.
-        Apresenta descri\u00E7oes complementares referente ao endere\u00E7o
+        {{{endereco_aprovado_response_complemento_value}}}
 
         :param complemento: The complemento of this EnderecoAprovadoResponse.
         :type: str
@@ -215,7 +215,7 @@ class EnderecoAprovadoResponse(object):
     def ponto_referencia(self):
         """
         Gets the ponto_referencia of this EnderecoAprovadoResponse.
-        Apresenta a descri\u00E7\u00E3o de ponto de refer\u00EAncia do endere\u00E7o
+        {{{endereco_aprovado_response_ponto_referencia_value}}}
 
         :return: The ponto_referencia of this EnderecoAprovadoResponse.
         :rtype: str
@@ -226,7 +226,7 @@ class EnderecoAprovadoResponse(object):
     def ponto_referencia(self, ponto_referencia):
         """
         Sets the ponto_referencia of this EnderecoAprovadoResponse.
-        Apresenta a descri\u00E7\u00E3o de ponto de refer\u00EAncia do endere\u00E7o
+        {{{endereco_aprovado_response_ponto_referencia_value}}}
 
         :param ponto_referencia: The ponto_referencia of this EnderecoAprovadoResponse.
         :type: str
@@ -237,7 +237,7 @@ class EnderecoAprovadoResponse(object):
     def bairro(self):
         """
         Gets the bairro of this EnderecoAprovadoResponse.
-        Apresenta nome do bairro
+        {{{endereco_aprovado_response_bairro_value}}}
 
         :return: The bairro of this EnderecoAprovadoResponse.
         :rtype: str
@@ -248,7 +248,7 @@ class EnderecoAprovadoResponse(object):
     def bairro(self, bairro):
         """
         Sets the bairro of this EnderecoAprovadoResponse.
-        Apresenta nome do bairro
+        {{{endereco_aprovado_response_bairro_value}}}
 
         :param bairro: The bairro of this EnderecoAprovadoResponse.
         :type: str
@@ -259,7 +259,7 @@ class EnderecoAprovadoResponse(object):
     def cidade(self):
         """
         Gets the cidade of this EnderecoAprovadoResponse.
-        Apresenta nome da cidade
+        {{{endereco_aprovado_response_cidade_value}}}
 
         :return: The cidade of this EnderecoAprovadoResponse.
         :rtype: str
@@ -270,7 +270,7 @@ class EnderecoAprovadoResponse(object):
     def cidade(self, cidade):
         """
         Sets the cidade of this EnderecoAprovadoResponse.
-        Apresenta nome da cidade
+        {{{endereco_aprovado_response_cidade_value}}}
 
         :param cidade: The cidade of this EnderecoAprovadoResponse.
         :type: str
@@ -281,7 +281,7 @@ class EnderecoAprovadoResponse(object):
     def uf(self):
         """
         Gets the uf of this EnderecoAprovadoResponse.
-        Apresenta sigla da Unidade Federativa
+        {{{endereco_aprovado_response_uf_value}}}
 
         :return: The uf of this EnderecoAprovadoResponse.
         :rtype: str
@@ -292,7 +292,7 @@ class EnderecoAprovadoResponse(object):
     def uf(self, uf):
         """
         Sets the uf of this EnderecoAprovadoResponse.
-        Apresenta sigla da Unidade Federativa
+        {{{endereco_aprovado_response_uf_value}}}
 
         :param uf: The uf of this EnderecoAprovadoResponse.
         :type: str
@@ -303,7 +303,7 @@ class EnderecoAprovadoResponse(object):
     def pais(self):
         """
         Gets the pais of this EnderecoAprovadoResponse.
-        Apresenta nome do Pais
+        {{{endereco_aprovado_response_pais_value}}}
 
         :return: The pais of this EnderecoAprovadoResponse.
         :rtype: str
@@ -314,7 +314,7 @@ class EnderecoAprovadoResponse(object):
     def pais(self, pais):
         """
         Sets the pais of this EnderecoAprovadoResponse.
-        Apresenta nome do Pais
+        {{{endereco_aprovado_response_pais_value}}}
 
         :param pais: The pais of this EnderecoAprovadoResponse.
         :type: str
@@ -325,7 +325,7 @@ class EnderecoAprovadoResponse(object):
     def endereco_correspondencia(self):
         """
         Gets the endereco_correspondencia of this EnderecoAprovadoResponse.
-        Indica se o endere\u00E7o informado \u00E9 o de correspond\u00EAncia
+        {{{endereco_aprovado_response_endereco_correspondencia_value}}}
 
         :return: The endereco_correspondencia of this EnderecoAprovadoResponse.
         :rtype: bool
@@ -336,7 +336,7 @@ class EnderecoAprovadoResponse(object):
     def endereco_correspondencia(self, endereco_correspondencia):
         """
         Sets the endereco_correspondencia of this EnderecoAprovadoResponse.
-        Indica se o endere\u00E7o informado \u00E9 o de correspond\u00EAncia
+        {{{endereco_aprovado_response_endereco_correspondencia_value}}}
 
         :param endereco_correspondencia: The endereco_correspondencia of this EnderecoAprovadoResponse.
         :type: bool

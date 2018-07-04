@@ -68,7 +68,7 @@ class TransacaoOnUsPorIdCartaoRequest(object):
     def nsu_origem(self):
         """
         Gets the nsu_origem of this TransacaoOnUsPorIdCartaoRequest.
-        N\u00FAmero Sequencial \u00DAnico que identifica a transa\u00E7\u00E3o no sistema que a originou.
+        {{{transacao_on_us_por_id_cartao_request_nsu_origem_value}}}
 
         :return: The nsu_origem of this TransacaoOnUsPorIdCartaoRequest.
         :rtype: str
@@ -79,7 +79,7 @@ class TransacaoOnUsPorIdCartaoRequest(object):
     def nsu_origem(self, nsu_origem):
         """
         Sets the nsu_origem of this TransacaoOnUsPorIdCartaoRequest.
-        N\u00FAmero Sequencial \u00DAnico que identifica a transa\u00E7\u00E3o no sistema que a originou.
+        {{{transacao_on_us_por_id_cartao_request_nsu_origem_value}}}
 
         :param nsu_origem: The nsu_origem of this TransacaoOnUsPorIdCartaoRequest.
         :type: str
@@ -90,7 +90,7 @@ class TransacaoOnUsPorIdCartaoRequest(object):
     def codigo_processamento(self):
         """
         Gets the codigo_processamento of this TransacaoOnUsPorIdCartaoRequest.
-        C\u00F3digo de Processamento que identifica o Tipo da Transa\u00E7\u00E3o.
+        {{{transacao_on_us_por_id_cartao_request_codigo_processamento_value}}}
 
         :return: The codigo_processamento of this TransacaoOnUsPorIdCartaoRequest.
         :rtype: str
@@ -101,7 +101,7 @@ class TransacaoOnUsPorIdCartaoRequest(object):
     def codigo_processamento(self, codigo_processamento):
         """
         Sets the codigo_processamento of this TransacaoOnUsPorIdCartaoRequest.
-        C\u00F3digo de Processamento que identifica o Tipo da Transa\u00E7\u00E3o.
+        {{{transacao_on_us_por_id_cartao_request_codigo_processamento_value}}}
 
         :param codigo_processamento: The codigo_processamento of this TransacaoOnUsPorIdCartaoRequest.
         :type: str
@@ -112,7 +112,7 @@ class TransacaoOnUsPorIdCartaoRequest(object):
     def valor_transacao(self):
         """
         Gets the valor_transacao of this TransacaoOnUsPorIdCartaoRequest.
-        Valor da transa\u00E7\u00E3o com duas casas decimais para os centavos.
+        {{{transacao_on_us_por_id_cartao_request_valor_transacao_value}}}
 
         :return: The valor_transacao of this TransacaoOnUsPorIdCartaoRequest.
         :rtype: float
@@ -123,7 +123,7 @@ class TransacaoOnUsPorIdCartaoRequest(object):
     def valor_transacao(self, valor_transacao):
         """
         Sets the valor_transacao of this TransacaoOnUsPorIdCartaoRequest.
-        Valor da transa\u00E7\u00E3o com duas casas decimais para os centavos.
+        {{{transacao_on_us_por_id_cartao_request_valor_transacao_value}}}
 
         :param valor_transacao: The valor_transacao of this TransacaoOnUsPorIdCartaoRequest.
         :type: float
@@ -134,7 +134,7 @@ class TransacaoOnUsPorIdCartaoRequest(object):
     def numero_estabelecimento(self):
         """
         Gets the numero_estabelecimento of this TransacaoOnUsPorIdCartaoRequest.
-        N\u00FAmero do Estabelecimento (N\u00FAmero+DV).
+        {{{transacao_on_us_por_id_cartao_request_numero_estabelecimento_value}}}
 
         :return: The numero_estabelecimento of this TransacaoOnUsPorIdCartaoRequest.
         :rtype: int
@@ -145,7 +145,7 @@ class TransacaoOnUsPorIdCartaoRequest(object):
     def numero_estabelecimento(self, numero_estabelecimento):
         """
         Sets the numero_estabelecimento of this TransacaoOnUsPorIdCartaoRequest.
-        N\u00FAmero do Estabelecimento (N\u00FAmero+DV).
+        {{{transacao_on_us_por_id_cartao_request_numero_estabelecimento_value}}}
 
         :param numero_estabelecimento: The numero_estabelecimento of this TransacaoOnUsPorIdCartaoRequest.
         :type: int
@@ -156,7 +156,7 @@ class TransacaoOnUsPorIdCartaoRequest(object):
     def data_hora_terminal(self):
         """
         Gets the data_hora_terminal of this TransacaoOnUsPorIdCartaoRequest.
-        Apresenta a data e hora local da consulta yyyy-MM-dd'T'HH:mm:ss.SSSZ. Ex: 2000-10-31T01:30:00.000-05:00
+        {{{transacao_on_us_por_id_cartao_request_data_hora_terminal_value}}}
 
         :return: The data_hora_terminal of this TransacaoOnUsPorIdCartaoRequest.
         :rtype: str
@@ -167,7 +167,7 @@ class TransacaoOnUsPorIdCartaoRequest(object):
     def data_hora_terminal(self, data_hora_terminal):
         """
         Sets the data_hora_terminal of this TransacaoOnUsPorIdCartaoRequest.
-        Apresenta a data e hora local da consulta yyyy-MM-dd'T'HH:mm:ss.SSSZ. Ex: 2000-10-31T01:30:00.000-05:00
+        {{{transacao_on_us_por_id_cartao_request_data_hora_terminal_value}}}
 
         :param data_hora_terminal: The data_hora_terminal of this TransacaoOnUsPorIdCartaoRequest.
         :type: str
@@ -178,7 +178,7 @@ class TransacaoOnUsPorIdCartaoRequest(object):
     def terminal_requisitante(self):
         """
         Gets the terminal_requisitante of this TransacaoOnUsPorIdCartaoRequest.
-        Apresenta a identifica\u00E7\u00E3o do terminal requisitante
+        {{{transacao_on_us_por_id_cartao_request_terminal_requisitante_value}}}
 
         :return: The terminal_requisitante of this TransacaoOnUsPorIdCartaoRequest.
         :rtype: str
@@ -189,7 +189,7 @@ class TransacaoOnUsPorIdCartaoRequest(object):
     def terminal_requisitante(self, terminal_requisitante):
         """
         Sets the terminal_requisitante of this TransacaoOnUsPorIdCartaoRequest.
-        Apresenta a identifica\u00E7\u00E3o do terminal requisitante
+        {{{transacao_on_us_por_id_cartao_request_terminal_requisitante_value}}}
 
         :param terminal_requisitante: The terminal_requisitante of this TransacaoOnUsPorIdCartaoRequest.
         :type: str
@@ -200,7 +200,7 @@ class TransacaoOnUsPorIdCartaoRequest(object):
     def numero_parcelas(self):
         """
         Gets the numero_parcelas of this TransacaoOnUsPorIdCartaoRequest.
-        N\u00FAmero de Parcelas.
+        {{{transacao_on_us_por_id_cartao_request_numero_parcelas_value}}}
 
         :return: The numero_parcelas of this TransacaoOnUsPorIdCartaoRequest.
         :rtype: int
@@ -211,7 +211,7 @@ class TransacaoOnUsPorIdCartaoRequest(object):
     def numero_parcelas(self, numero_parcelas):
         """
         Sets the numero_parcelas of this TransacaoOnUsPorIdCartaoRequest.
-        N\u00FAmero de Parcelas.
+        {{{transacao_on_us_por_id_cartao_request_numero_parcelas_value}}}
 
         :param numero_parcelas: The numero_parcelas of this TransacaoOnUsPorIdCartaoRequest.
         :type: int

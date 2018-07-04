@@ -41,8 +41,8 @@ class BaseResponse(object):
             'servidor': 'str',
             'usuario': 'str',
             'nome_base': 'str',
-            'senha_criptografada': 'bool',
             'domain': 'str',
+            'senha_criptografada': 'bool',
             'nome_base_controle_acesso': 'str',
             'id_emissor': 'int',
             'servidor_controle_acesso': 'str',
@@ -56,8 +56,8 @@ class BaseResponse(object):
             'servidor': 'servidor',
             'usuario': 'usuario',
             'nome_base': 'nomeBase',
-            'senha_criptografada': 'senhaCriptografada',
             'domain': 'domain',
+            'senha_criptografada': 'senhaCriptografada',
             'nome_base_controle_acesso': 'nomeBaseControleAcesso',
             'id_emissor': 'idEmissor',
             'servidor_controle_acesso': 'servidorControleAcesso',
@@ -70,8 +70,8 @@ class BaseResponse(object):
         self._servidor = None
         self._usuario = None
         self._nome_base = None
-        self._senha_criptografada = None
         self._domain = None
+        self._senha_criptografada = None
         self._nome_base_controle_acesso = None
         self._id_emissor = None
         self._servidor_controle_acesso = None
@@ -83,7 +83,7 @@ class BaseResponse(object):
     def id(self):
         """
         Gets the id of this BaseResponse.
-        C\u00F3digo identificador da base
+        {{{base_dto_id_value}}}
 
         :return: The id of this BaseResponse.
         :rtype: int
@@ -94,7 +94,7 @@ class BaseResponse(object):
     def id(self, id):
         """
         Sets the id of this BaseResponse.
-        C\u00F3digo identificador da base
+        {{{base_dto_id_value}}}
 
         :param id: The id of this BaseResponse.
         :type: int
@@ -105,7 +105,7 @@ class BaseResponse(object):
     def servidor(self):
         """
         Gets the servidor of this BaseResponse.
-        IP do servidor
+        {{{base_dto_servidor_value}}}
 
         :return: The servidor of this BaseResponse.
         :rtype: str
@@ -116,7 +116,7 @@ class BaseResponse(object):
     def servidor(self, servidor):
         """
         Sets the servidor of this BaseResponse.
-        IP do servidor
+        {{{base_dto_servidor_value}}}
 
         :param servidor: The servidor of this BaseResponse.
         :type: str
@@ -127,7 +127,7 @@ class BaseResponse(object):
     def usuario(self):
         """
         Gets the usuario of this BaseResponse.
-        Nome do usu\u00E1rio
+        {{{base_dto_usuario_value}}}
 
         :return: The usuario of this BaseResponse.
         :rtype: str
@@ -138,7 +138,7 @@ class BaseResponse(object):
     def usuario(self, usuario):
         """
         Sets the usuario of this BaseResponse.
-        Nome do usu\u00E1rio
+        {{{base_dto_usuario_value}}}
 
         :param usuario: The usuario of this BaseResponse.
         :type: str
@@ -149,7 +149,7 @@ class BaseResponse(object):
     def nome_base(self):
         """
         Gets the nome_base of this BaseResponse.
-        Nome da base
+        {{{base_dto_nome_base_value}}}
 
         :return: The nome_base of this BaseResponse.
         :rtype: str
@@ -160,7 +160,7 @@ class BaseResponse(object):
     def nome_base(self, nome_base):
         """
         Sets the nome_base of this BaseResponse.
-        Nome da base
+        {{{base_dto_nome_base_value}}}
 
         :param nome_base: The nome_base of this BaseResponse.
         :type: str
@@ -168,32 +168,10 @@ class BaseResponse(object):
         self._nome_base = nome_base
 
     @property
-    def senha_criptografada(self):
-        """
-        Gets the senha_criptografada of this BaseResponse.
-        senha Criptografada
-
-        :return: The senha_criptografada of this BaseResponse.
-        :rtype: bool
-        """
-        return self._senha_criptografada
-
-    @senha_criptografada.setter
-    def senha_criptografada(self, senha_criptografada):
-        """
-        Sets the senha_criptografada of this BaseResponse.
-        senha Criptografada
-
-        :param senha_criptografada: The senha_criptografada of this BaseResponse.
-        :type: bool
-        """
-        self._senha_criptografada = senha_criptografada
-
-    @property
     def domain(self):
         """
         Gets the domain of this BaseResponse.
-        Dom\u00EDnio da base
+        {{{base_dto_domain_value}}}
 
         :return: The domain of this BaseResponse.
         :rtype: str
@@ -204,7 +182,7 @@ class BaseResponse(object):
     def domain(self, domain):
         """
         Sets the domain of this BaseResponse.
-        Dom\u00EDnio da base
+        {{{base_dto_domain_value}}}
 
         :param domain: The domain of this BaseResponse.
         :type: str
@@ -212,10 +190,32 @@ class BaseResponse(object):
         self._domain = domain
 
     @property
+    def senha_criptografada(self):
+        """
+        Gets the senha_criptografada of this BaseResponse.
+        {{{base_dto_senha_criptografada_value}}}
+
+        :return: The senha_criptografada of this BaseResponse.
+        :rtype: bool
+        """
+        return self._senha_criptografada
+
+    @senha_criptografada.setter
+    def senha_criptografada(self, senha_criptografada):
+        """
+        Sets the senha_criptografada of this BaseResponse.
+        {{{base_dto_senha_criptografada_value}}}
+
+        :param senha_criptografada: The senha_criptografada of this BaseResponse.
+        :type: bool
+        """
+        self._senha_criptografada = senha_criptografada
+
+    @property
     def nome_base_controle_acesso(self):
         """
         Gets the nome_base_controle_acesso of this BaseResponse.
-        Nome da base de controle acesso
+        {{{base_dto_nome_base_controle_acesso_value}}}
 
         :return: The nome_base_controle_acesso of this BaseResponse.
         :rtype: str
@@ -226,7 +226,7 @@ class BaseResponse(object):
     def nome_base_controle_acesso(self, nome_base_controle_acesso):
         """
         Sets the nome_base_controle_acesso of this BaseResponse.
-        Nome da base de controle acesso
+        {{{base_dto_nome_base_controle_acesso_value}}}
 
         :param nome_base_controle_acesso: The nome_base_controle_acesso of this BaseResponse.
         :type: str
@@ -237,7 +237,7 @@ class BaseResponse(object):
     def id_emissor(self):
         """
         Gets the id_emissor of this BaseResponse.
-        C\u00F3digo do identificador do emissor
+        {{{base_dto_id_emissor_value}}}
 
         :return: The id_emissor of this BaseResponse.
         :rtype: int
@@ -248,7 +248,7 @@ class BaseResponse(object):
     def id_emissor(self, id_emissor):
         """
         Sets the id_emissor of this BaseResponse.
-        C\u00F3digo do identificador do emissor
+        {{{base_dto_id_emissor_value}}}
 
         :param id_emissor: The id_emissor of this BaseResponse.
         :type: int
@@ -259,7 +259,7 @@ class BaseResponse(object):
     def servidor_controle_acesso(self):
         """
         Gets the servidor_controle_acesso of this BaseResponse.
-        Servidor do controle de acesso
+        {{{base_dto_servidor_controle_acesso_value}}}
 
         :return: The servidor_controle_acesso of this BaseResponse.
         :rtype: str
@@ -270,7 +270,7 @@ class BaseResponse(object):
     def servidor_controle_acesso(self, servidor_controle_acesso):
         """
         Sets the servidor_controle_acesso of this BaseResponse.
-        Servidor do controle de acesso
+        {{{base_dto_servidor_controle_acesso_value}}}
 
         :param servidor_controle_acesso: The servidor_controle_acesso of this BaseResponse.
         :type: str
@@ -281,7 +281,7 @@ class BaseResponse(object):
     def nome_base_usuarios(self):
         """
         Gets the nome_base_usuarios of this BaseResponse.
-        Nome da base de usu\u00E1rios
+        {{{base_dto_nome_base_usuarios_value}}}
 
         :return: The nome_base_usuarios of this BaseResponse.
         :rtype: str
@@ -292,7 +292,7 @@ class BaseResponse(object):
     def nome_base_usuarios(self, nome_base_usuarios):
         """
         Sets the nome_base_usuarios of this BaseResponse.
-        Nome da base de usu\u00E1rios
+        {{{base_dto_nome_base_usuarios_value}}}
 
         :param nome_base_usuarios: The nome_base_usuarios of this BaseResponse.
         :type: str
@@ -303,7 +303,7 @@ class BaseResponse(object):
     def servidor_usuarios(self):
         """
         Gets the servidor_usuarios of this BaseResponse.
-        Servidor do controle de acesso
+        {{{base_dto_servidor_usuarios_value}}}
 
         :return: The servidor_usuarios of this BaseResponse.
         :rtype: str
@@ -314,7 +314,7 @@ class BaseResponse(object):
     def servidor_usuarios(self, servidor_usuarios):
         """
         Sets the servidor_usuarios of this BaseResponse.
-        Servidor do controle de acesso
+        {{{base_dto_servidor_usuarios_value}}}
 
         :param servidor_usuarios: The servidor_usuarios of this BaseResponse.
         :type: str
@@ -325,7 +325,7 @@ class BaseResponse(object):
     def flag_cluster(self):
         """
         Gets the flag_cluster of this BaseResponse.
-        Flag Cluester
+        {{{base_dto_flag_cluster_value}}}
 
         :return: The flag_cluster of this BaseResponse.
         :rtype: bool
@@ -336,7 +336,7 @@ class BaseResponse(object):
     def flag_cluster(self, flag_cluster):
         """
         Sets the flag_cluster of this BaseResponse.
-        Flag Cluester
+        {{{base_dto_flag_cluster_value}}}
 
         :param flag_cluster: The flag_cluster of this BaseResponse.
         :type: bool

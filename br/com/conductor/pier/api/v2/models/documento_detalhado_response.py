@@ -65,7 +65,7 @@ class DocumentoDetalhadoResponse(object):
     def id(self):
         """
         Gets the id of this DocumentoDetalhadoResponse.
-        ID do Documento.
+        {{{documento_detalhado_response_id_value}}}
 
         :return: The id of this DocumentoDetalhadoResponse.
         :rtype: int
@@ -76,7 +76,7 @@ class DocumentoDetalhadoResponse(object):
     def id(self, id):
         """
         Sets the id of this DocumentoDetalhadoResponse.
-        ID do Documento.
+        {{{documento_detalhado_response_id_value}}}
 
         :param id: The id of this DocumentoDetalhadoResponse.
         :type: int
@@ -87,7 +87,7 @@ class DocumentoDetalhadoResponse(object):
     def id_template_documento(self):
         """
         Gets the id_template_documento of this DocumentoDetalhadoResponse.
-        ID do Template de Documento associado.
+        {{{documento_detalhado_response_id_template_documento_value}}}
 
         :return: The id_template_documento of this DocumentoDetalhadoResponse.
         :rtype: int
@@ -98,7 +98,7 @@ class DocumentoDetalhadoResponse(object):
     def id_template_documento(self, id_template_documento):
         """
         Sets the id_template_documento of this DocumentoDetalhadoResponse.
-        ID do Template de Documento associado.
+        {{{documento_detalhado_response_id_template_documento_value}}}
 
         :param id_template_documento: The id_template_documento of this DocumentoDetalhadoResponse.
         :type: int
@@ -109,7 +109,7 @@ class DocumentoDetalhadoResponse(object):
     def nome(self):
         """
         Gets the nome of this DocumentoDetalhadoResponse.
-        Nome do Documento.
+        {{{documento_detalhado_response_nome_value}}}
 
         :return: The nome of this DocumentoDetalhadoResponse.
         :rtype: str
@@ -120,7 +120,7 @@ class DocumentoDetalhadoResponse(object):
     def nome(self, nome):
         """
         Sets the nome of this DocumentoDetalhadoResponse.
-        Nome do Documento.
+        {{{documento_detalhado_response_nome_value}}}
 
         :param nome: The nome of this DocumentoDetalhadoResponse.
         :type: str
@@ -131,7 +131,7 @@ class DocumentoDetalhadoResponse(object):
     def documento(self):
         """
         Gets the documento of this DocumentoDetalhadoResponse.
-        Representa\u00E7\u00E3o do documento em Base64.
+        {{{documento_detalhado_response_documento_value}}}
 
         :return: The documento of this DocumentoDetalhadoResponse.
         :rtype: str
@@ -142,7 +142,7 @@ class DocumentoDetalhadoResponse(object):
     def documento(self, documento):
         """
         Sets the documento of this DocumentoDetalhadoResponse.
-        Representa\u00E7\u00E3o do documento em Base64.
+        {{{documento_detalhado_response_documento_value}}}
 
         :param documento: The documento of this DocumentoDetalhadoResponse.
         :type: str
@@ -153,7 +153,7 @@ class DocumentoDetalhadoResponse(object):
     def extensao(self):
         """
         Gets the extensao of this DocumentoDetalhadoResponse.
-        Extens\u00E3o do Documento.
+        {{{documento_detalhado_response_extensao_value}}}
 
         :return: The extensao of this DocumentoDetalhadoResponse.
         :rtype: str
@@ -164,7 +164,7 @@ class DocumentoDetalhadoResponse(object):
     def extensao(self, extensao):
         """
         Sets the extensao of this DocumentoDetalhadoResponse.
-        Extens\u00E3o do Documento.
+        {{{documento_detalhado_response_extensao_value}}}
 
         :param extensao: The extensao of this DocumentoDetalhadoResponse.
         :type: str
@@ -175,7 +175,7 @@ class DocumentoDetalhadoResponse(object):
     def documento_detalhes(self):
         """
         Gets the documento_detalhes of this DocumentoDetalhadoResponse.
-        Detalhamento do documento.
+        {{{documento_detalhado_response_documento_detalhes_value}}}
 
         :return: The documento_detalhes of this DocumentoDetalhadoResponse.
         :rtype: list[DocumentoDetalheResponse]
@@ -186,7 +186,7 @@ class DocumentoDetalhadoResponse(object):
     def documento_detalhes(self, documento_detalhes):
         """
         Sets the documento_detalhes of this DocumentoDetalhadoResponse.
-        Detalhamento do documento.
+        {{{documento_detalhado_response_documento_detalhes_value}}}
 
         :param documento_detalhes: The documento_detalhes of this DocumentoDetalhadoResponse.
         :type: list[DocumentoDetalheResponse]

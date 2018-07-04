@@ -56,7 +56,7 @@ class TipoOportunidadeResponse(object):
     def id(self):
         """
         Gets the id of this TipoOportunidadeResponse.
-        C\u00F3digo identificador do TipoOportunidade
+        {{{tipo_oportunidade_response_id_value}}}
 
         :return: The id of this TipoOportunidadeResponse.
         :rtype: int
@@ -67,7 +67,7 @@ class TipoOportunidadeResponse(object):
     def id(self, id):
         """
         Sets the id of this TipoOportunidadeResponse.
-        C\u00F3digo identificador do TipoOportunidade
+        {{{tipo_oportunidade_response_id_value}}}
 
         :param id: The id of this TipoOportunidadeResponse.
         :type: int
@@ -78,7 +78,7 @@ class TipoOportunidadeResponse(object):
     def descricao(self):
         """
         Gets the descricao of this TipoOportunidadeResponse.
-        Descricao do TipoOportunidade
+        {{{tipo_oportunidade_response_descricao_value}}}
 
         :return: The descricao of this TipoOportunidadeResponse.
         :rtype: str
@@ -89,7 +89,7 @@ class TipoOportunidadeResponse(object):
     def descricao(self, descricao):
         """
         Sets the descricao of this TipoOportunidadeResponse.
-        Descricao do TipoOportunidade
+        {{{tipo_oportunidade_response_descricao_value}}}
 
         :param descricao: The descricao of this TipoOportunidadeResponse.
         :type: str
@@ -100,7 +100,7 @@ class TipoOportunidadeResponse(object):
     def flag_ativo(self):
         """
         Gets the flag_ativo of this TipoOportunidadeResponse.
-        Flag que representa se o tipo oportunidade est\u00E1 ativo
+        {{{tipo_oportunidade_response_flag_ativo_value}}}
 
         :return: The flag_ativo of this TipoOportunidadeResponse.
         :rtype: bool
@@ -111,7 +111,7 @@ class TipoOportunidadeResponse(object):
     def flag_ativo(self, flag_ativo):
         """
         Sets the flag_ativo of this TipoOportunidadeResponse.
-        Flag que representa se o tipo oportunidade est\u00E1 ativo
+        {{{tipo_oportunidade_response_flag_ativo_value}}}
 
         :param flag_ativo: The flag_ativo of this TipoOportunidadeResponse.
         :type: bool

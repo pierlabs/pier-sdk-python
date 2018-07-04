@@ -65,7 +65,7 @@ class AvisoViagemResponse(object):
     def id(self):
         """
         Gets the id of this AvisoViagemResponse.
-        C\u00F3digo identificador \u00FAnico do aviso viagem na base (id)
+        {{{aviso_viagem_response_id_value}}}
 
         :return: The id of this AvisoViagemResponse.
         :rtype: int
@@ -76,7 +76,7 @@ class AvisoViagemResponse(object):
     def id(self, id):
         """
         Sets the id of this AvisoViagemResponse.
-        C\u00F3digo identificador \u00FAnico do aviso viagem na base (id)
+        {{{aviso_viagem_response_id_value}}}
 
         :param id: The id of this AvisoViagemResponse.
         :type: int
@@ -87,7 +87,7 @@ class AvisoViagemResponse(object):
     def id_cartao(self):
         """
         Gets the id_cartao of this AvisoViagemResponse.
-        C\u00F3digo identificador do cart\u00E3o na base (id)
+        {{{aviso_viagem_response_id_cartao_value}}}
 
         :return: The id_cartao of this AvisoViagemResponse.
         :rtype: int
@@ -98,7 +98,7 @@ class AvisoViagemResponse(object):
     def id_cartao(self, id_cartao):
         """
         Sets the id_cartao of this AvisoViagemResponse.
-        C\u00F3digo identificador do cart\u00E3o na base (id)
+        {{{aviso_viagem_response_id_cartao_value}}}
 
         :param id_cartao: The id_cartao of this AvisoViagemResponse.
         :type: int
@@ -109,7 +109,7 @@ class AvisoViagemResponse(object):
     def codigo_pais(self):
         """
         Gets the codigo_pais of this AvisoViagemResponse.
-        Codigo identificador do pa\u00EDs na base (id)
+        {{{aviso_viagem_response_codigo_pais_value}}}
 
         :return: The codigo_pais of this AvisoViagemResponse.
         :rtype: str
@@ -120,7 +120,7 @@ class AvisoViagemResponse(object):
     def codigo_pais(self, codigo_pais):
         """
         Sets the codigo_pais of this AvisoViagemResponse.
-        Codigo identificador do pa\u00EDs na base (id)
+        {{{aviso_viagem_response_codigo_pais_value}}}
 
         :param codigo_pais: The codigo_pais of this AvisoViagemResponse.
         :type: str
@@ -131,7 +131,7 @@ class AvisoViagemResponse(object):
     def data_inicio(self):
         """
         Gets the data_inicio of this AvisoViagemResponse.
-        Data inicio do aviso viagem
+        {{{aviso_viagem_response_data_inicio_value}}}
 
         :return: The data_inicio of this AvisoViagemResponse.
         :rtype: str
@@ -142,7 +142,7 @@ class AvisoViagemResponse(object):
     def data_inicio(self, data_inicio):
         """
         Sets the data_inicio of this AvisoViagemResponse.
-        Data inicio do aviso viagem
+        {{{aviso_viagem_response_data_inicio_value}}}
 
         :param data_inicio: The data_inicio of this AvisoViagemResponse.
         :type: str
@@ -153,7 +153,7 @@ class AvisoViagemResponse(object):
     def data_fim(self):
         """
         Gets the data_fim of this AvisoViagemResponse.
-        Data fim do aviso viagem
+        {{{aviso_viagem_response_data_fim_value}}}
 
         :return: The data_fim of this AvisoViagemResponse.
         :rtype: str
@@ -164,7 +164,7 @@ class AvisoViagemResponse(object):
     def data_fim(self, data_fim):
         """
         Sets the data_fim of this AvisoViagemResponse.
-        Data fim do aviso viagem
+        {{{aviso_viagem_response_data_fim_value}}}
 
         :param data_fim: The data_fim of this AvisoViagemResponse.
         :type: str
@@ -175,7 +175,7 @@ class AvisoViagemResponse(object):
     def flag_ativo(self):
         """
         Gets the flag_ativo of this AvisoViagemResponse.
-        Identifica se o aviso viagem esta ativo ou n\u00E3o
+        {{{aviso_viagem_response_flag_ativo_value}}}
 
         :return: The flag_ativo of this AvisoViagemResponse.
         :rtype: int
@@ -186,7 +186,7 @@ class AvisoViagemResponse(object):
     def flag_ativo(self, flag_ativo):
         """
         Sets the flag_ativo of this AvisoViagemResponse.
-        Identifica se o aviso viagem esta ativo ou n\u00E3o
+        {{{aviso_viagem_response_flag_ativo_value}}}
 
         :param flag_ativo: The flag_ativo of this AvisoViagemResponse.
         :type: int

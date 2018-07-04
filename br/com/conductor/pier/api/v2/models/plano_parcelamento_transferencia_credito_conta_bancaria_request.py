@@ -56,7 +56,7 @@ class PlanoParcelamentoTransferenciaCreditoContaBancariaRequest(object):
     def id_cartao(self):
         """
         Gets the id_cartao of this PlanoParcelamentoTransferenciaCreditoContaBancariaRequest.
-        C\u00F3digo de identifica\u00E7\u00E3o do cart\u00E3o.
+        {{{plano_parcelamento_transferencia_credito_conta_bancaria_request_id_cartao_value}}}
 
         :return: The id_cartao of this PlanoParcelamentoTransferenciaCreditoContaBancariaRequest.
         :rtype: int
@@ -67,7 +67,7 @@ class PlanoParcelamentoTransferenciaCreditoContaBancariaRequest(object):
     def id_cartao(self, id_cartao):
         """
         Sets the id_cartao of this PlanoParcelamentoTransferenciaCreditoContaBancariaRequest.
-        C\u00F3digo de identifica\u00E7\u00E3o do cart\u00E3o.
+        {{{plano_parcelamento_transferencia_credito_conta_bancaria_request_id_cartao_value}}}
 
         :param id_cartao: The id_cartao of this PlanoParcelamentoTransferenciaCreditoContaBancariaRequest.
         :type: int
@@ -78,7 +78,7 @@ class PlanoParcelamentoTransferenciaCreditoContaBancariaRequest(object):
     def valor_transacao(self):
         """
         Gets the valor_transacao of this PlanoParcelamentoTransferenciaCreditoContaBancariaRequest.
-        Valor da transa\u00E7\u00E3o com duas casas decimais para os centavos.
+        {{{plano_parcelamento_transferencia_credito_conta_bancaria_request_valor_transacao_value}}}
 
         :return: The valor_transacao of this PlanoParcelamentoTransferenciaCreditoContaBancariaRequest.
         :rtype: float
@@ -89,7 +89,7 @@ class PlanoParcelamentoTransferenciaCreditoContaBancariaRequest(object):
     def valor_transacao(self, valor_transacao):
         """
         Sets the valor_transacao of this PlanoParcelamentoTransferenciaCreditoContaBancariaRequest.
-        Valor da transa\u00E7\u00E3o com duas casas decimais para os centavos.
+        {{{plano_parcelamento_transferencia_credito_conta_bancaria_request_valor_transacao_value}}}
 
         :param valor_transacao: The valor_transacao of this PlanoParcelamentoTransferenciaCreditoContaBancariaRequest.
         :type: float
@@ -100,7 +100,7 @@ class PlanoParcelamentoTransferenciaCreditoContaBancariaRequest(object):
     def numero_meses_carencia(self):
         """
         Gets the numero_meses_carencia of this PlanoParcelamentoTransferenciaCreditoContaBancariaRequest.
-        Representa o N\u00FAmero de Meses concedido como car\u00EAncia.
+        {{{plano_parcelamento_transferencia_credito_conta_bancaria_request_numero_meses_carencia_value}}}
 
         :return: The numero_meses_carencia of this PlanoParcelamentoTransferenciaCreditoContaBancariaRequest.
         :rtype: int
@@ -111,7 +111,7 @@ class PlanoParcelamentoTransferenciaCreditoContaBancariaRequest(object):
     def numero_meses_carencia(self, numero_meses_carencia):
         """
         Sets the numero_meses_carencia of this PlanoParcelamentoTransferenciaCreditoContaBancariaRequest.
-        Representa o N\u00FAmero de Meses concedido como car\u00EAncia.
+        {{{plano_parcelamento_transferencia_credito_conta_bancaria_request_numero_meses_carencia_value}}}
 
         :param numero_meses_carencia: The numero_meses_carencia of this PlanoParcelamentoTransferenciaCreditoContaBancariaRequest.
         :type: int

@@ -56,7 +56,7 @@ class DocumentoParametrosRequest(object):
     def id_template_documento(self):
         """
         Gets the id_template_documento of this DocumentoParametrosRequest.
-        ID para o template do documento.
+        {{{documento_parametros_request_id_template_documento_value}}}
 
         :return: The id_template_documento of this DocumentoParametrosRequest.
         :rtype: int
@@ -67,7 +67,7 @@ class DocumentoParametrosRequest(object):
     def id_template_documento(self, id_template_documento):
         """
         Sets the id_template_documento of this DocumentoParametrosRequest.
-        ID para o template do documento.
+        {{{documento_parametros_request_id_template_documento_value}}}
 
         :param id_template_documento: The id_template_documento of this DocumentoParametrosRequest.
         :type: int
@@ -78,7 +78,7 @@ class DocumentoParametrosRequest(object):
     def nome(self):
         """
         Gets the nome of this DocumentoParametrosRequest.
-        Nome para o arquivo.
+        {{{documento_parametros_request_nome_value}}}
 
         :return: The nome of this DocumentoParametrosRequest.
         :rtype: str
@@ -89,7 +89,7 @@ class DocumentoParametrosRequest(object):
     def nome(self, nome):
         """
         Sets the nome of this DocumentoParametrosRequest.
-        Nome para o arquivo.
+        {{{documento_parametros_request_nome_value}}}
 
         :param nome: The nome of this DocumentoParametrosRequest.
         :type: str
@@ -100,7 +100,7 @@ class DocumentoParametrosRequest(object):
     def parametros_conteudo(self):
         """
         Gets the parametros_conteudo of this DocumentoParametrosRequest.
-        Lista de par\u00E2metros para montagem do documento.
+        {{{documento_parametros_request_parametros_conteudo_value}}}
 
         :return: The parametros_conteudo of this DocumentoParametrosRequest.
         :rtype: list[PropriedadeDocumentoRequest]
@@ -111,7 +111,7 @@ class DocumentoParametrosRequest(object):
     def parametros_conteudo(self, parametros_conteudo):
         """
         Sets the parametros_conteudo of this DocumentoParametrosRequest.
-        Lista de par\u00E2metros para montagem do documento.
+        {{{documento_parametros_request_parametros_conteudo_value}}}
 
         :param parametros_conteudo: The parametros_conteudo of this DocumentoParametrosRequest.
         :type: list[PropriedadeDocumentoRequest]
