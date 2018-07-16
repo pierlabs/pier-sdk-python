@@ -56,7 +56,7 @@ class TerminalPersist(object):
     def id_estabelecimento(self):
         """
         Gets the id_estabelecimento of this TerminalPersist.
-        Apresenta o id do estabelecimento.
+        {{{terminal_persist_id_estabelecimento_value}}}
 
         :return: The id_estabelecimento of this TerminalPersist.
         :rtype: int
@@ -67,7 +67,7 @@ class TerminalPersist(object):
     def id_estabelecimento(self, id_estabelecimento):
         """
         Sets the id_estabelecimento of this TerminalPersist.
-        Apresenta o id do estabelecimento.
+        {{{terminal_persist_id_estabelecimento_value}}}
 
         :param id_estabelecimento: The id_estabelecimento of this TerminalPersist.
         :type: int
@@ -78,7 +78,7 @@ class TerminalPersist(object):
     def flag_consulta_extrato(self):
         """
         Gets the flag_consulta_extrato of this TerminalPersist.
-        Flag indicando se permite consultar extrato, sendo: (true: Sim), (false: N\u00E3o)).
+        {{{terminal_persist_flag_consulta_extrato_value}}}
 
         :return: The flag_consulta_extrato of this TerminalPersist.
         :rtype: bool
@@ -89,7 +89,7 @@ class TerminalPersist(object):
     def flag_consulta_extrato(self, flag_consulta_extrato):
         """
         Sets the flag_consulta_extrato of this TerminalPersist.
-        Flag indicando se permite consultar extrato, sendo: (true: Sim), (false: N\u00E3o)).
+        {{{terminal_persist_flag_consulta_extrato_value}}}
 
         :param flag_consulta_extrato: The flag_consulta_extrato of this TerminalPersist.
         :type: bool
@@ -100,7 +100,7 @@ class TerminalPersist(object):
     def flag_terminal_virtual(self):
         """
         Gets the flag_terminal_virtual of this TerminalPersist.
-        Flag indicando se o terminal \u00E9 f\u00EDsico ou virtual, sendo: (true: Sim), (false: N\u00E3o)).
+        {{{terminal_persist_flag_terminal_virtual_value}}}
 
         :return: The flag_terminal_virtual of this TerminalPersist.
         :rtype: bool
@@ -111,7 +111,7 @@ class TerminalPersist(object):
     def flag_terminal_virtual(self, flag_terminal_virtual):
         """
         Sets the flag_terminal_virtual of this TerminalPersist.
-        Flag indicando se o terminal \u00E9 f\u00EDsico ou virtual, sendo: (true: Sim), (false: N\u00E3o)).
+        {{{terminal_persist_flag_terminal_virtual_value}}}
 
         :param flag_terminal_virtual: The flag_terminal_virtual of this TerminalPersist.
         :type: bool

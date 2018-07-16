@@ -53,7 +53,7 @@ class TipoOrigemComercialResponse(object):
     def id(self):
         """
         Gets the id of this TipoOrigemComercialResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o do Tipo de Origem Comercial.
+        {{{tipo_origem_comercial_response_id_value}}}
 
         :return: The id of this TipoOrigemComercialResponse.
         :rtype: int
@@ -64,7 +64,7 @@ class TipoOrigemComercialResponse(object):
     def id(self, id):
         """
         Sets the id of this TipoOrigemComercialResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o do Tipo de Origem Comercial.
+        {{{tipo_origem_comercial_response_id_value}}}
 
         :param id: The id of this TipoOrigemComercialResponse.
         :type: int
@@ -75,7 +75,7 @@ class TipoOrigemComercialResponse(object):
     def nome(self):
         """
         Gets the nome of this TipoOrigemComercialResponse.
-        Nome do tipo de origem comercial
+        {{{tipo_origem_comercial_response_nome_value}}}
 
         :return: The nome of this TipoOrigemComercialResponse.
         :rtype: str
@@ -86,7 +86,7 @@ class TipoOrigemComercialResponse(object):
     def nome(self, nome):
         """
         Sets the nome of this TipoOrigemComercialResponse.
-        Nome do tipo de origem comercial
+        {{{tipo_origem_comercial_response_nome_value}}}
 
         :param nome: The nome of this TipoOrigemComercialResponse.
         :type: str

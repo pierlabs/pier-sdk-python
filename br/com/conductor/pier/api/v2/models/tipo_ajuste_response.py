@@ -38,22 +38,25 @@ class TipoAjusteResponse(object):
         """
         self.swagger_types = {
             'id': 'int',
-            'descricao': 'str'
+            'descricao': 'str',
+            'transacoes': 'list[TipoTransacaoAjusteResponse]'
         }
 
         self.attribute_map = {
             'id': 'id',
-            'descricao': 'descricao'
+            'descricao': 'descricao',
+            'transacoes': 'transacoes'
         }
 
         self._id = None
         self._descricao = None
+        self._transacoes = None
 
     @property
     def id(self):
         """
         Gets the id of this TipoAjusteResponse.
-        C\u00F3digo identificador do tipo de ajuste.
+        {{{tipo_ajuste_response_id_value}}}
 
         :return: The id of this TipoAjusteResponse.
         :rtype: int
@@ -64,7 +67,7 @@ class TipoAjusteResponse(object):
     def id(self, id):
         """
         Sets the id of this TipoAjusteResponse.
-        C\u00F3digo identificador do tipo de ajuste.
+        {{{tipo_ajuste_response_id_value}}}
 
         :param id: The id of this TipoAjusteResponse.
         :type: int
@@ -75,7 +78,7 @@ class TipoAjusteResponse(object):
     def descricao(self):
         """
         Gets the descricao of this TipoAjusteResponse.
-        Descri\u00E7\u00E3o do tipo de ajuste.
+        {{{tipo_ajuste_response_descricao_value}}}
 
         :return: The descricao of this TipoAjusteResponse.
         :rtype: str
@@ -86,12 +89,34 @@ class TipoAjusteResponse(object):
     def descricao(self, descricao):
         """
         Sets the descricao of this TipoAjusteResponse.
-        Descri\u00E7\u00E3o do tipo de ajuste.
+        {{{tipo_ajuste_response_descricao_value}}}
 
         :param descricao: The descricao of this TipoAjusteResponse.
         :type: str
         """
         self._descricao = descricao
+
+    @property
+    def transacoes(self):
+        """
+        Gets the transacoes of this TipoAjusteResponse.
+        {{{tipo_ajuste_response_transacoes_value}}}
+
+        :return: The transacoes of this TipoAjusteResponse.
+        :rtype: list[TipoTransacaoAjusteResponse]
+        """
+        return self._transacoes
+
+    @transacoes.setter
+    def transacoes(self, transacoes):
+        """
+        Sets the transacoes of this TipoAjusteResponse.
+        {{{tipo_ajuste_response_transacoes_value}}}
+
+        :param transacoes: The transacoes of this TipoAjusteResponse.
+        :type: list[TipoTransacaoAjusteResponse]
+        """
+        self._transacoes = transacoes
 
     def to_dict(self):
         """

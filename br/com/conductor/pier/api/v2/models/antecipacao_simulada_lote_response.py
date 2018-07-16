@@ -59,7 +59,7 @@ class AntecipacaoSimuladaLoteResponse(object):
     def valor_total_antecipado(self):
         """
         Gets the valor_total_antecipado of this AntecipacaoSimuladaLoteResponse.
-        Valor total antecipado.
+        {{{antecipacao_simulada_lote_response_valor_total_antecipado_value}}}
 
         :return: The valor_total_antecipado of this AntecipacaoSimuladaLoteResponse.
         :rtype: float
@@ -70,7 +70,7 @@ class AntecipacaoSimuladaLoteResponse(object):
     def valor_total_antecipado(self, valor_total_antecipado):
         """
         Sets the valor_total_antecipado of this AntecipacaoSimuladaLoteResponse.
-        Valor total antecipado.
+        {{{antecipacao_simulada_lote_response_valor_total_antecipado_value}}}
 
         :param valor_total_antecipado: The valor_total_antecipado of this AntecipacaoSimuladaLoteResponse.
         :type: float
@@ -81,7 +81,7 @@ class AntecipacaoSimuladaLoteResponse(object):
     def valor_total_desconto(self):
         """
         Gets the valor_total_desconto of this AntecipacaoSimuladaLoteResponse.
-        Valor total do desconto.
+        {{{antecipacao_simulada_lote_response_valor_total_desconto_value}}}
 
         :return: The valor_total_desconto of this AntecipacaoSimuladaLoteResponse.
         :rtype: float
@@ -92,7 +92,7 @@ class AntecipacaoSimuladaLoteResponse(object):
     def valor_total_desconto(self, valor_total_desconto):
         """
         Sets the valor_total_desconto of this AntecipacaoSimuladaLoteResponse.
-        Valor total do desconto.
+        {{{antecipacao_simulada_lote_response_valor_total_desconto_value}}}
 
         :param valor_total_desconto: The valor_total_desconto of this AntecipacaoSimuladaLoteResponse.
         :type: float
@@ -103,7 +103,7 @@ class AntecipacaoSimuladaLoteResponse(object):
     def valor_total_com_desconto(self):
         """
         Gets the valor_total_com_desconto of this AntecipacaoSimuladaLoteResponse.
-        Valor total antecipado com o desconto.
+        {{{antecipacao_simulada_lote_response_valor_total_com_desconto_value}}}
 
         :return: The valor_total_com_desconto of this AntecipacaoSimuladaLoteResponse.
         :rtype: float
@@ -114,7 +114,7 @@ class AntecipacaoSimuladaLoteResponse(object):
     def valor_total_com_desconto(self, valor_total_com_desconto):
         """
         Sets the valor_total_com_desconto of this AntecipacaoSimuladaLoteResponse.
-        Valor total antecipado com o desconto.
+        {{{antecipacao_simulada_lote_response_valor_total_com_desconto_value}}}
 
         :param valor_total_com_desconto: The valor_total_com_desconto of this AntecipacaoSimuladaLoteResponse.
         :type: float
@@ -125,7 +125,7 @@ class AntecipacaoSimuladaLoteResponse(object):
     def antecipacoes_simuladas(self):
         """
         Gets the antecipacoes_simuladas of this AntecipacaoSimuladaLoteResponse.
-        Antecipa\u00E7\u00F5es Simuladas.
+        {{{antecipacao_simulada_lote_response_antecipacoes_simuladas_value}}}
 
         :return: The antecipacoes_simuladas of this AntecipacaoSimuladaLoteResponse.
         :rtype: list[AntecipacaoSimuladaResponse]
@@ -136,7 +136,7 @@ class AntecipacaoSimuladaLoteResponse(object):
     def antecipacoes_simuladas(self, antecipacoes_simuladas):
         """
         Sets the antecipacoes_simuladas of this AntecipacaoSimuladaLoteResponse.
-        Antecipa\u00E7\u00F5es Simuladas.
+        {{{antecipacao_simulada_lote_response_antecipacoes_simuladas_value}}}
 
         :param antecipacoes_simuladas: The antecipacoes_simuladas of this AntecipacaoSimuladaLoteResponse.
         :type: list[AntecipacaoSimuladaResponse]

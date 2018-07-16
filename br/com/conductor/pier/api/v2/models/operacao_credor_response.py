@@ -39,7 +39,7 @@ class OperacaoCredorResponse(object):
         self.swagger_types = {
             'id': 'int',
             'id_operacao': 'int',
-            'id_credor': 'int',
+            'id_grupo_economico': 'int',
             'id_produto': 'int',
             'remuneracao_percentual': 'float',
             'remuneracao_fixa': 'float',
@@ -55,7 +55,7 @@ class OperacaoCredorResponse(object):
         self.attribute_map = {
             'id': 'id',
             'id_operacao': 'idOperacao',
-            'id_credor': 'idCredor',
+            'id_grupo_economico': 'idGrupoEconomico',
             'id_produto': 'idProduto',
             'remuneracao_percentual': 'remuneracaoPercentual',
             'remuneracao_fixa': 'remuneracaoFixa',
@@ -70,7 +70,7 @@ class OperacaoCredorResponse(object):
 
         self._id = None
         self._id_operacao = None
-        self._id_credor = None
+        self._id_grupo_economico = None
         self._id_produto = None
         self._remuneracao_percentual = None
         self._remuneracao_fixa = None
@@ -86,7 +86,7 @@ class OperacaoCredorResponse(object):
     def id(self):
         """
         Gets the id of this OperacaoCredorResponse.
-        Apresenta o id da OperacaoCredor.
+        {{{operacao_credor_response_id_value}}}
 
         :return: The id of this OperacaoCredorResponse.
         :rtype: int
@@ -97,7 +97,7 @@ class OperacaoCredorResponse(object):
     def id(self, id):
         """
         Sets the id of this OperacaoCredorResponse.
-        Apresenta o id da OperacaoCredor.
+        {{{operacao_credor_response_id_value}}}
 
         :param id: The id of this OperacaoCredorResponse.
         :type: int
@@ -108,7 +108,7 @@ class OperacaoCredorResponse(object):
     def id_operacao(self):
         """
         Gets the id_operacao of this OperacaoCredorResponse.
-        Apresenta o id da Opera\u00E7\u00E3o.
+        {{{operacao_credor_response_id_operacao_value}}}
 
         :return: The id_operacao of this OperacaoCredorResponse.
         :rtype: int
@@ -119,7 +119,7 @@ class OperacaoCredorResponse(object):
     def id_operacao(self, id_operacao):
         """
         Sets the id_operacao of this OperacaoCredorResponse.
-        Apresenta o id da Opera\u00E7\u00E3o.
+        {{{operacao_credor_response_id_operacao_value}}}
 
         :param id_operacao: The id_operacao of this OperacaoCredorResponse.
         :type: int
@@ -127,32 +127,32 @@ class OperacaoCredorResponse(object):
         self._id_operacao = id_operacao
 
     @property
-    def id_credor(self):
+    def id_grupo_economico(self):
         """
-        Gets the id_credor of this OperacaoCredorResponse.
-        Apresenta o id do Credor.
+        Gets the id_grupo_economico of this OperacaoCredorResponse.
+        {{{operacao_credor_response_id_grupo_economico_value}}}
 
-        :return: The id_credor of this OperacaoCredorResponse.
+        :return: The id_grupo_economico of this OperacaoCredorResponse.
         :rtype: int
         """
-        return self._id_credor
+        return self._id_grupo_economico
 
-    @id_credor.setter
-    def id_credor(self, id_credor):
+    @id_grupo_economico.setter
+    def id_grupo_economico(self, id_grupo_economico):
         """
-        Sets the id_credor of this OperacaoCredorResponse.
-        Apresenta o id do Credor.
+        Sets the id_grupo_economico of this OperacaoCredorResponse.
+        {{{operacao_credor_response_id_grupo_economico_value}}}
 
-        :param id_credor: The id_credor of this OperacaoCredorResponse.
+        :param id_grupo_economico: The id_grupo_economico of this OperacaoCredorResponse.
         :type: int
         """
-        self._id_credor = id_credor
+        self._id_grupo_economico = id_grupo_economico
 
     @property
     def id_produto(self):
         """
         Gets the id_produto of this OperacaoCredorResponse.
-        Apresenta o id do produto.
+        {{{operacao_credor_response_id_produto_value}}}
 
         :return: The id_produto of this OperacaoCredorResponse.
         :rtype: int
@@ -163,7 +163,7 @@ class OperacaoCredorResponse(object):
     def id_produto(self, id_produto):
         """
         Sets the id_produto of this OperacaoCredorResponse.
-        Apresenta o id do produto.
+        {{{operacao_credor_response_id_produto_value}}}
 
         :param id_produto: The id_produto of this OperacaoCredorResponse.
         :type: int
@@ -174,7 +174,7 @@ class OperacaoCredorResponse(object):
     def remuneracao_percentual(self):
         """
         Gets the remuneracao_percentual of this OperacaoCredorResponse.
-        Remunera\u00E7\u00E3o Percentual.
+        {{{operacao_credor_response_remuneracao_percentual_value}}}
 
         :return: The remuneracao_percentual of this OperacaoCredorResponse.
         :rtype: float
@@ -185,7 +185,7 @@ class OperacaoCredorResponse(object):
     def remuneracao_percentual(self, remuneracao_percentual):
         """
         Sets the remuneracao_percentual of this OperacaoCredorResponse.
-        Remunera\u00E7\u00E3o Percentual.
+        {{{operacao_credor_response_remuneracao_percentual_value}}}
 
         :param remuneracao_percentual: The remuneracao_percentual of this OperacaoCredorResponse.
         :type: float
@@ -196,7 +196,7 @@ class OperacaoCredorResponse(object):
     def remuneracao_fixa(self):
         """
         Gets the remuneracao_fixa of this OperacaoCredorResponse.
-        Remunera\u00E7\u00E3o Fixa.
+        {{{operacao_credor_response_remuneracao_fixa_value}}}
 
         :return: The remuneracao_fixa of this OperacaoCredorResponse.
         :rtype: float
@@ -207,7 +207,7 @@ class OperacaoCredorResponse(object):
     def remuneracao_fixa(self, remuneracao_fixa):
         """
         Sets the remuneracao_fixa of this OperacaoCredorResponse.
-        Remunera\u00E7\u00E3o Fixa.
+        {{{operacao_credor_response_remuneracao_fixa_value}}}
 
         :param remuneracao_fixa: The remuneracao_fixa of this OperacaoCredorResponse.
         :type: float
@@ -218,7 +218,7 @@ class OperacaoCredorResponse(object):
     def periodicidade(self):
         """
         Gets the periodicidade of this OperacaoCredorResponse.
-        Periodicidade (DIARIO(1), SEMANAL(2), MENSAL(3), DECENDIAL(4), QUINZENAL(5)).
+        {{{operacao_credor_response_periodicidade_value}}}
 
         :return: The periodicidade of this OperacaoCredorResponse.
         :rtype: str
@@ -229,7 +229,7 @@ class OperacaoCredorResponse(object):
     def periodicidade(self, periodicidade):
         """
         Sets the periodicidade of this OperacaoCredorResponse.
-        Periodicidade (DIARIO(1), SEMANAL(2), MENSAL(3), DECENDIAL(4), QUINZENAL(5)).
+        {{{operacao_credor_response_periodicidade_value}}}
 
         :param periodicidade: The periodicidade of this OperacaoCredorResponse.
         :type: str
@@ -246,7 +246,7 @@ class OperacaoCredorResponse(object):
     def vencimento_primeira_parcela(self):
         """
         Gets the vencimento_primeira_parcela of this OperacaoCredorResponse.
-        Vencimento da primeira parcela.
+        {{{operacao_credor_response_vencimento_primeira_parcela_value}}}
 
         :return: The vencimento_primeira_parcela of this OperacaoCredorResponse.
         :rtype: int
@@ -257,7 +257,7 @@ class OperacaoCredorResponse(object):
     def vencimento_primeira_parcela(self, vencimento_primeira_parcela):
         """
         Sets the vencimento_primeira_parcela of this OperacaoCredorResponse.
-        Vencimento da primeira parcela.
+        {{{operacao_credor_response_vencimento_primeira_parcela_value}}}
 
         :param vencimento_primeira_parcela: The vencimento_primeira_parcela of this OperacaoCredorResponse.
         :type: int
@@ -268,7 +268,7 @@ class OperacaoCredorResponse(object):
     def dias_afastamento(self):
         """
         Gets the dias_afastamento of this OperacaoCredorResponse.
-        Dias afastamento.
+        {{{operacao_credor_response_dias_afastamento_value}}}
 
         :return: The dias_afastamento of this OperacaoCredorResponse.
         :rtype: int
@@ -279,7 +279,7 @@ class OperacaoCredorResponse(object):
     def dias_afastamento(self, dias_afastamento):
         """
         Sets the dias_afastamento of this OperacaoCredorResponse.
-        Dias afastamento.
+        {{{operacao_credor_response_dias_afastamento_value}}}
 
         :param dias_afastamento: The dias_afastamento of this OperacaoCredorResponse.
         :type: int
@@ -290,7 +290,7 @@ class OperacaoCredorResponse(object):
     def fator_multiplicador(self):
         """
         Gets the fator_multiplicador of this OperacaoCredorResponse.
-        Fator multiplicador (FORA_AGENDA(0), AGENDA(1)).
+        {{{operacao_credor_response_fator_multiplicador_value}}}
 
         :return: The fator_multiplicador of this OperacaoCredorResponse.
         :rtype: str
@@ -301,7 +301,7 @@ class OperacaoCredorResponse(object):
     def fator_multiplicador(self, fator_multiplicador):
         """
         Sets the fator_multiplicador of this OperacaoCredorResponse.
-        Fator multiplicador (FORA_AGENDA(0), AGENDA(1)).
+        {{{operacao_credor_response_fator_multiplicador_value}}}
 
         :param fator_multiplicador: The fator_multiplicador of this OperacaoCredorResponse.
         :type: str
@@ -318,7 +318,7 @@ class OperacaoCredorResponse(object):
     def flag_taxa_fixada(self):
         """
         Gets the flag_taxa_fixada of this OperacaoCredorResponse.
-        Flag taxa fixada.
+        {{{operacao_credor_response_flag_taxa_fixada_value}}}
 
         :return: The flag_taxa_fixada of this OperacaoCredorResponse.
         :rtype: bool
@@ -329,7 +329,7 @@ class OperacaoCredorResponse(object):
     def flag_taxa_fixada(self, flag_taxa_fixada):
         """
         Sets the flag_taxa_fixada of this OperacaoCredorResponse.
-        Flag taxa fixada.
+        {{{operacao_credor_response_flag_taxa_fixada_value}}}
 
         :param flag_taxa_fixada: The flag_taxa_fixada of this OperacaoCredorResponse.
         :type: bool
@@ -340,7 +340,7 @@ class OperacaoCredorResponse(object):
     def plano_minimo(self):
         """
         Gets the plano_minimo of this OperacaoCredorResponse.
-        Plano m\u00EDnimo da regra.
+        {{{operacao_credor_response_plano_minimo_value}}}
 
         :return: The plano_minimo of this OperacaoCredorResponse.
         :rtype: int
@@ -351,7 +351,7 @@ class OperacaoCredorResponse(object):
     def plano_minimo(self, plano_minimo):
         """
         Sets the plano_minimo of this OperacaoCredorResponse.
-        Plano m\u00EDnimo da regra.
+        {{{operacao_credor_response_plano_minimo_value}}}
 
         :param plano_minimo: The plano_minimo of this OperacaoCredorResponse.
         :type: int
@@ -362,7 +362,7 @@ class OperacaoCredorResponse(object):
     def plano_maximo(self):
         """
         Gets the plano_maximo of this OperacaoCredorResponse.
-        Plano m\u00E1ximo da regra.
+        {{{operacao_credor_response_plano_maximo_value}}}
 
         :return: The plano_maximo of this OperacaoCredorResponse.
         :rtype: int
@@ -373,7 +373,7 @@ class OperacaoCredorResponse(object):
     def plano_maximo(self, plano_maximo):
         """
         Sets the plano_maximo of this OperacaoCredorResponse.
-        Plano m\u00E1ximo da regra.
+        {{{operacao_credor_response_plano_maximo_value}}}
 
         :param plano_maximo: The plano_maximo of this OperacaoCredorResponse.
         :type: int

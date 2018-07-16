@@ -56,7 +56,7 @@ class ConsultaCadastroEstabelecimentoDTO(object):
     def data_hora_consulta(self):
         """
         Gets the data_hora_consulta of this ConsultaCadastroEstabelecimentoDTO.
-        Data hora de cadastro.
+        {{{consulta_cadastro_estabelecimento_d_t_o_data_hora_consulta_value}}}
 
         :return: The data_hora_consulta of this ConsultaCadastroEstabelecimentoDTO.
         :rtype: str
@@ -67,7 +67,7 @@ class ConsultaCadastroEstabelecimentoDTO(object):
     def data_hora_consulta(self, data_hora_consulta):
         """
         Sets the data_hora_consulta of this ConsultaCadastroEstabelecimentoDTO.
-        Data hora de cadastro.
+        {{{consulta_cadastro_estabelecimento_d_t_o_data_hora_consulta_value}}}
 
         :param data_hora_consulta: The data_hora_consulta of this ConsultaCadastroEstabelecimentoDTO.
         :type: str
@@ -78,7 +78,7 @@ class ConsultaCadastroEstabelecimentoDTO(object):
     def status(self):
         """
         Gets the status of this ConsultaCadastroEstabelecimentoDTO.
-        Status da consulta (1 - OK, 2 - NOK).
+        {{{consulta_cadastro_estabelecimento_d_t_o_status_value}}}
 
         :return: The status of this ConsultaCadastroEstabelecimentoDTO.
         :rtype: str
@@ -89,7 +89,7 @@ class ConsultaCadastroEstabelecimentoDTO(object):
     def status(self, status):
         """
         Sets the status of this ConsultaCadastroEstabelecimentoDTO.
-        Status da consulta (1 - OK, 2 - NOK).
+        {{{consulta_cadastro_estabelecimento_d_t_o_status_value}}}
 
         :param status: The status of this ConsultaCadastroEstabelecimentoDTO.
         :type: str
@@ -106,7 +106,7 @@ class ConsultaCadastroEstabelecimentoDTO(object):
     def tipo_entidade(self):
         """
         Gets the tipo_entidade of this ConsultaCadastroEstabelecimentoDTO.
-        Tipo da entidade (1 - ATIVO, 2 - BLOQUEADO).
+        {{{consulta_cadastro_estabelecimento_d_t_o_tipo_entidade_value}}}
 
         :return: The tipo_entidade of this ConsultaCadastroEstabelecimentoDTO.
         :rtype: str
@@ -117,7 +117,7 @@ class ConsultaCadastroEstabelecimentoDTO(object):
     def tipo_entidade(self, tipo_entidade):
         """
         Sets the tipo_entidade of this ConsultaCadastroEstabelecimentoDTO.
-        Tipo da entidade (1 - ATIVO, 2 - BLOQUEADO).
+        {{{consulta_cadastro_estabelecimento_d_t_o_tipo_entidade_value}}}
 
         :param tipo_entidade: The tipo_entidade of this ConsultaCadastroEstabelecimentoDTO.
         :type: str

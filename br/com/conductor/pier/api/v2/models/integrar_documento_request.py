@@ -59,7 +59,7 @@ class IntegrarDocumentoRequest(object):
     def id_template(self):
         """
         Gets the id_template of this IntegrarDocumentoRequest.
-        Identificador do template de documento
+        {{{integrar_documento_request_id_template_value}}}
 
         :return: The id_template of this IntegrarDocumentoRequest.
         :rtype: int
@@ -70,7 +70,7 @@ class IntegrarDocumentoRequest(object):
     def id_template(self, id_template):
         """
         Sets the id_template of this IntegrarDocumentoRequest.
-        Identificador do template de documento
+        {{{integrar_documento_request_id_template_value}}}
 
         :param id_template: The id_template of this IntegrarDocumentoRequest.
         :type: int
@@ -81,7 +81,7 @@ class IntegrarDocumentoRequest(object):
     def arquivo(self):
         """
         Gets the arquivo of this IntegrarDocumentoRequest.
-        Conte\u00FAdo do arquivo convertido em Base 64
+        {{{integrar_documento_request_arquivo_value}}}
 
         :return: The arquivo of this IntegrarDocumentoRequest.
         :rtype: str
@@ -92,7 +92,7 @@ class IntegrarDocumentoRequest(object):
     def arquivo(self, arquivo):
         """
         Sets the arquivo of this IntegrarDocumentoRequest.
-        Conte\u00FAdo do arquivo convertido em Base 64
+        {{{integrar_documento_request_arquivo_value}}}
 
         :param arquivo: The arquivo of this IntegrarDocumentoRequest.
         :type: str
@@ -103,7 +103,7 @@ class IntegrarDocumentoRequest(object):
     def nome(self):
         """
         Gets the nome of this IntegrarDocumentoRequest.
-        Nome do arquivo.
+        {{{integrar_documento_request_nome_value}}}
 
         :return: The nome of this IntegrarDocumentoRequest.
         :rtype: str
@@ -114,7 +114,7 @@ class IntegrarDocumentoRequest(object):
     def nome(self, nome):
         """
         Sets the nome of this IntegrarDocumentoRequest.
-        Nome do arquivo.
+        {{{integrar_documento_request_nome_value}}}
 
         :param nome: The nome of this IntegrarDocumentoRequest.
         :type: str
@@ -125,7 +125,7 @@ class IntegrarDocumentoRequest(object):
     def propriedades(self):
         """
         Gets the propriedades of this IntegrarDocumentoRequest.
-        Lista de par\u00E2metros para montagem do documento.
+        {{{integrar_documento_request_propriedades_value}}}
 
         :return: The propriedades of this IntegrarDocumentoRequest.
         :rtype: list[PropriedadeDocumentoRequest]
@@ -136,7 +136,7 @@ class IntegrarDocumentoRequest(object):
     def propriedades(self, propriedades):
         """
         Sets the propriedades of this IntegrarDocumentoRequest.
-        Lista de par\u00E2metros para montagem do documento.
+        {{{integrar_documento_request_propriedades_value}}}
 
         :param propriedades: The propriedades of this IntegrarDocumentoRequest.
         :type: list[PropriedadeDocumentoRequest]

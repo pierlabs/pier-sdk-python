@@ -71,7 +71,7 @@ class CartaoPayResponse(object):
     def id(self):
         """
         Gets the id of this CartaoPayResponse.
-        Id do cart\u00E3o
+        {{{cartao_pay_base_response_id_value}}}
 
         :return: The id of this CartaoPayResponse.
         :rtype: int
@@ -82,7 +82,7 @@ class CartaoPayResponse(object):
     def id(self, id):
         """
         Sets the id of this CartaoPayResponse.
-        Id do cart\u00E3o
+        {{{cartao_pay_base_response_id_value}}}
 
         :param id: The id of this CartaoPayResponse.
         :type: int
@@ -93,7 +93,7 @@ class CartaoPayResponse(object):
     def numero_cartao(self):
         """
         Gets the numero_cartao of this CartaoPayResponse.
-        N\u00FAmero do cart\u00E3o real criptografado
+        {{{cartao_pay_base_response_numero_cartao_value}}}
 
         :return: The numero_cartao of this CartaoPayResponse.
         :rtype: str
@@ -104,7 +104,7 @@ class CartaoPayResponse(object):
     def numero_cartao(self, numero_cartao):
         """
         Sets the numero_cartao of this CartaoPayResponse.
-        N\u00FAmero do cart\u00E3o real criptografado
+        {{{cartao_pay_base_response_numero_cartao_value}}}
 
         :param numero_cartao: The numero_cartao of this CartaoPayResponse.
         :type: str
@@ -115,7 +115,7 @@ class CartaoPayResponse(object):
     def data_validade_cartao(self):
         """
         Gets the data_validade_cartao of this CartaoPayResponse.
-        Data de validade do cart\u00E3o
+        {{{cartao_pay_base_response_data_validade_cartao_value}}}
 
         :return: The data_validade_cartao of this CartaoPayResponse.
         :rtype: str
@@ -126,7 +126,7 @@ class CartaoPayResponse(object):
     def data_validade_cartao(self, data_validade_cartao):
         """
         Sets the data_validade_cartao of this CartaoPayResponse.
-        Data de validade do cart\u00E3o
+        {{{cartao_pay_base_response_data_validade_cartao_value}}}
 
         :param data_validade_cartao: The data_validade_cartao of this CartaoPayResponse.
         :type: str
@@ -137,7 +137,7 @@ class CartaoPayResponse(object):
     def nome_impresso(self):
         """
         Gets the nome_impresso of this CartaoPayResponse.
-        Nome impresso no cart\u00E3o criptografado
+        {{{cartao_pay_base_response_nome_impresso_value}}}
 
         :return: The nome_impresso of this CartaoPayResponse.
         :rtype: str
@@ -148,7 +148,7 @@ class CartaoPayResponse(object):
     def nome_impresso(self, nome_impresso):
         """
         Sets the nome_impresso of this CartaoPayResponse.
-        Nome impresso no cart\u00E3o criptografado
+        {{{cartao_pay_base_response_nome_impresso_value}}}
 
         :param nome_impresso: The nome_impresso of this CartaoPayResponse.
         :type: str
@@ -159,7 +159,7 @@ class CartaoPayResponse(object):
     def id_entidade(self):
         """
         Gets the id_entidade of this CartaoPayResponse.
-        Identificador do emissor do cart\u00E3o
+        {{{cartao_pay_base_response_id_entidade_value}}}
 
         :return: The id_entidade of this CartaoPayResponse.
         :rtype: int
@@ -170,7 +170,7 @@ class CartaoPayResponse(object):
     def id_entidade(self, id_entidade):
         """
         Sets the id_entidade of this CartaoPayResponse.
-        Identificador do emissor do cart\u00E3o
+        {{{cartao_pay_base_response_id_entidade_value}}}
 
         :param id_entidade: The id_entidade of this CartaoPayResponse.
         :type: int
@@ -181,7 +181,7 @@ class CartaoPayResponse(object):
     def nome_entidade(self):
         """
         Gets the nome_entidade of this CartaoPayResponse.
-        Nome do emissor do cart\u00E3o
+        {{{cartao_pay_base_response_nome_entidade_value}}}
 
         :return: The nome_entidade of this CartaoPayResponse.
         :rtype: str
@@ -192,7 +192,7 @@ class CartaoPayResponse(object):
     def nome_entidade(self, nome_entidade):
         """
         Sets the nome_entidade of this CartaoPayResponse.
-        Nome do emissor do cart\u00E3o
+        {{{cartao_pay_base_response_nome_entidade_value}}}
 
         :param nome_entidade: The nome_entidade of this CartaoPayResponse.
         :type: str
@@ -203,7 +203,7 @@ class CartaoPayResponse(object):
     def status(self):
         """
         Gets the status of this CartaoPayResponse.
-        Status do cart\u00E3o
+        {{{cartao_pay_base_response_status_value}}}
 
         :return: The status of this CartaoPayResponse.
         :rtype: str
@@ -214,7 +214,7 @@ class CartaoPayResponse(object):
     def status(self, status):
         """
         Sets the status of this CartaoPayResponse.
-        Status do cart\u00E3o
+        {{{cartao_pay_base_response_status_value}}}
 
         :param status: The status of this CartaoPayResponse.
         :type: str
@@ -231,7 +231,7 @@ class CartaoPayResponse(object):
     def data_validade_chave_criptograma(self):
         """
         Gets the data_validade_chave_criptograma of this CartaoPayResponse.
-        Data de validade da chave do criptograma
+        {{{cartao_pay_response_data_validade_chave_criptograma_value}}}
 
         :return: The data_validade_chave_criptograma of this CartaoPayResponse.
         :rtype: str
@@ -242,7 +242,7 @@ class CartaoPayResponse(object):
     def data_validade_chave_criptograma(self, data_validade_chave_criptograma):
         """
         Sets the data_validade_chave_criptograma of this CartaoPayResponse.
-        Data de validade da chave do criptograma
+        {{{cartao_pay_response_data_validade_chave_criptograma_value}}}
 
         :param data_validade_chave_criptograma: The data_validade_chave_criptograma of this CartaoPayResponse.
         :type: str

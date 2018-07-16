@@ -107,7 +107,7 @@ class PlanoParcelamentoResponse(object):
     def id(self):
         """
         Gets the id of this PlanoParcelamentoResponse.
-        Identificador do parcelamento
+        {{{plano_parcelamento_response_id_value}}}
 
         :return: The id of this PlanoParcelamentoResponse.
         :rtype: int
@@ -118,7 +118,7 @@ class PlanoParcelamentoResponse(object):
     def id(self, id):
         """
         Sets the id of this PlanoParcelamentoResponse.
-        Identificador do parcelamento
+        {{{plano_parcelamento_response_id_value}}}
 
         :param id: The id of this PlanoParcelamentoResponse.
         :type: int
@@ -129,7 +129,7 @@ class PlanoParcelamentoResponse(object):
     def data_fechamento_fatura(self):
         """
         Gets the data_fechamento_fatura of this PlanoParcelamentoResponse.
-        Data de fechamento da fatura
+        {{{plano_parcelamento_response_data_fechamento_fatura_value}}}
 
         :return: The data_fechamento_fatura of this PlanoParcelamentoResponse.
         :rtype: str
@@ -140,7 +140,7 @@ class PlanoParcelamentoResponse(object):
     def data_fechamento_fatura(self, data_fechamento_fatura):
         """
         Sets the data_fechamento_fatura of this PlanoParcelamentoResponse.
-        Data de fechamento da fatura
+        {{{plano_parcelamento_response_data_fechamento_fatura_value}}}
 
         :param data_fechamento_fatura: The data_fechamento_fatura of this PlanoParcelamentoResponse.
         :type: str
@@ -151,7 +151,7 @@ class PlanoParcelamentoResponse(object):
     def data_vencimento_padrao(self):
         """
         Gets the data_vencimento_padrao of this PlanoParcelamentoResponse.
-        Data de vencimento padr\u00E3o
+        {{{plano_parcelamento_response_data_vencimento_padrao_value}}}
 
         :return: The data_vencimento_padrao of this PlanoParcelamentoResponse.
         :rtype: str
@@ -162,7 +162,7 @@ class PlanoParcelamentoResponse(object):
     def data_vencimento_padrao(self, data_vencimento_padrao):
         """
         Sets the data_vencimento_padrao of this PlanoParcelamentoResponse.
-        Data de vencimento padr\u00E3o
+        {{{plano_parcelamento_response_data_vencimento_padrao_value}}}
 
         :param data_vencimento_padrao: The data_vencimento_padrao of this PlanoParcelamentoResponse.
         :type: str
@@ -173,7 +173,7 @@ class PlanoParcelamentoResponse(object):
     def valor_total_fatura(self):
         """
         Gets the valor_total_fatura of this PlanoParcelamentoResponse.
-        Valor total da fatura
+        {{{plano_parcelamento_response_valor_total_fatura_value}}}
 
         :return: The valor_total_fatura of this PlanoParcelamentoResponse.
         :rtype: float
@@ -184,7 +184,7 @@ class PlanoParcelamentoResponse(object):
     def valor_total_fatura(self, valor_total_fatura):
         """
         Sets the valor_total_fatura of this PlanoParcelamentoResponse.
-        Valor total da fatura
+        {{{plano_parcelamento_response_valor_total_fatura_value}}}
 
         :param valor_total_fatura: The valor_total_fatura of this PlanoParcelamentoResponse.
         :type: float
@@ -195,7 +195,7 @@ class PlanoParcelamentoResponse(object):
     def quantidade_parcelas(self):
         """
         Gets the quantidade_parcelas of this PlanoParcelamentoResponse.
-        Quantidade de parcelas
+        {{{plano_parcelamento_response_quantidade_parcelas_value}}}
 
         :return: The quantidade_parcelas of this PlanoParcelamentoResponse.
         :rtype: int
@@ -206,7 +206,7 @@ class PlanoParcelamentoResponse(object):
     def quantidade_parcelas(self, quantidade_parcelas):
         """
         Sets the quantidade_parcelas of this PlanoParcelamentoResponse.
-        Quantidade de parcelas
+        {{{plano_parcelamento_response_quantidade_parcelas_value}}}
 
         :param quantidade_parcelas: The quantidade_parcelas of this PlanoParcelamentoResponse.
         :type: int
@@ -217,7 +217,7 @@ class PlanoParcelamentoResponse(object):
     def valor_parcela(self):
         """
         Gets the valor_parcela of this PlanoParcelamentoResponse.
-        Valor da parcela
+        {{{plano_parcelamento_response_valor_parcela_value}}}
 
         :return: The valor_parcela of this PlanoParcelamentoResponse.
         :rtype: float
@@ -228,7 +228,7 @@ class PlanoParcelamentoResponse(object):
     def valor_parcela(self, valor_parcela):
         """
         Sets the valor_parcela of this PlanoParcelamentoResponse.
-        Valor da parcela
+        {{{plano_parcelamento_response_valor_parcela_value}}}
 
         :param valor_parcela: The valor_parcela of this PlanoParcelamentoResponse.
         :type: float
@@ -239,7 +239,7 @@ class PlanoParcelamentoResponse(object):
     def valor_entrada(self):
         """
         Gets the valor_entrada of this PlanoParcelamentoResponse.
-        Valor de entrada
+        {{{plano_parcelamento_response_valor_entrada_value}}}
 
         :return: The valor_entrada of this PlanoParcelamentoResponse.
         :rtype: float
@@ -250,7 +250,7 @@ class PlanoParcelamentoResponse(object):
     def valor_entrada(self, valor_entrada):
         """
         Sets the valor_entrada of this PlanoParcelamentoResponse.
-        Valor de entrada
+        {{{plano_parcelamento_response_valor_entrada_value}}}
 
         :param valor_entrada: The valor_entrada of this PlanoParcelamentoResponse.
         :type: float
@@ -261,7 +261,7 @@ class PlanoParcelamentoResponse(object):
     def taxa_refinanciamento(self):
         """
         Gets the taxa_refinanciamento of this PlanoParcelamentoResponse.
-        Taxa de refinanciamento
+        {{{plano_parcelamento_response_taxa_refinanciamento_value}}}
 
         :return: The taxa_refinanciamento of this PlanoParcelamentoResponse.
         :rtype: float
@@ -272,7 +272,7 @@ class PlanoParcelamentoResponse(object):
     def taxa_refinanciamento(self, taxa_refinanciamento):
         """
         Sets the taxa_refinanciamento of this PlanoParcelamentoResponse.
-        Taxa de refinanciamento
+        {{{plano_parcelamento_response_taxa_refinanciamento_value}}}
 
         :param taxa_refinanciamento: The taxa_refinanciamento of this PlanoParcelamentoResponse.
         :type: float
@@ -283,7 +283,7 @@ class PlanoParcelamentoResponse(object):
     def custo_efetivo_total(self):
         """
         Gets the custo_efetivo_total of this PlanoParcelamentoResponse.
-        Custo efetivo total
+        {{{plano_parcelamento_response_custo_efetivo_total_value}}}
 
         :return: The custo_efetivo_total of this PlanoParcelamentoResponse.
         :rtype: float
@@ -294,7 +294,7 @@ class PlanoParcelamentoResponse(object):
     def custo_efetivo_total(self, custo_efetivo_total):
         """
         Sets the custo_efetivo_total of this PlanoParcelamentoResponse.
-        Custo efetivo total
+        {{{plano_parcelamento_response_custo_efetivo_total_value}}}
 
         :param custo_efetivo_total: The custo_efetivo_total of this PlanoParcelamentoResponse.
         :type: float
@@ -305,7 +305,7 @@ class PlanoParcelamentoResponse(object):
     def valor_total_refinanciamento(self):
         """
         Gets the valor_total_refinanciamento of this PlanoParcelamentoResponse.
-        Valor total de refinanciamento
+        {{{plano_parcelamento_response_valor_total_refinanciamento_value}}}
 
         :return: The valor_total_refinanciamento of this PlanoParcelamentoResponse.
         :rtype: float
@@ -316,7 +316,7 @@ class PlanoParcelamentoResponse(object):
     def valor_total_refinanciamento(self, valor_total_refinanciamento):
         """
         Sets the valor_total_refinanciamento of this PlanoParcelamentoResponse.
-        Valor total de refinanciamento
+        {{{plano_parcelamento_response_valor_total_refinanciamento_value}}}
 
         :param valor_total_refinanciamento: The valor_total_refinanciamento of this PlanoParcelamentoResponse.
         :type: float
@@ -327,7 +327,7 @@ class PlanoParcelamentoResponse(object):
     def valor_iof(self):
         """
         Gets the valor_iof of this PlanoParcelamentoResponse.
-        Valor do IOF
+        {{{plano_parcelamento_response_valor_i_o_f_value}}}
 
         :return: The valor_iof of this PlanoParcelamentoResponse.
         :rtype: float
@@ -338,7 +338,7 @@ class PlanoParcelamentoResponse(object):
     def valor_iof(self, valor_iof):
         """
         Sets the valor_iof of this PlanoParcelamentoResponse.
-        Valor do IOF
+        {{{plano_parcelamento_response_valor_i_o_f_value}}}
 
         :param valor_iof: The valor_iof of this PlanoParcelamentoResponse.
         :type: float
@@ -349,7 +349,7 @@ class PlanoParcelamentoResponse(object):
     def valor_tac(self):
         """
         Gets the valor_tac of this PlanoParcelamentoResponse.
-        Valor do TAC
+        {{{plano_parcelamento_response_valor_t_a_c_value}}}
 
         :return: The valor_tac of this PlanoParcelamentoResponse.
         :rtype: float
@@ -360,7 +360,7 @@ class PlanoParcelamentoResponse(object):
     def valor_tac(self, valor_tac):
         """
         Sets the valor_tac of this PlanoParcelamentoResponse.
-        Valor do TAC
+        {{{plano_parcelamento_response_valor_t_a_c_value}}}
 
         :param valor_tac: The valor_tac of this PlanoParcelamentoResponse.
         :type: float
@@ -371,7 +371,7 @@ class PlanoParcelamentoResponse(object):
     def status_adesao(self):
         """
         Gets the status_adesao of this PlanoParcelamentoResponse.
-        Status da ades\u00E3o
+        {{{plano_parcelamento_response_status_adesao_value}}}
 
         :return: The status_adesao of this PlanoParcelamentoResponse.
         :rtype: int
@@ -382,7 +382,7 @@ class PlanoParcelamentoResponse(object):
     def status_adesao(self, status_adesao):
         """
         Sets the status_adesao of this PlanoParcelamentoResponse.
-        Status da ades\u00E3o
+        {{{plano_parcelamento_response_status_adesao_value}}}
 
         :param status_adesao: The status_adesao of this PlanoParcelamentoResponse.
         :type: int
@@ -393,7 +393,7 @@ class PlanoParcelamentoResponse(object):
     def data_inclusao(self):
         """
         Gets the data_inclusao of this PlanoParcelamentoResponse.
-        Data de inclus\u00E3o
+        {{{plano_parcelamento_response_data_inclusao_value}}}
 
         :return: The data_inclusao of this PlanoParcelamentoResponse.
         :rtype: str
@@ -404,7 +404,7 @@ class PlanoParcelamentoResponse(object):
     def data_inclusao(self, data_inclusao):
         """
         Sets the data_inclusao of this PlanoParcelamentoResponse.
-        Data de inclus\u00E3o
+        {{{plano_parcelamento_response_data_inclusao_value}}}
 
         :param data_inclusao: The data_inclusao of this PlanoParcelamentoResponse.
         :type: str
@@ -415,7 +415,7 @@ class PlanoParcelamentoResponse(object):
     def data_processamento_adesao(self):
         """
         Gets the data_processamento_adesao of this PlanoParcelamentoResponse.
-        Data de processamento da ades\u00E3o
+        {{{plano_parcelamento_response_data_processamento_adesao_value}}}
 
         :return: The data_processamento_adesao of this PlanoParcelamentoResponse.
         :rtype: str
@@ -426,7 +426,7 @@ class PlanoParcelamentoResponse(object):
     def data_processamento_adesao(self, data_processamento_adesao):
         """
         Sets the data_processamento_adesao of this PlanoParcelamentoResponse.
-        Data de processamento da ades\u00E3o
+        {{{plano_parcelamento_response_data_processamento_adesao_value}}}
 
         :param data_processamento_adesao: The data_processamento_adesao of this PlanoParcelamentoResponse.
         :type: str
@@ -437,7 +437,7 @@ class PlanoParcelamentoResponse(object):
     def id_conta(self):
         """
         Gets the id_conta of this PlanoParcelamentoResponse.
-        Identificador da conta
+        {{{plano_parcelamento_response_id_conta_value}}}
 
         :return: The id_conta of this PlanoParcelamentoResponse.
         :rtype: int
@@ -448,7 +448,7 @@ class PlanoParcelamentoResponse(object):
     def id_conta(self, id_conta):
         """
         Sets the id_conta of this PlanoParcelamentoResponse.
-        Identificador da conta
+        {{{plano_parcelamento_response_id_conta_value}}}
 
         :param id_conta: The id_conta of this PlanoParcelamentoResponse.
         :type: int
@@ -459,7 +459,7 @@ class PlanoParcelamentoResponse(object):
     def id_servico_tipo(self):
         """
         Gets the id_servico_tipo of this PlanoParcelamentoResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o do tipo de servi\u00E7o
+        {{{plano_parcelamento_response_id_servico_tipo_value}}}
 
         :return: The id_servico_tipo of this PlanoParcelamentoResponse.
         :rtype: int
@@ -470,7 +470,7 @@ class PlanoParcelamentoResponse(object):
     def id_servico_tipo(self, id_servico_tipo):
         """
         Sets the id_servico_tipo of this PlanoParcelamentoResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o do tipo de servi\u00E7o
+        {{{plano_parcelamento_response_id_servico_tipo_value}}}
 
         :param id_servico_tipo: The id_servico_tipo of this PlanoParcelamentoResponse.
         :type: int
@@ -481,7 +481,7 @@ class PlanoParcelamentoResponse(object):
     def descricao_servico_tipo(self):
         """
         Gets the descricao_servico_tipo of this PlanoParcelamentoResponse.
-        Descri\u00E7\u00E3o do tipo de servi\u00E7o
+        {{{plano_parcelamento_response_descricao_servico_tipo_value}}}
 
         :return: The descricao_servico_tipo of this PlanoParcelamentoResponse.
         :rtype: str
@@ -492,7 +492,7 @@ class PlanoParcelamentoResponse(object):
     def descricao_servico_tipo(self, descricao_servico_tipo):
         """
         Sets the descricao_servico_tipo of this PlanoParcelamentoResponse.
-        Descri\u00E7\u00E3o do tipo de servi\u00E7o
+        {{{plano_parcelamento_response_descricao_servico_tipo_value}}}
 
         :param descricao_servico_tipo: The descricao_servico_tipo of this PlanoParcelamentoResponse.
         :type: str
@@ -503,7 +503,7 @@ class PlanoParcelamentoResponse(object):
     def com_entrada(self):
         """
         Gets the com_entrada of this PlanoParcelamentoResponse.
-        Indica se a fatura foi com entrada
+        {{{plano_parcelamento_response_com_entrada_value}}}
 
         :return: The com_entrada of this PlanoParcelamentoResponse.
         :rtype: bool
@@ -514,7 +514,7 @@ class PlanoParcelamentoResponse(object):
     def com_entrada(self, com_entrada):
         """
         Sets the com_entrada of this PlanoParcelamentoResponse.
-        Indica se a fatura foi com entrada
+        {{{plano_parcelamento_response_com_entrada_value}}}
 
         :param com_entrada: The com_entrada of this PlanoParcelamentoResponse.
         :type: bool
@@ -525,7 +525,7 @@ class PlanoParcelamentoResponse(object):
     def nome_campanha(self):
         """
         Gets the nome_campanha of this PlanoParcelamentoResponse.
-        Nome da campanha
+        {{{plano_parcelamento_response_nome_campanha_value}}}
 
         :return: The nome_campanha of this PlanoParcelamentoResponse.
         :rtype: str
@@ -536,7 +536,7 @@ class PlanoParcelamentoResponse(object):
     def nome_campanha(self, nome_campanha):
         """
         Sets the nome_campanha of this PlanoParcelamentoResponse.
-        Nome da campanha
+        {{{plano_parcelamento_response_nome_campanha_value}}}
 
         :param nome_campanha: The nome_campanha of this PlanoParcelamentoResponse.
         :type: str

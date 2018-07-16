@@ -59,7 +59,7 @@ class TransacaoPayQueryRequest(object):
     def numero_cartao(self):
         """
         Gets the numero_cartao of this TransacaoPayQueryRequest.
-        Numero do cartao (criptografado)
+        {{{transacao_pay_generic_request_numero_cartao_value}}}
 
         :return: The numero_cartao of this TransacaoPayQueryRequest.
         :rtype: str
@@ -70,7 +70,7 @@ class TransacaoPayQueryRequest(object):
     def numero_cartao(self, numero_cartao):
         """
         Sets the numero_cartao of this TransacaoPayQueryRequest.
-        Numero do cartao (criptografado)
+        {{{transacao_pay_generic_request_numero_cartao_value}}}
 
         :param numero_cartao: The numero_cartao of this TransacaoPayQueryRequest.
         :type: str
@@ -81,7 +81,7 @@ class TransacaoPayQueryRequest(object):
     def id_cartao(self):
         """
         Gets the id_cartao of this TransacaoPayQueryRequest.
-        Id do cart\u00E3o
+        {{{transacao_pay_generic_request_id_cartao_value}}}
 
         :return: The id_cartao of this TransacaoPayQueryRequest.
         :rtype: int
@@ -92,7 +92,7 @@ class TransacaoPayQueryRequest(object):
     def id_cartao(self, id_cartao):
         """
         Sets the id_cartao of this TransacaoPayQueryRequest.
-        Id do cart\u00E3o
+        {{{transacao_pay_generic_request_id_cartao_value}}}
 
         :param id_cartao: The id_cartao of this TransacaoPayQueryRequest.
         :type: int
@@ -103,7 +103,7 @@ class TransacaoPayQueryRequest(object):
     def origem(self):
         """
         Gets the origem of this TransacaoPayQueryRequest.
-        Origem
+        {{{transacao_pay_query_request_origem_value}}}
 
         :return: The origem of this TransacaoPayQueryRequest.
         :rtype: str
@@ -114,7 +114,7 @@ class TransacaoPayQueryRequest(object):
     def origem(self, origem):
         """
         Sets the origem of this TransacaoPayQueryRequest.
-        Origem
+        {{{transacao_pay_query_request_origem_value}}}
 
         :param origem: The origem of this TransacaoPayQueryRequest.
         :type: str
@@ -125,7 +125,7 @@ class TransacaoPayQueryRequest(object):
     def sort(self):
         """
         Gets the sort of this TransacaoPayQueryRequest.
-        Tipo de ordena\u00E7\u00E3o dos registros.
+        {{{global_menssagem_sort_sort}}}
 
         :return: The sort of this TransacaoPayQueryRequest.
         :rtype: list[str]
@@ -136,7 +136,7 @@ class TransacaoPayQueryRequest(object):
     def sort(self, sort):
         """
         Sets the sort of this TransacaoPayQueryRequest.
-        Tipo de ordena\u00E7\u00E3o dos registros.
+        {{{global_menssagem_sort_sort}}}
 
         :param sort: The sort of this TransacaoPayQueryRequest.
         :type: list[str]

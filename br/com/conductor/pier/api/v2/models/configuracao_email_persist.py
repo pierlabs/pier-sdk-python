@@ -77,7 +77,7 @@ class ConfiguracaoEmailPersist(object):
     def host(self):
         """
         Gets the host of this ConfiguracaoEmailPersist.
-        IP (Host) do servidor de e-mail.
+        {{{configuracao_email_persist_host_value}}}
 
         :return: The host of this ConfiguracaoEmailPersist.
         :rtype: str
@@ -88,7 +88,7 @@ class ConfiguracaoEmailPersist(object):
     def host(self, host):
         """
         Sets the host of this ConfiguracaoEmailPersist.
-        IP (Host) do servidor de e-mail.
+        {{{configuracao_email_persist_host_value}}}
 
         :param host: The host of this ConfiguracaoEmailPersist.
         :type: str
@@ -99,7 +99,7 @@ class ConfiguracaoEmailPersist(object):
     def port(self):
         """
         Gets the port of this ConfiguracaoEmailPersist.
-        Porta usada pelo servidor de e-mail.
+        {{{configuracao_email_persist_port_value}}}
 
         :return: The port of this ConfiguracaoEmailPersist.
         :rtype: str
@@ -110,7 +110,7 @@ class ConfiguracaoEmailPersist(object):
     def port(self, port):
         """
         Sets the port of this ConfiguracaoEmailPersist.
-        Porta usada pelo servidor de e-mail.
+        {{{configuracao_email_persist_port_value}}}
 
         :param port: The port of this ConfiguracaoEmailPersist.
         :type: str
@@ -121,7 +121,7 @@ class ConfiguracaoEmailPersist(object):
     def port_tlsstarttls(self):
         """
         Gets the port_tlsstarttls of this ConfiguracaoEmailPersist.
-        Porta usada pelo servi\u00E7o TLS/STARTTLS.
+        {{{configuracao_email_persist_port_t_l_s_s_t_a_r_t_t_l_s_value}}}
 
         :return: The port_tlsstarttls of this ConfiguracaoEmailPersist.
         :rtype: str
@@ -132,7 +132,7 @@ class ConfiguracaoEmailPersist(object):
     def port_tlsstarttls(self, port_tlsstarttls):
         """
         Sets the port_tlsstarttls of this ConfiguracaoEmailPersist.
-        Porta usada pelo servi\u00E7o TLS/STARTTLS.
+        {{{configuracao_email_persist_port_t_l_s_s_t_a_r_t_t_l_s_value}}}
 
         :param port_tlsstarttls: The port_tlsstarttls of this ConfiguracaoEmailPersist.
         :type: str
@@ -143,7 +143,7 @@ class ConfiguracaoEmailPersist(object):
     def port_ssl(self):
         """
         Gets the port_ssl of this ConfiguracaoEmailPersist.
-        Porta usada pelo servi\u00E7o SSL.
+        {{{configuracao_email_persist_port_s_s_l_value}}}
 
         :return: The port_ssl of this ConfiguracaoEmailPersist.
         :rtype: str
@@ -154,7 +154,7 @@ class ConfiguracaoEmailPersist(object):
     def port_ssl(self, port_ssl):
         """
         Sets the port_ssl of this ConfiguracaoEmailPersist.
-        Porta usada pelo servi\u00E7o SSL.
+        {{{configuracao_email_persist_port_s_s_l_value}}}
 
         :param port_ssl: The port_ssl of this ConfiguracaoEmailPersist.
         :type: str
@@ -165,7 +165,7 @@ class ConfiguracaoEmailPersist(object):
     def protocolo(self):
         """
         Gets the protocolo of this ConfiguracaoEmailPersist.
-        Protocolo de comunica\u00E7\u00E3o usado pelo servi\u00E7o de e-mail.
+        {{{configuracao_email_persist_protocolo_value}}}
 
         :return: The protocolo of this ConfiguracaoEmailPersist.
         :rtype: str
@@ -176,7 +176,7 @@ class ConfiguracaoEmailPersist(object):
     def protocolo(self, protocolo):
         """
         Sets the protocolo of this ConfiguracaoEmailPersist.
-        Protocolo de comunica\u00E7\u00E3o usado pelo servi\u00E7o de e-mail.
+        {{{configuracao_email_persist_protocolo_value}}}
 
         :param protocolo: The protocolo of this ConfiguracaoEmailPersist.
         :type: str
@@ -187,7 +187,7 @@ class ConfiguracaoEmailPersist(object):
     def requer_autenticacao(self):
         """
         Gets the requer_autenticacao of this ConfiguracaoEmailPersist.
-        O servi\u00E7o de e-mail requer autentica\u00E7\u00E3o.
+        {{{configuracao_email_persist_requer_autenticacao_value}}}
 
         :return: The requer_autenticacao of this ConfiguracaoEmailPersist.
         :rtype: bool
@@ -198,7 +198,7 @@ class ConfiguracaoEmailPersist(object):
     def requer_autenticacao(self, requer_autenticacao):
         """
         Sets the requer_autenticacao of this ConfiguracaoEmailPersist.
-        O servi\u00E7o de e-mail requer autentica\u00E7\u00E3o.
+        {{{configuracao_email_persist_requer_autenticacao_value}}}
 
         :param requer_autenticacao: The requer_autenticacao of this ConfiguracaoEmailPersist.
         :type: bool
@@ -209,7 +209,7 @@ class ConfiguracaoEmailPersist(object):
     def requer_ssl(self):
         """
         Gets the requer_ssl of this ConfiguracaoEmailPersist.
-        O servi\u00E7o de e-mail requer SSL.
+        {{{configuracao_email_persist_requer_s_s_l_value}}}
 
         :return: The requer_ssl of this ConfiguracaoEmailPersist.
         :rtype: bool
@@ -220,7 +220,7 @@ class ConfiguracaoEmailPersist(object):
     def requer_ssl(self, requer_ssl):
         """
         Sets the requer_ssl of this ConfiguracaoEmailPersist.
-        O servi\u00E7o de e-mail requer SSL.
+        {{{configuracao_email_persist_requer_s_s_l_value}}}
 
         :param requer_ssl: The requer_ssl of this ConfiguracaoEmailPersist.
         :type: bool
@@ -231,7 +231,7 @@ class ConfiguracaoEmailPersist(object):
     def requer_tls(self):
         """
         Gets the requer_tls of this ConfiguracaoEmailPersist.
-        O servi\u00E7o de e-mail requer TLS.
+        {{{configuracao_email_persist_requer_t_l_s_value}}}
 
         :return: The requer_tls of this ConfiguracaoEmailPersist.
         :rtype: bool
@@ -242,7 +242,7 @@ class ConfiguracaoEmailPersist(object):
     def requer_tls(self, requer_tls):
         """
         Sets the requer_tls of this ConfiguracaoEmailPersist.
-        O servi\u00E7o de e-mail requer TLS.
+        {{{configuracao_email_persist_requer_t_l_s_value}}}
 
         :param requer_tls: The requer_tls of this ConfiguracaoEmailPersist.
         :type: bool
@@ -253,7 +253,7 @@ class ConfiguracaoEmailPersist(object):
     def usuario(self):
         """
         Gets the usuario of this ConfiguracaoEmailPersist.
-        Usuario do servi\u00E7o de e-mail.
+        {{{configuracao_email_persist_usuario_value}}}
 
         :return: The usuario of this ConfiguracaoEmailPersist.
         :rtype: str
@@ -264,7 +264,7 @@ class ConfiguracaoEmailPersist(object):
     def usuario(self, usuario):
         """
         Sets the usuario of this ConfiguracaoEmailPersist.
-        Usuario do servi\u00E7o de e-mail.
+        {{{configuracao_email_persist_usuario_value}}}
 
         :param usuario: The usuario of this ConfiguracaoEmailPersist.
         :type: str
@@ -275,7 +275,7 @@ class ConfiguracaoEmailPersist(object):
     def senha(self):
         """
         Gets the senha of this ConfiguracaoEmailPersist.
-        Senha de usu\u00E1rio do servi\u00E7o de e-mail.
+        {{{configuracao_email_persist_senha_value}}}
 
         :return: The senha of this ConfiguracaoEmailPersist.
         :rtype: str
@@ -286,7 +286,7 @@ class ConfiguracaoEmailPersist(object):
     def senha(self, senha):
         """
         Sets the senha of this ConfiguracaoEmailPersist.
-        Senha de usu\u00E1rio do servi\u00E7o de e-mail.
+        {{{configuracao_email_persist_senha_value}}}
 
         :param senha: The senha of this ConfiguracaoEmailPersist.
         :type: str

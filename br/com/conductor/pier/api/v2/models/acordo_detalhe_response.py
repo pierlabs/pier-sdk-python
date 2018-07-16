@@ -98,7 +98,7 @@ class AcordoDetalheResponse(object):
     def id(self):
         """
         Gets the id of this AcordoDetalheResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o do acordo (id).
+        {{{acordo_response_id_value}}}
 
         :return: The id of this AcordoDetalheResponse.
         :rtype: int
@@ -109,7 +109,7 @@ class AcordoDetalheResponse(object):
     def id(self, id):
         """
         Sets the id of this AcordoDetalheResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o do acordo (id).
+        {{{acordo_response_id_value}}}
 
         :param id: The id of this AcordoDetalheResponse.
         :type: int
@@ -120,7 +120,7 @@ class AcordoDetalheResponse(object):
     def id_conta(self):
         """
         Gets the id_conta of this AcordoDetalheResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o da conta.
+        {{{acordo_response_id_conta_value}}}
 
         :return: The id_conta of this AcordoDetalheResponse.
         :rtype: int
@@ -131,7 +131,7 @@ class AcordoDetalheResponse(object):
     def id_conta(self, id_conta):
         """
         Sets the id_conta of this AcordoDetalheResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o da conta.
+        {{{acordo_response_id_conta_value}}}
 
         :param id_conta: The id_conta of this AcordoDetalheResponse.
         :type: int
@@ -142,7 +142,7 @@ class AcordoDetalheResponse(object):
     def status_acordo(self):
         """
         Gets the status_acordo of this AcordoDetalheResponse.
-        Status do acordo.
+        {{{acordo_response_status_acordo_value}}}
 
         :return: The status_acordo of this AcordoDetalheResponse.
         :rtype: int
@@ -153,7 +153,7 @@ class AcordoDetalheResponse(object):
     def status_acordo(self, status_acordo):
         """
         Sets the status_acordo of this AcordoDetalheResponse.
-        Status do acordo.
+        {{{acordo_response_status_acordo_value}}}
 
         :param status_acordo: The status_acordo of this AcordoDetalheResponse.
         :type: int
@@ -164,7 +164,7 @@ class AcordoDetalheResponse(object):
     def valor_acordo(self):
         """
         Gets the valor_acordo of this AcordoDetalheResponse.
-        Valor do Acordo.
+        {{{acordo_response_valor_acordo_value}}}
 
         :return: The valor_acordo of this AcordoDetalheResponse.
         :rtype: float
@@ -175,7 +175,7 @@ class AcordoDetalheResponse(object):
     def valor_acordo(self, valor_acordo):
         """
         Sets the valor_acordo of this AcordoDetalheResponse.
-        Valor do Acordo.
+        {{{acordo_response_valor_acordo_value}}}
 
         :param valor_acordo: The valor_acordo of this AcordoDetalheResponse.
         :type: float
@@ -186,7 +186,7 @@ class AcordoDetalheResponse(object):
     def data_acordo(self):
         """
         Gets the data_acordo of this AcordoDetalheResponse.
-        Data e Hora do acordo.
+        {{{acordo_response_data_acordo_value}}}
 
         :return: The data_acordo of this AcordoDetalheResponse.
         :rtype: str
@@ -197,7 +197,7 @@ class AcordoDetalheResponse(object):
     def data_acordo(self, data_acordo):
         """
         Sets the data_acordo of this AcordoDetalheResponse.
-        Data e Hora do acordo.
+        {{{acordo_response_data_acordo_value}}}
 
         :param data_acordo: The data_acordo of this AcordoDetalheResponse.
         :type: str
@@ -208,7 +208,7 @@ class AcordoDetalheResponse(object):
     def quantidade_parcelas(self):
         """
         Gets the quantidade_parcelas of this AcordoDetalheResponse.
-        Quantidade de parcelas do acordo.
+        {{{acordo_response_quantidade_parcelas_value}}}
 
         :return: The quantidade_parcelas of this AcordoDetalheResponse.
         :rtype: int
@@ -219,7 +219,7 @@ class AcordoDetalheResponse(object):
     def quantidade_parcelas(self, quantidade_parcelas):
         """
         Sets the quantidade_parcelas of this AcordoDetalheResponse.
-        Quantidade de parcelas do acordo.
+        {{{acordo_response_quantidade_parcelas_value}}}
 
         :param quantidade_parcelas: The quantidade_parcelas of this AcordoDetalheResponse.
         :type: int
@@ -230,7 +230,7 @@ class AcordoDetalheResponse(object):
     def saldo_atual_final(self):
         """
         Gets the saldo_atual_final of this AcordoDetalheResponse.
-        Saldo atual final.
+        {{{acordo_response_saldo_atual_final_value}}}
 
         :return: The saldo_atual_final of this AcordoDetalheResponse.
         :rtype: float
@@ -241,7 +241,7 @@ class AcordoDetalheResponse(object):
     def saldo_atual_final(self, saldo_atual_final):
         """
         Sets the saldo_atual_final of this AcordoDetalheResponse.
-        Saldo atual final.
+        {{{acordo_response_saldo_atual_final_value}}}
 
         :param saldo_atual_final: The saldo_atual_final of this AcordoDetalheResponse.
         :type: float
@@ -252,7 +252,7 @@ class AcordoDetalheResponse(object):
     def dias_em_atraso(self):
         """
         Gets the dias_em_atraso of this AcordoDetalheResponse.
-        Dias em atraso.
+        {{{acordo_response_dias_em_atraso_value}}}
 
         :return: The dias_em_atraso of this AcordoDetalheResponse.
         :rtype: int
@@ -263,7 +263,7 @@ class AcordoDetalheResponse(object):
     def dias_em_atraso(self, dias_em_atraso):
         """
         Sets the dias_em_atraso of this AcordoDetalheResponse.
-        Dias em atraso.
+        {{{acordo_response_dias_em_atraso_value}}}
 
         :param dias_em_atraso: The dias_em_atraso of this AcordoDetalheResponse.
         :type: int
@@ -274,7 +274,7 @@ class AcordoDetalheResponse(object):
     def status_conta(self):
         """
         Gets the status_conta of this AcordoDetalheResponse.
-        Status da conta.
+        {{{acordo_detalhe_response_status_conta_value}}}
 
         :return: The status_conta of this AcordoDetalheResponse.
         :rtype: int
@@ -285,7 +285,7 @@ class AcordoDetalheResponse(object):
     def status_conta(self, status_conta):
         """
         Sets the status_conta of this AcordoDetalheResponse.
-        Status da conta.
+        {{{acordo_detalhe_response_status_conta_value}}}
 
         :param status_conta: The status_conta of this AcordoDetalheResponse.
         :type: int
@@ -296,7 +296,7 @@ class AcordoDetalheResponse(object):
     def assessoria_atual(self):
         """
         Gets the assessoria_atual of this AcordoDetalheResponse.
-        Assessoria atual.
+        {{{acordo_detalhe_response_assessoria_atual_value}}}
 
         :return: The assessoria_atual of this AcordoDetalheResponse.
         :rtype: str
@@ -307,7 +307,7 @@ class AcordoDetalheResponse(object):
     def assessoria_atual(self, assessoria_atual):
         """
         Sets the assessoria_atual of this AcordoDetalheResponse.
-        Assessoria atual.
+        {{{acordo_detalhe_response_assessoria_atual_value}}}
 
         :param assessoria_atual: The assessoria_atual of this AcordoDetalheResponse.
         :type: str
@@ -318,7 +318,7 @@ class AcordoDetalheResponse(object):
     def total_pagamentos(self):
         """
         Gets the total_pagamentos of this AcordoDetalheResponse.
-        Total de pagamentos.
+        {{{acordo_detalhe_response_total_pagamentos_value}}}
 
         :return: The total_pagamentos of this AcordoDetalheResponse.
         :rtype: float
@@ -329,7 +329,7 @@ class AcordoDetalheResponse(object):
     def total_pagamentos(self, total_pagamentos):
         """
         Sets the total_pagamentos of this AcordoDetalheResponse.
-        Total de pagamentos.
+        {{{acordo_detalhe_response_total_pagamentos_value}}}
 
         :param total_pagamentos: The total_pagamentos of this AcordoDetalheResponse.
         :type: float
@@ -340,7 +340,7 @@ class AcordoDetalheResponse(object):
     def data_vencimento_cobranca(self):
         """
         Gets the data_vencimento_cobranca of this AcordoDetalheResponse.
-        Data do vencimento da cobran\u00E7a.
+        {{{acordo_detalhe_response_data_vencimento_cobranca_value}}}
 
         :return: The data_vencimento_cobranca of this AcordoDetalheResponse.
         :rtype: str
@@ -351,7 +351,7 @@ class AcordoDetalheResponse(object):
     def data_vencimento_cobranca(self, data_vencimento_cobranca):
         """
         Sets the data_vencimento_cobranca of this AcordoDetalheResponse.
-        Data do vencimento da cobran\u00E7a.
+        {{{acordo_detalhe_response_data_vencimento_cobranca_value}}}
 
         :param data_vencimento_cobranca: The data_vencimento_cobranca of this AcordoDetalheResponse.
         :type: str
@@ -362,7 +362,7 @@ class AcordoDetalheResponse(object):
     def data_quebra_acordo(self):
         """
         Gets the data_quebra_acordo of this AcordoDetalheResponse.
-        Data da quebra do acordo.
+        {{{acordo_detalhe_response_data_quebra_acordo_value}}}
 
         :return: The data_quebra_acordo of this AcordoDetalheResponse.
         :rtype: str
@@ -373,7 +373,7 @@ class AcordoDetalheResponse(object):
     def data_quebra_acordo(self, data_quebra_acordo):
         """
         Sets the data_quebra_acordo of this AcordoDetalheResponse.
-        Data da quebra do acordo.
+        {{{acordo_detalhe_response_data_quebra_acordo_value}}}
 
         :param data_quebra_acordo: The data_quebra_acordo of this AcordoDetalheResponse.
         :type: str
@@ -384,7 +384,7 @@ class AcordoDetalheResponse(object):
     def valor_parcela1(self):
         """
         Gets the valor_parcela1 of this AcordoDetalheResponse.
-        Valor da parcela 1.
+        {{{acordo_detalhe_response_valor_parcela1_value}}}
 
         :return: The valor_parcela1 of this AcordoDetalheResponse.
         :rtype: float
@@ -395,7 +395,7 @@ class AcordoDetalheResponse(object):
     def valor_parcela1(self, valor_parcela1):
         """
         Sets the valor_parcela1 of this AcordoDetalheResponse.
-        Valor da parcela 1.
+        {{{acordo_detalhe_response_valor_parcela1_value}}}
 
         :param valor_parcela1: The valor_parcela1 of this AcordoDetalheResponse.
         :type: float
@@ -406,7 +406,7 @@ class AcordoDetalheResponse(object):
     def valor_parcela_n(self):
         """
         Gets the valor_parcela_n of this AcordoDetalheResponse.
-        Valor da parcela N.
+        {{{acordo_detalhe_response_valor_parcela_n_value}}}
 
         :return: The valor_parcela_n of this AcordoDetalheResponse.
         :rtype: float
@@ -417,7 +417,7 @@ class AcordoDetalheResponse(object):
     def valor_parcela_n(self, valor_parcela_n):
         """
         Sets the valor_parcela_n of this AcordoDetalheResponse.
-        Valor da parcela N.
+        {{{acordo_detalhe_response_valor_parcela_n_value}}}
 
         :param valor_parcela_n: The valor_parcela_n of this AcordoDetalheResponse.
         :type: float
@@ -428,7 +428,7 @@ class AcordoDetalheResponse(object):
     def parcela_pedida(self):
         """
         Gets the parcela_pedida of this AcordoDetalheResponse.
-        Parcela pedida.
+        {{{acordo_detalhe_response_parcela_pedida_value}}}
 
         :return: The parcela_pedida of this AcordoDetalheResponse.
         :rtype: int
@@ -439,7 +439,7 @@ class AcordoDetalheResponse(object):
     def parcela_pedida(self, parcela_pedida):
         """
         Sets the parcela_pedida of this AcordoDetalheResponse.
-        Parcela pedida.
+        {{{acordo_detalhe_response_parcela_pedida_value}}}
 
         :param parcela_pedida: The parcela_pedida of this AcordoDetalheResponse.
         :type: int
@@ -450,7 +450,7 @@ class AcordoDetalheResponse(object):
     def vencimento_parcela_pedida(self):
         """
         Gets the vencimento_parcela_pedida of this AcordoDetalheResponse.
-        Data de vencimento da parcela pedida.
+        {{{acordo_detalhe_response_vencimento_parcela_pedida_value}}}
 
         :return: The vencimento_parcela_pedida of this AcordoDetalheResponse.
         :rtype: str
@@ -461,7 +461,7 @@ class AcordoDetalheResponse(object):
     def vencimento_parcela_pedida(self, vencimento_parcela_pedida):
         """
         Sets the vencimento_parcela_pedida of this AcordoDetalheResponse.
-        Data de vencimento da parcela pedida.
+        {{{acordo_detalhe_response_vencimento_parcela_pedida_value}}}
 
         :param vencimento_parcela_pedida: The vencimento_parcela_pedida of this AcordoDetalheResponse.
         :type: str

@@ -56,7 +56,7 @@ class CampanhaPersist(object):
     def nome(self):
         """
         Gets the nome of this CampanhaPersist.
-        Nome da campanha.
+        {{{campanha_persist_nome_value}}}
 
         :return: The nome of this CampanhaPersist.
         :rtype: str
@@ -67,7 +67,7 @@ class CampanhaPersist(object):
     def nome(self, nome):
         """
         Sets the nome of this CampanhaPersist.
-        Nome da campanha.
+        {{{campanha_persist_nome_value}}}
 
         :param nome: The nome of this CampanhaPersist.
         :type: str
@@ -78,7 +78,7 @@ class CampanhaPersist(object):
     def id_tipo_campanha(self):
         """
         Gets the id_tipo_campanha of this CampanhaPersist.
-        C\u00F3digo de Identifica\u00E7\u00E3o do tipo da campanha.
+        {{{campanha_persist_id_tipo_campanha_value}}}
 
         :return: The id_tipo_campanha of this CampanhaPersist.
         :rtype: int
@@ -89,7 +89,7 @@ class CampanhaPersist(object):
     def id_tipo_campanha(self, id_tipo_campanha):
         """
         Sets the id_tipo_campanha of this CampanhaPersist.
-        C\u00F3digo de Identifica\u00E7\u00E3o do tipo da campanha.
+        {{{campanha_persist_id_tipo_campanha_value}}}
 
         :param id_tipo_campanha: The id_tipo_campanha of this CampanhaPersist.
         :type: int
@@ -100,7 +100,7 @@ class CampanhaPersist(object):
     def planos_campanhas(self):
         """
         Gets the planos_campanhas of this CampanhaPersist.
-        Lista com os planos de campanha.
+        {{{campanha_persist_planos_campanhas_value}}}
 
         :return: The planos_campanhas of this CampanhaPersist.
         :rtype: list[PlanoCampanhaPersist]
@@ -111,7 +111,7 @@ class CampanhaPersist(object):
     def planos_campanhas(self, planos_campanhas):
         """
         Sets the planos_campanhas of this CampanhaPersist.
-        Lista com os planos de campanha.
+        {{{campanha_persist_planos_campanhas_value}}}
 
         :param planos_campanhas: The planos_campanhas of this CampanhaPersist.
         :type: list[PlanoCampanhaPersist]

@@ -53,7 +53,7 @@ class CampoCodificadoDescricaoResponse(object):
     def codigo(self):
         """
         Gets the codigo of this CampoCodificadoDescricaoResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o da descri\u00E7\u00E3o.
+        {{{campo_codificado_descricao_response_codigo_value}}}
 
         :return: The codigo of this CampoCodificadoDescricaoResponse.
         :rtype: int
@@ -64,7 +64,7 @@ class CampoCodificadoDescricaoResponse(object):
     def codigo(self, codigo):
         """
         Sets the codigo of this CampoCodificadoDescricaoResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o da descri\u00E7\u00E3o.
+        {{{campo_codificado_descricao_response_codigo_value}}}
 
         :param codigo: The codigo of this CampoCodificadoDescricaoResponse.
         :type: int
@@ -75,7 +75,7 @@ class CampoCodificadoDescricaoResponse(object):
     def descricao(self):
         """
         Gets the descricao of this CampoCodificadoDescricaoResponse.
-        Descri\u00E7\u00E3o do campo codificado.
+        {{{campo_codificado_descricao_response_descricao_value}}}
 
         :return: The descricao of this CampoCodificadoDescricaoResponse.
         :rtype: str
@@ -86,7 +86,7 @@ class CampoCodificadoDescricaoResponse(object):
     def descricao(self, descricao):
         """
         Sets the descricao of this CampoCodificadoDescricaoResponse.
-        Descri\u00E7\u00E3o do campo codificado.
+        {{{campo_codificado_descricao_response_descricao_value}}}
 
         :param descricao: The descricao of this CampoCodificadoDescricaoResponse.
         :type: str

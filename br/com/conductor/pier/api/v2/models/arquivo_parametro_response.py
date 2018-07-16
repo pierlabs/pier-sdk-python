@@ -56,7 +56,7 @@ class ArquivoParametroResponse(object):
     def id(self):
         """
         Gets the id of this ArquivoParametroResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o do detalhe do arquivo.
+        {{{arquivo_parametro_response_id_value}}}
 
         :return: The id of this ArquivoParametroResponse.
         :rtype: int
@@ -67,7 +67,7 @@ class ArquivoParametroResponse(object):
     def id(self, id):
         """
         Sets the id of this ArquivoParametroResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o do detalhe do arquivo.
+        {{{arquivo_parametro_response_id_value}}}
 
         :param id: The id of this ArquivoParametroResponse.
         :type: int
@@ -78,7 +78,7 @@ class ArquivoParametroResponse(object):
     def nome_campo(self):
         """
         Gets the nome_campo of this ArquivoParametroResponse.
-        Nome que identifica o detalhe do arquivo
+        {{{arquivo_parametro_response_nome_campo_value}}}
 
         :return: The nome_campo of this ArquivoParametroResponse.
         :rtype: str
@@ -89,7 +89,7 @@ class ArquivoParametroResponse(object):
     def nome_campo(self, nome_campo):
         """
         Sets the nome_campo of this ArquivoParametroResponse.
-        Nome que identifica o detalhe do arquivo
+        {{{arquivo_parametro_response_nome_campo_value}}}
 
         :param nome_campo: The nome_campo of this ArquivoParametroResponse.
         :type: str
@@ -100,7 +100,7 @@ class ArquivoParametroResponse(object):
     def conteudo(self):
         """
         Gets the conteudo of this ArquivoParametroResponse.
-        Conte\u00FAdo do nomeCampo
+        {{{arquivo_parametro_response_conteudo_value}}}
 
         :return: The conteudo of this ArquivoParametroResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class ArquivoParametroResponse(object):
     def conteudo(self, conteudo):
         """
         Sets the conteudo of this ArquivoParametroResponse.
-        Conte\u00FAdo do nomeCampo
+        {{{arquivo_parametro_response_conteudo_value}}}
 
         :param conteudo: The conteudo of this ArquivoParametroResponse.
         :type: str

@@ -66,7 +66,11 @@ class BoletoResponse(object):
             'cidade_pagador': 'str',
             'uf_pagador': 'str',
             'codigo_de_barras': 'str',
-            'linha_digitavel': 'str'
+            'linha_digitavel': 'str',
+            'id': 'int',
+            'id_conta': 'int',
+            'endereco_cobranca_beneficiario': 'str',
+            'status': 'int'
         }
 
         self.attribute_map = {
@@ -99,7 +103,11 @@ class BoletoResponse(object):
             'cidade_pagador': 'cidadePagador',
             'uf_pagador': 'ufPagador',
             'codigo_de_barras': 'codigoDeBarras',
-            'linha_digitavel': 'linhaDigitavel'
+            'linha_digitavel': 'linhaDigitavel',
+            'id': 'id',
+            'id_conta': 'idConta',
+            'endereco_cobranca_beneficiario': 'enderecoCobrancaBeneficiario',
+            'status': 'status'
         }
 
         self._numero_do_documento = None
@@ -132,12 +140,16 @@ class BoletoResponse(object):
         self._uf_pagador = None
         self._codigo_de_barras = None
         self._linha_digitavel = None
+        self._id = None
+        self._id_conta = None
+        self._endereco_cobranca_beneficiario = None
+        self._status = None
 
     @property
     def numero_do_documento(self):
         """
         Gets the numero_do_documento of this BoletoResponse.
-        N\u00FAmero do documento \u00E9 o c\u00F3digo informado pelo banco para identifica\u00E7\u00E3o do cliente
+        {{{boleto_response_numero_do_documento_value}}}
 
         :return: The numero_do_documento of this BoletoResponse.
         :rtype: str
@@ -148,7 +160,7 @@ class BoletoResponse(object):
     def numero_do_documento(self, numero_do_documento):
         """
         Sets the numero_do_documento of this BoletoResponse.
-        N\u00FAmero do documento \u00E9 o c\u00F3digo informado pelo banco para identifica\u00E7\u00E3o do cliente
+        {{{boleto_response_numero_do_documento_value}}}
 
         :param numero_do_documento: The numero_do_documento of this BoletoResponse.
         :type: str
@@ -159,7 +171,7 @@ class BoletoResponse(object):
     def data_processamento(self):
         """
         Gets the data_processamento of this BoletoResponse.
-        Data do processamento (emiss\u00E3o ou faturamento) do boleto
+        {{{boleto_response_data_processamento_value}}}
 
         :return: The data_processamento of this BoletoResponse.
         :rtype: str
@@ -170,7 +182,7 @@ class BoletoResponse(object):
     def data_processamento(self, data_processamento):
         """
         Sets the data_processamento of this BoletoResponse.
-        Data do processamento (emiss\u00E3o ou faturamento) do boleto
+        {{{boleto_response_data_processamento_value}}}
 
         :param data_processamento: The data_processamento of this BoletoResponse.
         :type: str
@@ -181,7 +193,7 @@ class BoletoResponse(object):
     def data_documento(self):
         """
         Gets the data_documento of this BoletoResponse.
-        Data do documento (impress\u00E3o)
+        {{{boleto_response_data_documento_value}}}
 
         :return: The data_documento of this BoletoResponse.
         :rtype: str
@@ -192,7 +204,7 @@ class BoletoResponse(object):
     def data_documento(self, data_documento):
         """
         Sets the data_documento of this BoletoResponse.
-        Data do documento (impress\u00E3o)
+        {{{boleto_response_data_documento_value}}}
 
         :param data_documento: The data_documento of this BoletoResponse.
         :type: str
@@ -203,7 +215,7 @@ class BoletoResponse(object):
     def data_vencimento(self):
         """
         Gets the data_vencimento of this BoletoResponse.
-        Data do vencimento
+        {{{boleto_response_data_vencimento_value}}}
 
         :return: The data_vencimento of this BoletoResponse.
         :rtype: str
@@ -214,7 +226,7 @@ class BoletoResponse(object):
     def data_vencimento(self, data_vencimento):
         """
         Sets the data_vencimento of this BoletoResponse.
-        Data do vencimento
+        {{{boleto_response_data_vencimento_value}}}
 
         :param data_vencimento: The data_vencimento of this BoletoResponse.
         :type: str
@@ -225,7 +237,7 @@ class BoletoResponse(object):
     def data_fechamento(self):
         """
         Gets the data_fechamento of this BoletoResponse.
-        Data do fechamento
+        {{{boleto_response_data_fechamento_value}}}
 
         :return: The data_fechamento of this BoletoResponse.
         :rtype: str
@@ -236,7 +248,7 @@ class BoletoResponse(object):
     def data_fechamento(self, data_fechamento):
         """
         Sets the data_fechamento of this BoletoResponse.
-        Data do fechamento
+        {{{boleto_response_data_fechamento_value}}}
 
         :param data_fechamento: The data_fechamento of this BoletoResponse.
         :type: str
@@ -247,7 +259,7 @@ class BoletoResponse(object):
     def valor_boleto(self):
         """
         Gets the valor_boleto of this BoletoResponse.
-        Valor do Boleto.
+        {{{boleto_response_valor_boleto_value}}}
 
         :return: The valor_boleto of this BoletoResponse.
         :rtype: float
@@ -258,7 +270,7 @@ class BoletoResponse(object):
     def valor_boleto(self, valor_boleto):
         """
         Sets the valor_boleto of this BoletoResponse.
-        Valor do Boleto.
+        {{{boleto_response_valor_boleto_value}}}
 
         :param valor_boleto: The valor_boleto of this BoletoResponse.
         :type: float
@@ -269,7 +281,7 @@ class BoletoResponse(object):
     def nome_beneficiario(self):
         """
         Gets the nome_beneficiario of this BoletoResponse.
-        Benefici\u00E1rio \u00E9 a pessoa/empresa que gera o boleto
+        {{{boleto_response_nome_beneficiario_value}}}
 
         :return: The nome_beneficiario of this BoletoResponse.
         :rtype: str
@@ -280,7 +292,7 @@ class BoletoResponse(object):
     def nome_beneficiario(self, nome_beneficiario):
         """
         Sets the nome_beneficiario of this BoletoResponse.
-        Benefici\u00E1rio \u00E9 a pessoa/empresa que gera o boleto
+        {{{boleto_response_nome_beneficiario_value}}}
 
         :param nome_beneficiario: The nome_beneficiario of this BoletoResponse.
         :type: str
@@ -291,7 +303,7 @@ class BoletoResponse(object):
     def documento_beneficiario(self):
         """
         Gets the documento_beneficiario of this BoletoResponse.
-        Documento do Beneficiario.
+        {{{boleto_response_documento_beneficiario_value}}}
 
         :return: The documento_beneficiario of this BoletoResponse.
         :rtype: str
@@ -302,7 +314,7 @@ class BoletoResponse(object):
     def documento_beneficiario(self, documento_beneficiario):
         """
         Sets the documento_beneficiario of this BoletoResponse.
-        Documento do Beneficiario.
+        {{{boleto_response_documento_beneficiario_value}}}
 
         :param documento_beneficiario: The documento_beneficiario of this BoletoResponse.
         :type: str
@@ -313,7 +325,7 @@ class BoletoResponse(object):
     def agencia(self):
         """
         Gets the agencia of this BoletoResponse.
-        Ag\u00EAncia.
+        {{{boleto_response_agencia_value}}}
 
         :return: The agencia of this BoletoResponse.
         :rtype: str
@@ -324,7 +336,7 @@ class BoletoResponse(object):
     def agencia(self, agencia):
         """
         Sets the agencia of this BoletoResponse.
-        Ag\u00EAncia.
+        {{{boleto_response_agencia_value}}}
 
         :param agencia: The agencia of this BoletoResponse.
         :type: str
@@ -335,7 +347,7 @@ class BoletoResponse(object):
     def codigo_beneficiario(self):
         """
         Gets the codigo_beneficiario of this BoletoResponse.
-        C\u00F3digo do benefici\u00E1rio
+        {{{boleto_response_codigo_beneficiario_value}}}
 
         :return: The codigo_beneficiario of this BoletoResponse.
         :rtype: str
@@ -346,7 +358,7 @@ class BoletoResponse(object):
     def codigo_beneficiario(self, codigo_beneficiario):
         """
         Sets the codigo_beneficiario of this BoletoResponse.
-        C\u00F3digo do benefici\u00E1rio
+        {{{boleto_response_codigo_beneficiario_value}}}
 
         :param codigo_beneficiario: The codigo_beneficiario of this BoletoResponse.
         :type: str
@@ -357,7 +369,7 @@ class BoletoResponse(object):
     def numero_convenio(self):
         """
         Gets the numero_convenio of this BoletoResponse.
-        N\u00FAmero do conv\u00EAnio fornecido pelo banco \u00E9 o c\u00F3digo que identifica um emissor junto ao seu banco para associar seus boletos.
+        {{{boleto_response_numero_convenio_value}}}
 
         :return: The numero_convenio of this BoletoResponse.
         :rtype: str
@@ -368,7 +380,7 @@ class BoletoResponse(object):
     def numero_convenio(self, numero_convenio):
         """
         Sets the numero_convenio of this BoletoResponse.
-        N\u00FAmero do conv\u00EAnio fornecido pelo banco \u00E9 o c\u00F3digo que identifica um emissor junto ao seu banco para associar seus boletos.
+        {{{boleto_response_numero_convenio_value}}}
 
         :param numero_convenio: The numero_convenio of this BoletoResponse.
         :type: str
@@ -379,7 +391,7 @@ class BoletoResponse(object):
     def digito_codigo_beneficiario(self):
         """
         Gets the digito_codigo_beneficiario of this BoletoResponse.
-        D\u00EDgito do c\u00F3digo do benefici\u00E1rio
+        {{{boleto_response_digito_codigo_beneficiario_value}}}
 
         :return: The digito_codigo_beneficiario of this BoletoResponse.
         :rtype: str
@@ -390,7 +402,7 @@ class BoletoResponse(object):
     def digito_codigo_beneficiario(self, digito_codigo_beneficiario):
         """
         Sets the digito_codigo_beneficiario of this BoletoResponse.
-        D\u00EDgito do c\u00F3digo do benefici\u00E1rio
+        {{{boleto_response_digito_codigo_beneficiario_value}}}
 
         :param digito_codigo_beneficiario: The digito_codigo_beneficiario of this BoletoResponse.
         :type: str
@@ -401,7 +413,7 @@ class BoletoResponse(object):
     def carteira(self):
         """
         Gets the carteira of this BoletoResponse.
-        Carteira \u00E9 o c\u00F3digo informado pelo banco pra identifica\u00E7\u00E3o do tipo do boleto
+        {{{boleto_response_carteira_value}}}
 
         :return: The carteira of this BoletoResponse.
         :rtype: str
@@ -412,7 +424,7 @@ class BoletoResponse(object):
     def carteira(self, carteira):
         """
         Sets the carteira of this BoletoResponse.
-        Carteira \u00E9 o c\u00F3digo informado pelo banco pra identifica\u00E7\u00E3o do tipo do boleto
+        {{{boleto_response_carteira_value}}}
 
         :param carteira: The carteira of this BoletoResponse.
         :type: str
@@ -423,7 +435,7 @@ class BoletoResponse(object):
     def nosso_numero(self):
         """
         Gets the nosso_numero of this BoletoResponse.
-        Nosso n\u00FAmero \u00E9 o c\u00F3digo que o benefici\u00E1rio escolhe para manter controle sobre seus boletos. Esse valor serve para o cedente identificar quais boletos foram pagos ou n\u00E3o. Recomenda-se o uso de n\u00FAmeros sequ\u00EAnciais, na gera\u00E7\u00E3o de diversos boletos, para facilitar a identifica\u00E7\u00E3o dos boletos pagos
+        {{{boleto_response_nosso_numero_value}}}
 
         :return: The nosso_numero of this BoletoResponse.
         :rtype: str
@@ -434,7 +446,7 @@ class BoletoResponse(object):
     def nosso_numero(self, nosso_numero):
         """
         Sets the nosso_numero of this BoletoResponse.
-        Nosso n\u00FAmero \u00E9 o c\u00F3digo que o benefici\u00E1rio escolhe para manter controle sobre seus boletos. Esse valor serve para o cedente identificar quais boletos foram pagos ou n\u00E3o. Recomenda-se o uso de n\u00FAmeros sequ\u00EAnciais, na gera\u00E7\u00E3o de diversos boletos, para facilitar a identifica\u00E7\u00E3o dos boletos pagos
+        {{{boleto_response_nosso_numero_value}}}
 
         :param nosso_numero: The nosso_numero of this BoletoResponse.
         :type: str
@@ -445,7 +457,7 @@ class BoletoResponse(object):
     def digito_nosso_numero(self):
         """
         Gets the digito_nosso_numero of this BoletoResponse.
-        D\u00EDgito do nosso n\u00FAmero
+        {{{boleto_response_digito_nosso_numero_value}}}
 
         :return: The digito_nosso_numero of this BoletoResponse.
         :rtype: str
@@ -456,7 +468,7 @@ class BoletoResponse(object):
     def digito_nosso_numero(self, digito_nosso_numero):
         """
         Sets the digito_nosso_numero of this BoletoResponse.
-        D\u00EDgito do nosso n\u00FAmero
+        {{{boleto_response_digito_nosso_numero_value}}}
 
         :param digito_nosso_numero: The digito_nosso_numero of this BoletoResponse.
         :type: str
@@ -467,7 +479,7 @@ class BoletoResponse(object):
     def banco(self):
         """
         Gets the banco of this BoletoResponse.
-        Banco
+        {{{boleto_response_banco_value}}}
 
         :return: The banco of this BoletoResponse.
         :rtype: str
@@ -478,7 +490,7 @@ class BoletoResponse(object):
     def banco(self, banco):
         """
         Sets the banco of this BoletoResponse.
-        Banco
+        {{{boleto_response_banco_value}}}
 
         :param banco: The banco of this BoletoResponse.
         :type: str
@@ -489,7 +501,7 @@ class BoletoResponse(object):
     def aceite(self):
         """
         Gets the aceite of this BoletoResponse.
-        Aceite informa ao banco se deve aceitar o boleto ap\u00F3s a data de vencimento (padr\u00E3o: \"N\")
+        {{{boleto_response_aceite_value}}}
 
         :return: The aceite of this BoletoResponse.
         :rtype: bool
@@ -500,7 +512,7 @@ class BoletoResponse(object):
     def aceite(self, aceite):
         """
         Sets the aceite of this BoletoResponse.
-        Aceite informa ao banco se deve aceitar o boleto ap\u00F3s a data de vencimento (padr\u00E3o: \"N\")
+        {{{boleto_response_aceite_value}}}
 
         :param aceite: The aceite of this BoletoResponse.
         :type: bool
@@ -511,7 +523,7 @@ class BoletoResponse(object):
     def especie_do_documento(self):
         """
         Gets the especie_do_documento of this BoletoResponse.
-        Esp\u00E9cie do documento \u00E9 o identificador do tipo de boleto (padr\u00E3o: \"DV\")
+        {{{boleto_response_especie_do_documento_value}}}
 
         :return: The especie_do_documento of this BoletoResponse.
         :rtype: str
@@ -522,7 +534,7 @@ class BoletoResponse(object):
     def especie_do_documento(self, especie_do_documento):
         """
         Sets the especie_do_documento of this BoletoResponse.
-        Esp\u00E9cie do documento \u00E9 o identificador do tipo de boleto (padr\u00E3o: \"DV\")
+        {{{boleto_response_especie_do_documento_value}}}
 
         :param especie_do_documento: The especie_do_documento of this BoletoResponse.
         :type: str
@@ -533,7 +545,7 @@ class BoletoResponse(object):
     def especie(self):
         """
         Gets the especie of this BoletoResponse.
-        Esp\u00E9cie \u00E9 o identificador da moeda do boleto (padr\u00E3o: \"R$\")
+        {{{boleto_response_especie_value}}}
 
         :return: The especie of this BoletoResponse.
         :rtype: str
@@ -544,7 +556,7 @@ class BoletoResponse(object):
     def especie(self, especie):
         """
         Sets the especie of this BoletoResponse.
-        Esp\u00E9cie \u00E9 o identificador da moeda do boleto (padr\u00E3o: \"R$\")
+        {{{boleto_response_especie_value}}}
 
         :param especie: The especie of this BoletoResponse.
         :type: str
@@ -555,7 +567,7 @@ class BoletoResponse(object):
     def instrucoes(self):
         """
         Gets the instrucoes of this BoletoResponse.
-        Instru\u00E7\u00F5es para o benefici\u00E1rio
+        {{{boleto_response_instrucoes_value}}}
 
         :return: The instrucoes of this BoletoResponse.
         :rtype: list[str]
@@ -566,7 +578,7 @@ class BoletoResponse(object):
     def instrucoes(self, instrucoes):
         """
         Sets the instrucoes of this BoletoResponse.
-        Instru\u00E7\u00F5es para o benefici\u00E1rio
+        {{{boleto_response_instrucoes_value}}}
 
         :param instrucoes: The instrucoes of this BoletoResponse.
         :type: list[str]
@@ -577,7 +589,7 @@ class BoletoResponse(object):
     def locais_de_pagamento(self):
         """
         Gets the locais_de_pagamento of this BoletoResponse.
-        Locais de pagamento
+        {{{boleto_response_locais_de_pagamento_value}}}
 
         :return: The locais_de_pagamento of this BoletoResponse.
         :rtype: list[str]
@@ -588,7 +600,7 @@ class BoletoResponse(object):
     def locais_de_pagamento(self, locais_de_pagamento):
         """
         Sets the locais_de_pagamento of this BoletoResponse.
-        Locais de pagamento
+        {{{boleto_response_locais_de_pagamento_value}}}
 
         :param locais_de_pagamento: The locais_de_pagamento of this BoletoResponse.
         :type: list[str]
@@ -599,7 +611,7 @@ class BoletoResponse(object):
     def nome_pagador(self):
         """
         Gets the nome_pagador of this BoletoResponse.
-        Pagador \u00E9 a pessoa/empresa que deve pagar o boleto
+        {{{boleto_response_nome_pagador_value}}}
 
         :return: The nome_pagador of this BoletoResponse.
         :rtype: str
@@ -610,7 +622,7 @@ class BoletoResponse(object):
     def nome_pagador(self, nome_pagador):
         """
         Sets the nome_pagador of this BoletoResponse.
-        Pagador \u00E9 a pessoa/empresa que deve pagar o boleto
+        {{{boleto_response_nome_pagador_value}}}
 
         :param nome_pagador: The nome_pagador of this BoletoResponse.
         :type: str
@@ -621,7 +633,7 @@ class BoletoResponse(object):
     def documento_pagador(self):
         """
         Gets the documento_pagador of this BoletoResponse.
-        Documento do pagador (CPF ou CNPJ)
+        {{{boleto_response_documento_pagador_value}}}
 
         :return: The documento_pagador of this BoletoResponse.
         :rtype: str
@@ -632,7 +644,7 @@ class BoletoResponse(object):
     def documento_pagador(self, documento_pagador):
         """
         Sets the documento_pagador of this BoletoResponse.
-        Documento do pagador (CPF ou CNPJ)
+        {{{boleto_response_documento_pagador_value}}}
 
         :param documento_pagador: The documento_pagador of this BoletoResponse.
         :type: str
@@ -643,7 +655,7 @@ class BoletoResponse(object):
     def logradouro_pagador(self):
         """
         Gets the logradouro_pagador of this BoletoResponse.
-        Logradouro do pagador
+        {{{boleto_response_logradouro_pagador_value}}}
 
         :return: The logradouro_pagador of this BoletoResponse.
         :rtype: str
@@ -654,7 +666,7 @@ class BoletoResponse(object):
     def logradouro_pagador(self, logradouro_pagador):
         """
         Sets the logradouro_pagador of this BoletoResponse.
-        Logradouro do pagador
+        {{{boleto_response_logradouro_pagador_value}}}
 
         :param logradouro_pagador: The logradouro_pagador of this BoletoResponse.
         :type: str
@@ -665,7 +677,7 @@ class BoletoResponse(object):
     def bairro_pagador(self):
         """
         Gets the bairro_pagador of this BoletoResponse.
-        Bairro do pagador
+        {{{boleto_response_bairro_pagador_value}}}
 
         :return: The bairro_pagador of this BoletoResponse.
         :rtype: str
@@ -676,7 +688,7 @@ class BoletoResponse(object):
     def bairro_pagador(self, bairro_pagador):
         """
         Sets the bairro_pagador of this BoletoResponse.
-        Bairro do pagador
+        {{{boleto_response_bairro_pagador_value}}}
 
         :param bairro_pagador: The bairro_pagador of this BoletoResponse.
         :type: str
@@ -687,7 +699,7 @@ class BoletoResponse(object):
     def cep_pagador(self):
         """
         Gets the cep_pagador of this BoletoResponse.
-        CEP do pagador
+        {{{boleto_response_cep_pagador_value}}}
 
         :return: The cep_pagador of this BoletoResponse.
         :rtype: str
@@ -698,7 +710,7 @@ class BoletoResponse(object):
     def cep_pagador(self, cep_pagador):
         """
         Sets the cep_pagador of this BoletoResponse.
-        CEP do pagador
+        {{{boleto_response_cep_pagador_value}}}
 
         :param cep_pagador: The cep_pagador of this BoletoResponse.
         :type: str
@@ -709,7 +721,7 @@ class BoletoResponse(object):
     def cidade_pagador(self):
         """
         Gets the cidade_pagador of this BoletoResponse.
-        Cidade do pagador
+        {{{boleto_response_cidade_pagador_value}}}
 
         :return: The cidade_pagador of this BoletoResponse.
         :rtype: str
@@ -720,7 +732,7 @@ class BoletoResponse(object):
     def cidade_pagador(self, cidade_pagador):
         """
         Sets the cidade_pagador of this BoletoResponse.
-        Cidade do pagador
+        {{{boleto_response_cidade_pagador_value}}}
 
         :param cidade_pagador: The cidade_pagador of this BoletoResponse.
         :type: str
@@ -731,7 +743,7 @@ class BoletoResponse(object):
     def uf_pagador(self):
         """
         Gets the uf_pagador of this BoletoResponse.
-        Unidade federativa do pagador
+        {{{boleto_response_uf_pagador_value}}}
 
         :return: The uf_pagador of this BoletoResponse.
         :rtype: str
@@ -742,7 +754,7 @@ class BoletoResponse(object):
     def uf_pagador(self, uf_pagador):
         """
         Sets the uf_pagador of this BoletoResponse.
-        Unidade federativa do pagador
+        {{{boleto_response_uf_pagador_value}}}
 
         :param uf_pagador: The uf_pagador of this BoletoResponse.
         :type: str
@@ -753,7 +765,7 @@ class BoletoResponse(object):
     def codigo_de_barras(self):
         """
         Gets the codigo_de_barras of this BoletoResponse.
-        Valor num\u00E9rico do c\u00F3digo de barras
+        {{{boleto_response_codigo_de_barras_value}}}
 
         :return: The codigo_de_barras of this BoletoResponse.
         :rtype: str
@@ -764,7 +776,7 @@ class BoletoResponse(object):
     def codigo_de_barras(self, codigo_de_barras):
         """
         Sets the codigo_de_barras of this BoletoResponse.
-        Valor num\u00E9rico do c\u00F3digo de barras
+        {{{boleto_response_codigo_de_barras_value}}}
 
         :param codigo_de_barras: The codigo_de_barras of this BoletoResponse.
         :type: str
@@ -775,7 +787,7 @@ class BoletoResponse(object):
     def linha_digitavel(self):
         """
         Gets the linha_digitavel of this BoletoResponse.
-        Linha digit\u00E1vel formatada
+        {{{boleto_response_linha_digitavel_value}}}
 
         :return: The linha_digitavel of this BoletoResponse.
         :rtype: str
@@ -786,12 +798,100 @@ class BoletoResponse(object):
     def linha_digitavel(self, linha_digitavel):
         """
         Sets the linha_digitavel of this BoletoResponse.
-        Linha digit\u00E1vel formatada
+        {{{boleto_response_linha_digitavel_value}}}
 
         :param linha_digitavel: The linha_digitavel of this BoletoResponse.
         :type: str
         """
         self._linha_digitavel = linha_digitavel
+
+    @property
+    def id(self):
+        """
+        Gets the id of this BoletoResponse.
+        {{{boleto_response_id_value}}}
+
+        :return: The id of this BoletoResponse.
+        :rtype: int
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """
+        Sets the id of this BoletoResponse.
+        {{{boleto_response_id_value}}}
+
+        :param id: The id of this BoletoResponse.
+        :type: int
+        """
+        self._id = id
+
+    @property
+    def id_conta(self):
+        """
+        Gets the id_conta of this BoletoResponse.
+        {{{boleto_response_id_conta_value}}}
+
+        :return: The id_conta of this BoletoResponse.
+        :rtype: int
+        """
+        return self._id_conta
+
+    @id_conta.setter
+    def id_conta(self, id_conta):
+        """
+        Sets the id_conta of this BoletoResponse.
+        {{{boleto_response_id_conta_value}}}
+
+        :param id_conta: The id_conta of this BoletoResponse.
+        :type: int
+        """
+        self._id_conta = id_conta
+
+    @property
+    def endereco_cobranca_beneficiario(self):
+        """
+        Gets the endereco_cobranca_beneficiario of this BoletoResponse.
+        {{{boleto_response_endereco_cobranca_beneficiario_value}}}
+
+        :return: The endereco_cobranca_beneficiario of this BoletoResponse.
+        :rtype: str
+        """
+        return self._endereco_cobranca_beneficiario
+
+    @endereco_cobranca_beneficiario.setter
+    def endereco_cobranca_beneficiario(self, endereco_cobranca_beneficiario):
+        """
+        Sets the endereco_cobranca_beneficiario of this BoletoResponse.
+        {{{boleto_response_endereco_cobranca_beneficiario_value}}}
+
+        :param endereco_cobranca_beneficiario: The endereco_cobranca_beneficiario of this BoletoResponse.
+        :type: str
+        """
+        self._endereco_cobranca_beneficiario = endereco_cobranca_beneficiario
+
+    @property
+    def status(self):
+        """
+        Gets the status of this BoletoResponse.
+        {{{boleto_response_status_value}}}
+
+        :return: The status of this BoletoResponse.
+        :rtype: int
+        """
+        return self._status
+
+    @status.setter
+    def status(self, status):
+        """
+        Sets the status of this BoletoResponse.
+        {{{boleto_response_status_value}}}
+
+        :param status: The status of this BoletoResponse.
+        :type: int
+        """
+        self._status = status
 
     def to_dict(self):
         """

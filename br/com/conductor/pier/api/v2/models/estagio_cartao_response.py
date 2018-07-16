@@ -53,7 +53,7 @@ class EstagioCartaoResponse(object):
     def id(self):
         """
         Gets the id of this EstagioCartaoResponse.
-        Id do est\u00E1gio cart\u00E3o
+        {{{estagio_cartao_response_id_value}}}
 
         :return: The id of this EstagioCartaoResponse.
         :rtype: int
@@ -64,7 +64,7 @@ class EstagioCartaoResponse(object):
     def id(self, id):
         """
         Sets the id of this EstagioCartaoResponse.
-        Id do est\u00E1gio cart\u00E3o
+        {{{estagio_cartao_response_id_value}}}
 
         :param id: The id of this EstagioCartaoResponse.
         :type: int
@@ -75,7 +75,7 @@ class EstagioCartaoResponse(object):
     def nome(self):
         """
         Gets the nome of this EstagioCartaoResponse.
-        Nome do est\u00E1gio cart\u00E3o
+        {{{estagio_cartao_response_nome_value}}}
 
         :return: The nome of this EstagioCartaoResponse.
         :rtype: str
@@ -86,7 +86,7 @@ class EstagioCartaoResponse(object):
     def nome(self, nome):
         """
         Sets the nome of this EstagioCartaoResponse.
-        Nome do est\u00E1gio cart\u00E3o
+        {{{estagio_cartao_response_nome_value}}}
 
         :param nome: The nome of this EstagioCartaoResponse.
         :type: str

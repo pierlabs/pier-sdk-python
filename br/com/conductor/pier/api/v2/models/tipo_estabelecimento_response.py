@@ -53,7 +53,7 @@ class TipoEstabelecimentoResponse(object):
     def id(self):
         """
         Gets the id of this TipoEstabelecimentoResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o do tipo estabelecimento (id).
+        {{{tipo_estabelecimento_response_id_value}}}
 
         :return: The id of this TipoEstabelecimentoResponse.
         :rtype: int
@@ -64,7 +64,7 @@ class TipoEstabelecimentoResponse(object):
     def id(self, id):
         """
         Sets the id of this TipoEstabelecimentoResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o do tipo estabelecimento (id).
+        {{{tipo_estabelecimento_response_id_value}}}
 
         :param id: The id of this TipoEstabelecimentoResponse.
         :type: int
@@ -75,7 +75,7 @@ class TipoEstabelecimentoResponse(object):
     def descricao(self):
         """
         Gets the descricao of this TipoEstabelecimentoResponse.
-        Descri\u00E7\u00E3o do tipo de estabelecimento.
+        {{{tipo_estabelecimento_response_descricao_value}}}
 
         :return: The descricao of this TipoEstabelecimentoResponse.
         :rtype: str
@@ -86,7 +86,7 @@ class TipoEstabelecimentoResponse(object):
     def descricao(self, descricao):
         """
         Sets the descricao of this TipoEstabelecimentoResponse.
-        Descri\u00E7\u00E3o do tipo de estabelecimento.
+        {{{tipo_estabelecimento_response_descricao_value}}}
 
         :param descricao: The descricao of this TipoEstabelecimentoResponse.
         :type: str

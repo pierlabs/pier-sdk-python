@@ -53,7 +53,7 @@ class ArquivoDetalhesPersist(object):
     def nome_campo(self):
         """
         Gets the nome_campo of this ArquivoDetalhesPersist.
-        Nome que identifica o detalhe do arquivo
+        {{{arquivo_detalhes_persist_nome_campo_value}}}
 
         :return: The nome_campo of this ArquivoDetalhesPersist.
         :rtype: str
@@ -64,7 +64,7 @@ class ArquivoDetalhesPersist(object):
     def nome_campo(self, nome_campo):
         """
         Sets the nome_campo of this ArquivoDetalhesPersist.
-        Nome que identifica o detalhe do arquivo
+        {{{arquivo_detalhes_persist_nome_campo_value}}}
 
         :param nome_campo: The nome_campo of this ArquivoDetalhesPersist.
         :type: str
@@ -75,7 +75,7 @@ class ArquivoDetalhesPersist(object):
     def conteudo(self):
         """
         Gets the conteudo of this ArquivoDetalhesPersist.
-        Conte\u00FAdo do nomeCampo
+        {{{arquivo_detalhes_persist_conteudo_value}}}
 
         :return: The conteudo of this ArquivoDetalhesPersist.
         :rtype: str
@@ -86,7 +86,7 @@ class ArquivoDetalhesPersist(object):
     def conteudo(self, conteudo):
         """
         Sets the conteudo of this ArquivoDetalhesPersist.
-        Conte\u00FAdo do nomeCampo
+        {{{arquivo_detalhes_persist_conteudo_value}}}
 
         :param conteudo: The conteudo of this ArquivoDetalhesPersist.
         :type: str

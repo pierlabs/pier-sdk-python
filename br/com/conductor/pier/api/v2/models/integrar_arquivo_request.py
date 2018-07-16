@@ -50,7 +50,7 @@ class IntegrarArquivoRequest(object):
     def numero_receita_federal(self):
         """
         Gets the numero_receita_federal of this IntegrarArquivoRequest.
-        N\u00FAmero Receita Federal (CPF) vinculado a um ou mais arquivos que ser\u00E3o enviados para realizar integra\u00E7\u00E3o
+        {{{integrar_arquivo_request_numero_receita_federal_value}}}
 
         :return: The numero_receita_federal of this IntegrarArquivoRequest.
         :rtype: str
@@ -61,7 +61,7 @@ class IntegrarArquivoRequest(object):
     def numero_receita_federal(self, numero_receita_federal):
         """
         Sets the numero_receita_federal of this IntegrarArquivoRequest.
-        N\u00FAmero Receita Federal (CPF) vinculado a um ou mais arquivos que ser\u00E3o enviados para realizar integra\u00E7\u00E3o
+        {{{integrar_arquivo_request_numero_receita_federal_value}}}
 
         :param numero_receita_federal: The numero_receita_federal of this IntegrarArquivoRequest.
         :type: str

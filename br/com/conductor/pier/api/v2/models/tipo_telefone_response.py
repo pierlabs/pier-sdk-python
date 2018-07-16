@@ -53,7 +53,7 @@ class TipoTelefoneResponse(object):
     def id(self):
         """
         Gets the id of this TipoTelefoneResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o do Tipo do Telefone (id).
+        {{{tipo_telefone_response_id_value}}}
 
         :return: The id of this TipoTelefoneResponse.
         :rtype: int
@@ -64,7 +64,7 @@ class TipoTelefoneResponse(object):
     def id(self, id):
         """
         Sets the id of this TipoTelefoneResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o do Tipo do Telefone (id).
+        {{{tipo_telefone_response_id_value}}}
 
         :param id: The id of this TipoTelefoneResponse.
         :type: int
@@ -75,7 +75,7 @@ class TipoTelefoneResponse(object):
     def nome(self):
         """
         Gets the nome of this TipoTelefoneResponse.
-        Nome do Tipo do Telefone
+        {{{tipo_telefone_response_nome_value}}}
 
         :return: The nome of this TipoTelefoneResponse.
         :rtype: str
@@ -86,7 +86,7 @@ class TipoTelefoneResponse(object):
     def nome(self, nome):
         """
         Sets the nome of this TipoTelefoneResponse.
-        Nome do Tipo do Telefone
+        {{{tipo_telefone_response_nome_value}}}
 
         :param nome: The nome of this TipoTelefoneResponse.
         :type: str

@@ -68,7 +68,7 @@ class ParcelamentoTransferenciaResponse(object):
     def numero_parcela(self):
         """
         Gets the numero_parcela of this ParcelamentoTransferenciaResponse.
-        N\u00FAmero de parcelas dispon\u00EDveis.
+        {{{parcelamento_transferencia_response_numero_parcela_value}}}
 
         :return: The numero_parcela of this ParcelamentoTransferenciaResponse.
         :rtype: int
@@ -79,7 +79,7 @@ class ParcelamentoTransferenciaResponse(object):
     def numero_parcela(self, numero_parcela):
         """
         Sets the numero_parcela of this ParcelamentoTransferenciaResponse.
-        N\u00FAmero de parcelas dispon\u00EDveis.
+        {{{parcelamento_transferencia_response_numero_parcela_value}}}
 
         :param numero_parcela: The numero_parcela of this ParcelamentoTransferenciaResponse.
         :type: int
@@ -90,7 +90,7 @@ class ParcelamentoTransferenciaResponse(object):
     def valor_parcelas(self):
         """
         Gets the valor_parcelas of this ParcelamentoTransferenciaResponse.
-        Valor das demais parcelas.
+        {{{parcelamento_transferencia_response_valor_parcelas_value}}}
 
         :return: The valor_parcelas of this ParcelamentoTransferenciaResponse.
         :rtype: float
@@ -101,7 +101,7 @@ class ParcelamentoTransferenciaResponse(object):
     def valor_parcelas(self, valor_parcelas):
         """
         Sets the valor_parcelas of this ParcelamentoTransferenciaResponse.
-        Valor das demais parcelas.
+        {{{parcelamento_transferencia_response_valor_parcelas_value}}}
 
         :param valor_parcelas: The valor_parcelas of this ParcelamentoTransferenciaResponse.
         :type: float
@@ -112,7 +112,7 @@ class ParcelamentoTransferenciaResponse(object):
     def valor_total(self):
         """
         Gets the valor_total of this ParcelamentoTransferenciaResponse.
-        Valor total do financiamento.
+        {{{parcelamento_transferencia_response_valor_total_value}}}
 
         :return: The valor_total of this ParcelamentoTransferenciaResponse.
         :rtype: float
@@ -123,7 +123,7 @@ class ParcelamentoTransferenciaResponse(object):
     def valor_total(self, valor_total):
         """
         Sets the valor_total of this ParcelamentoTransferenciaResponse.
-        Valor total do financiamento.
+        {{{parcelamento_transferencia_response_valor_total_value}}}
 
         :param valor_total: The valor_total of this ParcelamentoTransferenciaResponse.
         :type: float
@@ -134,7 +134,7 @@ class ParcelamentoTransferenciaResponse(object):
     def valor_tac(self):
         """
         Gets the valor_tac of this ParcelamentoTransferenciaResponse.
-        Valor da tarifa de contrata\u00E7\u00E3o.
+        {{{parcelamento_transferencia_response_valor_t_a_c_value}}}
 
         :return: The valor_tac of this ParcelamentoTransferenciaResponse.
         :rtype: float
@@ -145,7 +145,7 @@ class ParcelamentoTransferenciaResponse(object):
     def valor_tac(self, valor_tac):
         """
         Sets the valor_tac of this ParcelamentoTransferenciaResponse.
-        Valor da tarifa de contrata\u00E7\u00E3o.
+        {{{parcelamento_transferencia_response_valor_t_a_c_value}}}
 
         :param valor_tac: The valor_tac of this ParcelamentoTransferenciaResponse.
         :type: float
@@ -156,7 +156,7 @@ class ParcelamentoTransferenciaResponse(object):
     def valor_iof(self):
         """
         Gets the valor_iof of this ParcelamentoTransferenciaResponse.
-        IOF calculado para o cliente
+        {{{parcelamento_transferencia_response_valor_i_o_f_value}}}
 
         :return: The valor_iof of this ParcelamentoTransferenciaResponse.
         :rtype: float
@@ -167,7 +167,7 @@ class ParcelamentoTransferenciaResponse(object):
     def valor_iof(self, valor_iof):
         """
         Sets the valor_iof of this ParcelamentoTransferenciaResponse.
-        IOF calculado para o cliente
+        {{{parcelamento_transferencia_response_valor_i_o_f_value}}}
 
         :param valor_iof: The valor_iof of this ParcelamentoTransferenciaResponse.
         :type: float
@@ -178,7 +178,7 @@ class ParcelamentoTransferenciaResponse(object):
     def taxa_juros(self):
         """
         Gets the taxa_juros of this ParcelamentoTransferenciaResponse.
-        Valor da taxa de juros.
+        {{{parcelamento_transferencia_response_taxa_juros_value}}}
 
         :return: The taxa_juros of this ParcelamentoTransferenciaResponse.
         :rtype: float
@@ -189,7 +189,7 @@ class ParcelamentoTransferenciaResponse(object):
     def taxa_juros(self, taxa_juros):
         """
         Sets the taxa_juros of this ParcelamentoTransferenciaResponse.
-        Valor da taxa de juros.
+        {{{parcelamento_transferencia_response_taxa_juros_value}}}
 
         :param taxa_juros: The taxa_juros of this ParcelamentoTransferenciaResponse.
         :type: float
@@ -200,7 +200,7 @@ class ParcelamentoTransferenciaResponse(object):
     def cet_anual(self):
         """
         Gets the cet_anual of this ParcelamentoTransferenciaResponse.
-        CET anual.
+        {{{parcelamento_transferencia_response_cet_anual_value}}}
 
         :return: The cet_anual of this ParcelamentoTransferenciaResponse.
         :rtype: float
@@ -211,7 +211,7 @@ class ParcelamentoTransferenciaResponse(object):
     def cet_anual(self, cet_anual):
         """
         Sets the cet_anual of this ParcelamentoTransferenciaResponse.
-        CET anual.
+        {{{parcelamento_transferencia_response_cet_anual_value}}}
 
         :param cet_anual: The cet_anual of this ParcelamentoTransferenciaResponse.
         :type: float

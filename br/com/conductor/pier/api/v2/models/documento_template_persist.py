@@ -56,7 +56,7 @@ class DocumentoTemplatePersist(object):
     def id_tipo_template(self):
         """
         Gets the id_tipo_template of this DocumentoTemplatePersist.
-        ID para o Tipo de Template vinculado ao template.
+        {{{documento_template_persist_id_tipo_template_value}}}
 
         :return: The id_tipo_template of this DocumentoTemplatePersist.
         :rtype: int
@@ -67,7 +67,7 @@ class DocumentoTemplatePersist(object):
     def id_tipo_template(self, id_tipo_template):
         """
         Sets the id_tipo_template of this DocumentoTemplatePersist.
-        ID para o Tipo de Template vinculado ao template.
+        {{{documento_template_persist_id_tipo_template_value}}}
 
         :param id_tipo_template: The id_tipo_template of this DocumentoTemplatePersist.
         :type: int
@@ -78,7 +78,7 @@ class DocumentoTemplatePersist(object):
     def template(self):
         """
         Gets the template of this DocumentoTemplatePersist.
-        Template para o conte\u00FAdo do documento.
+        {{{documento_template_persist_template_value}}}
 
         :return: The template of this DocumentoTemplatePersist.
         :rtype: str
@@ -89,7 +89,7 @@ class DocumentoTemplatePersist(object):
     def template(self, template):
         """
         Sets the template of this DocumentoTemplatePersist.
-        Template para o conte\u00FAdo do documento.
+        {{{documento_template_persist_template_value}}}
 
         :param template: The template of this DocumentoTemplatePersist.
         :type: str
@@ -100,7 +100,7 @@ class DocumentoTemplatePersist(object):
     def integracoes(self):
         """
         Gets the integracoes of this DocumentoTemplatePersist.
-        Lista de configura\u00E7\u00F5es de integra\u00E7\u00E3o
+        {{{documento_template_persist_integracoes_value}}}
 
         :return: The integracoes of this DocumentoTemplatePersist.
         :rtype: list[ReferenciaIdPersist]
@@ -111,7 +111,7 @@ class DocumentoTemplatePersist(object):
     def integracoes(self, integracoes):
         """
         Sets the integracoes of this DocumentoTemplatePersist.
-        Lista de configura\u00E7\u00F5es de integra\u00E7\u00E3o
+        {{{documento_template_persist_integracoes_value}}}
 
         :param integracoes: The integracoes of this DocumentoTemplatePersist.
         :type: list[ReferenciaIdPersist]

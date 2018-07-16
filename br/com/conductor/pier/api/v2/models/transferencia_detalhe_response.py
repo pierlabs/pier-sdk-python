@@ -71,7 +71,7 @@ class TransferenciaDetalheResponse(object):
     def id(self):
         """
         Gets the id of this TransferenciaDetalheResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o da transfer\u00EAncia (id).
+        {{{transferencia_detalhe_response_id_value}}}
 
         :return: The id of this TransferenciaDetalheResponse.
         :rtype: int
@@ -82,7 +82,7 @@ class TransferenciaDetalheResponse(object):
     def id(self, id):
         """
         Sets the id of this TransferenciaDetalheResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o da transfer\u00EAncia (id).
+        {{{transferencia_detalhe_response_id_value}}}
 
         :param id: The id of this TransferenciaDetalheResponse.
         :type: int
@@ -93,7 +93,7 @@ class TransferenciaDetalheResponse(object):
     def data_transferencia(self):
         """
         Gets the data_transferencia of this TransferenciaDetalheResponse.
-        Data estabelecida para ocorrer a transfer\u00EAncia.
+        {{{transferencia_detalhe_response_data_transferencia_value}}}
 
         :return: The data_transferencia of this TransferenciaDetalheResponse.
         :rtype: str
@@ -104,7 +104,7 @@ class TransferenciaDetalheResponse(object):
     def data_transferencia(self, data_transferencia):
         """
         Sets the data_transferencia of this TransferenciaDetalheResponse.
-        Data estabelecida para ocorrer a transfer\u00EAncia.
+        {{{transferencia_detalhe_response_data_transferencia_value}}}
 
         :param data_transferencia: The data_transferencia of this TransferenciaDetalheResponse.
         :type: str
@@ -115,7 +115,7 @@ class TransferenciaDetalheResponse(object):
     def id_conta_origem(self):
         """
         Gets the id_conta_origem of this TransferenciaDetalheResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o da conta em que o valor ser\u00E1 debitado para a transfer\u00EAncia. (id).
+        {{{transferencia_detalhe_response_id_conta_origem_value}}}
 
         :return: The id_conta_origem of this TransferenciaDetalheResponse.
         :rtype: int
@@ -126,7 +126,7 @@ class TransferenciaDetalheResponse(object):
     def id_conta_origem(self, id_conta_origem):
         """
         Sets the id_conta_origem of this TransferenciaDetalheResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o da conta em que o valor ser\u00E1 debitado para a transfer\u00EAncia. (id).
+        {{{transferencia_detalhe_response_id_conta_origem_value}}}
 
         :param id_conta_origem: The id_conta_origem of this TransferenciaDetalheResponse.
         :type: int
@@ -137,7 +137,7 @@ class TransferenciaDetalheResponse(object):
     def nome_pessoa_origem(self):
         """
         Gets the nome_pessoa_origem of this TransferenciaDetalheResponse.
-        Apresenta o nome completo da pessoa que realizou a Transfer\u00EAncia.
+        {{{transferencia_detalhe_response_nome_pessoa_origem_value}}}
 
         :return: The nome_pessoa_origem of this TransferenciaDetalheResponse.
         :rtype: str
@@ -148,7 +148,7 @@ class TransferenciaDetalheResponse(object):
     def nome_pessoa_origem(self, nome_pessoa_origem):
         """
         Sets the nome_pessoa_origem of this TransferenciaDetalheResponse.
-        Apresenta o nome completo da pessoa que realizou a Transfer\u00EAncia.
+        {{{transferencia_detalhe_response_nome_pessoa_origem_value}}}
 
         :param nome_pessoa_origem: The nome_pessoa_origem of this TransferenciaDetalheResponse.
         :type: str
@@ -159,7 +159,7 @@ class TransferenciaDetalheResponse(object):
     def id_conta_destino(self):
         """
         Gets the id_conta_destino of this TransferenciaDetalheResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o da conta em que o valor ser\u00E1 creditado para a transfer\u00EAncia. (id).
+        {{{transferencia_detalhe_response_id_conta_destino_value}}}
 
         :return: The id_conta_destino of this TransferenciaDetalheResponse.
         :rtype: int
@@ -170,7 +170,7 @@ class TransferenciaDetalheResponse(object):
     def id_conta_destino(self, id_conta_destino):
         """
         Sets the id_conta_destino of this TransferenciaDetalheResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o da conta em que o valor ser\u00E1 creditado para a transfer\u00EAncia. (id).
+        {{{transferencia_detalhe_response_id_conta_destino_value}}}
 
         :param id_conta_destino: The id_conta_destino of this TransferenciaDetalheResponse.
         :type: int
@@ -181,7 +181,7 @@ class TransferenciaDetalheResponse(object):
     def nome_pessoa_destino(self):
         """
         Gets the nome_pessoa_destino of this TransferenciaDetalheResponse.
-        Apresenta o nome completo da pessoa que recebeu a Transfer\u00EAncia.
+        {{{transferencia_detalhe_response_nome_pessoa_destino_value}}}
 
         :return: The nome_pessoa_destino of this TransferenciaDetalheResponse.
         :rtype: str
@@ -192,7 +192,7 @@ class TransferenciaDetalheResponse(object):
     def nome_pessoa_destino(self, nome_pessoa_destino):
         """
         Sets the nome_pessoa_destino of this TransferenciaDetalheResponse.
-        Apresenta o nome completo da pessoa que recebeu a Transfer\u00EAncia.
+        {{{transferencia_detalhe_response_nome_pessoa_destino_value}}}
 
         :param nome_pessoa_destino: The nome_pessoa_destino of this TransferenciaDetalheResponse.
         :type: str
@@ -203,7 +203,7 @@ class TransferenciaDetalheResponse(object):
     def valor_transferencia(self):
         """
         Gets the valor_transferencia of this TransferenciaDetalheResponse.
-        Valor estabelecido para ser transferido.
+        {{{transferencia_detalhe_response_valor_transferencia_value}}}
 
         :return: The valor_transferencia of this TransferenciaDetalheResponse.
         :rtype: float
@@ -214,7 +214,7 @@ class TransferenciaDetalheResponse(object):
     def valor_transferencia(self, valor_transferencia):
         """
         Sets the valor_transferencia of this TransferenciaDetalheResponse.
-        Valor estabelecido para ser transferido.
+        {{{transferencia_detalhe_response_valor_transferencia_value}}}
 
         :param valor_transferencia: The valor_transferencia of this TransferenciaDetalheResponse.
         :type: float
@@ -225,7 +225,7 @@ class TransferenciaDetalheResponse(object):
     def valor_tarifa(self):
         """
         Gets the valor_tarifa of this TransferenciaDetalheResponse.
-        Valor estabelecido da tarifa para a transfer\u00EAncia.
+        {{{transferencia_detalhe_response_valor_tarifa_value}}}
 
         :return: The valor_tarifa of this TransferenciaDetalheResponse.
         :rtype: float
@@ -236,7 +236,7 @@ class TransferenciaDetalheResponse(object):
     def valor_tarifa(self, valor_tarifa):
         """
         Sets the valor_tarifa of this TransferenciaDetalheResponse.
-        Valor estabelecido da tarifa para a transfer\u00EAncia.
+        {{{transferencia_detalhe_response_valor_tarifa_value}}}
 
         :param valor_tarifa: The valor_tarifa of this TransferenciaDetalheResponse.
         :type: float

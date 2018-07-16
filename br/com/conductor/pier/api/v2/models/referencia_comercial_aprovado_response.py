@@ -62,7 +62,7 @@ class ReferenciaComercialAprovadoResponse(object):
     def razao_social(self):
         """
         Gets the razao_social of this ReferenciaComercialAprovadoResponse.
-        Apresenta o nome completo da raz\u00E3o social da refer\u00EAncia comercial (nome empresarial)
+        {{{referencia_comercial_aprovado_response_razao_social_value}}}
 
         :return: The razao_social of this ReferenciaComercialAprovadoResponse.
         :rtype: str
@@ -73,7 +73,7 @@ class ReferenciaComercialAprovadoResponse(object):
     def razao_social(self, razao_social):
         """
         Sets the razao_social of this ReferenciaComercialAprovadoResponse.
-        Apresenta o nome completo da raz\u00E3o social da refer\u00EAncia comercial (nome empresarial)
+        {{{referencia_comercial_aprovado_response_razao_social_value}}}
 
         :param razao_social: The razao_social of this ReferenciaComercialAprovadoResponse.
         :type: str
@@ -84,7 +84,7 @@ class ReferenciaComercialAprovadoResponse(object):
     def nome_contrato(self):
         """
         Gets the nome_contrato of this ReferenciaComercialAprovadoResponse.
-        Apresenta o nome do respons\u00E1vel pela refer\u00EAncia comercial
+        {{{referencia_comercial_aprovado_response_nome_contrato_value}}}
 
         :return: The nome_contrato of this ReferenciaComercialAprovadoResponse.
         :rtype: str
@@ -95,7 +95,7 @@ class ReferenciaComercialAprovadoResponse(object):
     def nome_contrato(self, nome_contrato):
         """
         Sets the nome_contrato of this ReferenciaComercialAprovadoResponse.
-        Apresenta o nome do respons\u00E1vel pela refer\u00EAncia comercial
+        {{{referencia_comercial_aprovado_response_nome_contrato_value}}}
 
         :param nome_contrato: The nome_contrato of this ReferenciaComercialAprovadoResponse.
         :type: str
@@ -106,7 +106,7 @@ class ReferenciaComercialAprovadoResponse(object):
     def ddd(self):
         """
         Gets the ddd of this ReferenciaComercialAprovadoResponse.
-        Apresenta o DDD do n\u00FAmero de contato da refer\u00EAncia comercial
+        {{{referencia_comercial_aprovado_response_ddd_value}}}
 
         :return: The ddd of this ReferenciaComercialAprovadoResponse.
         :rtype: str
@@ -117,7 +117,7 @@ class ReferenciaComercialAprovadoResponse(object):
     def ddd(self, ddd):
         """
         Sets the ddd of this ReferenciaComercialAprovadoResponse.
-        Apresenta o DDD do n\u00FAmero de contato da refer\u00EAncia comercial
+        {{{referencia_comercial_aprovado_response_ddd_value}}}
 
         :param ddd: The ddd of this ReferenciaComercialAprovadoResponse.
         :type: str
@@ -128,7 +128,7 @@ class ReferenciaComercialAprovadoResponse(object):
     def telefone(self):
         """
         Gets the telefone of this ReferenciaComercialAprovadoResponse.
-        Apresenta o n\u00FAmero de contato da refer\u00EAncia comercial
+        {{{referencia_comercial_aprovado_response_telefone_value}}}
 
         :return: The telefone of this ReferenciaComercialAprovadoResponse.
         :rtype: str
@@ -139,7 +139,7 @@ class ReferenciaComercialAprovadoResponse(object):
     def telefone(self, telefone):
         """
         Sets the telefone of this ReferenciaComercialAprovadoResponse.
-        Apresenta o n\u00FAmero de contato da refer\u00EAncia comercial
+        {{{referencia_comercial_aprovado_response_telefone_value}}}
 
         :param telefone: The telefone of this ReferenciaComercialAprovadoResponse.
         :type: str
@@ -150,7 +150,7 @@ class ReferenciaComercialAprovadoResponse(object):
     def email(self):
         """
         Gets the email of this ReferenciaComercialAprovadoResponse.
-        Apresenta o e-mail de contato da refer\u00EAncia comercial
+        {{{referencia_comercial_aprovado_response_email_value}}}
 
         :return: The email of this ReferenciaComercialAprovadoResponse.
         :rtype: str
@@ -161,7 +161,7 @@ class ReferenciaComercialAprovadoResponse(object):
     def email(self, email):
         """
         Sets the email of this ReferenciaComercialAprovadoResponse.
-        Apresenta o e-mail de contato da refer\u00EAncia comercial
+        {{{referencia_comercial_aprovado_response_email_value}}}
 
         :param email: The email of this ReferenciaComercialAprovadoResponse.
         :type: str

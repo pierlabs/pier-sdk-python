@@ -44,6 +44,7 @@ class PessoaJuridicaAprovadaPersist(object):
             'data_abertura_empresa': 'str',
             'id_origem_comercial': 'int',
             'id_produto': 'int',
+            'numero_banco': 'int',
             'numero_agencia': 'int',
             'numero_conta_corrente': 'str',
             'email': 'str',
@@ -52,10 +53,10 @@ class PessoaJuridicaAprovadaPersist(object):
             'valor_renda': 'float',
             'canal_entrada': 'str',
             'valor_pontuacao': 'int',
-            'telefones': 'list[TelefonePessoaAprovadaPersist]',
-            'enderecos': 'list[EnderecoAprovadoPersist]',
-            'socios': 'list[PessoaPersist]',
-            'referencias_comerciais': 'list[RefenciaComercialAprovadoPersist]',
+            'telefones': 'list[TelefonePessoaAprovadaPersistValue]',
+            'enderecos': 'list[EnderecoAprovadoPersistValue]',
+            'socios': 'list[SocioAprovadoPersistValue]',
+            'referencias_comerciais': 'list[ReferenciaComercialAprovadoPersistValue]',
             'limite_global': 'float',
             'limite_maximo': 'float',
             'limite_parcelas': 'float'
@@ -69,6 +70,7 @@ class PessoaJuridicaAprovadaPersist(object):
             'data_abertura_empresa': 'dataAberturaEmpresa',
             'id_origem_comercial': 'idOrigemComercial',
             'id_produto': 'idProduto',
+            'numero_banco': 'numeroBanco',
             'numero_agencia': 'numeroAgencia',
             'numero_conta_corrente': 'numeroContaCorrente',
             'email': 'email',
@@ -93,6 +95,7 @@ class PessoaJuridicaAprovadaPersist(object):
         self._data_abertura_empresa = None
         self._id_origem_comercial = None
         self._id_produto = None
+        self._numero_banco = None
         self._numero_agencia = None
         self._numero_conta_corrente = None
         self._email = None
@@ -113,7 +116,7 @@ class PessoaJuridicaAprovadaPersist(object):
     def razao_social(self):
         """
         Gets the razao_social of this PessoaJuridicaAprovadaPersist.
-        Apresenta o nome completo da raz\u00E3o social (nome empresarial)'.
+        {{{pessoa_juridica_aprovada_persist_razao_social_value}}}
 
         :return: The razao_social of this PessoaJuridicaAprovadaPersist.
         :rtype: str
@@ -124,7 +127,7 @@ class PessoaJuridicaAprovadaPersist(object):
     def razao_social(self, razao_social):
         """
         Sets the razao_social of this PessoaJuridicaAprovadaPersist.
-        Apresenta o nome completo da raz\u00E3o social (nome empresarial)'.
+        {{{pessoa_juridica_aprovada_persist_razao_social_value}}}
 
         :param razao_social: The razao_social of this PessoaJuridicaAprovadaPersist.
         :type: str
@@ -135,7 +138,7 @@ class PessoaJuridicaAprovadaPersist(object):
     def nome_fantasia(self):
         """
         Gets the nome_fantasia of this PessoaJuridicaAprovadaPersist.
-        Apresenta o nome fantasia da empresa.
+        {{{pessoa_juridica_aprovada_persist_nome_fantasia_value}}}
 
         :return: The nome_fantasia of this PessoaJuridicaAprovadaPersist.
         :rtype: str
@@ -146,7 +149,7 @@ class PessoaJuridicaAprovadaPersist(object):
     def nome_fantasia(self, nome_fantasia):
         """
         Sets the nome_fantasia of this PessoaJuridicaAprovadaPersist.
-        Apresenta o nome fantasia da empresa.
+        {{{pessoa_juridica_aprovada_persist_nome_fantasia_value}}}
 
         :param nome_fantasia: The nome_fantasia of this PessoaJuridicaAprovadaPersist.
         :type: str
@@ -157,7 +160,7 @@ class PessoaJuridicaAprovadaPersist(object):
     def cnpj(self):
         """
         Gets the cnpj of this PessoaJuridicaAprovadaPersist.
-        N\u00FAmero do Cadastro Nacional de Pessoa Juridica (CNPJ)
+        {{{pessoa_juridica_aprovada_persist_cnpj_value}}}
 
         :return: The cnpj of this PessoaJuridicaAprovadaPersist.
         :rtype: str
@@ -168,7 +171,7 @@ class PessoaJuridicaAprovadaPersist(object):
     def cnpj(self, cnpj):
         """
         Sets the cnpj of this PessoaJuridicaAprovadaPersist.
-        N\u00FAmero do Cadastro Nacional de Pessoa Juridica (CNPJ)
+        {{{pessoa_juridica_aprovada_persist_cnpj_value}}}
 
         :param cnpj: The cnpj of this PessoaJuridicaAprovadaPersist.
         :type: str
@@ -179,7 +182,7 @@ class PessoaJuridicaAprovadaPersist(object):
     def inscricao_estadual(self):
         """
         Gets the inscricao_estadual of this PessoaJuridicaAprovadaPersist.
-        N\u00FAmero da Inscri\u00E7\u00E3o Estadual (IE).
+        {{{pessoa_juridica_aprovada_persist_inscricao_estadual_value}}}
 
         :return: The inscricao_estadual of this PessoaJuridicaAprovadaPersist.
         :rtype: str
@@ -190,7 +193,7 @@ class PessoaJuridicaAprovadaPersist(object):
     def inscricao_estadual(self, inscricao_estadual):
         """
         Sets the inscricao_estadual of this PessoaJuridicaAprovadaPersist.
-        N\u00FAmero da Inscri\u00E7\u00E3o Estadual (IE).
+        {{{pessoa_juridica_aprovada_persist_inscricao_estadual_value}}}
 
         :param inscricao_estadual: The inscricao_estadual of this PessoaJuridicaAprovadaPersist.
         :type: str
@@ -201,7 +204,7 @@ class PessoaJuridicaAprovadaPersist(object):
     def data_abertura_empresa(self):
         """
         Gets the data_abertura_empresa of this PessoaJuridicaAprovadaPersist.
-        Data de abertura da empresa, essa data deve ser informada no formato: aaaa-MM-dd.
+        {{{pessoa_juridica_aprovada_persist_data_abertura_empresa_value}}}
 
         :return: The data_abertura_empresa of this PessoaJuridicaAprovadaPersist.
         :rtype: str
@@ -212,7 +215,7 @@ class PessoaJuridicaAprovadaPersist(object):
     def data_abertura_empresa(self, data_abertura_empresa):
         """
         Sets the data_abertura_empresa of this PessoaJuridicaAprovadaPersist.
-        Data de abertura da empresa, essa data deve ser informada no formato: aaaa-MM-dd.
+        {{{pessoa_juridica_aprovada_persist_data_abertura_empresa_value}}}
 
         :param data_abertura_empresa: The data_abertura_empresa of this PessoaJuridicaAprovadaPersist.
         :type: str
@@ -223,7 +226,7 @@ class PessoaJuridicaAprovadaPersist(object):
     def id_origem_comercial(self):
         """
         Gets the id_origem_comercial of this PessoaJuridicaAprovadaPersist.
-        Id da origem comercial
+        {{{pessoa_juridica_aprovada_persist_id_origem_comercial_value}}}
 
         :return: The id_origem_comercial of this PessoaJuridicaAprovadaPersist.
         :rtype: int
@@ -234,7 +237,7 @@ class PessoaJuridicaAprovadaPersist(object):
     def id_origem_comercial(self, id_origem_comercial):
         """
         Sets the id_origem_comercial of this PessoaJuridicaAprovadaPersist.
-        Id da origem comercial
+        {{{pessoa_juridica_aprovada_persist_id_origem_comercial_value}}}
 
         :param id_origem_comercial: The id_origem_comercial of this PessoaJuridicaAprovadaPersist.
         :type: int
@@ -245,7 +248,7 @@ class PessoaJuridicaAprovadaPersist(object):
     def id_produto(self):
         """
         Gets the id_produto of this PessoaJuridicaAprovadaPersist.
-        Id do produto
+        {{{pessoa_juridica_aprovada_persist_id_produto_value}}}
 
         :return: The id_produto of this PessoaJuridicaAprovadaPersist.
         :rtype: int
@@ -256,7 +259,7 @@ class PessoaJuridicaAprovadaPersist(object):
     def id_produto(self, id_produto):
         """
         Sets the id_produto of this PessoaJuridicaAprovadaPersist.
-        Id do produto
+        {{{pessoa_juridica_aprovada_persist_id_produto_value}}}
 
         :param id_produto: The id_produto of this PessoaJuridicaAprovadaPersist.
         :type: int
@@ -264,10 +267,32 @@ class PessoaJuridicaAprovadaPersist(object):
         self._id_produto = id_produto
 
     @property
+    def numero_banco(self):
+        """
+        Gets the numero_banco of this PessoaJuridicaAprovadaPersist.
+        {{{pessoa_juridica_aprovada_persist_numero_banco_value}}}
+
+        :return: The numero_banco of this PessoaJuridicaAprovadaPersist.
+        :rtype: int
+        """
+        return self._numero_banco
+
+    @numero_banco.setter
+    def numero_banco(self, numero_banco):
+        """
+        Sets the numero_banco of this PessoaJuridicaAprovadaPersist.
+        {{{pessoa_juridica_aprovada_persist_numero_banco_value}}}
+
+        :param numero_banco: The numero_banco of this PessoaJuridicaAprovadaPersist.
+        :type: int
+        """
+        self._numero_banco = numero_banco
+
+    @property
     def numero_agencia(self):
         """
         Gets the numero_agencia of this PessoaJuridicaAprovadaPersist.
-        N\u00FAmero da ag\u00EAncia.
+        {{{pessoa_juridica_aprovada_persist_numero_agencia_value}}}
 
         :return: The numero_agencia of this PessoaJuridicaAprovadaPersist.
         :rtype: int
@@ -278,7 +303,7 @@ class PessoaJuridicaAprovadaPersist(object):
     def numero_agencia(self, numero_agencia):
         """
         Sets the numero_agencia of this PessoaJuridicaAprovadaPersist.
-        N\u00FAmero da ag\u00EAncia.
+        {{{pessoa_juridica_aprovada_persist_numero_agencia_value}}}
 
         :param numero_agencia: The numero_agencia of this PessoaJuridicaAprovadaPersist.
         :type: int
@@ -289,7 +314,7 @@ class PessoaJuridicaAprovadaPersist(object):
     def numero_conta_corrente(self):
         """
         Gets the numero_conta_corrente of this PessoaJuridicaAprovadaPersist.
-        N\u00FAmero da conta corrente.
+        {{{pessoa_juridica_aprovada_persist_numero_conta_corrente_value}}}
 
         :return: The numero_conta_corrente of this PessoaJuridicaAprovadaPersist.
         :rtype: str
@@ -300,7 +325,7 @@ class PessoaJuridicaAprovadaPersist(object):
     def numero_conta_corrente(self, numero_conta_corrente):
         """
         Sets the numero_conta_corrente of this PessoaJuridicaAprovadaPersist.
-        N\u00FAmero da conta corrente.
+        {{{pessoa_juridica_aprovada_persist_numero_conta_corrente_value}}}
 
         :param numero_conta_corrente: The numero_conta_corrente of this PessoaJuridicaAprovadaPersist.
         :type: str
@@ -311,7 +336,7 @@ class PessoaJuridicaAprovadaPersist(object):
     def email(self):
         """
         Gets the email of this PessoaJuridicaAprovadaPersist.
-        Email da empresa
+        {{{pessoa_juridica_aprovada_persist_email_value}}}
 
         :return: The email of this PessoaJuridicaAprovadaPersist.
         :rtype: str
@@ -322,7 +347,7 @@ class PessoaJuridicaAprovadaPersist(object):
     def email(self, email):
         """
         Sets the email of this PessoaJuridicaAprovadaPersist.
-        Email da empresa
+        {{{pessoa_juridica_aprovada_persist_email_value}}}
 
         :param email: The email of this PessoaJuridicaAprovadaPersist.
         :type: str
@@ -333,7 +358,7 @@ class PessoaJuridicaAprovadaPersist(object):
     def dia_vencimento(self):
         """
         Gets the dia_vencimento of this PessoaJuridicaAprovadaPersist.
-        Dia vencimento
+        {{{pessoa_juridica_aprovada_persist_dia_vencimento_value}}}
 
         :return: The dia_vencimento of this PessoaJuridicaAprovadaPersist.
         :rtype: int
@@ -344,7 +369,7 @@ class PessoaJuridicaAprovadaPersist(object):
     def dia_vencimento(self, dia_vencimento):
         """
         Sets the dia_vencimento of this PessoaJuridicaAprovadaPersist.
-        Dia vencimento
+        {{{pessoa_juridica_aprovada_persist_dia_vencimento_value}}}
 
         :param dia_vencimento: The dia_vencimento of this PessoaJuridicaAprovadaPersist.
         :type: int
@@ -355,7 +380,7 @@ class PessoaJuridicaAprovadaPersist(object):
     def nome_impresso(self):
         """
         Gets the nome_impresso of this PessoaJuridicaAprovadaPersist.
-        Nome que deve ser impresso no cart\u00E3o
+        {{{pessoa_juridica_aprovada_persist_nome_impresso_value}}}
 
         :return: The nome_impresso of this PessoaJuridicaAprovadaPersist.
         :rtype: str
@@ -366,7 +391,7 @@ class PessoaJuridicaAprovadaPersist(object):
     def nome_impresso(self, nome_impresso):
         """
         Sets the nome_impresso of this PessoaJuridicaAprovadaPersist.
-        Nome que deve ser impresso no cart\u00E3o
+        {{{pessoa_juridica_aprovada_persist_nome_impresso_value}}}
 
         :param nome_impresso: The nome_impresso of this PessoaJuridicaAprovadaPersist.
         :type: str
@@ -377,7 +402,7 @@ class PessoaJuridicaAprovadaPersist(object):
     def valor_renda(self):
         """
         Gets the valor_renda of this PessoaJuridicaAprovadaPersist.
-        Apresenta o valor da renda compravada
+        {{{pessoa_juridica_aprovada_persist_valor_renda_value}}}
 
         :return: The valor_renda of this PessoaJuridicaAprovadaPersist.
         :rtype: float
@@ -388,7 +413,7 @@ class PessoaJuridicaAprovadaPersist(object):
     def valor_renda(self, valor_renda):
         """
         Sets the valor_renda of this PessoaJuridicaAprovadaPersist.
-        Apresenta o valor da renda compravada
+        {{{pessoa_juridica_aprovada_persist_valor_renda_value}}}
 
         :param valor_renda: The valor_renda of this PessoaJuridicaAprovadaPersist.
         :type: float
@@ -399,7 +424,7 @@ class PessoaJuridicaAprovadaPersist(object):
     def canal_entrada(self):
         """
         Gets the canal_entrada of this PessoaJuridicaAprovadaPersist.
-        Indica o canal pelo qual o cadastro do cliente foi realizado
+        {{{pessoa_juridica_aprovada_persist_canal_entrada_value}}}
 
         :return: The canal_entrada of this PessoaJuridicaAprovadaPersist.
         :rtype: str
@@ -410,7 +435,7 @@ class PessoaJuridicaAprovadaPersist(object):
     def canal_entrada(self, canal_entrada):
         """
         Sets the canal_entrada of this PessoaJuridicaAprovadaPersist.
-        Indica o canal pelo qual o cadastro do cliente foi realizado
+        {{{pessoa_juridica_aprovada_persist_canal_entrada_value}}}
 
         :param canal_entrada: The canal_entrada of this PessoaJuridicaAprovadaPersist.
         :type: str
@@ -421,7 +446,7 @@ class PessoaJuridicaAprovadaPersist(object):
     def valor_pontuacao(self):
         """
         Gets the valor_pontuacao of this PessoaJuridicaAprovadaPersist.
-        Indica o valor da pontua\u00E7\u00E3o atribuido ao cliente (caso n\u00E3o informado ser\u00E1 atribuido o valor = 0)
+        {{{pessoa_juridica_aprovada_persist_valor_pontuacao_value}}}
 
         :return: The valor_pontuacao of this PessoaJuridicaAprovadaPersist.
         :rtype: int
@@ -432,7 +457,7 @@ class PessoaJuridicaAprovadaPersist(object):
     def valor_pontuacao(self, valor_pontuacao):
         """
         Sets the valor_pontuacao of this PessoaJuridicaAprovadaPersist.
-        Indica o valor da pontua\u00E7\u00E3o atribuido ao cliente (caso n\u00E3o informado ser\u00E1 atribuido o valor = 0)
+        {{{pessoa_juridica_aprovada_persist_valor_pontuacao_value}}}
 
         :param valor_pontuacao: The valor_pontuacao of this PessoaJuridicaAprovadaPersist.
         :type: int
@@ -443,10 +468,10 @@ class PessoaJuridicaAprovadaPersist(object):
     def telefones(self):
         """
         Gets the telefones of this PessoaJuridicaAprovadaPersist.
-        Apresenta os telefones da empresa
+        {{{pessoa_juridica_aprovada_persist_telefones_value}}}
 
         :return: The telefones of this PessoaJuridicaAprovadaPersist.
-        :rtype: list[TelefonePessoaAprovadaPersist]
+        :rtype: list[TelefonePessoaAprovadaPersistValue]
         """
         return self._telefones
 
@@ -454,10 +479,10 @@ class PessoaJuridicaAprovadaPersist(object):
     def telefones(self, telefones):
         """
         Sets the telefones of this PessoaJuridicaAprovadaPersist.
-        Apresenta os telefones da empresa
+        {{{pessoa_juridica_aprovada_persist_telefones_value}}}
 
         :param telefones: The telefones of this PessoaJuridicaAprovadaPersist.
-        :type: list[TelefonePessoaAprovadaPersist]
+        :type: list[TelefonePessoaAprovadaPersistValue]
         """
         self._telefones = telefones
 
@@ -465,10 +490,10 @@ class PessoaJuridicaAprovadaPersist(object):
     def enderecos(self):
         """
         Gets the enderecos of this PessoaJuridicaAprovadaPersist.
-        Pode ser informado os seguintes tipos de endere\u00E7o: Residencial, Comercial, e Outros
+        {{{pessoa_juridica_aprovada_persist_enderecos_value}}}
 
         :return: The enderecos of this PessoaJuridicaAprovadaPersist.
-        :rtype: list[EnderecoAprovadoPersist]
+        :rtype: list[EnderecoAprovadoPersistValue]
         """
         return self._enderecos
 
@@ -476,10 +501,10 @@ class PessoaJuridicaAprovadaPersist(object):
     def enderecos(self, enderecos):
         """
         Sets the enderecos of this PessoaJuridicaAprovadaPersist.
-        Pode ser informado os seguintes tipos de endere\u00E7o: Residencial, Comercial, e Outros
+        {{{pessoa_juridica_aprovada_persist_enderecos_value}}}
 
         :param enderecos: The enderecos of this PessoaJuridicaAprovadaPersist.
-        :type: list[EnderecoAprovadoPersist]
+        :type: list[EnderecoAprovadoPersistValue]
         """
         self._enderecos = enderecos
 
@@ -487,10 +512,10 @@ class PessoaJuridicaAprovadaPersist(object):
     def socios(self):
         """
         Gets the socios of this PessoaJuridicaAprovadaPersist.
-        Apresenta os dados dos s\u00F3cios da empresa, caso exista
+        {{{pessoa_juridica_aprovada_persist_socios_value}}}
 
         :return: The socios of this PessoaJuridicaAprovadaPersist.
-        :rtype: list[PessoaPersist]
+        :rtype: list[SocioAprovadoPersistValue]
         """
         return self._socios
 
@@ -498,10 +523,10 @@ class PessoaJuridicaAprovadaPersist(object):
     def socios(self, socios):
         """
         Sets the socios of this PessoaJuridicaAprovadaPersist.
-        Apresenta os dados dos s\u00F3cios da empresa, caso exista
+        {{{pessoa_juridica_aprovada_persist_socios_value}}}
 
         :param socios: The socios of this PessoaJuridicaAprovadaPersist.
-        :type: list[PessoaPersist]
+        :type: list[SocioAprovadoPersistValue]
         """
         self._socios = socios
 
@@ -509,10 +534,10 @@ class PessoaJuridicaAprovadaPersist(object):
     def referencias_comerciais(self):
         """
         Gets the referencias_comerciais of this PessoaJuridicaAprovadaPersist.
-        Apresenta os dados das refer\u00EAncias comerciais
+        {{{pessoa_juridica_aprovada_persist_referencias_comerciais_value}}}
 
         :return: The referencias_comerciais of this PessoaJuridicaAprovadaPersist.
-        :rtype: list[RefenciaComercialAprovadoPersist]
+        :rtype: list[ReferenciaComercialAprovadoPersistValue]
         """
         return self._referencias_comerciais
 
@@ -520,10 +545,10 @@ class PessoaJuridicaAprovadaPersist(object):
     def referencias_comerciais(self, referencias_comerciais):
         """
         Sets the referencias_comerciais of this PessoaJuridicaAprovadaPersist.
-        Apresenta os dados das refer\u00EAncias comerciais
+        {{{pessoa_juridica_aprovada_persist_referencias_comerciais_value}}}
 
         :param referencias_comerciais: The referencias_comerciais of this PessoaJuridicaAprovadaPersist.
-        :type: list[RefenciaComercialAprovadoPersist]
+        :type: list[ReferenciaComercialAprovadoPersistValue]
         """
         self._referencias_comerciais = referencias_comerciais
 
@@ -531,7 +556,7 @@ class PessoaJuridicaAprovadaPersist(object):
     def limite_global(self):
         """
         Gets the limite_global of this PessoaJuridicaAprovadaPersist.
-        Valor do Limite Global
+        {{{pessoa_juridica_aprovada_persist_limite_global_value}}}
 
         :return: The limite_global of this PessoaJuridicaAprovadaPersist.
         :rtype: float
@@ -542,7 +567,7 @@ class PessoaJuridicaAprovadaPersist(object):
     def limite_global(self, limite_global):
         """
         Sets the limite_global of this PessoaJuridicaAprovadaPersist.
-        Valor do Limite Global
+        {{{pessoa_juridica_aprovada_persist_limite_global_value}}}
 
         :param limite_global: The limite_global of this PessoaJuridicaAprovadaPersist.
         :type: float
@@ -553,7 +578,7 @@ class PessoaJuridicaAprovadaPersist(object):
     def limite_maximo(self):
         """
         Gets the limite_maximo of this PessoaJuridicaAprovadaPersist.
-        Valor m\u00E1ximo do limite de cr\u00E9dito para realizar transa\u00E7\u00F5es
+        {{{pessoa_juridica_aprovada_persist_limite_maximo_value}}}
 
         :return: The limite_maximo of this PessoaJuridicaAprovadaPersist.
         :rtype: float
@@ -564,7 +589,7 @@ class PessoaJuridicaAprovadaPersist(object):
     def limite_maximo(self, limite_maximo):
         """
         Sets the limite_maximo of this PessoaJuridicaAprovadaPersist.
-        Valor m\u00E1ximo do limite de cr\u00E9dito para realizar transa\u00E7\u00F5es
+        {{{pessoa_juridica_aprovada_persist_limite_maximo_value}}}
 
         :param limite_maximo: The limite_maximo of this PessoaJuridicaAprovadaPersist.
         :type: float
@@ -575,7 +600,7 @@ class PessoaJuridicaAprovadaPersist(object):
     def limite_parcelas(self):
         """
         Gets the limite_parcelas of this PessoaJuridicaAprovadaPersist.
-        Valor do limite de cr\u00E9dito acumulado da soma das parcelas das compras
+        {{{pessoa_juridica_aprovada_persist_limite_parcelas_value}}}
 
         :return: The limite_parcelas of this PessoaJuridicaAprovadaPersist.
         :rtype: float
@@ -586,7 +611,7 @@ class PessoaJuridicaAprovadaPersist(object):
     def limite_parcelas(self, limite_parcelas):
         """
         Sets the limite_parcelas of this PessoaJuridicaAprovadaPersist.
-        Valor do limite de cr\u00E9dito acumulado da soma das parcelas das compras
+        {{{pessoa_juridica_aprovada_persist_limite_parcelas_value}}}
 
         :param limite_parcelas: The limite_parcelas of this PessoaJuridicaAprovadaPersist.
         :type: float

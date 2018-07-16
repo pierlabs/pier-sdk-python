@@ -56,7 +56,7 @@ class FantasiaBasicaResponse(object):
     def id(self):
         """
         Gets the id of this FantasiaBasicaResponse.
-        Identificador da fantasia b\u00E1sica
+        {{{fantasia_basica_response_id_value}}}
 
         :return: The id of this FantasiaBasicaResponse.
         :rtype: int
@@ -67,7 +67,7 @@ class FantasiaBasicaResponse(object):
     def id(self, id):
         """
         Sets the id of this FantasiaBasicaResponse.
-        Identificador da fantasia b\u00E1sica
+        {{{fantasia_basica_response_id_value}}}
 
         :param id: The id of this FantasiaBasicaResponse.
         :type: int
@@ -78,7 +78,7 @@ class FantasiaBasicaResponse(object):
     def nome(self):
         """
         Gets the nome of this FantasiaBasicaResponse.
-        Nome da fantasia b\u00E1sica
+        {{{fantasia_basica_response_nome_value}}}
 
         :return: The nome of this FantasiaBasicaResponse.
         :rtype: str
@@ -89,7 +89,7 @@ class FantasiaBasicaResponse(object):
     def nome(self, nome):
         """
         Sets the nome of this FantasiaBasicaResponse.
-        Nome da fantasia b\u00E1sica
+        {{{fantasia_basica_response_nome_value}}}
 
         :param nome: The nome of this FantasiaBasicaResponse.
         :type: str
@@ -100,7 +100,7 @@ class FantasiaBasicaResponse(object):
     def descricao(self):
         """
         Gets the descricao of this FantasiaBasicaResponse.
-        Descri\u00E7\u00E3o da fantasia b\u00E1sica
+        {{{fantasia_basica_response_descricao_value}}}
 
         :return: The descricao of this FantasiaBasicaResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class FantasiaBasicaResponse(object):
     def descricao(self, descricao):
         """
         Sets the descricao of this FantasiaBasicaResponse.
-        Descri\u00E7\u00E3o da fantasia b\u00E1sica
+        {{{fantasia_basica_response_descricao_value}}}
 
         :param descricao: The descricao of this FantasiaBasicaResponse.
         :type: str

@@ -59,7 +59,7 @@ class PlanoCampanhaResponse(object):
     def id(self):
         """
         Gets the id of this PlanoCampanhaResponse.
-        Identificador do plano de campanha
+        {{{plano_campanha_response_id_value}}}
 
         :return: The id of this PlanoCampanhaResponse.
         :rtype: int
@@ -70,7 +70,7 @@ class PlanoCampanhaResponse(object):
     def id(self, id):
         """
         Sets the id of this PlanoCampanhaResponse.
-        Identificador do plano de campanha
+        {{{plano_campanha_response_id_value}}}
 
         :param id: The id of this PlanoCampanhaResponse.
         :type: int
@@ -81,7 +81,7 @@ class PlanoCampanhaResponse(object):
     def parcelas(self):
         """
         Gets the parcelas of this PlanoCampanhaResponse.
-        Quantidade de parcelas
+        {{{plano_campanha_response_parcelas_value}}}
 
         :return: The parcelas of this PlanoCampanhaResponse.
         :rtype: int
@@ -92,7 +92,7 @@ class PlanoCampanhaResponse(object):
     def parcelas(self, parcelas):
         """
         Sets the parcelas of this PlanoCampanhaResponse.
-        Quantidade de parcelas
+        {{{plano_campanha_response_parcelas_value}}}
 
         :param parcelas: The parcelas of this PlanoCampanhaResponse.
         :type: int
@@ -103,7 +103,7 @@ class PlanoCampanhaResponse(object):
     def taxa(self):
         """
         Gets the taxa of this PlanoCampanhaResponse.
-        Taxa de juros
+        {{{plano_campanha_response_taxa_value}}}
 
         :return: The taxa of this PlanoCampanhaResponse.
         :rtype: float
@@ -114,7 +114,7 @@ class PlanoCampanhaResponse(object):
     def taxa(self, taxa):
         """
         Sets the taxa of this PlanoCampanhaResponse.
-        Taxa de juros
+        {{{plano_campanha_response_taxa_value}}}
 
         :param taxa: The taxa of this PlanoCampanhaResponse.
         :type: float
@@ -125,7 +125,7 @@ class PlanoCampanhaResponse(object):
     def usuario(self):
         """
         Gets the usuario of this PlanoCampanhaResponse.
-        Nome do usu\u00E1rio
+        {{{plano_campanha_response_usuario_value}}}
 
         :return: The usuario of this PlanoCampanhaResponse.
         :rtype: str
@@ -136,7 +136,7 @@ class PlanoCampanhaResponse(object):
     def usuario(self, usuario):
         """
         Sets the usuario of this PlanoCampanhaResponse.
-        Nome do usu\u00E1rio
+        {{{plano_campanha_response_usuario_value}}}
 
         :param usuario: The usuario of this PlanoCampanhaResponse.
         :type: str

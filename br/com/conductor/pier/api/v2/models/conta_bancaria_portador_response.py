@@ -92,7 +92,7 @@ class ContaBancariaPortadorResponse(object):
     def id(self):
         """
         Gets the id of this ContaBancariaPortadorResponse.
-        C\u00F3digo identificador da conta banc\u00E1ria
+        {{{conta_bancaria_portador_response_id_value}}}
 
         :return: The id of this ContaBancariaPortadorResponse.
         :rtype: int
@@ -103,7 +103,7 @@ class ContaBancariaPortadorResponse(object):
     def id(self, id):
         """
         Sets the id of this ContaBancariaPortadorResponse.
-        C\u00F3digo identificador da conta banc\u00E1ria
+        {{{conta_bancaria_portador_response_id_value}}}
 
         :param id: The id of this ContaBancariaPortadorResponse.
         :type: int
@@ -114,7 +114,7 @@ class ContaBancariaPortadorResponse(object):
     def id_conta(self):
         """
         Gets the id_conta of this ContaBancariaPortadorResponse.
-        C\u00F3digo identificador da conta cart\u00E3o
+        {{{conta_bancaria_portador_response_id_conta_value}}}
 
         :return: The id_conta of this ContaBancariaPortadorResponse.
         :rtype: int
@@ -125,7 +125,7 @@ class ContaBancariaPortadorResponse(object):
     def id_conta(self, id_conta):
         """
         Sets the id_conta of this ContaBancariaPortadorResponse.
-        C\u00F3digo identificador da conta cart\u00E3o
+        {{{conta_bancaria_portador_response_id_conta_value}}}
 
         :param id_conta: The id_conta of this ContaBancariaPortadorResponse.
         :type: int
@@ -136,7 +136,7 @@ class ContaBancariaPortadorResponse(object):
     def nome_agencia(self):
         """
         Gets the nome_agencia of this ContaBancariaPortadorResponse.
-        Descri\u00E7\u00E3o da ag\u00EAncia
+        {{{conta_bancaria_portador_response_nome_agencia_value}}}
 
         :return: The nome_agencia of this ContaBancariaPortadorResponse.
         :rtype: str
@@ -147,7 +147,7 @@ class ContaBancariaPortadorResponse(object):
     def nome_agencia(self, nome_agencia):
         """
         Sets the nome_agencia of this ContaBancariaPortadorResponse.
-        Descri\u00E7\u00E3o da ag\u00EAncia
+        {{{conta_bancaria_portador_response_nome_agencia_value}}}
 
         :param nome_agencia: The nome_agencia of this ContaBancariaPortadorResponse.
         :type: str
@@ -158,7 +158,7 @@ class ContaBancariaPortadorResponse(object):
     def banco(self):
         """
         Gets the banco of this ContaBancariaPortadorResponse.
-        C\u00F3digo do banco
+        {{{conta_bancaria_portador_response_banco_value}}}
 
         :return: The banco of this ContaBancariaPortadorResponse.
         :rtype: int
@@ -169,7 +169,7 @@ class ContaBancariaPortadorResponse(object):
     def banco(self, banco):
         """
         Sets the banco of this ContaBancariaPortadorResponse.
-        C\u00F3digo do banco
+        {{{conta_bancaria_portador_response_banco_value}}}
 
         :param banco: The banco of this ContaBancariaPortadorResponse.
         :type: int
@@ -180,7 +180,7 @@ class ContaBancariaPortadorResponse(object):
     def numero_agencia(self):
         """
         Gets the numero_agencia of this ContaBancariaPortadorResponse.
-        N\u00FAmero da ag\u00EAncia
+        {{{conta_bancaria_portador_response_numero_agencia_value}}}
 
         :return: The numero_agencia of this ContaBancariaPortadorResponse.
         :rtype: str
@@ -191,7 +191,7 @@ class ContaBancariaPortadorResponse(object):
     def numero_agencia(self, numero_agencia):
         """
         Sets the numero_agencia of this ContaBancariaPortadorResponse.
-        N\u00FAmero da ag\u00EAncia
+        {{{conta_bancaria_portador_response_numero_agencia_value}}}
 
         :param numero_agencia: The numero_agencia of this ContaBancariaPortadorResponse.
         :type: str
@@ -202,7 +202,7 @@ class ContaBancariaPortadorResponse(object):
     def digito_agencia(self):
         """
         Gets the digito_agencia of this ContaBancariaPortadorResponse.
-        D\u00EDgito da ag\u00EAncia
+        {{{conta_bancaria_portador_response_digito_agencia_value}}}
 
         :return: The digito_agencia of this ContaBancariaPortadorResponse.
         :rtype: str
@@ -213,7 +213,7 @@ class ContaBancariaPortadorResponse(object):
     def digito_agencia(self, digito_agencia):
         """
         Sets the digito_agencia of this ContaBancariaPortadorResponse.
-        D\u00EDgito da ag\u00EAncia
+        {{{conta_bancaria_portador_response_digito_agencia_value}}}
 
         :param digito_agencia: The digito_agencia of this ContaBancariaPortadorResponse.
         :type: str
@@ -224,7 +224,7 @@ class ContaBancariaPortadorResponse(object):
     def numero_conta(self):
         """
         Gets the numero_conta of this ContaBancariaPortadorResponse.
-        N\u00FAmero da conta
+        {{{conta_bancaria_portador_response_numero_conta_value}}}
 
         :return: The numero_conta of this ContaBancariaPortadorResponse.
         :rtype: str
@@ -235,7 +235,7 @@ class ContaBancariaPortadorResponse(object):
     def numero_conta(self, numero_conta):
         """
         Sets the numero_conta of this ContaBancariaPortadorResponse.
-        N\u00FAmero da conta
+        {{{conta_bancaria_portador_response_numero_conta_value}}}
 
         :param numero_conta: The numero_conta of this ContaBancariaPortadorResponse.
         :type: str
@@ -246,7 +246,7 @@ class ContaBancariaPortadorResponse(object):
     def digito_conta(self):
         """
         Gets the digito_conta of this ContaBancariaPortadorResponse.
-        D\u00EDgito da conta
+        {{{conta_bancaria_portador_response_digito_conta_value}}}
 
         :return: The digito_conta of this ContaBancariaPortadorResponse.
         :rtype: str
@@ -257,7 +257,7 @@ class ContaBancariaPortadorResponse(object):
     def digito_conta(self, digito_conta):
         """
         Sets the digito_conta of this ContaBancariaPortadorResponse.
-        D\u00EDgito da conta
+        {{{conta_bancaria_portador_response_digito_conta_value}}}
 
         :param digito_conta: The digito_conta of this ContaBancariaPortadorResponse.
         :type: str
@@ -268,7 +268,7 @@ class ContaBancariaPortadorResponse(object):
     def flag_ativo(self):
         """
         Gets the flag_ativo of this ContaBancariaPortadorResponse.
-        Sinaliza se conta banc\u00E1ria est\u00E1 ativa ou n\u00E3o (1: Ativa, 0: Inativa)
+        {{{conta_bancaria_portador_response_flag_ativo_value}}}
 
         :return: The flag_ativo of this ContaBancariaPortadorResponse.
         :rtype: int
@@ -279,7 +279,7 @@ class ContaBancariaPortadorResponse(object):
     def flag_ativo(self, flag_ativo):
         """
         Sets the flag_ativo of this ContaBancariaPortadorResponse.
-        Sinaliza se conta banc\u00E1ria est\u00E1 ativa ou n\u00E3o (1: Ativa, 0: Inativa)
+        {{{conta_bancaria_portador_response_flag_ativo_value}}}
 
         :param flag_ativo: The flag_ativo of this ContaBancariaPortadorResponse.
         :type: int
@@ -290,7 +290,7 @@ class ContaBancariaPortadorResponse(object):
     def flag_conta_origem_doc(self):
         """
         Gets the flag_conta_origem_doc of this ContaBancariaPortadorResponse.
-        Sinaliza se origem \u00E9 DOC (1: DOC, 0: TED)
+        {{{conta_bancaria_portador_response_flag_conta_origem_doc_value}}}
 
         :return: The flag_conta_origem_doc of this ContaBancariaPortadorResponse.
         :rtype: int
@@ -301,7 +301,7 @@ class ContaBancariaPortadorResponse(object):
     def flag_conta_origem_doc(self, flag_conta_origem_doc):
         """
         Sets the flag_conta_origem_doc of this ContaBancariaPortadorResponse.
-        Sinaliza se origem \u00E9 DOC (1: DOC, 0: TED)
+        {{{conta_bancaria_portador_response_flag_conta_origem_doc_value}}}
 
         :param flag_conta_origem_doc: The flag_conta_origem_doc of this ContaBancariaPortadorResponse.
         :type: int
@@ -312,7 +312,7 @@ class ContaBancariaPortadorResponse(object):
     def id_pessoa_fisica(self):
         """
         Gets the id_pessoa_fisica of this ContaBancariaPortadorResponse.
-        C\u00F3digo da pessoa
+        {{{conta_bancaria_portador_response_id_pessoa_fisica_value}}}
 
         :return: The id_pessoa_fisica of this ContaBancariaPortadorResponse.
         :rtype: int
@@ -323,7 +323,7 @@ class ContaBancariaPortadorResponse(object):
     def id_pessoa_fisica(self, id_pessoa_fisica):
         """
         Sets the id_pessoa_fisica of this ContaBancariaPortadorResponse.
-        C\u00F3digo da pessoa
+        {{{conta_bancaria_portador_response_id_pessoa_fisica_value}}}
 
         :param id_pessoa_fisica: The id_pessoa_fisica of this ContaBancariaPortadorResponse.
         :type: int
@@ -334,7 +334,7 @@ class ContaBancariaPortadorResponse(object):
     def flag_conta_poupanca(self):
         """
         Gets the flag_conta_poupanca of this ContaBancariaPortadorResponse.
-        Sinaliza se conta banc\u00E1ria \u00E9 poupan\u00E7a (1: Poupan\u00E7a, 0: Conta corrente)
+        {{{conta_bancaria_portador_response_flag_conta_poupanca_value}}}
 
         :return: The flag_conta_poupanca of this ContaBancariaPortadorResponse.
         :rtype: int
@@ -345,7 +345,7 @@ class ContaBancariaPortadorResponse(object):
     def flag_conta_poupanca(self, flag_conta_poupanca):
         """
         Sets the flag_conta_poupanca of this ContaBancariaPortadorResponse.
-        Sinaliza se conta banc\u00E1ria \u00E9 poupan\u00E7a (1: Poupan\u00E7a, 0: Conta corrente)
+        {{{conta_bancaria_portador_response_flag_conta_poupanca_value}}}
 
         :param flag_conta_poupanca: The flag_conta_poupanca of this ContaBancariaPortadorResponse.
         :type: int
@@ -356,7 +356,7 @@ class ContaBancariaPortadorResponse(object):
     def favorecido(self):
         """
         Gets the favorecido of this ContaBancariaPortadorResponse.
-        Nome do favorecido
+        {{{conta_bancaria_portador_response_favorecido_value}}}
 
         :return: The favorecido of this ContaBancariaPortadorResponse.
         :rtype: str
@@ -367,7 +367,7 @@ class ContaBancariaPortadorResponse(object):
     def favorecido(self, favorecido):
         """
         Sets the favorecido of this ContaBancariaPortadorResponse.
-        Nome do favorecido
+        {{{conta_bancaria_portador_response_favorecido_value}}}
 
         :param favorecido: The favorecido of this ContaBancariaPortadorResponse.
         :type: str
@@ -378,7 +378,7 @@ class ContaBancariaPortadorResponse(object):
     def numero_receira_federal(self):
         """
         Gets the numero_receira_federal of this ContaBancariaPortadorResponse.
-        Documento do favorecido
+        {{{conta_bancaria_portador_response_numero_receira_federal_value}}}
 
         :return: The numero_receira_federal of this ContaBancariaPortadorResponse.
         :rtype: str
@@ -389,7 +389,7 @@ class ContaBancariaPortadorResponse(object):
     def numero_receira_federal(self, numero_receira_federal):
         """
         Sets the numero_receira_federal of this ContaBancariaPortadorResponse.
-        Documento do favorecido
+        {{{conta_bancaria_portador_response_numero_receira_federal_value}}}
 
         :param numero_receira_federal: The numero_receira_federal of this ContaBancariaPortadorResponse.
         :type: str
@@ -400,7 +400,7 @@ class ContaBancariaPortadorResponse(object):
     def titularidade(self):
         """
         Gets the titularidade of this ContaBancariaPortadorResponse.
-        Titularidade da conta (1:Portador \u00E9 o titular, 0: Portador n\u00E3o \u00E9 o t\u00EDtular
+        {{{conta_bancaria_portador_response_titularidade_value}}}
 
         :return: The titularidade of this ContaBancariaPortadorResponse.
         :rtype: int
@@ -411,7 +411,7 @@ class ContaBancariaPortadorResponse(object):
     def titularidade(self, titularidade):
         """
         Sets the titularidade of this ContaBancariaPortadorResponse.
-        Titularidade da conta (1:Portador \u00E9 o titular, 0: Portador n\u00E3o \u00E9 o t\u00EDtular
+        {{{conta_bancaria_portador_response_titularidade_value}}}
 
         :param titularidade: The titularidade of this ContaBancariaPortadorResponse.
         :type: int

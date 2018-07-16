@@ -65,7 +65,7 @@ class ArquivoPersist(object):
     def id_tipo_arquivo(self):
         """
         Gets the id_tipo_arquivo of this ArquivoPersist.
-        Tipo do arquivo
+        {{{arquivo_persist_id_tipo_arquivo_value}}}
 
         :return: The id_tipo_arquivo of this ArquivoPersist.
         :rtype: int
@@ -76,7 +76,7 @@ class ArquivoPersist(object):
     def id_tipo_arquivo(self, id_tipo_arquivo):
         """
         Sets the id_tipo_arquivo of this ArquivoPersist.
-        Tipo do arquivo
+        {{{arquivo_persist_id_tipo_arquivo_value}}}
 
         :param id_tipo_arquivo: The id_tipo_arquivo of this ArquivoPersist.
         :type: int
@@ -87,7 +87,7 @@ class ArquivoPersist(object):
     def arquivo(self):
         """
         Gets the arquivo of this ArquivoPersist.
-        Conte\u00FAdo do arquivo convertido em Base 64
+        {{{arquivo_persist_arquivo_value}}}
 
         :return: The arquivo of this ArquivoPersist.
         :rtype: str
@@ -98,7 +98,7 @@ class ArquivoPersist(object):
     def arquivo(self, arquivo):
         """
         Sets the arquivo of this ArquivoPersist.
-        Conte\u00FAdo do arquivo convertido em Base 64
+        {{{arquivo_persist_arquivo_value}}}
 
         :param arquivo: The arquivo of this ArquivoPersist.
         :type: str
@@ -109,7 +109,7 @@ class ArquivoPersist(object):
     def nome(self):
         """
         Gets the nome of this ArquivoPersist.
-        Nome do arquivo.
+        {{{arquivo_persist_nome_value}}}
 
         :return: The nome of this ArquivoPersist.
         :rtype: str
@@ -120,7 +120,7 @@ class ArquivoPersist(object):
     def nome(self, nome):
         """
         Sets the nome of this ArquivoPersist.
-        Nome do arquivo.
+        {{{arquivo_persist_nome_value}}}
 
         :param nome: The nome of this ArquivoPersist.
         :type: str
@@ -131,7 +131,7 @@ class ArquivoPersist(object):
     def extensao(self):
         """
         Gets the extensao of this ArquivoPersist.
-        Formato/extens\u00E3o do arquivo.
+        {{{arquivo_persist_extensao_value}}}
 
         :return: The extensao of this ArquivoPersist.
         :rtype: str
@@ -142,7 +142,7 @@ class ArquivoPersist(object):
     def extensao(self, extensao):
         """
         Sets the extensao of this ArquivoPersist.
-        Formato/extens\u00E3o do arquivo.
+        {{{arquivo_persist_extensao_value}}}
 
         :param extensao: The extensao of this ArquivoPersist.
         :type: str
@@ -153,7 +153,7 @@ class ArquivoPersist(object):
     def tipo_comunicacao(self):
         """
         Gets the tipo_comunicacao of this ArquivoPersist.
-        Tipo de comunica\u00E7\u00E3o.
+        {{{arquivo_persist_tipo_comunicacao_value}}}
 
         :return: The tipo_comunicacao of this ArquivoPersist.
         :rtype: str
@@ -164,7 +164,7 @@ class ArquivoPersist(object):
     def tipo_comunicacao(self, tipo_comunicacao):
         """
         Sets the tipo_comunicacao of this ArquivoPersist.
-        Tipo de comunica\u00E7\u00E3o.
+        {{{arquivo_persist_tipo_comunicacao_value}}}
 
         :param tipo_comunicacao: The tipo_comunicacao of this ArquivoPersist.
         :type: str
@@ -181,7 +181,7 @@ class ArquivoPersist(object):
     def detalhes(self):
         """
         Gets the detalhes of this ArquivoPersist.
-        Detalhes contendo informa\u00E7\u00F5es adicionais, relacionadas ao arquivo
+        {{{arquivo_persist_detalhes_value}}}
 
         :return: The detalhes of this ArquivoPersist.
         :rtype: list[ArquivoDetalhesPersist]
@@ -192,7 +192,7 @@ class ArquivoPersist(object):
     def detalhes(self, detalhes):
         """
         Sets the detalhes of this ArquivoPersist.
-        Detalhes contendo informa\u00E7\u00F5es adicionais, relacionadas ao arquivo
+        {{{arquivo_persist_detalhes_value}}}
 
         :param detalhes: The detalhes of this ArquivoPersist.
         :type: list[ArquivoDetalhesPersist]

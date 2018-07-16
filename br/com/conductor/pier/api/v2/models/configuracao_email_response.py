@@ -86,7 +86,7 @@ class ConfiguracaoEmailResponse(object):
     def id(self):
         """
         Gets the id of this ConfiguracaoEmailResponse.
-        Id da Configura\u00E7\u00E3o EMAIL.
+        {{{configuracao_email_response_id_value}}}
 
         :return: The id of this ConfiguracaoEmailResponse.
         :rtype: int
@@ -97,7 +97,7 @@ class ConfiguracaoEmailResponse(object):
     def id(self, id):
         """
         Sets the id of this ConfiguracaoEmailResponse.
-        Id da Configura\u00E7\u00E3o EMAIL.
+        {{{configuracao_email_response_id_value}}}
 
         :param id: The id of this ConfiguracaoEmailResponse.
         :type: int
@@ -108,7 +108,7 @@ class ConfiguracaoEmailResponse(object):
     def host(self):
         """
         Gets the host of this ConfiguracaoEmailResponse.
-        IP (Host) do servidor de e-mail.
+        {{{configuracao_email_response_host_value}}}
 
         :return: The host of this ConfiguracaoEmailResponse.
         :rtype: str
@@ -119,7 +119,7 @@ class ConfiguracaoEmailResponse(object):
     def host(self, host):
         """
         Sets the host of this ConfiguracaoEmailResponse.
-        IP (Host) do servidor de e-mail.
+        {{{configuracao_email_response_host_value}}}
 
         :param host: The host of this ConfiguracaoEmailResponse.
         :type: str
@@ -130,7 +130,7 @@ class ConfiguracaoEmailResponse(object):
     def port(self):
         """
         Gets the port of this ConfiguracaoEmailResponse.
-        Porta usada pelo servidor de e-mail.
+        {{{configuracao_email_response_port_value}}}
 
         :return: The port of this ConfiguracaoEmailResponse.
         :rtype: str
@@ -141,7 +141,7 @@ class ConfiguracaoEmailResponse(object):
     def port(self, port):
         """
         Sets the port of this ConfiguracaoEmailResponse.
-        Porta usada pelo servidor de e-mail.
+        {{{configuracao_email_response_port_value}}}
 
         :param port: The port of this ConfiguracaoEmailResponse.
         :type: str
@@ -152,7 +152,7 @@ class ConfiguracaoEmailResponse(object):
     def port_tlsstarttls(self):
         """
         Gets the port_tlsstarttls of this ConfiguracaoEmailResponse.
-        Porta usada pelo servi\u00E7o TLS/STARTTLS.
+        {{{configuracao_email_response_port_t_l_s_s_t_a_r_t_t_l_s_value}}}
 
         :return: The port_tlsstarttls of this ConfiguracaoEmailResponse.
         :rtype: str
@@ -163,7 +163,7 @@ class ConfiguracaoEmailResponse(object):
     def port_tlsstarttls(self, port_tlsstarttls):
         """
         Sets the port_tlsstarttls of this ConfiguracaoEmailResponse.
-        Porta usada pelo servi\u00E7o TLS/STARTTLS.
+        {{{configuracao_email_response_port_t_l_s_s_t_a_r_t_t_l_s_value}}}
 
         :param port_tlsstarttls: The port_tlsstarttls of this ConfiguracaoEmailResponse.
         :type: str
@@ -174,7 +174,7 @@ class ConfiguracaoEmailResponse(object):
     def port_ssl(self):
         """
         Gets the port_ssl of this ConfiguracaoEmailResponse.
-        Porta usada pelo servi\u00E7o SSL.
+        {{{configuracao_email_response_port_s_s_l_value}}}
 
         :return: The port_ssl of this ConfiguracaoEmailResponse.
         :rtype: str
@@ -185,7 +185,7 @@ class ConfiguracaoEmailResponse(object):
     def port_ssl(self, port_ssl):
         """
         Sets the port_ssl of this ConfiguracaoEmailResponse.
-        Porta usada pelo servi\u00E7o SSL.
+        {{{configuracao_email_response_port_s_s_l_value}}}
 
         :param port_ssl: The port_ssl of this ConfiguracaoEmailResponse.
         :type: str
@@ -196,7 +196,7 @@ class ConfiguracaoEmailResponse(object):
     def protocolo(self):
         """
         Gets the protocolo of this ConfiguracaoEmailResponse.
-        Protocolo de comunica\u00E7\u00E3o usado pelo servi\u00E7o de e-mail (Ex: smtp).
+        {{{configuracao_email_response_protocolo_value}}}
 
         :return: The protocolo of this ConfiguracaoEmailResponse.
         :rtype: str
@@ -207,7 +207,7 @@ class ConfiguracaoEmailResponse(object):
     def protocolo(self, protocolo):
         """
         Sets the protocolo of this ConfiguracaoEmailResponse.
-        Protocolo de comunica\u00E7\u00E3o usado pelo servi\u00E7o de e-mail (Ex: smtp).
+        {{{configuracao_email_response_protocolo_value}}}
 
         :param protocolo: The protocolo of this ConfiguracaoEmailResponse.
         :type: str
@@ -218,7 +218,7 @@ class ConfiguracaoEmailResponse(object):
     def requer_autenticacao(self):
         """
         Gets the requer_autenticacao of this ConfiguracaoEmailResponse.
-        O servi\u00E7o de e-mail requer autentica\u00E7\u00E3o.
+        {{{configuracao_email_response_requer_autenticacao_value}}}
 
         :return: The requer_autenticacao of this ConfiguracaoEmailResponse.
         :rtype: bool
@@ -229,7 +229,7 @@ class ConfiguracaoEmailResponse(object):
     def requer_autenticacao(self, requer_autenticacao):
         """
         Sets the requer_autenticacao of this ConfiguracaoEmailResponse.
-        O servi\u00E7o de e-mail requer autentica\u00E7\u00E3o.
+        {{{configuracao_email_response_requer_autenticacao_value}}}
 
         :param requer_autenticacao: The requer_autenticacao of this ConfiguracaoEmailResponse.
         :type: bool
@@ -240,7 +240,7 @@ class ConfiguracaoEmailResponse(object):
     def requer_ssl(self):
         """
         Gets the requer_ssl of this ConfiguracaoEmailResponse.
-        O servi\u00E7o de e-mail requer SSL.
+        {{{configuracao_email_response_requer_s_s_l_value}}}
 
         :return: The requer_ssl of this ConfiguracaoEmailResponse.
         :rtype: bool
@@ -251,7 +251,7 @@ class ConfiguracaoEmailResponse(object):
     def requer_ssl(self, requer_ssl):
         """
         Sets the requer_ssl of this ConfiguracaoEmailResponse.
-        O servi\u00E7o de e-mail requer SSL.
+        {{{configuracao_email_response_requer_s_s_l_value}}}
 
         :param requer_ssl: The requer_ssl of this ConfiguracaoEmailResponse.
         :type: bool
@@ -262,7 +262,7 @@ class ConfiguracaoEmailResponse(object):
     def requer_tls(self):
         """
         Gets the requer_tls of this ConfiguracaoEmailResponse.
-        O servi\u00E7o de e-mail requer TLS.
+        {{{configuracao_email_response_requer_t_l_s_value}}}
 
         :return: The requer_tls of this ConfiguracaoEmailResponse.
         :rtype: bool
@@ -273,7 +273,7 @@ class ConfiguracaoEmailResponse(object):
     def requer_tls(self, requer_tls):
         """
         Sets the requer_tls of this ConfiguracaoEmailResponse.
-        O servi\u00E7o de e-mail requer TLS.
+        {{{configuracao_email_response_requer_t_l_s_value}}}
 
         :param requer_tls: The requer_tls of this ConfiguracaoEmailResponse.
         :type: bool
@@ -284,7 +284,7 @@ class ConfiguracaoEmailResponse(object):
     def usuario(self):
         """
         Gets the usuario of this ConfiguracaoEmailResponse.
-        Usuario do servi\u00E7o de e-mail.
+        {{{configuracao_email_response_usuario_value}}}
 
         :return: The usuario of this ConfiguracaoEmailResponse.
         :rtype: str
@@ -295,7 +295,7 @@ class ConfiguracaoEmailResponse(object):
     def usuario(self, usuario):
         """
         Sets the usuario of this ConfiguracaoEmailResponse.
-        Usuario do servi\u00E7o de e-mail.
+        {{{configuracao_email_response_usuario_value}}}
 
         :param usuario: The usuario of this ConfiguracaoEmailResponse.
         :type: str
@@ -306,7 +306,7 @@ class ConfiguracaoEmailResponse(object):
     def senha(self):
         """
         Gets the senha of this ConfiguracaoEmailResponse.
-        Senha de usu\u00E1rio do servi\u00E7o de e-mail.
+        {{{configuracao_email_response_senha_value}}}
 
         :return: The senha of this ConfiguracaoEmailResponse.
         :rtype: str
@@ -317,7 +317,7 @@ class ConfiguracaoEmailResponse(object):
     def senha(self, senha):
         """
         Sets the senha of this ConfiguracaoEmailResponse.
-        Senha de usu\u00E1rio do servi\u00E7o de e-mail.
+        {{{configuracao_email_response_senha_value}}}
 
         :param senha: The senha of this ConfiguracaoEmailResponse.
         :type: str
@@ -328,7 +328,7 @@ class ConfiguracaoEmailResponse(object):
     def data_inclusao(self):
         """
         Gets the data_inclusao of this ConfiguracaoEmailResponse.
-        Data de inclus\u00E3o.
+        {{{configuracao_email_response_data_inclusao_value}}}
 
         :return: The data_inclusao of this ConfiguracaoEmailResponse.
         :rtype: str
@@ -339,7 +339,7 @@ class ConfiguracaoEmailResponse(object):
     def data_inclusao(self, data_inclusao):
         """
         Sets the data_inclusao of this ConfiguracaoEmailResponse.
-        Data de inclus\u00E3o.
+        {{{configuracao_email_response_data_inclusao_value}}}
 
         :param data_inclusao: The data_inclusao of this ConfiguracaoEmailResponse.
         :type: str
@@ -350,7 +350,7 @@ class ConfiguracaoEmailResponse(object):
     def data_alteracao(self):
         """
         Gets the data_alteracao of this ConfiguracaoEmailResponse.
-        Data de altera\u00E7\u00E3o.
+        {{{configuracao_email_response_data_alteracao_value}}}
 
         :return: The data_alteracao of this ConfiguracaoEmailResponse.
         :rtype: str
@@ -361,7 +361,7 @@ class ConfiguracaoEmailResponse(object):
     def data_alteracao(self, data_alteracao):
         """
         Sets the data_alteracao of this ConfiguracaoEmailResponse.
-        Data de altera\u00E7\u00E3o.
+        {{{configuracao_email_response_data_alteracao_value}}}
 
         :param data_alteracao: The data_alteracao of this ConfiguracaoEmailResponse.
         :type: str

@@ -59,7 +59,7 @@ class PropriedadeDocumentoRequest(object):
     def chave(self):
         """
         Gets the chave of this PropriedadeDocumentoRequest.
-        Valor da propriedade do Documento.
+        {{{propriedade_documento_request_chave_value}}}
 
         :return: The chave of this PropriedadeDocumentoRequest.
         :rtype: str
@@ -70,7 +70,7 @@ class PropriedadeDocumentoRequest(object):
     def chave(self, chave):
         """
         Sets the chave of this PropriedadeDocumentoRequest.
-        Valor da propriedade do Documento.
+        {{{propriedade_documento_request_chave_value}}}
 
         :param chave: The chave of this PropriedadeDocumentoRequest.
         :type: str
@@ -81,7 +81,7 @@ class PropriedadeDocumentoRequest(object):
     def valor(self):
         """
         Gets the valor of this PropriedadeDocumentoRequest.
-        Valor da propriedade do Documento.
+        {{{propriedade_documento_request_valor_value}}}
 
         :return: The valor of this PropriedadeDocumentoRequest.
         :rtype: str
@@ -92,7 +92,7 @@ class PropriedadeDocumentoRequest(object):
     def valor(self, valor):
         """
         Sets the valor of this PropriedadeDocumentoRequest.
-        Valor da propriedade do Documento.
+        {{{propriedade_documento_request_valor_value}}}
 
         :param valor: The valor of this PropriedadeDocumentoRequest.
         :type: str
@@ -103,7 +103,7 @@ class PropriedadeDocumentoRequest(object):
     def detalhes_tipo(self):
         """
         Gets the detalhes_tipo of this PropriedadeDocumentoRequest.
-        Tipo da propriedade do Documento.
+        {{{propriedade_documento_request_detalhes_tipo_value}}}
 
         :return: The detalhes_tipo of this PropriedadeDocumentoRequest.
         :rtype: str
@@ -114,7 +114,7 @@ class PropriedadeDocumentoRequest(object):
     def detalhes_tipo(self, detalhes_tipo):
         """
         Sets the detalhes_tipo of this PropriedadeDocumentoRequest.
-        Tipo da propriedade do Documento.
+        {{{propriedade_documento_request_detalhes_tipo_value}}}
 
         :param detalhes_tipo: The detalhes_tipo of this PropriedadeDocumentoRequest.
         :type: str
@@ -131,7 +131,7 @@ class PropriedadeDocumentoRequest(object):
     def flag_indice(self):
         """
         Gets the flag_indice of this PropriedadeDocumentoRequest.
-        Atributo que indica se o par\u00E2metro \u00E9 um \u00EDndice (default = false)
+        {{{propriedade_documento_request_flag_indice_value}}}
 
         :return: The flag_indice of this PropriedadeDocumentoRequest.
         :rtype: bool
@@ -142,7 +142,7 @@ class PropriedadeDocumentoRequest(object):
     def flag_indice(self, flag_indice):
         """
         Sets the flag_indice of this PropriedadeDocumentoRequest.
-        Atributo que indica se o par\u00E2metro \u00E9 um \u00EDndice (default = false)
+        {{{propriedade_documento_request_flag_indice_value}}}
 
         :param flag_indice: The flag_indice of this PropriedadeDocumentoRequest.
         :type: bool

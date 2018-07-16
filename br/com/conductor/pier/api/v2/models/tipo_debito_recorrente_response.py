@@ -37,29 +37,123 @@ class TipoDebitoRecorrenteResponse(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
+            'flag_anuidade_bonificada': 'bool',
             'id': 'int',
-            'descricao': 'str',
+            'nome': 'str',
             'valor': 'float',
-            'flag_ativo': 'bool'
+            'flag_ativo': 'bool',
+            'valor_bonus': 'float',
+            'numero_parcelas': 'int',
+            'flag_adere_automatico': 'bool',
+            'flag_gera_numero_sorte': 'bool',
+            'faixa_etaria': 'str',
+            'flag_seguro': 'bool',
+            'sorteios_mensais': 'str',
+            'flag_adesao_automatica': 'bool',
+            'flag_dependente': 'bool',
+            'quantidade_dependente': 'int',
+            'id_termo_seguro_servico': 'int',
+            'idade_minima': 'int',
+            'idade_maxima': 'int',
+            'flag_debito_incondicional': 'bool',
+            'flag_extrato_incondicional': 'bool',
+            'flag_estorno_automatico': 'bool',
+            'valor_repassado_seguradora': 'float',
+            'flag_lanca_transacao': 'bool',
+            'flag_transferencia_automatica': 'bool',
+            'id_produto': 'int',
+            'id_grupo_debito_recorrente': 'int',
+            'quantidade_tentativas_cobranca': 'int',
+            'id_ajuste': 'int'
         }
 
         self.attribute_map = {
+            'flag_anuidade_bonificada': 'flagAnuidadeBonificada',
             'id': 'id',
-            'descricao': 'descricao',
+            'nome': 'nome',
             'valor': 'valor',
-            'flag_ativo': 'flagAtivo'
+            'flag_ativo': 'flagAtivo',
+            'valor_bonus': 'valorBonus',
+            'numero_parcelas': 'numeroParcelas',
+            'flag_adere_automatico': 'flagAdereAutomatico',
+            'flag_gera_numero_sorte': 'flagGeraNumeroSorte',
+            'faixa_etaria': 'faixaEtaria',
+            'flag_seguro': 'flagSeguro',
+            'sorteios_mensais': 'sorteiosMensais',
+            'flag_adesao_automatica': 'flagAdesaoAutomatica',
+            'flag_dependente': 'flagDependente',
+            'quantidade_dependente': 'quantidadeDependente',
+            'id_termo_seguro_servico': 'idTermoSeguroServico',
+            'idade_minima': 'idadeMinima',
+            'idade_maxima': 'idadeMaxima',
+            'flag_debito_incondicional': 'flagDebitoIncondicional',
+            'flag_extrato_incondicional': 'flagExtratoIncondicional',
+            'flag_estorno_automatico': 'flagEstornoAutomatico',
+            'valor_repassado_seguradora': 'valorRepassadoSeguradora',
+            'flag_lanca_transacao': 'flagLancaTransacao',
+            'flag_transferencia_automatica': 'flagTransferenciaAutomatica',
+            'id_produto': 'idProduto',
+            'id_grupo_debito_recorrente': 'idGrupoDebitoRecorrente',
+            'quantidade_tentativas_cobranca': 'quantidadeTentativasCobranca',
+            'id_ajuste': 'idAjuste'
         }
 
+        self._flag_anuidade_bonificada = None
         self._id = None
-        self._descricao = None
+        self._nome = None
         self._valor = None
         self._flag_ativo = None
+        self._valor_bonus = None
+        self._numero_parcelas = None
+        self._flag_adere_automatico = None
+        self._flag_gera_numero_sorte = None
+        self._faixa_etaria = None
+        self._flag_seguro = None
+        self._sorteios_mensais = None
+        self._flag_adesao_automatica = None
+        self._flag_dependente = None
+        self._quantidade_dependente = None
+        self._id_termo_seguro_servico = None
+        self._idade_minima = None
+        self._idade_maxima = None
+        self._flag_debito_incondicional = None
+        self._flag_extrato_incondicional = None
+        self._flag_estorno_automatico = None
+        self._valor_repassado_seguradora = None
+        self._flag_lanca_transacao = None
+        self._flag_transferencia_automatica = None
+        self._id_produto = None
+        self._id_grupo_debito_recorrente = None
+        self._quantidade_tentativas_cobranca = None
+        self._id_ajuste = None
+
+    @property
+    def flag_anuidade_bonificada(self):
+        """
+        Gets the flag_anuidade_bonificada of this TipoDebitoRecorrenteResponse.
+
+
+        :return: The flag_anuidade_bonificada of this TipoDebitoRecorrenteResponse.
+        :rtype: bool
+        """
+        return self._flag_anuidade_bonificada
+
+    @flag_anuidade_bonificada.setter
+    def flag_anuidade_bonificada(self, flag_anuidade_bonificada):
+        """
+        Sets the flag_anuidade_bonificada of this TipoDebitoRecorrenteResponse.
+
+
+        :param flag_anuidade_bonificada: The flag_anuidade_bonificada of this TipoDebitoRecorrenteResponse.
+        :type: bool
+        """
+        self._flag_anuidade_bonificada = flag_anuidade_bonificada
 
     @property
     def id(self):
         """
         Gets the id of this TipoDebitoRecorrenteResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o do tipo de d\u00E9bito recorrente (id).
+        {{{tipo_debito_recorrente_response_id_value}}}
 
         :return: The id of this TipoDebitoRecorrenteResponse.
         :rtype: int
@@ -70,7 +164,7 @@ class TipoDebitoRecorrenteResponse(object):
     def id(self, id):
         """
         Sets the id of this TipoDebitoRecorrenteResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o do tipo de d\u00E9bito recorrente (id).
+        {{{tipo_debito_recorrente_response_id_value}}}
 
         :param id: The id of this TipoDebitoRecorrenteResponse.
         :type: int
@@ -78,32 +172,32 @@ class TipoDebitoRecorrenteResponse(object):
         self._id = id
 
     @property
-    def descricao(self):
+    def nome(self):
         """
-        Gets the descricao of this TipoDebitoRecorrenteResponse.
-        Descri\u00E7\u00E3o do tipo de d\u00E9bito recorrente.
+        Gets the nome of this TipoDebitoRecorrenteResponse.
+        {{{tipo_debito_recorrente_response_descricao_value}}}
 
-        :return: The descricao of this TipoDebitoRecorrenteResponse.
+        :return: The nome of this TipoDebitoRecorrenteResponse.
         :rtype: str
         """
-        return self._descricao
+        return self._nome
 
-    @descricao.setter
-    def descricao(self, descricao):
+    @nome.setter
+    def nome(self, nome):
         """
-        Sets the descricao of this TipoDebitoRecorrenteResponse.
-        Descri\u00E7\u00E3o do tipo de d\u00E9bito recorrente.
+        Sets the nome of this TipoDebitoRecorrenteResponse.
+        {{{tipo_debito_recorrente_response_descricao_value}}}
 
-        :param descricao: The descricao of this TipoDebitoRecorrenteResponse.
+        :param nome: The nome of this TipoDebitoRecorrenteResponse.
         :type: str
         """
-        self._descricao = descricao
+        self._nome = nome
 
     @property
     def valor(self):
         """
         Gets the valor of this TipoDebitoRecorrenteResponse.
-        Valor do tipo de d\u00E9bito recorrente.
+        {{{tipo_debito_recorrente_response_valor_value}}}
 
         :return: The valor of this TipoDebitoRecorrenteResponse.
         :rtype: float
@@ -114,7 +208,7 @@ class TipoDebitoRecorrenteResponse(object):
     def valor(self, valor):
         """
         Sets the valor of this TipoDebitoRecorrenteResponse.
-        Valor do tipo de d\u00E9bito recorrente.
+        {{{tipo_debito_recorrente_response_valor_value}}}
 
         :param valor: The valor of this TipoDebitoRecorrenteResponse.
         :type: float
@@ -125,7 +219,7 @@ class TipoDebitoRecorrenteResponse(object):
     def flag_ativo(self):
         """
         Gets the flag_ativo of this TipoDebitoRecorrenteResponse.
-        Flag que identifica se o tipo d\u00E9bito recorrente est\u00E1 ativo.
+        {{{tipo_debito_recorrente_response_flag_ativo_value}}}
 
         :return: The flag_ativo of this TipoDebitoRecorrenteResponse.
         :rtype: bool
@@ -136,12 +230,518 @@ class TipoDebitoRecorrenteResponse(object):
     def flag_ativo(self, flag_ativo):
         """
         Sets the flag_ativo of this TipoDebitoRecorrenteResponse.
-        Flag que identifica se o tipo d\u00E9bito recorrente est\u00E1 ativo.
+        {{{tipo_debito_recorrente_response_flag_ativo_value}}}
 
         :param flag_ativo: The flag_ativo of this TipoDebitoRecorrenteResponse.
         :type: bool
         """
         self._flag_ativo = flag_ativo
+
+    @property
+    def valor_bonus(self):
+        """
+        Gets the valor_bonus of this TipoDebitoRecorrenteResponse.
+        {{{tipo_debito_recorrente_response_valor_bonus_value}}}
+
+        :return: The valor_bonus of this TipoDebitoRecorrenteResponse.
+        :rtype: float
+        """
+        return self._valor_bonus
+
+    @valor_bonus.setter
+    def valor_bonus(self, valor_bonus):
+        """
+        Sets the valor_bonus of this TipoDebitoRecorrenteResponse.
+        {{{tipo_debito_recorrente_response_valor_bonus_value}}}
+
+        :param valor_bonus: The valor_bonus of this TipoDebitoRecorrenteResponse.
+        :type: float
+        """
+        self._valor_bonus = valor_bonus
+
+    @property
+    def numero_parcelas(self):
+        """
+        Gets the numero_parcelas of this TipoDebitoRecorrenteResponse.
+        {{{tipo_debito_recorrente_response_numero_parcelas_value}}}
+
+        :return: The numero_parcelas of this TipoDebitoRecorrenteResponse.
+        :rtype: int
+        """
+        return self._numero_parcelas
+
+    @numero_parcelas.setter
+    def numero_parcelas(self, numero_parcelas):
+        """
+        Sets the numero_parcelas of this TipoDebitoRecorrenteResponse.
+        {{{tipo_debito_recorrente_response_numero_parcelas_value}}}
+
+        :param numero_parcelas: The numero_parcelas of this TipoDebitoRecorrenteResponse.
+        :type: int
+        """
+        self._numero_parcelas = numero_parcelas
+
+    @property
+    def flag_adere_automatico(self):
+        """
+        Gets the flag_adere_automatico of this TipoDebitoRecorrenteResponse.
+        {{{tipo_debito_recorrente_response_flag_adere_automatico_value}}}
+
+        :return: The flag_adere_automatico of this TipoDebitoRecorrenteResponse.
+        :rtype: bool
+        """
+        return self._flag_adere_automatico
+
+    @flag_adere_automatico.setter
+    def flag_adere_automatico(self, flag_adere_automatico):
+        """
+        Sets the flag_adere_automatico of this TipoDebitoRecorrenteResponse.
+        {{{tipo_debito_recorrente_response_flag_adere_automatico_value}}}
+
+        :param flag_adere_automatico: The flag_adere_automatico of this TipoDebitoRecorrenteResponse.
+        :type: bool
+        """
+        self._flag_adere_automatico = flag_adere_automatico
+
+    @property
+    def flag_gera_numero_sorte(self):
+        """
+        Gets the flag_gera_numero_sorte of this TipoDebitoRecorrenteResponse.
+        {{{tipo_debito_recorrente_response_flag_gera_numero_sorte_value}}}
+
+        :return: The flag_gera_numero_sorte of this TipoDebitoRecorrenteResponse.
+        :rtype: bool
+        """
+        return self._flag_gera_numero_sorte
+
+    @flag_gera_numero_sorte.setter
+    def flag_gera_numero_sorte(self, flag_gera_numero_sorte):
+        """
+        Sets the flag_gera_numero_sorte of this TipoDebitoRecorrenteResponse.
+        {{{tipo_debito_recorrente_response_flag_gera_numero_sorte_value}}}
+
+        :param flag_gera_numero_sorte: The flag_gera_numero_sorte of this TipoDebitoRecorrenteResponse.
+        :type: bool
+        """
+        self._flag_gera_numero_sorte = flag_gera_numero_sorte
+
+    @property
+    def faixa_etaria(self):
+        """
+        Gets the faixa_etaria of this TipoDebitoRecorrenteResponse.
+        {{{tipo_debito_recorrente_response_faixa_etaria_value}}}
+
+        :return: The faixa_etaria of this TipoDebitoRecorrenteResponse.
+        :rtype: str
+        """
+        return self._faixa_etaria
+
+    @faixa_etaria.setter
+    def faixa_etaria(self, faixa_etaria):
+        """
+        Sets the faixa_etaria of this TipoDebitoRecorrenteResponse.
+        {{{tipo_debito_recorrente_response_faixa_etaria_value}}}
+
+        :param faixa_etaria: The faixa_etaria of this TipoDebitoRecorrenteResponse.
+        :type: str
+        """
+        self._faixa_etaria = faixa_etaria
+
+    @property
+    def flag_seguro(self):
+        """
+        Gets the flag_seguro of this TipoDebitoRecorrenteResponse.
+        {{{tipo_debito_recorrente_response_flag_seguro_value}}}
+
+        :return: The flag_seguro of this TipoDebitoRecorrenteResponse.
+        :rtype: bool
+        """
+        return self._flag_seguro
+
+    @flag_seguro.setter
+    def flag_seguro(self, flag_seguro):
+        """
+        Sets the flag_seguro of this TipoDebitoRecorrenteResponse.
+        {{{tipo_debito_recorrente_response_flag_seguro_value}}}
+
+        :param flag_seguro: The flag_seguro of this TipoDebitoRecorrenteResponse.
+        :type: bool
+        """
+        self._flag_seguro = flag_seguro
+
+    @property
+    def sorteios_mensais(self):
+        """
+        Gets the sorteios_mensais of this TipoDebitoRecorrenteResponse.
+        {{{tipo_debito_recorrente_response_sorteios_mensais_value}}}
+
+        :return: The sorteios_mensais of this TipoDebitoRecorrenteResponse.
+        :rtype: str
+        """
+        return self._sorteios_mensais
+
+    @sorteios_mensais.setter
+    def sorteios_mensais(self, sorteios_mensais):
+        """
+        Sets the sorteios_mensais of this TipoDebitoRecorrenteResponse.
+        {{{tipo_debito_recorrente_response_sorteios_mensais_value}}}
+
+        :param sorteios_mensais: The sorteios_mensais of this TipoDebitoRecorrenteResponse.
+        :type: str
+        """
+        self._sorteios_mensais = sorteios_mensais
+
+    @property
+    def flag_adesao_automatica(self):
+        """
+        Gets the flag_adesao_automatica of this TipoDebitoRecorrenteResponse.
+        {{{tipo_debito_recorrente_response_flag_adesao_automatica_value}}}
+
+        :return: The flag_adesao_automatica of this TipoDebitoRecorrenteResponse.
+        :rtype: bool
+        """
+        return self._flag_adesao_automatica
+
+    @flag_adesao_automatica.setter
+    def flag_adesao_automatica(self, flag_adesao_automatica):
+        """
+        Sets the flag_adesao_automatica of this TipoDebitoRecorrenteResponse.
+        {{{tipo_debito_recorrente_response_flag_adesao_automatica_value}}}
+
+        :param flag_adesao_automatica: The flag_adesao_automatica of this TipoDebitoRecorrenteResponse.
+        :type: bool
+        """
+        self._flag_adesao_automatica = flag_adesao_automatica
+
+    @property
+    def flag_dependente(self):
+        """
+        Gets the flag_dependente of this TipoDebitoRecorrenteResponse.
+        {{{tipo_debito_recorrente_response_flag_dependente_value}}}
+
+        :return: The flag_dependente of this TipoDebitoRecorrenteResponse.
+        :rtype: bool
+        """
+        return self._flag_dependente
+
+    @flag_dependente.setter
+    def flag_dependente(self, flag_dependente):
+        """
+        Sets the flag_dependente of this TipoDebitoRecorrenteResponse.
+        {{{tipo_debito_recorrente_response_flag_dependente_value}}}
+
+        :param flag_dependente: The flag_dependente of this TipoDebitoRecorrenteResponse.
+        :type: bool
+        """
+        self._flag_dependente = flag_dependente
+
+    @property
+    def quantidade_dependente(self):
+        """
+        Gets the quantidade_dependente of this TipoDebitoRecorrenteResponse.
+        {{{tipo_debito_recorrente_response_quantidade_dependente_value}}}
+
+        :return: The quantidade_dependente of this TipoDebitoRecorrenteResponse.
+        :rtype: int
+        """
+        return self._quantidade_dependente
+
+    @quantidade_dependente.setter
+    def quantidade_dependente(self, quantidade_dependente):
+        """
+        Sets the quantidade_dependente of this TipoDebitoRecorrenteResponse.
+        {{{tipo_debito_recorrente_response_quantidade_dependente_value}}}
+
+        :param quantidade_dependente: The quantidade_dependente of this TipoDebitoRecorrenteResponse.
+        :type: int
+        """
+        self._quantidade_dependente = quantidade_dependente
+
+    @property
+    def id_termo_seguro_servico(self):
+        """
+        Gets the id_termo_seguro_servico of this TipoDebitoRecorrenteResponse.
+        {{{tipo_debito_recorrente_response_id_termo_seguro_servico_value}}}
+
+        :return: The id_termo_seguro_servico of this TipoDebitoRecorrenteResponse.
+        :rtype: int
+        """
+        return self._id_termo_seguro_servico
+
+    @id_termo_seguro_servico.setter
+    def id_termo_seguro_servico(self, id_termo_seguro_servico):
+        """
+        Sets the id_termo_seguro_servico of this TipoDebitoRecorrenteResponse.
+        {{{tipo_debito_recorrente_response_id_termo_seguro_servico_value}}}
+
+        :param id_termo_seguro_servico: The id_termo_seguro_servico of this TipoDebitoRecorrenteResponse.
+        :type: int
+        """
+        self._id_termo_seguro_servico = id_termo_seguro_servico
+
+    @property
+    def idade_minima(self):
+        """
+        Gets the idade_minima of this TipoDebitoRecorrenteResponse.
+        {{{tipo_debito_recorrente_response_idade_minima_value}}}
+
+        :return: The idade_minima of this TipoDebitoRecorrenteResponse.
+        :rtype: int
+        """
+        return self._idade_minima
+
+    @idade_minima.setter
+    def idade_minima(self, idade_minima):
+        """
+        Sets the idade_minima of this TipoDebitoRecorrenteResponse.
+        {{{tipo_debito_recorrente_response_idade_minima_value}}}
+
+        :param idade_minima: The idade_minima of this TipoDebitoRecorrenteResponse.
+        :type: int
+        """
+        self._idade_minima = idade_minima
+
+    @property
+    def idade_maxima(self):
+        """
+        Gets the idade_maxima of this TipoDebitoRecorrenteResponse.
+        {{{tipo_debito_recorrente_response_idade_maxima_value}}}
+
+        :return: The idade_maxima of this TipoDebitoRecorrenteResponse.
+        :rtype: int
+        """
+        return self._idade_maxima
+
+    @idade_maxima.setter
+    def idade_maxima(self, idade_maxima):
+        """
+        Sets the idade_maxima of this TipoDebitoRecorrenteResponse.
+        {{{tipo_debito_recorrente_response_idade_maxima_value}}}
+
+        :param idade_maxima: The idade_maxima of this TipoDebitoRecorrenteResponse.
+        :type: int
+        """
+        self._idade_maxima = idade_maxima
+
+    @property
+    def flag_debito_incondicional(self):
+        """
+        Gets the flag_debito_incondicional of this TipoDebitoRecorrenteResponse.
+        {{{tipo_debito_recorrente_response_flag_debito_incondicional_value}}}
+
+        :return: The flag_debito_incondicional of this TipoDebitoRecorrenteResponse.
+        :rtype: bool
+        """
+        return self._flag_debito_incondicional
+
+    @flag_debito_incondicional.setter
+    def flag_debito_incondicional(self, flag_debito_incondicional):
+        """
+        Sets the flag_debito_incondicional of this TipoDebitoRecorrenteResponse.
+        {{{tipo_debito_recorrente_response_flag_debito_incondicional_value}}}
+
+        :param flag_debito_incondicional: The flag_debito_incondicional of this TipoDebitoRecorrenteResponse.
+        :type: bool
+        """
+        self._flag_debito_incondicional = flag_debito_incondicional
+
+    @property
+    def flag_extrato_incondicional(self):
+        """
+        Gets the flag_extrato_incondicional of this TipoDebitoRecorrenteResponse.
+        {{{tipo_debito_recorrente_response_flag_extrato_incondicional_value}}}
+
+        :return: The flag_extrato_incondicional of this TipoDebitoRecorrenteResponse.
+        :rtype: bool
+        """
+        return self._flag_extrato_incondicional
+
+    @flag_extrato_incondicional.setter
+    def flag_extrato_incondicional(self, flag_extrato_incondicional):
+        """
+        Sets the flag_extrato_incondicional of this TipoDebitoRecorrenteResponse.
+        {{{tipo_debito_recorrente_response_flag_extrato_incondicional_value}}}
+
+        :param flag_extrato_incondicional: The flag_extrato_incondicional of this TipoDebitoRecorrenteResponse.
+        :type: bool
+        """
+        self._flag_extrato_incondicional = flag_extrato_incondicional
+
+    @property
+    def flag_estorno_automatico(self):
+        """
+        Gets the flag_estorno_automatico of this TipoDebitoRecorrenteResponse.
+        {{{tipo_debito_recorrente_response_flag_estorno_automatico_value}}}
+
+        :return: The flag_estorno_automatico of this TipoDebitoRecorrenteResponse.
+        :rtype: bool
+        """
+        return self._flag_estorno_automatico
+
+    @flag_estorno_automatico.setter
+    def flag_estorno_automatico(self, flag_estorno_automatico):
+        """
+        Sets the flag_estorno_automatico of this TipoDebitoRecorrenteResponse.
+        {{{tipo_debito_recorrente_response_flag_estorno_automatico_value}}}
+
+        :param flag_estorno_automatico: The flag_estorno_automatico of this TipoDebitoRecorrenteResponse.
+        :type: bool
+        """
+        self._flag_estorno_automatico = flag_estorno_automatico
+
+    @property
+    def valor_repassado_seguradora(self):
+        """
+        Gets the valor_repassado_seguradora of this TipoDebitoRecorrenteResponse.
+        {{{tipo_debito_recorrente_response_valor_repassado_seguradora_value}}}
+
+        :return: The valor_repassado_seguradora of this TipoDebitoRecorrenteResponse.
+        :rtype: float
+        """
+        return self._valor_repassado_seguradora
+
+    @valor_repassado_seguradora.setter
+    def valor_repassado_seguradora(self, valor_repassado_seguradora):
+        """
+        Sets the valor_repassado_seguradora of this TipoDebitoRecorrenteResponse.
+        {{{tipo_debito_recorrente_response_valor_repassado_seguradora_value}}}
+
+        :param valor_repassado_seguradora: The valor_repassado_seguradora of this TipoDebitoRecorrenteResponse.
+        :type: float
+        """
+        self._valor_repassado_seguradora = valor_repassado_seguradora
+
+    @property
+    def flag_lanca_transacao(self):
+        """
+        Gets the flag_lanca_transacao of this TipoDebitoRecorrenteResponse.
+        {{{tipo_debito_recorrente_response_flag_lanca_transacao_value}}}
+
+        :return: The flag_lanca_transacao of this TipoDebitoRecorrenteResponse.
+        :rtype: bool
+        """
+        return self._flag_lanca_transacao
+
+    @flag_lanca_transacao.setter
+    def flag_lanca_transacao(self, flag_lanca_transacao):
+        """
+        Sets the flag_lanca_transacao of this TipoDebitoRecorrenteResponse.
+        {{{tipo_debito_recorrente_response_flag_lanca_transacao_value}}}
+
+        :param flag_lanca_transacao: The flag_lanca_transacao of this TipoDebitoRecorrenteResponse.
+        :type: bool
+        """
+        self._flag_lanca_transacao = flag_lanca_transacao
+
+    @property
+    def flag_transferencia_automatica(self):
+        """
+        Gets the flag_transferencia_automatica of this TipoDebitoRecorrenteResponse.
+        {{{tipo_debito_recorrente_response_flag_transferencia_automatica_value}}}
+
+        :return: The flag_transferencia_automatica of this TipoDebitoRecorrenteResponse.
+        :rtype: bool
+        """
+        return self._flag_transferencia_automatica
+
+    @flag_transferencia_automatica.setter
+    def flag_transferencia_automatica(self, flag_transferencia_automatica):
+        """
+        Sets the flag_transferencia_automatica of this TipoDebitoRecorrenteResponse.
+        {{{tipo_debito_recorrente_response_flag_transferencia_automatica_value}}}
+
+        :param flag_transferencia_automatica: The flag_transferencia_automatica of this TipoDebitoRecorrenteResponse.
+        :type: bool
+        """
+        self._flag_transferencia_automatica = flag_transferencia_automatica
+
+    @property
+    def id_produto(self):
+        """
+        Gets the id_produto of this TipoDebitoRecorrenteResponse.
+        {{{tipo_debito_recorrente_response_id_produto_value}}}
+
+        :return: The id_produto of this TipoDebitoRecorrenteResponse.
+        :rtype: int
+        """
+        return self._id_produto
+
+    @id_produto.setter
+    def id_produto(self, id_produto):
+        """
+        Sets the id_produto of this TipoDebitoRecorrenteResponse.
+        {{{tipo_debito_recorrente_response_id_produto_value}}}
+
+        :param id_produto: The id_produto of this TipoDebitoRecorrenteResponse.
+        :type: int
+        """
+        self._id_produto = id_produto
+
+    @property
+    def id_grupo_debito_recorrente(self):
+        """
+        Gets the id_grupo_debito_recorrente of this TipoDebitoRecorrenteResponse.
+        {{{tipo_debito_recorrente_response_id_grupo_debito_recorrente_value}}}
+
+        :return: The id_grupo_debito_recorrente of this TipoDebitoRecorrenteResponse.
+        :rtype: int
+        """
+        return self._id_grupo_debito_recorrente
+
+    @id_grupo_debito_recorrente.setter
+    def id_grupo_debito_recorrente(self, id_grupo_debito_recorrente):
+        """
+        Sets the id_grupo_debito_recorrente of this TipoDebitoRecorrenteResponse.
+        {{{tipo_debito_recorrente_response_id_grupo_debito_recorrente_value}}}
+
+        :param id_grupo_debito_recorrente: The id_grupo_debito_recorrente of this TipoDebitoRecorrenteResponse.
+        :type: int
+        """
+        self._id_grupo_debito_recorrente = id_grupo_debito_recorrente
+
+    @property
+    def quantidade_tentativas_cobranca(self):
+        """
+        Gets the quantidade_tentativas_cobranca of this TipoDebitoRecorrenteResponse.
+        {{{tipo_debito_recorrente_response_quantidade_tentativas_cobranca_value}}}
+
+        :return: The quantidade_tentativas_cobranca of this TipoDebitoRecorrenteResponse.
+        :rtype: int
+        """
+        return self._quantidade_tentativas_cobranca
+
+    @quantidade_tentativas_cobranca.setter
+    def quantidade_tentativas_cobranca(self, quantidade_tentativas_cobranca):
+        """
+        Sets the quantidade_tentativas_cobranca of this TipoDebitoRecorrenteResponse.
+        {{{tipo_debito_recorrente_response_quantidade_tentativas_cobranca_value}}}
+
+        :param quantidade_tentativas_cobranca: The quantidade_tentativas_cobranca of this TipoDebitoRecorrenteResponse.
+        :type: int
+        """
+        self._quantidade_tentativas_cobranca = quantidade_tentativas_cobranca
+
+    @property
+    def id_ajuste(self):
+        """
+        Gets the id_ajuste of this TipoDebitoRecorrenteResponse.
+        {{{tipo_debito_recorrente_response_id_ajuste_value}}}
+
+        :return: The id_ajuste of this TipoDebitoRecorrenteResponse.
+        :rtype: int
+        """
+        return self._id_ajuste
+
+    @id_ajuste.setter
+    def id_ajuste(self, id_ajuste):
+        """
+        Sets the id_ajuste of this TipoDebitoRecorrenteResponse.
+        {{{tipo_debito_recorrente_response_id_ajuste_value}}}
+
+        :param id_ajuste: The id_ajuste of this TipoDebitoRecorrenteResponse.
+        :type: int
+        """
+        self._id_ajuste = id_ajuste
 
     def to_dict(self):
         """

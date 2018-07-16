@@ -80,7 +80,7 @@ class StatusContaResponse(object):
     def id(self):
         """
         Gets the id of this StatusContaResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o do Status da Conta (id).
+        {{{status_conta_response_id_value}}}
 
         :return: The id of this StatusContaResponse.
         :rtype: int
@@ -91,7 +91,7 @@ class StatusContaResponse(object):
     def id(self, id):
         """
         Sets the id of this StatusContaResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o do Status da Conta (id).
+        {{{status_conta_response_id_value}}}
 
         :param id: The id of this StatusContaResponse.
         :type: int
@@ -102,7 +102,7 @@ class StatusContaResponse(object):
     def nome(self):
         """
         Gets the nome of this StatusContaResponse.
-        Nome atribu\u00EDdo ao Status da Conta.
+        {{{status_conta_response_nome_value}}}
 
         :return: The nome of this StatusContaResponse.
         :rtype: str
@@ -113,7 +113,7 @@ class StatusContaResponse(object):
     def nome(self, nome):
         """
         Sets the nome of this StatusContaResponse.
-        Nome atribu\u00EDdo ao Status da Conta.
+        {{{status_conta_response_nome_value}}}
 
         :param nome: The nome of this StatusContaResponse.
         :type: str
@@ -124,7 +124,7 @@ class StatusContaResponse(object):
     def permite_alterar_vencimento(self):
         """
         Gets the permite_alterar_vencimento of this StatusContaResponse.
-        Par\u00E2metro que define se o Status da conta permite a solicita\u00E7\u00E3o da altera\u00E7\u00E3o do Dia para Vencimento das Faturas, sendo: 0: Inativo e 1: Ativo.
+        {{{status_conta_response_permite_alterar_vencimento_value}}}
 
         :return: The permite_alterar_vencimento of this StatusContaResponse.
         :rtype: int
@@ -135,7 +135,7 @@ class StatusContaResponse(object):
     def permite_alterar_vencimento(self, permite_alterar_vencimento):
         """
         Sets the permite_alterar_vencimento of this StatusContaResponse.
-        Par\u00E2metro que define se o Status da conta permite a solicita\u00E7\u00E3o da altera\u00E7\u00E3o do Dia para Vencimento das Faturas, sendo: 0: Inativo e 1: Ativo.
+        {{{status_conta_response_permite_alterar_vencimento_value}}}
 
         :param permite_alterar_vencimento: The permite_alterar_vencimento of this StatusContaResponse.
         :type: int
@@ -146,7 +146,7 @@ class StatusContaResponse(object):
     def permite_alterar_limite(self):
         """
         Gets the permite_alterar_limite of this StatusContaResponse.
-        Par\u00E2metro que define se o Status da conta permite altera\u00E7\u00E3o de Limites, sendo: 0: Inativo e 1: Ativo.
+        {{{status_conta_response_permite_alterar_limite_value}}}
 
         :return: The permite_alterar_limite of this StatusContaResponse.
         :rtype: int
@@ -157,7 +157,7 @@ class StatusContaResponse(object):
     def permite_alterar_limite(self, permite_alterar_limite):
         """
         Sets the permite_alterar_limite of this StatusContaResponse.
-        Par\u00E2metro que define se o Status da conta permite altera\u00E7\u00E3o de Limites, sendo: 0: Inativo e 1: Ativo.
+        {{{status_conta_response_permite_alterar_limite_value}}}
 
         :param permite_alterar_limite: The permite_alterar_limite of this StatusContaResponse.
         :type: int
@@ -168,7 +168,7 @@ class StatusContaResponse(object):
     def permite_emitir_nova_via_cartao(self):
         """
         Gets the permite_emitir_nova_via_cartao of this StatusContaResponse.
-        Par\u00E2metro que define se o Status da conta permite solicitar uma nova via de Cart\u00E3o, sendo: 0: Inativo e 1: Ativo.
+        {{{status_conta_response_permite_emitir_nova_via_cartao_value}}}
 
         :return: The permite_emitir_nova_via_cartao of this StatusContaResponse.
         :rtype: int
@@ -179,7 +179,7 @@ class StatusContaResponse(object):
     def permite_emitir_nova_via_cartao(self, permite_emitir_nova_via_cartao):
         """
         Sets the permite_emitir_nova_via_cartao of this StatusContaResponse.
-        Par\u00E2metro que define se o Status da conta permite solicitar uma nova via de Cart\u00E3o, sendo: 0: Inativo e 1: Ativo.
+        {{{status_conta_response_permite_emitir_nova_via_cartao_value}}}
 
         :param permite_emitir_nova_via_cartao: The permite_emitir_nova_via_cartao of this StatusContaResponse.
         :type: int
@@ -190,7 +190,7 @@ class StatusContaResponse(object):
     def permite_fazer_transferencia(self):
         """
         Gets the permite_fazer_transferencia of this StatusContaResponse.
-        Par\u00E2metro que define se o Status da conta permite originar Transfer\u00EAncias de Cr\u00E9dito para outras Contas do mesmo Emissor ou para uma Conta Banc\u00E1ria, sendo: 0: Inativo e 1: Ativo.
+        {{{status_conta_response_permite_fazer_transferencia_value}}}
 
         :return: The permite_fazer_transferencia of this StatusContaResponse.
         :rtype: int
@@ -201,7 +201,7 @@ class StatusContaResponse(object):
     def permite_fazer_transferencia(self, permite_fazer_transferencia):
         """
         Sets the permite_fazer_transferencia of this StatusContaResponse.
-        Par\u00E2metro que define se o Status da conta permite originar Transfer\u00EAncias de Cr\u00E9dito para outras Contas do mesmo Emissor ou para uma Conta Banc\u00E1ria, sendo: 0: Inativo e 1: Ativo.
+        {{{status_conta_response_permite_fazer_transferencia_value}}}
 
         :param permite_fazer_transferencia: The permite_fazer_transferencia of this StatusContaResponse.
         :type: int
@@ -212,7 +212,7 @@ class StatusContaResponse(object):
     def permite_receber_transferencia(self):
         """
         Gets the permite_receber_transferencia of this StatusContaResponse.
-        Par\u00E2metro que define se o Status da conta permite  receber Transfer\u00EAncias de Cr\u00E9dito originadas de outras Contas do mesmo emissor, sendo: 0: Inativo e 1: Ativo.
+        {{{status_conta_response_permite_receber_transferencia_value}}}
 
         :return: The permite_receber_transferencia of this StatusContaResponse.
         :rtype: int
@@ -223,7 +223,7 @@ class StatusContaResponse(object):
     def permite_receber_transferencia(self, permite_receber_transferencia):
         """
         Sets the permite_receber_transferencia of this StatusContaResponse.
-        Par\u00E2metro que define se o Status da conta permite  receber Transfer\u00EAncias de Cr\u00E9dito originadas de outras Contas do mesmo emissor, sendo: 0: Inativo e 1: Ativo.
+        {{{status_conta_response_permite_receber_transferencia_value}}}
 
         :param permite_receber_transferencia: The permite_receber_transferencia of this StatusContaResponse.
         :type: int
@@ -234,7 +234,7 @@ class StatusContaResponse(object):
     def permite_criar_acordo_cobranca(self):
         """
         Gets the permite_criar_acordo_cobranca of this StatusContaResponse.
-        Par\u00E2metro que define se o Status da conta permite ter um Acordo de Cobran\u00E7a de D\u00EDvida criado para ela, sendo: 0: Inativo e 1: Ativo.
+        {{{status_conta_response_permite_criar_acordo_cobranca_value}}}
 
         :return: The permite_criar_acordo_cobranca of this StatusContaResponse.
         :rtype: int
@@ -245,7 +245,7 @@ class StatusContaResponse(object):
     def permite_criar_acordo_cobranca(self, permite_criar_acordo_cobranca):
         """
         Sets the permite_criar_acordo_cobranca of this StatusContaResponse.
-        Par\u00E2metro que define se o Status da conta permite ter um Acordo de Cobran\u00E7a de D\u00EDvida criado para ela, sendo: 0: Inativo e 1: Ativo.
+        {{{status_conta_response_permite_criar_acordo_cobranca_value}}}
 
         :param permite_criar_acordo_cobranca: The permite_criar_acordo_cobranca of this StatusContaResponse.
         :type: int
@@ -256,7 +256,7 @@ class StatusContaResponse(object):
     def permite_atribuir_como_bloqueio(self):
         """
         Gets the permite_atribuir_como_bloqueio of this StatusContaResponse.
-        Par\u00E2metro que define se o Status da conta permite ser atribu\u00EDdo para Bloquear temporariamente uma Conta, sendo: 0: Inativo e 1: Ativo.
+        {{{status_conta_response_permite_atribuir_como_bloqueio_value}}}
 
         :return: The permite_atribuir_como_bloqueio of this StatusContaResponse.
         :rtype: int
@@ -267,7 +267,7 @@ class StatusContaResponse(object):
     def permite_atribuir_como_bloqueio(self, permite_atribuir_como_bloqueio):
         """
         Sets the permite_atribuir_como_bloqueio of this StatusContaResponse.
-        Par\u00E2metro que define se o Status da conta permite ser atribu\u00EDdo para Bloquear temporariamente uma Conta, sendo: 0: Inativo e 1: Ativo.
+        {{{status_conta_response_permite_atribuir_como_bloqueio_value}}}
 
         :param permite_atribuir_como_bloqueio: The permite_atribuir_como_bloqueio of this StatusContaResponse.
         :type: int
@@ -278,7 +278,7 @@ class StatusContaResponse(object):
     def permite_desbloquear(self):
         """
         Gets the permite_desbloquear of this StatusContaResponse.
-        Par\u00E2metro que define se o Status da conta permite ser desbloqueada, sendo: 0: Inativo e 1: Ativo.
+        {{{status_conta_response_permite_desbloquear_value}}}
 
         :return: The permite_desbloquear of this StatusContaResponse.
         :rtype: int
@@ -289,7 +289,7 @@ class StatusContaResponse(object):
     def permite_desbloquear(self, permite_desbloquear):
         """
         Sets the permite_desbloquear of this StatusContaResponse.
-        Par\u00E2metro que define se o Status da conta permite ser desbloqueada, sendo: 0: Inativo e 1: Ativo.
+        {{{status_conta_response_permite_desbloquear_value}}}
 
         :param permite_desbloquear: The permite_desbloquear of this StatusContaResponse.
         :type: int
@@ -300,7 +300,7 @@ class StatusContaResponse(object):
     def permite_atribuir_como_cancelamento(self):
         """
         Gets the permite_atribuir_como_cancelamento of this StatusContaResponse.
-        Par\u00E2metro que define se o Status da conta permite ser atribu\u00EDdo para realizar o cancelamento definitivo de uma conta, sendo: 0: Inativo e 1: Ativo.
+        {{{status_conta_response_permite_atribuir_como_cancelamento_value}}}
 
         :return: The permite_atribuir_como_cancelamento of this StatusContaResponse.
         :rtype: int
@@ -311,7 +311,7 @@ class StatusContaResponse(object):
     def permite_atribuir_como_cancelamento(self, permite_atribuir_como_cancelamento):
         """
         Sets the permite_atribuir_como_cancelamento of this StatusContaResponse.
-        Par\u00E2metro que define se o Status da conta permite ser atribu\u00EDdo para realizar o cancelamento definitivo de uma conta, sendo: 0: Inativo e 1: Ativo.
+        {{{status_conta_response_permite_atribuir_como_cancelamento_value}}}
 
         :param permite_atribuir_como_cancelamento: The permite_atribuir_como_cancelamento of this StatusContaResponse.
         :type: int

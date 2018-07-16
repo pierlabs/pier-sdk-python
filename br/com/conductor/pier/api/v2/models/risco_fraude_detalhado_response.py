@@ -128,7 +128,7 @@ class RiscoFraudeDetalhadoResponse(object):
     def id(self):
         """
         Gets the id of this RiscoFraudeDetalhadoResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o do risco de fraude
+        {{{risco_fraude_detalhado_response_id_value}}}
 
         :return: The id of this RiscoFraudeDetalhadoResponse.
         :rtype: int
@@ -139,7 +139,7 @@ class RiscoFraudeDetalhadoResponse(object):
     def id(self, id):
         """
         Sets the id of this RiscoFraudeDetalhadoResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o do risco de fraude
+        {{{risco_fraude_detalhado_response_id_value}}}
 
         :param id: The id of this RiscoFraudeDetalhadoResponse.
         :type: int
@@ -150,7 +150,7 @@ class RiscoFraudeDetalhadoResponse(object):
     def id_tipo_resolucao(self):
         """
         Gets the id_tipo_resolucao of this RiscoFraudeDetalhadoResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o do tipo de resolu\u00E7\u00E3o atribu\u00EDdo ao registro
+        {{{risco_fraude_detalhado_response_id_tipo_resolucao_value}}}
 
         :return: The id_tipo_resolucao of this RiscoFraudeDetalhadoResponse.
         :rtype: int
@@ -161,7 +161,7 @@ class RiscoFraudeDetalhadoResponse(object):
     def id_tipo_resolucao(self, id_tipo_resolucao):
         """
         Sets the id_tipo_resolucao of this RiscoFraudeDetalhadoResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o do tipo de resolu\u00E7\u00E3o atribu\u00EDdo ao registro
+        {{{risco_fraude_detalhado_response_id_tipo_resolucao_value}}}
 
         :param id_tipo_resolucao: The id_tipo_resolucao of this RiscoFraudeDetalhadoResponse.
         :type: int
@@ -172,7 +172,7 @@ class RiscoFraudeDetalhadoResponse(object):
     def descricao_tipo_resolucao(self):
         """
         Gets the descricao_tipo_resolucao of this RiscoFraudeDetalhadoResponse.
-        Descri\u00E7\u00E3o do tipo de resolu\u00E7\u00E3o atribu\u00EDdo ao registro
+        {{{risco_fraude_detalhado_response_descricao_tipo_resolucao_value}}}
 
         :return: The descricao_tipo_resolucao of this RiscoFraudeDetalhadoResponse.
         :rtype: str
@@ -183,7 +183,7 @@ class RiscoFraudeDetalhadoResponse(object):
     def descricao_tipo_resolucao(self, descricao_tipo_resolucao):
         """
         Sets the descricao_tipo_resolucao of this RiscoFraudeDetalhadoResponse.
-        Descri\u00E7\u00E3o do tipo de resolu\u00E7\u00E3o atribu\u00EDdo ao registro
+        {{{risco_fraude_detalhado_response_descricao_tipo_resolucao_value}}}
 
         :param descricao_tipo_resolucao: The descricao_tipo_resolucao of this RiscoFraudeDetalhadoResponse.
         :type: str
@@ -194,7 +194,7 @@ class RiscoFraudeDetalhadoResponse(object):
     def flag_alto_risco(self):
         """
         Gets the flag_alto_risco of this RiscoFraudeDetalhadoResponse.
-        Indica que a transa\u00E7\u00E3o possui um alto risco de fraude e que todas as transa\u00E7\u00F5es seguintes a ela ser\u00E3o negadas at\u00E9 que todas as transa\u00E7\u00F5es classificadas com risco de fraude sejam analisadas
+        {{{risco_fraude_detalhado_response_flag_alto_risco_value}}}
 
         :return: The flag_alto_risco of this RiscoFraudeDetalhadoResponse.
         :rtype: bool
@@ -205,7 +205,7 @@ class RiscoFraudeDetalhadoResponse(object):
     def flag_alto_risco(self, flag_alto_risco):
         """
         Sets the flag_alto_risco of this RiscoFraudeDetalhadoResponse.
-        Indica que a transa\u00E7\u00E3o possui um alto risco de fraude e que todas as transa\u00E7\u00F5es seguintes a ela ser\u00E3o negadas at\u00E9 que todas as transa\u00E7\u00F5es classificadas com risco de fraude sejam analisadas
+        {{{risco_fraude_detalhado_response_flag_alto_risco_value}}}
 
         :param flag_alto_risco: The flag_alto_risco of this RiscoFraudeDetalhadoResponse.
         :type: bool
@@ -216,7 +216,7 @@ class RiscoFraudeDetalhadoResponse(object):
     def id_conta(self):
         """
         Gets the id_conta of this RiscoFraudeDetalhadoResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o da conta
+        {{{risco_fraude_detalhado_response_id_conta_value}}}
 
         :return: The id_conta of this RiscoFraudeDetalhadoResponse.
         :rtype: int
@@ -227,7 +227,7 @@ class RiscoFraudeDetalhadoResponse(object):
     def id_conta(self, id_conta):
         """
         Sets the id_conta of this RiscoFraudeDetalhadoResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o da conta
+        {{{risco_fraude_detalhado_response_id_conta_value}}}
 
         :param id_conta: The id_conta of this RiscoFraudeDetalhadoResponse.
         :type: int
@@ -238,7 +238,7 @@ class RiscoFraudeDetalhadoResponse(object):
     def id_cartao(self):
         """
         Gets the id_cartao of this RiscoFraudeDetalhadoResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o do cart\u00E3o
+        {{{risco_fraude_detalhado_response_id_cartao_value}}}
 
         :return: The id_cartao of this RiscoFraudeDetalhadoResponse.
         :rtype: int
@@ -249,7 +249,7 @@ class RiscoFraudeDetalhadoResponse(object):
     def id_cartao(self, id_cartao):
         """
         Sets the id_cartao of this RiscoFraudeDetalhadoResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o do cart\u00E3o
+        {{{risco_fraude_detalhado_response_id_cartao_value}}}
 
         :param id_cartao: The id_cartao of this RiscoFraudeDetalhadoResponse.
         :type: int
@@ -260,7 +260,7 @@ class RiscoFraudeDetalhadoResponse(object):
     def id_produto(self):
         """
         Gets the id_produto of this RiscoFraudeDetalhadoResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o do produto
+        {{{risco_fraude_detalhado_response_id_produto_value}}}
 
         :return: The id_produto of this RiscoFraudeDetalhadoResponse.
         :rtype: int
@@ -271,7 +271,7 @@ class RiscoFraudeDetalhadoResponse(object):
     def id_produto(self, id_produto):
         """
         Sets the id_produto of this RiscoFraudeDetalhadoResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o do produto
+        {{{risco_fraude_detalhado_response_id_produto_value}}}
 
         :param id_produto: The id_produto of this RiscoFraudeDetalhadoResponse.
         :type: int
@@ -282,7 +282,7 @@ class RiscoFraudeDetalhadoResponse(object):
     def id_transacao(self):
         """
         Gets the id_transacao of this RiscoFraudeDetalhadoResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o da transa\u00E7\u00E3o
+        {{{risco_fraude_detalhado_response_id_transacao_value}}}
 
         :return: The id_transacao of this RiscoFraudeDetalhadoResponse.
         :rtype: int
@@ -293,7 +293,7 @@ class RiscoFraudeDetalhadoResponse(object):
     def id_transacao(self, id_transacao):
         """
         Sets the id_transacao of this RiscoFraudeDetalhadoResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o da transa\u00E7\u00E3o
+        {{{risco_fraude_detalhado_response_id_transacao_value}}}
 
         :param id_transacao: The id_transacao of this RiscoFraudeDetalhadoResponse.
         :type: int
@@ -304,7 +304,7 @@ class RiscoFraudeDetalhadoResponse(object):
     def data_transacao(self):
         """
         Gets the data_transacao of this RiscoFraudeDetalhadoResponse.
-        Data que a transa\u00E7\u00E3o classificada com risco de fraude foi realizada
+        {{{risco_fraude_detalhado_response_data_transacao_value}}}
 
         :return: The data_transacao of this RiscoFraudeDetalhadoResponse.
         :rtype: str
@@ -315,7 +315,7 @@ class RiscoFraudeDetalhadoResponse(object):
     def data_transacao(self, data_transacao):
         """
         Sets the data_transacao of this RiscoFraudeDetalhadoResponse.
-        Data que a transa\u00E7\u00E3o classificada com risco de fraude foi realizada
+        {{{risco_fraude_detalhado_response_data_transacao_value}}}
 
         :param data_transacao: The data_transacao of this RiscoFraudeDetalhadoResponse.
         :type: str
@@ -326,7 +326,7 @@ class RiscoFraudeDetalhadoResponse(object):
     def valor_transacao(self):
         """
         Gets the valor_transacao of this RiscoFraudeDetalhadoResponse.
-        Valor da transa\u00E7\u00E3o classificada com risco de fraude
+        {{{risco_fraude_detalhado_response_valor_transacao_value}}}
 
         :return: The valor_transacao of this RiscoFraudeDetalhadoResponse.
         :rtype: float
@@ -337,7 +337,7 @@ class RiscoFraudeDetalhadoResponse(object):
     def valor_transacao(self, valor_transacao):
         """
         Sets the valor_transacao of this RiscoFraudeDetalhadoResponse.
-        Valor da transa\u00E7\u00E3o classificada com risco de fraude
+        {{{risco_fraude_detalhado_response_valor_transacao_value}}}
 
         :param valor_transacao: The valor_transacao of this RiscoFraudeDetalhadoResponse.
         :type: float
@@ -348,7 +348,7 @@ class RiscoFraudeDetalhadoResponse(object):
     def codigo_moeda_origem(self):
         """
         Gets the codigo_moeda_origem of this RiscoFraudeDetalhadoResponse.
-        C\u00F3digo da moeda de origem utilizada para a transa\u00E7\u00E3o
+        {{{risco_fraude_detalhado_response_codigo_moeda_origem_value}}}
 
         :return: The codigo_moeda_origem of this RiscoFraudeDetalhadoResponse.
         :rtype: str
@@ -359,7 +359,7 @@ class RiscoFraudeDetalhadoResponse(object):
     def codigo_moeda_origem(self, codigo_moeda_origem):
         """
         Sets the codigo_moeda_origem of this RiscoFraudeDetalhadoResponse.
-        C\u00F3digo da moeda de origem utilizada para a transa\u00E7\u00E3o
+        {{{risco_fraude_detalhado_response_codigo_moeda_origem_value}}}
 
         :param codigo_moeda_origem: The codigo_moeda_origem of this RiscoFraudeDetalhadoResponse.
         :type: str
@@ -370,7 +370,7 @@ class RiscoFraudeDetalhadoResponse(object):
     def valor_origem(self):
         """
         Gets the valor_origem of this RiscoFraudeDetalhadoResponse.
-        Valor da transa\u00E7\u00E3o na moeda de origem
+        {{{risco_fraude_detalhado_response_valor_origem_value}}}
 
         :return: The valor_origem of this RiscoFraudeDetalhadoResponse.
         :rtype: float
@@ -381,7 +381,7 @@ class RiscoFraudeDetalhadoResponse(object):
     def valor_origem(self, valor_origem):
         """
         Sets the valor_origem of this RiscoFraudeDetalhadoResponse.
-        Valor da transa\u00E7\u00E3o na moeda de origem
+        {{{risco_fraude_detalhado_response_valor_origem_value}}}
 
         :param valor_origem: The valor_origem of this RiscoFraudeDetalhadoResponse.
         :type: float
@@ -392,7 +392,7 @@ class RiscoFraudeDetalhadoResponse(object):
     def codigo_moeda_destino(self):
         """
         Gets the codigo_moeda_destino of this RiscoFraudeDetalhadoResponse.
-        C\u00F3digo da moeda de destino utilizada para a transa\u00E7\u00E3o
+        {{{risco_fraude_detalhado_response_codigo_moeda_destino_value}}}
 
         :return: The codigo_moeda_destino of this RiscoFraudeDetalhadoResponse.
         :rtype: str
@@ -403,7 +403,7 @@ class RiscoFraudeDetalhadoResponse(object):
     def codigo_moeda_destino(self, codigo_moeda_destino):
         """
         Sets the codigo_moeda_destino of this RiscoFraudeDetalhadoResponse.
-        C\u00F3digo da moeda de destino utilizada para a transa\u00E7\u00E3o
+        {{{risco_fraude_detalhado_response_codigo_moeda_destino_value}}}
 
         :param codigo_moeda_destino: The codigo_moeda_destino of this RiscoFraudeDetalhadoResponse.
         :type: str
@@ -414,7 +414,7 @@ class RiscoFraudeDetalhadoResponse(object):
     def valor_destino(self):
         """
         Gets the valor_destino of this RiscoFraudeDetalhadoResponse.
-        Valor da transa\u00E7\u00E3o na moeda de destino
+        {{{risco_fraude_detalhado_response_valor_destino_value}}}
 
         :return: The valor_destino of this RiscoFraudeDetalhadoResponse.
         :rtype: float
@@ -425,7 +425,7 @@ class RiscoFraudeDetalhadoResponse(object):
     def valor_destino(self, valor_destino):
         """
         Sets the valor_destino of this RiscoFraudeDetalhadoResponse.
-        Valor da transa\u00E7\u00E3o na moeda de destino
+        {{{risco_fraude_detalhado_response_valor_destino_value}}}
 
         :param valor_destino: The valor_destino of this RiscoFraudeDetalhadoResponse.
         :type: float
@@ -436,7 +436,7 @@ class RiscoFraudeDetalhadoResponse(object):
     def nome_estabelecimento(self):
         """
         Gets the nome_estabelecimento of this RiscoFraudeDetalhadoResponse.
-        Nome do estabelecimento onde a transa\u00E7\u00E3o  com risco de fraude foi realizada
+        {{{risco_fraude_detalhado_response_nome_estabelecimento_value}}}
 
         :return: The nome_estabelecimento of this RiscoFraudeDetalhadoResponse.
         :rtype: str
@@ -447,7 +447,7 @@ class RiscoFraudeDetalhadoResponse(object):
     def nome_estabelecimento(self, nome_estabelecimento):
         """
         Sets the nome_estabelecimento of this RiscoFraudeDetalhadoResponse.
-        Nome do estabelecimento onde a transa\u00E7\u00E3o  com risco de fraude foi realizada
+        {{{risco_fraude_detalhado_response_nome_estabelecimento_value}}}
 
         :param nome_estabelecimento: The nome_estabelecimento of this RiscoFraudeDetalhadoResponse.
         :type: str
@@ -458,7 +458,7 @@ class RiscoFraudeDetalhadoResponse(object):
     def id_pais(self):
         """
         Gets the id_pais of this RiscoFraudeDetalhadoResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o do Pa\u00EDs
+        {{{risco_fraude_detalhado_response_id_pais_value}}}
 
         :return: The id_pais of this RiscoFraudeDetalhadoResponse.
         :rtype: str
@@ -469,7 +469,7 @@ class RiscoFraudeDetalhadoResponse(object):
     def id_pais(self, id_pais):
         """
         Sets the id_pais of this RiscoFraudeDetalhadoResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o do Pa\u00EDs
+        {{{risco_fraude_detalhado_response_id_pais_value}}}
 
         :param id_pais: The id_pais of this RiscoFraudeDetalhadoResponse.
         :type: str
@@ -480,7 +480,7 @@ class RiscoFraudeDetalhadoResponse(object):
     def codigo_resposta_autorizador(self):
         """
         Gets the codigo_resposta_autorizador of this RiscoFraudeDetalhadoResponse.
-        C\u00F3digo de resposta do autorizador para a transa\u00E7\u00E3o
+        {{{risco_fraude_detalhado_response_codigo_resposta_autorizador_value}}}
 
         :return: The codigo_resposta_autorizador of this RiscoFraudeDetalhadoResponse.
         :rtype: str
@@ -491,7 +491,7 @@ class RiscoFraudeDetalhadoResponse(object):
     def codigo_resposta_autorizador(self, codigo_resposta_autorizador):
         """
         Sets the codigo_resposta_autorizador of this RiscoFraudeDetalhadoResponse.
-        C\u00F3digo de resposta do autorizador para a transa\u00E7\u00E3o
+        {{{risco_fraude_detalhado_response_codigo_resposta_autorizador_value}}}
 
         :param codigo_resposta_autorizador: The codigo_resposta_autorizador of this RiscoFraudeDetalhadoResponse.
         :type: str
@@ -502,7 +502,7 @@ class RiscoFraudeDetalhadoResponse(object):
     def descricao_resposta_autorizador(self):
         """
         Gets the descricao_resposta_autorizador of this RiscoFraudeDetalhadoResponse.
-        Descri\u00E7\u00E3o da resposta do autorizador para a transa\u00E7\u00E3o
+        {{{risco_fraude_detalhado_response_descricao_resposta_autorizador_value}}}
 
         :return: The descricao_resposta_autorizador of this RiscoFraudeDetalhadoResponse.
         :rtype: str
@@ -513,7 +513,7 @@ class RiscoFraudeDetalhadoResponse(object):
     def descricao_resposta_autorizador(self, descricao_resposta_autorizador):
         """
         Sets the descricao_resposta_autorizador of this RiscoFraudeDetalhadoResponse.
-        Descri\u00E7\u00E3o da resposta do autorizador para a transa\u00E7\u00E3o
+        {{{risco_fraude_detalhado_response_descricao_resposta_autorizador_value}}}
 
         :param descricao_resposta_autorizador: The descricao_resposta_autorizador of this RiscoFraudeDetalhadoResponse.
         :type: str
@@ -524,7 +524,7 @@ class RiscoFraudeDetalhadoResponse(object):
     def codigo_resposta_fraude(self):
         """
         Gets the codigo_resposta_fraude of this RiscoFraudeDetalhadoResponse.
-        C\u00F3digo de resposta da ferramenta de Preven\u00E7\u00E3o a Fraude para a transa\u00E7\u00E3o
+        {{{risco_fraude_detalhado_response_codigo_resposta_fraude_value}}}
 
         :return: The codigo_resposta_fraude of this RiscoFraudeDetalhadoResponse.
         :rtype: str
@@ -535,7 +535,7 @@ class RiscoFraudeDetalhadoResponse(object):
     def codigo_resposta_fraude(self, codigo_resposta_fraude):
         """
         Sets the codigo_resposta_fraude of this RiscoFraudeDetalhadoResponse.
-        C\u00F3digo de resposta da ferramenta de Preven\u00E7\u00E3o a Fraude para a transa\u00E7\u00E3o
+        {{{risco_fraude_detalhado_response_codigo_resposta_fraude_value}}}
 
         :param codigo_resposta_fraude: The codigo_resposta_fraude of this RiscoFraudeDetalhadoResponse.
         :type: str
@@ -546,7 +546,7 @@ class RiscoFraudeDetalhadoResponse(object):
     def descricao_resposta_fraude(self):
         """
         Gets the descricao_resposta_fraude of this RiscoFraudeDetalhadoResponse.
-        Descri\u00E7\u00E3o da resposta da ferramenta de Preven\u00E7\u00E3o a Fraude para a transa\u00E7\u00E3o
+        {{{risco_fraude_detalhado_response_descricao_resposta_fraude_value}}}
 
         :return: The descricao_resposta_fraude of this RiscoFraudeDetalhadoResponse.
         :rtype: str
@@ -557,7 +557,7 @@ class RiscoFraudeDetalhadoResponse(object):
     def descricao_resposta_fraude(self, descricao_resposta_fraude):
         """
         Sets the descricao_resposta_fraude of this RiscoFraudeDetalhadoResponse.
-        Descri\u00E7\u00E3o da resposta da ferramenta de Preven\u00E7\u00E3o a Fraude para a transa\u00E7\u00E3o
+        {{{risco_fraude_detalhado_response_descricao_resposta_fraude_value}}}
 
         :param descricao_resposta_fraude: The descricao_resposta_fraude of this RiscoFraudeDetalhadoResponse.
         :type: str
@@ -568,7 +568,7 @@ class RiscoFraudeDetalhadoResponse(object):
     def origem_transacao(self):
         """
         Gets the origem_transacao of this RiscoFraudeDetalhadoResponse.
-        Tipo de Terminal que originou a Transa\u00E7\u00E3o (POS, ATM, TEF, etc)
+        {{{risco_fraude_detalhado_response_origem_transacao_value}}}
 
         :return: The origem_transacao of this RiscoFraudeDetalhadoResponse.
         :rtype: str
@@ -579,7 +579,7 @@ class RiscoFraudeDetalhadoResponse(object):
     def origem_transacao(self, origem_transacao):
         """
         Sets the origem_transacao of this RiscoFraudeDetalhadoResponse.
-        Tipo de Terminal que originou a Transa\u00E7\u00E3o (POS, ATM, TEF, etc)
+        {{{risco_fraude_detalhado_response_origem_transacao_value}}}
 
         :param origem_transacao: The origem_transacao of this RiscoFraudeDetalhadoResponse.
         :type: str
@@ -590,7 +590,7 @@ class RiscoFraudeDetalhadoResponse(object):
     def codigo_modo_entrada_terminal(self):
         """
         Gets the codigo_modo_entrada_terminal of this RiscoFraudeDetalhadoResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o do modo de origem da captura da Transa\u00E7\u00E3o
+        {{{risco_fraude_detalhado_response_codigo_modo_entrada_terminal_value}}}
 
         :return: The codigo_modo_entrada_terminal of this RiscoFraudeDetalhadoResponse.
         :rtype: str
@@ -601,7 +601,7 @@ class RiscoFraudeDetalhadoResponse(object):
     def codigo_modo_entrada_terminal(self, codigo_modo_entrada_terminal):
         """
         Sets the codigo_modo_entrada_terminal of this RiscoFraudeDetalhadoResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o do modo de origem da captura da Transa\u00E7\u00E3o
+        {{{risco_fraude_detalhado_response_codigo_modo_entrada_terminal_value}}}
 
         :param codigo_modo_entrada_terminal: The codigo_modo_entrada_terminal of this RiscoFraudeDetalhadoResponse.
         :type: str
@@ -612,7 +612,7 @@ class RiscoFraudeDetalhadoResponse(object):
     def descricao_modo_entrada_terminal(self):
         """
         Gets the descricao_modo_entrada_terminal of this RiscoFraudeDetalhadoResponse.
-        Descri\u00E7\u00E3o do modo de origem da captura da Transa\u00E7\u00E3o
+        {{{risco_fraude_detalhado_response_descricao_modo_entrada_terminal_value}}}
 
         :return: The descricao_modo_entrada_terminal of this RiscoFraudeDetalhadoResponse.
         :rtype: str
@@ -623,7 +623,7 @@ class RiscoFraudeDetalhadoResponse(object):
     def descricao_modo_entrada_terminal(self, descricao_modo_entrada_terminal):
         """
         Sets the descricao_modo_entrada_terminal of this RiscoFraudeDetalhadoResponse.
-        Descri\u00E7\u00E3o do modo de origem da captura da Transa\u00E7\u00E3o
+        {{{risco_fraude_detalhado_response_descricao_modo_entrada_terminal_value}}}
 
         :param descricao_modo_entrada_terminal: The descricao_modo_entrada_terminal of this RiscoFraudeDetalhadoResponse.
         :type: str
@@ -634,7 +634,7 @@ class RiscoFraudeDetalhadoResponse(object):
     def cpf(self):
         """
         Gets the cpf of this RiscoFraudeDetalhadoResponse.
-        N\u00FAmero do CPF da Pessoa portadora do Cart\u00E3o, quando for do tipo Pessoa F\u00EDsica
+        {{{risco_fraude_detalhado_response_cpf_value}}}
 
         :return: The cpf of this RiscoFraudeDetalhadoResponse.
         :rtype: str
@@ -645,7 +645,7 @@ class RiscoFraudeDetalhadoResponse(object):
     def cpf(self, cpf):
         """
         Sets the cpf of this RiscoFraudeDetalhadoResponse.
-        N\u00FAmero do CPF da Pessoa portadora do Cart\u00E3o, quando for do tipo Pessoa F\u00EDsica
+        {{{risco_fraude_detalhado_response_cpf_value}}}
 
         :param cpf: The cpf of this RiscoFraudeDetalhadoResponse.
         :type: str
@@ -656,7 +656,7 @@ class RiscoFraudeDetalhadoResponse(object):
     def cnpj(self):
         """
         Gets the cnpj of this RiscoFraudeDetalhadoResponse.
-        N\u00FAmero do CNPJ da Pessoa portadora do Cart\u00E3o, quanto for do tipo Pessoa Jur\u00EDdica
+        {{{risco_fraude_detalhado_response_cnpj_value}}}
 
         :return: The cnpj of this RiscoFraudeDetalhadoResponse.
         :rtype: str
@@ -667,7 +667,7 @@ class RiscoFraudeDetalhadoResponse(object):
     def cnpj(self, cnpj):
         """
         Sets the cnpj of this RiscoFraudeDetalhadoResponse.
-        N\u00FAmero do CNPJ da Pessoa portadora do Cart\u00E3o, quanto for do tipo Pessoa Jur\u00EDdica
+        {{{risco_fraude_detalhado_response_cnpj_value}}}
 
         :param cnpj: The cnpj of this RiscoFraudeDetalhadoResponse.
         :type: str
@@ -678,7 +678,7 @@ class RiscoFraudeDetalhadoResponse(object):
     def email(self):
         """
         Gets the email of this RiscoFraudeDetalhadoResponse.
-        Endere\u00E7o de email da Pessoa portadora do Cart\u00E3o
+        {{{risco_fraude_detalhado_response_email_value}}}
 
         :return: The email of this RiscoFraudeDetalhadoResponse.
         :rtype: str
@@ -689,7 +689,7 @@ class RiscoFraudeDetalhadoResponse(object):
     def email(self, email):
         """
         Sets the email of this RiscoFraudeDetalhadoResponse.
-        Endere\u00E7o de email da Pessoa portadora do Cart\u00E3o
+        {{{risco_fraude_detalhado_response_email_value}}}
 
         :param email: The email of this RiscoFraudeDetalhadoResponse.
         :type: str
@@ -700,7 +700,7 @@ class RiscoFraudeDetalhadoResponse(object):
     def telefones(self):
         """
         Gets the telefones of this RiscoFraudeDetalhadoResponse.
-        Lista de telefones associados ao portador do Cart\u00E3o
+        {{{risco_fraude_detalhado_response_telefones_value}}}
 
         :return: The telefones of this RiscoFraudeDetalhadoResponse.
         :rtype: list[TelefoneResponse]
@@ -711,7 +711,7 @@ class RiscoFraudeDetalhadoResponse(object):
     def telefones(self, telefones):
         """
         Sets the telefones of this RiscoFraudeDetalhadoResponse.
-        Lista de telefones associados ao portador do Cart\u00E3o
+        {{{risco_fraude_detalhado_response_telefones_value}}}
 
         :param telefones: The telefones of this RiscoFraudeDetalhadoResponse.
         :type: list[TelefoneResponse]

@@ -50,7 +50,7 @@ class AtribuirAssinaturaClientePersist(object):
     def id_arquivo(self):
         """
         Gets the id_arquivo of this AtribuirAssinaturaClientePersist.
-        C\u00F3digo de identifica\u00E7\u00E3o do Arquivo
+        {{{atribuir_assinatura_cliente_persist_id_arquivo_value}}}
 
         :return: The id_arquivo of this AtribuirAssinaturaClientePersist.
         :rtype: int
@@ -61,7 +61,7 @@ class AtribuirAssinaturaClientePersist(object):
     def id_arquivo(self, id_arquivo):
         """
         Sets the id_arquivo of this AtribuirAssinaturaClientePersist.
-        C\u00F3digo de identifica\u00E7\u00E3o do Arquivo
+        {{{atribuir_assinatura_cliente_persist_id_arquivo_value}}}
 
         :param id_arquivo: The id_arquivo of this AtribuirAssinaturaClientePersist.
         :type: int

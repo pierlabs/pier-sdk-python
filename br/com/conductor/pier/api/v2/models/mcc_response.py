@@ -53,7 +53,7 @@ class MCCResponse(object):
     def id(self):
         """
         Gets the id of this MCCResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o do MCC (id).
+        {{{m_c_c_response_id_value}}}
 
         :return: The id of this MCCResponse.
         :rtype: int
@@ -64,7 +64,7 @@ class MCCResponse(object):
     def id(self, id):
         """
         Sets the id of this MCCResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o do MCC (id).
+        {{{m_c_c_response_id_value}}}
 
         :param id: The id of this MCCResponse.
         :type: int
@@ -75,7 +75,7 @@ class MCCResponse(object):
     def descricao(self):
         """
         Gets the descricao of this MCCResponse.
-        descricao do MCC.
+        {{{m_c_c_response_descricao_value}}}
 
         :return: The descricao of this MCCResponse.
         :rtype: str
@@ -86,7 +86,7 @@ class MCCResponse(object):
     def descricao(self, descricao):
         """
         Sets the descricao of this MCCResponse.
-        descricao do MCC.
+        {{{m_c_c_response_descricao_value}}}
 
         :param descricao: The descricao of this MCCResponse.
         :type: str

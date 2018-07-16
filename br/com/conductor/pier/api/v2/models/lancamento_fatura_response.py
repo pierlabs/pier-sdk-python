@@ -122,7 +122,7 @@ class LancamentoFaturaResponse(object):
     def id_transacao(self):
         """
         Gets the id_transacao of this LancamentoFaturaResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o da transa\u00E7\u00E3o
+        {{{lancamento_fatura_response_id_transacao_value}}}
 
         :return: The id_transacao of this LancamentoFaturaResponse.
         :rtype: int
@@ -133,7 +133,7 @@ class LancamentoFaturaResponse(object):
     def id_transacao(self, id_transacao):
         """
         Sets the id_transacao of this LancamentoFaturaResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o da transa\u00E7\u00E3o
+        {{{lancamento_fatura_response_id_transacao_value}}}
 
         :param id_transacao: The id_transacao of this LancamentoFaturaResponse.
         :type: int
@@ -144,7 +144,7 @@ class LancamentoFaturaResponse(object):
     def descricao_tipo_transacao(self):
         """
         Gets the descricao_tipo_transacao of this LancamentoFaturaResponse.
-        Descri\u00E7\u00E3o do tipo da transa\u00E7\u00E3o
+        {{{lancamento_fatura_response_descricao_tipo_transacao_value}}}
 
         :return: The descricao_tipo_transacao of this LancamentoFaturaResponse.
         :rtype: str
@@ -155,7 +155,7 @@ class LancamentoFaturaResponse(object):
     def descricao_tipo_transacao(self, descricao_tipo_transacao):
         """
         Sets the descricao_tipo_transacao of this LancamentoFaturaResponse.
-        Descri\u00E7\u00E3o do tipo da transa\u00E7\u00E3o
+        {{{lancamento_fatura_response_descricao_tipo_transacao_value}}}
 
         :param descricao_tipo_transacao: The descricao_tipo_transacao of this LancamentoFaturaResponse.
         :type: str
@@ -166,7 +166,7 @@ class LancamentoFaturaResponse(object):
     def id_tipo_evento(self):
         """
         Gets the id_tipo_evento of this LancamentoFaturaResponse.
-        C\u00F3digo identificador do tipo do evento
+        {{{lancamento_fatura_response_id_tipo_evento_value}}}
 
         :return: The id_tipo_evento of this LancamentoFaturaResponse.
         :rtype: int
@@ -177,7 +177,7 @@ class LancamentoFaturaResponse(object):
     def id_tipo_evento(self, id_tipo_evento):
         """
         Sets the id_tipo_evento of this LancamentoFaturaResponse.
-        C\u00F3digo identificador do tipo do evento
+        {{{lancamento_fatura_response_id_tipo_evento_value}}}
 
         :param id_tipo_evento: The id_tipo_evento of this LancamentoFaturaResponse.
         :type: int
@@ -188,7 +188,7 @@ class LancamentoFaturaResponse(object):
     def descricao_tipo_evento(self):
         """
         Gets the descricao_tipo_evento of this LancamentoFaturaResponse.
-        Descri\u00E7\u00E3o do tipo do evento
+        {{{lancamento_fatura_response_descricao_tipo_evento_value}}}
 
         :return: The descricao_tipo_evento of this LancamentoFaturaResponse.
         :rtype: str
@@ -199,7 +199,7 @@ class LancamentoFaturaResponse(object):
     def descricao_tipo_evento(self, descricao_tipo_evento):
         """
         Sets the descricao_tipo_evento of this LancamentoFaturaResponse.
-        Descri\u00E7\u00E3o do tipo do evento
+        {{{lancamento_fatura_response_descricao_tipo_evento_value}}}
 
         :param descricao_tipo_evento: The descricao_tipo_evento of this LancamentoFaturaResponse.
         :type: str
@@ -210,7 +210,7 @@ class LancamentoFaturaResponse(object):
     def id_evento(self):
         """
         Gets the id_evento of this LancamentoFaturaResponse.
-        C\u00F3digo identificador do evento
+        {{{lancamento_fatura_response_id_evento_value}}}
 
         :return: The id_evento of this LancamentoFaturaResponse.
         :rtype: int
@@ -221,7 +221,7 @@ class LancamentoFaturaResponse(object):
     def id_evento(self, id_evento):
         """
         Sets the id_evento of this LancamentoFaturaResponse.
-        C\u00F3digo identificador do evento
+        {{{lancamento_fatura_response_id_evento_value}}}
 
         :param id_evento: The id_evento of this LancamentoFaturaResponse.
         :type: int
@@ -232,7 +232,7 @@ class LancamentoFaturaResponse(object):
     def id_conta(self):
         """
         Gets the id_conta of this LancamentoFaturaResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o da conta.
+        {{{lancamento_fatura_response_id_conta_value}}}
 
         :return: The id_conta of this LancamentoFaturaResponse.
         :rtype: int
@@ -243,7 +243,7 @@ class LancamentoFaturaResponse(object):
     def id_conta(self, id_conta):
         """
         Sets the id_conta of this LancamentoFaturaResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o da conta.
+        {{{lancamento_fatura_response_id_conta_value}}}
 
         :param id_conta: The id_conta of this LancamentoFaturaResponse.
         :type: int
@@ -254,7 +254,7 @@ class LancamentoFaturaResponse(object):
     def complemento(self):
         """
         Gets the complemento of this LancamentoFaturaResponse.
-        Descri\u00E7\u00E3o complementar do evento
+        {{{lancamento_fatura_response_complemento_value}}}
 
         :return: The complemento of this LancamentoFaturaResponse.
         :rtype: str
@@ -265,7 +265,7 @@ class LancamentoFaturaResponse(object):
     def complemento(self, complemento):
         """
         Sets the complemento of this LancamentoFaturaResponse.
-        Descri\u00E7\u00E3o complementar do evento
+        {{{lancamento_fatura_response_complemento_value}}}
 
         :param complemento: The complemento of this LancamentoFaturaResponse.
         :type: str
@@ -276,7 +276,7 @@ class LancamentoFaturaResponse(object):
     def valor_brl(self):
         """
         Gets the valor_brl of this LancamentoFaturaResponse.
-        Valor em reais
+        {{{lancamento_fatura_response_valor_b_r_l_value}}}
 
         :return: The valor_brl of this LancamentoFaturaResponse.
         :rtype: float
@@ -287,7 +287,7 @@ class LancamentoFaturaResponse(object):
     def valor_brl(self, valor_brl):
         """
         Sets the valor_brl of this LancamentoFaturaResponse.
-        Valor em reais
+        {{{lancamento_fatura_response_valor_b_r_l_value}}}
 
         :param valor_brl: The valor_brl of this LancamentoFaturaResponse.
         :type: float
@@ -298,7 +298,7 @@ class LancamentoFaturaResponse(object):
     def valor_usd(self):
         """
         Gets the valor_usd of this LancamentoFaturaResponse.
-        Valor em dolar
+        {{{lancamento_fatura_response_valor_u_s_d_value}}}
 
         :return: The valor_usd of this LancamentoFaturaResponse.
         :rtype: float
@@ -309,7 +309,7 @@ class LancamentoFaturaResponse(object):
     def valor_usd(self, valor_usd):
         """
         Sets the valor_usd of this LancamentoFaturaResponse.
-        Valor em dolar
+        {{{lancamento_fatura_response_valor_u_s_d_value}}}
 
         :param valor_usd: The valor_usd of this LancamentoFaturaResponse.
         :type: float
@@ -320,7 +320,7 @@ class LancamentoFaturaResponse(object):
     def numero_parcela(self):
         """
         Gets the numero_parcela of this LancamentoFaturaResponse.
-        N\u00FAmero da parcela
+        {{{lancamento_fatura_response_numero_parcela_value}}}
 
         :return: The numero_parcela of this LancamentoFaturaResponse.
         :rtype: int
@@ -331,7 +331,7 @@ class LancamentoFaturaResponse(object):
     def numero_parcela(self, numero_parcela):
         """
         Sets the numero_parcela of this LancamentoFaturaResponse.
-        N\u00FAmero da parcela
+        {{{lancamento_fatura_response_numero_parcela_value}}}
 
         :param numero_parcela: The numero_parcela of this LancamentoFaturaResponse.
         :type: int
@@ -342,7 +342,7 @@ class LancamentoFaturaResponse(object):
     def quantidade_parcelas(self):
         """
         Gets the quantidade_parcelas of this LancamentoFaturaResponse.
-        Quantidade de parcelas
+        {{{lancamento_fatura_response_quantidade_parcelas_value}}}
 
         :return: The quantidade_parcelas of this LancamentoFaturaResponse.
         :rtype: int
@@ -353,7 +353,7 @@ class LancamentoFaturaResponse(object):
     def quantidade_parcelas(self, quantidade_parcelas):
         """
         Sets the quantidade_parcelas of this LancamentoFaturaResponse.
-        Quantidade de parcelas
+        {{{lancamento_fatura_response_quantidade_parcelas_value}}}
 
         :param quantidade_parcelas: The quantidade_parcelas of this LancamentoFaturaResponse.
         :type: int
@@ -364,7 +364,7 @@ class LancamentoFaturaResponse(object):
     def data_hora_transacao(self):
         """
         Gets the data_hora_transacao of this LancamentoFaturaResponse.
-        Data da transa\u00E7\u00E3o
+        {{{lancamento_fatura_response_data_hora_transacao_value}}}
 
         :return: The data_hora_transacao of this LancamentoFaturaResponse.
         :rtype: str
@@ -375,7 +375,7 @@ class LancamentoFaturaResponse(object):
     def data_hora_transacao(self, data_hora_transacao):
         """
         Sets the data_hora_transacao of this LancamentoFaturaResponse.
-        Data da transa\u00E7\u00E3o
+        {{{lancamento_fatura_response_data_hora_transacao_value}}}
 
         :param data_hora_transacao: The data_hora_transacao of this LancamentoFaturaResponse.
         :type: str
@@ -386,7 +386,7 @@ class LancamentoFaturaResponse(object):
     def nome_estabelecimento(self):
         """
         Gets the nome_estabelecimento of this LancamentoFaturaResponse.
-        Nome do estabelecimento
+        {{{lancamento_fatura_response_nome_estabelecimento_value}}}
 
         :return: The nome_estabelecimento of this LancamentoFaturaResponse.
         :rtype: str
@@ -397,7 +397,7 @@ class LancamentoFaturaResponse(object):
     def nome_estabelecimento(self, nome_estabelecimento):
         """
         Sets the nome_estabelecimento of this LancamentoFaturaResponse.
-        Nome do estabelecimento
+        {{{lancamento_fatura_response_nome_estabelecimento_value}}}
 
         :param nome_estabelecimento: The nome_estabelecimento of this LancamentoFaturaResponse.
         :type: str
@@ -408,7 +408,7 @@ class LancamentoFaturaResponse(object):
     def descricao_estabelecimento(self):
         """
         Gets the descricao_estabelecimento of this LancamentoFaturaResponse.
-        Descri\u00E7\u00E3o do estabelecimento
+        {{{lancamento_fatura_response_descricao_estabelecimento_value}}}
 
         :return: The descricao_estabelecimento of this LancamentoFaturaResponse.
         :rtype: str
@@ -419,7 +419,7 @@ class LancamentoFaturaResponse(object):
     def descricao_estabelecimento(self, descricao_estabelecimento):
         """
         Sets the descricao_estabelecimento of this LancamentoFaturaResponse.
-        Descri\u00E7\u00E3o do estabelecimento
+        {{{lancamento_fatura_response_descricao_estabelecimento_value}}}
 
         :param descricao_estabelecimento: The descricao_estabelecimento of this LancamentoFaturaResponse.
         :type: str
@@ -430,7 +430,7 @@ class LancamentoFaturaResponse(object):
     def nome_fantasia_estabelecimento(self):
         """
         Gets the nome_fantasia_estabelecimento of this LancamentoFaturaResponse.
-        Nome fantasia do estabelecimento
+        {{{lancamento_fatura_response_nome_fantasia_estabelecimento_value}}}
 
         :return: The nome_fantasia_estabelecimento of this LancamentoFaturaResponse.
         :rtype: str
@@ -441,7 +441,7 @@ class LancamentoFaturaResponse(object):
     def nome_fantasia_estabelecimento(self, nome_fantasia_estabelecimento):
         """
         Sets the nome_fantasia_estabelecimento of this LancamentoFaturaResponse.
-        Nome fantasia do estabelecimento
+        {{{lancamento_fatura_response_nome_fantasia_estabelecimento_value}}}
 
         :param nome_fantasia_estabelecimento: The nome_fantasia_estabelecimento of this LancamentoFaturaResponse.
         :type: str
@@ -452,7 +452,7 @@ class LancamentoFaturaResponse(object):
     def flag_credito(self):
         """
         Gets the flag_credito of this LancamentoFaturaResponse.
-        Flag que indica se o lan\u00E7amento \u00E9 de cr\u00E9dito
+        {{{lancamento_fatura_response_flag_credito_value}}}
 
         :return: The flag_credito of this LancamentoFaturaResponse.
         :rtype: bool
@@ -463,7 +463,7 @@ class LancamentoFaturaResponse(object):
     def flag_credito(self, flag_credito):
         """
         Sets the flag_credito of this LancamentoFaturaResponse.
-        Flag que indica se o lan\u00E7amento \u00E9 de cr\u00E9dito
+        {{{lancamento_fatura_response_flag_credito_value}}}
 
         :param flag_credito: The flag_credito of this LancamentoFaturaResponse.
         :type: bool
@@ -474,7 +474,7 @@ class LancamentoFaturaResponse(object):
     def id_mcc(self):
         """
         Gets the id_mcc of this LancamentoFaturaResponse.
-        C\u00F3digo identificador do MCC (Merchant Category Codes)
+        {{{lancamento_fatura_response_id_m_c_c_value}}}
 
         :return: The id_mcc of this LancamentoFaturaResponse.
         :rtype: int
@@ -485,7 +485,7 @@ class LancamentoFaturaResponse(object):
     def id_mcc(self, id_mcc):
         """
         Sets the id_mcc of this LancamentoFaturaResponse.
-        C\u00F3digo identificador do MCC (Merchant Category Codes)
+        {{{lancamento_fatura_response_id_m_c_c_value}}}
 
         :param id_mcc: The id_mcc of this LancamentoFaturaResponse.
         :type: int
@@ -496,7 +496,7 @@ class LancamentoFaturaResponse(object):
     def id_grupo_mcc(self):
         """
         Gets the id_grupo_mcc of this LancamentoFaturaResponse.
-        C\u00F3digo identificador do grupo MCC
+        {{{lancamento_fatura_response_id_grupo_m_c_c_value}}}
 
         :return: The id_grupo_mcc of this LancamentoFaturaResponse.
         :rtype: int
@@ -507,7 +507,7 @@ class LancamentoFaturaResponse(object):
     def id_grupo_mcc(self, id_grupo_mcc):
         """
         Sets the id_grupo_mcc of this LancamentoFaturaResponse.
-        C\u00F3digo identificador do grupo MCC
+        {{{lancamento_fatura_response_id_grupo_m_c_c_value}}}
 
         :param id_grupo_mcc: The id_grupo_mcc of this LancamentoFaturaResponse.
         :type: int
@@ -518,7 +518,7 @@ class LancamentoFaturaResponse(object):
     def descricao_grupo_mcc(self):
         """
         Gets the descricao_grupo_mcc of this LancamentoFaturaResponse.
-        Descri\u00E7\u00E3o do grupo MCC
+        {{{lancamento_fatura_response_descricao_grupo_m_c_c_value}}}
 
         :return: The descricao_grupo_mcc of this LancamentoFaturaResponse.
         :rtype: str
@@ -529,7 +529,7 @@ class LancamentoFaturaResponse(object):
     def descricao_grupo_mcc(self, descricao_grupo_mcc):
         """
         Sets the descricao_grupo_mcc of this LancamentoFaturaResponse.
-        Descri\u00E7\u00E3o do grupo MCC
+        {{{lancamento_fatura_response_descricao_grupo_m_c_c_value}}}
 
         :param descricao_grupo_mcc: The descricao_grupo_mcc of this LancamentoFaturaResponse.
         :type: str
@@ -540,7 +540,7 @@ class LancamentoFaturaResponse(object):
     def titular(self):
         """
         Gets the titular of this LancamentoFaturaResponse.
-        Indica se o portador do cart\u00E3o \u00E9 o titular da conta
+        {{{lancamento_fatura_response_titular_value}}}
 
         :return: The titular of this LancamentoFaturaResponse.
         :rtype: bool
@@ -551,7 +551,7 @@ class LancamentoFaturaResponse(object):
     def titular(self, titular):
         """
         Sets the titular of this LancamentoFaturaResponse.
-        Indica se o portador do cart\u00E3o \u00E9 o titular da conta
+        {{{lancamento_fatura_response_titular_value}}}
 
         :param titular: The titular of this LancamentoFaturaResponse.
         :type: bool
@@ -562,7 +562,7 @@ class LancamentoFaturaResponse(object):
     def nome_portador(self):
         """
         Gets the nome_portador of this LancamentoFaturaResponse.
-        Nome impresso no cart\u00E3o
+        {{{lancamento_fatura_response_nome_portador_value}}}
 
         :return: The nome_portador of this LancamentoFaturaResponse.
         :rtype: str
@@ -573,7 +573,7 @@ class LancamentoFaturaResponse(object):
     def nome_portador(self, nome_portador):
         """
         Sets the nome_portador of this LancamentoFaturaResponse.
-        Nome impresso no cart\u00E3o
+        {{{lancamento_fatura_response_nome_portador_value}}}
 
         :param nome_portador: The nome_portador of this LancamentoFaturaResponse.
         :type: str
@@ -584,7 +584,7 @@ class LancamentoFaturaResponse(object):
     def numero_cartao_mascarado(self):
         """
         Gets the numero_cartao_mascarado of this LancamentoFaturaResponse.
-        N\u00FAmero do cart\u00E3o mascarado
+        {{{lancamento_fatura_response_numero_cartao_mascarado_value}}}
 
         :return: The numero_cartao_mascarado of this LancamentoFaturaResponse.
         :rtype: str
@@ -595,7 +595,7 @@ class LancamentoFaturaResponse(object):
     def numero_cartao_mascarado(self, numero_cartao_mascarado):
         """
         Sets the numero_cartao_mascarado of this LancamentoFaturaResponse.
-        N\u00FAmero do cart\u00E3o mascarado
+        {{{lancamento_fatura_response_numero_cartao_mascarado_value}}}
 
         :param numero_cartao_mascarado: The numero_cartao_mascarado of this LancamentoFaturaResponse.
         :type: str
@@ -606,7 +606,7 @@ class LancamentoFaturaResponse(object):
     def flag_solicitou_contestacao(self):
         """
         Gets the flag_solicitou_contestacao of this LancamentoFaturaResponse.
-        Flag que indica se o cliente solicitou contesta\u00E7\u00E3o da transa\u00E7\u00E3o
+        {{{lancamento_fatura_response_flag_solicitou_contestacao_value}}}
 
         :return: The flag_solicitou_contestacao of this LancamentoFaturaResponse.
         :rtype: bool
@@ -617,7 +617,7 @@ class LancamentoFaturaResponse(object):
     def flag_solicitou_contestacao(self, flag_solicitou_contestacao):
         """
         Sets the flag_solicitou_contestacao of this LancamentoFaturaResponse.
-        Flag que indica se o cliente solicitou contesta\u00E7\u00E3o da transa\u00E7\u00E3o
+        {{{lancamento_fatura_response_flag_solicitou_contestacao_value}}}
 
         :param flag_solicitou_contestacao: The flag_solicitou_contestacao of this LancamentoFaturaResponse.
         :type: bool
@@ -628,7 +628,7 @@ class LancamentoFaturaResponse(object):
     def valor_taxa_embarque(self):
         """
         Gets the valor_taxa_embarque of this LancamentoFaturaResponse.
-        Valor da taxa de embarque
+        {{{lancamento_fatura_response_valor_taxa_embarque_value}}}
 
         :return: The valor_taxa_embarque of this LancamentoFaturaResponse.
         :rtype: float
@@ -639,7 +639,7 @@ class LancamentoFaturaResponse(object):
     def valor_taxa_embarque(self, valor_taxa_embarque):
         """
         Sets the valor_taxa_embarque of this LancamentoFaturaResponse.
-        Valor da taxa de embarque
+        {{{lancamento_fatura_response_valor_taxa_embarque_value}}}
 
         :param valor_taxa_embarque: The valor_taxa_embarque of this LancamentoFaturaResponse.
         :type: float
@@ -650,7 +650,7 @@ class LancamentoFaturaResponse(object):
     def descricao_abreviada(self):
         """
         Gets the descricao_abreviada of this LancamentoFaturaResponse.
-        Descri\u00E7\u00E3o abreviada da transa\u00E7\u00E3o
+        {{{lancamento_fatura_response_descricao_abreviada_value}}}
 
         :return: The descricao_abreviada of this LancamentoFaturaResponse.
         :rtype: str
@@ -661,7 +661,7 @@ class LancamentoFaturaResponse(object):
     def descricao_abreviada(self, descricao_abreviada):
         """
         Sets the descricao_abreviada of this LancamentoFaturaResponse.
-        Descri\u00E7\u00E3o abreviada da transa\u00E7\u00E3o
+        {{{lancamento_fatura_response_descricao_abreviada_value}}}
 
         :param descricao_abreviada: The descricao_abreviada of this LancamentoFaturaResponse.
         :type: str

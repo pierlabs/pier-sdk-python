@@ -71,7 +71,7 @@ class StatusOportunidadeAUDResponse(object):
     def rev(self):
         """
         Gets the rev of this StatusOportunidadeAUDResponse.
-        C\u00F3digo identificador da auditoria dos tipos oportunidades
+        {{{status_oportunidade_a_u_d_response_rev_value}}}
 
         :return: The rev of this StatusOportunidadeAUDResponse.
         :rtype: int
@@ -82,7 +82,7 @@ class StatusOportunidadeAUDResponse(object):
     def rev(self, rev):
         """
         Sets the rev of this StatusOportunidadeAUDResponse.
-        C\u00F3digo identificador da auditoria dos tipos oportunidades
+        {{{status_oportunidade_a_u_d_response_rev_value}}}
 
         :param rev: The rev of this StatusOportunidadeAUDResponse.
         :type: int
@@ -93,7 +93,7 @@ class StatusOportunidadeAUDResponse(object):
     def rev_type(self):
         """
         Gets the rev_type of this StatusOportunidadeAUDResponse.
-        C\u00F3digo que representa o tipo de a\u00E7\u00E3o realizada no recurso de tipos oportunidades
+        {{{status_oportunidade_a_u_d_response_rev_type_value}}}
 
         :return: The rev_type of this StatusOportunidadeAUDResponse.
         :rtype: int
@@ -104,7 +104,7 @@ class StatusOportunidadeAUDResponse(object):
     def rev_type(self, rev_type):
         """
         Sets the rev_type of this StatusOportunidadeAUDResponse.
-        C\u00F3digo que representa o tipo de a\u00E7\u00E3o realizada no recurso de tipos oportunidades
+        {{{status_oportunidade_a_u_d_response_rev_type_value}}}
 
         :param rev_type: The rev_type of this StatusOportunidadeAUDResponse.
         :type: int
@@ -115,7 +115,7 @@ class StatusOportunidadeAUDResponse(object):
     def rev_date(self):
         """
         Gets the rev_date of this StatusOportunidadeAUDResponse.
-        Data da a\u00E7\u00E3o realizada no recurso de tipos oportunidades
+        {{{status_oportunidade_a_u_d_response_rev_date_value}}}
 
         :return: The rev_date of this StatusOportunidadeAUDResponse.
         :rtype: str
@@ -126,7 +126,7 @@ class StatusOportunidadeAUDResponse(object):
     def rev_date(self, rev_date):
         """
         Sets the rev_date of this StatusOportunidadeAUDResponse.
-        Data da a\u00E7\u00E3o realizada no recurso de tipos oportunidades
+        {{{status_oportunidade_a_u_d_response_rev_date_value}}}
 
         :param rev_date: The rev_date of this StatusOportunidadeAUDResponse.
         :type: str
@@ -137,7 +137,7 @@ class StatusOportunidadeAUDResponse(object):
     def id(self):
         """
         Gets the id of this StatusOportunidadeAUDResponse.
-        C\u00F3digo identificador do StatusOportunidade
+        {{{status_oportunidade_a_u_d_response_id_value}}}
 
         :return: The id of this StatusOportunidadeAUDResponse.
         :rtype: int
@@ -148,7 +148,7 @@ class StatusOportunidadeAUDResponse(object):
     def id(self, id):
         """
         Sets the id of this StatusOportunidadeAUDResponse.
-        C\u00F3digo identificador do StatusOportunidade
+        {{{status_oportunidade_a_u_d_response_id_value}}}
 
         :param id: The id of this StatusOportunidadeAUDResponse.
         :type: int
@@ -159,7 +159,7 @@ class StatusOportunidadeAUDResponse(object):
     def id_tipo_oportunidade(self):
         """
         Gets the id_tipo_oportunidade of this StatusOportunidadeAUDResponse.
-        C\u00F3digo identificador do TipoOportunidade
+        {{{status_oportunidade_a_u_d_response_id_tipo_oportunidade_value}}}
 
         :return: The id_tipo_oportunidade of this StatusOportunidadeAUDResponse.
         :rtype: int
@@ -170,7 +170,7 @@ class StatusOportunidadeAUDResponse(object):
     def id_tipo_oportunidade(self, id_tipo_oportunidade):
         """
         Sets the id_tipo_oportunidade of this StatusOportunidadeAUDResponse.
-        C\u00F3digo identificador do TipoOportunidade
+        {{{status_oportunidade_a_u_d_response_id_tipo_oportunidade_value}}}
 
         :param id_tipo_oportunidade: The id_tipo_oportunidade of this StatusOportunidadeAUDResponse.
         :type: int
@@ -181,7 +181,7 @@ class StatusOportunidadeAUDResponse(object):
     def nome(self):
         """
         Gets the nome of this StatusOportunidadeAUDResponse.
-        Nome do status oportunidade
+        {{{status_oportunidade_a_u_d_response_nome_value}}}
 
         :return: The nome of this StatusOportunidadeAUDResponse.
         :rtype: str
@@ -192,7 +192,7 @@ class StatusOportunidadeAUDResponse(object):
     def nome(self, nome):
         """
         Sets the nome of this StatusOportunidadeAUDResponse.
-        Nome do status oportunidade
+        {{{status_oportunidade_a_u_d_response_nome_value}}}
 
         :param nome: The nome of this StatusOportunidadeAUDResponse.
         :type: str
@@ -203,7 +203,7 @@ class StatusOportunidadeAUDResponse(object):
     def descricao(self):
         """
         Gets the descricao of this StatusOportunidadeAUDResponse.
-        Descricao do StatusOportunidade
+        {{{status_oportunidade_a_u_d_response_descricao_value}}}
 
         :return: The descricao of this StatusOportunidadeAUDResponse.
         :rtype: str
@@ -214,7 +214,7 @@ class StatusOportunidadeAUDResponse(object):
     def descricao(self, descricao):
         """
         Sets the descricao of this StatusOportunidadeAUDResponse.
-        Descricao do StatusOportunidade
+        {{{status_oportunidade_a_u_d_response_descricao_value}}}
 
         :param descricao: The descricao of this StatusOportunidadeAUDResponse.
         :type: str
@@ -225,7 +225,7 @@ class StatusOportunidadeAUDResponse(object):
     def flag_ativo(self):
         """
         Gets the flag_ativo of this StatusOportunidadeAUDResponse.
-        Flag que representa se o tipo oportunidade est\u00E1 ativo
+        {{{status_oportunidade_a_u_d_response_flag_ativo_value}}}
 
         :return: The flag_ativo of this StatusOportunidadeAUDResponse.
         :rtype: bool
@@ -236,7 +236,7 @@ class StatusOportunidadeAUDResponse(object):
     def flag_ativo(self, flag_ativo):
         """
         Sets the flag_ativo of this StatusOportunidadeAUDResponse.
-        Flag que representa se o tipo oportunidade est\u00E1 ativo
+        {{{status_oportunidade_a_u_d_response_flag_ativo_value}}}
 
         :param flag_ativo: The flag_ativo of this StatusOportunidadeAUDResponse.
         :type: bool

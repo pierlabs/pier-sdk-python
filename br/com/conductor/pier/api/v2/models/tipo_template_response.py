@@ -59,7 +59,7 @@ class TipoTemplateResponse(object):
     def id(self):
         """
         Gets the id of this TipoTemplateResponse.
-        ID do Tipo de Template.
+        {{{tipo_template_response_id_value}}}
 
         :return: The id of this TipoTemplateResponse.
         :rtype: int
@@ -70,7 +70,7 @@ class TipoTemplateResponse(object):
     def id(self, id):
         """
         Sets the id of this TipoTemplateResponse.
-        ID do Tipo de Template.
+        {{{tipo_template_response_id_value}}}
 
         :param id: The id of this TipoTemplateResponse.
         :type: int
@@ -81,7 +81,7 @@ class TipoTemplateResponse(object):
     def nome(self):
         """
         Gets the nome of this TipoTemplateResponse.
-        Nome do Tipo de Template.
+        {{{tipo_template_response_nome_value}}}
 
         :return: The nome of this TipoTemplateResponse.
         :rtype: str
@@ -92,7 +92,7 @@ class TipoTemplateResponse(object):
     def nome(self, nome):
         """
         Sets the nome of this TipoTemplateResponse.
-        Nome do Tipo de Template.
+        {{{tipo_template_response_nome_value}}}
 
         :param nome: The nome of this TipoTemplateResponse.
         :type: str
@@ -103,7 +103,7 @@ class TipoTemplateResponse(object):
     def descricao(self):
         """
         Gets the descricao of this TipoTemplateResponse.
-        Descri\u00E7\u00E3o do Tipo de Template.
+        {{{tipo_template_response_descricao_value}}}
 
         :return: The descricao of this TipoTemplateResponse.
         :rtype: str
@@ -114,7 +114,7 @@ class TipoTemplateResponse(object):
     def descricao(self, descricao):
         """
         Sets the descricao of this TipoTemplateResponse.
-        Descri\u00E7\u00E3o do Tipo de Template.
+        {{{tipo_template_response_descricao_value}}}
 
         :param descricao: The descricao of this TipoTemplateResponse.
         :type: str
@@ -125,7 +125,7 @@ class TipoTemplateResponse(object):
     def sigla(self):
         """
         Gets the sigla of this TipoTemplateResponse.
-        Sigla do Tipo de Template.
+        {{{tipo_template_response_sigla_value}}}
 
         :return: The sigla of this TipoTemplateResponse.
         :rtype: str
@@ -136,7 +136,7 @@ class TipoTemplateResponse(object):
     def sigla(self, sigla):
         """
         Sets the sigla of this TipoTemplateResponse.
-        Sigla do Tipo de Template.
+        {{{tipo_template_response_sigla_value}}}
 
         :param sigla: The sigla of this TipoTemplateResponse.
         :type: str

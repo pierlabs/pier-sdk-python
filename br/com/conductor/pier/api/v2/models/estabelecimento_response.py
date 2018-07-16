@@ -173,7 +173,7 @@ class EstabelecimentoResponse(object):
     def id(self):
         """
         Gets the id of this EstabelecimentoResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o do estabelecimento (id).
+        {{{estabelecimento_response_id_value}}}
 
         :return: The id of this EstabelecimentoResponse.
         :rtype: int
@@ -184,7 +184,7 @@ class EstabelecimentoResponse(object):
     def id(self, id):
         """
         Sets the id of this EstabelecimentoResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o do estabelecimento (id).
+        {{{estabelecimento_response_id_value}}}
 
         :param id: The id of this EstabelecimentoResponse.
         :type: int
@@ -195,7 +195,7 @@ class EstabelecimentoResponse(object):
     def numero_estabelecimento(self):
         """
         Gets the numero_estabelecimento of this EstabelecimentoResponse.
-        N\u00FAmero de identifica\u00E7\u00E3o do Estabelecimento na Conductor.
+        {{{estabelecimento_response_numero_estabelecimento_value}}}
 
         :return: The numero_estabelecimento of this EstabelecimentoResponse.
         :rtype: str
@@ -206,7 +206,7 @@ class EstabelecimentoResponse(object):
     def numero_estabelecimento(self, numero_estabelecimento):
         """
         Sets the numero_estabelecimento of this EstabelecimentoResponse.
-        N\u00FAmero de identifica\u00E7\u00E3o do Estabelecimento na Conductor.
+        {{{estabelecimento_response_numero_estabelecimento_value}}}
 
         :param numero_estabelecimento: The numero_estabelecimento of this EstabelecimentoResponse.
         :type: str
@@ -217,7 +217,7 @@ class EstabelecimentoResponse(object):
     def flag_matriz(self):
         """
         Gets the flag_matriz of this EstabelecimentoResponse.
-        Indica se \u00E9 matriz ou filial.
+        {{{estabelecimento_response_flag_matriz_value}}}
 
         :return: The flag_matriz of this EstabelecimentoResponse.
         :rtype: int
@@ -228,7 +228,7 @@ class EstabelecimentoResponse(object):
     def flag_matriz(self, flag_matriz):
         """
         Sets the flag_matriz of this EstabelecimentoResponse.
-        Indica se \u00E9 matriz ou filial.
+        {{{estabelecimento_response_flag_matriz_value}}}
 
         :param flag_matriz: The flag_matriz of this EstabelecimentoResponse.
         :type: int
@@ -239,7 +239,7 @@ class EstabelecimentoResponse(object):
     def id_grupo_economico(self):
         """
         Gets the id_grupo_economico of this EstabelecimentoResponse.
-        Apresenta o n\u00FAmero de identifica\u00E7\u00E3o do Grupo Econ\u00F4mico.
+        {{{estabelecimento_response_id_grupo_economico_value}}}
 
         :return: The id_grupo_economico of this EstabelecimentoResponse.
         :rtype: int
@@ -250,7 +250,7 @@ class EstabelecimentoResponse(object):
     def id_grupo_economico(self, id_grupo_economico):
         """
         Sets the id_grupo_economico of this EstabelecimentoResponse.
-        Apresenta o n\u00FAmero de identifica\u00E7\u00E3o do Grupo Econ\u00F4mico.
+        {{{estabelecimento_response_id_grupo_economico_value}}}
 
         :param id_grupo_economico: The id_grupo_economico of this EstabelecimentoResponse.
         :type: int
@@ -261,7 +261,7 @@ class EstabelecimentoResponse(object):
     def numero_receita_federal(self):
         """
         Gets the numero_receita_federal of this EstabelecimentoResponse.
-        Apresenta o n\u00FAmero de identifica\u00E7\u00E3o do Estabelecimento na Receita Federal.
+        {{{estabelecimento_response_numero_receita_federal_value}}}
 
         :return: The numero_receita_federal of this EstabelecimentoResponse.
         :rtype: int
@@ -272,7 +272,7 @@ class EstabelecimentoResponse(object):
     def numero_receita_federal(self, numero_receita_federal):
         """
         Sets the numero_receita_federal of this EstabelecimentoResponse.
-        Apresenta o n\u00FAmero de identifica\u00E7\u00E3o do Estabelecimento na Receita Federal.
+        {{{estabelecimento_response_numero_receita_federal_value}}}
 
         :param numero_receita_federal: The numero_receita_federal of this EstabelecimentoResponse.
         :type: int
@@ -283,7 +283,7 @@ class EstabelecimentoResponse(object):
     def nome(self):
         """
         Gets the nome of this EstabelecimentoResponse.
-        Nome do Estabelecimento.
+        {{{estabelecimento_response_nome_value}}}
 
         :return: The nome of this EstabelecimentoResponse.
         :rtype: str
@@ -294,7 +294,7 @@ class EstabelecimentoResponse(object):
     def nome(self, nome):
         """
         Sets the nome of this EstabelecimentoResponse.
-        Nome do Estabelecimento.
+        {{{estabelecimento_response_nome_value}}}
 
         :param nome: The nome of this EstabelecimentoResponse.
         :type: str
@@ -305,7 +305,7 @@ class EstabelecimentoResponse(object):
     def descricao(self):
         """
         Gets the descricao of this EstabelecimentoResponse.
-        Raz\u00E3o Social do Estabelecimento.
+        {{{estabelecimento_response_descricao_value}}}
 
         :return: The descricao of this EstabelecimentoResponse.
         :rtype: str
@@ -316,7 +316,7 @@ class EstabelecimentoResponse(object):
     def descricao(self, descricao):
         """
         Sets the descricao of this EstabelecimentoResponse.
-        Raz\u00E3o Social do Estabelecimento.
+        {{{estabelecimento_response_descricao_value}}}
 
         :param descricao: The descricao of this EstabelecimentoResponse.
         :type: str
@@ -327,7 +327,7 @@ class EstabelecimentoResponse(object):
     def nome_fantasia(self):
         """
         Gets the nome_fantasia of this EstabelecimentoResponse.
-        T\u00EDtulo Comercial do Estabelecimento.
+        {{{estabelecimento_response_nome_fantasia_value}}}
 
         :return: The nome_fantasia of this EstabelecimentoResponse.
         :rtype: str
@@ -338,7 +338,7 @@ class EstabelecimentoResponse(object):
     def nome_fantasia(self, nome_fantasia):
         """
         Sets the nome_fantasia of this EstabelecimentoResponse.
-        T\u00EDtulo Comercial do Estabelecimento.
+        {{{estabelecimento_response_nome_fantasia_value}}}
 
         :param nome_fantasia: The nome_fantasia of this EstabelecimentoResponse.
         :type: str
@@ -349,7 +349,7 @@ class EstabelecimentoResponse(object):
     def cep(self):
         """
         Gets the cep of this EstabelecimentoResponse.
-        C\u00F3digo de Endere\u00E7amento Postal (CEP).
+        {{{estabelecimento_response_cep_value}}}
 
         :return: The cep of this EstabelecimentoResponse.
         :rtype: str
@@ -360,7 +360,7 @@ class EstabelecimentoResponse(object):
     def cep(self, cep):
         """
         Sets the cep of this EstabelecimentoResponse.
-        C\u00F3digo de Endere\u00E7amento Postal (CEP).
+        {{{estabelecimento_response_cep_value}}}
 
         :param cep: The cep of this EstabelecimentoResponse.
         :type: str
@@ -371,7 +371,7 @@ class EstabelecimentoResponse(object):
     def nome_logradouro(self):
         """
         Gets the nome_logradouro of this EstabelecimentoResponse.
-        Nome do Logradouro.
+        {{{estabelecimento_response_nome_logradouro_value}}}
 
         :return: The nome_logradouro of this EstabelecimentoResponse.
         :rtype: str
@@ -382,7 +382,7 @@ class EstabelecimentoResponse(object):
     def nome_logradouro(self, nome_logradouro):
         """
         Sets the nome_logradouro of this EstabelecimentoResponse.
-        Nome do Logradouro.
+        {{{estabelecimento_response_nome_logradouro_value}}}
 
         :param nome_logradouro: The nome_logradouro of this EstabelecimentoResponse.
         :type: str
@@ -393,7 +393,7 @@ class EstabelecimentoResponse(object):
     def numero_endereco(self):
         """
         Gets the numero_endereco of this EstabelecimentoResponse.
-        N\u00FAmero do endere\u00E7o.
+        {{{estabelecimento_response_numero_endereco_value}}}
 
         :return: The numero_endereco of this EstabelecimentoResponse.
         :rtype: str
@@ -404,7 +404,7 @@ class EstabelecimentoResponse(object):
     def numero_endereco(self, numero_endereco):
         """
         Sets the numero_endereco of this EstabelecimentoResponse.
-        N\u00FAmero do endere\u00E7o.
+        {{{estabelecimento_response_numero_endereco_value}}}
 
         :param numero_endereco: The numero_endereco of this EstabelecimentoResponse.
         :type: str
@@ -415,7 +415,7 @@ class EstabelecimentoResponse(object):
     def bairro(self):
         """
         Gets the bairro of this EstabelecimentoResponse.
-        Nome do bairro do endere\u00E7o.
+        {{{estabelecimento_response_bairro_value}}}
 
         :return: The bairro of this EstabelecimentoResponse.
         :rtype: str
@@ -426,7 +426,7 @@ class EstabelecimentoResponse(object):
     def bairro(self, bairro):
         """
         Sets the bairro of this EstabelecimentoResponse.
-        Nome do bairro do endere\u00E7o.
+        {{{estabelecimento_response_bairro_value}}}
 
         :param bairro: The bairro of this EstabelecimentoResponse.
         :type: str
@@ -437,7 +437,7 @@ class EstabelecimentoResponse(object):
     def cidade(self):
         """
         Gets the cidade of this EstabelecimentoResponse.
-        Nome da cidade do endere\u00E7o.
+        {{{estabelecimento_response_cidade_value}}}
 
         :return: The cidade of this EstabelecimentoResponse.
         :rtype: str
@@ -448,7 +448,7 @@ class EstabelecimentoResponse(object):
     def cidade(self, cidade):
         """
         Sets the cidade of this EstabelecimentoResponse.
-        Nome da cidade do endere\u00E7o.
+        {{{estabelecimento_response_cidade_value}}}
 
         :param cidade: The cidade of this EstabelecimentoResponse.
         :type: str
@@ -459,7 +459,7 @@ class EstabelecimentoResponse(object):
     def complemento(self):
         """
         Gets the complemento of this EstabelecimentoResponse.
-        Descri\u00E7\u00F5es complementares referente ao endere\u00E7o.
+        {{{estabelecimento_response_complemento_value}}}
 
         :return: The complemento of this EstabelecimentoResponse.
         :rtype: str
@@ -470,7 +470,7 @@ class EstabelecimentoResponse(object):
     def complemento(self, complemento):
         """
         Sets the complemento of this EstabelecimentoResponse.
-        Descri\u00E7\u00F5es complementares referente ao endere\u00E7o.
+        {{{estabelecimento_response_complemento_value}}}
 
         :param complemento: The complemento of this EstabelecimentoResponse.
         :type: str
@@ -481,7 +481,7 @@ class EstabelecimentoResponse(object):
     def uf(self):
         """
         Gets the uf of this EstabelecimentoResponse.
-        Sigla de identifica\u00E7\u00E3o da Unidade Federativa do endere\u00E7o.
+        {{{estabelecimento_response_uf_value}}}
 
         :return: The uf of this EstabelecimentoResponse.
         :rtype: str
@@ -492,7 +492,7 @@ class EstabelecimentoResponse(object):
     def uf(self, uf):
         """
         Sets the uf of this EstabelecimentoResponse.
-        Sigla de identifica\u00E7\u00E3o da Unidade Federativa do endere\u00E7o.
+        {{{estabelecimento_response_uf_value}}}
 
         :param uf: The uf of this EstabelecimentoResponse.
         :type: str
@@ -503,7 +503,7 @@ class EstabelecimentoResponse(object):
     def cep2(self):
         """
         Gets the cep2 of this EstabelecimentoResponse.
-        C\u00F3digo de Endere\u00E7amento Postal (CEP).
+        {{{estabelecimento_response_cep2_value}}}
 
         :return: The cep2 of this EstabelecimentoResponse.
         :rtype: str
@@ -514,7 +514,7 @@ class EstabelecimentoResponse(object):
     def cep2(self, cep2):
         """
         Sets the cep2 of this EstabelecimentoResponse.
-        C\u00F3digo de Endere\u00E7amento Postal (CEP).
+        {{{estabelecimento_response_cep2_value}}}
 
         :param cep2: The cep2 of this EstabelecimentoResponse.
         :type: str
@@ -525,7 +525,7 @@ class EstabelecimentoResponse(object):
     def nome_logradouro2(self):
         """
         Gets the nome_logradouro2 of this EstabelecimentoResponse.
-        Nome do Logradouro .
+        {{{estabelecimento_response_nome_logradouro2_value}}}
 
         :return: The nome_logradouro2 of this EstabelecimentoResponse.
         :rtype: str
@@ -536,7 +536,7 @@ class EstabelecimentoResponse(object):
     def nome_logradouro2(self, nome_logradouro2):
         """
         Sets the nome_logradouro2 of this EstabelecimentoResponse.
-        Nome do Logradouro .
+        {{{estabelecimento_response_nome_logradouro2_value}}}
 
         :param nome_logradouro2: The nome_logradouro2 of this EstabelecimentoResponse.
         :type: str
@@ -547,7 +547,7 @@ class EstabelecimentoResponse(object):
     def numero_endereco2(self):
         """
         Gets the numero_endereco2 of this EstabelecimentoResponse.
-        N\u00FAmero do endere\u00E7o.
+        {{{estabelecimento_response_numero_endereco2_value}}}
 
         :return: The numero_endereco2 of this EstabelecimentoResponse.
         :rtype: str
@@ -558,7 +558,7 @@ class EstabelecimentoResponse(object):
     def numero_endereco2(self, numero_endereco2):
         """
         Sets the numero_endereco2 of this EstabelecimentoResponse.
-        N\u00FAmero do endere\u00E7o.
+        {{{estabelecimento_response_numero_endereco2_value}}}
 
         :param numero_endereco2: The numero_endereco2 of this EstabelecimentoResponse.
         :type: str
@@ -569,7 +569,7 @@ class EstabelecimentoResponse(object):
     def bairro2(self):
         """
         Gets the bairro2 of this EstabelecimentoResponse.
-        Nome do bairro do endere\u00E7o.
+        {{{estabelecimento_response_bairro2_value}}}
 
         :return: The bairro2 of this EstabelecimentoResponse.
         :rtype: str
@@ -580,7 +580,7 @@ class EstabelecimentoResponse(object):
     def bairro2(self, bairro2):
         """
         Sets the bairro2 of this EstabelecimentoResponse.
-        Nome do bairro do endere\u00E7o.
+        {{{estabelecimento_response_bairro2_value}}}
 
         :param bairro2: The bairro2 of this EstabelecimentoResponse.
         :type: str
@@ -591,7 +591,7 @@ class EstabelecimentoResponse(object):
     def cidade2(self):
         """
         Gets the cidade2 of this EstabelecimentoResponse.
-        Nome da cidade do endere\u00E7o.
+        {{{estabelecimento_response_cidade2_value}}}
 
         :return: The cidade2 of this EstabelecimentoResponse.
         :rtype: str
@@ -602,7 +602,7 @@ class EstabelecimentoResponse(object):
     def cidade2(self, cidade2):
         """
         Sets the cidade2 of this EstabelecimentoResponse.
-        Nome da cidade do endere\u00E7o.
+        {{{estabelecimento_response_cidade2_value}}}
 
         :param cidade2: The cidade2 of this EstabelecimentoResponse.
         :type: str
@@ -613,7 +613,7 @@ class EstabelecimentoResponse(object):
     def complemento2(self):
         """
         Gets the complemento2 of this EstabelecimentoResponse.
-        Descri\u00E7\u00F5es complementares referente ao endere\u00E7o.
+        {{{estabelecimento_response_complemento2_value}}}
 
         :return: The complemento2 of this EstabelecimentoResponse.
         :rtype: str
@@ -624,7 +624,7 @@ class EstabelecimentoResponse(object):
     def complemento2(self, complemento2):
         """
         Sets the complemento2 of this EstabelecimentoResponse.
-        Descri\u00E7\u00F5es complementares referente ao endere\u00E7o.
+        {{{estabelecimento_response_complemento2_value}}}
 
         :param complemento2: The complemento2 of this EstabelecimentoResponse.
         :type: str
@@ -635,7 +635,7 @@ class EstabelecimentoResponse(object):
     def uf2(self):
         """
         Gets the uf2 of this EstabelecimentoResponse.
-        Sigla de identifica\u00E7\u00E3o da Unidade Federativa do endere\u00E7o.
+        {{{estabelecimento_response_uf2_value}}}
 
         :return: The uf2 of this EstabelecimentoResponse.
         :rtype: str
@@ -646,7 +646,7 @@ class EstabelecimentoResponse(object):
     def uf2(self, uf2):
         """
         Sets the uf2 of this EstabelecimentoResponse.
-        Sigla de identifica\u00E7\u00E3o da Unidade Federativa do endere\u00E7o.
+        {{{estabelecimento_response_uf2_value}}}
 
         :param uf2: The uf2 of this EstabelecimentoResponse.
         :type: str
@@ -657,7 +657,7 @@ class EstabelecimentoResponse(object):
     def obs(self):
         """
         Gets the obs of this EstabelecimentoResponse.
-        Detalhes espec\u00EDficos quanto ao Cadastro do Estabelecimento.
+        {{{estabelecimento_response_obs_value}}}
 
         :return: The obs of this EstabelecimentoResponse.
         :rtype: str
@@ -668,7 +668,7 @@ class EstabelecimentoResponse(object):
     def obs(self, obs):
         """
         Sets the obs of this EstabelecimentoResponse.
-        Detalhes espec\u00EDficos quanto ao Cadastro do Estabelecimento.
+        {{{estabelecimento_response_obs_value}}}
 
         :param obs: The obs of this EstabelecimentoResponse.
         :type: str
@@ -679,7 +679,7 @@ class EstabelecimentoResponse(object):
     def contato(self):
         """
         Gets the contato of this EstabelecimentoResponse.
-        Nome da pessoa para contato com o Estabelecimento.
+        {{{estabelecimento_response_contato_value}}}
 
         :return: The contato of this EstabelecimentoResponse.
         :rtype: str
@@ -690,7 +690,7 @@ class EstabelecimentoResponse(object):
     def contato(self, contato):
         """
         Sets the contato of this EstabelecimentoResponse.
-        Nome da pessoa para contato com o Estabelecimento.
+        {{{estabelecimento_response_contato_value}}}
 
         :param contato: The contato of this EstabelecimentoResponse.
         :type: str
@@ -701,7 +701,7 @@ class EstabelecimentoResponse(object):
     def email(self):
         """
         Gets the email of this EstabelecimentoResponse.
-        E-mail da pessoa para contato com o Estabelecimento.
+        {{{estabelecimento_response_email_value}}}
 
         :return: The email of this EstabelecimentoResponse.
         :rtype: str
@@ -712,7 +712,7 @@ class EstabelecimentoResponse(object):
     def email(self, email):
         """
         Sets the email of this EstabelecimentoResponse.
-        E-mail da pessoa para contato com o Estabelecimento.
+        {{{estabelecimento_response_email_value}}}
 
         :param email: The email of this EstabelecimentoResponse.
         :type: str
@@ -723,7 +723,7 @@ class EstabelecimentoResponse(object):
     def flag_arquivo_secr_fazenda(self):
         """
         Gets the flag_arquivo_secr_fazenda of this EstabelecimentoResponse.
-        Indica se o estabelecimento ser\u00E1 inclu\u00EDdo no arquivo de registro para a Secretaria da Fazenda Estadual.
+        {{{estabelecimento_response_flag_arquivo_secr_fazenda_value}}}
 
         :return: The flag_arquivo_secr_fazenda of this EstabelecimentoResponse.
         :rtype: int
@@ -734,7 +734,7 @@ class EstabelecimentoResponse(object):
     def flag_arquivo_secr_fazenda(self, flag_arquivo_secr_fazenda):
         """
         Sets the flag_arquivo_secr_fazenda of this EstabelecimentoResponse.
-        Indica se o estabelecimento ser\u00E1 inclu\u00EDdo no arquivo de registro para a Secretaria da Fazenda Estadual.
+        {{{estabelecimento_response_flag_arquivo_secr_fazenda_value}}}
 
         :param flag_arquivo_secr_fazenda: The flag_arquivo_secr_fazenda of this EstabelecimentoResponse.
         :type: int
@@ -745,7 +745,7 @@ class EstabelecimentoResponse(object):
     def flag_cartao_digitado(self):
         """
         Gets the flag_cartao_digitado of this EstabelecimentoResponse.
-        Indica se o estabelecimento poder\u00E1 originar transa\u00E7\u00F5es sem a leitura da tarja ou do chip do cart\u00E3o.
+        {{{estabelecimento_response_flag_cartao_digitado_value}}}
 
         :return: The flag_cartao_digitado of this EstabelecimentoResponse.
         :rtype: int
@@ -756,7 +756,7 @@ class EstabelecimentoResponse(object):
     def flag_cartao_digitado(self, flag_cartao_digitado):
         """
         Sets the flag_cartao_digitado of this EstabelecimentoResponse.
-        Indica se o estabelecimento poder\u00E1 originar transa\u00E7\u00F5es sem a leitura da tarja ou do chip do cart\u00E3o.
+        {{{estabelecimento_response_flag_cartao_digitado_value}}}
 
         :param flag_cartao_digitado: The flag_cartao_digitado of this EstabelecimentoResponse.
         :type: int
@@ -767,7 +767,7 @@ class EstabelecimentoResponse(object):
     def inativo(self):
         """
         Gets the inativo of this EstabelecimentoResponse.
-        Indica se o estabelecimento est\u00E1 inativo.
+        {{{estabelecimento_response_inativo_value}}}
 
         :return: The inativo of this EstabelecimentoResponse.
         :rtype: int
@@ -778,7 +778,7 @@ class EstabelecimentoResponse(object):
     def inativo(self, inativo):
         """
         Sets the inativo of this EstabelecimentoResponse.
-        Indica se o estabelecimento est\u00E1 inativo.
+        {{{estabelecimento_response_inativo_value}}}
 
         :param inativo: The inativo of this EstabelecimentoResponse.
         :type: int
@@ -789,7 +789,7 @@ class EstabelecimentoResponse(object):
     def id_moeda(self):
         """
         Gets the id_moeda of this EstabelecimentoResponse.
-        C\u00F3digo identificador da moeda.
+        {{{estabelecimento_response_id_moeda_value}}}
 
         :return: The id_moeda of this EstabelecimentoResponse.
         :rtype: int
@@ -800,7 +800,7 @@ class EstabelecimentoResponse(object):
     def id_moeda(self, id_moeda):
         """
         Sets the id_moeda of this EstabelecimentoResponse.
-        C\u00F3digo identificador da moeda.
+        {{{estabelecimento_response_id_moeda_value}}}
 
         :param id_moeda: The id_moeda of this EstabelecimentoResponse.
         :type: int
@@ -811,7 +811,7 @@ class EstabelecimentoResponse(object):
     def id_pais(self):
         """
         Gets the id_pais of this EstabelecimentoResponse.
-        Identificador de Pa\u00EDs.
+        {{{estabelecimento_response_id_pais_value}}}
 
         :return: The id_pais of this EstabelecimentoResponse.
         :rtype: int
@@ -822,7 +822,7 @@ class EstabelecimentoResponse(object):
     def id_pais(self, id_pais):
         """
         Sets the id_pais of this EstabelecimentoResponse.
-        Identificador de Pa\u00EDs.
+        {{{estabelecimento_response_id_pais_value}}}
 
         :param id_pais: The id_pais of this EstabelecimentoResponse.
         :type: int
@@ -833,7 +833,7 @@ class EstabelecimentoResponse(object):
     def associado_spc_brasil(self):
         """
         Gets the associado_spc_brasil of this EstabelecimentoResponse.
-        N\u00FAmero do associado ao SPCBrasil.
+        {{{estabelecimento_response_associado_s_p_c_brasil_value}}}
 
         :return: The associado_spc_brasil of this EstabelecimentoResponse.
         :rtype: int
@@ -844,7 +844,7 @@ class EstabelecimentoResponse(object):
     def associado_spc_brasil(self, associado_spc_brasil):
         """
         Sets the associado_spc_brasil of this EstabelecimentoResponse.
-        N\u00FAmero do associado ao SPCBrasil.
+        {{{estabelecimento_response_associado_s_p_c_brasil_value}}}
 
         :param associado_spc_brasil: The associado_spc_brasil of this EstabelecimentoResponse.
         :type: int
@@ -855,7 +855,7 @@ class EstabelecimentoResponse(object):
     def mcc(self):
         """
         Gets the mcc of this EstabelecimentoResponse.
-        C\u00F3digo de Categoria de Mercado.
+        {{{estabelecimento_response_mcc_value}}}
 
         :return: The mcc of this EstabelecimentoResponse.
         :rtype: int
@@ -866,7 +866,7 @@ class EstabelecimentoResponse(object):
     def mcc(self, mcc):
         """
         Sets the mcc of this EstabelecimentoResponse.
-        C\u00F3digo de Categoria de Mercado.
+        {{{estabelecimento_response_mcc_value}}}
 
         :param mcc: The mcc of this EstabelecimentoResponse.
         :type: int
@@ -877,7 +877,7 @@ class EstabelecimentoResponse(object):
     def id_tipo_estabelecimento(self):
         """
         Gets the id_tipo_estabelecimento of this EstabelecimentoResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o do tipo de Estabelecimento.
+        {{{estabelecimento_response_id_tipo_estabelecimento_value}}}
 
         :return: The id_tipo_estabelecimento of this EstabelecimentoResponse.
         :rtype: int
@@ -888,7 +888,7 @@ class EstabelecimentoResponse(object):
     def id_tipo_estabelecimento(self, id_tipo_estabelecimento):
         """
         Sets the id_tipo_estabelecimento of this EstabelecimentoResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o do tipo de Estabelecimento.
+        {{{estabelecimento_response_id_tipo_estabelecimento_value}}}
 
         :param id_tipo_estabelecimento: The id_tipo_estabelecimento of this EstabelecimentoResponse.
         :type: int
@@ -899,7 +899,7 @@ class EstabelecimentoResponse(object):
     def correspondencia(self):
         """
         Gets the correspondencia of this EstabelecimentoResponse.
-        Tipo da Correspond\u00EAncia (ORIGEM, CORRESPONDENCIA).
+        {{{estabelecimento_response_correspondencia_value}}}
 
         :return: The correspondencia of this EstabelecimentoResponse.
         :rtype: int
@@ -910,7 +910,7 @@ class EstabelecimentoResponse(object):
     def correspondencia(self, correspondencia):
         """
         Sets the correspondencia of this EstabelecimentoResponse.
-        Tipo da Correspond\u00EAncia (ORIGEM, CORRESPONDENCIA).
+        {{{estabelecimento_response_correspondencia_value}}}
 
         :param correspondencia: The correspondencia of this EstabelecimentoResponse.
         :type: int
@@ -921,7 +921,7 @@ class EstabelecimentoResponse(object):
     def cargo_contato(self):
         """
         Gets the cargo_contato of this EstabelecimentoResponse.
-        Cargo do contato do estabelecimento.
+        {{{estabelecimento_response_cargo_contato_value}}}
 
         :return: The cargo_contato of this EstabelecimentoResponse.
         :rtype: str
@@ -932,7 +932,7 @@ class EstabelecimentoResponse(object):
     def cargo_contato(self, cargo_contato):
         """
         Sets the cargo_contato of this EstabelecimentoResponse.
-        Cargo do contato do estabelecimento.
+        {{{estabelecimento_response_cargo_contato_value}}}
 
         :param cargo_contato: The cargo_contato of this EstabelecimentoResponse.
         :type: str
@@ -943,7 +943,7 @@ class EstabelecimentoResponse(object):
     def tipo_pagamento(self):
         """
         Gets the tipo_pagamento of this EstabelecimentoResponse.
-        Tipo do regime de pagamento do estabelecimento.
+        {{{estabelecimento_response_tipo_pagamento_value}}}
 
         :return: The tipo_pagamento of this EstabelecimentoResponse.
         :rtype: str
@@ -954,7 +954,7 @@ class EstabelecimentoResponse(object):
     def tipo_pagamento(self, tipo_pagamento):
         """
         Sets the tipo_pagamento of this EstabelecimentoResponse.
-        Tipo do regime de pagamento do estabelecimento.
+        {{{estabelecimento_response_tipo_pagamento_value}}}
 
         :param tipo_pagamento: The tipo_pagamento of this EstabelecimentoResponse.
         :type: str
@@ -971,7 +971,7 @@ class EstabelecimentoResponse(object):
     def consulta(self):
         """
         Gets the consulta of this EstabelecimentoResponse.
-        Consulta de cadastro n\u00FAmero um.
+        {{{estabelecimento_response_consulta_value}}}
 
         :return: The consulta of this EstabelecimentoResponse.
         :rtype: ConsultaCadastroEstabelecimentoDTO
@@ -982,7 +982,7 @@ class EstabelecimentoResponse(object):
     def consulta(self, consulta):
         """
         Sets the consulta of this EstabelecimentoResponse.
-        Consulta de cadastro n\u00FAmero um.
+        {{{estabelecimento_response_consulta_value}}}
 
         :param consulta: The consulta of this EstabelecimentoResponse.
         :type: ConsultaCadastroEstabelecimentoDTO
@@ -993,7 +993,7 @@ class EstabelecimentoResponse(object):
     def consulta2(self):
         """
         Gets the consulta2 of this EstabelecimentoResponse.
-        Consulta de cadastro n\u00FAmero dois.
+        {{{estabelecimento_response_consulta2_value}}}
 
         :return: The consulta2 of this EstabelecimentoResponse.
         :rtype: ConsultaCadastroEstabelecimentoDTO
@@ -1004,7 +1004,7 @@ class EstabelecimentoResponse(object):
     def consulta2(self, consulta2):
         """
         Sets the consulta2 of this EstabelecimentoResponse.
-        Consulta de cadastro n\u00FAmero dois.
+        {{{estabelecimento_response_consulta2_value}}}
 
         :param consulta2: The consulta2 of this EstabelecimentoResponse.
         :type: ConsultaCadastroEstabelecimentoDTO
@@ -1015,7 +1015,7 @@ class EstabelecimentoResponse(object):
     def consulta3(self):
         """
         Gets the consulta3 of this EstabelecimentoResponse.
-        Consulta de cadastro n\u00FAmero tr\u00EAs.
+        {{{estabelecimento_response_consulta3_value}}}
 
         :return: The consulta3 of this EstabelecimentoResponse.
         :rtype: ConsultaCadastroEstabelecimentoDTO
@@ -1026,7 +1026,7 @@ class EstabelecimentoResponse(object):
     def consulta3(self, consulta3):
         """
         Sets the consulta3 of this EstabelecimentoResponse.
-        Consulta de cadastro n\u00FAmero tr\u00EAs.
+        {{{estabelecimento_response_consulta3_value}}}
 
         :param consulta3: The consulta3 of this EstabelecimentoResponse.
         :type: ConsultaCadastroEstabelecimentoDTO
@@ -1037,7 +1037,7 @@ class EstabelecimentoResponse(object):
     def terminal(self):
         """
         Gets the terminal of this EstabelecimentoResponse.
-        Terminal do estabelecimento.
+        {{{estabelecimento_response_terminal_value}}}
 
         :return: The terminal of this EstabelecimentoResponse.
         :rtype: str
@@ -1048,7 +1048,7 @@ class EstabelecimentoResponse(object):
     def terminal(self, terminal):
         """
         Sets the terminal of this EstabelecimentoResponse.
-        Terminal do estabelecimento.
+        {{{estabelecimento_response_terminal_value}}}
 
         :param terminal: The terminal of this EstabelecimentoResponse.
         :type: str
@@ -1059,7 +1059,7 @@ class EstabelecimentoResponse(object):
     def data_cadastramento(self):
         """
         Gets the data_cadastramento of this EstabelecimentoResponse.
-        Data de Cadastro do Estabelecimento.
+        {{{estabelecimento_response_data_cadastramento_value}}}
 
         :return: The data_cadastramento of this EstabelecimentoResponse.
         :rtype: str
@@ -1070,7 +1070,7 @@ class EstabelecimentoResponse(object):
     def data_cadastramento(self, data_cadastramento):
         """
         Sets the data_cadastramento of this EstabelecimentoResponse.
-        Data de Cadastro do Estabelecimento.
+        {{{estabelecimento_response_data_cadastramento_value}}}
 
         :param data_cadastramento: The data_cadastramento of this EstabelecimentoResponse.
         :type: str
@@ -1081,7 +1081,7 @@ class EstabelecimentoResponse(object):
     def usuario(self):
         """
         Gets the usuario of this EstabelecimentoResponse.
-        Usu\u00E1rio da aplica\u00E7\u00E3o.
+        {{{estabelecimento_response_usuario_value}}}
 
         :return: The usuario of this EstabelecimentoResponse.
         :rtype: str
@@ -1092,7 +1092,7 @@ class EstabelecimentoResponse(object):
     def usuario(self, usuario):
         """
         Sets the usuario of this EstabelecimentoResponse.
-        Usu\u00E1rio da aplica\u00E7\u00E3o.
+        {{{estabelecimento_response_usuario_value}}}
 
         :param usuario: The usuario of this EstabelecimentoResponse.
         :type: str

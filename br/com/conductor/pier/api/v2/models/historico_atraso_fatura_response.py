@@ -53,7 +53,7 @@ class HistoricoAtrasoFaturaResponse(object):
     def data_vencimento(self):
         """
         Gets the data_vencimento of this HistoricoAtrasoFaturaResponse.
-        Data vencimento fatura.
+        {{{historico_atraso_fatura_response_data_vencimento_value}}}
 
         :return: The data_vencimento of this HistoricoAtrasoFaturaResponse.
         :rtype: str
@@ -64,7 +64,7 @@ class HistoricoAtrasoFaturaResponse(object):
     def data_vencimento(self, data_vencimento):
         """
         Sets the data_vencimento of this HistoricoAtrasoFaturaResponse.
-        Data vencimento fatura.
+        {{{historico_atraso_fatura_response_data_vencimento_value}}}
 
         :param data_vencimento: The data_vencimento of this HistoricoAtrasoFaturaResponse.
         :type: str
@@ -75,7 +75,7 @@ class HistoricoAtrasoFaturaResponse(object):
     def dias_pagamento_apos_vencimento(self):
         """
         Gets the dias_pagamento_apos_vencimento of this HistoricoAtrasoFaturaResponse.
-        Quantidade de dias em atraso.
+        {{{historico_atraso_fatura_response_dias_pagamento_apos_vencimento_value}}}
 
         :return: The dias_pagamento_apos_vencimento of this HistoricoAtrasoFaturaResponse.
         :rtype: int
@@ -86,7 +86,7 @@ class HistoricoAtrasoFaturaResponse(object):
     def dias_pagamento_apos_vencimento(self, dias_pagamento_apos_vencimento):
         """
         Sets the dias_pagamento_apos_vencimento of this HistoricoAtrasoFaturaResponse.
-        Quantidade de dias em atraso.
+        {{{historico_atraso_fatura_response_dias_pagamento_apos_vencimento_value}}}
 
         :param dias_pagamento_apos_vencimento: The dias_pagamento_apos_vencimento of this HistoricoAtrasoFaturaResponse.
         :type: int

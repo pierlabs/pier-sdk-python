@@ -71,7 +71,7 @@ class TransferenciaCreditoContaBancariaListaResponse(object):
     def id_transferencia(self):
         """
         Gets the id_transferencia of this TransferenciaCreditoContaBancariaListaResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o da transferencia.
+        {{{transferencia_credito_conta_bancaria_lista_response_id_transferencia_value}}}
 
         :return: The id_transferencia of this TransferenciaCreditoContaBancariaListaResponse.
         :rtype: int
@@ -82,7 +82,7 @@ class TransferenciaCreditoContaBancariaListaResponse(object):
     def id_transferencia(self, id_transferencia):
         """
         Sets the id_transferencia of this TransferenciaCreditoContaBancariaListaResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o da transferencia.
+        {{{transferencia_credito_conta_bancaria_lista_response_id_transferencia_value}}}
 
         :param id_transferencia: The id_transferencia of this TransferenciaCreditoContaBancariaListaResponse.
         :type: int
@@ -93,7 +93,7 @@ class TransferenciaCreditoContaBancariaListaResponse(object):
     def id_conta(self):
         """
         Gets the id_conta of this TransferenciaCreditoContaBancariaListaResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o da conta.
+        {{{transferencia_credito_conta_bancaria_lista_response_id_conta_value}}}
 
         :return: The id_conta of this TransferenciaCreditoContaBancariaListaResponse.
         :rtype: int
@@ -104,7 +104,7 @@ class TransferenciaCreditoContaBancariaListaResponse(object):
     def id_conta(self, id_conta):
         """
         Sets the id_conta of this TransferenciaCreditoContaBancariaListaResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o da conta.
+        {{{transferencia_credito_conta_bancaria_lista_response_id_conta_value}}}
 
         :param id_conta: The id_conta of this TransferenciaCreditoContaBancariaListaResponse.
         :type: int
@@ -115,7 +115,7 @@ class TransferenciaCreditoContaBancariaListaResponse(object):
     def id_cartao(self):
         """
         Gets the id_cartao of this TransferenciaCreditoContaBancariaListaResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o do cart\u00E3o.
+        {{{transferencia_credito_conta_bancaria_lista_response_id_cartao_value}}}
 
         :return: The id_cartao of this TransferenciaCreditoContaBancariaListaResponse.
         :rtype: int
@@ -126,7 +126,7 @@ class TransferenciaCreditoContaBancariaListaResponse(object):
     def id_cartao(self, id_cartao):
         """
         Sets the id_cartao of this TransferenciaCreditoContaBancariaListaResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o do cart\u00E3o.
+        {{{transferencia_credito_conta_bancaria_lista_response_id_cartao_value}}}
 
         :param id_cartao: The id_cartao of this TransferenciaCreditoContaBancariaListaResponse.
         :type: int
@@ -137,7 +137,7 @@ class TransferenciaCreditoContaBancariaListaResponse(object):
     def valor_compra(self):
         """
         Gets the valor_compra of this TransferenciaCreditoContaBancariaListaResponse.
-        Valor da transfer\u00EAncia.
+        {{{transferencia_credito_conta_bancaria_lista_response_valor_compra_value}}}
 
         :return: The valor_compra of this TransferenciaCreditoContaBancariaListaResponse.
         :rtype: float
@@ -148,7 +148,7 @@ class TransferenciaCreditoContaBancariaListaResponse(object):
     def valor_compra(self, valor_compra):
         """
         Sets the valor_compra of this TransferenciaCreditoContaBancariaListaResponse.
-        Valor da transfer\u00EAncia.
+        {{{transferencia_credito_conta_bancaria_lista_response_valor_compra_value}}}
 
         :param valor_compra: The valor_compra of this TransferenciaCreditoContaBancariaListaResponse.
         :type: float
@@ -159,7 +159,7 @@ class TransferenciaCreditoContaBancariaListaResponse(object):
     def valor_contrato(self):
         """
         Gets the valor_contrato of this TransferenciaCreditoContaBancariaListaResponse.
-        Valor da transfer\u00EAncia acrescido do valor da tarifa de saque se houver tarifa de saque.
+        {{{transferencia_credito_conta_bancaria_lista_response_valor_contrato_value}}}
 
         :return: The valor_contrato of this TransferenciaCreditoContaBancariaListaResponse.
         :rtype: float
@@ -170,7 +170,7 @@ class TransferenciaCreditoContaBancariaListaResponse(object):
     def valor_contrato(self, valor_contrato):
         """
         Sets the valor_contrato of this TransferenciaCreditoContaBancariaListaResponse.
-        Valor da transfer\u00EAncia acrescido do valor da tarifa de saque se houver tarifa de saque.
+        {{{transferencia_credito_conta_bancaria_lista_response_valor_contrato_value}}}
 
         :param valor_contrato: The valor_contrato of this TransferenciaCreditoContaBancariaListaResponse.
         :type: float
@@ -181,7 +181,7 @@ class TransferenciaCreditoContaBancariaListaResponse(object):
     def data_compra(self):
         """
         Gets the data_compra of this TransferenciaCreditoContaBancariaListaResponse.
-        Data da transfer\u00EAncia.
+        {{{transferencia_credito_conta_bancaria_lista_response_data_compra_value}}}
 
         :return: The data_compra of this TransferenciaCreditoContaBancariaListaResponse.
         :rtype: str
@@ -192,7 +192,7 @@ class TransferenciaCreditoContaBancariaListaResponse(object):
     def data_compra(self, data_compra):
         """
         Sets the data_compra of this TransferenciaCreditoContaBancariaListaResponse.
-        Data da transfer\u00EAncia.
+        {{{transferencia_credito_conta_bancaria_lista_response_data_compra_value}}}
 
         :param data_compra: The data_compra of this TransferenciaCreditoContaBancariaListaResponse.
         :type: str
@@ -203,7 +203,7 @@ class TransferenciaCreditoContaBancariaListaResponse(object):
     def status(self):
         """
         Gets the status of this TransferenciaCreditoContaBancariaListaResponse.
-        C\u00F3digo de status de processamento.
+        {{{transferencia_credito_conta_bancaria_lista_response_status_value}}}
 
         :return: The status of this TransferenciaCreditoContaBancariaListaResponse.
         :rtype: int
@@ -214,7 +214,7 @@ class TransferenciaCreditoContaBancariaListaResponse(object):
     def status(self, status):
         """
         Sets the status of this TransferenciaCreditoContaBancariaListaResponse.
-        C\u00F3digo de status de processamento.
+        {{{transferencia_credito_conta_bancaria_lista_response_status_value}}}
 
         :param status: The status of this TransferenciaCreditoContaBancariaListaResponse.
         :type: int
@@ -225,7 +225,7 @@ class TransferenciaCreditoContaBancariaListaResponse(object):
     def status_processamento(self):
         """
         Gets the status_processamento of this TransferenciaCreditoContaBancariaListaResponse.
-        Status Processamento.
+        {{{transferencia_credito_conta_bancaria_lista_response_status_processamento_value}}}
 
         :return: The status_processamento of this TransferenciaCreditoContaBancariaListaResponse.
         :rtype: str
@@ -236,7 +236,7 @@ class TransferenciaCreditoContaBancariaListaResponse(object):
     def status_processamento(self, status_processamento):
         """
         Sets the status_processamento of this TransferenciaCreditoContaBancariaListaResponse.
-        Status Processamento.
+        {{{transferencia_credito_conta_bancaria_lista_response_status_processamento_value}}}
 
         :param status_processamento: The status_processamento of this TransferenciaCreditoContaBancariaListaResponse.
         :type: str

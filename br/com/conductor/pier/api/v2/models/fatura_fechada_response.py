@@ -131,7 +131,7 @@ class FaturaFechadaResponse(object):
     def id(self):
         """
         Gets the id of this FaturaFechadaResponse.
-        C\u00F3digo identificador da fatura.
+        {{{fatura_fechada_response_id_value}}}
 
         :return: The id of this FaturaFechadaResponse.
         :rtype: int
@@ -142,7 +142,7 @@ class FaturaFechadaResponse(object):
     def id(self, id):
         """
         Sets the id of this FaturaFechadaResponse.
-        C\u00F3digo identificador da fatura.
+        {{{fatura_fechada_response_id_value}}}
 
         :param id: The id of this FaturaFechadaResponse.
         :type: int
@@ -153,7 +153,7 @@ class FaturaFechadaResponse(object):
     def id_conta(self):
         """
         Gets the id_conta of this FaturaFechadaResponse.
-        C\u00F3digo identificador da conta.
+        {{{fatura_fechada_response_id_conta_value}}}
 
         :return: The id_conta of this FaturaFechadaResponse.
         :rtype: int
@@ -164,7 +164,7 @@ class FaturaFechadaResponse(object):
     def id_conta(self, id_conta):
         """
         Sets the id_conta of this FaturaFechadaResponse.
-        C\u00F3digo identificador da conta.
+        {{{fatura_fechada_response_id_conta_value}}}
 
         :param id_conta: The id_conta of this FaturaFechadaResponse.
         :type: int
@@ -175,7 +175,7 @@ class FaturaFechadaResponse(object):
     def flag_emite_fatura(self):
         """
         Gets the flag_emite_fatura of this FaturaFechadaResponse.
-        C\u00F3digo identificador da conta a qual a fatura se refere.
+        {{{fatura_fechada_response_flag_emite_fatura_value}}}
 
         :return: The flag_emite_fatura of this FaturaFechadaResponse.
         :rtype: int
@@ -186,7 +186,7 @@ class FaturaFechadaResponse(object):
     def flag_emite_fatura(self, flag_emite_fatura):
         """
         Sets the flag_emite_fatura of this FaturaFechadaResponse.
-        C\u00F3digo identificador da conta a qual a fatura se refere.
+        {{{fatura_fechada_response_flag_emite_fatura_value}}}
 
         :param flag_emite_fatura: The flag_emite_fatura of this FaturaFechadaResponse.
         :type: int
@@ -197,7 +197,7 @@ class FaturaFechadaResponse(object):
     def data_vencimento_fatura(self):
         """
         Gets the data_vencimento_fatura of this FaturaFechadaResponse.
-        Data de vencimento da fatura.
+        {{{fatura_fechada_response_data_vencimento_fatura_value}}}
 
         :return: The data_vencimento_fatura of this FaturaFechadaResponse.
         :rtype: str
@@ -208,7 +208,7 @@ class FaturaFechadaResponse(object):
     def data_vencimento_fatura(self, data_vencimento_fatura):
         """
         Sets the data_vencimento_fatura of this FaturaFechadaResponse.
-        Data de vencimento da fatura.
+        {{{fatura_fechada_response_data_vencimento_fatura_value}}}
 
         :param data_vencimento_fatura: The data_vencimento_fatura of this FaturaFechadaResponse.
         :type: str
@@ -219,7 +219,7 @@ class FaturaFechadaResponse(object):
     def valor_total_fatura(self):
         """
         Gets the valor_total_fatura of this FaturaFechadaResponse.
-        Valor para pagamento total da fatura.
+        {{{fatura_fechada_response_valor_total_fatura_value}}}
 
         :return: The valor_total_fatura of this FaturaFechadaResponse.
         :rtype: float
@@ -230,7 +230,7 @@ class FaturaFechadaResponse(object):
     def valor_total_fatura(self, valor_total_fatura):
         """
         Sets the valor_total_fatura of this FaturaFechadaResponse.
-        Valor para pagamento total da fatura.
+        {{{fatura_fechada_response_valor_total_fatura_value}}}
 
         :param valor_total_fatura: The valor_total_fatura of this FaturaFechadaResponse.
         :type: float
@@ -241,7 +241,7 @@ class FaturaFechadaResponse(object):
     def valor_fatura_anterior(self):
         """
         Gets the valor_fatura_anterior of this FaturaFechadaResponse.
-        Valor total da fatura anterior.
+        {{{fatura_fechada_response_valor_fatura_anterior_value}}}
 
         :return: The valor_fatura_anterior of this FaturaFechadaResponse.
         :rtype: float
@@ -252,7 +252,7 @@ class FaturaFechadaResponse(object):
     def valor_fatura_anterior(self, valor_fatura_anterior):
         """
         Sets the valor_fatura_anterior of this FaturaFechadaResponse.
-        Valor total da fatura anterior.
+        {{{fatura_fechada_response_valor_fatura_anterior_value}}}
 
         :param valor_fatura_anterior: The valor_fatura_anterior of this FaturaFechadaResponse.
         :type: float
@@ -263,7 +263,7 @@ class FaturaFechadaResponse(object):
     def valor_pagamento_minimo(self):
         """
         Gets the valor_pagamento_minimo of this FaturaFechadaResponse.
-        Valor m\u00EDnimo para pagamento da fatura.
+        {{{fatura_fechada_response_valor_pagamento_minimo_value}}}
 
         :return: The valor_pagamento_minimo of this FaturaFechadaResponse.
         :rtype: float
@@ -274,7 +274,7 @@ class FaturaFechadaResponse(object):
     def valor_pagamento_minimo(self, valor_pagamento_minimo):
         """
         Sets the valor_pagamento_minimo of this FaturaFechadaResponse.
-        Valor m\u00EDnimo para pagamento da fatura.
+        {{{fatura_fechada_response_valor_pagamento_minimo_value}}}
 
         :param valor_pagamento_minimo: The valor_pagamento_minimo of this FaturaFechadaResponse.
         :type: float
@@ -285,7 +285,7 @@ class FaturaFechadaResponse(object):
     def total_compras_nacionais(self):
         """
         Gets the total_compras_nacionais of this FaturaFechadaResponse.
-        Valor total das compras nacionais lan\u00E7adas na fatura.
+        {{{fatura_fechada_response_total_compras_nacionais_value}}}
 
         :return: The total_compras_nacionais of this FaturaFechadaResponse.
         :rtype: float
@@ -296,7 +296,7 @@ class FaturaFechadaResponse(object):
     def total_compras_nacionais(self, total_compras_nacionais):
         """
         Sets the total_compras_nacionais of this FaturaFechadaResponse.
-        Valor total das compras nacionais lan\u00E7adas na fatura.
+        {{{fatura_fechada_response_total_compras_nacionais_value}}}
 
         :param total_compras_nacionais: The total_compras_nacionais of this FaturaFechadaResponse.
         :type: float
@@ -307,7 +307,7 @@ class FaturaFechadaResponse(object):
     def total_compras_internacionas(self):
         """
         Gets the total_compras_internacionas of this FaturaFechadaResponse.
-        Valor total das compras internacionais lan\u00E7adas na fatura.
+        {{{fatura_fechada_response_total_compras_internacionas_value}}}
 
         :return: The total_compras_internacionas of this FaturaFechadaResponse.
         :rtype: float
@@ -318,7 +318,7 @@ class FaturaFechadaResponse(object):
     def total_compras_internacionas(self, total_compras_internacionas):
         """
         Sets the total_compras_internacionas of this FaturaFechadaResponse.
-        Valor total das compras internacionais lan\u00E7adas na fatura.
+        {{{fatura_fechada_response_total_compras_internacionas_value}}}
 
         :param total_compras_internacionas: The total_compras_internacionas of this FaturaFechadaResponse.
         :type: float
@@ -329,7 +329,7 @@ class FaturaFechadaResponse(object):
     def total_saques_nacionais(self):
         """
         Gets the total_saques_nacionais of this FaturaFechadaResponse.
-        Valor total dos saques nacionais lan\u00E7ados na fatura.
+        {{{fatura_fechada_response_total_saques_nacionais_value}}}
 
         :return: The total_saques_nacionais of this FaturaFechadaResponse.
         :rtype: float
@@ -340,7 +340,7 @@ class FaturaFechadaResponse(object):
     def total_saques_nacionais(self, total_saques_nacionais):
         """
         Sets the total_saques_nacionais of this FaturaFechadaResponse.
-        Valor total dos saques nacionais lan\u00E7ados na fatura.
+        {{{fatura_fechada_response_total_saques_nacionais_value}}}
 
         :param total_saques_nacionais: The total_saques_nacionais of this FaturaFechadaResponse.
         :type: float
@@ -351,7 +351,7 @@ class FaturaFechadaResponse(object):
     def total_saques_internacionais(self):
         """
         Gets the total_saques_internacionais of this FaturaFechadaResponse.
-        Valor total dos saques internacionais lan\u00E7ados na fatura.
+        {{{fatura_fechada_response_total_saques_internacionais_value}}}
 
         :return: The total_saques_internacionais of this FaturaFechadaResponse.
         :rtype: float
@@ -362,7 +362,7 @@ class FaturaFechadaResponse(object):
     def total_saques_internacionais(self, total_saques_internacionais):
         """
         Sets the total_saques_internacionais of this FaturaFechadaResponse.
-        Valor total dos saques internacionais lan\u00E7ados na fatura.
+        {{{fatura_fechada_response_total_saques_internacionais_value}}}
 
         :param total_saques_internacionais: The total_saques_internacionais of this FaturaFechadaResponse.
         :type: float
@@ -373,7 +373,7 @@ class FaturaFechadaResponse(object):
     def total_debitos_nacionais(self):
         """
         Gets the total_debitos_nacionais of this FaturaFechadaResponse.
-        Valor total dos d\u00E9bitos nacionais lan\u00E7ados na fatura.
+        {{{fatura_fechada_response_total_debitos_nacionais_value}}}
 
         :return: The total_debitos_nacionais of this FaturaFechadaResponse.
         :rtype: float
@@ -384,7 +384,7 @@ class FaturaFechadaResponse(object):
     def total_debitos_nacionais(self, total_debitos_nacionais):
         """
         Sets the total_debitos_nacionais of this FaturaFechadaResponse.
-        Valor total dos d\u00E9bitos nacionais lan\u00E7ados na fatura.
+        {{{fatura_fechada_response_total_debitos_nacionais_value}}}
 
         :param total_debitos_nacionais: The total_debitos_nacionais of this FaturaFechadaResponse.
         :type: float
@@ -395,7 +395,7 @@ class FaturaFechadaResponse(object):
     def total_debitos_recorrentes(self):
         """
         Gets the total_debitos_recorrentes of this FaturaFechadaResponse.
-        Valor total dos d\u00E9bitos recorrentes lan\u00E7ados na fatura.
+        {{{fatura_fechada_response_total_debitos_recorrentes_value}}}
 
         :return: The total_debitos_recorrentes of this FaturaFechadaResponse.
         :rtype: float
@@ -406,7 +406,7 @@ class FaturaFechadaResponse(object):
     def total_debitos_recorrentes(self, total_debitos_recorrentes):
         """
         Sets the total_debitos_recorrentes of this FaturaFechadaResponse.
-        Valor total dos d\u00E9bitos recorrentes lan\u00E7ados na fatura.
+        {{{fatura_fechada_response_total_debitos_recorrentes_value}}}
 
         :param total_debitos_recorrentes: The total_debitos_recorrentes of this FaturaFechadaResponse.
         :type: float
@@ -417,7 +417,7 @@ class FaturaFechadaResponse(object):
     def total_debitos_internacionais(self):
         """
         Gets the total_debitos_internacionais of this FaturaFechadaResponse.
-        Valor total dos d\u00E9bitos internacionais lan\u00E7ados na fatura.
+        {{{fatura_fechada_response_total_debitos_internacionais_value}}}
 
         :return: The total_debitos_internacionais of this FaturaFechadaResponse.
         :rtype: float
@@ -428,7 +428,7 @@ class FaturaFechadaResponse(object):
     def total_debitos_internacionais(self, total_debitos_internacionais):
         """
         Sets the total_debitos_internacionais of this FaturaFechadaResponse.
-        Valor total dos d\u00E9bitos internacionais lan\u00E7ados na fatura.
+        {{{fatura_fechada_response_total_debitos_internacionais_value}}}
 
         :param total_debitos_internacionais: The total_debitos_internacionais of this FaturaFechadaResponse.
         :type: float
@@ -439,7 +439,7 @@ class FaturaFechadaResponse(object):
     def total_debitos_diversos_nacionais(self):
         """
         Gets the total_debitos_diversos_nacionais of this FaturaFechadaResponse.
-        Valor total dos d\u00E9bitos diversos nacionais lan\u00E7ados na fatura.
+        {{{fatura_fechada_response_total_debitos_diversos_nacionais_value}}}
 
         :return: The total_debitos_diversos_nacionais of this FaturaFechadaResponse.
         :rtype: float
@@ -450,7 +450,7 @@ class FaturaFechadaResponse(object):
     def total_debitos_diversos_nacionais(self, total_debitos_diversos_nacionais):
         """
         Sets the total_debitos_diversos_nacionais of this FaturaFechadaResponse.
-        Valor total dos d\u00E9bitos diversos nacionais lan\u00E7ados na fatura.
+        {{{fatura_fechada_response_total_debitos_diversos_nacionais_value}}}
 
         :param total_debitos_diversos_nacionais: The total_debitos_diversos_nacionais of this FaturaFechadaResponse.
         :type: float
@@ -461,7 +461,7 @@ class FaturaFechadaResponse(object):
     def total_debitos_opcionais(self):
         """
         Gets the total_debitos_opcionais of this FaturaFechadaResponse.
-        Valor total dos d\u00E9bitos diversos opcionais lan\u00E7ados na fatura.
+        {{{fatura_fechada_response_total_debitos_opcionais_value}}}
 
         :return: The total_debitos_opcionais of this FaturaFechadaResponse.
         :rtype: float
@@ -472,7 +472,7 @@ class FaturaFechadaResponse(object):
     def total_debitos_opcionais(self, total_debitos_opcionais):
         """
         Sets the total_debitos_opcionais of this FaturaFechadaResponse.
-        Valor total dos d\u00E9bitos diversos opcionais lan\u00E7ados na fatura.
+        {{{fatura_fechada_response_total_debitos_opcionais_value}}}
 
         :param total_debitos_opcionais: The total_debitos_opcionais of this FaturaFechadaResponse.
         :type: float
@@ -483,7 +483,7 @@ class FaturaFechadaResponse(object):
     def total_pagamentos(self):
         """
         Gets the total_pagamentos of this FaturaFechadaResponse.
-        Valor total dos pagamentos lan\u00E7ados na fatura.
+        {{{fatura_fechada_response_total_pagamentos_value}}}
 
         :return: The total_pagamentos of this FaturaFechadaResponse.
         :rtype: float
@@ -494,7 +494,7 @@ class FaturaFechadaResponse(object):
     def total_pagamentos(self, total_pagamentos):
         """
         Sets the total_pagamentos of this FaturaFechadaResponse.
-        Valor total dos pagamentos lan\u00E7ados na fatura.
+        {{{fatura_fechada_response_total_pagamentos_value}}}
 
         :param total_pagamentos: The total_pagamentos of this FaturaFechadaResponse.
         :type: float
@@ -505,7 +505,7 @@ class FaturaFechadaResponse(object):
     def total_creditos_nacionais(self):
         """
         Gets the total_creditos_nacionais of this FaturaFechadaResponse.
-        Valor total dos cr\u00E9ditos nacionais lan\u00E7ados na fatura.
+        {{{fatura_fechada_response_total_creditos_nacionais_value}}}
 
         :return: The total_creditos_nacionais of this FaturaFechadaResponse.
         :rtype: float
@@ -516,7 +516,7 @@ class FaturaFechadaResponse(object):
     def total_creditos_nacionais(self, total_creditos_nacionais):
         """
         Sets the total_creditos_nacionais of this FaturaFechadaResponse.
-        Valor total dos cr\u00E9ditos nacionais lan\u00E7ados na fatura.
+        {{{fatura_fechada_response_total_creditos_nacionais_value}}}
 
         :param total_creditos_nacionais: The total_creditos_nacionais of this FaturaFechadaResponse.
         :type: float
@@ -527,7 +527,7 @@ class FaturaFechadaResponse(object):
     def total_ajustes(self):
         """
         Gets the total_ajustes of this FaturaFechadaResponse.
-        Valor total dos ajustes lan\u00E7ados na fatura.
+        {{{fatura_fechada_response_total_ajustes_value}}}
 
         :return: The total_ajustes of this FaturaFechadaResponse.
         :rtype: float
@@ -538,7 +538,7 @@ class FaturaFechadaResponse(object):
     def total_ajustes(self, total_ajustes):
         """
         Sets the total_ajustes of this FaturaFechadaResponse.
-        Valor total dos ajustes lan\u00E7ados na fatura.
+        {{{fatura_fechada_response_total_ajustes_value}}}
 
         :param total_ajustes: The total_ajustes of this FaturaFechadaResponse.
         :type: float
@@ -549,7 +549,7 @@ class FaturaFechadaResponse(object):
     def total_tarifas(self):
         """
         Gets the total_tarifas of this FaturaFechadaResponse.
-        Valor total das tarifas lan\u00E7adas na fatura.
+        {{{fatura_fechada_response_total_tarifas_value}}}
 
         :return: The total_tarifas of this FaturaFechadaResponse.
         :rtype: float
@@ -560,7 +560,7 @@ class FaturaFechadaResponse(object):
     def total_tarifas(self, total_tarifas):
         """
         Sets the total_tarifas of this FaturaFechadaResponse.
-        Valor total das tarifas lan\u00E7adas na fatura.
+        {{{fatura_fechada_response_total_tarifas_value}}}
 
         :param total_tarifas: The total_tarifas of this FaturaFechadaResponse.
         :type: float
@@ -571,7 +571,7 @@ class FaturaFechadaResponse(object):
     def total_multa(self):
         """
         Gets the total_multa of this FaturaFechadaResponse.
-        Valor total da multa lan\u00E7ada na fatura.
+        {{{fatura_fechada_response_total_multa_value}}}
 
         :return: The total_multa of this FaturaFechadaResponse.
         :rtype: float
@@ -582,7 +582,7 @@ class FaturaFechadaResponse(object):
     def total_multa(self, total_multa):
         """
         Sets the total_multa of this FaturaFechadaResponse.
-        Valor total da multa lan\u00E7ada na fatura.
+        {{{fatura_fechada_response_total_multa_value}}}
 
         :param total_multa: The total_multa of this FaturaFechadaResponse.
         :type: float
@@ -593,7 +593,7 @@ class FaturaFechadaResponse(object):
     def total_juros(self):
         """
         Gets the total_juros of this FaturaFechadaResponse.
-        Valor total dos juros de mora lan\u00E7ados na fatura.
+        {{{fatura_fechada_response_total_juros_value}}}
 
         :return: The total_juros of this FaturaFechadaResponse.
         :rtype: float
@@ -604,7 +604,7 @@ class FaturaFechadaResponse(object):
     def total_juros(self, total_juros):
         """
         Sets the total_juros of this FaturaFechadaResponse.
-        Valor total dos juros de mora lan\u00E7ados na fatura.
+        {{{fatura_fechada_response_total_juros_value}}}
 
         :param total_juros: The total_juros of this FaturaFechadaResponse.
         :type: float
@@ -615,7 +615,7 @@ class FaturaFechadaResponse(object):
     def taxa_rotativo(self):
         """
         Gets the taxa_rotativo of this FaturaFechadaResponse.
-        Valor percentual da taxa de juros rotativos.
+        {{{fatura_fechada_response_taxa_rotativo_value}}}
 
         :return: The taxa_rotativo of this FaturaFechadaResponse.
         :rtype: float
@@ -626,7 +626,7 @@ class FaturaFechadaResponse(object):
     def taxa_rotativo(self, taxa_rotativo):
         """
         Sets the taxa_rotativo of this FaturaFechadaResponse.
-        Valor percentual da taxa de juros rotativos.
+        {{{fatura_fechada_response_taxa_rotativo_value}}}
 
         :param taxa_rotativo: The taxa_rotativo of this FaturaFechadaResponse.
         :type: float
@@ -637,7 +637,7 @@ class FaturaFechadaResponse(object):
     def taxa_saque(self):
         """
         Gets the taxa_saque of this FaturaFechadaResponse.
-        Valor percentual da taxa de saque.
+        {{{fatura_fechada_response_taxa_saque_value}}}
 
         :return: The taxa_saque of this FaturaFechadaResponse.
         :rtype: float
@@ -648,7 +648,7 @@ class FaturaFechadaResponse(object):
     def taxa_saque(self, taxa_saque):
         """
         Sets the taxa_saque of this FaturaFechadaResponse.
-        Valor percentual da taxa de saque.
+        {{{fatura_fechada_response_taxa_saque_value}}}
 
         :param taxa_saque: The taxa_saque of this FaturaFechadaResponse.
         :type: float
@@ -659,7 +659,7 @@ class FaturaFechadaResponse(object):
     def taxa_maxima_proximo_periodo(self):
         """
         Gets the taxa_maxima_proximo_periodo of this FaturaFechadaResponse.
-        Valor m\u00E1ximo percentual da taxa de encargos para o pr\u00F3ximo per\u00EDodo.
+        {{{fatura_fechada_response_taxa_maxima_proximo_periodo_value}}}
 
         :return: The taxa_maxima_proximo_periodo of this FaturaFechadaResponse.
         :rtype: float
@@ -670,7 +670,7 @@ class FaturaFechadaResponse(object):
     def taxa_maxima_proximo_periodo(self, taxa_maxima_proximo_periodo):
         """
         Sets the taxa_maxima_proximo_periodo of this FaturaFechadaResponse.
-        Valor m\u00E1ximo percentual da taxa de encargos para o pr\u00F3ximo per\u00EDodo.
+        {{{fatura_fechada_response_taxa_maxima_proximo_periodo_value}}}
 
         :param taxa_maxima_proximo_periodo: The taxa_maxima_proximo_periodo of this FaturaFechadaResponse.
         :type: float
@@ -681,7 +681,7 @@ class FaturaFechadaResponse(object):
     def total_servicos(self):
         """
         Gets the total_servicos of this FaturaFechadaResponse.
-        Apresenta a soma de todos os seguros cobrados na fatura do cliente.
+        {{{fatura_fechada_response_total_servicos_value}}}
 
         :return: The total_servicos of this FaturaFechadaResponse.
         :rtype: float
@@ -692,7 +692,7 @@ class FaturaFechadaResponse(object):
     def total_servicos(self, total_servicos):
         """
         Sets the total_servicos of this FaturaFechadaResponse.
-        Apresenta a soma de todos os seguros cobrados na fatura do cliente.
+        {{{fatura_fechada_response_total_servicos_value}}}
 
         :param total_servicos: The total_servicos of this FaturaFechadaResponse.
         :type: float
@@ -703,7 +703,7 @@ class FaturaFechadaResponse(object):
     def total_parcelado_nacionais(self):
         """
         Gets the total_parcelado_nacionais of this FaturaFechadaResponse.
-        Apresenta a soma de todos os valores parcelados + compras nacionais.
+        {{{fatura_fechada_response_total_parcelado_nacionais_value}}}
 
         :return: The total_parcelado_nacionais of this FaturaFechadaResponse.
         :rtype: float
@@ -714,7 +714,7 @@ class FaturaFechadaResponse(object):
     def total_parcelado_nacionais(self, total_parcelado_nacionais):
         """
         Sets the total_parcelado_nacionais of this FaturaFechadaResponse.
-        Apresenta a soma de todos os valores parcelados + compras nacionais.
+        {{{fatura_fechada_response_total_parcelado_nacionais_value}}}
 
         :param total_parcelado_nacionais: The total_parcelado_nacionais of this FaturaFechadaResponse.
         :type: float
@@ -725,7 +725,7 @@ class FaturaFechadaResponse(object):
     def total_parcelado_internacionais(self):
         """
         Gets the total_parcelado_internacionais of this FaturaFechadaResponse.
-        Apresenta a soma de todos os valores parcelados + compras internacionais.
+        {{{fatura_fechada_response_total_parcelado_internacionais_value}}}
 
         :return: The total_parcelado_internacionais of this FaturaFechadaResponse.
         :rtype: float
@@ -736,7 +736,7 @@ class FaturaFechadaResponse(object):
     def total_parcelado_internacionais(self, total_parcelado_internacionais):
         """
         Sets the total_parcelado_internacionais of this FaturaFechadaResponse.
-        Apresenta a soma de todos os valores parcelados + compras internacionais.
+        {{{fatura_fechada_response_total_parcelado_internacionais_value}}}
 
         :param total_parcelado_internacionais: The total_parcelado_internacionais of this FaturaFechadaResponse.
         :type: float

@@ -53,7 +53,7 @@ class DetalhesFaturaConsignadaResponse(object):
     def fatura_consignada_response(self):
         """
         Gets the fatura_consignada_response of this DetalhesFaturaConsignadaResponse.
-        Apresenta os detalhes da fatura
+        {{{detalhes_fatura_consignada_response_fatura_consignada_response_value}}}
 
         :return: The fatura_consignada_response of this DetalhesFaturaConsignadaResponse.
         :rtype: FaturaConsignadaResponse
@@ -64,7 +64,7 @@ class DetalhesFaturaConsignadaResponse(object):
     def fatura_consignada_response(self, fatura_consignada_response):
         """
         Sets the fatura_consignada_response of this DetalhesFaturaConsignadaResponse.
-        Apresenta os detalhes da fatura
+        {{{detalhes_fatura_consignada_response_fatura_consignada_response_value}}}
 
         :param fatura_consignada_response: The fatura_consignada_response of this DetalhesFaturaConsignadaResponse.
         :type: FaturaConsignadaResponse
@@ -75,7 +75,7 @@ class DetalhesFaturaConsignadaResponse(object):
     def transacoes(self):
         """
         Gets the transacoes of this DetalhesFaturaConsignadaResponse.
-        Apresenta as transa\u00E7\u00F5es relacionadas a fatura.
+        {{{detalhes_fatura_consignada_response_transacoes_value}}}
 
         :return: The transacoes of this DetalhesFaturaConsignadaResponse.
         :rtype: list[TransacoesCorrentesResponse]
@@ -86,7 +86,7 @@ class DetalhesFaturaConsignadaResponse(object):
     def transacoes(self, transacoes):
         """
         Sets the transacoes of this DetalhesFaturaConsignadaResponse.
-        Apresenta as transa\u00E7\u00F5es relacionadas a fatura.
+        {{{detalhes_fatura_consignada_response_transacoes_value}}}
 
         :param transacoes: The transacoes of this DetalhesFaturaConsignadaResponse.
         :type: list[TransacoesCorrentesResponse]

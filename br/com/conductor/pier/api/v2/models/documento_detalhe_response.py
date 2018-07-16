@@ -56,7 +56,7 @@ class DocumentoDetalheResponse(object):
     def id(self):
         """
         Gets the id of this DocumentoDetalheResponse.
-        ID de identifica\u00E7\u00E3o do detalhamento do documento.
+        {{{documento_detalhe_response_id_value}}}
 
         :return: The id of this DocumentoDetalheResponse.
         :rtype: int
@@ -67,7 +67,7 @@ class DocumentoDetalheResponse(object):
     def id(self, id):
         """
         Sets the id of this DocumentoDetalheResponse.
-        ID de identifica\u00E7\u00E3o do detalhamento do documento.
+        {{{documento_detalhe_response_id_value}}}
 
         :param id: The id of this DocumentoDetalheResponse.
         :type: int
@@ -78,7 +78,7 @@ class DocumentoDetalheResponse(object):
     def propriedade(self):
         """
         Gets the propriedade of this DocumentoDetalheResponse.
-        Propriedade do detalhamento do documento.
+        {{{documento_detalhe_response_propriedade_value}}}
 
         :return: The propriedade of this DocumentoDetalheResponse.
         :rtype: str
@@ -89,7 +89,7 @@ class DocumentoDetalheResponse(object):
     def propriedade(self, propriedade):
         """
         Sets the propriedade of this DocumentoDetalheResponse.
-        Propriedade do detalhamento do documento.
+        {{{documento_detalhe_response_propriedade_value}}}
 
         :param propriedade: The propriedade of this DocumentoDetalheResponse.
         :type: str
@@ -100,7 +100,7 @@ class DocumentoDetalheResponse(object):
     def conteudo(self):
         """
         Gets the conteudo of this DocumentoDetalheResponse.
-        Conte\u00FAdo do detalhamento do documento.
+        {{{documento_detalhe_response_conteudo_value}}}
 
         :return: The conteudo of this DocumentoDetalheResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class DocumentoDetalheResponse(object):
     def conteudo(self, conteudo):
         """
         Sets the conteudo of this DocumentoDetalheResponse.
-        Conte\u00FAdo do detalhamento do documento.
+        {{{documento_detalhe_response_conteudo_value}}}
 
         :param conteudo: The conteudo of this DocumentoDetalheResponse.
         :type: str

@@ -68,7 +68,7 @@ class TelefoneResponse(object):
     def id(self):
         """
         Gets the id of this TelefoneResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o do Telefone.
+        {{{telefone_response_id_value}}}
 
         :return: The id of this TelefoneResponse.
         :rtype: int
@@ -79,7 +79,7 @@ class TelefoneResponse(object):
     def id(self, id):
         """
         Sets the id of this TelefoneResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o do Telefone.
+        {{{telefone_response_id_value}}}
 
         :param id: The id of this TelefoneResponse.
         :type: int
@@ -90,7 +90,7 @@ class TelefoneResponse(object):
     def id_tipo_telefone(self):
         """
         Gets the id_tipo_telefone of this TelefoneResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o do Tipo do Telefone.
+        {{{telefone_response_id_tipo_telefone_value}}}
 
         :return: The id_tipo_telefone of this TelefoneResponse.
         :rtype: int
@@ -101,7 +101,7 @@ class TelefoneResponse(object):
     def id_tipo_telefone(self, id_tipo_telefone):
         """
         Sets the id_tipo_telefone of this TelefoneResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o do Tipo do Telefone.
+        {{{telefone_response_id_tipo_telefone_value}}}
 
         :param id_tipo_telefone: The id_tipo_telefone of this TelefoneResponse.
         :type: int
@@ -112,7 +112,7 @@ class TelefoneResponse(object):
     def id_pessoa(self):
         """
         Gets the id_pessoa of this TelefoneResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o da Pessoa a qual o telefone pertence.
+        {{{telefone_response_id_pessoa_value}}}
 
         :return: The id_pessoa of this TelefoneResponse.
         :rtype: int
@@ -123,7 +123,7 @@ class TelefoneResponse(object):
     def id_pessoa(self, id_pessoa):
         """
         Sets the id_pessoa of this TelefoneResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o da Pessoa a qual o telefone pertence.
+        {{{telefone_response_id_pessoa_value}}}
 
         :param id_pessoa: The id_pessoa of this TelefoneResponse.
         :type: int
@@ -134,7 +134,7 @@ class TelefoneResponse(object):
     def ddd(self):
         """
         Gets the ddd of this TelefoneResponse.
-        C\u00F3digo DDD do telefone.
+        {{{telefone_response_ddd_value}}}
 
         :return: The ddd of this TelefoneResponse.
         :rtype: str
@@ -145,7 +145,7 @@ class TelefoneResponse(object):
     def ddd(self, ddd):
         """
         Sets the ddd of this TelefoneResponse.
-        C\u00F3digo DDD do telefone.
+        {{{telefone_response_ddd_value}}}
 
         :param ddd: The ddd of this TelefoneResponse.
         :type: str
@@ -156,7 +156,7 @@ class TelefoneResponse(object):
     def telefone(self):
         """
         Gets the telefone of this TelefoneResponse.
-        N\u00FAmero do telefone.
+        {{{telefone_response_telefone_value}}}
 
         :return: The telefone of this TelefoneResponse.
         :rtype: str
@@ -167,7 +167,7 @@ class TelefoneResponse(object):
     def telefone(self, telefone):
         """
         Sets the telefone of this TelefoneResponse.
-        N\u00FAmero do telefone.
+        {{{telefone_response_telefone_value}}}
 
         :param telefone: The telefone of this TelefoneResponse.
         :type: str
@@ -178,7 +178,7 @@ class TelefoneResponse(object):
     def ramal(self):
         """
         Gets the ramal of this TelefoneResponse.
-        N\u00FAmero do ramal.
+        {{{telefone_response_ramal_value}}}
 
         :return: The ramal of this TelefoneResponse.
         :rtype: str
@@ -189,7 +189,7 @@ class TelefoneResponse(object):
     def ramal(self, ramal):
         """
         Sets the ramal of this TelefoneResponse.
-        N\u00FAmero do ramal.
+        {{{telefone_response_ramal_value}}}
 
         :param ramal: The ramal of this TelefoneResponse.
         :type: str
@@ -200,7 +200,7 @@ class TelefoneResponse(object):
     def status(self):
         """
         Gets the status of this TelefoneResponse.
-        Apresenta o Status do Telefone, onde: '0': Inativo e '1': Ativo
+        {{{telefone_response_status_value}}}
 
         :return: The status of this TelefoneResponse.
         :rtype: int
@@ -211,7 +211,7 @@ class TelefoneResponse(object):
     def status(self, status):
         """
         Sets the status of this TelefoneResponse.
-        Apresenta o Status do Telefone, onde: '0': Inativo e '1': Ativo
+        {{{telefone_response_status_value}}}
 
         :param status: The status of this TelefoneResponse.
         :type: int

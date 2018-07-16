@@ -59,7 +59,7 @@ class DocumentoResponse(object):
     def id(self):
         """
         Gets the id of this DocumentoResponse.
-        ID do Documento.
+        {{{documento_response_id_value}}}
 
         :return: The id of this DocumentoResponse.
         :rtype: int
@@ -70,7 +70,7 @@ class DocumentoResponse(object):
     def id(self, id):
         """
         Sets the id of this DocumentoResponse.
-        ID do Documento.
+        {{{documento_response_id_value}}}
 
         :param id: The id of this DocumentoResponse.
         :type: int
@@ -81,7 +81,7 @@ class DocumentoResponse(object):
     def id_template_documento(self):
         """
         Gets the id_template_documento of this DocumentoResponse.
-        ID do Template de Documento associado.
+        {{{documento_response_id_template_documento_value}}}
 
         :return: The id_template_documento of this DocumentoResponse.
         :rtype: int
@@ -92,7 +92,7 @@ class DocumentoResponse(object):
     def id_template_documento(self, id_template_documento):
         """
         Sets the id_template_documento of this DocumentoResponse.
-        ID do Template de Documento associado.
+        {{{documento_response_id_template_documento_value}}}
 
         :param id_template_documento: The id_template_documento of this DocumentoResponse.
         :type: int
@@ -103,7 +103,7 @@ class DocumentoResponse(object):
     def nome(self):
         """
         Gets the nome of this DocumentoResponse.
-        Nome do Documento.
+        {{{documento_response_nome_value}}}
 
         :return: The nome of this DocumentoResponse.
         :rtype: str
@@ -114,7 +114,7 @@ class DocumentoResponse(object):
     def nome(self, nome):
         """
         Sets the nome of this DocumentoResponse.
-        Nome do Documento.
+        {{{documento_response_nome_value}}}
 
         :param nome: The nome of this DocumentoResponse.
         :type: str
@@ -125,7 +125,7 @@ class DocumentoResponse(object):
     def extensao(self):
         """
         Gets the extensao of this DocumentoResponse.
-        Extens\u00E3o do Documento.
+        {{{documento_response_extensao_value}}}
 
         :return: The extensao of this DocumentoResponse.
         :rtype: str
@@ -136,7 +136,7 @@ class DocumentoResponse(object):
     def extensao(self, extensao):
         """
         Sets the extensao of this DocumentoResponse.
-        Extens\u00E3o do Documento.
+        {{{documento_response_extensao_value}}}
 
         :param extensao: The extensao of this DocumentoResponse.
         :type: str

@@ -56,7 +56,7 @@ class TipoTemplateRequest(object):
     def nome(self):
         """
         Gets the nome of this TipoTemplateRequest.
-        Nome do tipo de template.
+        {{{tipo_template_request_nome_value}}}
 
         :return: The nome of this TipoTemplateRequest.
         :rtype: str
@@ -67,7 +67,7 @@ class TipoTemplateRequest(object):
     def nome(self, nome):
         """
         Sets the nome of this TipoTemplateRequest.
-        Nome do tipo de template.
+        {{{tipo_template_request_nome_value}}}
 
         :param nome: The nome of this TipoTemplateRequest.
         :type: str
@@ -78,7 +78,7 @@ class TipoTemplateRequest(object):
     def descricao(self):
         """
         Gets the descricao of this TipoTemplateRequest.
-        Descri\u00E7\u00E3o do tipo de template.
+        {{{tipo_template_request_descricao_value}}}
 
         :return: The descricao of this TipoTemplateRequest.
         :rtype: str
@@ -89,7 +89,7 @@ class TipoTemplateRequest(object):
     def descricao(self, descricao):
         """
         Sets the descricao of this TipoTemplateRequest.
-        Descri\u00E7\u00E3o do tipo de template.
+        {{{tipo_template_request_descricao_value}}}
 
         :param descricao: The descricao of this TipoTemplateRequest.
         :type: str
@@ -100,7 +100,7 @@ class TipoTemplateRequest(object):
     def sigla(self):
         """
         Gets the sigla of this TipoTemplateRequest.
-        Sigla do tipo de template.
+        {{{tipo_template_request_sigla_value}}}
 
         :return: The sigla of this TipoTemplateRequest.
         :rtype: str
@@ -111,7 +111,7 @@ class TipoTemplateRequest(object):
     def sigla(self, sigla):
         """
         Sets the sigla of this TipoTemplateRequest.
-        Sigla do tipo de template.
+        {{{tipo_template_request_sigla_value}}}
 
         :param sigla: The sigla of this TipoTemplateRequest.
         :type: str

@@ -96,7 +96,7 @@ class EmprestimoPessoalResponse(object):
     def valor_solicitado(self):
         """
         Gets the valor_solicitado of this EmprestimoPessoalResponse.
-        Valor solicitado do empr\u00E9stimo/financiamento
+        {{{emprestimo_pessoal_response_valor_solicitado_value}}}
 
         :return: The valor_solicitado of this EmprestimoPessoalResponse.
         :rtype: float
@@ -107,7 +107,7 @@ class EmprestimoPessoalResponse(object):
     def valor_solicitado(self, valor_solicitado):
         """
         Sets the valor_solicitado of this EmprestimoPessoalResponse.
-        Valor solicitado do empr\u00E9stimo/financiamento
+        {{{emprestimo_pessoal_response_valor_solicitado_value}}}
 
         :param valor_solicitado: The valor_solicitado of this EmprestimoPessoalResponse.
         :type: float
@@ -118,7 +118,7 @@ class EmprestimoPessoalResponse(object):
     def valor_maximo_solicitacao(self):
         """
         Gets the valor_maximo_solicitacao of this EmprestimoPessoalResponse.
-        Valor m\u00E1ximo de empr\u00E9stimo pelo valor limite de parcela
+        {{{emprestimo_pessoal_response_valor_maximo_solicitacao_value}}}
 
         :return: The valor_maximo_solicitacao of this EmprestimoPessoalResponse.
         :rtype: float
@@ -129,7 +129,7 @@ class EmprestimoPessoalResponse(object):
     def valor_maximo_solicitacao(self, valor_maximo_solicitacao):
         """
         Sets the valor_maximo_solicitacao of this EmprestimoPessoalResponse.
-        Valor m\u00E1ximo de empr\u00E9stimo pelo valor limite de parcela
+        {{{emprestimo_pessoal_response_valor_maximo_solicitacao_value}}}
 
         :param valor_maximo_solicitacao: The valor_maximo_solicitacao of this EmprestimoPessoalResponse.
         :type: float
@@ -140,7 +140,7 @@ class EmprestimoPessoalResponse(object):
     def numero_parcelas(self):
         """
         Gets the numero_parcelas of this EmprestimoPessoalResponse.
-        N\u00FAmero de parcelas solicitado
+        {{{emprestimo_pessoal_response_numero_parcelas_value}}}
 
         :return: The numero_parcelas of this EmprestimoPessoalResponse.
         :rtype: int
@@ -151,7 +151,7 @@ class EmprestimoPessoalResponse(object):
     def numero_parcelas(self, numero_parcelas):
         """
         Sets the numero_parcelas of this EmprestimoPessoalResponse.
-        N\u00FAmero de parcelas solicitado
+        {{{emprestimo_pessoal_response_numero_parcelas_value}}}
 
         :param numero_parcelas: The numero_parcelas of this EmprestimoPessoalResponse.
         :type: int
@@ -162,7 +162,7 @@ class EmprestimoPessoalResponse(object):
     def valor_maximo_parcela(self):
         """
         Gets the valor_maximo_parcela of this EmprestimoPessoalResponse.
-        Limite m\u00E1ximo de parcela permitido
+        {{{emprestimo_pessoal_response_valor_maximo_parcela_value}}}
 
         :return: The valor_maximo_parcela of this EmprestimoPessoalResponse.
         :rtype: float
@@ -173,7 +173,7 @@ class EmprestimoPessoalResponse(object):
     def valor_maximo_parcela(self, valor_maximo_parcela):
         """
         Sets the valor_maximo_parcela of this EmprestimoPessoalResponse.
-        Limite m\u00E1ximo de parcela permitido
+        {{{emprestimo_pessoal_response_valor_maximo_parcela_value}}}
 
         :param valor_maximo_parcela: The valor_maximo_parcela of this EmprestimoPessoalResponse.
         :type: float
@@ -184,7 +184,7 @@ class EmprestimoPessoalResponse(object):
     def data_primeira_parcela(self):
         """
         Gets the data_primeira_parcela of this EmprestimoPessoalResponse.
-        Data do desconto da primeira parcela
+        {{{emprestimo_pessoal_response_data_primeira_parcela_value}}}
 
         :return: The data_primeira_parcela of this EmprestimoPessoalResponse.
         :rtype: str
@@ -195,7 +195,7 @@ class EmprestimoPessoalResponse(object):
     def data_primeira_parcela(self, data_primeira_parcela):
         """
         Sets the data_primeira_parcela of this EmprestimoPessoalResponse.
-        Data do desconto da primeira parcela
+        {{{emprestimo_pessoal_response_data_primeira_parcela_value}}}
 
         :param data_primeira_parcela: The data_primeira_parcela of this EmprestimoPessoalResponse.
         :type: str
@@ -206,7 +206,7 @@ class EmprestimoPessoalResponse(object):
     def periodo_taxa(self):
         """
         Gets the periodo_taxa of this EmprestimoPessoalResponse.
-        Per\u00EDodo de aplica da taxa de juros
+        {{{emprestimo_pessoal_response_periodo_taxa_value}}}
 
         :return: The periodo_taxa of this EmprestimoPessoalResponse.
         :rtype: str
@@ -217,7 +217,7 @@ class EmprestimoPessoalResponse(object):
     def periodo_taxa(self, periodo_taxa):
         """
         Sets the periodo_taxa of this EmprestimoPessoalResponse.
-        Per\u00EDodo de aplica da taxa de juros
+        {{{emprestimo_pessoal_response_periodo_taxa_value}}}
 
         :param periodo_taxa: The periodo_taxa of this EmprestimoPessoalResponse.
         :type: str
@@ -228,7 +228,7 @@ class EmprestimoPessoalResponse(object):
     def sistema_amortizacao(self):
         """
         Gets the sistema_amortizacao of this EmprestimoPessoalResponse.
-        Sistema para amortiza\u00E7\u00E3o do valor das parcelas
+        {{{emprestimo_pessoal_response_sistema_amortizacao_value}}}
 
         :return: The sistema_amortizacao of this EmprestimoPessoalResponse.
         :rtype: str
@@ -239,7 +239,7 @@ class EmprestimoPessoalResponse(object):
     def sistema_amortizacao(self, sistema_amortizacao):
         """
         Sets the sistema_amortizacao of this EmprestimoPessoalResponse.
-        Sistema para amortiza\u00E7\u00E3o do valor das parcelas
+        {{{emprestimo_pessoal_response_sistema_amortizacao_value}}}
 
         :param sistema_amortizacao: The sistema_amortizacao of this EmprestimoPessoalResponse.
         :type: str
@@ -250,7 +250,7 @@ class EmprestimoPessoalResponse(object):
     def taxa_juros(self):
         """
         Gets the taxa_juros of this EmprestimoPessoalResponse.
-        Valor percentual da taxa de juros a ser aplicada
+        {{{emprestimo_pessoal_response_taxa_juros_value}}}
 
         :return: The taxa_juros of this EmprestimoPessoalResponse.
         :rtype: float
@@ -261,7 +261,7 @@ class EmprestimoPessoalResponse(object):
     def taxa_juros(self, taxa_juros):
         """
         Sets the taxa_juros of this EmprestimoPessoalResponse.
-        Valor percentual da taxa de juros a ser aplicada
+        {{{emprestimo_pessoal_response_taxa_juros_value}}}
 
         :param taxa_juros: The taxa_juros of this EmprestimoPessoalResponse.
         :type: float

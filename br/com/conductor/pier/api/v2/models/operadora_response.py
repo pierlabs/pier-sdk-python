@@ -53,7 +53,7 @@ class OperadoraResponse(object):
     def id(self):
         """
         Gets the id of this OperadoraResponse.
-        Identificador da operadora
+        {{{operadora_response_id_value}}}
 
         :return: The id of this OperadoraResponse.
         :rtype: int
@@ -64,7 +64,7 @@ class OperadoraResponse(object):
     def id(self, id):
         """
         Sets the id of this OperadoraResponse.
-        Identificador da operadora
+        {{{operadora_response_id_value}}}
 
         :param id: The id of this OperadoraResponse.
         :type: int
@@ -75,7 +75,7 @@ class OperadoraResponse(object):
     def nome(self):
         """
         Gets the nome of this OperadoraResponse.
-        Nome da operadora
+        {{{operadora_response_nome_value}}}
 
         :return: The nome of this OperadoraResponse.
         :rtype: str
@@ -86,7 +86,7 @@ class OperadoraResponse(object):
     def nome(self, nome):
         """
         Sets the nome of this OperadoraResponse.
-        Nome da operadora
+        {{{operadora_response_nome_value}}}
 
         :param nome: The nome of this OperadoraResponse.
         :type: str

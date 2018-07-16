@@ -104,7 +104,7 @@ class DetalheOperacaoResponse(object):
     def id_operacao(self):
         """
         Gets the id_operacao of this DetalheOperacaoResponse.
-        C\u00F3digo que identifica a opera\u00E7\u00E3o
+        {{{detalhe_operacao_response_id_operacao_value}}}
 
         :return: The id_operacao of this DetalheOperacaoResponse.
         :rtype: int
@@ -115,7 +115,7 @@ class DetalheOperacaoResponse(object):
     def id_operacao(self, id_operacao):
         """
         Sets the id_operacao of this DetalheOperacaoResponse.
-        C\u00F3digo que identifica a opera\u00E7\u00E3o
+        {{{detalhe_operacao_response_id_operacao_value}}}
 
         :param id_operacao: The id_operacao of this DetalheOperacaoResponse.
         :type: int
@@ -126,7 +126,7 @@ class DetalheOperacaoResponse(object):
     def codigo_processamento(self):
         """
         Gets the codigo_processamento of this DetalheOperacaoResponse.
-        C\u00F3digo de processamento usado em transa\u00E7\u00F5es com o autorizador
+        {{{detalhe_operacao_response_codigo_processamento_value}}}
 
         :return: The codigo_processamento of this DetalheOperacaoResponse.
         :rtype: str
@@ -137,7 +137,7 @@ class DetalheOperacaoResponse(object):
     def codigo_processamento(self, codigo_processamento):
         """
         Sets the codigo_processamento of this DetalheOperacaoResponse.
-        C\u00F3digo de processamento usado em transa\u00E7\u00F5es com o autorizador
+        {{{detalhe_operacao_response_codigo_processamento_value}}}
 
         :param codigo_processamento: The codigo_processamento of this DetalheOperacaoResponse.
         :type: str
@@ -148,7 +148,7 @@ class DetalheOperacaoResponse(object):
     def codigo_processamento_cancelamento(self):
         """
         Gets the codigo_processamento_cancelamento of this DetalheOperacaoResponse.
-        C\u00F3digo de processamento usado para cancelar transa\u00E7\u00F5es no autorizador
+        {{{detalhe_operacao_response_codigo_processamento_cancelamento_value}}}
 
         :return: The codigo_processamento_cancelamento of this DetalheOperacaoResponse.
         :rtype: str
@@ -159,7 +159,7 @@ class DetalheOperacaoResponse(object):
     def codigo_processamento_cancelamento(self, codigo_processamento_cancelamento):
         """
         Sets the codigo_processamento_cancelamento of this DetalheOperacaoResponse.
-        C\u00F3digo de processamento usado para cancelar transa\u00E7\u00F5es no autorizador
+        {{{detalhe_operacao_response_codigo_processamento_cancelamento_value}}}
 
         :param codigo_processamento_cancelamento: The codigo_processamento_cancelamento of this DetalheOperacaoResponse.
         :type: str
@@ -170,7 +170,7 @@ class DetalheOperacaoResponse(object):
     def nome_operacao(self):
         """
         Gets the nome_operacao of this DetalheOperacaoResponse.
-        Nome da opera\u00E7\u00E3o
+        {{{detalhe_operacao_response_nome_operacao_value}}}
 
         :return: The nome_operacao of this DetalheOperacaoResponse.
         :rtype: str
@@ -181,7 +181,7 @@ class DetalheOperacaoResponse(object):
     def nome_operacao(self, nome_operacao):
         """
         Sets the nome_operacao of this DetalheOperacaoResponse.
-        Nome da opera\u00E7\u00E3o
+        {{{detalhe_operacao_response_nome_operacao_value}}}
 
         :param nome_operacao: The nome_operacao of this DetalheOperacaoResponse.
         :type: str
@@ -192,7 +192,7 @@ class DetalheOperacaoResponse(object):
     def descricao_operacao(self):
         """
         Gets the descricao_operacao of this DetalheOperacaoResponse.
-        Descri\u00E7\u00E3o da opera\u00E7\u00E3o
+        {{{detalhe_operacao_response_descricao_operacao_value}}}
 
         :return: The descricao_operacao of this DetalheOperacaoResponse.
         :rtype: str
@@ -203,7 +203,7 @@ class DetalheOperacaoResponse(object):
     def descricao_operacao(self, descricao_operacao):
         """
         Sets the descricao_operacao of this DetalheOperacaoResponse.
-        Descri\u00E7\u00E3o da opera\u00E7\u00E3o
+        {{{detalhe_operacao_response_descricao_operacao_value}}}
 
         :param descricao_operacao: The descricao_operacao of this DetalheOperacaoResponse.
         :type: str
@@ -214,7 +214,7 @@ class DetalheOperacaoResponse(object):
     def plano_minimo(self):
         """
         Gets the plano_minimo of this DetalheOperacaoResponse.
-        Quantidade m\u00EDnima de meses permitido para opera\u00E7\u00E3o
+        {{{detalhe_operacao_response_plano_minimo_value}}}
 
         :return: The plano_minimo of this DetalheOperacaoResponse.
         :rtype: int
@@ -225,7 +225,7 @@ class DetalheOperacaoResponse(object):
     def plano_minimo(self, plano_minimo):
         """
         Sets the plano_minimo of this DetalheOperacaoResponse.
-        Quantidade m\u00EDnima de meses permitido para opera\u00E7\u00E3o
+        {{{detalhe_operacao_response_plano_minimo_value}}}
 
         :param plano_minimo: The plano_minimo of this DetalheOperacaoResponse.
         :type: int
@@ -236,7 +236,7 @@ class DetalheOperacaoResponse(object):
     def plano_maximo(self):
         """
         Gets the plano_maximo of this DetalheOperacaoResponse.
-        Quantidade M\u00E1ximo de meses permitido para opera\u00E7\u00E3o
+        {{{detalhe_operacao_response_plano_maximo_value}}}
 
         :return: The plano_maximo of this DetalheOperacaoResponse.
         :rtype: int
@@ -247,7 +247,7 @@ class DetalheOperacaoResponse(object):
     def plano_maximo(self, plano_maximo):
         """
         Sets the plano_maximo of this DetalheOperacaoResponse.
-        Quantidade M\u00E1ximo de meses permitido para opera\u00E7\u00E3o
+        {{{detalhe_operacao_response_plano_maximo_value}}}
 
         :param plano_maximo: The plano_maximo of this DetalheOperacaoResponse.
         :type: int
@@ -258,7 +258,7 @@ class DetalheOperacaoResponse(object):
     def valor_minimo(self):
         """
         Gets the valor_minimo of this DetalheOperacaoResponse.
-         Valor m\u00EDnimo permitido permitido para opera\u00E7\u00E3o
+        {{{detalhe_operacao_response_valor_minimo_value}}}
 
         :return: The valor_minimo of this DetalheOperacaoResponse.
         :rtype: float
@@ -269,7 +269,7 @@ class DetalheOperacaoResponse(object):
     def valor_minimo(self, valor_minimo):
         """
         Sets the valor_minimo of this DetalheOperacaoResponse.
-         Valor m\u00EDnimo permitido permitido para opera\u00E7\u00E3o
+        {{{detalhe_operacao_response_valor_minimo_value}}}
 
         :param valor_minimo: The valor_minimo of this DetalheOperacaoResponse.
         :type: float
@@ -280,7 +280,7 @@ class DetalheOperacaoResponse(object):
     def valor_maximo(self):
         """
         Gets the valor_maximo of this DetalheOperacaoResponse.
-         Valor m\u00E1ximo permitido permitido para opera\u00E7\u00E3o
+        {{{detalhe_operacao_response_valor_maximo_value}}}
 
         :return: The valor_maximo of this DetalheOperacaoResponse.
         :rtype: float
@@ -291,7 +291,7 @@ class DetalheOperacaoResponse(object):
     def valor_maximo(self, valor_maximo):
         """
         Sets the valor_maximo of this DetalheOperacaoResponse.
-         Valor m\u00E1ximo permitido permitido para opera\u00E7\u00E3o
+        {{{detalhe_operacao_response_valor_maximo_value}}}
 
         :param valor_maximo: The valor_maximo of this DetalheOperacaoResponse.
         :type: float
@@ -302,7 +302,7 @@ class DetalheOperacaoResponse(object):
     def flag_cobra_juros(self):
         """
         Gets the flag_cobra_juros of this DetalheOperacaoResponse.
-        Flag indicativa para crobran\u00E7a de juros
+        {{{detalhe_operacao_response_flag_cobra_juros_value}}}
 
         :return: The flag_cobra_juros of this DetalheOperacaoResponse.
         :rtype: bool
@@ -313,7 +313,7 @@ class DetalheOperacaoResponse(object):
     def flag_cobra_juros(self, flag_cobra_juros):
         """
         Sets the flag_cobra_juros of this DetalheOperacaoResponse.
-        Flag indicativa para crobran\u00E7a de juros
+        {{{detalhe_operacao_response_flag_cobra_juros_value}}}
 
         :param flag_cobra_juros: The flag_cobra_juros of this DetalheOperacaoResponse.
         :type: bool
@@ -324,7 +324,7 @@ class DetalheOperacaoResponse(object):
     def taxa_juros(self):
         """
         Gets the taxa_juros of this DetalheOperacaoResponse.
-        Valor do juros a ser cobrado, caso opera\u00E7\u00E3o cobre juros
+        {{{detalhe_operacao_response_taxa_juros_value}}}
 
         :return: The taxa_juros of this DetalheOperacaoResponse.
         :rtype: float
@@ -335,7 +335,7 @@ class DetalheOperacaoResponse(object):
     def taxa_juros(self, taxa_juros):
         """
         Sets the taxa_juros of this DetalheOperacaoResponse.
-        Valor do juros a ser cobrado, caso opera\u00E7\u00E3o cobre juros
+        {{{detalhe_operacao_response_taxa_juros_value}}}
 
         :param taxa_juros: The taxa_juros of this DetalheOperacaoResponse.
         :type: float
@@ -346,7 +346,7 @@ class DetalheOperacaoResponse(object):
     def flag_cobra_tarifa(self):
         """
         Gets the flag_cobra_tarifa of this DetalheOperacaoResponse.
-        Flag indicativa para crobran\u00E7a de tarifas
+        {{{detalhe_operacao_response_flag_cobra_tarifa_value}}}
 
         :return: The flag_cobra_tarifa of this DetalheOperacaoResponse.
         :rtype: bool
@@ -357,7 +357,7 @@ class DetalheOperacaoResponse(object):
     def flag_cobra_tarifa(self, flag_cobra_tarifa):
         """
         Sets the flag_cobra_tarifa of this DetalheOperacaoResponse.
-        Flag indicativa para crobran\u00E7a de tarifas
+        {{{detalhe_operacao_response_flag_cobra_tarifa_value}}}
 
         :param flag_cobra_tarifa: The flag_cobra_tarifa of this DetalheOperacaoResponse.
         :type: bool
@@ -368,7 +368,7 @@ class DetalheOperacaoResponse(object):
     def taxa_tarifa(self):
         """
         Gets the taxa_tarifa of this DetalheOperacaoResponse.
-        Valor da tarifa a ser cobrado, caso opera\u00E7\u00E3o cobre tarifas
+        {{{detalhe_operacao_response_taxa_tarifa_value}}}
 
         :return: The taxa_tarifa of this DetalheOperacaoResponse.
         :rtype: float
@@ -379,7 +379,7 @@ class DetalheOperacaoResponse(object):
     def taxa_tarifa(self, taxa_tarifa):
         """
         Sets the taxa_tarifa of this DetalheOperacaoResponse.
-        Valor da tarifa a ser cobrado, caso opera\u00E7\u00E3o cobre tarifas
+        {{{detalhe_operacao_response_taxa_tarifa_value}}}
 
         :param taxa_tarifa: The taxa_tarifa of this DetalheOperacaoResponse.
         :type: float
@@ -390,7 +390,7 @@ class DetalheOperacaoResponse(object):
     def valor_tac(self):
         """
         Gets the valor_tac of this DetalheOperacaoResponse.
-        Valor da taxa de abertura de conta
+        {{{detalhe_operacao_response_valor_tac_value}}}
 
         :return: The valor_tac of this DetalheOperacaoResponse.
         :rtype: float
@@ -401,7 +401,7 @@ class DetalheOperacaoResponse(object):
     def valor_tac(self, valor_tac):
         """
         Sets the valor_tac of this DetalheOperacaoResponse.
-        Valor da taxa de abertura de conta
+        {{{detalhe_operacao_response_valor_tac_value}}}
 
         :param valor_tac: The valor_tac of this DetalheOperacaoResponse.
         :type: float
@@ -412,7 +412,7 @@ class DetalheOperacaoResponse(object):
     def percentual_tac(self):
         """
         Gets the percentual_tac of this DetalheOperacaoResponse.
-        Percentual da taxa de abertura de conta
+        {{{detalhe_operacao_response_percentual_tac_value}}}
 
         :return: The percentual_tac of this DetalheOperacaoResponse.
         :rtype: float
@@ -423,7 +423,7 @@ class DetalheOperacaoResponse(object):
     def percentual_tac(self, percentual_tac):
         """
         Sets the percentual_tac of this DetalheOperacaoResponse.
-        Percentual da taxa de abertura de conta
+        {{{detalhe_operacao_response_percentual_tac_value}}}
 
         :param percentual_tac: The percentual_tac of this DetalheOperacaoResponse.
         :type: float
@@ -434,7 +434,7 @@ class DetalheOperacaoResponse(object):
     def valor_operacao(self):
         """
         Gets the valor_operacao of this DetalheOperacaoResponse.
-        Valor da opera\u00E7\u00E3o
+        {{{detalhe_operacao_response_valor_operacao_value}}}
 
         :return: The valor_operacao of this DetalheOperacaoResponse.
         :rtype: float
@@ -445,7 +445,7 @@ class DetalheOperacaoResponse(object):
     def valor_operacao(self, valor_operacao):
         """
         Sets the valor_operacao of this DetalheOperacaoResponse.
-        Valor da opera\u00E7\u00E3o
+        {{{detalhe_operacao_response_valor_operacao_value}}}
 
         :param valor_operacao: The valor_operacao of this DetalheOperacaoResponse.
         :type: float
@@ -456,7 +456,7 @@ class DetalheOperacaoResponse(object):
     def carencia(self):
         """
         Gets the carencia of this DetalheOperacaoResponse.
-        Quantidade de meses para car\u00EAncia
+        {{{detalhe_operacao_response_carencia_value}}}
 
         :return: The carencia of this DetalheOperacaoResponse.
         :rtype: int
@@ -467,7 +467,7 @@ class DetalheOperacaoResponse(object):
     def carencia(self, carencia):
         """
         Sets the carencia of this DetalheOperacaoResponse.
-        Quantidade de meses para car\u00EAncia
+        {{{detalhe_operacao_response_carencia_value}}}
 
         :param carencia: The carencia of this DetalheOperacaoResponse.
         :type: int
@@ -478,7 +478,7 @@ class DetalheOperacaoResponse(object):
     def excedente_permitido(self):
         """
         Gets the excedente_permitido of this DetalheOperacaoResponse.
-        Valor excedente permitido para opera\u00E7\u00E3o
+        {{{detalhe_operacao_response_excedente_permitido_value}}}
 
         :return: The excedente_permitido of this DetalheOperacaoResponse.
         :rtype: float
@@ -489,7 +489,7 @@ class DetalheOperacaoResponse(object):
     def excedente_permitido(self, excedente_permitido):
         """
         Sets the excedente_permitido of this DetalheOperacaoResponse.
-        Valor excedente permitido para opera\u00E7\u00E3o
+        {{{detalhe_operacao_response_excedente_permitido_value}}}
 
         :param excedente_permitido: The excedente_permitido of this DetalheOperacaoResponse.
         :type: float
@@ -500,7 +500,7 @@ class DetalheOperacaoResponse(object):
     def flag_permitir_parcelamento(self):
         """
         Gets the flag_permitir_parcelamento of this DetalheOperacaoResponse.
-        Permitir transa\u00E7\u00F5es parceladas
+        {{{detalhe_operacao_response_flag_permitir_parcelamento_value}}}
 
         :return: The flag_permitir_parcelamento of this DetalheOperacaoResponse.
         :rtype: bool
@@ -511,7 +511,7 @@ class DetalheOperacaoResponse(object):
     def flag_permitir_parcelamento(self, flag_permitir_parcelamento):
         """
         Sets the flag_permitir_parcelamento of this DetalheOperacaoResponse.
-        Permitir transa\u00E7\u00F5es parceladas
+        {{{detalhe_operacao_response_flag_permitir_parcelamento_value}}}
 
         :param flag_permitir_parcelamento: The flag_permitir_parcelamento of this DetalheOperacaoResponse.
         :type: bool

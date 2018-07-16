@@ -62,7 +62,7 @@ class StatusOportunidadeResponse(object):
     def id(self):
         """
         Gets the id of this StatusOportunidadeResponse.
-        C\u00F3digo identificador do StatusOportunidade
+        {{{status_oportunidade_response_id_value}}}
 
         :return: The id of this StatusOportunidadeResponse.
         :rtype: int
@@ -73,7 +73,7 @@ class StatusOportunidadeResponse(object):
     def id(self, id):
         """
         Sets the id of this StatusOportunidadeResponse.
-        C\u00F3digo identificador do StatusOportunidade
+        {{{status_oportunidade_response_id_value}}}
 
         :param id: The id of this StatusOportunidadeResponse.
         :type: int
@@ -84,7 +84,7 @@ class StatusOportunidadeResponse(object):
     def id_tipo_oportunidade(self):
         """
         Gets the id_tipo_oportunidade of this StatusOportunidadeResponse.
-        C\u00F3digo identificador do TipoOportunidade
+        {{{status_oportunidade_response_id_tipo_oportunidade_value}}}
 
         :return: The id_tipo_oportunidade of this StatusOportunidadeResponse.
         :rtype: int
@@ -95,7 +95,7 @@ class StatusOportunidadeResponse(object):
     def id_tipo_oportunidade(self, id_tipo_oportunidade):
         """
         Sets the id_tipo_oportunidade of this StatusOportunidadeResponse.
-        C\u00F3digo identificador do TipoOportunidade
+        {{{status_oportunidade_response_id_tipo_oportunidade_value}}}
 
         :param id_tipo_oportunidade: The id_tipo_oportunidade of this StatusOportunidadeResponse.
         :type: int
@@ -106,7 +106,7 @@ class StatusOportunidadeResponse(object):
     def nome(self):
         """
         Gets the nome of this StatusOportunidadeResponse.
-        Nome do status oportunidade
+        {{{status_oportunidade_response_nome_value}}}
 
         :return: The nome of this StatusOportunidadeResponse.
         :rtype: str
@@ -117,7 +117,7 @@ class StatusOportunidadeResponse(object):
     def nome(self, nome):
         """
         Sets the nome of this StatusOportunidadeResponse.
-        Nome do status oportunidade
+        {{{status_oportunidade_response_nome_value}}}
 
         :param nome: The nome of this StatusOportunidadeResponse.
         :type: str
@@ -128,7 +128,7 @@ class StatusOportunidadeResponse(object):
     def descricao(self):
         """
         Gets the descricao of this StatusOportunidadeResponse.
-        Descricao do StatusOportunidade
+        {{{status_oportunidade_response_descricao_value}}}
 
         :return: The descricao of this StatusOportunidadeResponse.
         :rtype: str
@@ -139,7 +139,7 @@ class StatusOportunidadeResponse(object):
     def descricao(self, descricao):
         """
         Sets the descricao of this StatusOportunidadeResponse.
-        Descricao do StatusOportunidade
+        {{{status_oportunidade_response_descricao_value}}}
 
         :param descricao: The descricao of this StatusOportunidadeResponse.
         :type: str
@@ -150,7 +150,7 @@ class StatusOportunidadeResponse(object):
     def flag_ativo(self):
         """
         Gets the flag_ativo of this StatusOportunidadeResponse.
-        Flag que representa se o tipo oportunidade est\u00E1 ativo
+        {{{status_oportunidade_response_flag_ativo_value}}}
 
         :return: The flag_ativo of this StatusOportunidadeResponse.
         :rtype: bool
@@ -161,7 +161,7 @@ class StatusOportunidadeResponse(object):
     def flag_ativo(self, flag_ativo):
         """
         Sets the flag_ativo of this StatusOportunidadeResponse.
-        Flag que representa se o tipo oportunidade est\u00E1 ativo
+        {{{status_oportunidade_response_flag_ativo_value}}}
 
         :param flag_ativo: The flag_ativo of this StatusOportunidadeResponse.
         :type: bool

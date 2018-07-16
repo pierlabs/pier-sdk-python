@@ -56,7 +56,7 @@ class DetalheOportunidadeResponse(object):
     def id(self):
         """
         Gets the id of this DetalheOportunidadeResponse.
-        C\u00F3digo identificador do detalhe
+        {{{detalhe_oportunidade_response_id_value}}}
 
         :return: The id of this DetalheOportunidadeResponse.
         :rtype: int
@@ -67,7 +67,7 @@ class DetalheOportunidadeResponse(object):
     def id(self, id):
         """
         Sets the id of this DetalheOportunidadeResponse.
-        C\u00F3digo identificador do detalhe
+        {{{detalhe_oportunidade_response_id_value}}}
 
         :param id: The id of this DetalheOportunidadeResponse.
         :type: int
@@ -78,7 +78,7 @@ class DetalheOportunidadeResponse(object):
     def nome_campo(self):
         """
         Gets the nome_campo of this DetalheOportunidadeResponse.
-        Nome do conte\u00FAdo
+        {{{detalhe_oportunidade_response_nome_campo_value}}}
 
         :return: The nome_campo of this DetalheOportunidadeResponse.
         :rtype: str
@@ -89,7 +89,7 @@ class DetalheOportunidadeResponse(object):
     def nome_campo(self, nome_campo):
         """
         Sets the nome_campo of this DetalheOportunidadeResponse.
-        Nome do conte\u00FAdo
+        {{{detalhe_oportunidade_response_nome_campo_value}}}
 
         :param nome_campo: The nome_campo of this DetalheOportunidadeResponse.
         :type: str
@@ -100,7 +100,7 @@ class DetalheOportunidadeResponse(object):
     def conteudo(self):
         """
         Gets the conteudo of this DetalheOportunidadeResponse.
-        Conte\u00FAdo do detalhe
+        {{{detalhe_oportunidade_response_conteudo_value}}}
 
         :return: The conteudo of this DetalheOportunidadeResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class DetalheOportunidadeResponse(object):
     def conteudo(self, conteudo):
         """
         Sets the conteudo of this DetalheOportunidadeResponse.
-        Conte\u00FAdo do detalhe
+        {{{detalhe_oportunidade_response_conteudo_value}}}
 
         :param conteudo: The conteudo of this DetalheOportunidadeResponse.
         :type: str

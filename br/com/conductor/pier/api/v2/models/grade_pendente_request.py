@@ -53,7 +53,7 @@ class GradePendenteRequest(object):
     def id_conta(self):
         """
         Gets the id_conta of this GradePendenteRequest.
-        C\u00F3digo identificador da conta.
+        {{{grade_pendente_request_id_conta_value}}}
 
         :return: The id_conta of this GradePendenteRequest.
         :rtype: int
@@ -64,7 +64,7 @@ class GradePendenteRequest(object):
     def id_conta(self, id_conta):
         """
         Sets the id_conta of this GradePendenteRequest.
-        C\u00F3digo identificador da conta.
+        {{{grade_pendente_request_id_conta_value}}}
 
         :param id_conta: The id_conta of this GradePendenteRequest.
         :type: int
@@ -75,7 +75,7 @@ class GradePendenteRequest(object):
     def data_base(self):
         """
         Gets the data_base of this GradePendenteRequest.
-        Data do ajuste no formato yyyy-MM-dd.
+        {{{grade_pendente_request_data_base_value}}}
 
         :return: The data_base of this GradePendenteRequest.
         :rtype: str
@@ -86,7 +86,7 @@ class GradePendenteRequest(object):
     def data_base(self, data_base):
         """
         Sets the data_base of this GradePendenteRequest.
-        Data do ajuste no formato yyyy-MM-dd.
+        {{{grade_pendente_request_data_base_value}}}
 
         :param data_base: The data_base of this GradePendenteRequest.
         :type: str

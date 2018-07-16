@@ -108,7 +108,7 @@ class DadosCartaoResponse(object):
     def numero_cartao(self):
         """
         Gets the numero_cartao of this DadosCartaoResponse.
-        N\u00FAmero do cart\u00E3o.
+        {{{dados_cartao_response_numero_cartao_value}}}
 
         :return: The numero_cartao of this DadosCartaoResponse.
         :rtype: str
@@ -119,7 +119,7 @@ class DadosCartaoResponse(object):
     def numero_cartao(self, numero_cartao):
         """
         Sets the numero_cartao of this DadosCartaoResponse.
-        N\u00FAmero do cart\u00E3o.
+        {{{dados_cartao_response_numero_cartao_value}}}
 
         :param numero_cartao: The numero_cartao of this DadosCartaoResponse.
         :type: str
@@ -130,7 +130,7 @@ class DadosCartaoResponse(object):
     def data_validade(self):
         """
         Gets the data_validade of this DadosCartaoResponse.
-        Data de validade.
+        {{{dados_cartao_response_data_validade_value}}}
 
         :return: The data_validade of this DadosCartaoResponse.
         :rtype: str
@@ -141,7 +141,7 @@ class DadosCartaoResponse(object):
     def data_validade(self, data_validade):
         """
         Sets the data_validade of this DadosCartaoResponse.
-        Data de validade.
+        {{{dados_cartao_response_data_validade_value}}}
 
         :param data_validade: The data_validade of this DadosCartaoResponse.
         :type: str
@@ -152,7 +152,7 @@ class DadosCartaoResponse(object):
     def cvv2(self):
         """
         Gets the cvv2 of this DadosCartaoResponse.
-        CVV2 do cart\u00E3o.
+        {{{dados_cartao_response_cvv2_value}}}
 
         :return: The cvv2 of this DadosCartaoResponse.
         :rtype: str
@@ -163,7 +163,7 @@ class DadosCartaoResponse(object):
     def cvv2(self, cvv2):
         """
         Sets the cvv2 of this DadosCartaoResponse.
-        CVV2 do cart\u00E3o.
+        {{{dados_cartao_response_cvv2_value}}}
 
         :param cvv2: The cvv2 of this DadosCartaoResponse.
         :type: str
@@ -174,7 +174,7 @@ class DadosCartaoResponse(object):
     def nome_plastico(self):
         """
         Gets the nome_plastico of this DadosCartaoResponse.
-        Nome do portador.
+        {{{dados_cartao_response_nome_plastico_value}}}
 
         :return: The nome_plastico of this DadosCartaoResponse.
         :rtype: str
@@ -185,7 +185,7 @@ class DadosCartaoResponse(object):
     def nome_plastico(self, nome_plastico):
         """
         Sets the nome_plastico of this DadosCartaoResponse.
-        Nome do portador.
+        {{{dados_cartao_response_nome_plastico_value}}}
 
         :param nome_plastico: The nome_plastico of this DadosCartaoResponse.
         :type: str
@@ -196,7 +196,7 @@ class DadosCartaoResponse(object):
     def id_conta(self):
         """
         Gets the id_conta of this DadosCartaoResponse.
-        Identificador da conta do portador.
+        {{{dados_cartao_response_id_conta_value}}}
 
         :return: The id_conta of this DadosCartaoResponse.
         :rtype: int
@@ -207,7 +207,7 @@ class DadosCartaoResponse(object):
     def id_conta(self, id_conta):
         """
         Sets the id_conta of this DadosCartaoResponse.
-        Identificador da conta do portador.
+        {{{dados_cartao_response_id_conta_value}}}
 
         :param id_conta: The id_conta of this DadosCartaoResponse.
         :type: int
@@ -218,7 +218,7 @@ class DadosCartaoResponse(object):
     def id_cartao(self):
         """
         Gets the id_cartao of this DadosCartaoResponse.
-        Identificador da cart\u00E3o do portador.
+        {{{dados_cartao_response_id_cartao_value}}}
 
         :return: The id_cartao of this DadosCartaoResponse.
         :rtype: int
@@ -229,7 +229,7 @@ class DadosCartaoResponse(object):
     def id_cartao(self, id_cartao):
         """
         Sets the id_cartao of this DadosCartaoResponse.
-        Identificador da cart\u00E3o do portador.
+        {{{dados_cartao_response_id_cartao_value}}}
 
         :param id_cartao: The id_cartao of this DadosCartaoResponse.
         :type: int
@@ -240,7 +240,7 @@ class DadosCartaoResponse(object):
     def numero_agencia(self):
         """
         Gets the numero_agencia of this DadosCartaoResponse.
-        Apresenta o n\u00FAmero da Ag\u00EAncia a ser impresso no Cart\u00E3o, quando aplic\u00E1vel.
+        {{{dados_cartao_response_numero_agencia_value}}}
 
         :return: The numero_agencia of this DadosCartaoResponse.
         :rtype: int
@@ -251,7 +251,7 @@ class DadosCartaoResponse(object):
     def numero_agencia(self, numero_agencia):
         """
         Sets the numero_agencia of this DadosCartaoResponse.
-        Apresenta o n\u00FAmero da Ag\u00EAncia a ser impresso no Cart\u00E3o, quando aplic\u00E1vel.
+        {{{dados_cartao_response_numero_agencia_value}}}
 
         :param numero_agencia: The numero_agencia of this DadosCartaoResponse.
         :type: int
@@ -262,7 +262,7 @@ class DadosCartaoResponse(object):
     def numero_conta_corente(self):
         """
         Gets the numero_conta_corente of this DadosCartaoResponse.
-        Apresenta o n\u00FAmero da Conta Corrente a ser impresso no Cart\u00E3o, quando aplic\u00E1vel.
+        {{{dados_cartao_response_numero_conta_corente_value}}}
 
         :return: The numero_conta_corente of this DadosCartaoResponse.
         :rtype: str
@@ -273,7 +273,7 @@ class DadosCartaoResponse(object):
     def numero_conta_corente(self, numero_conta_corente):
         """
         Sets the numero_conta_corente of this DadosCartaoResponse.
-        Apresenta o n\u00FAmero da Conta Corrente a ser impresso no Cart\u00E3o, quando aplic\u00E1vel.
+        {{{dados_cartao_response_numero_conta_corente_value}}}
 
         :param numero_conta_corente: The numero_conta_corente of this DadosCartaoResponse.
         :type: str
@@ -284,7 +284,7 @@ class DadosCartaoResponse(object):
     def id_status_conta(self):
         """
         Gets the id_status_conta of this DadosCartaoResponse.
-        Status da conta do portador.
+        {{{dados_cartao_response_id_status_conta_value}}}
 
         :return: The id_status_conta of this DadosCartaoResponse.
         :rtype: int
@@ -295,7 +295,7 @@ class DadosCartaoResponse(object):
     def id_status_conta(self, id_status_conta):
         """
         Sets the id_status_conta of this DadosCartaoResponse.
-        Status da conta do portador.
+        {{{dados_cartao_response_id_status_conta_value}}}
 
         :param id_status_conta: The id_status_conta of this DadosCartaoResponse.
         :type: int
@@ -306,7 +306,7 @@ class DadosCartaoResponse(object):
     def status_conta(self):
         """
         Gets the status_conta of this DadosCartaoResponse.
-        Descri\u00E7\u00E3o do status da conta do portador.
+        {{{dados_cartao_response_status_conta_value}}}
 
         :return: The status_conta of this DadosCartaoResponse.
         :rtype: str
@@ -317,7 +317,7 @@ class DadosCartaoResponse(object):
     def status_conta(self, status_conta):
         """
         Sets the status_conta of this DadosCartaoResponse.
-        Descri\u00E7\u00E3o do status da conta do portador.
+        {{{dados_cartao_response_status_conta_value}}}
 
         :param status_conta: The status_conta of this DadosCartaoResponse.
         :type: str
@@ -328,7 +328,7 @@ class DadosCartaoResponse(object):
     def id_status_cartao(self):
         """
         Gets the id_status_cartao of this DadosCartaoResponse.
-        Status do cart\u00E3o.
+        {{{dados_cartao_response_id_status_cartao_value}}}
 
         :return: The id_status_cartao of this DadosCartaoResponse.
         :rtype: int
@@ -339,7 +339,7 @@ class DadosCartaoResponse(object):
     def id_status_cartao(self, id_status_cartao):
         """
         Sets the id_status_cartao of this DadosCartaoResponse.
-        Status do cart\u00E3o.
+        {{{dados_cartao_response_id_status_cartao_value}}}
 
         :param id_status_cartao: The id_status_cartao of this DadosCartaoResponse.
         :type: int
@@ -350,7 +350,7 @@ class DadosCartaoResponse(object):
     def status_cartao(self):
         """
         Gets the status_cartao of this DadosCartaoResponse.
-        Descri\u00E7\u00E3o do status do cart\u00E3o.
+        {{{dados_cartao_response_status_cartao_value}}}
 
         :return: The status_cartao of this DadosCartaoResponse.
         :rtype: str
@@ -361,7 +361,7 @@ class DadosCartaoResponse(object):
     def status_cartao(self, status_cartao):
         """
         Sets the status_cartao of this DadosCartaoResponse.
-        Descri\u00E7\u00E3o do status do cart\u00E3o.
+        {{{dados_cartao_response_status_cartao_value}}}
 
         :param status_cartao: The status_cartao of this DadosCartaoResponse.
         :type: str

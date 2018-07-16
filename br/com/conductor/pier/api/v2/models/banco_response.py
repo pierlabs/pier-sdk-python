@@ -59,7 +59,7 @@ class BancoResponse(object):
     def id(self):
         """
         Gets the id of this BancoResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o do Banco (id).
+        {{{banco_response_id_value}}}
 
         :return: The id of this BancoResponse.
         :rtype: int
@@ -70,7 +70,7 @@ class BancoResponse(object):
     def id(self, id):
         """
         Sets the id of this BancoResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o do Banco (id).
+        {{{banco_response_id_value}}}
 
         :param id: The id of this BancoResponse.
         :type: int
@@ -81,7 +81,7 @@ class BancoResponse(object):
     def nome(self):
         """
         Gets the nome of this BancoResponse.
-        Nome do banco
+        {{{banco_response_nome_value}}}
 
         :return: The nome of this BancoResponse.
         :rtype: str
@@ -92,7 +92,7 @@ class BancoResponse(object):
     def nome(self, nome):
         """
         Sets the nome of this BancoResponse.
-        Nome do banco
+        {{{banco_response_nome_value}}}
 
         :param nome: The nome of this BancoResponse.
         :type: str
@@ -103,7 +103,7 @@ class BancoResponse(object):
     def descricao(self):
         """
         Gets the descricao of this BancoResponse.
-        Descri\u00E7\u00E3o do banco
+        {{{banco_response_descricao_value}}}
 
         :return: The descricao of this BancoResponse.
         :rtype: str
@@ -114,7 +114,7 @@ class BancoResponse(object):
     def descricao(self, descricao):
         """
         Sets the descricao of this BancoResponse.
-        Descri\u00E7\u00E3o do banco
+        {{{banco_response_descricao_value}}}
 
         :param descricao: The descricao of this BancoResponse.
         :type: str
@@ -125,7 +125,7 @@ class BancoResponse(object):
     def digito_banco(self):
         """
         Gets the digito_banco of this BancoResponse.
-        Digito do banco
+        {{{banco_response_digito_banco_value}}}
 
         :return: The digito_banco of this BancoResponse.
         :rtype: str
@@ -136,7 +136,7 @@ class BancoResponse(object):
     def digito_banco(self, digito_banco):
         """
         Sets the digito_banco of this BancoResponse.
-        Digito do banco
+        {{{banco_response_digito_banco_value}}}
 
         :param digito_banco: The digito_banco of this BancoResponse.
         :type: str

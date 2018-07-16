@@ -50,7 +50,7 @@ class BeneficioPagamentoAtrasoResponse(object):
     def data_beneficio(self):
         """
         Gets the data_beneficio of this BeneficioPagamentoAtrasoResponse.
-        Data m\u00E1xima para pagamento da fatura em atraso para receber o benef\u00EDcio de isen\u00E7\u00E3o total no pagamento de multa, encargos, mora e IOF.
+        {{{beneficio_pagamento_atraso_response_data_beneficio_value}}}
 
         :return: The data_beneficio of this BeneficioPagamentoAtrasoResponse.
         :rtype: str
@@ -61,7 +61,7 @@ class BeneficioPagamentoAtrasoResponse(object):
     def data_beneficio(self, data_beneficio):
         """
         Sets the data_beneficio of this BeneficioPagamentoAtrasoResponse.
-        Data m\u00E1xima para pagamento da fatura em atraso para receber o benef\u00EDcio de isen\u00E7\u00E3o total no pagamento de multa, encargos, mora e IOF.
+        {{{beneficio_pagamento_atraso_response_data_beneficio_value}}}
 
         :param data_beneficio: The data_beneficio of this BeneficioPagamentoAtrasoResponse.
         :type: str

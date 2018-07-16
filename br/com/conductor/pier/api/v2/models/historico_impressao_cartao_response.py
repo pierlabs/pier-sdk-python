@@ -62,7 +62,7 @@ class HistoricoImpressaoCartaoResponse(object):
     def id(self):
         """
         Gets the id of this HistoricoImpressaoCartaoResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o do Hist\u00F3rico de Impress\u00E3o Avulsa de Cart\u00F5es (id).
+        {{{historico_impressao_cartao_response_id_value}}}
 
         :return: The id of this HistoricoImpressaoCartaoResponse.
         :rtype: int
@@ -73,7 +73,7 @@ class HistoricoImpressaoCartaoResponse(object):
     def id(self, id):
         """
         Sets the id of this HistoricoImpressaoCartaoResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o do Hist\u00F3rico de Impress\u00E3o Avulsa de Cart\u00F5es (id).
+        {{{historico_impressao_cartao_response_id_value}}}
 
         :param id: The id of this HistoricoImpressaoCartaoResponse.
         :type: int
@@ -84,7 +84,7 @@ class HistoricoImpressaoCartaoResponse(object):
     def id_cartao(self):
         """
         Gets the id_cartao of this HistoricoImpressaoCartaoResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o do Cart\u00E3o (id).
+        {{{historico_impressao_cartao_response_id_cartao_value}}}
 
         :return: The id_cartao of this HistoricoImpressaoCartaoResponse.
         :rtype: int
@@ -95,7 +95,7 @@ class HistoricoImpressaoCartaoResponse(object):
     def id_cartao(self, id_cartao):
         """
         Sets the id_cartao of this HistoricoImpressaoCartaoResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o do Cart\u00E3o (id).
+        {{{historico_impressao_cartao_response_id_cartao_value}}}
 
         :param id_cartao: The id_cartao of this HistoricoImpressaoCartaoResponse.
         :type: int
@@ -106,7 +106,7 @@ class HistoricoImpressaoCartaoResponse(object):
     def id_status_impressao_cartao(self):
         """
         Gets the id_status_impressao_cartao of this HistoricoImpressaoCartaoResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o do Status de Impress\u00E3o do Cart\u00E3o (id).
+        {{{historico_impressao_cartao_response_id_status_impressao_cartao_value}}}
 
         :return: The id_status_impressao_cartao of this HistoricoImpressaoCartaoResponse.
         :rtype: int
@@ -117,7 +117,7 @@ class HistoricoImpressaoCartaoResponse(object):
     def id_status_impressao_cartao(self, id_status_impressao_cartao):
         """
         Sets the id_status_impressao_cartao of this HistoricoImpressaoCartaoResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o do Status de Impress\u00E3o do Cart\u00E3o (id).
+        {{{historico_impressao_cartao_response_id_status_impressao_cartao_value}}}
 
         :param id_status_impressao_cartao: The id_status_impressao_cartao of this HistoricoImpressaoCartaoResponse.
         :type: int
@@ -128,7 +128,7 @@ class HistoricoImpressaoCartaoResponse(object):
     def mensagem_historico(self):
         """
         Gets the mensagem_historico of this HistoricoImpressaoCartaoResponse.
-        Apresenta uma mensagem que descreve a etapa do processo de impress\u00E3o do cart\u00E3o que fora realizado.
+        {{{historico_impressao_cartao_response_mensagem_historico_value}}}
 
         :return: The mensagem_historico of this HistoricoImpressaoCartaoResponse.
         :rtype: str
@@ -139,7 +139,7 @@ class HistoricoImpressaoCartaoResponse(object):
     def mensagem_historico(self, mensagem_historico):
         """
         Sets the mensagem_historico of this HistoricoImpressaoCartaoResponse.
-        Apresenta uma mensagem que descreve a etapa do processo de impress\u00E3o do cart\u00E3o que fora realizado.
+        {{{historico_impressao_cartao_response_mensagem_historico_value}}}
 
         :param mensagem_historico: The mensagem_historico of this HistoricoImpressaoCartaoResponse.
         :type: str
@@ -150,7 +150,7 @@ class HistoricoImpressaoCartaoResponse(object):
     def data_historico(self):
         """
         Gets the data_historico of this HistoricoImpressaoCartaoResponse.
-        Apresenta a data que o registro de Hist\u00F3rico de Impress\u00E3o de um Cart\u00E3o fora inserido.
+        {{{historico_impressao_cartao_response_data_historico_value}}}
 
         :return: The data_historico of this HistoricoImpressaoCartaoResponse.
         :rtype: str
@@ -161,7 +161,7 @@ class HistoricoImpressaoCartaoResponse(object):
     def data_historico(self, data_historico):
         """
         Sets the data_historico of this HistoricoImpressaoCartaoResponse.
-        Apresenta a data que o registro de Hist\u00F3rico de Impress\u00E3o de um Cart\u00E3o fora inserido.
+        {{{historico_impressao_cartao_response_data_historico_value}}}
 
         :param data_historico: The data_historico of this HistoricoImpressaoCartaoResponse.
         :type: str

@@ -56,7 +56,7 @@ class VinculoEstabelecimentoAdquirentePersist(object):
     def id_estabelecimento(self):
         """
         Gets the id_estabelecimento of this VinculoEstabelecimentoAdquirentePersist.
-        Apresenta o id do estabelecimento.
+        {{{vinculo_estabelecimento_adquirente_persist_id_estabelecimento_value}}}
 
         :return: The id_estabelecimento of this VinculoEstabelecimentoAdquirentePersist.
         :rtype: int
@@ -67,7 +67,7 @@ class VinculoEstabelecimentoAdquirentePersist(object):
     def id_estabelecimento(self, id_estabelecimento):
         """
         Sets the id_estabelecimento of this VinculoEstabelecimentoAdquirentePersist.
-        Apresenta o id do estabelecimento.
+        {{{vinculo_estabelecimento_adquirente_persist_id_estabelecimento_value}}}
 
         :param id_estabelecimento: The id_estabelecimento of this VinculoEstabelecimentoAdquirentePersist.
         :type: int
@@ -78,7 +78,7 @@ class VinculoEstabelecimentoAdquirentePersist(object):
     def id_adquirente(self):
         """
         Gets the id_adquirente of this VinculoEstabelecimentoAdquirentePersist.
-        Apresenta o id do adquirente.
+        {{{vinculo_estabelecimento_adquirente_persist_id_adquirente_value}}}
 
         :return: The id_adquirente of this VinculoEstabelecimentoAdquirentePersist.
         :rtype: int
@@ -89,7 +89,7 @@ class VinculoEstabelecimentoAdquirentePersist(object):
     def id_adquirente(self, id_adquirente):
         """
         Sets the id_adquirente of this VinculoEstabelecimentoAdquirentePersist.
-        Apresenta o id do adquirente.
+        {{{vinculo_estabelecimento_adquirente_persist_id_adquirente_value}}}
 
         :param id_adquirente: The id_adquirente of this VinculoEstabelecimentoAdquirentePersist.
         :type: int
@@ -100,7 +100,7 @@ class VinculoEstabelecimentoAdquirentePersist(object):
     def codigo_estabelecimento_adquirente(self):
         """
         Gets the codigo_estabelecimento_adquirente of this VinculoEstabelecimentoAdquirentePersist.
-        Apresenta o c\u00F3digo de v\u00EDnculo entre o estabelecimento e o adquirente.
+        {{{vinculo_estabelecimento_adquirente_persist_codigo_estabelecimento_adquirente_value}}}
 
         :return: The codigo_estabelecimento_adquirente of this VinculoEstabelecimentoAdquirentePersist.
         :rtype: str
@@ -111,7 +111,7 @@ class VinculoEstabelecimentoAdquirentePersist(object):
     def codigo_estabelecimento_adquirente(self, codigo_estabelecimento_adquirente):
         """
         Sets the codigo_estabelecimento_adquirente of this VinculoEstabelecimentoAdquirentePersist.
-        Apresenta o c\u00F3digo de v\u00EDnculo entre o estabelecimento e o adquirente.
+        {{{vinculo_estabelecimento_adquirente_persist_codigo_estabelecimento_adquirente_value}}}
 
         :param codigo_estabelecimento_adquirente: The codigo_estabelecimento_adquirente of this VinculoEstabelecimentoAdquirentePersist.
         :type: str

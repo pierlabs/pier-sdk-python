@@ -86,7 +86,7 @@ class ArquivoAUDResponse(object):
     def rev(self):
         """
         Gets the rev of this ArquivoAUDResponse.
-        Identificador da auditoria arquivo
+        {{{arquivo_a_u_d_response_rev_value}}}
 
         :return: The rev of this ArquivoAUDResponse.
         :rtype: int
@@ -97,7 +97,7 @@ class ArquivoAUDResponse(object):
     def rev(self, rev):
         """
         Sets the rev of this ArquivoAUDResponse.
-        Identificador da auditoria arquivo
+        {{{arquivo_a_u_d_response_rev_value}}}
 
         :param rev: The rev of this ArquivoAUDResponse.
         :type: int
@@ -108,7 +108,7 @@ class ArquivoAUDResponse(object):
     def rev_type(self):
         """
         Gets the rev_type of this ArquivoAUDResponse.
-        Identificador do tipo de auditoria (0 - Criado, 1 - Alterado, 2 - Exclu\u00EDdo)
+        {{{arquivo_a_u_d_response_rev_type_value}}}
 
         :return: The rev_type of this ArquivoAUDResponse.
         :rtype: int
@@ -119,7 +119,7 @@ class ArquivoAUDResponse(object):
     def rev_type(self, rev_type):
         """
         Sets the rev_type of this ArquivoAUDResponse.
-        Identificador do tipo de auditoria (0 - Criado, 1 - Alterado, 2 - Exclu\u00EDdo)
+        {{{arquivo_a_u_d_response_rev_type_value}}}
 
         :param rev_type: The rev_type of this ArquivoAUDResponse.
         :type: int
@@ -130,7 +130,7 @@ class ArquivoAUDResponse(object):
     def id(self):
         """
         Gets the id of this ArquivoAUDResponse.
-        Identificador do arquivo auditado
+        {{{arquivo_a_u_d_response_id_value}}}
 
         :return: The id of this ArquivoAUDResponse.
         :rtype: int
@@ -141,7 +141,7 @@ class ArquivoAUDResponse(object):
     def id(self, id):
         """
         Sets the id of this ArquivoAUDResponse.
-        Identificador do arquivo auditado
+        {{{arquivo_a_u_d_response_id_value}}}
 
         :param id: The id of this ArquivoAUDResponse.
         :type: int
@@ -152,7 +152,7 @@ class ArquivoAUDResponse(object):
     def nome(self):
         """
         Gets the nome of this ArquivoAUDResponse.
-        Nome do arquivo auditado
+        {{{arquivo_a_u_d_response_nome_value}}}
 
         :return: The nome of this ArquivoAUDResponse.
         :rtype: str
@@ -163,7 +163,7 @@ class ArquivoAUDResponse(object):
     def nome(self, nome):
         """
         Sets the nome of this ArquivoAUDResponse.
-        Nome do arquivo auditado
+        {{{arquivo_a_u_d_response_nome_value}}}
 
         :param nome: The nome of this ArquivoAUDResponse.
         :type: str
@@ -174,7 +174,7 @@ class ArquivoAUDResponse(object):
     def id_resposta_acesso_digital(self):
         """
         Gets the id_resposta_acesso_digital of this ArquivoAUDResponse.
-        Identificador da resposta da Acesso Digital
+        {{{arquivo_a_u_d_response_id_resposta_acesso_digital_value}}}
 
         :return: The id_resposta_acesso_digital of this ArquivoAUDResponse.
         :rtype: str
@@ -185,7 +185,7 @@ class ArquivoAUDResponse(object):
     def id_resposta_acesso_digital(self, id_resposta_acesso_digital):
         """
         Sets the id_resposta_acesso_digital of this ArquivoAUDResponse.
-        Identificador da resposta da Acesso Digital
+        {{{arquivo_a_u_d_response_id_resposta_acesso_digital_value}}}
 
         :param id_resposta_acesso_digital: The id_resposta_acesso_digital of this ArquivoAUDResponse.
         :type: str
@@ -196,7 +196,7 @@ class ArquivoAUDResponse(object):
     def data_hora_resposta_acesso_digital(self):
         """
         Gets the data_hora_resposta_acesso_digital of this ArquivoAUDResponse.
-        Data de resposta da Acesso Digital
+        {{{arquivo_a_u_d_response_data_hora_resposta_acesso_digital_value}}}
 
         :return: The data_hora_resposta_acesso_digital of this ArquivoAUDResponse.
         :rtype: str
@@ -207,7 +207,7 @@ class ArquivoAUDResponse(object):
     def data_hora_resposta_acesso_digital(self, data_hora_resposta_acesso_digital):
         """
         Sets the data_hora_resposta_acesso_digital of this ArquivoAUDResponse.
-        Data de resposta da Acesso Digital
+        {{{arquivo_a_u_d_response_data_hora_resposta_acesso_digital_value}}}
 
         :param data_hora_resposta_acesso_digital: The data_hora_resposta_acesso_digital of this ArquivoAUDResponse.
         :type: str
@@ -218,7 +218,7 @@ class ArquivoAUDResponse(object):
     def id_resposta_neurotech(self):
         """
         Gets the id_resposta_neurotech of this ArquivoAUDResponse.
-        Identificador da resposta da Neurotech
+        {{{arquivo_a_u_d_response_id_resposta_neurotech_value}}}
 
         :return: The id_resposta_neurotech of this ArquivoAUDResponse.
         :rtype: str
@@ -229,7 +229,7 @@ class ArquivoAUDResponse(object):
     def id_resposta_neurotech(self, id_resposta_neurotech):
         """
         Sets the id_resposta_neurotech of this ArquivoAUDResponse.
-        Identificador da resposta da Neurotech
+        {{{arquivo_a_u_d_response_id_resposta_neurotech_value}}}
 
         :param id_resposta_neurotech: The id_resposta_neurotech of this ArquivoAUDResponse.
         :type: str
@@ -240,7 +240,7 @@ class ArquivoAUDResponse(object):
     def data_hora_resposta_neurotech(self):
         """
         Gets the data_hora_resposta_neurotech of this ArquivoAUDResponse.
-        Data de resposta da Neurotech
+        {{{arquivo_a_u_d_response_data_hora_resposta_neurotech_value}}}
 
         :return: The data_hora_resposta_neurotech of this ArquivoAUDResponse.
         :rtype: str
@@ -251,7 +251,7 @@ class ArquivoAUDResponse(object):
     def data_hora_resposta_neurotech(self, data_hora_resposta_neurotech):
         """
         Sets the data_hora_resposta_neurotech of this ArquivoAUDResponse.
-        Data de resposta da Neurotech
+        {{{arquivo_a_u_d_response_data_hora_resposta_neurotech_value}}}
 
         :param data_hora_resposta_neurotech: The data_hora_resposta_neurotech of this ArquivoAUDResponse.
         :type: str
@@ -262,7 +262,7 @@ class ArquivoAUDResponse(object):
     def uri(self):
         """
         Gets the uri of this ArquivoAUDResponse.
-        Uri de acesso
+        {{{arquivo_a_u_d_response_uri_value}}}
 
         :return: The uri of this ArquivoAUDResponse.
         :rtype: str
@@ -273,7 +273,7 @@ class ArquivoAUDResponse(object):
     def uri(self, uri):
         """
         Sets the uri of this ArquivoAUDResponse.
-        Uri de acesso
+        {{{arquivo_a_u_d_response_uri_value}}}
 
         :param uri: The uri of this ArquivoAUDResponse.
         :type: str
@@ -284,7 +284,7 @@ class ArquivoAUDResponse(object):
     def data_hora_inclusao(self):
         """
         Gets the data_hora_inclusao of this ArquivoAUDResponse.
-        Data de inclus\u00E3o do arquivo auditado
+        {{{arquivo_a_u_d_response_data_hora_inclusao_value}}}
 
         :return: The data_hora_inclusao of this ArquivoAUDResponse.
         :rtype: str
@@ -295,7 +295,7 @@ class ArquivoAUDResponse(object):
     def data_hora_inclusao(self, data_hora_inclusao):
         """
         Sets the data_hora_inclusao of this ArquivoAUDResponse.
-        Data de inclus\u00E3o do arquivo auditado
+        {{{arquivo_a_u_d_response_data_hora_inclusao_value}}}
 
         :param data_hora_inclusao: The data_hora_inclusao of this ArquivoAUDResponse.
         :type: str
@@ -306,7 +306,7 @@ class ArquivoAUDResponse(object):
     def data_hora_alteracao(self):
         """
         Gets the data_hora_alteracao of this ArquivoAUDResponse.
-        Data de altera\u00E7\u00E3o do arquivo auditado
+        {{{arquivo_a_u_d_response_data_hora_alteracao_value}}}
 
         :return: The data_hora_alteracao of this ArquivoAUDResponse.
         :rtype: str
@@ -317,7 +317,7 @@ class ArquivoAUDResponse(object):
     def data_hora_alteracao(self, data_hora_alteracao):
         """
         Sets the data_hora_alteracao of this ArquivoAUDResponse.
-        Data de altera\u00E7\u00E3o do arquivo auditado
+        {{{arquivo_a_u_d_response_data_hora_alteracao_value}}}
 
         :param data_hora_alteracao: The data_hora_alteracao of this ArquivoAUDResponse.
         :type: str
@@ -328,7 +328,7 @@ class ArquivoAUDResponse(object):
     def extensao(self):
         """
         Gets the extensao of this ArquivoAUDResponse.
-        Extens\u00E3o do arquivo auditado
+        {{{arquivo_a_u_d_response_extensao_value}}}
 
         :return: The extensao of this ArquivoAUDResponse.
         :rtype: str
@@ -339,7 +339,7 @@ class ArquivoAUDResponse(object):
     def extensao(self, extensao):
         """
         Sets the extensao of this ArquivoAUDResponse.
-        Extens\u00E3o do arquivo auditado
+        {{{arquivo_a_u_d_response_extensao_value}}}
 
         :param extensao: The extensao of this ArquivoAUDResponse.
         :type: str
@@ -350,7 +350,7 @@ class ArquivoAUDResponse(object):
     def parametros(self):
         """
         Gets the parametros of this ArquivoAUDResponse.
-        Lista  de par\u00E2metros do arquivo auditado
+        {{{arquivo_a_u_d_response_parametros_value}}}
 
         :return: The parametros of this ArquivoAUDResponse.
         :rtype: list[ArquivoParametroAUDResponse]
@@ -361,7 +361,7 @@ class ArquivoAUDResponse(object):
     def parametros(self, parametros):
         """
         Sets the parametros of this ArquivoAUDResponse.
-        Lista  de par\u00E2metros do arquivo auditado
+        {{{arquivo_a_u_d_response_parametros_value}}}
 
         :param parametros: The parametros of this ArquivoAUDResponse.
         :type: list[ArquivoParametroAUDResponse]

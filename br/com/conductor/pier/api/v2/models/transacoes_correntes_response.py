@@ -161,7 +161,7 @@ class TransacoesCorrentesResponse(object):
     def id(self):
         """
         Gets the id of this TransacoesCorrentesResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o da transfer\u00EAncia (id).
+        {{{transacoes_correntes_response_id_value}}}
 
         :return: The id of this TransacoesCorrentesResponse.
         :rtype: int
@@ -172,7 +172,7 @@ class TransacoesCorrentesResponse(object):
     def id(self, id):
         """
         Sets the id of this TransacoesCorrentesResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o da transfer\u00EAncia (id).
+        {{{transacoes_correntes_response_id_value}}}
 
         :param id: The id of this TransacoesCorrentesResponse.
         :type: int
@@ -183,7 +183,7 @@ class TransacoesCorrentesResponse(object):
     def id_tipo_transacao(self):
         """
         Gets the id_tipo_transacao of this TransacoesCorrentesResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o do Tipo da Transa\u00E7\u00E3o.
+        {{{transacoes_correntes_response_id_tipo_transacao_value}}}
 
         :return: The id_tipo_transacao of this TransacoesCorrentesResponse.
         :rtype: int
@@ -194,7 +194,7 @@ class TransacoesCorrentesResponse(object):
     def id_tipo_transacao(self, id_tipo_transacao):
         """
         Sets the id_tipo_transacao of this TransacoesCorrentesResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o do Tipo da Transa\u00E7\u00E3o.
+        {{{transacoes_correntes_response_id_tipo_transacao_value}}}
 
         :param id_tipo_transacao: The id_tipo_transacao of this TransacoesCorrentesResponse.
         :type: int
@@ -205,7 +205,7 @@ class TransacoesCorrentesResponse(object):
     def descricao_abreviada(self):
         """
         Gets the descricao_abreviada of this TransacoesCorrentesResponse.
-        Descri\u00E7\u00E3o Abreviada da Transa\u00E7\u00E3o.
+        {{{transacoes_correntes_response_descricao_abreviada_value}}}
 
         :return: The descricao_abreviada of this TransacoesCorrentesResponse.
         :rtype: str
@@ -216,7 +216,7 @@ class TransacoesCorrentesResponse(object):
     def descricao_abreviada(self, descricao_abreviada):
         """
         Sets the descricao_abreviada of this TransacoesCorrentesResponse.
-        Descri\u00E7\u00E3o Abreviada da Transa\u00E7\u00E3o.
+        {{{transacoes_correntes_response_descricao_abreviada_value}}}
 
         :param descricao_abreviada: The descricao_abreviada of this TransacoesCorrentesResponse.
         :type: str
@@ -227,7 +227,7 @@ class TransacoesCorrentesResponse(object):
     def status_transacao(self):
         """
         Gets the status_transacao of this TransacoesCorrentesResponse.
-        Status de Processamento da Transa\u00E7\u00E3o.
+        {{{transacoes_correntes_response_status_transacao_value}}}
 
         :return: The status_transacao of this TransacoesCorrentesResponse.
         :rtype: str
@@ -238,7 +238,7 @@ class TransacoesCorrentesResponse(object):
     def status_transacao(self, status_transacao):
         """
         Sets the status_transacao of this TransacoesCorrentesResponse.
-        Status de Processamento da Transa\u00E7\u00E3o.
+        {{{transacoes_correntes_response_status_transacao_value}}}
 
         :param status_transacao: The status_transacao of this TransacoesCorrentesResponse.
         :type: str
@@ -249,7 +249,7 @@ class TransacoesCorrentesResponse(object):
     def id_evento(self):
         """
         Gets the id_evento of this TransacoesCorrentesResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o do Evento que originou a Transa\u00E7\u00E3o (id).
+        {{{transacoes_correntes_response_id_evento_value}}}
 
         :return: The id_evento of this TransacoesCorrentesResponse.
         :rtype: int
@@ -260,7 +260,7 @@ class TransacoesCorrentesResponse(object):
     def id_evento(self, id_evento):
         """
         Sets the id_evento of this TransacoesCorrentesResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o do Evento que originou a Transa\u00E7\u00E3o (id).
+        {{{transacoes_correntes_response_id_evento_value}}}
 
         :param id_evento: The id_evento of this TransacoesCorrentesResponse.
         :type: int
@@ -271,7 +271,7 @@ class TransacoesCorrentesResponse(object):
     def tipo_evento(self):
         """
         Gets the tipo_evento of this TransacoesCorrentesResponse.
-        Descri\u00E7\u00E3o do Evento que representa a Transa\u00E7\u00E3o.
+        {{{transacoes_correntes_response_tipo_evento_value}}}
 
         :return: The tipo_evento of this TransacoesCorrentesResponse.
         :rtype: str
@@ -282,7 +282,7 @@ class TransacoesCorrentesResponse(object):
     def tipo_evento(self, tipo_evento):
         """
         Sets the tipo_evento of this TransacoesCorrentesResponse.
-        Descri\u00E7\u00E3o do Evento que representa a Transa\u00E7\u00E3o.
+        {{{transacoes_correntes_response_tipo_evento_value}}}
 
         :param tipo_evento: The tipo_evento of this TransacoesCorrentesResponse.
         :type: str
@@ -293,7 +293,7 @@ class TransacoesCorrentesResponse(object):
     def id_conta(self):
         """
         Gets the id_conta of this TransacoesCorrentesResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o da Conta (id).
+        {{{transacoes_correntes_response_id_conta_value}}}
 
         :return: The id_conta of this TransacoesCorrentesResponse.
         :rtype: int
@@ -304,7 +304,7 @@ class TransacoesCorrentesResponse(object):
     def id_conta(self, id_conta):
         """
         Sets the id_conta of this TransacoesCorrentesResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o da Conta (id).
+        {{{transacoes_correntes_response_id_conta_value}}}
 
         :param id_conta: The id_conta of this TransacoesCorrentesResponse.
         :type: int
@@ -315,7 +315,7 @@ class TransacoesCorrentesResponse(object):
     def cartao_mascarado(self):
         """
         Gets the cartao_mascarado of this TransacoesCorrentesResponse.
-        N\u00FAmero do Cart\u00E3o em Formato 0000XXXXXXXX0000.
+        {{{transacoes_correntes_response_cartao_mascarado_value}}}
 
         :return: The cartao_mascarado of this TransacoesCorrentesResponse.
         :rtype: str
@@ -326,7 +326,7 @@ class TransacoesCorrentesResponse(object):
     def cartao_mascarado(self, cartao_mascarado):
         """
         Sets the cartao_mascarado of this TransacoesCorrentesResponse.
-        N\u00FAmero do Cart\u00E3o em Formato 0000XXXXXXXX0000.
+        {{{transacoes_correntes_response_cartao_mascarado_value}}}
 
         :param cartao_mascarado: The cartao_mascarado of this TransacoesCorrentesResponse.
         :type: str
@@ -337,7 +337,7 @@ class TransacoesCorrentesResponse(object):
     def nome_portador(self):
         """
         Gets the nome_portador of this TransacoesCorrentesResponse.
-        Nome completo do Portador do Cart\u00E3o.
+        {{{transacoes_correntes_response_nome_portador_value}}}
 
         :return: The nome_portador of this TransacoesCorrentesResponse.
         :rtype: str
@@ -348,7 +348,7 @@ class TransacoesCorrentesResponse(object):
     def nome_portador(self, nome_portador):
         """
         Sets the nome_portador of this TransacoesCorrentesResponse.
-        Nome completo do Portador do Cart\u00E3o.
+        {{{transacoes_correntes_response_nome_portador_value}}}
 
         :param nome_portador: The nome_portador of this TransacoesCorrentesResponse.
         :type: str
@@ -359,7 +359,7 @@ class TransacoesCorrentesResponse(object):
     def data_transacao(self):
         """
         Gets the data_transacao of this TransacoesCorrentesResponse.
-        Data em que a Transa\u00E7\u00E3o foi realizada.
+        {{{transacoes_correntes_response_data_transacao_value}}}
 
         :return: The data_transacao of this TransacoesCorrentesResponse.
         :rtype: str
@@ -370,7 +370,7 @@ class TransacoesCorrentesResponse(object):
     def data_transacao(self, data_transacao):
         """
         Sets the data_transacao of this TransacoesCorrentesResponse.
-        Data em que a Transa\u00E7\u00E3o foi realizada.
+        {{{transacoes_correntes_response_data_transacao_value}}}
 
         :param data_transacao: The data_transacao of this TransacoesCorrentesResponse.
         :type: str
@@ -381,7 +381,7 @@ class TransacoesCorrentesResponse(object):
     def data_faturamento(self):
         """
         Gets the data_faturamento of this TransacoesCorrentesResponse.
-        Data de Faturamento da Transa\u00E7\u00E3o.
+        {{{transacoes_correntes_response_data_faturamento_value}}}
 
         :return: The data_faturamento of this TransacoesCorrentesResponse.
         :rtype: str
@@ -392,7 +392,7 @@ class TransacoesCorrentesResponse(object):
     def data_faturamento(self, data_faturamento):
         """
         Sets the data_faturamento of this TransacoesCorrentesResponse.
-        Data de Faturamento da Transa\u00E7\u00E3o.
+        {{{transacoes_correntes_response_data_faturamento_value}}}
 
         :param data_faturamento: The data_faturamento of this TransacoesCorrentesResponse.
         :type: str
@@ -403,7 +403,7 @@ class TransacoesCorrentesResponse(object):
     def data_vencimento(self):
         """
         Gets the data_vencimento of this TransacoesCorrentesResponse.
-        Data de Vencimento da Fatura.
+        {{{transacoes_correntes_response_data_vencimento_value}}}
 
         :return: The data_vencimento of this TransacoesCorrentesResponse.
         :rtype: str
@@ -414,7 +414,7 @@ class TransacoesCorrentesResponse(object):
     def data_vencimento(self, data_vencimento):
         """
         Sets the data_vencimento of this TransacoesCorrentesResponse.
-        Data de Vencimento da Fatura.
+        {{{transacoes_correntes_response_data_vencimento_value}}}
 
         :param data_vencimento: The data_vencimento of this TransacoesCorrentesResponse.
         :type: str
@@ -425,7 +425,7 @@ class TransacoesCorrentesResponse(object):
     def modo_entrada_transacao(self):
         """
         Gets the modo_entrada_transacao of this TransacoesCorrentesResponse.
-        Descreve o modo utilizado para realizar a leitura dos dados do cart\u00E3o para realizar a Transa\u00E7\u00E3o.
+        {{{transacoes_correntes_response_modo_entrada_transacao_value}}}
 
         :return: The modo_entrada_transacao of this TransacoesCorrentesResponse.
         :rtype: str
@@ -436,7 +436,7 @@ class TransacoesCorrentesResponse(object):
     def modo_entrada_transacao(self, modo_entrada_transacao):
         """
         Sets the modo_entrada_transacao of this TransacoesCorrentesResponse.
-        Descreve o modo utilizado para realizar a leitura dos dados do cart\u00E3o para realizar a Transa\u00E7\u00E3o.
+        {{{transacoes_correntes_response_modo_entrada_transacao_value}}}
 
         :param modo_entrada_transacao: The modo_entrada_transacao of this TransacoesCorrentesResponse.
         :type: str
@@ -447,7 +447,7 @@ class TransacoesCorrentesResponse(object):
     def valor_taxa_embarque(self):
         """
         Gets the valor_taxa_embarque of this TransacoesCorrentesResponse.
-        Valor da Taxa de Embarque em Real (BRL) quando a transa\u00E7\u00E3o for relacionada a Compra de Passagens A\u00E9reas.
+        {{{transacoes_correntes_response_valor_taxa_embarque_value}}}
 
         :return: The valor_taxa_embarque of this TransacoesCorrentesResponse.
         :rtype: float
@@ -458,7 +458,7 @@ class TransacoesCorrentesResponse(object):
     def valor_taxa_embarque(self, valor_taxa_embarque):
         """
         Sets the valor_taxa_embarque of this TransacoesCorrentesResponse.
-        Valor da Taxa de Embarque em Real (BRL) quando a transa\u00E7\u00E3o for relacionada a Compra de Passagens A\u00E9reas.
+        {{{transacoes_correntes_response_valor_taxa_embarque_value}}}
 
         :param valor_taxa_embarque: The valor_taxa_embarque of this TransacoesCorrentesResponse.
         :type: float
@@ -469,7 +469,7 @@ class TransacoesCorrentesResponse(object):
     def valor_entrada(self):
         """
         Gets the valor_entrada of this TransacoesCorrentesResponse.
-        Valor da Entrada em Real (BRL) quando a transa\u00E7\u00E3o for do tipo Parcelada com o pagamento de um valor de Entrada.
+        {{{transacoes_correntes_response_valor_entrada_value}}}
 
         :return: The valor_entrada of this TransacoesCorrentesResponse.
         :rtype: float
@@ -480,7 +480,7 @@ class TransacoesCorrentesResponse(object):
     def valor_entrada(self, valor_entrada):
         """
         Sets the valor_entrada of this TransacoesCorrentesResponse.
-        Valor da Entrada em Real (BRL) quando a transa\u00E7\u00E3o for do tipo Parcelada com o pagamento de um valor de Entrada.
+        {{{transacoes_correntes_response_valor_entrada_value}}}
 
         :param valor_entrada: The valor_entrada of this TransacoesCorrentesResponse.
         :type: float
@@ -491,7 +491,7 @@ class TransacoesCorrentesResponse(object):
     def valor_brl(self):
         """
         Gets the valor_brl of this TransacoesCorrentesResponse.
-        Valor da Transa\u00E7\u00E3o em Real (BRL).
+        {{{transacoes_correntes_response_valor_b_r_l_value}}}
 
         :return: The valor_brl of this TransacoesCorrentesResponse.
         :rtype: float
@@ -502,7 +502,7 @@ class TransacoesCorrentesResponse(object):
     def valor_brl(self, valor_brl):
         """
         Sets the valor_brl of this TransacoesCorrentesResponse.
-        Valor da Transa\u00E7\u00E3o em Real (BRL).
+        {{{transacoes_correntes_response_valor_b_r_l_value}}}
 
         :param valor_brl: The valor_brl of this TransacoesCorrentesResponse.
         :type: float
@@ -513,7 +513,7 @@ class TransacoesCorrentesResponse(object):
     def valor_usd(self):
         """
         Gets the valor_usd of this TransacoesCorrentesResponse.
-        Valor da Transa\u00E7\u00E3o em D\u00F3lar Americano (USD).
+        {{{transacoes_correntes_response_valor_u_s_d_value}}}
 
         :return: The valor_usd of this TransacoesCorrentesResponse.
         :rtype: float
@@ -524,7 +524,7 @@ class TransacoesCorrentesResponse(object):
     def valor_usd(self, valor_usd):
         """
         Sets the valor_usd of this TransacoesCorrentesResponse.
-        Valor da Transa\u00E7\u00E3o em D\u00F3lar Americano (USD).
+        {{{transacoes_correntes_response_valor_u_s_d_value}}}
 
         :param valor_usd: The valor_usd of this TransacoesCorrentesResponse.
         :type: float
@@ -535,7 +535,7 @@ class TransacoesCorrentesResponse(object):
     def cotacao_usd(self):
         """
         Gets the cotacao_usd of this TransacoesCorrentesResponse.
-        Valor do D\u00F3lar Americano (USD) convertido em Real (BRL).
+        {{{transacoes_correntes_response_cotacao_u_s_d_value}}}
 
         :return: The cotacao_usd of this TransacoesCorrentesResponse.
         :rtype: float
@@ -546,7 +546,7 @@ class TransacoesCorrentesResponse(object):
     def cotacao_usd(self, cotacao_usd):
         """
         Sets the cotacao_usd of this TransacoesCorrentesResponse.
-        Valor do D\u00F3lar Americano (USD) convertido em Real (BRL).
+        {{{transacoes_correntes_response_cotacao_u_s_d_value}}}
 
         :param cotacao_usd: The cotacao_usd of this TransacoesCorrentesResponse.
         :type: float
@@ -557,7 +557,7 @@ class TransacoesCorrentesResponse(object):
     def data_cotacao_usd(self):
         """
         Gets the data_cotacao_usd of this TransacoesCorrentesResponse.
-        Data de Fechamento da Cota\u00E7\u00E3o do D\u00F3lar Americano (USD).
+        {{{transacoes_correntes_response_data_cotacao_u_s_d_value}}}
 
         :return: The data_cotacao_usd of this TransacoesCorrentesResponse.
         :rtype: str
@@ -568,7 +568,7 @@ class TransacoesCorrentesResponse(object):
     def data_cotacao_usd(self, data_cotacao_usd):
         """
         Sets the data_cotacao_usd of this TransacoesCorrentesResponse.
-        Data de Fechamento da Cota\u00E7\u00E3o do D\u00F3lar Americano (USD).
+        {{{transacoes_correntes_response_data_cotacao_u_s_d_value}}}
 
         :param data_cotacao_usd: The data_cotacao_usd of this TransacoesCorrentesResponse.
         :type: str
@@ -579,7 +579,7 @@ class TransacoesCorrentesResponse(object):
     def codigo_moeda_origem(self):
         """
         Gets the codigo_moeda_origem of this TransacoesCorrentesResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o da Moeda utilizada na Transa\u00E7\u00E3o, seguindo padr\u00E3o ISO 4217.
+        {{{transacoes_correntes_response_codigo_moeda_origem_value}}}
 
         :return: The codigo_moeda_origem of this TransacoesCorrentesResponse.
         :rtype: str
@@ -590,7 +590,7 @@ class TransacoesCorrentesResponse(object):
     def codigo_moeda_origem(self, codigo_moeda_origem):
         """
         Sets the codigo_moeda_origem of this TransacoesCorrentesResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o da Moeda utilizada na Transa\u00E7\u00E3o, seguindo padr\u00E3o ISO 4217.
+        {{{transacoes_correntes_response_codigo_moeda_origem_value}}}
 
         :param codigo_moeda_origem: The codigo_moeda_origem of this TransacoesCorrentesResponse.
         :type: str
@@ -601,7 +601,7 @@ class TransacoesCorrentesResponse(object):
     def codigo_moeda_destino(self):
         """
         Gets the codigo_moeda_destino of this TransacoesCorrentesResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o da Moeda da Transa\u00E7\u00E3o ap\u00F3s a convers\u00E3o, seguindo padr\u00E3o ISO 4217.
+        {{{transacoes_correntes_response_codigo_moeda_destino_value}}}
 
         :return: The codigo_moeda_destino of this TransacoesCorrentesResponse.
         :rtype: str
@@ -612,7 +612,7 @@ class TransacoesCorrentesResponse(object):
     def codigo_moeda_destino(self, codigo_moeda_destino):
         """
         Sets the codigo_moeda_destino of this TransacoesCorrentesResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o da Moeda da Transa\u00E7\u00E3o ap\u00F3s a convers\u00E3o, seguindo padr\u00E3o ISO 4217.
+        {{{transacoes_correntes_response_codigo_moeda_destino_value}}}
 
         :param codigo_moeda_destino: The codigo_moeda_destino of this TransacoesCorrentesResponse.
         :type: str
@@ -623,7 +623,7 @@ class TransacoesCorrentesResponse(object):
     def codigo_autorizacao(self):
         """
         Gets the codigo_autorizacao of this TransacoesCorrentesResponse.
-        C\u00F3digo de Autoriza\u00E7\u00E3o da Transa\u00E7\u00E3o.
+        {{{transacoes_correntes_response_codigo_autorizacao_value}}}
 
         :return: The codigo_autorizacao of this TransacoesCorrentesResponse.
         :rtype: str
@@ -634,7 +634,7 @@ class TransacoesCorrentesResponse(object):
     def codigo_autorizacao(self, codigo_autorizacao):
         """
         Sets the codigo_autorizacao of this TransacoesCorrentesResponse.
-        C\u00F3digo de Autoriza\u00E7\u00E3o da Transa\u00E7\u00E3o.
+        {{{transacoes_correntes_response_codigo_autorizacao_value}}}
 
         :param codigo_autorizacao: The codigo_autorizacao of this TransacoesCorrentesResponse.
         :type: str
@@ -645,7 +645,7 @@ class TransacoesCorrentesResponse(object):
     def codigo_referencia(self):
         """
         Gets the codigo_referencia of this TransacoesCorrentesResponse.
-        C\u00F3digo de Refer\u00EAncia da Transa\u00E7\u00E3o quando utilizado Cart\u00E3o Bandeirado.
+        {{{transacoes_correntes_response_codigo_referencia_value}}}
 
         :return: The codigo_referencia of this TransacoesCorrentesResponse.
         :rtype: str
@@ -656,7 +656,7 @@ class TransacoesCorrentesResponse(object):
     def codigo_referencia(self, codigo_referencia):
         """
         Sets the codigo_referencia of this TransacoesCorrentesResponse.
-        C\u00F3digo de Refer\u00EAncia da Transa\u00E7\u00E3o quando utilizado Cart\u00E3o Bandeirado.
+        {{{transacoes_correntes_response_codigo_referencia_value}}}
 
         :param codigo_referencia: The codigo_referencia of this TransacoesCorrentesResponse.
         :type: str
@@ -667,7 +667,7 @@ class TransacoesCorrentesResponse(object):
     def codigo_terminal(self):
         """
         Gets the codigo_terminal of this TransacoesCorrentesResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o da origem da captura da Transa\u00E7\u00E3o.
+        {{{transacoes_correntes_response_codigo_terminal_value}}}
 
         :return: The codigo_terminal of this TransacoesCorrentesResponse.
         :rtype: str
@@ -678,7 +678,7 @@ class TransacoesCorrentesResponse(object):
     def codigo_terminal(self, codigo_terminal):
         """
         Sets the codigo_terminal of this TransacoesCorrentesResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o da origem da captura da Transa\u00E7\u00E3o.
+        {{{transacoes_correntes_response_codigo_terminal_value}}}
 
         :param codigo_terminal: The codigo_terminal of this TransacoesCorrentesResponse.
         :type: str
@@ -689,7 +689,7 @@ class TransacoesCorrentesResponse(object):
     def codigo_mcc(self):
         """
         Gets the codigo_mcc of this TransacoesCorrentesResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o da categoria do Estabelecimento.
+        {{{transacoes_correntes_response_codigo_m_c_c_value}}}
 
         :return: The codigo_mcc of this TransacoesCorrentesResponse.
         :rtype: int
@@ -700,7 +700,7 @@ class TransacoesCorrentesResponse(object):
     def codigo_mcc(self, codigo_mcc):
         """
         Sets the codigo_mcc of this TransacoesCorrentesResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o da categoria do Estabelecimento.
+        {{{transacoes_correntes_response_codigo_m_c_c_value}}}
 
         :param codigo_mcc: The codigo_mcc of this TransacoesCorrentesResponse.
         :type: int
@@ -711,7 +711,7 @@ class TransacoesCorrentesResponse(object):
     def grupo_mcc(self):
         """
         Gets the grupo_mcc of this TransacoesCorrentesResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o do grupo do Estabelecimento.
+        {{{transacoes_correntes_response_grupo_m_c_c_value}}}
 
         :return: The grupo_mcc of this TransacoesCorrentesResponse.
         :rtype: int
@@ -722,7 +722,7 @@ class TransacoesCorrentesResponse(object):
     def grupo_mcc(self, grupo_mcc):
         """
         Sets the grupo_mcc of this TransacoesCorrentesResponse.
-        C\u00F3digo de identifica\u00E7\u00E3o do grupo do Estabelecimento.
+        {{{transacoes_correntes_response_grupo_m_c_c_value}}}
 
         :param grupo_mcc: The grupo_mcc of this TransacoesCorrentesResponse.
         :type: int
@@ -733,7 +733,7 @@ class TransacoesCorrentesResponse(object):
     def grupo_descricao_mcc(self):
         """
         Gets the grupo_descricao_mcc of this TransacoesCorrentesResponse.
-        Descri\u00E7\u00E3o do grupo do Estabelecimento.
+        {{{transacoes_correntes_response_grupo_descricao_m_c_c_value}}}
 
         :return: The grupo_descricao_mcc of this TransacoesCorrentesResponse.
         :rtype: str
@@ -744,7 +744,7 @@ class TransacoesCorrentesResponse(object):
     def grupo_descricao_mcc(self, grupo_descricao_mcc):
         """
         Sets the grupo_descricao_mcc of this TransacoesCorrentesResponse.
-        Descri\u00E7\u00E3o do grupo do Estabelecimento.
+        {{{transacoes_correntes_response_grupo_descricao_m_c_c_value}}}
 
         :param grupo_descricao_mcc: The grupo_descricao_mcc of this TransacoesCorrentesResponse.
         :type: str
@@ -755,7 +755,7 @@ class TransacoesCorrentesResponse(object):
     def id_estabelecimento(self):
         """
         Gets the id_estabelecimento of this TransacoesCorrentesResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o do Estabelecimento (id).
+        {{{transacoes_correntes_response_id_estabelecimento_value}}}
 
         :return: The id_estabelecimento of this TransacoesCorrentesResponse.
         :rtype: int
@@ -766,7 +766,7 @@ class TransacoesCorrentesResponse(object):
     def id_estabelecimento(self, id_estabelecimento):
         """
         Sets the id_estabelecimento of this TransacoesCorrentesResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o do Estabelecimento (id).
+        {{{transacoes_correntes_response_id_estabelecimento_value}}}
 
         :param id_estabelecimento: The id_estabelecimento of this TransacoesCorrentesResponse.
         :type: int
@@ -777,7 +777,7 @@ class TransacoesCorrentesResponse(object):
     def nome_estabelecimento(self):
         """
         Gets the nome_estabelecimento of this TransacoesCorrentesResponse.
-        Nome do Estabelecimento.
+        {{{transacoes_correntes_response_nome_estabelecimento_value}}}
 
         :return: The nome_estabelecimento of this TransacoesCorrentesResponse.
         :rtype: str
@@ -788,7 +788,7 @@ class TransacoesCorrentesResponse(object):
     def nome_estabelecimento(self, nome_estabelecimento):
         """
         Sets the nome_estabelecimento of this TransacoesCorrentesResponse.
-        Nome do Estabelecimento.
+        {{{transacoes_correntes_response_nome_estabelecimento_value}}}
 
         :param nome_estabelecimento: The nome_estabelecimento of this TransacoesCorrentesResponse.
         :type: str
@@ -799,7 +799,7 @@ class TransacoesCorrentesResponse(object):
     def nome_fantasia_estabelecimento(self):
         """
         Gets the nome_fantasia_estabelecimento of this TransacoesCorrentesResponse.
-        Nome Fantasia do Estabelecimento.
+        {{{transacoes_correntes_response_nome_fantasia_estabelecimento_value}}}
 
         :return: The nome_fantasia_estabelecimento of this TransacoesCorrentesResponse.
         :rtype: str
@@ -810,7 +810,7 @@ class TransacoesCorrentesResponse(object):
     def nome_fantasia_estabelecimento(self, nome_fantasia_estabelecimento):
         """
         Sets the nome_fantasia_estabelecimento of this TransacoesCorrentesResponse.
-        Nome Fantasia do Estabelecimento.
+        {{{transacoes_correntes_response_nome_fantasia_estabelecimento_value}}}
 
         :param nome_fantasia_estabelecimento: The nome_fantasia_estabelecimento of this TransacoesCorrentesResponse.
         :type: str
@@ -821,7 +821,7 @@ class TransacoesCorrentesResponse(object):
     def localidade_estabelecimento(self):
         """
         Gets the localidade_estabelecimento of this TransacoesCorrentesResponse.
-        Localidade do Estabelecimento.
+        {{{transacoes_correntes_response_localidade_estabelecimento_value}}}
 
         :return: The localidade_estabelecimento of this TransacoesCorrentesResponse.
         :rtype: str
@@ -832,7 +832,7 @@ class TransacoesCorrentesResponse(object):
     def localidade_estabelecimento(self, localidade_estabelecimento):
         """
         Sets the localidade_estabelecimento of this TransacoesCorrentesResponse.
-        Localidade do Estabelecimento.
+        {{{transacoes_correntes_response_localidade_estabelecimento_value}}}
 
         :param localidade_estabelecimento: The localidade_estabelecimento of this TransacoesCorrentesResponse.
         :type: str
@@ -843,7 +843,7 @@ class TransacoesCorrentesResponse(object):
     def plano_parcelamento(self):
         """
         Gets the plano_parcelamento of this TransacoesCorrentesResponse.
-        Quando a Transa\u00E7\u00E3o for do tipo Parcelada, apresenta o n\u00FAmero total de Parcelas.
+        {{{transacoes_correntes_response_plano_parcelamento_value}}}
 
         :return: The plano_parcelamento of this TransacoesCorrentesResponse.
         :rtype: int
@@ -854,7 +854,7 @@ class TransacoesCorrentesResponse(object):
     def plano_parcelamento(self, plano_parcelamento):
         """
         Sets the plano_parcelamento of this TransacoesCorrentesResponse.
-        Quando a Transa\u00E7\u00E3o for do tipo Parcelada, apresenta o n\u00FAmero total de Parcelas.
+        {{{transacoes_correntes_response_plano_parcelamento_value}}}
 
         :param plano_parcelamento: The plano_parcelamento of this TransacoesCorrentesResponse.
         :type: int
@@ -865,7 +865,7 @@ class TransacoesCorrentesResponse(object):
     def numero_parcela(self):
         """
         Gets the numero_parcela of this TransacoesCorrentesResponse.
-        Quando a Transa\u00E7\u00E3o for do tipo Parcelada, apresenta o n\u00FAmero da Parcela.
+        {{{transacoes_correntes_response_numero_parcela_value}}}
 
         :return: The numero_parcela of this TransacoesCorrentesResponse.
         :rtype: int
@@ -876,7 +876,7 @@ class TransacoesCorrentesResponse(object):
     def numero_parcela(self, numero_parcela):
         """
         Sets the numero_parcela of this TransacoesCorrentesResponse.
-        Quando a Transa\u00E7\u00E3o for do tipo Parcelada, apresenta o n\u00FAmero da Parcela.
+        {{{transacoes_correntes_response_numero_parcela_value}}}
 
         :param numero_parcela: The numero_parcela of this TransacoesCorrentesResponse.
         :type: int
@@ -887,7 +887,7 @@ class TransacoesCorrentesResponse(object):
     def detalhes_transacao(self):
         """
         Gets the detalhes_transacao of this TransacoesCorrentesResponse.
-        Detalhes complementares a respeito da Transa\u00E7\u00E3o.
+        {{{transacoes_correntes_response_detalhes_transacao_value}}}
 
         :return: The detalhes_transacao of this TransacoesCorrentesResponse.
         :rtype: str
@@ -898,7 +898,7 @@ class TransacoesCorrentesResponse(object):
     def detalhes_transacao(self, detalhes_transacao):
         """
         Sets the detalhes_transacao of this TransacoesCorrentesResponse.
-        Detalhes complementares a respeito da Transa\u00E7\u00E3o.
+        {{{transacoes_correntes_response_detalhes_transacao_value}}}
 
         :param detalhes_transacao: The detalhes_transacao of this TransacoesCorrentesResponse.
         :type: str
@@ -909,7 +909,7 @@ class TransacoesCorrentesResponse(object):
     def flag_credito(self):
         """
         Gets the flag_credito of this TransacoesCorrentesResponse.
-        Quando ativa, indica que a Transa\u00E7\u00E3o \u00E9 do Tipo 'Cr\u00E9dito'.
+        {{{transacoes_correntes_response_flag_credito_value}}}
 
         :return: The flag_credito of this TransacoesCorrentesResponse.
         :rtype: int
@@ -920,7 +920,7 @@ class TransacoesCorrentesResponse(object):
     def flag_credito(self, flag_credito):
         """
         Sets the flag_credito of this TransacoesCorrentesResponse.
-        Quando ativa, indica que a Transa\u00E7\u00E3o \u00E9 do Tipo 'Cr\u00E9dito'.
+        {{{transacoes_correntes_response_flag_credito_value}}}
 
         :param flag_credito: The flag_credito of this TransacoesCorrentesResponse.
         :type: int
@@ -931,7 +931,7 @@ class TransacoesCorrentesResponse(object):
     def flag_faturado(self):
         """
         Gets the flag_faturado of this TransacoesCorrentesResponse.
-        Quando ativa, indica que a Transa\u00E7\u00E3o foi consolidada em uma Fatura.
+        {{{transacoes_correntes_response_flag_faturado_value}}}
 
         :return: The flag_faturado of this TransacoesCorrentesResponse.
         :rtype: int
@@ -942,7 +942,7 @@ class TransacoesCorrentesResponse(object):
     def flag_faturado(self, flag_faturado):
         """
         Sets the flag_faturado of this TransacoesCorrentesResponse.
-        Quando ativa, indica que a Transa\u00E7\u00E3o foi consolidada em uma Fatura.
+        {{{transacoes_correntes_response_flag_faturado_value}}}
 
         :param flag_faturado: The flag_faturado of this TransacoesCorrentesResponse.
         :type: int
@@ -953,7 +953,7 @@ class TransacoesCorrentesResponse(object):
     def flag_estorno(self):
         """
         Gets the flag_estorno of this TransacoesCorrentesResponse.
-        Quando ativa, indica que a Transa\u00E7\u00E3o foi estornada.
+        {{{transacoes_correntes_response_flag_estorno_value}}}
 
         :return: The flag_estorno of this TransacoesCorrentesResponse.
         :rtype: int
@@ -964,7 +964,7 @@ class TransacoesCorrentesResponse(object):
     def flag_estorno(self, flag_estorno):
         """
         Sets the flag_estorno of this TransacoesCorrentesResponse.
-        Quando ativa, indica que a Transa\u00E7\u00E3o foi estornada.
+        {{{transacoes_correntes_response_flag_estorno_value}}}
 
         :param flag_estorno: The flag_estorno of this TransacoesCorrentesResponse.
         :type: int
@@ -975,7 +975,7 @@ class TransacoesCorrentesResponse(object):
     def id_transacao_estorno(self):
         """
         Gets the id_transacao_estorno of this TransacoesCorrentesResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o da Transa\u00E7\u00E3o (id) que gerou o estorno.
+        {{{transacoes_correntes_response_id_transacao_estorno_value}}}
 
         :return: The id_transacao_estorno of this TransacoesCorrentesResponse.
         :rtype: int
@@ -986,7 +986,7 @@ class TransacoesCorrentesResponse(object):
     def id_transacao_estorno(self, id_transacao_estorno):
         """
         Sets the id_transacao_estorno of this TransacoesCorrentesResponse.
-        C\u00F3digo de Identifica\u00E7\u00E3o da Transa\u00E7\u00E3o (id) que gerou o estorno.
+        {{{transacoes_correntes_response_id_transacao_estorno_value}}}
 
         :param id_transacao_estorno: The id_transacao_estorno of this TransacoesCorrentesResponse.
         :type: int
