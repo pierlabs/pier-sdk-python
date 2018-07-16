@@ -54,7 +54,8 @@ class TransacaoCorrenteResponse(object):
             'flag_credito': 'int',
             'tipo_estabelecimento': 'str',
             'id_grupo_mcc': 'int',
-            'flag_solicitou_contestacao': 'int'
+            'flag_solicitou_contestacao': 'int',
+            'tipo_transacao': 'int'
         }
 
         self.attribute_map = {
@@ -75,7 +76,8 @@ class TransacaoCorrenteResponse(object):
             'flag_credito': 'flagCredito',
             'tipo_estabelecimento': 'tipoEstabelecimento',
             'id_grupo_mcc': 'idGrupoMCC',
-            'flag_solicitou_contestacao': 'flagSolicitouContestacao'
+            'flag_solicitou_contestacao': 'flagSolicitouContestacao',
+            'tipo_transacao': 'tipoTransacao'
         }
 
         self._ultima_parcela_lancada = None
@@ -96,6 +98,7 @@ class TransacaoCorrenteResponse(object):
         self._tipo_estabelecimento = None
         self._id_grupo_mcc = None
         self._flag_solicitou_contestacao = None
+        self._tipo_transacao = None
 
     @property
     def ultima_parcela_lancada(self):
@@ -492,6 +495,28 @@ class TransacaoCorrenteResponse(object):
         :type: int
         """
         self._flag_solicitou_contestacao = flag_solicitou_contestacao
+
+    @property
+    def tipo_transacao(self):
+        """
+        Gets the tipo_transacao of this TransacaoCorrenteResponse.
+        {{{transacao_corrente_response_tipo_transacao_value}}}
+
+        :return: The tipo_transacao of this TransacaoCorrenteResponse.
+        :rtype: int
+        """
+        return self._tipo_transacao
+
+    @tipo_transacao.setter
+    def tipo_transacao(self, tipo_transacao):
+        """
+        Sets the tipo_transacao of this TransacaoCorrenteResponse.
+        {{{transacao_corrente_response_tipo_transacao_value}}}
+
+        :param tipo_transacao: The tipo_transacao of this TransacaoCorrenteResponse.
+        :type: int
+        """
+        self._tipo_transacao = tipo_transacao
 
     def to_dict(self):
         """

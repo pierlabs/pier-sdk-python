@@ -45,7 +45,7 @@ class GlobaltagboletoApi(object):
                 config.api_client = ApiClient()
             self.api_client = config.api_client
 
-    def consultar_using_get33(self, id, **kwargs):
+    def consultar_using_get34(self, id, **kwargs):
         """
         {{{boleto_resource_consultar}}}
         {{{boleto_resource_consultar_notes}}}
@@ -56,7 +56,7 @@ class GlobaltagboletoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get33(id, callback=callback_function)
+        >>> thread = api.consultar_using_get34(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -74,14 +74,14 @@ class GlobaltagboletoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get33" % key
+                    " to method consultar_using_get34" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get33`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get34`")
 
         resource_path = '/api/boletos/{id}'.replace('{format}', 'json')
         path_params = {}

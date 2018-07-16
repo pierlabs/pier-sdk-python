@@ -43,7 +43,8 @@ class SMSEnvioResponse(object):
             'celular': 'str',
             'conteudo': 'str',
             'quantidade_tentativas_envio': 'int',
-            'data_inclusao': 'str'
+            'data_inclusao': 'str',
+            'cpf': 'str'
         }
 
         self.attribute_map = {
@@ -53,7 +54,8 @@ class SMSEnvioResponse(object):
             'celular': 'celular',
             'conteudo': 'conteudo',
             'quantidade_tentativas_envio': 'quantidadeTentativasEnvio',
-            'data_inclusao': 'dataInclusao'
+            'data_inclusao': 'dataInclusao',
+            'cpf': 'cpf'
         }
 
         self._id = None
@@ -63,6 +65,7 @@ class SMSEnvioResponse(object):
         self._conteudo = None
         self._quantidade_tentativas_envio = None
         self._data_inclusao = None
+        self._cpf = None
 
     @property
     def id(self):
@@ -217,6 +220,28 @@ class SMSEnvioResponse(object):
         :type: str
         """
         self._data_inclusao = data_inclusao
+
+    @property
+    def cpf(self):
+        """
+        Gets the cpf of this SMSEnvioResponse.
+        {{{sms_envio_response_cpf_value}}}
+
+        :return: The cpf of this SMSEnvioResponse.
+        :rtype: str
+        """
+        return self._cpf
+
+    @cpf.setter
+    def cpf(self, cpf):
+        """
+        Sets the cpf of this SMSEnvioResponse.
+        {{{sms_envio_response_cpf_value}}}
+
+        :param cpf: The cpf of this SMSEnvioResponse.
+        :type: str
+        """
+        self._cpf = cpf
 
     def to_dict(self):
         """

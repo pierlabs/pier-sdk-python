@@ -3,6 +3,7 @@ from __future__ import absolute_import
 # import models into model package
 from .acordo_detalhe_response import AcordoDetalheResponse
 from .acordo_response import AcordoResponse
+from .adesao_pagamento_sabado_response import AdesaoPagamentoSabadoResponse
 from .adicional_detalhe_response import AdicionalDetalheResponse
 from .adicional_persist import AdicionalPersist
 from .adicional_response import AdicionalResponse
@@ -368,6 +369,9 @@ from .status_oportunidade_response import StatusOportunidadeResponse
 from .status_proposta_response import StatusPropostaResponse
 from .status_proposta_update import StatusPropostaUpdate
 from .taxa_antecipacao_request import TaxaAntecipacaoRequest
+from .taxa_juros_conta_lista_response import TaxaJurosContaListaResponse
+from .taxa_juros_conta_persist_value import TaxaJurosContaPersistValue
+from .taxa_juros_conta_response import TaxaJurosContaResponse
 from .taxas_refinanciamento_response import TaxasRefinanciamentoResponse
 from .telefone_adicional_persist import TelefoneAdicionalPersist
 from .telefone_adicional_update import TelefoneAdicionalUpdate

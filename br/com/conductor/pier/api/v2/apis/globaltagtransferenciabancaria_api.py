@@ -45,6 +45,89 @@ class GlobaltagtransferenciabancariaApi(object):
                 config.api_client = ApiClient()
             self.api_client = config.api_client
 
+    def atualizar_taxas_juros_contas_using_put(self, id, update, **kwargs):
+        """
+        {{{transferencia_bancaria_resource_atualizar_taxas_juros_contas}}}
+        {{{transferencia_bancaria_resource_atualizar_taxas_juros_contas_notes}}}
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.atualizar_taxas_juros_contas_using_put(id, update, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param int id: {{{transferencia_bancaria_resource_salvar_taxas_juros_contas_param_id}}} (required)
+        :param TaxaJurosContaPersistValue update: update (required)
+        :return: TaxaJurosContaResponse
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'update']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method atualizar_taxas_juros_contas_using_put" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `atualizar_taxas_juros_contas_using_put`")
+        # verify the required parameter 'update' is set
+        if ('update' not in params) or (params['update'] is None):
+            raise ValueError("Missing the required parameter `update` when calling `atualizar_taxas_juros_contas_using_put`")
+
+        resource_path = '/api/contas/{id}/taxas-transferencias'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        if 'update' in params:
+            body_params = params['update']
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = []
+
+        response = self.api_client.call_api(resource_path, 'PUT',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='TaxaJurosContaResponse',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
     def atualizar_using_put1(self, id, update, **kwargs):
         """
         {{{conta_bancaria_resource_atualizar}}}
@@ -282,6 +365,89 @@ class GlobaltagtransferenciabancariaApi(object):
                                             callback=params.get('callback'))
         return response
 
+    def consultar_taxas_juros_contas_using_get(self, id, numero_meses_carencia, **kwargs):
+        """
+        {{{transferencia_bancaria_resource_consultar_taxas_juros_contas}}}
+        {{{transferencia_bancaria_resource_consultar_taxas_juros_contas_notes}}}
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.consultar_taxas_juros_contas_using_get(id, numero_meses_carencia, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param int id: {{{transferencia_bancaria_resource_salvar_taxas_juros_contas_param_id}}} (required)
+        :param int numero_meses_carencia: numeroMesesCarencia (required)
+        :return: TaxaJurosContaResponse
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'numero_meses_carencia']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method consultar_taxas_juros_contas_using_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `consultar_taxas_juros_contas_using_get`")
+        # verify the required parameter 'numero_meses_carencia' is set
+        if ('numero_meses_carencia' not in params) or (params['numero_meses_carencia'] is None):
+            raise ValueError("Missing the required parameter `numero_meses_carencia` when calling `consultar_taxas_juros_contas_using_get`")
+
+        resource_path = '/api/contas/{id}/taxas-transferencias'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+
+        query_params = {}
+        if 'numero_meses_carencia' in params:
+            query_params['numeroMesesCarencia'] = params['numero_meses_carencia']
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = []
+
+        response = self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='TaxaJurosContaResponse',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
     def consultar_transferencia_bancaria_using_get(self, id_transferencia, **kwargs):
         """
         {{{transferencia_bancaria_resource_consultar_transferencia_bancaria}}}
@@ -359,7 +525,7 @@ class GlobaltagtransferenciabancariaApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get12(self, id, **kwargs):
+    def consultar_using_get13(self, id, **kwargs):
         """
         {{{conta_bancaria_resource_consultar}}}
         {{{conta_bancaria_resource_consultar_notes}}}
@@ -370,7 +536,7 @@ class GlobaltagtransferenciabancariaApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get12(id, callback=callback_function)
+        >>> thread = api.consultar_using_get13(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -388,14 +554,14 @@ class GlobaltagtransferenciabancariaApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get12" % key
+                    " to method consultar_using_get13" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get12`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get13`")
 
         resource_path = '/api/contas-bancarias-portador/{id}'.replace('{format}', 'json')
         path_params = {}
@@ -436,7 +602,7 @@ class GlobaltagtransferenciabancariaApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get47(self, id, id_transferencia, **kwargs):
+    def consultar_using_get48(self, id, id_transferencia, **kwargs):
         """
         {{{transferencia_bancaria_resource_consultar}}}
         {{{transferencia_bancaria_resource_consultar_notes}}}
@@ -447,7 +613,7 @@ class GlobaltagtransferenciabancariaApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get47(id, id_transferencia, callback=callback_function)
+        >>> thread = api.consultar_using_get48(id, id_transferencia, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -467,17 +633,17 @@ class GlobaltagtransferenciabancariaApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get47" % key
+                    " to method consultar_using_get48" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get47`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get48`")
         # verify the required parameter 'id_transferencia' is set
         if ('id_transferencia' not in params) or (params['id_transferencia'] is None):
-            raise ValueError("Missing the required parameter `id_transferencia` when calling `consultar_using_get47`")
+            raise ValueError("Missing the required parameter `id_transferencia` when calling `consultar_using_get48`")
 
         resource_path = '/api/contas/{id}/transferencias-creditos-contas-bancarias/{id_transferencia}'.replace('{format}', 'json')
         path_params = {}
@@ -809,6 +975,89 @@ class GlobaltagtransferenciabancariaApi(object):
                                             post_params=form_params,
                                             files=local_var_files,
                                             response_type='PageTransferenciaBancariaResponse',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
+    def salvar_taxas_juros_contas_using_post(self, id, persist, **kwargs):
+        """
+        {{{transferencia_bancaria_resource_salvar_taxas_juros_contas}}}
+        {{{transferencia_bancaria_resource_salvar_taxas_juros_contas_notes}}}
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.salvar_taxas_juros_contas_using_post(id, persist, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param int id: {{{transferencia_bancaria_resource_salvar_taxas_juros_contas_param_id}}} (required)
+        :param TaxaJurosContaPersistValue persist: persist (required)
+        :return: TaxaJurosContaResponse
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'persist']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method salvar_taxas_juros_contas_using_post" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `salvar_taxas_juros_contas_using_post`")
+        # verify the required parameter 'persist' is set
+        if ('persist' not in params) or (params['persist'] is None):
+            raise ValueError("Missing the required parameter `persist` when calling `salvar_taxas_juros_contas_using_post`")
+
+        resource_path = '/api/contas/{id}/taxas-transferencias'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        if 'persist' in params:
+            body_params = params['persist']
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = []
+
+        response = self.api_client.call_api(resource_path, 'POST',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='TaxaJurosContaResponse',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response

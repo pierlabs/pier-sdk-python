@@ -680,6 +680,83 @@ class GlobaltagcontaApi(object):
                                             callback=params.get('callback'))
         return response
 
+    def cadastrar_using_post(self, id, **kwargs):
+        """
+        {{{aderir_pagamento_sabado_recurso_cadastrar}}}
+        {{{aderir_pagamento_sabado_recurso_cadastrar_notas}}}
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.cadastrar_using_post(id, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param int id: {{{aderir_pagamento_sabado_recurso_cadastrar_param_id}}} (required)
+        :return: AdesaoPagamentoSabadoResponse
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method cadastrar_using_post" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `cadastrar_using_post`")
+
+        resource_path = '/api/adesoes-pagamentos-sabados'.replace('{format}', 'json')
+        path_params = {}
+
+        query_params = {}
+        if 'id' in params:
+            query_params['id'] = params['id']
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = []
+
+        response = self.api_client.call_api(resource_path, 'POST',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='AdesaoPagamentoSabadoResponse',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
     def cancelar_using_post1(self, id, id_status, **kwargs):
         """
         {{{conta_resource_cancelar}}}
@@ -1110,7 +1187,90 @@ class GlobaltagcontaApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get13(self, id, **kwargs):
+    def consultar_using_get1(self, id, data_vencimento, **kwargs):
+        """
+        {{{aderir_pagamento_sabado_recurso_consultar}}}
+        {{{aderir_pagamento_sabado_recurso_consultar_notas}}}
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.consultar_using_get1(id, data_vencimento, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param int id: {{{aderir_pagamento_sabado_recurso_consultar_param_id}}} (required)
+        :param str data_vencimento: {{{aderir_pagamento_sabado_recurso_consultar_param_data_vencimento}}} (required)
+        :return: AdesaoPagamentoSabadoResponse
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'data_vencimento']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method consultar_using_get1" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get1`")
+        # verify the required parameter 'data_vencimento' is set
+        if ('data_vencimento' not in params) or (params['data_vencimento'] is None):
+            raise ValueError("Missing the required parameter `data_vencimento` when calling `consultar_using_get1`")
+
+        resource_path = '/api/adesoes-pagamentos-sabados'.replace('{format}', 'json')
+        path_params = {}
+
+        query_params = {}
+        if 'id' in params:
+            query_params['id'] = params['id']
+        if 'data_vencimento' in params:
+            query_params['dataVencimento'] = params['data_vencimento']
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = []
+
+        response = self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='AdesaoPagamentoSabadoResponse',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
+    def consultar_using_get14(self, id, **kwargs):
         """
         {{{conta_resource_consultar}}}
         {{{conta_resource_consultar_notes}}}
@@ -1121,7 +1281,7 @@ class GlobaltagcontaApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get13(id, callback=callback_function)
+        >>> thread = api.consultar_using_get14(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -1140,14 +1300,14 @@ class GlobaltagcontaApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get13" % key
+                    " to method consultar_using_get14" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get13`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get14`")
 
         resource_path = '/api/contas/{id}'.replace('{format}', 'json')
         path_params = {}
@@ -1190,7 +1350,7 @@ class GlobaltagcontaApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get48(self, id, id_transferencia, **kwargs):
+    def consultar_using_get49(self, id, id_transferencia, **kwargs):
         """
         {{{transferencia_resource_consultar}}}
         {{{transferencia_resource_consultar_notes}}}
@@ -1201,7 +1361,7 @@ class GlobaltagcontaApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get48(id, id_transferencia, callback=callback_function)
+        >>> thread = api.consultar_using_get49(id, id_transferencia, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -1220,17 +1380,17 @@ class GlobaltagcontaApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get48" % key
+                    " to method consultar_using_get49" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get48`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get49`")
         # verify the required parameter 'id_transferencia' is set
         if ('id_transferencia' not in params) or (params['id_transferencia'] is None):
-            raise ValueError("Missing the required parameter `id_transferencia` when calling `consultar_using_get48`")
+            raise ValueError("Missing the required parameter `id_transferencia` when calling `consultar_using_get49`")
 
         resource_path = '/api/contas/{id}/transferencias-creditos-cartoes/{id_transferencia}'.replace('{format}', 'json')
         path_params = {}
@@ -2168,12 +2328,13 @@ class GlobaltagcontaApi(object):
         :param str data_inicio: {{{transacoes_processadas_request_data_inicio_value}}}
         :param str data_fim: {{{transacoes_processadas_request_data_fim_value}}}
         :param int id_tipo_transacao: {{{transacoes_processadas_request_tipo_transacao}}}
+        :param int recupera_encargos: {{{transacoes_processadas_request_recupera_encargos}}}
         :return: PageTransacoesCorrentesResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['id', 'sort', 'page', 'limit', 'data_vencimento', 'data_inicio', 'data_fim', 'id_tipo_transacao']
+        all_params = ['id', 'sort', 'page', 'limit', 'data_vencimento', 'data_inicio', 'data_fim', 'id_tipo_transacao', 'recupera_encargos']
         all_params.append('callback')
 
         params = locals()
@@ -2210,6 +2371,8 @@ class GlobaltagcontaApi(object):
             query_params['dataFim'] = params['data_fim']
         if 'id_tipo_transacao' in params:
             query_params['idTipoTransacao'] = params['id_tipo_transacao']
+        if 'recupera_encargos' in params:
+            query_params['recuperaEncargos'] = params['recupera_encargos']
 
         header_params = {}
 

@@ -540,7 +540,7 @@ class GlobaltagusuarioApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get14(self, id_usuario, **kwargs):
+    def consultar_using_get15(self, id_usuario, **kwargs):
         """
         {{{controle_seguranca_dispositivo_consultar}}}
         {{{controle_seguranca_dispositivo_consultar_notas}}}
@@ -551,7 +551,7 @@ class GlobaltagusuarioApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get14(id_usuario, callback=callback_function)
+        >>> thread = api.consultar_using_get15(id_usuario, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -572,14 +572,14 @@ class GlobaltagusuarioApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get14" % key
+                    " to method consultar_using_get15" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id_usuario' is set
         if ('id_usuario' not in params) or (params['id_usuario'] is None):
-            raise ValueError("Missing the required parameter `id_usuario` when calling `consultar_using_get14`")
+            raise ValueError("Missing the required parameter `id_usuario` when calling `consultar_using_get15`")
 
         resource_path = '/api/controles-seguranca-dispositivos'.replace('{format}', 'json')
         path_params = {}
@@ -626,7 +626,7 @@ class GlobaltagusuarioApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get50(self, id, **kwargs):
+    def consultar_using_get51(self, id, **kwargs):
         """
         {{{usuario_resource_consultar}}}
         {{{usuario_resource_consultar_notes}}}
@@ -637,7 +637,7 @@ class GlobaltagusuarioApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get50(id, callback=callback_function)
+        >>> thread = api.consultar_using_get51(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -655,14 +655,14 @@ class GlobaltagusuarioApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get50" % key
+                    " to method consultar_using_get51" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get50`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get51`")
 
         resource_path = '/api/usuarios/{id}'.replace('{format}', 'json')
         path_params = {}

@@ -128,7 +128,7 @@ class GlobaltagpropostaApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get32(self, id, **kwargs):
+    def consultar_using_get33(self, id, **kwargs):
         """
         {{{proposta_resource_consultar}}}
         {{{proposta_resource_consultar_notes}}}
@@ -139,7 +139,7 @@ class GlobaltagpropostaApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get32(id, callback=callback_function)
+        >>> thread = api.consultar_using_get33(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -157,14 +157,14 @@ class GlobaltagpropostaApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get32" % key
+                    " to method consultar_using_get33" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get32`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get33`")
 
         resource_path = '/api/propostas/{id}'.replace('{format}', 'json')
         path_params = {}
