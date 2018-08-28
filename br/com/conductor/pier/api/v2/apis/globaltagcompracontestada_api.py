@@ -45,6 +45,90 @@ class GlobaltagcompracontestadaApi(object):
                 config.api_client = ApiClient()
             self.api_client = config.api_client
 
+    def contestar_using_post(self, id_cartao, request, **kwargs):
+        """
+        {{{compra_contestada_transacoes_resource_contestar}}}
+        {{{compra_contestada_transacoes_resource_contestar_notes}}}
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.contestar_using_post(id_cartao, request, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param int id_cartao: idCartao (required)
+        :param ContestarCompraRequest request: request (required)
+        :param str login: login
+        :return: object
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id_cartao', 'request', 'login']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method contestar_using_post" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        # verify the required parameter 'id_cartao' is set
+        if ('id_cartao' not in params) or (params['id_cartao'] is None):
+            raise ValueError("Missing the required parameter `id_cartao` when calling `contestar_using_post`")
+        # verify the required parameter 'request' is set
+        if ('request' not in params) or (params['request'] is None):
+            raise ValueError("Missing the required parameter `request` when calling `contestar_using_post`")
+
+        resource_path = '/api/cartoes-com-contestacoes/{idCartao}/contestar'.replace('{format}', 'json')
+        path_params = {}
+        if 'id_cartao' in params:
+            path_params['idCartao'] = params['id_cartao']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        if 'login' in params:
+            body_params = params['login']
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = []
+
+        response = self.api_client.call_api(resource_path, 'POST',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='object',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
     def detalhe_cartao_using_get(self, id_cartao, **kwargs):
         """
         {{{compra_contestada_detalhe_cartao_resource_listar}}}
@@ -122,7 +206,7 @@ class GlobaltagcompracontestadaApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get12(self, **kwargs):
+    def listar_using_get13(self, **kwargs):
         """
         {{{cartao_com_compra_contestada_resource_listar}}}
         {{{cartao_com_compra_contestada_resource_listar_notes}}}
@@ -133,19 +217,35 @@ class GlobaltagcompracontestadaApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get12(callback=callback_function)
+        >>> thread = api.listar_using_get13(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param list[str] sort: {{{global_menssagem_sort_sort}}}
         :param int page: {{{global_menssagem_sort_page_value}}}
         :param int limit: {{{global_menssagem_sort_limit}}}
+        :param int aging_contestacao: 
+        :param str nome: 
+        :param str bandeira: 
+        :param str cartao: 
+        :param str cpf: 
+        :param str conta: 
+        :param int status_cartao: 
+        :param int status_contestacao: 
+        :param str data_contestacao: 
+        :param str data_alteracao: 
+        :param str data_reapresentacao: 
+        :param int dias_contestacao: 
+        :param int dias_compra: 
+        :param str modo_entrada: 
+        :param str motivo: 
+        :param float valor_compra: 
         :return: PageGrupoChargebackResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['sort', 'page', 'limit']
+        all_params = ['sort', 'page', 'limit', 'aging_contestacao', 'nome', 'bandeira', 'cartao', 'cpf', 'conta', 'status_cartao', 'status_contestacao', 'data_contestacao', 'data_alteracao', 'data_reapresentacao', 'dias_contestacao', 'dias_compra', 'modo_entrada', 'motivo', 'valor_compra']
         all_params.append('callback')
 
         params = locals()
@@ -153,7 +253,7 @@ class GlobaltagcompracontestadaApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get12" % key
+                    " to method listar_using_get13" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -169,6 +269,38 @@ class GlobaltagcompracontestadaApi(object):
             query_params['page'] = params['page']
         if 'limit' in params:
             query_params['limit'] = params['limit']
+        if 'aging_contestacao' in params:
+            query_params['agingContestacao'] = params['aging_contestacao']
+        if 'nome' in params:
+            query_params['nome'] = params['nome']
+        if 'bandeira' in params:
+            query_params['bandeira'] = params['bandeira']
+        if 'cartao' in params:
+            query_params['cartao'] = params['cartao']
+        if 'cpf' in params:
+            query_params['cpf'] = params['cpf']
+        if 'conta' in params:
+            query_params['conta'] = params['conta']
+        if 'status_cartao' in params:
+            query_params['statusCartao'] = params['status_cartao']
+        if 'status_contestacao' in params:
+            query_params['statusContestacao'] = params['status_contestacao']
+        if 'data_contestacao' in params:
+            query_params['dataContestacao'] = params['data_contestacao']
+        if 'data_alteracao' in params:
+            query_params['dataAlteracao'] = params['data_alteracao']
+        if 'data_reapresentacao' in params:
+            query_params['dataReapresentacao'] = params['data_reapresentacao']
+        if 'dias_contestacao' in params:
+            query_params['diasContestacao'] = params['dias_contestacao']
+        if 'dias_compra' in params:
+            query_params['diasCompra'] = params['dias_compra']
+        if 'modo_entrada' in params:
+            query_params['modoEntrada'] = params['modo_entrada']
+        if 'motivo' in params:
+            query_params['motivo'] = params['motivo']
+        if 'valor_compra' in params:
+            query_params['valorCompra'] = params['valor_compra']
 
         header_params = {}
 
@@ -221,12 +353,28 @@ class GlobaltagcompracontestadaApi(object):
         :param list[str] sort: {{{global_menssagem_sort_sort}}}
         :param int page: {{{global_menssagem_sort_page_value}}}
         :param int limit: {{{global_menssagem_sort_limit}}}
+        :param int aging_contestacao: 
+        :param str nome: 
+        :param str bandeira: 
+        :param str cartao: 
+        :param str cpf: 
+        :param str conta: 
+        :param int status_cartao: 
+        :param int status_contestacao: 
+        :param str data_contestacao: 
+        :param str data_alteracao: 
+        :param str data_reapresentacao: 
+        :param int dias_contestacao: 
+        :param int dias_compra: 
+        :param str modo_entrada: 
+        :param str motivo: 
+        :param float valor_compra: 
         :return: PageGrupoChargebackResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['id_cartao', 'sort', 'page', 'limit']
+        all_params = ['id_cartao', 'sort', 'page', 'limit', 'aging_contestacao', 'nome', 'bandeira', 'cartao', 'cpf', 'conta', 'status_cartao', 'status_contestacao', 'data_contestacao', 'data_alteracao', 'data_reapresentacao', 'dias_contestacao', 'dias_compra', 'modo_entrada', 'motivo', 'valor_compra']
         all_params.append('callback')
 
         params = locals()
@@ -255,6 +403,38 @@ class GlobaltagcompracontestadaApi(object):
             query_params['page'] = params['page']
         if 'limit' in params:
             query_params['limit'] = params['limit']
+        if 'aging_contestacao' in params:
+            query_params['agingContestacao'] = params['aging_contestacao']
+        if 'nome' in params:
+            query_params['nome'] = params['nome']
+        if 'bandeira' in params:
+            query_params['bandeira'] = params['bandeira']
+        if 'cartao' in params:
+            query_params['cartao'] = params['cartao']
+        if 'cpf' in params:
+            query_params['cpf'] = params['cpf']
+        if 'conta' in params:
+            query_params['conta'] = params['conta']
+        if 'status_cartao' in params:
+            query_params['statusCartao'] = params['status_cartao']
+        if 'status_contestacao' in params:
+            query_params['statusContestacao'] = params['status_contestacao']
+        if 'data_contestacao' in params:
+            query_params['dataContestacao'] = params['data_contestacao']
+        if 'data_alteracao' in params:
+            query_params['dataAlteracao'] = params['data_alteracao']
+        if 'data_reapresentacao' in params:
+            query_params['dataReapresentacao'] = params['data_reapresentacao']
+        if 'dias_contestacao' in params:
+            query_params['diasContestacao'] = params['dias_contestacao']
+        if 'dias_compra' in params:
+            query_params['diasCompra'] = params['dias_compra']
+        if 'modo_entrada' in params:
+            query_params['modoEntrada'] = params['modo_entrada']
+        if 'motivo' in params:
+            query_params['motivo'] = params['motivo']
+        if 'valor_compra' in params:
+            query_params['valorCompra'] = params['valor_compra']
 
         header_params = {}
 

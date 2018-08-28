@@ -383,7 +383,7 @@ class GlobaltagantecipacaoApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get13(self, id_conta, **kwargs):
+    def listar_using_get14(self, id_conta, **kwargs):
         """
         {{{compra_antecipavel_resource_listar}}}
         {{{compra_antecipavel_resource_listar_notes}}}
@@ -394,7 +394,7 @@ class GlobaltagantecipacaoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get13(id_conta, callback=callback_function)
+        >>> thread = api.listar_using_get14(id_conta, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -419,14 +419,14 @@ class GlobaltagantecipacaoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get13" % key
+                    " to method listar_using_get14" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id_conta' is set
         if ('id_conta' not in params) or (params['id_conta'] is None):
-            raise ValueError("Missing the required parameter `id_conta` when calling `listar_using_get13`")
+            raise ValueError("Missing the required parameter `id_conta` when calling `listar_using_get14`")
 
         resource_path = '/api/compras-antecipaveis'.replace('{format}', 'json')
         path_params = {}

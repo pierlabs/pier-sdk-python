@@ -199,7 +199,7 @@ class GlobaltagdispositivoApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get20(self, **kwargs):
+    def listar_using_get21(self, **kwargs):
         """
         {{{dispositivo_resource_listar}}}
         {{{dispositivo_resource_listar_notes}}}
@@ -210,7 +210,7 @@ class GlobaltagdispositivoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get20(callback=callback_function)
+        >>> thread = api.listar_using_get21(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -235,7 +235,7 @@ class GlobaltagdispositivoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get20" % key
+                    " to method listar_using_get21" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -294,7 +294,7 @@ class GlobaltagdispositivoApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def salvar_using_post10(self, persist, **kwargs):
+    def salvar_using_post11(self, persist, **kwargs):
         """
         {{{dispositivo_resource_salvar}}}
         {{{dispositivo_resource_salvar_notes}}}
@@ -305,7 +305,7 @@ class GlobaltagdispositivoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.salvar_using_post10(persist, callback=callback_function)
+        >>> thread = api.salvar_using_post11(persist, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -323,14 +323,14 @@ class GlobaltagdispositivoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method salvar_using_post10" % key
+                    " to method salvar_using_post11" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'persist' is set
         if ('persist' not in params) or (params['persist'] is None):
-            raise ValueError("Missing the required parameter `persist` when calling `salvar_using_post10`")
+            raise ValueError("Missing the required parameter `persist` when calling `salvar_using_post11`")
 
         resource_path = '/api/dispositivos'.replace('{format}', 'json')
         path_params = {}

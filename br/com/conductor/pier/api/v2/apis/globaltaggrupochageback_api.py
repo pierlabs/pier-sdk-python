@@ -45,7 +45,7 @@ class GlobaltaggrupochagebackApi(object):
                 config.api_client = ApiClient()
             self.api_client = config.api_client
 
-    def listar_codigos_using_get(self, id, **kwargs):
+    def listar_codigos_using_get(self, grupo_chargeback_id, **kwargs):
         """
         {{{codigo_chargeback_resource_listar}}}
         {{{codigo_chargeback_resource_listar_notes}}}
@@ -56,23 +56,24 @@ class GlobaltaggrupochagebackApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_codigos_using_get(id, callback=callback_function)
+        >>> thread = api.listar_codigos_using_get(grupo_chargeback_id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param int id: id (required)
+        :param int grupo_chargeback_id: grupoChargebackId (required)
         :param list[str] sort: {{{global_menssagem_sort_sort}}}
         :param int page: {{{global_menssagem_sort_page_value}}}
         :param int limit: {{{global_menssagem_sort_limit}}}
+        :param int id: 
+        :param str descricao: 
         :param bool flag_atm: 
-        :param int id_bandeira: 
-        :param int group_id: 
+        :param int grupo_chargeback_id2: 
         :return: PageCodigoChargebackResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['id', 'sort', 'page', 'limit', 'flag_atm', 'id_bandeira', 'group_id']
+        all_params = ['grupo_chargeback_id', 'sort', 'page', 'limit', 'id', 'descricao', 'flag_atm', 'grupo_chargeback_id2']
         all_params.append('callback')
 
         params = locals()
@@ -85,14 +86,14 @@ class GlobaltaggrupochagebackApi(object):
             params[key] = val
         del params['kwargs']
 
-        # verify the required parameter 'id' is set
-        if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `listar_codigos_using_get`")
+        # verify the required parameter 'grupo_chargeback_id' is set
+        if ('grupo_chargeback_id' not in params) or (params['grupo_chargeback_id'] is None):
+            raise ValueError("Missing the required parameter `grupo_chargeback_id` when calling `listar_codigos_using_get`")
 
-        resource_path = '/api/grupos-chargeback/{id}/codigos'.replace('{format}', 'json')
+        resource_path = '/api/grupos-chargeback/{grupoChargebackId}/codigos'.replace('{format}', 'json')
         path_params = {}
-        if 'id' in params:
-            path_params['id'] = params['id']
+        if 'grupo_chargeback_id' in params:
+            path_params['grupoChargebackId'] = params['grupo_chargeback_id']
 
         query_params = {}
         if 'sort' in params:
@@ -101,12 +102,14 @@ class GlobaltaggrupochagebackApi(object):
             query_params['page'] = params['page']
         if 'limit' in params:
             query_params['limit'] = params['limit']
+        if 'id' in params:
+            query_params['id'] = params['id']
+        if 'descricao' in params:
+            query_params['descricao'] = params['descricao']
         if 'flag_atm' in params:
             query_params['flagAtm'] = params['flag_atm']
-        if 'id_bandeira' in params:
-            query_params['idBandeira'] = params['id_bandeira']
-        if 'group_id' in params:
-            query_params['groupId'] = params['group_id']
+        if 'grupo_chargeback_id2' in params:
+            query_params['grupoChargebackId'] = params['grupo_chargeback_id2']
 
         header_params = {}
 
@@ -140,7 +143,7 @@ class GlobaltaggrupochagebackApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get27(self, **kwargs):
+    def listar_using_get28(self, **kwargs):
         """
         {{{grupo_chargeback_resource_listar}}}
         {{{grupo_chargeback_resource_listar_notes}}}
@@ -151,7 +154,7 @@ class GlobaltaggrupochagebackApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get27(callback=callback_function)
+        >>> thread = api.listar_using_get28(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -171,7 +174,7 @@ class GlobaltaggrupochagebackApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get27" % key
+                    " to method listar_using_get28" % key
                 )
             params[key] = val
         del params['kwargs']

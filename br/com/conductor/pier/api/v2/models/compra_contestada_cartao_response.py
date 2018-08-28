@@ -38,25 +38,31 @@ class CompraContestadaCartaoResponse(object):
         """
         self.swagger_types = {
             'id_cartao': 'int',
+            'aging_compras': 'int',
             'aging_contestacao': 'int',
             'cartao': 'str',
             'nome': 'str',
-            'bandeira': 'str'
+            'bandeira': 'str',
+            'valor_compra': 'str'
         }
 
         self.attribute_map = {
             'id_cartao': 'idCartao',
+            'aging_compras': 'agingCompras',
             'aging_contestacao': 'agingContestacao',
             'cartao': 'cartao',
             'nome': 'nome',
-            'bandeira': 'bandeira'
+            'bandeira': 'bandeira',
+            'valor_compra': 'valorCompra'
         }
 
         self._id_cartao = None
+        self._aging_compras = None
         self._aging_contestacao = None
         self._cartao = None
         self._nome = None
         self._bandeira = None
+        self._valor_compra = None
 
     @property
     def id_cartao(self):
@@ -79,6 +85,28 @@ class CompraContestadaCartaoResponse(object):
         :type: int
         """
         self._id_cartao = id_cartao
+
+    @property
+    def aging_compras(self):
+        """
+        Gets the aging_compras of this CompraContestadaCartaoResponse.
+        {{{compra_contestada_cartao_response_aging_compras_value}}}
+
+        :return: The aging_compras of this CompraContestadaCartaoResponse.
+        :rtype: int
+        """
+        return self._aging_compras
+
+    @aging_compras.setter
+    def aging_compras(self, aging_compras):
+        """
+        Sets the aging_compras of this CompraContestadaCartaoResponse.
+        {{{compra_contestada_cartao_response_aging_compras_value}}}
+
+        :param aging_compras: The aging_compras of this CompraContestadaCartaoResponse.
+        :type: int
+        """
+        self._aging_compras = aging_compras
 
     @property
     def aging_contestacao(self):
@@ -167,6 +195,28 @@ class CompraContestadaCartaoResponse(object):
         :type: str
         """
         self._bandeira = bandeira
+
+    @property
+    def valor_compra(self):
+        """
+        Gets the valor_compra of this CompraContestadaCartaoResponse.
+        {{{compra_contestada_cartao_response_valor_compra_value}}}
+
+        :return: The valor_compra of this CompraContestadaCartaoResponse.
+        :rtype: str
+        """
+        return self._valor_compra
+
+    @valor_compra.setter
+    def valor_compra(self, valor_compra):
+        """
+        Sets the valor_compra of this CompraContestadaCartaoResponse.
+        {{{compra_contestada_cartao_response_valor_compra_value}}}
+
+        :param valor_compra: The valor_compra of this CompraContestadaCartaoResponse.
+        :type: str
+        """
+        self._valor_compra = valor_compra
 
     def to_dict(self):
         """

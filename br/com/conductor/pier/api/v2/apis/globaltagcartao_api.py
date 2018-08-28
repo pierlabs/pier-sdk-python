@@ -62,13 +62,12 @@ class GlobaltagcartaoApi(object):
             for asynchronous request. (optional)
         :param int id: {{{cartao_resource_alterar_alterar_senha_param_id}}} (required)
         :param str senha: {{{cartao_resource_alterar_alterar_senha_param_nova_senha}}} (required)
-        :param str authorization: Authorization
         :return: str
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['id', 'senha', 'authorization']
+        all_params = ['id', 'senha']
         all_params.append('callback')
 
         params = locals()
@@ -96,8 +95,6 @@ class GlobaltagcartaoApi(object):
         query_params = {}
 
         header_params = {}
-        if 'authorization' in params:
-            header_params['Authorization'] = params['authorization']
         if 'senha' in params:
             header_params['senha'] = params['senha']
 
@@ -148,13 +145,12 @@ class GlobaltagcartaoApi(object):
             for asynchronous request. (optional)
         :param int id: {{{cartao_resource_alterar_estagio_param_id}}} (required)
         :param EstagioCartaoUpdate update: {{{cartao_resource_alterar_estagio_param_id_estagio_cartao}}} (required)
-        :param str authorization: Authorization
         :return: CartaoResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['id', 'update', 'authorization']
+        all_params = ['id', 'update']
         all_params.append('callback')
 
         params = locals()
@@ -182,8 +178,6 @@ class GlobaltagcartaoApi(object):
         query_params = {}
 
         header_params = {}
-        if 'authorization' in params:
-            header_params['Authorization'] = params['authorization']
 
         form_params = []
         local_var_files = {}
@@ -234,13 +228,12 @@ class GlobaltagcartaoApi(object):
             for asynchronous request. (optional)
         :param int id: {{{cartao_resource_alterar_status_impressao_param_id}}} (required)
         :param int id_status_impressao: {{{cartao_resource_alterar_status_impressao_param_id_status_impressao}}} (required)
-        :param str authorization: Authorization
         :return: HistoricoImpressaoCartaoResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['id', 'id_status_impressao', 'authorization']
+        all_params = ['id', 'id_status_impressao']
         all_params.append('callback')
 
         params = locals()
@@ -270,8 +263,6 @@ class GlobaltagcartaoApi(object):
             query_params['id_status_impressao'] = params['id_status_impressao']
 
         header_params = {}
-        if 'authorization' in params:
-            header_params['Authorization'] = params['authorization']
 
         form_params = []
         local_var_files = {}
@@ -320,13 +311,12 @@ class GlobaltagcartaoApi(object):
             for asynchronous request. (optional)
         :param int id: {{{cartao_resource_atribuir_pessoa_param_id_cartao}}} (required)
         :param int id_pessoa: {{{cartao_resource_atribuir_pessoa_param_id_pessoa}}} (required)
-        :param str authorization: Authorization
         :return: CartaoResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['id', 'id_pessoa', 'authorization']
+        all_params = ['id', 'id_pessoa']
         all_params.append('callback')
 
         params = locals()
@@ -356,8 +346,6 @@ class GlobaltagcartaoApi(object):
             query_params['id_pessoa'] = params['id_pessoa']
 
         header_params = {}
-        if 'authorization' in params:
-            header_params['Authorization'] = params['authorization']
 
         form_params = []
         local_var_files = {}
@@ -407,13 +395,12 @@ class GlobaltagcartaoApi(object):
         :param int id: {{{cartao_resource_bloquear_param_id}}} (required)
         :param int id_status: {{{cartao_resource_bloquear_param_id_status}}} (required)
         :param str observacao: {{{cartao_resource_bloquear_param_observacao}}} (required)
-        :param str authorization: Authorization
         :return: CartaoResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['id', 'id_status', 'observacao', 'authorization']
+        all_params = ['id', 'id_status', 'observacao']
         all_params.append('callback')
 
         params = locals()
@@ -448,8 +435,6 @@ class GlobaltagcartaoApi(object):
             query_params['observacao'] = params['observacao']
 
         header_params = {}
-        if 'authorization' in params:
-            header_params['Authorization'] = params['authorization']
 
         form_params = []
         local_var_files = {}
@@ -498,13 +483,12 @@ class GlobaltagcartaoApi(object):
             for asynchronous request. (optional)
         :param int id: {{{cartao_resource_cadastrar_alterar_senha_param_id}}} (required)
         :param str senha: {{{cartao_resource_cadastrar_alterar_senha_param_nova_senha}}} (required)
-        :param str authorization: Authorization
         :return: str
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['id', 'senha', 'authorization']
+        all_params = ['id', 'senha']
         all_params.append('callback')
 
         params = locals()
@@ -532,8 +516,6 @@ class GlobaltagcartaoApi(object):
         query_params = {}
 
         header_params = {}
-        if 'authorization' in params:
-            header_params['Authorization'] = params['authorization']
         if 'senha' in params:
             header_params['senha'] = params['senha']
 
@@ -585,13 +567,12 @@ class GlobaltagcartaoApi(object):
         :param int id: {{{cartao_resource_cancelar_param_id}}} (required)
         :param int id_status: {{{cartao_resource_cancelar_param_id_status}}} (required)
         :param str observacao: {{{cartao_resource_cancelar_param_observacao}}} (required)
-        :param str authorization: Authorization
         :return: CartaoResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['id', 'id_status', 'observacao', 'authorization']
+        all_params = ['id', 'id_status', 'observacao']
         all_params.append('callback')
 
         params = locals()
@@ -626,8 +607,6 @@ class GlobaltagcartaoApi(object):
             query_params['observacao'] = params['observacao']
 
         header_params = {}
-        if 'authorization' in params:
-            header_params['Authorization'] = params['authorization']
 
         form_params = []
         local_var_files = {}
@@ -675,13 +654,12 @@ class GlobaltagcartaoApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int id: {{{cartao_resource_consultar_cartao_impressao_param_id}}} (required)
-        :param str authorization: Authorization
         :return: DadosCartaoImpressaoResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['id', 'authorization']
+        all_params = ['id']
         all_params.append('callback')
 
         params = locals()
@@ -706,8 +684,6 @@ class GlobaltagcartaoApi(object):
         query_params = {}
 
         header_params = {}
-        if 'authorization' in params:
-            header_params['Authorization'] = params['authorization']
 
         form_params = []
         local_var_files = {}
@@ -755,13 +731,12 @@ class GlobaltagcartaoApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int id: id (required)
-        :param str authorization: Authorization
         :return: DadosCartaoResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['id', 'authorization']
+        all_params = ['id']
         all_params.append('callback')
 
         params = locals()
@@ -786,8 +761,6 @@ class GlobaltagcartaoApi(object):
         query_params = {}
 
         header_params = {}
-        if 'authorization' in params:
-            header_params['Authorization'] = params['authorization']
 
         form_params = []
         local_var_files = {}
@@ -835,13 +808,12 @@ class GlobaltagcartaoApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int id: {{{cartao_resource_consultar_limite_disponibilidade_param_id}}} (required)
-        :param str authorization: Authorization
         :return: LimiteDisponibilidadeResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['id', 'authorization']
+        all_params = ['id']
         all_params.append('callback')
 
         params = locals()
@@ -866,8 +838,6 @@ class GlobaltagcartaoApi(object):
         query_params = {}
 
         header_params = {}
-        if 'authorization' in params:
-            header_params['Authorization'] = params['authorization']
 
         form_params = []
         local_var_files = {}
@@ -915,13 +885,12 @@ class GlobaltagcartaoApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int id: {{{cartao_resource_consultar_lotes_cartoes_pre_pagos_param_id_lote}}} (required)
-        :param str authorization: Authorization
         :return: LoteCartoesPrePagosResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['id', 'authorization']
+        all_params = ['id']
         all_params.append('callback')
 
         params = locals()
@@ -946,8 +915,6 @@ class GlobaltagcartaoApi(object):
         query_params = {}
 
         header_params = {}
-        if 'authorization' in params:
-            header_params['Authorization'] = params['authorization']
 
         form_params = []
         local_var_files = {}
@@ -995,13 +962,12 @@ class GlobaltagcartaoApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int id: {{{cartao_resource_consultar_portador_param_id}}} (required)
-        :param str authorization: Authorization
         :return: PortadorResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['id', 'authorization']
+        all_params = ['id']
         all_params.append('callback')
 
         params = locals()
@@ -1026,8 +992,6 @@ class GlobaltagcartaoApi(object):
         query_params = {}
 
         header_params = {}
-        if 'authorization' in params:
-            header_params['Authorization'] = params['authorization']
 
         form_params = []
         local_var_files = {}
@@ -1059,7 +1023,7 @@ class GlobaltagcartaoApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get10(self, id, **kwargs):
+    def consultar_using_get12(self, id, **kwargs):
         """
         {{{cartao_resource_consultar}}}
         {{{cartao_resource_consultar_notes}}}
@@ -1070,18 +1034,17 @@ class GlobaltagcartaoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get10(id, callback=callback_function)
+        >>> thread = api.consultar_using_get12(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int id: {{{cartao_resource_consultar_param_id}}} (required)
-        :param str authorization: Authorization
         :return: CartaoDetalheResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['id', 'authorization']
+        all_params = ['id']
         all_params.append('callback')
 
         params = locals()
@@ -1089,14 +1052,14 @@ class GlobaltagcartaoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get10" % key
+                    " to method consultar_using_get12" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get10`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get12`")
 
         resource_path = '/api/cartoes/{id}'.replace('{format}', 'json')
         path_params = {}
@@ -1106,8 +1069,6 @@ class GlobaltagcartaoApi(object):
         query_params = {}
 
         header_params = {}
-        if 'authorization' in params:
-            header_params['Authorization'] = params['authorization']
 
         form_params = []
         local_var_files = {}
@@ -1139,6 +1100,83 @@ class GlobaltagcartaoApi(object):
                                             callback=params.get('callback'))
         return response
 
+    def criar_cartoes_multi_app_using_post(self, cartao_multi_app_persist, **kwargs):
+        """
+        {{{conta_resource_cadastrar_cartao_multiapp}}}
+        {{{conta_resource_cadastrar_cartao_multiapp_notes}}}
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.criar_cartoes_multi_app_using_post(cartao_multi_app_persist, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param CartaoMultiAppPersistValue cartao_multi_app_persist: cartaoMultiAppPersist (required)
+        :return: VinculoCartoesResponse
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['cartao_multi_app_persist']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method criar_cartoes_multi_app_using_post" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        # verify the required parameter 'cartao_multi_app_persist' is set
+        if ('cartao_multi_app_persist' not in params) or (params['cartao_multi_app_persist'] is None):
+            raise ValueError("Missing the required parameter `cartao_multi_app_persist` when calling `criar_cartoes_multi_app_using_post`")
+
+        resource_path = '/api/cartoes/gerar-cartoes-multiapp'.replace('{format}', 'json')
+        path_params = {}
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        if 'cartao_multi_app_persist' in params:
+            body_params = params['cartao_multi_app_persist']
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = []
+
+        response = self.api_client.call_api(resource_path, 'POST',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='VinculoCartoesResponse',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
     def desbloquear_senha_incorreta_using_post(self, id, **kwargs):
         """
         {{{cartao_resource_desbloquear_senha_incorreta}}}
@@ -1155,13 +1193,12 @@ class GlobaltagcartaoApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int id: {{{cartao_resource_desbloquear_senha_incorreta_param_id}}} (required)
-        :param str authorization: Authorization
         :return: CartaoResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['id', 'authorization']
+        all_params = ['id']
         all_params.append('callback')
 
         params = locals()
@@ -1186,8 +1223,6 @@ class GlobaltagcartaoApi(object):
         query_params = {}
 
         header_params = {}
-        if 'authorization' in params:
-            header_params['Authorization'] = params['authorization']
 
         form_params = []
         local_var_files = {}
@@ -1235,13 +1270,12 @@ class GlobaltagcartaoApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int id: {{{cartao_resource_desbloquear_param_id}}} (required)
-        :param str authorization: Authorization
         :return: CartaoResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['id', 'authorization']
+        all_params = ['id']
         all_params.append('callback')
 
         params = locals()
@@ -1266,8 +1300,6 @@ class GlobaltagcartaoApi(object):
         query_params = {}
 
         header_params = {}
-        if 'authorization' in params:
-            header_params['Authorization'] = params['authorization']
 
         form_params = []
         local_var_files = {}
@@ -1314,7 +1346,6 @@ class GlobaltagcartaoApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param str authorization: Authorization
         :param int id_origem_comercial: {{{lote_cartoes_pre_pagos_persist_id_origem_comercial_value}}}
         :param int id_produto: {{{lote_cartoes_pre_pagos_persist_id_produto_value}}}
         :param int id_tipo_cartao: {{{lote_cartoes_pre_pagos_persist_id_tipo_cartao_value}}}
@@ -1327,7 +1358,7 @@ class GlobaltagcartaoApi(object):
                  returns the request thread.
         """
 
-        all_params = ['authorization', 'id_origem_comercial', 'id_produto', 'id_tipo_cartao', 'id_imagem', 'id_endereco', 'quantidade_cartoes', 'identificador_externo']
+        all_params = ['id_origem_comercial', 'id_produto', 'id_tipo_cartao', 'id_imagem', 'id_endereco', 'quantidade_cartoes', 'identificador_externo']
         all_params.append('callback')
 
         params = locals()
@@ -1361,8 +1392,6 @@ class GlobaltagcartaoApi(object):
             query_params['identificadorExterno'] = params['identificador_externo']
 
         header_params = {}
-        if 'authorization' in params:
-            header_params['Authorization'] = params['authorization']
 
         form_params = []
         local_var_files = {}
@@ -1410,13 +1439,12 @@ class GlobaltagcartaoApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int id: {{{cartao_resource_gerar_nova_via_param_id_cartao}}} (required)
-        :param str authorization: Authorization
         :return: CartaoMultiAppImpressaoResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['id', 'authorization']
+        all_params = ['id']
         all_params.append('callback')
 
         params = locals()
@@ -1441,8 +1469,6 @@ class GlobaltagcartaoApi(object):
         query_params = {}
 
         header_params = {}
-        if 'authorization' in params:
-            header_params['Authorization'] = params['authorization']
 
         form_params = []
         local_var_files = {}
@@ -1490,13 +1516,12 @@ class GlobaltagcartaoApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int id: {{{cartao_resource_gerar_nova_via_param_id_cartao}}} (required)
-        :param str authorization: Authorization
         :return: CartaoResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['id', 'authorization']
+        all_params = ['id']
         all_params.append('callback')
 
         params = locals()
@@ -1521,8 +1546,6 @@ class GlobaltagcartaoApi(object):
         query_params = {}
 
         header_params = {}
-        if 'authorization' in params:
-            header_params['Authorization'] = params['authorization']
 
         form_params = []
         local_var_files = {}
@@ -1570,13 +1593,12 @@ class GlobaltagcartaoApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int id: {{{cartao_resource_lancar_tarifa_segunda_via_param_id}}} (required)
-        :param str authorization: Authorization
         :return: object
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['id', 'authorization']
+        all_params = ['id']
         all_params.append('callback')
 
         params = locals()
@@ -1601,8 +1623,6 @@ class GlobaltagcartaoApi(object):
         query_params = {}
 
         header_params = {}
-        if 'authorization' in params:
-            header_params['Authorization'] = params['authorization']
 
         form_params = []
         local_var_files = {}
@@ -1649,7 +1669,6 @@ class GlobaltagcartaoApi(object):
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param str authorization: Authorization
         :param list[str] sort: {{{global_menssagem_sort_sort}}}
         :param int page: {{{global_menssagem_sort_page_value}}}
         :param int limit: {{{global_menssagem_sort_limit}}}
@@ -1668,7 +1687,7 @@ class GlobaltagcartaoApi(object):
                  returns the request thread.
         """
 
-        all_params = ['authorization', 'sort', 'page', 'limit', 'id_origem_comercial', 'id_produto', 'id_tipo_cartao', 'id_imagem', 'id_endereco', 'quantidade_cartoes', 'data_cadastro', 'usuario_cadastro', 'status_processamento', 'identificador_externo']
+        all_params = ['sort', 'page', 'limit', 'id_origem_comercial', 'id_produto', 'id_tipo_cartao', 'id_imagem', 'id_endereco', 'quantidade_cartoes', 'data_cadastro', 'usuario_cadastro', 'status_processamento', 'identificador_externo']
         all_params.append('callback')
 
         params = locals()
@@ -1714,8 +1733,6 @@ class GlobaltagcartaoApi(object):
             query_params['identificadorExterno'] = params['identificador_externo']
 
         header_params = {}
-        if 'authorization' in params:
-            header_params['Authorization'] = params['authorization']
 
         form_params = []
         local_var_files = {}
@@ -1747,7 +1764,7 @@ class GlobaltagcartaoApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get11(self, **kwargs):
+    def listar_using_get12(self, **kwargs):
         """
         {{{cartao_resource_listar}}}
         {{{cartao_resource_listar_notes}}}
@@ -1758,11 +1775,10 @@ class GlobaltagcartaoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get11(callback=callback_function)
+        >>> thread = api.listar_using_get12(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param str authorization: Authorization
         :param list[str] sort: {{{global_menssagem_sort_sort}}}
         :param int page: {{{global_menssagem_sort_page_value}}}
         :param int limit: {{{global_menssagem_sort_limit}}}
@@ -1784,12 +1800,13 @@ class GlobaltagcartaoApi(object):
         :param int flag_provisorio: {{{cartao_request_flag_provisorio_value}}}
         :param str codigo_desbloqueio: {{{cartao_request_codigo_desbloqueio_value}}}
         :param int sequencial_cartao: {{{cartao_request_sequencial_cartao_value}}}
+        :param int identificador_externo: {{{cartao_request_identificador_externo_value}}}
         :return: PageCartaoResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['authorization', 'sort', 'page', 'limit', 'id_status_cartao', 'id_estagio_cartao', 'id_conta', 'id_pessoa', 'id_produto', 'tipo_portador', 'numero_cartao', 'nome_impresso', 'data_geracao', 'data_status_cartao', 'data_estagio_cartao', 'data_validade', 'data_impressao', 'arquivo_impressao', 'flag_impressao_origem_comercial', 'flag_provisorio', 'codigo_desbloqueio', 'sequencial_cartao']
+        all_params = ['sort', 'page', 'limit', 'id_status_cartao', 'id_estagio_cartao', 'id_conta', 'id_pessoa', 'id_produto', 'tipo_portador', 'numero_cartao', 'nome_impresso', 'data_geracao', 'data_status_cartao', 'data_estagio_cartao', 'data_validade', 'data_impressao', 'arquivo_impressao', 'flag_impressao_origem_comercial', 'flag_provisorio', 'codigo_desbloqueio', 'sequencial_cartao', 'identificador_externo']
         all_params.append('callback')
 
         params = locals()
@@ -1797,7 +1814,7 @@ class GlobaltagcartaoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get11" % key
+                    " to method listar_using_get12" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -1849,10 +1866,10 @@ class GlobaltagcartaoApi(object):
             query_params['codigoDesbloqueio'] = params['codigo_desbloqueio']
         if 'sequencial_cartao' in params:
             query_params['sequencialCartao'] = params['sequencial_cartao']
+        if 'identificador_externo' in params:
+            query_params['identificadorExterno'] = params['identificador_externo']
 
         header_params = {}
-        if 'authorization' in params:
-            header_params['Authorization'] = params['authorization']
 
         form_params = []
         local_var_files = {}
@@ -1900,13 +1917,12 @@ class GlobaltagcartaoApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int id: {{{cartao_resource_reativar_param_id}}} (required)
-        :param str authorization: Authorization
         :return: CartaoResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['id', 'authorization']
+        all_params = ['id']
         all_params.append('callback')
 
         params = locals()
@@ -1931,8 +1947,6 @@ class GlobaltagcartaoApi(object):
         query_params = {}
 
         header_params = {}
-        if 'authorization' in params:
-            header_params['Authorization'] = params['authorization']
 
         form_params = []
         local_var_files = {}
@@ -1981,13 +1995,12 @@ class GlobaltagcartaoApi(object):
             for asynchronous request. (optional)
         :param int id: {{{cartao_resource_validar_c_v_v_param_id}}} (required)
         :param ValidaCVVRequest valida_cvv: validaCVV (required)
-        :param str authorization: Authorization
         :return: str
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['id', 'valida_cvv', 'authorization']
+        all_params = ['id', 'valida_cvv']
         all_params.append('callback')
 
         params = locals()
@@ -2015,8 +2028,6 @@ class GlobaltagcartaoApi(object):
         query_params = {}
 
         header_params = {}
-        if 'authorization' in params:
-            header_params['Authorization'] = params['authorization']
 
         form_params = []
         local_var_files = {}
@@ -2069,13 +2080,12 @@ class GlobaltagcartaoApi(object):
         :param str nome_portador: {{{cartao_resource_validar_dados_impressos_bandeirado_param_nome_portador}}} (required)
         :param str data_validade: {{{cartao_resource_validar_dados_impressos_bandeirado_param_data_validade}}} (required)
         :param str codigo_seguranca: {{{cartao_resource_validar_dados_impressos_bandeirado_param_codigo_seguranca}}} (required)
-        :param str authorization: Authorization
         :return: ValidaCartaoResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['numero_cartao', 'nome_portador', 'data_validade', 'codigo_seguranca', 'authorization']
+        all_params = ['numero_cartao', 'nome_portador', 'data_validade', 'codigo_seguranca']
         all_params.append('callback')
 
         params = locals()
@@ -2115,8 +2125,6 @@ class GlobaltagcartaoApi(object):
             query_params['codigo_seguranca'] = params['codigo_seguranca']
 
         header_params = {}
-        if 'authorization' in params:
-            header_params['Authorization'] = params['authorization']
 
         form_params = []
         local_var_files = {}
@@ -2167,13 +2175,12 @@ class GlobaltagcartaoApi(object):
         :param str nome_portador: {{{cartao_resource_validar_dados_impressos_nao_bandeirado_param_nome_portador}}} (required)
         :param str data_validade: {{{cartao_resource_validar_dados_impressos_nao_bandeirado_param_data_validade}}} (required)
         :param str codigo_seguranca: {{{cartao_resource_validar_dados_impressos_nao_bandeirado_param_codigo_seguranca}}} (required)
-        :param str authorization: Authorization
         :return: ValidaCartaoResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['numero_cartao', 'nome_portador', 'data_validade', 'codigo_seguranca', 'authorization']
+        all_params = ['numero_cartao', 'nome_portador', 'data_validade', 'codigo_seguranca']
         all_params.append('callback')
 
         params = locals()
@@ -2213,8 +2220,6 @@ class GlobaltagcartaoApi(object):
             query_params['codigo_seguranca'] = params['codigo_seguranca']
 
         header_params = {}
-        if 'authorization' in params:
-            header_params['Authorization'] = params['authorization']
 
         form_params = []
         local_var_files = {}
@@ -2263,13 +2268,12 @@ class GlobaltagcartaoApi(object):
             for asynchronous request. (optional)
         :param str numero_cartao: {{{cartao_resource_validar_de55_cartao_mastercard_param_numero_cartao}}} (required)
         :param str criptograma: {{{cartao_resource_validar_de55_cartao_mastercard_param_criptograma}}} (required)
-        :param str authorization: Authorization
         :return: ValidaCartaoResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['numero_cartao', 'criptograma', 'authorization']
+        all_params = ['numero_cartao', 'criptograma']
         all_params.append('callback')
 
         params = locals()
@@ -2299,8 +2303,6 @@ class GlobaltagcartaoApi(object):
             query_params['criptograma'] = params['criptograma']
 
         header_params = {}
-        if 'authorization' in params:
-            header_params['Authorization'] = params['authorization']
 
         form_params = []
         local_var_files = {}
@@ -2349,13 +2351,12 @@ class GlobaltagcartaoApi(object):
             for asynchronous request. (optional)
         :param int id: {{{cartao_resource_validar_senha_param_id}}} (required)
         :param str senha: {{{cartao_resource_validar_senha_param_senha}}} (required)
-        :param str authorization: Authorization
         :return: ValidaSenhaCartaoResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['id', 'senha', 'authorization']
+        all_params = ['id', 'senha']
         all_params.append('callback')
 
         params = locals()
@@ -2383,8 +2384,6 @@ class GlobaltagcartaoApi(object):
         query_params = {}
 
         header_params = {}
-        if 'authorization' in params:
-            header_params['Authorization'] = params['authorization']
         if 'senha' in params:
             header_params['senha'] = params['senha']
 
@@ -2436,13 +2435,12 @@ class GlobaltagcartaoApi(object):
         :param str numero_cartao: {{{cartao_resource_validar_tarja_param_numero_cartao}}} (required)
         :param str trilha1: {{{cartao_resource_validar_tarja_param_trilha1}}} (required)
         :param str trilha2: {{{cartao_resource_validar_tarja_param_trilha2}}} (required)
-        :param str authorization: Authorization
         :return: ValidaCartaoResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['numero_cartao', 'trilha1', 'trilha2', 'authorization']
+        all_params = ['numero_cartao', 'trilha1', 'trilha2']
         all_params.append('callback')
 
         params = locals()
@@ -2477,8 +2475,6 @@ class GlobaltagcartaoApi(object):
             query_params['trilha2'] = params['trilha2']
 
         header_params = {}
-        if 'authorization' in params:
-            header_params['Authorization'] = params['authorization']
 
         form_params = []
         local_var_files = {}

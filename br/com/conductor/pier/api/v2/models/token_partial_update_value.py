@@ -40,20 +40,23 @@ class TokenPartialUpdateValue(object):
             'base': 'int',
             'owner': 'str',
             'criado_por': 'str',
-            'alterado_por': 'str'
+            'alterado_por': 'str',
+            'id_aplicacao': 'int'
         }
 
         self.attribute_map = {
             'base': 'base',
             'owner': 'owner',
             'criado_por': 'criadoPor',
-            'alterado_por': 'alteradoPor'
+            'alterado_por': 'alteradoPor',
+            'id_aplicacao': 'idAplicacao'
         }
 
         self._base = None
         self._owner = None
         self._criado_por = None
         self._alterado_por = None
+        self._id_aplicacao = None
 
     @property
     def base(self):
@@ -142,6 +145,28 @@ class TokenPartialUpdateValue(object):
         :type: str
         """
         self._alterado_por = alterado_por
+
+    @property
+    def id_aplicacao(self):
+        """
+        Gets the id_aplicacao of this TokenPartialUpdateValue.
+        {{{token_dto_id_application_value}}}
+
+        :return: The id_aplicacao of this TokenPartialUpdateValue.
+        :rtype: int
+        """
+        return self._id_aplicacao
+
+    @id_aplicacao.setter
+    def id_aplicacao(self, id_aplicacao):
+        """
+        Sets the id_aplicacao of this TokenPartialUpdateValue.
+        {{{token_dto_id_application_value}}}
+
+        :param id_aplicacao: The id_aplicacao of this TokenPartialUpdateValue.
+        :type: int
+        """
+        self._id_aplicacao = id_aplicacao
 
     def to_dict(self):
         """

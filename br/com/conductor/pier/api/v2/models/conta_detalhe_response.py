@@ -62,7 +62,8 @@ class ContaDetalheResponse(object):
             'limite_saque_global': 'float',
             'saldo_disponivel_global': 'float',
             'saldo_disponivel_saque': 'float',
-            'dias_atraso': 'int'
+            'dias_atraso': 'int',
+            'proximo_vencimento_padrao': 'str'
         }
 
         self.attribute_map = {
@@ -91,7 +92,8 @@ class ContaDetalheResponse(object):
             'limite_saque_global': 'limiteSaqueGlobal',
             'saldo_disponivel_global': 'saldoDisponivelGlobal',
             'saldo_disponivel_saque': 'saldoDisponivelSaque',
-            'dias_atraso': 'diasAtraso'
+            'dias_atraso': 'diasAtraso',
+            'proximo_vencimento_padrao': 'proximoVencimentoPadrao'
         }
 
         self._id = None
@@ -120,6 +122,7 @@ class ContaDetalheResponse(object):
         self._saldo_disponivel_global = None
         self._saldo_disponivel_saque = None
         self._dias_atraso = None
+        self._proximo_vencimento_padrao = None
 
     @property
     def id(self):
@@ -692,6 +695,28 @@ class ContaDetalheResponse(object):
         :type: int
         """
         self._dias_atraso = dias_atraso
+
+    @property
+    def proximo_vencimento_padrao(self):
+        """
+        Gets the proximo_vencimento_padrao of this ContaDetalheResponse.
+        {{{conta_response_proximo_vencimento_padrao_value}}}
+
+        :return: The proximo_vencimento_padrao of this ContaDetalheResponse.
+        :rtype: str
+        """
+        return self._proximo_vencimento_padrao
+
+    @proximo_vencimento_padrao.setter
+    def proximo_vencimento_padrao(self, proximo_vencimento_padrao):
+        """
+        Sets the proximo_vencimento_padrao of this ContaDetalheResponse.
+        {{{conta_response_proximo_vencimento_padrao_value}}}
+
+        :param proximo_vencimento_padrao: The proximo_vencimento_padrao of this ContaDetalheResponse.
+        :type: str
+        """
+        self._proximo_vencimento_padrao = proximo_vencimento_padrao
 
     def to_dict(self):
         """

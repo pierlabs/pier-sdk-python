@@ -383,7 +383,7 @@ class GlobaltagoportunidadeApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get26(self, id, **kwargs):
+    def consultar_using_get28(self, id, **kwargs):
         """
         {{{oportunidade_resource_consultar}}}
         {{{oportunidade_resource_consultar_notes}}}
@@ -394,7 +394,7 @@ class GlobaltagoportunidadeApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get26(id, callback=callback_function)
+        >>> thread = api.consultar_using_get28(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -412,14 +412,14 @@ class GlobaltagoportunidadeApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get26" % key
+                    " to method consultar_using_get28" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get26`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get28`")
 
         resource_path = '/api/oportunidades/{id}'.replace('{format}', 'json')
         path_params = {}
@@ -460,7 +460,7 @@ class GlobaltagoportunidadeApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get45(self, id, **kwargs):
+    def consultar_using_get47(self, id, **kwargs):
         """
         {{{tipo_oportunidade_resource_consultar}}}
         {{{tipo_oportunidade_resource_consultar_notes}}}
@@ -471,7 +471,7 @@ class GlobaltagoportunidadeApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get45(id, callback=callback_function)
+        >>> thread = api.consultar_using_get47(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -489,14 +489,14 @@ class GlobaltagoportunidadeApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get45" % key
+                    " to method consultar_using_get47" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get45`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get47`")
 
         resource_path = '/api/tipos-oportunidades/{id}'.replace('{format}', 'json')
         path_params = {}
@@ -944,7 +944,7 @@ class GlobaltagoportunidadeApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get35(self, **kwargs):
+    def listar_using_get36(self, **kwargs):
         """
         {{{oportunidade_resource_listar}}}
         {{{oportunidade_resource_listar_notes}}}
@@ -955,7 +955,7 @@ class GlobaltagoportunidadeApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get35(callback=callback_function)
+        >>> thread = api.listar_using_get36(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -982,7 +982,7 @@ class GlobaltagoportunidadeApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get35" % key
+                    " to method listar_using_get36" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -1045,7 +1045,7 @@ class GlobaltagoportunidadeApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get55(self, **kwargs):
+    def listar_using_get58(self, **kwargs):
         """
         {{{tipo_oportunidade_resource_listar}}}
         {{{tipo_oportunidade_resource_listar_notes}}}
@@ -1056,7 +1056,7 @@ class GlobaltagoportunidadeApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get55(callback=callback_function)
+        >>> thread = api.listar_using_get58(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -1078,7 +1078,7 @@ class GlobaltagoportunidadeApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get55" % key
+                    " to method listar_using_get58" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -1214,7 +1214,7 @@ class GlobaltagoportunidadeApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def salvar_using_post21(self, persist, **kwargs):
+    def salvar_using_post22(self, persist, **kwargs):
         """
         {{{oportunidade_resource_salvar}}}
         {{{oportunidade_resource_salvar_notes}}}
@@ -1225,7 +1225,7 @@ class GlobaltagoportunidadeApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.salvar_using_post21(persist, callback=callback_function)
+        >>> thread = api.salvar_using_post22(persist, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -1243,14 +1243,14 @@ class GlobaltagoportunidadeApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method salvar_using_post21" % key
+                    " to method salvar_using_post22" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'persist' is set
         if ('persist' not in params) or (params['persist'] is None):
-            raise ValueError("Missing the required parameter `persist` when calling `salvar_using_post21`")
+            raise ValueError("Missing the required parameter `persist` when calling `salvar_using_post22`")
 
         resource_path = '/api/oportunidades'.replace('{format}', 'json')
         path_params = {}
@@ -1291,7 +1291,7 @@ class GlobaltagoportunidadeApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def salvar_using_post30(self, persist, **kwargs):
+    def salvar_using_post31(self, persist, **kwargs):
         """
         {{{tipo_oportunidade_resource_salvar}}}
         {{{tipo_oportunidade_resource_salvar_notes}}}
@@ -1302,7 +1302,7 @@ class GlobaltagoportunidadeApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.salvar_using_post30(persist, callback=callback_function)
+        >>> thread = api.salvar_using_post31(persist, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -1320,14 +1320,14 @@ class GlobaltagoportunidadeApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method salvar_using_post30" % key
+                    " to method salvar_using_post31" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'persist' is set
         if ('persist' not in params) or (params['persist'] is None):
-            raise ValueError("Missing the required parameter `persist` when calling `salvar_using_post30`")
+            raise ValueError("Missing the required parameter `persist` when calling `salvar_using_post31`")
 
         resource_path = '/api/tipos-oportunidades'.replace('{format}', 'json')
         path_params = {}

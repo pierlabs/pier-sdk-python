@@ -128,7 +128,7 @@ class GlobaltagtransferenciabancariaApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def atualizar_using_put1(self, id, update, **kwargs):
+    def atualizar_using_put2(self, id, update, **kwargs):
         """
         {{{conta_bancaria_resource_atualizar}}}
         {{{conta_bancaria_resource_atualizar_notes}}}
@@ -139,7 +139,7 @@ class GlobaltagtransferenciabancariaApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.atualizar_using_put1(id, update, callback=callback_function)
+        >>> thread = api.atualizar_using_put2(id, update, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -158,17 +158,17 @@ class GlobaltagtransferenciabancariaApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method atualizar_using_put1" % key
+                    " to method atualizar_using_put2" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `atualizar_using_put1`")
+            raise ValueError("Missing the required parameter `id` when calling `atualizar_using_put2`")
         # verify the required parameter 'update' is set
         if ('update' not in params) or (params['update'] is None):
-            raise ValueError("Missing the required parameter `update` when calling `atualizar_using_put1`")
+            raise ValueError("Missing the required parameter `update` when calling `atualizar_using_put2`")
 
         resource_path = '/api/contas-bancarias-portador/{id}'.replace('{format}', 'json')
         path_params = {}
@@ -525,7 +525,7 @@ class GlobaltagtransferenciabancariaApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get13(self, id, **kwargs):
+    def consultar_using_get15(self, id, **kwargs):
         """
         {{{conta_bancaria_resource_consultar}}}
         {{{conta_bancaria_resource_consultar_notes}}}
@@ -536,7 +536,7 @@ class GlobaltagtransferenciabancariaApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get13(id, callback=callback_function)
+        >>> thread = api.consultar_using_get15(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -554,14 +554,14 @@ class GlobaltagtransferenciabancariaApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get13" % key
+                    " to method consultar_using_get15" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get13`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get15`")
 
         resource_path = '/api/contas-bancarias-portador/{id}'.replace('{format}', 'json')
         path_params = {}
@@ -602,7 +602,7 @@ class GlobaltagtransferenciabancariaApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get48(self, id, id_transferencia, **kwargs):
+    def consultar_using_get50(self, id, id_transferencia, **kwargs):
         """
         {{{transferencia_bancaria_resource_consultar}}}
         {{{transferencia_bancaria_resource_consultar_notes}}}
@@ -613,7 +613,7 @@ class GlobaltagtransferenciabancariaApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get48(id, id_transferencia, callback=callback_function)
+        >>> thread = api.consultar_using_get50(id, id_transferencia, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -633,17 +633,17 @@ class GlobaltagtransferenciabancariaApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get48" % key
+                    " to method consultar_using_get50" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get48`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get50`")
         # verify the required parameter 'id_transferencia' is set
         if ('id_transferencia' not in params) or (params['id_transferencia'] is None):
-            raise ValueError("Missing the required parameter `id_transferencia` when calling `consultar_using_get48`")
+            raise ValueError("Missing the required parameter `id_transferencia` when calling `consultar_using_get50`")
 
         resource_path = '/api/contas/{id}/transferencias-creditos-contas-bancarias/{id_transferencia}'.replace('{format}', 'json')
         path_params = {}
@@ -780,7 +780,7 @@ class GlobaltagtransferenciabancariaApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get16(self, **kwargs):
+    def listar_using_get17(self, **kwargs):
         """
         {{{conta_bancaria_resource_listar}}}
         {{{conta_bancaria_resource_listar_notes}}}
@@ -791,7 +791,7 @@ class GlobaltagtransferenciabancariaApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get16(callback=callback_function)
+        >>> thread = api.listar_using_get17(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -821,7 +821,7 @@ class GlobaltagtransferenciabancariaApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get16" % key
+                    " to method listar_using_get17" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -890,7 +890,7 @@ class GlobaltagtransferenciabancariaApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get59(self, id, **kwargs):
+    def listar_using_get62(self, id, **kwargs):
         """
         {{{transferencia_bancaria_resource_listar}}}
         {{{transferencia_bancaria_resource_listar_notes}}}
@@ -901,7 +901,7 @@ class GlobaltagtransferenciabancariaApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get59(id, callback=callback_function)
+        >>> thread = api.listar_using_get62(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -923,14 +923,14 @@ class GlobaltagtransferenciabancariaApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get59" % key
+                    " to method listar_using_get62" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `listar_using_get59`")
+            raise ValueError("Missing the required parameter `id` when calling `listar_using_get62`")
 
         resource_path = '/api/contas/{id}/transferencias-creditos-contas-bancarias'.replace('{format}', 'json')
         path_params = {}
@@ -1062,7 +1062,7 @@ class GlobaltagtransferenciabancariaApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def salvar_using_post7(self, persist, **kwargs):
+    def salvar_using_post8(self, persist, **kwargs):
         """
         {{{conta_bancaria_resource_salvar}}}
         {{{conta_bancaria_resource_salvar_notes}}}
@@ -1073,7 +1073,7 @@ class GlobaltagtransferenciabancariaApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.salvar_using_post7(persist, callback=callback_function)
+        >>> thread = api.salvar_using_post8(persist, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -1091,14 +1091,14 @@ class GlobaltagtransferenciabancariaApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method salvar_using_post7" % key
+                    " to method salvar_using_post8" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'persist' is set
         if ('persist' not in params) or (params['persist'] is None):
-            raise ValueError("Missing the required parameter `persist` when calling `salvar_using_post7`")
+            raise ValueError("Missing the required parameter `persist` when calling `salvar_using_post8`")
 
         resource_path = '/api/contas-bancarias-portador'.replace('{format}', 'json')
         path_params = {}

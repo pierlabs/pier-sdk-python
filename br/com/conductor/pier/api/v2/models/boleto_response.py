@@ -70,7 +70,8 @@ class BoletoResponse(object):
             'id': 'int',
             'id_conta': 'int',
             'endereco_cobranca_beneficiario': 'str',
-            'status': 'int'
+            'status': 'int',
+            'boleto_registrado': 'bool'
         }
 
         self.attribute_map = {
@@ -107,7 +108,8 @@ class BoletoResponse(object):
             'id': 'id',
             'id_conta': 'idConta',
             'endereco_cobranca_beneficiario': 'enderecoCobrancaBeneficiario',
-            'status': 'status'
+            'status': 'status',
+            'boleto_registrado': 'boletoRegistrado'
         }
 
         self._numero_do_documento = None
@@ -144,6 +146,7 @@ class BoletoResponse(object):
         self._id_conta = None
         self._endereco_cobranca_beneficiario = None
         self._status = None
+        self._boleto_registrado = None
 
     @property
     def numero_do_documento(self):
@@ -892,6 +895,28 @@ class BoletoResponse(object):
         :type: int
         """
         self._status = status
+
+    @property
+    def boleto_registrado(self):
+        """
+        Gets the boleto_registrado of this BoletoResponse.
+        {{{boleto_response_registrado_value}}}
+
+        :return: The boleto_registrado of this BoletoResponse.
+        :rtype: bool
+        """
+        return self._boleto_registrado
+
+    @boleto_registrado.setter
+    def boleto_registrado(self, boleto_registrado):
+        """
+        Sets the boleto_registrado of this BoletoResponse.
+        {{{boleto_response_registrado_value}}}
+
+        :param boleto_registrado: The boleto_registrado of this BoletoResponse.
+        :type: bool
+        """
+        self._boleto_registrado = boleto_registrado
 
     def to_dict(self):
         """

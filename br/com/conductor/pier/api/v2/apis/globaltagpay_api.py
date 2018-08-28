@@ -128,7 +128,7 @@ class GlobaltagpayApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def atualizar_using_put(self, device_id, id, update, **kwargs):
+    def atualizar_using_put1(self, device_id, id, update, **kwargs):
         """
         {{{cartao_pay_resource_atualizar}}}
         {{{cartao_pay_resource_atualizar_notes}}}
@@ -139,7 +139,7 @@ class GlobaltagpayApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.atualizar_using_put(device_id, id, update, callback=callback_function)
+        >>> thread = api.atualizar_using_put1(device_id, id, update, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -159,20 +159,20 @@ class GlobaltagpayApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method atualizar_using_put" % key
+                    " to method atualizar_using_put1" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'device_id' is set
         if ('device_id' not in params) or (params['device_id'] is None):
-            raise ValueError("Missing the required parameter `device_id` when calling `atualizar_using_put`")
+            raise ValueError("Missing the required parameter `device_id` when calling `atualizar_using_put1`")
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `atualizar_using_put`")
+            raise ValueError("Missing the required parameter `id` when calling `atualizar_using_put1`")
         # verify the required parameter 'update' is set
         if ('update' not in params) or (params['update'] is None):
-            raise ValueError("Missing the required parameter `update` when calling `atualizar_using_put`")
+            raise ValueError("Missing the required parameter `update` when calling `atualizar_using_put1`")
 
         resource_path = '/api/cartoes-tokenizados/{id}'.replace('{format}', 'json')
         path_params = {}
@@ -306,7 +306,7 @@ class GlobaltagpayApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get9(self, device_id, id, **kwargs):
+    def consultar_using_get11(self, device_id, id, **kwargs):
         """
         {{{cartao_pay_resource_consultar}}}
         {{{cartao_pay_resource_consultar_notes}}}
@@ -317,7 +317,7 @@ class GlobaltagpayApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get9(device_id, id, callback=callback_function)
+        >>> thread = api.consultar_using_get11(device_id, id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -336,17 +336,17 @@ class GlobaltagpayApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get9" % key
+                    " to method consultar_using_get11" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'device_id' is set
         if ('device_id' not in params) or (params['device_id'] is None):
-            raise ValueError("Missing the required parameter `device_id` when calling `consultar_using_get9`")
+            raise ValueError("Missing the required parameter `device_id` when calling `consultar_using_get11`")
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get9`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get11`")
 
         resource_path = '/api/cartoes-tokenizados/{id}'.replace('{format}', 'json')
         path_params = {}
@@ -744,7 +744,7 @@ class GlobaltagpayApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get10(self, **kwargs):
+    def listar_using_get11(self, **kwargs):
         """
         {{{cartao_pay_resource_listar}}}
         {{{cartao_pay_resource_listar_notes}}}
@@ -755,7 +755,7 @@ class GlobaltagpayApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get10(callback=callback_function)
+        >>> thread = api.listar_using_get11(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -778,7 +778,7 @@ class GlobaltagpayApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get10" % key
+                    " to method listar_using_get11" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -833,7 +833,7 @@ class GlobaltagpayApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def salvar_using_post5(self, device_id, persist, **kwargs):
+    def salvar_using_post6(self, device_id, persist, **kwargs):
         """
         {{{cartao_pay_resource_salvar}}}
         {{{cartao_pay_resource_salvar_notes}}}
@@ -844,7 +844,7 @@ class GlobaltagpayApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.salvar_using_post5(device_id, persist, callback=callback_function)
+        >>> thread = api.salvar_using_post6(device_id, persist, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -863,17 +863,17 @@ class GlobaltagpayApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method salvar_using_post5" % key
+                    " to method salvar_using_post6" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'device_id' is set
         if ('device_id' not in params) or (params['device_id'] is None):
-            raise ValueError("Missing the required parameter `device_id` when calling `salvar_using_post5`")
+            raise ValueError("Missing the required parameter `device_id` when calling `salvar_using_post6`")
         # verify the required parameter 'persist' is set
         if ('persist' not in params) or (params['persist'] is None):
-            raise ValueError("Missing the required parameter `persist` when calling `salvar_using_post5`")
+            raise ValueError("Missing the required parameter `persist` when calling `salvar_using_post6`")
 
         resource_path = '/api/cartoes-tokenizados'.replace('{format}', 'json')
         path_params = {}

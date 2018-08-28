@@ -122,7 +122,7 @@ class GlobaltaginscricaoapnApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get30(self, **kwargs):
+    def listar_using_get31(self, **kwargs):
         """
         {{{inscricao_apn_recurso_listar}}}
         {{{inscricao_apn_recurso_listar_notas}}}
@@ -133,7 +133,7 @@ class GlobaltaginscricaoapnApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get30(callback=callback_function)
+        >>> thread = api.listar_using_get31(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -159,7 +159,7 @@ class GlobaltaginscricaoapnApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get30" % key
+                    " to method listar_using_get31" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -220,7 +220,7 @@ class GlobaltaginscricaoapnApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def salvar_using_post14(self, inscricao_persist, **kwargs):
+    def salvar_using_post15(self, inscricao_persist, **kwargs):
         """
         {{{inscricao_apn_recurso_salvar}}}
         {{{inscricao_apn_recurso_salvar_notas}}}
@@ -231,7 +231,7 @@ class GlobaltaginscricaoapnApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.salvar_using_post14(inscricao_persist, callback=callback_function)
+        >>> thread = api.salvar_using_post15(inscricao_persist, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -249,14 +249,14 @@ class GlobaltaginscricaoapnApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method salvar_using_post14" % key
+                    " to method salvar_using_post15" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'inscricao_persist' is set
         if ('inscricao_persist' not in params) or (params['inscricao_persist'] is None):
-            raise ValueError("Missing the required parameter `inscricao_persist` when calling `salvar_using_post14`")
+            raise ValueError("Missing the required parameter `inscricao_persist` when calling `salvar_using_post15`")
 
         resource_path = '/api/inscricoes-apn'.replace('{format}', 'json')
         path_params = {}

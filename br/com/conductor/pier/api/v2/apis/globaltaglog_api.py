@@ -45,7 +45,7 @@ class GlobaltaglogApi(object):
                 config.api_client = ApiClient()
             self.api_client = config.api_client
 
-    def salvar_using_post18(self, log_acesso_usuario_persist, **kwargs):
+    def salvar_using_post19(self, log_acesso_usuario_persist, **kwargs):
         """
         {{{log_acesso_usuario_recurso_salvar}}}
         {{{log_acesso_usuario_recurso_salvar_notas}}}
@@ -56,7 +56,7 @@ class GlobaltaglogApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.salvar_using_post18(log_acesso_usuario_persist, callback=callback_function)
+        >>> thread = api.salvar_using_post19(log_acesso_usuario_persist, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -74,14 +74,14 @@ class GlobaltaglogApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method salvar_using_post18" % key
+                    " to method salvar_using_post19" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'log_acesso_usuario_persist' is set
         if ('log_acesso_usuario_persist' not in params) or (params['log_acesso_usuario_persist'] is None):
-            raise ValueError("Missing the required parameter `log_acesso_usuario_persist` when calling `salvar_using_post18`")
+            raise ValueError("Missing the required parameter `log_acesso_usuario_persist` when calling `salvar_using_post19`")
 
         resource_path = '/api/logs/log-acessos-usuario'.replace('{format}', 'json')
         path_params = {}

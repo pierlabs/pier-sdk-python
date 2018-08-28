@@ -49,6 +49,7 @@ class CompraContestadaTransacaoResponse(object):
             'data_contestacao': 'datetime',
             'data_envio_cb': 'str',
             'data_transacao': 'datetime',
+            'historico': 'str',
             'id_compra_contestada': 'int',
             'internacional': 'int',
             'mcc': 'str',
@@ -84,6 +85,7 @@ class CompraContestadaTransacaoResponse(object):
             'data_contestacao': 'dataContestacao',
             'data_envio_cb': 'dataEnvioCB',
             'data_transacao': 'dataTransacao',
+            'historico': 'historico',
             'id_compra_contestada': 'idCompraContestada',
             'internacional': 'internacional',
             'mcc': 'mcc',
@@ -118,6 +120,7 @@ class CompraContestadaTransacaoResponse(object):
         self._data_contestacao = None
         self._data_envio_cb = None
         self._data_transacao = None
+        self._historico = None
         self._id_compra_contestada = None
         self._internacional = None
         self._mcc = None
@@ -402,6 +405,28 @@ class CompraContestadaTransacaoResponse(object):
         :type: datetime
         """
         self._data_transacao = data_transacao
+
+    @property
+    def historico(self):
+        """
+        Gets the historico of this CompraContestadaTransacaoResponse.
+
+
+        :return: The historico of this CompraContestadaTransacaoResponse.
+        :rtype: str
+        """
+        return self._historico
+
+    @historico.setter
+    def historico(self, historico):
+        """
+        Sets the historico of this CompraContestadaTransacaoResponse.
+
+
+        :param historico: The historico of this CompraContestadaTransacaoResponse.
+        :type: str
+        """
+        self._historico = historico
 
     @property
     def id_compra_contestada(self):

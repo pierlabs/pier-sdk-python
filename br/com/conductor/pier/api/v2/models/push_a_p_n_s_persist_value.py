@@ -231,7 +231,7 @@ class PushAPNSPersistValue(object):
     def tipo_evento(self):
         """
         Gets the tipo_evento of this PushAPNSPersistValue.
-        {{{push_a_p_n_s_persist_tipo_evento_value}}}
+        {{{push_f_c_m_g_c_m_persist_tipo_evento_value}}}
 
         :return: The tipo_evento of this PushAPNSPersistValue.
         :rtype: str
@@ -242,12 +242,12 @@ class PushAPNSPersistValue(object):
     def tipo_evento(self, tipo_evento):
         """
         Sets the tipo_evento of this PushAPNSPersistValue.
-        {{{push_a_p_n_s_persist_tipo_evento_value}}}
+        {{{push_f_c_m_g_c_m_persist_tipo_evento_value}}}
 
         :param tipo_evento: The tipo_evento of this PushAPNSPersistValue.
         :type: str
         """
-        allowed_values = ["RISCO_FRAUDE", "CODIGO_SEGURANCA", "OUTROS"]
+        allowed_values = ["RISCO_FRAUDE", "CODIGO_SEGURANCA", "OUTROS", "OTP_3D_SECURE"]
         if tipo_evento not in allowed_values:
             raise ValueError(
                 "Invalid value for `tipo_evento`, must be one of {0}"
@@ -259,7 +259,7 @@ class PushAPNSPersistValue(object):
     def icone(self):
         """
         Gets the icone of this PushAPNSPersistValue.
-        {{{push_a_p_n_s_persist_icone_value}}}
+        {{{push_f_c_m_g_c_m_persist_icone_value}}}
 
         :return: The icone of this PushAPNSPersistValue.
         :rtype: str
@@ -270,7 +270,7 @@ class PushAPNSPersistValue(object):
     def icone(self, icone):
         """
         Sets the icone of this PushAPNSPersistValue.
-        {{{push_a_p_n_s_persist_icone_value}}}
+        {{{push_f_c_m_g_c_m_persist_icone_value}}}
 
         :param icone: The icone of this PushAPNSPersistValue.
         :type: str
@@ -281,7 +281,7 @@ class PushAPNSPersistValue(object):
     def som(self):
         """
         Gets the som of this PushAPNSPersistValue.
-        {{{push_a_p_n_s_persist_som_value}}}
+        {{{push_f_c_m_g_c_m_persist_som_value}}}
 
         :return: The som of this PushAPNSPersistValue.
         :rtype: str
@@ -292,7 +292,7 @@ class PushAPNSPersistValue(object):
     def som(self, som):
         """
         Sets the som of this PushAPNSPersistValue.
-        {{{push_a_p_n_s_persist_som_value}}}
+        {{{push_f_c_m_g_c_m_persist_som_value}}}
 
         :param som: The som of this PushAPNSPersistValue.
         :type: str

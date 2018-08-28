@@ -40,20 +40,23 @@ class TokenPersistValue(object):
             'token': 'str',
             'base': 'int',
             'owner': 'str',
-            'criado_por': 'str'
+            'criado_por': 'str',
+            'id_aplicacao': 'int'
         }
 
         self.attribute_map = {
             'token': 'token',
             'base': 'base',
             'owner': 'owner',
-            'criado_por': 'criadoPor'
+            'criado_por': 'criadoPor',
+            'id_aplicacao': 'idAplicacao'
         }
 
         self._token = None
         self._base = None
         self._owner = None
         self._criado_por = None
+        self._id_aplicacao = None
 
     @property
     def token(self):
@@ -142,6 +145,28 @@ class TokenPersistValue(object):
         :type: str
         """
         self._criado_por = criado_por
+
+    @property
+    def id_aplicacao(self):
+        """
+        Gets the id_aplicacao of this TokenPersistValue.
+        {{{token_dto_id_application_value}}}
+
+        :return: The id_aplicacao of this TokenPersistValue.
+        :rtype: int
+        """
+        return self._id_aplicacao
+
+    @id_aplicacao.setter
+    def id_aplicacao(self, id_aplicacao):
+        """
+        Sets the id_aplicacao of this TokenPersistValue.
+        {{{token_dto_id_application_value}}}
+
+        :param id_aplicacao: The id_aplicacao of this TokenPersistValue.
+        :type: int
+        """
+        self._id_aplicacao = id_aplicacao
 
     def to_dict(self):
         """

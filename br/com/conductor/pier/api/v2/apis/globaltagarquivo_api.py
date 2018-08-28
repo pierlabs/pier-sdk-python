@@ -45,7 +45,7 @@ class GlobaltagarquivoApi(object):
                 config.api_client = ApiClient()
             self.api_client = config.api_client
 
-    def consultar_using_get5(self, id, **kwargs):
+    def consultar_using_get6(self, id, **kwargs):
         """
         {{{arquivo_resource_consultar}}}
         {{{arquivo_resource_consultar_notes}}}
@@ -56,7 +56,7 @@ class GlobaltagarquivoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get5(id, callback=callback_function)
+        >>> thread = api.consultar_using_get6(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -74,14 +74,14 @@ class GlobaltagarquivoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get5" % key
+                    " to method consultar_using_get6" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get5`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get6`")
 
         resource_path = '/api/arquivos/{id}'.replace('{format}', 'json')
         path_params = {}
@@ -454,7 +454,7 @@ class GlobaltagarquivoApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get5(self, id, **kwargs):
+    def listar_using_get6(self, id, **kwargs):
         """
         {{{arquivo_a_u_d_resource_listar}}}
         {{{arquivo_a_u_d_resource_listar_notes}}}
@@ -465,7 +465,7 @@ class GlobaltagarquivoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get5(id, callback=callback_function)
+        >>> thread = api.listar_using_get6(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -485,14 +485,14 @@ class GlobaltagarquivoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get5" % key
+                    " to method listar_using_get6" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `listar_using_get5`")
+            raise ValueError("Missing the required parameter `id` when calling `listar_using_get6`")
 
         resource_path = '/api/arquivos/{id}/auditorias'.replace('{format}', 'json')
         path_params = {}
@@ -537,7 +537,7 @@ class GlobaltagarquivoApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get6(self, **kwargs):
+    def listar_using_get7(self, **kwargs):
         """
         {{{arquivo_resource_listar}}}
         {{{arquivo_resource_listar_notes}}}
@@ -548,7 +548,7 @@ class GlobaltagarquivoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get6(callback=callback_function)
+        >>> thread = api.listar_using_get7(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -572,7 +572,7 @@ class GlobaltagarquivoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get6" % key
+                    " to method listar_using_get7" % key
                 )
             params[key] = val
         del params['kwargs']

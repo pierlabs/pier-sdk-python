@@ -37,6 +37,7 @@ class ParametroProdutoResponse(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
+            'id': 'int',
             'id_produto': 'int',
             'tipo_origem_transacao': 'str',
             'descricao': 'str',
@@ -45,6 +46,7 @@ class ParametroProdutoResponse(object):
         }
 
         self.attribute_map = {
+            'id': 'id',
             'id_produto': 'idProduto',
             'tipo_origem_transacao': 'tipoOrigemTransacao',
             'descricao': 'descricao',
@@ -52,11 +54,34 @@ class ParametroProdutoResponse(object):
             'data_validade': 'dataValidade'
         }
 
+        self._id = None
         self._id_produto = None
         self._tipo_origem_transacao = None
         self._descricao = None
         self._valor_parametro = None
         self._data_validade = None
+
+    @property
+    def id(self):
+        """
+        Gets the id of this ParametroProdutoResponse.
+        {{{parametro_produto_response_id_value}}}
+
+        :return: The id of this ParametroProdutoResponse.
+        :rtype: int
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """
+        Sets the id of this ParametroProdutoResponse.
+        {{{parametro_produto_response_id_value}}}
+
+        :param id: The id of this ParametroProdutoResponse.
+        :type: int
+        """
+        self._id = id
 
     @property
     def id_produto(self):

@@ -128,7 +128,7 @@ class GlobaltagdocumentoApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def atualizar_using_put3(self, id, persist, **kwargs):
+    def atualizar_using_put4(self, id, persist, **kwargs):
         """
         {{{documento_template_resource_atualizar}}}
         {{{documento_template_resource_atualizar_notes}}}
@@ -139,7 +139,7 @@ class GlobaltagdocumentoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.atualizar_using_put3(id, persist, callback=callback_function)
+        >>> thread = api.atualizar_using_put4(id, persist, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -158,17 +158,17 @@ class GlobaltagdocumentoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method atualizar_using_put3" % key
+                    " to method atualizar_using_put4" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `atualizar_using_put3`")
+            raise ValueError("Missing the required parameter `id` when calling `atualizar_using_put4`")
         # verify the required parameter 'persist' is set
         if ('persist' not in params) or (params['persist'] is None):
-            raise ValueError("Missing the required parameter `persist` when calling `atualizar_using_put3`")
+            raise ValueError("Missing the required parameter `persist` when calling `atualizar_using_put4`")
 
         resource_path = '/api/templates-documentos/{id}'.replace('{format}', 'json')
         path_params = {}
@@ -211,7 +211,7 @@ class GlobaltagdocumentoApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get17(self, id, **kwargs):
+    def consultar_using_get19(self, id, **kwargs):
         """
         {{{documento_resource_consultar}}}
         {{{documento_resource_consultar_notes}}}
@@ -222,7 +222,7 @@ class GlobaltagdocumentoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get17(id, callback=callback_function)
+        >>> thread = api.consultar_using_get19(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -240,14 +240,14 @@ class GlobaltagdocumentoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get17" % key
+                    " to method consultar_using_get19" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get17`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get19`")
 
         resource_path = '/api/documentos/{id}'.replace('{format}', 'json')
         path_params = {}
@@ -288,7 +288,7 @@ class GlobaltagdocumentoApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get18(self, id, **kwargs):
+    def consultar_using_get20(self, id, **kwargs):
         """
         {{{documento_template_resource_consultar}}}
         {{{documento_template_resource_consultar_notes}}}
@@ -299,7 +299,7 @@ class GlobaltagdocumentoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get18(id, callback=callback_function)
+        >>> thread = api.consultar_using_get20(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -317,14 +317,14 @@ class GlobaltagdocumentoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get18" % key
+                    " to method consultar_using_get20" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get18`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get20`")
 
         resource_path = '/api/templates-documentos/{id}'.replace('{format}', 'json')
         path_params = {}
@@ -365,7 +365,7 @@ class GlobaltagdocumentoApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get47(self, id, **kwargs):
+    def consultar_using_get49(self, id, **kwargs):
         """
         {{{tipo_template_resource_consultar}}}
         {{{tipo_template_resource_consultar_notes}}}
@@ -376,7 +376,7 @@ class GlobaltagdocumentoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get47(id, callback=callback_function)
+        >>> thread = api.consultar_using_get49(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -394,14 +394,14 @@ class GlobaltagdocumentoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get47" % key
+                    " to method consultar_using_get49" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get47`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get49`")
 
         resource_path = '/api/tipos-templates/{id}'.replace('{format}', 'json')
         path_params = {}
@@ -519,7 +519,7 @@ class GlobaltagdocumentoApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get21(self, **kwargs):
+    def listar_using_get22(self, **kwargs):
         """
         {{{documento_resource_listar}}}
         {{{documento_resource_listar_notes}}}
@@ -530,7 +530,7 @@ class GlobaltagdocumentoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get21(callback=callback_function)
+        >>> thread = api.listar_using_get22(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -553,7 +553,7 @@ class GlobaltagdocumentoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get21" % key
+                    " to method listar_using_get22" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -608,7 +608,7 @@ class GlobaltagdocumentoApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get22(self, **kwargs):
+    def listar_using_get23(self, **kwargs):
         """
         {{{documento_template_resource_listar}}}
         {{{documento_template_resource_listar_notes}}}
@@ -619,7 +619,7 @@ class GlobaltagdocumentoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get22(callback=callback_function)
+        >>> thread = api.listar_using_get23(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -640,7 +640,7 @@ class GlobaltagdocumentoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get22" % key
+                    " to method listar_using_get23" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -691,7 +691,7 @@ class GlobaltagdocumentoApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get57(self, **kwargs):
+    def listar_using_get60(self, **kwargs):
         """
         {{{tipo_template_resource_listar}}}
         {{{tipo_template_resource_listar_notes}}}
@@ -702,7 +702,7 @@ class GlobaltagdocumentoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get57(callback=callback_function)
+        >>> thread = api.listar_using_get60(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -722,7 +722,7 @@ class GlobaltagdocumentoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get57" % key
+                    " to method listar_using_get60" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -771,7 +771,7 @@ class GlobaltagdocumentoApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def salvar_using_post11(self, persist, **kwargs):
+    def salvar_using_post12(self, persist, **kwargs):
         """
         {{{documento_resource_salvar}}}
         {{{documento_resource_salvar_notes}}}
@@ -782,7 +782,7 @@ class GlobaltagdocumentoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.salvar_using_post11(persist, callback=callback_function)
+        >>> thread = api.salvar_using_post12(persist, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -800,14 +800,14 @@ class GlobaltagdocumentoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method salvar_using_post11" % key
+                    " to method salvar_using_post12" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'persist' is set
         if ('persist' not in params) or (params['persist'] is None):
-            raise ValueError("Missing the required parameter `persist` when calling `salvar_using_post11`")
+            raise ValueError("Missing the required parameter `persist` when calling `salvar_using_post12`")
 
         resource_path = '/api/documentos'.replace('{format}', 'json')
         path_params = {}
@@ -848,7 +848,7 @@ class GlobaltagdocumentoApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def salvar_using_post12(self, persist, **kwargs):
+    def salvar_using_post13(self, persist, **kwargs):
         """
         {{{documento_template_resource_salvar}}}
         {{{documento_template_resource_salvar_notes}}}
@@ -859,7 +859,7 @@ class GlobaltagdocumentoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.salvar_using_post12(persist, callback=callback_function)
+        >>> thread = api.salvar_using_post13(persist, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -877,14 +877,14 @@ class GlobaltagdocumentoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method salvar_using_post12" % key
+                    " to method salvar_using_post13" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'persist' is set
         if ('persist' not in params) or (params['persist'] is None):
-            raise ValueError("Missing the required parameter `persist` when calling `salvar_using_post12`")
+            raise ValueError("Missing the required parameter `persist` when calling `salvar_using_post13`")
 
         resource_path = '/api/templates-documentos'.replace('{format}', 'json')
         path_params = {}
@@ -925,7 +925,7 @@ class GlobaltagdocumentoApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def salvar_using_post31(self, persist, **kwargs):
+    def salvar_using_post32(self, persist, **kwargs):
         """
         {{{tipo_template_resource_salvar}}}
         {{{tipo_template_resource_salvar_notes}}}
@@ -936,7 +936,7 @@ class GlobaltagdocumentoApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.salvar_using_post31(persist, callback=callback_function)
+        >>> thread = api.salvar_using_post32(persist, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -954,14 +954,14 @@ class GlobaltagdocumentoApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method salvar_using_post31" % key
+                    " to method salvar_using_post32" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'persist' is set
         if ('persist' not in params) or (params['persist'] is None):
-            raise ValueError("Missing the required parameter `persist` when calling `salvar_using_post31`")
+            raise ValueError("Missing the required parameter `persist` when calling `salvar_using_post32`")
 
         resource_path = '/api/tipos-templates'.replace('{format}', 'json')
         path_params = {}

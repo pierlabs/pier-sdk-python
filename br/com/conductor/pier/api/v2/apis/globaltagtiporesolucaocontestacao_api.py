@@ -45,6 +45,101 @@ class GlobaltagtiporesolucaocontestacaoApi(object):
                 config.api_client = ApiClient()
             self.api_client = config.api_client
 
+    def listar_status_contestacao_using_get(self, **kwargs):
+        """
+        {{{status_contestacao_resource_listar_status_contestacao}}}
+        {{{status_contestacao_resource_listar_status_contestacao_notes}}}
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.listar_status_contestacao_using_get(callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param list[str] sort: {{{global_menssagem_sort_sort}}}
+        :param int page: {{{global_menssagem_sort_page_value}}}
+        :param int limit: {{{global_menssagem_sort_limit}}}
+        :param int id_status_contestacao: {{{status_contestacao_request_idstatuscontestacao_value}}}
+        :param int id_status_contestacao_origem: {{{status_contestacao_request_idstatuscontestacaoOrigem_value}}}
+        :param str descricao: {{{status_contestacao_request_descricao_value}}}
+        :param int flag_permite_alteracao: {{{status_contestacao_request_flagpermitealteracao_value}}}
+        :param int flag_sistema: {{{status_contestacao_request_flagsistema_value}}}
+        :return: PageStatusContestacaoResponse
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['sort', 'page', 'limit', 'id_status_contestacao', 'id_status_contestacao_origem', 'descricao', 'flag_permite_alteracao', 'flag_sistema']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method listar_status_contestacao_using_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+
+        resource_path = '/api/status-contestacoes'.replace('{format}', 'json')
+        path_params = {}
+
+        query_params = {}
+        if 'sort' in params:
+            query_params['sort'] = params['sort']
+        if 'page' in params:
+            query_params['page'] = params['page']
+        if 'limit' in params:
+            query_params['limit'] = params['limit']
+        if 'id_status_contestacao' in params:
+            query_params['idStatusContestacao'] = params['id_status_contestacao']
+        if 'id_status_contestacao_origem' in params:
+            query_params['idStatusContestacaoOrigem'] = params['id_status_contestacao_origem']
+        if 'descricao' in params:
+            query_params['descricao'] = params['descricao']
+        if 'flag_permite_alteracao' in params:
+            query_params['flagPermiteAlteracao'] = params['flag_permite_alteracao']
+        if 'flag_sistema' in params:
+            query_params['flagSistema'] = params['flag_sistema']
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = []
+
+        response = self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='PageStatusContestacaoResponse',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
     def listar_tipo_resolucao_contestacao_using_get(self, **kwargs):
         """
         {{{tipo_resolucao_contestacao_resource_listar_tipo_contestacao}}}

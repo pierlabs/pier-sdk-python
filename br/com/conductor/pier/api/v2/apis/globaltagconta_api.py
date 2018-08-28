@@ -64,7 +64,6 @@ class GlobaltagcontaApi(object):
         :param int id_tipo_ajuste: {{{ajuste_persist_id_tipo_ajuste_value}}} (required)
         :param str data_ajuste: {{{ajuste_persist_data_ajuste_value}}} (required)
         :param float valor_ajuste: {{{ajuste_persist_valor_ajuste_value}}} (required)
-        :param str authorization: Authorization
         :param str identificador_externo: {{{ajuste_persist_identificador_externo_value}}}
         :param int id_transacao_original: {{{ajuste_persist_id_transacao_original}}}
         :return: AjusteFinanceiroResponse
@@ -72,7 +71,7 @@ class GlobaltagcontaApi(object):
                  returns the request thread.
         """
 
-        all_params = ['id', 'id_tipo_ajuste', 'data_ajuste', 'valor_ajuste', 'authorization', 'identificador_externo', 'id_transacao_original']
+        all_params = ['id', 'id_tipo_ajuste', 'data_ajuste', 'valor_ajuste', 'identificador_externo', 'id_transacao_original']
         all_params.append('callback')
 
         params = locals()
@@ -116,8 +115,6 @@ class GlobaltagcontaApi(object):
             query_params['idTransacaoOriginal'] = params['id_transacao_original']
 
         header_params = {}
-        if 'authorization' in params:
-            header_params['Authorization'] = params['authorization']
 
         form_params = []
         local_var_files = {}
@@ -166,13 +163,12 @@ class GlobaltagcontaApi(object):
             for asynchronous request. (optional)
         :param int id: {{{conta_resource_alterar_produto_param_id}}} (required)
         :param AlterarProdutoRequest request: request (required)
-        :param str authorization: Authorization
         :return: str
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['id', 'request', 'authorization']
+        all_params = ['id', 'request']
         all_params.append('callback')
 
         params = locals()
@@ -200,8 +196,6 @@ class GlobaltagcontaApi(object):
         query_params = {}
 
         header_params = {}
-        if 'authorization' in params:
-            header_params['Authorization'] = params['authorization']
 
         form_params = []
         local_var_files = {}
@@ -252,13 +246,12 @@ class GlobaltagcontaApi(object):
             for asynchronous request. (optional)
         :param int id: {{{conta_resource_alterar_titular_param_id_conta}}} (required)
         :param int id_pessoa: {{{conta_resource_alterar_titular_param_id_pessoa}}} (required)
-        :param str authorization: Authorization
         :return: ContaResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['id', 'id_pessoa', 'authorization']
+        all_params = ['id', 'id_pessoa']
         all_params.append('callback')
 
         params = locals()
@@ -288,8 +281,6 @@ class GlobaltagcontaApi(object):
             query_params['id_pessoa'] = params['id_pessoa']
 
         header_params = {}
-        if 'authorization' in params:
-            header_params['Authorization'] = params['authorization']
 
         form_params = []
         local_var_files = {}
@@ -338,13 +329,12 @@ class GlobaltagcontaApi(object):
             for asynchronous request. (optional)
         :param int id: {{{conta_resource_alterar_vencimento_param_id}}} (required)
         :param int novo_dia_vencimento: {{{conta_resource_alterar_vencimento_param_novo_dia_vencimento}}} (required)
-        :param str authorization: Authorization
         :return: ContaResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['id', 'novo_dia_vencimento', 'authorization']
+        all_params = ['id', 'novo_dia_vencimento']
         all_params.append('callback')
 
         params = locals()
@@ -374,8 +364,6 @@ class GlobaltagcontaApi(object):
             query_params['novo_dia_vencimento'] = params['novo_dia_vencimento']
 
         header_params = {}
-        if 'authorization' in params:
-            header_params['Authorization'] = params['authorization']
 
         form_params = []
         local_var_files = {}
@@ -424,7 +412,6 @@ class GlobaltagcontaApi(object):
             for asynchronous request. (optional)
         :param int id: {{{conta_resource_ativar_anuidade_param_id}}} (required)
         :param int id_anuidade: {{{anuidade_request_id_anuidade_value}}} (required)
-        :param str authorization: Authorization
         :param list[str] sort: {{{global_menssagem_sort_sort}}}
         :param int page: {{{global_menssagem_sort_page_value}}}
         :param int limit: {{{global_menssagem_sort_limit}}}
@@ -437,7 +424,7 @@ class GlobaltagcontaApi(object):
                  returns the request thread.
         """
 
-        all_params = ['id', 'id_anuidade', 'authorization', 'sort', 'page', 'limit', 'ddd', 'celular', 'id_operadora', 'id_origem_comercial']
+        all_params = ['id', 'id_anuidade', 'sort', 'page', 'limit', 'ddd', 'celular', 'id_operadora', 'id_origem_comercial']
         all_params.append('callback')
 
         params = locals()
@@ -481,8 +468,6 @@ class GlobaltagcontaApi(object):
             query_params['idOrigemComercial'] = params['id_origem_comercial']
 
         header_params = {}
-        if 'authorization' in params:
-            header_params['Authorization'] = params['authorization']
 
         form_params = []
         local_var_files = {}
@@ -530,13 +515,12 @@ class GlobaltagcontaApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int id: {{{conta_resource_ativar_envio_fatura_email_param_id}}} (required)
-        :param str authorization: Authorization
         :return: object
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['id', 'authorization']
+        all_params = ['id']
         all_params.append('callback')
 
         params = locals()
@@ -561,8 +545,6 @@ class GlobaltagcontaApi(object):
         query_params = {}
 
         header_params = {}
-        if 'authorization' in params:
-            header_params['Authorization'] = params['authorization']
 
         form_params = []
         local_var_files = {}
@@ -611,13 +593,12 @@ class GlobaltagcontaApi(object):
             for asynchronous request. (optional)
         :param int id: {{{conta_resource_bloquear_param_id}}} (required)
         :param int id_status: {{{conta_resource_bloquear_param_id_status}}} (required)
-        :param str authorization: Authorization
         :return: ContaResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['id', 'id_status', 'authorization']
+        all_params = ['id', 'id_status']
         all_params.append('callback')
 
         params = locals()
@@ -647,8 +628,6 @@ class GlobaltagcontaApi(object):
             query_params['id_status'] = params['id_status']
 
         header_params = {}
-        if 'authorization' in params:
-            header_params['Authorization'] = params['authorization']
 
         form_params = []
         local_var_files = {}
@@ -774,13 +753,12 @@ class GlobaltagcontaApi(object):
             for asynchronous request. (optional)
         :param int id: {{{conta_resource_cancelar_param_id}}} (required)
         :param int id_status: {{{conta_resource_cancelar_param_id_status}}} (required)
-        :param str authorization: Authorization
         :return: ContaResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['id', 'id_status', 'authorization']
+        all_params = ['id', 'id_status']
         all_params.append('callback')
 
         params = locals()
@@ -810,8 +788,6 @@ class GlobaltagcontaApi(object):
             query_params['id_status'] = params['id_status']
 
         header_params = {}
-        if 'authorization' in params:
-            header_params['Authorization'] = params['authorization']
 
         form_params = []
         local_var_files = {}
@@ -859,13 +835,12 @@ class GlobaltagcontaApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int id: {{{conta_resource_consultar_beneficio_pagamento_atraso_param_id}}} (required)
-        :param str authorization: Authorization
         :return: BeneficioPagamentoAtrasoResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['id', 'authorization']
+        all_params = ['id']
         all_params.append('callback')
 
         params = locals()
@@ -890,8 +865,6 @@ class GlobaltagcontaApi(object):
         query_params = {}
 
         header_params = {}
-        if 'authorization' in params:
-            header_params['Authorization'] = params['authorization']
 
         form_params = []
         local_var_files = {}
@@ -939,13 +912,12 @@ class GlobaltagcontaApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int id: {{{conta_resource_consultar_boleto_emitido_param_id}}} (required)
-        :param str authorization: Authorization
         :return: BoletoResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['id', 'authorization']
+        all_params = ['id']
         all_params.append('callback')
 
         params = locals()
@@ -970,8 +942,6 @@ class GlobaltagcontaApi(object):
         query_params = {}
 
         header_params = {}
-        if 'authorization' in params:
-            header_params['Authorization'] = params['authorization']
 
         form_params = []
         local_var_files = {}
@@ -1019,7 +989,6 @@ class GlobaltagcontaApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int id: {{{conta_resource_consultar_divida_atualizada_cliente_param_id}}} (required)
-        :param str authorization: Authorization
         :param list[str] sort: {{{global_menssagem_sort_sort}}}
         :param int page: {{{global_menssagem_sort_page_value}}}
         :param int limit: {{{global_menssagem_sort_limit}}}
@@ -1030,7 +999,7 @@ class GlobaltagcontaApi(object):
                  returns the request thread.
         """
 
-        all_params = ['id', 'authorization', 'sort', 'page', 'limit', 'data_vencimento', 'id_escritorio_cobranca']
+        all_params = ['id', 'sort', 'page', 'limit', 'data_vencimento', 'id_escritorio_cobranca']
         all_params.append('callback')
 
         params = locals()
@@ -1065,8 +1034,6 @@ class GlobaltagcontaApi(object):
             query_params['idEscritorioCobranca'] = params['id_escritorio_cobranca']
 
         header_params = {}
-        if 'authorization' in params:
-            header_params['Authorization'] = params['authorization']
 
         form_params = []
         local_var_files = {}
@@ -1114,7 +1081,6 @@ class GlobaltagcontaApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int id: {{{conta_resource_consultar_taxas_tarifas_param_id_conta}}} (required)
-        :param str authorization: Authorization
         :param list[str] sort: {{{global_menssagem_sort_sort}}}
         :param int page: {{{global_menssagem_sort_page_value}}}
         :param int limit: {{{global_menssagem_sort_limit}}}
@@ -1123,7 +1089,7 @@ class GlobaltagcontaApi(object):
                  returns the request thread.
         """
 
-        all_params = ['id', 'authorization', 'sort', 'page', 'limit']
+        all_params = ['id', 'sort', 'page', 'limit']
         all_params.append('callback')
 
         params = locals()
@@ -1154,8 +1120,6 @@ class GlobaltagcontaApi(object):
             query_params['limit'] = params['limit']
 
         header_params = {}
-        if 'authorization' in params:
-            header_params['Authorization'] = params['authorization']
 
         form_params = []
         local_var_files = {}
@@ -1270,7 +1234,7 @@ class GlobaltagcontaApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get14(self, id, **kwargs):
+    def consultar_using_get16(self, id, **kwargs):
         """
         {{{conta_resource_consultar}}}
         {{{conta_resource_consultar_notes}}}
@@ -1281,18 +1245,17 @@ class GlobaltagcontaApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get14(id, callback=callback_function)
+        >>> thread = api.consultar_using_get16(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int id: {{{conta_resource_consultar_param_id}}} (required)
-        :param str authorization: Authorization
         :return: ContaDetalheResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['id', 'authorization']
+        all_params = ['id']
         all_params.append('callback')
 
         params = locals()
@@ -1300,14 +1263,14 @@ class GlobaltagcontaApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get14" % key
+                    " to method consultar_using_get16" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get14`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get16`")
 
         resource_path = '/api/contas/{id}'.replace('{format}', 'json')
         path_params = {}
@@ -1317,8 +1280,6 @@ class GlobaltagcontaApi(object):
         query_params = {}
 
         header_params = {}
-        if 'authorization' in params:
-            header_params['Authorization'] = params['authorization']
 
         form_params = []
         local_var_files = {}
@@ -1350,7 +1311,7 @@ class GlobaltagcontaApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get49(self, id, id_transferencia, **kwargs):
+    def consultar_using_get51(self, id, id_transferencia, **kwargs):
         """
         {{{transferencia_resource_consultar}}}
         {{{transferencia_resource_consultar_notes}}}
@@ -1361,7 +1322,7 @@ class GlobaltagcontaApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get49(id, id_transferencia, callback=callback_function)
+        >>> thread = api.consultar_using_get51(id, id_transferencia, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -1380,17 +1341,17 @@ class GlobaltagcontaApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get49" % key
+                    " to method consultar_using_get51" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get49`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get51`")
         # verify the required parameter 'id_transferencia' is set
         if ('id_transferencia' not in params) or (params['id_transferencia'] is None):
-            raise ValueError("Missing the required parameter `id_transferencia` when calling `consultar_using_get49`")
+            raise ValueError("Missing the required parameter `id_transferencia` when calling `consultar_using_get51`")
 
         resource_path = '/api/contas/{id}/transferencias-creditos-cartoes/{id_transferencia}'.replace('{format}', 'json')
         path_params = {}
@@ -1433,6 +1394,83 @@ class GlobaltagcontaApi(object):
                                             callback=params.get('callback'))
         return response
 
+    def criar_contas_multi_app_using_post(self, conta_multi_app_persist, **kwargs):
+        """
+        {{{conta_resource_cadastrar_conta_multiapp}}}
+        {{{conta_resource_cadastrar_conta_multiapp_notes}}}
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.criar_contas_multi_app_using_post(conta_multi_app_persist, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param ContaMultiAppPersistValue conta_multi_app_persist: contaMultiAppPersist (required)
+        :return: ContaMultiAppResponse
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['conta_multi_app_persist']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method criar_contas_multi_app_using_post" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        # verify the required parameter 'conta_multi_app_persist' is set
+        if ('conta_multi_app_persist' not in params) or (params['conta_multi_app_persist'] is None):
+            raise ValueError("Missing the required parameter `conta_multi_app_persist` when calling `criar_contas_multi_app_using_post`")
+
+        resource_path = '/api/contas/cadastrar-conta-multiapp'.replace('{format}', 'json')
+        path_params = {}
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        if 'conta_multi_app_persist' in params:
+            body_params = params['conta_multi_app_persist']
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = []
+
+        response = self.api_client.call_api(resource_path, 'POST',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='ContaMultiAppResponse',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
     def desativar_envio_fatura_email_using_post(self, id, **kwargs):
         """
         {{{conta_resource_desativar_envio_fatura_email}}}
@@ -1449,13 +1487,12 @@ class GlobaltagcontaApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int id: {{{conta_resource_desativar_envio_fatura_email_param_id}}} (required)
-        :param str authorization: Authorization
         :return: object
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['id', 'authorization']
+        all_params = ['id']
         all_params.append('callback')
 
         params = locals()
@@ -1480,8 +1517,6 @@ class GlobaltagcontaApi(object):
         query_params = {}
 
         header_params = {}
-        if 'authorization' in params:
-            header_params['Authorization'] = params['authorization']
 
         form_params = []
         local_var_files = {}
@@ -1531,13 +1566,12 @@ class GlobaltagcontaApi(object):
         :param int id: {{{conta_resource_gerar_boleto_recarga_param_id}}} (required)
         :param float valor: {{{boleto_recarga_request_valor_value}}} (required)
         :param str data_vencimento: {{{boleto_recarga_request_data_vencimento_value}}} (required)
-        :param str authorization: Authorization
         :return: BoletoResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['id', 'valor', 'data_vencimento', 'authorization']
+        all_params = ['id', 'valor', 'data_vencimento']
         all_params.append('callback')
 
         params = locals()
@@ -1572,8 +1606,6 @@ class GlobaltagcontaApi(object):
             query_params['dataVencimento'] = params['data_vencimento']
 
         header_params = {}
-        if 'authorization' in params:
-            header_params['Authorization'] = params['authorization']
 
         form_params = []
         local_var_files = {}
@@ -1622,13 +1654,12 @@ class GlobaltagcontaApi(object):
             for asynchronous request. (optional)
         :param int id: {{{conta_resource_gerar_cartao_embossing_param_id}}} (required)
         :param CartaoEmbossingRequest cartao_embossing_request: cartaoEmbossingRequest (required)
-        :param str authorization: Authorization
         :return: CartaoEmbossingResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['id', 'cartao_embossing_request', 'authorization']
+        all_params = ['id', 'cartao_embossing_request']
         all_params.append('callback')
 
         params = locals()
@@ -1656,8 +1687,6 @@ class GlobaltagcontaApi(object):
         query_params = {}
 
         header_params = {}
-        if 'authorization' in params:
-            header_params['Authorization'] = params['authorization']
 
         form_params = []
         local_var_files = {}
@@ -1707,13 +1736,12 @@ class GlobaltagcontaApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int id: {{{conta_resource_gerar_cartao_provisorio_param_id_conta}}} (required)
-        :param str authorization: Authorization
         :return: CartaoImpressaoProvisorioResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['id', 'authorization']
+        all_params = ['id']
         all_params.append('callback')
 
         params = locals()
@@ -1738,8 +1766,6 @@ class GlobaltagcontaApi(object):
         query_params = {}
 
         header_params = {}
-        if 'authorization' in params:
-            header_params['Authorization'] = params['authorization']
 
         form_params = []
         local_var_files = {}
@@ -1788,14 +1814,13 @@ class GlobaltagcontaApi(object):
             for asynchronous request. (optional)
         :param int id: {{{conta_resource_gerar_cartao_param_id}}} (required)
         :param int id_pessoa: {{{conta_resource_gerar_cartao_param_id_pessoa}}} (required)
-        :param str authorization: Authorization
         :param int id_tipo_plastico: {{{conta_resource_gerar_cartao_param_id_tipo_plastico}}}
         :return: CartaoImpressaoResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['id', 'id_pessoa', 'authorization', 'id_tipo_plastico']
+        all_params = ['id', 'id_pessoa', 'id_tipo_plastico']
         all_params.append('callback')
 
         params = locals()
@@ -1827,8 +1852,6 @@ class GlobaltagcontaApi(object):
             query_params['id_tipo_plastico'] = params['id_tipo_plastico']
 
         header_params = {}
-        if 'authorization' in params:
-            header_params['Authorization'] = params['authorization']
 
         form_params = []
         local_var_files = {}
@@ -1877,13 +1900,12 @@ class GlobaltagcontaApi(object):
             for asynchronous request. (optional)
         :param int id: {{{conta_resource_gerar_cartao_virtual_param_id}}} (required)
         :param str data_validade: {{{conta_resource_gerar_cartao_virtual_param_data_validade}}} (required)
-        :param str authorization: Authorization
         :return: CartaoImpressaoResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['id', 'data_validade', 'authorization']
+        all_params = ['id', 'data_validade']
         all_params.append('callback')
 
         params = locals()
@@ -1913,8 +1935,6 @@ class GlobaltagcontaApi(object):
             query_params['dataValidade'] = params['data_validade']
 
         header_params = {}
-        if 'authorization' in params:
-            header_params['Authorization'] = params['authorization']
 
         form_params = []
         local_var_files = {}
@@ -1962,7 +1982,6 @@ class GlobaltagcontaApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int id: {{{conta_resource_listar_historico_alteracoes_limites_param_id}}} (required)
-        :param str authorization: Authorization
         :param list[str] sort: {{{global_menssagem_sort_sort}}}
         :param int page: {{{global_menssagem_sort_page_value}}}
         :param int limit: {{{global_menssagem_sort_limit}}}
@@ -1971,7 +1990,7 @@ class GlobaltagcontaApi(object):
                  returns the request thread.
         """
 
-        all_params = ['id', 'authorization', 'sort', 'page', 'limit']
+        all_params = ['id', 'sort', 'page', 'limit']
         all_params.append('callback')
 
         params = locals()
@@ -2002,8 +2021,6 @@ class GlobaltagcontaApi(object):
             query_params['limit'] = params['limit']
 
         header_params = {}
-        if 'authorization' in params:
-            header_params['Authorization'] = params['authorization']
 
         form_params = []
         local_var_files = {}
@@ -2051,7 +2068,6 @@ class GlobaltagcontaApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int id: {{{conta_resource_listar_historico_assessoria_param_id}}} (required)
-        :param str authorization: Authorization
         :param list[str] sort: {{{global_menssagem_sort_sort}}}
         :param int page: {{{global_menssagem_sort_page_value}}}
         :param int limit: {{{global_menssagem_sort_limit}}}
@@ -2060,7 +2076,7 @@ class GlobaltagcontaApi(object):
                  returns the request thread.
         """
 
-        all_params = ['id', 'authorization', 'sort', 'page', 'limit']
+        all_params = ['id', 'sort', 'page', 'limit']
         all_params.append('callback')
 
         params = locals()
@@ -2091,8 +2107,6 @@ class GlobaltagcontaApi(object):
             query_params['limit'] = params['limit']
 
         header_params = {}
-        if 'authorization' in params:
-            header_params['Authorization'] = params['authorization']
 
         form_params = []
         local_var_files = {}
@@ -2140,7 +2154,6 @@ class GlobaltagcontaApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int id: {{{conta_resource_listar_historico_atrasos_faturas_param_id}}} (required)
-        :param str authorization: Authorization
         :param list[str] sort: {{{global_menssagem_sort_sort}}}
         :param int page: {{{global_menssagem_sort_page_value}}}
         :param int limit: {{{global_menssagem_sort_limit}}}
@@ -2149,7 +2162,7 @@ class GlobaltagcontaApi(object):
                  returns the request thread.
         """
 
-        all_params = ['id', 'authorization', 'sort', 'page', 'limit']
+        all_params = ['id', 'sort', 'page', 'limit']
         all_params.append('callback')
 
         params = locals()
@@ -2180,8 +2193,6 @@ class GlobaltagcontaApi(object):
             query_params['limit'] = params['limit']
 
         header_params = {}
-        if 'authorization' in params:
-            header_params['Authorization'] = params['authorization']
 
         form_params = []
         local_var_files = {}
@@ -2406,7 +2417,7 @@ class GlobaltagcontaApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get18(self, **kwargs):
+    def listar_using_get19(self, **kwargs):
         """
         {{{conta_resource_listar}}}
         {{{conta_resource_listar_notes}}}
@@ -2417,11 +2428,10 @@ class GlobaltagcontaApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get18(callback=callback_function)
+        >>> thread = api.listar_using_get19(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
-        :param str authorization: Authorization
         :param list[str] sort: {{{global_menssagem_sort_sort}}}
         :param int page: {{{global_menssagem_sort_page_value}}}
         :param int limit: {{{global_menssagem_sort_limit}}}
@@ -2439,7 +2449,7 @@ class GlobaltagcontaApi(object):
                  returns the request thread.
         """
 
-        all_params = ['authorization', 'sort', 'page', 'limit', 'id_produto', 'id_origem_comercial', 'id_pessoa', 'id_status_conta', 'dia_vencimento', 'melhor_dia_compra', 'data_status_conta', 'data_cadastro', 'data_ultima_alteracao_vencimento']
+        all_params = ['sort', 'page', 'limit', 'id_produto', 'id_origem_comercial', 'id_pessoa', 'id_status_conta', 'dia_vencimento', 'melhor_dia_compra', 'data_status_conta', 'data_cadastro', 'data_ultima_alteracao_vencimento']
         all_params.append('callback')
 
         params = locals()
@@ -2447,7 +2457,7 @@ class GlobaltagcontaApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get18" % key
+                    " to method listar_using_get19" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -2483,8 +2493,6 @@ class GlobaltagcontaApi(object):
             query_params['dataUltimaAlteracaoVencimento'] = params['data_ultima_alteracao_vencimento']
 
         header_params = {}
-        if 'authorization' in params:
-            header_params['Authorization'] = params['authorization']
 
         form_params = []
         local_var_files = {}
@@ -2516,7 +2524,7 @@ class GlobaltagcontaApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get58(self, id, **kwargs):
+    def listar_using_get61(self, id, **kwargs):
         """
         {{{transacoes_correntes_resource_listar_nao_processadas_e_processadas}}}
         {{{transacoes_correntes_resource_listar_nao_processadas_e_processadas_notes}}}
@@ -2527,7 +2535,7 @@ class GlobaltagcontaApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get58(id, callback=callback_function)
+        >>> thread = api.listar_using_get61(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -2552,14 +2560,14 @@ class GlobaltagcontaApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get58" % key
+                    " to method listar_using_get61" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `listar_using_get58`")
+            raise ValueError("Missing the required parameter `id` when calling `listar_using_get61`")
 
         resource_path = '/api/contas/{id}/transacoes'.replace('{format}', 'json')
         path_params = {}
@@ -2614,7 +2622,7 @@ class GlobaltagcontaApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get60(self, id, **kwargs):
+    def listar_using_get63(self, id, **kwargs):
         """
         {{{transferencia_resource_listar}}}
         {{{transferencia_resource_listar_notes}}}
@@ -2625,7 +2633,7 @@ class GlobaltagcontaApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get60(id, callback=callback_function)
+        >>> thread = api.listar_using_get63(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -2651,14 +2659,14 @@ class GlobaltagcontaApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get60" % key
+                    " to method listar_using_get63" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `listar_using_get60`")
+            raise ValueError("Missing the required parameter `id` when calling `listar_using_get63`")
 
         resource_path = '/api/contas/{id}/transferencias-creditos-cartoes'.replace('{format}', 'json')
         path_params = {}
@@ -2731,13 +2739,12 @@ class GlobaltagcontaApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int id: {{{conta_resource_reativar_param_id}}} (required)
-        :param str authorization: Authorization
         :return: object
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['id', 'authorization']
+        all_params = ['id']
         all_params.append('callback')
 
         params = locals()
@@ -2762,8 +2769,6 @@ class GlobaltagcontaApi(object):
         query_params = {}
 
         header_params = {}
-        if 'authorization' in params:
-            header_params['Authorization'] = params['authorization']
 
         form_params = []
         local_var_files = {}
@@ -2795,7 +2800,7 @@ class GlobaltagcontaApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def salvar_using_post8(self, conta_persist, **kwargs):
+    def salvar_using_post9(self, conta_persist, **kwargs):
         """
         {{{conta_resource_salvar}}}
         {{{conta_resource_salvar_notes}}}
@@ -2806,18 +2811,17 @@ class GlobaltagcontaApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.salvar_using_post8(conta_persist, callback=callback_function)
+        >>> thread = api.salvar_using_post9(conta_persist, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param ContaPersistValue conta_persist: contaPersist (required)
-        :param str authorization: Authorization
         :return: ContaResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['conta_persist', 'authorization']
+        all_params = ['conta_persist']
         all_params.append('callback')
 
         params = locals()
@@ -2825,14 +2829,14 @@ class GlobaltagcontaApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method salvar_using_post8" % key
+                    " to method salvar_using_post9" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'conta_persist' is set
         if ('conta_persist' not in params) or (params['conta_persist'] is None):
-            raise ValueError("Missing the required parameter `conta_persist` when calling `salvar_using_post8`")
+            raise ValueError("Missing the required parameter `conta_persist` when calling `salvar_using_post9`")
 
         resource_path = '/api/contas'.replace('{format}', 'json')
         path_params = {}
@@ -2840,8 +2844,6 @@ class GlobaltagcontaApi(object):
         query_params = {}
 
         header_params = {}
-        if 'authorization' in params:
-            header_params['Authorization'] = params['authorization']
 
         form_params = []
         local_var_files = {}
@@ -2974,7 +2976,6 @@ class GlobaltagcontaApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int id: {{{conta_resource_transacoes_param_id}}} (required)
-        :param str authorization: Authorization
         :param list[str] sort: {{{global_menssagem_sort_sort}}}
         :param int page: {{{global_menssagem_sort_page_value}}}
         :param int limit: {{{global_menssagem_sort_limit}}}
@@ -2983,7 +2984,7 @@ class GlobaltagcontaApi(object):
                  returns the request thread.
         """
 
-        all_params = ['id', 'authorization', 'sort', 'page', 'limit']
+        all_params = ['id', 'sort', 'page', 'limit']
         all_params.append('callback')
 
         params = locals()
@@ -3014,8 +3015,6 @@ class GlobaltagcontaApi(object):
             query_params['limit'] = params['limit']
 
         header_params = {}
-        if 'authorization' in params:
-            header_params['Authorization'] = params['authorization']
 
         form_params = []
         local_var_files = {}

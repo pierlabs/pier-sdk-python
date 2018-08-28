@@ -205,7 +205,7 @@ class GlobaltagdebitorecorrenteApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get17(self, id_conta, **kwargs):
+    def listar_using_get18(self, id_conta, **kwargs):
         """
         {{{conta_debito_recorrente_resource_listar}}}
         {{{conta_debito_recorrente_resource_listar_notes}}}
@@ -216,7 +216,7 @@ class GlobaltagdebitorecorrenteApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get17(id_conta, callback=callback_function)
+        >>> thread = api.listar_using_get18(id_conta, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -242,14 +242,14 @@ class GlobaltagdebitorecorrenteApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get17" % key
+                    " to method listar_using_get18" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id_conta' is set
         if ('id_conta' not in params) or (params['id_conta'] is None):
-            raise ValueError("Missing the required parameter `id_conta` when calling `listar_using_get17`")
+            raise ValueError("Missing the required parameter `id_conta` when calling `listar_using_get18`")
 
         resource_path = '/api/debitos-recorrentes'.replace('{format}', 'json')
         path_params = {}
@@ -306,7 +306,7 @@ class GlobaltagdebitorecorrenteApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get53(self, **kwargs):
+    def listar_using_get56(self, **kwargs):
         """
         {{{tipo_debito_recorrente_resource_listar}}}
         {{{tipo_debito_recorrente_resource_listar_notes}}}
@@ -317,7 +317,7 @@ class GlobaltagdebitorecorrenteApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get53(callback=callback_function)
+        >>> thread = api.listar_using_get56(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -341,7 +341,7 @@ class GlobaltagdebitorecorrenteApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get53" % key
+                    " to method listar_using_get56" % key
                 )
             params[key] = val
         del params['kwargs']

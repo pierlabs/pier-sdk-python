@@ -4,6 +4,8 @@ from __future__ import absolute_import
 from .models.acordo_detalhe_response import AcordoDetalheResponse
 from .models.acordo_response import AcordoResponse
 from .models.adesao_pagamento_sabado_response import AdesaoPagamentoSabadoResponse
+from .models.adicional_conta_persist import AdicionalContaPersist
+from .models.adicional_conta_response import AdicionalContaResponse
 from .models.adicional_detalhe_response import AdicionalDetalheResponse
 from .models.adicional_persist import AdicionalPersist
 from .models.adicional_response import AdicionalResponse
@@ -20,6 +22,8 @@ from .models.aplicacao_mobile_emissor_response import AplicacaoMobileEmissorResp
 from .models.aplicacao_mobile_persist_value import AplicacaoMobilePersistValue
 from .models.aplicacao_mobile_response import AplicacaoMobileResponse
 from .models.aplicacao_mobile_update_value import AplicacaoMobileUpdateValue
+from .models.aplicacao_request import AplicacaoRequest
+from .models.aplicacao_response import AplicacaoResponse
 from .models.arquivo_aud_response import ArquivoAUDResponse
 from .models.arquivo_ajuste_lote_response import ArquivoAjusteLoteResponse
 from .models.arquivo_detalhe_response import ArquivoDetalheResponse
@@ -39,6 +43,8 @@ from .models.base_persist_value import BasePersistValue
 from .models.base_response import BaseResponse
 from .models.base_update_value import BaseUpdateValue
 from .models.beneficio_pagamento_atraso_response import BeneficioPagamentoAtrasoResponse
+from .models.bin_chave_persist import BinChavePersist
+from .models.bin_chave_update import BinChaveUpdate
 from .models.bin_response import BinResponse
 from .models.body_access_token import BodyAccessToken
 from .models.boleto_email_request import BoletoEmailRequest
@@ -58,6 +64,7 @@ from .models.cartao_emissor_response import CartaoEmissorResponse
 from .models.cartao_impressao_provisorio_response import CartaoImpressaoProvisorioResponse
 from .models.cartao_impressao_response import CartaoImpressaoResponse
 from .models.cartao_multi_app_impressao_response import CartaoMultiAppImpressaoResponse
+from .models.cartao_multi_app_persist_value import CartaoMultiAppPersistValue
 from .models.cartao_pay_atualizar_chave_response import CartaoPayAtualizarChaveResponse
 from .models.cartao_pay_cadastro_response import CartaoPayCadastroResponse
 from .models.cartao_pay_confirmar_chave_response import CartaoPayConfirmarChaveResponse
@@ -94,8 +101,11 @@ from .models.conta_debito_recorrente_persist_value import ContaDebitoRecorrenteP
 from .models.conta_debito_recorrente_response import ContaDebitoRecorrenteResponse
 from .models.conta_detalhe_response import ContaDetalheResponse
 from .models.conta_historico_pagamento_response import ContaHistoricoPagamentoResponse
+from .models.conta_multi_app_persist_value import ContaMultiAppPersistValue
+from .models.conta_multi_app_response import ContaMultiAppResponse
 from .models.conta_persist_value import ContaPersistValue
 from .models.conta_response import ContaResponse
+from .models.contestar_compra_request import ContestarCompraRequest
 from .models.controle_seguranca_dispositivo_persistencia import ControleSegurancaDispositivoPersistencia
 from .models.controle_seguranca_dispositivo_response import ControleSegurancaDispositivoResponse
 from .models.controle_seguranca_dispositivo_update_valor import ControleSegurancaDispositivoUpdateValor
@@ -175,7 +185,7 @@ from .models.maquineta_response import MaquinetaResponse
 from .models.maquineta_update import MaquinetaUpdate
 from .models.moeda_response import MoedaResponse
 from .models.notificacao_email_request import NotificacaoEmailRequest
-from .models.notificacao_push_response_value import NotificacaoPushResponseValue
+from .models.notificacao_push_response import NotificacaoPushResponse
 from .models.notificacao_response import NotificacaoResponse
 from .models.notificacao_sms_response import NotificacaoSMSResponse
 from .models.operacao_credor_persist import OperacaoCredorPersist
@@ -194,6 +204,7 @@ from .models.page_acordo_response import PageAcordoResponse
 from .models.page_ajuste_response import PageAjusteResponse
 from .models.page_anuidade_response import PageAnuidadeResponse
 from .models.page_aplicacao_mobile_response import PageAplicacaoMobileResponse
+from .models.page_aplicacao_response import PageAplicacaoResponse
 from .models.page_arquivo_aud_response import PageArquivoAUDResponse
 from .models.page_arquivo_ajuste_lote_response import PageArquivoAjusteLoteResponse
 from .models.page_arquivo_response import PageArquivoResponse
@@ -356,6 +367,8 @@ from .models.risco_fraude_detalhado_response import RiscoFraudeDetalhadoResponse
 from .models.risco_fraude_response_value import RiscoFraudeResponseValue
 from .models.sms_envio_response import SMSEnvioResponse
 from .models.s_m_s_persist_value import SMSPersistValue
+from .models.secure3d_request import Secure3dRequest
+from .models.sensibilizar_saldo_global_update_value import SensibilizarSaldoGlobalUpdateValue
 from .models.socio_aprovado_persist_value import SocioAprovadoPersistValue
 from .models.socio_aprovado_response import SocioAprovadoResponse
 from .models.status_arquivo_response import StatusArquivoResponse
@@ -432,16 +445,18 @@ from .models.transferencia_detalhe_response import TransferenciaDetalheResponse
 from .models.transferencia_response import TransferenciaResponse
 from .models.usuario_contas_response import UsuarioContasResponse
 from .models.usuario_ldap_persist import UsuarioLdapPersist
+from .models.usuario_ldap_update import UsuarioLdapUpdate
 from .models.usuario_persistencia import UsuarioPersistencia
 from .models.usuario_response import UsuarioResponse
 from .models.usuario_senha_forte_persistencia import UsuarioSenhaFortePersistencia
 from .models.usuario_token_persistencia import UsuarioTokenPersistencia
 from .models.usuario_token_response import UsuarioTokenResponse
 from .models.usuario_update_value import UsuarioUpdateValue
-from .models.usuarioldap_update_object_description import UsuarioldapUpdateObjectDescription
 from .models.valida_cvv_request import ValidaCVVRequest
 from .models.valida_cartao_response import ValidaCartaoResponse
 from .models.valida_senha_cartao_response import ValidaSenhaCartaoResponse
+from .models.vencimento_update import VencimentoUpdate
+from .models.vinculo_cartoes_response import VinculoCartoesResponse
 from .models.vinculo_estabelecimento_adquirente_persist import VinculoEstabelecimentoAdquirentePersist
 from .models.vinculo_estabelecimento_adquirente_response import VinculoEstabelecimentoAdquirenteResponse
 from .models.vinculo_operacao_persist import VinculoOperacaoPersist
@@ -450,8 +465,10 @@ from .models.web_hook_persist_value import WebHookPersistValue
 from .models.web_hook_response import WebHookResponse
 
 # import apis into sdk package
+from .apis.binchaveresource_api import BinchaveresourceApi
 from .apis.globaltagbin_api import GlobaltagbinApi
 from .apis.globaltagtipochave_api import GlobaltagtipochaveApi
+from .apis.usuarioldapresource_api import UsuarioldapresourceApi
 from .apis.globaltagajustefinanceiro_api import GlobaltagajustefinanceiroApi
 from .apis.globaltagantecipacao_api import GlobaltagantecipacaoApi
 from .apis.globaltagaplicacaomobile_api import GlobaltagaplicacaomobileApi
@@ -466,6 +483,7 @@ from .apis.globaltagcartao_api import GlobaltagcartaoApi
 from .apis.globaltagchavecriptografia_api import GlobaltagchavecriptografiaApi
 from .apis.globaltagcompracontestada_api import GlobaltagcompracontestadaApi
 from .apis.globaltagconta_api import GlobaltagcontaApi
+from .apis.globaltagcontamulti_api import GlobaltagcontamultiApi
 from .apis.globaltagdebitorecorrente_api import GlobaltagdebitorecorrenteApi
 from .apis.globaltagdispositivo_api import GlobaltagdispositivoApi
 from .apis.globaltagdocumento_api import GlobaltagdocumentoApi
@@ -476,7 +494,6 @@ from .apis.globaltagfatura_api import GlobaltagfaturaApi
 from .apis.globaltagfaturamento_api import GlobaltagfaturamentoApi
 from .apis.globaltaggrupochageback_api import GlobaltaggrupochagebackApi
 from .apis.globaltaginscricaoapn_api import GlobaltaginscricaoapnApi
-from .apis.globaltagjob_api import GlobaltagjobApi
 from .apis.globaltaglimite_api import GlobaltaglimiteApi
 from .apis.globaltaglimitedisponibilidade_api import GlobaltaglimitedisponibilidadeApi
 from .apis.globaltaglog_api import GlobaltaglogApi
@@ -484,6 +501,7 @@ from .apis.globaltagnotificacao_api import GlobaltagnotificacaoApi
 from .apis.globaltagoportunidade_api import GlobaltagoportunidadeApi
 from .apis.globaltagpagamento_api import GlobaltagpagamentoApi
 from .apis.globaltagparametroemissor_api import GlobaltagparametroemissorApi
+from .apis.globaltagparametrosproduto_api import GlobaltagparametrosprodutoApi
 from .apis.globaltagpay_api import GlobaltagpayApi
 from .apis.globaltagpermissaopais_api import GlobaltagpermissaopaisApi
 from .apis.globaltagplataformamobile_api import GlobaltagplataformamobileApi
@@ -491,7 +509,6 @@ from .apis.globaltagproposta_api import GlobaltagpropostaApi
 from .apis.globaltagriscofraude_api import GlobaltagriscofraudeApi
 from .apis.globaltagservicoconta_api import GlobaltagservicocontaApi
 from .apis.globaltagsms_api import GlobaltagsmsApi
-from .apis.globaltagstatuscontestacao_api import GlobaltagstatuscontestacaoApi
 from .apis.globaltagstatusparametro_api import GlobaltagstatusparametroApi
 from .apis.globaltagtiporesolucaocontestacao_api import GlobaltagtiporesolucaocontestacaoApi
 from .apis.globaltagtoken_api import GlobaltagtokenApi
@@ -499,6 +516,7 @@ from .apis.globaltagtransferenciabancaria_api import Globaltagtransferenciabanca
 from .apis.globaltagusuario_api import GlobaltagusuarioApi
 from .apis.globaltagusuariotoken_api import GlobaltagusuariotokenApi
 from .apis.globaltagwebhook_api import GlobaltagwebhookApi
+from .apis.globaltaxasrefinanciamento_api import GlobaltaxasrefinanciamentoApi
 
 # import ApiClient
 from .api_client import ApiClient

@@ -4,6 +4,8 @@ from __future__ import absolute_import
 from .acordo_detalhe_response import AcordoDetalheResponse
 from .acordo_response import AcordoResponse
 from .adesao_pagamento_sabado_response import AdesaoPagamentoSabadoResponse
+from .adicional_conta_persist import AdicionalContaPersist
+from .adicional_conta_response import AdicionalContaResponse
 from .adicional_detalhe_response import AdicionalDetalheResponse
 from .adicional_persist import AdicionalPersist
 from .adicional_response import AdicionalResponse
@@ -20,6 +22,8 @@ from .aplicacao_mobile_emissor_response import AplicacaoMobileEmissorResponse
 from .aplicacao_mobile_persist_value import AplicacaoMobilePersistValue
 from .aplicacao_mobile_response import AplicacaoMobileResponse
 from .aplicacao_mobile_update_value import AplicacaoMobileUpdateValue
+from .aplicacao_request import AplicacaoRequest
+from .aplicacao_response import AplicacaoResponse
 from .arquivo_aud_response import ArquivoAUDResponse
 from .arquivo_ajuste_lote_response import ArquivoAjusteLoteResponse
 from .arquivo_detalhe_response import ArquivoDetalheResponse
@@ -39,6 +43,8 @@ from .base_persist_value import BasePersistValue
 from .base_response import BaseResponse
 from .base_update_value import BaseUpdateValue
 from .beneficio_pagamento_atraso_response import BeneficioPagamentoAtrasoResponse
+from .bin_chave_persist import BinChavePersist
+from .bin_chave_update import BinChaveUpdate
 from .bin_response import BinResponse
 from .body_access_token import BodyAccessToken
 from .boleto_email_request import BoletoEmailRequest
@@ -58,6 +64,7 @@ from .cartao_emissor_response import CartaoEmissorResponse
 from .cartao_impressao_provisorio_response import CartaoImpressaoProvisorioResponse
 from .cartao_impressao_response import CartaoImpressaoResponse
 from .cartao_multi_app_impressao_response import CartaoMultiAppImpressaoResponse
+from .cartao_multi_app_persist_value import CartaoMultiAppPersistValue
 from .cartao_pay_atualizar_chave_response import CartaoPayAtualizarChaveResponse
 from .cartao_pay_cadastro_response import CartaoPayCadastroResponse
 from .cartao_pay_confirmar_chave_response import CartaoPayConfirmarChaveResponse
@@ -94,8 +101,11 @@ from .conta_debito_recorrente_persist_value import ContaDebitoRecorrentePersistV
 from .conta_debito_recorrente_response import ContaDebitoRecorrenteResponse
 from .conta_detalhe_response import ContaDetalheResponse
 from .conta_historico_pagamento_response import ContaHistoricoPagamentoResponse
+from .conta_multi_app_persist_value import ContaMultiAppPersistValue
+from .conta_multi_app_response import ContaMultiAppResponse
 from .conta_persist_value import ContaPersistValue
 from .conta_response import ContaResponse
+from .contestar_compra_request import ContestarCompraRequest
 from .controle_seguranca_dispositivo_persistencia import ControleSegurancaDispositivoPersistencia
 from .controle_seguranca_dispositivo_response import ControleSegurancaDispositivoResponse
 from .controle_seguranca_dispositivo_update_valor import ControleSegurancaDispositivoUpdateValor
@@ -175,7 +185,7 @@ from .maquineta_response import MaquinetaResponse
 from .maquineta_update import MaquinetaUpdate
 from .moeda_response import MoedaResponse
 from .notificacao_email_request import NotificacaoEmailRequest
-from .notificacao_push_response_value import NotificacaoPushResponseValue
+from .notificacao_push_response import NotificacaoPushResponse
 from .notificacao_response import NotificacaoResponse
 from .notificacao_sms_response import NotificacaoSMSResponse
 from .operacao_credor_persist import OperacaoCredorPersist
@@ -194,6 +204,7 @@ from .page_acordo_response import PageAcordoResponse
 from .page_ajuste_response import PageAjusteResponse
 from .page_anuidade_response import PageAnuidadeResponse
 from .page_aplicacao_mobile_response import PageAplicacaoMobileResponse
+from .page_aplicacao_response import PageAplicacaoResponse
 from .page_arquivo_aud_response import PageArquivoAUDResponse
 from .page_arquivo_ajuste_lote_response import PageArquivoAjusteLoteResponse
 from .page_arquivo_response import PageArquivoResponse
@@ -356,6 +367,8 @@ from .risco_fraude_detalhado_response import RiscoFraudeDetalhadoResponse
 from .risco_fraude_response_value import RiscoFraudeResponseValue
 from .sms_envio_response import SMSEnvioResponse
 from .s_m_s_persist_value import SMSPersistValue
+from .secure3d_request import Secure3dRequest
+from .sensibilizar_saldo_global_update_value import SensibilizarSaldoGlobalUpdateValue
 from .socio_aprovado_persist_value import SocioAprovadoPersistValue
 from .socio_aprovado_response import SocioAprovadoResponse
 from .status_arquivo_response import StatusArquivoResponse
@@ -432,16 +445,18 @@ from .transferencia_detalhe_response import TransferenciaDetalheResponse
 from .transferencia_response import TransferenciaResponse
 from .usuario_contas_response import UsuarioContasResponse
 from .usuario_ldap_persist import UsuarioLdapPersist
+from .usuario_ldap_update import UsuarioLdapUpdate
 from .usuario_persistencia import UsuarioPersistencia
 from .usuario_response import UsuarioResponse
 from .usuario_senha_forte_persistencia import UsuarioSenhaFortePersistencia
 from .usuario_token_persistencia import UsuarioTokenPersistencia
 from .usuario_token_response import UsuarioTokenResponse
 from .usuario_update_value import UsuarioUpdateValue
-from .usuarioldap_update_object_description import UsuarioldapUpdateObjectDescription
 from .valida_cvv_request import ValidaCVVRequest
 from .valida_cartao_response import ValidaCartaoResponse
 from .valida_senha_cartao_response import ValidaSenhaCartaoResponse
+from .vencimento_update import VencimentoUpdate
+from .vinculo_cartoes_response import VinculoCartoesResponse
 from .vinculo_estabelecimento_adquirente_persist import VinculoEstabelecimentoAdquirentePersist
 from .vinculo_estabelecimento_adquirente_response import VinculoEstabelecimentoAdquirenteResponse
 from .vinculo_operacao_persist import VinculoOperacaoPersist

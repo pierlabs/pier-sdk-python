@@ -623,6 +623,83 @@ class GlobaltagnotificacaoApi(object):
                                             callback=params.get('callback'))
         return response
 
+    def enviar_otp_using_post(self, secure3d_request, **kwargs):
+        """
+        {{{notificacao_resource_3d_secure}}}
+        {{{notificacao_resource_3d_secure_notes}}}
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.enviar_otp_using_post(secure3d_request, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param Secure3dRequest secure3d_request: secure3dRequest (required)
+        :return: object
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['secure3d_request']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method enviar_otp_using_post" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        # verify the required parameter 'secure3d_request' is set
+        if ('secure3d_request' not in params) or (params['secure3d_request'] is None):
+            raise ValueError("Missing the required parameter `secure3d_request` when calling `enviar_otp_using_post`")
+
+        resource_path = '/api/notificacoes/3d-secure'.replace('{format}', 'json')
+        path_params = {}
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        if 'secure3d_request' in params:
+            body_params = params['secure3d_request']
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = []
+
+        response = self.api_client.call_api(resource_path, 'POST',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='object',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
     def gerar_token_email_using_post(self, email, **kwargs):
         """
         {{{codigo_seguranca_resource_gerar_token_e_m_a_i_l}}}

@@ -45,7 +45,7 @@ class GlobaltagavisoviagemApi(object):
                 config.api_client = ApiClient()
             self.api_client = config.api_client
 
-    def consultar_using_get7(self, id, **kwargs):
+    def consultar_using_get8(self, id, **kwargs):
         """
         {{{aviso_viagem_resource_consultar}}}
         {{{aviso_viagem_resource_consultar_notes}}}
@@ -56,7 +56,7 @@ class GlobaltagavisoviagemApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get7(id, callback=callback_function)
+        >>> thread = api.consultar_using_get8(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -74,14 +74,14 @@ class GlobaltagavisoviagemApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get7" % key
+                    " to method consultar_using_get8" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get7`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get8`")
 
         resource_path = '/api/avisos-viagens/{id}'.replace('{format}', 'json')
         path_params = {}
@@ -276,7 +276,7 @@ class GlobaltagavisoviagemApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get8(self, **kwargs):
+    def listar_using_get9(self, **kwargs):
         """
         {{{aviso_viagem_resource_listar}}}
         {{{aviso_viagem_resource_listar_notes}}}
@@ -287,7 +287,7 @@ class GlobaltagavisoviagemApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get8(callback=callback_function)
+        >>> thread = api.listar_using_get9(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -312,7 +312,7 @@ class GlobaltagavisoviagemApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get8" % key
+                    " to method listar_using_get9" % key
                 )
             params[key] = val
         del params['kwargs']

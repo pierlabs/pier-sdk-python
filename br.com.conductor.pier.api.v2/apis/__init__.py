@@ -1,8 +1,10 @@
 from __future__ import absolute_import
 
 # import apis into api package
+from .binchaveresource_api import BinchaveresourceApi
 from .globaltagbin_api import GlobaltagbinApi
 from .globaltagtipochave_api import GlobaltagtipochaveApi
+from .usuarioldapresource_api import UsuarioldapresourceApi
 from .globaltagajustefinanceiro_api import GlobaltagajustefinanceiroApi
 from .globaltagantecipacao_api import GlobaltagantecipacaoApi
 from .globaltagaplicacaomobile_api import GlobaltagaplicacaomobileApi
@@ -17,6 +19,7 @@ from .globaltagcartao_api import GlobaltagcartaoApi
 from .globaltagchavecriptografia_api import GlobaltagchavecriptografiaApi
 from .globaltagcompracontestada_api import GlobaltagcompracontestadaApi
 from .globaltagconta_api import GlobaltagcontaApi
+from .globaltagcontamulti_api import GlobaltagcontamultiApi
 from .globaltagdebitorecorrente_api import GlobaltagdebitorecorrenteApi
 from .globaltagdispositivo_api import GlobaltagdispositivoApi
 from .globaltagdocumento_api import GlobaltagdocumentoApi
@@ -27,7 +30,6 @@ from .globaltagfatura_api import GlobaltagfaturaApi
 from .globaltagfaturamento_api import GlobaltagfaturamentoApi
 from .globaltaggrupochageback_api import GlobaltaggrupochagebackApi
 from .globaltaginscricaoapn_api import GlobaltaginscricaoapnApi
-from .globaltagjob_api import GlobaltagjobApi
 from .globaltaglimite_api import GlobaltaglimiteApi
 from .globaltaglimitedisponibilidade_api import GlobaltaglimitedisponibilidadeApi
 from .globaltaglog_api import GlobaltaglogApi
@@ -35,6 +37,7 @@ from .globaltagnotificacao_api import GlobaltagnotificacaoApi
 from .globaltagoportunidade_api import GlobaltagoportunidadeApi
 from .globaltagpagamento_api import GlobaltagpagamentoApi
 from .globaltagparametroemissor_api import GlobaltagparametroemissorApi
+from .globaltagparametrosproduto_api import GlobaltagparametrosprodutoApi
 from .globaltagpay_api import GlobaltagpayApi
 from .globaltagpermissaopais_api import GlobaltagpermissaopaisApi
 from .globaltagplataformamobile_api import GlobaltagplataformamobileApi
@@ -42,7 +45,6 @@ from .globaltagproposta_api import GlobaltagpropostaApi
 from .globaltagriscofraude_api import GlobaltagriscofraudeApi
 from .globaltagservicoconta_api import GlobaltagservicocontaApi
 from .globaltagsms_api import GlobaltagsmsApi
-from .globaltagstatuscontestacao_api import GlobaltagstatuscontestacaoApi
 from .globaltagstatusparametro_api import GlobaltagstatusparametroApi
 from .globaltagtiporesolucaocontestacao_api import GlobaltagtiporesolucaocontestacaoApi
 from .globaltagtoken_api import GlobaltagtokenApi
@@ -50,3 +52,4 @@ from .globaltagtransferenciabancaria_api import GlobaltagtransferenciabancariaAp
 from .globaltagusuario_api import GlobaltagusuarioApi
 from .globaltagusuariotoken_api import GlobaltagusuariotokenApi
 from .globaltagwebhook_api import GlobaltagwebhookApi
+from .globaltaxasrefinanciamento_api import GlobaltaxasrefinanciamentoApi

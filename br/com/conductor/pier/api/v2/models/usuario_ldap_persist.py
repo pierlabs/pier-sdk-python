@@ -37,76 +37,35 @@ class UsuarioLdapPersist(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'nome': 'str',
-            'login': 'str',
             'cpf': 'str',
             'email': 'str',
+            'id_emissor': 'int',
+            'login': 'str',
+            'nome': 'str',
             'perfis': 'list[ReferenciaIdPersist]'
         }
 
         self.attribute_map = {
-            'nome': 'nome',
-            'login': 'login',
             'cpf': 'cpf',
             'email': 'email',
+            'id_emissor': 'idEmissor',
+            'login': 'login',
+            'nome': 'nome',
             'perfis': 'perfis'
         }
 
-        self._nome = None
-        self._login = None
         self._cpf = None
         self._email = None
+        self._id_emissor = None
+        self._login = None
+        self._nome = None
         self._perfis = None
-
-    @property
-    def nome(self):
-        """
-        Gets the nome of this UsuarioLdapPersist.
-        {{{usuario_persist_nome_value}}}
-
-        :return: The nome of this UsuarioLdapPersist.
-        :rtype: str
-        """
-        return self._nome
-
-    @nome.setter
-    def nome(self, nome):
-        """
-        Sets the nome of this UsuarioLdapPersist.
-        {{{usuario_persist_nome_value}}}
-
-        :param nome: The nome of this UsuarioLdapPersist.
-        :type: str
-        """
-        self._nome = nome
-
-    @property
-    def login(self):
-        """
-        Gets the login of this UsuarioLdapPersist.
-        {{{usuario_persist_login_value}}}
-
-        :return: The login of this UsuarioLdapPersist.
-        :rtype: str
-        """
-        return self._login
-
-    @login.setter
-    def login(self, login):
-        """
-        Sets the login of this UsuarioLdapPersist.
-        {{{usuario_persist_login_value}}}
-
-        :param login: The login of this UsuarioLdapPersist.
-        :type: str
-        """
-        self._login = login
 
     @property
     def cpf(self):
         """
         Gets the cpf of this UsuarioLdapPersist.
-        {{{usuario_persist_cpf_value}}}
+
 
         :return: The cpf of this UsuarioLdapPersist.
         :rtype: str
@@ -117,7 +76,7 @@ class UsuarioLdapPersist(object):
     def cpf(self, cpf):
         """
         Sets the cpf of this UsuarioLdapPersist.
-        {{{usuario_persist_cpf_value}}}
+
 
         :param cpf: The cpf of this UsuarioLdapPersist.
         :type: str
@@ -128,7 +87,7 @@ class UsuarioLdapPersist(object):
     def email(self):
         """
         Gets the email of this UsuarioLdapPersist.
-        {{{usuario_persist_email_value}}}
+
 
         :return: The email of this UsuarioLdapPersist.
         :rtype: str
@@ -139,7 +98,7 @@ class UsuarioLdapPersist(object):
     def email(self, email):
         """
         Sets the email of this UsuarioLdapPersist.
-        {{{usuario_persist_email_value}}}
+
 
         :param email: The email of this UsuarioLdapPersist.
         :type: str
@@ -147,10 +106,76 @@ class UsuarioLdapPersist(object):
         self._email = email
 
     @property
+    def id_emissor(self):
+        """
+        Gets the id_emissor of this UsuarioLdapPersist.
+
+
+        :return: The id_emissor of this UsuarioLdapPersist.
+        :rtype: int
+        """
+        return self._id_emissor
+
+    @id_emissor.setter
+    def id_emissor(self, id_emissor):
+        """
+        Sets the id_emissor of this UsuarioLdapPersist.
+
+
+        :param id_emissor: The id_emissor of this UsuarioLdapPersist.
+        :type: int
+        """
+        self._id_emissor = id_emissor
+
+    @property
+    def login(self):
+        """
+        Gets the login of this UsuarioLdapPersist.
+
+
+        :return: The login of this UsuarioLdapPersist.
+        :rtype: str
+        """
+        return self._login
+
+    @login.setter
+    def login(self, login):
+        """
+        Sets the login of this UsuarioLdapPersist.
+
+
+        :param login: The login of this UsuarioLdapPersist.
+        :type: str
+        """
+        self._login = login
+
+    @property
+    def nome(self):
+        """
+        Gets the nome of this UsuarioLdapPersist.
+
+
+        :return: The nome of this UsuarioLdapPersist.
+        :rtype: str
+        """
+        return self._nome
+
+    @nome.setter
+    def nome(self, nome):
+        """
+        Sets the nome of this UsuarioLdapPersist.
+
+
+        :param nome: The nome of this UsuarioLdapPersist.
+        :type: str
+        """
+        self._nome = nome
+
+    @property
     def perfis(self):
         """
         Gets the perfis of this UsuarioLdapPersist.
-        {{{usuario_persist_perfis_value}}}
+
 
         :return: The perfis of this UsuarioLdapPersist.
         :rtype: list[ReferenciaIdPersist]
@@ -161,7 +186,7 @@ class UsuarioLdapPersist(object):
     def perfis(self, perfis):
         """
         Sets the perfis of this UsuarioLdapPersist.
-        {{{usuario_persist_perfis_value}}}
+
 
         :param perfis: The perfis of this UsuarioLdapPersist.
         :type: list[ReferenciaIdPersist]

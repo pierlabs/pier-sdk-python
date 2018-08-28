@@ -61,7 +61,6 @@ class GlobaltaglimiteApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int id: {{{conta_resource_listar_historico_alteracoes_limites_param_id}}} (required)
-        :param str authorization: Authorization
         :param list[str] sort: {{{global_menssagem_sort_sort}}}
         :param int page: {{{global_menssagem_sort_page_value}}}
         :param int limit: {{{global_menssagem_sort_limit}}}
@@ -70,7 +69,7 @@ class GlobaltaglimiteApi(object):
                  returns the request thread.
         """
 
-        all_params = ['id', 'authorization', 'sort', 'page', 'limit']
+        all_params = ['id', 'sort', 'page', 'limit']
         all_params.append('callback')
 
         params = locals()
@@ -101,8 +100,6 @@ class GlobaltaglimiteApi(object):
             query_params['limit'] = params['limit']
 
         header_params = {}
-        if 'authorization' in params:
-            header_params['Authorization'] = params['authorization']
 
         form_params = []
         local_var_files = {}

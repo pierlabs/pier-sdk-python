@@ -137,7 +137,7 @@ class TemplateNotificacaoDetalheResponse(object):
         :param tipo_layout: The tipo_layout of this TemplateNotificacaoDetalheResponse.
         :type: str
         """
-        allowed_values = ["RECUPERAR_SENHA", "FATURA_POR_EMAIL", "VALIDAR_DISPOSITIVO", "NOTIFICACAO_EMAIL"]
+        allowed_values = ["RECUPERAR_SENHA", "FATURA_POR_EMAIL", "VALIDAR_DISPOSITIVO", "NOTIFICACAO_EMAIL", "OTP_3D_SECURE"]
         if tipo_layout not in allowed_values:
             raise ValueError(
                 "Invalid value for `tipo_layout`, must be one of {0}"
@@ -165,7 +165,7 @@ class TemplateNotificacaoDetalheResponse(object):
         :param tipo_notificacao: The tipo_notificacao of this TemplateNotificacaoDetalheResponse.
         :type: str
         """
-        allowed_values = ["SMS", "PUSH_APNS", "PUSH_FCM", "PUSH_GCM", "EMAIL"]
+        allowed_values = ["SMS", "PUSH_APNS", "PUSH_FCM", "PUSH_GCM", "WEBHOOK", "EMAIL"]
         if tipo_notificacao not in allowed_values:
             raise ValueError(
                 "Invalid value for `tipo_notificacao`, must be one of {0}"

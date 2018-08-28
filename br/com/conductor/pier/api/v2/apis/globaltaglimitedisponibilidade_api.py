@@ -161,7 +161,7 @@ class GlobaltaglimitedisponibilidadeApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get23(self, id_conta, **kwargs):
+    def consultar_using_get25(self, id_conta, **kwargs):
         """
         {{{limite_disponibilidade_resource_consultar}}}
         {{{limite_disponibilidade_resource_consultar_notes}}}
@@ -172,7 +172,7 @@ class GlobaltaglimitedisponibilidadeApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get23(id_conta, callback=callback_function)
+        >>> thread = api.consultar_using_get25(id_conta, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -190,14 +190,14 @@ class GlobaltaglimitedisponibilidadeApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get23" % key
+                    " to method consultar_using_get25" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id_conta' is set
         if ('id_conta' not in params) or (params['id_conta'] is None):
-            raise ValueError("Missing the required parameter `id_conta` when calling `consultar_using_get23`")
+            raise ValueError("Missing the required parameter `id_conta` when calling `consultar_using_get25`")
 
         resource_path = '/api/limites-disponibilidades'.replace('{format}', 'json')
         path_params = {}
@@ -227,6 +227,89 @@ class GlobaltaglimitedisponibilidadeApi(object):
         auth_settings = []
 
         response = self.api_client.call_api(resource_path, 'GET',
+                                            path_params,
+                                            query_params,
+                                            header_params,
+                                            body=body_params,
+                                            post_params=form_params,
+                                            files=local_var_files,
+                                            response_type='LimiteDisponibilidadeResponse',
+                                            auth_settings=auth_settings,
+                                            callback=params.get('callback'))
+        return response
+
+    def sensibilizar_saldo_disponivel_global_using_post(self, id, sensibilizar_saldo_global, **kwargs):
+        """
+        {{{limite_disponibilidade_resource_sensibilizar_credito_disponivel}}}
+        {{{limite_disponibilidade_resource_sensibilizar_credito_disponivel_notes}}}
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please define a `callback` function
+        to be invoked when receiving the response.
+        >>> def callback_function(response):
+        >>>     pprint(response)
+        >>>
+        >>> thread = api.sensibilizar_saldo_disponivel_global_using_post(id, sensibilizar_saldo_global, callback=callback_function)
+
+        :param callback function: The callback function
+            for asynchronous request. (optional)
+        :param int id: {{{sensibilizar_saldo_global_param_id}}} (required)
+        :param SensibilizarSaldoGlobalUpdateValue sensibilizar_saldo_global: sensibilizarSaldoGlobal (required)
+        :return: LimiteDisponibilidadeResponse
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id', 'sensibilizar_saldo_global']
+        all_params.append('callback')
+
+        params = locals()
+        for key, val in iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method sensibilizar_saldo_disponivel_global_using_post" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        # verify the required parameter 'id' is set
+        if ('id' not in params) or (params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `sensibilizar_saldo_disponivel_global_using_post`")
+        # verify the required parameter 'sensibilizar_saldo_global' is set
+        if ('sensibilizar_saldo_global' not in params) or (params['sensibilizar_saldo_global'] is None):
+            raise ValueError("Missing the required parameter `sensibilizar_saldo_global` when calling `sensibilizar_saldo_disponivel_global_using_post`")
+
+        resource_path = '/api/contas/{id}/limites-disponibilidades/sensibilizar-saldo-disponivel-global'.replace('{format}', 'json')
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']
+
+        query_params = {}
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        if 'sensibilizar_saldo_global' in params:
+            body_params = params['sensibilizar_saldo_global']
+
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.\
+            select_header_accept(['application/json'])
+        if not header_params['Accept']:
+            del header_params['Accept']
+
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.\
+            select_header_content_type(['application/json'])
+
+        # Authentication setting
+        auth_settings = []
+
+        response = self.api_client.call_api(resource_path, 'POST',
                                             path_params,
                                             query_params,
                                             header_params,

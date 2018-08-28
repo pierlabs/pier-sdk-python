@@ -62,7 +62,6 @@ class GlobaltagservicocontaApi(object):
             for asynchronous request. (optional)
         :param int id: {{{conta_resource_ativar_anuidade_param_id}}} (required)
         :param int id_anuidade: {{{anuidade_request_id_anuidade_value}}} (required)
-        :param str authorization: Authorization
         :param list[str] sort: {{{global_menssagem_sort_sort}}}
         :param int page: {{{global_menssagem_sort_page_value}}}
         :param int limit: {{{global_menssagem_sort_limit}}}
@@ -75,7 +74,7 @@ class GlobaltagservicocontaApi(object):
                  returns the request thread.
         """
 
-        all_params = ['id', 'id_anuidade', 'authorization', 'sort', 'page', 'limit', 'ddd', 'celular', 'id_operadora', 'id_origem_comercial']
+        all_params = ['id', 'id_anuidade', 'sort', 'page', 'limit', 'ddd', 'celular', 'id_operadora', 'id_origem_comercial']
         all_params.append('callback')
 
         params = locals()
@@ -119,8 +118,6 @@ class GlobaltagservicocontaApi(object):
             query_params['idOrigemComercial'] = params['id_origem_comercial']
 
         header_params = {}
-        if 'authorization' in params:
-            header_params['Authorization'] = params['authorization']
 
         form_params = []
         local_var_files = {}
@@ -168,13 +165,12 @@ class GlobaltagservicocontaApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int id: {{{conta_resource_ativar_envio_fatura_email_param_id}}} (required)
-        :param str authorization: Authorization
         :return: object
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['id', 'authorization']
+        all_params = ['id']
         all_params.append('callback')
 
         params = locals()
@@ -199,8 +195,6 @@ class GlobaltagservicocontaApi(object):
         query_params = {}
 
         header_params = {}
-        if 'authorization' in params:
-            header_params['Authorization'] = params['authorization']
 
         form_params = []
         local_var_files = {}
@@ -248,13 +242,12 @@ class GlobaltagservicocontaApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int id: {{{conta_resource_desativar_envio_fatura_email_param_id}}} (required)
-        :param str authorization: Authorization
         :return: object
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['id', 'authorization']
+        all_params = ['id']
         all_params.append('callback')
 
         params = locals()
@@ -279,8 +272,6 @@ class GlobaltagservicocontaApi(object):
         query_params = {}
 
         header_params = {}
-        if 'authorization' in params:
-            header_params['Authorization'] = params['authorization']
 
         form_params = []
         local_var_files = {}

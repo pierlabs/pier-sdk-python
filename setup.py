@@ -4,7 +4,7 @@ import sys
 from setuptools import setup, find_packages
 
 NAME = "br.com.conductor.pier.api.v2"
-VERSION = "2.68.0"
+VERSION = "2.74.2"
 
 
 

@@ -131,7 +131,7 @@ class GlobaltagwebhookApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get53(self, id, **kwargs):
+    def consultar_using_get55(self, id, **kwargs):
         """
         {{{web_hook_resource_consultar}}}
         {{{web_hook_resource_consultar_notes}}}
@@ -142,7 +142,7 @@ class GlobaltagwebhookApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get53(id, callback=callback_function)
+        >>> thread = api.consultar_using_get55(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -160,14 +160,14 @@ class GlobaltagwebhookApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get53" % key
+                    " to method consultar_using_get55" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get53`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get55`")
 
         resource_path = '/api/webhooks/{id}'.replace('{format}', 'json')
         path_params = {}
@@ -208,7 +208,7 @@ class GlobaltagwebhookApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get66(self, **kwargs):
+    def listar_using_get69(self, **kwargs):
         """
         {{{web_hook_resource_listar}}}
         {{{web_hook_resource_listar_notes}}}
@@ -219,7 +219,7 @@ class GlobaltagwebhookApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get66(callback=callback_function)
+        >>> thread = api.listar_using_get69(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -243,7 +243,7 @@ class GlobaltagwebhookApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get66" % key
+                    " to method listar_using_get69" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -300,7 +300,7 @@ class GlobaltagwebhookApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def salvar_using_post35(self, webhook, **kwargs):
+    def salvar_using_post36(self, webhook, **kwargs):
         """
         {{{web_hook_resource_salvar}}}
         {{{web_hook_resource_salvar_notes}}}
@@ -311,7 +311,7 @@ class GlobaltagwebhookApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.salvar_using_post35(webhook, callback=callback_function)
+        >>> thread = api.salvar_using_post36(webhook, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -329,14 +329,14 @@ class GlobaltagwebhookApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method salvar_using_post35" % key
+                    " to method salvar_using_post36" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'webhook' is set
         if ('webhook' not in params) or (params['webhook'] is None):
-            raise ValueError("Missing the required parameter `webhook` when calling `salvar_using_post35`")
+            raise ValueError("Missing the required parameter `webhook` when calling `salvar_using_post36`")
 
         resource_path = '/api/webhooks'.replace('{format}', 'json')
         path_params = {}

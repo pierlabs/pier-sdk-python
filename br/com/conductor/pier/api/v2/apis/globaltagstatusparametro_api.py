@@ -199,7 +199,7 @@ class GlobaltagstatusparametroApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get36(self, id, **kwargs):
+    def consultar_using_get38(self, id, **kwargs):
         """
         {{{status_conta_resource_consultar}}}
         {{{status_conta_resource_consultar_notes}}}
@@ -210,7 +210,7 @@ class GlobaltagstatusparametroApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get36(id, callback=callback_function)
+        >>> thread = api.consultar_using_get38(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -228,14 +228,14 @@ class GlobaltagstatusparametroApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get36" % key
+                    " to method consultar_using_get38" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get36`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get38`")
 
         resource_path = '/api/status-contas/{id}'.replace('{format}', 'json')
         path_params = {}
@@ -276,7 +276,7 @@ class GlobaltagstatusparametroApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def consultar_using_get37(self, id, **kwargs):
+    def consultar_using_get39(self, id, **kwargs):
         """
         {{{status_impressao_resource_consultar}}}
         {{{status_impressao_resource_consultar_notes}}}
@@ -287,7 +287,7 @@ class GlobaltagstatusparametroApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get37(id, callback=callback_function)
+        >>> thread = api.consultar_using_get39(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -305,14 +305,14 @@ class GlobaltagstatusparametroApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get37" % key
+                    " to method consultar_using_get39" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get37`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get39`")
 
         resource_path = '/api/status-impressoes/{id}'.replace('{format}', 'json')
         path_params = {}
@@ -608,7 +608,7 @@ class GlobaltagstatusparametroApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get47(self, **kwargs):
+    def listar_using_get49(self, **kwargs):
         """
         {{{status_conta_resource_listar}}}
         {{{status_conta_resource_listar_notes}}}
@@ -619,7 +619,7 @@ class GlobaltagstatusparametroApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get47(callback=callback_function)
+        >>> thread = api.listar_using_get49(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -650,7 +650,7 @@ class GlobaltagstatusparametroApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get47" % key
+                    " to method listar_using_get49" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -721,7 +721,7 @@ class GlobaltagstatusparametroApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get48(self, **kwargs):
+    def listar_using_get50(self, **kwargs):
         """
         {{{status_impressao_resource_listar}}}
         {{{status_impressao_resource_listar_notes}}}
@@ -732,7 +732,7 @@ class GlobaltagstatusparametroApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get48(callback=callback_function)
+        >>> thread = api.listar_using_get50(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -754,7 +754,7 @@ class GlobaltagstatusparametroApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get48" % key
+                    " to method listar_using_get50" % key
                 )
             params[key] = val
         del params['kwargs']

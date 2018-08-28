@@ -77,7 +77,7 @@ class PushFCMGCMPersistValue(object):
     def id_pessoa(self):
         """
         Gets the id_pessoa of this PushFCMGCMPersistValue.
-        {{{push_f_c_m_g_c_m_persist_id_pessoa_value}}}
+        {{{push_a_p_n_s_persist_id_pessoa_value}}}
 
         :return: The id_pessoa of this PushFCMGCMPersistValue.
         :rtype: int
@@ -88,7 +88,7 @@ class PushFCMGCMPersistValue(object):
     def id_pessoa(self, id_pessoa):
         """
         Sets the id_pessoa of this PushFCMGCMPersistValue.
-        {{{push_f_c_m_g_c_m_persist_id_pessoa_value}}}
+        {{{push_a_p_n_s_persist_id_pessoa_value}}}
 
         :param id_pessoa: The id_pessoa of this PushFCMGCMPersistValue.
         :type: int
@@ -99,7 +99,7 @@ class PushFCMGCMPersistValue(object):
     def id_conta(self):
         """
         Gets the id_conta of this PushFCMGCMPersistValue.
-        {{{push_f_c_m_g_c_m_persist_id_conta_value}}}
+        {{{push_a_p_n_s_persist_id_conta_value}}}
 
         :return: The id_conta of this PushFCMGCMPersistValue.
         :rtype: int
@@ -110,7 +110,7 @@ class PushFCMGCMPersistValue(object):
     def id_conta(self, id_conta):
         """
         Sets the id_conta of this PushFCMGCMPersistValue.
-        {{{push_f_c_m_g_c_m_persist_id_conta_value}}}
+        {{{push_a_p_n_s_persist_id_conta_value}}}
 
         :param id_conta: The id_conta of this PushFCMGCMPersistValue.
         :type: int
@@ -121,7 +121,7 @@ class PushFCMGCMPersistValue(object):
     def token_dispositivo(self):
         """
         Gets the token_dispositivo of this PushFCMGCMPersistValue.
-        {{{push_f_c_m_g_c_m_persist_token_dispositivo_value}}}
+        {{{push_a_p_n_s_persist_token_dispositivo_value}}}
 
         :return: The token_dispositivo of this PushFCMGCMPersistValue.
         :rtype: str
@@ -132,7 +132,7 @@ class PushFCMGCMPersistValue(object):
     def token_dispositivo(self, token_dispositivo):
         """
         Sets the token_dispositivo of this PushFCMGCMPersistValue.
-        {{{push_f_c_m_g_c_m_persist_token_dispositivo_value}}}
+        {{{push_a_p_n_s_persist_token_dispositivo_value}}}
 
         :param token_dispositivo: The token_dispositivo of this PushFCMGCMPersistValue.
         :type: str
@@ -165,7 +165,7 @@ class PushFCMGCMPersistValue(object):
     def titulo(self):
         """
         Gets the titulo of this PushFCMGCMPersistValue.
-        {{{push_f_c_m_g_c_m_persist_titulo_value}}}
+        {{{push_a_p_n_s_persist_titulo_value}}}
 
         :return: The titulo of this PushFCMGCMPersistValue.
         :rtype: str
@@ -176,7 +176,7 @@ class PushFCMGCMPersistValue(object):
     def titulo(self, titulo):
         """
         Sets the titulo of this PushFCMGCMPersistValue.
-        {{{push_f_c_m_g_c_m_persist_titulo_value}}}
+        {{{push_a_p_n_s_persist_titulo_value}}}
 
         :param titulo: The titulo of this PushFCMGCMPersistValue.
         :type: str
@@ -187,7 +187,7 @@ class PushFCMGCMPersistValue(object):
     def conteudo(self):
         """
         Gets the conteudo of this PushFCMGCMPersistValue.
-        {{{push_f_c_m_g_c_m_persist_conteudo_value}}}
+        {{{push_a_p_n_s_persist_conteudo_value}}}
 
         :return: The conteudo of this PushFCMGCMPersistValue.
         :rtype: str
@@ -198,7 +198,7 @@ class PushFCMGCMPersistValue(object):
     def conteudo(self, conteudo):
         """
         Sets the conteudo of this PushFCMGCMPersistValue.
-        {{{push_f_c_m_g_c_m_persist_conteudo_value}}}
+        {{{push_a_p_n_s_persist_conteudo_value}}}
 
         :param conteudo: The conteudo of this PushFCMGCMPersistValue.
         :type: str
@@ -225,7 +225,7 @@ class PushFCMGCMPersistValue(object):
         :param tipo_evento: The tipo_evento of this PushFCMGCMPersistValue.
         :type: str
         """
-        allowed_values = ["RISCO_FRAUDE", "CODIGO_SEGURANCA", "OUTROS"]
+        allowed_values = ["RISCO_FRAUDE", "CODIGO_SEGURANCA", "OUTROS", "OTP_3D_SECURE"]
         if tipo_evento not in allowed_values:
             raise ValueError(
                 "Invalid value for `tipo_evento`, must be one of {0}"

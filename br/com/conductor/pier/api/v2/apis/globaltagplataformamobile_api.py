@@ -128,7 +128,7 @@ class GlobaltagplataformamobileApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def listar_using_get40(self, **kwargs):
+    def listar_using_get42(self, **kwargs):
         """
         {{{plataforma_mobile_resource_listar}}}
         {{{plataforma_mobile_resource_listar_notes}}}
@@ -139,7 +139,7 @@ class GlobaltagplataformamobileApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.listar_using_get40(callback=callback_function)
+        >>> thread = api.listar_using_get42(callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -160,7 +160,7 @@ class GlobaltagplataformamobileApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method listar_using_get40" % key
+                    " to method listar_using_get42" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -211,7 +211,7 @@ class GlobaltagplataformamobileApi(object):
                                             callback=params.get('callback'))
         return response
 
-    def salvar_using_post26(self, persist, **kwargs):
+    def salvar_using_post27(self, persist, **kwargs):
         """
         {{{plataforma_mobile_resource_salvar}}}
         {{{plataforma_mobile_resource_salvar_notes}}}
@@ -222,7 +222,7 @@ class GlobaltagplataformamobileApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.salvar_using_post26(persist, callback=callback_function)
+        >>> thread = api.salvar_using_post27(persist, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -240,14 +240,14 @@ class GlobaltagplataformamobileApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method salvar_using_post26" % key
+                    " to method salvar_using_post27" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'persist' is set
         if ('persist' not in params) or (params['persist'] is None):
-            raise ValueError("Missing the required parameter `persist` when calling `salvar_using_post26`")
+            raise ValueError("Missing the required parameter `persist` when calling `salvar_using_post27`")
 
         resource_path = '/api/plataformas-mobile'.replace('{format}', 'json')
         path_params = {}

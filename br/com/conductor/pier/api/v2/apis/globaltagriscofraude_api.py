@@ -45,7 +45,7 @@ class GlobaltagriscofraudeApi(object):
                 config.api_client = ApiClient()
             self.api_client = config.api_client
 
-    def consultar_using_get35(self, id, **kwargs):
+    def consultar_using_get37(self, id, **kwargs):
         """
         {{{risco_fraude_resource_consultar}}}
         {{{risco_fraude_resource_consultar_notes}}}
@@ -56,7 +56,7 @@ class GlobaltagriscofraudeApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get35(id, callback=callback_function)
+        >>> thread = api.consultar_using_get37(id, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -74,14 +74,14 @@ class GlobaltagriscofraudeApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get35" % key
+                    " to method consultar_using_get37" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'id' is set
         if ('id' not in params) or (params['id'] is None):
-            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get35`")
+            raise ValueError("Missing the required parameter `id` when calling `consultar_using_get37`")
 
         resource_path = '/api/riscos-fraudes/{id}'.replace('{format}', 'json')
         path_params = {}

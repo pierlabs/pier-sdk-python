@@ -45,7 +45,7 @@ class GlobaltagparametroemissorApi(object):
                 config.api_client = ApiClient()
             self.api_client = config.api_client
 
-    def consultar_using_get27(self, codigo, **kwargs):
+    def consultar_using_get29(self, codigo, **kwargs):
         """
         {{{parametro_emissor_recurso}}}
         {{{parametro_emissor_recurso_notas}}}
@@ -56,7 +56,7 @@ class GlobaltagparametroemissorApi(object):
         >>> def callback_function(response):
         >>>     pprint(response)
         >>>
-        >>> thread = api.consultar_using_get27(codigo, callback=callback_function)
+        >>> thread = api.consultar_using_get29(codigo, callback=callback_function)
 
         :param callback function: The callback function
             for asynchronous request. (optional)
@@ -74,14 +74,14 @@ class GlobaltagparametroemissorApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method consultar_using_get27" % key
+                    " to method consultar_using_get29" % key
                 )
             params[key] = val
         del params['kwargs']
 
         # verify the required parameter 'codigo' is set
         if ('codigo' not in params) or (params['codigo'] is None):
-            raise ValueError("Missing the required parameter `codigo` when calling `consultar_using_get27`")
+            raise ValueError("Missing the required parameter `codigo` when calling `consultar_using_get29`")
 
         resource_path = '/api/parametros-emissor/{codigo}'.replace('{format}', 'json')
         path_params = {}
